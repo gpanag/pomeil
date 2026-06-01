@@ -1,0 +1,439 @@
+<div class="cinematic-container">
+
+  <div *ngIf="isPreloading" class="preload-overlay">
+    <div class="loading-content">
+      <div class="loading-text">{{ t('loading') }}</div>
+    </div>
+  </div>
+
+  <!-- Introduction Popup Overlay -->
+  <div *ngIf="isIntroPopupVisible" class="overlay center">
+    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+      <mat-card-content class="intro-text">
+        <p>{{ t('intro.paragraphs.0') }}</p>
+        <p>{{ t('intro.paragraphs.1') }}</p>
+        <p>{{ t('intro.paragraphs.2') }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="game-container">
+
+    <div class="scene-background"
+         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+         [ngStyle]="zoomStyle"
+         [class.blurred]="isTranscriptVisible || isSpreadsheetVisible || isHourglassReflectionVisible || isFolderVisible || isPostersVisible || isGameCompleteOverlayVisible || isIntroPopupVisible || showPhase1Options || showPhase4Options">
+    </div>
+
+    <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
+      <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+    </button>
+
+    <div *ngIf="isLearningMode" class="learning-score-panel">
+      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+      <div class="score-panel-progress">
+        <mat-icon>emoji_events</mat-icon>
+        <span>{{ completedPuzzleCount }} / 2 puzzles</span>
+      </div>
+      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+      </div>
+    </div>
+
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <button mat-fab class="hint-button" (click)="requestHint()"
+            *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !showPhase1Options && !showPhase4Options">
+      <mat-icon>lightbulb</mat-icon>
+    </button>
+
+    <!-- Skip the current phase (parity with the other rooms) -->
+    <button mat-stroked-button class="skip-phase-btn" (click)="requestSkipPuzzle(skipPuzzle.bind(this))"
+            *ngIf="!isIntroPopupVisible && currentState > GameState.Intro && currentState < GameState.Completion && !isAnimating">
+      {{ t('ui.skipButton') }}
+    </button>
+
+    <button *ngIf="currentView !== 'main' && !activeDialogue && !isTranscriptVisible && !isSpreadsheetVisible && !isHourglassReflectionVisible && !isFolderVisible && !isPostersVisible"
+            mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <!-- Hotspot Layer -->
+    <div class="hotspot-layer"
+         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || showPhase1Options || showPhase4Options"
+         *ngIf="!isTranscriptVisible && !isSpreadsheetVisible && !isHourglassReflectionVisible && !isFolderVisible && !isPostersVisible && !isIntroPopupVisible">
+
+      <ng-container *ngIf="currentView === 'main'">
+        <!-- Bilal (when present) -->
+        <div *ngIf="bilalPresent" class="character-hotspot"
+             [class.show-hint-pulse]="showHints && (currentState === GameState.Phase1_Start || currentState === GameState.Phase4_BilalReturns)"
+             [style.left.%]="hotspots.main.bilal.x" [style.top.%]="hotspots.main.bilal.y"
+             [style.width.%]="hotspots.main.bilal.width" [style.height.%]="hotspots.main.bilal.height"
+             (click)="onHotspotClick('bilal')"
+             (mouseenter)="onCharacterHover('bilal')"
+             (mouseleave)="onCharacterLeave()"></div>
+
+        <!-- Fax machine (Phase 2) -->
+        <div *ngIf="currentState === GameState.Phase2_FaxSound"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.fax.x" [style.top.%]="hotspots.main.fax.y"
+             [style.width.%]="hotspots.main.fax.width" [style.height.%]="hotspots.main.fax.height"
+             (click)="onHotspotClick('fax')"></div>
+
+        <!-- Laptop (Phase 3, not yet viewed) -->
+        <div *ngIf="currentState === GameState.Phase3_Preparation && !hasViewedSpreadsheet"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.laptop.x" [style.top.%]="hotspots.main.laptop.y"
+             [style.width.%]="hotspots.main.laptop.width" [style.height.%]="hotspots.main.laptop.height"
+             (click)="onHotspotClick('laptop')"></div>
+
+        <!-- Hourglass (Phase 3, not yet viewed) -->
+        <div *ngIf="currentState === GameState.Phase3_Preparation && !hasViewedHourglass"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.hourglass.x" [style.top.%]="hotspots.main.hourglass.y"
+             [style.width.%]="hotspots.main.hourglass.width" [style.height.%]="hotspots.main.hourglass.height"
+             (click)="onHotspotClick('hourglass')"></div>
+
+        <!-- Folder (Phase 3, not yet viewed) -->
+        <div *ngIf="currentState === GameState.Phase3_Preparation && !hasViewedFolder"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.folder.x" [style.top.%]="hotspots.main.folder.y"
+             [style.width.%]="hotspots.main.folder.width" [style.height.%]="hotspots.main.folder.height"
+             (click)="onHotspotClick('folder')"></div>
+
+        <!-- Posters (Phase 3, not yet viewed) -->
+        <div *ngIf="currentState === GameState.Phase3_Preparation && !hasViewedPosters"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.posters.x" [style.top.%]="hotspots.main.posters.y"
+             [style.width.%]="hotspots.main.posters.width" [style.height.%]="hotspots.main.posters.height"
+             (click)="onHotspotClick('posters')"></div>
+
+        <!-- Exit Door (when game complete) -->
+        <div *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'"
+             class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+             [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+             (click)="onHotspotClick('exitDoor')"></div>
+      </ng-container>
+
+      <!-- Zoomed view content hotspots -->
+      <ng-container *ngIf="currentView === 'fax' && currentState === GameState.Phase2_FaxSound">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.fax_zoom.content.x" [style.top.%]="hotspots.fax_zoom.content.y"
+             [style.width.%]="hotspots.fax_zoom.content.width" [style.height.%]="hotspots.fax_zoom.content.height"
+             (click)="onHotspotClick('faxContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'laptop' && currentState === GameState.Phase3_Preparation && !hasViewedSpreadsheet">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.laptop_zoom.content.x" [style.top.%]="hotspots.laptop_zoom.content.y"
+             [style.width.%]="hotspots.laptop_zoom.content.width" [style.height.%]="hotspots.laptop_zoom.content.height"
+             (click)="onHotspotClick('laptopContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'hourglass' && currentState === GameState.Phase3_Preparation && !hasViewedHourglass">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.hourglass_zoom.content.x" [style.top.%]="hotspots.hourglass_zoom.content.y"
+             [style.width.%]="hotspots.hourglass_zoom.content.width" [style.height.%]="hotspots.hourglass_zoom.content.height"
+             (click)="onHotspotClick('hourglassContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'folder' && currentState === GameState.Phase3_Preparation && !hasViewedFolder">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.folder_zoom.content.x" [style.top.%]="hotspots.folder_zoom.content.y"
+             [style.width.%]="hotspots.folder_zoom.content.width" [style.height.%]="hotspots.folder_zoom.content.height"
+             (click)="onHotspotClick('folderContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'posters' && currentState === GameState.Phase3_Preparation && !hasViewedPosters">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.posters_zoom.content.x" [style.top.%]="hotspots.posters_zoom.content.y"
+             [style.width.%]="hotspots.posters_zoom.content.width" [style.height.%]="hotspots.posters_zoom.content.height"
+             (click)="onHotspotClick('postersContent')"></div>
+      </ng-container>
+    </div>
+
+    <!-- Phase 3: Preparation Progress Indicator -->
+    <div *ngIf="currentState === GameState.Phase3_Preparation && currentView === 'main' && !activeDialogue" class="prep-progress-panel">
+      <div class="prep-label">{{ t('ui.prepProgress') }}</div>
+      <div class="prep-items">
+        <mat-icon [class.done]="hasViewedSpreadsheet">{{ hasViewedSpreadsheet ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
+        <mat-icon [class.done]="hasViewedHourglass">{{ hasViewedHourglass ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
+        <mat-icon [class.done]="hasViewedFolder">{{ hasViewedFolder ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
+        <mat-icon [class.done]="hasViewedPosters">{{ hasViewedPosters ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
+      </div>
+      <div class="prep-count">{{ prepCompletedCount }} / 4 {{ t('ui.itemsFound') }}</div>
+    </div>
+
+    <!-- Phase 1: Reply Options Overlay -->
+    <div *ngIf="showPhase1Options && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card reply-card" @fadeInOut>
+        <mat-card-title>{{ t('ui.chooseReply') }}</mat-card-title>
+        <mat-card-content>
+          <div class="options-vertical">
+            <button mat-stroked-button
+                    *ngFor="let key of [phase1Exchanges[phase1Step]?.optionKeys?.[0], phase1Exchanges[phase1Step]?.optionKeys?.[1]]; trackBy: trackByIndex"
+                    (click)="selectPhase1Option(key!)">
+              {{ t('phase1.options.' + key) }}
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Phase 4: Reply Options Overlay -->
+    <div *ngIf="showPhase4Options && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card reply-card" @fadeInOut>
+        <mat-card-title>{{ t('ui.chooseReply') }}</mat-card-title>
+        <mat-card-content>
+          <div class="options-vertical">
+            <button mat-stroked-button class="option-a"
+                    (click)="selectPhase4Option(phase4Exchanges[phase4Step]?.optionKeys?.[0]!)">
+              <span class="option-label">{{ t('ui.optionA') }}</span>
+              {{ t('phase4.options.' + phase4Exchanges[phase4Step]?.optionKeys?.[0]) }}
+            </button>
+            <button mat-stroked-button class="option-b"
+                    (click)="selectPhase4Option(phase4Exchanges[phase4Step]?.optionKeys?.[1]!)">
+              <span class="option-label">{{ t('ui.optionB') }}</span>
+              {{ t('phase4.options.' + phase4Exchanges[phase4Step]?.optionKeys?.[1]) }}
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Phase 2: Transcript Overlay -->
+    <div *ngIf="isTranscriptVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card transcript-card" @fadeInOut>
+        <mat-card-title>{{ t('phase2.transcriptTitle') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('phase2.transcriptIntro') }}</mat-card-subtitle>
+        <mat-card-content class="transcript-content">
+          <div *ngFor="let phraseId of transcriptPhraseIds; trackBy: trackByIndex" class="transcript-phrase"
+               [class.reflected]="reflectedPhrases.has(phraseId)"
+               (click)="reflectOnPhrase(phraseId)">
+            <span class="phrase-text">{{ t('phase2.phrases.' + phraseId + '.text') }}</span>
+            <mat-icon *ngIf="reflectedPhrases.has(phraseId)" class="check-icon">check_circle</mat-icon>
+            <mat-icon *ngIf="!reflectedPhrases.has(phraseId)" class="click-icon">touch_app</mat-icon>
+          </div>
+
+          <div class="phrases-remaining" *ngIf="unreflectedCount > 0">
+            {{ unreflectedCount }} {{ t('ui.phrasesRemaining') }}
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Phase 2: Thought Bubble -->
+    <div *ngIf="activeThought" class="overlay center" (click)="dismissThought()">
+      <mat-card class="quiz-card thought-card" @fadeInOut>
+        <mat-card-content>
+          <div class="thought-icon"><mat-icon>psychology</mat-icon></div>
+          <p class="thought-text">{{ activeThought.text }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="dismissThought()">{{ t('ui.continueButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Phase 3: Spreadsheet Overlay -->
+    <div *ngIf="isSpreadsheetVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card spreadsheet-card" @fadeInOut>
+        <mat-card-title>{{ t('phase3.spreadsheet.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('phase3.spreadsheet.intro') }}</mat-card-subtitle>
+        <mat-card-content>
+          <table class="cost-table">
+            <tr>
+              <td>{{ t('phase3.spreadsheet.rows.labor') }}</td>
+              <td class="amount">{{ t('phase3.spreadsheet.rows.laborTotal') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('phase3.spreadsheet.rows.software') }}</td>
+              <td class="amount">{{ t('phase3.spreadsheet.rows.softwareTotal') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('phase3.spreadsheet.rows.insurance') }}</td>
+              <td class="amount">{{ t('phase3.spreadsheet.rows.insuranceTotal') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('phase3.spreadsheet.rows.logistics') }}</td>
+              <td class="amount">{{ t('phase3.spreadsheet.rows.logisticsTotal') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('phase3.spreadsheet.rows.overhead') }}</td>
+              <td class="amount">{{ t('phase3.spreadsheet.rows.overheadTotal') }}</td>
+            </tr>
+            <tr class="total-row">
+              <td><strong>{{ t('phase3.spreadsheet.rows.total') }}</strong></td>
+              <td class="amount"><strong>{{ t('phase3.spreadsheet.rows.totalAmount') }}</strong></td>
+            </tr>
+          </table>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeSpreadsheet()">{{ t('ui.closeSpreadsheet') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Phase 3: Hourglass Reflection Overlay -->
+    <div *ngIf="isHourglassReflectionVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('phase3.hourglass.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('phase3.hourglass.description') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeHourglass()">{{ t('ui.continueButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Phase 3: Folder Overlay -->
+    <div *ngIf="isFolderVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card folder-card" @fadeInOut>
+        <mat-card-title>{{ t('phase3.folder.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('phase3.folder.description') }}</mat-card-subtitle>
+        <mat-card-content>
+          <!-- Document buttons -->
+          <div *ngIf="!activeFolderDoc" class="folder-docs">
+            <button mat-stroked-button class="folder-doc-btn"
+                    [class.viewed]="folderDocsViewed.has('payment')"
+                    (click)="selectFolderDoc('payment')">
+              {{ t('phase3.folder.documents.payment.title') }}
+              <mat-icon *ngIf="folderDocsViewed.has('payment')">check_circle</mat-icon>
+            </button>
+            <button mat-stroked-button class="folder-doc-btn"
+                    [class.viewed]="folderDocsViewed.has('concepts')"
+                    (click)="selectFolderDoc('concepts')">
+              {{ t('phase3.folder.documents.concepts.title') }}
+              <mat-icon *ngIf="folderDocsViewed.has('concepts')">check_circle</mat-icon>
+            </button>
+            <button mat-stroked-button class="folder-doc-btn"
+                    [class.viewed]="folderDocsViewed.has('resume')"
+                    (click)="selectFolderDoc('resume')">
+              {{ t('phase3.folder.documents.resume.title') }}
+              <mat-icon *ngIf="folderDocsViewed.has('resume')">check_circle</mat-icon>
+            </button>
+          </div>
+          <!-- Active document content -->
+          <div *ngIf="activeFolderDoc" class="folder-doc-content">
+            <h3>{{ t('phase3.folder.documents.' + activeFolderDoc + '.title') }}</h3>
+            <p>{{ t('phase3.folder.documents.' + activeFolderDoc + '.content') }}</p>
+            <button mat-raised-button color="primary" (click)="closeFolderDoc()">{{ t('ui.continueButton') }}</button>
+          </div>
+        </mat-card-content>
+        <mat-card-actions *ngIf="!activeFolderDoc">
+          <button mat-button (click)="closeFolder()">{{ t('ui.closeTranscript') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Phase 3: Posters Overlay -->
+    <div *ngIf="isPostersVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card posters-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.activeListeningTitle') }}</mat-card-title>
+        <mat-card-content>
+          <!-- Poster buttons -->
+          <div *ngIf="!activePoster" class="poster-items">
+            <button mat-stroked-button class="poster-btn"
+                    [class.viewed]="postersViewed.has('eye')"
+                    (click)="selectPoster('eye')">
+              <mat-icon>visibility</mat-icon>
+              {{ t('phase3.posters.eye.title') }}
+              <mat-icon *ngIf="postersViewed.has('eye')" class="check">check_circle</mat-icon>
+            </button>
+            <button mat-stroked-button class="poster-btn"
+                    [class.viewed]="postersViewed.has('ear')"
+                    (click)="selectPoster('ear')">
+              <mat-icon>hearing</mat-icon>
+              {{ t('phase3.posters.ear.title') }}
+              <mat-icon *ngIf="postersViewed.has('ear')" class="check">check_circle</mat-icon>
+            </button>
+            <button mat-stroked-button class="poster-btn"
+                    [class.viewed]="postersViewed.has('mouth')"
+                    (click)="selectPoster('mouth')">
+              <mat-icon>record_voice_over</mat-icon>
+              {{ t('phase3.posters.mouth.title') }}
+              <mat-icon *ngIf="postersViewed.has('mouth')" class="check">check_circle</mat-icon>
+            </button>
+          </div>
+          <!-- Active poster content -->
+          <div *ngIf="activePoster" class="poster-content">
+            <h3>{{ t('phase3.posters.' + activePoster + '.title') }}</h3>
+            <p>{{ t('phase3.posters.' + activePoster + '.content') }}</p>
+            <button mat-raised-button color="primary" (click)="closePosterDetail()">{{ t('ui.continueButton') }}</button>
+          </div>
+        </mat-card-content>
+        <mat-card-actions *ngIf="!activePoster">
+          <button mat-button (click)="closePosters()">{{ t('ui.closeTranscript') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Game Complete Overlay -->
+    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('completion.message') }}</p>
+          <div *ngIf="puzzleScores.length > 0" class="score-summary">
+            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+            <p class="score-feedback">{{ scoreMessage }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Answer Reveal Overlay -->
+    <div *ngIf="showAnswerOverlay" class="overlay center">
+      <mat-card class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+        <mat-card-content>
+          <p class="answer-text">{{ answerOverlayText }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Dialogue Panel -->
+    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+      <div class="dialogue-content">
+        <div class="character-name">{{ activeDialogue.character }}</div>
+        <div class="dialogue-text">{{ displayedDialogueText }}</div>
+      </div>
+      <div class="dialogue-actions" *ngIf="!isTyping">
+        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+      </div>
+    </div>
+
+    <!-- Skip Puzzle Confirm -->
+    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
+      <mat-card class="skip-confirm-card" @fadeInOut>
+        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('skipConfirm.question') }}</p>
+          <p class="warning">{{ t('skipConfirm.warning') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

@@ -525,6 +525,21 @@
   }
 }
 
+/* --- Persistent "skip this phase" button (for conversation/phase rooms that
+   have no single puzzle card to anchor a skip button to). Sits just right of
+   the hint button, top-left. --- */
+.skip-phase-btn {
+  position: absolute;
+  top: 22px;
+  left: 124px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.45) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(4px);
+  &:hover { background: rgba(0, 0, 0, 0.65) !important; }
+}
+
 /* --- Skip Puzzle Button --- */
 .skip-puzzle-btn {
   position: absolute;

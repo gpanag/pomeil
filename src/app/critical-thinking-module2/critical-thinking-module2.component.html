@@ -1,0 +1,497 @@
+<div class="cinematic-container">
+
+  <div *ngIf="isPreloading" class="preload-overlay">
+    <div class="loading-content">
+      <div class="loading-text">{{ t('loading') }}</div>
+    </div>
+  </div>
+
+  <!-- Introduction Popup Overlay -->
+  <div *ngIf="isIntroPopupVisible" class="overlay center">
+    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+      <mat-card-content class="intro-text">
+        <p>{{ t('intro.paragraphs.0') }}</p>
+        <p>{{ t('intro.paragraphs.1') }}</p>
+        <p>{{ t('intro.paragraphs.2') }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="game-container">
+
+    <div class="scene-background"
+         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+         [ngStyle]="zoomStyle"
+         [class.blurred]="emailPopupVisible || reviewPopupVisible || objectPopupVisible || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
+    </div>
+
+    <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
+      <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+    </button>
+
+    <div *ngIf="isLearningMode" class="learning-score-panel">
+      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+      <div class="score-panel-progress">
+        <mat-icon>emoji_events</mat-icon>
+        <span>{{ completedPuzzleCount }} / 4 puzzles</span>
+      </div>
+      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+      </div>
+    </div>
+
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating">
+      <mat-icon>lightbulb</mat-icon>
+    </button>
+
+    <!-- Skip the current phase (parity with the other rooms) -->
+    <button mat-stroked-button class="skip-phase-btn" (click)="requestSkipPuzzle(skipPuzzle.bind(this))"
+            *ngIf="!isIntroPopupVisible && currentState > GameState.Intro && currentState < GameState.Completion && !isAnimating">
+      {{ t('ui.skipButton') }}
+    </button>
+
+    <button *ngIf="currentView !== 'main' && !activeDialogue && !emailPopupVisible && !reviewPopupVisible && !objectPopupVisible && currentState !== GameState.Phase3_Sorting && currentState !== GameState.Phase3_Decision" mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <!-- Research Notes Counter -->
+    <div class="notes-counter" *ngIf="notesCount > 0 && currentState >= GameState.Phase2_Research && !isQuizActive && !isGameCompleteOverlayVisible && !isIntroPopupVisible">
+      <mat-icon>note</mat-icon>
+      <span>{{ notesCount }} / {{ totalNotesCount }}</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- HOTSPOT LAYER                                                   -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div class="hotspot-layer"
+         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || emailPopupVisible || reviewPopupVisible || objectPopupVisible"
+         *ngIf="!emailPopupVisible && !reviewPopupVisible && !objectPopupVisible && !isIntroPopupVisible && currentState !== GameState.Phase3_Sorting && currentState !== GameState.Phase3_Decision">
+
+      <ng-container *ngIf="currentView === 'main'">
+        <!-- Mark (only while present) -->
+        <div *ngIf="markPresent" class="character-hotspot"
+             [style.left.%]="hotspots.main.mark.x" [style.top.%]="hotspots.main.mark.y"
+             [style.width.%]="hotspots.main.mark.width" [style.height.%]="hotspots.main.mark.height"
+             [class.show-hint-pulse]="showHints && (currentState === GameState.Phase1_TalkToMark || currentState === GameState.Phase1_Conversation)"
+             (click)="onHotspotClick('mark')"
+             (mouseenter)="onCharacterHover('mark')"
+             (mouseleave)="onCharacterLeave()"></div>
+
+        <!-- Maria -->
+        <div class="character-hotspot"
+             [style.left.%]="hotspots.main.maria.x" [style.top.%]="hotspots.main.maria.y"
+             [style.width.%]="hotspots.main.maria.width" [style.height.%]="hotspots.main.maria.height"
+             [class.show-hint-pulse]="phase2HotspotsActive && !mariaDone && !activeDialogue"
+             (click)="onHotspotClick('maria')"
+             (mouseenter)="onCharacterHover('maria')"
+             (mouseleave)="onCharacterLeave()"></div>
+
+        <!-- Phase 2 hotspots -->
+        <ng-container *ngIf="phase2HotspotsActive">
+          <!-- Laptop -->
+          <div *ngIf="!emailDone" class="hotspot"
+               [class.show-hint-pulse]="mariaDone && !emailDone"
+               [style.left.%]="hotspots.main.laptop.x" [style.top.%]="hotspots.main.laptop.y"
+               [style.width.%]="hotspots.main.laptop.width" [style.height.%]="hotspots.main.laptop.height"
+               (click)="onHotspotClick('laptop')"></div>
+
+          <!-- TV -->
+          <div *ngIf="!reviewsDone" class="hotspot"
+               [class.show-hint-pulse]="emailDone && !reviewsDone"
+               [style.left.%]="hotspots.main.tv.x" [style.top.%]="hotspots.main.tv.y"
+               [style.width.%]="hotspots.main.tv.width" [style.height.%]="hotspots.main.tv.height"
+               (click)="onHotspotClick('tv')"></div>
+
+          <!-- Calendar -->
+          <div *ngIf="!calendarDone" class="hotspot"
+               [class.show-hint-pulse]="reviewsDone && !calendarDone"
+               [style.left.%]="hotspots.main.calendar.x" [style.top.%]="hotspots.main.calendar.y"
+               [style.width.%]="hotspots.main.calendar.width" [style.height.%]="hotspots.main.calendar.height"
+               (click)="onHotspotClick('calendar')"></div>
+
+          <!-- Flyer -->
+          <div *ngIf="!flyerDone" class="hotspot"
+               [class.show-hint-pulse]="calendarDone && !flyerDone"
+               [style.left.%]="hotspots.main.flyer.x" [style.top.%]="hotspots.main.flyer.y"
+               [style.width.%]="hotspots.main.flyer.width" [style.height.%]="hotspots.main.flyer.height"
+               (click)="onHotspotClick('flyer')"></div>
+
+          <!-- Business Card -->
+          <div *ngIf="!businessCardDone" class="hotspot"
+               [class.show-hint-pulse]="flyerDone && !businessCardDone"
+               [style.left.%]="hotspots.main.businessCard.x" [style.top.%]="hotspots.main.businessCard.y"
+               [style.width.%]="hotspots.main.businessCard.width" [style.height.%]="hotspots.main.businessCard.height"
+               (click)="onHotspotClick('businessCard')"></div>
+
+          <!-- Poster -->
+          <div *ngIf="!posterSeen" class="hotspot"
+               [class.show-hint-pulse]="showHints"
+               [style.left.%]="hotspots.main.poster.x" [style.top.%]="hotspots.main.poster.y"
+               [style.width.%]="hotspots.main.poster.width" [style.height.%]="hotspots.main.poster.height"
+               (click)="onHotspotClick('poster')"></div>
+
+          <!-- Magazine -->
+          <div *ngIf="!magazineSeen" class="hotspot"
+               [class.show-hint-pulse]="showHints"
+               [style.left.%]="hotspots.main.magazine.x" [style.top.%]="hotspots.main.magazine.y"
+               [style.width.%]="hotspots.main.magazine.width" [style.height.%]="hotspots.main.magazine.height"
+               (click)="onHotspotClick('magazine')"></div>
+
+          <!-- Corkboard (only when all mandatory research done) -->
+          <div *ngIf="isAllResearchDone()" class="hotspot"
+               [class.show-hint-pulse]="showHints"
+               [style.left.%]="hotspots.main.corkboard.x" [style.top.%]="hotspots.main.corkboard.y"
+               [style.width.%]="hotspots.main.corkboard.width" [style.height.%]="hotspots.main.corkboard.height"
+               (click)="onHotspotClick('corkboard')"></div>
+        </ng-container>
+
+        <!-- Exit Door -->
+        <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
+          <div class="hotspot"
+               [class.show-hint-pulse]="showHints"
+               [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+               [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+               (click)="onHotspotClick('exitDoor')"></div>
+        </ng-container>
+      </ng-container>
+
+      <!-- Zoomed view content hotspots -->
+      <ng-container *ngIf="currentView === 'laptop' && !emailDone">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.laptop_zoom.content.x" [style.top.%]="hotspots.laptop_zoom.content.y"
+             [style.width.%]="hotspots.laptop_zoom.content.width" [style.height.%]="hotspots.laptop_zoom.content.height"
+             (click)="onHotspotClick('laptopContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'tv' && !reviewsDone">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.tv_zoom.content.x" [style.top.%]="hotspots.tv_zoom.content.y"
+             [style.width.%]="hotspots.tv_zoom.content.width" [style.height.%]="hotspots.tv_zoom.content.height"
+             (click)="onHotspotClick('tvContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'calendar' && !calendarDone">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.calendar_zoom.content.x" [style.top.%]="hotspots.calendar_zoom.content.y"
+             [style.width.%]="hotspots.calendar_zoom.content.width" [style.height.%]="hotspots.calendar_zoom.content.height"
+             (click)="onHotspotClick('calendarContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'flyer' && !flyerDone">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.flyer_zoom.content.x" [style.top.%]="hotspots.flyer_zoom.content.y"
+             [style.width.%]="hotspots.flyer_zoom.content.width" [style.height.%]="hotspots.flyer_zoom.content.height"
+             (click)="onHotspotClick('flyerContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'businessCard' && !businessCardDone">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.businessCard_zoom.content.x" [style.top.%]="hotspots.businessCard_zoom.content.y"
+             [style.width.%]="hotspots.businessCard_zoom.content.width" [style.height.%]="hotspots.businessCard_zoom.content.height"
+             (click)="onHotspotClick('businessCardContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'poster' && !posterSeen">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.poster_zoom.content.x" [style.top.%]="hotspots.poster_zoom.content.y"
+             [style.width.%]="hotspots.poster_zoom.content.width" [style.height.%]="hotspots.poster_zoom.content.height"
+             (click)="onHotspotClick('posterContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'magazine' && !magazineSeen">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.magazine_zoom.content.x" [style.top.%]="hotspots.magazine_zoom.content.y"
+             [style.width.%]="hotspots.magazine_zoom.content.width" [style.height.%]="hotspots.magazine_zoom.content.height"
+             (click)="onHotspotClick('magazineContent')"></div>
+      </ng-container>
+      <ng-container *ngIf="currentView === 'corkboard' && isAllResearchDone()">
+        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.corkboard_zoom.content.x" [style.top.%]="hotspots.corkboard_zoom.content.y"
+             [style.width.%]="hotspots.corkboard_zoom.content.width" [style.height.%]="hotspots.corkboard_zoom.content.height"
+             (click)="onHotspotClick('corkboardContent')"></div>
+      </ng-container>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- CONVERSATION OPTIONS (Phase 1)                                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="isShowingOptions && currentConversationStep?.options && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card" [class.shake-animation]="wrongOptionChosen" @fadeInOut>
+        <mat-card-content>
+          <div class="conversation-options">
+            <button *ngIf="!wrongOptionChosen" mat-stroked-button class="conversation-option-btn"
+                    (click)="onConversationChoice(false)">
+              {{ t(currentConversationStep!.options!.wrongKey) }}
+            </button>
+            <button mat-stroked-button class="conversation-option-btn correct-option"
+                    (click)="onConversationChoice(true)">
+              {{ t(currentConversationStep!.options!.correctKey) }}
+            </button>
+          </div>
+          <div *ngIf="conversationHint" class="feedback-wrong">{{ conversationHint }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- EMAIL POPUP (Phase 2b)                                          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="emailPopupVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card email-card" @fadeInOut>
+        <div class="email-header">
+          <div class="email-field"><strong>{{ t('emailFields.from') }}</strong> {{ t('email.from') }}</div>
+          <div class="email-field"><strong>To:</strong> {{ t('email.to') }}</div>
+          <div class="email-field"><strong>{{ t('emailFields.date') }}</strong> {{ t('email.date') }}</div>
+          <div class="email-field email-subject"
+               [class.clue-found]="emailCluesFound.includes('subject')"
+               [class.clue-highlight]="!emailCluesFound.includes('subject')"
+               (click)="onEmailClueClick('subject')">
+            <strong>{{ t('emailFields.subject') }}</strong> {{ t('email.subject') }}
+          </div>
+        </div>
+        <mat-card-content class="email-body">
+          <p>{{ t('email.greeting') }}</p>
+          <p>{{ t('email.body1') }}</p>
+          <p class="email-highlight"
+             [class.clue-found]="emailCluesFound.includes('discount')"
+             [class.clue-highlight]="!emailCluesFound.includes('discount')"
+             (click)="onEmailClueClick('discount')">
+            {{ t('email.offerLine') }}
+          </p>
+          <p>{{ t('email.body2') }}</p>
+          <div class="email-testimonials"
+               [class.clue-found]="emailCluesFound.includes('testimonials')"
+               [class.clue-highlight]="!emailCluesFound.includes('testimonials')"
+               (click)="onEmailClueClick('testimonials')">
+            <p>{{ t('email.testimonial1') }}</p>
+            <p>{{ t('email.testimonial2') }}</p>
+            <p>{{ t('email.testimonial3') }}</p>
+          </div>
+          <p class="email-today-only"
+             [class.clue-found]="emailCluesFound.includes('todayOnly')"
+             [class.clue-highlight]="!emailCluesFound.includes('todayOnly')"
+             (click)="onEmailClueClick('todayOnly')">
+            *Offer valid TODAY ONLY
+          </p>
+          <p class="email-terms"
+             [class.clue-found]="emailCluesFound.includes('terms')"
+             [class.clue-highlight]="!emailCluesFound.includes('terms')"
+             (click)="onEmailClueClick('terms')">
+            {{ t('email.body3') }}
+          </p>
+          <p class="email-signature">{{ t('email.signature') }}</p>
+        </mat-card-content>
+
+        <!-- Thought bubble for clues -->
+        <div *ngIf="emailClueThought" class="thought-bubble" @fadeInOut>
+          <mat-icon>psychology</mat-icon>
+          <p>{{ emailClueThought }}</p>
+          <button mat-raised-button color="primary" (click)="closeEmailThought()">{{ t('ui.continueButton') }}</button>
+        </div>
+
+        <mat-card-actions *ngIf="!emailClueThought">
+          <span class="clue-counter">{{ emailCluesFound.length }} / {{ emailClueKeys.length }} {{ t('ui.emailCluePrefix') }}s found</span>
+          <button mat-button (click)="closeEmailPopup()">{{ t('ui.closePopup') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- REVIEW POPUP (Phase 2c)                                         -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="reviewPopupVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card review-card" @fadeInOut>
+        <div class="review-site-header">
+          <h3>{{ t('reviews.siteName') }}</h3>
+          <p class="review-subtitle">{{ t('reviews.siteSubtitle') }}</p>
+          <div class="review-overall">
+            <span class="review-rating-big">{{ t('reviews.overallRating') }}</span>
+            <span class="review-count">{{ t('reviews.totalReviews') }}</span>
+          </div>
+        </div>
+        <mat-card-content>
+          <div class="review-item">
+            <div class="review-header-row">
+              <span class="review-author">{{ t('reviews.items.' + currentReviewIndex + '.author') }}</span>
+              <span class="review-stars">
+                <mat-icon *ngFor="let s of getReviewRatingStars(+t('reviews.items.' + currentReviewIndex + '.rating')); trackBy: trackByIndex" class="star-filled">star</mat-icon>
+                <mat-icon *ngFor="let s of getReviewEmptyStars(+t('reviews.items.' + currentReviewIndex + '.rating')); trackBy: trackByIndex" class="star-empty">star_border</mat-icon>
+              </span>
+            </div>
+            <h4 class="review-title">{{ t('reviews.items.' + currentReviewIndex + '.title') }}</h4>
+            <p class="review-text">{{ t('reviews.items.' + currentReviewIndex + '.text') }}</p>
+          </div>
+
+          <!-- Review thought -->
+          <div *ngIf="reviewThought" class="thought-bubble" @fadeInOut>
+            <mat-icon>psychology</mat-icon>
+            <p>{{ reviewThought }}</p>
+          </div>
+
+          <div class="review-nav">
+            <button mat-button [disabled]="currentReviewIndex === 0" (click)="previousReview()">
+              <mat-icon>arrow_back</mat-icon> {{ t('ui.previousReview') }}
+            </button>
+            <span class="review-counter">{{ currentReviewIndex + 1 }} {{ t('ui.reviewOf') }} 8</span>
+            <button mat-button [disabled]="currentReviewIndex >= 7" (click)="nextReview()">
+              {{ t('ui.nextReview') }} <mat-icon>arrow_forward</mat-icon>
+            </button>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="closeReviewPopup()">{{ t('ui.closePopup') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- OBJECT POPUP (Phase 2d)                                         -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="objectPopupVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card object-card" @fadeInOut>
+        <mat-card-title>{{ objectPopupTitle }}</mat-card-title>
+        <mat-card-content>
+          <pre class="object-content">{{ objectPopupContent }}</pre>
+          <div *ngIf="objectPopupThought" class="thought-bubble">
+            <mat-icon>psychology</mat-icon>
+            <p>{{ objectPopupThought }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeObjectPopup()">{{ t('ui.closePopup') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- PHASE 3: SORTING (Corkboard)                                    -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="currentState === GameState.Phase3_Sorting && !sortingComplete && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card sorting-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+        <mat-card-title>{{ t('ui.sortEvidence') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('researchNotes.proLabel') }}: {{ sortedPro.length }} | {{ t('researchNotes.conLabel') }}: {{ sortedCon.length }} | Remaining: {{ unsortedNotes.length }}</mat-card-subtitle>
+        <mat-card-content>
+          <div *ngIf="currentSortingNote" class="sorting-note-current">
+            <p class="note-text">{{ currentSortingNote.text }}</p>
+            <div class="sorting-buttons">
+              <button mat-raised-button class="sort-pro-btn" (click)="sortNote('PRO')">
+                <mat-icon>thumb_up</mat-icon> {{ t('researchNotes.proLabel') }}
+              </button>
+              <button mat-raised-button class="sort-con-btn" (click)="sortNote('CON')">
+                <mat-icon>thumb_down</mat-icon> {{ t('researchNotes.conLabel') }}
+              </button>
+            </div>
+          </div>
+          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- PHASE 3: DECISION                                               -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="currentState === GameState.Phase3_Decision && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card decision-card" @fadeInOut>
+        <mat-card-title>{{ t('decision.title') }}</mat-card-title>
+        <mat-card-content>
+          <p *ngIf="!decisionMade" class="decision-instructions">{{ t('decision.instructions') }}</p>
+
+          <div *ngIf="!decisionMade" class="decision-summary">
+            <div class="summary-col pro-col">
+              <h4>{{ t('researchNotes.proLabel') }} ({{ sortedPro.length }})</h4>
+              <ul>
+                <li *ngFor="let noteId of sortedPro; trackBy: trackByIndex">{{ t('researchNotes.notes.' + noteId + '.text') }}</li>
+              </ul>
+            </div>
+            <div class="summary-col con-col">
+              <h4>{{ t('researchNotes.conLabel') }} ({{ sortedCon.length }})</h4>
+              <ul>
+                <li *ngFor="let noteId of sortedCon; trackBy: trackByIndex">{{ t('researchNotes.notes.' + noteId + '.text') }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div *ngIf="!decisionMade" class="decision-buttons">
+            <button mat-raised-button class="accept-btn" (click)="makeDecision('accept')">
+              <mat-icon>check_circle</mat-icon> {{ t('decision.acceptLabel') }}
+            </button>
+            <button mat-raised-button class="reject-btn" (click)="makeDecision('reject')">
+              <mat-icon>cancel</mat-icon> {{ t('decision.rejectLabel') }}
+            </button>
+          </div>
+
+          <div *ngIf="decisionMade" class="decision-feedback">
+            <p>{{ decisionFeedback }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions *ngIf="decisionMade">
+          <button mat-raised-button color="primary" (click)="completeGame()">{{ t('ui.continueButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- GAME COMPLETE OVERLAY                                           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('completion.message') }}</p>
+          <div *ngIf="puzzleScores.length > 0" class="score-summary">
+            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+            <p class="score-feedback">{{ scoreMessage }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Answer Reveal Overlay -->
+    <div *ngIf="showAnswerOverlay" class="overlay center">
+      <mat-card class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+        <mat-card-content>
+          <p class="answer-text">{{ answerOverlayText }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- DIALOGUE PANEL                                                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+      <div class="dialogue-content">
+        <div class="character-name">{{ activeDialogue.character }}</div>
+        <div class="dialogue-text">{{ displayedDialogueText }}</div>
+      </div>
+      <div class="dialogue-actions" *ngIf="!isTyping">
+        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+      </div>
+    </div>
+
+    <!-- Skip Puzzle Confirm -->
+    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
+      <mat-card class="skip-confirm-card" @fadeInOut>
+        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('skipConfirm.question') }}</p>
+          <p class="warning">{{ t('skipConfirm.warning') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

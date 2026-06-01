@@ -843,22 +843,20 @@ const ROOMS = {
   },
 
   'critical-thinking': {
-    // NO skip methods — test basic load + intro only
+    // Now has a state-aware skipPuzzle() (added for skip-everywhere parity).
     steps: [
-      // This room has no skip methods. We test what we can.
-      // Phase 1: Talk to Mark
-      { click: 'mark' },
-      // The conversation is too complex to fully automate without skip
-      // Verify the room at least loads and intro works
+      { call: 'skipPuzzle' }, { call: 'skipPuzzle' },
+      { call: 'skipPuzzle' }, { call: 'skipPuzzle' },
+      { click: 'exitDoor' },
     ]
   },
 
   'negotiation-skills': {
-    // NO skip methods — test basic load + intro only
+    // Now has a state-aware skipPuzzle() (added for skip-everywhere parity).
     steps: [
-      // This room has no skip methods.
-      { click: 'bilal' },
-      // Phase 1 conversation too complex without skip
+      { call: 'skipPuzzle' }, { call: 'skipPuzzle' },
+      { call: 'skipPuzzle' }, { call: 'skipPuzzle' },
+      { click: 'exitDoor' },
     ]
   },
 
@@ -968,7 +966,7 @@ try {
       const finalState = await getState(page);
 
       // Rooms without skip methods get a pass for loading successfully
-      const noSkipRooms = ['critical-thinking', 'negotiation-skills'];
+      const noSkipRooms = [];
       const isNoSkip = noSkipRooms.includes(roomId);
 
       if (completed) {
