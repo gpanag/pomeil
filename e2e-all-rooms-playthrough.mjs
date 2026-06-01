@@ -934,6 +934,18 @@ try {
     });
     page.on('pageerror', err => consoleErrors.push(`PAGE_ERROR: ${err.message}`));
 
+    // IMAGE AUDIT (layer a): flag any /assets/ image that fails to load during
+    // the full playthrough — i.e. a referenced-but-missing asset (404/broken).
+    const imageIssues = new Set();
+    page.on('response', res => {
+      try {
+        const u = res.url(), s = res.status();
+        if (s >= 400 && /\/assets\//.test(u) && /\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u)) {
+          imageIssues.add(`${u.split('/').pop().split('?')[0]} (${s})`);
+        }
+      } catch {}
+    });
+
     const deadline = Date.now() + TIMEOUT_PER_ROOM;
 
     try {
@@ -1011,6 +1023,11 @@ try {
       if (consoleErrors.length) {
         console.log(`  ⚠ Console errors: ${consoleErrors.length}`);
         consoleErrors.slice(0, 3).forEach(e => console.log(`    ${e.substring(0, 120)}`));
+      }
+
+      if (imageIssues.size) {
+        if (results[roomId]) results[roomId].imageIssues = [...imageIssues];
+        console.log(`  🖼  IMAGE 404s (${imageIssues.size}): ${[...imageIssues].slice(0, 8).join(', ')}`);
       }
 
     } catch (err) {
