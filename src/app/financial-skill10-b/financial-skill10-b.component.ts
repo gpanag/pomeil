@@ -55,7 +55,10 @@ const imagePaths = {
   drawerZoomed: '/assets/images/financial/drawer_zoomed.png',
   drawerZoomed_open: '/assets/images/financial/drawer_open.png',
   boxUnderDeskZoomed: '/assets/images/financial/box_under_desk.png',
-  boxUnderDeskZoomed_open: '/assets/images/financial/box_under_desk_open.png',
+  // TODO(image): the dedicated open-box render is missing (box_under_desk_open.png
+  // 404s). Fall back to the closed-box zoom so the box-open state isn't a broken
+  // image; replace with a generated open-box image when the GPU pipeline is run.
+  boxUnderDeskZoomed_open: '/assets/images/financial/box_under_desk.png',
   whiteboardZoomed: '/assets/images/financial/whiteboard_zoomed.png',
   safeBoxZoomed: '/assets/images/financial/safe_box_zoomed.png',
   budgetCard: '/assets/images/financial/budget_card.png',
