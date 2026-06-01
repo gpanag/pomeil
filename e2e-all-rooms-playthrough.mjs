@@ -372,10 +372,25 @@ const ROOMS = {
   },
   'strategic-thinking': {
     steps: [
-      { call: 'onCharacterClick', args: ['jake'] },
-      { call: 'skipPuzzle1' }, { call: 'onCharacterClick', args: ['sofia'] },
-      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
-      { call: 'onCharacterClick', args: ['sofia'] }, { call: 'onCharacterClick', args: ['sofia'] },
+      { call: 'onCharacterClick', args: ['jake'] },           // intro → FindNote
+      { click: 'rightCorkboard', wait: 3000 }, { click: 'blueNote' },
+      { call: 'closeBlueNote' }, { call: 'goBack' },
+      { click: 'leftCorkboard', wait: 3000 }, { click: 'blueNote' },   // try the other board too
+      { call: 'closeBlueNote' }, { call: 'goBack' },
+      { call: 'onCharacterClick', args: ['jake'] },           // NoteFound chain → Quiz
+      { call: 'skipPuzzle1' }, { call: 'closeQuizCompleteOverlay' },
+      { call: 'onCharacterClick', args: ['jake'] },           // → FindUsb
+      { call: 'onCharacterClick', args: ['sofia'] },          // Sofia explains the USB
+      { click: 'coffeeMachine', wait: 3000 }, { click: 'usb' },
+      { call: 'closeUsb' }, { call: 'goBack' },
+      { call: 'onCharacterClick', args: ['sofia'] },          // UsbFound → UsbFound_Part2
+      { click: 'laptop', wait: 3000 }, { click: 'openTraining' },
+      { call: 'closeTrainingFile' }, { call: 'goBack' },
+      { call: 'onCharacterClick', args: ['sofia'] },          // → matching puzzle
+      { call: 'skipPuzzle2' }, { call: 'closeMatchingCompleteOverlay' },
+      { call: 'onCharacterClick', args: ['sofia'] },          // → sequence puzzle
+      { call: 'skipPuzzle3' },
+      { call: 'onCharacterClick', args: ['sofia'] },          // AllQuestsComplete → door opens
       { click: 'exitDoor' },
     ]
   },
