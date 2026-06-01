@@ -1,0 +1,798 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Caveat&display=swap');
+
+:host {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cinematic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: #000;
+}
+
+.game-container {
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: var(--room-aspect-ratio, 1680 / 1024);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1472px) {
+  .game-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.scene-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* The background-image entry below is effectively a no-op because the
+     browser does not animate `background-image` between two URLs — the
+     property snaps. We keep it for the filter/transform transitions on
+     the same line. The actual hover crossfade is done via the ::after
+     pseudo-element below + the CSS variable --scene-hover-bg set from
+     onCharacterHover. */
+  transition: filter 0.5s ease-in-out,
+              background-image 0.2s linear,
+              transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+
+  &.blurred { filter: blur(8px) brightness(0.7); }
+
+  /* Character-hover crossfade.
+   *
+   * Two pseudo-element overlays (::before and ::after) stack on top of
+   * the base scene image. Each holds one character's hover variant and
+   * is faded independently via its own CSS variable.
+   *
+   * Why TWO layers? CSS does NOT transition `background-image` between
+   * URLs — the image swaps instantly. An earlier single-layer version
+   * was fine for default→hover (image swap on a layer at opacity 0 is
+   * invisible) but failed for charA→charB hovering: when the user
+   * moved the mouse straight from one character's hotspot to another,
+   * the URL swapped instantly on the visible (opacity 1) overlay and
+   * the user saw a hard image cut even though opacity was transitioning.
+   *
+   * With two layers we alternate: hover charA writes to layer A and
+   * fades A in (B at 0). Hover charB writes to layer B (not A — A
+   * still holds A_img) and fades B in WHILE fading A out. The two
+   * transitions overlap, so the user sees a real crossfade between
+   * A_img and B_img with no instant URL swap on a visible surface.
+   *
+   * Driven by four CSS custom properties set on <html> from
+   * onCharacterHover/onCharacterLeave. We set them on documentElement
+   * because Angular's emulated encapsulation would eat a body-class
+   * selector (an earlier `body.scene-hovering` attempt did exactly
+   * that). */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 600ms with Material's standard ease. Shorter durations (we tried
+       280ms) read as a hard cut because the only visual delta between
+       default and hover is the character's pose — without enough time
+       the eye doesn't register the transition as motion. */
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+  &::before {
+    background-image: var(--scene-hover-bg-a);
+    opacity: var(--scene-hover-opacity-a, 0);
+  }
+  &::after {
+    background-image: var(--scene-hover-bg-b);
+    opacity: var(--scene-hover-opacity-b, 0);
+  }
+}
+
+.escape-rooms-back-button {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 25;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.hint-button {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  z-index: 20;
+  /* Subtle ambient pulse so the player always knows help is one click away */
+  animation: hint-button-pulse 3s ease-in-out infinite;
+  &:hover { animation: none; }
+}
+
+@keyframes hint-button-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 220, 100, 0); }
+  50%      { box-shadow: 0 0 18px 6px rgba(255, 220, 100, 0.45); }
+}
+
+/* --- Idle escalation ---------------------------------------------------
+   EscapeRoomBaseComponent toggles `.idle-hint-attention` on the room host
+   once the player has been inactive for a while (no click / tap / key-press
+   inside the room — moving the mouse alone does not count) and the game is
+   waiting on them. The gentle ambient
+   pulse is then replaced by a stronger, unmistakable "help is here" cue —
+   a bell-style wiggle plus a brighter expanding glow — so a stuck player is
+   nudged toward the hint button. Reverts the instant they move the pointer
+   or press the button. Higher specificity than `.hint-button` above, so it
+   overrides the ambient animation while active. */
+:host(.idle-hint-attention) .hint-button {
+  animation: hint-button-idle 1.8s ease-in-out infinite;
+  &:hover { animation: none; }
+}
+
+@keyframes hint-button-idle {
+  0%   { transform: scale(1)    rotate(0deg);   box-shadow: 0 0 0 0      rgba(255, 213, 79, 0); }
+  8%   { transform: scale(1.14) rotate(-12deg); }
+  18%  { transform: scale(1.14) rotate(10deg); }
+  28%  { transform: scale(1.14) rotate(-8deg); }
+  38%  { transform: scale(1.14) rotate(6deg);   box-shadow: 0 0 26px 10px rgba(255, 213, 79, 0.75); }
+  52%  { transform: scale(1.07) rotate(0deg);   box-shadow: 0 0 32px 14px rgba(255, 213, 79, 0.30); }
+  100% { transform: scale(1)    rotate(0deg);   box-shadow: 0 0 0 0      rgba(255, 213, 79, 0); }
+}
+
+/* Motion-sensitive players: keep the attention cue but drop the wiggle —
+   pulse the glow only. */
+@keyframes hint-button-idle-reduced {
+  0%, 100% { box-shadow: 0 0 0 0       rgba(255, 213, 79, 0); }
+  50%      { box-shadow: 0 0 28px 12px rgba(255, 213, 79, 0.8); }
+}
+@media (prefers-reduced-motion: reduce) {
+  :host(.idle-hint-attention) .hint-button {
+    animation-name: hint-button-idle-reduced;
+  }
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 20;
+  /* Bigger / thicker per MMC Mavis feedback (2026-05-09). mat-icon-button
+     defaults to 40×40; we bump to 56×56 with a 32px icon and a translucent
+     dark backplate so the control reads against any scene. */
+  width: 56px !important;
+  height: 56px !important;
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 2px solid rgba(255, 255, 255, 0.65) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: background 0.15s ease, transform 0.15s ease;
+
+  mat-icon {
+    font-size: 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.55) !important;
+    transform: scale(1.06);
+  }
+}
+
+.learning-score-panel {
+  position: absolute;
+  top: 70px;
+  right: 12px;
+  z-index: 20;
+  background-color: rgba(10, 10, 30, 0.75);
+  border: 1px solid rgba(128, 128, 255, 0.4);
+  border-radius: 10px;
+  padding: 8px 14px;
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  min-width: 110px;
+  text-align: center;
+
+  .score-panel-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #99aaff;
+    margin-bottom: 4px;
+  }
+
+  .score-panel-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 2px;
+
+    mat-icon {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+      color: #99aaff;
+    }
+  }
+
+  .score-panel-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #88ffaa;
+
+    &.no-score {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 400;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 100, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 10px 20px rgba(255, 255, 100, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 100, 0); }
+}
+
+.character-hotspot {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 12px;
+  /* No ambient animation — earlier the hotspot pulsed yellow continuously
+     to advertise "this character is interactive", but it used the same
+     colour/glow as @keyframes pulse and players read it as "the hint
+     system is firing on its own" (reported 2026-05-11 from
+     active-listening). Discoverability now relies on cursor:pointer +
+     the hover state below, matching how the .hotspot rule (items)
+     already behaves. The hint pulse still fires from .show-hint-pulse
+     when the player presses the lightbulb button. */
+  /* Per 2026-05-11 feedback: hotspots should produce a visible box ONLY
+     when the player presses the hint button. The previous hover state
+     (yellow tint + glow on character; white tint on item) was reading
+     as an ambient indicator. Discoverability now comes purely from
+     cursor:pointer (characters) / cursor:zoom-in (items) and — for
+     characters — the JS-driven image swap to the "hover" variant via
+     onCharacterHover. No CSS box on hover. */
+  &.show-hint-pulse { animation: pulse 1.5s infinite; }
+}
+
+.hotspot {
+  position: absolute;
+  cursor: zoom-in;
+  border-radius: 10px;
+  /* See .character-hotspot note above — no CSS highlight on hover. */
+  &.show-hint-pulse { animation: pulse 1.5s infinite; }
+}
+
+/* Zoom-view hotspot — always visible with pulsing glow so player knows to click */
+.zoom-hotspot {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 180, 0.6);
+  background-color: rgba(255, 255, 180, 0.08);
+  animation: zoom-hotspot-pulse 2s ease-in-out infinite;
+  z-index: 10;
+
+  &::after {
+    content: 'Click to examine';
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 13px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4px 12px;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+}
+
+@keyframes zoom-hotspot-pulse {
+  0% { box-shadow: 0 0 8px 2px rgba(255, 255, 180, 0.3); border-color: rgba(255, 255, 180, 0.6); }
+  50% { box-shadow: 0 0 20px 8px rgba(255, 255, 180, 0.5); border-color: rgba(255, 255, 180, 0.9); }
+  100% { box-shadow: 0 0 8px 2px rgba(255, 255, 180, 0.3); border-color: rgba(255, 255, 180, 0.6); }
+}
+
+.hotspot-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &.disable-clicks {
+    pointer-events: none;
+  }
+}
+
+.back-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 20;
+  /* The arrow rendered primary-on-primary (teal icon on the teal FAB) because
+     the global `.mat-primary mat-icon` override forces icons to --sys-primary.
+     Force an on-primary (white) arrow so the zoom-out button is clearly visible. */
+  mat-icon { color: var(--sys-on-primary, #fff) !important; }
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  padding: 4rem;
+  box-sizing: border-box;
+  z-index: 60;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.quiz-overlay-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  box-sizing: border-box;
+  z-index: 60;
+  pointer-events: none;
+
+  &.top-left      { justify-content: flex-start; align-items: flex-start; }
+  &.top-center    { justify-content: flex-start; align-items: center;   }
+  &.top-right     { justify-content: flex-start; align-items: flex-end;   }
+  &.center-left   { justify-content: center;     align-items: flex-start; }
+  &.center        { justify-content: center;     align-items: center;   }
+  &.center-right  { justify-content: center;     align-items: flex-end;   }
+  &.bottom-left   { justify-content: flex-end;     align-items: flex-start; }
+  &.bottom-center { justify-content: flex-end;     align-items: center;   }
+  &.bottom-right  { justify-content: flex-end;     align-items: flex-end;   }
+}
+
+.sticky-note-popup {
+  width: 90%;
+  height: 90%;
+  max-width: 1200px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    user-select: none;
+  }
+}
+
+/* --- Style for HTML Paper --- */
+.paper-popup {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 1000px;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 8%;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+  color: #222;
+
+  .paper-content {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    ol {
+      padding-left: 2rem;
+    }
+
+    li {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* --- Item Popup Base (shared layout for stones/fabric/training file/document overlays) --- */
+.item-popup-base {
+  width: 85%;
+  max-width: 1000px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+
+  img {
+    width: 40%;
+    min-width: 250px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+  .text-content {
+    flex: 1;
+    overflow-y: auto;
+    text-align: left;
+
+    h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #222;
+    }
+
+    p {
+      margin: 0.75rem 0;
+      color: #333;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.quiz-card {
+  max-width: 500px; text-align: center;
+  padding: 1rem;
+  pointer-events: auto;
+
+  .question { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0; }
+  .feedback-wrong { color: #e74c3c; font-style: italic; }
+  .score-summary { text-align: center; margin: 1rem 0; }
+  .score-label { font-size: 1.2rem; }
+  .score-feedback { font-size: 0.95rem; color: rgba(0,0,0,0.7); font-style: italic; margin-top: 0.5rem; }
+  mat-card-actions { justify-content: center; gap: 1rem; }
+
+  .intro-text {
+    text-align: left;
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+  }
+
+  /* Fullscreen tip shown below the intro button — scoped to the intro
+     popup only (per MMC Mavis 2026-05-09: it was leaking into puzzle
+     overlays before because the selector was on every .quiz-card). */
+  &.intro-popup-card mat-card-actions::after {
+    content: 'Tip: Use the fullscreen button (top-right corner) for the best experience.';
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* Intro popup "Start Game" / "Enter the X" button must not wrap to two
+     lines even when the label is long (e.g. "Enter the Customer Service
+     Department"). */
+  &.intro-popup-card mat-card-actions button {
+    white-space: nowrap;
+    min-width: 200px;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+/* --- Skip Puzzle Button --- */
+.skip-puzzle-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: unset !important;
+  padding: 4px 12px !important;
+  font-size: 0.75rem !important;
+  opacity: 0.7;
+  &:hover { opacity: 1; }
+}
+
+/* --- Skip Confirm Overlay --- */
+.skip-confirm-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+
+  .skip-confirm-card {
+    max-width: 400px;
+    text-align: center;
+    padding: 1.5rem;
+
+    p { margin: 1rem 0; font-size: 1.1rem; }
+    .warning { color: #e74c3c; font-weight: 600; }
+    mat-card-actions { justify-content: center; gap: 1rem; }
+  }
+}
+
+/* --- Style for Sequence Puzzle --- */
+.wide-card {
+  max-width: 700px !important;
+}
+.sequence-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+.sequence-box {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-height: 250px;
+
+  strong {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  &.options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    white-space: normal;
+    line-height: 1.4;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .placeholder-text {
+    color: #888;
+    font-style: italic;
+  }
+
+  .sequence-item {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+  }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+.shake-animation {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.dialogue-panel {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  right: 5%;
+  min-height: 25%;
+  background-color: rgba(20, 20, 30, 0.85);
+  border: 2px solid rgba(128, 128, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  padding: 1.5rem;
+  color: #f0f0f0;
+  z-index: 50;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .dialogue-content {
+    .character-name {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #99aaff;
+      margin-bottom: 0.5rem;
+    }
+    .dialogue-text {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+
+  .dialogue-actions {
+    align-self: flex-end;
+    margin-top: 1rem;
+    cursor: default;
+    display: flex;
+    gap: 1rem;
+
+    & > * {
+      cursor: pointer;
+    }
+  }
+}
+
+/* --- Inventory Bar --- */
+.inventory-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  button {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  mat-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.preload-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-content {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+
+  .loading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.quiz-button {
+  height: auto;
+  min-height: 24px;
+}
+
+/* --- Matching Layout --- */
+.matching-layout {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+  text-align: left;
+
+  .cue-column, .option-column, .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h4 { text-align: center; margin-bottom: 1rem; }
+    button {
+      text-align: left;
+      justify-content: flex-start;
+      white-space: normal;
+      height: auto;
+      padding: 10px;
+
+      &.selected { background-color: #e3f2fd; border: 2px solid #2196f3; }
+      mat-icon { margin-left: auto; color: green; }
+    }
+  }
+}
+
+/* --- Gap Sentence --- */
+.gap-sentence {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+
+  .gap {
+    display: inline-block;
+    min-width: 80px;
+    padding: 2px 8px;
+    border-bottom: 2px solid #1976d2;
+    font-weight: 600;
+    color: #1976d2;
+    text-align: center;
+  }
+}
+
+/* --- Word Bank --- */
+.word-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+/* --- Options Vertical --- */
+.options-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+
+  button {
+    text-align: left;
+    justify-content: flex-start;
+    height: auto !important;
+    min-height: 40px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    white-space: normal !important;
+    line-height: 1.4;
+    word-break: break-word;
+
+    ::ng-deep .mdc-button__label {
+      white-space: normal !important;
+      text-align: left;
+      line-height: 1.4;
+    }
+  }
+}
