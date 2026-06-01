@@ -337,6 +337,76 @@ async function runSteps(page, roomId, steps) {
 
 const ROOMS = {
 
+  // ─── INITIAL 6 (characters use onCharacterClick; have skipPuzzle1/2/3) ───
+
+  'cultural-awareness': {
+    steps: [
+      { call: 'onCharacterClick', args: ['hrManager'] },  // intro chain → FindNote
+      { click: 'rightBoard', wait: 3000 },                // zoom right board
+      { click: 'note' },                                  // find note
+      { call: 'closeNote' },                              // → NoteFound
+      { call: 'goBack' },                                 // back to main view
+      { call: 'onCharacterClick', args: ['hrManager'] },  // NoteFound chain → Quiz
+      { call: 'skipPuzzle1' },                            // → QuizComplete + overlay
+      { call: 'closeQuizCompleteOverlay' },              // close overlay
+      { call: 'onCharacterClick', args: ['hrManager'] },  // QuizComplete chain → FindPaper
+      { call: 'onCharacterClick', args: ['colleague'] },  // Jun → laptop hint (hasLaptopHint)
+      { click: 'laptop' },                                // find paper
+      { call: 'closePaper' },                             // → PaperFound
+      { call: 'onCharacterClick', args: ['hrManager'] },  // PaperFound chain → PuzzleTwo
+      { call: 'skipPuzzle2' },                            // → PuzzleThree
+      { call: 'skipPuzzle3' },                            // → AllQuestsComplete + dialogue
+      { call: 'onCharacterClick', args: ['hrManager'] },  // AllQuests chain → door opens
+      { click: 'exitDoor' },                              // complete
+    ]
+  },
+
+  'financial': {
+    steps: [
+      { call: 'onCharacterClick', args: ['amina'] },
+      { call: 'skipPuzzle1' }, { call: 'onCharacterClick', args: ['amina'] },
+      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
+      { call: 'onCharacterClick', args: ['amina'] }, { call: 'onCharacterClick', args: ['amina'] },
+      { click: 'exitDoor' },
+    ]
+  },
+  'strategic-thinking': {
+    steps: [
+      { call: 'onCharacterClick', args: ['jake'] },
+      { call: 'skipPuzzle1' }, { call: 'onCharacterClick', args: ['sofia'] },
+      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
+      { call: 'onCharacterClick', args: ['sofia'] }, { call: 'onCharacterClick', args: ['sofia'] },
+      { click: 'exitDoor' },
+    ]
+  },
+  'open-mindedness': {
+    steps: [
+      { call: 'onCharacterClick', args: ['karina'] },
+      { call: 'skipPuzzle1' }, { call: 'onCharacterClick', args: ['karina'] },
+      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
+      { call: 'onCharacterClick', args: ['karina'] }, { call: 'onCharacterClick', args: ['karina'] },
+      { click: 'exitDoor' },
+    ]
+  },
+  'stress-management': {
+    steps: [
+      { click: 'kevin' },
+      { call: 'skipPuzzle1' }, { click: 'kevin' },
+      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
+      { click: 'kevin' }, { click: 'kevin' },
+      { click: 'exitDoor' },
+    ]
+  },
+  'empathy': {
+    steps: [
+      { click: 'coach' },
+      { call: 'skipPuzzle1' }, { click: 'coach' },
+      { call: 'skipPuzzle2' }, { call: 'skipPuzzle3' },
+      { click: 'coach' }, { click: 'coach' },
+      { click: 'exitDoor' },
+    ]
+  },
+
   // ─── GROUP 1: Standard 3-puzzle rooms (single guide) ───
 
   'flexibility': {
