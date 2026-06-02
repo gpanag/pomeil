@@ -1,0 +1,501 @@
+<div class="cinematic-container">
+
+  <div *ngIf="isPreloading" class="preload-overlay">
+    <div class="loading-content">
+      <div class="loading-text">{{ t('loading') }}</div>
+    </div>
+  </div>
+
+  <div *ngIf="isIntroPopupVisible" class="overlay center">
+    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+      <mat-card-content class="intro-text">
+        <p>{{ t('intro.paragraphs.0') }}</p>
+        <p>{{ t('intro.paragraphs.1') }}</p>
+        <p>{{ t('intro.paragraphs.2') }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="game-container">
+
+    <div class="scene-background"
+         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+         [ngStyle]="zoomStyle"
+         [class.blurred]="(isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible || guidelinesPromptVisible || showPrivacyGuidelines">
+    </div>
+
+    <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
+      <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+    </button>
+
+    <div *ngIf="isLearningMode" class="learning-score-panel">
+      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+      <div class="score-panel-progress">
+        <mat-icon>emoji_events</mat-icon>
+        <span>{{ completedPuzzleCount }} / 3 {{ t('learning.puzzlesWord') }}</span>
+      </div>
+      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+      </div>
+    </div>
+
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !isQuizActive">
+      <mat-icon>lightbulb</mat-icon>
+    </button>
+    <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
+    <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
+
+    <button *ngIf="currentView !== 'main' && !activeDialogue && !isQuizActive" mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <!-- Hotspot Layer -->
+    <div class="hotspot-layer"
+         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || isQuizActive"
+         *ngIf="!isIntroPopupVisible && !isQuizActive && !isGameCompleteOverlayVisible">
+
+      <ng-container *ngIf="currentView === 'main'">
+        <!-- Filing Cabinet -->
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints && !puzzle2Done"
+             [style.left.%]="hotspots.main.cabinet.x" [style.top.%]="hotspots.main.cabinet.y"
+             [style.width.%]="hotspots.main.cabinet.width" [style.height.%]="hotspots.main.cabinet.height"
+             (click)="onHotspotClick('cabinet')"></div>
+
+        <!-- Interactive Objects (rendered first so character hotspots stay on top in overlapping areas) -->
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.rubberDuck.x" [style.top.%]="hotspots.main.rubberDuck.y"
+             [style.width.%]="hotspots.main.rubberDuck.width" [style.height.%]="hotspots.main.rubberDuck.height"
+             (click)="onHotspotClick('rubberDuck')"></div>
+
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.coffeeMachine.x" [style.top.%]="hotspots.main.coffeeMachine.y"
+             [style.width.%]="hotspots.main.coffeeMachine.width" [style.height.%]="hotspots.main.coffeeMachine.height"
+             (click)="onHotspotClick('coffeeMachine')"></div>
+
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.notebook.x" [style.top.%]="hotspots.main.notebook.y"
+             [style.width.%]="hotspots.main.notebook.width" [style.height.%]="hotspots.main.notebook.height"
+             (click)="onHotspotClick('notebook')"></div>
+
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.deerPoster.x" [style.top.%]="hotspots.main.deerPoster.y"
+             [style.width.%]="hotspots.main.deerPoster.width" [style.height.%]="hotspots.main.deerPoster.height"
+             (click)="onHotspotClick('deerPoster')"></div>
+
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.naturePoster.x" [style.top.%]="hotspots.main.naturePoster.y"
+             [style.width.%]="hotspots.main.naturePoster.width" [style.height.%]="hotspots.main.naturePoster.height"
+             (click)="onHotspotClick('naturePoster')"></div>
+
+        <div class="hotspot small-hotspot"
+             [style.left.%]="hotspots.main.bearPoster.x" [style.top.%]="hotspots.main.bearPoster.y"
+             [style.width.%]="hotspots.main.bearPoster.width" [style.height.%]="hotspots.main.bearPoster.height"
+             (click)="onHotspotClick('bearPoster')"></div>
+
+        <!-- Characters (rendered last so they take priority in overlap zones) -->
+        <div class="character-hotspot"
+             [class.show-hint-pulse]="showHints && !puzzle1Done"
+             [style.left.%]="hotspots.main.peter.x" [style.top.%]="hotspots.main.peter.y"
+             [style.width.%]="hotspots.main.peter.width" [style.height.%]="hotspots.main.peter.height"
+             (click)="onHotspotClick('peter')"
+             (mouseenter)="onCharacterHover('peter')"
+             (mouseleave)="onCharacterLeave()"></div>
+
+        <div class="character-hotspot"
+             [class.show-hint-pulse]="showHints && puzzle2Done && !puzzle3Done"
+             [style.left.%]="hotspots.main.simone.x" [style.top.%]="hotspots.main.simone.y"
+             [style.width.%]="hotspots.main.simone.width" [style.height.%]="hotspots.main.simone.height"
+             (click)="onHotspotClick('simone')"
+             (mouseenter)="onCharacterHover('simone')"
+             (mouseleave)="onCharacterLeave()"></div>
+
+        <!-- Exit Door -->
+        <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
+          <div class="hotspot"
+               [class.show-hint-pulse]="showHints"
+               [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+               [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+               (click)="onHotspotClick('exitDoor')"></div>
+        </ng-container>
+      </ng-container>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- Guidelines Prompt Overlay -->
+    <!-- ===================================== -->
+    <div *ngIf="guidelinesPromptVisible && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.customerRegistry.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('systemDialogues.guidelinesPrompt') }}</p>
+        </mat-card-content>
+        <mat-card-actions class="actions-row">
+          <button mat-raised-button color="primary" (click)="startRegistry(true)">{{ t('puzzles.customerRegistry.readGuidelinesButton') }}</button>
+          <button mat-stroked-button (click)="startRegistry(false)">{{ t('puzzles.customerRegistry.startWithoutButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- Privacy Guidelines Overlay -->
+    <!-- ===================================== -->
+    <div *ngIf="showPrivacyGuidelines && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.customerRegistry.privacyGuidelines.' + privacyGuidelineStep + '.title') }}</mat-card-title>
+        <mat-card-content>
+          <p class="guidelines-text">{{ t('puzzles.customerRegistry.privacyGuidelines.' + privacyGuidelineStep + '.content') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="nextGuidelinePage()">
+            {{ privacyGuidelineStep < 4 ? t('ui.continueButton') : t('puzzles.customerRegistry.startSortingButton') }}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- PUZZLE 1: Customer Complaint Call -->
+    <!-- ===================================== -->
+    <div *ngIf="currentState === GameState.Puzzle1_ComplaintCall && !activeDialogue" class="overlay center">
+
+      <!-- Active Call UI -->
+      <mat-card *ngIf="!callFailed && !callSuccess" class="quiz-card wide-card call-card" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle1.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>
+          <mat-icon class="call-icon">phone_in_talk</mat-icon>
+          {{ t('puzzles.complaintCall.title') }}
+        </mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.complaintCall.instructions') }}</mat-card-subtitle>
+
+        <!-- Mood Bar -->
+        <div class="mood-bar-container">
+          <span class="mood-label">{{ t('puzzles.complaintCall.moodLabel') }}</span>
+          <mat-progress-bar [value]="moodPercentage" [color]="moodColor" mode="determinate"></mat-progress-bar>
+          <div class="mood-icons">
+            <mat-icon>sentiment_very_dissatisfied</mat-icon>
+            <mat-icon>sentiment_neutral</mat-icon>
+            <mat-icon>sentiment_very_satisfied</mat-icon>
+          </div>
+        </div>
+
+        <mat-card-content>
+          <!-- On Hold -->
+          <div *ngIf="callOnHold" class="call-hold-section">
+            <div class="customer-bubble">
+              <strong>{{ t('speakers.customer') }}</strong> {{ t('puzzles.complaintCall.holdResponse') }}
+            </div>
+            <button mat-raised-button color="primary" (click)="returnFromHold()">{{ t('ui.continueButton') }}</button>
+          </div>
+
+          <!-- Normal conversation -->
+          <ng-container *ngIf="!callOnHold">
+            <!-- Showing branch (customer reply + user follow-up) -->
+            <div *ngIf="callShowingBranch && callBranchType" class="call-branch-section">
+              <div class="customer-bubble" *ngIf="callBranchStep >= 0">
+                <strong>{{ t('speakers.customer') }}</strong> {{ t('puzzles.complaintCall.stages.' + callStage + '.customerReplies.' + callBranchType) }}
+              </div>
+              <div class="user-bubble" *ngIf="callBranchStep >= 1">
+                <strong>{{ t('speakers.you') }}</strong> {{ t('puzzles.complaintCall.stages.' + callStage + '.userFollowUp.' + callBranchType) }}
+              </div>
+              <button mat-raised-button color="primary" (click)="advanceCallBranch()">{{ t('ui.continueButton') }}</button>
+            </div>
+
+            <!-- Choosing response -->
+            <div *ngIf="!callShowingBranch">
+              <div class="customer-bubble">
+                <strong>{{ t('speakers.customer') }}</strong> {{ callCustomerStatement }}
+              </div>
+              <div class="call-options">
+                <button mat-stroked-button *ngFor="let opt of callOptions; trackBy: trackByKey"
+                        class="call-option-btn"
+                        (click)="selectCallOption(opt.key)">
+                  {{ opt.text }}
+                </button>
+              </div>
+            </div>
+          </ng-container>
+        </mat-card-content>
+
+        <!-- Hold Button -->
+        <mat-card-actions *ngIf="!callOnHold && !callShowingBranch">
+          <button mat-stroked-button color="warn" (click)="putOnHold()" [matTooltip]="t('puzzles.complaintCall.holdWarning')">
+            <mat-icon>pause</mat-icon> {{ t('puzzles.complaintCall.holdButton') }}
+          </button>
+          <span class="hold-count" *ngIf="callHoldCount > 0">Hold used: {{ callHoldCount }}/2</span>
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Failure Screen -->
+      <mat-card *ngIf="callFailed" class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.complaintCall.failure.title') }}</mat-card-title>
+        <mat-card-content>
+          <p class="call-result-text">{{ t('puzzles.complaintCall.failure.message') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="retryCall()">{{ t('puzzles.complaintCall.failure.retryButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Success Screen -->
+      <mat-card *ngIf="callSuccess" class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.complaintCall.success.title') }}</mat-card-title>
+        <mat-card-content>
+          <p class="call-result-text">{{ t('puzzles.complaintCall.success.message') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="endCall()">{{ t('puzzles.complaintCall.success.continueButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- PUZZLE 2: Customer Registry -->
+    <!-- ===================================== -->
+    <div *ngIf="currentState === GameState.Puzzle2_CustomerRegistry && !activeDialogue" class="overlay center">
+
+      <!-- All files complete -->
+      <mat-card *ngIf="registryAllFilesComplete" class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.customerRegistry.completion.title') }}</mat-card-title>
+        <mat-card-content>
+          <p class="registry-completion-text">{{ t('puzzles.customerRegistry.completion.message') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeRegistry()">{{ t('ui.closeButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Active file sorting -->
+      <mat-card *ngIf="!registryAllFilesComplete && currentCustomerFile" class="quiz-card registry-card" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle2.bind(this))">{{ t('ui.skipButton') }}</button>
+        <!-- File Header -->
+        <mat-card-title class="registry-header">
+          <span>{{ currentCustomerFile.name }}</span>
+          <span class="file-type">{{ currentCustomerFile.type }}</span>
+        </mat-card-title>
+        <mat-card-subtitle>
+          GDPR Consent: {{ currentCustomerFile.consent }}
+          <span *ngIf="currentCustomerFile.consentDetails"
+                class="consent-info"
+                [matTooltip]="currentCustomerFile.consentDetails"
+                matTooltipPosition="below">
+            <mat-icon class="info-icon">info</mat-icon>
+          </span>
+          <span class="file-counter">(File {{ currentFileIndex + 1 }} of {{ customerFiles.length }})</span>
+        </mat-card-subtitle>
+
+        <!-- Explanation view -->
+        <mat-card-content *ngIf="registryShowExplanation">
+          <h3 class="explanation-title">{{ currentCustomerFile.explanation.title }}</h3>
+
+          <div class="explanation-section" (click)="showKeepDetails = !showKeepDetails">
+            <h4><mat-icon>{{ showKeepDetails ? 'expand_less' : 'expand_more' }}</mat-icon> {{ currentCustomerFile.explanation.keepTitle }}</h4>
+            <p *ngIf="showKeepDetails" class="explanation-content">{{ currentCustomerFile.explanation.keepContent }}</p>
+          </div>
+
+          <div class="explanation-section" (click)="showEraseDetails = !showEraseDetails">
+            <h4><mat-icon>{{ showEraseDetails ? 'expand_less' : 'expand_more' }}</mat-icon> {{ currentCustomerFile.explanation.eraseTitle }}</h4>
+            <p *ngIf="showEraseDetails" class="explanation-content">{{ currentCustomerFile.explanation.eraseContent }}</p>
+          </div>
+
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="nextCustomerFile()">
+              {{ currentFileIndex < customerFiles.length - 1 ? t('puzzles.customerRegistry.nextFileButton') : t('ui.continueButton') }}
+            </button>
+          </mat-card-actions>
+        </mat-card-content>
+
+        <!-- Sorting view -->
+        <mat-card-content *ngIf="!registryShowExplanation">
+          <div class="registry-columns">
+            <!-- Unsorted Column -->
+            <div class="registry-column unsorted-column">
+              <h4>Unsorted ({{ unsortedColumn.length }})</h4>
+              <div class="drop-zone" cdkDropList [cdkDropListData]="unsortedColumn"
+                   (cdkDropListDropped)="onRegistryDrop($event)"
+                   [cdkDropListConnectedTo]="['keepList', 'eraseList']"
+                   id="unsortedList">
+                <div class="registry-item" *ngFor="let item of unsortedColumn; trackBy: trackById"
+                     cdkDrag [cdkDragDisabled]="!canDragItem(item)">
+                  <div class="item-type">{{ item.type }}</div>
+                  <div class="item-content">{{ item.content }}</div>
+                  <mat-icon cdkDragHandle class="drag-handle">drag_indicator</mat-icon>
+                </div>
+              </div>
+            </div>
+
+            <!-- Keep Column -->
+            <div class="registry-column keep-column">
+              <h4 class="keep-label">
+                <mat-icon>check_circle</mat-icon> {{ t('puzzles.customerRegistry.keepColumn') }} ({{ keepColumn.length }})
+              </h4>
+              <div class="drop-zone keep-zone" cdkDropList [cdkDropListData]="keepColumn"
+                   (cdkDropListDropped)="onRegistryDrop($event)"
+                   [cdkDropListConnectedTo]="['unsortedList', 'eraseList']"
+                   id="keepList">
+                <div class="registry-item keep-item" *ngFor="let item of keepColumn; trackBy: trackById"
+                     cdkDrag [cdkDragDisabled]="!canDragItem(item)"
+                     [class.locked]="lockedCorrectIds.has(item.id)">
+                  <div class="item-type">{{ item.type }}</div>
+                  <div class="item-content">{{ item.content }}</div>
+                  <mat-icon *ngIf="!lockedCorrectIds.has(item.id)" cdkDragHandle class="drag-handle">drag_indicator</mat-icon>
+                  <mat-icon *ngIf="lockedCorrectIds.has(item.id)" class="lock-icon">lock</mat-icon>
+                </div>
+              </div>
+            </div>
+
+            <!-- Erase Column -->
+            <div class="registry-column erase-column">
+              <h4 class="erase-label">
+                <mat-icon>delete</mat-icon> {{ t('puzzles.customerRegistry.eraseColumn') }} ({{ eraseColumn.length }})
+              </h4>
+              <div class="drop-zone erase-zone" cdkDropList [cdkDropListData]="eraseColumn"
+                   (cdkDropListDropped)="onRegistryDrop($event)"
+                   [cdkDropListConnectedTo]="['unsortedList', 'keepList']"
+                   id="eraseList">
+                <div class="registry-item erase-item" *ngFor="let item of eraseColumn; trackBy: trackById"
+                     cdkDrag [cdkDragDisabled]="!canDragItem(item)"
+                     [class.locked]="lockedCorrectIds.has(item.id)">
+                  <div class="item-type">{{ item.type }}</div>
+                  <div class="item-content">{{ item.content }}</div>
+                  <mat-icon *ngIf="!lockedCorrectIds.has(item.id)" cdkDragHandle class="drag-handle">drag_indicator</mat-icon>
+                  <mat-icon *ngIf="lockedCorrectIds.has(item.id)" class="lock-icon">lock</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="registryFeedback" class="feedback-wrong registry-feedback">{{ registryFeedback }}</div>
+
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="saveRegistryEdits()"
+                    [disabled]="unsortedColumn.length > 0">
+              {{ t('puzzles.customerRegistry.saveEditsButton') }}
+            </button>
+          </mat-card-actions>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- PUZZLE 3: Feedback Survey -->
+    <!-- ===================================== -->
+    <div *ngIf="currentState === GameState.Puzzle3_FeedbackSurvey && !activeDialogue" class="overlay center">
+
+      <!-- Question Selection -->
+      <mat-card *ngIf="!surveyComplete" class="quiz-card wide-card" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle3.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>{{ t('puzzles.feedbackSurvey.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.feedbackSurvey.instructions') }} ({{ currentSurveyQuestion + 1 }}/9)</mat-card-subtitle>
+        <mat-card-content>
+          <div class="survey-options">
+            <button mat-stroked-button class="survey-option-btn"
+                    (click)="selectSurveyOption(true)">
+              {{ surveyQuestions[currentSurveyQuestion].optionA }}
+            </button>
+            <div class="survey-vs">OR</div>
+            <button mat-stroked-button class="survey-option-btn"
+                    (click)="selectSurveyOption(false)">
+              {{ surveyQuestions[currentSurveyQuestion].optionB }}
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Survey Results -->
+      <mat-card *ngIf="surveyComplete" class="quiz-card wide-card survey-results-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.feedbackSurvey.resultTitle') }}</mat-card-title>
+        <mat-card-content>
+          <p *ngIf="puzzle3TotalWrong === 0">{{ t('puzzles.feedbackSurvey.allCorrectMessage') }}</p>
+          <p *ngIf="puzzle3TotalWrong > 0">{{ t('puzzles.feedbackSurvey.someWrongMessage') }}</p>
+
+          <div class="survey-result-list">
+            <div *ngFor="let answer of surveyAnswers; let i = index; trackBy: trackByIndex"
+                 class="survey-result-item"
+                 [class.correct]="answer"
+                 [class.wrong]="!answer"
+                 (click)="!answer ? toggleExplanation(i) : null">
+              <div class="result-number">Q{{ i + 1 }}</div>
+              <div class="result-text">{{ surveySelectedQuestions[i] }}</div>
+              <mat-icon *ngIf="answer" class="result-icon correct-icon">check_circle</mat-icon>
+              <mat-icon *ngIf="!answer" class="result-icon wrong-icon">help_outline</mat-icon>
+              <div *ngIf="!answer && expandedExplanationIndex === i" class="result-explanation">
+                <p><strong>{{ t('puzzles.betterQuestion') }}</strong> {{ surveyCorrectQuestions[i] }}</p>
+                <p>{{ surveyExplanations[i] }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeSurvey()">{{ t('ui.closeButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Game Complete Overlay -->
+    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('completion.message') }}</p>
+          <div *ngIf="puzzleScores.length > 0" class="score-summary">
+            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+            <p class="score-feedback">{{ scoreMessage }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Answer Reveal Overlay -->
+    <div *ngIf="showAnswerOverlay" class="overlay center">
+      <mat-card class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+        <mat-card-content>
+          <p class="answer-text">{{ answerOverlayText }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Dialogue Panel -->
+    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+      <div class="dialogue-content">
+        <div class="character-name">{{ activeDialogue.character }}</div>
+        <div class="dialogue-text">{{ displayedDialogueText }}</div>
+      </div>
+      <div class="dialogue-actions" *ngIf="!isTyping">
+        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+      </div>
+    </div>
+
+    <!-- Skip Puzzle Confirm -->
+    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
+      <mat-card class="skip-confirm-card" @fadeInOut>
+        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('skipConfirm.question') }}</p>
+          <p class="warning">{{ t('skipConfirm.warning') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

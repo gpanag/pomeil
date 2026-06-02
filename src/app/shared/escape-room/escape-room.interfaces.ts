@@ -37,6 +37,9 @@ export const ESCAPE_ROOM_TIMING = {
   zoomOutDelay: 300,
   /** How long hint-pulse indicators stay visible after dialogue dismissed */
   hintVisibleDuration: 3000,
+  /** How long the small inline hint-text bubble next to the hint button stays
+   *  on screen after the player requests a hint (then it fades out). */
+  hintBubbleDuration: 6000,
   /** Idle time (no click/tap/key-press within the room — moving the mouse
    *  alone does NOT count) before the hint button escalates from its ambient
    *  pulse to a stronger attention animation, nudging a stuck player. */

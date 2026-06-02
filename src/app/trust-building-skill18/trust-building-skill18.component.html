@@ -1,0 +1,370 @@
+<div class="cinematic-container">
+
+  <div *ngIf="isPreloading" class="preload-overlay">
+    <div class="loading-content">
+      <div class="loading-text">{{ t('loading') }}</div>
+    </div>
+  </div>
+
+  <!-- Introduction Popup Overlay -->
+  <div *ngIf="isIntroPopupVisible" class="overlay center">
+    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+      <mat-card-content class="intro-text">
+        <p>{{ t('intro.paragraphs.0') }}</p>
+        <p>{{ t('intro.paragraphs.1') }}</p>
+        <p>{{ t('intro.paragraphs.2') }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="game-container">
+
+    <div class="scene-background"
+         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+         [ngStyle]="zoomStyle"
+         [class.blurred]="isPhoneVisible || isPaperVisible || isStickyNoteVisible || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
+    </div>
+
+    <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
+        <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+    </button>
+
+    <div *ngIf="isLearningMode" class="learning-score-panel">
+      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+      <div class="score-panel-progress">
+        <mat-icon>emoji_events</mat-icon>
+        <span>{{ completedPuzzleCount }} / 4 puzzles</span>
+      </div>
+      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+      </div>
+    </div>
+
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating">
+      <mat-icon>lightbulb</mat-icon>
+    </button>
+    <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
+    <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
+
+    <button *ngIf="currentView !== 'main' && !activeDialogue" mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <!-- Hotspot Layer -->
+    <div class="hotspot-layer"
+         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating"
+         *ngIf="!isPhoneVisible && !isPaperVisible && !isStickyNoteVisible && !isIntroPopupVisible && !isAnimating">
+
+      <ng-container *ngIf="currentView === 'main'">
+          <!-- Kate -->
+          <div class="character-hotspot"
+               [class.show-hint-pulse]="showHints && (currentState === GameState.TalkToKate1 || currentState === GameState.TalkToKate2)"
+               [style.left.%]="hotspots.main.kate.x" [style.top.%]="hotspots.main.kate.y"
+               [style.width.%]="hotspots.main.kate.width" [style.height.%]="hotspots.main.kate.height"
+               (click)="onHotspotClick('kate')"
+               (mouseenter)="onCharacterHover('kate')"
+               (mouseleave)="onCharacterLeave()"></div>
+
+          <!-- Hiroshi -->
+          <div class="character-hotspot"
+               [class.show-hint-pulse]="showHints && !isQuizActive"
+               [style.left.%]="hotspots.main.hiroshi.x" [style.top.%]="hotspots.main.hiroshi.y"
+               [style.width.%]="hotspots.main.hiroshi.width" [style.height.%]="hotspots.main.hiroshi.height"
+               (click)="onHotspotClick('hiroshi')"
+               (mouseenter)="onCharacterHover('hiroshi')"
+               (mouseleave)="onCharacterLeave()"></div>
+      </ng-container>
+
+      <!-- Bag hotspot (FindPhone state) -->
+      <ng-container *ngIf="currentState === GameState.FindPhone && currentView === 'main'">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.bag.x" [style.top.%]="hotspots.main.bag.y"
+             [style.width.%]="hotspots.main.bag.width" [style.height.%]="hotspots.main.bag.height"
+             (click)="onHotspotClick('bag')"></div>
+      </ng-container>
+
+      <!-- Whiteboard hotspot (GoToWhiteboard state) -->
+      <ng-container *ngIf="currentState === GameState.GoToWhiteboard && currentView === 'main'">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.whiteboard.x" [style.top.%]="hotspots.main.whiteboard.y"
+             [style.width.%]="hotspots.main.whiteboard.width" [style.height.%]="hotspots.main.whiteboard.height"
+             (click)="onHotspotClick('whiteboard')"></div>
+      </ng-container>
+
+      <!-- Table hotspot (ReadPaper state) -->
+      <ng-container *ngIf="currentState === GameState.ReadPaper && currentView === 'main'">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.table.x" [style.top.%]="hotspots.main.table.y"
+             [style.width.%]="hotspots.main.table.width" [style.height.%]="hotspots.main.table.height"
+             (click)="onHotspotClick('table')"></div>
+      </ng-container>
+
+      <!-- Laptop hotspot (ClickLaptop state) -->
+      <ng-container *ngIf="currentState === GameState.ClickLaptop && currentView === 'main'">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.laptop.x" [style.top.%]="hotspots.main.laptop.y"
+             [style.width.%]="hotspots.main.laptop.width" [style.height.%]="hotspots.main.laptop.height"
+             (click)="onHotspotClick('laptop')"></div>
+      </ng-container>
+
+      <!-- Zoomed view: Whiteboard content hotspot (starts puzzle) -->
+      <ng-container *ngIf="currentView === 'whiteboard' && currentState === GameState.GoToWhiteboard">
+        <div class="zoom-hotspot"
+             [style.left.%]="hotspots.whiteboard_zoom.content.x" [style.top.%]="hotspots.whiteboard_zoom.content.y"
+             [style.width.%]="hotspots.whiteboard_zoom.content.width" [style.height.%]="hotspots.whiteboard_zoom.content.height"
+             (click)="onHotspotClick('whiteboardContent')"></div>
+      </ng-container>
+
+      <!-- Zoomed view: Phone hotspot within bag view -->
+      <ng-container *ngIf="currentView === 'bag' && currentState === GameState.FindPhone && !hasFoundPhone">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.bag_zoom.phone.x" [style.top.%]="hotspots.bag_zoom.phone.y"
+             [style.width.%]="hotspots.bag_zoom.phone.width" [style.height.%]="hotspots.bag_zoom.phone.height"
+             (click)="onHotspotClick('phone')"></div>
+      </ng-container>
+
+      <!-- Zoomed view: Paper hotspot within table view -->
+      <ng-container *ngIf="currentView === 'table' && currentState === GameState.ReadPaper && !hasFoundPaper">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.table_zoom.paper.x" [style.top.%]="hotspots.table_zoom.paper.y"
+             [style.width.%]="hotspots.table_zoom.paper.width" [style.height.%]="hotspots.table_zoom.paper.height"
+             (click)="onHotspotClick('paper')"></div>
+      </ng-container>
+
+      <!-- Zoomed view: Sticky note hotspot within laptop view -->
+      <ng-container *ngIf="currentView === 'laptop' && currentState === GameState.ClickLaptop && !hasFoundStickyNote">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.laptop_zoom.stickyNote.x" [style.top.%]="hotspots.laptop_zoom.stickyNote.y"
+             [style.width.%]="hotspots.laptop_zoom.stickyNote.width" [style.height.%]="hotspots.laptop_zoom.stickyNote.height"
+             (click)="onHotspotClick('stickyNote')"></div>
+      </ng-container>
+
+      <!-- Exit Door (when game complete) -->
+      <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
+        <div class="hotspot"
+             [class.show-hint-pulse]="showHints"
+             [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+             [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+             (click)="onHotspotClick('exitDoor')"></div>
+      </ng-container>
+    </div>
+
+    <!-- Phone Item Popup -->
+    <div *ngIf="isPhoneVisible" class="overlay center" (click)="closePhone()">
+      <div class="item-popup-base" @fadeInOut>
+        <img [src]="imagePaths.phone" alt="Phone with email">
+        <div class="text-content">
+          <h3>{{ t('items.phone.popupTitle') }}</h3>
+          <ul>
+            <li *ngFor="let item of [0,1,2,3,4,5,6,7]; trackBy: trackByIndex">{{ t('items.phone.popupContent.' + item) }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper Item Popup -->
+    <div *ngIf="isPaperVisible" class="overlay center" (click)="closePaper()">
+      <div class="item-popup-base" @fadeInOut>
+        <img [src]="imagePaths.paper" alt="The Power of Listening">
+        <div class="text-content">
+          <h3>{{ t('items.paper.popupTitle') }}</h3>
+          <p *ngFor="let item of [0,1,2]; trackBy: trackByIndex">{{ t('items.paper.popupContent.' + item) }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Note Item Popup -->
+    <div *ngIf="isStickyNoteVisible" class="overlay center" (click)="closeStickyNote()">
+      <div class="item-popup-base sticky-note-style" @fadeInOut>
+        <img [src]="imagePaths.sticky_note" alt="" [alt]="t('items.stickyNote.altText') || 'Sticky Note'">
+        <div class="text-content">
+          <h3>{{ t('items.stickyNote.popupTitle') }}</h3>
+          <p *ngFor="let item of [0,1]; trackBy: trackByIndex" class="quote">{{ t('items.stickyNote.popupContent.' + item) }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puzzle 1: Matching (7 pairs) -->
+    <div *ngIf="currentState === GameState.Puzzle1_Matching && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle1.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>{{ t('puzzles.matching.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.matching.instructions') }}</mat-card-subtitle>
+        <mat-card-content class="matching-layout">
+          <div class="col">
+            <h4>{{ t('puzzles.matching.columnA.heading') }}</h4>
+            <button mat-stroked-button *ngFor="let item of matchingPairs; trackBy: trackById"
+                    [class.selected]="selectedCueId === item.id"
+                    [disabled]="solvedMatches.includes(item.id)"
+                    (click)="selectCue(item.id)">
+              <strong class="match-label">{{ item.id }}.</strong> {{ item.cue }}
+              <mat-icon *ngIf="solvedMatches.includes(item.id)">check</mat-icon>
+            </button>
+          </div>
+          <div class="col">
+            <h4>{{ t('puzzles.matching.columnB.heading') }}</h4>
+            <button mat-stroked-button *ngFor="let opt of matchingOptions; trackBy: trackById"
+                    (click)="selectMatchOption(opt.id)">
+              <strong class="match-label">{{ opt.id }}.</strong> {{ opt.text }}
+            </button>
+          </div>
+        </mat-card-content>
+        <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
+      </mat-card>
+    </div>
+
+    <!-- Puzzle 2: Single Choice (4 options) -->
+    <div *ngIf="currentState === GameState.Puzzle2_SingleChoice && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle2.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>{{ t('puzzles.singleChoice1.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.singleChoice1.instructions') }}</mat-card-subtitle>
+        <mat-card-content>
+          <p class="question">{{ t('puzzles.singleChoice1.question') }}</p>
+          <div class="options-vertical">
+            <button mat-stroked-button *ngFor="let opt of puzzle2Options; trackBy: trackById"
+                    (click)="submitPuzzle2(opt)">
+              {{ opt.text }}
+            </button>
+          </div>
+          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Puzzle 3: Fill-the-Gap (4 blanks) -->
+    <div *ngIf="currentState === GameState.Puzzle3_FillGap && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle3.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>{{ t('puzzles.fillGap.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.fillGap.instructions') }}</mat-card-subtitle>
+        <mat-card-content>
+          <p class="gap-sentence">
+            {{ gapSentenceParts[0] }}
+            <span class="gap">{{ userGapAnswers[0] || t('ui.gapPlaceholder') }}</span>
+            {{ gapSentenceParts[1] }}
+            <span class="gap">{{ userGapAnswers[1] || t('ui.gapPlaceholder') }}</span>
+            {{ gapSentenceParts[2] }}
+            <span class="gap">{{ userGapAnswers[2] || t('ui.gapPlaceholder') }}</span>
+            {{ gapSentenceParts[3] }}
+            <span class="gap">{{ userGapAnswers[3] || t('ui.gapPlaceholder') }}</span>
+            {{ gapSentenceParts[4] }}
+          </p>
+          <div class="word-bank">
+            <button mat-raised-button color="accent" *ngFor="let word of gapOptions; trackBy: trackByIndex" (click)="fillGap(word)">{{ word }}</button>
+          </div>
+          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="resetGap()">{{ t('puzzles.fillGap.resetButton') }}</button>
+          <button mat-raised-button color="primary" [disabled]="userGapAnswers.includes(null!)" (click)="submitGap()">{{ t('puzzles.fillGap.checkButton') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Puzzle 4: Single Choice (2 options) -->
+    <div *ngIf="currentState === GameState.Puzzle4_SingleChoice && !activeDialogue" class="overlay center">
+      <mat-card class="quiz-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle4.bind(this))">{{ t('ui.skipButton') }}</button>
+        <mat-card-title>{{ t('puzzles.singleChoice2.title') }}</mat-card-title>
+        <mat-card-subtitle>{{ t('puzzles.singleChoice2.instructions') }}</mat-card-subtitle>
+        <mat-card-content>
+          <p class="question">{{ t('puzzles.singleChoice2.question') }}</p>
+          <div class="options-vertical">
+            <button mat-stroked-button *ngFor="let opt of puzzle4Options; trackBy: trackById"
+                    (click)="submitPuzzle4(opt)">
+              {{ opt.text }}
+            </button>
+          </div>
+          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Game Complete Overlay -->
+    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
+      <mat-card class="quiz-card" @fadeInOut>
+        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('completion.message') }}</p>
+          <div *ngIf="puzzleScores.length > 0" class="score-summary">
+            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+            <p class="score-feedback">{{ scoreMessage }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Answer Reveal Overlay -->
+    <div *ngIf="showAnswerOverlay" class="overlay center">
+      <mat-card class="quiz-card wide-card" @fadeInOut>
+        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+        <mat-card-content>
+          <p class="answer-text">{{ answerOverlayText }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Dialogue Panel -->
+    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+      <div class="dialogue-content">
+          <div class="character-name">{{ activeDialogue.character }}</div>
+          <div class="dialogue-text">{{ displayedDialogueText }}</div>
+      </div>
+      <div class="dialogue-actions" *ngIf="!isTyping">
+        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+      </div>
+    </div>
+
+    <!-- Inventory Bar (hidden during puzzles/overlays) -->
+    <div class="inventory-bar" *ngIf="(hasFoundPhone || hasFoundPaper || hasFoundStickyNote) && !isQuizActive && !isGameCompleteOverlayVisible && !showAnswerOverlay">
+      <button mat-icon-button *ngIf="hasFoundPhone" (click)="togglePhone()" [title]="t('items.phone.inventoryTitle')">
+        <mat-icon>phone_iphone</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="hasFoundPaper" (click)="togglePaper()" [title]="t('items.paper.inventoryTitle')">
+        <mat-icon>description</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="hasFoundStickyNote" (click)="toggleStickyNote()" [title]="t('items.stickyNote.inventoryTitle')">
+        <mat-icon>sticky_note_2</mat-icon>
+      </button>
+    </div>
+
+    <!-- Skip Puzzle Confirm -->
+    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
+      <mat-card class="skip-confirm-card" @fadeInOut>
+        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ t('skipConfirm.question') }}</p>
+          <p class="warning">{{ t('skipConfirm.warning') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

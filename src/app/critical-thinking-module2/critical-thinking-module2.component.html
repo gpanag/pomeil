@@ -51,6 +51,8 @@
     <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating">
       <mat-icon>lightbulb</mat-icon>
     </button>
+    <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
+    <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
 
     <!-- Skip the current phase (parity with the other rooms) -->
     <button mat-stroked-button class="skip-phase-btn" (click)="requestSkipPuzzle(skipPuzzle.bind(this))"

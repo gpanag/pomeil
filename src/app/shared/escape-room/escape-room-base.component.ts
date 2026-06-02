@@ -80,6 +80,12 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   // Hint system
   showHints: boolean = false;
 
+  // Inline hint bubble — a small italic snippet of the current hint that appears
+  // next to the hint button for a few seconds when the player requests a hint.
+  hintBubbleText: string = '';
+  isHintBubbleVisible: boolean = false;
+  private hintBubbleTimer: any = null;
+
   // Idle hint attention — escalates the hint button when the player is stuck.
   private lastInteractionTs = 0;
   private idleHintInterval: any = null;
@@ -219,7 +225,21 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     this.showHintPulse();
     this.onHintRequested();
     const hintText = this.getHintText();
-    this.showDialogue({ character: '', text: hintText });
+    this.showHintBubble(hintText);
+  }
+
+  /** Shows a small italic snippet of the current hint next to the hint button
+   *  for `hintBubbleDuration` ms, then fades it out. Replaces the old bottom
+   *  dialogue-panel hint with a lighter, inline cue. */
+  protected showHintBubble(text: string): void {
+    this.hintBubbleText = text;
+    this.isHintBubbleVisible = true;
+    if (this.hintBubbleTimer) { clearTimeout(this.hintBubbleTimer); }
+    // Plain setTimeout (zone-patched) so the hide triggers change detection,
+    // matching showHintPulse() above.
+    this.hintBubbleTimer = setTimeout(() => {
+      this.isHintBubbleVisible = false;
+    }, ESCAPE_ROOM_TIMING.hintBubbleDuration);
   }
 
   // --- Puzzle helpers (Phase 4) ---
@@ -320,6 +340,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     if (this.dialogueInterval) clearInterval(this.dialogueInterval);
+    if (this.hintBubbleTimer) { clearTimeout(this.hintBubbleTimer); this.hintBubbleTimer = null; }
     // Tear down the idle-hint watcher (timer + passive listeners + host class)
     if (this.idleHintInterval) { clearInterval(this.idleHintInterval); this.idleHintInterval = null; }
     const idleHost = this.hostEl.nativeElement as HTMLElement;

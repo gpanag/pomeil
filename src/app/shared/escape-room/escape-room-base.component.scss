@@ -124,6 +124,55 @@
   50%      { box-shadow: 0 0 18px 6px rgba(255, 220, 100, 0.45); }
 }
 
+/* --- Inline hint bubble ------------------------------------------------
+   A small italic snippet of the current hint, shown just below the hint
+   button for a few seconds when the player asks for a hint, then fades out
+   (EscapeRoomBaseComponent.showHintBubble / isHintBubbleVisible). Placed
+   below the button so it never collides with the skip-phase button (left:124)
+   or the back-to-rooms button. Click-through so it can't block anything. */
+.hint-bubble {
+  position: absolute;
+  top: 84px;        /* just under the 56px hint button (top:20) */
+  left: 60px;       /* aligned to the hint button's left edge */
+  z-index: 19;      /* under the buttons (z:20) so it never covers them */
+  max-width: 280px;
+  margin: 0;
+  padding: 7px 12px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.74);
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 12.5px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.1px;
+  text-align: left;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+
+  &.show { opacity: 1; transform: translateY(0); }
+
+  /* caret pointing up toward the hint button */
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 22px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.74);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint-bubble { transform: none; transition: opacity 0.28s ease; }
+  .hint-bubble.show { transform: none; }
+}
+
 /* --- Idle escalation ---------------------------------------------------
    EscapeRoomBaseComponent toggles `.idle-hint-attention` on the room host
    once the player has been inactive for a while (no click / tap / key-press
