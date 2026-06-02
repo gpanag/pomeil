@@ -359,6 +359,7 @@ export class OpenMindnessSkillSkill26Component extends EscapeRoomBaseComponent {
   override requestHint(): void {
     this.showHints = true;
     this.showHintPulse();
+    this.isHintDialogueActive = true;
 
     let hintText = this.t('hints.default');
 
@@ -376,7 +377,7 @@ export class OpenMindnessSkillSkill26Component extends EscapeRoomBaseComponent {
       hintText = this.t('hints.allQuestsComplete');
     }
 
-    this.showHintBubble(hintText);
+    this.showDialogue({ character: '', text: hintText });
   }
 
   // --- Dialogue dismissal ---

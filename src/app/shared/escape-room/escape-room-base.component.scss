@@ -125,11 +125,12 @@
 }
 
 /* --- Inline hint bubble ------------------------------------------------
-   A small italic snippet of the current hint, shown just below the hint
-   button for a few seconds when the player asks for a hint, then fades out
-   (EscapeRoomBaseComponent.showHintBubble / isHintBubbleVisible). Placed
-   below the button so it never collides with the skip-phase button (left:124)
-   or the back-to-rooms button. Click-through so it can't block anything. */
+   A small italic snippet of the current hint, shown just below the hint button
+   for a few seconds AFTER the player has made no progress for a while (an idle
+   prominence nudge fired from the idle watcher — see tickIdleHint), then it
+   fades out. Clicking the hint button is unchanged. Placed below the button so
+   it never collides with the skip-phase button (left:124) or the back-to-rooms
+   button. Click-through so it can't block anything. */
 .hint-bubble {
   position: absolute;
   top: 84px;        /* just under the 56px hint button (top:20) */

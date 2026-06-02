@@ -942,11 +942,15 @@ export class CriticalThinkingModule2Component extends EscapeRoomBaseComponent {
     return EMAIL_CLUE_KEYS;
   }
 
+  /** Clamp to a safe 0–5 integer so a bad/NaN rating can never throw
+   *  `Array(<invalid>)` (RangeError) and break the review's stars + text. */
   getReviewRatingStars(rating: number): number[] {
-    return Array(rating).fill(0);
+    const n = Number.isFinite(rating) ? Math.max(0, Math.min(5, Math.round(rating))) : 0;
+    return Array(n).fill(0);
   }
 
   getReviewEmptyStars(rating: number): number[] {
-    return Array(5 - rating).fill(0);
+    const n = Number.isFinite(rating) ? Math.max(0, Math.min(5, Math.round(rating))) : 0;
+    return Array(5 - n).fill(0);
   }
 }

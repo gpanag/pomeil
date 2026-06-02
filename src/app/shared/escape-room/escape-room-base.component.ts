@@ -102,10 +102,14 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   private readonly onRoomActivity = (): void => {
     this.lastInteractionTs = Date.now();
     this.idleHintPopupShown = false;
-    if (this.idleHintDialogRef) {
-      const ref = this.idleHintDialogRef;
-      this.idleHintDialogRef = null;
-      this.ngZone.run(() => ref.close());
+    const ref = this.idleHintDialogRef;
+    this.idleHintDialogRef = null;
+    // The player is no longer idle — get both idle nudges out of the way.
+    if (ref || this.isHintBubbleVisible) {
+      this.ngZone.run(() => {
+        if (this.isHintBubbleVisible) { this.hideHintBubble(); }
+        if (ref) { ref.close(); }
+      });
     }
   };
 
@@ -225,21 +229,31 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     this.showHintPulse();
     this.onHintRequested();
     const hintText = this.getHintText();
-    this.showHintBubble(hintText);
+    this.showDialogue({ character: '', text: hintText });
   }
 
   /** Shows a small italic snippet of the current hint next to the hint button
-   *  for `hintBubbleDuration` ms, then fades it out. Replaces the old bottom
-   *  dialogue-panel hint with a lighter, inline cue. */
+   *  for `hintBubbleDuration` ms, then fades it out. This is a stuck-player
+   *  PROMINENCE nudge fired from the idle watcher (see tickIdleHint) — NOT on
+   *  hint-button click. Clicking the button still opens the full hint exactly
+   *  as before (showDialogue, above); this only makes the player aware help is
+   *  there once they've made no progress for a while. */
   protected showHintBubble(text: string): void {
+    if (!text) { return; }
     this.hintBubbleText = text;
     this.isHintBubbleVisible = true;
     if (this.hintBubbleTimer) { clearTimeout(this.hintBubbleTimer); }
-    // Plain setTimeout (zone-patched) so the hide triggers change detection,
-    // matching showHintPulse() above.
+    // Plain setTimeout (zone-patched when called inside ngZone) so the auto-hide
+    // triggers change detection, matching showHintPulse() above.
     this.hintBubbleTimer = setTimeout(() => {
       this.isHintBubbleVisible = false;
     }, ESCAPE_ROOM_TIMING.hintBubbleDuration);
+  }
+
+  /** Immediately hides the inline hint bubble (the player is no longer idle). */
+  protected hideHintBubble(): void {
+    if (this.hintBubbleTimer) { clearTimeout(this.hintBubbleTimer); this.hintBubbleTimer = null; }
+    this.isHintBubbleVisible = false;
   }
 
   // --- Puzzle helpers (Phase 4) ---
@@ -653,11 +667,17 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   private tickIdleHint(host: HTMLElement): void {
     const idleMs = Date.now() - this.lastInteractionTs;
     const interactiveIdle = this.canShowIdleHint();
-    // Stage 1 (idleHintDelay ~15s): escalate the hint button's ambient pulse.
+    // Stage 1 (idleHintDelay ~15s): escalate the hint button's ambient pulse AND
+    // reveal a short italic snippet of the current hint next to the (now pulsing)
+    // button, so a stuck player notices help is one click away.
     const shouldShow = idleMs >= ESCAPE_ROOM_TIMING.idleHintDelay && interactiveIdle;
     if (shouldShow !== this.idleHintShown) {
       this.idleHintShown = shouldShow;
       host.classList.toggle('idle-hint-attention', shouldShow);
+      if (shouldShow) {
+        // tickIdleHint runs OUTSIDE Angular — re-enter the zone to render the bubble.
+        this.ngZone.run(() => this.showHintBubble(this.getHintText()));
+      }
     }
     // Stage 2 (idleHintPopupDelay ~30s): once per stuck period, pop a dialog that
     // explicitly tells the player about the hint button. Re-arms on interaction.
@@ -694,6 +714,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
       && !this.isIntroPopupVisible
       && !this.isGameCompleteOverlayVisible
       && !this.activeDialogue
+      && !this.isQuizActive          // not during a puzzle/quiz (or a room's reading popup, e.g. critical-thinking's TV reviews)
       && !this.isAnimating
       && !this.showAnswerOverlay
       && !this.showSkipConfirm

@@ -860,12 +860,17 @@ export class StrategicThinkingSkill16Component extends EscapeRoomBaseComponent {
     this.showHints = true;
     this.showHintPulse();
     this.hintCooldown = true;
+    this.isHintDialogueActive = true;
 
-    let text = this.t('hints.default');
-    if (this.currentState === GameState.FindNote) text = this.t('hints.findNote');
-    else if (this.currentState === GameState.FindUsb) text = this.t('hints.findUsb');
-    else if (this.currentState === GameState.PuzzleThree) text = this.t('hints.puzzleThree');
-    this.showHintBubble(text);
+    if (this.currentState === GameState.FindNote) {
+      this.showDialogue({ character: '', text: this.t('hints.findNote') });
+    } else if (this.currentState === GameState.FindUsb) {
+      this.showDialogue({ character: '', text: this.t('hints.findUsb') });
+    } else if (this.currentState === GameState.PuzzleThree) {
+      this.showDialogue({ character: '', text: this.t('hints.puzzleThree') });
+    } else {
+      this.showDialogue({ character: '', text: this.t('hints.default') });
+    }
 
     setTimeout(() => (this.hintCooldown = false), 2500);
   }
