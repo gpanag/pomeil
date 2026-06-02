@@ -399,12 +399,12 @@
           <div class="survey-options">
             <button mat-stroked-button class="survey-option-btn"
                     (click)="selectSurveyOption(true)">
-              {{ surveyQuestions[currentSurveyQuestion].optionA }}
+              {{ surveyQuestions[currentSurveyQuestion]?.optionA }}
             </button>
             <div class="survey-vs">OR</div>
             <button mat-stroked-button class="survey-option-btn"
                     (click)="selectSurveyOption(false)">
-              {{ surveyQuestions[currentSurveyQuestion].optionB }}
+              {{ surveyQuestions[currentSurveyQuestion]?.optionB }}
             </button>
           </div>
         </mat-card-content>
