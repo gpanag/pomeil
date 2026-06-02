@@ -85,6 +85,9 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   hintBubbleText: string = '';
   isHintBubbleVisible: boolean = false;
   private hintBubbleTimer: any = null;
+  /** When the idle bubble last popped, so it can re-pop every
+   *  `hintBubbleRepeatInterval` while the player stays stuck. Reset on interaction. */
+  private lastHintBubbleTs = 0;
 
   // Idle hint attention — escalates the hint button when the player is stuck.
   private lastInteractionTs = 0;
@@ -102,6 +105,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   private readonly onRoomActivity = (): void => {
     this.lastInteractionTs = Date.now();
     this.idleHintPopupShown = false;
+    this.lastHintBubbleTs = 0;   // re-arm the bubble so the next stuck period pops at idleHintDelay
     const ref = this.idleHintDialogRef;
     this.idleHintDialogRef = null;
     // The player is no longer idle — get both idle nudges out of the way.
@@ -665,19 +669,25 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   }
 
   private tickIdleHint(host: HTMLElement): void {
-    const idleMs = Date.now() - this.lastInteractionTs;
+    const now = Date.now();
+    const idleMs = now - this.lastInteractionTs;
     const interactiveIdle = this.canShowIdleHint();
-    // Stage 1 (idleHintDelay ~15s): escalate the hint button's ambient pulse AND
-    // reveal a short italic snippet of the current hint next to the (now pulsing)
-    // button, so a stuck player notices help is one click away.
+    // Stage 1 (idleHintDelay ~15s): escalate the hint button's ambient pulse.
     const shouldShow = idleMs >= ESCAPE_ROOM_TIMING.idleHintDelay && interactiveIdle;
     if (shouldShow !== this.idleHintShown) {
       this.idleHintShown = shouldShow;
       host.classList.toggle('idle-hint-attention', shouldShow);
-      if (shouldShow) {
-        // tickIdleHint runs OUTSIDE Angular — re-enter the zone to render the bubble.
-        this.ngZone.run(() => this.showHintBubble(this.getHintText()));
-      }
+    }
+    // Inline hint bubble: while the player keeps making NO progress, re-pop a
+    // short italic snippet of the current hint next to the (pulsing) button —
+    // first at idleHintDelay, then again every hintBubbleRepeatInterval — so they
+    // keep being reminded help is there. Suppressed while it's already up or the
+    // stronger idle popup is open; re-armed on interaction (onRoomActivity).
+    if (shouldShow && !this.isHintBubbleVisible && !this.idleHintDialogRef
+        && (now - this.lastHintBubbleTs) >= ESCAPE_ROOM_TIMING.hintBubbleRepeatInterval) {
+      this.lastHintBubbleTs = now;
+      // tickIdleHint runs OUTSIDE Angular — re-enter the zone to render the bubble.
+      this.ngZone.run(() => this.showHintBubble(this.getHintText()));
     }
     // Stage 2 (idleHintPopupDelay ~30s): once per stuck period, pop a dialog that
     // explicitly tells the player about the hint button. Re-arms on interaction.
@@ -724,6 +734,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   /** Clears any active idle attention and restarts the idle timer. */
   protected resetIdleHint(): void {
     this.lastInteractionTs = Date.now();
+    this.lastHintBubbleTs = 0;
     if (this.idleHintShown) {
       this.idleHintShown = false;
       (this.hostEl.nativeElement as HTMLElement).classList.remove('idle-hint-attention');
