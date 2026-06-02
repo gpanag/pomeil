@@ -10,7 +10,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 64px);
+  /* Fit exactly under the toolbar so the room never overflows the viewport.
+     (Was 64px, but the real toolbar is var(--app-toolbar-height) = 72px, which
+     caused an ~8px overflow + scrollbar.) dvh keeps it correct on mobile as the
+     browser chrome shows/hides; the vh line is a fallback for older browsers. */
+  height: calc(100vh - var(--app-toolbar-height, 72px));
+  height: calc(100dvh - var(--app-toolbar-height, 72px));
   background-color: #000;
 }
 
@@ -112,7 +117,7 @@
 .hint-button {
   position: absolute;
   top: 20px;
-  left: 60px;
+  left: 72px;
   z-index: 20;
   /* Subtle ambient pulse so the player always knows help is one click away */
   animation: hint-button-pulse 3s ease-in-out infinite;
@@ -134,7 +139,7 @@
 .hint-bubble {
   position: absolute;
   top: 84px;        /* just under the 56px hint button (top:20) */
-  left: 60px;       /* aligned to the hint button's left edge */
+  left: 72px;       /* aligned to the hint button's left edge */
   z-index: 19;      /* under the buttons (z:20) so it never covers them */
   max-width: 280px;
   margin: 0;
@@ -249,7 +254,7 @@
   background-color: rgba(10, 10, 30, 0.75);
   border: 1px solid rgba(128, 128, 255, 0.4);
   border-radius: 10px;
-  padding: 8px 14px;
+  padding: 12px 18px;
   color: #f0f0f0;
   font-family: 'Poppins', sans-serif;
   font-size: 0.8rem;
@@ -270,8 +275,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    margin-bottom: 2px;
+    gap: 8px;
+    margin-bottom: 4px;
 
     mat-icon {
       font-size: 16px;
@@ -581,7 +586,7 @@
 .skip-phase-btn {
   position: absolute;
   top: 22px;
-  left: 124px;
+  left: 148px;
   z-index: 20;
   background: rgba(0, 0, 0, 0.45) !important;
   color: rgba(255, 255, 255, 0.95) !important;

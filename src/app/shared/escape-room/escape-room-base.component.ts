@@ -302,6 +302,14 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     const h = this.config.imageHeight || 1024;
     (this.hostEl.nativeElement as HTMLElement).style.setProperty('--room-aspect-ratio', `${w} / ${h}`);
 
+    // The room fills the viewport exactly (see .cinematic-container height), so
+    // suppress the page scrollbar while a room is mounted — <html> otherwise
+    // forces an overflow-y:scroll track. Done imperatively (not via a global CSS
+    // rule) so the fix stays self-contained and leaves the app's stylesheet
+    // untouched. Restored on destroy.
+    this.document.documentElement.style.setProperty('overflow', 'hidden', 'important');
+    this.document.body.style.setProperty('overflow', 'hidden', 'important');
+
     this.document.addEventListener('fullscreenchange', this.onFullscreenChange);
 
     // Detect learning mode from query param
@@ -366,6 +374,8 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     idleHost.removeEventListener('touchstart', this.onRoomActivity);
     idleHost.removeEventListener('keydown', this.onRoomActivity);
     idleHost.classList.remove('idle-hint-attention');
+    this.document.documentElement.style.removeProperty('overflow');
+    this.document.body.style.removeProperty('overflow');
     this.document.removeEventListener('fullscreenchange', this.onFullscreenChange);
     if (this.textSub) this.textSub.unsubscribe();
     if (this.langSub) this.langSub.unsubscribe();
