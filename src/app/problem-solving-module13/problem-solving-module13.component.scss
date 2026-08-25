@@ -1,0 +1,202 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Problem Solving room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(15, 30, 25, 0.95);
+  border: 2px solid rgba(0, 104, 116, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .dialogue-character {
+    font-weight: 600;
+    color: var(--sys-primary, #4dd0e1);
+    margin-bottom: 4px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .dialogue-text {
+    min-height: 3em;
+    white-space: pre-line;
+  }
+
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .completion-msg {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* Define Problem options */
+.define-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+
+  .define-option {
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 1em;
+    border-width: 2px;
+
+    &:hover:not([disabled]) {
+      background: rgba(0, 104, 116, 0.08);
+    }
+
+    &.eliminated {
+      opacity: 0.4;
+      text-decoration: line-through;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.feedback-wrong {
+  text-align: center;
+  padding: 10px;
+  color: #f44336;
+  font-style: italic;
+}
+
+/* Floating skip-puzzle button for non-overlay puzzles */
+.floating-skip-btn {
+  position: absolute;
+  top: 12px;
+  right: 64px;
+  z-index: 60;  // Above dialogue panel (50) so it stays clickable during conversations
+  background: rgba(255, 80, 80, 0.85);
+  color: #fff;
+  font-size: 0.85em;
+  padding: 6px 14px;
+  min-width: 0;
+  line-height: 1.2;
+
+  &:hover { background: rgba(255, 50, 50, 0.95); }
+}
+
+/* Skip button inside quiz overlay cards */
+.skip-puzzle-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  color: rgba(100, 100, 100, 0.8);
+  font-size: 0.85em;
+  min-width: 0;
+  padding: 4px 10px;
+
+  &:hover { color: rgba(255, 80, 80, 0.9); }
+}
+
+/* Visual sticky note drawn on top of the scene */
+.visual-sticky-note {
+  position: absolute;
+  background: #fef68a;
+  border: 1px solid rgba(180, 150, 0, 0.6);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.35);
+  transform: rotate(-6deg);
+  z-index: 11;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-family: 'Caveat', 'Segoe Script', cursive;
+  font-weight: 600;
+  font-size: clamp(12px, 1.1vw, 18px);
+
+  span {
+    text-align: center;
+    line-height: 1.1;
+    opacity: 0.65;
+  }
+}
+
+/* Cleanable item hotspots */
+.hotspot.cleanable {
+  background: rgba(255, 200, 60, 0.18);
+  border: 2px dashed rgba(255, 200, 60, 0.5);
+  transition: opacity 0.4s ease, background 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 200, 60, 0.35);
+  }
+
+  &.cleaned {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Knut reply button — above dialogue panel */
+.reply-container {
+  position: absolute;
+  bottom: calc(2% + 25% + 12px);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 55;
+
+  .reply-btn {
+    pointer-events: auto;
+    max-width: 600px;
+    white-space: normal;
+    line-height: 1.35;
+    padding: 12px 22px;
+    text-align: left;
+    font-size: 0.95em;
+    background: rgba(30, 35, 50, 0.95);
+    color: #fff;
+    border: 2px solid rgba(128, 200, 255, 0.6);
+    &:hover { background: rgba(50, 65, 90, 0.98); }
+  }
+}
+
+/* Score summary in completion overlay */
+.score-summary {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: rgba(0, 104, 116, 0.08);
+  text-align: center;
+
+  .score-label {
+    font-size: 1.1em;
+    margin: 0 0 6px 0;
+
+    strong {
+      color: var(--sys-primary, #006874);
+      font-size: 1.2em;
+    }
+  }
+
+  .score-feedback {
+    margin: 0;
+    font-size: 0.95em;
+    opacity: 0.85;
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "loading": "Loading Networking Skills...",
+  "intro": {
+    "title": "Networking Skills",
+    "paragraphs": [
+      "You are sitting in a waiting room outside an interview room, about to attend a startup networking event. The room is long and narrow, like a hallway, with off-white carpet and walls.",
+      "Two couches - one yellow, one teal - line the walls with small coffee tables beside them. A coffee machine sits in the corner with paper cups and a trash can nearby. Green plants and a poster on the wall add a touch of life to the space.",
+      "Three other people are in the room with you. This could be a great opportunity to practice your networking skills..."
+    ],
+    "buttonText": "Enter the Waiting Room"
+  },
+  "characters": {
+    "npc1": {
+      "name": "Marcus",
+      "dialogues": {
+        "busy": "Sorry, I need to finish up here.",
+        "default": "He seems focused on his laptop."
+      }
+    },
+    "npc2": {
+      "name": "Tomás",
+      "dialogues": {
+        "line1_you": "Hi, are you here for the startup event?",
+        "line1_him": "Yes.",
+        "line2_you": "What line of work are you in?",
+        "line2_him": "IT.",
+        "line3_you": "What brings you here today?",
+        "line3_him": "My boss sent me.",
+        "line4_awkward": "...",
+        "summary": "He didn't seem very interested in talking. The conversation died out quickly. Maybe a different approach would work with someone else.",
+        "default": "He's quietly looking at his phone."
+      }
+    },
+    "edith": {
+      "name": "Edith",
+      "dialogues": {
+        "line1_you": "Hi there! Are you also here for the startup event?",
+        "line1_her": "Yes, I am! I'm Edith. I run a small business incubator downtown. Are you a founder?",
+        "line2_you": "Not yet, but I've been thinking about it. What kind of startups do you work with?",
+        "line2_her": "Mostly early-stage tech and social enterprises. We help with everything from business plans to finding funding. It's very rewarding work.",
+        "line3_you": "That sounds amazing. What got you into that?",
+        "line3_her": "I started my own company years ago and wished I'd had more support. So I built the kind of place I would have wanted. Here, take my card - let's stay in touch!",
+        "line4_you": "Thank you, Edith! I'd love to learn more about your incubator sometime.",
+        "summary": "Great conversation! You made a genuine connection with Edith and exchanged contact information. That's networking done right.",
+        "buildIntro": "Edith walks back over to you with a fresh cup of coffee.",
+        "build1_her": "So, tell me - what really drives you? What's the big idea you've been sitting on?",
+        "build2a_you": "I've been passionate about making education more accessible through technology. What challenges do you see founders face most?",
+        "build2b_you": "Well, I have this app idea that's going to make millions. Let me tell you all about it...",
+        "build2a_response": "That's a wonderful mission! The biggest challenge I see is founders trying to do everything alone. That's exactly why the incubator exists - no one should have to figure it all out by themselves.",
+        "build2b_response": "Oh... that's... ambitious. You know, the most successful founders I've seen are the ones who ask questions, not just pitch.",
+        "build3_her": "Speaking of support, have you thought about what kind of network you'd need to bring your idea to life?",
+        "build4_you_typed": "",
+        "build4_her": "That's a thoughtful answer. Building a network is really about finding people whose strengths complement yours.",
+        "build5a_you": "What advice would you give someone just starting to build their professional network?",
+        "build5b_you": "I already have a pretty good network, actually. I mostly just need funding.",
+        "build5a_response": "Start by being genuinely curious about other people. Ask about their work, their challenges. Networking isn't about collecting contacts - it's about building relationships where both sides benefit.",
+        "build5b_response": "Hmm, networking is about more than just what you need. The best connections happen when you think about what you can offer, too.",
+        "build6_her": "You know, I've really enjoyed this conversation. It's rare to meet someone who listens as much as they talk. That's a real networking strength.",
+        "build7a_you": "Thank you, Edith. I've learned a lot from talking with you. How can I be helpful to you in return?",
+        "build7b_you": "Thanks! So, about that incubator - can you get me a spot?",
+        "build7a_response": "I appreciate you asking! Actually, we're always looking for fresh perspectives at our mentor nights. Would you be interested in attending one?",
+        "build7b_response": "Ha! I admire the directness, but networking works best when it doesn't feel transactional. Let's build the relationship first.",
+        "build8_her": "Remember - networking is a skill with four parts: Initiate, Build, Maintain, and Leverage. We've covered the first two today. Keep practicing!",
+        "buildSummary": "Excellent work! You've deepened your connection with Edith by asking open questions, showing genuine interest, and thinking about two-way value.",
+        "default": "Edith smiles warmly at you."
+      }
+    }
+  },
+  "puzzles": {
+    "initiate": {
+      "title": "Puzzle 1: Initiate",
+      "instructions": "Click on the people in the room to try starting a conversation. Not every attempt will succeed - that's normal in networking!",
+      "skillUnlocked": "Networking skill unlocked: Initiate",
+      "feedback": {
+        "npc1Done": "He's too busy right now. That's okay - not everyone is available to network at every moment.",
+        "npc2Done": "Short, closed answers. Sometimes conversations just don't flow. Don't take it personally.",
+        "edithDone": "A great connection! Edith was open, engaged, and you exchanged contact info.",
+        "allComplete": "You've tried talking to everyone in the room. You learned that networking requires reading the situation - some people aren't available, some conversations don't click, and sometimes you find a real connection."
+      }
+    },
+    "mirror": {
+      "popupTitle": "Your Reflection",
+      "popupContent": "No salad between the teeth, check.",
+      "selfReflection": "Looking good. But networking isn't just about appearances - it's about being present, being curious, and being genuine. Time to put that into practice.",
+      "edithReturns": "You notice Edith coming back from the coffee machine. This could be a good chance to continue the conversation..."
+    },
+    "build": {
+      "title": "Puzzle 2: Build",
+      "instructions": "Continue your conversation with Edith. When given options, choose the response that builds a genuine, two-way connection.",
+      "skillUnlocked": "Networking skill unlocked: Build",
+      "typedPrompt": "Edith asks about your network needs. Type your thoughts:",
+      "typedPlaceholder": "Share your thoughts...",
+      "feedback": {
+        "goodChoice": "Good choice! That response shows genuine interest and builds the relationship.",
+        "poorChoice": "That response focuses too much on yourself. Try to think about the other person too.",
+        "complete": "You've successfully built a deeper relationship with Edith through genuine conversation."
+      }
+    },
+    "maintain": {
+      "title": "Puzzle 3: Maintain",
+      "instructions": "Your phone buzzes with a notification. Time to practice maintaining your network connections through messaging.",
+      "skillUnlocked": "Networking skill unlocked: Maintain",
+      "phoneNotification": "New message from Fredrik!",
+      "fredrik": {
+        "name": "Fredrik",
+        "incoming": "Hey! Great running into you at the event earlier. Want to grab coffee sometime this week?",
+        "optionA": "Absolutely! How about Thursday afternoon? There's a great cafe near the convention center.",
+        "optionB": "Maybe. I'll let you know.",
+        "feedbackA": "Great response! Specific and enthusiastic - it shows you value the connection.",
+        "feedbackB": "Too vague. When maintaining contacts, be specific and show genuine interest."
+      },
+      "contacts": {
+        "maksym": {
+          "name": "Maksym (former colleague)",
+          "optionA": "Hi Maksym, it's been a while! How are you doing? I saw your company just launched a new product - congratulations!",
+          "optionB": "Heyyyy",
+          "feedbackA": "Perfect! Personal, specific, and shows you've been paying attention to their work.",
+          "feedbackB": "Too vague - this message doesn't give them anything to respond to."
+        },
+        "iman": {
+          "name": "Iman (event planner)",
+          "optionA": "Hi Iman! How have you been? Any fun events coming up? I really enjoyed the last one you organized.",
+          "optionB": "Hey Iman, I need a favor. Can you get me into the next industry mixer?",
+          "feedbackA": "Well done! You're showing interest in their work before asking for anything.",
+          "feedbackB": "Too direct and transactional. Build the relationship before asking for favors."
+        },
+        "lars": {
+          "name": "Lars (small business owner)",
+          "optionA": "Hi Lars! I came across an article about sustainable packaging that reminded me of your business. Thought you might find it interesting!",
+          "optionB": "Hey Lars, I'm looking for new opportunities. Let me know if you hear of anything.",
+          "feedbackA": "Excellent! Sharing something relevant shows you think about your contacts' interests.",
+          "feedbackB": "Too self-serving. Maintaining relationships means giving, not just taking."
+        }
+      },
+      "feedback": {
+        "allSent": "Great job maintaining your network! Remember: good networking maintenance is about showing genuine interest, being specific, and offering value - not just reaching out when you need something."
+      }
+    },
+    "leverage": {
+      "title": "Puzzle 4: Leverage",
+      "instructions": "You've spotted a grant opportunity on the wall poster. Now it's time to leverage your network wisely.",
+      "posterTitle": "STARTUP GRANT OPPORTUNITY",
+      "posterDetails": "Grants available: EUR 2,000 - EUR 10,000 for early-stage startups. Application deadline: June 15. Open to all sectors.",
+      "question": "This could be a great opportunity! But you'll need help with the application. Who from your network should you reach out to?",
+      "options": {
+        "maksym": "Reach out to Maksym (former IT colleague)",
+        "edith": "Reach out to Edith (business incubator manager)",
+        "iman": "Reach out to Iman (event planner)",
+        "lars": "Reach out to Lars (small business owner)"
+      },
+      "explanations": {
+        "maksym": "Maksym is great for IT advice, but grant applications aren't really his area of expertise.",
+        "edith": "Edith runs a business incubator that helps startups with exactly this kind of thing - business plans, funding, grants. She's the perfect person to ask!",
+        "iman": "Iman is wonderful for events and connections, but grant applications aren't her specialty.",
+        "lars": "Lars is a fellow small business owner who might be competing for the same grant. It could create an awkward situation."
+      },
+      "skillUnlocked": "Networking skill unlocked: Leverage",
+      "feedback": {
+        "wrong": "Think about who in your network has the most relevant expertise for grant applications and startup support.",
+        "correct": "Exactly right! Edith's incubator is designed to help startups navigate funding opportunities. Leveraging your network means reaching out to the right person for the right task."
+      },
+      "answerOverlay": "The correct answer is: Reach out to Edith. Her business incubator specializes in helping startups with business plans and funding - exactly what you need for a grant application."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "initiate": "Try clicking on the people in the room to start conversations.",
+    "initiateNpc1Done": "You've talked to Marcus. Try someone else!",
+    "initiateNpc2Done": "Try talking to the woman by the coffee machine.",
+    "mirror": "Look for your bag on the couch - there might be something useful inside.",
+    "mirrorReflection": "Take a moment to reflect, then look for Edith.",
+    "build": "Click on Edith to continue your conversation.",
+    "buildConversation": "Choose the response that shows genuine interest in the other person.",
+    "maintain": "Check your phone to respond to messages from your contacts.",
+    "maintainContacts": "Choose responses that show genuine interest and offer value.",
+    "leverage": "Look at the poster on the wall for an opportunity.",
+    "leverageQuestion": "Think about which contact has the most relevant expertise for startup grants.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room and interact with the people and objects."
+  },
+  "systemDialogues": {
+    "enterRoom": "Okay, here I am. A waiting room full of strangers. Perfect opportunity to practice my networking skills. Let me see who's around...",
+    "npc1Rejection": "He's busy. That's fine - knowing when someone isn't available is an important part of networking too.",
+    "npc2Awkward": "Well, that was... brief. Sometimes conversations just don't take off. The key is not to give up.",
+    "edithSuccess": "That went really well! I got Edith's card and she seemed genuinely interested in staying in touch.",
+    "initiateComplete": "I've talked to everyone. Some conversations worked better than others, but I learned something from each one. Networking is about reading the room and finding the right connections.",
+    "mirrorFound": "Hmm, my bag is here on the couch. Let me check...",
+    "mirrorClose": "Alright, looking presentable. But networking is more than looks - it's about being genuine and curious.",
+    "edithReturns": "Oh, Edith is coming back this way. This is a chance to build on that initial connection!",
+    "buildComplete": "What a great conversation! I really feel like I've built a genuine connection with Edith. She even invited me to a mentor night.",
+    "phoneNotification": "My phone is buzzing. Let me check my messages...",
+    "maintainComplete": "Done! Keeping in touch with my network doesn't have to be complicated - it just has to be genuine.",
+    "noticePoster": "Hmm, that poster on the wall looks interesting. Let me take a closer look...",
+    "leverageComplete": "Smart move. Knowing who to reach out to - and why - is the final piece of the networking puzzle.",
+    "congratulations": "Congratulations! You've mastered all four networking skills: Initiate, Build, Maintain, and Leverage. Time to put them into practice in the real world!"
+  },
+  "items": {
+    "mirror": {
+      "popupTitle": "Mirror",
+      "popupContent": [
+        "No salad between the teeth, check."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully completed the Networking Skills escape room! You've learned and practiced the four key networking skills: Initiate (starting conversations), Build (deepening connections), Maintain (staying in touch), and Leverage (using your network wisely). These skills will serve you well in your professional journey!",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "sendButton": "Send",
+    "nextContact": "Next Contact",
+    "optionA": "A",
+    "optionB": "B",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

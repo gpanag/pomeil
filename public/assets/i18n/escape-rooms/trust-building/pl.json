@@ -1,0 +1,230 @@
+{
+  "loading": "Ładowanie Budowania Zaufania...",
+  "intro": {
+    "title": "Budowanie zaufania",
+    "paragraphs": [
+      "Jesteś pracownikiem firmy IT, który właśnie awansował na stanowisko Lidera Zespołu. Podekscytowany wszystkimi nowymi zadaniami i doświadczeniami, nie możesz się doczekać spotkania ze swoim zespołem - po raz pierwszy jako jego lider.",
+      "Masz mieszane uczucia wobec tej zmiany. Chętnie podejmiesz się nowej roli, mocno wierząc, że posiadasz niezbędną wiedzę i umiejętności. Z drugiej strony nie jesteś pewien, jak dobrze sobie poradzisz w zakresie interakcji społecznych i utrzymywania zdrowych relacji opartych na wzajemnym zaufaniu, szczerości i otwartości.",
+      "Wchodzisz do biura HR - miejsca, w którym poprosiłeś swój zespół o zebranie się, aby przeprowadzić rodzaj spotkania orientacyjnego…"
+    ],
+    "buttonText": "Wejdź do biura HR"
+  },
+  "characters": {
+    "kate": {
+      "name": "Kate",
+      "dialogues": {
+        "greet": "Cześć! Czekaliśmy na ciebie! Ja i Hiroshi jesteśmy bardzo podekscytowani, że to ty będziesz sterował naszym małym zespołem. Jesteśmy pewni, że poradzisz sobie znakomicie w nowej roli. Jestem pewna, że masz wiele do powiedzenia, ale rozmawiałam z Hiroshim i, korzystając z okazji, chcielibyśmy poprosić cię o udział we wspólnym ćwiczeniu. Aby upewnić się, że nasza praca zespołowa będzie przebiegać tak płynnie, jak to tylko możliwe. Czy chciałbyś do nas dołączyć?",
+        "proposeExercise": "Świetnie! Zacznijmy od odrobiny teorii. Właśnie wysłałam ci e-mail z plikiem tekstowym zawierającym podstawowe informacje dotyczące skutecznego budowania zaufania w zespole. Treść została opracowana przez korporację, ale myślę, że przyda się w naszym przypadku. Proszę, zapoznaj się z nim i daj mi znać, gdy będziesz gotowy, aby kontynuować!",
+        "goToWhiteboard": "Wow! Zajęło ci to chwilę. Czy zapisałeś się na kurs szybkiego czytania? Założę się, że tak. W każdym razie jesteśmy gotowi przejść dalej i przejść do głównej części ćwiczenia. Spójrzmy na tablicę.",
+        "puzzle1Intro": "Ja i Hiroshi przygotowaliśmy dla ciebie krótkie zadanie polegające na dopasowywaniu, aby szybko sprawdzić twoje rozumienie podstawowych idei procesu budowania zaufania. Zróbmy to!",
+        "puzzle1Complete": "Oczywiście, że ukończyłeś nasze ćwiczenie celująco! Nie wątpiłam w ciebie ani przez chwilę. Dobra, mając to za sobą, chciałam właściwie porozmawiać z tobą o czymś… Pomyślałam, że to dobry moment, i mam nadzieję, że nie przeszkadza ci, ale…",
+        "personalStory": "Dziękuję. Wiedziałam, że mnie zrozumiesz. Dobrze, zaczynam. Miałam konkretne, nieprzyjemne doświadczenia z naszym poprzednim liderem zespołu. Nie była zła ogólnie, była przyzwoitą liderką, ale z jakiegoś powodu zawsze odrzucała moje pomysły. Oczywiście mówiła, że rozważy, że pomyśli o tym. Ale w końcu żadna z moich sugestii nigdy nie została wzięta pod uwagę. Z czasem przestałam się nimi dzielić. Próbuję powiedzieć… Chcę ci ufać, że pod twoim przywództwem moje pomysły będą wysłuchane. To znaczyłoby dla mnie tak wiele.",
+        "puzzle3Thanks": "Dziękuję bardzo. To wszystko, czego miałam nadzieję usłyszeć, a nawet więcej. Już jesteś moim ulubionym Liderem Zespołu! Obiecuję, że zawsze będę dawać z siebie wszystko dla zespołu, aby mój wkład był wartościowy, a moje propozycje pchały nas naprzód. Dziękuję bardzo jeszcze raz.",
+        "finalWords": "To był wyjątkowy dzień, prawda? Jak powiedział Hiroshi, będziesz idealnym Liderem Zespołu, jestem teraz tego całkowicie pewna. I… wiesz, historia, którą wcześniej podzieliłam się z tobą, nie była częścią korporacyjnego testu, była moim prawdziwym doświadczeniem i obawą. A dla mnie jest jeszcze bardziej cenna niż sam wynik testu. Jeszcze raz dziękuję, że okazałeś się osobą godną zaufania, gotową ufać członkom swojego zespołu w naszej wspólnej podróży! Świetna robota!",
+        "completion": "Nie możemy się doczekać, by zacząć z tobą pracować! Szkolenie zostało ukończone!",
+        "default": "Jestem tu, jeśli mnie potrzebujesz. Jeśli zapomniałeś, co masz robić, kliknij przycisk wskazówki (żarówkę) w lewym górnym rogu."
+      }
+    },
+    "hiroshi": {
+      "name": "Hiroshi",
+      "dialogues": {
+        "puzzle3Complete": "Twoje podejście i działania do tej pory naprawdę wiele dla nas znaczą. Mamy szczęście, że jesteś naszym Liderem Zespołu. Jestem pewien, że nasza współpraca będzie przebiegać płynnie. A tak, skoro już o współpracy mowa… Wczoraj korporacja wprowadziła zupełnie nowe narzędzie do planowania pracy zespołowej. Może działać w dwóch trybach – Tryb wspólnej widoczności i Tryb ograniczonej widoczności. Pierwszy umożliwia wszystkim członkom zespołu widzieć zadania, obciążenie pracą i przypisane zasoby. Drugi wyświetla wszystkie te informacje tylko Liderowi Zespołu. Oba mają plusy i minusy. Proszę, wybierz wybraną opcję na laptopie, kiedy będziesz gotowy.",
+        "reveal": "Zgadza się. Nigdy nie było żadnego wdrożenia nowego narzędzia. To wszystko był tylko test. Ale musieliśmy być pewni. Cóż, korporacja musiała być – to był ich pomysł. I tak, oszukaliśmy cię trochę, ale hej, jesteśmy wiodącą w branży firmą IT i nie możemy sobie pozwolić na przypisywanie niewłaściwych ludzi do tak wymagających stanowisk. Mówiąc to, przeszedłeś wszystkie nasze testy! Nie możemy się doczekać, by zacząć pracować pod twoim przywództwem! Witaj na pokładzie!",
+        "completion": "Witaj w zespole, liderze!",
+        "default": "Jestem tu, gotowy, kiedy ty będziesz."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Budowanie zaufania - Sprawdzenie podstawowego zrozumienia",
+      "instructions": "Twórz logiczne zdania, dopasowując każdy początek do odpowiedniego zakończenia.",
+      "columnA": {
+        "heading": "Początki zdań",
+        "items": {
+          "1": "Wspólne cele pomagają zespołowi…",
+          "2": "Gdy lider słucha…",
+          "3": "Wzmacnianie ludzi pomaga im…",
+          "4": "Przejrzystość podczas zmiany pozwala ludziom…",
+          "5": "Przewidywalne procesy ułatwiają…",
+          "6": "Uznanie pomaga ludziom…",
+          "7": "Lider, który prowadzi własnym przykładem, inspiruje innych do…"
+        }
+      },
+      "columnB": {
+        "heading": "Zakończenia zdań",
+        "items": {
+          "A": "…otwartego dzielenia się pomysłami.",
+          "B": "…postępowania z podobną uczciwością.",
+          "C": "…zachowania spokoju i adaptacji.",
+          "D": "…brania odpowiedzialności.",
+          "E": "…efektywnej współpracy.",
+          "F": "…unikania nieporozumień.",
+          "G": "…pozostawania zmotywowanymi i poprawiania się."
+        }
+      },
+      "feedback": {
+        "wrong": "Nie do końca. Spróbuj ponownie!",
+        "allCorrect": "Świetna robota! Dopasowałeś wszystkie zdania prawidłowo!",
+        "revealedComplete": "Oto prawidłowe dopasowania — przejrzyj je i kontynuujmy."
+      },
+      "answerOverlay": "Oto prawidłowe dopasowania: 1→E, 2→A, 3→D, 4→C, 5→F, 6→G, 7→B"
+    },
+    "singleChoice1": {
+      "title": "Pomaganie Kate",
+      "instructions": "Wybierz najlepszą odpowiedź. Tylko jedna jest prawidłowa.",
+      "question": "Bazując na kontekście i twoim dążeniu do budowania zdrowych, opartych na zaufaniu relacji ze swoim zespołem, co powinieneś teraz powiedzieć Kate?",
+      "options": {
+        "a": "Wydajesz się niepewna. Może powinniśmy trzymać się agendy na razie i porozmawiać o tym innym razem?",
+        "b": "W porządku, Kate. Jestem pewien, że to nic poważnego. Ruszajmy dalej.",
+        "c": "Kate, jeśli coś cię trapi, jestem tutaj. Proszę, kontynuuj - słucham.",
+        "d": "Zanim będziesz kontynuować, muszę wiedzieć, jak to wpływa na naszą pracę. Czy możesz być bardziej bezpośrednia?"
+      },
+      "hint": "Postaraj się być bardziej delikatny i uspokajający - Kate to doceni.",
+      "feedback": {
+        "wrong": "To może nie być najlepsza odpowiedź dla budowania zaufania. Postaraj się być bardziej delikatny i uspokajający.",
+        "correct": "Doskonały wybór! To dokładnie taki rodzaj empatycznej odpowiedzi, która buduje zaufanie."
+      },
+      "answerOverlay": "Prawidłowa odpowiedź to: „Kate, jeśli coś cię trapi, jestem tutaj. Proszę, kontynuuj - słucham.\""
+    },
+    "fillGap": {
+      "title": "Pierwsze kroki",
+      "instructions": "Uzupełnij zdania brakującymi słowami i zaprojektuj swoją odpowiedź dla Kate.",
+      "sentenceParts": [
+        "Kate, dziękuję, że mi o tym powiedziałaś. Chcę, żebyś wiedziała, że ",
+        " i że uznaję, że potrzebowałaś dużo odwagi, aby to poruszyć.\n\nTwoje pomysły ",
+        ", a ja jestem zobowiązany do upewnienia się, że twój głos jest słyszany.\n\nIdąc do przodu, chcę, żebyśmy ",
+        ", abyśmy ukształtowali naszą współpracę w sposób, który czuje się wspierający i sprawiedliwy.\n\nPodejmiemy następne kroki ",
+        ", z otwartością i zaufaniem."
+      ],
+      "options": [
+        "uczestniczyli w tym procesie razem",
+        "słyszę i cenię twój wkład",
+        "ramię w ramię",
+        "naprawdę mają znaczenie dla tego zespołu"
+      ],
+      "correctOrder": [
+        "słyszę i cenię twój wkład",
+        "naprawdę mają znaczenie dla tego zespołu",
+        "uczestniczyli w tym procesie razem",
+        "ramię w ramię"
+      ],
+      "feedback": {
+        "wrong": "Niektóre słowa nie są na właściwym miejscu. Spróbuj ponownie!",
+        "correct": "Doskonale! Skomponowałeś przemyślaną odpowiedź budującą zaufanie."
+      },
+      "answerOverlay": "Prawidłowa kolejność to: [1] słyszę i cenię twój wkład, [2] naprawdę mają znaczenie dla tego zespołu, [3] uczestniczyli w tym procesie razem, [4] ramię w ramię",
+      "resetButton": "Zresetuj",
+      "checkButton": "Wyślij"
+    },
+    "singleChoice2": {
+      "title": "Wielkie decyzje",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Biorąc pod uwagę wszystkie plusy i minusy, podejmij decyzję dotyczącą trybu nowego narzędzia do planowania pracy zespołowej.",
+      "options": {
+        "a": "Wybierz tryb ograniczonej widoczności",
+        "b": "Wybierz tryb wspólnej widoczności"
+      },
+      "hint": "Choć ograniczona widoczność ma swoje zalety, jej wady przeważają nad nimi, sprawiając, że tryb wspólny jest bardziej prawdopodobny do pożytku dla twojego zespołu.",
+      "feedback": {
+        "wrong": "Czy jesteś pewien? Rozważ wpływ na zaufanie zespołu i przejrzystość.",
+        "correct": "Świetny wybór! Wspólna widoczność jest zgodna z zaufaniem i przejrzystością."
+      },
+      "answerOverlay": "Prawidłowa odpowiedź to: Wybierz tryb wspólnej widoczności"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Kliknij na Kate, aby rozpocząć spotkanie orientacyjne.",
+    "talkToKate1": "Kliknij na Kate, aby rozpocząć.",
+    "findPhone": "Czujesz wibracje swojego telefonu w torbie. Poszukaj torby w pobliżu krzeseł.",
+    "readEmail": "Przeczytaj e-mail na swoim telefonie.",
+    "talkToKate2": "Porozmawiaj z Kate ponownie - czeka na ciebie.",
+    "goToWhiteboard": "Kliknij na tablicę, jak zasugerowała Kate.",
+    "puzzle1Matching": "Dopasuj każdy początek zdania do zakończenia, które najlepiej opisuje zasadę budowania zaufania.",
+    "puzzle1Complete": "Kate chce z tobą porozmawiać. Kliknij na nią.",
+    "kateStory": "Kate wydaje się zdenerwowana. Kliknij na nią, aby posłuchać.",
+    "readPaper": "Zauważasz papier na stole. Kliknij na stół, aby go przeczytać.",
+    "puzzle3FillGap": "Użyj banku słów, aby uzupełnić luki we właściwej kolejności i dokończyć swoją odpowiedź dla Kate.",
+    "puzzle3Complete": "Hiroshi chce z tobą rozmawiać. Kliknij na niego.",
+    "clickLaptop": "Kliknij na laptopa, aby podjąć decyzję.",
+    "readStickyNote": "Przeczytaj karteczkę na ekranie laptopa.",
+    "reveal": "Hiroshi ma ci coś do powiedzenia. Kliknij na niego.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po pokoju w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Widzę, że Kate i Hiroshi pomyślnie ukończyli pierwsze zadanie, które im zleciłem jako Lider Zespołu… którym było zebranie się w biurze HR. W każdym razie, teraz moja kolej, aby wykonać dobrze swoją pracę. Powodzenia mi…",
+    "findPhone": "Czujesz wibracje telefonu w torbie, powiadamiające cię o e-mailu od Kate. Zajrzyj do torby i poszukaj swojego białego telefonu.",
+    "emailRead": "Brawo! Właśnie odkryłeś najważniejsze, czym Kate chciała się z tobą podzielić! Powinieneś teraz iść z nią porozmawiać.",
+    "goToWhiteboard": "Spójrzmy na tablicę i ukończmy ćwiczenie.",
+    "reactToStory": "W miarę jak pauza w mowie Kate się wydłuża, masz wrażenie, że to moment, byś zareagował.",
+    "noticePaper": "Mimo że czujesz, że już wiesz, co powiedzieć Kate, nagle zauważasz papier na stole, zatytułowany „Siła słuchania\". Powinieneś go najpierw przeczytać.",
+    "paperRead": "Wzmocniony nowo zdobytą wiedzą i kierowany swoją empatią i umiejętnościami przywódczymi, zaczynasz komponować odpowiedź dla Kate…",
+    "clickLaptop": "Hiroshi obraca laptopa w twoją stronę. Zauważasz dwa duże przyciski i żółtą cyfrową karteczkę na pulpicie. Przeczytaj karteczkę przed podjęciem decyzji.",
+    "stickyNoteRead": "Zauważasz dwa cytaty, prawdopodobnie ulubione Hiroshiego. Czujesz rosnącą pewność co do jednego z rozwiązań…",
+    "talkToKateAgain": "Kate wygląda, jakby miała więcej do powiedzenia. Kliknij na nią ponownie, aby ją wysłuchać.",
+    "talkToHiroshi": "Teraz porozmawiaj z Hiroshim — obserwował cię cały czas i wygląda na to, że chce zamienić słowo."
+  },
+  "items": {
+    "phone": {
+      "inventoryTitle": "Budowanie zaufania 101",
+      "popupTitle": "Budowanie zaufania 101",
+      "popupContent": [
+        "Komunikuj się jasno - mów co i dlaczego.",
+        "Słuchaj najpierw - ludzie ufają, gdy czują się wysłuchani.",
+        "Wyznaczaj wspólne cele - aby każdy wiedział, dokąd zmierza zespół.",
+        "Wzmacniaj ludzi - daj przestrzeń na pomysły i odpowiedzialność.",
+        "Bądź przewidywalny - jasne procesy budują niezawodność.",
+        "Daj uznanie - informacja zwrotna wzmacnia motywację i zaufanie.",
+        "Bądź przejrzysty w zmianie - szczerość zmniejsza strach.",
+        "Prowadź własnym przykładem - konsekwencja buduje wiarygodność."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Siła słuchania",
+      "popupTitle": "Siła słuchania",
+      "popupContent": [
+        "1. Uznaj ich doświadczenie — Pokaż, że usłyszałeś, co powiedzieli. Doceń odwagę, jaka była potrzebna, aby się tym podzielić.",
+        "2. Pytaj zamiast zakładać — Zaproś ich do wyjaśnienia, czego potrzebują. Zrozumienie buduje jasność.",
+        "3. Odpowiadaj partnerstwem — Nie obietnicami. Nie decyzjami. Wspólnym następnym krokiem."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Karteczka",
+      "popupTitle": "Karteczka",
+      "popupContent": [
+        "„Gdy wszyscy widzą ten sam obraz, zespół może iść razem.\"",
+        "„Ludzie, którzy nie widzą procesu, przestają ufać wynikowi.\""
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Udowodniłeś, że jesteś nie tylko współczującą, empatyczną i godną zaufania osobą, ale także dobrym Liderem Zespołu, który potrafi ufać własnym członkom zespołu. Pomyślnie zdobyłeś umiejętność Budowania Zaufania!",
+    "buttonText": "Wyjdź z pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

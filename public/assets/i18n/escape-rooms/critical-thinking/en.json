@@ -1,0 +1,357 @@
+{
+  "loading": "Loading Critical Thinking...",
+  "intro": {
+    "title": "Critical Thinking",
+    "paragraphs": [
+      "You have just arrived at your company's office for a 10:00 meeting with your manager. As you step into the waiting room outside the conference room, you notice you are early.",
+      "The waiting room has a comfortable sofa group, a coffee table with a laptop on it, and a large flat screen TV mounted on the wall. A cork board hangs near the conference room doors.",
+      "You take a seat and wait. But this quiet moment is about to become a test of your critical thinking skills..."
+    ],
+    "buttonText": "Enter the Waiting Room"
+  },
+  "characters": {
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "greet": "Are you also here for the 10:00 meeting?",
+        "intro": "Oh, no? Well... I'm Mark from FastSupply Ltd. We provide office supplies and services at unbeatable prices. Have you heard of us?",
+        "offer": "We're running an amazing offer right now. 50% discount on all our premium services if you sign up today. What do you say?",
+        "offerWrongHint": "Be careful! You should always verify the details of any deal before committing to it.",
+        "pressure": "This offer is only valid today. Tomorrow, the price goes back to normal. You really don't want to miss out on this one.",
+        "pressureWrongHint": "Don't yield to time pressure. A genuinely good deal should still be available after careful consideration.",
+        "careful": "Careful type, I see. I respect that. Not many people take the time to think things through these days.",
+        "vagueClaims": "Look. The offer is simple: big savings, premium quality, and hundreds of satisfied customers. You won't find a better deal anywhere else.",
+        "vagueClaimsWrongHint": "Be sceptical of vague claims without evidence. Always ask for written documentation and verifiable references.",
+        "sendDocs": "Of course, I'll send you everything. A full written offer, references, the works. You'll see that everything checks out.",
+        "farewell": "Just remember. The faster you act, the better! I'll be in touch. Here's my card.",
+        "farewellWrongHint": "Avoid giving unclear or non-committal replies. Be clear about your intentions to review and research before deciding.",
+        "default": "I'm Mark from FastSupply. Always happy to chat!"
+      }
+    },
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hey! I saw you talking to that guy. Was that Mark from FastSupply?",
+        "warning1": "I thought so. I recognise him. He came to my previous company about six months ago with the same pitch.",
+        "warning2": "He offered us a huge discount too. Everything sounded perfect - premium service, top quality, incredible savings.",
+        "warning3": "My manager was impressed and signed a contract on the spot. We didn't do any background research.",
+        "warning4": "The first delivery was late. When it finally arrived, half the items were wrong and the quality was terrible.",
+        "warning5": "We tried to contact their customer service, but it took weeks to get a response. They kept passing us around.",
+        "warning6": "In the end, we had to cancel the contract. It cost us more to fix the problems than we ever saved with their discount.",
+        "warning7": "I'm not saying they're a scam, but I'd strongly recommend you do your homework before signing anything.",
+        "warning8": "Check online reviews, ask for real references, and read the fine print. Trust me on this one.",
+        "completion": "Good luck with your decision! I'm sure you'll make the right call.",
+        "default": "Just make sure you do your research before making any decisions."
+      }
+    }
+  },
+  "conversation": {
+    "player": {
+      "response1": "No, I'm just waiting for my manager.",
+      "response2": "I don't think so...",
+      "response3_correct": "That sounds interesting, but I'll need to review the details before making any commitments.",
+      "response3_wrong": "That sounds fantastic! Let's do it.",
+      "response4_correct": "If your deal is genuinely good, it should still be good tomorrow. I don't make decisions under time pressure.",
+      "response4_wrong": "Alright, you convinced me. I'll sign up before the deadline.",
+      "response5": "Well-",
+      "response6_correct": "Could you send me a written offer and some verifiable references? I'd like to review everything properly.",
+      "response6_wrong": "That's good enough for me. Where do I sign?",
+      "response7": "Great. I'll look forward to receiving those.",
+      "response8_correct": "I'll review the documents carefully and do some independent research before making my decision.",
+      "response8_wrong": "I'll probably say yes once I see the paperwork. Seems like a no-brainer."
+    }
+  },
+  "email": {
+    "subject": "EXCLUSIVE OFFER - 50% OFF Premium Services - ACT NOW!",
+    "from": "Mark Thompson <mark.t@fastsupply-deals.com>",
+    "to": "You",
+    "date": "Today",
+    "greeting": "Dear Valued Customer,",
+    "body1": "Thank you for your interest in FastSupply Ltd! As discussed, I'm pleased to present our exclusive offer:",
+    "offerLine": "50% DISCOUNT on ALL premium services - valid TODAY ONLY!",
+    "body2": "Our customers consistently rate us as the best in the industry. Here's what some of them have said:",
+    "testimonial1": "\"FastSupply changed our business!\" - A satisfied customer",
+    "testimonial2": "\"Incredible value for money!\" - A happy client",
+    "testimonial3": "\"We couldn't be more pleased!\" - A loyal partner",
+    "body3": "Terms & Conditions apply. For full details, please contact our sales team.",
+    "signature": "Best regards,\nMark Thompson\nSenior Sales Representative\nFastSupply Ltd",
+    "clues": {
+      "subject": {
+        "label": "Subject Line",
+        "thought": "The subject line uses urgency tactics: \"EXCLUSIVE\", \"ACT NOW!\", all caps. This is a common high-pressure sales technique designed to make me act before thinking."
+      },
+      "discount": {
+        "label": "50% Discount",
+        "thought": "A 50% discount on all premium services? That's an unusually large discount. If their services were truly premium quality, why would they need to offer such a steep reduction? This seems too good to be true."
+      },
+      "todayOnly": {
+        "label": "Today Only",
+        "thought": "\"Valid TODAY ONLY\" - this is classic artificial scarcity. Creating a false deadline pressures the customer into making a hasty decision without proper research."
+      },
+      "testimonials": {
+        "label": "Generic Testimonials",
+        "thought": "These testimonials are completely generic - no real names, no company names, no specific details. \"A satisfied customer\" could be anyone, or no one at all. Legitimate businesses provide verifiable references."
+      },
+      "terms": {
+        "label": "Terms & Conditions",
+        "thought": "\"Terms & Conditions apply. For full details, please contact our sales team.\" - The T&C aren't included in the email. A transparent company would provide the full terms upfront, not hide them behind a phone call."
+      }
+    }
+  },
+  "reviews": {
+    "siteName": "BusinessReview.com",
+    "siteSubtitle": "FastSupply Ltd - Customer Reviews",
+    "overallRating": "2.1 / 5",
+    "totalReviews": "47 reviews",
+    "items": {
+      "0": {
+        "author": "Sarah_Operations_Mgr",
+        "rating": 1,
+        "title": "Terrible experience - avoid at all costs",
+        "text": "Signed up after a sales rep promised premium quality. Deliveries were consistently late, products were substandard, and customer service was non-existent. Took 3 months to cancel our contract."
+      },
+      "1": {
+        "author": "NotMarkThompson",
+        "rating": 5,
+        "title": "Best supplier ever!!!",
+        "text": "FastSupply is the greatest company I have ever dealt with. Perfect in every way. 100% recommend to everyone. No complaints whatsoever."
+      },
+      "2": {
+        "author": "TechStartup_James",
+        "rating": 2,
+        "title": "Misleading discounts",
+        "text": "The 50% discount they advertise is calculated from an inflated base price. We ended up paying more than our previous supplier for lower quality goods."
+      },
+      "3": {
+        "author": "Definitely_Not_Mark_Thompson",
+        "rating": 5,
+        "title": "A wonderful company run by wonderful people",
+        "text": "I am a completely real customer and I can say that FastSupply is flawless. Their sales representatives are particularly handsome and charming."
+      },
+      "4": {
+        "author": "Office_Manager_Lima",
+        "rating": 1,
+        "title": "Hidden fees everywhere",
+        "text": "The contract had hidden fees that weren't mentioned during the sales pitch. Delivery charges, handling fees, early termination penalty. Read the fine print carefully!"
+      },
+      "5": {
+        "author": "HR_Director_Chen",
+        "rating": 2,
+        "title": "Unresponsive customer service",
+        "text": "When issues arose, their customer service was impossible to reach. Emails went unanswered for weeks. Phone calls were routed through endless menus. Very frustrating."
+      },
+      "6": {
+        "author": "NotMarksSister",
+        "rating": 5,
+        "title": "Perfect company, no notes!",
+        "text": "I am definitely not related to anyone at FastSupply and I think they deserve 10 stars. Their office supplies changed my life forever."
+      },
+      "7": {
+        "author": "Procurement_Specialist_EU",
+        "rating": 1,
+        "title": "Do your homework before signing",
+        "text": "The aggressive sales tactics should have been a red flag. Pressure to sign immediately, vague promises, and when we asked for references, we got generic quotes with no contact details."
+      }
+    },
+    "thoughts": {
+      "fakePositive": "Several of the positive reviews look suspicious. Usernames like \"NotMarkThompson\" and \"Definitely_Not_Mark_Thompson\" are obviously fake. The reviews are excessively positive with no specific details - a hallmark of fabricated reviews.",
+      "negativePattern": "The negative reviews paint a consistent picture: late deliveries, poor quality, hidden fees, unresponsive customer service, and aggressive sales tactics. Multiple independent reviewers reporting the same problems is a strong signal."
+    }
+  },
+  "objects": {
+    "calendar": {
+      "title": "Conference Room Booking Screen",
+      "content": "Today's Schedule:\n\n09:00 - 09:45  |  Marketing Team Standup\n10:00 - 11:00  |  Manager Meeting (Your Name)\n11:30 - 12:00  |  HR Onboarding Session\n13:00 - 14:00  |  Client Call - Acme Corp\n14:30 - 15:30  |  Product Demo\n\nNo supplier meetings are scheduled for today.",
+      "thought": "There is no meeting with FastSupply or any other supplier listed on today's conference room schedule. Mark said he was here for a meeting, but there's no evidence of that. He appears to have shown up uninvited."
+    },
+    "flyer": {
+      "title": "FastSupply Ltd - Promotional Flyer",
+      "content": "FastSupply Ltd\n\"Your Partner in Office Excellence\"\n\nServices:\n- Office supplies\n- Premium services\n- Corporate solutions\n\nContact us today!\nwww.fastsupply-deals.com\n\n*Prices and availability subject to change without notice.",
+      "thought": "This flyer is extremely vague. No specific product details, no pricing information, no company registration number, no physical address. A legitimate business would provide much more concrete information about their offerings."
+    },
+    "businessCard": {
+      "title": "Business Card",
+      "content": "Mark Thompson\nSenior Sales Representative\nFastSupply Ltd\n\nmark.t@fastsupply-deals.com\nwww.fastsupply-deals.com",
+      "thought": "The business card lacks a phone number, physical office address, and company registration number. The email domain is 'fastsupply-deals.com' rather than a more professional domain. This looks unprofessional for a supposed established company."
+    },
+    "poster": {
+      "title": "Company Poster",
+      "content": "Protect Yourself from Manipulative Sales Tactics:\n\n1. Watch for artificial urgency (\"today only!\")\n2. Demand written offers and verifiable references\n3. Research independently before committing\n4. Never sign under pressure\n5. If it sounds too good to be true, it probably is",
+      "thought": ""
+    },
+    "magazine": {
+      "title": "Industry Magazine - Procurement Weekly",
+      "content": "\"How to Vet a New Supplier\"\nby Dr. Elena Martinez\n\nKey steps for due diligence:\n- Request a written proposal with full terms\n- Check independent review sites\n- Ask for verifiable customer references\n- Verify company registration and history\n- Compare with at least 2 other suppliers\n- Never commit under time pressure",
+      "thought": ""
+    }
+  },
+  "researchNotes": {
+    "notes": {
+      "conversation_written_offer": {
+        "id": "conversation_written_offer",
+        "text": "Mark agreed to send a written offer with full details and references.",
+        "correctCategory": "PRO"
+      },
+      "conversation_consistent": {
+        "id": "conversation_consistent",
+        "text": "Mark's offer has been consistent throughout the conversation - 50% discount on premium services.",
+        "correctCategory": "PRO"
+      },
+      "conversation_good_offer": {
+        "id": "conversation_good_offer",
+        "text": "50% discount on premium services is a significant potential saving if genuine.",
+        "correctCategory": "PRO"
+      },
+      "conversation_pressure": {
+        "id": "conversation_pressure",
+        "text": "Mark used time pressure tactics: \"only valid today\", \"the faster you act, the better.\"",
+        "correctCategory": "CON"
+      },
+      "conversation_vague": {
+        "id": "conversation_vague",
+        "text": "Mark made vague claims about \"hundreds of satisfied customers\" without providing any verifiable evidence.",
+        "correctCategory": "CON"
+      },
+      "conversation_uninvited": {
+        "id": "conversation_uninvited",
+        "text": "Mark claimed to be here for a meeting, but the conference room schedule shows no supplier meetings today.",
+        "correctCategory": "CON"
+      },
+      "maria_bad_experience": {
+        "id": "maria_bad_experience",
+        "text": "Maria's previous company had a terrible experience with FastSupply: late deliveries, wrong items, poor quality, and unresponsive customer service.",
+        "correctCategory": "CON"
+      },
+      "email_urgency": {
+        "id": "email_urgency",
+        "text": "The email uses aggressive urgency tactics: all-caps subject, \"ACT NOW!\", \"TODAY ONLY\".",
+        "correctCategory": "CON"
+      },
+      "email_discount_suspicious": {
+        "id": "email_discount_suspicious",
+        "text": "A 50% discount on all premium services seems too good to be true and may indicate inflated base prices.",
+        "correctCategory": "CON"
+      },
+      "email_generic_testimonials": {
+        "id": "email_generic_testimonials",
+        "text": "The testimonials in the email are completely generic with no real names or companies - they're unverifiable.",
+        "correctCategory": "CON"
+      },
+      "email_hidden_terms": {
+        "id": "email_hidden_terms",
+        "text": "The Terms & Conditions are not included in the email and require contacting sales to see them.",
+        "correctCategory": "CON"
+      },
+      "email_time_pressure": {
+        "id": "email_time_pressure",
+        "text": "The email reinforces the artificial \"today only\" deadline to create time pressure.",
+        "correctCategory": "CON"
+      },
+      "reviews_fake": {
+        "id": "reviews_fake",
+        "text": "Multiple positive reviews appear to be fake, posted by users with suspicious names like \"NotMarkThompson\".",
+        "correctCategory": "CON"
+      },
+      "reviews_negative_pattern": {
+        "id": "reviews_negative_pattern",
+        "text": "Multiple independent negative reviews report the same problems: late deliveries, poor quality, hidden fees, and unresponsive customer service.",
+        "correctCategory": "CON"
+      },
+      "calendar_no_meeting": {
+        "id": "calendar_no_meeting",
+        "text": "The conference room booking screen shows no supplier meeting scheduled today - Mark appears to have shown up uninvited.",
+        "correctCategory": "CON"
+      },
+      "flyer_lacking": {
+        "id": "flyer_lacking",
+        "text": "FastSupply's promotional flyer is extremely vague: no specific products, no prices, no company registration, no address.",
+        "correctCategory": "CON"
+      },
+      "card_unprofessional": {
+        "id": "card_unprofessional",
+        "text": "Mark's business card lacks a phone number, office address, and company registration number - unprofessional for an established company.",
+        "correctCategory": "CON"
+      }
+    },
+    "proLabel": "PRO",
+    "conLabel": "CON",
+    "wrongPlacementHint": "Think again. Does this evidence support or undermine FastSupply's credibility?",
+    "allSortedMessage": "You've sorted all the evidence. Now it's time to make your decision."
+  },
+  "decision": {
+    "title": "Make Your Decision",
+    "instructions": "Based on all the evidence you've gathered, should you accept or reject FastSupply's offer?",
+    "acceptLabel": "Accept the Offer",
+    "rejectLabel": "Reject the Offer",
+    "acceptFeedback": "You chose to accept the offer. While the potential savings are appealing, the overwhelming evidence suggests significant risks: fake reviews, pressure tactics, hidden terms, and a colleague's negative experience. In real life, this decision could lead to problems. However, if you do proceed, make sure to negotiate better terms, get everything in writing, and set up safeguards. Critical thinking means making informed choices, even when the choice is risky.",
+    "rejectFeedback": "You chose to reject the offer. Given the overwhelming evidence - pressure tactics, fake reviews, vague claims, hidden terms, a colleague's bad experience, and no scheduled meeting - this is a well-reasoned decision. Critical thinking doesn't mean being cynical, but it does mean requiring evidence before making commitments. You can always reconsider if FastSupply provides verifiable references and transparent terms in the future."
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "phase1_talkToMark": "Click on Mark to start the conversation.",
+    "phase2_talkToMaria": "Click on Maria to hear about her experience with FastSupply.",
+    "phase2_checkLaptop": "Click on the laptop to check the email from FastSupply.",
+    "phase2_checkTV": "Click on the TV screen to check online reviews.",
+    "phase2_checkCalendar": "Click on the booking screen near the conference room doors to check today's schedule.",
+    "phase2_checkFlyer": "There's a flyer on the floor. Click on it to examine it.",
+    "phase2_checkCard": "Check the business card Mark left on the coffee table.",
+    "phase2_checkPoster": "There's a company poster on the wall. It might have useful information.",
+    "phase2_checkMagazine": "There's an industry magazine on the table. It might offer guidance.",
+    "phase2_goCorkboard": "You've gathered all the evidence. Click the corkboard to sort your findings.",
+    "phase3_sorting": "Sort each research note into PRO or CON based on the evidence.",
+    "phase3_decision": "All evidence is sorted. Make your final decision about FastSupply's offer.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room for more information to help you decide."
+  },
+  "systemDialogues": {
+    "intro": "I'm early for my meeting. The waiting room is quiet. I'll take a seat and-",
+    "markExits": "Mark gathers his things and heads out with a confident smile. As he leaves, you notice a business card on the coffee table, a flyer on the floor, and that the laptop on the table has a new email notification. Before making any decisions, you should gather as much information as possible.",
+    "mariaNoteDone": "Maria's experience gives you a first-hand account of what dealing with FastSupply is really like. You should note this down.",
+    "emailAnalysisDone": "You've identified several red flags in the email. Time to look at more sources.",
+    "reviewAnalysisDone": "The reviews paint a clear picture. Some are obviously fake, and the genuine ones are overwhelmingly negative.",
+    "allResearchDone": "You've gathered all the evidence. It's time to organise your findings and make a decision. Head to the corkboard near the conference room doors.",
+    "sortingComplete": "All evidence is sorted. The picture is clear. Now you need to make your decision: accept or reject FastSupply's offer.",
+    "gameComplete": "Well done. Whether you accepted or rejected the offer, the important thing is that you applied critical thinking throughout the process. You gathered evidence, questioned claims, and made an informed decision."
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully completed the Critical Thinking escape room! You demonstrated the ability to question claims, gather evidence from multiple sources, identify manipulation tactics, and make an informed decision. These are essential critical thinking skills in any professional environment.",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "nextReview": "Next Review",
+    "previousReview": "Previous Review",
+    "closePopup": "Close",
+    "emailCluePrefix": "Clue",
+    "reviewOf": "of",
+    "researchNotesCollected": "Research Notes Collected",
+    "sortEvidence": "Sort Evidence",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  },
+  "emailFields": {
+    "from": "From:",
+    "date": "Date:",
+    "subject": "Subject:"
+  }
+}

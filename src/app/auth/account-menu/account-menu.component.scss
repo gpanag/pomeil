@@ -1,0 +1,22 @@
+.menu-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 4px;
+  min-width: 200px;
+  white-space: normal;
+  line-height: 1.4;
+  padding: 12px 16px !important;
+
+  small {
+    font-size: 13px;
+    opacity: 0.8;
+    display: block;
+  }
+
+  .greeting-text {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+  }
+}

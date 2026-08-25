@@ -1,0 +1,40 @@
+<div>
+  <div style="display: flex; flex-direction: row; margin-left: 16px;">
+    <!-- <div style="align-content: center;">{{translateService.lang === 'ua' ? 'ua' :
+      translateService.lang === 'pl' ? 'pl' :
+      translateService.lang === 'no' ? 'no' :
+      translateService.lang === 'gr' ? 'gr' :
+      translateService.lang === 'ee' ? 'ee' : 'en'}}</div> -->
+    <img class="flag" height="16" width="24" style="align-self: center;" [src]="
+            translateService.lang === 'pl' ? '/assets/icons/pl-flag.gif' :
+      translateService.lang === 'no' ? '/assets/icons/no-flag.gif' :
+      translateService.lang === 'gr' ? '/assets/icons/gr-flag.gif' :
+      translateService.lang === 'ee' ? '/assets/icons/ee-flag.gif' :
+      translateService.lang === 'ua' ? '/assets/icons/ua-flag.gif' : '/assets/icons/uk-flag.gif'
+      ">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
+
+      <mat-icon>language</mat-icon>
+    </button>
+  </div>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="changeLang('en')">
+      <img class="flag" height="16" width="24" src="/assets/icons/uk-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">EN</span>
+    </button>
+    <button mat-menu-item (click)="changeLang('ee')">
+      <img class="flag" height="16" width="24" src="/assets/icons/ee-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">EE</span>
+    </button>
+    <button mat-menu-item (click)="changeLang('gr')">
+      <img class="flag" height="16" width="24" src="/assets/icons/gr-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">GR</span>
+    </button>
+    <button mat-menu-item (click)="changeLang('no')">
+      <img class="flag" height="16" width="24" src="/assets/icons/no-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">NO</span>
+    </button>
+    <button mat-menu-item (click)="changeLang('pl')">
+      <img class="flag" height="16" width="24" src="/assets/icons/pl-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">PL</span>
+    </button>
+    <button mat-menu-item (click)="changeLang('ua')">
+      <img class="flag" height="16" width="24" src="/assets/icons/ua-flag.gif"><span style="vertical-align: text-bottom; margin-left: 16px;">UA</span>
+    </button>
+  </mat-menu>
+</div>

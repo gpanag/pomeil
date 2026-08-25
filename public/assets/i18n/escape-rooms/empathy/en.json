@@ -1,0 +1,272 @@
+{
+  "loading": "Loading Empathy Module...",
+  "intro": {
+    "title": "Empathy",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just entered the Wellness Center of a large multinational company. Here, you will learn about Empathy — the ability to understand what someone else is feeling, even if their experience is different from yours.",
+      "Dr. Elena Ruiz, the Wellness Coach, will guide you through various challenges to help you develop emotional perception, careful listening, and compassionate reasoning."
+    ],
+    "buttonText": "Start Game"
+  },
+  "characters": {
+    "coach": {
+      "name": "Dr. Elena Ruiz (Wellness Coach)",
+      "dialogues": {
+        "intro": "Hi (username)! Now, we'll explore empathy, namely, understanding emotions in others, and responding with care.",
+        "findStones_initial": "For this skill, I've hidden meditation stones that contain a message. Start by checking the shelf with meditation objects.",
+        "findStones_reminder": "The meditation stones should be somewhere in the room. Start by checking the shelf with meditation objects.",
+        "stonesFound": "You found the stones! Click on them to read the message, then bring them back to me.",
+        "stonesReturned": "Great, those steps are your foundation. But, before we continue, let me share something important.",
+        "empathyExplanation1": "Empathy is not just 'being nice.' Empathy is the ability to understand what someone else is feeling, even if their experience is different from yours.",
+        "empathyExplanation2": "There are actually two sides to empathy:\nEmotional empathy:  sensing what someone feels through tone, posture, or expressions.\nCognitive empathy:  understanding their perspective and what might be behind their emotions.",
+        "empathyExplanation3": "When both work together, you don't just notice emotions, but you respond in a way that makes the person feel safe and supported. That's what builds strong relationships at work.",
+        "empathyExplanation4": "Alright, let's put these ideas into practice.",
+        "puzzle1Complete": "You're progressing nicely. I prepared a short reflection about empathy. I think I placed it in the bookshelf, but I'm not certain.",
+        "findFabric_reminder": "The reflection fabric should be near the bookshelf area. Keep looking!",
+        "fabricFound": "Excellent! Read the reflection carefully, then come back to me.",
+        "fabricReturned": "Perfect. Those reflections will guide your next exercises.",
+        "patternComplete": "That was excellent work, (username). You've demonstrated emotional perception, careful listening, and compassionate reasoning.",
+        "completion": "You've done wonderfully! The training has been completed!",
+        "default": "Keep going, you're doing great!"
+      }
+    },
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "default": "Oh, hey… just meditating.",
+        "completion": "Great work on completing the empathy training! The door is open for you."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match the emotion cue to its meaning",
+      "columnA": {
+        "heading": "Column A – Emotional cues",
+        "items": {
+          "1": "Avoiding eye contact",
+          "2": "Talking unusually fast",
+          "3": "Shoulders slumped forward",
+          "4": "Long pauses before responding"
+        }
+      },
+      "columnB": {
+        "heading": "Column B – Likely emotional states",
+        "items": {
+          "a": "Feeling overwhelmed",
+          "b": "Feeling unsure or hesitant",
+          "c": "Feeling sad or defeated",
+          "d": "Feeling anxious."
+        }
+      },
+      "feedback": {
+        "wrong": "Think about how the body expresses emotions. For example, slumped shoulders often signal low energy or sadness.",
+        "allCorrect": "Great work! Continue with the next task."
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: Match body language cues with emotional states.\n\nCorrect Matches:\n• \"Avoiding eye contact\" → \"Feeling unsure or hesitant\" - When people feel uncertain, they often look away to avoid direct engagement\n• \"Talking unusually fast\" → \"Feeling anxious\" - Rapid speech often indicates nervousness or anxiety\n• \"Shoulders slumped forward\" → \"Feeling sad or defeated\" - Body posture droops when energy is low\n• \"Long pauses before responding\" → \"Feeling overwhelmed\" - When processing too much, people need more time to respond\n\nRemember: Body language often reveals emotions that words don't express."
+    },
+    "fillGap": {
+      "title": "Responding with empathy",
+      "sentenceParts": [
+        "When someone is upset, it helps to ",
+        " their feelings, ",
+        " fully, and ask a ",
+        " question to understand better."
+      ],
+      "options": [
+        "validate",
+        "listen",
+        "judgmental",
+        "gentle",
+        "ignore"
+      ],
+      "correctAnswers": [
+        "validate",
+        "listen",
+        "gentle"
+      ],
+      "feedback": {
+        "wrong": "Empathetic responses never involve being judgmental or ignoring someone."
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: When someone is upset, it helps to (___) their feelings, (___) fully, and ask a (___) question to understand better.\n\nCorrect Answer:\n• First blank: \"validate\" - Acknowledging someone's feelings shows you understand and support them\n• Second blank: \"listen\" - Give your full attention without interrupting so the person feels heard and respected\n• Third blank: \"gentle\" - Ask a gentle question to show you care and understand what's going on beneath the surface\n\nComplete sentence: \"When someone is upset, it helps to validate their feelings, listen fully, and ask a gentle question to understand better.\"",
+      "resetButton": "Reset",
+      "checkButton": "Check"
+    },
+    "pattern": {
+      "title": "Emotional pattern reading",
+      "scenarioLabel": "Scenario",
+      "scenarios": [
+        {
+          "text": "A colleague gives very short responses, avoids eye contact, and keeps fidgeting with their hands.",
+          "options": [
+            {
+              "text": "Calm + reflective",
+              "correct": false
+            },
+            {
+              "text": "Anxious + uncertain",
+              "correct": true
+            },
+            {
+              "text": "Joyful + energetic",
+              "correct": false
+            },
+            {
+              "text": "Motivated + focused",
+              "correct": false
+            }
+          ],
+          "hint": "Fidgeting and avoiding eye contact usually reflect internal tension or worry."
+        },
+        {
+          "text": "In a team discussion, a colleague speaks slower than usual, responds with a soft voice, and keeps their shoulders lowered.",
+          "options": [
+            {
+              "text": "Sad + low energy",
+              "correct": true
+            },
+            {
+              "text": "Confident + relaxed",
+              "correct": false
+            },
+            {
+              "text": "Irritated + impatient",
+              "correct": false
+            },
+            {
+              "text": "Distracted + playful",
+              "correct": false
+            }
+          ],
+          "hint": "Lowered shoulders and a soft voice usually indicate lowered emotional energy rather than confidence or irritation."
+        },
+        {
+          "text": "A coworker talks very quickly, frequently interrupts, and their gestures are rapid and exaggerated.",
+          "options": [
+            {
+              "text": "Nervous excitement + overstimulation",
+              "correct": true
+            },
+            {
+              "text": "Calm + peaceful",
+              "correct": false
+            },
+            {
+              "text": "Confused + tired",
+              "correct": false
+            },
+            {
+              "text": "Neutral + indifferent",
+              "correct": false
+            }
+          ],
+          "hint": "When someone talks too fast or gestures excessively, it often reflects heightened activation — not calmness or indifference."
+        }
+      ],
+      "answerOverlayPrefix": "After 3 attempts, here's the answer:\n\nQuestion: ",
+      "answerOverlayCorrectLabel": "\n\nCorrect Answer: ",
+      "answerOverlayExplanationLabel": "\n\nExplanation: "
+    },
+    "answerOverlayTitle": "Correct Answer",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "default": "I should check the room carefully.",
+    "intro": "I should speak to Dr. Elena Ruiz.",
+    "stonesReturned": "I should speak to Dr. Elena Ruiz.",
+    "stonesFound": "Read the message on the stones, then bring them back to the Wellness Coach.",
+    "fabricFound": "Read the reflection on the fabric, then return to the Wellness Coach.",
+    "puzzle1Matching": "Match each body language cue in Column A to the emotional state it suggests in Column B.",
+    "puzzle2FillGap": "Choose the words that complete the empathetic response: validate feelings, listen fully, ask a gentle question.",
+    "findStones": {
+      "step0": "Dr. Elena said: 'Start by checking the shelf with meditation objects.'",
+      "step1": "The shelf was empty. I should check the fountain.",
+      "step2": "Nothing in the fountain. I should check under the orange cushion."
+    },
+    "findFabric": {
+      "step0": "I need to find the reflection. Dr. Elena mentioned the bookshelf.",
+      "step1": "Not in the bookshelf. I should check the folded blankets.",
+      "step2": "Not in the blankets. I should check the yoga mats."
+    },
+    "completion": "I should report back to the HR Manager to finish."
+  },
+  "items": {
+    "stones": {
+      "altText": "Meditation Stones",
+      "title": "EMPATHY STEPS",
+      "steps": [
+        {
+          "label": "Notice",
+          "text": "Pay attention to emotional cues like tone or posture so you can sense how someone might be feeling."
+        },
+        {
+          "label": "Check-in",
+          "text": "Ask a gentle question to show you care and to understand what's going on beneath the surface."
+        },
+        {
+          "label": "Listen",
+          "text": "Give your full attention without interrupting so the person feels heard and respected."
+        },
+        {
+          "label": "Validate",
+          "text": "Acknowledge their feelings to show understanding and help them feel supported."
+        }
+      ],
+      "inventoryTitle": "View Meditation Stones",
+      "foundDialogue": "Nice job! Bring the stones back to the Wellness Coach.",
+      "returnDialogue": "Great, those steps are your foundation. But, before we continue, let me share something important."
+    },
+    "fabric": {
+      "altText": "Fabric Strip",
+      "title": "EMPATHY REFLECTIONS",
+      "reflections": [
+        "People often hide their feelings behind short answers — empathy helps you notice what's unspoken.",
+        "You don't have to fix emotions; acknowledging them is already support.",
+        "Understanding someone's feelings strengthens trust and cooperation."
+      ],
+      "inventoryTitle": "View Reflection Fabric",
+      "foundDialogue": "Great find! Return to the Wellness Coach.",
+      "returnDialogue": "Perfect. Those reflections will guide your next exercises."
+    }
+  },
+  "systemDialogues": {
+    "findStones": {
+      "shelf": "There are many items here… but not the one you need. Maybe in the fountain.",
+      "fountain": "Nothing here. Perhaps check under one of the meditation cushions."
+    },
+    "findFabric": {
+      "bookshelf": "Only books and diffusers are here. Maybe check the folded blankets next to the bookshelf. »",
+      "blankets": "Still nothing. Perhaps look near the yoga mats against the wall."
+    },
+    "empathyComplete": "You've completed the Empathy skill! You're becoming a stronger, more supportive teammate.",
+    "readyNextSkill": "Ready to move on to the next skill?"
+  },
+  "completion": {
+    "title": "Training Complete!",
+    "message": "You have successfully completed the Empathy skill module.",
+    "buttonText": "Back to Main Menu"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "____",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

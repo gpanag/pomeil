@@ -1,0 +1,217 @@
+{
+  "loading": "Ładowanie...",
+  "intro": {
+    "title": "Świadomość kulturowa",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie to dla ciebie doświadczenie edukacyjne, ponieważ wykonując różne wyzwania, zdobędziesz umiejętności zawarte w Mapie Kompetencji POMEIL, które są niezbędne dla każdego przedsiębiorcy.",
+      "Dziś jest twój pierwszy dzień w biurze. Manager HR, Fatma, pomoże ci odkryć, co naprawdę oznacza świadomość kulturowa i jak nawigować po różnych perspektywach z szacunkiem w pracy."
+    ],
+    "buttonText": "Rozpocznij grę"
+  },
+  "characters": {
+    "fatma": {
+      "name": "Fatma (Manager HR)",
+      "dialogues": {
+        "introduction": "Cześć (username)! Zanim zaczniesz tu pracować, jest kilka rzeczy, które powinieneś/powinnaś wiedzieć o naszym podejściu do świadomości kulturowej, ponieważ wielu naszych kolegów pochodzi z różnych krajów na całym świecie.",
+        "introduction_part2": "Gdzieś w tym pokoju jest karteczka z kilkoma użytecznymi wskazówkami dotyczącymi świadomości kulturowej. Spróbuj ją znaleźć i przeczytaj uważnie, a potem wróć do mnie. Zacznij od sprawdzenia szuflady.",
+        "findNote": "Gdzieś w tym pokoju jest karteczka z kilkoma użytecznymi wskazówkami dotyczącymi świadomości kulturowej. Spróbuj ją znaleźć i przeczytaj uważnie, a potem wróć do mnie. Zacznij od sprawdzenia szuflady.",
+        "noteFound": "Brawo, znalazłeś/aś karteczkę!",
+        "noteFound_part2": "Zatem świadomość kulturowa polega na rozpoznawaniu własnych wpływów kulturowych przy jednoczesnym rozumieniu wartości kulturowych, przekonań i praktyk innych. Wykracza poza zwykłe uznanie, ponieważ wymaga aktywnego wysiłku, by docenić i zaangażować się w różne kultury w sposób z szacunkiem i świadomy.",
+        "noteFound_part3": "Świadomość kulturowa jest niezbędna w zwalczaniu stereotypów, uprzedzeń i nieporozumień, które często wynikają z różnic kulturowych.",
+        "noteFound_part4": "Kontynuujmy quizem. Powodzenia!",
+        "quizComplete": "Wygląda na to, że jesteś teraz bardziej wrażliwy/a kulturowo!",
+        "quizComplete_part2": "Zapisałam ci na kartce kilka ciekawych faktów, które chciałbyś/chciałabyś wiedzieć o świadomości kulturowej, ale nie pamiętam, gdzie ją zostawiłam. Proszę rozejrzyj się po pokoju. Sprawdź na moim biurku, tym za mną.",
+        "findPaper": "Zapisałam ci na kartce kilka ciekawych faktów, które chciałbyś/chciałabyś wiedzieć o świadomości kulturowej, ale nie pamiętam, gdzie ją zostawiłam. Proszę rozejrzyj się po pokoju. Sprawdź na moim biurku, tym za mną.",
+        "paperFound": "Idealnie, znalazłeś/aś!",
+        "paperFound_part2": "Mam dla ciebie jeszcze kilka quizów, więc daj z siebie wszystko!",
+        "puzzleInProgress": "Najpierw dokończ zadanie.",
+        "allQuestsComplete": "Idealnie! Pokazałeś/aś, jak obsługiwać międzynarodową komunikację z szacunkiem. To prawdziwa świadomość kulturowa.",
+        "allQuestsComplete_part2": "Gratulacje, ukończyłeś/aś wszystko i podniosłeś/aś poziom swojej świadomości kulturowej. Jesteś o krok bliżej do prosperowania w firmie.",
+        "allQuestsComplete_part3": "Szkolenie zakończone! Naciśnij „Zakończ szkolenie”, by kontynuować."
+      }
+    },
+    "jun": {
+      "name": "Jun (Kolega)",
+      "dialogues": {
+        "default": "Hej (username), witaj! Jestem Jun. Właśnie kończę raport. Daj mi znać, jeśli czegoś potrzebujesz.",
+        "findPaper_noProgress": "Hej (username). Właśnie kończę ten raport. Sprawdziłeś/aś biurko Fatmy?",
+        "findPaper_laptopHint": "Nie widziałem kartki, ale oczywiście możesz spojrzeć pod mój laptop!",
+        "findPaper_laptopReminder": "Po prostu kliknij na laptop, by sprawdzić.",
+        "allQuestsComplete": "Powodzenia!"
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Quiz świadomości kulturowej - Prawda czy fałsz",
+      "trueButton": "Prawda",
+      "falseButton": "Fałsz",
+      "questions": [
+        {
+          "text": "Gesty mogą czasem mieć różne znaczenia w różnych kulturach.",
+          "answer": true,
+          "hint": "Pomyśl ponownie… W jednym kraju kciuk w górę oznacza „dobrze zrobione” (kraje zachodnie - USA, Wielka Brytania, Europa), ale w innym (kraje Bliskiego Wschodu - Iran, części Iraku, Afganistan), może być postrzegany jako niegrzeczny. Czy gesty są zawsze uniwersalne?"
+        },
+        {
+          "text": "Ludzie pochodzący z tego samego kraju mają tę samą kulturę i styl komunikacji.",
+          "answer": false,
+          "hint": "Pomyśl, jak ludzie z różnych regionów, grup wiekowych lub zawodów zachowują się, nawet w jednym kraju. Kultura nie jest jednym uniwersalnym rozmiarem!"
+        },
+        {
+          "text": "Gdy ktoś nie powie od razu „nie”, oznacza to, że się zgadza.",
+          "answer": false,
+          "hint": "W niektórych kulturach ludzie unikają mówienia „nie” bezpośrednio, by pozostać uprzejmymi lub utrzymać harmonię. Może milczenie lub wahanie oznacza coś innego?"
+        }
+      ],
+      "answerOverlay": {
+        "prefix": "Po 3 próbach, oto odpowiedź:",
+        "questionLabel": "Pytanie:",
+        "correctAnswerLabel": "Poprawna odpowiedź:",
+        "explanationLabel": "Wyjaśnienie:",
+        "trueValue": "PRAWDA",
+        "falseValue": "FAŁSZ"
+      }
+    },
+    "puzzleTwo": {
+      "title": "Quiz świadomości kulturowej - Wybór wielokrotny",
+      "question": "Jaki jest najlepszy sposób okazania świadomości kulturowej podczas spotkania?",
+      "options": {
+        "a": "Załóż, że wszyscy mają te same zwyczaje",
+        "b": "Zwróć uwagę na to, jak komunikują się koledzy z różnych środowisk",
+        "c": "Poprawiaj ludzi, gdy ich zwyczaje wydają się niezwykłe",
+        "d": "Unikaj interakcji z kolegami z innych kultur"
+      },
+      "feedback": "Pomyśl: świadomość kulturowa polega na obserwowaniu i szanowaniu różnic, a nie ignorowaniu lub osądzaniu ich.",
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Gdy kolega z innego kraju mówi, jaka jest najlepsza reakcja, by okazać świadomość kulturową?\n\nOpcje:\na) Popraw jego wymowę, by mu pomóc się poprawić\nb) Słuchaj uważnie i zadawaj pytania, jeśli to potrzebne\nc) Załóż, że już wiesz, co ma na myśli\nd) Mów wolniej, by mógł cię lepiej zrozumieć\n\nPoprawna odpowiedź: b) Słuchaj uważnie i zadawaj pytania, jeśli to potrzebne\n\nWyjaśnienie: Świadomość kulturowa polega na obserwowaniu i szanowaniu różnic, a nie ignorowaniu lub osądzaniu ich. Uważne słuchanie pokazuje szacunek i autentyczne zainteresowanie zrozumieniem osoby."
+    },
+    "puzzleThree": {
+      "title": "Quiz świadomości kulturowej - Sekwencja",
+      "question": "Ułóż następujące działania w najbardziej pełnym szacunku porządku.",
+      "availableStepsLabel": "Dostępne kroki",
+      "yourSequenceLabel": "Twoja sekwencja",
+      "placeholderText": "Kliknij kroki po lewej, by dodać je tutaj.",
+      "resetButton": "Zresetuj",
+      "submitButton": "Wyślij kolejność",
+      "options": {
+        "a": "Uprzejmie poproś o wyjaśnienie, jeśli czegoś nie rozumiesz.",
+        "b": "Powstrzymaj się od żartów lub komentarzy o czyimś akcencie.",
+        "c": "Słuchaj uważnie bez przerywania.",
+        "d": "Podziękuj i doceń ich wkład."
+      },
+      "feedback": {
+        "position1": "Zacznij od bycia cichym i skupionym — co ci pomaga naprawdę usłyszeć i zrozumieć kogoś?",
+        "position2": "Po słuchaniu, czego nie powinieneś/powinnaś robić, co mogłoby ich zawstydzić lub zamknąć rozmowę?",
+        "position3": "Jeśli wciąż potrzebujesz szczegółów, jaki jest uprzejmy sposób, by je uzyskać, nie wystawiając osoby na widok?",
+        "position4": "Co jest prostą, pozytywną rzeczą do zrobienia po tym, jak ktoś podzieli się swoimi myślami, co buduje życzliwość?",
+        "incomplete": "Proszę dokończ sekwencję.",
+        "threeAttempts": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Jaka jest poprawna sekwencja obsługi międzynarodowej komunikacji z szacunkiem?\n\nPoprawna odpowiedź:\n1. „Słuchaj uważnie bez przerywania” (c) - Najpierw musisz dać pełną uwagę, by zrozumieć, co osoba mówi\n2. „Powstrzymaj się od żartów lub komentarzy o czyimś akcencie” (b) - Unikaj wszystkiego, co mogłoby sprawić, że poczują się niekomfortowo lub zamknąć komunikację\n3. „Uprzejmie poproś o wyjaśnienie, jeśli czegoś nie rozumiesz” (a) - Po słuchaniu, z szacunkiem dąż do lepszego zrozumienia\n4. „Podziękuj i doceń ich wkład” (d) - Pokaż uznanie, by zbudować życzliwość i pozytywne relacje"
+      }
+    },
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "default": "Nie jestem pewien/a, co robić...",
+    "findNote": {
+      "step0": "Fatma powiedziała: „Zacznij od sprawdzenia szuflady.”",
+      "step1": "Karteczka w szufladzie mówiła, by sprawdzić tablicę ogłoszeń po lewej.",
+      "step2": "Wiadomość na lewej tablicy mówiła, by sprawdzić „inną tablicę ogłoszeń” (tę po prawej)."
+    },
+    "findPaper": {
+      "step0": "Fatma powiedziała, by sprawdzić jej biurko.",
+      "step1": "Powinienem/Powinnam sprawdzić w pobliżu laptopa Juna."
+    },
+    "allQuestsComplete": "Przejdźmy do następnego pokoju."
+  },
+  "items": {
+    "note": {
+      "altText": "Karteczka z trzema zasadami.",
+      "inventoryTitle": "Zobacz Karteczkę",
+      "foundDialogue": "Dobra robota! Kliknij na Fatmę, by kontynuować.",
+      "returnDialogue": "Brawo! Kliknij na Fatmę, by kontynuować."
+    },
+    "paper": {
+      "inventoryTitle": "Zobacz Kartkę",
+      "foundDialogue": "Świetnie ci idzie! Kliknij na Fatmę, by kontynuować.",
+      "popupTitle": "CIEKAWE FAKTY O ŚWIADOMOŚCI KULTUROWEJ",
+      "popupContent": [
+        {
+          "title": "„Kciuk w górę” nie zawsze jest pozytywny!",
+          "text": "W wielu krajach zachodnich oznacza „dobra robota”, ale w miejscach takich jak Iran, części Afryki Zachodniej itp. jest uważany za obraźliwy."
+        },
+        {
+          "title": "Skinienie głową nie zawsze oznacza „tak”.",
+          "text": "W Bułgarii skinienie oznacza „nie”, a kręcenie głową na boki może oznaczać „tak”."
+        },
+        {
+          "title": "Cisza może mówić wiele.",
+          "text": "W niektórych kulturach (Japonia, Finlandia itp.) cisza jest postrzegana jako oznaka szacunku i namysłu, a nie niezręczności."
+        },
+        {
+          "title": "Przestrzeń osobista jest kulturowa!",
+          "text": "Ludzie z Ameryki Łacińskiej lub Bliskiego Wschodu często stoją bliżej w rozmowie niż ci z Europy Północnej lub Ameryki Północnej."
+        },
+        {
+          "title": "Gest „OK” nie jest OK wszędzie.",
+          "text": "W Brazylii znak „OK” (kciuk i palec wskazujący tworzące koło) jest niegrzecznym gestem."
+        }
+      ]
+    }
+  },
+  "systemDialogues": {
+    "drawerSearch": "W środku tylko kilka starych plików. Wygląda na to, że to, czego szukasz, nie jest tutaj. Spójrz na tablicę ogłoszeń po lewej.",
+    "deskDossiersSearch": "Tylko kilka teczek. Karteczki tu nie ma.",
+    "leftBoardMessage": "To tylko przypomnienie o spotkaniu. Może znajdziesz to, czego potrzebujesz, na drugiej tablicy ogłoszeń. Spróbuj ponownie!",
+    "deskDrawersSearch": "Nic tu nie ma. Wygląda na to, że kartka jest gdzie indziej. Sprawdź pod laptopem Juna, ale najpierw go zapytaj.",
+    "alreadySearched": "Już tu szukałem/am. Fatma powiedziała, by sprawdzić biurko.",
+    "askJunFirst": "Powinienem/Powinnam zapytać Juna, zanim dotknę jego laptopa.",
+    "quizCompleteReturn": "Brawo! Kliknij na Fatmę, by kontynuować."
+  },
+  "completion": {
+    "title": "Szkolenie zakończone!",
+    "message": "Gratulacje! Z powodzeniem wykazałeś/aś doskonałe umiejętności świadomości kulturowej i komunikacji.",
+    "buttonText": "Powrót do menu głównego"
+  },
+  "quizComplete": {
+    "title": "Poprawnie!",
+    "message": "Doskonała robota! Ukończyłeś/aś pierwszy krok w szkoleniu ze świadomości kulturowej.",
+    "buttonText": "Dalej"
+  },
+  "answerOverlay": {
+    "title": "Poprawna odpowiedź",
+    "buttonText": "Dalej"
+  },
+  "dialogueActions": {
+    "continue": "Dalej",
+    "startQuiz": "Rozpocznij quiz",
+    "finishTraining": "Zakończ szkolenie"
+  },
+  "ui": {
+    "toggleFullscreen": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

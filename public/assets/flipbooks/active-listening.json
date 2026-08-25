@@ -1,0 +1,253 @@
+{
+  "id": "active-listening",
+  "moduleNumber": 19,
+  "title": "Active Listening",
+  "subtitle": "Module 19",
+  "coverImage": "assets/thumbs/active-listening.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 19",
+      "title": "Active Listening",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/active-listening.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "By the end of this module you will"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Understand the concept of the active listening and its significance,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Gain insight into underlying mechanisms of active listening process,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be aware of crucial challenges related to the development of this competence,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Carry out practical exercises strengthening your skill of active listening."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The competence of active listening refers to the skill of being attuned to what the person is trying to communicate to us, to their feelings, point of view, etc. The next crucial component is the provision of the feedback to the sender, which lets them know that you understand what they are saying and you’re interested in it. This ability is one of the core social competences, which is essential to not only become a well functioning part of society, but also to achieve a success in professional life (Tennant, Long, Toney-Butler, 2023)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "As Mark Goulston informs, the skill of active listening is the key competence enabling an individual to lead more successful personal and professional life. He argues that in order to gain other’s empathy, to make others interested in you, first you have to become interested in them. Example: you’re at the dinner table with your potential investors. Your goal shouldn’t be to impress them or make them like you, but rather to listen attentively, ask questions, and express your interest. Through the way our brain functions, these people will develop interest in your person, which significantly increases your chances of e.g. gaining their support while pitching a business idea (Goulston, 2010)."
+        },
+        {
+          "kind": "heading",
+          "text": "Components of active listening"
+        },
+        {
+          "kind": "heading",
+          "text": "The competence of active listening consists of the few elements"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Comprehension - the first stage of the effective listening process. It refers to the active engagement with received message, and putting effort to fully understand it, enabling the listener to gather data from such nuances as voice tone, emotions, etc.,",
+            "Response - its the stage where the listener communicates their engagement to the speaker. Through acknowledging their message and asking additional, clarifying questions, we can reinforce mutual connection and empathetic response.",
+            "Retention - the ability to recall the facts, ideas or opinions exchanged during previous conversations. Effective techniques fostering retention are e.g. summarizing conversations with your own words or creating notes (Lore of Life, 2024)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Focus on the person speaking - whenever you are talking to someone, try to develop the mindset of listening as much as possible, with the least number of interruptions (interruption is desired only if its purpose is to encourage the speaker to say more).",
+            "Pay attention to the message - keep reminding yourself to focus not only on the speaker’s words, but also on nuances included in the message, such as emotions. Try to create an empathetic connection, to see the world from the speaker's perspective.",
+            "Provide feedback - remember to always give the speaker a response with your words or behaviour. Try to involve such opening expressions as “and what happened next?”, while avoiding closing statements - “I know. It happened to me too” (Nichols, 2009)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Understanding of the foreign language’s nuances - while migrants might know the host’s country language to some extent, it's the advanced knowledge that will enable them to identify and understand subtle language or cultural nuances. Solution: try to interact with native citizens as much as possible, e.g. participating in events, meeting new colleagues, etc.",
+            "The lack of knowledge of the host country’s culture - specifics of effective communication might differ from one culture to another, e.g. in terms of expected social behaviours. Solution: seek knowledge on that topic, both in literature, but also during direct contact with natives (ask them to tell you about it)."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Exercises"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 1. In pairs (or based on the story found on the Internet), listen to the story provided by the speaker. Listen actively and try to implement tips learned within this module. Afterwards, ask yourself: Were they trying to convey information, to ask for help, complaining, giving a suggestion? How should you respond?"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Exercise 2. In pairs (or based on the story found on the Internet), listen to the story provided by the speaker. Try to identify and write down all the nuanced information “hidden between the lines” that you can find. Did you sense frustration, hesitation, excitement, or sadness?"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "Think ahead about how I’m going to respond.",
+            "Maintain eye contact with the speaker.",
+            "Take notes at the right moments to help focus or remember.",
+            "Try to focus on the emotions in the speaker’s words.",
+            "Catch myself thinking about unrelated things while listening.",
+            "Face the person who is talking.",
+            "Watch for significant body language (expressions, gestures).",
+            "Control fidgeting or other distracting habits.",
+            "Interrupt the speaker to share my opinion.",
+            "Let myself get distracted by other tasks or time pressure.",
+            "Stay open and avoid judging the message while listening.",
+            "Ask questions to get more information and encourage the speaker to 5 3 1 continue.",
+            "Repeat in my own words what I’ve just heard to ensure understanding."
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Sum values from each column, and then sum all columns. Scoring: 49 - 65 = You are an active listener; 31 - 48 = You are a good listener with room for improvement; 13 - 30 = You need to focus on improving your listening skills (Harvard Business School Publishing, 2004)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The competence of active listening, even though seemingly very basic and essential, can be improved and developed like any other skills. It’s very important for everyone, but its especially vital for entrepreneurs, especially migrant entrepreneurs, who need to put additional effort into learning advanced knowledge about the host country’s language to be able to effectively listen to others, understand their thoughts, and then infer needed data from the conversation. We encourage the readers to follow the tips included in this module, integrate them with their daily life and seek opportunities to increase their proficiency in the skill of active listening."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Learners who completed this module are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be aware of various difficulties of communicating effectively,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Improve their active listening skills,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be able to provide constructive and empathetic feedback,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Adapt their communication style to intercultural contexts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources (1 of 2)",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Books: “Crucial Conversations Tools for Talking When Stakes Are High” by Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler; “Listening: The Forgotten Skill: A Self-Teaching Guide” by Madelyn Burley-Allen"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Videos: How to actively listen to others | Scott Pierce | TEDxBirmingham, The Art of Active Listening | The Harvard Business Review Guide"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Bibligraphy"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Goulston, M. (2010). Just listen : discover the secret to getting through to absolutely anyone."
+        },
+        {
+          "kind": "paragraph",
+          "text": "American Management Association."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Harvard Business School Publishing, Active Listening Self-Assessment, 2004, Harvard",
+            "ManageMentor — COACHING TOOLS, https://file.lacounty.gov/SDSInter/probation/1106754_ActiveListeningQuiz.pdf"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Nichols, M. P. (2009). The lost art of listening : how learning to listen can improve relationships. Guilford Press."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources (2 of 2)",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Tennant, K., Butler, T. J. T., & Long, A. (2023, September 13). Active listening. National Library of Medicine; StatPearls Publishing. https://www.ncbi.nlm.nih.gov/books/NBK442015/"
+        },
+        {
+          "kind": "paragraph",
+          "text": "The Three Components of Active Listening: Enhancing Wellbeing Through Communication."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "(2024, February 22). Lore of Life. https://loreoflife.com/three-components-of-active- listening/"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Active Listening",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/active-listening.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "loading": "Ładowanie Pracy zespołowej...",
+  "intro": {
+    "title": "Praca zespołowa",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś zatrudniony przez dużą międzynarodową firmę, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie jest dla Ciebie doświadczeniem edukacyjnym, ponieważ realizując różne wyzwania w jej ramach, zdobędziesz umiejętności zawarte w Mapie Kompetencji POMEIL, które są niezbędne dla każdego przedsiębiorcy.",
+      "Dziś wchodzisz do Przestrzeni Coworkingowej, gdzie zespół rekonstrukcyjny koordynuje duży projekt renowacji. Dwa piętra starego budynku wymagają odnowienia. To idealny moment, aby rozwijać swoje umiejętności pracy zespołowej."
+    ],
+    "buttonText": "Wejdź do Przestrzeni Coworkingowej"
+  },
+  "characters": {
+    "priya": {
+      "name": "Priya",
+      "dialogues": {
+        "greet": "Miło Cię widzieć! Czy chciałbyś do nas dołączyć? Pracujemy razem jako zespół, choć przyznam — nie zawsze jest to tak łatwe, jak wygląda. Jestem Priya, główna projektantka tego projektu, a obecnie odnawiamy dwa piętra starego budynku. Musimy odnowić okna, zaktualizować meble, przemalować wnętrze, dodać nowe oświetlenie i wymienić cały system okablowania.\n\nWiem, że to dużo — ale nic z tego nie jest możliwe bez pracy zespołowej. Więc zaczynajmy.\n\nPozwól, że przedstawię Ci Oleha.",
+        "quiz1Done": "Teraz zaczęliśmy budować Twoją zdolność do pracy zespołowej!",
+        "findPoster": "Przygotowałam dla Ciebie prezent — plakat do powieszenia na ścianie, który zawiera naprawdę cenne informacje — takie, które najlepiej poznać wcześnie. Spróbujmy go znaleźć razem.\n\nOj, ten plakat zawierający ważne informacje o dokładnych krokach, nie możemy pozwolić, aby zaginął. Ten materiał najlepiej poznać wcześnie, więc proszę zacznij go szukać.",
+        "findPosterInstructions": "Szukamy plakatu do powieszenia na ścianie. Proszę zacznij od sprawdzenia tablicy ogłoszeń. Następnie spójrz na stół z przodu pokoju, a potem kontynuuj poszukiwania w innym miejscu. Możesz też chcieć sprawdzić laptopy z tyłu.",
+        "posterFound": "Doskonale. To naprawdę cenne 10 kroków, aby pójść naprzód i naprawić problemy z pracą zespołową, które z pewnością pojawią się w każdej firmie, którą zarządzasz lub w której pracujesz. Ale to zależy od Ciebie. Wprowadźmy tę wiedzę w praktykę.",
+        "puzzle2Intro": "Czas na kolejny quiz. Proszę odpowiedz na te pytania, odnosząc się do poprzednich informacji.",
+        "finalWords": "Poradziłeś sobie bardzo dobrze. Naprawdę doceniamy Twój wysiłek i udział. Twoja zdolność do budowania pracy zespołowej jest imponująca i mamy nadzieję, że zastosujesz te umiejętności w swoim miejscu pracy, w domu, z rodziną, a nawet z przyjaciółmi.\n\nPraca zespołowa może być wykorzystana wszędzie, a jeśli kiedykolwiek będziesz chciał wrócić do tego modułu, zawsze tu jesteśmy dla Ciebie. Możesz też polecić te quizy każdemu, kto mógłby skorzystać z rozwijania silniejszych umiejętności pracy zespołowej.\n\nDo zobaczenia następnym razem!",
+        "completion": "Twoje umiejętności pracy zespołowej promienieją. Gratulacje za osiągnięcie. Jesteś teraz gotowy, aby być częścią silnego zespołu, rozumiejąc, jak naprawdę działa proces pracy zespołowej. Ale jest jeszcze wiele umiejętności do odkrycia — więc śmiało kontynuuj i odkryj, co dalej.",
+        "default": "Rozglądaj się dalej po przestrzeni coworkingowej w poszukiwaniu wskazówek."
+      }
+    },
+    "oleh": {
+      "name": "Oleh",
+      "dialogues": {
+        "greet": "Cześć, jestem Oleh. Będę szczery — praca zespołowa nie zawsze jest prosta. Wszyscy pochodzimy z różnych środowisk i czasami potrzebujemy chwili, aby dostosować się do nawzajem swoich sposobów pracy. Ale to właśnie sprawia, że odnawianie starych budynków jest tak satysfakcjonujące. Jest to moja pasja od lat, a każdy projekt uczy nas czegoś nowego o tym, jak lepiej pracować razem.\n\nMam coś interesującego do podzielenia się z Tobą.\n\nZacznijmy naszą podróż w pracę zespołową.",
+        "findFolder": "Ostatnio dostajemy dużo próśb od naszego wykonawcy, więc posortowaliśmy je w różne foldery i foldery dokumentów. Ale jeden z nich zaginął i jest ważny. Czy mógłbyś mi pomóc go znaleźć?",
+        "findFolderInstructions": "Ten podpisany folder zawiera ważne kroki pracy zespołowej, których musimy użyć. Zacznij poszukiwania od tablicy ogłoszeń, a potem kontynuuj odkrywanie reszty pokoju.",
+        "folderFound": "Świetna robota! Teraz mamy to, czego potrzebujemy. Ale zanim przejdziemy dalej, oto trochę więcej informacji do przemyślenia. Te idee pracy zespołowej mogą Ci pomóc, gdy nadal się rozwijasz w pracy i codziennym życiu.",
+        "teamworkInfo": "Praca zespołowa oznacza ludzi pracujących razem nad wspólnym celem, wykorzystując mocne strony każdej osoby do wsparcia grupy.\n\nTo coś więcej niż tylko podział zadań — wymaga jasnej komunikacji, wzajemnego szacunku i gotowości do słuchania.\n\nDobra praca zespołowa pomaga szybciej rozwiązywać problemy, ponieważ każdy wnosi pomysły i wysiłek.\n\nKiedy członkowie zespołu wspierają się nawzajem, wyzwania wydają się mniejsze, postęp staje się łatwiejszy, a sukces jest dzielony przez wszystkich.",
+        "quiz1Intro": "Cóż, na pewno wiem, jak budować rzeczy — ale teraz nadszedł czas, aby zbudować nasze umiejętności pracy zespołowej. Gotowy na quiz?",
+        "default": "Jestem zajęty planami renowacji. Porozmawiaj z Priyą, jeśli potrzebujesz wskazówek."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Quiz Pracy zespołowej — Prawda czy Fałsz",
+      "instructions": "Określ, czy każde stwierdzenie jest Prawdziwe czy Fałszywe.",
+      "questions": [
+        {
+          "text": "Skuteczna praca zespołowa oznacza dzielenie się odpowiedzialnościami i wzajemne wspieranie się dla wspólnego celu.",
+          "correct": true,
+          "hint": "Praca zespołowa rośnie, gdy każdy wnosi swój wkład i wspiera grupę, a nie gdy ludzie pracują osobno."
+        },
+        {
+          "text": "Dobra praca zespołowa ma miejsce, gdy każdy nalega na wykonywanie zadań po swojemu, nie słuchając innych.",
+          "correct": false,
+          "hint": "Pomyśl, czy praca zespołowa poprawia się, gdy ludzie współpracują, czy gdy ignorują nawzajem swoje pomysły."
+        },
+        {
+          "text": "Jasna komunikacja pomaga zapobiegać nieporozumieniom i sprawia, że praca zespołowa przebiega gładko.",
+          "correct": true,
+          "hint": "Zastanów się, o ile łatwiej staje się praca zespołowa, gdy każdy rozumie plan."
+        },
+        {
+          "text": "Jeśli pojawi się konflikt, najlepszym podejściem jest zignorowanie go i nadzieja, że sam zniknie.",
+          "correct": false,
+          "hint": "Konflikty poprawiają się, gdy członkowie zespołu rozwiązują je z szacunkiem — nie gdy je unikają."
+        },
+        {
+          "text": "Praca zespołowa jest silniejsza, gdy ludzie rozpoznają nawzajem swoje mocne strony i odpowiednio dzielą zadania.",
+          "correct": true,
+          "hint": "Rozważ, jak zespoły korzystają, gdy każda osoba używa umiejętności, w których jest najlepsza."
+        }
+      ],
+      "feedback": {
+        "wrong": "To nie do końca prawda. Pomyśl o tym jeszcze raz.",
+        "correct": "Dobra robota! Rozumiesz podstawy pracy zespołowej."
+      },
+      "answerOverlay": "Poprawne odpowiedzi to:\n1. PRAWDA — Skuteczna praca zespołowa oznacza dzielenie się odpowiedzialnościami i wzajemne wspieranie się.\n2. FAŁSZ — Dobra praca zespołowa wymaga słuchania innych, a nie nalegania na samodzielne robienie rzeczy.\n3. PRAWDA — Jasna komunikacja zapobiega nieporozumieniom.\n4. FAŁSZ — Konflikty należy rozwiązywać z szacunkiem, a nie ignorować.\n5. PRAWDA — Zespoły są silniejsze, gdy zadania są dzielone według mocnych stron."
+    },
+    "singleChoice": {
+      "title": "Quiz Pracy zespołowej — Wielokrotny Wybór",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Kiedy projekt zespołowy zaczyna pozostawać w tyle za harmonogramem, jakie jest najbardziej skuteczne działanie pracy zespołowej, które należy podjąć w pierwszej kolejności?",
+      "options": {
+        "a": "Zignoruj problem i miej nadzieję, że ktoś inny to zauważy",
+        "b": "Powiedz wszystkim, aby pracowali szybciej, nie pytając ich o zdanie",
+        "c": "Komunikuj się z zespołem, aby zrozumieć, gdzie występuje opóźnienie",
+        "d": "Skończ swoją część sam i unikaj angażowania innych"
+      },
+      "hint": "Pomyśl, która opcja wzmacnia komunikację i pomaga zespołowi razem zrozumieć problem, zamiast pracować w izolacji.",
+      "feedback": {
+        "wrong": "Pomyśl, która opcja wzmacnia komunikację i pomaga zespołowi razem zrozumieć problem, zamiast pracować w izolacji.",
+        "correct": "Poprawnie! Komunikacja z zespołem to najbardziej skuteczny pierwszy krok."
+      },
+      "answerOverlay": "Poprawna odpowiedź to: Komunikuj się z zespołem, aby zrozumieć, gdzie występuje opóźnienie."
+    },
+    "sequenceOrder": {
+      "title": "Quiz Pracy zespołowej — Ustalanie Kolejności",
+      "instructions": "Ułóż następujące działania pracy zespołowej w odpowiedniej kolejności.",
+      "items": [
+        "Wyjaśnij problem razem, dzieląc się tym, co widzi każdy członek zespołu",
+        "Zachowaj spokój i wysłuchaj innych przed reakcją",
+        "Zdecyduj o jednym małym działaniu, które zespół może podjąć dalej",
+        "Komunikuj jasno, za co odpowiedzialna jest każda osoba"
+      ],
+      "correctOrder": [
+        "Zachowaj spokój i wysłuchaj innych przed reakcją",
+        "Wyjaśnij problem razem, dzieląc się tym, co widzi każdy członek zespołu",
+        "Zdecyduj o jednym małym działaniu, które zespół może podjąć dalej",
+        "Komunikuj jasno, za co odpowiedzialna jest każda osoba"
+      ],
+      "hints": [
+        "Krok 1: Zacznij od zachowania spokoju i słuchania.",
+        "Krok 2: Następnie wyjaśnij problem razem.",
+        "Krok 3: Zdecyduj o jednym następnym kroku.",
+        "Krok 4: Komunikuj jasno odpowiedzialności."
+      ],
+      "feedback": {
+        "wrong": "Skuteczna praca zespołowa zaczyna się od spokojnego słuchania. Następnie zespoły razem wyjaśniają problem, wybierają jeden wykonalny następny krok, a potem jasno uzgadniają, kto co robi.",
+        "correct": "Doskonale! Ułożyłeś kroki pracy zespołowej w odpowiedniej kolejności."
+      },
+      "answerOverlay": "Poprawna kolejność to:\n1. Zachowaj spokój i wysłuchaj innych przed reakcją.\n2. Wyjaśnij problem razem, dzieląc się tym, co widzi każdy członek zespołu.\n3. Zdecyduj o jednym małym działaniu, które zespół może podjąć dalej.\n4. Komunikuj jasno, za co odpowiedzialna jest każda osoba."
+    },
+    "answerOverlayTitle": "Odpowiedź Ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Sprawdź Kolejność",
+      "resetButton": "Zresetuj"
+    }
+  },
+  "hints": {
+    "intro": "Kliknij Priyę przy tablicy, aby rozpocząć.",
+    "talkToOleh": "Kliknij Oleha, aby rozpocząć.",
+    "findFolder": "Sprawdź tablicę ogłoszeń, potem stół konferencyjny, potem recepcję.",
+    "talkToOleh2": "Wróć do Oleha.",
+    "puzzle1": "Odpowiedz na każde pytanie Prawda czy Fałsz na podstawie tego, co wiesz o pracy zespołowej.",
+    "findPoster": "Sprawdź biurko, potem tablicę ogłoszeń, potem laptopy z tyłu.",
+    "talkToPriya2": "Wróć do Priyi z tym, co znalazłeś.",
+    "completion": "Szkolenie zostało zakończone!",
+    "default": "Rozglądaj się po przestrzeni coworkingowej w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do przestronnej przestrzeni coworkingowej. Tablica jest wypełniona kolorowymi rysunkami, notatkami zespołu i karteczkami post-it. Zauważasz Główną Projektantkę i Wykonawcę średniego działu rekonstrukcji. Powinieneś kliknąć Priyę, Główną Projektantkę.",
+    "clickNoticeBoard": "Pamiętam, że trzymałam to wcześniej obok niego, ale teraz… Nigdzie nie mogę tego znaleźć.\n\nCzy mógłbyś pomóc mi go poszukać?\nSpróbuj najpierw sprawdzić salę konferencyjną za szklanymi drzwiami — mogłam zostawić to na stole tam w środku.",
+    "clickBackTable": "Hmm… wygląda na to, że folderu, którego szukasz, tu nie ma. Ten zawiera tylko informacje o pracach przebudowy i prośbach klientów. Proszę kontynuuj poszukiwania. Możesz chcieć sprawdzić stoły na drugim końcu pokoju. Zobaczmy, gdzie jeszcze mogą znajdować się notatki",
+    "foundFolder": "Och, w końcu—oto on. Mówią, że jeśli chcesz coś ukryć, połóż to w najbardziej oczywistym miejscu, i wydaje się, że właśnie to się stało. Niebieska karteczka jest tą, której potrzebujemy. Dziękuję za pomoc.",
+    "folderOpened": "W porządku, zobaczmy, co tu mamy. Te kroki przedstawiają, jak zacząć wzmacniać pracę zespołową, gdy pojawiają się błędne komunikacje lub rozłączenia.",
+    "folderRead": "Dobra robota! Wróć do Wykonawcy Budowlanego Oleha.",
+    "clickDesk": "Wygląda na to, że tu go nie ma. Sprawdźmy tablicę notatek.",
+    "clickNoticeBoardPoster": "Hmm… tu też go nie ma. Tylko notatki z prośbami klientów. Dobrze, ktoś go wydrukował, więc zerknijmy obok laptopów, może jakiś jest tam otwarty.",
+    "foundPoster": "Ach—przepraszam. Cały czas był na tym stole!"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "KROKI PRACY ZESPOŁOWEJ",
+      "popupContent": [
+        "Zatrzymaj się i pozostań pełen szacunku — pozwól emocjom opaść przed reakcją",
+        "Wyjaśnij problem razem — skup się na problemie, nie na osobie",
+        "Wybierz jedno wspólne działanie — uzgodnij mały następny krok, który możesz podjąć jako zespół"
+      ]
+    },
+    "poster": {
+      "popupTitle": "KROKI ROZWOJU PRACY ZESPOŁOWEJ",
+      "popupContent": [
+        "Uzgodnij jeden cel — Najpierw upewnij się, że każdy rozumie, co zespół próbuje osiągnąć. Jeden jasny cel pomaga ludziom pracować w tym samym kierunku.",
+        "Mów wcześnie i jasno — Dziel się informacjami tak szybko, jak to możliwe i utrzymuj je proste. Jasna komunikacja pomaga uniknąć później dezorientacji.",
+        "Słuchaj zanim odpowiesz — Pozwól innym skończyć mówić zanim zareagujesz. Słuchanie pomaga budować zaufanie i pokazuje szacunek.",
+        "Przydzielaj zadania na podstawie mocnych stron — Przydzielaj pracę pasującą do tego, co każda osoba robi najlepiej. To sprawia, że praca jest łatwiejsza i szybsza dla wszystkich.",
+        "Sprawdzaj postępy często — Poświęć krótkie chwile, aby zobaczyć, jak idą sprawy. Regularne kontrole pomagają wcześnie naprawiać małe problemy.",
+        "Pytaj, gdy coś jest niejasne — Jeśli nie rozumiesz, zadaj pytanie. Wczesne pytanie pomaga zapobiegać błędom.",
+        "Zachowaj spokój podczas nieporozumień — Konflikty mogą się zdarzyć, ale spokojna rozmowa pomaga je rozwiązać. Szacunek sprawia, że zespół dobrze ze sobą współpracuje.",
+        "Bądź elastyczny, gdy plany się zmieniają — Czasami plany się zmieniają, i to jest w porządku. Szybkie dostosowanie pomaga zespołowi iść naprzód.",
+        "Pomagaj kolegom z zespołu, gdy potrzebują — Jeśli ktoś ma trudności, zaoferuj pomoc. Wsparcie sprawia, że zespół jest silniejszy i zmniejsza stres.",
+        "Świętuj małe sukcesy — Zauważaj postępy i mów dziękuję. Wspólne świętowanie buduje motywację i ducha zespołu."
+      ]
+    },
+    "teamworkFolder": {
+      "inventoryTitle": "Folder Kroków Pracy zespołowej"
+    },
+    "developmentPoster": {
+      "inventoryTitle": "Plakat Kroków Rozwoju"
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Twoje umiejętności pracy zespołowej promienieją. Gratulacje za osiągnięcie. Jesteś teraz gotowy, aby być częścią silnego zespołu, rozumiejąc, jak naprawdę działa proces pracy zespołowej. Ale jest jeszcze wiele umiejętności do odkrycia — więc śmiało kontynuuj i odkryj, co dalej.",
+    "buttonText": "Wyjdź z Przestrzeni Coworkingowej"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

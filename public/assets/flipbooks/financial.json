@@ -1,0 +1,249 @@
+{
+  "id": "financial",
+  "moduleNumber": 6,
+  "title": "Financial Literacy",
+  "subtitle": "Module 6",
+  "coverImage": "assets/thumbs/financial.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 6",
+      "title": "Financial Literacy",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/financial.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module aims to provide participants with a solid and practical understanding of financial literacy and capital management within an entrepreneurial context. It seeks to help learners grasp key financial concepts such as budgeting, cash flow management, savings, investment decisions, credit use, and risk management. At the same time, the module intends to strengthen their ability to apply these concepts in real-life business situations, enabling them to navigate financial systems with greater clarity, responsibility, and confidence."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Financial literacy, broadly defined as the capacity to comprehend and deploy a spectrum of monetary competencies, remains a foundational pillar of viable entrepreneurship. Among migrants attempting to acculturate within the European labour market, the acquisition of these competencies takes on heightened urgency. Proficiency in this domain equips newcomers to establish and steward enterprises while also guiding judicious choices regarding expenditure, savings, credit, and investment (OECD, 2020). The present instructional module aspires to furnish participants with the core principles, pragmatic tools, and conceptual frameworks needed to navigate financial systems, steward capital prudently, and uphold sustainable business practices."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Scholars increasingly regard financial literacy as a cornerstone of both entrepreneurial dynamism and broader economic inclusion for displaced persons. The OECD study published in 2020 found that households fluent in basic finance are more apt to draft savings plans, channel surplus cash into productive investments, and steer clear of excessive consumer debt. Migrants often miss out on the informal workshops and neighborhood seminars that transmit such know-how, leaving them to navigate unfamiliar markets with minimal preparation."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Equally crucial is capital management-the deliberate balancing of assets against liabilities- which protects a venture from insolvency while freeing up resources for future growth (European Commission, 2022). Together, these two skill sets furnish migrant founders with a measure of stability and self-governance in fluctuating economic landscapes."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Financial literacy and capital management cover several vital domains that together underpin the fiscal health of any enterprise:"
+        },
+        {
+          "kind": "definition",
+          "term": "Budgeting",
+          "definition": "Creating a comprehensive financial plan that tracks revenues and expenditures helps entrepreneurs manage operational costs and allocate resources efficiently (OECD, 2016)."
+        },
+        {
+          "kind": "definition",
+          "term": "Cash Flow Management",
+          "definition": "Monitoring the timing of income and expenses is essential to maintain liquidity and avoid insolvency (World Bank, 2014)."
+        },
+        {
+          "kind": "definition",
+          "term": "Savings and Emergency Funds",
+          "definition": "Building a financial buffer provides protection against unforeseen challenges such as supply chain disruptions or revenue loss (Goyal & Kumar, 2021)."
+        },
+        {
+          "kind": "definition",
+          "term": "Capital Allocation and Investment",
+          "definition": "Making decisions about when and how to invest, reinvest, or acquire capital through loans, grants, or private equity is crucial to business expansion (European Microfinance Network, 2023)."
+        },
+        {
+          "kind": "definition",
+          "term": "Credit and Debt Management",
+          "definition": "Understanding interest rates, repayment structures, and credit scoring helps entrepreneurs manage liabilities and maintain financial health (OECD, 2020)."
+        },
+        {
+          "kind": "definition",
+          "term": "Financial Reporting and Record Keeping",
+          "definition": "Maintaining transparent records of income and expenditures supports compliance, decision-making, and investor confidence (IFAC, 2018)."
+        },
+        {
+          "kind": "definition",
+          "term": "Risk Management",
+          "definition": "Identifying financial risks (e.g. currency fluctuations, inflation, or client insolvency) and applying strategies such as diversification or insurance helps safeguard business continuity (International Labour Organization [ILO], 2022)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Financial literacy develops steadily when both structured courses and everyday encounters reinforce one another:"
+        },
+        {
+          "kind": "definition",
+          "term": "Engage in financial education programmes",
+          "definition": "There are numerous free or low-cost courses offered by NGOs, microfinance institutions, and online platforms that can build foundational financial knowledge (OECD, 2016)."
+        },
+        {
+          "kind": "definition",
+          "term": "Leverage digital tools",
+          "definition": "There is a plethora of budgeting apps and financial dashboards that assist in tracking income, expenses, and performance indicators (Goyal & Kumar, 2021)."
+        },
+        {
+          "kind": "definition",
+          "term": "Consult mentors or financial advisors",
+          "definition": "It is crucial to seek guidance from experienced professionals in rder to become confident in financial decision-making (ILO, 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Participate in business simulations",
+          "definition": "Role-playing real-world business scenarios can help learners apply concepts like budgeting and cash flow forecasting in a safe learning environment (European Commission, 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Stay informed",
+          "definition": "Reading financial news and policy updates allows entrepreneurs to adapt to changing regulations or market conditions (World Bank, 2014)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Limited financial background among migrants",
+          "definition": "Offer beginner-friendly training with visual aids and multilingual content (OECD, 2020)."
+        },
+        {
+          "kind": "definition",
+          "term": "Difficulty accessing traditional financial services",
+          "definition": "Promote alternative financing mechanisms such as microloans, cooperative banking, or Islamic finance (European Microfinance Network, 2023)."
+        },
+        {
+          "kind": "definition",
+          "term": "Fear or lack of confidence in handling finances",
+          "definition": "Establish peer learning communities and mentorship schemes to build confidence (ILO, 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Legal or regulatory complexity",
+          "definition": "Provide clear, accessible information about local laws, taxation, and registration processes (European Commission, 2022)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "You have an idea for a small catering business. Complete the following steps:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Estimate your fixed (e.g., rent, salaries) and variable costs (e.g., ingredients, transport).",
+            "Project your revenue for the first three months.",
+            "Calculate your monthly profit or loss.",
+            "Identify sources of funding (e.g., savings, family, microcredit) and decide which suits your case best.",
+            "Describe at least two financial risks your business might face, and suggest mitigation strategies.",
+            "This exercise helps develop applied budgeting, forecasting, and capital management skills."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Tick the box if you agree"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I understand the difference between fixed and variable costs.",
+            "I can create and follow a simple business budget.",
+            "I know how to track cash flow over time.",
+            "I can identify sources of capital and evaluate their suitability.",
+            "I understand the importance of saving and building a financial safety net.",
+            "I feel confident discussing financial concepts with others."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Migrant entrepreneurs who master financial literacy and capital management gain the agility needed to traverse unfamiliar economic environments. When those skills are paired with sound budgeting, disciplined saving, careful credit assessment, and strategic risk control, decision-making becomes both swift and informed. In the long run, that blend of knowledge allows newcomers to anchor their ventures while also lifting the communities they now call home."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the end of the module, participants are expected to be able to prepare and manage a simple business budget, monitor income and expenses, and assess the financial performance of their enterprise. They should be capable of identifying appropriate funding sources, making informed financial decisions, and recognising potential financial risks along with suitable mitigation strategies. Overall, learners will feel more confident in handling financial matters and better equipped to build and sustain economically viable business activities."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Article Lusardi, A., & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. Journal of Economic Literature, 52(1), 5–44. https://doi.org/10.1257/jel.52.1.5"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Video Financial Education | The 4 Rules Of Being Financially Literate https://www.youtube.com/watch?v=q5JWp47z4bY"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Financial Literacy",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/financial.pdf"
+      }
+    }
+  ]
+}

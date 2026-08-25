@@ -1,0 +1,176 @@
+{
+  "loading": "Ładowanie modułu Umiejętności językowe...",
+  "intro": {
+    "title": "Umiejętności językowe",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, gdzie pracują razem osoby z różnych kultur, środowisk i zawodów. Praca w tej firmie to dla ciebie doświadczenie edukacyjne — wykonując różne wyzwania, zdobędziesz umiejętności z Mapy Kompetencji POMEIL, niezbędne dla każdego przedsiębiorcy.",
+      "Twoje pierwsze zadanie prowadzi cię do poczekalni B+R, gdzie poznasz nowych kolegów z różnych krajów. Silne umiejętności komunikacyjne pomogą ci pokonać każdą barierę językową i budować trwałe relacje zawodowe."
+    ],
+    "buttonText": "Wejdź do poczekalni"
+  },
+  "characters": {
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Cześć! Witaj w poczekalni B+R. Nasze zespoły współpracują z partnerami z całego świata, więc silne umiejętności językowe są niezbędne. Pomagają jasno się komunikować, poprawiać szanse zawodowe i rozwijać się.",
+        "findTablet": "Zanim wejdziesz do działu B+R, ważne, byś zrozumiał/a cztery podstawowe komponenty znajomości języka. Zostawiłam tu na wspólnym biurku tablet z interaktywnym przewodnikiem. Możesz go znaleźć?",
+        "tabletFound": "Brawo! Mówienie i słuchanie są kluczowe podczas spotkań i dyskusji, a czytanie i pisanie są niezbędne do raportów, e-maili i dokumentacji w B+R.",
+        "quiz1Intro": "Sprawdźmy twoje rozumienie tych pojęć.",
+        "quiz1Done": "Skoro rozumiesz podstawy, porozmawiajmy o tym, jak rozwijać te umiejętności. To szczególnie ważne w wymagającym środowisku jak B+R.",
+        "findFlipchart": "Są typowe wyzwania, jak brak motywacji albo ograniczony czas. Po naszym ostatnim seminarium pracowniczym napisałam kilka rozwiązań na flipcharcie. Idź zerknąć.",
+        "flipchartFound": "Doskonale. Jasne cele i mądre wykorzystanie technologii sprawiają, że nauka języka jest możliwa nawet przy napiętym harmonogramie B+R.",
+        "puzzle2Intro": "A teraz wykonaj te ostatnie zadania, by zakończyć szkolenie.",
+        "finalWords": "Fantastycznie! Rozumiesz, jak rozwijać umiejętności językowe w realnych sytuacjach pracy. Silna komunikacja sprawia, że jesteś pewniejszy/a siebie i bardziej skuteczny/a.\n\nPamiętaj, umiejętności językowe pozwalają w pełni uczestniczyć w międzynarodowych projektach i globalnym rynku pracy. Powodzenia!",
+        "completion": "Gratulacje, ukończyłeś/aś wszystko i podniosłeś/aś poziom Umiejętności językowych. Kliknij otwarte drzwi, by wyjść.",
+        "default": "Rozejrzyj się dalej po poczekalni w poszukiwaniu wskazówek."
+      }
+    },
+    "kenji": {
+      "name": "Kenji",
+      "dialogues": {
+        "busy": "Przygotowuję się do prezentacji B+R. Cyfrowe narzędzia naprawdę pomagają z wymową i pewnością siebie!",
+        "default": "Wciąż ćwiczę… porozmawiaj z Marią."
+      }
+    }
+  },
+  "puzzles": {
+    "fillGap": {
+      "title": "4 Komponenty Języka",
+      "instructions": "Przeciągnij właściwe słowa w puste miejsca, by uzupełnić definicje.",
+      "sentenceParts": [
+        "Słuchanie to umiejętność ",
+        ", która koncentruje się na zdolności poprawnego interpretowania wiadomości. Pisanie to umiejętność ",
+        ", która pozwala dzielić się opiniami za pomocą tekstu."
+      ],
+      "options": [
+        "receptywna",
+        "produktywna",
+        "pasywna",
+        "milcząca"
+      ],
+      "correctAnswers": [
+        "receptywna",
+        "produktywna"
+      ],
+      "feedback": {
+        "wrong": "To nie do końca tak. Pomyśl, które umiejętności odbierają informacje, a które je tworzą.",
+        "correct": "Poprawnie! Znasz różnicę między odbieraniem a tworzeniem języka."
+      },
+      "answerOverlay": "Poprawne odpowiedzi:\n1. Słuchanie to umiejętność RECEPTYWNA.\n2. Pisanie to umiejętność PRODUKTYWNA.",
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź odpowiedź"
+    },
+    "singleChoice": {
+      "title": "Pokonywanie Barier Językowych",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Masz trudność ze znalezieniem czasu na naukę nowego języka i czujesz brak motywacji. Według szkolenia, jakie jest dobre rozwiązanie?",
+      "options": {
+        "a": "Przestań się uczyć, dopóki nie będziesz miał/a całego dnia wolnego.",
+        "b": "Wykorzystaj technologię (narzędzia cyfrowe) i dołącz do społeczności online.",
+        "c": "Używaj tylko formalnych metod nauki, jak drogie seminaria.",
+        "d": "Unikaj mówienia, dopóki nie będziesz idealny/a."
+      },
+      "hint": "Pomyśl o nowoczesnych narzędziach. Czego możesz używać w drodze, by nauka była spersonalizowana i społeczna?",
+      "feedback": {
+        "wrong": "Pomyśl o nowoczesnych narzędziach. Czego możesz używać w drodze, by nauka była spersonalizowana i społeczna?",
+        "correct": "Poprawnie! Technologia i społeczności online sprawiają, że nauka języka jest dostępna i społeczna."
+      },
+      "answerOverlay": "Poprawna odpowiedź: Wykorzystaj technologię (narzędzia cyfrowe) i dołącz do społeczności online."
+    },
+    "sequenceOrder": {
+      "title": "Ćwiczenie Odgrywania Ról",
+      "instructions": "Uczestniczysz w warsztacie językowym. Ułóż kroki ćwiczenia odgrywania ról opartego na scenariuszu w odpowiedniej kolejności.",
+      "items": [
+        "Uczestnicy wybierają jedną sytuację i prezentują swoje opinie.",
+        "Zapisz typowe sytuacje w pracy (np. prezentacja opinii) na papierze.",
+        "Wszyscy uczestnicy wchodzą w interakcję i dyskutują dalej na ten temat.",
+        "Zidentyfikuj scenariusz."
+      ],
+      "correctOrder": [
+        "Zidentyfikuj scenariusz.",
+        "Zapisz typowe sytuacje w pracy (np. prezentacja opinii) na papierze.",
+        "Uczestnicy wybierają jedną sytuację i prezentują swoje opinie.",
+        "Wszyscy uczestnicy wchodzą w interakcję i dyskutują dalej na ten temat."
+      ],
+      "hints": [
+        "Najpierw zapisz możliwe sytuacje. Następnie zdecyduj, na którym scenariuszu się skupisz. Potem zaprezentuj go i wreszcie omówcie razem."
+      ],
+      "feedback": {
+        "wrong": "Najpierw zapisz możliwe sytuacje. Następnie zdecyduj, na którym scenariuszu się skupisz. Potem zaprezentuj go i wreszcie omówcie razem.",
+        "correct": "Doskonale! Ułożyłeś/aś kroki odgrywania ról poprawnie."
+      },
+      "answerOverlay": "Poprawna kolejność:\n1. Zidentyfikuj scenariusz.\n2. Zapisz typowe sytuacje w pracy na papierze.\n3. Uczestnicy wybierają jedną sytuację i prezentują swoje opinie.\n4. Wszyscy wchodzą w interakcję i dyskutują na ten temat."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Kliknij Marię przy lewej ścianie, by zacząć.",
+    "talkToMaria": "Kliknij Marię, by zacząć.",
+    "findTablet": "Poszukaj tabletu na wspólnym biurku.",
+    "talkToMaria2": "Wróć do Marii.",
+    "puzzle1FillGap": "Pomyśl, które umiejętności językowe odbierają informacje, a które je tworzą.",
+    "findFlipchart": "Maria wspomniała o flipcharcie przy oknach. Poszukaj go.",
+    "talkToMaria3": "Wróć do Marii z tym, czego się nauczyłeś/aś.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po poczekalni w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do cichej, profesjonalnej poczekalni przed działem B+R. Dużą tylną ścianę zdobi mural mapy świata z napisem „Cześć” w wielu językach. Zauważasz Marię, koordynatorkę językową, stojącą obok flipchartu.",
+    "clickBookshelves": "Głównie podręczniki, słowniki i dokumenty techniczne. Maria mówiła, że przewodnik jest na urządzeniu cyfrowym.",
+    "foundTablet": "Znalazłeś/aś! Ekran zapala się z aplikacją do nauki.",
+    "tabletRead": "Poznałeś/aś podstawy! Wróć do Marii.",
+    "clickWorldMap": "Pokazuje nasze międzynarodowe współprace B+R. Poszukaj flipchartu przy oknach.",
+    "foundFlipchart": "Masz strategie! Wróć do Marii."
+  },
+  "items": {
+    "tablet": {
+      "popupTitle": "4 Komponenty Znajomości Języka",
+      "popupContent": [
+        "Mówienie: Używanie języka do wyrażania pomysłów, uczuć i opinii.",
+        "Słuchanie: Umiejętność receptywna używana do prawidłowej interpretacji mówionych wiadomości.",
+        "Czytanie: Dekodowanie i rozumienie tekstu pisanego.",
+        "Pisanie: Umiejętność produktywna używana do komunikacji za pomocą tekstu."
+      ],
+      "inventoryTitle": "Tablet"
+    },
+    "flipchart": {
+      "popupTitle": "Wyzwania i Rozwiązania",
+      "popupContent": [
+        "Wyzwanie: Doskonalenie umiejętności bez konkretnego celu.",
+        "Rozwiązanie: Wyznacz jasne cele — cel zwiększa motywację.",
+        "Wyzwanie: Niespójna motywacja i brak czasu.",
+        "Rozwiązanie: Wykorzystaj technologię i uczestnicz w społecznościach uczących się online."
+      ],
+      "inventoryTitle": "Notatki z flipchartu"
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Gratulacje, ukończyłeś/aś wszystko i podniosłeś/aś poziom Umiejętności językowych.",
+    "buttonText": "Wyjdź z poczekalni"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

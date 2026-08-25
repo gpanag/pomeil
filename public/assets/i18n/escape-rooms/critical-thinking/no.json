@@ -1,0 +1,357 @@
+{
+  "loading": "Laster Kritisk Tenkning...",
+  "intro": {
+    "title": "Kritisk Tenkning",
+    "paragraphs": [
+      "Du har akkurat ankommet bedriftens kontor for et møte klokken 10:00 med lederen din. Idet du går inn i venterommet utenfor konferanserommet, legger du merke til at du er tidlig ute.",
+      "Venterommet har en behagelig sofagruppe, et stuebord med en bærbar datamaskin på, og en stor flatskjerm-TV montert på veggen. En oppslagstavle av kork henger nær dørene til konferanserommet.",
+      "Du tar plass og venter. Men dette stille øyeblikket er i ferd med å bli en test av dine evner i kritisk tenkning..."
+    ],
+    "buttonText": "Gå inn i Venterommet"
+  },
+  "characters": {
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "greet": "Er du også her for møtet klokken 10:00?",
+        "intro": "Å, nei? Vel... Jeg er Mark fra FastSupply Ltd. Vi leverer kontorrekvisita og tjenester til uslåelige priser. Har du hørt om oss?",
+        "offer": "Vi har et fantastisk tilbud akkurat nå. 50% rabatt på alle våre premium-tjenester hvis du registrerer deg i dag. Hva sier du?",
+        "offerWrongHint": "Vær forsiktig! Du bør alltid verifisere detaljene i en avtale før du forplikter deg.",
+        "pressure": "Dette tilbudet gjelder kun i dag. I morgen går prisen tilbake til normal. Du vil virkelig ikke gå glipp av dette.",
+        "pressureWrongHint": "Ikke gi etter for tidspress. En virkelig god avtale bør fortsatt være tilgjengelig etter nøye vurdering.",
+        "careful": "Forsiktig type, ser jeg. Det respekterer jeg. Det er ikke mange som tar seg tid til å tenke gjennom ting i disse dager.",
+        "vagueClaims": "Hør her. Tilbudet er enkelt: store besparelser, premium-kvalitet, og hundrevis av fornøyde kunder. Du finner ingen bedre avtale noe sted.",
+        "vagueClaimsWrongHint": "Vær skeptisk til vage påstander uten bevis. Be alltid om skriftlig dokumentasjon og verifiserbare referanser.",
+        "sendDocs": "Selvfølgelig, jeg sender deg alt. Et fullstendig skriftlig tilbud, referanser, alt sammen. Du vil se at alt stemmer.",
+        "farewell": "Bare husk. Jo raskere du handler, jo bedre! Jeg holder kontakten. Her er kortet mitt.",
+        "farewellWrongHint": "Unngå å gi uklare eller ikke-forpliktende svar. Vær tydelig på at du har til hensikt å gjennomgå og undersøke før du bestemmer deg.",
+        "default": "Jeg er Mark fra FastSupply. Alltid hyggelig å prate!"
+      }
+    },
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hei! Jeg så deg snakke med den fyren. Var det Mark fra FastSupply?",
+        "warning1": "Det tenkte jeg meg. Jeg kjenner ham igjen. Han kom til min forrige bedrift for omtrent seks måneder siden med samme presentasjon.",
+        "warning2": "Han tilbød oss også en enorm rabatt. Alt hørtes perfekt ut - premium-tjeneste, toppkvalitet, utrolige besparelser.",
+        "warning3": "Lederen min ble imponert og signerte en kontrakt på stedet. Vi gjorde ingen bakgrunnsundersøkelser.",
+        "warning4": "Den første leveransen var forsinket. Da den endelig kom, var halvparten av varene feil og kvaliteten var forferdelig.",
+        "warning5": "Vi prøvde å kontakte kundeservicen deres, men det tok uker å få svar. De fortsatte å sende oss rundt.",
+        "warning6": "Til slutt måtte vi avslutte kontrakten. Det kostet oss mer å fikse problemene enn vi noen gang sparte med rabatten deres.",
+        "warning7": "Jeg sier ikke at de er svindel, men jeg vil sterkt anbefale at du gjør hjemmeleksene dine før du signerer noe.",
+        "warning8": "Sjekk anmeldelser på nett, be om ekte referanser, og les den fine skriften. Stol på meg på denne.",
+        "completion": "Lykke til med beslutningen! Jeg er sikker på at du tar det riktige valget.",
+        "default": "Bare sørg for å gjøre research før du tar noen beslutninger."
+      }
+    }
+  },
+  "conversation": {
+    "player": {
+      "response1": "Nei, jeg venter bare på lederen min.",
+      "response2": "Jeg tror ikke det...",
+      "response3_correct": "Det høres interessant ut, men jeg må gjennomgå detaljene før jeg forplikter meg til noe.",
+      "response3_wrong": "Det høres fantastisk ut! La oss gjøre det.",
+      "response4_correct": "Hvis avtalen din er virkelig god, bør den fortsatt være god i morgen. Jeg tar ikke beslutninger under tidspress.",
+      "response4_wrong": "Greit, du overbeviste meg. Jeg registrerer meg før fristen.",
+      "response5": "Vel-",
+      "response6_correct": "Kunne du sende meg et skriftlig tilbud og noen verifiserbare referanser? Jeg vil gjerne gjennomgå alt grundig.",
+      "response6_wrong": "Det er nok for meg. Hvor signerer jeg?",
+      "response7": "Flott. Jeg ser frem til å motta dem.",
+      "response8_correct": "Jeg vil gjennomgå dokumentene nøye og gjøre noen uavhengige undersøkelser før jeg tar min beslutning.",
+      "response8_wrong": "Jeg sier sannsynligvis ja så snart jeg ser papirene. Virker som en selvfølge."
+    }
+  },
+  "email": {
+    "subject": "EKSKLUSIVT TILBUD - 50% AVSLAG på Premium-tjenester - HANDLE NÅ!",
+    "from": "Mark Thompson <mark.t@fastsupply-deals.com>",
+    "to": "Du",
+    "date": "I dag",
+    "greeting": "Kjære Verdsatte Kunde,",
+    "body1": "Takk for din interesse i FastSupply Ltd! Som diskutert er jeg glad for å presentere vårt eksklusive tilbud:",
+    "offerLine": "50% RABATT på ALLE premium-tjenester - gjelder KUN I DAG!",
+    "body2": "Våre kunder vurderer oss konsekvent som de beste i bransjen. Her er hva noen av dem har sagt:",
+    "testimonial1": "\"FastSupply forandret bedriften vår!\" - En fornøyd kunde",
+    "testimonial2": "\"Utrolig verdi for pengene!\" - En glad klient",
+    "testimonial3": "\"Vi kunne ikke vært mer fornøyde!\" - En lojal partner",
+    "body3": "Vilkår og betingelser gjelder. For fullstendige detaljer, vennligst kontakt salgsteamet vårt.",
+    "signature": "Med vennlig hilsen,\nMark Thompson\nSenior Salgsrepresentant\nFastSupply Ltd",
+    "clues": {
+      "subject": {
+        "label": "Emnefelt",
+        "thought": "Emnefeltet bruker hastetaktikker: \"EKSKLUSIVT\", \"HANDLE NÅ!\", alt med store bokstaver. Dette er en vanlig høytrykks-salgsteknikk designet for å få meg til å handle før jeg tenker."
+      },
+      "discount": {
+        "label": "50% Rabatt",
+        "thought": "50% rabatt på alle premium-tjenester? Det er en uvanlig stor rabatt. Hvis tjenestene deres virkelig var av premium-kvalitet, hvorfor skulle de trenge å tilby så stor reduksjon? Dette virker for godt til å være sant."
+      },
+      "todayOnly": {
+        "label": "Kun I Dag",
+        "thought": "\"Gjelder KUN I DAG\" - dette er klassisk kunstig knapphet. Å skape en falsk frist presser kunden til å ta en hastig beslutning uten ordentlig research."
+      },
+      "testimonials": {
+        "label": "Generiske Anbefalinger",
+        "thought": "Disse anbefalingene er fullstendig generiske - ingen ekte navn, ingen firmanavn, ingen spesifikke detaljer. \"En fornøyd kunde\" kan være hvem som helst, eller ingen i det hele tatt. Legitime bedrifter gir verifiserbare referanser."
+      },
+      "terms": {
+        "label": "Vilkår og Betingelser",
+        "thought": "\"Vilkår og betingelser gjelder. For fullstendige detaljer, vennligst kontakt salgsteamet vårt.\" - Vilkårene er ikke inkludert i e-posten. Et transparent selskap ville gitt fullstendige vilkår på forhånd, ikke skjult dem bak en telefonsamtale."
+      }
+    }
+  },
+  "reviews": {
+    "siteName": "BusinessReview.com",
+    "siteSubtitle": "FastSupply Ltd - Kundeanmeldelser",
+    "overallRating": "2.1 / 5",
+    "totalReviews": "47 anmeldelser",
+    "items": {
+      "0": {
+        "author": "Sarah_Operations_Mgr",
+        "rating": 1,
+        "title": "Forferdelig opplevelse - unngå for enhver pris",
+        "text": "Registrerte meg etter at en selger lovet premium-kvalitet. Leveranser var konsekvent forsinket, produktene var dårligere kvalitet, og kundeservicen var ikke-eksisterende. Det tok 3 måneder å avslutte kontrakten."
+      },
+      "1": {
+        "author": "NotMarkThompson",
+        "rating": 5,
+        "title": "Beste leverandør noensinne!!!",
+        "text": "FastSupply er det beste selskapet jeg noensinne har hatt med å gjøre. Perfekt på alle måter. 100% anbefaler til alle. Ingen klager overhodet."
+      },
+      "2": {
+        "author": "TechStartup_James",
+        "rating": 2,
+        "title": "Villedende rabatter",
+        "text": "50%-rabatten de annonserer er beregnet fra en oppblåst grunnpris. Vi endte opp med å betale mer enn vår forrige leverandør for varer av lavere kvalitet."
+      },
+      "3": {
+        "author": "Definitely_Not_Mark_Thompson",
+        "rating": 5,
+        "title": "Et fantastisk selskap drevet av fantastiske mennesker",
+        "text": "Jeg er en helt ekte kunde og jeg kan si at FastSupply er feilfri. Salgsrepresentantene deres er spesielt kjekke og sjarmerende."
+      },
+      "4": {
+        "author": "Office_Manager_Lima",
+        "rating": 1,
+        "title": "Skjulte gebyrer overalt",
+        "text": "Kontrakten hadde skjulte gebyrer som ikke ble nevnt under salgssamtalen. Leveringsgebyrer, behandlingsgebyrer, oppsigelsesgebyr ved tidlig oppsigelse. Les den fine skriften nøye!"
+      },
+      "5": {
+        "author": "HR_Director_Chen",
+        "rating": 2,
+        "title": "Ikke-responsiv kundeservice",
+        "text": "Da problemer oppstod, var kundeservicen deres umulig å nå. E-poster gikk ubesvart i ukevis. Telefonsamtaler ble dirigert gjennom endeløse menyer. Veldig frustrerende."
+      },
+      "6": {
+        "author": "NotMarksSister",
+        "rating": 5,
+        "title": "Perfekt selskap, ingen kommentarer!",
+        "text": "Jeg er definitivt ikke i slekt med noen i FastSupply, og jeg synes de fortjener 10 stjerner. Kontorrekvisitaen deres forandret livet mitt for alltid."
+      },
+      "7": {
+        "author": "Procurement_Specialist_EU",
+        "rating": 1,
+        "title": "Gjør hjemmeleksene før du signerer",
+        "text": "De aggressive salgstaktikkene burde ha vært et faresignal. Press til å signere umiddelbart, vage løfter, og da vi spurte etter referanser, fikk vi generiske sitater uten kontaktdetaljer."
+      }
+    },
+    "thoughts": {
+      "fakePositive": "Flere av de positive anmeldelsene ser mistenkelige ut. Brukernavn som \"NotMarkThompson\" og \"Definitely_Not_Mark_Thompson\" er åpenbart falske. Anmeldelsene er overdrevent positive uten spesifikke detaljer - et kjennetegn på fabrikkerte anmeldelser.",
+      "negativePattern": "De negative anmeldelsene maler et konsistent bilde: forsinkede leveranser, dårlig kvalitet, skjulte gebyrer, ikke-responsiv kundeservice og aggressive salgstaktikker. Flere uavhengige anmeldere som rapporterer de samme problemene er et sterkt signal."
+    }
+  },
+  "objects": {
+    "calendar": {
+      "title": "Bookingskjerm for Konferanserom",
+      "content": "Dagens Plan:\n\n09:00 - 09:45  |  Standup for Markedsføringsteamet\n10:00 - 11:00  |  Ledermøte (Ditt Navn)\n11:30 - 12:00  |  HR Onboarding-økt\n13:00 - 14:00  |  Kundesamtale - Acme Corp\n14:30 - 15:30  |  Produktdemo\n\nIngen leverandørmøter er planlagt for i dag.",
+      "thought": "Det er ingen møte med FastSupply eller noen annen leverandør oppført på dagens timeplan for konferanserommet. Mark sa at han var her for et møte, men det er ingen bevis for det. Han ser ut til å ha dukket opp uinvitert."
+    },
+    "flyer": {
+      "title": "FastSupply Ltd - Reklameflyer",
+      "content": "FastSupply Ltd\n\"Din Partner i Kontorekspertise\"\n\nTjenester:\n- Kontorrekvisita\n- Premium-tjenester\n- Bedriftsløsninger\n\nKontakt oss i dag!\nwww.fastsupply-deals.com\n\n*Priser og tilgjengelighet kan endres uten varsel.",
+      "thought": "Denne flyeren er ekstremt vag. Ingen spesifikke produktdetaljer, ingen prisinformasjon, ingen organisasjonsnummer, ingen fysisk adresse. En legitim bedrift ville gitt mye mer konkret informasjon om sine tilbud."
+    },
+    "businessCard": {
+      "title": "Visittkort",
+      "content": "Mark Thompson\nSenior Salgsrepresentant\nFastSupply Ltd\n\nmark.t@fastsupply-deals.com\nwww.fastsupply-deals.com",
+      "thought": "Visittkortet mangler telefonnummer, fysisk kontoradresse og organisasjonsnummer. E-postdomenet er 'fastsupply-deals.com' i stedet for et mer profesjonelt domene. Dette ser uprofesjonelt ut for et angivelig etablert selskap."
+    },
+    "poster": {
+      "title": "Bedriftsplakat",
+      "content": "Beskytt Deg Mot Manipulerende Salgstaktikker:\n\n1. Se opp for kunstig hastverk (\"kun i dag!\")\n2. Krev skriftlige tilbud og verifiserbare referanser\n3. Forsk uavhengig før du forplikter deg\n4. Aldri signer under press\n5. Hvis det høres for godt ut til å være sant, er det sannsynligvis det",
+      "thought": ""
+    },
+    "magazine": {
+      "title": "Bransjemagasin - Procurement Weekly",
+      "content": "\"Hvordan Vurdere en Ny Leverandør\"\nav Dr. Elena Martinez\n\nNøkkeltrinn for due diligence:\n- Be om et skriftlig forslag med fullstendige vilkår\n- Sjekk uavhengige anmeldelsessider\n- Be om verifiserbare kundereferanser\n- Verifiser organisasjonsregistrering og historikk\n- Sammenlign med minst 2 andre leverandører\n- Aldri forplikt deg under tidspress",
+      "thought": ""
+    }
+  },
+  "researchNotes": {
+    "notes": {
+      "conversation_written_offer": {
+        "id": "conversation_written_offer",
+        "text": "Mark gikk med på å sende et skriftlig tilbud med fullstendige detaljer og referanser.",
+        "correctCategory": "PRO"
+      },
+      "conversation_consistent": {
+        "id": "conversation_consistent",
+        "text": "Marks tilbud har vært konsistent gjennom hele samtalen - 50% rabatt på premium-tjenester.",
+        "correctCategory": "PRO"
+      },
+      "conversation_good_offer": {
+        "id": "conversation_good_offer",
+        "text": "50% rabatt på premium-tjenester er en betydelig potensiell besparelse hvis det er ekte.",
+        "correctCategory": "PRO"
+      },
+      "conversation_pressure": {
+        "id": "conversation_pressure",
+        "text": "Mark brukte tidspress-taktikker: \"gjelder kun i dag\", \"jo raskere du handler, jo bedre\".",
+        "correctCategory": "CON"
+      },
+      "conversation_vague": {
+        "id": "conversation_vague",
+        "text": "Mark fremsatte vage påstander om \"hundrevis av fornøyde kunder\" uten å gi noen verifiserbare bevis.",
+        "correctCategory": "CON"
+      },
+      "conversation_uninvited": {
+        "id": "conversation_uninvited",
+        "text": "Mark hevdet å være her for et møte, men konferanseromsplanen viser ingen leverandørmøter i dag.",
+        "correctCategory": "CON"
+      },
+      "maria_bad_experience": {
+        "id": "maria_bad_experience",
+        "text": "Marias forrige bedrift hadde en forferdelig opplevelse med FastSupply: forsinkede leveranser, feil varer, dårlig kvalitet og ikke-responsiv kundeservice.",
+        "correctCategory": "CON"
+      },
+      "email_urgency": {
+        "id": "email_urgency",
+        "text": "E-posten bruker aggressive hastetaktikker: emne med store bokstaver, \"HANDLE NÅ!\", \"KUN I DAG\".",
+        "correctCategory": "CON"
+      },
+      "email_discount_suspicious": {
+        "id": "email_discount_suspicious",
+        "text": "En 50% rabatt på alle premium-tjenester virker for godt til å være sant og kan indikere oppblåste grunnpriser.",
+        "correctCategory": "CON"
+      },
+      "email_generic_testimonials": {
+        "id": "email_generic_testimonials",
+        "text": "Anbefalingene i e-posten er fullstendig generiske uten ekte navn eller selskaper - de er ikke verifiserbare.",
+        "correctCategory": "CON"
+      },
+      "email_hidden_terms": {
+        "id": "email_hidden_terms",
+        "text": "Vilkår og betingelser er ikke inkludert i e-posten og krever at man kontakter salget for å se dem.",
+        "correctCategory": "CON"
+      },
+      "email_time_pressure": {
+        "id": "email_time_pressure",
+        "text": "E-posten forsterker den kunstige \"kun i dag\"-fristen for å skape tidspress.",
+        "correctCategory": "CON"
+      },
+      "reviews_fake": {
+        "id": "reviews_fake",
+        "text": "Flere positive anmeldelser ser ut til å være falske, postet av brukere med mistenkelige navn som \"NotMarkThompson\".",
+        "correctCategory": "CON"
+      },
+      "reviews_negative_pattern": {
+        "id": "reviews_negative_pattern",
+        "text": "Flere uavhengige negative anmeldelser rapporterer de samme problemene: forsinkede leveranser, dårlig kvalitet, skjulte gebyrer og ikke-responsiv kundeservice.",
+        "correctCategory": "CON"
+      },
+      "calendar_no_meeting": {
+        "id": "calendar_no_meeting",
+        "text": "Bookingskjermen for konferanserommet viser ingen planlagte leverandørmøter i dag - Mark ser ut til å ha dukket opp uinvitert.",
+        "correctCategory": "CON"
+      },
+      "flyer_lacking": {
+        "id": "flyer_lacking",
+        "text": "FastSupplys reklameflyer er ekstremt vag: ingen spesifikke produkter, ingen priser, ingen organisasjonsregistrering, ingen adresse.",
+        "correctCategory": "CON"
+      },
+      "card_unprofessional": {
+        "id": "card_unprofessional",
+        "text": "Marks visittkort mangler telefonnummer, kontoradresse og organisasjonsnummer - uprofesjonelt for et etablert selskap.",
+        "correctCategory": "CON"
+      }
+    },
+    "proLabel": "FOR",
+    "conLabel": "MOT",
+    "wrongPlacementHint": "Tenk igjen. Støtter eller undergraver dette beviset FastSupplys troverdighet?",
+    "allSortedMessage": "Du har sortert alle bevisene. Nå er det på tide å ta en beslutning."
+  },
+  "decision": {
+    "title": "Ta Din Beslutning",
+    "instructions": "Basert på alle bevisene du har samlet, bør du akseptere eller avvise FastSupplys tilbud?",
+    "acceptLabel": "Aksepter Tilbudet",
+    "rejectLabel": "Avvis Tilbudet",
+    "acceptFeedback": "Du valgte å akseptere tilbudet. Selv om de potensielle besparelsene er fristende, antyder de overveldende bevisene betydelige risikoer: falske anmeldelser, presstaktikker, skjulte vilkår og en kollegas negative opplevelse. I virkeligheten kan denne beslutningen føre til problemer. Men hvis du går videre, sørg for å forhandle bedre vilkår, få alt skriftlig og sett opp sikkerhetstiltak. Kritisk tenkning betyr å ta informerte valg, selv når valget er risikabelt.",
+    "rejectFeedback": "Du valgte å avvise tilbudet. Gitt de overveldende bevisene - presstaktikker, falske anmeldelser, vage påstander, skjulte vilkår, en kollegas dårlige opplevelse og ingen planlagt møte - er dette en velbegrunnet beslutning. Kritisk tenkning betyr ikke å være kynisk, men det betyr å kreve bevis før man forplikter seg. Du kan alltid revurdere hvis FastSupply gir verifiserbare referanser og transparente vilkår i fremtiden."
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Svar Avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "phase1_talkToMark": "Klikk på Mark for å starte samtalen.",
+    "phase2_talkToMaria": "Klikk på Maria for å høre om hennes opplevelse med FastSupply.",
+    "phase2_checkLaptop": "Klikk på den bærbare datamaskinen for å sjekke e-posten fra FastSupply.",
+    "phase2_checkTV": "Klikk på TV-skjermen for å sjekke nettanmeldelser.",
+    "phase2_checkCalendar": "Klikk på bookingskjermen nær dørene til konferanserommet for å sjekke dagens timeplan.",
+    "phase2_checkFlyer": "Det ligger en flyer på gulvet. Klikk på den for å undersøke den.",
+    "phase2_checkCard": "Sjekk visittkortet Mark la igjen på stuebordet.",
+    "phase2_checkPoster": "Det er en bedriftsplakat på veggen. Den kan ha nyttig informasjon.",
+    "phase2_checkMagazine": "Det ligger et bransjemagasin på bordet. Det kan tilby veiledning.",
+    "phase2_goCorkboard": "Du har samlet alle bevisene. Klikk på oppslagstavlen for å sortere funnene dine.",
+    "phase3_sorting": "Sorter hvert forskningsnotat i FOR eller MOT basert på bevisene.",
+    "phase3_decision": "Alle bevisene er sortert. Ta din endelige beslutning om FastSupplys tilbud.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg rundt i rommet for mer informasjon som kan hjelpe deg med å bestemme deg."
+  },
+  "systemDialogues": {
+    "intro": "Jeg er tidlig ute for møtet mitt. Venterommet er stille. Jeg setter meg ned og-",
+    "markExits": "Mark samler tingene sine og går ut med et selvsikkert smil. Når han går, legger du merke til et visittkort på stuebordet, en flyer på gulvet, og at den bærbare datamaskinen på bordet har et nytt e-postvarsel. Før du tar noen beslutninger, bør du samle så mye informasjon som mulig.",
+    "mariaNoteDone": "Marias opplevelse gir deg en førstehåndsberetning om hvordan det egentlig er å forholde seg til FastSupply. Du bør notere dette.",
+    "emailAnalysisDone": "Du har identifisert flere faresignaler i e-posten. På tide å se på flere kilder.",
+    "reviewAnalysisDone": "Anmeldelsene maler et tydelig bilde. Noen er åpenbart falske, og de ekte er overveldende negative.",
+    "allResearchDone": "Du har samlet alle bevisene. Det er på tide å organisere funnene dine og ta en beslutning. Gå til oppslagstavlen nær dørene til konferanserommet.",
+    "sortingComplete": "Alle bevisene er sortert. Bildet er klart. Nå må du ta din beslutning: aksepter eller avvis FastSupplys tilbud.",
+    "gameComplete": "Bra jobbet. Enten du aksepterte eller avviste tilbudet, er det viktige at du brukte kritisk tenkning gjennom hele prosessen. Du samlet bevis, stilte spørsmål ved påstander og tok en informert beslutning."
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har vellykket fullført Kritisk Tenkning-fluktrommet! Du demonstrerte evnen til å stille spørsmål ved påstander, samle bevis fra flere kilder, identifisere manipulasjonstaktikker og ta informerte beslutninger. Dette er essensielle evner i kritisk tenkning i ethvert profesjonelt miljø.",
+    "buttonText": "Forlat Rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "nextReview": "Neste Anmeldelse",
+    "previousReview": "Forrige Anmeldelse",
+    "closePopup": "Lukk",
+    "emailCluePrefix": "Spor",
+    "reviewOf": "av",
+    "researchNotesCollected": "Forskningsnotater Innsamlet",
+    "sortEvidence": "Sorter Bevis",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  },
+  "emailFields": {
+    "from": "Fra:",
+    "date": "Dato:",
+    "subject": "Emne:"
+  }
+}

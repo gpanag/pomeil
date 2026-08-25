@@ -1,0 +1,236 @@
+{
+  "loading": "Laadin Empaatia moodulit...",
+  "intro": {
+    "title": "Empaatia",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sa just sisenesid suure rahvusvahelise ettevõtte Heaolukeskusesse. Siin õpid Empaatia kohta — võime mõista, mida keegi teine tunneb, isegi kui tema kogemus on sinu omast erinev.",
+      "Dr. Elena Ruiz, heaolu juhendaja, juhendab sind läbi erinevate väljakutsete, et aidata sul arendada emotsionaalset taju, hoolikat kuulamist ja kaastundlikku arutlust."
+    ],
+    "buttonText": "Alusta mängu"
+  },
+  "characters": {
+    "coach": {
+      "name": "Dr. Elena Ruiz (heaolu juhendaja)",
+      "dialogues": {
+        "intro": "Tere (username)! Nüüd uurime empaatiat, st emotsioonide mõistmist teistes ja hoolega vastamist.",
+        "findStones_initial": "Selle oskuse jaoks peitsin meditatsioonikivid, mis sisaldavad sõnumit. Alusta meditatsiooniobjektidega riiuli kontrollimisest.",
+        "findStones_reminder": "Meditatsioonikivid peaksid olema kuskil ruumis. Alusta meditatsiooniobjektidega riiuli kontrollimisest.",
+        "stonesFound": "Sa leidsid kivid! Klõpsa neil, et sõnumit lugeda, ja too need siis minu juurde tagasi.",
+        "stonesReturned": "Suurepärane, need sammud on sinu alus. Aga enne kui jätkame, las ma jagan midagi olulist.",
+        "empathyExplanation1": "Empaatia ei ole lihtsalt „kena olemine“. Empaatia on võime mõista, mida keegi teine tunneb, isegi kui tema kogemus on sinu omast erinev.",
+        "empathyExplanation2": "Empaatial on tegelikult kaks külge:\nEmotsionaalne empaatia: kellegi tunnete tajumine tooni, hoiaku või väljenduste kaudu.\nKognitiivne empaatia: nende vaatenurga ja selle mõistmine, mis võib nende emotsioonide taga olla.",
+        "empathyExplanation3": "Kui mõlemad töötavad koos, ei märka sa ainult emotsioone, vaid vastad nii, et inimene tunneb end turvaliselt ja toetatuna. See on see, mis ehitab tugevaid suhteid tööl.",
+        "empathyExplanation4": "Olgu, paneme need ideed praktikasse.",
+        "puzzle1Complete": "Sa edened kenasti. Valmistasin ette lühikese mõtiskluse empaatiast. Arvan, et panin selle raamaturiiulisse, aga ma pole kindel.",
+        "findFabric_reminder": "Mõtiskluse riie peaks olema raamaturiiuli juures. Otsi edasi!",
+        "fabricFound": "Suurepärane! Loe mõtiskust hoolikalt ja tule siis tagasi minu juurde.",
+        "fabricReturned": "Ideaalne. Need mõtisklused juhivad sinu järgmisi harjutusi.",
+        "patternComplete": "See oli suurepärane töö, (username). Sa demonstreerisid emotsionaalset taju, hoolikat kuulamist ja kaastundlikku arutlust.",
+        "completion": "Sa tegid imeliselt! Koolitus on lõpetatud!",
+        "default": "Mine edasi, sa saad suurepäraselt hakkama!"
+      }
+    },
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "default": "Oh, tere… mediteerin lihtsalt.",
+        "completion": "Suurepärane töö empaatia koolituse lõpetamisega! Uks on sinu jaoks avatud."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Sobita emotsioonisignaal selle tähendusega",
+      "columnA": {
+        "heading": "Veerg A – Emotsionaalsed signaalid",
+        "items": {
+          "1": "Silmside vältimine",
+          "2": "Ebaharilikult kiire rääkimine",
+          "3": "Ettepoole kummardunud õlad",
+          "4": "Pikad pausid enne vastamist"
+        }
+      },
+      "columnB": {
+        "heading": "Veerg B – Tõenäolised emotsionaalsed seisundid",
+        "items": {
+          "a": "Tunne, et on üle koormatud",
+          "b": "Ebakindlus või kahtlemine",
+          "c": "Kurbus või lüüasaamine",
+          "d": "Ärevus."
+        }
+      },
+      "feedback": {
+        "wrong": "Mõtle, kuidas keha emotsioone väljendab. Näiteks kummardunud õlad signaliseerivad sageli madalat energiat või kurbust.",
+        "allCorrect": "Suurepärane töö! Jätka järgmise ülesandega."
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Sobita kehakeele signaalid emotsionaalsete seisunditega.\n\nÕiged sobitused:\n• „Silmside vältimine“ → „Ebakindlus või kahtlemine“ - Kui inimesed tunnevad ebakindlust, vaatavad nad sageli kõrvale, et vältida otsest seotust\n• „Ebaharilikult kiire rääkimine“ → „Ärevus“ - Kiire kõne näitab sageli närvilisust või ärevust\n• „Ettepoole kummardunud õlad“ → „Kurbus või lüüasaamine“ - Kehahoiak vajub, kui energia on madal\n• „Pikad pausid enne vastamist“ → „Tunne, et on üle koormatud“ - Kui töödeldakse liiga palju, vajavad inimesed vastamiseks rohkem aega\n\nPea meeles: Kehakeel paljastab sageli emotsioone, mida sõnad ei väljenda."
+    },
+    "fillGap": {
+      "title": "Empaatiaga vastamine",
+      "sentenceParts": [
+        "Kui keegi on häiritud, aitab ",
+        " nende tundeid, ",
+        " täielikult ja küsida ",
+        " küsimust, et paremini mõista."
+      ],
+      "options": [
+        "valideerida",
+        "kuulata",
+        "hinnangut andev",
+        "õrn",
+        "ignoreerida"
+      ],
+      "correctAnswers": [
+        "valideerida",
+        "kuulata",
+        "õrn"
+      ],
+      "feedback": {
+        "wrong": "Empaatilised vastused ei hõlma kunagi hinnangut andvat olekut ega kellegi ignoreerimist."
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Kui keegi on häiritud, aitab (___) nende tundeid, (___) täielikult ja küsida (___) küsimust, et paremini mõista.\n\nÕige vastus:\n• Esimene tühik: „valideerida“ - Kellegi tunnete tunnustamine näitab, et sa mõistad ja toetad neid\n• Teine tühik: „kuulata“ - Anna oma täielik tähelepanu segamata, et inimene tunneks end ära kuulatuna ja austatuna\n• Kolmas tühik: „õrn“ - Küsi õrn küsimus, et näidata, et sul hooli ja sa mõistad, mis pinna all toimub\n\nTäielik lause: „Kui keegi on häiritud, aitab valideerida nende tundeid, kuulata täielikult ja küsida õrn küsimust, et paremini mõista.“",
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli"
+    },
+    "pattern": {
+      "title": "Emotsionaalsete mustrite lugemine",
+      "scenarioLabel": "Stsenaarium",
+      "scenarios": [
+        {
+          "text": "Kolleeg annab väga lühikesi vastuseid, väldib silmsidet ja näperdab pidevalt kätega.",
+          "options": [
+            {"text": "Rahulik + reflektiivne", "correct": false},
+            {"text": "Ärev + ebakindel", "correct": true},
+            {"text": "Rõõmus + energiline", "correct": false},
+            {"text": "Motiveeritud + keskendunud", "correct": false}
+          ],
+          "hint": "Kätega näperdamine ja silmside vältimine peegeldavad tavaliselt sisemist pinget või muret."
+        },
+        {
+          "text": "Meeskonna arutelus räägib kolleeg aeglasemalt kui tavaliselt, vastab pehme häälega ja hoiab õlgu allapoole.",
+          "options": [
+            {"text": "Kurb + madal energia", "correct": true},
+            {"text": "Enesekindel + lõdvestunud", "correct": false},
+            {"text": "Ärritunud + kannatamatu", "correct": false},
+            {"text": "Hajameelne + mänguline", "correct": false}
+          ],
+          "hint": "Allapoole lastud õlad ja pehme hääl näitavad tavaliselt langenud emotsionaalset energiat, mitte enesekindlust ega ärritust."
+        },
+        {
+          "text": "Töökaaslane räägib väga kiiresti, segab sageli vahele ja tema žestid on kiired ja liialdatud.",
+          "options": [
+            {"text": "Närviline põnevus + ülestimulatsioon", "correct": true},
+            {"text": "Rahulik + rahulik", "correct": false},
+            {"text": "Segaduses + väsinud", "correct": false},
+            {"text": "Neutraalne + ükskõikne", "correct": false}
+          ],
+          "hint": "Kui keegi räägib liiga kiiresti või žestikuleerib liialt, peegeldab see sageli kõrgenenud aktivatsiooni — mitte rahu ega ükskõiksust."
+        }
+      ],
+      "answerOverlayPrefix": "Pärast 3 katset, siin on vastus:\n\nKüsimus: ",
+      "answerOverlayCorrectLabel": "\n\nÕige vastus: ",
+      "answerOverlayExplanationLabel": "\n\nSelgitus: "
+    },
+    "answerOverlayTitle": "Õige vastus",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "default": "Pean ruumi hoolikalt kontrollima.",
+    "intro": "Pean rääkima dr. Elena Ruizega.",
+    "stonesReturned": "Pean rääkima dr. Elena Ruizega.",
+    "stonesFound": "Loe kividel olevat sõnumit ja too need siis heaolu juhendaja juurde tagasi.",
+    "fabricFound": "Loe riidel olevat mõtisklust ja mine siis heaolu juhendaja juurde tagasi.",
+    "puzzle1Matching": "Sobita iga kehakeele signaal veerus A emotsionaalse seisundiga, millele see veerus B viitab.",
+    "puzzle2FillGap": "Vali sõnad, mis täiendavad empaatilist vastust: valideeri tundeid, kuula täielikult, küsi õrn küsimus.",
+    "findStones": {
+      "step0": "Dr. Elena ütles: „Alusta meditatsiooniobjektidega riiuli kontrollimisest.“",
+      "step1": "Riiul oli tühi. Pean kontrollima purskkaevu.",
+      "step2": "Purskkaevus pole midagi. Pean kontrollima oranži padja all."
+    },
+    "findFabric": {
+      "step0": "Pean leidma mõtisklused. Dr. Elena mainis raamaturiiulit.",
+      "step1": "Mitte raamaturiiulis. Pean kontrollima volditud tekke.",
+      "step2": "Mitte tekkides. Pean kontrollima joogamatte."
+    },
+    "completion": "Pean teatama HR-juhile, et lõpetada."
+  },
+  "items": {
+    "stones": {
+      "altText": "Meditatsioonikivid",
+      "title": "EMPAATIA SAMMUD",
+      "steps": [
+        {
+          "label": "Märka",
+          "text": "Pööra tähelepanu emotsionaalsetele signaalidele nagu toon või hoiak, et tunnetada, kuidas keegi võib end tunda."
+        },
+        {
+          "label": "Kontrolli",
+          "text": "Küsi õrn küsimus, et näidata, et hoolid, ja mõista, mis pinna all toimub."
+        },
+        {
+          "label": "Kuula",
+          "text": "Anna oma täielik tähelepanu segamata, et inimene tunneks end ära kuulatuna ja austatuna."
+        },
+        {
+          "label": "Valideeri",
+          "text": "Tunnusta nende tundeid, et näidata mõistmist ja aidata neil end toetatuna tunda."
+        }
+      ],
+      "inventoryTitle": "Vaata Meditatsioonikive",
+      "foundDialogue": "Tubli! Vii kivid heaolu juhendaja juurde tagasi.",
+      "returnDialogue": "Suurepärane, need sammud on sinu alus. Aga enne kui jätkame, las ma jagan midagi olulist."
+    },
+    "fabric": {
+      "altText": "Riideriba",
+      "title": "EMPAATIA MÕTISKLUSED",
+      "reflections": [
+        "Inimesed peidavad oma tunded sageli lühikeste vastuste taha — empaatia aitab sul märgata, mis on välja ütlemata.",
+        "Sul ei pea emotsioone parandama; nende tunnustamine on juba toetus.",
+        "Kellegi tunnete mõistmine tugevdab usaldust ja koostööd."
+      ],
+      "inventoryTitle": "Vaata Mõtiskluse riiet",
+      "foundDialogue": "Suurepärane leid! Mine heaolu juhendaja juurde tagasi.",
+      "returnDialogue": "Ideaalne. Need mõtisklused juhivad sinu järgmisi harjutusi."
+    }
+  },
+  "systemDialogues": {
+    "findStones": {
+      "shelf": "Siin on palju esemeid… kuid mitte see, mida vajad. Võib-olla purskkaevus.",
+      "fountain": "Siin pole midagi. Võib-olla kontrolli ühe meditatsioonipadja all."
+    },
+    "findFabric": {
+      "bookshelf": "Siin ainult raamatud ja difuusorid. Võib-olla kontrolli volditud tekke raamaturiiuli kõrval.",
+      "blankets": "Endiselt mitte midagi. Võib-olla vaata seina ääres olevate joogamatte juures."
+    },
+    "empathyComplete": "Sa lõpetasid Empaatia oskuse! Sa muutud tugevamaks ja toetavamaks meeskonnaliikmeks.",
+    "readyNextSkill": "Valmis liikuma järgmise oskuse juurde?"
+  },
+  "completion": {
+    "title": "Koolitus lõpetatud!",
+    "message": "Sa lõpetasid edukalt Empaatia oskuse mooduli.",
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "____",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

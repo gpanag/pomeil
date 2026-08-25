@@ -1,0 +1,251 @@
+{
+  "loading": "Ładowanie Tolerancji...",
+  "intro": {
+    "title": "Tolerancja",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która zbliża ludzi do siebie.",
+      "Właśnie zostałeś zatrudniony w dużej międzynarodowej firmie, w której wspólnie pracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie jest dla Ciebie doświadczeniem edukacyjnym, ponieważ wykonując różne wyzwania, zdobędziesz umiejętności zawarte w mapie kompetencji POMEIL, które są niezbędne dla każdego przedsiębiorcy.",
+      "Dziś wchodzisz do spokojnego biura coworkingowego, urządzonego do dyskusji i refleksji. Amelia i Marco są tutaj, przygotowując się do Dnia Otwartej Kultury, ale mają różne zdania na temat organizacji wydarzenia. Przyda im się Twoja pomoc."
+    ],
+    "buttonText": "Wejdź do biura coworkingowego"
+  },
+  "characters": {
+    "amelia": {
+      "name": "Amelia",
+      "dialogues": {
+        "greet": "Cześć, miło Cię tu widzieć. Naprawdę cieszę się, że do nas dołączyłeś — przydałyby nam się dziś świeże pomysły. Mój kolega Marco i ja mieliśmy nieporozumienie co do tego, jak zorganizować duże wydarzenie dla naszej firmy. To nasz Dzień Otwartej Kultury, podczas którego staramy się promować tolerancję, identyfikować wyzwania i wzmacniać równość w naszym wielokulturowym miejscu pracy.\n\nAle nasze perspektywy na to, jak je zaplanować, są bardzo różne, więc być może potrzebujemy Twojej pomocy, by znaleźć drogę naprzód.",
+        "findFolder": "Nieporozumienia w środowiskach wielokulturowych są normalną częścią codziennej pracy, ale można je rozwiązywać. Kroki, które pomagają w tym, są ukryte gdzieś w pokoju. Zacznij ich szukać.",
+        "findFolderHint": "Możesz klikać różne przedmioty w pokoju. Naprowadzą Cię one na coś znaczącego — informacje, których potrzebujemy, by wzmocnić naszą tolerancję i pomóc rozwiązać nieporozumienie. Spróbuj poszukać przy stole",
+        "puzzle1Done": "Czy było trudno? A może łatwo? Ale w końcu Ci się udało, więc jesteśmy gotowi, by ruszyć dalej z tego kluczowego punktu. Muszę przyznać, że Twoja tolerancja rośnie z każdym wykonanym zadaniem, więc mamy dla Ciebie jeszcze kilka.",
+        "findFrame": "Teraz czas poszukać czegoś naprawdę wyjątkowego. Znasz zasady i znasz procedurę. Przyjrzyjmy się dokładnie temu pokojowi i klikajmy w różne przedmioty. Może znajdziemy coś cennego jeszcze raz. Może zacznijmy od laptopów",
+        "frameFound": "Te refleksje pomogą Ci zbudować silną i mocną tolerancję. Mamy już całkiem sporo i jesteśmy gotowi, by sprawdzić. Czy możemy iść dalej z naszą tolerancją? Przygotuj się więc na kolejne quizy!",
+        "finalWords": "Rozumiem Twoje uczucia. Pewnie nie było łatwo. Ale życie nie zawsze jest łatwe. Teraz miałeś kilka scenariuszy, które się udały. To była świetna praktyka, by rozważyć sytuacje związane z pracą i życiem w celu rozwijania tolerancji. I muszę powiedzieć, że poradziłeś sobie świetnie. Jestem z Ciebie dumna!\n\nNigdy się nie poddawaj i idź dalej!",
+        "skillComplete": "Osiągnąłeś umiejętność tolerancji. Teraz jest w pełni rozwinięta. Możesz wrócić i wypróbować quizy w dowolnym momencie, gdy poczujesz, że tego potrzebujesz.",
+        "completion": "Ukończyłeś ostatnią umiejętność z listy!\nMożesz teraz przejść do umiejętności, których jeszcze nie próbowałeś, lub wrócić do tych, które chcesz przećwiczyć ponownie. Mapa pomoże Ci, gdziekolwiek zdecydujesz się pójść dalej.\n\nMożesz swobodnie udostępniać tę grę i jej link znajomym, współpracownikom lub każdemu, kto może potrzebować wsparcia w przystosowaniu się do nowego kraju. To narzędzie zostało stworzone, aby wzmacniać przedsiębiorców podczas nauki i rozwoju.\n\nWykonałeś świetną pracę. Powodzenia i dziękujemy, że jesteś częścią tej podróży.",
+        "default": "Rozglądaj się dalej po pokoju w poszukiwaniu wskazówek."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "folderFound": "To wygląda na solidny plan. Powinniśmy sprawdzić, czy naprawdę używaliśmy tych kroków po kolei, czy świadomie wybraliśmy tylko niektóre z nich, ale każdy z nich jest kluczowy. Zobaczmy, co możemy z tym zrobić.",
+        "toleranceExplained": "Tolerancja w życiu oznacza akceptowanie tego, że ludzie mają różne przekonania, nawyki i sposoby postrzegania świata. Polega na zachowaniu cierpliwości, otwartości i szacunku, nawet gdy ktoś myśli inaczej niż Ty.",
+        "toleranceDetails": "Tolerancja nie jest nawykiem, jej osiągnięcie wymaga czasu, edukacji i praktyki, oto kilka najczęstszych sposobów i sytuacji, w których nasza zdolność do tolerancji może się poprawić:\n\n1. Tolerancja w życiu — Aby rozwijać tolerancję w codziennym życiu, zacznij od zauważania swoich reakcji, gdy ktoś zachowuje się lub myśli inaczej niż Ty. Ćwicz pauzowanie przed osądzaniem i wybieraj ciekawość zamiast krytyki. Słuchaj historii ludzi i staraj się zrozumieć, co ukształtowało ich poglądy.\n\n2. Tolerancja w środowisku pracy — Aby budować tolerancję w pracy, skup się na otwartej komunikacji oraz spokojnym, pełnym szacunku słuchaniu. Ludzie pochodzą z różnych kultur i mają różne style pracy, więc proś o wyjaśnienia, zamiast zakładać, i daj współpracownikom przestrzeń do wyrażania swoich pomysłów.\n\n3. Tolerancja w domu lub rodzinie — Tolerancja w domu zaczyna się od zrozumienia, że każdy członek rodziny ma swoje własne emocje, nawyki i sposoby myślenia. Ćwicz mówienie życzliwie podczas nieporozumień i poświęć czas na wyjaśnienie swoich uczuć bez obwiniania. Ustal wspólne zasady komunikacji — takie jak pełne wysłuchanie przed odpowiedzią."
+,
+        "toleranceSummary": "Tolerancja rośnie, gdy uczymy się rozumieć i szanować różnice w każdej części naszego życia — w domu, w pracy i w otaczającym nas świecie. Rozwija się przez spokojne słuchanie, otwartą komunikację i gotowość do dostosowania naszej perspektywy, gdy jest to potrzebne. Gdy konsekwentnie praktykujemy tolerancję, nasze relacje stają się silniejsze, konflikty łatwiejsze do rozwiązania, a nasze otoczenie bezpieczniejsze i bardziej wspierające dla wszystkich.",
+        "letsQuiz": "To było wiele cennych informacji. Były jasne i całkiem zrozumiałe. Wiesz, jaki jest najlepszy sposób, by się uczyć? Praktyka! Więc zróbmy to!",
+        "default": "Przeglądam te kroki tolerancji. Porozmawiaj z Amelią, aby kontynuować."
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "To wygląda na ciepłe i przyjazne biuro. Widzę dwie osoby — Amelię i Marco. Wydaje się, że dyskutują o czymś ważnym. Powinienem najpierw porozmawiać z Amelią.",
+    "clickTable": "Tu są tylko jakieś coroczne raporty danych, nic, czego mogłybyśmy teraz użyć, spróbuj poszukać obrazów w ramach",
+    "clickFrames1": "Tu jest kilka świetnych faktów i pomysłów motywacyjnych, ale na razie odkładamy je na bok, może Marco ma coś, czego możemy użyć",
+    "foundFolder": "To naprawdę świetne odkrycie. A więc to, co zrobimy z tą wiedzą, to... zobaczmy. Zwróć się do Marco, on wie, jak to wykorzystać.",
+    "clickLaptop": "Tu są tylko jakieś laptopy i e-maile. Nic ciekawego. Idźmy dalej i przyjrzyjmy się dużemu ekranowi. Może coś jest w tym rocznym raporcie. Może to znowu folder Marco? Lubi trzymać rzeczy bliżej siebie.",
+    "clickPocket": "Cóż, nie tym razem. Pamiętam. Mówiłam Ci coś o tych obrazach w ramach. Może jeden z nich to to, czego szukamy.",
+    "foundFrame": "Wow, to było szybkie! Wracajmy do Amelii."
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dopasuj reakcję tolerancji do sytuacji",
+      "instructions": "Wybierz sytuację z kolumny A, a następnie dopasuj ją do właściwej reakcji tolerancji w kolumnie B.",
+      "columnA": {
+        "heading": "Sytuacje",
+        "items": {
+          "1": "Ktoś ma inne zdanie niż Ty",
+          "2": "Współpracownik pracuje wolniej niż się spodziewałeś",
+          "3": "Członek rodziny denerwuje się podczas rozmowy",
+          "4": "Nie rozumiesz słów lub akcentu kogoś"
+        }
+      },
+      "columnB": {
+        "heading": "Reakcje tolerancji",
+        "items": {
+          "A": "Słuchaj spokojnie i pozwól im skończyć mówić",
+          "B": "Bądź cierpliwy i daj im więcej czasu",
+          "C": "Poproś uprzejmie, by powtórzyli lub wyjaśnili",
+          "D": "Zachowaj spokój i staraj się zrozumieć ich uczucia"
+        }
+      },
+      "feedback": {
+        "wrong": "Pomyśl, które działanie pokazuje cierpliwość i zrozumienie. Tolerancja oznacza zachowanie spokoju, dobre słuchanie i staranie się zrozumieć drugą osobę.",
+        "allCorrect": "Doskonale! Dopasowałeś poprawnie wszystkie reakcje tolerancji!"
+      },
+      "answerOverlay": "Poprawne dopasowania to:\n1. Ktoś ma inne zdanie → Słuchaj spokojnie i pozwól im skończyć mówić\n2. Współpracownik pracuje wolniej → Bądź cierpliwy i daj im więcej czasu\n3. Członek rodziny denerwuje się → Zachowaj spokój i staraj się zrozumieć ich uczucia\n4. Nie rozumiesz słów kogoś → Poproś uprzejmie, by powtórzyli lub wyjaśnili"
+    },
+    "fillGap": {
+      "title": "Współpraca w zespole",
+      "instructions": "Wybierz właściwe słowa, aby uzupełnić zdanie. Najpierw przeczytaj wszystkie opcje, a następnie wybierz słowa, które tworzą dobre działanie zespołowe.",
+      "sentenceParts": [
+        "Gdy zespół ma problem, pomocne jest ",
+        ", ",
+        " razem i wybrać jedno ",
+        " działanie, by zacząć je rozwiązywać."
+      ],
+      "options": [
+        "słuchać",
+        "kłócić się",
+        "małe",
+        "obwiniać",
+        "planować"
+      ],
+      "correctAnswers": [
+        "słuchać",
+        "planować",
+        "małe"
+      ],
+      "feedback": {
+        "wrong": "Praca zespołowa poprawia się, gdy ludzie słuchają, planują razem i zaczynają od małego kroku — a nie gdy się kłócą lub obwiniają.",
+        "correct": "Brawo! Praca zespołowa polega na słuchaniu, wspólnym planowaniu i zaczynaniu od małych kroków."
+      },
+      "answerOverlay": "Poprawne zdanie to:\n\"Gdy zespół ma problem, pomocne jest słuchać, planować razem i wybrać jedno małe działanie, by zacząć je rozwiązywać.\"",
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź odpowiedź"
+    },
+    "pattern": {
+      "title": "Czytanie wzorca pracy zespołowej",
+      "instructions": "Przeczytaj każdą krótką historię. Następnie wybierz wzorzec pracy zespołowej, który najlepiej pasuje do tego, co się dzieje. Szukaj zachowań zespołowych, a nie reakcji negatywnych.",
+      "scenarioLabel": "Scenariusz",
+      "scenarios": [
+        {
+          "text": "Zespół jest zdezorientowany co do zadania. Jedna osoba mówi spokojnie, pyta wszystkich, co myślą, i zapisuje plan, na który wszyscy się zgadzają.",
+          "options": [
+            {
+              "text": "Zamieszanie + cisza",
+              "correct": false
+            },
+            {
+              "text": "Spokojna komunikacja + wspólne planowanie",
+              "correct": true
+            },
+            {
+              "text": "Obwinianie + frustracja",
+              "correct": false
+            },
+            {
+              "text": "Praca w pojedynkę + ignorowanie grupy",
+              "correct": false
+            }
+          ],
+          "hint": "Dobra praca zespołowa zaczyna się od spokojnej rozmowy i planu, który grupa tworzy razem."
+        },
+        {
+          "text": "Członek zespołu pracuje powoli. Zamiast narzekać, inny członek zespołu oferuje pomoc i pyta, czy chcą podzielić zadanie.",
+          "options": [
+            {
+              "text": "Osąd + presja",
+              "correct": false
+            },
+            {
+              "text": "Cierpliwość + wsparcie",
+              "correct": true
+            },
+            {
+              "text": "Unikanie + ignorowanie",
+              "correct": false
+            },
+            {
+              "text": "Rywalizacja + pośpiech",
+              "correct": false
+            }
+          ],
+          "hint": "Praca zespołowa rośnie, gdy ludzie wspierają się nawzajem, zamiast oceniać."
+        },
+        {
+          "text": "Podczas nieporozumienia dwóch współpracowników przestaje sobie przerywać. Słuchają, powtarzają to, co usłyszeli, i szukają jednej myśli, którą oboje mogą zaakceptować.",
+          "options": [
+            {
+              "text": "Kłótnia + przerywanie",
+              "correct": false
+            },
+            {
+              "text": "Słuchanie + szukanie wspólnego gruntu",
+              "correct": true
+            },
+            {
+              "text": "Poddawanie się + odchodzenie",
+              "correct": false
+            },
+            {
+              "text": "Obwinianie + obrona",
+              "correct": false
+            }
+          ],
+          "hint": "Praca zespołowa poprawia się, gdy ludzie najpierw słuchają i znajdują coś, na co mogą się zgodzić."
+        }
+      ],
+      "answerOverlayPrefix": "Dla scenariusza:\n\"",
+      "answerOverlayCorrectLabel": "\"\n\nPoprawna odpowiedź to: ",
+      "answerOverlayExplanationLabel": "\n\nWyjaśnienie: "
+    },
+    "answerOverlayTitle": "Oto poprawna odpowiedź",
+    "answerOverlayContinue": "Dalej"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Kroki tolerancji",
+      "inventoryTitle": "Teczka tolerancji",
+      "popupContent": [
+        "Pauza — Zatrzymaj się na chwilę przed odpowiedzią. Krótka pauza pomaga zapobiec emocjonalnym reakcjom i utrzymuje komunikację pełną szacunku.",
+        "Słuchaj — Skup pełną uwagę na tym, co mówi druga osoba. Otwarte słuchanie pomaga zrozumieć ich doświadczenie, zanim sformułujesz własną odpowiedź.",
+        "Refleksja — Zastanów się, dlaczego sytuacja wydaje się napięta lub niewygodna. Refleksja pomaga oddzielić założenia od rzeczywistych faktów.",
+        "Pytaj — Używaj spokojnych, ciekawskich pytań, by zrozumieć punkt widzenia drugiej osoby. Pytanie pokazuje szacunek i zmniejsza nieporozumienia.",
+        "Uznaj — Uznaj uczucia, perspektywy lub doświadczenia innych, nawet jeśli się z nimi nie zgadzasz. Uznanie buduje zaufanie i zmniejsza postawę obronną.",
+        "Dostosuj się — Bądź gotów dostosować swoją komunikację lub oczekiwania, gdy pracujesz z ludźmi z różnych środowisk. Zdolność adaptacji pomaga zmniejszać różnice kulturowe lub osobiste.",
+        "Rozwiąż — Szukaj sprawiedliwego rozwiązania, które szanuje wszystkich zaangażowanych. Rozwiązanie nie polega na zwycięstwie — chodzi o tworzenie zrozumienia i wspólne pójście naprzód."
+      ]
+    },
+    "frame": {
+      "popupTitle": "Refleksje o tolerancji",
+      "popupContent": [
+        "Tolerancja rośnie, gdy zachowujesz spokój i starasz się zrozumieć ludzi, którzy są inni niż Ty.",
+        "Nie musisz zgadzać się ze wszystkimi — okazywanie szacunku to już duży krok ku pokojowi.",
+        "Za każdym razem, gdy słuchasz bez osądzania, ułatwiasz pracę, życie i komunikację z innymi.",
+        "Małe chwile cierpliwości mogą zamienić konflikty w zrozumienie i pomóc budować silniejsze relacje."
+      ],
+      "inventoryTitle": "Ramka"
+    }
+  },
+  "hints": {
+    "talkToAmelia1": "Kliknij Amelię, aby rozpocząć rozmowę.",
+    "findFolder": "Poszukaj białej teczki Marco. Spróbuj kliknąć przedmioty w pokoju.",
+    "talkToMarco": "Kliknij Marco, aby dowiedzieć się o krokach tolerancji.",
+    "puzzle1Matching": "Dopasuj każdą sytuację do reakcji tolerancji, która pokazuje cierpliwość i szacunek.",
+    "findFrame": "Przeszukaj pokój ponownie. Spróbuj laptopów, kieszeni Marco lub ramek na ścianie.",
+    "talkToAmelia2": "Kliknij Amelię, aby kontynuować.",
+    "puzzle2FillGap": "Wybierz słowa, które opisują pozytywne działania zespołowe — słuchanie, planowanie i małe kroki.",
+    "completion": "Trening został ukończony!",
+    "default": "Eksploruj pokój, klikając przedmioty i postacie."
+  },
+  "completion": {
+    "title": "Tolerancja ukończona!",
+    "message": "Pomyślnie ukończyłeś escape room Tolerancja. Wykazałeś się cierpliwością, zrozumieniem i umiejętnością rozwiązywania nieporozumień z szacunkiem.",
+    "buttonText": "Powrót do escape roomów"
+  },
+  "ui": {
+    "continueButton": "Dalej",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "______",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "loading": "Loading Teamwork...",
+  "intro": {
+    "title": "Teamwork",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Today you enter the Co-Working Space, where the reconstruction team is coordinating a major renovation project. Two floors of an old building need to be restored. This is the perfect moment to develop your Teamwork skills."
+    ],
+    "buttonText": "Enter the Co-Working Space"
+  },
+  "characters": {
+    "priya": {
+      "name": "Priya",
+      "dialogues": {
+        "greet": "Nice to see you! Would you like to join us? We're working together as a team, though I'll admit — it's not always as easy as it looks. I'm Priya, the lead designer on this project, and right now we're restoring two floors of an old building. We need to renovate the windows, update the furniture, repaint the interior, add new lighting, and replace the entire wiring system.\n\nIt's a lot, I know — but none of it is possible without teamwork. So, let's get started.\n\nLet me introduce you to Oleh.",
+        "quiz1Done": "Now we started to construct your teamwork ability!",
+        "findPoster": "I've prepared a gift for you some poster to put on a wall, and it holds some really valuable information — the kind that's best learned early. Let's try to find it together.\n\nOh, that one poster that containing important information for accurate steps, we can't let it be missing. This material is best learned early, so please begin searching for it.",
+        "findPosterInstructions": "We are searching for some poster to put on a wall. Please begin by checking the notice board. After that, look at the table at the front of the room, and then continue your search elsewhere. You may also want to inspect the laptops at the back.",
+        "posterFound": "Perfect. This is a really valuable 10 steps to go forward to fix the teamwork issues, which definitely will appear in any company whenever you manage or work with. But it's up to you. Let's put this knowledge to practice.",
+        "puzzle2Intro": "It's time for the next quiz. Please answer those questions referring to the previous information.",
+        "finalWords": "You did very well. We truly appreciate your efforts and participation. Your ability to build teamwork is impressive, and we hope you will apply these skills in your workplace, at home, with your family, or even with friends.\n\nTeamwork can be used anywhere, and if you ever want to revisit this module, we are always here for you. You may also recommend these quizzes to anyone who could benefit from developing stronger teamwork skills.\n\nSee you next time!",
+        "completion": "Your teamwork skills are glowing. Congratulations on your achievement. You are now ready to be part of a strong team, understanding how the teamwork process truly works. But there are still many more skills to explore — so feel free to continue and discover what comes next.",
+        "default": "Keep looking around the co-working space for clues."
+      }
+    },
+    "oleh": {
+      "name": "Oleh",
+      "dialogues": {
+        "greet": "Hello, I'm Oleh. I'll be honest — teamwork isn't always simple. We all come from different backgrounds, and sometimes we need a moment to adjust to each other's ways of working. But that's exactly what makes restoring old buildings so rewarding. It's been my passion for years, and every project teaches us something new about how to work together better.\n\nI've got something interesting to share with you.\n\nLet's begin our journey into teamwork.",
+        "findFolder": "We've been getting a lot of requests from our contractor lately, so we've sorted them into different folders and documents folders. But one of them is missing, and it's an important one. Could you help me find it?",
+        "findFolderInstructions": "This signed folder contains important teamwork steps we need to use. Begin your search at the notice board, then continue exploring the rest of the room.",
+        "folderFound": "Great job! Now we have what we need. But before we move on, here's a bit more information for you to think about. These teamwork ideas might help you as you continue to grow in your work and daily life.",
+        "teamworkInfo": "Teamwork means people working together toward a shared goal, using each person's strengths to support the group.\n\nIt's more than just dividing tasks — it requires clear communication, mutual respect, and a willingness to listen.\n\nGood teamwork helps solve problems faster because everyone contributes ideas and effort.\n\nWhen teammates support each other, challenges feel smaller, progress becomes easier, and success is shared by all.",
+        "quiz1Intro": "Well, I definitely know how to build things — but now it's time for us to build our teamwork skills. Ready for a quiz?",
+        "default": "I'm busy with the renovation plans. Talk to Priya if you need guidance."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Teamwork Quiz — True or False",
+      "instructions": "Determine if each statement is True or False.",
+      "questions": [
+        {
+          "text": "Effective teamwork means sharing responsibilities and supporting one another toward a common goal.",
+          "correct": true,
+          "hint": "Teamwork grows when everyone contributes and supports the group, not when people work separately."
+        },
+        {
+          "text": "Good teamwork happens when everyone insists on doing tasks their own way without listening to others.",
+          "correct": false,
+          "hint": "Think about whether teamwork improves when people collaborate or when they ignore each other's ideas."
+        },
+        {
+          "text": "Clear communication helps prevent misunderstandings and keeps teamwork running smoothly.",
+          "correct": true,
+          "hint": "Ask yourself how much easier teamwork becomes when everyone understands the plan."
+        },
+        {
+          "text": "If a conflict appears, the best approach is to ignore it and hope it disappears on its own.",
+          "correct": false,
+          "hint": "Conflicts improve when teammates address them respectfully — not when they avoid them."
+        },
+        {
+          "text": "Teamwork is stronger when people recognize each other's strengths and divide tasks accordingly.",
+          "correct": true,
+          "hint": "Consider how teams benefit when each person uses the skills they are best at."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about it again.",
+        "correct": "Well done! You understand the basics of teamwork."
+      },
+      "answerOverlay": "The correct answers are:\n1. TRUE — Effective teamwork means sharing responsibilities and supporting one another.\n2. FALSE — Good teamwork requires listening to others, not insisting on doing things alone.\n3. TRUE — Clear communication prevents misunderstandings.\n4. FALSE — Conflicts should be addressed respectfully, not ignored.\n5. TRUE — Teams are stronger when tasks are divided based on strengths."
+    },
+    "singleChoice": {
+      "title": "Teamwork Quiz — Multiple Choice",
+      "instructions": "Choose the best answer.",
+      "question": "When a team project begins to fall behind schedule, what is the most effective teamwork action to take first?",
+      "options": {
+        "a": "Ignore the issue and hope someone else notices",
+        "b": "Tell everyone to work faster without asking for their input",
+        "c": "Communicate with the team to understand where the delay is happening",
+        "d": "Finish your part alone and avoid involving others"
+      },
+      "hint": "Think about which option strengthens communication and helps the team understand the problem together instead of working in isolation.",
+      "feedback": {
+        "wrong": "Think about which option strengthens communication and helps the team understand the problem together instead of working in isolation.",
+        "correct": "Correct! Communicating with the team is the most effective first step."
+      },
+      "answerOverlay": "The correct answer is: Communicate with the team to understand where the delay is happening."
+    },
+    "sequenceOrder": {
+      "title": "Teamwork Quiz — Sequence Ordering",
+      "instructions": "Put the following teamwork actions in the correct order.",
+      "items": [
+        "Clarify the issue together by sharing what each team member sees",
+        "Stay calm and listen to others before reacting",
+        "Decide on one small action the team can take next",
+        "Communicate clearly what each person is responsible for"
+      ],
+      "correctOrder": [
+        "Stay calm and listen to others before reacting",
+        "Clarify the issue together by sharing what each team member sees",
+        "Decide on one small action the team can take next",
+        "Communicate clearly what each person is responsible for"
+      ],
+      "hints": [
+        "Step 1: Start by staying calm and listening.",
+        "Step 2: Then clarify the issue together.",
+        "Step 3: Decide on one next step.",
+        "Step 4: Communicate responsibilities clearly."
+      ],
+      "feedback": {
+        "wrong": "Effective teamwork begins with calm listening. After that, teams clarify the problem together, choose one manageable next step, and then agree clearly on who does what.",
+        "correct": "Excellent! You arranged the teamwork steps in the correct order."
+      },
+      "answerOverlay": "The correct order is:\n1. Stay calm and listen to others before reacting.\n2. Clarify the issue together by sharing what each team member sees.\n3. Decide on one small action the team can take next.\n4. Communicate clearly what each person is responsible for."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Check Order",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Priya near the whiteboard to begin.",
+    "talkToOleh": "Click on Oleh to start.",
+    "findFolder": "Check the notice board, then the conference table, then the front desk.",
+    "talkToOleh2": "Return to Oleh.",
+    "puzzle1": "Answer each True or False question based on what you know about teamwork.",
+    "findPoster": "Check the desk, then the notice board, then the laptops at the back.",
+    "talkToPriya2": "Return to Priya with what you found.",
+    "completion": "The training has been completed!",
+    "default": "Look around the co-working space for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the spacious co-working space. The whiteboard is filled with colorful drawings, team notes, and post-its. You notice the Chief Designer and Contractor of the medium reconstruction department. You should click on Priya, the Chief Designer.",
+    "clickNoticeBoard": "I remember holding it earlier next to it, but now… I can't find it anywhere.\n\nCould you help me look for it?\nTry checking the conference room behind the glass door first — I might have left it on the table in there.",
+    "clickBackTable": "Hmm… it appears the folder you're looking for is not here. This one only contains information about rebuilding work and customer requests. Please continue your search. You may want to check the tables at the far end of the room. Let's look where else notes can be located",
+    "foundFolder": "Oh, finally—here it is. They say that if you want to hide something, place it in the most obvious spot, and that seems to be exactly what happened. The blue sticky note is the one we need. Thank you for your help.",
+    "folderOpened": "Alright, let's take a look at what we have here. These steps outline how to begin strengthening teamwork when miscommunication or disconnects appear.",
+    "folderRead": "Good job! Return to the Construction Contractor Oleh.",
+    "clickDesk": "It seems like it is not here. Let's check the notes board.",
+    "clickNoticeBoardPoster": "Hmm… not here either. Jus some customer request notes. Okay, somebody printed it, so lets take a look next to the laptops, maybe some is opened there.",
+    "foundPoster": "Ah—my apologies. It was at that table all the time!"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "TEAMWORK STEPS",
+      "popupContent": [
+        "Pause and stay respectful — let emotions settle before reacting",
+        "Clarify the issue together — focus on the problem, not the person",
+        "Choose one shared action — agree on a small next step you can take as a team"
+      ]
+    },
+    "poster": {
+      "popupTitle": "TEAMWORK DEVELOPMENT STEPS",
+      "popupContent": [
+        "Agree on one goal — First, make sure everyone understands what the team is trying to achieve. One clear goal helps people work in the same direction.",
+        "Talk early and clearly — Share information as soon as possible and keep it simple. Clear communication helps avoid confusion later.",
+        "Listen before you respond — Let others finish speaking before you react. Listening helps build trust and shows respect.",
+        "Give tasks based on strengths — Assign work that fits what each person does best. This makes the work easier and faster for everyone.",
+        "Check progress often — Take short moments to see how things are going. Regular check-ins help fix small problems early.",
+        "Ask when something is unclear — If you do not understand, ask a question. Asking early helps prevent mistakes.",
+        "Stay calm during disagreements — Conflicts can happen, but calm talking helps solve them. Respect keeps the team working well together.",
+        "Be flexible when plans change — Sometimes plans change, and that is okay. Adjusting quickly helps the team move forward.",
+        "Help teammates when needed — If someone is struggling, offer help. Support makes the team stronger and reduces stress.",
+        "Celebrate small successes — Notice progress and say thank you. Celebrating together builds motivation and team spirit."
+      ]
+    },
+    "teamworkFolder": {
+      "inventoryTitle": "Teamwork Steps Folder"
+    },
+    "developmentPoster": {
+      "inventoryTitle": "Development Steps Poster"
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "Your teamwork skills are glowing. Congratulations on your achievement. You are now ready to be part of a strong team, understanding how the teamwork process truly works. But there are still many more skills to explore — so feel free to continue and discover what comes next.",
+    "buttonText": "Exit the Co-Working Space"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

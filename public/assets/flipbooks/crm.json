@@ -1,0 +1,306 @@
+{
+  "id": "crm",
+  "moduleNumber": 3,
+  "title": "Customer Relationship Management",
+  "subtitle": "Module 3",
+  "coverImage": "assets/thumbs/crm.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 3",
+      "title": "Customer Relationship Management",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/crm.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, you will be able to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Manage customer interactions in a professional way"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. Apply basic conflict resolution techniques with customers"
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Apply basic CRM principles to build customer relationships"
+        },
+        {
+          "kind": "paragraph",
+          "text": "4. Apply basic GDPR principles to process customer data"
+        },
+        {
+          "kind": "paragraph",
+          "text": "5. Create a customer feedback survey"
+        },
+        {
+          "kind": "paragraph",
+          "text": "6. Reflect on how CRM practices contribute to business growth"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Customer Relationship Management (CRM) is the ability to build and maintain good relationships with customers before, during, and after a sale. It involves adapting to customer needs and offering a consistent experience. Successful customer relationship management leads to repeat business, word-of-mouth referrals, and a stronger reputation."
+        },
+        {
+          "kind": "paragraph",
+          "text": "This skill can be especially important for you as a migrant entrepreneur, when trying to gain trust and overcome communication barriers with new customers in a new market."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: Layla runs a small hair salon out of her home. While she is happy that her business is growing, Layla finds it challenging to keep track of her customers."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Layla decides to create a simple record of her clients' names, phone numbers and service preferences, with their consent. She uses a notebook that is stored safely when not in use."
+        },
+        {
+          "kind": "paragraph",
+          "text": "The record enables Layla to remember her clients' needs and create a personal connection. She sends a polite-follow up message after appointments and offers small discounts to repeat customers. Over time Layla builds a loyal customer base, with customers recommending her business to others."
+        },
+        {
+          "kind": "paragraph",
+          "text": "CRM does not require expensive software. Start small with personal actions to build customer loyalty and trust."
+        },
+        {
+          "kind": "heading",
+          "text": "GDPR tips about keeping customer information:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Explain why you want to store your customers information. Explain what types of information you want to store, like preferences and phone numbers.",
+            "Ask for consent. Verbal consent can be sufficient.",
+            "Store the data in a safe way, and delete it if customers ask you to."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Greeting",
+          "definition": "Always greet and welcome clients. Make eye contact."
+        },
+        {
+          "kind": "definition",
+          "term": "Clear communication",
+          "definition": "Use polite and clear language."
+        },
+        {
+          "kind": "definition",
+          "term": "Listening to Feedback",
+          "definition": "Be mindful of customers' suggestions and feedback, even unspoken ones. Try to understand what customers like and dislike."
+        },
+        {
+          "kind": "definition",
+          "term": "Follow-up",
+          "definition": "Send reminders and updates. Check in after service."
+        },
+        {
+          "kind": "definition",
+          "term": "Customer Records",
+          "definition": "Use a notebook, spreadsheet, or free CRM app to keep track of key customer information like names and numbers. Note preferences and feedback."
+        },
+        {
+          "kind": "definition",
+          "term": "Consistency",
+          "definition": "Be reliable in quality, attitude and pricing, so customers know what to expect."
+        },
+        {
+          "kind": "definition",
+          "term": "Handle customer complaints",
+          "definition": "When receiving complaints, respond in a calm and respectful manner. Offer solutions and resolve misunderstandings."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Practice small talk in the local language by conversing with people you meet.",
+            "Practice short customer conversations in the local language, including greeting, thanking and following up with customers.",
+            "Create simple templates for customer conversations in the local language, that you can follow.",
+            "Ask customers for feedback by sending them a friendly message or use a form. Thank customers for their input.",
+            "Keep track of customer information by using a notebook, spreadsheet or a CRM tool.",
+            "Observe how others practice customer relationship management. If needed, adjust your approach to adapt to local customs and expectations.",
+            "Ask for feedback with open questions, like: “How was everything today?”"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "“I don't know the language well enough.” o Prioritize learning some key phrases. Look for body language cues. Use websites or apps for translation. You do not have to be perfect; people will appreciate the effort you are making to speak a new language.",
+            "“I feel uncomfortable asking for feedback.” o Start by using friendly and neutral phrases like \"Was everything okay for you today?\" You can also invite feedback by using digital or printed forms.",
+            "“I can't remember my customers' names.\" o Use a notebook or other CRM tool to record names and preferences. Write things down immediately after a visit or call.",
+            "“Customers never respond to my follow-ups.” o Keep trying but stay polite. One message is usually enough."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Scenario",
+          "definition": "You made a mistake when completing an order. The customer has now returned to complain about it."
+        },
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Team up in pairs and roleplay the scenario. One plays the dissatisfied customer, the other the salesperson."
+        },
+        {
+          "kind": "heading",
+          "text": "Goals for the salesperson"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Listen to the customer without interrupting",
+            "Thank the customer for the feedback",
+            "Apologize sincerely",
+            "Offer a solution to the problem"
+          ]
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Switch roles and do the roleplay again, so both try to be the salesperson."
+        },
+        {
+          "kind": "heading",
+          "text": "After the roleplay, discuss"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "What went well?",
+            "What was difficult?",
+            "Did you notice anything that was especially useful when dealing with the complaint? Any phrases or strategies?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "I greet and thank customers",
+            "I speak politely and make eye contact",
+            "I keep track of my regular customers and their preferences",
+            "I follow up with at least some of my customers after providing a service or product",
+            "I listen calmly when I receive complaints and offer solutions to problems",
+            "I make customers feel respected and welcome",
+            "I am reliable and offer the same level of service every time"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Customer relationship management is an important part of running a business. It can even be more powerful than advertising. The more trust you build with your customers, the more likely they are to come again and recommend you to others."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Customer relationship management is a skill that improves with practise. Focus on being kind, respectful and reliable, and pay attention to details. Welcome customers, invite feedback and follow-up after sales. You can use a CRM tool, but using a notebook or spreadsheet goes a long way. You will get better with every customer interaction!"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, participants are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Communicate more professionally with customers"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Handle customer complaints and conflicts more constructively"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Process and store customer data more responsibly"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Use feedback and follow-up strategies to strengthen customer relationships"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "• HubSpot Free CRM",
+            "• YouTube: “Customer Service Basics” videos in multiple languages",
+            "• Book: How to Win Customers and Keep Them for Life by Michael LeBoeuf",
+            "• Free printable customer log sheets (available through small business support websites)",
+            "• Canva or WhatsApp Business for communication templates"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Customer Relationship Management",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/crm.pdf"
+      }
+    }
+  ]
+}

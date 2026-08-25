@@ -1,0 +1,264 @@
+{
+  "loading": "Loading Stress Management Module...",
+  "intro": {
+    "title": "Stress Management",
+    "paragraphs": [
+      "You are (username), an employee of a very prestigious financial trading company. After years of gathering experience, months of browsing job offers, and weeks of interviewing, you finally managed to get your dream job.",
+      "You were very happy, enthusiastic and full of hopes, but you were also aware of heightened stress levels related to such a position.",
+      "Just a few weeks was enough to show you the unique dynamics and demands of your new work – constant pressure, frequent stressful situations, choices to make. With each passing day stakes are getting higher, decisions more difficult, and your mental strain ever growing.",
+      "But today it was different. Today you were invited to the <strong>Panic Room</strong>. The place where the brightest minds of the company were dealing with the most serious challenges and sudden issues."
+    ],
+    "buttonText": "Enter the Panic Room"
+  },
+  "characters": {
+    "kevin": {
+      "name": "Kevin",
+      "dialogues": {
+        "greeting": "It's good you're finally here, (username)! Come, there's no time to waste! You have no idea… Entire system… *he seems to mumble to himself; suddenly he looks straight at you and says even more nervously* Entire trading system crashed 30 minutes ago! And during rush hours. Each minute while it's down costs us a lot, we need to come up with some solution ASAP!",
+        "itTeamUnavailable": "Our IT team is unavailable. The rest of the office is either on vacation or they got ill. It's just three of us and we need to do something NOW!",
+        "youTrembling": "Hey, are you fine? *Kevin's voice seems distant and unclear, you feel dizzy* You're trembling… Let's sit down for now. I know it's a lot. Come with me.",
+        "drinkWater": "You look so pale. Here, drink some water. Let's calm you down a bit. On the walls around us you can see various important documents in frames. I'm pretty sure one of them will be of help right now. I don't see them that well from here. Can you tell me which one to get for you?",
+        "findDocumentHint": "Look at the documents on the walls around us. One of them will help you. Its title is in bigger, green font.",
+        "checkBasics": "These are the basics, but we can't move further without that knowledge. Take a few minutes for yourself and follow the tips you have just learned. But first, let's check if you really understood it.",
+        "composeYourself": "Yes, that's correct. As I said, take a bit of time to compose yourself, follow the guidelines, and… *suddenly a loud ringtone of the office phone can be heard. Kevin looks at it, then he looks at you. He's terrified*",
+        "priorityClient": "It's one of our priority clients! *he says in nervous, shaky voice* You're the most competent among us. You will have to take the call…",
+        "impressed": "Wow! You have actually done that! I wasn't sure if you will be able to decipher my erratic typing, but YOU DID. You really handled that client well, and you didn't let the stress overwhelm you. You're making progress really fast. Soon, you will be able to…",
+        "completionThankYou": "I couldn't have said it better myself, (username). Thanks to you everything seems to be working fine again. So, this was actually a test. Elaborate test set up by our \"concerned hackers\", to ensure you will overcome your stress reactions. In all seriousness though, you did really really well today, (username). The entire company will be always grateful. Thank you!",
+        "completionClick": "You did really well today, (username). Thank you!",
+        "defaultBusy": "We need to focus! Every second counts!"
+      }
+    },
+    "ahmed": {
+      "name": "Ahmed",
+      "dialogues": {
+        "comeQuickly": "Guys!? Come here quickly!",
+        "screenTurnedBlue": "Look! I don't know what's happening. Suddenly my screen turned blue, and all I can see now is some text, some kind of task and A TIMER! I think we have been hacked. It was probably the reason of the system breakdown all along!",
+        "solveExercise": "Maybe if we will solve the exercise correctly, we will stop the countdown, bring the system back online and save the day? (username), you are the most stress-resilient one among us all! You need to help us. Focus on the task, I know you can do it!",
+        "ahmedCallsClick": "Look! I don't know what's happening. Suddenly my screen turned blue, and all I can see now is some text, some kind of task and A TIMER! I think we have been hacked. It was probably the reason of the system breakdown all along! Maybe if we solve the exercise correctly, we will stop the countdown and bring the system back online!",
+        "hurry": "Quickly! We don't have much time left! Now to the task!",
+        "systemReboots": "YES! Yes, it's working! *Ahmed jumps on his chair* Look! The entire system reboots, everything starts working normally again! You actually did it, you saved us.",
+        "completionClick": "You actually did it, you saved us! Thank you, (username)!",
+        "defaultMonitoring": "I'm monitoring the systems. Let me know if you need anything."
+      }
+    }
+  },
+  "selfTalk": {
+    "enterPanicRoom": "And there it is, the Panic Room. I didn't expect I will be invited here after just a few weeks – I guess the situation is serious enough that management wanted everyone on board. Anyway, let's see what it is all about. I feel so anxious already…",
+    "characterName": "(Your thoughts)"
+  },
+  "systemDialogues": {
+    "findDocumentInstruction": "One of these documents will be helpful for you. Its title will be written in bigger font than the rest of documents, and the title's font will be green. Try to find it.",
+    "wrongDocument": "These are technical manuals. Did you know that reading something unrelated can actually help reset your stress levels? But right now, let's find what we need.",
+    "documentFound": "Good job! You have discovered the essential tips for regulating your mind and body in stressful moments. It looks like Kevin wants to talk to you again.",
+    "puzzle1Correct": "You're right, (username)! Let's talk to Kevin now.",
+    "phonePickUp": "You pick up the phone. Just as you have imagined, the client is furious. They are very emotional, screaming into the phone, blaming your company for immense loss that the system breakdown is generating. Among all the strong emotions it's hard for you to even fully understand what they're saying, let alone to come up with any good response.",
+    "kevinTyping": "With the corner of the eye, you notice that Kevin is quickly typing something on the laptop. He's typing as fast as he can, chaotically, he's not even finishing sentences. You realise that he's trying to help you, to give you advices. You are focusing on what he's typing and trying to make some sense out of it…",
+    "puzzle2Complete": "As you're reading carefully the advices from Kevin, you start to realise that the customer's rage isn't aimed at you, but at the failure of the system itself. Empowered with new techniques, you manage to provide an ad-hoc solution for client's problem, reassure them that you're doing everything you can, and promise to call them back soon. Surprisingly – it works. They apologize and say that they will wait for your call.",
+    "kevinImpressed": "Kevin looks at you with pride in his eyes – he's impressed. He wants to talk to you."
+  },
+  "items": {
+    "document": {
+      "title": "STRESS RELIEF BASICS",
+      "altText": "Stress Relief Basics Document",
+      "inventoryTitle": "View Stress Relief Basics",
+      "tips": [
+        "Breathe slower than you think you need - long exhales tell your body the danger has passed.",
+        "Relax your jaw and drop your shoulders - stress hides in small muscles.",
+        "Do one thing at a time - multitasking increases tension - focus on the next single step.",
+        "Name what you feel - saying \"I'm stressed\" or \"I'm overwhelmed\" reduces intensity.",
+        "Stand up and change posture - a 10-second stretch resets your nervous system."
+      ]
+    },
+    "documentSelection": {
+      "title": "Framed Documents",
+      "instruction": "Several documents hang on the wall. One of them has a title in bigger, green font. Click on the correct one.",
+      "wrong1": "System Protocols v2.3",
+      "correct": "STRESS RELIEF BASICS",
+      "wrong2": "Network Architecture",
+      "wrong3": "Emergency Contacts"
+    }
+  },
+  "pcScreen": {
+    "title": "System Message",
+    "text1": "When stress suddenly becomes overwhelming, your mind <strong>narrows</strong> and reacts automatically. In that moment, the fastest way to regain control is to step slightly \"outside\" of the experience: notice the <strong>pattern</strong> of your thinking, separate what is actually happening from what your stress is telling you, and try to redirect your focus to the one part of the situation that you have actually under control, that you can <strong>influence</strong>. This \"mental distancing\" lets you break the emotional loop and restores clarity.",
+    "text2": "Long-term stress reduction works differently. It relies on slowly training your nervous system to recover faster and become less <strong>vulnerable</strong> to various stressors throughout the day. Short breaks between tasks, intentional habits and routines, regular taking on small challenges – these changes, if applied correctly, will <strong>lower</strong> your default stress levels, making intense moments feel easier to handle, and regaining peace of mind more naturally.",
+    "continueButton": "Continue",
+    "dialogueText1": "When stress suddenly becomes overwhelming, your mind narrows and reacts automatically. In that moment, the fastest way to regain control is to step slightly \"outside\" of the experience: notice the pattern of your thinking, separate what is actually happening from what your stress is telling you, and try to redirect your focus to the one part of the situation that you have actually under control, that you can influence. This \"mental distancing\" lets you break the emotional loop and restores clarity.",
+    "dialogueText2": "Long-term stress reduction works differently. It relies on slowly training your nervous system to recover faster and become less vulnerable to various stressors throughout the day. Short breaks between tasks, intentional habits and routines, regular taking on small challenges – these changes, if applied correctly, will lower your default stress levels, making intense moments feel easier to handle, and regaining peace of mind more naturally."
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Checking the basic understanding",
+      "subtitle": "Choose the best answer. Only one is correct.",
+      "question": "Which actions should you take right now to lower your stress levels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stand up, start walking around quickly to burn off nervous energy, and try to plan all remaining tasks at once so you won't be late with anything.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ignore the physical feelings, try to continue working immediately, and hope the feelings disappear on their own.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mentally list everything that went wrong today and think about the possible worst-case scenarios to \"prepare yourself.\"",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Take a few long exhales, relax your jaw and shoulders, say out loud what you're feeling, and choose the next single task to focus on.",
+          "correct": true
+        }
+      ],
+      "hint": "Try to remember the guidelines from the \"Stress Relief Basics\" document.",
+      "answerOverlay": "After 3 attempts, here's the correct answer:\n\nQuestion: Which actions should you take right now to lower your stress levels?\n\nCorrect Answer: \"Take a few long exhales, relax your jaw and shoulders, say out loud what you're feeling, and choose the next single task to focus on.\"\n\nThis combines the key stress relief basics:\n• Long exhales tell your body the danger has passed\n• Relaxing jaw and shoulders releases tension from small muscles\n• Naming what you feel reduces its intensity\n• Focusing on one task prevents multitasking-induced tension"
+    },
+    "matching": {
+      "title": "Kevin's chaotic support",
+      "subtitle": "Match the beginnings of the sentences with their endings to discover stress-management techniques.",
+      "beginningsHeading": "Sentence beginnings",
+      "endingsHeading": "Sentence endings",
+      "pairs": [
+        {
+          "id": "1",
+          "beginning": "Mentally draw a boundary…",
+          "endingId": "D"
+        },
+        {
+          "id": "2",
+          "beginning": "Shift your attention from the client's tone…",
+          "endingId": "F"
+        },
+        {
+          "id": "3",
+          "beginning": "Use a positive phrase in your mind…",
+          "endingId": "C"
+        },
+        {
+          "id": "4",
+          "beginning": "Monitor your speech pace and tone…",
+          "endingId": "B"
+        },
+        {
+          "id": "5",
+          "beginning": "Imagine placing the client's words…",
+          "endingId": "A"
+        },
+        {
+          "id": "6",
+          "beginning": "Reduce mental strain by silently identifying…",
+          "endingId": "E"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "…on a \"mental desk,\" so you focus on content, not emotional intensity."
+        },
+        {
+          "id": "B",
+          "text": "…to ensure you don't start speaking faster or louder as client's volume rises."
+        },
+        {
+          "id": "C",
+          "text": "…like \"Stay calm\" or \"You can handle it\" to prevent overwhelm."
+        },
+        {
+          "id": "D",
+          "text": "…between the client's emotion and your sense of self."
+        },
+        {
+          "id": "E",
+          "text": "…the main issue they're describing, instead of reacting to every detail."
+        },
+        {
+          "id": "F",
+          "text": "…and analyze what they need, not how they sound."
+        }
+      ],
+      "hint": "Think about which technique matches each beginning. Focus on the logic of each sentence.",
+      "answerOverlay": "After 3 attempts, here are the correct matches:\n\n1. \"Mentally draw a boundary…\" → \"…between the client's emotion and your sense of self.\"\n2. \"Shift your attention from the client's tone…\" → \"…and analyze what they need, not how they sound.\"\n3. \"Use a positive phrase in your mind…\" → \"…like 'Stay calm' or 'You can handle it' to prevent overwhelm.\"\n4. \"Monitor your speech pace and tone…\" → \"…to ensure you don't start speaking faster or louder as client's volume rises.\"\n5. \"Imagine placing the client's words…\" → \"…on a 'mental desk,' so you focus on content, not emotional intensity.\"\n6. \"Reduce mental strain by silently identifying…\" → \"…the main issue they're describing, instead of reacting to every detail.\""
+    },
+    "fillGap": {
+      "title": "The Final Countdown",
+      "subtitle": "Complete the sentences with missing words.",
+      "sentenceParts": [
+        "When stress becomes overwhelming, your mind ",
+        " and reacts automatically. To regain control, you can step slightly \"outside\" the experience and observe the ",
+        " of your thinking, separating real events from what your stress is telling you. Refocusing on the part of the situation you can actually ",
+        " helps break the emotional loop and restores clarity. Long-term relief develops by training your nervous system to recover faster and become less ",
+        " to everyday stressors. With consistent habits, your default tension ",
+        ", making intense moments easier to handle and calm return more naturally."
+      ],
+      "options": [
+        "narrows",
+        "pattern",
+        "influence",
+        "vulnerable",
+        "lowers",
+        "expands"
+      ],
+      "correct": [
+        "narrows",
+        "pattern",
+        "influence",
+        "vulnerable",
+        "lowers"
+      ],
+      "hint": "Re-read the text on the PC screen carefully. The words describe how stress affects thinking and how to build resilience.",
+      "answerOverlay": "After 3 attempts, here are the correct answers:\n\n1. \"narrows\" – When stress becomes overwhelming, your mind narrows and reacts automatically.\n2. \"pattern\" – Observe the pattern of your thinking.\n3. \"influence\" – Refocusing on what you can actually influence.\n4. \"vulnerable\" – Become less vulnerable to everyday stressors.\n5. \"lowers\" – Your default tension lowers.\n\nThese concepts describe both immediate stress response (mental narrowing, pattern recognition, influence focus) and long-term stress management (reducing vulnerability, lowering baseline tension).",
+      "resetButton": "Reset",
+      "checkButton": "Check"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "default": "I should look around the room carefully.",
+    "clickKevin": "I should talk to Kevin. He seems to know what's going on.",
+    "findDocument": "Kevin said one of the framed documents has a title in green, bigger font. I should check the documents on the wall.",
+    "phoneCall": "The phone is ringing! I need to pick it up.",
+    "findLaptop": "Kevin is typing something on the laptop. I should check it.",
+    "ahmedOrPCScreen": "Ahmed pointed at the PC screen. I should check it.",
+    "completion": "The door is open! I can leave the Panic Room now."
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": [
+      "You have managed to quickly learn new stress-resilience related skills and apply them in real-life situations, probably even sooner than you imagined – all that while saving the company in the process.",
+      "You have successfully acquired the skill of <strong>Stress Management</strong>."
+    ],
+    "buttonText": "Back to Main Menu"
+  },
+  "answerOverlay": {
+    "title": "Correct Answer",
+    "continueButton": "Continue"
+  },
+  "ui": {
+    "continueButton": "Continue",
+    "fullscreenTitle": "Toggle Fullscreen",
+    "backToEscapeRoomsTitle": "Back to Escape Rooms",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

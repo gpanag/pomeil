@@ -1,0 +1,254 @@
+{
+  "loading": "Loading Resilience...",
+  "intro": {
+    "title": "Resilience",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "You continue your journey inside the same company. In this scenario, you face a demanding work situation that tests your resilience. The challenges take place during a stressful moment at work, where staying calm, adapting, and recovering are essential."
+    ],
+    "buttonText": "Enter the Archive Room"
+  },
+  "characters": {
+    "layla": {
+      "name": "Layla",
+      "dialogues": {
+        "greet": "Hello! Nice to see you here! This is the archive room, where we can find information about everything. I have found some mistakes in the latest report, so I'm here to find information and help to fix them. It will take some resilience skill, so let's start.",
+        "findBox": "Alright, to solve this problem, we need to find the right folder. Let's take a careful look at the shelves — the note we need should be here somewhere.",
+        "boxFound": "Great job! Remember those steps? We'll be using them one by one throughout our resilience journey. So, let's move on — the next step is waiting for us.",
+        "resilienceExplanation1": "Resilience isn't just 'staying strong.'\nResilience begins with the ability to pause — to take a breath, steady yourself, and create a moment of clarity before responding to stress.",
+        "resilienceExplanation2": "There are actually two ways to build up your resilience:\n\nInternal resilience:\nStrengthening the skills we use inside ourselves — like calming our thoughts, pausing before we react, and reminding ourselves that challenges are temporary. Internal resilience helps us stay steady, focused, and confident even when things feel overwhelming.\n\nExternal resilience:\nUsing supportive actions outside ourselves — like reaching out for help, staying connected with others, and building routines that keep us grounded. External resilience comes from the resources, relationships, and habits that help us bounce back stronger.",
+        "resilienceExplanation3": "When both forms of resilience work together, you don't just withstand challenges — you respond in a way that helps you stay steady, think clearly, and recover faster. That's what builds strength and stability in your work and daily life.",
+        "resilienceExplanation4": "Now is time to use our knowledge",
+        "findDrawer": "You're doing great so far. Somewhere in this room, there should be a note I gave to Ivan. He got it for a moment when we were searching for lost data here and felt overwhelmed. He's been working here for a year now, and those notes helped him stay calm and focused — so they'll help you too.\nLet's take a closer look and try to find one of them.",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the room for clues."
+      }
+    },
+    "ivan": {
+      "name": "Ivan",
+      "dialogues": {
+        "noteFound": "Wow, you did it! I hope these reflections helped you. Let them guide you through the next quiz. Alright — let's get started.",
+        "finalWords": "Wow, you completed all of them! I'm really proud of you. Now you've felt what resilience is like — taking things step by step and not letting overwhelm take control. You'll get through challenges, maybe slowly at first, and that's okay. Don't expect everything to work perfectly the first time. With each try, you'll move faster, smoother, and more confidently.\nThe first experience is meant to be taken slow.\nGreat job!",
+        "farewell": "You're got the resilience in you! Now you are even stronger team player!",
+        "readyNext": "The training has been completed!",
+        "completion": "Great work today!",
+        "default": "Hey, just need to get this done in time…"
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "I should talk to the sales manager Layla to get started.",
+    "findBox": "Let's look around the shelves for the right folder.",
+    "clickShelf": "These shelves hold years of archived projects. Each folder represents someone's hard work. But the item you need isn't among them — try looking lower.",
+    "clickBoxes": "Nothing here. Perhaps check at the lowest shelves.",
+    "foundBox": "You did it! Lets bring it to the Sales Manager Layla!",
+    "findDrawer": "Let's look around the room for Ivan's notes.",
+    "clickShelfForDrawer": "Only old data folders are here. Maybe check the desk.",
+    "clickDesk": "Nothing here too. Let's look near the window",
+    "foundNote": "Great find! Return to the Ivan",
+    "puzzle1Complete": "Great progress! Let's move on to the next challenge.",
+    "puzzle2Complete": "Well done! One more challenge to go.",
+    "puzzle3Complete": "All puzzles complete!"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Correct Answer",
+    "answerOverlayContinue": "Continue",
+    "matching": {
+      "title": "Match the resilience response to the situation",
+      "instructions": "Select a situation from Column A, then select the matching resilience response from Column B.",
+      "columnA": {
+        "heading": "Situations",
+        "items": {
+          "1": "A project suddenly changes direction at the last minute",
+          "2": "You feel stressed and your thoughts are racing",
+          "3": "A task feels too large and overwhelming",
+          "4": "You made a mistake and feel discouraged"
+        }
+      },
+      "columnB": {
+        "heading": "Resilience Responses",
+        "items": {
+          "A": "Break the task into smaller, manageable steps",
+          "B": "Reframe the situation and remind yourself mistakes are part of learning",
+          "C": "Pause, breathe, and calm yourself before continuing",
+          "D": "Adjust your plan and adapt to the new direction"
+        }
+      },
+      "feedback": {
+        "wrong": "Think about which action helps you stay steady in each situation. For example, when everything feels too big, breaking it into smaller steps usually makes it easier to handle.",
+        "allCorrect": "Excellent! You matched all resilience responses correctly."
+      },
+      "answerOverlay": "The correct matches are:\n1. A project suddenly changes direction → Adjust your plan and adapt to the new direction\n2. You feel stressed and your thoughts are racing → Pause, breathe, and calm yourself before continuing\n3. A task feels too large and overwhelming → Break the task into smaller, manageable steps\n4. You made a mistake and feel discouraged → Reframe the situation and remind yourself mistakes are part of learning"
+    },
+    "fillGap": {
+      "title": "Responding with resilience",
+      "instructions": "Fill in the blanks with the correct words.",
+      "sentenceParts": [
+        "When a challenge appears, it helps to ",
+        ", ",
+        " your next step, and take one ",
+        " action to move forward."
+      ],
+      "options": [
+        "breathe",
+        "rush",
+        "small",
+        "avoid",
+        "assess"
+      ],
+      "correctAnswers": [
+        "breathe",
+        "assess",
+        "small"
+      ],
+      "feedback": {
+        "wrong": "Resilience never grows from avoiding or rushing — it comes from steady breathing, clear thinking, and small steps.",
+        "correct": "Correct! When a challenge appears, it helps to breathe, assess your next step, and take one small action to move forward."
+      },
+      "answerOverlay": "The correct sentence is:\n\"When a challenge appears, it helps to breathe, assess your next step, and take one small action to move forward.\"",
+      "resetButton": "Reset",
+      "checkButton": "Check Answer"
+    },
+    "pattern": {
+      "title": "Resilience pattern reading",
+      "scenarioLabel": "Scenario",
+      "answerOverlayPrefix": "For the scenario: ",
+      "answerOverlayCorrectLabel": "\nThe correct answer is: ",
+      "answerOverlayExplanationLabel": "\n",
+      "scenarios": [
+        {
+          "text": "A colleague faces an unexpected problem, pauses, takes a slow breath, and then begins breaking the task into smaller steps.",
+          "options": [
+            {
+              "text": "Overthinking + avoidance",
+              "correct": false
+            },
+            {
+              "text": "Calm regulation + step-by-step action",
+              "correct": true
+            },
+            {
+              "text": "Fearful hesitation + withdrawal",
+              "correct": false
+            },
+            {
+              "text": "Frustration + impulsive reaction",
+              "correct": false
+            }
+          ],
+          "hint": "A slow breath and small steps show someone is regulating themselves, not avoiding or reacting impulsively."
+        },
+        {
+          "text": "In a busy morning, a coworker feels overwhelmed, quietly names how they feel, and reaches out to a teammate for support.",
+          "options": [
+            {
+              "text": "Isolation + shutdown",
+              "correct": false
+            },
+            {
+              "text": "Emotional awareness + connection",
+              "correct": true
+            },
+            {
+              "text": "Denial + perfectionism",
+              "correct": false
+            },
+            {
+              "text": "Anger + pushing through without rest",
+              "correct": false
+            }
+          ],
+          "hint": "Resilience grows when someone acknowledges their feelings and seeks help — not when they hide or deny them."
+        },
+        {
+          "text": "During a stressful moment, a coworker reframes the situation by saying, 'I'm still learning,' and continues working at a steady pace.",
+          "options": [
+            {
+              "text": "Negative self-talk + giving up",
+              "correct": false
+            },
+            {
+              "text": "Optimistic reframing + steady persistence",
+              "correct": true
+            },
+            {
+              "text": "Avoidance + distraction",
+              "correct": false
+            },
+            {
+              "text": "Panic + rushing",
+              "correct": false
+            }
+          ],
+          "hint": "When someone reframes the problem and keeps moving calmly, they're practicing strong resilience — not avoidance or panic."
+        }
+      ]
+    }
+  },
+  "items": {
+    "box": {
+      "popupTitle": "Resilience Steps",
+      "popupContent": [
+        "Pause – Take a moment to breathe and steady yourself before reacting. A short pause helps you regain clarity during stress.",
+        "Assess – Look at the situation realistically. Identify what is actually happening and what part you can influence.",
+        "Adjust – Shift your approach if needed. Flexibility helps you adapt when plans change or challenges appear.",
+        "Act – Take one small, manageable step forward. Action — even tiny — builds strength, momentum, and confidence.",
+        "Recover – After effort or stress, give yourself a moment to rest, reflect, and regain energy. Recovery is part of resilience, not a break from it."
+      ]
+    },
+    "note": {
+      "popupTitle": "Resilience Reflections",
+      "popupContent": [
+        "Resilience grows each time you face a challenge and choose to keep going, even in small ways.",
+        "Recovering doesn't require perfection — taking one steady step forward is already progressing.",
+        "Learning from setbacks builds confidence and helps you handle future obstacles with greater strength."
+      ]
+    },
+    "resilienceSteps": {
+      "inventoryTitle": "Resilience Steps"
+    },
+    "resilienceReflections": {
+      "inventoryTitle": "Resilience Reflections"
+    }
+  },
+  "hints": {
+    "intro": "Look for Layla, the sales manager, and talk to her.",
+    "talkToLayla": "Click on Layla to start the conversation.",
+    "findBox": "Look carefully at the shelves — try clicking on the lower shelves.",
+    "talkToLayla2": "Return to Layla and show her what you found.",
+    "findDrawer": "Look around the room — try the drawers near the window.",
+    "talkToIvan": "Return to Ivan with the note you found.",
+    "completion": "The training has been completed!",
+    "default": "Keep exploring the room."
+  },
+  "completion": {
+    "title": "Resilience Complete!",
+    "message": "Congratulations! You've demonstrated resilience by staying calm, adapting, and recovering during a stressful work situation. Remember: resilience isn't about never falling — it's about getting back up, one step at a time.",
+    "buttonText": "Back to Escape Rooms"
+  },
+  "ui": {
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "gapPlaceholder": "______",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

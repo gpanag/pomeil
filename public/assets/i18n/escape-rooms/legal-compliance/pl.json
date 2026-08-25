@@ -1,0 +1,181 @@
+{
+  "loading": "Ładowanie modułu Zgodność prawna...",
+  "intro": {
+    "title": "Zgodność prawna",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, gdzie pracują razem osoby z różnych kultur, środowisk i zawodów.",
+      "Dziś wchodzisz do Działu Prawnego. Dokumenty są starannie ułożone. Atmosfera jest cicha i poważna. To idealny moment, by sprawdzić twoje umiejętności w zakresie Zgodności Prawnej."
+    ],
+    "buttonText": "Wejdź do Działu Prawnego"
+  },
+  "characters": {
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "greet": "Każda nasza decyzja ma konsekwencje prawne. Zgodność prawna nie polega na pamiętaniu każdego prawa. Polega na rozpoznawaniu ryzyka, działaniu odpowiedzialnie i wiedzy, kiedy zapytać.",
+        "findDocument": "Zanim sprawdzę twoją wiedzę, potrzebuję, żebyś zbadał/a to biuro. Zostawiłam gdzieś na biurku listę kontrolną ryzyka zgodności. Możesz ją znaleźć? Zacznij od szafki na akta.",
+        "documentFound": "Zgodność prawna zaczyna się od świadomości. Rozpoznawanie, gdzie kryje się ryzyko, to pierwszy krok. Sprawdźmy twoje rozumienie.",
+        "quiz1Intro": "Przeciągnij każdy dokument do właściwej kategorii.",
+        "quiz1Done": "Nie wszystkie informacje powinny być traktowane tak samo. Teraz musimy zagłębić się dalej.",
+        "findEmail": "Wcześniej dziś wydrukowałam podejrzaną wiadomość e-mail oznaczoną przez nasz system zgodności. Zostawiłam ją obok regału. Możesz ją odzyskać?",
+        "emailFound": "Ten e-mail zawiera kilka czerwonych flag. Ale najpierw sprawdźmy twoje rozumienie zgodnych procedur.",
+        "puzzle2Intro": "Współpracownik zauważył drobny błąd proceduralny w umowie, ale nic nie powiedział. Ułóż działania od najmniej do najbardziej zgodnych.",
+        "finalWords": "Zidentyfikowałeś/aś ryzyka. Wybrałeś/aś odpowiedzialność zamiast wygody. To zgodność prawna w praktyce.\n\nPamiętaj: zgodność chroni ludzi, organizacje i zaufanie. Jesteś gotowy/a na następne wyzwanie!",
+        "completion": "Szkolenie zakończone!",
+        "default": "Rozejrzyj się dalej po dziale prawnym w poszukiwaniu wskazówek."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Większość naruszeń nie zaczyna się od złych intencji. Zaczynają się od nieuwagi.",
+        "default": "Wciąż przeglądam sprawy… porozmawiaj z Sarą."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Klasyfikacja Dokumentów",
+      "instructions": "Przeciągnij każdy dokument do właściwej kategorii.",
+      "leftItems": [
+        {"id": "doc1", "text": "Umowa z klientem"},
+        {"id": "doc2", "text": "Wewnętrzna wytyczna polityki"},
+        {"id": "doc3", "text": "Notatki osobiste"},
+        {"id": "doc4", "text": "Poufna teczka pracownika"}
+      ],
+      "rightItems": [
+        {"id": "cat1", "text": "Poufne"},
+        {"id": "cat2", "text": "Użytek wewnętrzny"},
+        {"id": "cat3", "text": "Publiczne / nie-wrażliwe"}
+      ],
+      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "feedback": {
+        "wrong": "Nie do końca. Pomyśl, kto powinien mieć dostęp do każdego dokumentu.",
+        "correct": "Nie wszystkie informacje powinny być traktowane tak samo."
+      },
+      "answerOverlay": "Poprawna klasyfikacja:\n• Umowa z klientem → Poufne\n• Teczka pracownika → Poufne\n• Polityka wewnętrzna → Użytek wewnętrzny\n• Notatki osobiste → Publiczne / nie-wrażliwe"
+    },
+    "sequenceOrder": {
+      "title": "Milczenie kontra Odpowiedzialność",
+      "instructions": "Współpracownik zauważa drobny błąd proceduralny w umowie, ale nic nie mówi. Umieść działania na osi czasu od najmniej do najbardziej zgodnych.",
+      "items": [
+        "Udokumentuj problem i działanie naprawcze",
+        "Zignoruj problem",
+        "Poinformuj odpowiedzialnego pracownika",
+        "Popraw po cichu, bez raportowania"
+      ],
+      "correctOrder": [
+        "Zignoruj problem",
+        "Popraw po cichu, bez raportowania",
+        "Poinformuj odpowiedzialnego pracownika",
+        "Udokumentuj problem i działanie naprawcze"
+      ],
+      "hints": [
+        "Krok 1: Najgorsza reakcja to nic nie robić.",
+        "Krok 2: Naprawa bez zgłoszenia jest trochę lepsza, ale wciąż niezgodna.",
+        "Krok 3: Poinformowanie odpowiedzialnej osoby to dobra praktyka.",
+        "Krok 4: Pełna dokumentacja to złoty standard zgodności."
+      ],
+      "feedback": {
+        "wrong": "To nie ta kolejność. Pomyśl, które działanie pokazuje najmniej, a które najbardziej zgodności.",
+        "correct": "Zgodność wymaga przejrzystości, a nie skrótów."
+      },
+      "answerOverlay": "Poprawna kolejność od najmniej do najbardziej zgodnej:\n1. Zignoruj problem\n2. Popraw po cichu\n3. Poinformuj odpowiedzialnego\n4. Udokumentuj problem i naprawę",
+      "checkButton": "Sprawdź kolejność"
+    },
+    "singleChoice": {
+      "title": "Wykrywanie czerwonych flag",
+      "instructions": "Wskaż frazy będące czerwonymi flagami.",
+      "question": "\"Powinniśmy działać szybko, zanim ktokolwiek zacznie zadawać zbyt wiele pytań.\nZachowajmy to między nami.\"",
+      "options": {
+        "a": "„działać szybko” i „zbyt wiele pytań”",
+        "b": "„zanim ktokolwiek zacznie” i „zachowajmy to między nami”",
+        "c": "„Powinniśmy działać” i „Zachowajmy to”",
+        "d": "Nie ma żadnych czerwonych flag w tym e-mailu"
+      },
+      "hint": "Szukaj słów sugerujących tajność lub unikanie nadzoru.",
+      "feedback": {
+        "wrong": "To niepoprawne. Szukaj fraz sugerujących unikanie nadzoru lub tajność.",
+        "correct": "Język często ujawnia ryzyka zgodności."
+      },
+      "answerOverlay": "Poprawna odpowiedź: „zanim ktokolwiek zacznie” i „zachowajmy to między nami” — te zwroty sugerują tajność i unikanie właściwych procedur."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {"checkButton": "Wyślij", "resetButton": "Zresetuj"}
+  },
+  "hints": {
+    "intro": "Kliknij Sarah przy głównym biurku, by zacząć.",
+    "talkToSarah": "Kliknij Sarah, by zacząć.",
+    "findDocument": "Sprawdź szafkę na akta przy biurku.",
+    "talkToSarah2": "Wróć do Sarah z tym, co znalazłeś/aś.",
+    "puzzle1Matching": "Dopasuj każdy dokument do właściwej kategorii — pomyśl, kto powinien mieć dostęp.",
+    "findEmail": "Sarah wspomniała o regale. Poszukaj tam wydrukowanego e-maila.",
+    "talkToSarah3": "Wróć do Sarah z e-mailem, który znalazłeś/aś.",
+    "puzzle2SequenceOrder": "Przeciągnij działania w kolejności od najmniej do najbardziej zgodnych.",
+    "puzzle3SingleChoice": "Szukaj fraz sugerujących tajność lub unikanie nadzoru.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po dziale prawnym w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do cichego działu prawnego. Dokumenty są starannie ułożone na biurkach i półkach. Zauważasz Specjalistkę ds. Zgodności podnoszącą wzrok znad ekranu i Asystenta Prawnego przeglądającego akta sprawy przy biurku.",
+    "clickCabinet": "Szafka na akta jest otwarta — to samo w sobie ryzyko zgodności. Ale w środku jest folder z listą kontrolną.",
+    "foundDocument": "Znalazłeś/aś! Lista kontrolna ryzyka zgodności była w niezamkniętej szafce.",
+    "documentRead": "Brawo! Wróć do Sarah.",
+    "clickDesk": "Zwykłe materiały biurowe i niedopita kawa. Ciekawostka: przeciętny pracownik biurowy zużywa około 10 000 kartek papieru rocznie. Szukaj dalej!",
+    "foundEmail": "Znalazłeś/aś oznaczony e-mail! Wróć do Sarah.",
+    "scales": "Tylko element dekoracyjny. Waga sprawiedliwości — ładny symbol, ale nie to, czego teraz potrzebujesz."
+  },
+  "items": {
+    "document": {
+      "popupTitle": "Lista kontrolna ryzyka zgodności",
+      "popupContent": [
+        "Otwarta szafka na akta: Dokumenty fizyczne muszą być zawsze zabezpieczone.",
+        "Podpisana umowa pozostawiona bez nadzoru: Wrażliwe umowy nigdy nie powinny być pozostawiane na wierzchu.",
+        "Ekran komputera z otwartymi danymi klienta: Ekrany z poufnymi informacjami muszą być zablokowane gdy są bez nadzoru."
+      ]
+    },
+    "email": {
+      "popupTitle": "Oznaczony e-mail – Przegląd zgodności",
+      "popupContent": [
+        "Od: Nieznany nadawca",
+        "Temat: Wymagana szybka decyzja",
+        "„Powinniśmy działać szybko, zanim ktokolwiek zacznie zadawać zbyt wiele pytań. Zachowajmy to między nami.”",
+        "Ten e-mail został oznaczony przez system monitorowania zgodności."
+      ]
+    },
+    "checklist": {"inventoryTitle": "Lista kontrolna zgodności"},
+    "flaggedEmail": {"inventoryTitle": "Oznaczony e-mail"}
+  },
+  "completion": {
+    "title": "Umiejętność ukończona: Zgodność prawna",
+    "message": "Pokazałeś/aś: Świadomość ryzyka, Etyczny osąd, Postępowanie z informacjami, Odpowiedzialność proceduralną.\n\nZgodność chroni ludzi, organizacje i zaufanie.",
+    "buttonText": "Wyjdź z Działu Prawnego"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź",
+    "resetButton": "Zresetuj"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

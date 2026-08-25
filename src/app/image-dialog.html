@@ -1,0 +1,56 @@
+<!--
+  Editorial gallery viewer. The image is presented as a printed page
+  on a cream-paper card, on a near-black scrim. Top bar floats with
+  eyebrow + counter + close; large nav arrows sit just outside the
+  paper at the viewport edges so they never sit on top of the image.
+  Tall portrait sources (newsletter PDFs) engage scroll-mode so the
+  image renders at native readable width instead of being squashed.
+-->
+<div class="img-dialog" [class.is-portrait]="isPortrait">
+
+  <header class="img-dialog-bar">
+    <div class="img-dialog-bar-left">
+      <span class="img-dialog-eyebrow">POMEIL · Gallery</span>
+      <span class="img-dialog-counter" *ngIf="hasMultiple">
+        {{ currentIndex + 1 }} / {{ total }}
+      </span>
+    </div>
+    <div class="img-dialog-bar-right">
+      <button class="img-dialog-close" mat-icon-button
+              type="button"
+              (click)="onNoClick()"
+              aria-label="Close image viewer">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </header>
+
+  <div class="img-dialog-stage">
+    <button *ngIf="showBack"
+            class="img-dialog-nav img-dialog-nav-prev"
+            type="button"
+            (click)="back()"
+            aria-label="Previous image">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <div class="img-dialog-frame">
+      <img class="img-dialog-pic"
+           [src]="picSource"
+           [alt]="picText || 'Image'"
+           (load)="onImageLoad($event)">
+    </div>
+
+    <button *ngIf="showForward"
+            class="img-dialog-nav img-dialog-nav-next"
+            type="button"
+            (click)="forward()"
+            aria-label="Next image">
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+
+  <footer class="img-dialog-caption" *ngIf="picText">
+    <span class="img-dialog-caption-text">{{ picText }}</span>
+  </footer>
+</div>

@@ -1,0 +1,199 @@
+{
+  "loading": "Iseseisvuse laadimine...",
+  "intro": {
+    "title": "Iseseisvus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind on just palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuridest, taustadest ja ametitest pärit inimesed. Selles ettevõttes töötamine on sulle õpikogemus, sest erinevaid väljakutseid läbides omandad sa kõik 30 oskust, mis kuuluvad POMEIL-i kompetentsuskaardile ja on igale ettevõtjale hädavajalikud.",
+      "Täna astud välja katuse-tööruumi — vaikne terrass, kust avaneb panoraamne linnavaade. Hele päevavalgus ja õrn tuul loovad vabaduse ja sõltumatuse tunde. Just siia tuleb selgelt mõtlema Amina, tootearenduse spetsialist."
+    ],
+    "buttonText": "Astu katusele"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Oh! Tere — tere tulemast meie väiksesse katusenurka.\nMa tulen siia, kui mul on vaja selgust pähe.\n\nMa olen Amina, tootearenduse spetsialist.\nMa armastan seda, mida teen, aga… ma alles õpin, kuidas kõike korralikult korraldada.",
+        "stressful": "Tänane päev on olnud stressirikas. Klient sai vale tellimuse ja saatis kaebekirja.\nMa tundsin end tardunud — ma ei teadnud, kuidas vastata.\n\nDavid, meie digitaalsete kommunikatsioonide juht, tuli siia, et aidata mul see lahendada.\nTa on tõesti hea selles, et jääda rahulikuks ja lahendada asju samm-sammult.",
+        "findStickyNote": "Kuskil siin katusekohvikus on minu kirjapandud paber mõne olulise iseseisvuse näpunäitega.\nDavid kirjutas selle mulle varem, et saaksin harjutada probleemide iseseisvat lahendamist… aga ma ei mäleta, kuhu ma selle jätsin.\n\nKas saaksid mind aidata seda otsida?\nProovi kõigepealt vaadata klaasukse taga olevat konverentsiruumi — võisin selle sinna lauale jätta.",
+        "stickyNoteFound": "Tubli, nüüd on meil veidi infot, mille üle järele mõelda.\n\nIseseisvus tähendab oma võimete usaldamist ja oma tegude eest vastutuse võtmist, eriti väljakutsetega silmitsi seistes või otsuseid tehes.\nSee nõuab enamat kui lihtsalt asjade üksinda tegemist — see hõlmab teadlikku pingutust, et jääda rahulikuks, mõelda selgelt ja astuda väikseid iseseisvaid samme, mitte oodata, et teised lahendavad probleemi.",
+        "quiz1Intro": "Nüüd on viktoriini aeg, kasutame oma uusi teadmisi selle lahendamiseks",
+        "quiz1Done": "See oli suurepärane, nüüd oleme iseseisvusele ühe sammu lähemal",
+        "findPaper": "Kirjutasin tegelikult üles mõned lihtsad näpunäited, mis aitavad sul iseseisvust harjutada — asjad, mis võivad muuta keerulised hetked paremini hallatavaks. Märkisin need väikesele paberile… aga nüüd olen selle kuhugi pannud.\nNäib, et isegi mina lähen veidi laiali, kui päev läheb tihedaks.\n\nKas vaataksid kiiresti katusel ringi?\nKui ma õigesti mäletan… arvan, et jätsin selle kuhugi tassi lähedale.\n\nKui sa selle leiad, saame koos läbi teha lühikese iseseisvuse viktoriini.",
+        "paperFound": "Ohoo, need faktid on lihtsad, aga nende üle järele mõeldes üllatavalt võimsad.\nKui sa oled valmis, usun, et saame liikuda järgmise ülesande juurde. Jätkame.",
+        "puzzle2Intro": "Oleme peaaegu kohal!",
+        "finalWords": "See oli üsna avastus, eks?\nNäen, et hakkad oma iseseisvust nüüd selgemalt kasutama. Hinga aeglaselt, mõtle oma sammud läbi ja vaata enda ees olevaid võimalusi. Seejärel vali üks ja liigu edasi. Kui midagi ei lähe ideaalselt, on see okei — õpid teel. Lihtsalt jää rahulikuks, keskendunuks ja koosta lihtne plaan, mida saad järgida.\nOli tore sinuga rääkida. Järgmisel korral usun, et tuled toime ka ilma minu abita. Sa tegid tõesti väga hästi!",
+        "completion": "Uks on lahti! Klõpsa sellel, et jätkata.",
+        "default": "Otsi katusel ringi vihjeid."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Aitan Aminat kliendi kaebusega toime tulla. Ta õpib asjadega ise hakkama saama — see on tõeline iseseisvus. Räägi temaga kõigepealt!",
+        "default": "Keskendu Aminale — tema on see, kes täna oma iseseisvust üles ehitab."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Iseseisvuse viktoriin (Õige või Vale)",
+      "instructions": "Otsusta, kas iga väide on Õige või Vale.",
+      "questions": [
+        {
+          "text": "Iseseisvus tähendab probleemide lahendamist nii, et astud ise esimese väikese sammu enne abi palumist.",
+          "correct": true,
+          "hint": "Iseseisvus kasvab, kui püüad esmalt ise tegutseda, isegi kui samm on väike."
+        },
+        {
+          "text": "Kui ootan, et teised minu eest otsustaksid, muutun aja jooksul iseseisvamaks.",
+          "correct": false,
+          "hint": "Iseseisvust ehitatakse oma otsustega — mitte oodates, et teised valiksid sinu eest."
+        },
+        {
+          "text": "Vigade tegemine on normaalne osa iseseisvamaks saamisest.",
+          "correct": true,
+          "hint": "Pea meeles: enesekindlus kasvab, kui õpid vigadest, mitte ei väldi neid."
+        },
+        {
+          "text": "Kui tunnen end ebakindlalt või ebamugavalt, peaksin vältima probleemi enda lahendamist.",
+          "correct": false,
+          "hint": "Areng toimub, kui kohtad ebamugavust väikeste, hallatavate tegudega."
+        },
+        {
+          "text": "Üks lihtne viis iseseisvust harjutada on teha iga päev üks iseseisev valik.",
+          "correct": true,
+          "hint": "Pisikesed igapäevased otsused ehitavad usaldust oma võimekuse vastu rohkemaga toime tulla."
+        }
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle veel kord.",
+        "correct": "Tubli! Sa mõistad iseseisvuse põhitõdesid."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. ÕIGE – Iseseisvus kasvab, kui astud ise esimese väikese sammu.\n2. VALE – Teiste otsuse ootamine ei ehita iseseisvust.\n3. ÕIGE – Vead on normaalne osa iseseisvaks saamisest.\n4. VALE – Ebamugavusele väikeste tegudega vastu astumine kasvatab arengut.\n5. ÕIGE – Igapäevased iseseisvad valikud ehitavad usaldust oma võimete vastu."
+    },
+    "singleChoice": {
+      "title": "Iseseisvuse viktoriin – Valikvastus",
+      "instructions": "Vali parim vastus.",
+      "question": "Kui tööl tekib probleem, mis on kõige iseseisvam esimene samm?",
+      "options": {
+        "a": "Oota, et keegi teine ütleks sulle, mida teha",
+        "b": "Tee üks väike samm, mille suudad ise teha",
+        "c": "Väldi probleemi ja loodad, et see laheneb iseenesest",
+        "d": "Küsi enne midagi alustamist nõu kolmelt eri inimeselt"
+      },
+      "hint": "Mõtle, milline valik näitab, et oled valmis algatust haarama, mitte teistest sõltuma.",
+      "feedback": {
+        "wrong": "Mõtle, milline valik näitab, et oled valmis algatust haarama, mitte teistest sõltuma.",
+        "correct": "Õige! Ühe väikese sammu ise tegemine on kõige iseseisvam esimene samm."
+      },
+      "answerOverlay": "Õige vastus on: Tee üks väike samm, mille suudad ise teha."
+    },
+    "sequenceOrder": {
+      "title": "Iseseisvuse viktoriin – Järjestus",
+      "instructions": "Pane need tegevused õigesse järjekorda, et probleemiga iseseisvalt toime tulla.",
+      "items": [
+        "Tuvasta üks väike osa probleemist, millega saad praegu tegeleda",
+        "Võta hetk, et jääda rahulikuks ja vältida tormakat reaktsiooni",
+        "Kontrolli juba olemasolevaid fakte või üksikasju",
+        "Vii valitud väike samm lõpuni"
+      ],
+      "correctOrder": [
+        "Võta hetk, et jääda rahulikuks ja vältida tormakat reaktsiooni",
+        "Kontrolli juba olemasolevaid fakte või üksikasju",
+        "Tuvasta üks väike osa probleemist, millega saad praegu tegeleda",
+        "Vii valitud väike samm lõpuni"
+      ],
+      "hints": [
+        "Samm 1: Esmalt jää rahulikuks.",
+        "Samm 2: Kogu kokku see, mida tead.",
+        "Samm 3: Vali hallatav samm.",
+        "Samm 4: Vii lõpuni."
+      ],
+      "feedback": {
+        "wrong": "Iseseisev inimene alustab rahulikuks jäämisest, seejärel kogub olemasoleva info kokku. Pärast seda valib ta väikese, hallatava sammu ja viib selle ellu.",
+        "correct": "Suurepärane! Sa lahendasid olukorra iseseisvalt."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Võta hetk, et jääda rahulikuks ja vältida tormakat reaktsiooni.\n2. Kontrolli juba olemasolevaid fakte või üksikasju.\n3. Tuvasta üks väike osa probleemist, millega saad praegu tegeleda.\n4. Vii valitud väike samm lõpuni."
+    },
+    "answerOverlayTitle": "Vastus paljastatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Kontrolli järjekorda",
+      "resetButton": "Lähtesta"
+    }
+  },
+  "hints": {
+    "intro": "Klõpsa Aminal laua juures, et alustada.",
+    "talkToAmina": "Klõpsa Aminal, et alustada.",
+    "findStickyNote": "Proovi kontrollida konverentsiruumi ust, taime või Amina lauda.",
+    "talkToDavid": "Mine tagasi Davidi, digitaalsete kommunikatsioonide juhi juurde.",
+    "puzzle1TrueFalse": "Loe iga väide hoolikalt läbi ja otsusta, kas see on Õige või Vale.",
+    "findPaper": "David mainis, et see võib olla tassi lähedal. Kontrolli lauda, konverentsiruumi ust või Davidi taskut.",
+    "talkToDavid2": "Mine tagasi Davidi juurde sellega, mille leidsid.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata katusel ringi vihjete leidmiseks."
+  },
+  "systemDialogues": {
+    "selfTalk": "Astud katuse-tööruumi. Hele päevavalgus ja panoraamne linnavaade loovad rahuliku õhkkonna. Keskel asub väike puidust laud sülearvuti ja paberitega. Märkad Aminat, tootearenduse spetsialisti, kes istub mõtlikult laua taga.",
+    "clickDoor": "Mäletan, et hoidsin seda varem käes, aga nüüd… ma ei leia seda kuskilt.",
+    "clickConferenceTable": "Hmm… laud on tühi.\nNäib, et kirjapandud sedelit pole siiski siin.\n\nVõib-olla libises see mu märkmikust välja, kui ma ära läksin.\nProovi kontrollida taime konverentsiruumi ukse kõrval.",
+    "clickPlant": "Leidsid lehe… aga sedelit mitte.\nSee pidi kuhugi mujale kukkuma.\n\nProovime veel ühte kohta — Amina lauda, kus ta istub.\nVõib-olla sattus see tema sülearvuti alla.",
+    "foundStickyNote": "Sa leidsid selle!\nSedel oli peidetud Amina sülearvuti alla.\n\nVaata näpunäiteid — need aitavad tal harjutada iseseisvust kliendiprobleemidega tegelemisel.",
+    "stickyNoteRead": "Tubli! Mine tagasi digitaalsete kommunikatsioonide juhi Davidi juurde.",
+    "clickDesk": "Tundub, et seda pole siin. Vaatame veel kord konverentsiruumi lauda. Vahest läheb õnneks.",
+    "clickConferenceDoor2": "Hmm… ka siin mitte.\nTead, see on hea meeldetuletus ka mulle — organiseeritus on iseseisvuse osa.\nVõib-olla peaksin enne edasi otsimist oma taskuid kontrollima.",
+    "foundPaper": "Ah — vabandust. See oli kogu aeg mu taskus.\nNii juhtubki, kui päev läheb veidi liiga tihedaks."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "ISESEISVUSE MEELDETULETUSED",
+      "popupTitle": "ISESEISVUSE MEELDETULETUSED",
+      "popupContent": [
+        "Tee esmalt paus — vasta selge meelega",
+        "Jaga probleem üheks väikeseks tegevuseks",
+        "Esita endale täna üks abistav küsimus"
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "KUIDAS SAAVUTADA ISESEISVUS",
+      "popupTitle": "KUIDAS SAAVUTADA ISESEISVUS",
+      "popupContent": [
+        "Kui teed väikese iseseisva sammu, vabastab su aju edutunde, mis tugevdab usku oma võimetesse.",
+        "Isegi lihtsa probleemi ise lahendamine vähendab stressi, sest tegevus annab ajule märku, et sa oled võimeline väljakutsetega toime tulema.",
+        "Oma vigade parandamine loob tugevamaid õpiradu kui teistele lootmine, nii kasvab iseseisvus harjutamise kaudu.",
+        "Iga lõpetatud ülesanne suurendab motivatsiooni, aktiveerides aju tasusüsteemi, mis julgustab edasist iseseisvat otsustamist.",
+        "Inimesed, kes teevad igapäevaselt iseseisvaid valikuid, arendavad selgemat otsustusvõimet, võimaldades neil aja jooksul kiiremini ja enesekindlamalt otsuseid teha."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Õnnitleme! Sa oled vabastanud iseseisvuse jõu. See oskus on hädavajalik mitte ainult äris, vaid ka igapäevaelus. Proovi õnne järgmiste moodulitega. Aitäh osalemast. Saad alati tagasi tulla, kui soovid teadmisi värskendada — me oleme siin, et sinu õppimist toetada.!",
+    "buttonText": "Lahku katuselt"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

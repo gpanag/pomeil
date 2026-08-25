@@ -1,0 +1,254 @@
+{
+  "loading": "Ładowanie odporności...",
+  "intro": {
+    "title": "Odporność",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać przedsiębiorcą odnoszącym sukcesy i stworzyć biznes, który łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie jest dla Ciebie doświadczeniem edukacyjnym — wykonując różne wyzwania, zdobędziesz kompetencje ujęte w Mapie Kompetencji POMEIL, niezbędne dla każdego przedsiębiorcy.",
+      "Kontynuujesz swoją podróż wewnątrz tej samej firmy. W tym scenariuszu mierzysz się z wymagającą sytuacją zawodową, która wystawia Twoją odporność na próbę. Wyzwania toczą się w stresującym momencie pracy, w którym kluczowe są: zachowanie spokoju, dostosowanie się i regeneracja."
+    ],
+    "buttonText": "Wejdź do archiwum"
+  },
+  "characters": {
+    "layla": {
+      "name": "Layla",
+      "dialogues": {
+        "greet": "Cześć! Miło Cię tu widzieć! To jest archiwum, w którym możemy znaleźć informacje o wszystkim. Znalazłam kilka błędów w ostatnim raporcie, więc jestem tu, żeby zebrać dane i pomóc je poprawić. Wymaga to trochę odporności, więc zaczynajmy.",
+        "findBox": "Dobrze, żeby rozwiązać ten problem, musimy znaleźć właściwy folder. Przyjrzyjmy się uważnie półkom — notatka, której potrzebujemy, powinna być gdzieś tutaj.",
+        "boxFound": "Świetna robota! Pamiętasz te kroki? Będziemy z nich korzystać po kolei przez całą naszą drogę odporności. Idziemy dalej — czeka nas kolejny krok.",
+        "resilienceExplanation1": "Odporność to nie tylko „bycie silnym”.\nOdporność zaczyna się od umiejętności zatrzymania się — wzięcia oddechu, ustabilizowania siebie i stworzenia chwili jasności, zanim zareagujesz na stres.",
+        "resilienceExplanation2": "Istnieją właściwie dwa sposoby budowania odporności:\n\nOdporność wewnętrzna:\nWzmacnianie umiejętności, których używamy w sobie — uciszania myśli, zatrzymania się przed reakcją oraz przypominania sobie, że wyzwania są tymczasowe. Odporność wewnętrzna pomaga nam pozostać stabilnymi, skupionymi i pewnymi siebie nawet wtedy, gdy wszystko wydaje się przytłaczające.\n\nOdporność zewnętrzna:\nKorzystanie ze wspierających działań poza nami — proszenie o pomoc, utrzymywanie kontaktu z innymi i budowanie rutyn, które nas „uziemiają”. Odporność zewnętrzna pochodzi z zasobów, relacji i nawyków, które pomagają nam wracać silniejszymi.",
+        "resilienceExplanation3": "Gdy obie formy odporności współpracują, nie tylko znosisz wyzwania — reagujesz w sposób, który pomaga zachować stabilność, jasno myśleć i szybciej dochodzić do siebie. To właśnie buduje siłę i równowagę w pracy i codziennym życiu.",
+        "resilienceExplanation4": "Czas wykorzystać naszą wiedzę",
+        "findDrawer": "Świetnie sobie radzisz. Gdzieś w tym pomieszczeniu powinna być notatka, którą dałam Ivanowi. Wziął ją na chwilę, gdy szukaliśmy tu utraconych danych i czuł się przytłoczony. Pracuje tu już rok, a te notatki pomagają mu zachować spokój i skupienie — pomogą więc i Tobie.\nPrzyjrzyjmy się uważnie i spróbujmy jedną z nich znaleźć.",
+        "completion": "Szkolenie zostało ukończone!",
+        "default": "Szukaj wskazówek wokół pomieszczenia."
+      }
+    },
+    "ivan": {
+      "name": "Ivan",
+      "dialogues": {
+        "noteFound": "Wow, udało Ci się! Mam nadzieję, że te przemyślenia Ci pomogły. Niech poprowadzą Cię przez następny quiz. Dobrze — zaczynajmy.",
+        "finalWords": "Wow, ukończyłeś/aś wszystkie! Jestem z Ciebie naprawdę dumny. Teraz poczułeś/aś, czym jest odporność — robieniem rzeczy krok po kroku i niedopuszczaniem, by przytłoczenie przejęło kontrolę. Przejdziesz przez wyzwania, może z początku powoli — i to jest w porządku. Nie oczekuj, że wszystko od razu pójdzie idealnie. Z każdą próbą będziesz iść szybciej, gładziej i pewniej.\nPierwsze doświadczenie ma być powolne.\nŚwietna robota!",
+        "farewell": "Masz w sobie odporność! Teraz jesteś jeszcze silniejszym graczem zespołowym!",
+        "readyNext": "Szkolenie zostało ukończone!",
+        "completion": "Świetna praca dzisiaj!",
+        "default": "Hej, muszę tylko zdążyć z tym na czas…"
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "Powinienem/Powinnam porozmawiać z menedżerką sprzedaży Laylą, żeby zacząć.",
+    "findBox": "Rozejrzyjmy się po półkach w poszukiwaniu właściwego folderu.",
+    "clickShelf": "Te półki przechowują lata zarchiwizowanych projektów. Każdy folder to czyjaś ciężka praca. Ale to, czego potrzebujesz, nie jest wśród nich — spróbuj poszukać niżej.",
+    "clickBoxes": "Tu nic. Może sprawdź najniższe półki.",
+    "foundBox": "Udało Ci się! Zanieśmy go do menedżerki sprzedaży Layli!",
+    "findDrawer": "Rozejrzyjmy się po pomieszczeniu w poszukiwaniu notatek Ivana.",
+    "clickShelfForDrawer": "Tu są tylko stare foldery z danymi. Może sprawdź biurko.",
+    "clickDesk": "Tu też nic. Sprawdźmy w pobliżu okna",
+    "foundNote": "Świetne znalezisko! Wróć do Ivana",
+    "puzzle1Complete": "Świetne postępy! Przechodzimy do następnego wyzwania.",
+    "puzzle2Complete": "Brawo! Jeszcze jedno wyzwanie.",
+    "puzzle3Complete": "Wszystkie zagadki rozwiązane!"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Poprawna odpowiedź",
+    "answerOverlayContinue": "Dalej",
+    "matching": {
+      "title": "Dopasuj reakcję odporności do sytuacji",
+      "instructions": "Wybierz sytuację z kolumny A, a następnie odpowiadającą jej reakcję odporności z kolumny B.",
+      "columnA": {
+        "heading": "Sytuacje",
+        "items": {
+          "1": "Projekt nagle zmienia kierunek w ostatniej chwili",
+          "2": "Czujesz stres, a Twoje myśli pędzą",
+          "3": "Zadanie wydaje się zbyt duże i przytłaczające",
+          "4": "Popełniłeś/aś błąd i czujesz się zniechęcony/a"
+        }
+      },
+      "columnB": {
+        "heading": "Reakcje odporności",
+        "items": {
+          "A": "Podziel zadanie na mniejsze, możliwe do wykonania kroki",
+          "B": "Przeformułuj sytuację i przypomnij sobie, że błędy są częścią uczenia się",
+          "C": "Zatrzymaj się, oddychaj i uspokój się, zanim ruszysz dalej",
+          "D": "Dostosuj plan i przyzwyczaj się do nowego kierunku"
+        }
+      },
+      "feedback": {
+        "wrong": "Pomyśl, które działanie pomaga zachować równowagę w danej sytuacji. Na przykład, gdy wszystko wydaje się zbyt duże, podzielenie tego na mniejsze kroki zwykle ułatwia poradzenie sobie.",
+        "allCorrect": "Doskonale! Wszystkie reakcje odporności dopasowałeś/aś poprawnie."
+      },
+      "answerOverlay": "Poprawne dopasowania to:\n1. Projekt nagle zmienia kierunek → Dostosuj plan i przyzwyczaj się do nowego kierunku\n2. Czujesz stres, a Twoje myśli pędzą → Zatrzymaj się, oddychaj i uspokój się, zanim ruszysz dalej\n3. Zadanie wydaje się zbyt duże i przytłaczające → Podziel zadanie na mniejsze, możliwe do wykonania kroki\n4. Popełniłeś/aś błąd i czujesz się zniechęcony/a → Przeformułuj sytuację i przypomnij sobie, że błędy są częścią uczenia się"
+    },
+    "fillGap": {
+      "title": "Reagowanie z odpornością",
+      "instructions": "Uzupełnij luki właściwymi słowami.",
+      "sentenceParts": [
+        "Gdy pojawia się wyzwanie, pomaga ",
+        ", ",
+        " następny krok i wykonać jedno ",
+        " działanie, by ruszyć naprzód."
+      ],
+      "options": [
+        "odetchnąć",
+        "spieszyć się",
+        "małe",
+        "unikać",
+        "ocenić"
+      ],
+      "correctAnswers": [
+        "odetchnąć",
+        "ocenić",
+        "małe"
+      ],
+      "feedback": {
+        "wrong": "Odporność nigdy nie rośnie z unikania ani z pośpiechu — bierze się ze spokojnego oddechu, klarownego myślenia i małych kroków.",
+        "correct": "Zgadza się! Gdy pojawia się wyzwanie, pomaga odetchnąć, ocenić następny krok i wykonać jedno małe działanie, by ruszyć naprzód."
+      },
+      "answerOverlay": "Poprawne zdanie to:\n„Gdy pojawia się wyzwanie, pomaga odetchnąć, ocenić następny krok i wykonać jedno małe działanie, by ruszyć naprzód.”",
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź odpowiedź"
+    },
+    "pattern": {
+      "title": "Czytanie wzorców odporności",
+      "scenarioLabel": "Scenariusz",
+      "answerOverlayPrefix": "Dla scenariusza: ",
+      "answerOverlayCorrectLabel": "\nPoprawna odpowiedź to: ",
+      "answerOverlayExplanationLabel": "\n",
+      "scenarios": [
+        {
+          "text": "Współpracownik staje przed nieoczekiwanym problemem, zatrzymuje się, bierze powolny oddech, a następnie zaczyna dzielić zadanie na mniejsze kroki.",
+          "options": [
+            {
+              "text": "Nadmierne myślenie + unikanie",
+              "correct": false
+            },
+            {
+              "text": "Spokojna regulacja + działanie krok po kroku",
+              "correct": true
+            },
+            {
+              "text": "Lękowe wahanie + wycofanie",
+              "correct": false
+            },
+            {
+              "text": "Frustracja + impulsywna reakcja",
+              "correct": false
+            }
+          ],
+          "hint": "Powolny oddech i małe kroki pokazują, że ktoś się reguluje, a nie unika ani nie reaguje impulsywnie."
+        },
+        {
+          "text": "W zabieganym poranku współpracownik czuje się przytłoczony, cicho nazywa, jak się czuje, i zwraca się do członka zespołu po wsparcie.",
+          "options": [
+            {
+              "text": "Izolacja + zamknięcie się w sobie",
+              "correct": false
+            },
+            {
+              "text": "Świadomość emocji + nawiązanie kontaktu",
+              "correct": true
+            },
+            {
+              "text": "Zaprzeczanie + perfekcjonizm",
+              "correct": false
+            },
+            {
+              "text": "Złość + parcie naprzód bez odpoczynku",
+              "correct": false
+            }
+          ],
+          "hint": "Odporność rośnie, gdy ktoś dostrzega swoje uczucia i sięga po pomoc — nie wtedy, gdy je ukrywa lub im zaprzecza."
+        },
+        {
+          "text": "W stresującej chwili współpracownik przeformułowuje sytuację, mówiąc: „Wciąż się uczę”, i kontynuuje pracę w równym tempie.",
+          "options": [
+            {
+              "text": "Negatywny dialog wewnętrzny + poddanie się",
+              "correct": false
+            },
+            {
+              "text": "Optymistyczne przeformułowanie + równa wytrwałość",
+              "correct": true
+            },
+            {
+              "text": "Unikanie + rozpraszanie się",
+              "correct": false
+            },
+            {
+              "text": "Panika + pośpiech",
+              "correct": false
+            }
+          ],
+          "hint": "Gdy ktoś przeformułowuje problem i spokojnie idzie dalej, ćwiczy mocną odporność — nie unikanie ani panikę."
+        }
+      ]
+    }
+  },
+  "items": {
+    "box": {
+      "popupTitle": "Kroki odporności",
+      "popupContent": [
+        "Pauza – Poświęć chwilę, by odetchnąć i się ustabilizować, zanim zareagujesz. Krótka pauza pomaga odzyskać jasność w stresie.",
+        "Ocena – Spójrz na sytuację realistycznie. Ustal, co naprawdę się dzieje i na co możesz wpływać.",
+        "Dostosowanie – Zmień podejście, jeśli to konieczne. Elastyczność pomaga adaptować się, gdy plany się zmieniają lub pojawiają się wyzwania.",
+        "Działanie – Zrób jeden mały, wykonalny krok naprzód. Działanie — nawet drobne — buduje siłę, rozpęd i pewność siebie.",
+        "Regeneracja – Po wysiłku lub stresie daj sobie chwilę, by odpocząć, zastanowić się i odzyskać energię. Regeneracja jest częścią odporności, a nie przerwą od niej."
+      ]
+    },
+    "note": {
+      "popupTitle": "Refleksje o odporności",
+      "popupContent": [
+        "Odporność rośnie za każdym razem, gdy stajesz przed wyzwaniem i decydujesz iść dalej, choćby drobnymi krokami.",
+        "Powrót do siebie nie wymaga doskonałości — zrobienie jednego stabilnego kroku naprzód to już postęp.",
+        "Uczenie się z porażek buduje pewność siebie i pomaga radzić sobie z przyszłymi przeszkodami z większą siłą."
+      ]
+    },
+    "resilienceSteps": {
+      "inventoryTitle": "Kroki odporności"
+    },
+    "resilienceReflections": {
+      "inventoryTitle": "Refleksje o odporności"
+    }
+  },
+  "hints": {
+    "intro": "Poszukaj Layli, menedżerki sprzedaży, i porozmawiaj z nią.",
+    "talkToLayla": "Kliknij Laylę, aby rozpocząć rozmowę.",
+    "findBox": "Przyjrzyj się uważnie półkom — spróbuj kliknąć dolne półki.",
+    "talkToLayla2": "Wróć do Layli i pokaż jej, co znalazłeś/aś.",
+    "findDrawer": "Rozejrzyj się po pomieszczeniu — spróbuj szuflad przy oknie.",
+    "talkToIvan": "Wróć do Ivana z notatką, którą znalazłeś/aś.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Eksploruj dalej pomieszczenie."
+  },
+  "completion": {
+    "title": "Odporność ukończona!",
+    "message": "Gratulacje! Wykazałeś/aś się odpornością, zachowując spokój, dostosowując się i regenerując w stresującej sytuacji zawodowej. Pamiętaj: odporność to nie nigdy nie upaść — to wstawanie, krok po kroku.",
+    "buttonText": "Powrót do escape roomów"
+  },
+  "ui": {
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "gapPlaceholder": "______",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "loading": "Ładowanie modułu Empatia...",
+  "intro": {
+    "title": "Empatia",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie wszedłeś/aś do Centrum Wellness dużej międzynarodowej firmy. Tutaj nauczysz się o Empatii — zdolności rozumienia, co czuje druga osoba, nawet jeśli jej doświadczenie różni się od twojego.",
+      "Dr Elena Ruiz, Trenerka Wellness, poprowadzi cię przez różne wyzwania, aby pomóc ci rozwinąć percepcję emocjonalną, uważne słuchanie i współczujące rozumowanie."
+    ],
+    "buttonText": "Rozpocznij grę"
+  },
+  "characters": {
+    "coach": {
+      "name": "Dr Elena Ruiz (Trenerka Wellness)",
+      "dialogues": {
+        "intro": "Cześć (username)! Teraz zbadamy empatię, czyli rozumienie emocji u innych i odpowiadanie z troską.",
+        "findStones_initial": "Dla tej umiejętności ukryłam kamienie medytacyjne, które zawierają wiadomość. Zacznij od sprawdzenia półki z przedmiotami medytacyjnymi.",
+        "findStones_reminder": "Kamienie medytacyjne powinny być gdzieś w pokoju. Zacznij od sprawdzenia półki z przedmiotami medytacyjnymi.",
+        "stonesFound": "Znalazłeś/aś kamienie! Kliknij je, by przeczytać wiadomość, a potem przynieś je z powrotem do mnie.",
+        "stonesReturned": "Świetnie, te kroki to twoja podstawa. Ale zanim przejdziemy dalej, podzielę się czymś ważnym.",
+        "empathyExplanation1": "Empatia to nie tylko „bycie miłym”. Empatia to zdolność rozumienia, co czuje druga osoba, nawet jeśli jej doświadczenie różni się od twojego.",
+        "empathyExplanation2": "Empatia ma w rzeczywistości dwie strony:\nEmpatia emocjonalna: wyczuwanie, co ktoś czuje przez ton, postawę lub mimikę.\nEmpatia poznawcza: rozumienie ich perspektywy i tego, co może stać za ich emocjami.",
+        "empathyExplanation3": "Gdy obie działają razem, nie tylko zauważasz emocje, ale odpowiadasz w sposób, który sprawia, że osoba czuje się bezpieczna i wspierana. To buduje silne relacje w pracy.",
+        "empathyExplanation4": "W porządku, wprowadźmy te idee w praktykę.",
+        "puzzle1Complete": "Robisz ładne postępy. Przygotowałam krótką refleksję o empatii. Myślę, że umieściłam ją na regale, ale nie jestem pewna.",
+        "findFabric_reminder": "Tkanina z refleksją powinna być gdzieś w okolicach regału. Szukaj dalej!",
+        "fabricFound": "Świetnie! Przeczytaj refleksję uważnie, a potem wróć do mnie.",
+        "fabricReturned": "Idealnie. Te refleksje poprowadzą twoje kolejne ćwiczenia.",
+        "patternComplete": "To była doskonała robota, (username). Wykazałeś/aś się percepcją emocjonalną, uważnym słuchaniem i współczującym rozumowaniem.",
+        "completion": "Spisałeś/aś się znakomicie! Szkolenie zakończone!",
+        "default": "Idź dalej, świetnie ci idzie!"
+      }
+    },
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "default": "Och, hej… po prostu medytuję.",
+        "completion": "Świetna robota z ukończeniem szkolenia z empatii! Drzwi są dla ciebie otwarte."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dopasuj sygnał emocjonalny do jego znaczenia",
+      "columnA": {
+        "heading": "Kolumna A – Sygnały emocjonalne",
+        "items": {
+          "1": "Unikanie kontaktu wzrokowego",
+          "2": "Mówienie nietypowo szybko",
+          "3": "Pochylone do przodu ramiona",
+          "4": "Długie pauzy przed odpowiedzią"
+        }
+      },
+      "columnB": {
+        "heading": "Kolumna B – Prawdopodobne stany emocjonalne",
+        "items": {
+          "a": "Poczucie przytłoczenia",
+          "b": "Poczucie niepewności lub wahania",
+          "c": "Poczucie smutku lub porażki",
+          "d": "Poczucie lęku."
+        }
+      },
+      "feedback": {
+        "wrong": "Pomyśl, jak ciało wyraża emocje. Na przykład, pochylone ramiona często sygnalizują niską energię lub smutek.",
+        "allCorrect": "Świetna robota! Kontynuuj kolejne zadanie."
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Dopasuj sygnały mowy ciała do stanów emocjonalnych.\n\nPoprawne dopasowania:\n• „Unikanie kontaktu wzrokowego” → „Poczucie niepewności lub wahania” - Gdy ludzie czują się niepewnie, często odwracają wzrok, by uniknąć bezpośredniego zaangażowania\n• „Mówienie nietypowo szybko” → „Poczucie lęku” - Szybka mowa często wskazuje na nerwowość lub niepokój\n• „Pochylone do przodu ramiona” → „Poczucie smutku lub porażki” - Postawa ciała opada, gdy energia jest niska\n• „Długie pauzy przed odpowiedzią” → „Poczucie przytłoczenia” - Gdy przetwarzają zbyt wiele, ludzie potrzebują więcej czasu na odpowiedź\n\nPamiętaj: Mowa ciała często ujawnia emocje, których słowa nie wyrażają."
+    },
+    "fillGap": {
+      "title": "Odpowiadanie z empatią",
+      "sentenceParts": [
+        "Gdy ktoś jest zdenerwowany, pomocne jest ",
+        " jego uczucia, ",
+        " w pełni i zadać ",
+        " pytanie, by lepiej zrozumieć."
+      ],
+      "options": [
+        "potwierdzić",
+        "słuchać",
+        "osądzające",
+        "delikatne",
+        "ignorować"
+      ],
+      "correctAnswers": [
+        "potwierdzić",
+        "słuchać",
+        "delikatne"
+      ],
+      "feedback": {
+        "wrong": "Empatyczne odpowiedzi nigdy nie wiążą się z osądzaniem lub ignorowaniem kogoś."
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Gdy ktoś jest zdenerwowany, pomocne jest (___) jego uczucia, (___) w pełni i zadać (___) pytanie, by lepiej zrozumieć.\n\nPoprawna odpowiedź:\n• Pierwsza luka: „potwierdzić” - Uznanie czyichś uczuć pokazuje, że rozumiesz i wspierasz\n• Druga luka: „słuchać” - Daj pełną uwagę bez przerywania, by osoba czuła się wysłuchana i szanowana\n• Trzecia luka: „delikatne” - Zadaj delikatne pytanie, by pokazać, że ci zależy i rozumiesz, co dzieje się pod powierzchnią\n\nKompletne zdanie: „Gdy ktoś jest zdenerwowany, pomocne jest potwierdzić jego uczucia, słuchać w pełni i zadać delikatne pytanie, by lepiej zrozumieć.”",
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź"
+    },
+    "pattern": {
+      "title": "Czytanie wzorców emocjonalnych",
+      "scenarioLabel": "Scenariusz",
+      "scenarios": [
+        {
+          "text": "Współpracownik daje bardzo krótkie odpowiedzi, unika kontaktu wzrokowego i ciągle bawi się rękami.",
+          "options": [
+            {"text": "Spokojny + refleksyjny", "correct": false},
+            {"text": "Niespokojny + niepewny", "correct": true},
+            {"text": "Radosny + energiczny", "correct": false},
+            {"text": "Zmotywowany + skupiony", "correct": false}
+          ],
+          "hint": "Bawienie się rękami i unikanie kontaktu wzrokowego zwykle odzwierciedla wewnętrzne napięcie lub zmartwienie."
+        },
+        {
+          "text": "W dyskusji zespołowej kolega mówi wolniej niż zwykle, odpowiada cichym głosem i trzyma ramiona opuszczone.",
+          "options": [
+            {"text": "Smutny + niska energia", "correct": true},
+            {"text": "Pewny siebie + zrelaksowany", "correct": false},
+            {"text": "Zirytowany + niecierpliwy", "correct": false},
+            {"text": "Rozproszony + figlarny", "correct": false}
+          ],
+          "hint": "Opuszczone ramiona i cichy głos zwykle wskazują na obniżoną energię emocjonalną, nie pewność siebie czy irytację."
+        },
+        {
+          "text": "Współpracownik mówi bardzo szybko, często przerywa, a jego gesty są szybkie i przesadzone.",
+          "options": [
+            {"text": "Nerwowe podekscytowanie + nadmierna stymulacja", "correct": true},
+            {"text": "Spokojny + spokojny", "correct": false},
+            {"text": "Zdezorientowany + zmęczony", "correct": false},
+            {"text": "Neutralny + obojętny", "correct": false}
+          ],
+          "hint": "Gdy ktoś mówi zbyt szybko lub przesadnie gestykuluje, często odzwierciedla to wzmożoną aktywację — nie spokój czy obojętność."
+        }
+      ],
+      "answerOverlayPrefix": "Po 3 próbach, oto odpowiedź:\n\nPytanie: ",
+      "answerOverlayCorrectLabel": "\n\nPoprawna odpowiedź: ",
+      "answerOverlayExplanationLabel": "\n\nWyjaśnienie: "
+    },
+    "answerOverlayTitle": "Poprawna odpowiedź",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "default": "Powinienem/Powinnam dokładnie sprawdzić pokój.",
+    "intro": "Powinienem/Powinnam porozmawiać z dr Eleną Ruiz.",
+    "stonesReturned": "Powinienem/Powinnam porozmawiać z dr Eleną Ruiz.",
+    "stonesFound": "Przeczytaj wiadomość na kamieniach, a potem przynieś je z powrotem do Trenerki Wellness.",
+    "fabricFound": "Przeczytaj refleksję na tkaninie, a potem wróć do Trenerki Wellness.",
+    "puzzle1Matching": "Dopasuj każdy sygnał mowy ciała z Kolumny A do stanu emocjonalnego, na który wskazuje w Kolumnie B.",
+    "puzzle2FillGap": "Wybierz słowa, które uzupełniają empatyczną odpowiedź: potwierdź uczucia, słuchaj w pełni, zadaj delikatne pytanie.",
+    "findStones": {
+      "step0": "Dr Elena powiedziała: „Zacznij od sprawdzenia półki z przedmiotami medytacyjnymi.”",
+      "step1": "Półka była pusta. Powinienem/Powinnam sprawdzić fontannę.",
+      "step2": "Nic w fontannie. Powinienem/Powinnam sprawdzić pod pomarańczową poduszką."
+    },
+    "findFabric": {
+      "step0": "Muszę znaleźć refleksję. Dr Elena wspomniała o regale.",
+      "step1": "Nie ma na regale. Powinienem/Powinnam sprawdzić złożone koce.",
+      "step2": "Nie w kocach. Powinienem/Powinnam sprawdzić maty do jogi."
+    },
+    "completion": "Powinienem/Powinnam zameldować się u Managera HR, by zakończyć."
+  },
+  "items": {
+    "stones": {
+      "altText": "Kamienie medytacyjne",
+      "title": "KROKI EMPATII",
+      "steps": [
+        {
+          "label": "Zauważ",
+          "text": "Zwracaj uwagę na sygnały emocjonalne, takie jak ton lub postawa, by wyczuć, jak ktoś może się czuć."
+        },
+        {
+          "label": "Sprawdź",
+          "text": "Zadaj delikatne pytanie, by pokazać, że ci zależy i zrozumieć, co dzieje się pod powierzchnią."
+        },
+        {
+          "label": "Słuchaj",
+          "text": "Daj pełną uwagę bez przerywania, by osoba czuła się wysłuchana i szanowana."
+        },
+        {
+          "label": "Potwierdź",
+          "text": "Uznaj ich uczucia, by pokazać zrozumienie i pomóc im czuć się wspieranymi."
+        }
+      ],
+      "inventoryTitle": "Zobacz Kamienie Medytacyjne",
+      "foundDialogue": "Dobra robota! Przynieś kamienie z powrotem do Trenerki Wellness.",
+      "returnDialogue": "Świetnie, te kroki to twoja podstawa. Ale zanim przejdziemy dalej, podzielę się czymś ważnym."
+    },
+    "fabric": {
+      "altText": "Pasek tkaniny",
+      "title": "REFLEKSJE EMPATII",
+      "reflections": [
+        "Ludzie często ukrywają swoje uczucia za krótkimi odpowiedziami — empatia pomaga zauważyć to, co niewypowiedziane.",
+        "Nie musisz naprawiać emocji; ich uznanie to już wsparcie.",
+        "Rozumienie czyichś uczuć wzmacnia zaufanie i współpracę."
+      ],
+      "inventoryTitle": "Zobacz Tkaninę Refleksji",
+      "foundDialogue": "Świetne znalezisko! Wróć do Trenerki Wellness.",
+      "returnDialogue": "Idealnie. Te refleksje poprowadzą twoje kolejne ćwiczenia."
+    }
+  },
+  "systemDialogues": {
+    "findStones": {
+      "shelf": "Tu jest wiele przedmiotów… ale nie ten, którego potrzebujesz. Może w fontannie.",
+      "fountain": "Tu nic. Może sprawdź pod jedną z poduszek medytacyjnych."
+    },
+    "findFabric": {
+      "bookshelf": "Tylko książki i dyfuzory tutaj. Może sprawdź złożone koce obok regału.",
+      "blankets": "Wciąż nic. Może spójrz w pobliżu mat do jogi pod ścianą."
+    },
+    "empathyComplete": "Ukończyłeś/aś umiejętność Empatii! Stajesz się silniejszym, bardziej wspierającym członkiem zespołu.",
+    "readyNextSkill": "Gotowy/a, by przejść do następnej umiejętności?"
+  },
+  "completion": {
+    "title": "Szkolenie zakończone!",
+    "message": "Pomyślnie ukończyłeś/aś moduł umiejętności Empatii.",
+    "buttonText": "Powrót do menu głównego"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "____",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

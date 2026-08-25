@@ -1,0 +1,273 @@
+/* ─── Image dialog — editorial gallery viewer ─────────────────────
+   The host fills the mat-dialog pane (sized 90vw × 98vh by callers).
+   Layout is a 3-row grid: floating top bar, the image stage, and the
+   caption strip. The stage itself is a 3-column grid: prev arrow /
+   image frame / next arrow. The frame holds the paper card so the
+   background scrim shows around it.
+   ──────────────────────────────────────────────────────────── */
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--pomeil-cream);
+}
+
+.img-dialog {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 50%, rgba(0, 31, 36, 0.78), rgba(0, 16, 20, 0.96)),
+    var(--pomeil-ink, #001014);
+  /* Paper-grain noise overlay — adds tactile depth without hijacking
+     the image. Pure CSS via SVG data URI, so no extra HTTP request. */
+  isolation: isolate;
+}
+.img-dialog::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.92  0 0 0 0 0.88  0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+/* ─── Top bar ───────────────────────────────────────────────── */
+.img-dialog-bar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px 14px;
+  border-bottom: 1px solid rgba(250, 246, 238, 0.08);
+  background: linear-gradient(180deg, rgba(0, 16, 20, 0.6) 0%, rgba(0, 16, 20, 0) 100%);
+}
+.img-dialog-bar-left {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  min-width: 0;
+}
+.img-dialog-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pomeil-warm-soft);
+  /* Anchor the eyebrow with a small terracotta hairline on the left,
+     mirroring the editorial sections elsewhere in the v2 design. */
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 1px;
+    background: var(--pomeil-warm);
+    vertical-align: middle;
+    margin-right: 10px;
+    opacity: 0.85;
+  }
+}
+.img-dialog-counter {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(250, 246, 238, 0.85);
+  font-variation-settings: "opsz" 32, "SOFT" 60;
+}
+.img-dialog-bar-right {
+  display: flex;
+  align-items: center;
+}
+.img-dialog-close {
+  color: var(--pomeil-cream) !important;
+  background: rgba(250, 246, 238, 0.08) !important;
+  border: 1px solid rgba(250, 246, 238, 0.14);
+  transition:
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    border-color var(--md-duration-short3) var(--md-easing-standard);
+  &:hover {
+    background: rgba(250, 246, 238, 0.18) !important;
+    border-color: var(--pomeil-warm);
+  }
+  mat-icon {
+    color: inherit !important;
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ─── Stage (arrows + frame) ────────────────────────────────── */
+.img-dialog-stage {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: clamp(16px, 2.5vw, 28px) clamp(16px, 2.5vw, 36px);
+  min-height: 0;
+}
+
+/* The frame holds the paper card. It centers the image horizontally,
+   and clips overflow on landscape so the box-shadow doesn't bleed
+   outside the stage. For tall portrait images the frame engages the
+   scroll affordance so the user can read the full newsletter. */
+.img-dialog-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+.img-dialog-pic {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  background: #fffefb;
+  padding: 14px;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 1px 2px rgba(0, 0, 0, 0.40),
+    0 18px 40px rgba(0, 0, 0, 0.50),
+    0 36px 80px rgba(0, 0, 0, 0.45);
+  /* Subtle reveal on dialog open. */
+  animation: img-dialog-reveal var(--md-duration-medium2) var(--md-easing-emphasized-decelerate) both;
+}
+
+/* Portrait mode: render the image at its natural width up to 90% of
+   the frame, with the frame becoming a vertical scroll container so
+   newsletter PDFs (1414×2000) read at full text size instead of
+   shrinking to fit a 16:9 viewport. */
+.is-portrait {
+  .img-dialog-frame {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-self: stretch;
+    height: 100%;
+    /* Cinematic scrollbar: slim, warm, sits over the dark scrim. */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(179, 89, 58, 0.55) transparent;
+    &::-webkit-scrollbar { width: 8px; }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(179, 89, 58, 0.55);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover { background: var(--pomeil-warm); }
+  }
+  .img-dialog-pic {
+    max-height: none;
+    max-width: min(960px, 95%);
+    width: 100%;
+    margin: 0 auto;
+    /* Top/bottom breathing room inside the scroll area. */
+    margin-block: 8px 24px;
+  }
+}
+
+@keyframes img-dialog-reveal {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ─── Nav arrows ────────────────────────────────────────────── */
+.img-dialog-nav {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250, 246, 238, 0.08);
+  color: var(--pomeil-cream);
+  border: 1px solid rgba(250, 246, 238, 0.18);
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  transition:
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    border-color var(--md-duration-short3) var(--md-easing-standard),
+    transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate);
+  flex-shrink: 0;
+}
+.img-dialog-nav:hover,
+.img-dialog-nav:focus-visible {
+  background: var(--pomeil-warm);
+  border-color: var(--pomeil-warm);
+  outline: none;
+  transform: translateX(0) scale(1.06);
+  color: var(--pomeil-cream);
+}
+.img-dialog-nav-prev:hover,
+.img-dialog-nav-prev:focus-visible { transform: translateX(-2px) scale(1.06); }
+.img-dialog-nav-next:hover,
+.img-dialog-nav-next:focus-visible { transform: translateX(2px) scale(1.06); }
+.img-dialog-nav mat-icon {
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: inherit !important;
+}
+
+/* ─── Caption ───────────────────────────────────────────────── */
+.img-dialog-caption {
+  position: relative;
+  z-index: 2;
+  padding: 14px clamp(20px, 4vw, 36px) 22px;
+  text-align: center;
+  border-top: 1px solid rgba(250, 246, 238, 0.08);
+  background: linear-gradient(0deg, rgba(0, 16, 20, 0.55) 0%, rgba(0, 16, 20, 0) 100%);
+}
+.img-dialog-caption-text {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  line-height: 1.4;
+  color: rgba(250, 246, 238, 0.88);
+  font-variation-settings: "opsz" 32, "SOFT" 80;
+  max-width: 760px;
+}
+
+/* ─── Mobile / narrow ───────────────────────────────────────── */
+@media (max-width: 720px) {
+  .img-dialog-bar { padding: 12px 14px 10px; }
+  .img-dialog-eyebrow { font-size: 0.66rem; letter-spacing: 0.18em; }
+  .img-dialog-stage {
+    /* Push arrows below the image on narrow screens so they don't
+       compete with the image for horizontal space. */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 12px;
+  }
+  .img-dialog-nav {
+    width: 44px;
+    height: 44px;
+  }
+  .img-dialog-nav-prev {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: start;
+  }
+  .img-dialog-nav-next {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: end;
+  }
+  .img-dialog-pic { padding: 8px; }
+}

@@ -1,0 +1,76 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Room-specific button position overrides --- */
+.fullscreen-button {
+  top: 14px;
+  right: 14px;
+  color: inherit;
+}
+
+.hint-button {
+  top: 14px;
+}
+
+.back-button {
+  bottom: 16px;
+  left: 16px;
+}
+
+/* --- USB popup --- */
+.usb-popup {
+  width: 90%;
+  height: 90%;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    user-select: none;
+  }
+}
+
+.hint-small {
+  margin-top: 16px;
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+/* --- Matching puzzle --- */
+.matching-card {
+  width: min(980px, 94vw);
+}
+
+.matching-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.matching-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 12px;
+  align-items: start;
+
+  &.header {
+    font-weight: 700;
+    opacity: 0.85;
+  }
+}
+
+.idea {
+  line-height: 1.25;
+}
+
+.matching-select {
+  width: 100%;
+}

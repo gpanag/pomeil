@@ -1,0 +1,136 @@
+<!-- ────────────────────────────────────────────────────────────────────
+     Individual news article. Editorial layout: hero photo with caption
+     overlay, eyebrow + Fraunces italic title, formatted date, drop-cap
+     prose, image gallery, download button, back-link.
+     ──────────────────────────────────────────────────────────────── -->
+<article class="new-article" *ngIf="newItem">
+
+  <!--
+    Hero is a magazine-spread, not a banner. The cover image for these
+    items is the newsletter's first page rendered to PNG (1414×2000
+    portrait). The previous design cropped that to a landscape band and
+    drowned it under a dark gradient — you couldn't see the actual
+    newsletter. This layout keeps the portrait aspect, frames it as a
+    paper card, and pairs it with the eyebrow + date column.
+  -->
+  <header class="new-article-hero">
+    <a routerLink="/news" class="hero-back">
+      <mat-icon>arrow_back</mat-icon>
+      <span>{{ 'NAVIGATION.NEWS' | translate }}</span>
+    </a>
+
+    <div class="hero-grid">
+      <button *ngIf="newItem?.image" class="hero-paper" type="button"
+              (click)="openImageDialog(images, newItem?.image?.id)"
+              [attr.aria-label]="newItem?.title">
+        <img class="hero-paper-img" [src]="coverImageUrl()" [alt]="newItem?.title">
+        <span class="hero-paper-zoom" aria-hidden="true">
+          <mat-icon>zoom_in</mat-icon>
+        </span>
+      </button>
+
+      <div class="hero-meta">
+        <span class="md-eyebrow hero-eyebrow">{{ 'NAVIGATION.NEWS' | translate }}</span>
+        <time class="hero-date">
+          {{ newItem?.publishedAt | date : 'longDate' :
+            undefined : (lang === 'ee' ? 'ee' :
+                         lang === 'gr' ? 'gr' :
+                         lang === 'no' ? 'no' :
+                         lang === 'pl' ? 'pl' :
+                         lang === 'ua' ? 'ua' : 'en') }}
+        </time>
+      </div>
+    </div>
+  </header>
+
+  <!-- QR codes "second page" for English newsletters (partner feedback
+       2026-05-28 item 1) — appears below the cover on EN newsletter#X
+       entries only. -->
+  <section *ngIf="qrPageUrl && lang === 'en' && (newItem?.title || '').toLowerCase().includes('newsletter')"
+           class="new-article-qr">
+    <button class="hero-paper qr-paper" type="button"
+            (click)="openImageDialog([{ id: 'qr-page', url: qrPageUrl }], 'qr-page')"
+            aria-label="POMEIL QR codes">
+      <img class="hero-paper-img" [src]="qrPageUrl" alt="POMEIL QR codes">
+      <span class="hero-paper-zoom" aria-hidden="true">
+        <mat-icon>zoom_in</mat-icon>
+      </span>
+    </button>
+  </section>
+
+  <div class="new-article-body article-body editorial-prose has-dropcap">
+    <h1 class="new-article-title">
+      {{
+        lang === 'ua' ? newItem?.title_ua :
+        lang === 'pl' ? newItem?.title_pl :
+        lang === 'no' ? newItem?.title_no :
+        lang === 'gr' ? newItem?.title_gr :
+        lang === 'ee' ? newItem?.title_ee : newItem?.title
+      }}
+    </h1>
+
+    <div class="new-article-prose">
+      <p *ngFor="let par of contentBlocks(); let i = index"
+         [class.is-heading]="isHeading(par)"
+         [class.is-body-lede]="isBodyLede(par, i)">
+        <ng-container *ngFor="let text of par.children">
+          <span [class.text-italic]="text.italic"
+                [class.text-bold]="text.bold">{{ text.text }}</span>
+        </ng-container>
+      </p>
+    </div>
+
+    <hr class="ornament-rule" *ngIf="newItem?.more_images?.length || newItem?.download" />
+
+    <section *ngIf="newItem?.more_images?.length" class="new-article-gallery">
+      <span class="md-eyebrow">{{ 'NEW.GALLERY' | translate }}</span>
+      <mat-grid-list cols="3" rowHeight="1.3:1" gutterSize="14px">
+        <mat-grid-tile class="image-grid-tile" *ngFor="let image of newItem?.more_images">
+          <button class="more-image-button"
+                  type="button"
+                  (click)="openImageDialog(images, image.id)"
+                  [attr.aria-label]="newItem?.title">
+            <img class="main-image" [src]="image.url" [alt]="newItem?.title">
+            <span class="zoom-overlay">
+              <mat-icon>zoom_in</mat-icon>
+            </span>
+          </button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </section>
+
+    <div class="new-article-download" *ngIf="newItem?.download">
+      <a *ngIf="lang === 'en'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+      <a *ngIf="lang === 'ee'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download_ee?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+      <a *ngIf="lang === 'gr'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download_gr?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+      <a *ngIf="lang === 'no'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download_no?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+      <a *ngIf="lang === 'pl'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download_pl?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+      <a *ngIf="lang === 'ua'" mat-raised-button color="primary" class="new-article-download-btn" [href]="newItem?.download_ua?.url" download>
+        <mat-icon>download</mat-icon>
+        <span>{{ 'TOOLS.DOWNLOAD' | translate }}</span>
+      </a>
+    </div>
+
+    <a routerLink="/news" class="new-article-back">
+      <mat-icon>arrow_back</mat-icon>
+      <span>{{ 'NEW.BACK_TO_NEWS' | translate }}</span>
+    </a>
+  </div>
+</article>
+
+<app-footer></app-footer>

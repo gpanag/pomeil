@@ -1,0 +1,199 @@
+{
+  "loading": "Loading Self-Reliance...",
+  "intro": {
+    "title": "Self-Reliance",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire the 30 skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Today you step out onto the rooftop workspace — a serene terrace with a panoramic city view. The bright daylight and gentle breeze create a sense of freedom and independence. This is where Amina, the Product Development Specialist, comes to think clearly."
+    ],
+    "buttonText": "Enter the Rooftop"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Oh! Hi there — welcome to our little rooftop spot.\nI come here when I need a clear head.\n\nI'm Amina, the Product Development Specialist.\nI love what I do, but… I'm still learning how to run everything properly.",
+        "stressful": "Today has been stressful. A customer received the wrong order and sent a complaint letter.\nI felt frozen — I wasn't sure how to reply.\n\nDavid, our Digital Communications Manager, came up here to help me figure it out.\nHe's really good at staying calm and solving things step by step.",
+        "findStickyNote": "Somewhere up here on the rooftop café, there's my written paper with some important tips about self-reliance.\nDavid wrote it for me earlier so I could practice solving problems independently… but I can't remember where I left it.\n\nCould you help me look for it?\nTry checking the conference room behind the glass door first — I might have left it on the table in there.",
+        "stickyNoteFound": "Well done, now we have some info to consider.\n\nSelf-reliance means trusting your own abilities and taking responsibility for your actions, especially when facing challenges or making decisions.\nIt requires more than simply doing things alone — it involves a conscious effort to stay calm, think clearly, and take small independent steps instead of waiting for others to solve the problem.",
+        "quiz1Intro": "Now It's a quiz time, let's use our new insights to solve this",
+        "quiz1Done": "It was brilliant now we are one more step closer to Self-reliance",
+        "findPaper": "I actually wrote down a few simple tips to help you practice self-reliance — things that can make difficult moments feel more manageable. I noted them on a small piece of paper… but now I've misplaced it.\nIt seems even I get a bit scattered when the day gets busy.\n\nCould you take a quick look around the rooftop for it?\nIf I remember correctly… I think I left it somewhere near the cup.\n\nOnce you find it, we can go through a short self-reliance quiz together.",
+        "paperFound": "Wow, those facts are simple, but they're surprisingly powerful when you think about them.\nIf you're ready, I believe we can move on to the next task. Let's continue.",
+        "puzzle2Intro": "We almost there!",
+        "finalWords": "That was quite a discovery, wasn't it?\nI can see you're starting to use your self-reliance more clearly now. Take a slow breath, think through your steps, and look at the possibilities in front of you. Then choose one and move forward. If something doesn't go perfectly, that's fine — you'll learn as you go. Just stay calm, stay focused, and build a simple plan you can follow.\nIt was good talking with you. Next time, I believe you'll be able to handle things on your own without needing my help. You did really well!",
+        "completion": "The door is open! Click on it to continue.",
+        "default": "Keep looking around the rooftop for clues."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "I'm helping Amina work through a customer complaint. She's learning to handle things on her own — that's real self-reliance. Talk to her first!",
+        "default": "Focus on Amina — she's the one building her self-reliance today."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Self-Reliance Quiz (True or False)",
+      "instructions": "Determine if each statement is True or False.",
+      "questions": [
+        {
+          "text": "Self-reliance means solving problems by taking the first small step yourself before asking for help.",
+          "correct": true,
+          "hint": "Self-reliance grows when you try to act first, even if the step is small."
+        },
+        {
+          "text": "If I wait for others to decide for me, I become more self-reliant over time.",
+          "correct": false,
+          "hint": "Self-reliance is built through your own decisions — not waiting for others to choose for you."
+        },
+        {
+          "text": "Making mistakes is a normal part of becoming more self-reliant.",
+          "correct": true,
+          "hint": "Remember: confidence grows when you learn from mistakes, not avoid them."
+        },
+        {
+          "text": "If I feel unsure or uncomfortable, I should avoid trying to solve the problem myself.",
+          "correct": false,
+          "hint": "Growth happens when you face discomfort with small, manageable actions."
+        },
+        {
+          "text": "One simple way to practice self-reliance is to make one independent choice each day.",
+          "correct": true,
+          "hint": "Tiny daily decisions build trust in your ability to handle more."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about it again.",
+        "correct": "Well done! You understand the basics of self-reliance."
+      },
+      "answerOverlay": "The correct answers are:\n1. TRUE – Self-reliance grows when you take the first small step yourself.\n2. FALSE – Waiting for others to decide does not build self-reliance.\n3. TRUE – Mistakes are a normal part of becoming self-reliant.\n4. FALSE – Facing discomfort with small actions builds growth.\n5. TRUE – Daily independent choices build trust in your abilities."
+    },
+    "singleChoice": {
+      "title": "Self-Reliance Quiz – Multiple Choice",
+      "instructions": "Choose the best answer.",
+      "question": "When you face a problem at work, what is the most self-reliant first step?",
+      "options": {
+        "a": "Wait for someone else to tell you what to do",
+        "b": "Take one small action you can do yourself",
+        "c": "Avoid the problem and hope it resolves on its own",
+        "d": "Ask three different people for advice before starting anything"
+      },
+      "hint": "Think about which option shows that you're willing to take initiative instead of depending on others.",
+      "feedback": {
+        "wrong": "Think about which option shows that you're willing to take initiative instead of depending on others.",
+        "correct": "Correct! Taking one small action yourself is the most self-reliant first step."
+      },
+      "answerOverlay": "The correct answer is: Take one small action you can do yourself."
+    },
+    "sequenceOrder": {
+      "title": "Self-Reliance Quiz – Sequence Ordering",
+      "instructions": "Arrange these actions in the correct order to handle a problem in a self-reliant way.",
+      "items": [
+        "Identify one small part of the problem you can handle now",
+        "Take a moment to stay calm and avoid rushing your reaction",
+        "Check the facts or details you already have",
+        "Complete the small action you chose"
+      ],
+      "correctOrder": [
+        "Take a moment to stay calm and avoid rushing your reaction",
+        "Check the facts or details you already have",
+        "Identify one small part of the problem you can handle now",
+        "Complete the small action you chose"
+      ],
+      "hints": [
+        "Step 1: Stay calm first.",
+        "Step 2: Gather what you know.",
+        "Step 3: Choose a manageable step.",
+        "Step 4: Follow through."
+      ],
+      "feedback": {
+        "wrong": "A self-reliant person starts by staying calm, then gathers the information they already have. After that, they choose a small, manageable step and follow through with it.",
+        "correct": "Excellent! You handled the situation with self-reliance."
+      },
+      "answerOverlay": "The correct order is:\n1. Take a moment to stay calm and avoid rushing your reaction.\n2. Check the facts or details you already have.\n3. Identify one small part of the problem you can handle now.\n4. Complete the small action you chose."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Check Order",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Amina near the table to begin.",
+    "talkToAmina": "Click on Amina to start.",
+    "findStickyNote": "Try checking the conference door, the plant, or Amina's table.",
+    "talkToDavid": "Return to David, the Digital Communications Manager.",
+    "puzzle1TrueFalse": "Read each statement carefully and decide if it is True or False.",
+    "findPaper": "David mentioned it might be near the cup. Check the desk, the conference door, or David's pocket.",
+    "talkToDavid2": "Return to David with what you found.",
+    "completion": "The training has been completed!",
+    "default": "Look around the rooftop for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You step onto the rooftop workspace. The bright daylight and panoramic city view create a calm atmosphere. A small wooden table with a laptop and papers sits near the center. You notice Amina, the Product Development Specialist, sitting at the table looking thoughtful.",
+    "clickDoor": "I remember holding it earlier, but now… I can't find it anywhere.",
+    "clickConferenceTable": "Hmm… the table is clear.\nLooks like the written note isn't here after all.\n\nMaybe it slipped out of my notebook when I walked away.\nTry checking the plant next to the conference-room door.",
+    "clickPlant": "You found a leaf… but no sticky note.\nIt must have fallen somewhere else.\n\nLet's try one more place — near Amina's table where she's sitting.\nMaybe it ended up under her laptop.",
+    "foundStickyNote": "You found it!\nThe note was tucked under Amina's laptop.\n\nTake a look at the tips — they'll help her practice self-reliance when dealing with customer issues.",
+    "stickyNoteRead": "Good job! Return to the Digital Communications Manager David.",
+    "clickDesk": "It seems like it is not here. Let's check the conference table one more time. Maybe we got lucky.",
+    "clickConferenceDoor2": "Hmm… not here either.\nYou know, this is a good reminder for me too — staying organized is a part of self-reliance.\nMaybe I should check my own pockets before we keep searching.",
+    "foundPaper": "Ah—my apologies. It was in my pocket the whole time.\nThat's what happens when the day gets a bit too busy."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "Self-Reliance Reminders",
+      "popupTitle": "SELF-RELIANCE REMINDERS",
+      "popupContent": [
+        "Pause first — respond with a clear mind",
+        "Break the problem into one small action",
+        "Ask yourself one helpful question today"
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "How to Achieve Self-Reliance",
+      "popupTitle": "HOW TO ACHIVE SELF-RELIANCE",
+      "popupContent": [
+        "When you take a small independent action, your brain releases a sense of progress that strengthens your belief in your own abilities.",
+        "Solving even a simple problem on your own lowers stress because action signals to the brain that you are capable of handling challenges.",
+        "Correcting your own mistakes creates stronger learning pathways than relying on others, making self-reliance grow through practice.",
+        "Each completed task increases motivation by activating the brain's reward system, which encourages further independent decision-making.",
+        "People who make daily independent choices develop clearer judgment, allowing them to make decisions faster and with more confidence over time."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "Congratulations! You have unlocked the power of self-reliance. This skill is essential not only in business, but in everyday life as well. Try your luck with the next modules. Thank you for participating. You can return anytime if you want to refresh your knowledge — we are here to support your learning.!",
+    "buttonText": "Exit the Rooftop"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

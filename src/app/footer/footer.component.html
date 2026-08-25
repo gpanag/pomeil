@@ -1,0 +1,41 @@
+<div class="footer-top">
+    <app-socials-menu></app-socials-menu>
+</div>
+
+<div class="footer-bottom" [ngClass]="innerWidth <= 768 ? 'footer-bottom-vertical' : 'footer-bottom-horizontal'">
+
+    <div class="footer-bottom-text">
+        {{"DISCLAIMER" | translate}}
+    </div>
+    <div class="footer-bottom-logo">
+        <img loading="lazy" height="60" src="assets/logos/EN-Co-Funded-by-the-EU_POS-300x63-1.png"
+            class="footer-bottom-logo-img" [ngClass]="isDarkTheme? 'invert' : ''" alt="logo-europe">
+    </div>
+
+</div>
+
+<!-- <div class="footer-bottom-no">
+    Project number: 2024-1-NO01-KA220-ADU-000244470
+</div> -->
+
+<!--Hero area end-->
+<div class="hero_area">
+    <div class="footer-bottom-title">
+        © 2024, POMEIL - {{"EXTENDED_TITLE" | translate}}
+    </div>
+    <div class="footer-bottom-no">
+        {{"REFERENCE_NO" | translate}}
+    </div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.3" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.2)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.1)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.4)" />
+        </g>
+    </svg>
+</div>
+<!--Hero area end-->

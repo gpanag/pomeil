@@ -1,0 +1,264 @@
+{
+  "loading": "Ładowanie modułu Zarządzanie stresem...",
+  "intro": {
+    "title": "Zarządzanie stresem",
+    "paragraphs": [
+      "Jesteś (username), pracownikiem prestiżowej firmy zajmującej się obrotem instrumentami finansowymi. Po latach zdobywania doświadczenia, miesiącach przeglądania ofert pracy i tygodniach rozmów kwalifikacyjnych w końcu udało Ci się zdobyć pracę marzeń.",
+      "Byłeś bardzo szczęśliwy, pełen entuzjazmu i nadziei, ale zdawałeś sobie też sprawę z podwyższonego poziomu stresu związanego z takim stanowiskiem.",
+      "Wystarczyło zaledwie kilka tygodni, aby pokazać Ci wyjątkową dynamikę i wymagania nowej pracy – nieustanna presja, częste stresujące sytuacje, decyzje do podjęcia. Z każdym dniem stawka rośnie, decyzje stają się trudniejsze, a Twoje obciążenie psychiczne coraz większe.",
+      "Ale dziś było inaczej. Dziś zostałeś zaproszony do <strong>Pokoju Paniki</strong>. Miejsca, w którym najbystrzejsze umysły firmy radzą sobie z najpoważniejszymi wyzwaniami i nagłymi problemami."
+    ],
+    "buttonText": "Wejdź do Pokoju Paniki"
+  },
+  "characters": {
+    "kevin": {
+      "name": "Kevin",
+      "dialogues": {
+        "greeting": "Dobrze, że już jesteś, (username)! Chodź, nie ma czasu do stracenia! Nie masz pojęcia… Cały system… *wydaje się mamrotać do siebie; nagle patrzy prosto na Ciebie i mówi jeszcze bardziej nerwowo* Cały system transakcyjny padł 30 minut temu! I to w godzinach szczytu. Każda minuta przestoju kosztuje nas mnóstwo, musimy ASAP znaleźć jakieś rozwiązanie!",
+        "itTeamUnavailable": "Nasz zespół IT jest niedostępny. Reszta biura jest albo na urlopie, albo zachorowała. Jest nas tylko troje i musimy coś zrobić TERAZ!",
+        "youTrembling": "Hej, wszystko w porządku? *Głos Kevina wydaje się odległy i niewyraźny, kręci Ci się w głowie* Trzęsiesz się… Usiądźmy na chwilę. Wiem, że to dużo. Chodź ze mną.",
+        "drinkWater": "Wyglądasz tak blado. Tu, napij się wody. Uspokójmy Cię trochę. Na ścianach wokół nas widzisz różne ważne dokumenty w ramkach. Jestem pewien, że jeden z nich okaże się teraz pomocny. Nie widzę ich stąd zbyt dobrze. Możesz mi powiedzieć, który mam Ci podać?",
+        "findDocumentHint": "Spójrz na dokumenty na ścianach wokół nas. Jeden z nich Ci pomoże. Jego tytuł jest większą, zieloną czcionką.",
+        "checkBasics": "To podstawy, ale bez tej wiedzy nie możemy iść dalej. Poświęć kilka minut dla siebie i zastosuj wskazówki, których właśnie się nauczyłeś. Ale najpierw sprawdźmy, czy naprawdę je zrozumiałeś.",
+        "composeYourself": "Tak, to prawda. Jak mówiłem, weź chwilę, by się pozbierać, postępuj zgodnie ze wskazówkami i… *nagle słychać głośny dzwonek telefonu biurowego. Kevin patrzy na niego, potem na Ciebie. Jest przerażony*",
+        "priorityClient": "To jeden z naszych priorytetowych klientów! *mówi nerwowym, drżącym głosem* Jesteś najbardziej kompetentny z nas. Będziesz musiał odebrać ten telefon…",
+        "impressed": "Wow! Naprawdę Ci się udało! Nie byłem pewien, czy uda Ci się rozszyfrować moje chaotyczne pisanie, ale UDAŁO CI SIĘ. Świetnie poradziłeś sobie z klientem i nie pozwoliłeś, by stres Cię przytłoczył. Robisz naprawdę szybkie postępy. Wkrótce będziesz w stanie…",
+        "completionThankYou": "Sam nie powiedziałbym tego lepiej, (username). Dzięki Tobie wszystko znów działa jak należy. To był w zasadzie test. Skomplikowany test przygotowany przez naszych „zaniepokojonych hakerów”, by upewnić się, że poradzisz sobie z reakcjami stresowymi. Mówiąc poważnie, naprawdę bardzo dobrze sobie dziś poradziłeś, (username). Cała firma będzie Ci zawsze wdzięczna. Dziękujemy!",
+        "completionClick": "Naprawdę dobrze sobie dziś poradziłeś, (username). Dziękuję!",
+        "defaultBusy": "Musimy się skupić! Każda sekunda się liczy!"
+      }
+    },
+    "ahmed": {
+      "name": "Ahmed",
+      "dialogues": {
+        "comeQuickly": "Ludzie!? Chodźcie tu szybko!",
+        "screenTurnedBlue": "Patrzcie! Nie wiem, co się dzieje. Nagle mój ekran zrobił się niebieski i wszystko, co teraz widzę, to jakiś tekst, jakieś zadanie i ZEGAR! Myślę, że nas zhakowano. To pewnie była przyczyna awarii systemu od samego początku!",
+        "solveExercise": "Może jeśli prawidłowo rozwiążemy zadanie, zatrzymamy odliczanie, przywrócimy system online i uratujemy sytuację? (username), jesteś z nas najbardziej odporny na stres! Musisz nam pomóc. Skup się na zadaniu, wiem, że dasz radę!",
+        "ahmedCallsClick": "Patrzcie! Nie wiem, co się dzieje. Nagle mój ekran zrobił się niebieski i wszystko, co teraz widzę, to jakiś tekst, jakieś zadanie i ZEGAR! Myślę, że nas zhakowano. To pewnie była przyczyna awarii systemu od samego początku! Może jeśli prawidłowo rozwiążemy zadanie, zatrzymamy odliczanie i przywrócimy system online!",
+        "hurry": "Szybko! Nie mamy dużo czasu! A teraz do zadania!",
+        "systemReboots": "TAK! Tak, działa! *Ahmed podskakuje na krześle* Patrzcie! Cały system się restartuje, wszystko zaczyna znów normalnie działać. Naprawdę Ci się udało, uratowałeś nas.",
+        "completionClick": "Naprawdę Ci się udało, uratowałeś nas! Dziękuję, (username)!",
+        "defaultMonitoring": "Monitoruję systemy. Daj znać, jeśli będziesz czegoś potrzebował."
+      }
+    }
+  },
+  "selfTalk": {
+    "enterPanicRoom": "I oto on, Pokój Paniki. Nie spodziewałem się, że zostanę tu zaproszony już po kilku tygodniach – pewnie sytuacja jest na tyle poważna, że zarząd chciał wszystkich na pokładzie. Tak czy inaczej, zobaczmy, o co chodzi. Już teraz czuję taki niepokój…",
+    "characterName": "(Twoje myśli)"
+  },
+  "systemDialogues": {
+    "findDocumentInstruction": "Jeden z tych dokumentów Ci pomoże. Jego tytuł będzie napisany większą czcionką niż reszta dokumentów, a kolor czcionki tytułu będzie zielony. Spróbuj go znaleźć.",
+    "wrongDocument": "To podręczniki techniczne. Czy wiesz, że czytanie czegoś niezwiązanego z tematem może faktycznie pomóc obniżyć poziom stresu? Ale teraz znajdźmy to, czego potrzebujemy.",
+    "documentFound": "Dobra robota! Odkryłeś niezbędne wskazówki, jak regulować umysł i ciało w stresujących chwilach. Wygląda na to, że Kevin chce z Tobą znów porozmawiać.",
+    "puzzle1Correct": "Masz rację, (username)! Porozmawiajmy teraz z Kevinem.",
+    "phonePickUp": "Odbierasz telefon. Tak jak się spodziewałeś, klient jest wściekły. Jest bardzo emocjonalny, krzyczy do telefonu, obwinia Twoją firmę za ogromne straty wynikające z awarii systemu. Wśród wszystkich tych silnych emocji trudno Ci nawet w pełni zrozumieć, co mówi, a co dopiero przygotować dobrą odpowiedź.",
+    "kevinTyping": "Kątem oka zauważasz, że Kevin szybko coś pisze na laptopie. Pisze tak szybko, jak może, chaotycznie, nawet nie kończy zdań. Zdajesz sobie sprawę, że próbuje Ci pomóc, dać Ci wskazówki. Skupiasz się na tym, co pisze, i próbujesz wyciągnąć z tego sens…",
+    "puzzle2Complete": "Czytając uważnie wskazówki Kevina, zaczynasz zdawać sobie sprawę, że gniew klienta nie jest skierowany do Ciebie, lecz do awarii samego systemu. Wzmocniony nowymi technikami udaje Ci się zaproponować doraźne rozwiązanie problemu klienta, zapewnić go, że robisz, co możesz, i obiecać, że wkrótce oddzwonisz. Co zaskakujące – działa. Klient przeprasza i mówi, że poczeka na Twój telefon.",
+    "kevinImpressed": "Kevin patrzy na Ciebie z dumą w oczach – jest pod wrażeniem. Chce z Tobą porozmawiać."
+  },
+  "items": {
+    "document": {
+      "title": "PODSTAWY ŁAGODZENIA STRESU",
+      "altText": "Dokument z podstawami łagodzenia stresu",
+      "inventoryTitle": "Zobacz Podstawy łagodzenia stresu",
+      "tips": [
+        "Oddychaj wolniej, niż myślisz, że potrzebujesz - długie wydechy mówią Twojemu ciału, że niebezpieczeństwo minęło.",
+        "Rozluźnij szczękę i opuść ramiona - stres ukrywa się w małych mięśniach.",
+        "Rób jedną rzecz naraz - wielozadaniowość zwiększa napięcie - skup się na następnym pojedynczym kroku.",
+        "Nazwij to, co czujesz - mówiąc \"jestem zestresowany\" lub \"jestem przytłoczony\" zmniejszasz intensywność.",
+        "Wstań i zmień postawę - 10-sekundowe rozciąganie resetuje Twój układ nerwowy."
+      ]
+    },
+    "documentSelection": {
+      "title": "Dokumenty w ramkach",
+      "instruction": "Na ścianie wisi kilka dokumentów. Jeden z nich ma tytuł większą, zieloną czcionką. Kliknij na ten właściwy.",
+      "wrong1": "Protokoły systemowe v2.3",
+      "correct": "PODSTAWY ŁAGODZENIA STRESU",
+      "wrong2": "Architektura sieci",
+      "wrong3": "Kontakty alarmowe"
+    }
+  },
+  "pcScreen": {
+    "title": "Komunikat systemowy",
+    "text1": "Kiedy stres nagle staje się przytłaczający, Twój umysł się <strong>zawęża</strong> i reaguje automatycznie. W tej chwili najszybszym sposobem na odzyskanie kontroli jest delikatne wyjście „na zewnątrz” doświadczenia: zauważ <strong>schemat</strong> swojego myślenia, oddziel to, co rzeczywiście się dzieje, od tego, co mówi Ci stres, i spróbuj przekierować uwagę na tę jedną część sytuacji, którą faktycznie kontrolujesz, na którą możesz <strong>wpłynąć</strong>. Ten „dystans psychiczny” pozwala przerwać emocjonalną pętlę i przywrócić jasność.",
+    "text2": "Długoterminowa redukcja stresu działa inaczej. Polega na powolnym trenowaniu układu nerwowego, by szybciej się regenerował i był mniej <strong>podatny</strong> na różne stresory w ciągu dnia. Krótkie przerwy między zadaniami, świadome nawyki i rutyny, regularne podejmowanie małych wyzwań – te zmiany, jeśli są stosowane prawidłowo, <strong>obniżą</strong> Twój wyjściowy poziom stresu, sprawiając, że intensywne chwile będą łatwiejsze do opanowania, a powrót do spokoju – bardziej naturalny.",
+    "continueButton": "Dalej",
+    "dialogueText1": "Kiedy stres nagle staje się przytłaczający, Twój umysł się zawęża i reaguje automatycznie. W tej chwili najszybszym sposobem na odzyskanie kontroli jest delikatne wyjście „na zewnątrz” doświadczenia: zauważ schemat swojego myślenia, oddziel to, co rzeczywiście się dzieje, od tego, co mówi Ci stres, i spróbuj przekierować uwagę na tę jedną część sytuacji, którą faktycznie kontrolujesz, na którą możesz wpłynąć. Ten „dystans psychiczny” pozwala przerwać emocjonalną pętlę i przywrócić jasność.",
+    "dialogueText2": "Długoterminowa redukcja stresu działa inaczej. Polega na powolnym trenowaniu układu nerwowego, by szybciej się regenerował i był mniej podatny na różne stresory w ciągu dnia. Krótkie przerwy między zadaniami, świadome nawyki i rutyny, regularne podejmowanie małych wyzwań – te zmiany, jeśli są stosowane prawidłowo, obniżą Twój wyjściowy poziom stresu, sprawiając, że intensywne chwile będą łatwiejsze do opanowania, a powrót do spokoju – bardziej naturalny."
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Sprawdzenie podstawowego zrozumienia",
+      "subtitle": "Wybierz najlepszą odpowiedź. Tylko jedna jest poprawna.",
+      "question": "Jakie działania powinieneś podjąć teraz, aby obniżyć poziom stresu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wstań, zacznij szybko chodzić w kółko, by spalić nerwową energię, i postaraj się zaplanować wszystkie pozostałe zadania naraz, żeby nie spóźnić się z niczym.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Zignoruj fizyczne odczucia, próbuj natychmiast pracować dalej i miej nadzieję, że uczucia same znikną.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Wymień w głowie wszystko, co dziś poszło nie tak, i pomyśl o najgorszych możliwych scenariuszach, by się „przygotować”.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Weź kilka długich wydechów, rozluźnij szczękę i ramiona, powiedz na głos, co czujesz, i wybierz następne pojedyncze zadanie, na którym się skupisz.",
+          "correct": true
+        }
+      ],
+      "hint": "Spróbuj przypomnieć sobie wskazówki z dokumentu „Podstawy łagodzenia stresu”.",
+      "answerOverlay": "Po 3 próbach oto poprawna odpowiedź:\n\nPytanie: Jakie działania powinieneś podjąć teraz, aby obniżyć poziom stresu?\n\nPoprawna odpowiedź: „Weź kilka długich wydechów, rozluźnij szczękę i ramiona, powiedz na głos, co czujesz, i wybierz następne pojedyncze zadanie, na którym się skupisz.”\n\nŁączy to kluczowe podstawy łagodzenia stresu:\n• Długie wydechy mówią Twojemu ciału, że niebezpieczeństwo minęło\n• Rozluźnienie szczęki i ramion uwalnia napięcie z małych mięśni\n• Nazwanie tego, co czujesz, zmniejsza intensywność\n• Skupienie się na jednym zadaniu zapobiega napięciu wynikającemu z wielozadaniowości"
+    },
+    "matching": {
+      "title": "Chaotyczne wsparcie Kevina",
+      "subtitle": "Dopasuj początki zdań do ich zakończeń, aby odkryć techniki zarządzania stresem.",
+      "beginningsHeading": "Początki zdań",
+      "endingsHeading": "Zakończenia zdań",
+      "pairs": [
+        {
+          "id": "1",
+          "beginning": "Wytycz mentalną granicę…",
+          "endingId": "D"
+        },
+        {
+          "id": "2",
+          "beginning": "Przesuń uwagę z tonu klienta…",
+          "endingId": "F"
+        },
+        {
+          "id": "3",
+          "beginning": "Użyj pozytywnej frazy w myślach…",
+          "endingId": "C"
+        },
+        {
+          "id": "4",
+          "beginning": "Monitoruj tempo i ton swojej mowy…",
+          "endingId": "B"
+        },
+        {
+          "id": "5",
+          "beginning": "Wyobraź sobie, że umieszczasz słowa klienta…",
+          "endingId": "A"
+        },
+        {
+          "id": "6",
+          "beginning": "Zmniejsz obciążenie psychiczne, identyfikując po cichu…",
+          "endingId": "E"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "…na „mentalnym biurku”, żebyś skupiał się na treści, a nie emocjonalnym natężeniu."
+        },
+        {
+          "id": "B",
+          "text": "…aby nie zacząć mówić szybciej lub głośniej, gdy głośność klienta rośnie."
+        },
+        {
+          "id": "C",
+          "text": "…np. „Zachowaj spokój” lub „Dasz radę”, by zapobiec przytłoczeniu."
+        },
+        {
+          "id": "D",
+          "text": "…między emocjami klienta a Twoim poczuciem własnej osoby."
+        },
+        {
+          "id": "E",
+          "text": "…główny problem, który opisuje, zamiast reagować na każdy szczegół."
+        },
+        {
+          "id": "F",
+          "text": "…i analizuj to, czego potrzebuje, a nie jak brzmi."
+        }
+      ],
+      "hint": "Zastanów się, która technika pasuje do każdego początku. Skup się na logice każdego zdania.",
+      "answerOverlay": "Po 3 próbach oto poprawne dopasowania:\n\n1. „Wytycz mentalną granicę…” → „…między emocjami klienta a Twoim poczuciem własnej osoby.”\n2. „Przesuń uwagę z tonu klienta…” → „…i analizuj to, czego potrzebuje, a nie jak brzmi.”\n3. „Użyj pozytywnej frazy w myślach…” → „…np. 'Zachowaj spokój' lub 'Dasz radę', by zapobiec przytłoczeniu.”\n4. „Monitoruj tempo i ton swojej mowy…” → „…aby nie zacząć mówić szybciej lub głośniej, gdy głośność klienta rośnie.”\n5. „Wyobraź sobie, że umieszczasz słowa klienta…” → „…na 'mentalnym biurku', żebyś skupiał się na treści, a nie emocjonalnym natężeniu.”\n6. „Zmniejsz obciążenie psychiczne, identyfikując po cichu…” → „…główny problem, który opisuje, zamiast reagować na każdy szczegół.”"
+    },
+    "fillGap": {
+      "title": "Końcowe odliczanie",
+      "subtitle": "Uzupełnij zdania brakującymi słowami.",
+      "sentenceParts": [
+        "Kiedy stres staje się przytłaczający, Twój umysł się ",
+        " i reaguje automatycznie. Aby odzyskać kontrolę, możesz delikatnie wyjść „na zewnątrz” doświadczenia i obserwować ",
+        " swojego myślenia, oddzielając rzeczywiste wydarzenia od tego, co mówi Ci stres. Ponowne skupienie się na części sytuacji, na którą faktycznie możesz ",
+        ", pomaga przerwać emocjonalną pętlę i przywraca jasność. Długoterminowa ulga rozwija się dzięki trenowaniu układu nerwowego, by szybciej się regenerował i był mniej ",
+        " na codzienne stresory. Dzięki konsekwentnym nawykom Twoje wyjściowe napięcie ",
+        ", co sprawia, że intensywne chwile są łatwiejsze do opanowania, a powrót do spokoju – bardziej naturalny."
+      ],
+      "options": [
+        "zawęża",
+        "schemat",
+        "wpłynąć",
+        "podatny",
+        "spada",
+        "rozszerza"
+      ],
+      "correct": [
+        "zawęża",
+        "schemat",
+        "wpłynąć",
+        "podatny",
+        "spada"
+      ],
+      "hint": "Przeczytaj uważnie tekst na ekranie komputera. Słowa opisują, jak stres wpływa na myślenie i jak budować odporność.",
+      "answerOverlay": "Po 3 próbach oto poprawne odpowiedzi:\n\n1. „zawęża” – Kiedy stres staje się przytłaczający, Twój umysł się zawęża i reaguje automatycznie.\n2. „schemat” – Obserwuj schemat swojego myślenia.\n3. „wpłynąć” – Ponowne skupienie się na tym, na co faktycznie możesz wpłynąć.\n4. „podatny” – Stań się mniej podatny na codzienne stresory.\n5. „spada” – Twoje wyjściowe napięcie spada.\n\nTe pojęcia opisują zarówno natychmiastową reakcję na stres (zawężenie myślenia, rozpoznawanie schematów, skupienie na wpływie), jak i długoterminowe zarządzanie stresem (zmniejszenie podatności, obniżenie bazowego napięcia).",
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "default": "Powinienem dokładnie rozejrzeć się po pokoju.",
+    "clickKevin": "Powinienem porozmawiać z Kevinem. Wygląda, że wie, co się dzieje.",
+    "findDocument": "Kevin powiedział, że jeden z dokumentów w ramkach ma tytuł zieloną, większą czcionką. Powinienem sprawdzić dokumenty na ścianie.",
+    "phoneCall": "Dzwoni telefon! Muszę go odebrać.",
+    "findLaptop": "Kevin coś pisze na laptopie. Powinienem to sprawdzić.",
+    "ahmedOrPCScreen": "Ahmed wskazał na ekran komputera. Powinienem go sprawdzić.",
+    "completion": "Drzwi są otwarte! Mogę teraz opuścić Pokój Paniki."
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": [
+      "Udało Ci się szybko nauczyć nowych umiejętności odporności na stres i zastosować je w realnych sytuacjach, prawdopodobnie nawet wcześniej, niż się spodziewałeś – a wszystko to przy okazji ratując firmę.",
+      "Z powodzeniem zdobyłeś umiejętność <strong>Zarządzania stresem</strong>."
+    ],
+    "buttonText": "Powrót do menu głównego"
+  },
+  "answerOverlay": {
+    "title": "Poprawna odpowiedź",
+    "continueButton": "Dalej"
+  },
+  "ui": {
+    "continueButton": "Dalej",
+    "fullscreenTitle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRoomsTitle": "Powrót do escape roomów",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

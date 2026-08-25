@@ -1,0 +1,183 @@
+{
+  "loading": "Riskijuhtimise laadimine...",
+  "intro": {
+    "title": "Riskijuhtimine",
+    "paragraphs": [
+      "Astud uksest sisse, otsides tualetti, kuid leiad end hoopis hämarast koristaja kapist.",
+      "Betoonpõrandad, segased riiulid ja vigase elektrijuhtme nõrk sumin tervitavad sind. See koht on õnnetus, mis ootab juhtumist.",
+      "Sinu ülesanne: tuvasta kõik riskid selles ruumis ja hinda need õige riskimaatriksiga. Hakkame pihta!"
+    ],
+    "buttonText": "Sisene kappi"
+  },
+  "dialogues": {
+    "enterRoom": "Oot… See pole tualett.",
+    "realizeCloset": "See peab olema koristaja kapp.",
+    "unsafeRoom": "See on kõige ohtlikum ruum, mida ma kunagi näinud olen!",
+    "zoomCable": "Vaata seda räbalat juhet… sädemed lendavad!",
+    "zoomBoxes": "Need kastid on liiga kõrgele virnastatud… need kalduvad!",
+    "zoomPuddle": "Põrandal on lomp. Keegi võib libastuda!",
+    "uncoverRisks": "Parem tuvastan kõik riskid, enne kui keegi viga saab!",
+    "allRisksFound": "Olen tuvastanud kõik riskid selles ruumis! Nüüd pean iga ühe korralikult hindama. Lähen tahvli juurde.",
+    "startAssessment": "Aeg hinnata iga riski tõenäosuse ja mõju skaalal. Mõtlen iga ühe üle hoolikalt.",
+    "assessmentComplete": "Lõpetasin riskihindamise! Vaatame mu tööd üle.",
+    "congratulations": "Suurepärane töö! Riskihindamine on lõpetatud. See ruum pole enam mõistatus — iga oht on tuvastatud ja hinnatud. Aeg siit minema saada!"
+  },
+  "risks": {
+    "cable": {
+      "name": "Räbalad elektrijuhtmed",
+      "icon": "flash_on",
+      "thought": "See juhe on räbal ja sädemed lendavad! See võib süüdata tulekahju või anda kellelegi elektrilöögi.",
+      "description": "Räbal elektrijuhe nähtavate sädemetega, mis põhjustab tulekahju- ja elektrilöögiohtu."
+    },
+    "extinguisher": {
+      "name": "Blokeeritud tulekustuti",
+      "icon": "local_fire_department",
+      "thought": "Tulekustuti on selle redeli taga blokeeritud. See peab olema hädaolukorras alati ligipääsetav.",
+      "description": "Redeliga blokeeritud tulekustuti, mis muudab selle hädaolukorras kättesaamatuks."
+    },
+    "ladder": {
+      "name": "Ebastabiilne redel",
+      "icon": "warning",
+      "thought": "See redel näeb ebastabiilne välja. Keegi võib kukkuda, kui üritab seda mööda ronida.",
+      "description": "Vastu seina toetatud ebastabiilne redel, kukkumisoht."
+    },
+    "boxes": {
+      "name": "Ebastabiilne kastide virn",
+      "icon": "inventory_2",
+      "thought": "Need kastid on liiga kõrgele virnastatud ja kalduvad! Nad võivad ümber kukkuda ja kedagi vigastada.",
+      "description": "Kõrge, kalduv kastide virn, mis võib ümber kukkuda."
+    },
+    "puddle": {
+      "name": "Märg lomp põrandal",
+      "icon": "water_drop",
+      "thought": "See lomp on libastumisoht! Keegi võib kergesti tasakaalu kaotada.",
+      "description": "Märg lomp põrandal, mis tekitab libastumis- ja kukkumisohtu."
+    },
+    "chemicals_unlabeled": {
+      "name": "Märgistamata kemikaalid",
+      "icon": "science",
+      "thought": "Neil kemikaalipudelitel pole üldse silte. Teadmata, mis sees on, ei saa keegi neid ohutult käsitseda.",
+      "description": "Korralike siltideta kemikaalipudelid, mis takistavad ohutut käsitsemist."
+    },
+    "chemicals_sunlight": {
+      "name": "Kemikaalid otseses päikesevalguses",
+      "icon": "wb_sunny",
+      "thought": "Need kemikaalid seisavad otseses päikesevalguses! Kemikaale ei tohiks kunagi hoida kohas, kuhu päike paistab — see võib põhjustada ohtlikke reaktsioone.",
+      "description": "Otseses päikesevalguses hoitavad kemikaalipudelid, mis ohustavad lagunemist või ohtlikke reaktsioone."
+    },
+    "chemical_edge": {
+      "name": "Avatud kemikaal riiuli serval",
+      "icon": "report_problem",
+      "thought": "See avatud kemikaalipudel seisab riiuli päris serval. See võib igal hetkel ümber kukkuda ja maha valguda!",
+      "description": "Avatud kemikaalipudel ohtlikult riiuli serval."
+    },
+    "sandwich": {
+      "name": "Võileib / kahjuririsk",
+      "icon": "pest_control",
+      "thought": "Lauale on jäänud võileib! Selliselt jäetud toit tõmbab ligi kahjureid — näen juba sipelgaid läheduses.",
+      "description": "Lauale jäetud katmata võileib, mis tõmbab tööruumi kahjureid."
+    },
+    "bucket": {
+      "name": "Ebahügieeniline koristusämber",
+      "icon": "cleaning_services",
+      "thought": "See koristusämber näeb jälk välja. Bakterid kasvavad seisva määrdunud vee sees kiiresti — see on terviseoht.",
+      "description": "Määrdunud koristusämber seisva veega, kus paljunevad bakterid."
+    },
+    "gloves": {
+      "name": "Kahjustatud kaitsekindad",
+      "icon": "back_hand",
+      "thought": "Need kaitsekindad on rebenenud ja kahjustatud. Nad ei pruugi enam kaitsta kemikaalide ega teravate esemete eest.",
+      "description": "Kulunud ja kahjustatud kaitsekindad, mis ei paku enam piisavat kaitset."
+    }
+  },
+  "redHerrings": {
+    "labels": {
+      "thought": "Sildid on veidi pleekinud, aga ma näen veel, mis seal kirjas on. Pole tegelikult risk."
+    },
+    "fragile_box": {
+      "thought": "See kast on märgistatud habras, aga see on suletud ja turvaliselt riiulil hoiul. Korras."
+    },
+    "taped_cable": {
+      "thought": "See juhe on teibiga põrandasse kinnitatud. Hea — korralikult kinnitatud, nii et keegi ei komistab."
+    },
+    "door_sign": {
+      "thought": "Uksel on hoiatusmärk. See on tegelikult hea ohutusabinõu — olukord on kontrolli all."
+    },
+    "chair": {
+      "thought": "Tool on laua eest pisut välja tõmmatud. Pole tegelikult oht."
+    }
+  },
+  "riskAssessment": {
+    "title": "Riskihindamise maatriks",
+    "instructions": "Iga tuvastatud riski jaoks hinda Tõenäosus (1-5) ja Mõju (1-5). Riskiskoor arvutatakse automaatselt.",
+    "likelihoodLabel": "Tõenäosus",
+    "impactLabel": "Mõju",
+    "riskScoreLabel": "Riskiskoor",
+    "likelihoodTooltip": "Kui tõenäoline on selle ohu juhtumine? 1 = Väga ebatõenäoline, 2 = Ebatõenäoline, 3 = Võimalik, 4 = Tõenäoline, 5 = Väga tõenäoline",
+    "impactTooltip": "Kui rasked oleksid tagajärjed? 1 = Tähtsusetu, 2 = Väike, 3 = Mõõdukas, 4 = Suur, 5 = Katastroofiline",
+    "riskScoreTooltip": "Riskiskoor = Tõenäosus × Mõju. Suurem skoor tähendab kõrgemat prioriteeti.",
+    "submitButton": "Esita hinnang",
+    "nextRisk": "Järgmine risk",
+    "prevRisk": "Eelmine risk",
+    "riskCounter": "Risk {current} / {total}",
+    "selectValue": "Vali"
+  },
+  "review": {
+    "title": "Riskihindamise ülevaade",
+    "correctSection": "Õigesti hinnatud riskid",
+    "incorrectSection": "Riskid, mis vajavad ümberhindamist",
+    "likelihoodTooHigh": "Tõenäosus üle hinnatud",
+    "likelihoodTooLow": "Tõenäosus ala hinnatud",
+    "impactTooHigh": "Mõju üle hinnatud",
+    "impactTooLow": "Mõju ala hinnatud",
+    "generalFeedbackHigh": "Sa kaldusid riske oodatust kõrgemalt hindama. Pea meeles, et iga oht ei ole ühtviisi tõenäoline ega raske.",
+    "generalFeedbackLow": "Sa kaldusid riske alahindama. Tööohutuses on oluline võtta tõsiselt isegi mõõdukaid ohte.",
+    "perfectScore": "Suurepärane töö! Kõik riskid hinnati lubatud piiride sees.",
+    "goodScore": "Hea töö! Enamik su hinnanguid olid täpsed.",
+    "endButton": "Lõpeta riskihindamine"
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Sa tuvastasid edukalt kõik töökoha ohud ja viisid läbi põhjaliku riskihindamise. Näitasid tugevat riskijuhtimise oskust — võime ohte märgata ja neid süstemaatiliselt hinnata on igal töökohal hädavajalik!",
+    "buttonText": "Välju ruumist"
+  },
+  "hints": {
+    "intro": "Vaata ruumis hoolikalt ringi. Klõpsa objektidel, mis tunduvad ohtlikud või kohatud.",
+    "identifying": "Riskid on veel leidmata. Otsi elektrilisi ohte, kemikaalide hoiustamise probleeme, struktuurilisi ohte ja hügieeniprobleeme.",
+    "assessment": "Hinda iga riski tõenäosust ja mõju. Mõtle, kui sageli see võib juhtuda ja kui rasked oleksid tagajärjed.",
+    "review": "Vaata oma hindamise tulemused üle ja klõpsa „Lõpeta riskihindamine“, kui oled valmis.",
+    "allRisksFound": "Oled leidnud kõik riskid. Klõpsa tahvlil, et alustada riskihindamist.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ruumis ringi võimalike ohtude osas."
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "risksFound": "Leitud riskid",
+    "of": "/",
+    "clickToInspect": "Klõpsa esemetel, et neid uurida",
+    "notARisk": "Pole risk",
+    "riskIdentified": "Risk tuvastatud!",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

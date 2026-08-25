@@ -1,0 +1,185 @@
+{
+  "loading": "Ładowanie modułu Elastyczność...",
+  "intro": {
+    "title": "Elastyczność",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, gdzie pracują razem osoby z różnych kultur, środowisk i zawodów.",
+      "Dziś wchodzisz do pomieszczenia B+R, gdzie zespół mierzy się z poważnym wyzwaniem. Klient właśnie zmienił wymagania, a główne oprogramowanie deweloperskie nie działa. To idealny moment, by sprawdzić twoją Elastyczność."
+    ],
+    "buttonText": "Wejdź do pomieszczenia B+R"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena",
+      "dialogues": {
+        "greet": "Cześć! Mamy poważne wyzwanie. Klient właśnie zmienił wymagania, a nasze główne oprogramowanie deweloperskie nie działa. To idealny moment, by sprawdzić twoją Elastyczność.",
+        "findStickyNote": "Elastyczność to nie tylko zmiana planów. Chodzi o radzenie sobie ze stresem i szybkie znajdowanie nowych rozwiązań. Na ostatnim spotkaniu B+R zapisałam kluczowe cechy elastycznego myślenia na karteczce — ale zgubiłam ją w tym bałaganie. Pomożesz mi ją znaleźć? Zacznij od stołu.",
+        "stickyNoteFound": "Świetnie! Jak widzisz, elastyczność pozwala zespołom B+R szybko reagować, gdy eksperymenty zawodzą lub zmieniają się wymagania. Pomaga nam przetrwać i się wyróżniać. Sprawdźmy, czy rozumiesz podstawy.",
+        "quiz1Intro": "Zróbmy szybki quiz.",
+        "quiz1Done": "Rozumiesz pojęcie. Teraz musimy zastosować je w naszym wyzwaniu B+R.",
+        "findPaper": "Wcześniej dziś wyrzuciłam stary plan rozwoju, bo był zbyt sztywny. Na jego odwrocie zapisałam listę kontrolną o tym, jak rozwijać elastyczność. Wrzuciłam go do kosza. Idź go odzyskać!",
+        "paperFound": "Doskonale. Ta lista pomoże nam poruszać się w niepewności. Ale najpierw musisz stawić czoła kilku wyzwaniom.",
+        "puzzle2Intro": "Rozwiąż te problemy, by udowodnić, że jesteś gotowy/a do prowadzenia.",
+        "finalWords": "Idealnie! Zachowałeś/aś spokój, dostosowałeś/aś się i działałeś/aś proaktywnie. To esencja elastyczności w B+R.\n\nPamiętaj: otwartość na zmiany i ciągłe uczenie się nowych narzędzi wzmocni twoją pewność siebie. Jesteś gotowy/a na następne wyzwanie!",
+        "completion": "Szkolenie zakończone!",
+        "default": "Rozejrzyj się dalej po pokoju w poszukiwaniu wskazówek."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "busy": "Ostatnia aktualizacja systemu zepsuła naszą symulację prototypu! Muszę skupić się na poprawianiu kodu. Porozmawiaj z Eleną o harmonogramie rozwoju.",
+        "default": "Wciąż debuguję… porozmawiaj z Eleną."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Podstawy Elastyczności – Prawda czy Fałsz",
+      "instructions": "Określ, czy każde stwierdzenie jest prawdziwe czy fałszywe.",
+      "questions": [
+        {
+          "text": "Badania w neuronauce dowodzą, że elastyczność znajduje się w jednym konkretnym ośrodku mózgu.",
+          "correct": false,
+          "hint": "Neuronauka pokazuje, że elastyczność to złożona umiejętność, nie ograniczona do jednego obszaru mózgu."
+        },
+        {
+          "text": "Pracownicy, którzy są elastyczni i czują się produktywni, mają zwykle mniej stresu i większą satysfakcję z pracy.",
+          "correct": true,
+          "hint": "Adaptacja zmniejsza opór i stres."
+        },
+        {
+          "text": "Elastyczność dotyczy tylko zmiany planów wakacyjnych lub codziennych rutyn.",
+          "correct": false,
+          "hint": "W miejscu pracy elastyczność oznacza skuteczne reagowanie na zmiany."
+        }
+      ],
+      "feedback": {
+        "wrong": "To nie do końca tak. Pomyśl jeszcze raz.",
+        "correct": "Brawo! Rozumiesz podstawy elastyczności."
+      },
+      "answerOverlay": "Poprawne odpowiedzi:\n1. FAŁSZ – Elastyczność to złożona umiejętność, nie ograniczona do jednego obszaru mózgu.\n2. PRAWDA – Elastyczni pracownicy mają zwykle mniej stresu.\n3. FAŁSZ – Elastyczność znacznie wykracza poza codzienne rutyny."
+    },
+    "singleChoice": {
+      "title": "Quiz Wyzwań i Rozwiązań",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Niepokoisz się nową aktualizacją oprogramowania B+R, bo nie wiesz, jak go używać (strach przed nieznanym). Jakie jest najlepsze rozwiązanie?",
+      "options": {
+        "a": "Unikaj używania oprogramowania, dopóki nie wróci stary system.",
+        "b": "Skoncentruj się na rozwoju umiejętności, by przygotować się do zmiany.",
+        "c": "Skarż się kierownictwu.",
+        "d": "Poproś kolegę, by wykonał twoją pracę."
+      },
+      "hint": "Przygotowanie i nauka zmniejszają strach.",
+      "feedback": {
+        "wrong": "To nie najlepsze podejście. Przygotowanie i nauka zmniejszają strach.",
+        "correct": "Poprawnie! Rozwój umiejętności to najlepszy sposób na pokonanie strachu przed nieznanym."
+      },
+      "answerOverlay": "Poprawna odpowiedź: Skoncentruj się na rozwoju umiejętności, by przygotować się do zmiany."
+    },
+    "sequenceOrder": {
+      "title": "Radzenie sobie z Niespodziewanym",
+      "instructions": "Pojawia się nagłe opóźnienie projektu z powodu zmiany kierownictwa. Ułóż kroki, by elastycznie poradzić sobie z sytuacją.",
+      "items": [
+        "Dostosuj harmonogram i ustal priorytety krytycznych zadań.",
+        "Spokojnie zaakceptuj nieoczekiwaną sytuację.",
+        "Omów z zespołem opcje, by wybrać najlepszy scenariusz.",
+        "Pewnie zrealizuj nowy plan."
+      ],
+      "correctOrder": [
+        "Spokojnie zaakceptuj nieoczekiwaną sytuację.",
+        "Omów z zespołem opcje, by wybrać najlepszy scenariusz.",
+        "Dostosuj harmonogram i ustal priorytety krytycznych zadań.",
+        "Pewnie zrealizuj nowy plan."
+      ],
+      "hints": [
+        "Krok 1: Rozpoznaj rzeczywistość.",
+        "Krok 2: Zbuduj strategię z zespołem.",
+        "Krok 3: Mądrze zarządzaj czasem.",
+        "Krok 4: Działaj."
+      ],
+      "feedback": {
+        "wrong": "To nie ta kolejność. Pamiętaj: rozpoznaj, opracuj strategię, zarządzaj czasem, potem działaj.",
+        "correct": "Doskonale! Poradziłeś/aś sobie z nieoczekiwaną sytuacją z elastycznością."
+      },
+      "answerOverlay": "Poprawna kolejność:\n1. Spokojnie zaakceptuj nieoczekiwaną sytuację.\n2. Omów opcje z zespołem.\n3. Dostosuj harmonogram i ustal priorytety.\n4. Pewnie zrealizuj nowy plan."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    }
+  },
+  "hints": {
+    "intro": "Kliknij Elenę przy tablicy, aby zacząć.",
+    "talkToElena": "Kliknij Elenę, aby zacząć.",
+    "findStickyNote": "Sprawdź stół — może pod kubkiem od kawy?",
+    "talkToElena2": "Wróć do Eleny.",
+    "puzzle1": "Przeczytaj każde stwierdzenie i zdecyduj, czy jest Prawdziwe czy Fałszywe.",
+    "puzzle1Complete": "Porozmawiaj z Eleną — ma dla ciebie następne wyzwanie.",
+    "findPaper": "Elena wspomniała o koszu. Poszukaj go przy tablicy.",
+    "talkToElena3": "Wróć do Eleny z tym, co znalazłeś/aś.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po pomieszczeniu B+R w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do tętniącego życiem pomieszczenia B+R. Tablica jest pokryta przekreślonymi planami i poprawionymi terminami. Coś poważnego się tu dzieje. Zauważasz Elenę, kierowniczkę projektu, która przegląda zmiany przy tablicy.",
+    "clickLaptop": "Tylko kod Marca. Nic o elastyczności. Może sprawdź pod kubkiem od kawy?",
+    "foundStickyNote": "Znalazłeś/aś! Karteczka była przyklejona pod kubkiem.",
+    "stickyNoteRead": "Brawo! Wróć do Eleny.",
+    "clickWhiteboard": "To przestarzałe kamienie milowe badań. Już nie obowiązują. Poszukaj kosza.",
+    "foundPaper": "Znalazłeś/aś strategię! Wróć do Eleny."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "Elastyczne Myślenie – Kluczowe Cechy",
+      "popupTitle": "Elastyczne Myślenie – Kluczowe Cechy",
+      "popupContent": [
+        "Szybkie reakcje: Reaguj natychmiast na zmiany rynkowe i wymagania klientów.",
+        "Adaptacyjna filozofia: Natychmiast przedefiniuj potrzeby i identyfikuj nowe możliwości.",
+        "Alternatywne opcje: Znajduj nowe sposoby radzenia sobie z rozwojem technologicznym i niepewnością."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Jak rozwijać elastyczność",
+      "popupTitle": "Jak rozwijać elastyczność",
+      "popupContent": [
+        "Popraw zarządzanie czasem: Ustalaj priorytety zadań, by dostosować się do nowych danych.",
+        "Przyjmij nową postawę: Bądź otwarty na zmiany i ciągły postęp.",
+        "Bądź proaktywny: Bądź gotowy na zmiany, zamiast czekać aż się wydarzą.",
+        "Akceptuj innowacje: Bądź otwarty na używanie najnowocześniejszych narzędzi i technologii."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Ukończyłeś/aś umiejętność Elastyczności! Zachowałeś/aś spokój, dostosowałeś/aś się i działałeś/aś proaktywnie. To esencja elastyczności w B+R. Jesteś gotowy/a na następne wyzwanie!",
+    "buttonText": "Wyjdź z pomieszczenia B+R"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

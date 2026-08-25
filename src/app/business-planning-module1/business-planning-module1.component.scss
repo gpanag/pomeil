@@ -1,0 +1,340 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Business Planning room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(15, 30, 25, 0.95);
+  border: 2px solid rgba(0, 104, 116, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+  &.canvas-card { max-width: 900px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* --- Progress Indicator --- */
+.puzzle-progress {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 25;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  .progress-dot {
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+
+    &.completed {
+      color: #4caf50;
+    }
+
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/* --- Puzzle 1: Customer Segments --- */
+.customer-progress {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.customer-card-display {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .customer-text {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.customer-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+.feedback-msg {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+
+  &.feedback-correct {
+    color: #4caf50;
+  }
+  &.feedback-wrong {
+    color: #f44336;
+  }
+}
+
+/* --- Puzzle 2: Value Proposition --- */
+.value-prop-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+  justify-content: center;
+
+  .vp-part {
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    font-size: 1em;
+    line-height: 1.4;
+    background: rgba(0, 104, 116, 0.1);
+    border: 2px solid rgba(0, 104, 116, 0.3);
+
+    &:hover {
+      background: rgba(0, 104, 116, 0.2);
+    }
+
+    &.struck {
+      text-decoration: line-through;
+      opacity: 0.5;
+      background: rgba(244, 67, 54, 0.1);
+      border-color: rgba(244, 67, 54, 0.3);
+    }
+  }
+}
+
+/* --- Puzzle 3: Channels --- */
+.channel-progress {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.channel-behavior {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  .behavior-text {
+    font-size: 1.05em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.channel-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  .channel-arrow {
+    background: rgba(0, 104, 116, 0.1);
+    border-radius: 50%;
+  }
+
+  .channel-display {
+    min-width: 280px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 104, 116, 0.3);
+  }
+}
+
+/* --- Puzzle 4: Revenue Streams --- */
+.revenue-doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .revenue-doc-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    background: rgba(0, 0, 0, 0.03);
+
+    &:hover:not(.assigned) {
+      background: rgba(0, 104, 116, 0.1);
+    }
+
+    &.assigned {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    .assigned-label {
+      margin-left: auto;
+      font-size: 0.85em;
+      font-style: italic;
+      opacity: 0.7;
+    }
+  }
+}
+
+.revenue-doc-reader {
+  h3 {
+    margin-bottom: 12px;
+  }
+
+  .doc-content {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    border-radius: 8px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+  }
+}
+
+/* --- Puzzle 5: Cost Structure --- */
+.cost-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  .cost-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.03);
+    transition: background 0.2s, border-color 0.2s;
+    border: 2px solid transparent;
+
+    &.is-wrong {
+      border-color: #f44336;
+      background: rgba(244, 67, 54, 0.08);
+    }
+
+    .cost-name {
+      font-size: 1em;
+      flex: 1;
+    }
+
+    .cost-type-buttons {
+      display: flex;
+      gap: 8px;
+
+      button {
+        min-width: 80px;
+        font-size: 0.85em;
+
+        &.selected {
+          background: rgba(0, 104, 116, 0.15);
+          border-color: rgba(0, 104, 116, 0.6);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/* --- Canvas Grid --- */
+.canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 4px;
+  margin: 16px 0;
+
+  .canvas-block {
+    padding: 12px 8px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+
+    &.highlight {
+      background: rgba(0, 104, 116, 0.15);
+      border-color: rgba(0, 104, 116, 0.4);
+    }
+
+    &.hovered, &:hover {
+      background: rgba(0, 104, 116, 0.25);
+      border-color: rgba(0, 104, 116, 0.6);
+      transform: scale(1.02);
+    }
+  }
+}
+
+.canvas-tooltip {
+  text-align: center;
+  padding: 12px 16px;
+  background: rgba(0, 104, 116, 0.08);
+  border-radius: 8px;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-top: 8px;
+}

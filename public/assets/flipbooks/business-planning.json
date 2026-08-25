@@ -1,0 +1,195 @@
+{
+  "id": "business-planning",
+  "moduleNumber": 1,
+  "title": "Business Planning",
+  "subtitle": "Module 1",
+  "coverImage": "assets/images/business_planning/conference_room.png",
+  "draft": true,
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 1",
+      "title": "Business Planning",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/images/business_planning/conference_room.png"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        { "kind": "paragraph", "text": "After completing this module, you will be able to:" },
+        {
+          "kind": "list",
+          "items": [
+            "Identify and define the key components of a business plan",
+            "Create specific customer segments based on customer needs and behaviors",
+            "Formulate a value proposition",
+            "Describe four types of revenue streams, and the difference between fixed and variable costs",
+            "Apply suitable customer channels based on customer behavior",
+            "Develop a simple, structured business plan"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        { "kind": "paragraph", "text": "Business planning is the ability to set business goals and define strategies to achieve them." },
+        { "kind": "paragraph", "text": "A business plan is a written document that describes your business, products and services. It should outline the strategies you will use to succeed, and what makes you different from your competitors. It should include an analysis of the market, estimated costs and profits, and start-up requirements." },
+        { "kind": "paragraph", "text": "Creating a business plan will help clarify the concrete steps you need to take to succeed." },
+        { "kind": "callout", "tone": "info", "title": "Sources", "text": "Adapted from the POMEIL Competence map and Entrepreneur reference materials." }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "The relevance of business planning",
+      "blocks": [
+        { "kind": "heading", "text": "Amina's story" },
+        { "kind": "paragraph", "text": "Amina dreamed about starting a catering business but did not know how to make the dream come true." },
+        { "kind": "paragraph", "text": "Amina's solution was to create a simple business plan. She defined her products to be homestyle Syrian meals and listed her main dishes. She identified local offices as her ideal customers. She listed the prices she needed to take, her costs and how much funding she would need. With her budget in order, she approached a local NGO for funding." },
+        { "kind": "paragraph", "text": "Creating a plan helped Amina manage her costs and clarify her idea. This made her more confident and helped her get approval with a local funder. She turned her dream into reality by breaking down the large task of launching a business into separate, manageable steps." }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components (1 of 2)",
+      "blocks": [
+        { "kind": "definition", "term": "Problem Statement", "definition": "What problem does your business idea solve? Who has this problem? Why is it important to solve?" },
+        { "kind": "definition", "term": "Solution", "definition": "What are your products or services? How do they solve the problem? What is unique about your solution?" },
+        { "kind": "definition", "term": "Target Market", "definition": "Who is your ideal customer? What characterizes them?" },
+        { "kind": "definition", "term": "Revenue Plan", "definition": "How will you earn money? What are your prices?" },
+        { "kind": "definition", "term": "Cost Structure", "definition": "What are your costs?" },
+        { "kind": "definition", "term": "Marketing Plan", "definition": "How will you reach your customers? How will you keep them over time?" }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components (2 of 2)",
+      "blocks": [
+        { "kind": "definition", "term": "Key Metrics", "definition": "What are your goals? How much do you plan to earn? How many customers do you plan to serve? How will you know when you have reached a goal?" },
+        { "kind": "definition", "term": "Team", "definition": "Who will work on the business? Will you need to employ someone?" },
+        { "kind": "definition", "term": "Funding Requirements", "definition": "How much funding do you need to start your business? How will you get funding?" },
+        { "kind": "definition", "term": "Competitive Analysis", "definition": "Who are your competitors? What makes your business different from theirs? Why will people choose your business over others?" },
+        { "kind": "definition", "term": "Risk Assessment", "definition": "Are there risks that can make it difficult for your business to grow? How will you handle the risks?" },
+        { "kind": "definition", "term": "Timeline", "definition": "What specific steps will you take? When will you start?" }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Use free templates like Business Model Canvas and Lean Canvas",
+            "Use free tools like Google Docs",
+            "Look at examples of business plans from your industry or community",
+            "Attend business workshops",
+            "Seek support from your local business support centre",
+            "Ask for feedback from peers and mentors, or others you trust",
+            "Break your idea into smaller parts. Focus on one section at a time. Even a short plan can make a big difference!"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        { "kind": "callout", "tone": "warning", "title": "\"My idea feels too simple\"", "text": "That your idea is simple does not mean it is a bad idea. It is better with a simple idea that solves a real problem than a complex idea solving a problem nobody has." },
+        { "kind": "callout", "tone": "warning", "title": "\"I'm not confident in my writing\"", "text": "Instead of writing a long text, use bullet points or mind maps. Focus on practicing and making progress, rather than being perfect." },
+        { "kind": "callout", "tone": "warning", "title": "\"I fear I'm doing it wrong\"", "text": "It is better to have a simple plan than no plan at all. Your plan can always be updated and improved later." }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Exercise",
+      "blocks": [
+        { "kind": "paragraph", "text": "Fill out the table below by answering the questions in the left column:" },
+        {
+          "kind": "tableSimple",
+          "headers": ["Question", "Your answer"],
+          "rows": [
+            ["What is my business idea?", ""],
+            ["Who are my target customers?", ""],
+            ["What makes my business different?", ""],
+            ["What do I need to start?", ""],
+            ["What will starting my business cost?", ""],
+            ["What is my first action step?", ""]
+          ]
+        },
+        { "kind": "paragraph", "text": "Share your filled out table with a peer or mentor if possible. Discuss your answers and ask for feedback." }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment checklist",
+      "blocks": [
+        { "kind": "paragraph", "text": "Tick the items you can confidently say apply to you:" },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can clearly explain my business idea in 2–3 sentences",
+            "I know who my target customers are",
+            "I have estimated my startup costs",
+            "I know what makes my idea unique",
+            "I know the basic legal steps for starting a business",
+            "I have a simple plan for reaching customers",
+            "I feel more confident after writing down my ideas",
+            "I have identified the first steps I need to take to get started"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        { "kind": "paragraph", "text": "A business plan helps you organize your thoughts, spot problems early, and take practical steps toward success. Your idea will become clearer and more achievable, and your focus will improve. This shows others that you are serious." },
+        { "kind": "paragraph", "text": "You do not need to be an expert. A simple plan is better than no plan at all. Use what you have learned to take the first steps today!" }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Business Model Canvas – Strategyzer",
+            "Free Google Docs business plan templates",
+            "Local entrepreneurship programs (e.g., Red Cross startup support)",
+            "Local business help centres or migrant entrepreneurship hubs",
+            "YouTube: \"How to write a one-page business plan\" (search by language or industry)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        { "kind": "paragraph", "text": "After completing this module, participants are expected to:" },
+        {
+          "kind": "list",
+          "items": [
+            "Identify and define the main components of a business plan",
+            "Formulate a value proposition",
+            "Apply customer segmentation to their current or potential customers",
+            "Align channels more closely with customer behaviors",
+            "Demonstrate basic understanding of revenue models and cost structures",
+            "Use a business plan template to plan or improve their business"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "End of Module 1",
+      "subtitle": "Business Planning",
+      "ctaPrimary": { "label": "Continue learning", "route": "/learning/flow" },
+      "ctaSecondary": { "label": "Download PDF version", "href": "assets/modules/business-planning.pdf" }
+    }
+  ]
+}

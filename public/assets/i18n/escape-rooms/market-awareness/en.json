@@ -1,0 +1,190 @@
+{
+  "loading": "Loading Market Awareness...",
+  "intro": {
+    "title": "Market Awareness",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company where people from different cultures, backgrounds, and professions work together.",
+      "Today you enter the Marketing Office, where the team is working on a new campaign. Elena Vasquez, the Marketing Director, is standing near the central table. This is the perfect moment to learn about Market Awareness."
+    ],
+    "buttonText": "Enter the Marketing Office"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena Vasquez",
+      "dialogues": {
+        "greet": "Hola! Welcome to the Marketing Department. If you want your business to grow, you need to master Market Awareness.",
+        "explainMarket": "This means understanding who your customers are and what your competitors are doing. To start, I've left a Target Audience Persona card somewhere in this room. It describes our ideal customer profile.",
+        "findCard": "Have a look around. Start by checking the central table.",
+        "cardFound": "Excellent! You found it.",
+        "cardFoundExplain": "Remember: You cannot sell to \"everyone\". You must know exactly who needs your product. Let's test your knowledge.",
+        "quiz1Done": "Great work! Now, to be truly market-aware, you need to look at the bigger picture using a SWOT Analysis.",
+        "findSwot": "I printed a cheat sheet, but I think David borrowed it. Check near his desk.",
+        "swotFound": "You have the cheat sheet. SWOT is your best friend for strategic planning. Let's see if you can apply it.",
+        "finalWords": "Bravissimo! You now understand the basics of Market Awareness.\n\nYou know your customer, you watch your competitors, and you analyze the situation before acting. You are ready to conquer the market!",
+        "goodbye": "Good luck!",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the office for clues."
+      }
+    },
+    "david": {
+      "name": "David Morel",
+      "dialogues": {
+        "busy": "Bonjour! Just scheduling posts for next week. Have you spoken to Elena yet?",
+        "default": "Still working on social media... talk to Elena."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Marketing Terms – Match the Definitions",
+      "instructions": "Match each marketing term to its correct definition.",
+      "columnA": {
+        "heading": "Terms",
+        "items": {
+          "1": "Target Audience",
+          "2": "Competitor Analysis",
+          "3": "USP (Unique Selling Proposition)",
+          "4": "Market Trend"
+        }
+      },
+      "columnB": {
+        "heading": "Definitions",
+        "items": {
+          "A": "What makes your product different and better than others.",
+          "B": "A specific group of people most likely to buy your product.",
+          "C": "Studying other businesses to find their strengths and weaknesses.",
+          "D": "A general direction in which the market is changing."
+        }
+      },
+      "hint": "Think about who buys (Audience), who competes (Analysis), what makes you special (USP), and where the market is going (Trend).",
+      "feedback": {
+        "wrong": "That's not the right match. Think about who buys (Audience), who competes (Analysis), what makes you special (USP), and where the market is going (Trend).",
+        "allCorrect": "Well done! You matched all the marketing terms correctly."
+      },
+      "answerOverlay": "The correct matches are:\n1. Target Audience → A specific group of people most likely to buy your product.\n2. Competitor Analysis → Studying other businesses to find their strengths and weaknesses.\n3. USP → What makes your product different and better than others.\n4. Market Trend → A general direction in which the market is changing."
+    },
+    "singleChoice": {
+      "title": "SWOT Analysis – Identify the Element",
+      "instructions": "Choose the correct SWOT element.",
+      "question": "You are opening a coffee shop. Suddenly, a new tax on imported coffee beans is introduced, increasing your costs. Which part of SWOT is this?",
+      "options": {
+        "a": "Strength",
+        "b": "Weakness",
+        "c": "Opportunity",
+        "d": "Threat"
+      },
+      "hint": "Is this something internal you can control, or an external factor (like a law) that could hurt your business?",
+      "feedback": {
+        "wrong": "That's not correct. Is this something internal you can control, or an external factor (like a law) that could hurt your business?",
+        "correct": "Correct! A new tax is an external threat that could harm your business."
+      },
+      "answerOverlay": "The correct answer is: d) Threat — A new tax on imported coffee beans is an external factor that could hurt your business."
+    },
+    "sequenceOrder": {
+      "title": "Steps of Market Research",
+      "instructions": "Arrange the steps of conducting simple market research in the correct order.",
+      "items": [
+        "Analyze the data to find patterns.",
+        "Define the problem or goal (e.g., \"Why are sales down?\").",
+        "Collect data (surveys, interviews, observing competitors).",
+        "Make a decision based on the findings."
+      ],
+      "correctOrder": [
+        "Define the problem or goal (e.g., \"Why are sales down?\").",
+        "Collect data (surveys, interviews, observing competitors).",
+        "Analyze the data to find patterns.",
+        "Make a decision based on the findings."
+      ],
+      "hints": [
+        "First, you must know WHAT you are looking for (Define).",
+        "Then, you go out and get the information (Collect).",
+        "Next, you read and understand what you found (Analyze).",
+        "Finally, you act on it (Decide)."
+      ],
+      "feedback": {
+        "wrong": "That's not the right order. Remember: Define, Collect, Analyze, then Decide.",
+        "correct": "Excellent! You arranged the steps of market research in the correct order."
+      },
+      "answerOverlay": "The correct order is:\n1. Define the problem or goal.\n2. Collect data (surveys, interviews, observing competitors).\n3. Analyze the data to find patterns.\n4. Make a decision based on the findings."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Elena near the central table to begin.",
+    "talkToElena": "Click on Elena to start.",
+    "findCard": "Check the central table — the Persona card should be there.",
+    "talkToElena2": "Return to Elena with the card you found.",
+    "findSwot": "Elena mentioned David's desk. Check near his desk for the SWOT paper.",
+    "talkToElena3": "Return to Elena with the SWOT cheat sheet.",
+    "completion": "The training has been completed!",
+    "default": "Look around the marketing office for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the Marketing Office. Charts and campaign mockups are pinned to the walls. Elena Vasquez, the Marketing Director, is standing near the central table, looking over some data. David Morel is typing at his desk nearby.",
+    "clickWhiteboard": "Great strategies on the board, but not the specific card. Check the table.",
+    "clickDavid": "David is busy working. Try looking elsewhere first.",
+    "clickWindow": "The view is great — you can see a competitor's billboard from here. Interesting! But the item you need is inside the room.",
+    "foundCard": "You found the Target Audience Persona card on the central table!",
+    "cardRead": "Good job! Return to Elena.",
+    "clickDavidDeskWrong": "David is focused on his screens. Look for a paper on the edge of his desk.",
+    "foundSwot": "You see a paper on the edge of the desk.",
+    "swotRead": "Perfect! Return to Elena."
+  },
+  "items": {
+    "personaCard": {
+      "popupTitle": "TARGET AUDIENCE PROFILE",
+      "popupContent": [
+        "Demographics - Who are they? (Age, location, gender, income).",
+        "Psychographics - What do they like? (Interests, values, lifestyle).",
+        "Pain Points - What problems do they have that YOU can solve?",
+        "Buying Behavior - How do they prefer to shop? (Online, in-store)."
+      ],
+      "inventoryTitle": "Persona Card"
+    },
+    "swotPaper": {
+      "popupTitle": "SWOT ANALYSIS CHEAT SHEET",
+      "popupContent": [
+        "Strengths (Internal) - What does your business do well?",
+        "Weaknesses (Internal) - Where do you need to improve?",
+        "Opportunities (External) - What market trends can you use?",
+        "Threats (External) - What competitors or regulations could harm you?"
+      ],
+      "inventoryTitle": "SWOT Paper"
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You've completed the Market Awareness skill! You know your customer, you watch your competitors, and you analyze the situation before acting. You are ready to conquer the market!",
+    "buttonText": "Exit the Marketing Office"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

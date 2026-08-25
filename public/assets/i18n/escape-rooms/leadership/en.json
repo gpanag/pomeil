@@ -1,0 +1,222 @@
+{
+  "loading": "Loading Leadership...",
+  "intro": {
+    "title": "Leadership",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company where people from different cultures, backgrounds, and professions work together.",
+      "Today you enter the waiting area outside the HR office. The HR Manager is about to test your understanding of what leadership really means."
+    ],
+    "buttonText": "Enter the Waiting Area"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR Manager",
+      "dialogues": {
+        "greet": "Leadership is not about authority.\nIt's about responsibility, decision-making, and how you treat others.",
+        "enterOffice": "Before you move forward in your journey, you must prove that you understand what leadership really means.",
+        "enterOffice2": "Enter the HR office. Your leadership challenge begins now.",
+        "whiteboardFound": "Leadership begins with understanding core values.",
+        "puzzle1Intro": "Match the leadership action to the correct value.",
+        "puzzle1Done": "Good leaders don't avoid responsibility.\nThey step forward when things are difficult.",
+        "puzzle1Done2": "Now let's see how you act in real situations.",
+        "puzzle2Intro": "Read the scenario carefully and choose the best response.",
+        "puzzle2Done": "That's right. A true leader communicates, supports, and adjusts. Now find the Leadership Reflection Card hidden in this office.",
+        "findCard": "Hints: check the desk, the drawer, and the wall frame. The card is hidden somewhere in the office.",
+        "cardFound": "Excellent. This card captures the essence of leadership. Now prove you can complete the leadership principle.",
+        "puzzle3Intro": "Fill in the blanks to complete the leadership principle.",
+        "puzzle3Done": "Well done. Now let's see if you can separate leadership facts from myths.",
+        "puzzle4Intro": "Answer these True or False questions about leadership.",
+        "finalWords1": "Excellent work.",
+        "finalWords2": "You demonstrated awareness, responsibility, and ethical leadership.",
+        "finalWords3": "Remember: leadership is shown through actions, not titles.",
+        "finalWords4": "You have successfully completed the Leadership Skill.",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the office for clues."
+      }
+    },
+    "candidate": {
+      "name": "Waiting Candidate",
+      "dialogues": {
+        "busy": "I'm just waiting for my turn. Good luck in there!",
+        "default": "Good luck!"
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match the leadership action to the correct value",
+      "columnA": {
+        "heading": "Actions",
+        "items": {
+          "1": "Listening to team concerns",
+          "2": "Making a difficult decision under pressure",
+          "3": "Taking responsibility for a team's mistake",
+          "4": "Clearly explaining goals and expectations"
+        }
+      },
+      "columnB": {
+        "heading": "Values",
+        "items": {
+          "a": "Accountability",
+          "b": "Communication",
+          "c": "Empathy",
+          "d": "Decision-making"
+        }
+      },
+      "feedback": {
+        "wrong": "A leader's actions always reflect their values.",
+        "allCorrect": "Well done! You matched all leadership actions to their correct values."
+      },
+      "answerOverlay": "The correct matches are:\n1. Listening to team concerns → Empathy\n2. Making a difficult decision under pressure → Decision-making\n3. Taking responsibility for a team's mistake → Accountability\n4. Clearly explaining goals and expectations → Communication"
+    },
+    "singleChoice": {
+      "title": "Leadership in practice",
+      "instructions": "Choose the best response to this scenario.",
+      "question": "Your team is behind schedule. One member is struggling, and the deadline is approaching.",
+      "options": {
+        "a": "Ignore the issue and wait for results",
+        "b": "Blame the team member in front of others",
+        "c": "Talk privately with the team member and adjust the plan",
+        "d": "Cancel the project without explanation"
+      },
+      "hint": "Leadership requires fairness, communication, and support.",
+      "feedback": {
+        "wrong": "Leadership requires fairness, communication, and support.",
+        "correct": "Correct! Talk privately with the team member and adjust the plan."
+      },
+      "answerOverlay": "The correct answer is: Talk privately with the team member and adjust the plan."
+    },
+    "fillGap": {
+      "title": "Completing the leadership principle",
+      "instructions": "Fill in the blanks with the correct words.",
+      "sentenceParts": [
+        "A true leader takes ",
+        ", communicates with ",
+        ", and guides the team with ",
+        "."
+      ],
+      "options": [
+        "responsibility",
+        "respect",
+        "authority",
+        "clarity",
+        "fear",
+        "vision"
+      ],
+      "correctAnswers": [
+        "responsibility",
+        "respect",
+        "clarity"
+      ],
+      "resetButton": "Reset",
+      "checkButton": "Check Answer",
+      "feedback": {
+        "wrong": "Leadership is not about fear or power.",
+        "correct": "Well done! You completed the leadership principle correctly."
+      },
+      "answerOverlay": "The correct answers are:\nA true leader takes responsibility, communicates with respect, and guides the team with clarity."
+    },
+    "trueFalse": {
+      "title": "Leadership myths",
+      "instructions": "Determine if each statement is True or False.",
+      "questions": [
+        {
+          "text": "Leaders must always have all the answers.",
+          "correct": false,
+          "hint": "Effective leaders know when to seek input from others."
+        },
+        {
+          "text": "Leadership includes listening and learning from others.",
+          "correct": true,
+          "hint": "Listening and learning are key leadership traits."
+        },
+        {
+          "text": "Good leadership builds trust within a team.",
+          "correct": true,
+          "hint": "Trust is a fundamental outcome of good leadership."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about it again.",
+        "correct": "Excellent! You can distinguish leadership facts from myths."
+      },
+      "answerOverlay": "The correct answers are:\n1. FALSE – Leaders don't need all the answers; they listen and learn.\n2. TRUE – Listening and learning from others is essential.\n3. TRUE – Good leadership builds trust within a team."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Click on the HR Manager to begin.",
+    "talkToHRManager": "Click on the HR Manager to start.",
+    "findWhiteboard": "Look at the whiteboard inside the HR office.",
+    "talkToHRManager2": "Return to the HR Manager.",
+    "puzzle1Matching": "Match each leadership action to the value it best represents.",
+    "findCard": "Check the desk, drawer, and wall frame.",
+    "talkToHRManager3": "Return to the HR Manager with what you found.",
+    "puzzle3FillGap": "Think about responsibility, respect, and clarity.",
+    "puzzle4TrueFalse": "Consider what real leaders do — they listen, learn, and build trust.",
+    "completion": "The training has been completed!",
+    "default": "Look around the HR office for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "The player enters the waiting area outside the HR office.\nThere is a short pause.\nThe HR door opens.",
+    "clickDesk": "Only documents here.",
+    "clickDrawer": "Office supplies… nothing useful.",
+    "clickWallFrame": "Something feels loose…",
+    "foundCard": "You found the Leadership Reflection Card.",
+    "cardRead": "Good job! Return to the HR Manager.",
+    "whiteboardFound": "Leadership begins with understanding core values."
+  },
+  "items": {
+    "whiteboard": {
+      "popupTitle": "Key Leadership Values",
+      "popupContent": [
+        "Vision",
+        "Communication",
+        "Accountability",
+        "Empathy",
+        "Decision-making"
+      ],
+      "inventoryTitle": "Whiteboard Notes"
+    },
+    "reflectionCard": {
+      "popupTitle": "Leadership Reflection",
+      "popupContent": [
+        "Leadership is influence, not control.",
+        "Strong leaders listen more than they speak.",
+        "Trust is built through consistency and respect."
+      ],
+      "inventoryTitle": "Reflection Card"
+    }
+  },
+  "completion": {
+    "title": "Skill Completed: Leadership",
+    "message": "Values understood. Decisions evaluated. Ethical behavior demonstrated.\nYou are ready to move to the next skill.",
+    "buttonText": "Exit the HR Office"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "____",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

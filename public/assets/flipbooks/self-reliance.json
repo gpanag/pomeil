@@ -1,0 +1,269 @@
+{
+  "id": "self-reliance",
+  "moduleNumber": 28,
+  "title": "Self-Reliance",
+  "subtitle": "Module 28",
+  "coverImage": "assets/thumbs/self-reliance.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 28",
+      "title": "Self-Reliance",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/self-reliance.webp"
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Self-reliance means being able to depend on yourself. In the past, people needed this skill to survive and take care of themselves. Today, in everyday life, we face many challenges—like solving problems, making decisions, or dealing with new situations. If we don’t believe in ourselves, these things can feel too hard, and we might start relying too much on others. But when we build self-reliance, we learn to trust our own choices, keep going even when it’s tough, and grow stronger in both life and work (Bandura, 1997)"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The objective of this module is to develop participants’ understanding of self-reliance as a foundational entrepreneurial competence. Learners will explore how self-awareness, independent decision-making, and personal responsibility contribute to confidence and effective problem-solving. The module encourages reflection on personal habits, fears, and strengths, while highlighting the importance of internal motivation and proactive action in both business and everyday situations."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Imagine Amina, who running a small online store, and one day a customer writes an angry email saying their order didn’t arrive on time. You feel nervous and unsure what to do. Instead of waiting for someone else to help, you take a deep breath and decide to handle it yourself. You check the delivery details, write a polite reply, and offer a small discount or replacement. Even though it’s uncomfortable, you deal with the issue calmly and take full responsibility. This not only solves the problem but also builds your confidence to handle similar situations in the future."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Self-awareness – To become truly self-reliant, you first need to understand your own habits, fears, and strengths."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Problem-solving – Self-reliance grows when you learn how to deal with daily challenges on your own."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Business planning – You don’t need to change everything at once. Self-reliance is something you grow through small, repeated actions"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "numberedList",
+          "items": [
+            "Break tasks into steps: Don’t get overwhelmed. Split problems into smaller parts and handle them one at a time.",
+            "Reframe failure: When things go wrong, ask: “What can I learn from this?” Use it to grow stronger.",
+            "Focus on what you can control: Let go of what others think. Concentrate on your choices, reactions, and daily actions.",
+            "Make one independent choice each day: Choose something simple—like solving a problem or managing your time—without asking for help.",
+            "Reflect on small wins: At the end of each day, write down one thing you did on your own. It builds confidence.",
+            "Ask yourself: “What would I do if no one could help? This mindset helps you become your own guide during uncertainty.",
+            "Practice calm problem-solving: Take a breath. Think before reacting. Trust your ability to find a way forward."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Common Difficulties (Self-Reliance)"
+        },
+        {
+          "kind": "definition",
+          "term": "Dependence on others",
+          "definition": "Waiting for help instead of acting independently."
+        },
+        {
+          "kind": "definition",
+          "term": "Fear of making mistakes",
+          "definition": "Doubting your own decisions."
+        },
+        {
+          "kind": "definition",
+          "term": "Low self-confidence",
+          "definition": "Not believing you can handle things alone."
+        },
+        {
+          "kind": "definition",
+          "term": "Avoiding responsibility",
+          "definition": "Letting others solve your problems."
+        },
+        {
+          "kind": "definition",
+          "term": "Overthinking",
+          "definition": "Getting stuck instead of taking action."
+        },
+        {
+          "kind": "heading",
+          "text": "Solutions and Strategies"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Take the lead: Choose one task to handle fully by yourself.",
+            "Think small first: Build self-trust with easy daily decisions.",
+            "Write it down: Track things you do alone—big or small.",
+            "Ask “What can I do now?”: Shift focus from fear to action.",
+            "Trust your effort: Mistakes are part of learning to rely on yourself."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Self-Reliance Starter Plan"
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Prompt: Think of something you’ve been waiting for someone else to do—at home, in work, or in a project. Now, write down:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "What is the task?",
+            "What small part of it can you do on your own today?",
+            "What decision can you make without asking for help?",
+            "What would success look like if you handled it yourself?"
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Objective",
+          "definition": "To help you take personal action right away and prove to yourself that you can solve problems and make progress without relying on others."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Rate each item from 1 (Strongly Disagree) to 5 (Strongly Agree)"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I take action without waiting for someone else to decide.",
+            "I try to solve daily problems on my own first.",
+            "I believe I can handle things even if they feel uncomfortable.",
+            "I make small decisions without asking for advice.",
+            "I trust myself to recover from mistakes and keep going."
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Score 21–25",
+          "definition": "Strongly self-reliant"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 16–20",
+          "definition": "Generally self-reliant"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 11–15",
+          "definition": "Building confidence"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 5–10",
+          "definition": "Start with small independent steps"
+        },
+        {
+          "kind": "heading",
+          "text": "Scoring"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Self-reliance is a powerful skill that helps you build confidence, independence, and resilience. It’s not something you're born with—but something you can strengthen through small, consistent actions. Each time you make your own decision or solve a problem alone, you grow your ability to depend on yourself. Let this module be a starting point in developing a mindset that trusts your own judgment and ability to actes."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "After completing this module, participants will be able to take greater initiative in challenging situations, make independent decisions with increased confidence, and apply practical strategies to manage problems without overreliance on others. They will be better equipped to strengthen self-trust, respond constructively to setbacks, and build consistent habits that support long-term personal and professional growth."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Books"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Principles and Practice of Stress Management by Paul M. Lehrer & Robert L. Woolfolk. This comprehensive guide presents science-based methods for managing stress, including breathing techniques, mindfulness, cognitive restructuring, and more. https://www.guilford.com/books/Principles-and-Practice-of-Stress- Management/Lehrer-Woolfolk/9781462545100"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It by Kelly McGonigal. This book explains how to shift your mindset about stress and use it as a force for growth, motivation, and improved performance. https://www.penguinrandomhouse.com/books/316675/the-upside-of-stress-by- kelly-mcgonigal/"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Videos"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Tools for Managing Stress & Anxiety | Huberman Lab Essentials by Dr. Andrew Huberman A practical overview of scientifically proven techniques to reduce stress and improve emotional regulation. https://www.youtube.com/watch?v=qUz93CyNIz0"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Self-Reliance",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/self-reliance.pdf"
+      }
+    }
+  ]
+}

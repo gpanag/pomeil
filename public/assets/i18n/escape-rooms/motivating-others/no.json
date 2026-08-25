@@ -1,0 +1,193 @@
+{
+  "loading": "Laster Motivere og inspirere andre...",
+  "intro": {
+    "title": "Motivere og inspirere andre",
+    "paragraphs": [
+      "Du går inn i venteområdet utenfor HR-kontoret. Intervjuer pågår, og atmosfæren føles tydelig anspent.",
+      "En aktiv kandidat står i nærheten, med blikket festet på HR-døren, og holder dokumentene tett. Nervøsiteten er vanskelig å overse.",
+      "I dag skal du lære hvordan du motiverer og inspirerer andre gjennom små, bevisste handlinger: legge merke til styrker, stille de riktige spørsmålene og hjelpe folk å gjenvinne selvtilliten i de øyeblikkene de trenger det mest."
+    ],
+    "buttonText": "Gå inn i venteområdet"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR-sjef",
+      "dialogues": {
+        "observe": "Å inspirere andre krever tålmodighet og bevissthet. La oss se hvordan du hjelper noen videre.",
+        "finalWords": "Du ga ikke ordrer.\nDu tilbød ikke tom oppmuntring.\nDu lyttet, reflekterte og styrket.\n\nDet er hva det betyr å inspirere og motivere andre.",
+        "completion": "Bra jobbet! Opplæringen er fullført!",
+        "default": "Observer nøye. Noen ganger kommer den beste motivasjonen fra forståelse."
+      }
+    },
+    "candidate": {
+      "name": "Kandidat",
+      "dialogues": {
+        "greet": "Jeg har ventet lenge… Jeg er ikke sikker på om jeg er klar for dette.",
+        "greet2": "Alle sier motivasjon kommer innenfra, men noen ganger… gjør den ikke det.",
+        "afterTask1": "Jeg er redd jeg ikke er god nok… Jeg har jobbet hardt, men veien min har ikke vært lett.",
+        "afterStrengths": "Jeg har aldri tenkt på dem som styrker… Kanskje jeg har noe å tilby tross alt.",
+        "afterPuzzle2": "Du har kommet så langt. Det viser allerede styrke.",
+        "thankYou": "Takk. Jeg føler meg tryggere nå.",
+        "default": "Jeg prøver bare å samle motet…"
+      }
+    }
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Emosjonell bevissthetsinteraksjon",
+      "instructions": "Velg hvordan du vil svare.",
+      "question": "Kandidaten sier: «Jeg har ventet lenge… Jeg er ikke sikker på om jeg er klar for dette.» Hvordan svarer du?",
+      "options": {
+        "a": "Det går bra. Alle blir nervøse.",
+        "b": "Prøv å ikke tenke for mye på det.",
+        "c": "Det er normalt å føle det sånn. Hva bekymrer deg mest akkurat nå?",
+        "d": "Du bør fokusere på hva du kan vinne."
+      },
+      "hint": "Motivasjon begynner med forståelse, ikke med beroligelse eller press.",
+      "feedback": {
+        "wrong": "Det er ikke den beste tilnærmingen. Motivasjon begynner med forståelse, ikke med beroligelse eller press.",
+        "correct": "Motivasjon begynner med forståelse, ikke med beroligelse eller press. Kandidaten slapper synlig av."
+      },
+      "answerOverlay": "Det riktige svaret er: «Det er normalt å føle det sånn. Hva bekymrer deg mest akkurat nå?»\n\nMotivasjon begynner med forståelse, ikke med beroligelse eller press."
+    },
+    "sequenceOrder": {
+      "title": "Skritt for å inspirere",
+      "instructions": "Sett følgende handlinger i riktig rekkefølge for å bygge motivasjon.",
+      "items": [
+        "Oppmuntre styrker",
+        "Lytt aktivt",
+        "Tilby realistisk støtte",
+        "Inspirer selvtillit"
+      ],
+      "correctOrder": [
+        "Lytt aktivt",
+        "Oppmuntre styrker",
+        "Tilby realistisk støtte",
+        "Inspirer selvtillit"
+      ],
+      "hints": [
+        "Trinn 1: Før du kan hjelpe, må du forstå.",
+        "Trinn 2: Fremhev det de allerede har.",
+        "Trinn 3: Gi praktiske veier videre.",
+        "Trinn 4: Bygg varig tro på dem selv."
+      ],
+      "feedback": {
+        "wrong": "Inspirasjon vokser steg for steg — ikke alt på én gang.",
+        "correct": "Strålende! Du forstår hvordan motivasjon bygges steg for steg."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n1. Lytt aktivt\n2. Oppmuntre styrker\n3. Tilby realistisk støtte\n4. Inspirer selvtillit"
+    },
+    "matching": {
+      "title": "Forvandle motløshet til motivasjon",
+      "instructions": "Dra hver setning for å gjøre den om til en motiverende melding.",
+      "pairs": [
+        {"left": "Jeg har ikke nok erfaring.", "right": "Erfaring kan tilegnes gjennom læring og praksis."},
+        {"left": "Bakgrunnen min er for annerledes.", "right": "Ulike bakgrunner gir verdifulle perspektiver."},
+        {"left": "Jeg har feilet før.", "right": "Tidligere feil hjelper oss å vokse og forbedre oss."}
+      ],
+      "feedback": {
+        "wrong": "Det er ikke riktig sammenkobling. Tenk på hvordan du kan omformulere hver påstand positivt.",
+        "correct": "Motivasjon handler ofte om å endre perspektiv, ikke å endre virkelighet."
+      },
+      "answerOverlay": "De riktige sammenkoblingene er:\n1. «Jeg har ikke nok erfaring.» → «Erfaring kan tilegnes gjennom læring og praksis.»\n2. «Bakgrunnen min er for annerledes.» → «Ulike bakgrunner gir verdifulle perspektiver.»\n3. «Jeg har feilet før.» → «Tidligere feil hjelper oss å vokse og forbedre oss.»"
+    },
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {"checkButton": "Send inn", "resetButton": "Tilbakestill"},
+    "discouragingTitle": "Motløst",
+    "motivatingTitle": "Motiverende"
+  },
+  "hints": {
+    "intro": "Klikk på Kandidaten for å starte samtalen.",
+    "talkToCandidate": "Klikk på Kandidaten for å begynne.",
+    "talkToCandidate2": "Gå tilbake til Kandidaten.",
+    "findFolder": "Se etter Kandidatens mappe — klikk på dokumentene de holder.",
+    "talkToHrManager": "Klikk på HR-sjefen.",
+    "strengthRecognition": "Velg de to elementene fra mappen som fremhever en ekte styrke.",
+    "matching": "Koble hver motløs påstand med den positive omformuleringen som best motvirker den.",
+    "bodyLanguage": "Velg de to kroppsspråktegnene som avslører kandidatens usikkerhet.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg om i venteområdet etter spor."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i venteområdet utenfor HR-kontoret. Atmosfæren er anspent. Den aktive kandidaten står i nærheten, ser på HR-døren, og holder dokumentene tett.",
+    "strengthsIntro": "Du åpner Kandidatens mappe. Inni finner du sertifikater, frivillighetserfaring, språkferdigheter og hull i ansettelseshistorikken. Velg 2 elementer å fremheve positivt.",
+    "strengthsCorrect": "Motivasjon vokser når folk ser sin verdi.",
+    "strengthsWrong": "Disse elementene hjelper kanskje ikke med å bygge selvtillit. Fokuser på ekte styrker.",
+    "bodyLanguageIntro": "Klikk på elementene som viser at Kandidaten føler seg usikker.",
+    "bodyLanguageCorrect": "Motivasjon starter med å legge merke til hvordan andre føler — selv når de ikke sier det.",
+    "bodyLanguageWrong": "Se nøyere på Kandidatens kroppsspråk.",
+    "foundFolder": "Du undersøkte Kandidatens mappe og fremhevet styrkene deres."
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Kandidatens mappe",
+      "popupContent": [
+        "Sertifikater",
+        "Frivillighetserfaring",
+        "Språkferdigheter",
+        "Hull i ansettelseshistorikken"
+      ]
+    },
+    "candidateFolder": {"inventoryTitle": "Kandidatens mappe"}
+  },
+  "strengths": {
+    "title": "Utfordring i å gjenkjenne styrker",
+    "instructions": "Velg 2 elementer å fremheve positivt.",
+    "options": [
+      {"id": "language", "text": "Språkferdigheter", "correct": true},
+      {"id": "volunteering", "text": "Frivillighetserfaring", "correct": true},
+      {"id": "gaps", "text": "Hull i ansettelse", "correct": false},
+      {"id": "references", "text": "Manglende referanser", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motivasjon vokser når folk ser sin verdi.",
+      "wrong": "Disse elementene hjelper kanskje ikke med å bygge selvtillit. Fokuser på ekte styrker."
+    }
+  },
+  "bodyLanguage": {
+    "title": "Lese motivasjonssignaler",
+    "instructions": "Klikk på elementene som viser at Kandidaten føler seg usikker.",
+    "options": [
+      {"id": "clenched", "text": "Knyttede hender på dokumentene", "correct": true},
+      {"id": "relaxed", "text": "Avslappet holdning", "correct": false},
+      {"id": "eyeContact", "text": "Unngår øyekontakt", "correct": true},
+      {"id": "smile", "text": "Selvsikkert smil", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motivasjon starter med å legge merke til hvordan andre føler — selv når de ikke sier det.",
+      "wrong": "Se nøyere på Kandidatens kroppsspråk."
+    }
+  },
+  "completion": {
+    "title": "Ferdighet fullført: Inspirere og motivere andre",
+    "message": "Du viste:\n\nEmosjonell bevissthet\nPositiv kommunikasjon\nStyrking gjennom anerkjennelse\nEtisk motivasjon\n\nInspirasjon er lederskap i handling.",
+    "buttonText": "Forlat venteområdet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "checkButton": "Sjekk svar",
+    "submitButton": "Send inn",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

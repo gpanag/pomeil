@@ -1,0 +1,205 @@
+{
+  "loading": "Laadimine...",
+  "intro": {
+    "title": "Strateegiline mõtlemine",
+    "paragraphs": [
+      "Sa oled <username>, noor ja ambitsioonikas inimene, kes just värvati suure heliettevõtte \"SoundWave\" juhiks.",
+      "Kuigi oled kirglik ja töövalmis, ei ole sul palju kogemust raskete olukordadega, mida juhina silmitsi seisma pead.",
+      "Saad kiiresti aru, et sul tuleb teha karme otsuseid, planeerida ette ja mõelda strateegiliselt."
+    ],
+    "buttonText": "Alusta mängu"
+  },
+  "characters": {
+    "jake": {
+      "name": "Jake",
+      "dialogues": {
+        "introduction": "Tere hommikust, <username>! Oleme rõõmsad, et sa siin oled. Oleme sinust palju head kuulnud ja ootame põnevusega tööle hakkamist sinu juhtimise all! Mina olen Jake, meeldiv tutvuda! Aga kõigepealt: eelmine juht jättis sulle mõned nõuanded ja juhised, lootuses, et need aitavad sind esimestel päevadel siin. See on tõesti oluline, nii et ta kinnitas selle korktahvlile sinna… No, vähemalt ühele neist. Mine vaata, ma olen kindel, et leiad selle. See on sinine märkmepaberike.",
+        "findNote": "Vaata korktahvleid. Märge, mida vajad, on sinine.",
+        "noteFound": "Jah, leidsid märkme!",
+        "noteFoundPart2": "Nagu näed, <username>, on strateegiline mõtlemine ülitähtis oskus, sest see võimaldab sul ära tunda ja kasutada erinevaid pikaajalisi mustreid kogu süsteemi analüüsimise kaudu. Seda saab rakendada paljudes olukordades, kuid see on eriti oluline juhtimispositsioonidel, nagu sinu oma!",
+        "noteFoundPart3": "Nüüd, kui oled saanud strateegilise mõtlemise põhitõed, paneme su teadmised proovile selle lihtsa harjutusega.",
+        "noteFoundPart4": "Kui oled valmis, klõpsa allolevale nupule, et viktoriini alustada.",
+        "quizComplete": "Tubli. Nägin esimesest hetkest, et oled kiire õppija! Hästi, alustega on ühel pool, võime liikuda veidi keerukamatele asjadele. Sofia võtab nüüd üle — tervita teda ja rääkige. Aitäh ja edu, <username>!",
+        "findUsb": "Mis lahti? Kadunud USB-pulk? Ei, mina ei ole näinud. Tegelikult kaotasin paar enda oma ka!",
+        "allQuestsComplete": "Edu sulle!",
+        "default": "Jätka oma praeguse ülesandega."
+      }
+    },
+    "sofia": {
+      "name": "Sofia",
+      "dialogues": {
+        "findUsb": "Tere! Sa pead olema <username>, eks ole? Oleme sind oodanud. Nii hea on sind lõpuks kohata. Mina olen Sofia. Tahtsin sulle ringkäigu teha ja olulist väljaõpet anda, aga… ma ei leia oma USB-pulka ja kõik koolitusfailid olid sellel. Kas saaksid mind aidata seda leida? See oli punane. Vist nägin seda viimati kohvimasina lähedal… aga vannun, et juba kontrollisin ja seal seda ei olnud. Aga ei tee paha veel kord vaadata, eks?",
+        "findUsbFollowUp": "Ikka otsid? Mu punane USB-pulk oli viimati kohvimasina lähedal — vaata seal veel kord.",
+        "usbFound": "Ei suuda uskuda! Sa leidsid selle! Sa oled päästja. Võin juba praegu öelda, et oled firma kõige tähelepanelikum inimene. Hästi, lähme siis failide juurde. Tule mu sülearvuti juurde.",
+        "readTrainingFileDone": "Näen, et oled ka kiire lugeja. Märkmesse võetud! Lähme nüüd järgmisele fai… Oh ei! Niisiis oli failisüsteem TÕEPOOLEST RIKUTUD! Kas sa palun aitaksid mind? Peame kõrvutama iga esimese veeru idee õige sünergia tulemusega teisest veerust.",
+        "puzzleTwoComplete": "Jah! Just nii! Saime hakkama! Oh… Vabandan, aga pean sellele kõnele vastama — see on ülioluline. Teadus- ja arendusosakond on tehnoloogilisele läbimurdele uue kõrvaklappide draiveri osas väga lähedal! See võib olla tööstust muutev revolutsioon, KUI mängime targalt. Küsimus on — mida me nüüd teeme? Ja mis järjekorras? Olen kindel, et sa saad sellega hakkama, <username>. Me usume sinusse!",
+        "allQuestsComplete": "Jah! Sul on täiesti õigus! See on parim strateegia, mida järgida! See võimaldab meil tunda ära kõik seosed ja sõltuvused, võtta arvesse infot kõikidest osakondadest, arutada läbimurde detailid ning lõpuks integreerida innovatsioon meie pikaajalisse strateegiasse. Suurepärane! Koolitus on lõppenud!",
+        "farewell": "Hoia ennast, <username>. Edu sulle seal väljas!",
+        "default": "Jätka oma praeguse ülesandega."
+      }
+    }
+  },
+  "puzzles": {
+    "puzzleOne": {
+      "title": "Uus algus! Aga kuidas alustada?",
+      "question": "Kujuta ette, et valmistud oma esimeseks meeskonnakoosolekuks. Et näidata strateegilist mõtlemist juba algusest peale, kuidas peaksid alustama?",
+      "options": {
+        "a": "Lähed kohe ülesannete jagamise juurde, et autoriteeti näidata",
+        "b": "Tänad meeskonda kohaletuleku eest, lood positiivse õhkkonna ja selgitad koosoleku eesmärki",
+        "c": "Alustad sellega, et kritiseerid, mida meeskond tegi valesti enne sinu saabumist",
+        "d": "Räägid pika isikliku loo, et kõik saaksid sind paremini tundma õppida"
+      },
+      "correct": "b",
+      "hint": "Mõistlik viis alustada on vältida äärmusi ja jääda turvalisele rajale.",
+      "completeOverlay": {
+        "title": "Õige!",
+        "message": "Suurepärane töö! Sa lõpetasid esimese harjutuse.",
+        "buttonText": "Jätka"
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Kujuta ette, et valmistud oma esimeseks meeskonnakoosolekuks. Et näidata strateegilist mõtlemist juba algusest peale, kuidas peaksid alustama?\n\nÕige vastus: b) Täna meeskonda kohaletuleku eest, loo positiivne õhkkond ja selgita koosoleku eesmärki\n\nSelgitus: Koosoleku alustamine meeskonna tänamisega, positiivse õhkkonna loomisega ja eesmärgi selgitamisega näitab strateegilist mõtlemist, sest see:\n• Loob avatud õhkkonna, mis soodustab koostööd\n• Näitab juhtimisvõimet ilma autoritaarsuseta\n• Seab algusest peale selged ootused ja suuna\n• Väldib äärmusi — pole liiga agressiivne ega liiga vaba"
+    },
+    "matching": {
+      "title": "Ideede ja sünergiate kõrvutamine",
+      "question": "Kõrvuta iga tootearenduse idee õige sünergia tulemusega.",
+      "columnHeaders": {
+        "ideas": "Tootearenduse ideed",
+        "outcomes": "Sünergia tulemus"
+      },
+      "selectPlaceholder": "Vali tulemus",
+      "rows": {
+        "1": "Kui tootmine ja disain joonduvad varakult, väldime hiljem kalleid muudatusi.",
+        "2": "Kaasates klienditeenindust, saame ennustada tavalisi probleeme enne turuletoomist.",
+        "3": "Kui T&A teeb tihedat koostööd Turundusega, saame disainida funktsioone, mida kliendid tegelikult tahavad.",
+        "4": "Koostöö Rahandusega tagab, et meie innovatsioon on jätkusuutlik, mitte ainult põnev."
+      },
+      "options": {
+        "A": "Tooted, mis vastavad klientide vajadustele algusest peale.",
+        "B": "Vähem kaebusi ja sujuvam kliendikogemus.",
+        "C": "Pikaajaline elujõulisus ja tasakaalustatud investeeringud.",
+        "D": "Tõhusad protsessid, mis säästavad aega ja raha."
+      },
+      "answerKey": {
+        "1": "D",
+        "2": "B",
+        "3": "A",
+        "4": "C"
+      },
+      "feedback": {
+        "notAllPicked": "Palun kõrvuta kõik ideed enne esitamist.",
+        "wrong": "Pole päris õige. Mõtle: milline osakondade koostöö viib millise tulemuseni?"
+      },
+      "completeOverlay": {
+        "title": "Suurepärane!",
+        "message": "Kõrvutasid kõik ideed õigesti.",
+        "buttonText": "Jätka"
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Kõrvuta iga tootearenduse idee õige sünergia tulemusega.\n\nÕiged vastendused:\n• \"Kui tootmine ja disain joonduvad varakult, väldime hiljem kalleid muudatusi.\" → D: Tõhusad protsessid, mis säästavad aega ja raha\n• \"Kaasates klienditeenindust, saame ennustada tavalisi probleeme enne turuletoomist.\" → B: Vähem kaebusi ja sujuvam kliendikogemus\n• \"Kui T&A teeb tihedat koostööd Turundusega, saame disainida funktsioone, mida kliendid tegelikult tahavad.\" → A: Tooted, mis vastavad klientide vajadustele algusest peale\n• \"Koostöö Rahandusega tagab, et meie innovatsioon on jätkusuutlik, mitte ainult põnev.\" → C: Pikaajaline elujõulisus ja tasakaalustatud investeeringud\n\nStrateegiline mõtlemine tähendab osakondade ühendamist nii, et nende ühised jõupingutused annavad paremaid tulemusi kui üksinda töötamine.",
+      "resetButtonText": "Lähtesta",
+      "submitButtonText": "Esita"
+    },
+    "sequence": {
+      "title": "Esimene päris ülesanne",
+      "question": "Pane sammud õigesse järjekorda, et viia läbi otsustusprotsess kooskõlas süsteemivaate põhimõttega.",
+      "availableStepsLabel": "Saadaolevad sammud",
+      "yourSequenceLabel": "Sinu järjekord",
+      "placeholderText": "Klõpsa vasakpoolsel sammul, et lisada see siia.",
+      "options": {
+        "a": "Aruta uut kõrvaklappide prototüüpi labori inseneridega",
+        "b": "Tuvasta, kuidas see innovatsioon võib mõjutada tootmist, turundust ja klienditeenindust",
+        "c": "Kogu tagasisidet erinevatest osakondadest, et tuvastada võimalusi ja riske",
+        "d": "Joonda lõplik otsus ettevõtte üldise pikaajalise strateegiaga"
+      },
+      "correctSequence": [
+        "b",
+        "c",
+        "a",
+        "d"
+      ],
+      "hints": {
+        "attempt1": "Vihje: Mõista kõigepealt suurt pilti — kuidas otsus mõjutab kogu süsteemi.",
+        "attempt2": "Vihje: Seejärel kogu tagasisidet osakondade lõikes, et tuvastada võimalusi ja riske."
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: T&A on tehnoloogilisele läbimurdele uue kõrvaklappide draiveri osas väga lähedal! Mida me nüüd teeme? Ja mis järjekorras?\n\nÕige vastus:\n1. \"Samm B: Tuvasta, kuidas see innovatsioon võib mõjutada tootmist, turundust ja klienditeenindust\" — Kõigepealt mõista suurt pilti ja seda, kuidas otsus mõjutab kõiki seotud süsteemi muutujaid\n2. \"Samm C: Kogu tagasisidet erinevatest osakondadest, et tuvastada võimalusi ja riske\" — Hea otsustusprotsess nõuab toetumist kogu olemasolevale infole kõigist vaatenurkadest\n3. \"Samm A: Aruta uut kõrvaklappide prototüüpi labori inseneridega\" — Kui kontekst on selge, keskendu tehnilistele detailidele ja innovatsiooni iseärasustele\n4. \"Samm D: Joonda lõplik otsus ettevõtte üldise pikaajalise strateegiaga\" — Lõpuks koonda kõik süsteemseks otsuseks, mis teenib pikaajalisi eesmärke\n\nSee lähenemine näitab strateegilist mõtlemist, kuna arvestab kogu süsteemiga enne detailidesse süüvimist.",
+      "resetButtonText": "Lähtesta",
+      "submitButtonText": "Esita järjekord"
+    },
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "answerOverlay": {
+    "title": "Õige vastus",
+    "buttonText": "Jätka"
+  },
+  "hints": {
+    "findNote": "Proovi *vasakpoolset, suurt korktahvlit*. Jake ütles, et õige märge on sinine.",
+    "findUsb": "Sofia nägi punast USB-pulka viimati kohvimasina lähedal.",
+    "puzzleThree": "Järjekorra vihje: laiem süsteem → tagasiside → tehnilised detailid → pikaajaline joondus.",
+    "default": "Otsi seda, mis tundub praeguse eesmärgi jaoks kõige asjakohasem."
+  },
+  "items": {
+    "blueNote": {
+      "altText": "Sinine märkmepaberike strateegilise mõtlemise näpunäidetega.",
+      "inventoryTitle": "Vaata sinist märget"
+    },
+    "usb": {
+      "altText": "Sofia punane USB-pulk.",
+      "inventoryTitle": "Vaata USB-pulka"
+    },
+    "trainingFile": {
+      "altText": "Koolitusfail",
+      "inventoryTitle": "Vaata KOOLITUSE faili",
+      "title": "KOOLITUS",
+      "content": "Strateegiline mõtlemine ei tähenda ainult häid ideid — see on õigete inimeste ühendamine, et need ideed muutuksid tugevamaks ja tekitaksid sünergiat. Iga osakond näeb ettevõtet teise nurga alt: tootmine, disain, turundus, rahandus, teadus- ja arendustegevus ning klienditeenindus — igaühel on ainulaadsed teadmised. Kui neil lubatakse juba protsessi varases etapis koostööd teha, suudavad meeskonnad vältida kalleid vigu, paremini ennustada klientide vajadusi ning luua nii uuenduslikke kui ka realistlikke lahendusi. Sünergia on see, mis tekib, kui need vaatenurgad töötavad koos, mitte eraldi.",
+      "closeHint": "Klõpsa kuhugi, et sulgeda."
+    }
+  },
+  "systemDialogues": {
+    "introSelfTalk": "Nii see siis on — esimene päev uuel töökohal. Juhtina. No, olen optimistlik. Vaatame, mida päev toob. Lähme.",
+    "findNotePrompt": "Ühel korktahvlil on sinine märge eelmise juhi olulise sõnumiga. Vaata ringi ja proovi see üles leida.",
+    "noteFoundSuccess": "Tubli! Tundub, et Jake tahab sinuga jälle rääkida.",
+    "wrongCorkboard": "Siin on ainult skeemid, kaardid ja strateegiadokumendid. Proovi teist korktahvlit.",
+    "laptopTooEarly": "Sale, kaasaegne sülearvuti. Parem aita kõigepealt Sofial USB-pulk leida.",
+    "laptopNoUsb": "Ilma USB-pulgata pole koolitusfaile.",
+    "usbFoundSuccess": "Leidsid Sofia USB-pulga — tubli! Lähme häid uudiseid temaga jagama!",
+    "trainingFileDone": "Suurepärane töö! Sinu keskendumisvõime on muljetavaldav! Nüüd räägime Sofia’ga jälle.",
+    "findUsbPrompt": "Aita Sofia’t ja leia tema punane USB-pulk. Ta arvab, et see võib olla kohvimasina juures.",
+    "talkToSofiaPrompt": "Klõpsa nüüd Sofia’l, et teda tervitada — tema annab sulle ülejäänud koolituse.",
+    "quizCompletePrompt": "Suurepärane töö, <username>! Räägime Jake’iga jälle.",
+    "matchingCompletePrompt": "Tubli! Vaatame, mida Sofia ütleb!",
+    "sequenceCompletePrompt": "Suurepärane töö! Klõpsa nüüd Sofia’l, et koolitus lõpetada.",
+    "sequenceCompletePromptAfterReveal": "Klõpsa nüüd Sofia’l, et koolitus lõpetada."
+  },
+  "completion": {
+    "title": "Koolitus lõpetatud!",
+    "message": "Õnnitlused! Sa lõpetasid Strateegilise mõtlemise mooduli.",
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "ui": {
+    "fullscreenTitle": "Lülita täisekraan",
+    "backToEscapeRoomsTitle": "Tagasi põgenemistubadesse",
+    "startQuizButton": "Alusta viktoriini",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "skipButton": "Jäta vahele",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

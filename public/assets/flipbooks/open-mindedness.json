@@ -1,0 +1,236 @@
+{
+  "id": "open-mindedness",
+  "moduleNumber": 26,
+  "title": "Open-Mindedness",
+  "subtitle": "Module 26",
+  "coverImage": "assets/thumbs/open-mindedness.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 26",
+      "title": "Open-Mindedness",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/open-mindedness.webp"
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Open-mindedness is the willingness to consider different ideas, perspectives, and experiences without bias or immediate judgment. For migrant entrepreneurs, it is a crucial mindset that fosters learning, cultural awareness, and the ability to adapt to new environments and business practices."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The objective of this module is to deepen participants’ understanding of open-mindedness as a key entrepreneurial competence. Learners will explore how openness to new ideas, cultural perspectives, and experiences contributes to successful communication, collaboration, and business development in diverse environments. The module encourages participants to reflect on personal assumptions and biases, recognize the importance of cultural awareness, and understand how adaptability supports integration and long-term professional growth."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Imagine Karina, a refugee who moved to a new country and dreamed of sharing her love for baking traditional sweets like “pahlavas” and other Eastern treats. At first, everything felt unfamiliar—new rules, a different language, and no support network. But Karina stayed open and willing to learn. She joined local cooking events, talked to neighbours, and adjusted her recipes to suit local tastes while keeping their original spirit. By listening, adapting, and staying open to new ideas, Amina turned her passion into a small but loved sweet shop that brings together locals and newcomers. Her open-mindedness helped her connect, grow, and thrive in her new home. ess practices."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Initiative – Taking action without waiting for direction."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Adaptability – Adjusting to new cultures, systems, or environments."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Confidence – Trusting your ability to learn and respond."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Problem-solving – Finding creative and effective solutions."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Decision-making – Choosing based on learning and context."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Curiosity – Exploring new ideas and perspectives."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "numberedList",
+          "items": [
+            "Talk to different people: Listen to ideas from locals, other migrants.",
+            "Try new things: Be open to changing your way of working or cooking if it helps your business.",
+            "Ask for feedback: Don’t be afraid to hear what others think and use it to grow.",
+            "Learn every day: Join local events, watch videos, or read about how things work in your new home.",
+            "Stay curious: Ask questions and explore new ways to solve problems.",
+            "Be patient with yourself: It’s okay not to know everything. Keep learning and adjusting.",
+            "Celebrate small wins: Notice what works and keep doing more of it. That builds confidence."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Common Difficulties"
+        },
+        {
+          "kind": "paragraph",
+          "text": "⚫ Cultural differences: Not understanding how things are done in the new country. ⚫ Fear of change: Feeling nervous about trying new ways or ideas. ⚫ Language barriers: Hard to talk or understand local feedback and advice. ⚫ Limited support: Not knowing where to go for help or guidance."
+        },
+        {
+          "kind": "heading",
+          "text": "Solutions and Strategies"
+        },
+        {
+          "kind": "paragraph",
+          "text": "⚫ Be curious: Ask questions and explore different ways to do things. ⚫ Join local groups: Meet people, share stories, and learn from each other. ⚫ Try small changes: Start with simple steps—adjust a product or try a new idea. ⚫ Use what’s around you: Free workshops, local events, or online videos can teach you a lot. ⚫ Listen and learn: Take feedback seriously, even if it’s different from what you’re used to."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Open-mindedness Action Plan"
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Prompt: Think of a challenge you're facing in your business. Write down how you can face it with an open mind—what small steps you can try, what help or tools you can use, and what might get in your way."
+        },
+        {
+          "kind": "definition",
+          "term": "Objective",
+          "definition": "To build your ability to stay open, learn, and solve problems in new ways"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Rate each item from 1 (Strongly Disagree) to 5 (Strongly Agree)"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I consider new ideas before rejecting them.",
+            "I ask questions to understand unfamiliar topics.",
+            "I am willing to change my approach.",
+            "I listen respectfully to others’ opinions.",
+            "I reflect on feedback without defensiveness."
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Score 21–25",
+          "definition": "Very open-minded"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 16–20",
+          "definition": "Generally open-minded"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 11–15",
+          "definition": "Needs improvement"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 5–10",
+          "definition": "Start with small steps"
+        },
+        {
+          "kind": "heading",
+          "text": "Scoring"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Open-mindedness is essential for migrant entrepreneurs as they learn to build businesses in unfamiliar environments. By staying curious, listening to new ideas, and being open to change, they can better understand local needs, adjust to new ways of working, and grow stronger, more connected businesses. Open-mindedness helps turn challenges into learning opportunities and builds bridges between cultures."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "After completing this module, participants will be able to demonstrate greater openness in professional interactions, apply adaptive thinking in unfamiliar situations, and engage constructively with individuals from different cultural backgrounds. They will be better equipped to evaluate their own assumptions, adjust behavior when necessary, and implement practical strategies that foster inclusive communication and effective cooperation in entrepreneurial contexts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Websites:",
+            "Entrepreneur.com",
+            "Small Business Administration",
+            "MindTools",
+            "TED Talks – search for topics like \"growth mindset\" or \"rethinking\"",
+            "Courses:"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "\"Rethinking Thinking: How to Stay Open-Minded\" – Offered by Coursera https://www.coursera.org/learn/open-mindedness \"Developing a Growth Mindset\" – Offered by LinkedIn Learning https://www.linkedin.com/learning/developing-a-growth-mindset \"The Science of Well-Being\" – Offered by Yale University on Coursera https://www.coursera.org/learn/the-science-of-well-being"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Open-Mindedness",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/open-mindedness.pdf"
+      }
+    }
+  ]
+}

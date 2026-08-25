@@ -1,0 +1,213 @@
+{
+  "loading": "Laster Tilpasningsdyktighet...",
+  "intro": {
+    "title": "Tilpasningsdyktighet",
+    "paragraphs": [
+      "Du er en ny ansatt i et raskt voksende og ekspanderende oppstartsselskap. På din første dag blir du bedt om å starte med onboarding-prosessen.",
+      "Pussig nok blir du fortalt at du skal gå til trappeoppgangen, fordi det er der møtet ditt skal foregå. Litt forvirret begynner du å gå mot trappedørene, usikker på hva du kan forvente der…",
+      "For å låse opp ferdigheten tilpasningsdyktighet må du fullføre den uvanlige onboardingen som selskapet har forberedt for deg."
+    ],
+    "buttonText": "Gå inn i trappeoppgangen"
+  },
+  "characters": {
+    "anastasia": {
+      "name": "Anastasia",
+      "dialogues": {
+        "greet": "Hei der. Vi har ventet på deg. Vi er glade for at du har blitt med i teamet vårt — og vi lover at dette miljøet aldri vil gjøre deg lei eller på leting etter nye utfordringer, fordi de vil dukke opp daglig uansett.\n\nVi oppfordrer deg til å se det som noe positivt, konstante muligheter til å vokse. Men hvis det er én nøkkelferdighet du trenger for å trives her, er det Tilpasningsdyktighet. Og denne onboardingen handler om akkurat det.\n\nLa oss begynne, da. Jeg kommer til å stille deg et spørsmål snart, men før det, se deg rundt, spesielt på veggene, for å finne nyttige biter med informasjon som vil hjelpe deg med oppgaven din.",
+        "puzzle1Intro": "Jeg ser at du også er veldig observant — det lover virkelig godt for deg! La oss komme til det spørsmålet nå.",
+        "puzzle1Done": "Veldig bra! Du har vist at du forstår hva tilpasningsdyktighet handler om. Nå, la oss gå ett nivå høyere, ok? Gå videre til neste etasje og snakk med Amina, hun tar over derfra. Og lykke til!",
+        "default": "Se deg rundt på veggene etter nyttig informasjon."
+      }
+    },
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Hei, jeg heter Amina. Jeg snappet opp litt av samtalen din med Anastasia, og du håndterte det virkelig bra. De fleste tar ikke til seg grunnlaget for tilpasningsdyktighet så raskt. Du er et naturtalent!\n\nUansett, jeg har også forberedt en utfordring for deg. Men… jeg må be deg hjelpe meg å finne den. På startskjermen til nettbrettet mitt vil du se ulike ikoner, snarveier og apper. Og blant alt dette kaoset må vi finne en tekstfil med et notatbok-ikon, kalt «adaptability_LVL2». La oss begynne med en gang!",
+        "readFile": "Nå som vi har funnet den, vær så snill og les innholdet i filen.",
+        "puzzle2Intro": "Ja, dette er akkurat den informasjonen jeg ville dele med deg. Du er klar til å prøve å løse utfordringen min nå! Jeg er sikker på at du vil takle den godt. Se på nettbrettet igjen, oppgaven skal allerede være lastet inn.",
+        "puzzle2Done": "Vent, er du allerede ferdig? Du gjør det enda bedre enn jeg forventet.\n\nGreit, med det er jeg helt sikker på at du er klar for den siste utfordringen i opplæringen vår. Du kan gå videre til neste etasje.",
+        "default": "Sjekk nettbrettet mitt for oppgaven."
+      }
+    },
+    "wei": {
+      "name": "Wei",
+      "dialogues": {
+        "greet": "Du er den nyansatte, ikke sant? Wow, du har fullført to tidligere utfordringer på rekordtid, vet du?\n\nNå er jeg virkelig nysgjerrig på hvordan du kommer til å håndtere oppgaven min. Men først ting først — la oss starte med litt kunnskap til deg.\n\nFor ikke å gjøre det for lett, vil jeg bare fortelle deg at det er et sted nær meg. Klarer du å finne det basert på den ufullstendige informasjonen? La oss se.",
+        "puzzle3Intro": "Nå, det ser ut som det ikke var nok informasjon for den siste, vanskelige utfordringen. Men stol på meg, dette, kombinert med alt du har lært i dag, er mer enn nok til å løse oppgaven min med suksess. Vær forsiktig, denne øvelsen blir annerledes enn alle andre du har møtt så langt. La oss begynne!",
+        "puzzle3Done": "Selvfølgelig! Det er det! Hensikten med denne oppgaven var ikke å følge den tradisjonelle ruten, men å tilpasse seg plutselig endrede suksesskrav for å fullføre øvelsen. Reversert rekkefølge på svarene virker som en liten endring, men den får deg likevel til å prøve nye tilnærminger og tvinger frem tenkning utenfor boksen. Og du har gjort alt det! Virkelig enestående prestasjon! Bra jobbet. Takk for at du deltok og lykke til!",
+        "completion": "Flott jobbet i dag! Opplæringen er fullført!",
+        "default": "Se deg nøye rundt — ledetråden er i nærheten av meg."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Det viktigste først",
+      "instructions": "Velg TO riktige svar.",
+      "question": "Hvilke handlinger viser best anvendelsen av ferdigheten tilpasningsdyktighet?",
+      "options": {
+        "a": "Å revidere tilnærmingen din etter å ha mottatt ny informasjon, samtidig som du beholder det opprinnelige målet.",
+        "b": "Å endre prioriteringer ofte for å reagere raskt, selv om det overordnede målet blir uklart.",
+        "c": "Å justere planer når forholdene endres, uten å miste det tilsiktede resultatet av syne.",
+        "d": "Å vente på stabile forhold før man iverksetter noen handling."
+      },
+      "hint": "Tilpasningsdyktighet handler om å justere tilnærmingen din for å sikre oppnåelsen av et tydelig definert mål.",
+      "feedback": {
+        "wrong": "Det stemmer ikke helt. Tilpasningsdyktighet handler om å justere tilnærmingen samtidig som målet holdes klart.",
+        "correct": "Du har rett! Det er de beste eksemplene på tilpasningsdyktighet i praksis."
+      },
+      "answerOverlay": "De riktige svarene er:\n• Å revidere tilnærmingen din etter å ha mottatt ny informasjon, samtidig som du beholder det opprinnelige målet.\n• Å justere planer når forholdene endres, uten å miste det tilsiktede resultatet av syne."
+    },
+    "fillGap": {
+      "title": "Avansert trening i tilpasningsdyktighet",
+      "instructions": "Fullfør setningene med de manglende ordene for å lage logiske setninger relatert til ferdigheten tilpasningsdyktighet.",
+      "sentenceParts": [
+        "En tilpasningsdyktig person vet at noen ganger er det beste valget å ",
+        " handling til situasjonen er klarere.\nÅ reagere på hver endring uten refleksjon kan føre til ",
+        " beslutninger.\nEffektiv tilpasning krever å forutse ",
+        " av å endre én del av en plan og analysere virkningen på andre.\nNår informasjonen er ufullstendig, kommer fremgang ofte fra læring gjennom ",
+        " heller enn å vente på sikkerhet.\nSterk tilpasningsdyktighet kombinerer rettidig handling med nøye ",
+        " i stedet for impuls."
+      ],
+      "options": [
+        "utsette",
+        "konsekvensene",
+        "dømmekraft",
+        "eksperimentering",
+        "ustabile"
+      ],
+      "correctOrder": [
+        "utsette",
+        "ustabile",
+        "konsekvensene",
+        "eksperimentering",
+        "dømmekraft"
+      ],
+      "feedback": {
+        "wrong": "Noen ord står ikke på rett plass. Prøv igjen!",
+        "correct": "Helt riktig! Flott forståelse av begrepene innen tilpasningsdyktighet."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n[1] utsette\n[2] ustabile\n[3] konsekvensene\n[4] eksperimentering\n[5] dømmekraft",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Send inn"
+    },
+    "sequenceOrder": {
+      "title": "Tilpasningsdyktighet – Den siste utfordringen",
+      "instructions": "Sett følgende trinn i prosessen med å tilpasse seg endring i riktig rekkefølge. Vær forsiktig — denne øvelsen er annerledes enn det du har møtt før!",
+      "hint": "«Hvis fremgangen står stille og alt rakner, begynn ved målstreken, ikke ved start.»",
+      "items": [
+        "Bruk justeringen.",
+        "Identifiser hva som ikke fungerer lenger.",
+        "Motta ny informasjon.",
+        "Gjennomgå utfallet.",
+        "Bestem hva som må endres.",
+        "Sjekk hvordan det påvirker den nåværende planen."
+      ],
+      "correctOrder": [
+        "Gjennomgå utfallet.",
+        "Bruk justeringen.",
+        "Bestem hva som må endres.",
+        "Identifiser hva som ikke fungerer lenger.",
+        "Sjekk hvordan det påvirker den nåværende planen.",
+        "Motta ny informasjon."
+      ],
+      "feedback": {
+        "wrong": "Det er ikke riktig rekkefølge. Tenk på ledetråden du fant på post-it-lappen…",
+        "correct": "Bra jobbet! Du tilpasset deg den reverserte rekkefølgen perfekt!"
+      },
+      "answerOverlay": "Den riktige rekkefølgen (REVERSERT) er:\n1. Gjennomgå utfallet.\n2. Bruk justeringen.\n3. Bestem hva som må endres.\n4. Identifiser hva som ikke fungerer lenger.\n5. Sjekk hvordan det påvirker den nåværende planen.\n6. Motta ny informasjon."
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Se etter Anastasia i denne etasjen.",
+    "talkToAnastasia": "Klikk på Anastasia for å begynne.",
+    "findPoster": "Se på veggene — finn en innrammet plakat med nyttig informasjon.",
+    "readPoster": "Les plakaten du fant.",
+    "talkToAnastasia2": "Snakk med Anastasia igjen.",
+    "talkToAmina": "Gå til neste etasje og klikk på Amina.",
+    "findTabletIcon": "Se på nettbrettets skjerm — finn filen med tittelen «adaptability_LVL2».",
+    "readTextFile": "Les tekstfilen på nettbrettet.",
+    "talkToAmina2": "Snakk med Amina igjen.",
+    "clickTablet": "Klikk på nettbrettet for å se oppgaven.",
+    "talkToWei": "Gå til neste etasje og klikk på Wei.",
+    "findStickyNote": "Se nøye nær Wei — det er en post-it-lapp gjemt bak ham.",
+    "readStickyNote": "Les post-it-lappen du fant.",
+    "talkToWei2": "Snakk med Wei igjen for å begynne den siste utfordringen.",
+    "puzzle2FillGap": "Fyll inn hvert tomrom med ett av ordene fra ordlisten under setningen.",
+    "completion": "Dørene er åpne! Klikk på dem for å gå ut.",
+    "default": "Se deg rundt etter ledetråder."
+  },
+  "systemDialogues": {
+    "selfTalk": "En onboarding-prosess i trappeoppgangen… Det er nytt. Det er ikke noe jeg er kjent med, men hele selskapet er også veldig dynamisk og ukonvensjonelt. Hvem vet, kanskje det er den riktige tilnærmingen i disse moderne tider? La oss se hva det handler om.",
+    "wrongObject": "Interessant melding, men ikke det du trenger nå. Noen har imidlertid lagt igjen et motiverende sitat her: «Endring er det eneste konstante.» Fortsett å lete!",
+    "foundPoster": "Ja, dette er det vi har lett etter. Les det pedagogiske innholdet.",
+    "posterRead": "Bra jobbet. Du har nå den grunnleggende forståelsen av ferdigheten Tilpasningsdyktighet. La oss snakke med Anastasia og svare på spørsmålet hennes.",
+    "wrongTabletIcon": "Det er så lett å forveksle disse ikonene. Det er ikke det vi leter etter. La oss prøve igjen.",
+    "foundTabletIcon": "JA! Du fant den! La oss gå videre nå.",
+    "textFileRead": "Flott, du har tatt til deg de avanserte konseptene. Snakk med Amina når du er klar.",
+    "wrongStickyNote": "Det er noens handleliste — egg, melk og… tilpasningsdyktighet? Bare tuller. Post-it-lappen du trenger er et annet sted.",
+    "foundStickyNote": "Du har fått tak i Weis lapp. Gå tilbake og la Wei vite at du er klar til å fortsette.",
+    "moveToFloor2": "La oss gå opp til neste etasje.",
+    "moveToFloor3": "På tide å gå opp til toppetasjen."
+  },
+  "items": {
+    "poster": {
+      "inventoryTitle": "Grunnleggende om tilpasningsdyktighet",
+      "popupTitle": "Grunnleggende om tilpasningsdyktighet",
+      "popupContent": [
+        "Tilpasningsdyktighet er evnen til å justere tilnærmingen din når omstendighetene endres. I gründermiljøet er endring konstant — prioriteringer flyttes, informasjon oppdateres og planer utvikler seg.",
+        "Å være tilpasningsdyktig betyr ikke å handle uten retning. Det betyr å holde seg fleksibel mens du holder målet ditt i tankene."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Tilpasningsdyktighet – Nivå 2",
+      "popupTitle": "Tilpasningsdyktighet – Nivå 2",
+      "popupContent": [
+        "Tilpasningsdyktighet handler om å avgjøre når man skal justere og når man skal holde seg konsekvent. Ikke hver endring krever umiddelbar handling, og effektiv tilpasning avhenger av å vurdere hvilke signaler som betyr noe og hvilke som kan vente.",
+        "Sterk tilpasningsdyktighet balanserer hastighet med dømmekraft. Å handle for raskt kan føre til ustabile beslutninger, mens å handle for sakte kan begrense fremgang. Tilpasningsdyktige fagfolk vurderer konsekvensene av hver handling og forstår at endring av ett element ofte påvirker andre.",
+        "I gründermiljøer betyr tilpasningsdyktighet å bevege seg fremover til tross for ufullstendig informasjon ved å teste antakelser, observere resultater og foredle handlinger over tid."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Post-it-lapp",
+      "popupTitle": "Post-it-lapp",
+      "popupContent": [
+        "«Hvis fremgangen står stille og alt rakner,\nBegynn ved målstreken, ikke ved start.»"
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har fullført onboarding-kurset som fokuserer på utviklingen av ferdigheten Tilpasningsdyktighet. Du har løst alle utfordringene, selv de med manglende informasjon, og de som krevde uortodokse tilnærminger. Du har virkelig vist din dype forståelse av hva det betyr å tilpasse seg!",
+    "buttonText": "Forlat trappeoppgangen"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "selectTwo": "Velg 2 svar",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "floorTransition": {
+    "toFloor2": "Du går opp trappene til neste etasje. Amina venter på deg på avsatsen foran.",
+    "toFloor3": "Du går opp trappene til toppetasjen. Wei står ved dørene øverst."
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

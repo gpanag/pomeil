@@ -1,0 +1,68 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Empathy room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(20, 20, 30, 0.95);
+  border: 2px solid rgba(100, 100, 255, 0.5);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .character-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+.inventory-bar {
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* --- Room-specific popup modifiers --- */
+.item-popup-base.fabric-style {
+  font-family: 'Courier New', Courier, monospace;
+  background: #fdf6e3;
+  color: #333;
+}
+
+
+/* --- Gap sentence overrides --- */
+.gap-sentence {
+  line-height: 2;
+  margin-bottom: 1.5rem;
+
+  .gap {
+    color: #1976d2;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+}
+
+/* --- Options vertical overrides --- */
+.options-vertical {
+  margin-top: 1rem;
+}

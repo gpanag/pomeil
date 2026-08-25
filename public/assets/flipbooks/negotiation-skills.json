@@ -1,0 +1,280 @@
+{
+  "id": "negotiation-skills",
+  "moduleNumber": 11,
+  "title": "Negotiation Skills",
+  "subtitle": "Module 11",
+  "coverImage": "assets/thumbs/negotiation-skills.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 11",
+      "title": "Negotiation Skills",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/negotiation-skills.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, you will be able to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Describe key components of effective negotiation"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. Recognize the importance of preparation before a negotiation"
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Apply active listening to better understand the other party"
+        },
+        {
+          "kind": "paragraph",
+          "text": "4. Respond professionally to pressure during negotiations"
+        },
+        {
+          "kind": "paragraph",
+          "text": "5. Propose win-win solutions that address the interests of both parties"
+        },
+        {
+          "kind": "paragraph",
+          "text": "6. Reflect on past negotiations to improve future performance"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Negotiation is a vital skill that plays a significant role in both personal and professional life. It involves the process of discussion and collaboration aimed at reaching mutually beneficial agreements, and mastering this skill can lead to better outcomes, stronger relationships, and increased satisfaction for all parties involved."
+        },
+        {
+          "kind": "paragraph",
+          "text": "While many people associate negotiation primarily with major business deals or salary discussions, it is actually something we engage in far more frequently—whether agreeing on holiday plans with family, dividing tasks at work, or resolving everyday conflicts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The importance of negotiation skills lies in their broad applicability across various aspects of life. Being a skilled negotiator enhances your ability to influence others, achieve your goals, and establish lasting partnerships."
+        },
+        {
+          "kind": "paragraph",
+          "text": "For instance, when buying a used car, thorough preparation and an understanding of both your own objectives and the seller’s perspective are crucial. Similarly, negotiating work tasks with a colleague requires active listening and a willingness to find solutions that accommodate everyone’s needs."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Successful negotiation is built on several key components. Preparation is essential: knowing your goals and understanding the other party’s needs, as well as gathering relevant information—such as industry standards for salary negotiations—lays a strong foundation."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Clear communication is equally important; articulating your points while actively listening to the other party ensures that concerns are addressed and understood."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Problem-solving skills help negotiators identify solutions that satisfy both sides, such as proposing a project timeline that works for everyone involved. Emotional intelligence allows individuals to manage their own emotions and recognize those of others, which is particularly valuable when discussions become tense."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Flexibility and a willingness to compromise are also vital, as they enable negotiators to adjust terms and reach agreements that benefit all."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Skill Why it matters Helps to avoid agreements that hurt your Know your bottom line business or drain your resources Builds trust and reveals what the other part Practice Active Listening truly values Gives you control of the conversation and Use Silence Strategically puts pressure back on the other side Creates lasting relationships instead of one- Offer Win-Win Solutions time win Keeps the negotiation productive and Stay calm under pressure protects your professional image"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Developing negotiation skills is an ongoing process that benefits from practice and reflection."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Role-playing exercises and mock negotiations provide valuable opportunities to experiment with different scenarios and receive feedback."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Reflecting on past negotiations, both successful and challenging, helps identify strengths and areas for improvement."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Seeking input from colleagues, mentors, or experts further enhances your abilities, while continuous learning—through books, courses, and workshops—keeps you informed about the latest strategies and techniques."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Negotiation can present various challenges, including difficult counterparts, conflicts, and impasses."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Building rapport and establishing trust with the other party can facilitate smoother discussions and create a positive atmosphere."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Maintaining composure and patience is essential when navigating tense situations, and focusing on shared interests and goals can help generate win-win solutions."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Even small adjustments, such as asking, “What would it take for this to work for you?” can open up new possibilities and break through resistance."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "To practice and strengthen negotiation skills, it is helpful to identify real or hypothetical scenarios you might encounter, clarify your objectives and those of the other party, and explore potential areas of compromise."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Engaging in role-play with a partner, focusing on the core components of successful negotiation, and reflecting on the experience afterward will highlight areas for improvement."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "A self-assessment checklist can be used to evaluate your negotiation performance. Consider whether you prepared thoroughly, communicated clearly, listened actively, managed your emotions, remained flexible, and found creative solutions that satisfied both parties. Asking yourself these questions after each negotiation helps reinforce positive habits and identify opportunities for growth. How did I perform?"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Did I win or lose? I won: I lost: Why?",
+            "Did I hurt my Yes: No: How?",
+            "bottom line?",
+            "Can I improve the Yes: No: Suggestions: situation?",
+            "Did I learn Yes: No: What?",
+            "something?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Mastering negotiation skills can have a profound impact on your personal and professional success. By understanding the essential components, practicing regularly, and learning from experience, you can become a more effective and confident negotiator. Ultimately, successful negotiation is not about defeating others but about finding solutions that everyone can accept. With dedication, reflection, and a willingness to learn, anyone can improve their negotiation abilities in any context."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, participants are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Prepare better before entering negotiations"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Listen and respond more effectively during negotiations"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Handle pressure in negotiations more calmly"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Seek solutions that benefit both negotiation parties"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Participate more confidently in negotiations"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "For those seeking to deepen their understanding, a wealth of resources is available, including books, online courses, podcasts, articles, case studies, webinars, academic journals, interactive simulations, and networking groups."
+        },
+        {
+          "kind": "paragraph",
+          "text": "The most important step, however, is simply to try—and to learn from every experience https://projectskillsmentor.com/mentoring/how-to-coach-negotiation-skills"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "To get started on your journey, here are some highly recommended resources:"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Getting to Yes: Negotiating Agreement Without Giving In, by Roger Fisher and William Ury. https://www.20minutebooks.com/getting-to-yes https://en.wikipedia.org/wiki/Getting_to_Yes"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "• Bargaining for Advantage, by G. Richard Shell https://www.goodreads.com/book/show/23801.Bargaining_for_Advantage",
+            "Online Courses:",
+            "• “Successful Negotiation: Essential Strategies and Skills” (University of Michigan, Coursera) o https://www.coursera.org/learn/negotiation-skills",
+            "• “Negotiation Mastery” (Harvard Business School Online) o https://online.hbs.edu/courses/negotiation/ o https://pll.harvard.edu/course/negotiation-mastery",
+            "Podcasts:",
+            "• The Negotiate Anything Podcast o https://negotiateanything.com/",
+            "• Negotiations Ninja Podcast o https://negotiateandlead.com/top-negotiation-podcasts-for-leaders/",
+            "Articles & Case Studies:",
+            "• Harvard Law School’s Program on Negotiation Daily Blog o https://www.pon.harvard.edu/daily/",
+            "• Case studies from MIT Sloan Management Review o https://sloanreview.mit.edu/article/learn-sharp-negotiation-tactics-for-top- mba-pros-52882/",
+            "Networking Groups:",
+            "• International Association for Contract & Commercial Management (IACCM) o https://www.worldcc.com/",
+            "• Negotiation and Leadership LinkedIn Groups o https://www.linkedin.com/company/centre-for-negotiation-and-leadership"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Negotiation Skills",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/negotiation-skills.pdf"
+      }
+    }
+  ]
+}

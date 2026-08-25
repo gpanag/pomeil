@@ -1,0 +1,205 @@
+{
+  "loading": "Loading...",
+  "intro": {
+    "title": "Strategic Thinking",
+    "paragraphs": [
+      "You're <username>, a young, aspiring individual who just got hired as a manager of a big audio company \"SoundWave\".",
+      "Even though passionate and ready to work, you're not very experienced in various difficult situations that you will have to face as manager.",
+      "You quickly realise that you will have to make tough decisions, plan ahead, and think strategically."
+    ],
+    "buttonText": "Start Game"
+  },
+  "characters": {
+    "jake": {
+      "name": "Jake",
+      "dialogues": {
+        "introduction": "Good morning <username>! We are happy to have you here. We've heard a lot of good things about you and we can't wait to start working under your oversight! I am Jake, it's nice to meet you! But first things first. Our previous manager left for you a few advices, guidelines, in hope to help you in your first days here. It's really important, so he pinned it on the corkboard right there… Well, on one of them at least. Go and take a look, I'm sure you can find it. It's a blue note.",
+        "findNote": "Have a look at the corkboards. The note you need is blue.",
+        "noteFound": "Yes, you found the sticky note!",
+        "noteFoundPart2": "As you can see, <username>, strategic thinking is a crucial skill, as it enables you to recognize and utilize various long-term patterns through the analysis of the entirety of the system. It can be applied in many scenarios, but it's especially important on management positions, such as yours!",
+        "noteFoundPart3": "Now that you have gained the foundational understanding of strategic thinking, lets test your knowledge with this simple exercise.",
+        "noteFoundPart4": "When you're ready, click the button below to start the quiz.",
+        "quizComplete": "Well done. I could tell that you're a fast learner since the first time I saw you! Alright, with the basics sorted out, we can move on to a bit more advanced stuff. Sofia will take over from here, you should greet her and talk to her now. Thank you and good luck, <username>!",
+        "findUsb": "What is it? A lost USB stick? No, I haven't seen it. Actually, I lost a few of mine as well!",
+        "allQuestsComplete": "Good luck!",
+        "default": "Please continue with the task at hand."
+      }
+    },
+    "sofia": {
+      "name": "Sofia",
+      "dialogues": {
+        "findUsb": "Hello there! You must be <username>, right? We've been waiting for you. It's so good to finally meet you. My name is Sofia. I've been meaning to show you around and provide you with some essential training, but… Well, I can't find my USB stick and all my training files were on it. Do you think you could help me find it? It was red. I think I've seen it the last time near the coffee machine… but I swear that I already checked and it wasn't there. But hey, it won't hurt to check again, right?",
+        "findUsbFollowUp": "Still looking? My red USB stick was last seen near the coffee machine — maybe take another look there.",
+        "usbFound": "I can't believe it! You have managed to find it! You're a lifesaver. I can already say that you are the most perceptive person in the company. Okay, let's get to the files then. Meet me at my laptop.",
+        "readTrainingFileDone": "I see you're a fast reader too. Noted! Now let's move to the next fil… Oh no! So the file system was ACTUALLY CORRUPTED! Could you, please, help me? What we need to do is to match each of the ideas from the first column with the right potential synergy outcome from the second column.",
+        "puzzleTwoComplete": "Yes! That's what I'm talking about! We did it! Oh… I'm so sorry, but I need to take this call - it's super important. R&D is very close to a technological breakthrough in a new headphone driver! It might be an industry-changing revolution, IF we play it smart. The question is - what should we do now? And in what order? I'm sure you can figure this out, <username>. We believe in you!",
+        "allQuestsComplete": "Yes! You are absolutely correct! That's the best strategy to follow! It will let us recognize all relations and dependencies, take into account information from all departments, discuss the details of our breakthrough, and finally integrate the innovation with our strategy in the long run. Awesome! The training has been completed!",
+        "farewell": "Take care, <username>. Best of luck out there!",
+        "default": "Please continue with the task at hand."
+      }
+    }
+  },
+  "puzzles": {
+    "puzzleOne": {
+      "title": "A new beginning! But how to begin?",
+      "question": "Imagine that you are preparing to launch your first staff meeting. To show the ability of strategic thinking from the very start, how should you start?",
+      "options": {
+        "a": "Jump straight into assigning tasks to show authority",
+        "b": "Thank the team for coming, set a positive tone, and explain the purpose of the meeting",
+        "c": "Start by criticizing what the team did wrong before you arrived",
+        "d": "Tell a long personal story so everyone gets to know you better"
+      },
+      "correct": "b",
+      "hint": "A sensible way to begin would be to avoid any extremes and stick to the safe route.",
+      "completeOverlay": {
+        "title": "Correct!",
+        "message": "Excellent work! You've completed the first exercise.",
+        "buttonText": "Continue"
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: Imagine that you are preparing to launch your first staff meeting. To show the ability of strategic thinking from the very start, how should you start?\n\nCorrect Answer: b) Thank the team for coming, set a positive tone, and explain the purpose of the meeting\n\nExplanation: Starting a staff meeting by thanking the team, setting a positive tone, and explaining the meeting's purpose shows strategic thinking because it:\n• Creates a welcoming atmosphere that fosters collaboration\n• Demonstrates leadership without being authoritarian\n• Sets clear expectations and direction from the start\n• Avoids the extremes of being too aggressive or too casual"
+    },
+    "matching": {
+      "title": "Matching ideas with synergies",
+      "question": "Match each product development idea with the correct synergy outcome.",
+      "columnHeaders": {
+        "ideas": "Product development ideas",
+        "outcomes": "Synergy outcome"
+      },
+      "selectPlaceholder": "Select outcome",
+      "rows": {
+        "1": "If production and design align early, we avoid expensive changes later.",
+        "2": "By involving customer support, we will be able to foresee common problems before launch.",
+        "3": "If Research & Development works closely with Marketing, we can design features that customers actually want.",
+        "4": "Working with Finance ensures our innovation is sustainable, not just exciting."
+      },
+      "options": {
+        "A": "Products that match customer needs from the start.",
+        "B": "Fewer complaints and smoother customer experience.",
+        "C": "Long-term viability and balanced investments.",
+        "D": "Efficient processes that save time and money."
+      },
+      "answerKey": {
+        "1": "D",
+        "2": "B",
+        "3": "A",
+        "4": "C"
+      },
+      "feedback": {
+        "notAllPicked": "Please match all ideas before submitting.",
+        "wrong": "Not quite. Think: which department collaboration leads to which outcome?"
+      },
+      "completeOverlay": {
+        "title": "Great job!",
+        "message": "You matched all ideas correctly.",
+        "buttonText": "Continue"
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: Match each product development idea with the correct synergy outcome.\n\nCorrect Matches:\n• \"If production and design align early, we avoid expensive changes later.\" → D: Efficient processes that save time and money\n• \"By involving customer support, we will be able to foresee common problems before launch.\" → B: Fewer complaints and smoother customer experience\n• \"If R&D works closely with Marketing, we can design features that customers actually want.\" → A: Products that match customer needs from the start\n• \"Working with Finance ensures our innovation is sustainable, not just exciting.\" → C: Long-term viability and balanced investments\n\nStrategic thinking means connecting departments so their combined efforts produce better outcomes than working alone.",
+      "resetButtonText": "Reset",
+      "submitButtonText": "Submit"
+    },
+    "sequence": {
+      "title": "The first real assignment",
+      "question": "Rearrange the steps in the correct order to carry out the decision-making process aligned with the principle of system perspective.",
+      "availableStepsLabel": "Available Steps",
+      "yourSequenceLabel": "Your Sequence",
+      "placeholderText": "Click steps on the left to add them here.",
+      "options": {
+        "a": "Discuss the new headphone prototype with the lab engineers",
+        "b": "Identify how this innovation could impact production, marketing, and customer support",
+        "c": "Gather feedback from different departments to spot opportunities and risks",
+        "d": "Align the final decision with the company's overall long-term strategy"
+      },
+      "correctSequence": [
+        "b",
+        "c",
+        "a",
+        "d"
+      ],
+      "hints": {
+        "attempt1": "Hint: First, understand the bigger picture — how the decision affects the whole system.",
+        "attempt2": "Hint: Next, gather feedback across departments to spot opportunities and risks."
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: R&D is very close to a technological breakthrough in a new headphone driver! What should we do now? And in what order?\n\nCorrect Answer:\n1. \"Step B: Identify how this innovation could impact production, marketing, and customer support\" - First, understand the bigger picture and how the decision will affect all related variables in the system\n2. \"Step C: Gather feedback from different departments to spot opportunities and risks\" - A good decision-making process requires operating on the entirety of available data from all perspectives\n3. \"Step A: Discuss the new headphone prototype with the lab engineers\" - Once context is clear, focus on the technical details and specifics of the innovation\n4. \"Step D: Align the final decision with the company's overall long-term strategy\" - Finally, integrate everything into a systemic decision that serves the long-term goals\n\nThis approach demonstrates strategic thinking by considering the whole system before diving into details.",
+      "resetButtonText": "Reset",
+      "submitButtonText": "Submit Order"
+    },
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "answerOverlay": {
+    "title": "Correct Answer",
+    "buttonText": "Continue"
+  },
+  "hints": {
+    "findNote": "Try the *left, big corkboard*. Jake said the correct note is blue.",
+    "findUsb": "Sofia last saw the red USB stick near the coffee machine.",
+    "puzzleThree": "Sequence tip: bigger system → feedback → technical details → long-term alignment.",
+    "default": "Look for what seems most relevant to the current objective."
+  },
+  "items": {
+    "blueNote": {
+      "altText": "A blue sticky note with strategic thinking tips.",
+      "inventoryTitle": "View Blue Note"
+    },
+    "usb": {
+      "altText": "Sofia's red USB stick.",
+      "inventoryTitle": "View USB"
+    },
+    "trainingFile": {
+      "altText": "Training file",
+      "inventoryTitle": "View TRAINING file",
+      "title": "TRAINING",
+      "content": "Strategic thinking isn't just about having good ideas - it's about connecting the right people so those ideas become stronger and generate synergies. Every department sees the company from a different angle: production, design, marketing, finance, research & development, and customer support each possess unique knowledge. When they are allowed to collaborate from the early stages of the process, teams can avoid expensive mistakes, predict customer needs better, and create solutions that are both innovative and realistic. Synergy is what happens when these perspectives work together, instead of separately.",
+      "closeHint": "Click anywhere to close."
+    }
+  },
+  "systemDialogues": {
+    "introSelfTalk": "This is it – the first day in my new job. A manager. Well, I'm optimistic. Let's see what the day will bring. Let's go.",
+    "findNotePrompt": "On one of the corkboards, there is a blue note with an important message from the previous manager. Look around the room and try to find it.",
+    "noteFoundSuccess": "Well done! It looks like Jake wants you to talk to him again.",
+    "wrongCorkboard": "Just some schematics, maps, and strategy documents here. Try to look at another corkboard.",
+    "laptopTooEarly": "A sleek, modern laptop. Better help Sofia find her USB stick first.",
+    "laptopNoUsb": "No training files without the USB stick.",
+    "usbFoundSuccess": "You found Sofia's USB stick – good job! Let's go and share the good news with her!",
+    "trainingFileDone": "Great job! Your attention span is impressive! Now let's talk to Sofia again.",
+    "findUsbPrompt": "Help Sofia and find her red USB stick. She thinks it might be near the coffee machine.",
+    "talkToSofiaPrompt": "Now click on Sofia to greet her — she has the rest of your training.",
+    "quizCompletePrompt": "Great job, <username>! Now let's talk to Jake again.",
+    "matchingCompletePrompt": "Good job! Let's see what Sofia has to say!",
+    "sequenceCompletePrompt": "Great job! Now click on Sofia to wrap up your training.",
+    "sequenceCompletePromptAfterReveal": "Now click on Sofia to wrap up your training."
+  },
+  "completion": {
+    "title": "Training Complete!",
+    "message": "Congratulations! You completed the Strategic Thinking module.",
+    "buttonText": "Back to Main Menu"
+  },
+  "ui": {
+    "fullscreenTitle": "Toggle Fullscreen",
+    "backToEscapeRoomsTitle": "Back to Escape Rooms",
+    "startQuizButton": "Start Quiz",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "skipButton": "Skip",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

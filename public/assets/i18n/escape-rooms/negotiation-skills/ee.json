@@ -1,0 +1,279 @@
+{
+  "loading": "Läbirääkimisoskuste laadimine...",
+  "intro": {
+    "title": "Läbirääkimisoskused",
+    "paragraphs": [
+      "Sa oled iseseisev sündmuste planeerimise konsultant. Saabusid äsja koosolekuruumi, et pidada potentsiaalse kliendiga läbirääkimisi lepingu üle ettevõtte ürituste sarja jaoks.",
+      "Sa veel ei tea kliendi kohta palju ja tunned end veidi ettevalmistamatuna. Kuid kohtumine on algamas ja taganemiseks pole enam aega.",
+      "Tee sügav hingamine ja astu intervjuuruumi..."
+    ],
+    "buttonText": "Sisene intervjuuruumi"
+  },
+  "characters": {
+    "bilal": {
+      "name": "Bilal Ahmed",
+      "dialogues": {
+        "phase1_1": "Tere hommikust. Palun, võta istet. Mina olen Bilal Ahmed, Meridian Holdingsi ettevõtte ürituste osakonna juht. Aitäh, et täna tulid.",
+        "phase1_2": "Otsime välist agentuuri, kes hooldab kogu selle eelarveaasta ürituste sarja planeerimist ja koordineerimist. See on üsna oluline ettevõtmine.",
+        "phase1_3": "Aasta jooksul on neli suuremat üritust: meeskonnatöö retriit, toote turuletoomine, meie iga-aastane gala ja sidusrühmade konverents. Igaüks neist nõuab ainulaadset lähenemist.",
+        "phase1_4": "Loomulikult tahame tagada, et töötame kellegagi, kes mõistab ulatust. Meie eelarve kogu paketi jaoks on umbes 6 000 eurot.",
+        "phase1_5": "Oleme pühendunud eelarvest kinnipidamisele, eriti koostöö varases etapis. Kulude tõhusus on meile väga oluline.",
+        "phase1_6": "Pean mainima, et kaaluvad ka teised agentuurid. Tahame ettepanekuid võrrelda enne lõpliku otsuse tegemist.",
+        "phase1_7": "...",
+        "phase1_8": "Noh, ma arvan, et see katab põhitõed praeguseks. Võtame kõike arvesse ja võtame peagi ühendust. Läbirääkimised jätkuvad.",
+        "phase1_9": "Aitäh aja eest. Olen ühenduses.",
+        "phase1_exit": "Bilal tõuseb püsti, kogub oma kausta ja kõnnib ruumist välja.",
+        "phase4_1": "Tere tulemast tagasi. Sain võimaluse vaadata üle esialgsed märkmed meie varasemast vestlusest. Jätkame seal, kus pooleli jäime?",
+        "phase4_2": "Niisiis, räägime numbritest. Mida pakud kogu ürituste sarja eest?",
+        "phase4_3": "See on oluliselt üle meie esialgse eelarve. Kas saaksid mulle aidata mõista jaotust?",
+        "phase4_4": "Ma näen. Ja kindlustus ja logistika?",
+        "phase4_5": "Hmm. Hindan läbipaistvust. Aga meil on endiselt eelarvepiirangud, millega tegeleda.",
+        "phase4_6": "...",
+        "phase4_7": "Tunnistan, vaikus andis mulle hetke mõtlemiseks. Sul on kvaliteedi ja kulude osas õigus.",
+        "phase4_8": "Siiski on teisi agentuure, kes pakuvad seda vähema eest. Miks peaksime sind valima?",
+        "phase4_9": "See on õige punkt. Kogemus loeb. Las ma mõtlen selle peale.",
+        "phase4_10": "Mis siis, kui me ei saa kohustuda kogu 8 500 ette?",
+        "phase4_11": "See võiks toimida. Faaside kaupa makse aitaks meie poolelt rahavooga.",
+        "phase4_12": "Huvitav. Räägi mulle nendest ürituste kontseptsioonidest rohkem.",
+        "phase4_13": "Pean ütlema, retriidi ja toote turuletoomise kombineerimise idee on loominguline. See võiks meile aega ja ressursse säästa.",
+        "phase4_14": "Andsid mulle palju mõelda. Las ma arutan seda juhatusega.",
+        "phase4_15": "Ma arvan, et meil on tugev alus edasiminekuks. Lepime kokku jätkukohtumises, et tingimused viimistleda.",
+        "phase4_final": "Sinuga oli rõõm läbi rääkida. Näen, et seekord tulid ettevalmistunult. Ootan koostööd.",
+        "completion": "Tubli! Koolitus on lõpetatud!",
+        "default": "Jätkame oma arutelu."
+      }
+    }
+  },
+  "phase1": {
+    "options": {
+      "1a": "Tere hommikust, härra Ahmed. Aitäh, et mind võtsite. Olen võimaluse üle põnevil.",
+      "1b": "Tere. Aitäh, et mahtusite mind oma ajakavasse. Olen valmis kuulama, mida vajate.",
+      "2a": "See kõlab kui suurepärane võimalus. Tahaksin sellest osa võtta.",
+      "2b": "Selge. Kas saaksid mulle konkreetsetest üritustest rohkem rääkida?",
+      "3a": "See on muljetavaldav. Olen sarnaseid üritusi varem käsitlenud, kuigi mitte just sellises mahus.",
+      "3b": "Neli üritust? See on üsna palju. Annan endast parima, et neid kõiki ellu viia.",
+      "4a": "6 000 eurot... see tundub mõistlik. Arvan, et leiame midagi.",
+      "4b": "Hindan, et jagasid eelarvet eelnevalt. Pean seda meeles, kui edasi arutame.",
+      "5a": "Absoluutselt, ka minu jaoks on kulude tõhusus oluline.",
+      "5b": "Saan aru. Püüan alati antud eelarves maksimaalset väärtust pakkuda.",
+      "6a": "Olen kindel, et minu lähenemine paistab teiste seast silma.",
+      "6b": "See on arusaadav. Konkurents hoiab kõik valvsana.",
+      "7a": "(Püsi vait ja oota)",
+      "7b": "Niisiis... arutame üksikasju edasi?",
+      "8a": "Aitäh. Ootan teie poolt vastust.",
+      "8b": "Enne kui lähed, kas on midagi muud, mida ma projekti kohta peaksin teadma?"
+    },
+    "selfTalkAfter": "Uuh... See oli ebamugav. Polnud üldse ettevalmistunud. Ma ei teadnud oma kulusid, mul polnud strateegiat ja ma lihtsalt nõustusin kõigega. Pean paremini hakkama saama, kui saan veel ühe võimaluse."
+  },
+  "phase2": {
+    "faxSound": "Kuuled, kuidas faksimasin sumiseb. Midagi tuleb läbi...",
+    "pickUpFax": "Lähed kohale ja võtad väljatrükitud transkripti oma varasemast kohtumisest Bilaliga.",
+    "transcriptTitle": "Kohtumise transkript",
+    "transcriptIntro": "Vaata oma varasema vestluse transkripti. Klõpsa esiletõstetud fraasidel, et mõelda, mida sa puudusid.",
+    "phrases": {
+      "1": {
+        "text": "kogu ürituste sarja planeerimine ja koordineerimine",
+        "thought": "Mida see tegelikult sisaldab? Ma ei küsinud kunagi iga ürituse ulatuse, tarnete ega ootuste kohta üksikasju. Oleksin pidanud seda enne hinna arutamist selgitama."
+      },
+      "2": {
+        "text": "eelarve umbes 6 000 eurot",
+        "thought": "Kas teen kasumit, kahjumit või lähen nullis välja? Aktsepteerisin selle numbri oma kulusid teadmata. Pean enne läbirääkimist oma alampiiri välja arvutama."
+      },
+      "3": {
+        "text": "eelarvest kinnipidamine, eriti varases etapis",
+        "thought": "Kas nad on mures kogukulu pärast või rahavoo pärast? See vahe on oluline. Võib-olla saan pakkuda makselahendust, mis nende muret lahendab."
+      },
+      "4": {
+        "text": "kaalutakse ka teisi agentuure",
+        "thought": "Oleksin saanud selgitada, miks nad peaksid valima just mind. Mis on minu unikaalne väärtuspakkumine? Pean koostama veenva juhtumi."
+      },
+      "5": {
+        "text": "Läbirääkimised jätkuvad",
+        "thought": "Ära pane paanikasse! See tähendab, et uks on endiselt lahti. Mul on veel üks võimalus. Pean seda aega arukalt kasutama, et ette valmistuda."
+      }
+    },
+    "allPhrasesReflected": "Nüüd näen kõiki võimalusi, mida ma puudusin. Pean välja arvutama oma alampiiri ja koostama tõelise strateegia enne, kui Bilal tagasi tuleb.",
+    "transitionToPhase3": "Aeg ette valmistada. Vaatame ringi tööriistade järele, mis aitavad mul teiseks vooruks valmistuda."
+  },
+  "phase3": {
+    "spreadsheet": {
+      "title": "Kuluhinnang - Ürituste sari",
+      "intro": "Vaata oma kulujaotus üle, et oma alampiir määrata.",
+      "rows": {
+        "labor": "Tööjõud: 185 tundi x 35 eurot/h",
+        "laborTotal": "6 475 eurot",
+        "software": "Ürituste haldamise tarkvara litsentsid",
+        "softwareTotal": "400 eurot",
+        "insurance": "Vastutuskindlustus",
+        "insuranceTotal": "250 eurot",
+        "logistics": "Logistika ja transport",
+        "logisticsTotal": "500 eurot",
+        "overhead": "Kontorikulud ja side",
+        "overheadTotal": "150 eurot",
+        "total": "Kogukulu",
+        "totalAmount": "7 775 eurot"
+      },
+      "conclusion": "6 000 euro vastuvõtmine tähendaks 1 775 euro suurust kahju. Pean nullis väljatulemiseks läbirääkima vähemalt 7 775 eest ja ideaalis rohkem, et kasumit teenida. Peaksin pakkuma 8 500, et endale ruumi anda."
+    },
+    "hourglass": {
+      "title": "Liivakell",
+      "description": "Pöörad aknalaual oleva liivakella ümber ja vaatad, kuidas liiv aeglaselt voolab.",
+      "reflection": "Vaikus on võimas läbirääkimisriist. Kui teine pool teeb pakkumise või avalduse, ei pea ma kohe vastama. Strateegiline paus näitab enesekindlust ja annab mulle aega mõtlemiseks. Peaksin järgmises vestluses vaikust sihilikult kasutama."
+    },
+    "folder": {
+      "title": "Win-Win-lahendused",
+      "description": "Avad kausta ja kolm dokumenti lendavad lauale.",
+      "documents": {
+        "payment": {
+          "title": "Maksevõimalused",
+          "content": "Selle asemel, et nõuda kogu summat ette, võiksin pakkuda etapikaupa makset: alguskautus, vahekohtumistele tehtavad maksed ja lõppmakse pärast lõpetamist. See lahendab kliendi rahavoo mured, tagades samal ajal, et saan tasu."
+        },
+        "concepts": {
+          "title": "Ürituse kontseptsiooni ideed",
+          "content": "Võiksin pakkuda loomingulisi ürituste kontseptsioone, mis lisavad väärtust ilma kulusid lisamata: meeskonnatöö retriidi sidumine toote turuletoomise ettevalmistusega, gala kasutamine sidusrühmade võrgustamise võimalusena ja ühtse teema loomine kõigi nelja ürituse jaoks."
+        },
+        "resume": {
+          "title": "Ettevõtte CV",
+          "content": "Peaksin esile tooma oma kogemuse: 12 aastat ürituste planeerimist, 50+ ettevõtteüritust läbi viidud, mitme ürituse seeria juhtimise spetsialiseerumine ja 95% klientide rahulolu määr. See õigustab minu hinnakujundust."
+        }
+      }
+    },
+    "posters": {
+      "eye": {
+        "title": "Vaata",
+        "content": "Keskendu kõnelejale. Hoia silmsidet. Otsi mitteverbaalseid vihjeid - kehakeel, näoilmed ja žestid paljastavad sageli rohkem kui sõnad."
+      },
+      "ear": {
+        "title": "Kuula",
+        "content": "Kuula enne rääkimist. Ära katkesta. Lase teisel inimesel mõte täielikult lõpetada enne, kui oma vastuse koostad."
+      },
+      "mouth": {
+        "title": "Räägi",
+        "content": "Sõnasta teise inimese väited ümber, et näidata mõistmist. Esita avatud küsimusi, et nende vajadusi ja huve sügavamalt uurida."
+      }
+    },
+    "allPrepComplete": "Olen oma koduse töö ära teinud. Tean oma kulusid, mul on loomingulised lahendused valmis, ma mõistan vaikuse ja aktiivse kuulamise jõudu. Olen teiseks vooruks valmis.",
+    "bilalReturns": "Uks avaneb. Bilal kõnnib tagasi tuppa ja võtab oma istme."
+  },
+  "phase4": {
+    "options": {
+      "1a": "Absoluutselt. Mul on olnud aega ette valmistuda ja olen kindel, et saame leida suurepärase kokkuleppe.",
+      "1b": "Jah, jätkame. Mul on nüüd selgem pilt.",
+      "2a": "Minu üksikasjaliku kuluanalüüsi põhjal tuleks kogu ürituste sarja eest 8 500 eurot. See katab tööjõu, tarkvara, kindlustuse, logistika ja üldkulud, väikese marginaaliga kvaliteedi tagamiseks.",
+      "2b": "Vaatan umbes 8 500 eurot kogu paketi eest. See on minu professionaalne hinnang.",
+      "3a": "Muidugi. Suurim osa on 185 tundi professionaalset tööd hinnaga 35 eurot tunnis, kokku 6 475. Siis on 400 tarkvara litsentside eest, 250 vastutuskindlustuse eest, 500 logistika eest ja 150 üldkulude eest.",
+      "3b": "Kindlasti. Tööjõud moodustab põhiosa 6 475, ülejäänu katab olulised tegevuskulud, nagu tarkvara, kindlustus ja logistika.",
+      "4a": "Kindlustus kaitseb meid mõlemaid vastutuse eest ürituste ajal ja logistika hõlmab seadmete ja materjalide transporti nelja koha vahel. Need on kvaliteetse läbiviimise jaoks läbirääkimatud.",
+      "4b": "Kindlustus on 250 ja logistika 500. Mõlemad on hädavajalikud ürituste sujuvaks ja turvaliseks elluviimiseks.",
+      "5a": "(Tee teadlik paus, hoia silmsidet ja oota)",
+      "5b": "Ma saan aru. Ja tahan veenduda, et leiame numbri, mis sobib meile mõlemale.",
+      "6a": "(Jätka strateegilist vaikust veidi kauem)",
+      "6b": "(Nooguta mõtlikult ja oota, kuni Bilal jätkab)",
+      "7a": "Hindan seda. Kvaliteetsed üritused vajavad korralikku investeeringut ja säästmine maksab sageli pikemas perspektiivis rohkem.",
+      "7b": "Aitäh. Usun läbipaistva hinnakujundusse, sest see ehitab algusest peale usaldust.",
+      "8a": "Sest ma toon kaasa 12 aastat spetsialiseerunud kogemust mitmete ürituste seeriate juhtimisel, 95% klientide rahulolu määra ja võime luua sidusaid kogemusi kõigi nelja ürituse vahel. Odavam pole alati parem, kui mängus on teie ettevõtte maine.",
+      "8b": "Kogemus ja usaldusväärsus. Olen läbi viinud üle 50 ettevõtteürituse ja spetsialiseerunud just sellisele aasta-pikkusele seeriale. Minu saavutused räägivad enda eest.",
+      "9a": "Soovitaksin etapikaupa makselahendust. Algkautus 30%, seejärel maksed iga ürituse vahel-eesmärgi juures, lõppbilanss viimase ürituse lõpetamisel.",
+      "9b": "Saaksime makseid jaotada projekti ajakavale, nii et te ei pea kogu summa eest korraga vastutama.",
+      "10a": "Täpselt. Ja see ühildub teie varasemaga muredega kulude haldamise kohta varases etapis. Maksaksite ette ainult 2 550, ülejäänu jaguneks aasta peale.",
+      "10b": "See annab mõlemale poolele paindlikkust. Teie haldate rahavoogu ja mina saan tõhusalt ressursse planeerida.",
+      "11a": "Olen ette valmistanud ka mõned loomingulised ürituste kontseptsioonid. Näiteks võiksime ühendada meeskonnatöö retriidi toote turuletoomise ettevalmistusega, luues kaks-ühes kogemuse, mis maksimeerib teie investeeringu.",
+      "11b": "Mul on mõned ideed ürituste enda kohta, mis võiksid lisada täiendavat väärtust ilma eelarvet suurendamata.",
+      "12a": "Retriit võiks sisaldada koostöös toote ajurünnaku sessioone. Ja gala võiks olla ka sidusrühmade kaasamise platvorm ühtse teemaga, mis kulgeb läbi kõigi nelja ürituse.",
+      "12b": "Iga üritus tugineks eelmisele, luues kogu aasta jaoks narratiivi kaare. See on terviklik lähenemine.",
+      "13a": "Aitäh. Ja sellest, mida olete jaganud, näen, et Meridian Holdings hindab nii tõhusust kui mõju. See on just selline klient, kellega ma kõige paremini töötan.",
+      "13b": "Hindan seda. Loomingulised lahendused on see, mis eristab head ürituste planeerijat."
+    },
+    "betterChoice": "a",
+    "betterChoiceLabel": "Strateegilisem lähenemine",
+    "acceptableChoiceLabel": "Vastuvõetav lähenemine"
+  },
+  "puzzles": {
+    "transcript": {
+      "title": "Kohtumise transkripti analüüs",
+      "instructions": "Klõpsa igal esiletõstetud fraasil, et mõelda, mida sa võisid teha teisiti.",
+      "feedback": {
+        "allComplete": "Suurepärane analüüs! Oled tuvastanud kõik võtmehetked, mida sa esimese läbirääkimise ajal puudusid."
+      }
+    },
+    "negotiation": {
+      "title": "Ettevalmistatud läbirääkimine",
+      "feedback": {
+        "perfect": "Suurepärane läbirääkimine! Tegid kõik parimad strateegilised valikud.",
+        "good": "Head läbirääkimisoskused! Tegid peamiselt strateegilisi valikuid.",
+        "acceptable": "Korralik läbirääkimine. Strateegilist lähenemist saaks parandada."
+      }
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "activeListeningTitle": "Aktiivne kuulamine"
+  },
+  "hints": {
+    "phase1": "Klõpsa Bilal Ahmedil, et alustada läbirääkimist.",
+    "phase1Conversation": "Jätka vestlust Bilaliga, valides vastusevariandi.",
+    "phase2Fax": "Kuuled faksimasinast heli. Klõpsa sellel, et uurida.",
+    "phase2Transcript": "Loe transkript läbi ja klõpsa kõigil esiletõstetud fraasidel.",
+    "phase3Laptop": "Klõpsa sülearvutil, et oma kulujaotus üle vaadata.",
+    "phase3Hourglass": "Klõpsa aknalaual oleval liivakellal.",
+    "phase3Folder": "Klõpsa laual oleval kaustal.",
+    "phase3Posters": "Klõpsa seinal olevatel plakatitel.",
+    "phase3General": "Vaata ringi tubadeks ettevalmistustööriistade järele. Kontrolli sülearvutit, liivakella, kausta ja plakateid.",
+    "phase4": "Klõpsa Bilal Ahmedil, et alustada ettevalmistatud läbirääkimist.",
+    "phase4Conversation": "Jätka läbirääkimist, valides vastusevariandi.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ringi vihjete järele."
+  },
+  "systemDialogues": {
+    "enterRoom": "Siin ma olen. Intervjuuruum. Lihtne, kuid professionaalne. Las ma võtan istet ja ootan, kuni klient saabub.",
+    "bilalArrives": "Uks avaneb. Hästi riietatud mees mereväe sinises ülikonnas astub enesekindlalt sisse ja istub minu ette.",
+    "phase3Start": "Olgu, Bilal lahkus, kuid ütles, et läbirääkimised jätkuvad. Pean seda aega kasutama, et ette valmistuda. Vaatame ringi millegi järele, mis võiks aidata.",
+    "prepItem": "Hea. See on kasulik teave.",
+    "allPrepDone": "Tunnen end nüüd palju paremini ettevalmistunult. Tean oma numbreid, mul on strateegia ja olen aktiivseks kuulamiseks valmis. Nüüd peab vaid ootama, kuni Bilal naaseb.",
+    "phase4Intro": "Uks avaneb taas. Bilal kõnnib oma kaustaga tagasi sisse ja võtab oma istme. See on minu võimalus. Teeme seda õigesti."
+  },
+  "items": {
+    "transcript": {
+      "popupTitle": "Kohtumise transkript",
+      "header": "Sinu varasema kohtumise transkript Bilal Ahmediga"
+    },
+    "spreadsheet": {
+      "popupTitle": "Kuluhinnangu tabel"
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Oled edukalt näidanud läbirääkimise kunsti! Ettevalmistamatust esimesest kohtumisest strateegilise, hästi ettevalmistatud teise läbirääkimiseni oled õppinud ettevalmistuse, oma alampiiri tundmise, vaikuse strateegilise kasutamise, aktiivse kuulamise ja win-win-lahenduste leidmise tähtsust.",
+    "buttonText": "Välju ruumist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "chooseReply": "Vali oma vastus:",
+    "optionA": "Variant A",
+    "optionB": "Variant B",
+    "clickToReflect": "Klõpsa, et mõelda",
+    "reflected": "Mõelnud",
+    "phrasesRemaining": "fraasi alles",
+    "closeTranscript": "Sulge",
+    "closeSpreadsheet": "Sulge",
+    "prepProgress": "Ettevalmistuse edenemine",
+    "itemsFound": "elementi lõpetatud",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

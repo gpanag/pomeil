@@ -1,0 +1,39 @@
+<div class="main-container">
+  <div class="leaflet-list">
+    <h2 class="list-header">{{ 'NAVIGATION.LEAFLETS' | translate }}</h2>
+    
+    <div class="scroll-container">
+      @for (leaflet of leaflets; track leaflet.title) {
+        <div
+          class="leaflet-item"
+          [class.active]="selectedLeaflet === leaflet"
+          (click)="selectLeaflet(leaflet)">
+
+          <img [src]="leafletImageUrl(leaflet)" class="item-thumb" [alt]="leaflet.title">
+
+          <div class="item-details">
+            <span class="item-title">{{ leaflet.title }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="leaflet-preview">
+    @if (selectedLeaflet) {
+      <div class="preview-content">
+        <h3>{{ selectedLeaflet.title }}</h3>
+
+        <div class="image-wrapper" [@previewAnimation]="selectedLeaflet.title + '-' + lang">
+           <img [src]="leafletImageUrl(selectedLeaflet)" [alt]="selectedLeaflet.title">
+        </div>
+
+      </div>
+    } @else {
+      <div class="empty-state">
+        <p>Select a leaflet to view</p>
+      </div>
+    }
+  </div>
+</div>
+<app-footer></app-footer>

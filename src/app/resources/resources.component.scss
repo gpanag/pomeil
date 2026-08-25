@@ -1,0 +1,102 @@
+/* ─── Resources — graceful empty state until content lands ───────── */
+
+.resources-empty {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 64px) clamp(20px, 4vw, 32px) clamp(56px, 8vw, 96px);
+}
+
+.resources-empty-card {
+  background: var(--sys-surface-container-low-app);
+  border: 1px solid rgba(0, 63, 71, 0.10);
+  border-radius: var(--md-shape-lg);
+  padding: clamp(32px, 5vw, 56px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pomeil-teal-deep) 30%, var(--pomeil-warm) 70%, transparent);
+    opacity: 0.45;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    width: 320px;
+    height: 320px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%23006874' stroke-opacity='0.10' stroke-width='0.6'><circle cx='100' cy='100' r='86'/><circle cx='100' cy='100' r='66'/><circle cx='100' cy='100' r='44'/><circle cx='100' cy='100' r='22'/></g></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+}
+
+.resources-empty-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pomeil-warm);
+  margin-bottom: 16px;
+}
+.resources-empty-eyebrow::before {
+  content: "";
+  width: 36px;
+  height: 1.5px;
+  background: var(--pomeil-warm);
+}
+
+.resources-empty-lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  line-height: 1.3;
+  color: var(--pomeil-teal-deep);
+  font-variation-settings: "opsz" 60, "SOFT" 60;
+  margin: 0 0 1rem;
+}
+
+.resources-empty-detail {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--pomeil-ink-muted);
+  margin: 0 auto 2rem;
+  max-width: 56ch;
+}
+
+.resources-empty-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pomeil-warm);
+  text-decoration: none;
+  transition: color var(--md-duration-short3) var(--md-easing-standard);
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    transition: transform var(--md-duration-short3) var(--md-easing-emphasized-decelerate);
+  }
+  &:hover {
+    color: var(--state-attention-deep);
+  }
+  &:hover mat-icon { transform: translateX(4px); }
+}

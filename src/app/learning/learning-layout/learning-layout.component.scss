@@ -1,0 +1,302 @@
+/* Learning Layout sidenav — POMEIL editorial sidebar
+   The active item gets a warm terracotta indicator stripe (left edge),
+   matching the editorial-page metaphor. The sidenav itself sits on the
+   atmospheric cream paper background that the page already establishes. */
+
+.learning-sidenav-container {
+  /* Was calc(100vh - 64px) — the toolbar is 72px so an extra 8px
+     pushed past the viewport and the page itself scrolled, on top of
+     the sidenav already managing its own scroll. Use the toolbar
+     height token so the value moves in lockstep with the chrome. */
+  height: calc(100vh - var(--app-toolbar-height, 72px));
+  background: transparent;
+}
+
+/* Sidenav panel */
+.learning-sidenav {
+  width: 268px;
+  border-right: 1px solid rgba(0, 63, 71, 0.10);
+  background: rgba(250, 246, 238, 0.94) !important;
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  display: flex;
+  flex-direction: column;
+
+  /* Hairline editorial accent at the very top of the sidenav */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pomeil-teal-deep) 30%, var(--pomeil-warm) 70%, transparent);
+    opacity: 0.45;
+    z-index: 5;
+  }
+}
+
+/* Header */
+.sidenav-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 22px 18px;
+  position: relative;
+
+  .header-icon {
+    flex-shrink: 0;
+    font-size: 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: var(--pomeil-teal) !important;
+    font-family: 'Material Symbols Outlined' !important;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 32;
+  }
+
+  .header-title {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.45rem !important;
+    color: var(--pomeil-teal-deep);
+    letter-spacing: -0.005em;
+    font-variation-settings: "opsz" 48, "SOFT" 60;
+    line-height: 1.1;
+  }
+  .header-title::before {
+    content: "POMEIL";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 2px;
+  }
+}
+
+mat-divider {
+  border-color: rgba(0, 63, 71, 0.10) !important;
+}
+
+/* Nav list */
+.sidenav-nav-list {
+  padding: 12px 12px !important;
+  --mat-list-active-indicator-color: transparent;
+  --mdc-list-list-item-hover-state-layer-color: transparent;
+  --mdc-list-list-item-focus-state-layer-color: transparent;
+}
+
+.nav-item {
+  position: relative;
+  border-radius: var(--md-shape-md) !important;
+  margin-bottom: 4px;
+  height: 48px !important;
+  padding-left: 16px !important;
+  transition:
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    color var(--md-duration-short3) var(--md-easing-standard) !important;
+
+  /* Active indicator: terracotta vertical bar */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--pomeil-warm);
+    opacity: 0;
+    transform: scaleY(0.4);
+    transition:
+      opacity var(--md-duration-medium2) var(--md-easing-emphasized-decelerate),
+      transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate);
+  }
+
+  mat-icon {
+    color: var(--pomeil-ink-muted) !important;
+    margin-right: 14px !important;
+    font-family: 'Material Symbols Outlined' !important;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    transition: font-variation-settings var(--md-duration-medium2) var(--md-easing-standard);
+  }
+
+  span[matListItemTitle] {
+    font-family: var(--font-body) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    color: var(--pomeil-ink-muted) !important;
+    letter-spacing: 0.005em;
+    transition: color var(--md-duration-short3) var(--md-easing-standard);
+  }
+
+  &:hover {
+    background: rgba(0, 104, 116, 0.05) !important;
+
+    span[matListItemTitle] { color: var(--pomeil-teal-deep) !important; }
+    mat-icon {
+      color: var(--pomeil-teal) !important;
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+  }
+}
+
+/* Active link */
+::ng-deep .active-link {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 104, 116, 0.10) 0%,
+    rgba(0, 104, 116, 0.04) 100%
+  ) !important;
+
+  &::before {
+    opacity: 1 !important;
+    transform: scaleY(1) !important;
+  }
+
+  .mdc-list-item__primary-text,
+  span[matListItemTitle] {
+    color: var(--pomeil-teal-deep) !important;
+    font-weight: 600 !important;
+  }
+
+  .mat-icon, .mdc-list-item__start, mat-icon {
+    color: var(--pomeil-teal) !important;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24 !important;
+  }
+
+  &.mdc-list-item--activated::before {
+    background: var(--pomeil-warm) !important;
+  }
+}
+
+/* Content area */
+.learning-content {
+  background: transparent !important;
+}
+.content-area { min-height: 100%; }
+
+/* Mobile header bar */
+.mobile-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(250, 246, 238, 0.85);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid rgba(0, 63, 71, 0.10);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+
+  .mobile-title {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--pomeil-teal-deep);
+    font-variation-settings: "opsz" 48, "SOFT" 60;
+  }
+}
+
+/* Backdrop overlay */
+::ng-deep .mat-drawer-backdrop.mat-drawer-shown {
+  background-color: rgba(0, 63, 71, 0.30) !important;
+}
+
+/* ----- Sync status block at the bottom of the sidenav ----- */
+.sync-status {
+  padding: 12px 18px 18px;
+  margin-top: auto;
+
+  /* Hairline divider above */
+  > mat-divider {
+    margin-bottom: 12px;
+    border-color: rgba(0, 63, 71, 0.10) !important;
+  }
+
+  .sync-user,
+  .sync-login {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--md-shape-sm);
+    transition: background-color var(--md-duration-short3) var(--md-easing-standard);
+  }
+
+  .sync-icon,
+  > .sync-login mat-icon:first-child {
+    flex-shrink: 0;
+    font-size: 22px !important;
+    width: 22px !important;
+    height: 22px !important;
+    color: var(--pomeil-teal) !important;
+    margin-top: 2px;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .sync-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .sync-name {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--pomeil-teal-deep);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sync-label {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 0.78rem;
+    color: var(--pomeil-ink-muted);
+    font-variation-settings: "opsz" 48, "SOFT" 80;
+  }
+
+  .sync-progress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--pomeil-warm);
+    margin-top: 4px;
+
+    .tiny-icon {
+      font-size: 14px !important;
+      width: 14px !important;
+      height: 14px !important;
+      color: var(--pomeil-warm);
+      font-variation-settings: 'FILL' 1, 'wght' 500;
+    }
+  }
+
+  &.not-logged-in .sync-login {
+    cursor: pointer;
+
+    > mat-icon:first-child { color: var(--pomeil-ink-muted) !important; }
+
+    &:hover {
+      background: rgba(0, 104, 116, 0.05);
+      .sync-name { color: var(--pomeil-teal) !important; }
+      > mat-icon:first-child { color: var(--pomeil-teal) !important; }
+    }
+  }
+}

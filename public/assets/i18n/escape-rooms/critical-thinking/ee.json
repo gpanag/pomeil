@@ -1,0 +1,357 @@
+{
+  "loading": "Kriitilise mõtlemise laadimine...",
+  "intro": {
+    "title": "Kriitiline mõtlemine",
+    "paragraphs": [
+      "Sa oled just saabunud oma ettevõtte kontorisse kell 10:00 toimuvale kohtumisele juhatajaga. Astudes konverentsiruumi kõrval asuvasse ootetuppa, märkad, et oled saabunud varakult.",
+      "Ootetoas on mugav diivanigarnituur, kohvilaud sülearvutiga ja seinale paigaldatud suur lametele-televiisor. Konverentsiruumi uste lähedal ripub korktahvel.",
+      "Sa istud ja ootad. Kuid see vaikne hetk on kohe muutumas sinu kriitilise mõtlemise oskuste prooviks..."
+    ],
+    "buttonText": "Sisene ootetuppa"
+  },
+  "characters": {
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "greet": "Kas oled ka siia tulnud kell 10:00 kohtumisele?",
+        "intro": "Oh, ei? Noh... Ma olen Mark FastSupply Ltd-st. Me pakume kontoritarbeid ja teenuseid võrratute hindadega. Kas oled meist kuulnud?",
+        "offer": "Meil on praegu hämmastav pakkumine. 50% allahindlus kõikidele meie premium-teenustele, kui täna registreerud. Mida sa arvad?",
+        "offerWrongHint": "Ole ettevaatlik! Sa peaksid alati kontrollima iga tehingu üksikasju enne selle sõlmimist.",
+        "pressure": "See pakkumine kehtib ainult täna. Homme läheb hind tagasi tavapäraseks. Sa tõesti ei taha sellest ilma jääda.",
+        "pressureWrongHint": "Ära alistu ajasurvele. Tõeliselt hea pakkumine peaks olema saadaval ka pärast hoolikat kaalumist.",
+        "careful": "Ettevaatlik tüüp, näen. Ma austan seda. Mitte paljud inimesed ei võta tänapäeval aega, et asju läbi mõelda.",
+        "vagueClaims": "Vaata. Pakkumine on lihtne: suured säästud, premium-kvaliteet ja sajad rahulolevad kliendid. Sa ei leia kuskil paremat tehingut.",
+        "vagueClaimsWrongHint": "Ole skeptiline ähmaste tõendamata väidete suhtes. Küsi alati kirjalikku dokumentatsiooni ja kontrollitavaid viiteid.",
+        "sendDocs": "Muidugi, ma saadan sulle kõik. Täieliku kirjaliku pakkumise, viited, kogu kraami. Sa näed, et kõik on korras.",
+        "farewell": "Pea lihtsalt meeles. Mida kiiremini tegutsed, seda parem! Ma võtan sinuga ühendust. Siin on minu visiitkaart.",
+        "farewellWrongHint": "Väldi ebamääraste või mittekohustuslike vastuste andmist. Ole selge oma kavatsuse kohta üle vaadata ja uurida enne otsustamist.",
+        "default": "Ma olen Mark FastSupply-st. Alati hea meel vestelda!"
+      }
+    },
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hei! Nägin sind selle mehega rääkimas. Kas see oli Mark FastSupply-st?",
+        "warning1": "Nii arvasingi. Ma tunnen ta ära. Ta tuli umbes kuus kuud tagasi minu eelmisesse ettevõttesse sama jutuga.",
+        "warning2": "Ta pakkus ka meile tohutut allahindlust. Kõik kõlas täiuslikult - premium-teenus, tippkvaliteet, uskumatud säästud.",
+        "warning3": "Minu juht oli muljetatud ja allkirjastas lepingu kohapeal. Me ei teinud mingit taustauuringut.",
+        "warning4": "Esimene tarne hilines. Kui see lõpuks saabus, oli pool kaupadest valed ja kvaliteet oli kohutav.",
+        "warning5": "Üritasime ühendust võtta nende klienditeenindusega, kuid vastuse saamiseks kulus nädalaid. Nad pidevalt suunasid meid edasi.",
+        "warning6": "Lõpuks pidime lepingu tühistama. Probleemide parandamine maksis meile rohkem kui me kunagi nende allahindlusega säästsime.",
+        "warning7": "Ma ei väida, et nad on pettus, aga ma soovitaksin tungivalt teha enne millegi allkirjastamist oma kodutööd.",
+        "warning8": "Kontrolli online-arvustusi, küsi tõelisi viiteid ja loe peent kirja. Usu mind selles.",
+        "completion": "Edu sinu otsusele! Olen kindel, et teed õige valiku.",
+        "default": "Lihtsalt veendu, et teed enne mistahes otsuse tegemist oma uuringuid."
+      }
+    }
+  },
+  "conversation": {
+    "player": {
+      "response1": "Ei, ma lihtsalt ootan oma juhti.",
+      "response2": "Ma ei usu...",
+      "response3_correct": "See kõlab huvitavalt, kuid ma pean enne mistahes kohustuste võtmist üksikasjad üle vaatama.",
+      "response3_wrong": "See kõlab fantastiliselt! Teeme selle ära.",
+      "response4_correct": "Kui sinu pakkumine on tõeliselt hea, peaks see olema hea ka homme. Ma ei tee otsuseid ajasurve all.",
+      "response4_wrong": "Olgu, sa veensid mind. Registreerun enne tähtaega.",
+      "response5": "Noh-",
+      "response6_correct": "Kas sa võiksid mulle saata kirjaliku pakkumise ja mõned kontrollitavad viited? Tahaksin kõike korralikult üle vaadata.",
+      "response6_wrong": "See on minu jaoks piisav. Kus ma allkirjastan?",
+      "response7": "Suurepärane. Ootan neid pikisilmi.",
+      "response8_correct": "Vaatan dokumendid hoolikalt üle ja teen mõned sõltumatud uuringud enne otsuse tegemist.",
+      "response8_wrong": "Ma ütlen tõenäoliselt jaa kohe, kui näen pabereid. Tundub iseenesestmõistetav."
+    }
+  },
+  "email": {
+    "subject": "EKSKLUSIIVNE PAKKUMINE - 50% SOODUSTUS premium-teenustele - TEGUTSE KOHE!",
+    "from": "Mark Thompson <mark.t@fastsupply-deals.com>",
+    "to": "Sina",
+    "date": "Täna",
+    "greeting": "Lugupeetud klient,",
+    "body1": "Täname FastSupply Ltd vastu huvi tundmise eest! Nagu arutasime, on mul hea meel esitada meie eksklusiivne pakkumine:",
+    "offerLine": "50% ALLAHINDLUS KÕIKIDELE premium-teenustele - kehtib AINULT TÄNA!",
+    "body2": "Meie kliendid hindavad meid järjepidevalt valdkonna parimateks. Vaadake, mida mõned neist on öelnud:",
+    "testimonial1": "\"FastSupply muutis meie äri!\" - Rahulolev klient",
+    "testimonial2": "\"Uskumatu hinna ja kvaliteedi suhe!\" - Õnnelik klient",
+    "testimonial3": "\"Me ei saaks rohkem rahul olla!\" - Lojaalne partner",
+    "body3": "Kehtivad tingimused ja eeskirjad. Täielike üksikasjade saamiseks võtke ühendust meie müügimeeskonnaga.",
+    "signature": "Lugupidamisega,\nMark Thompson\nVanemmüügiesindaja\nFastSupply Ltd",
+    "clues": {
+      "subject": {
+        "label": "Teemarida",
+        "thought": "Teemarida kasutab kiireloomulisuse taktikaid: \"EKSKLUSIIVNE\", \"TEGUTSE KOHE!\", kõik suurtähtedega. See on tavaline kõrgsurve müügitehnika, mis on mõeldud panema mind tegutsema enne mõtlemist."
+      },
+      "discount": {
+        "label": "50% allahindlus",
+        "thought": "50% allahindlus kõikidele premium-teenustele? See on ebatavaliselt suur allahindlus. Kui nende teenused oleksid tõeliselt premium-kvaliteediga, miks oleks vaja pakkuda nii järsku vähendust? See tundub liiga hea, et olla tõsi."
+      },
+      "todayOnly": {
+        "label": "Ainult täna",
+        "thought": "\"Kehtib AINULT TÄNA\" - see on klassikaline kunstlik nappus. Vale tähtaja loomine paneb klienti kiirustama otsust tegema ilma korraliku uurimiseta."
+      },
+      "testimonials": {
+        "label": "Üldised iseloomustused",
+        "thought": "Need iseloomustused on täiesti üldised - puuduvad pärisnimed, ettevõtete nimed, konkreetsed üksikasjad. \"Rahulolev klient\" võib olla kes iganes või mitte keegi üldse. Seaduslikud ettevõtted pakuvad kontrollitavaid viiteid."
+      },
+      "terms": {
+        "label": "Tingimused ja eeskirjad",
+        "thought": "\"Kehtivad tingimused ja eeskirjad. Täielike üksikasjade saamiseks võtke ühendust meie müügimeeskonnaga.\" - Tingimused pole emaili kaasatud. Läbipaistev ettevõte annaks täielikud tingimused ette, mitte ei peidaks neid telefonikõne taha."
+      }
+    }
+  },
+  "reviews": {
+    "siteName": "BusinessReview.com",
+    "siteSubtitle": "FastSupply Ltd - Kliendiarvustused",
+    "overallRating": "2.1 / 5",
+    "totalReviews": "47 arvustust",
+    "items": {
+      "0": {
+        "author": "Sarah_Operations_Mgr",
+        "rating": 1,
+        "title": "Kohutav kogemus - vältige iga hinna eest",
+        "text": "Registreerusin pärast seda, kui müügiesindaja lubas premium-kvaliteeti. Tarned olid pidevalt hilinenud, tooted olid ebakvaliteetsed ja klienditeenindus oli olematu. Meie lepingu tühistamine võttis 3 kuud."
+      },
+      "1": {
+        "author": "NotMarkThompson",
+        "rating": 5,
+        "title": "Parim tarnija kunagi!!!",
+        "text": "FastSupply on suurim ettevõte, kellega olen kunagi tegelenud. Igas mõttes täiuslik. 100% soovitan kõigile. Ühtegi kaebust pole."
+      },
+      "2": {
+        "author": "TechStartup_James",
+        "rating": 2,
+        "title": "Eksitavad allahindlused",
+        "text": "50% allahindlus, mida nad reklaamivad, arvutatakse paisutatud baasihinnast. Lõpuks maksime madalama kvaliteediga kaupade eest rohkem kui meie eelmisele tarnijale."
+      },
+      "3": {
+        "author": "Definitely_Not_Mark_Thompson",
+        "rating": 5,
+        "title": "Suurepärane ettevõte, mida juhivad suurepärased inimesed",
+        "text": "Ma olen täiesti tõeline klient ja võin öelda, et FastSupply on veatu. Nende müügiesindajad on eriti nägusad ja võluvad."
+      },
+      "4": {
+        "author": "Office_Manager_Lima",
+        "rating": 1,
+        "title": "Peidetud tasud kõikjal",
+        "text": "Lepingul olid peidetud tasud, mida müügivestluse ajal ei mainitud. Tarnetasud, käitlustasud, ennetähtaegse lõpetamise trahv. Lugege peent kirja hoolikalt!"
+      },
+      "5": {
+        "author": "HR_Director_Chen",
+        "rating": 2,
+        "title": "Mittevastav klienditeenindus",
+        "text": "Kui probleemid tekkisid, oli nende klienditeenindusega võimatu ühendust saada. E-kirjadele ei vastatud nädalaid. Telefonikõned suunati läbi lõputute menüüde. Väga frustreeriv."
+      },
+      "6": {
+        "author": "NotMarksSister",
+        "rating": 5,
+        "title": "Täiuslik ettevõte, märkmeid pole!",
+        "text": "Ma kindlasti ei ole sugulane mitte ühegagi FastSupply-st ja arvan, et nad väärivad 10 tärni. Nende kontoritarbed muutsid mu elu igaveseks."
+      },
+      "7": {
+        "author": "Procurement_Specialist_EU",
+        "rating": 1,
+        "title": "Tee enne allkirjastamist kodutööd",
+        "text": "Agressiivsed müügitaktikad oleks pidanud olema punaseks lipuks. Surve kohe alla kirjutada, ähmased lubadused, ja kui küsisime viiteid, saime üldiseid tsitaate ilma kontaktandmeteta."
+      }
+    },
+    "thoughts": {
+      "fakePositive": "Mitmed positiivsed arvustused näevad kahtlased välja. Kasutajanimed nagu \"NotMarkThompson\" ja \"Definitely_Not_Mark_Thompson\" on ilmselgelt võltsitud. Arvustused on liigselt positiivsed ilma konkreetsete üksikasjadeta - võltsitud arvustuste tunnusjoon.",
+      "negativePattern": "Negatiivsed arvustused maalivad järjepideva pildi: hilinenud tarned, kehv kvaliteet, peidetud tasud, mittevastav klienditeenindus ja agressiivsed müügitaktikad. Mitmed sõltumatud arvustajad, kes raporteerivad samadest probleemidest, on tugev signaal."
+    }
+  },
+  "objects": {
+    "calendar": {
+      "title": "Konverentsiruumi broneerimisekraan",
+      "content": "Tänane ajakava:\n\n09:00 - 09:45  |  Turundusmeeskonna stand-up\n10:00 - 11:00  |  Juhi kohtumine (Sinu Nimi)\n11:30 - 12:00  |  Personalivaldkonna sisseelamissessioon\n13:00 - 14:00  |  Kliendikõne - Acme Corp\n14:30 - 15:30  |  Toote demo\n\nTäna pole tarnijatega kohtumisi planeeritud.",
+      "thought": "Tänase konverentsiruumi ajakavas pole loetletud ühtki kohtumist FastSupply-ga ega ühegi teise tarnijaga. Mark ütles, et ta on siin kohtumiseks, kuid sellele pole tõendeid. Tundub, et ta ilmus kohale kutsumata."
+    },
+    "flyer": {
+      "title": "FastSupply Ltd - Reklaamleht",
+      "content": "FastSupply Ltd\n\"Sinu partner kontori tipptaseme saavutamisel\"\n\nTeenused:\n- Kontoritarbed\n- Premium-teenused\n- Korporatiivsed lahendused\n\nVõta meiega täna ühendust!\nwww.fastsupply-deals.com\n\n*Hinnad ja kättesaadavus võivad ilma etteteatamiseta muutuda.",
+      "thought": "See reklaamleht on äärmiselt ähmane. Puuduvad konkreetsed tooteandmed, hinnainfo, ettevõtte registreerimisnumber, füüsiline aadress. Seaduslik ettevõte annaks oma pakkumiste kohta palju konkreetsemat teavet."
+    },
+    "businessCard": {
+      "title": "Visiitkaart",
+      "content": "Mark Thompson\nVanemmüügiesindaja\nFastSupply Ltd\n\nmark.t@fastsupply-deals.com\nwww.fastsupply-deals.com",
+      "thought": "Visiitkaardil puudub telefoninumber, füüsiline kontoriaadress ja ettevõtte registreerimisnumber. Emaili domeen on 'fastsupply-deals.com' professionaalsema domeeni asemel. See näeb ebaprofessionaalne välja oletatavalt sisseseatud ettevõtte jaoks."
+    },
+    "poster": {
+      "title": "Ettevõtte plakat",
+      "content": "Kaitse end manipuleerivate müügitaktikate eest:\n\n1. Jälgi kunstlikku kiireloomulisust (\"ainult täna!\")\n2. Nõua kirjalikke pakkumisi ja kontrollitavaid viiteid\n3. Uuri sõltumatult enne kohustuste võtmist\n4. Ära kunagi allkirjasta surve all\n5. Kui see kõlab liiga hästi, et olla tõsi, siis tõenäoliselt ka pole",
+      "thought": ""
+    },
+    "magazine": {
+      "title": "Tööstusajakiri - Procurement Weekly",
+      "content": "\"Kuidas hinnata uut tarnijat\"\nautor: Dr. Elena Martinez\n\nVõtmesammud hoolikuse kohustuse täitmiseks:\n- Küsi kirjalikku ettepanekut täielike tingimustega\n- Kontrolli sõltumatuid arvustusveebisaite\n- Küsi kontrollitavaid kliendisoovitusi\n- Verifitseeri ettevõtte registreering ja ajalugu\n- Võrdle vähemalt 2 teise tarnijaga\n- Ära kunagi seo end ajasurve all",
+      "thought": ""
+    }
+  },
+  "researchNotes": {
+    "notes": {
+      "conversation_written_offer": {
+        "id": "conversation_written_offer",
+        "text": "Mark nõustus saatma kirjaliku pakkumise täielike üksikasjade ja viidetega.",
+        "correctCategory": "PRO"
+      },
+      "conversation_consistent": {
+        "id": "conversation_consistent",
+        "text": "Marki pakkumine on olnud kogu vestluse jooksul järjepidev - 50% allahindlus premium-teenustele.",
+        "correctCategory": "PRO"
+      },
+      "conversation_good_offer": {
+        "id": "conversation_good_offer",
+        "text": "50% allahindlus premium-teenustele on märkimisväärne potentsiaalne sääst, kui see on ehe.",
+        "correctCategory": "PRO"
+      },
+      "conversation_pressure": {
+        "id": "conversation_pressure",
+        "text": "Mark kasutas ajasurve taktikaid: \"kehtib ainult täna\", \"mida kiiremini tegutsed, seda parem\".",
+        "correctCategory": "CON"
+      },
+      "conversation_vague": {
+        "id": "conversation_vague",
+        "text": "Mark esitas ähmaseid väiteid \"sadade rahulolevate klientide\" kohta ilma kontrollitavaid tõendeid esitamata.",
+        "correctCategory": "CON"
+      },
+      "conversation_uninvited": {
+        "id": "conversation_uninvited",
+        "text": "Mark väitis, et on siin kohtumiseks, kuid konverentsiruumi ajakava ei näita täna ühtki tarnija kohtumist.",
+        "correctCategory": "CON"
+      },
+      "maria_bad_experience": {
+        "id": "maria_bad_experience",
+        "text": "Maria eelmine ettevõte koges FastSupply-ga kohutavat kogemust: hilinenud tarned, valed kaubad, kehv kvaliteet ja mittevastav klienditeenindus.",
+        "correctCategory": "CON"
+      },
+      "email_urgency": {
+        "id": "email_urgency",
+        "text": "Email kasutab agressiivseid kiireloomulisuse taktikaid: kõikides suurtähtedes teema, \"TEGUTSE KOHE!\", \"AINULT TÄNA\".",
+        "correctCategory": "CON"
+      },
+      "email_discount_suspicious": {
+        "id": "email_discount_suspicious",
+        "text": "50% allahindlus kõikidele premium-teenustele tundub liiga hea, et olla tõsi, ja võib viidata paisutatud baasihindadele.",
+        "correctCategory": "CON"
+      },
+      "email_generic_testimonials": {
+        "id": "email_generic_testimonials",
+        "text": "Iseloomustused emailis on täiesti üldised, ilma päris nimedeta või ettevõteteta - need ei ole kontrollitavad.",
+        "correctCategory": "CON"
+      },
+      "email_hidden_terms": {
+        "id": "email_hidden_terms",
+        "text": "Tingimused ja eeskirjad pole emaili kaasatud ja nende nägemiseks tuleb müügiga ühendust võtta.",
+        "correctCategory": "CON"
+      },
+      "email_time_pressure": {
+        "id": "email_time_pressure",
+        "text": "Email tugevdab kunstlikku \"ainult täna\" tähtaega, et luua ajasurvet.",
+        "correctCategory": "CON"
+      },
+      "reviews_fake": {
+        "id": "reviews_fake",
+        "text": "Mitmed positiivsed arvustused tunduvad olevat võltsitud, postitatud kahtlaste nimedega kasutajate poolt nagu \"NotMarkThompson\".",
+        "correctCategory": "CON"
+      },
+      "reviews_negative_pattern": {
+        "id": "reviews_negative_pattern",
+        "text": "Mitmed sõltumatud negatiivsed arvustused raporteerivad samadest probleemidest: hilinenud tarned, kehv kvaliteet, peidetud tasud ja mittevastav klienditeenindus.",
+        "correctCategory": "CON"
+      },
+      "calendar_no_meeting": {
+        "id": "calendar_no_meeting",
+        "text": "Konverentsiruumi broneerimisekraan ei näita tänaseks ühtki planeeritud tarnija kohtumist - tundub, et Mark ilmus kohale kutsumata.",
+        "correctCategory": "CON"
+      },
+      "flyer_lacking": {
+        "id": "flyer_lacking",
+        "text": "FastSupply reklaamleht on äärmiselt ähmane: puuduvad konkreetsed tooted, hinnad, ettevõtte registreering, aadress.",
+        "correctCategory": "CON"
+      },
+      "card_unprofessional": {
+        "id": "card_unprofessional",
+        "text": "Marki visiitkaardilt puudub telefoninumber, kontoriaadress ja ettevõtte registreerimisnumber - ebaprofessionaalne sisseseatud ettevõtte jaoks.",
+        "correctCategory": "CON"
+      }
+    },
+    "proLabel": "POOLT",
+    "conLabel": "VASTU",
+    "wrongPlacementHint": "Mõtle uuesti. Kas see tõend toetab või kahjustab FastSupply usaldusväärsust?",
+    "allSortedMessage": "Sa oled sorteerinud kõik tõendid. Nüüd on aeg teha otsus."
+  },
+  "decision": {
+    "title": "Tee oma otsus",
+    "instructions": "Kõikide kogutud tõendite põhjal, kas peaksid FastSupply pakkumise vastu võtma või tagasi lükkama?",
+    "acceptLabel": "Võta pakkumine vastu",
+    "rejectLabel": "Lükka pakkumine tagasi",
+    "acceptFeedback": "Sa otsustasid pakkumise vastu võtta. Kuigi potentsiaalsed säästud on ahvatlevad, viitavad ülekaalukad tõendid olulistele riskidele: võltsitud arvustused, surveatktikad, peidetud tingimused ja kolleegi negatiivne kogemus. Päriselus võib see otsus viia probleemideni. Kui aga edasi liigud, veendu, et pead läbi paremad tingimused, saaksid kõik kirjalikult ja seaksid kaitsemeetmed üles. Kriitiline mõtlemine tähendab teadlike valikute tegemist, isegi kui valik on riskantne.",
+    "rejectFeedback": "Sa otsustasid pakkumise tagasi lükata. Arvestades ülekaalukaid tõendeid - surveatktikad, võltsitud arvustused, ähmased väited, peidetud tingimused, kolleegi halb kogemus ja planeerimata kohtumine - on see hästi põhjendatud otsus. Kriitiline mõtlemine ei tähenda küünilisust, kuid see tähendab tõendite nõudmist enne kohustuste võtmist. Sa võid alati ümber mõelda, kui FastSupply pakub tulevikus kontrollitavaid viiteid ja läbipaistvaid tingimusi."
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Vastus avaldatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "phase1_talkToMark": "Klõpsa Markil, et alustada vestlust.",
+    "phase2_talkToMaria": "Klõpsa Marial, et kuulda tema kogemusest FastSupply-ga.",
+    "phase2_checkLaptop": "Klõpsa sülearvutil, et kontrollida emaili FastSupply-st.",
+    "phase2_checkTV": "Klõpsa teleri ekraanil, et kontrollida online-arvustusi.",
+    "phase2_checkCalendar": "Klõpsa konverentsiruumi uste lähedal asuval broneerimisekraanil, et kontrollida tänast ajakava.",
+    "phase2_checkFlyer": "Põrandal on reklaamleht. Klõpsa sellel, et seda uurida.",
+    "phase2_checkCard": "Kontrolli visiitkaarti, mille Mark kohvilauale jättis.",
+    "phase2_checkPoster": "Seinal on ettevõtte plakat. Sellel võib olla kasulikku teavet.",
+    "phase2_checkMagazine": "Lauale on tööstusajakirjas. See võib pakkuda juhiseid.",
+    "phase2_goCorkboard": "Sa oled kogunud kõik tõendid. Klõpsa korktahvlil, et oma leidusid sorteerida.",
+    "phase3_sorting": "Sorteeri iga uurimismärkus tõendite põhjal POOLT või VASTU.",
+    "phase3_decision": "Kõik tõendid on sorteeritud. Tee oma lõplik otsus FastSupply pakkumise kohta.",
+    "completion": "Koolitus on lõpule viidud!",
+    "default": "Vaata ringi toas, et leida rohkem teavet, mis aitab sul otsustada."
+  },
+  "systemDialogues": {
+    "intro": "Olen oma kohtumiseks varakult. Ootetuba on vaikne. Istun maha ja-",
+    "markExits": "Mark kogub oma asjad ja lahkub enesekindla naeratusega. Lahkudes märkad kohvilaual visiitkaarti, põrandal reklaamlehte, ja et lauasolev sülearvuti on saanud uue emaili teate. Enne mistahes otsuse tegemist peaksid koguma võimalikult palju teavet.",
+    "mariaNoteDone": "Maria kogemus annab sulle esmaste vahendite kaudu pildi sellest, milline on tõeliselt FastSupply-ga tegelemine. Sa peaksid selle üles kirjutama.",
+    "emailAnalysisDone": "Sa oled emailis tuvastanud mitmed punased lipud. On aeg vaadata rohkem allikaid.",
+    "reviewAnalysisDone": "Arvustused maalivad selge pildi. Mõned on ilmselgelt võltsitud ja tõelised on valdavalt negatiivsed.",
+    "allResearchDone": "Sa oled kogunud kõik tõendid. On aeg oma leidusid korraldada ja otsustada. Mine konverentsiruumi uste lähedal asuva korktahvli juurde.",
+    "sortingComplete": "Kõik tõendid on sorteeritud. Pilt on selge. Nüüd pead tegema oma otsuse: võta vastu või lükka tagasi FastSupply pakkumine.",
+    "gameComplete": "Hästi tehtud. Olenemata sellest, kas võtsid pakkumise vastu või lükkasid selle tagasi, on oluline see, et rakendasid kogu protsessi vältel kriitilist mõtlemist. Kogusid tõendeid, kahtlustad väiteid ja tegid teadliku otsuse."
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Oled edukalt lõpetanud Kriitilise mõtlemise põgenemistoa! Näitasid suutlikkust kahelda väidetes, koguda tõendeid mitmest allikast, tuvastada manipuleerimistaktikaid ja teha teadlikke otsuseid. Need on olulised kriitilise mõtlemise oskused igas professionaalses keskkonnas.",
+    "buttonText": "Välju toast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "nextReview": "Järgmine arvustus",
+    "previousReview": "Eelmine arvustus",
+    "closePopup": "Sulge",
+    "emailCluePrefix": "Vihje",
+    "reviewOf": "/",
+    "researchNotesCollected": "Kogutud uurimismärkmed",
+    "sortEvidence": "Sorteeri tõendid",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  },
+  "emailFields": {
+    "from": "Saatja:",
+    "date": "Kuupäev:",
+    "subject": "Teema:"
+  }
+}

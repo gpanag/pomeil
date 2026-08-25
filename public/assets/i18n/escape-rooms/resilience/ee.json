@@ -1,0 +1,254 @@
+{
+  "loading": "Vastupidavuse laadimine...",
+  "intro": {
+    "title": "Vastupidavus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind on just palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuridest, taustadest ja ametitest pärit inimesed. Selles ettevõttes töötamine on sulle õpikogemus, sest erinevaid väljakutseid läbides omandad sa oskused, mis kuuluvad POMEIL-i kompetentsuskaardile ja on igale ettevõtjale hädavajalikud.",
+      "Sa jätkad oma teekonda samas ettevõttes. Selles stsenaariumis seisad silmitsi nõudliku tööolukorraga, mis paneb su vastupidavuse proovile. Väljakutsed leiavad aset stressirikkal hetkel tööl, kus rahuks jäämine, kohanemine ja taastumine on hädavajalikud."
+    ],
+    "buttonText": "Astu arhiiviruumi"
+  },
+  "characters": {
+    "layla": {
+      "name": "Layla",
+      "dialogues": {
+        "greet": "Tere! Tore sind siin näha! See on arhiiviruum, kust leiame infot kõige kohta. Olen leidnud viimasest aruandest mõned vead, nii et olen siin, et leida infot ja aidata neid parandada. See nõuab veidi vastupidavust, nii et alustagem.",
+        "findBox": "Hästi, selle probleemi lahendamiseks peame leidma õige kausta. Vaatame riiulid hoolikalt üle — märkus, mida vajame, peaks olema kuskil siin.",
+        "boxFound": "Tubli töö! Mäletad neid samme? Kasutame neid ükshaaval kogu oma vastupidavuse teekonna jooksul. Nii et liigume edasi — järgmine samm ootab.",
+        "resilienceExplanation1": "Vastupidavus ei ole lihtsalt „tugevaks jäämine“.\nVastupidavus algab võimest pidada paus — tõmmata hinge, end tasakaalustada ja luua selguse hetk enne stressile reageerimist.",
+        "resilienceExplanation2": "Tegelikult on vastupidavuse arendamiseks kaks viisi:\n\nSisemine vastupidavus:\nNende oskuste tugevdamine, mida kasutame iseeneses — mõtete rahustamine, paus enne reageerimist ja meeldetuletus, et väljakutsed on ajutised. Sisemine vastupidavus aitab meil jääda kindlaks, keskendunuks ja enesekindlaks isegi siis, kui asjad tunduvad ülekaalukad.\n\nVäline vastupidavus:\nVäljaspool ennast olevate toetavate tegude kasutamine — abi otsimine, sidemete hoidmine teistega ja rutiinide loomine, mis hoiavad meid maa peal. Väline vastupidavus tuleb ressurssidest, suhetest ja harjumustest, mis aitavad meil tugevamana tagasi tulla.",
+        "resilienceExplanation3": "Kui mõlemad vastupidavuse vormid töötavad koos, ei pea sa lihtsalt väljakutseid taluma — sa reageerid viisil, mis aitab sul jääda kindlaks, mõelda selgelt ja taastuda kiiremini. See ehitab tugevuse ja stabiilsuse sinu töös ja igapäevaelus.",
+        "resilienceExplanation4": "Nüüd on aeg oma teadmisi kasutada",
+        "findDrawer": "Sa oled seni väga hästi hakkama saanud. Kuskil selles toas peaks olema märkus, mille ma andsin Ivanile. Ta sai selle hetkeks, kui me siin kadunud andmeid otsisime ja ta tundis end ülekoormatuna. Ta on siin nüüd aasta töötanud ja need märkmed on aidanud tal rahulikuks ja keskendunuks jääda — nii et need aitavad ka sind.\nVaatame lähemalt ja proovime ühe leida.",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Otsi toas ringi vihjete järele."
+      }
+    },
+    "ivan": {
+      "name": "Ivan",
+      "dialogues": {
+        "noteFound": "Vau, sa tegid seda! Loodan, et need mõtted aitasid sind. Las nad juhivad sind järgmise viktoriini läbi. Hästi — alustagem.",
+        "finalWords": "Vau, sa lõpetasid kõik! Olen sinu üle väga uhke. Nüüd oled tundnud, mis on vastupidavus — võtta asju samm-sammult ja mitte lasta ülekoormusel kontrolli haarata. Sa saad väljakutsetest läbi, võib-olla alguses aeglaselt, ja see on okei. Ära oota, et kõik esimesel korral täiuslikult sujuks. Iga katsega liigud kiiremini, sujuvamalt ja enesekindlamalt.\nEsimene kogemus peabki olema aeglane.\nSuurepärane töö!",
+        "farewell": "Sul on vastupidavus sees! Nüüd oled veel tugevam meeskonnamängija!",
+        "readyNext": "Koolitus on lõpetatud!",
+        "completion": "Suurepärane töö täna!",
+        "default": "Hei, ma pean lihtsalt selle õigeks ajaks valmis saama…"
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "Peaksin alustamiseks rääkima müügijuht Laylaga.",
+    "findBox": "Vaatame riiuleid ringi õige kausta järele.",
+    "clickShelf": "Need riiulid hoiavad aastaid arhiveeritud projekte. Iga kaust kujutab endast kellegi rasket tööd. Aga see, mida sa vajad, ei ole nende seas — proovi otsida madalamalt.",
+    "clickBoxes": "Siin pole midagi. Võib-olla vaata kõige madalamatel riiulitel.",
+    "foundBox": "Sa tegid seda! Viime selle müügijuht Laylale!",
+    "findDrawer": "Otsime toas Ivani märkmeid.",
+    "clickShelfForDrawer": "Siin on ainult vanad andmekaustad. Vaata võib-olla lauda.",
+    "clickDesk": "Ka siin pole midagi. Vaatame akna lähedale",
+    "foundNote": "Suurepärane leid! Mine tagasi Ivani juurde",
+    "puzzle1Complete": "Suurepärane edusamm! Liigume järgmise väljakutse juurde.",
+    "puzzle2Complete": "Tubli! Veel üks väljakutse jääda.",
+    "puzzle3Complete": "Kõik ülesanded on lõpetatud!"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Õige vastus",
+    "answerOverlayContinue": "Jätka",
+    "matching": {
+      "title": "Sobita vastupidavuse reaktsioon olukorraga",
+      "instructions": "Vali olukord veerust A ja seejärel sobiv vastupidavuse reaktsioon veerust B.",
+      "columnA": {
+        "heading": "Olukorrad",
+        "items": {
+          "1": "Projekt vahetab viimasel hetkel ootamatult suunda",
+          "2": "Tunned end stressis ja mõtted kihutavad",
+          "3": "Ülesanne tundub liiga suur ja ülekaalukas",
+          "4": "Tegid vea ja tunned end heitununa"
+        }
+      },
+      "columnB": {
+        "heading": "Vastupidavuse reaktsioonid",
+        "items": {
+          "A": "Jaga ülesanne väiksemateks, hallatavateks sammudeks",
+          "B": "Sõnasta olukord ümber ja tuleta endale meelde, et vead on osa õppimisest",
+          "C": "Tee paus, hinga ja rahune enne jätkamist",
+          "D": "Kohanda oma plaani ja kohane uue suunaga"
+        }
+      },
+      "feedback": {
+        "wrong": "Mõtle, milline tegevus aitab sul igas olukorras stabiilseks jääda. Näiteks kui kõik tundub liiga suur, teeb selle väiksemateks sammudeks jagamine selle tavaliselt lihtsamaks.",
+        "allCorrect": "Suurepärane! Sobitasid kõik vastupidavuse reaktsioonid õigesti."
+      },
+      "answerOverlay": "Õiged sobitused on:\n1. Projekt vahetab ootamatult suunda → Kohanda oma plaani ja kohane uue suunaga\n2. Tunned end stressis ja mõtted kihutavad → Tee paus, hinga ja rahune enne jätkamist\n3. Ülesanne tundub liiga suur ja ülekaalukas → Jaga ülesanne väiksemateks, hallatavateks sammudeks\n4. Tegid vea ja tunned end heitununa → Sõnasta olukord ümber ja tuleta endale meelde, et vead on osa õppimisest"
+    },
+    "fillGap": {
+      "title": "Reageerimine vastupidavusega",
+      "instructions": "Täida tühikud õigete sõnadega.",
+      "sentenceParts": [
+        "Kui ilmub väljakutse, aitab ",
+        ", ",
+        " oma järgmist sammu ja teha üks ",
+        " tegevus edasi liikumiseks."
+      ],
+      "options": [
+        "hingata",
+        "tormata",
+        "väike",
+        "vältida",
+        "hinnata"
+      ],
+      "correctAnswers": [
+        "hingata",
+        "hinnata",
+        "väike"
+      ],
+      "feedback": {
+        "wrong": "Vastupidavus ei kasva kunagi vältimisest ega tormamisest — see tuleb rahulikust hingamisest, selgest mõtlemisest ja väikestest sammudest.",
+        "correct": "Õige! Kui ilmub väljakutse, aitab hingata, hinnata oma järgmist sammu ja teha üks väike tegevus edasi liikumiseks."
+      },
+      "answerOverlay": "Õige lause on:\n„Kui ilmub väljakutse, aitab hingata, hinnata oma järgmist sammu ja teha üks väike tegevus edasi liikumiseks.“",
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli vastust"
+    },
+    "pattern": {
+      "title": "Vastupidavuse mustri lugemine",
+      "scenarioLabel": "Stsenaarium",
+      "answerOverlayPrefix": "Stsenaariumi jaoks: ",
+      "answerOverlayCorrectLabel": "\nÕige vastus on: ",
+      "answerOverlayExplanationLabel": "\n",
+      "scenarios": [
+        {
+          "text": "Kolleeg kohtab ootamatut probleemi, peatub, hingab aeglaselt sisse ja hakkab seejärel ülesannet väiksemateks sammudeks jaotama.",
+          "options": [
+            {
+              "text": "Ülemõtlemine + vältimine",
+              "correct": false
+            },
+            {
+              "text": "Rahulik reguleerimine + samm-sammult tegutsemine",
+              "correct": true
+            },
+            {
+              "text": "Hirmunud kõhklus + tagasitõmbumine",
+              "correct": false
+            },
+            {
+              "text": "Frustratsioon + impulsiivne reaktsioon",
+              "correct": false
+            }
+          ],
+          "hint": "Aeglane hingetõmme ja väikesed sammud näitavad, et keegi reguleerib end, mitte ei väldi ega reageeri impulsiivselt."
+        },
+        {
+          "text": "Tihedal hommikul tunneb kolleeg end ülekoormatuna, nimetab vaikselt, kuidas ta end tunneb, ja pöördub toe saamiseks meeskonnaliikme poole.",
+          "options": [
+            {
+              "text": "Isolatsioon + sulgumine",
+              "correct": false
+            },
+            {
+              "text": "Emotsionaalne teadlikkus + side",
+              "correct": true
+            },
+            {
+              "text": "Eitamine + perfektsionism",
+              "correct": false
+            },
+            {
+              "text": "Viha + ilma puhkuseta edasi suruvine",
+              "correct": false
+            }
+          ],
+          "hint": "Vastupidavus kasvab, kui keegi tunnistab oma tundeid ja otsib abi — mitte siis, kui ta neid varjab või eitab."
+        },
+        {
+          "text": "Stressirikkal hetkel sõnastab kolleeg olukorra ümber, öeldes „ma alles õpin“, ja jätkab ühtlases tempos töötamist.",
+          "options": [
+            {
+              "text": "Negatiivne enesekõne + alistumine",
+              "correct": false
+            },
+            {
+              "text": "Optimistlik ümbersõnastamine + ühtlane visadus",
+              "correct": true
+            },
+            {
+              "text": "Vältimine + tähelepanu hajutamine",
+              "correct": false
+            },
+            {
+              "text": "Paanika + tormamine",
+              "correct": false
+            }
+          ],
+          "hint": "Kui keegi sõnastab probleemi ümber ja liigub rahulikult edasi, harjutab ta tugevat vastupidavust — mitte vältimist või paanikat."
+        }
+      ]
+    }
+  },
+  "items": {
+    "box": {
+      "popupTitle": "Vastupidavuse sammud",
+      "popupContent": [
+        "Paus – Võta hetk, et hingata ja end stabiliseerida enne reageerimist. Lühike paus aitab sul stressi ajal selgust taastada.",
+        "Hindamine – Vaata olukorrale realistlikult. Tuvasta, mis tegelikult toimub ja millist osa saad mõjutada.",
+        "Kohandamine – Muuda vajadusel oma lähenemist. Paindlikkus aitab sul kohaneda, kui plaanid muutuvad või tekivad väljakutsed.",
+        "Tegutsemine – Tee üks väike, hallatav samm edasi. Tegevus — isegi tilluke — ehitab tugevust, hoogu ja enesekindlust.",
+        "Taastumine – Pärast pingutust või stressi anna endale hetk, et puhata, mõtiskleda ja energiat taastada. Taastumine on osa vastupidavusest, mitte sellest paus."
+      ]
+    },
+    "note": {
+      "popupTitle": "Vastupidavuse mõtisklused",
+      "popupContent": [
+        "Vastupidavus kasvab iga kord, kui sa kohtad väljakutset ja valid edasi liikumise, isegi väikestel viisidel.",
+        "Taastumine ei nõua täiuslikkust — ühe kindla sammu astumine edasi on juba edenemine.",
+        "Tagasilöökidest õppimine ehitab enesekindlust ja aitab sul tulevasi takistusi suurema jõuga ületada."
+      ]
+    },
+    "resilienceSteps": {
+      "inventoryTitle": "Vastupidavuse sammud"
+    },
+    "resilienceReflections": {
+      "inventoryTitle": "Vastupidavuse mõtisklused"
+    }
+  },
+  "hints": {
+    "intro": "Otsi müügijuht Laylat ja räägi temaga.",
+    "talkToLayla": "Klõpsa Laylal, et alustada vestlust.",
+    "findBox": "Vaata riiuleid hoolikalt — proovi klõpsata madalamatel riiulitel.",
+    "talkToLayla2": "Mine tagasi Layla juurde ja näita talle, mida leidsid.",
+    "findDrawer": "Vaata toas ringi — proovi sahtleid akna juures.",
+    "talkToIvan": "Mine tagasi Ivani juurde leitud märkusega.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Jätka toa uurimist."
+  },
+  "completion": {
+    "title": "Vastupidavus läbitud!",
+    "message": "Õnnitleme! Sa oled näidanud vastupidavust, jäädes rahulikuks, kohanedes ja taastudes stressirikkas tööolukorras. Pea meeles: vastupidavus ei ole mitte kunagi kukkumine — see on uuesti püsti tõusmine, samm-sammult.",
+    "buttonText": "Tagasi põgenemistubadesse"
+  },
+  "ui": {
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "gapPlaceholder": "______",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

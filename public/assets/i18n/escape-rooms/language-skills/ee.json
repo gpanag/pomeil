@@ -1,0 +1,176 @@
+{
+  "loading": "Keeleoskuste laadimine...",
+  "intro": {
+    "title": "Keeleoskused",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua ettevõte, mis toob inimesi kokku.",
+      "Sind on äsja palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuride, taustade ja ametite inimesed. Selles ettevõttes töötamine on sulle õppimiskogemus, kuna erinevate väljakutsete läbimisega omandad sa POMEIL Pädevuskaardilt oskusi, mis on iga ettevõtja jaoks olulised.",
+      "Sinu esimene ülesanne viib sind T&A ootealasse, kus kohtud uute kolleegidega eri riikidest. Tugevad suhtlemisoskused aitavad sul ületada keelebarjääre ja luua kestvaid professionaalseid suhteid."
+    ],
+    "buttonText": "Sisene ootealasse"
+  },
+  "characters": {
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Tere! Tere tulemast T&A ootealasse. Meie meeskonnad teevad koostööd partneritega kogu maailmast, seega tugevad keeleoskused on hädavajalikud. Need aitavad sul selgelt suhelda, parandavad karjäärivõimalusi ja võimaldavad professionaalselt kasvada.",
+        "findTablet": "Enne kui T&A osakonda siseneda, on oluline mõista keeleoskuse nelja põhikomponenti. Jätsin siia ühisesse lauda tahvelarvuti interaktiivse juhendiga. Kas leiad selle?",
+        "tabletFound": "Tubli! Rääkimine ja kuulamine on olulised koosolekutel ja aruteludes, samas kui lugemine ja kirjutamine on hädavajalikud aruannete, e-kirjade ja T&A dokumentatsiooni jaoks.",
+        "quiz1Intro": "Testime sinu nende mõistete mõistmist.",
+        "quiz1Done": "Nüüd, kui mõistad põhitõdesid, räägime, kuidas neid oskusi arendada. See on eriti oluline nõudlikus keskkonnas nagu T&A.",
+        "findFlipchart": "On tavalisi väljakutseid, nagu motivatsiooni puudus või piiratud aeg. Kirjutasin mõned lahendused siia paberitahvlile pärast viimast töötajaseminari. Mine vaata.",
+        "flipchartFound": "Suurepärane. Selged eesmärgid ja tehnoloogia tark kasutamine teevad keeleõppimise hallatavaks isegi T&A tiheda graafiku korral.",
+        "puzzle2Intro": "Nüüd lõpeta need viimased ülesanded, et koolitus lõpetada.",
+        "finalWords": "Fantastiline! Sa mõistad, kuidas arendada keeleoskusi reaalsetes töösituatsioonides. Tugev suhtlemine teeb sind enesekindlamaks ja tõhusamaks.\n\nPea meeles, keeleoskused võimaldavad täielikult osaleda rahvusvahelistes projektides ja globaalsel tööturul. Edu!",
+        "completion": "Õnnitlused, sa lõpetasid kõik ja tõstsid Keeleoskuste taset. Klõpsa avatud uksele, et väljuda.",
+        "default": "Vaata ootealas vihjete järele ringi."
+      }
+    },
+    "kenji": {
+      "name": "Kenji",
+      "dialogues": {
+        "busy": "Valmistun T&A ettekandeks. Digitaalsed tööriistad aitavad tõesti häälduse ja enesekindlusega!",
+        "default": "Veel harjutan… räägi Mariaga."
+      }
+    }
+  },
+  "puzzles": {
+    "fillGap": {
+      "title": "Keele 4 komponenti",
+      "instructions": "Lohista õiged sõnad puuduvatesse kohtadesse, et lõpetada definitsioonid.",
+      "sentenceParts": [
+        "Kuulamine on ",
+        " oskus, mis keskendub võimele tõlgendada sõnumit õigesti. Kirjutamine on ",
+        " oskus, mis võimaldab meil jagada arvamusi teksti kaudu."
+      ],
+      "options": [
+        "vastuvõttev",
+        "produktiivne",
+        "passiivne",
+        "vaikiv"
+      ],
+      "correctAnswers": [
+        "vastuvõttev",
+        "produktiivne"
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle, millised oskused võtavad teavet vastu ja millised seda toodavad.",
+        "correct": "Õigesti! Sa tead vastuvõtmise ja keele tootmise vahet."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. Kuulamine on VASTUVÕTTEV oskus.\n2. Kirjutamine on PRODUKTIIVNE oskus.",
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli vastust"
+    },
+    "singleChoice": {
+      "title": "Keelebarjääride ületamine",
+      "instructions": "Vali parim vastus.",
+      "question": "Sul on raskusi uue keele harjutamise aja leidmisega ja sa tunned ennast motivatsioonita. Vastavalt koolitusele, mis on hea lahendus?",
+      "options": {
+        "a": "Lõpeta õppimine, kuni sul on terve vaba päev.",
+        "b": "Kasuta tehnoloogiat (digitaalseid tööriistu) ja liitu veebikogukondadega.",
+        "c": "Kasuta ainult formaalseid haridusmeetodeid nagu kallid seminarid.",
+        "d": "Väldi rääkimist, kuni oled täiuslik."
+      },
+      "hint": "Mõtle moodsatele tööriistadele. Mida saad liikvel olles kasutada, et muuta õppimine isikupärastatuks ja sotsiaalseks?",
+      "feedback": {
+        "wrong": "Mõtle moodsatele tööriistadele. Mida saad liikvel olles kasutada, et muuta õppimine isikupärastatuks ja sotsiaalseks?",
+        "correct": "Õigesti! Tehnoloogia ja veebikogukonnad teevad keeleõppe juurdepääsetavaks ja sotsiaalseks."
+      },
+      "answerOverlay": "Õige vastus on: Kasuta tehnoloogiat (digitaalseid tööriistu) ja liitu veebikogukondadega."
+    },
+    "sequenceOrder": {
+      "title": "Rollimängu harjutus",
+      "instructions": "Sa osaled keelekursusel. Pane stsenaariumipõhise rollimängu sammud õigesse järjekorda.",
+      "items": [
+        "Osalejad valivad ühe olukorra ja esitavad oma arvamused.",
+        "Kirjuta paberile tavalised töökoha olukorrad (nt arvamuse esitamine).",
+        "Kõik osalejad suhtlevad ja arutavad teemat edasi.",
+        "Tuvasta stsenaarium."
+      ],
+      "correctOrder": [
+        "Tuvasta stsenaarium.",
+        "Kirjuta paberile tavalised töökoha olukorrad (nt arvamuse esitamine).",
+        "Osalejad valivad ühe olukorra ja esitavad oma arvamused.",
+        "Kõik osalejad suhtlevad ja arutavad teemat edasi."
+      ],
+      "hints": [
+        "Kõigepealt kirjuta üles võimalikud olukorrad. Siis otsusta, millisele stsenaariumile keskendud. Pärast seda esita see ja lõpuks aruta seda koos."
+      ],
+      "feedback": {
+        "wrong": "Kõigepealt kirjuta üles võimalikud olukorrad. Siis otsusta, millisele stsenaariumile keskendud. Pärast seda esita see ja lõpuks aruta seda koos.",
+        "correct": "Suurepärane! Sa panid rollimängu sammud õigesse järjekorda."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Tuvasta stsenaarium.\n2. Kirjuta paberile tavalised töökoha olukorrad.\n3. Osalejad valivad ühe olukorra ja esitavad oma arvamused.\n4. Kõik suhtlevad ja arutavad teemat edasi."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Alustamiseks klõpsa vasakul seinal oleval Marial.",
+    "talkToMaria": "Klõpsa Marial, et alustada.",
+    "findTablet": "Otsi tahvelarvutit ühisest lauast.",
+    "talkToMaria2": "Mine Maria juurde tagasi.",
+    "puzzle1FillGap": "Mõtle, millised keeleoskused võtavad teavet vastu ja millised seda toodavad.",
+    "findFlipchart": "Maria mainis paberitahvlit akende juures. Otsi seda.",
+    "talkToMaria3": "Mine Maria juurde tagasi sellega, mida õppisid.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ootealas vihjete järele ringi."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda T&A osakonna ette vaiksesse, professionaalsesse ootetuppa. Suur maailmakaardi seinamaaling sõnaga „Tere“ paljudes keeltes kaunistab tagumist seina. Märkad Mariat, keelekoordinaatorit, paberitahvli juures.",
+    "clickBookshelves": "Peamiselt käsiraamatud, sõnastikud ja tehnilised dokumendid. Maria mainis, et juhend on digitaalseadmes.",
+    "foundTablet": "Sa leidsid selle! Ekraan süttib õpirakendusega.",
+    "tabletRead": "Sa õppisid põhitõed! Mine Maria juurde tagasi.",
+    "clickWorldMap": "See toob esile meie rahvusvahelised T&A koostööd. Otsi paberitahvlit akende juures.",
+    "foundFlipchart": "Sul on strateegiad! Mine Maria juurde tagasi."
+  },
+  "items": {
+    "tablet": {
+      "popupTitle": "Keeleoskuse 4 komponenti",
+      "popupContent": [
+        "Rääkimine: Keele kasutamine ideede, tunnete ja arvamuste väljendamiseks.",
+        "Kuulamine: Vastuvõttev oskus, mida kasutatakse suuliste sõnumite õigeks tõlgendamiseks.",
+        "Lugemine: Kirjutatud teksti dekodeerimine ja mõistmine.",
+        "Kirjutamine: Produktiivne oskus, mida kasutatakse teksti kaudu suhtlemiseks."
+      ],
+      "inventoryTitle": "Tahvelarvuti"
+    },
+    "flipchart": {
+      "popupTitle": "Väljakutsed ja Lahendused",
+      "popupContent": [
+        "Väljakutse: Oskuste täiendamine ilma kindla eesmärgita.",
+        "Lahendus: Sea selged eesmärgid — eesmärk suurendab motivatsiooni.",
+        "Väljakutse: Ebajärjekindel motivatsioon ja ajapuudus.",
+        "Lahendus: Kasuta tehnoloogiat ja osale veebipõhistes õpikogukondades."
+      ],
+      "inventoryTitle": "Paberitahvli märkmed"
+    }
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Õnnitlused, sa lõpetasid kõik ja tõstsid Keeleoskuste taset.",
+    "buttonText": "Lahku ootealast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

@@ -1,0 +1,57 @@
+.content-cards {
+    margin-bottom: 16px;
+}
+
+.workpackages-parallax {
+    /* The image used */
+    background-image: url("/assets/images/image_6.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+    max-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.files {
+    margin-top: 32px;
+}
+
+/* Inline links inside workpackage body content (e.g. WP3 "Links" group) */
+.wp-inline-link {
+    color: var(--sys-primary);
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.wp-inline-link:hover {
+    text-decoration: none;
+}
+
+.file-item {
+    // cursor: pointer !important;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image-parent {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.image {
+    
+    width: 100%;
+    text-align: center;
+    img {
+        max-width: 400px;
+        width: 100%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,85 @@
+<!-- ────────────────────────────────────────────────────────────────────
+     About — editorial v2 treatment.
+     Hero (eyebrow + Fraunces title) → project facts strip → drop-cap
+     prose → numbered objectives grid. All content comes from Strapi
+     via ApiService and from the i18n keys already used elsewhere.
+     ──────────────────────────────────────────────────────────────── -->
+<article class="about-page">
+
+  <header class="about-hero">
+    <a routerLink="/" class="hero-back">
+      <mat-icon>arrow_back</mat-icon>
+      <span>{{ 'NAVIGATION.HOME' | translate }}</span>
+    </a>
+    <span class="md-eyebrow">POMEIL · {{ 'NAVIGATION.ABOUT' | translate }}</span>
+    <h1 class="about-title">{{ 'HOME.COVER_TAGLINE' | translate }}</h1>
+  </header>
+
+  <!--
+    Project facts strip — programme, reference number, start year and
+    funder, surfaced as small editorial badges. These reuse the same
+    i18n keys the home cover uses, so any update propagates.
+  -->
+  <section class="about-facts">
+    <div class="about-facts-grid">
+      <div class="fact">
+        <span class="fact-label">{{ 'NAVIGATION.PROGRAMME' | translate }}</span>
+        <span class="fact-value">{{ 'HOME.COVER_PROGRAMME' | translate }}</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">{{ 'NAVIGATION.REFERENCE' | translate }}</span>
+        <span class="fact-value">{{ 'REFERENCE_NO' | translate }}</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">{{ 'NAVIGATION.DURATION' | translate }}</span>
+        <span class="fact-value">{{ 'HOME.COVER_SINCE' | translate }}</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">{{ 'NAVIGATION.FUNDER' | translate }}</span>
+        <span class="fact-value">{{ 'HOME.COVER_FUNDED_BY' | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-prose-section" *ngIf="contentBlocks().length">
+    <div class="about-prose">
+      <p *ngFor="let par of contentBlocks(); let i = index"
+         [class.is-heading]="isHeading(par)"
+         [class.is-body-lede]="isBodyLede(par, i)">
+        <ng-container *ngFor="let text of par.children">
+          <span [class.text-italic]="text.italic"
+                [class.text-bold]="text.bold">{{ text.text }}</span>
+        </ng-container>
+        <li *ngIf="par.children?.[0]?.children">
+          {{ par.children[0].children[0].text }}
+        </li>
+      </p>
+    </div>
+  </section>
+
+  <hr class="ornament-rule" *ngIf="objectives?.length" />
+
+  <section class="about-objectives" *ngIf="objectives?.length">
+    <header class="about-objectives-head">
+      <span class="md-eyebrow">{{ 'HOME.OBJECTIVES_EYEBROW' | translate }}</span>
+      <h2 class="about-objectives-title">{{ 'OTHER.OBJECTIVES' | translate }}</h2>
+    </header>
+    <div class="objectives-grid">
+      <article class="objective-card" *ngFor="let obj of objectives; let idx = index">
+        <span class="objective-ordinal" aria-hidden="true">{{ ordinalLabel(idx) }}</span>
+        <div class="objective-content">
+          <p *ngFor="let par of objectiveContent(obj)"
+             [class.is-heading]="isHeading(par)">
+            <ng-container *ngFor="let text of par.children">
+              <span [class.text-italic]="text.italic"
+                    [class.text-bold]="text.bold">{{ text.text }}</span>
+            </ng-container>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</article>
+
+<app-footer></app-footer>

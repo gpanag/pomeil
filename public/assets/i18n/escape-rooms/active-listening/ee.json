@@ -1,0 +1,218 @@
+{
+  "loading": "Aktiivse kuulamise laadimine...",
+  "intro": {
+    "title": "Aktiivne kuulamine",
+    "paragraphs": [
+      "Sa oled finantsettevõtte uus töötaja. Pärast esialgsete asjade korraldamist on sind kutsutud osalema ettevõttesisese arenguprogrammi raames. Selle programmi peamine fookus on Aktiivse kuulamise oskuse arendamine ettevõtte personali seas.",
+      "Töökohale jõudes öeldakse sulle, et koolitusel on individuaalne iseloom ja sind kutsutakse katusele, kus koolitus toimub, kui sinu järjekord saabub.",
+      "Sa oled selle pärast põnevil ja loodad, et see oskuste täiendamise programm osutub tõesti tõhusaks. Aktiivse kuulamise oskuse avamiseks pead edukalt lõpetama ettevõtte poolt sulle ette valmistatud koolituse."
+    ],
+    "buttonText": "Mine katusele"
+  },
+  "characters": {
+    "mateo": {
+      "name": "Mateo",
+      "dialogues": {
+        "greet": "Tere hommikust! On väga meeldiv sinuga kohtuda. Lubage mul alustada lühikese selgitusega tänase tegevuse kohta. Sulle antakse ülesandeks lahendada kolm erinevat harjutust, millest igaüks keskendub sinu aktiivse kuulamise võime arendamisele. Enne igaühte neist pead leidma teoreetilise teadmise tüki, mis on peidetud kuhugi siia ümber, mis võimaldab sul harjutuse edukalt lõpetada. Kõlab lihtsalt, eks? Lähme siis asja kallale!",
+        "clue": "Alustame põhitõdedega. Kuhugi siia ümbrusesse oleme peitnud esimese teadmise tüki, millega pead end kurssi viima. Meil on sulle see vihje, mis peaks aitama sul see leida:\n\n„Mitte pingil, mitte põrandal -\nkus taimed kõrgele kasvavad, sealt leiad midagi rohkem\"\n\nKas oled valmis? Las otsing algab!",
+        "fastLearner": "Oh, sa leidsid selle dokumendi väga kiiresti, tubli! Nüüd, meie esimese harjutusena, paneme proovile sinu äsja omandatud teadmised! Vaata sülearvutile.",
+        "puzzle1Done": "Täpselt! Sa oled kiire õppija! Nüüd, enne kui liigume edasi järgmise ülesande juurde, sooviksin… Hm, mis on, Zainabu?",
+        "interrupted": "*Mateo katkestatakse, kui Zainabu üritab talle midagi öelda. Ta pöördub tema poole, naine hakkab temaga rääkima.*",
+        "backToYou": "Igatahes, vabandan selle pärast. Usun, et oleme valmis järgmiseks harjutuseks, eks? See on juba sulle sülearvutis kuvatud. Vaatame.",
+        "congratsFinal": "See on tõsi. See oli tõesti muljetavaldav! Sa oled meisterdanud aktiivse kuulamise oskuse ja läbinud meie testid suurepäraselt! Sa seadsid lati tõesti kõrgele - järgmistel osalejatel on tõesti raske aega sinu tulemuse löömisega! Tänan veel kord aja ja pingutuse eest.",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Olen siin, kui mind vajad."
+      }
+    },
+    "zainabu": {
+      "name": "Zainabu",
+      "dialogues": {
+        "conv1": "Vabandan, et katkestan, kuid see on oluline. Kas vaatasid läbi ajakohastatud riskiaruande malli, mis tuli täna hommikul?",
+        "conv3": "Ma märkasin, et konkreetsed väärtused on nüüd erinevalt rühmitatud, eriti riskisektsioonis, ja ma polnud kindel, kas see muudab seda, kuidas me arvutame kvartali kokkuvõtteid.",
+        "conv5": "Olgu. See, mis mind muretsema pani, oli see, et võrdlustabel ei näita enam samu kogusummasid kui eelmisel kvartalil.",
+        "conv7": "Las ma kontrollin, kas ma sain sinust õigesti aru. Sinu vaatenurgast jäävad arvutused samaks ja muutunud on vaid esitus?",
+        "conv9": "See on kasulik selgitada. Sel juhul peaksime ehk seda kontrollima enne lõpparuande saatmist.",
+        "pendriveTask": "Sa oled ise päris hea kuulaja, tead. Sa said selle viimase ülesandega väga hästi hakkama. Aga meil on veel üks ülesanne sinu ees, enne kui peame seda koolitust lõpetatuks. Kuhugi siia oleme peitnud mälupulga. Sellel mälupulgal on viimane teadmise tükk, mida vajad oma viimase ülesande lahendamiseks. See on punane mälupulk. Anna mulle teada, kui selle leiad!",
+        "readyForFinal": "Jah. Nüüd oled valmis lõpliku väljakutsega silmitsi seisma. Mine ja klõpsa sülearvutil, kui oled valmis.",
+        "congratsFinal": "See on see! Sa oled täiesti õigesti vastanud! See pole ju sinu esimene aktiivse kuulamise koolitus? Sa said täna tõesti hästi hakkama. Sul õnnestus mitte ainult kiiresti meie materjalidest õppida, vaid ka suurepäraselt ära tunda ja mõista kõiki elavaid vihjeid, mida me sulle ette valmistasime!",
+        "completion": "Oli rõõm sinuga täna koos töötada!",
+        "default": "Ma kuulan tähelepanelikult."
+      }
+    },
+    "mateoConv": {
+      "name": "Mateo",
+      "dialogues": {
+        "conv2": "Mitte üksikasjalikult. Eeldasin, et see on sama mis varem, lihtsalt standardne uuendus.",
+        "conv4": "Ma ei usu. Need uuendused on tavaliselt kosmeetilised. Meil on olnud sarnaseid varem.",
+        "conv6": "Tõenäoliselt on kõik korras. Kui vastavus muutis paigutust, peaksid numbrid ise endiselt õiged olema.",
+        "conv8": "Jah, seda ma mõtlengi. Kuid nüüd, kui sa kogusummasid mainid, saan aru, et ma pole seda tegelikult kinnitanud.",
+        "conv10": "Sul on õigus. Ma kontrollin arvutusreegleid ja kinnitan vastavusega enne kui me midagi esitame."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Põhitõdede mõistmine",
+      "instructions": "Vali KAKS õiget vastust.",
+      "question": "Millised käitumised on aktiivse kuulamise näited?",
+      "options": {
+        "a": "Ette mõtlemine, kuidas vastata, samal ajal kui teine inimene räägib.",
+        "b": "Pauside ja vaikushetkede lubamine ilma katkestamata.",
+        "c": "Peamiselt keskendumine kokkuleppele jõudmisele võimalikult kiiresti.",
+        "d": "Tähelepanu pööramine kõneleja sõnadele, toonile ja kehakeelele."
+      },
+      "hint": "Pea meeles, et oluline osa aktiivsest kuulamisest on austus oma vestluskaaslase ja selle vastu, mida ta ütleb.",
+      "feedback": {
+        "wrong": "See pole päris õige. Pea meeles, et aktiivne kuulamine seisneb austuses oma vestluskaaslase ja selle vastu, mida ta ütleb.",
+        "correct": "Tubli! Need on aktiivse kuulamise õiged näited."
+      },
+      "answerOverlay": "Õiged vastused on:\n• Pauside ja vaikushetkede lubamine ilma katkestamata.\n• Tähelepanu pööramine kõneleja sõnadele, toonile ja kehakeelele."
+    },
+    "fillGap": {
+      "title": "Aktiivse kuulamise vihjete tuvastamine",
+      "instructions": "Täienda lauseid puuduvate sõnadega, et luua loogilisi lauseid, mis on seotud aktiivse kuulamise oskusega.",
+      "sentenceParts": [
+        "Isegi kui miski tundub tuttav, tähendab aktiivne kuulamine kiirete ",
+        " vältimist ja üksikasjade kontrollimist.\nKui miski on ebaselge, aitab keskenduda ",
+        " näidetele, mitte üldiselt rääkida.\nTeabe oma sõnadega kordamine aitab inimeste vahelist arusaamist ",
+        ".\nAktiivne kuulamine võib paljastada, et teavet pole veel korralikult ",
+        ".\nVestlus liigub edasi, kui inimesed nõustuvad teavet enne tegutsemist ",
+        "."
+      ],
+      "options": [
+        "kinnitada",
+        "eelduste",
+        "kontrollida",
+        "kontrollitud",
+        "konkreetsetele"
+      ],
+      "correctOrder": [
+        "eelduste",
+        "konkreetsetele",
+        "kinnitada",
+        "kontrollitud",
+        "kontrollida"
+      ],
+      "feedback": {
+        "wrong": "Mõned sõnad pole õiges kohas. Proovi uuesti!",
+        "correct": "Suurepärane töö! Sa püüdsid kõik aktiivse kuulamise peened signaalid ja tõestasid, et mõistad nende sügavamat tähendust."
+      },
+      "answerOverlay": "Õige järjestus on:\n[1] eelduste\n[2] konkreetsetele\n[3] kinnitada\n[4] kontrollitud\n[5] kontrollida",
+      "resetButton": "Lähtesta",
+      "checkButton": "Esita"
+    },
+    "matching": {
+      "title": "Aktiivne kuulamine – Viimane ülesanne",
+      "instructions": "Loo loogilisi lauseid, sobitades iga algust selle õige lõpuga.",
+      "columnA": {
+        "heading": "Lausete algused",
+        "items": {
+          "1": "Tõhus kuulamine nõuab teadlikkust oma reaktsioonidest, et need ei…",
+          "2": "Muutused selles, kuidas keegi räägib, võivad signaliseerida, et…",
+          "3": "Otsus enne vastamist pausi teha võib aidata…",
+          "4": "Sõnumi täpne peegeldamine keskendub kõneleja tähendusele, mitte…",
+          "5": "Kui inimesed tunnevad end tõeliselt kuulatuna, hakkavad nad sageli…"
+        }
+      },
+      "columnB": {
+        "heading": "Lausete lõpud",
+        "items": {
+          "A": "…täpsetele sõnadele, mida nad kasutasid.",
+          "B": "…segaks sõnumi mõistmist.",
+          "C": "…aeglustada vestlust ja vältida tarbetut pinget.",
+          "D": "…iseseisvalt oma mõtteid selgitada.",
+          "E": "…sõnum ise muutub."
+        }
+      },
+      "feedback": {
+        "wrong": "See pole päris õige. Proovi uuesti!",
+        "allCorrect": "Suurepärane! Sa sobitasid kõik laused õigesti!",
+        "revealedComplete": "Siin on õiged sobitused — vaata need üle ja jätkame."
+      },
+      "answerOverlay": "Siin on õiged sobitused:\n1→B (reaktsioonid… segavad mõistmist)\n2→E (muutused… sõnum muutub)\n3→C (paus… aeglustada vestlust)\n4→A (peegeldus… täpsed sõnad)\n5→D (kuulatud… selgitavad mõtteid)"
+    },
+    "answerOverlayTitle": "Vastus paljastatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Mine räägi Mateoga, et tänase koolituse kohta teada saada.",
+    "talkToMateo1": "Klõpsa Mateol, et alustada.",
+    "findPaper": "Vaata nurgades olevate taimede lähedale – „kus taimed kõrgele kasvavad, sealt leiad midagi rohkem.\"",
+    "readPaper": "Loe leitud dokumenti.",
+    "talkToMateo2": "Räägi Mateoga uuesti – ta ootab sind.",
+    "clickLaptop": "Klõpsa laual oleval sülearvutil.",
+    "puzzle1Complete": "Mateo soovib rääkida. Klõpsa temal.",
+    "conversation": "Jälgi tähelepanelikult Zainabu ja Mateo vestlust.",
+    "puzzle2FillGap": "Täida iga lünk sõnaga, mis sobib kõige paremini. Mõtle, mida aktiivne kuulamine tähendab, kui üksikasjad on ebaselged.",
+    "puzzle2Complete": "Räägi Zainabuga – tal on sulle järgmine ülesanne.",
+    "findPendrive": "Zainabu ütles, et kuhugi on peidetud punane mälupulk. Vaata põrandale, laua jalgade lähedale.",
+    "puzzle3Matching": "Sobita iga vasakpoolne lause algus selle õige parempoolse lõpuga.",
+    "readTextFile": "Loe sülearvutis kuvatud tekstifaili.",
+    "talkToZainabu": "Räägi Zainabuga – ta ütleb sulle, kui oled valmis.",
+    "reveal": "Koolitus on lõpetatud!",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata katusel ringi vihjete järele."
+  },
+  "systemDialogues": {
+    "selfTalk": "Trepist katusele üles kõndides mõtled eelseisvatele sündmustele – „See on minu esimene selline koolitus. Ja see on ka individuaalne – korporatsioon ületas end seekord tõesti. Ma loodan tõesti, et see on kasulik, positiivne kogemus. Lähme.\" Sa vajutad ukselinki ja kõnnid katusele välja…",
+    "wrongObject": "Hmm, midagi kasulikku siit ei leia. Aga vaade sellelt katuselt on uskumatu — sa näed kogu linna! Otsime edasi.",
+    "foundPaper": "Sa leidsid juhised, mille Zainabu ja Mateo on sinu jaoks ette valmistanud. Loeme need läbi.",
+    "paperRead": "Tubli töö. Sa just omandasid põhilise arusaama aktiivse kuulamise oskusest, selle tähendusest ja kasudest. Räägime Mateoga uuesti.",
+    "noticeCues": "Kuna Zainabu ja Mateo vestlus jätkub, hakkad märkama erinevaid vihjeid, mis on seotud nende oskusega aktiivset kuulamist päriselus rakendada…",
+    "foundPendrive": "Tubli töö! Sa leidsid selle. Pääsegem nüüd ligi sellele talletatud teabele. Klõpsa sülearvutil.",
+    "wrongPendrive": "Mitte päris. Oot, kas see on linnupesa lillepoti taga? Kuidas see siia üles sai? Otsi mälupulka edasi.",
+    "textFileRead": "Sa oled vaadanud üle täiustatud aktiivse kuulamise juhised. Räägi Zainabuga, kui oled valmis."
+  },
+  "items": {
+    "paper": {
+      "inventoryTitle": "Aktiivne kuulamine – Põhitõed",
+      "popupTitle": "Aktiivne kuulamine – Põhitõed",
+      "popupContent": [
+        "Aktiivne kuulamine tähendab vestluses täielikku kohalolu. See ei tähenda oma rääkimisjärje ootamist ega mõtlemist sellele, mida sa järgmisena ütled, samal ajal kui teine inimene räägib.",
+        "Kui kuulad aktiivselt, on sinu tähelepanu keskendunud ainult kõnelejale, ilma häirivate teguriteta või katkestusteta. Sa ei märka mitte ainult sõnu, mida räägitakse, vaid ka muid omadusi, nagu hääletoon, pausid ja kehakeel, mis võimaldavad sul sõnumit täielikumalt mõista.",
+        "Aktiivse kuulamise eesmärk on mõistmine, mitte kokkulepe. See hõlmab kõnelejale aja andmist, vaikuse lubamist, kui see ilmneb, ja vastamist alles pärast seda, kui sõnum on täielikult vastu võetud.",
+        "Kui inimesed tunnevad end sellisel viisil kuulatuna, on neil suurem tõenäosus tunda end austatuna, mõistetuna ja valmis avalikult suhtlema. Aktiivne kuulamine aitab vähendada arusaamatusi, parandab usaldust ja toetab paremat koostööd igapäevastes töövaldkonna suhtlemistes."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Aktiivne kuulamine – Täiustatud juhised",
+      "popupTitle": "Aktiivne kuulamine – Täiustatud juhised",
+      "popupContent": [
+        "Aktiivne kuulamine hõlmab oma reaktsioonide juhtimist, et need ei katkestaks sõnumi mõistmist.",
+        "Head kuulajad märkavad muutusi toonis või tempos kui signaale, et tähendus võib muutuda.",
+        "Hea kuulamine tähendab mõnikord mitte kohest vastamist, isegi kui tead, mida tahad öelda.",
+        "Parafraseerimine on kõige tõhusam, kui see haarab tähenduse, mitte täpsed sõnad.",
+        "Aktiivne kuulamine aitab vältida eskalatsiooni, aeglustades vestlusi enne kui emotsioonid tõusevad.",
+        "Kuulatud olemine aitab kõnelejal sageli oma mõtlemist selgitada, isegi ilma tagasisideta."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Sul õnnestus edukalt lõpetada Zainabu ja Mateo poolt sulle ette valmistatud aktiivse kuulamise koolitus. Sa oled näidanud mitte ainult oma võimet kiiresti õppida, vaid ka omandatud teadmisi õigesti rakendada. Sa oled edukalt omandanud Aktiivse kuulamise oskuse!",
+    "buttonText": "Välju katuselt"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "selectTwo": "Vali 2 vastust",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

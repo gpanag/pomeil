@@ -1,0 +1,279 @@
+{
+  "loading": "Ładowanie modułu Umiejętności negocjacyjne...",
+  "intro": {
+    "title": "Umiejętności negocjacyjne",
+    "paragraphs": [
+      "Jesteś niezależnym konsultantem ds. organizacji wydarzeń. Właśnie dotarłeś do sali konferencyjnej, by wynegocjować kontrakt z potencjalnym klientem na serię imprez firmowych.",
+      "Nie wiesz jeszcze zbyt wiele o kliencie i czujesz się trochę nieprzygotowany. Ale spotkanie zaraz się zacznie i nie ma już czasu na wycofanie się.",
+      "Weź głęboki oddech i wejdź do sali rozmów..."
+    ],
+    "buttonText": "Wejdź do sali rozmów"
+  },
+  "characters": {
+    "bilal": {
+      "name": "Bilal Ahmed",
+      "dialogues": {
+        "phase1_1": "Dzień dobry. Proszę usiąść. Nazywam się Bilal Ahmed, jestem szefem Wydarzeń Firmowych w Meridian Holdings. Dziękuję, że się dziś Pan(i) zjawił(a).",
+        "phase1_2": "Szukamy zewnętrznej agencji, która zajmie się planowaniem i koordynacją pełnej serii wydarzeń w tym roku obrachunkowym. To dość poważne przedsięwzięcie.",
+        "phase1_3": "W ciągu roku odbędą się cztery główne wydarzenia: wyjazd integracyjny, premiera produktu, nasza coroczna gala oraz konferencja dla interesariuszy. Każde z nich wymaga unikalnego podejścia.",
+        "phase1_4": "Naturalnie chcemy mieć pewność, że współpracujemy z kimś, kto rozumie skalę. Nasz budżet na cały pakiet wynosi około 6 000 euro.",
+        "phase1_5": "Zależy nam na utrzymaniu się w budżecie, zwłaszcza we wczesnych etapach współpracy. Efektywność kosztowa jest dla nas bardzo ważna.",
+        "phase1_6": "Powinienem wspomnieć, że rozważamy też inne agencje. Chcemy porównać oferty przed podjęciem ostatecznej decyzji.",
+        "phase1_7": "...",
+        "phase1_8": "Cóż, myślę, że na razie omówiliśmy podstawy. Weźmiemy wszystko pod uwagę i wkrótce się odezwiemy. Negocjacje będą kontynuowane.",
+        "phase1_9": "Dziękuję za poświęcony czas. Będę w kontakcie.",
+        "phase1_exit": "Bilal wstaje, zbiera teczkę i wychodzi z sali.",
+        "phase4_1": "Witam ponownie. Miałem okazję przejrzeć początkowe notatki z naszej wcześniejszej rozmowy. Wracamy do miejsca, w którym skończyliśmy?",
+        "phase4_2": "Porozmawiajmy więc o liczbach. Co Pan(i) proponuje za pełną serię wydarzeń?",
+        "phase4_3": "To znacznie powyżej naszego początkowego budżetu. Czy może Pan(i) wyjaśnić mi rozbicie kosztów?",
+        "phase4_4": "Rozumiem. A ubezpieczenie i logistyka?",
+        "phase4_5": "Hmm. Doceniam transparentność. Ale wciąż mamy ograniczenia budżetowe, z którymi trzeba się liczyć.",
+        "phase4_6": "...",
+        "phase4_7": "Przyznam, że ta cisza dała mi chwilę do namysłu. Ma Pan(i) słuszność co do jakości i kosztów.",
+        "phase4_8": "Wciąż jednak są inne agencje oferujące to samo za mniej. Dlaczego mielibyśmy wybrać Pana(ią)?",
+        "phase4_9": "Słuszna uwaga. Doświadczenie się liczy. Niech to przemyślę.",
+        "phase4_10": "Co jeśli nie możemy zobowiązać się do całych 8 500 z góry?",
+        "phase4_11": "To może zadziałać. Płatność etapowa pomogłaby z naszej strony w przepływie gotówki.",
+        "phase4_12": "Ciekawe. Proszę powiedzieć mi więcej o tych koncepcjach wydarzeń.",
+        "phase4_13": "Muszę przyznać, że pomysł połączenia wyjazdu integracyjnego z premierą produktu jest kreatywny. Mógłby zaoszczędzić nam czas i zasoby.",
+        "phase4_14": "Dał(a) mi Pan(i) wiele do przemyślenia. Pozwoli mi to omówić z zarządem.",
+        "phase4_15": "Myślę, że mamy solidną podstawę do dalszych działań. Umówmy się na spotkanie, by sfinalizować warunki.",
+        "phase4_final": "Negocjowanie z Panem(ią) było przyjemnością. Widzę, że tym razem był(a) Pan(i) przygotowany(a). Cieszę się na współpracę.",
+        "completion": "Dobra robota! Szkolenie zostało ukończone!",
+        "default": "Kontynuujmy naszą dyskusję."
+      }
+    }
+  },
+  "phase1": {
+    "options": {
+      "1a": "Dzień dobry, panie Ahmed. Dziękuję za zaproszenie. Cieszę się z tej okazji.",
+      "1b": "Cześć. Dziękuję za wciśnięcie mnie w plan. Jestem gotów wysłuchać, czego Państwo potrzebują.",
+      "2a": "To brzmi jak świetna okazja. Bardzo chętnie wezmę w tym udział.",
+      "2b": "Rozumiem. Czy może mi Pan opowiedzieć więcej o konkretnych wydarzeniach?",
+      "3a": "Imponujące. Obsługiwałem podobne wydarzenia, choć nie na tę skalę.",
+      "3b": "Cztery wydarzenia? To sporo. Postaram się jak najlepiej, by wszystkie zrealizować.",
+      "4a": "6 000 euro... wydaje się rozsądne. Myślę, że zdołamy się dogadać.",
+      "4b": "Doceniam, że dzieli się Pan budżetem od razu. Wezmę to pod uwagę przy dalszych rozmowach.",
+      "5a": "Zdecydowanie, efektywność kosztowa jest również dla mnie ważna.",
+      "5b": "Rozumiem. Zawsze staram się dostarczyć maksymalną wartość w ramach danego budżetu.",
+      "6a": "Jestem pewien, że moje podejście wyróżni się na tle innych.",
+      "6b": "To zrozumiałe. Konkurencja motywuje wszystkich do większej staranności.",
+      "7a": "(Zachowaj milczenie i poczekaj)",
+      "7b": "Cóż... omówimy szczegóły dalej?",
+      "8a": "Dziękuję. Czekam z niecierpliwością na wiadomość od Pana.",
+      "8b": "Zanim Pan wyjdzie, czy jest coś jeszcze, co powinienem wiedzieć o projekcie?"
+    },
+    "selfTalkAfter": "Uff... To było niezręczne. W ogóle nie byłem przygotowany. Nie znałem swoich kosztów, nie miałem strategii i po prostu zgadzałem się na wszystko. Muszę spisać się lepiej, jeśli dostanę kolejną szansę."
+  },
+  "phase2": {
+    "faxSound": "Słyszysz buczenie faksu. Coś przychodzi...",
+    "pickUpFax": "Podchodzisz i odbierasz wydruk transkrypcji wcześniejszego spotkania z Bilalem.",
+    "transcriptTitle": "Transkrypcja spotkania",
+    "transcriptIntro": "Przejrzyj transkrypcję wcześniejszej rozmowy. Kliknij podświetlone frazy, by zastanowić się, co przegapiłeś.",
+    "phrases": {
+      "1": {
+        "text": "planowanie i koordynacja pełnej serii wydarzeń",
+        "thought": "Co to właściwie obejmuje? Nigdy nie zapytałem o szczegóły zakresu, dostarczanych elementów ani oczekiwań dla każdego wydarzenia. Powinienem był to wyjaśnić przed dyskusją o cenie."
+      },
+      "2": {
+        "text": "budżet około 6 000 euro",
+        "thought": "Czy osiągnę zysk, stratę, czy wyjdę na zero? Zaakceptowałem tę liczbę, nie znając własnych kosztów. Muszę obliczyć moje minimum przed negocjacjami."
+      },
+      "3": {
+        "text": "utrzymanie się w budżecie, zwłaszcza we wczesnych etapach",
+        "thought": "Czy martwią się całkowitym kosztem, czy przepływem gotówki? To rozróżnienie ma znaczenie. Może mogę zaproponować strukturę płatności, która rozwiąże ich obawę."
+      },
+      "4": {
+        "text": "rozważane są też inne agencje",
+        "thought": "Mogłem wyjaśnić, dlaczego powinni wybrać akurat mnie. Jaka jest moja unikalna propozycja wartości? Muszę przygotować przekonujący argument."
+      },
+      "5": {
+        "text": "Negocjacje będą kontynuowane",
+        "thought": "Nie panikuj! To znaczy, że drzwi są wciąż otwarte. Mam jeszcze jedną szansę. Muszę mądrze wykorzystać ten czas, by się przygotować."
+      }
+    },
+    "allPhrasesReflected": "Teraz widzę wszystkie szanse, które przegapiłem. Muszę obliczyć moje minimum i przygotować prawdziwą strategię, zanim Bilal wróci.",
+    "transitionToPhase3": "Czas się przygotować. Rozejrzę się po pokoju za narzędziami, które pomogą mi przygotować się do drugiej rundy."
+  },
+  "phase3": {
+    "spreadsheet": {
+      "title": "Wycena - Seria wydarzeń",
+      "intro": "Przejrzyj rozbicie kosztów, by określić swoje minimum.",
+      "rows": {
+        "labor": "Praca: 185 godzin x 35 euro/h",
+        "laborTotal": "6 475 euro",
+        "software": "Licencje na oprogramowanie do zarządzania wydarzeniami",
+        "softwareTotal": "400 euro",
+        "insurance": "Ubezpieczenie OC",
+        "insuranceTotal": "250 euro",
+        "logistics": "Logistyka i transport",
+        "logisticsTotal": "500 euro",
+        "overhead": "Koszty biurowe i komunikacja",
+        "overheadTotal": "150 euro",
+        "total": "Koszt całkowity",
+        "totalAmount": "7 775 euro"
+      },
+      "conclusion": "Zaakceptowanie 6 000 euro oznaczałoby stratę 1 775 euro. Muszę negocjować przynajmniej 7 775, by wyjść na zero, a najlepiej więcej, by osiągnąć zysk. Powinienem zaproponować 8 500, aby dać sobie pole manewru."
+    },
+    "hourglass": {
+      "title": "Klepsydra",
+      "description": "Odwracasz klepsydrę na parapecie i obserwujesz powolny przepływ piasku.",
+      "reflection": "Cisza to potężne narzędzie negocjacyjne. Gdy druga strona składa ofertę lub stwierdzenie, nie muszę odpowiadać natychmiast. Strategiczna pauza pokazuje pewność siebie i daje mi czas do namysłu. Powinienem celowo używać ciszy w następnej rozmowie."
+    },
+    "folder": {
+      "title": "Rozwiązania Win-Win",
+      "description": "Otwierasz teczkę i trzy dokumenty wylatują na stół.",
+      "documents": {
+        "payment": {
+          "title": "Opcje płatności",
+          "content": "Zamiast żądać pełnej kwoty z góry, mógłbym zaproponować strukturę płatności etapowych: początkową zaliczkę, płatności w trakcie projektu i ostatnią po zakończeniu. To rozwiązuje obawy klienta dotyczące przepływu gotówki, jednocześnie zapewniając mi wynagrodzenie."
+        },
+        "concepts": {
+          "title": "Pomysły na koncepcje wydarzeń",
+          "content": "Mógłbym zaproponować kreatywne koncepcje wydarzeń, które dodają wartości bez podnoszenia kosztów: połączenie wyjazdu integracyjnego z przygotowaniem premiery produktu, wykorzystanie gali jako okazji do networkingu z interesariuszami i stworzenie spójnego motywu dla wszystkich czterech wydarzeń."
+        },
+        "resume": {
+          "title": "Życiorys firmy",
+          "content": "Powinienem podkreślić moje doświadczenie: 12 lat w planowaniu wydarzeń, 50+ zrealizowanych imprez firmowych, specjalizacja w zarządzaniu seriami wielu wydarzeń i 95% wskaźnik zadowolenia klientów. To uzasadnia moją wycenę."
+        }
+      }
+    },
+    "posters": {
+      "eye": {
+        "title": "Patrz",
+        "content": "Skup się na rozmówcy. Utrzymuj kontakt wzrokowy. Szukaj sygnałów niewerbalnych — mowa ciała, mimika i gesty często mówią więcej niż słowa."
+      },
+      "ear": {
+        "title": "Słuchaj",
+        "content": "Słuchaj, zanim się odezwiesz. Nie przerywaj. Pozwól drugiej osobie całkowicie skończyć myśl, zanim sformułujesz odpowiedź."
+      },
+      "mouth": {
+        "title": "Mów",
+        "content": "Parafrazuj wypowiedzi drugiej osoby, by pokazać zrozumienie. Zadawaj otwarte pytania, by głębiej poznać jej potrzeby i interesy."
+      }
+    },
+    "allPrepComplete": "Odrobiłem pracę domową. Znam swoje koszty, mam gotowe kreatywne rozwiązania, rozumiem siłę ciszy i aktywnego słuchania. Jestem gotów na drugą rundę.",
+    "bilalReturns": "Drzwi się otwierają. Bilal wraca do pokoju i siada."
+  },
+  "phase4": {
+    "options": {
+      "1a": "Zdecydowanie. Miałem trochę czasu na przygotowanie i jestem pewien, że znajdziemy świetne rozwiązanie.",
+      "1b": "Tak, kontynuujmy. Mam teraz jaśniejszy obraz.",
+      "2a": "Na podstawie szczegółowej analizy kosztów pełna seria wydarzeń wyniesie 8 500 euro. Obejmuje to pracę, oprogramowanie, ubezpieczenie, logistykę i koszty ogólne, z niewielką marżą na zapewnienie jakości.",
+      "2b": "Patrzę na około 8 500 euro za pełen pakiet. To moja profesjonalna ocena.",
+      "3a": "Oczywiście. Największą część stanowi 185 godzin pracy profesjonalnej po 35 euro za godzinę, co daje 6 475. Następnie 400 na licencje oprogramowania, 250 na ubezpieczenie OC, 500 na logistykę i 150 na koszty ogólne.",
+      "3b": "Oczywiście. Praca stanowi większość — 6 475, a reszta pokrywa niezbędne koszty operacyjne, takie jak oprogramowanie, ubezpieczenie i logistyka.",
+      "4a": "Ubezpieczenie chroni nas obu przed odpowiedzialnością podczas wydarzeń, a logistyka pokrywa transport sprzętu i materiałów do czterech lokalizacji. To są koszty nienegocjowalne dla jakościowej realizacji.",
+      "4b": "Ubezpieczenie to 250, a logistyka 500. Oba są niezbędne, by zapewnić sprawną i bezpieczną realizację wydarzeń.",
+      "5a": "(Zrób celową pauzę, utrzymuj kontakt wzrokowy i poczekaj)",
+      "5b": "Rozumiem. I chcę mieć pewność, że znajdziemy liczbę, która zadowoli obie strony.",
+      "6a": "(Kontynuuj strategiczne milczenie jeszcze przez chwilę)",
+      "6b": "(Pokiwaj głową w zamyśleniu i poczekaj, aż Bilal będzie kontynuował)",
+      "7a": "Doceniam to. Wydarzenia wysokiej jakości wymagają odpowiedniej inwestycji, a oszczędzanie na jakości często kosztuje więcej w dłuższej perspektywie.",
+      "7b": "Dziękuję. Wierzę w transparentne ceny, ponieważ od początku budują zaufanie.",
+      "8a": "Ponieważ wnoszę 12 lat specjalistycznego doświadczenia w zarządzaniu seriami wielu wydarzeń, 95% wskaźnik zadowolenia klientów oraz zdolność tworzenia spójnych doświadczeń we wszystkich czterech wydarzeniach. Tańsze nie zawsze znaczy lepsze, gdy w grę wchodzi reputacja Państwa firmy.",
+      "8b": "Doświadczenie i niezawodność. Zrealizowałem ponad 50 wydarzeń firmowych i specjalizuję się dokładnie w takim rocznym cyklu. Moje osiągnięcia mówią same za siebie.",
+      "9a": "Sugeruję strukturę płatności etapowych. Początkowa zaliczka 30%, następnie płatności po każdym kamieniu milowym wydarzenia, z końcowym saldem po zakończeniu ostatniego wydarzenia.",
+      "9b": "Moglibyśmy rozłożyć płatności na cały harmonogram projektu, więc nie zobowiążą się Państwo do całej kwoty od razu.",
+      "10a": "Dokładnie. I jest to spójne z Pana wcześniejszym zaniepokojeniem dotyczącym zarządzania kosztami we wczesnych etapach. Zapłaciliby Państwo tylko 2 550 z góry, a reszta byłaby rozłożona w ciągu roku.",
+      "10b": "Daje to elastyczność obu stronom. Państwo zarządzają przepływem gotówki, a ja mogę skutecznie planować zasoby.",
+      "11a": "Przygotowałem też kilka kreatywnych koncepcji wydarzeń. Na przykład moglibyśmy połączyć wyjazd integracyjny z przygotowaniem premiery produktu, tworząc dwa-w-jednym, co maksymalizuje Państwa inwestycję.",
+      "11b": "Mam kilka pomysłów na same wydarzenia, które mogłyby dodać dodatkowej wartości bez zwiększania budżetu.",
+      "12a": "Wyjazd integracyjny mógłby obejmować wspólne sesje burzy mózgów dotyczące produktu. A gala mogłaby służyć jako platforma zaangażowania interesariuszy z motywem przewodnim łączącym wszystkie cztery wydarzenia.",
+      "12b": "Każde wydarzenie budowałoby na poprzednim, tworząc łuk narracyjny przez cały rok. To holistyczne podejście.",
+      "13a": "Dziękuję. Z tego, co Pan(i) powiedział(a), widzę, że Meridian Holdings ceni zarówno efektywność, jak i wpływ. To dokładnie typ klienta, z którym pracuję najlepiej.",
+      "13b": "Doceniam to. Kreatywne rozwiązania to coś, co odróżnia dobrego planera wydarzeń."
+    },
+    "betterChoice": "a",
+    "betterChoiceLabel": "Bardziej strategiczne podejście",
+    "acceptableChoiceLabel": "Akceptowalne podejście"
+  },
+  "puzzles": {
+    "transcript": {
+      "title": "Analiza transkrypcji spotkania",
+      "instructions": "Kliknij każdą podświetloną frazę, by zastanowić się, co mógłbyś zrobić inaczej.",
+      "feedback": {
+        "allComplete": "Doskonała analiza! Zidentyfikowałeś wszystkie kluczowe momenty, które przegapiłeś podczas pierwszej negocjacji."
+      }
+    },
+    "negotiation": {
+      "title": "Przygotowane negocjacje",
+      "feedback": {
+        "perfect": "Wybitne negocjacje! Dokonałeś wszystkich najlepszych strategicznych wyborów.",
+        "good": "Dobre umiejętności negocjacyjne! Dokonałeś głównie strategicznych wyborów.",
+        "acceptable": "Przyzwoite negocjacje. Jest miejsce, by poprawić strategiczne podejście."
+      }
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "activeListeningTitle": "Aktywne słuchanie"
+  },
+  "hints": {
+    "phase1": "Kliknij na Bilala Ahmeda, by rozpocząć negocjacje.",
+    "phase1Conversation": "Kontynuuj rozmowę z Bilalem, wybierając opcję odpowiedzi.",
+    "phase2Fax": "Słyszysz dźwięk z faksu. Kliknij na niego, by sprawdzić.",
+    "phase2Transcript": "Przeczytaj transkrypcję i kliknij wszystkie podświetlone frazy.",
+    "phase3Laptop": "Kliknij na laptop, by przejrzeć rozbicie kosztów.",
+    "phase3Hourglass": "Kliknij na klepsydrę na parapecie.",
+    "phase3Folder": "Kliknij na teczkę na stole.",
+    "phase3Posters": "Kliknij na plakaty na ścianie.",
+    "phase3General": "Rozejrzyj się po pokoju za narzędziami przygotowawczymi. Sprawdź laptop, klepsydrę, teczkę i plakaty.",
+    "phase4": "Kliknij na Bilala Ahmeda, by rozpocząć przygotowane negocjacje.",
+    "phase4Conversation": "Kontynuuj negocjacje, wybierając opcję odpowiedzi.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po pokoju w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "enterRoom": "Oto jestem. Sala rozmów. Prosta, ale profesjonalna. Zajmę miejsce i poczekam, aż klient się pojawi.",
+    "bilalArrives": "Drzwi się otwierają. Pewnie wchodzi dobrze ubrany mężczyzna w granatowym garniturze i siada naprzeciwko mnie.",
+    "phase3Start": "Dobra, Bilal wyszedł, ale powiedział, że negocjacje będą kontynuowane. Muszę wykorzystać ten czas, by się przygotować. Rozejrzyjmy się po pokoju za czymkolwiek, co może pomóc.",
+    "prepItem": "Dobrze. To przydatna informacja.",
+    "allPrepDone": "Czuję się teraz znacznie lepiej przygotowany. Znam swoje liczby, mam strategię i jestem gotów do aktywnego słuchania. Teraz tylko muszę poczekać, aż Bilal wróci.",
+    "phase4Intro": "Drzwi znowu się otwierają. Bilal wraca z teczką i siada. To moja szansa. Zróbmy to dobrze."
+  },
+  "items": {
+    "transcript": {
+      "popupTitle": "Transkrypcja spotkania",
+      "header": "Transkrypcja wcześniejszego spotkania z Bilalem Ahmedem"
+    },
+    "spreadsheet": {
+      "popupTitle": "Arkusz wyceny"
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Z powodzeniem zademonstrowałeś sztukę negocjacji! Od nieprzygotowanego pierwszego spotkania do strategicznych, dobrze przygotowanych drugich negocjacji nauczyłeś się, jak ważne jest przygotowanie, znajomość minimum, strategiczne wykorzystanie ciszy, aktywne słuchanie i znajdowanie rozwiązań win-win.",
+    "buttonText": "Wyjdź z pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "chooseReply": "Wybierz odpowiedź:",
+    "optionA": "Opcja A",
+    "optionB": "Opcja B",
+    "clickToReflect": "Kliknij, by się zastanowić",
+    "reflected": "Przemyślane",
+    "phrasesRemaining": "fraz pozostało",
+    "closeTranscript": "Zamknij",
+    "closeSpreadsheet": "Zamknij",
+    "prepProgress": "Postęp przygotowań",
+    "itemsFound": "elementów ukończono",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

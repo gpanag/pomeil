@@ -1,0 +1,433 @@
+{
+  "loading": "Loading Digital Skills...",
+  "intro": {
+    "title": "Digital Skills",
+    "paragraphs": [
+      "You are an employee at a small company. Today you arrived early at the IT department to set up a few things before the rest of the team arrives.",
+      "The server room is dimly lit, with server racks lining the walls and blinking lights everywhere. There is a desk with a monitor, keyboard, smartphone, and a coffee mug. You notice a password server with broken cables, a shredder in the corner, some posters on the wall, a coat hook with a bag, and a door with a 'Gone Fishing' note.",
+      "Your tasks today involve strengthening the company's digital security, managing your professional social media presence, and handling potential cyber threats. Let's get started!"
+    ],
+    "buttonText": "Enter the IT Department"
+  },
+  "systemDialogues": {
+    "selfTalk": "Alright, let me take a look around. The server seems to be down - those cables look broken. I should fix that first. I also need to check my emails and update our social media. Let me start with the server.",
+    "cablesBroken": "These cables are clearly damaged. I need to remove them and connect the new ones I see on the floor.",
+    "cablesRemoved": "Good, the broken cables are out. Now let me grab those new cables from the floor.",
+    "cablesUnwrapped": "The new cables are unwrapped and ready. Time to connect them to the server.",
+    "cablesConnected": "The server is booting up! I can see the login screen now. Let me log in.",
+    "serverLoggedIn": "I'm in! There's a notification about password guidelines and a pending password audit. I should run the audit now.",
+    "passwordAuditComplete": "Password audit done! Now let me check the emails on the monitor.",
+    "monitorOpened": "Here's the email client. There's a notice from IT security. Let me read it first.",
+    "securityNoticeRead": "Good, I've noted the IT security guidelines. Let me archive this and check the other emails.",
+    "emailsArrived": "Five new emails have arrived. I need to check each one carefully - some might be phishing attempts.",
+    "phishingComplete": "Excellent work! All emails have been properly sorted. Now let me check the smartphone for our social media tasks.",
+    "phoneOpened": "The social media app is open. There's a notification about a draft post that needs review before publishing.",
+    "postReviewed": "The social media post has been published! But wait - there are some comments that need moderating.",
+    "commentsComplete": "All comments have been handled appropriately. Great job with the social media management!",
+    "stickyNoteFound": "There's a sticky note on the server that says 'Server-password: OfficeAccess!' - that's a security risk! I should shred it.",
+    "stickyNoteShredded": "Good call! The password sticky note has been securely destroyed.",
+    "stickyNoteKept": "Hmm, leaving passwords on sticky notes is a security risk, but you chose to keep it for now.",
+    "usbFound": "There's a USB stick in this drawer. It's unmarked - could be anything.",
+    "usbPluggedIn": "Oh no! The USB contained malware! The system is infected. I need to call IT for help immediately.",
+    "usbIgnored": "Smart choice! Never plug in unknown USB devices. You never know what they might contain.",
+    "malwareRecovery": "IT support has remotely cleaned the infection. That was a close call! Remember: never plug in unknown USB devices.",
+    "adPopup": "A flashy ad just appeared: 'Congratulations! You've won a FREE laptop! Click here to claim!' This looks suspicious...",
+    "adClicked": "Oh no! That was a malicious ad. Malware has been downloaded. I need to call IT for help!",
+    "adClosed": "Good instinct! That was clearly a malicious ad. Always close suspicious popups immediately.",
+    "systemUpdate": "A notification appeared: 'Critical security update available. This update patches known vulnerabilities.'",
+    "updateInstalled": "Great decision! Keeping software up to date is one of the best defenses against cyber threats.",
+    "updatePostponed": "That's risky! Postponing security updates leaves the system vulnerable to known exploits. The system has been compromised! Calling IT for help...",
+    "wifiPrompt": "The Wi-Fi connection dropped. Two networks are available: 'Free_WiFi' and 'Internal Company WiFi'.",
+    "wifiFree": "Oh no! 'Free_WiFi' was a rogue hotspot. Your data has been intercepted! Calling IT for help...",
+    "wifiCompany": "Good choice! Always connect to trusted, company-provided networks. Public or unknown WiFi can be used for man-in-the-middle attacks.",
+    "allComplete": "Fantastic work! You've handled all the digital security tasks, managed the social media, and navigated the cyber threats. The door is now open - you can leave the IT department!",
+    "leafletRead": "An informational leaflet about cybersecurity best practices. Good to review, but nothing actionable right now.",
+    "coffeeMugRead": "A coffee mug with '#CaffeineAndContent' written on it. Someone in this department has a sense of humor!",
+    "passwordListFound": "A list of old passwords in the bottom drawer. This is a security risk, but it's not part of your current tasks.",
+    "mouseInWall": "There's a hole in the wall... and a tiny mouse sitting at a miniature computer! Even the mice are digital around here.",
+    "bagContents": "Inside the bag: a toothbrush and a notepad. Someone was prepared for a long night of server maintenance!",
+    "posterPadlock": "A poster showing a padlock with the text 'Lock it or Lose it'. Good security reminder!",
+    "posterCat": "A motivational poster with a cat hanging from a branch: 'Hang in there!' Classic IT department decor.",
+    "posterHandshake": "A poster showing a handshake with the text 'Trust is Built, Not Given'. Relevant for digital security too!"
+  },
+  "puzzles": {
+    "passwordAudit": {
+      "title": "Password Audit",
+      "instructions": "Review each password and classify it as Strong or Weak based on security best practices.",
+      "passwords": {
+        "0": {
+          "value": "123456",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! '123456' is one of the most common and easily guessed passwords.",
+          "feedbackWrong": "Think again. '123456' is a sequential number pattern - one of the first combinations attackers try."
+        },
+        "1": {
+          "value": "MyDogBella",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! Personal information like pet names is easily discoverable through social media.",
+          "feedbackWrong": "Consider that pet names can be found on social media. Personal information makes for weak passwords."
+        },
+        "2": {
+          "value": "qwerty",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! 'qwerty' is a keyboard pattern that appears in every password dictionary.",
+          "feedbackWrong": "Look at your keyboard - 'qwerty' is just the top row of letters. It's one of the most common passwords."
+        },
+        "3": {
+          "value": "m4R!timE$un_92",
+          "correct": "strong",
+          "feedbackCorrect": "Correct! This password uses uppercase, lowercase, numbers, special characters, and is 14 characters long.",
+          "feedbackWrong": "Look more carefully - this password has uppercase, lowercase, numbers, special characters, and good length."
+        },
+        "4": {
+          "value": "password",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! 'password' is literally the word 'password' - the most obvious choice an attacker would try.",
+          "feedbackWrong": "The word 'password' is the first thing an attacker would try. It offers zero security."
+        },
+        "5": {
+          "value": "P@ssw0rd!",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! Despite having special characters, 'P@ssw0rd!' uses obvious letter-to-symbol substitutions that are in every cracking dictionary.",
+          "feedbackWrong": "Common letter substitutions (a->@, o->0) don't make a password strong. Crackers know these patterns."
+        },
+        "6": {
+          "value": "111111",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! Repeated characters provide essentially no security.",
+          "feedbackWrong": "A password of all the same character is trivially easy to crack. It has no complexity at all."
+        },
+        "7": {
+          "value": "g!T7k^2p#rL0",
+          "correct": "strong",
+          "feedbackCorrect": "Correct! This is a truly random mix of characters with no recognizable patterns - excellent security.",
+          "feedbackWrong": "This password has no dictionary words, no patterns, mixed case, numbers, and symbols. That makes it strong."
+        },
+        "8": {
+          "value": "OfficeAccess!",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! While it has a capital letter and special character, it uses common dictionary words that are easy to crack.",
+          "feedbackWrong": "Dictionary words combined together are vulnerable to dictionary attacks, even with a capital letter and exclamation mark."
+        },
+        "9": {
+          "value": "iloveyou",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! 'iloveyou' is a common phrase that appears in the top 10 of most password lists.",
+          "feedbackWrong": "Common phrases and sentiments are among the first things password crackers try."
+        },
+        "10": {
+          "value": "admin",
+          "correct": "weak",
+          "feedbackCorrect": "Correct! 'admin' is a default credential - the very first thing an attacker tries when accessing a system.",
+          "feedbackWrong": "'admin' is a default username AND password on many systems. It's the first thing attackers check."
+        }
+      },
+      "buttonStrong": "Strong",
+      "buttonWeak": "Weak",
+      "progressLabel": "Password",
+      "answerOverlay": "The strong passwords are: 'm4R!timE$un_92' and 'g!T7k^2p#rL0'. All others are weak due to common patterns, dictionary words, personal info, or simple substitutions.",
+      "allCorrect": "Excellent! You correctly identified all strong and weak passwords. You have a great understanding of password security!"
+    },
+    "phishing": {
+      "title": "Phishing Detection",
+      "instructions": "Review each email and determine whether it is a legitimate email or a phishing attempt. Hover over links and sender addresses to inspect them.",
+      "emails": {
+        "0": {
+          "subject": "Invoice Due - Immediate Payment Required",
+          "sender": "finance@yourcompany-payment.com",
+          "senderReal": "finance@yourcompany-payment.com (NOT your real company domain!)",
+          "preview": "Dear Employee, please find attached your overdue invoice. Click the link below to process payment immediately to avoid service interruption.",
+          "linkText": "Process Payment Now",
+          "linkReal": "http://malicious-site.ru/payment",
+          "correct": "phishing",
+          "feedbackCorrect": "Correct! The sender domain 'yourcompany-payment.com' is not your real company domain, and the link leads to a .ru domain. Classic phishing indicators!",
+          "feedbackWrong": "Look more carefully at the sender address - 'yourcompany-payment.com' is NOT your real company domain. The payment link also leads to a suspicious .ru domain."
+        },
+        "1": {
+          "subject": "Team Meeting Agenda - Thursday 2PM",
+          "sender": "project.lead@yourcompany.com",
+          "senderReal": "project.lead@yourcompany.com (verified internal address)",
+          "preview": "Hi team, here's the agenda for our Thursday meeting: 1) Q3 Review, 2) New project assignments, 3) Team lunch planning. Please review and add any items.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Correct! This is from a verified internal address, has a normal business tone, no suspicious links, and doesn't create urgency or ask for sensitive information.",
+          "feedbackWrong": "This email is from a verified internal address (@yourcompany.com), discusses routine business, has no suspicious links, and doesn't request sensitive data. It's legitimate."
+        },
+        "2": {
+          "subject": "Your Password is Expiring - Action Required",
+          "sender": "support@it-secure.net",
+          "senderReal": "support@it-secure.net (NOT your IT department!)",
+          "preview": "Your company password will expire in 24 hours. Click below to verify your identity and reset your password immediately to maintain access.",
+          "linkText": "Reset Password Now",
+          "linkReal": "http://credential-harvest.xyz/reset",
+          "correct": "phishing",
+          "feedbackCorrect": "Correct! Your IT department would never send password resets from 'it-secure.net', and the reset link goes to a suspicious .xyz domain. This is credential harvesting!",
+          "feedbackWrong": "Your real IT department uses @yourcompany.com, not 'it-secure.net'. The password reset link leads to a .xyz domain - this is a credential harvesting attempt."
+        },
+        "3": {
+          "subject": "Shared Document: Q3 Budget Report",
+          "sender": "noreply@drive.cloudservice.com",
+          "senderReal": "noreply@drive.cloudservice.com (your company's authorized cloud provider)",
+          "preview": "Your colleague Sarah Johnson has shared 'Q3 Budget Report.xlsx' with you. You can access it through your company cloud dashboard.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Correct! This is from your company's authorized cloud service provider, mentions a specific colleague by name, and refers to a legitimate business document.",
+          "feedbackWrong": "This email is from your company's authorized cloud provider (drive.cloudservice.com), mentions a specific colleague, and refers to a routine business document. It's legitimate."
+        },
+        "4": {
+          "subject": "You Won a Prize! Claim Your Reward",
+          "sender": "hr@your-company-rewards.com",
+          "senderReal": "hr@your-company-rewards.com (NOT your company's HR department!)",
+          "preview": "Congratulations! You have been selected for our Employee Appreciation Program. Claim your $500 gift card by clicking the link below before it expires!",
+          "linkText": "Claim Your Gift Card",
+          "linkReal": "http://bonusgift.biz/claim",
+          "correct": "phishing",
+          "feedbackCorrect": "Correct! 'your-company-rewards.com' is not your real company domain, and the link leads to 'bonusgift.biz'. Unsolicited prize notifications are a classic phishing tactic!",
+          "feedbackWrong": "The sender uses 'your-company-rewards.com', not your actual company domain. The prize claim link goes to 'bonusgift.biz'. Unsolicited rewards are a major phishing red flag."
+        }
+      },
+      "buttonPhishing": "Phishing",
+      "buttonLegitimate": "Legitimate",
+      "hoverSender": "Sender: ",
+      "hoverLink": "Link destination: ",
+      "progressLabel": "Email",
+      "answerOverlay": "Phishing emails: 'Invoice Due' (fake domain + .ru link), 'Password Expiring' (it-secure.net + .xyz link), 'You Won a Prize' (fake domain + bonusgift.biz). Legitimate: 'Team Meeting Agenda' (internal address), 'Shared Document' (authorized cloud provider).",
+      "allCorrect": "Perfect email triage! You correctly identified all phishing attempts and legitimate emails."
+    },
+    "socialPost": {
+      "title": "Social Media Post Review",
+      "instructions": "Review the draft social media post and fix three issues before publishing.",
+      "draftCaption": "We're exicted to anounce our new prodcut line! Check it out at our website.",
+      "fixedCaption": "We're excited to announce our new product line! Innovation meets quality in every piece. Visit our website to explore the full collection and discover what's new.",
+      "captionLabel": "Caption",
+      "captionInstruction": "The caption has typos and is too brief. Select the corrected version.",
+      "captionOptions": {
+        "a": "We're exicted to anounce our new prodcut line! Check it out at our website.",
+        "b": "We're excited to announce our new product line! Innovation meets quality in every piece. Visit our website to explore the full collection and discover what's new.",
+        "c": "We're excited to announce our new product line! Check it out at our website.",
+        "d": "NEW PRODCUT LINE!!! BUY NOW!!! CLICK LINK IN BIO!!!"
+      },
+      "captionCorrect": "b",
+      "captionFeedbackCorrect": "Correct! The caption fixes all typos and adds engaging detail that encourages interaction.",
+      "captionFeedbackWrong": "That's not the best option. Look for the version that fixes ALL typos and adds professional, engaging detail.",
+      "imageLabel": "Image",
+      "imageInstruction": "Which image should accompany this post? Select the appropriate image and alt text.",
+      "imageOptions": {
+        "a": "A blurry photo with no alt text",
+        "b": "A high-quality product photo with alt text: 'New product line showcase featuring our latest designs'",
+        "c": "A random stock photo of a sunset with alt text: 'Beautiful sunset'",
+        "d": "A competitor's product photo with no alt text"
+      },
+      "imageCorrect": "b",
+      "imageFeedbackCorrect": "Correct! A high-quality, relevant image with descriptive alt text improves both engagement and accessibility.",
+      "imageFeedbackWrong": "Think about what makes a good social media image: relevant, high-quality, and with proper alt text for accessibility.",
+      "hashtagLabel": "Hashtags",
+      "hashtagInstruction": "Which set of hashtags is most appropriate for this post?",
+      "hashtagOptions": {
+        "a": "#NewProdcut #Exicting #Company",
+        "b": "#NewProduct #Innovation #Quality #CompanyName #ProductLaunch",
+        "c": "#followforfollow #like4like #viral #trending",
+        "d": "#NewProduct #Innovation"
+      },
+      "hashtagCorrect": "b",
+      "hashtagFeedbackCorrect": "Correct! These hashtags are spelled correctly, relevant to the content, and include a good mix of branded and topical tags.",
+      "hashtagFeedbackWrong": "Good hashtags should be correctly spelled, relevant to the content, and include a mix of branded and topical tags.",
+      "publishButton": "Post",
+      "scheduleButton": "Schedule",
+      "stepLabel": "Fix",
+      "answerOverlay": "Caption: Fix typos and add engaging detail (option B). Image: High-quality product photo with descriptive alt text (option B). Hashtags: Correctly spelled, relevant mix of branded and topical tags (option B).",
+      "allCorrect": "The post is ready to publish! All three issues have been fixed."
+    },
+    "comments": {
+      "title": "Social Media Comment Moderation",
+      "instructions": "Review each comment and choose the appropriate action: Reply to genuine customer interactions, Delete spam and malicious content.",
+      "comments": {
+        "0": {
+          "author": "@CoffeeLover42",
+          "text": "Love your coffee! Best blend I've ever tried!",
+          "correct": "reply",
+          "feedbackCorrect": "Correct! Positive customer feedback deserves a professional, grateful reply to build community.",
+          "feedbackWrong": "This is genuine positive feedback from a customer. You should reply to engage with your community!",
+          "suggestedReply": "Thank you so much! We're glad you enjoy it. Stay tuned for new seasonal blends coming soon!"
+        },
+        "1": {
+          "author": "@TotallyNotABot",
+          "text": "Click here for 10,000 FREE followers!!! www.fake-followers.com",
+          "correct": "delete",
+          "feedbackCorrect": "Correct! This is obvious spam with a suspicious link. Delete it immediately to protect your followers.",
+          "feedbackWrong": "This is clearly spam - it's promoting a suspicious link for fake followers. It should be deleted."
+        },
+        "2": {
+          "author": "@BudgetMinded",
+          "text": "Honestly, your prices are too high. I found the same quality for half the price elsewhere.",
+          "correct": "reply",
+          "feedbackCorrect": "Correct! Even negative feedback should be addressed professionally. It shows you value all customer opinions.",
+          "feedbackWrong": "Negative feedback should be addressed, not deleted. A professional response shows you care about customer concerns.",
+          "suggestedReply": "We appreciate your honest feedback. Quality is our priority, and we'd love to discuss how we can better serve your needs. Feel free to DM us!"
+        }
+      },
+      "buttonReply": "Reply",
+      "buttonDelete": "Delete",
+      "progressLabel": "Comment",
+      "answerOverlay": "'Love your coffee!' -> Reply (positive engagement). 'Click here for free followers' -> Delete (spam). 'Too expensive' -> Reply (address concerns professionally).",
+      "allCorrect": "Excellent moderation! You know how to engage with genuine feedback and remove harmful content."
+    },
+    "stickyNote": {
+      "title": "Security Risk: Exposed Password",
+      "instructions": "You found a sticky note with a server password written on it. This is a security risk.",
+      "question": "The sticky note reads: 'Server-password: OfficeAccess!'. Should you destroy this sticky note?",
+      "options": {
+        "yes": "Yes - Shred it immediately",
+        "no": "No - Leave it for reference"
+      },
+      "correctAnswer": "yes",
+      "feedbackCorrect": "Correct! Passwords should never be written down and left in plain sight. Shredding it eliminates the risk.",
+      "feedbackWrong": "Leaving passwords written in plain sight is a major security vulnerability. Anyone who enters this room could see it."
+    },
+    "usb": {
+      "title": "Unknown USB Device",
+      "instructions": "You found an unmarked USB stick in the drawer.",
+      "question": "What should you do with this unknown USB device?",
+      "options": {
+        "plugin": "Plug it in to check its contents",
+        "leave": "Leave it alone - don't plug in unknown devices"
+      },
+      "correctAnswer": "leave",
+      "feedbackCorrect": "Correct! Unknown USB devices can contain malware. Never plug in a device you don't trust.",
+      "feedbackWrong": "That was risky! Unknown USB devices are a common attack vector for malware."
+    },
+    "ad": {
+      "title": "Suspicious Advertisement",
+      "instructions": "A flashy popup ad appeared on screen.",
+      "question": "'Congratulations! You've won a FREE laptop! Click here to claim!' What do you do?",
+      "options": {
+        "click": "Click to claim the prize",
+        "close": "Close the ad immediately"
+      },
+      "correctAnswer": "close",
+      "feedbackCorrect": "Correct! Unsolicited prize popups are almost always malicious. Close them immediately without clicking.",
+      "feedbackWrong": "That was a malicious ad! Never click on unsolicited prize or reward popups."
+    },
+    "systemUpdate": {
+      "title": "System Update Available",
+      "instructions": "A system notification has appeared.",
+      "question": "'Critical security update available. This update patches known vulnerabilities.' What do you do?",
+      "options": {
+        "install": "Install the update now",
+        "postpone": "Postpone - I'll do it later"
+      },
+      "correctAnswer": "install",
+      "feedbackCorrect": "Correct! Security updates should be installed promptly to protect against known vulnerabilities.",
+      "feedbackWrong": "Postponing security updates leaves the system exposed to known threats!"
+    },
+    "wifi": {
+      "title": "Wi-Fi Connection",
+      "instructions": "Your Wi-Fi connection dropped. Two networks are available.",
+      "question": "Which network should you connect to?",
+      "options": {
+        "free": "Free_WiFi (Open network, no password)",
+        "company": "Internal Company WiFi (Secured, requires credentials)"
+      },
+      "correctAnswer": "company",
+      "feedbackCorrect": "Correct! Always use your company's secured network. Open/unknown WiFi networks can be used for data interception.",
+      "feedbackWrong": "Open WiFi networks can be rogue hotspots set up to intercept your data!"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Look around the room. The server cables seem broken - start there.",
+    "fixCables": "Click on the broken cables on the server to start fixing them.",
+    "serverBoot": "The server is booting up. Wait for the login screen.",
+    "passwordAudit": "Classify each password as Strong or Weak based on complexity, length, and patterns.",
+    "openMonitor": "Click on the desk monitor to check your emails.",
+    "readSecurityNotice": "Read the IT security notice first, then archive it.",
+    "phishing": "Check sender addresses and link destinations carefully. Hover to inspect.",
+    "openPhone": "Click on the smartphone to check your social media tasks.",
+    "socialPost": "Review the post draft and fix the caption, image, and hashtags.",
+    "comments": "Reply to genuine customer interactions and delete spam.",
+    "stickyNote": "There's a sticky note with a password on the server. That's a security risk!",
+    "miniPuzzles": "Stay alert for security threats - USB devices, popups, updates, and WiFi networks.",
+    "allComplete": "Everything is done! The training has been completed!",
+    "completion": "The training has been completed!",
+    "default": "Look around the IT department for things that need attention."
+  },
+  "items": {
+    "leaflet": {
+      "popupTitle": "Cybersecurity Best Practices",
+      "popupContent": [
+        "1. Use strong, unique passwords for every account.",
+        "2. Enable two-factor authentication wherever possible.",
+        "3. Never click on suspicious links or download unknown attachments.",
+        "4. Keep all software and systems updated.",
+        "5. Report any suspicious activity to IT immediately."
+      ]
+    },
+    "coffeeMug": {
+      "popupTitle": "Coffee Mug",
+      "popupContent": [
+        "#CaffeineAndContent",
+        "The unofficial motto of the IT department."
+      ]
+    },
+    "passwordList": {
+      "popupTitle": "Old Password List",
+      "popupContent": [
+        "A crumpled list of old passwords found in the bottom drawer.",
+        "This is exactly the kind of thing that shouldn't exist in a secure workplace."
+      ]
+    },
+    "mouseInWall": {
+      "popupTitle": "A Tiny Discovery",
+      "popupContent": [
+        "There's a tiny mouse sitting at a miniature computer inside a hole in the wall!",
+        "Even the mice in this department are tech-savvy."
+      ]
+    },
+    "bag": {
+      "popupTitle": "Bag Contents",
+      "popupContent": [
+        "Inside the bag you find a toothbrush and a notepad.",
+        "Someone was prepared for a long night of server maintenance!"
+      ]
+    },
+    "itNotice": {
+      "title": "IT Security Notice",
+      "domainLine": "Our company domain is",
+      "malwareWarning": "Malware has been detected on this system. Your files and data may be at risk.",
+      "domainNotice": "Our company domain is <strong>&#64;yourcompany.com</strong>. Any other domain claiming to be from our company is potentially fraudulent."
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully completed all digital skills tasks! You fixed the server, audited passwords, identified phishing emails, managed social media professionally, and handled multiple cyber threats. You are now better equipped to navigate the digital workplace safely and effectively!",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "callIT": "Call IT for Help",
+    "itRecovery": "IT Support is cleaning the infection...",
+    "archive": "Archive",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

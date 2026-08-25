@@ -1,0 +1,228 @@
+{
+  "intro": {
+    "title": "Otwartość umysłu",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie to dla ciebie doświadczenie edukacyjne, ponieważ wykonując różne wyzwania, zdobędziesz 30 umiejętności zawartych w Mapie Kompetencji POMEIL, które są niezbędne dla każdego przedsiębiorcy.",
+      "Dziś, w stołówce, spotkasz Karinę z Działu Rozwoju Produktu i jej kolegę Daniela. Razem poprowadzą cię przez to, co naprawdę oznacza pozostawanie otwartym na nowe pomysły — nawet gdy podważają twoje własne."
+    ],
+    "buttonText": "Rozpocznij grę"
+  },
+  "loading": "Ładowanie...",
+  "characters": {
+    "karina": {
+      "name": "Karina",
+      "dialogues": {
+        "introduction": "Hej (username), miło cię poznać! Jestem Liderką Rozwoju Produktu i naprawdę uwielbiam tu pracować. Dopiero co zaczęłam, ale już czuję, że potrzebuję nowego podejścia. Całe życie polegałam tylko na sobie, więc nie jest mi łatwo nauczyć się słuchać pomysłów innych — szczególnie mieszkając w nowym kraju. Daniel pomaga mi opracować strategię sprzedaży.",
+        "introduction_part2": "Gdzieś w tym pokoju jest lista z kilkoma użytecznymi wskazówkami dotyczącymi otwartości umysłu. Spróbuj ją znaleźć i przeczytać uważnie, a potem wróć do mnie. Zacznij od sprawdzenia obszaru ekspresu do kawy.",
+        "noteFound": "Brawo, znalazłeś/aś plan działania!",
+        "noteFound_part2": "Otwartość umysłu oznacza świadomość własnych poglądów przy jednoczesnej gotowości zrozumienia pomysłów i perspektyw innych. Wymaga więcej niż tylko słuchania — obejmuje autentyczny wysiłek, by docenić różne opinie i z szacunkiem rozważyć nowe informacje. Otwartość umysłu pomaga zmniejszyć nieporozumienia, podważa osobiste uprzedzenia i wspiera lepszą komunikację z ludźmi wokół ciebie.",
+        "noteFound_part3": "Kontynuujmy quizem. Powodzenia!",
+        "quizComplete": "Wow, twoja otwartość umysłu jest imponująca! Idź porozmawiać z Danielem, by kontynuować szkolenie.",
+        "fallback_findNote": "Świetnie ci idzie! Szukaj dalej listy. Najpierw sprawdź obszar ekspresu, potem tablicę ogłoszeń.",
+        "fallback_quiz": "Skup się teraz na quizie. Dasz radę!",
+        "fallback_findPaper": "Daniel na ciebie czeka. Idź porozmawiaj z nim!",
+        "fallback_default": "Idź dalej, robisz dobre postępy!",
+        "allQuestsComplete": "Udało ci się! Szkolenie zakończone!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel",
+      "dialogues": {
+        "introduction": "Cześć! Jestem Daniel. Powinieneś/powinnaś najpierw porozmawiać z Kariną - ona zacznie z tobą szkolenie z otwartości umysłu.",
+        "findNote": "Karina pomaga ci z pierwszą częścią. Gdy skończysz quiz, przyjdź porozmawiać ze mną!",
+        "fallback_quiz": "Najpierw skup się na quizie. Świetnie ci idzie!",
+        "quizComplete": "Znalazłem dla ciebie naprawdę fajne fakty o otwartości umysłu. Zapisałem je na kartce, ale teraz nie pamiętam, gdzie ją położyłem. Zdarza się, gdy jesteśmy przeładowani pracą. Mógłbyś/Mogłabyś się rozejrzeć po pokoju? Och—zaraz—chyba zostawiłem ją obok kubka po kawie, którego nie wziąłem ze sobą wcześniej na spotkanie.",
+        "fallback_findPaper": "Chyba zostawiłem tę kartkę gdzieś tutaj. Najpierw sprawdź biurko, potem stół ze strategiami.",
+        "paperFound": "Super! Cieszę się, że to znalazłeś/aś. Czy było inspirujące?",
+        "paperFound_part2": "Mam dla ciebie jeszcze kilka quizów, więc kontynuujmy!",
+        "fallback_puzzle": "Nie spiesz się z zagadką. Pomyśl uważnie!",
+        "fallback_default": "Świetnie ci idzie! Idź dalej!",
+        "sequenceComplete": "Brawo! To była niezła zagadka, ale poradziłeś/aś sobie pięknie. Stajesz się bardziej otwarty/a z każdym krokiem. Mam nadzieję, że quiz ci się podobał — kontynuujmy, prawie jesteśmy u celu.",
+        "allQuestsComplete": "Brawo, badaczu! Złamałeś/aś zagadkę i podniosłeś/aś poziom. Więcej fajnych umiejętności czeka — naciśnij Dalej, gdy będziesz gotowy/a."
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Quiz otwartości umysłu - Prawda czy fałsz",
+      "questions": [
+        {
+          "text": "Bycie otwartym umysłem oznacza, że muszę zgadzać się z każdą ideą, którą słyszę.",
+          "answer": false,
+          "hint": "Otwartość umysłu polega na uczeniu się, a nie na zgadzaniu się ze wszystkim."
+        },
+        {
+          "text": "Słuchanie różnych opinii może mi pomóc lepiej zrozumieć sytuacje.",
+          "answer": true,
+          "hint": "Zapytaj siebie: czy słyszenie więcej punktów widzenia daje mi więcej informacji czy mniej?"
+        },
+        {
+          "text": "Jeśli idea wydaje się nowa lub niewygodna, powinienem/powinnam ją natychmiast odrzucić.",
+          "answer": false,
+          "hint": "Czy otwartość umysłu zachodzi, gdy szybko zamykamy drzwi, czy gdy zachowujemy ciekawość?"
+        }
+      ],
+      "trueButton": "Prawda",
+      "falseButton": "Fałsz",
+      "answerOverlayTitle": "Poprawna odpowiedź",
+      "answerOverlayTemplate": "Po 3 próbach, oto odpowiedź:\n\nPytanie: \"{question}\"\n\nPoprawna odpowiedź: {correctAnswer}\n\nWyjaśnienie: {hint}",
+      "correctAnswerTrue": "PRAWDA",
+      "correctAnswerFalse": "FAŁSZ",
+      "feedback": {
+        "incorrect_true": "Niepoprawnie. Odpowiedź to Prawda.",
+        "incorrect_false": "Niepoprawnie. Odpowiedź to Fałsz."
+      }
+    },
+    "quizComplete": {
+      "title": "Poprawnie!",
+      "message": "Doskonała robota! Ukończyłeś/aś pierwszy krok w szkoleniu z otwartości umysłu.",
+      "buttonText": "Dalej"
+    },
+    "puzzleTwo": {
+      "title": "Quiz otwartości umysłu – Wybór wielokrotny",
+      "question": "Jaki jest najlepszy sposób okazania otwartości umysłu podczas dyskusji?",
+      "options": {
+        "a": "Zdecyduj swoją opinię przed wysłuchaniem",
+        "b": "Zwróć uwagę na punkty widzenia innych i zadawaj ciekawe pytania",
+        "c": "Ignoruj idee, które wydają się nowe lub niewygodne",
+        "d": "Przerwij, by wyjaśnić, dlaczego twój pomysł jest lepszy"
+      },
+      "optionLabels": {
+        "a": "a) Zdecyduj swoją opinię przed wysłuchaniem",
+        "b": "b) Zwróć uwagę na punkty widzenia innych i zadawaj ciekawe pytania",
+        "c": "c) Ignoruj idee, które wydają się nowe lub niewygodne",
+        "d": "d) Przerwij, by wyjaśnić, dlaczego twój pomysł jest lepszy"
+      },
+      "hint": "Pomyśl, która odpowiedź pokazuje ciekawość i gotowość zrozumienia innych, zamiast zamykać ich pomysły.",
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Gdy ktoś dzieli się ideą, z którą się nie zgadzasz, jaka jest najbardziej otwarta odpowiedź?\n\nOpcje:\na) Natychmiast wyjaśnij, dlaczego myślisz, że są w błędzie\nb) Zadaj pytania, by lepiej zrozumieć ich perspektywę\nc) Zmień temat, by uniknąć konfliktu\nd) Zgódź się z nimi, by zachować spokój\n\nPoprawna odpowiedź: b) Zadaj pytania, by lepiej zrozumieć ich perspektywę\n\nWyjaśnienie: Otwartość umysłu polega na pokazywaniu ciekawości i gotowości zrozumienia innych, zamiast zamykać ich pomysły. Zadawanie pytań pomaga ci uczyć się i pokazuje szacunek dla punktu widzenia drugiej osoby."
+    },
+    "puzzleThree": {
+      "title": "Quiz otwartości umysłu - Sekwencja",
+      "question": "Ułóż następujące działania w najbardziej otwartym porządku.",
+      "availableSteps": "Dostępne kroki",
+      "yourSequence": "Twoja sekwencja",
+      "placeholderText": "Kliknij kroki po lewej, by dodać je tutaj.",
+      "resetButton": "Zresetuj",
+      "submitButton": "Wyślij kolejność",
+      "options": {
+        "a": "Zadaj ciekawe pytanie, by zrozumieć perspektywę osoby",
+        "b": "Unikaj osądzania lub zbyt szybkiej reakcji",
+        "c": "Słuchaj otwarcie tego, co osoba mówi",
+        "d": "Krótko zastanów się nad tym, co usłyszałeś/aś, zanim podzielisz się własnym poglądem"
+      },
+      "hints": {
+        "position1": "Otwarta umysłem osoba zawsze zaczyna od prawdziwego słuchania — to tworzy łatwość dla obu stron.",
+        "position2": "Po słuchaniu zachowaj otwarty umysł, unikając szybkich osądów.",
+        "position3": "Gdy rozmowa wydaje się spokojna i otwarta, możesz zadać ciekawe pytania, by lepiej zrozumieć.",
+        "position4": "Potem łatwo jest podzielić się własnym poglądem z szacunkiem.",
+        "incomplete": "Proszę dokończ sekwencję."
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Jaka jest poprawna sekwencja praktykowania otwartości umysłu podczas dyskusji?\n\nPoprawna odpowiedź:\n1. \"Słuchaj otwarcie tego, co osoba mówi\" (c) - Otwarta umysłem osoba zawsze zaczyna od prawdziwego słuchania, co tworzy łatwość dla obu stron i pozwala ci faktycznie zrozumieć ich perspektywę\n2. \"Unikaj osądzania lub zbyt szybkiej reakcji\" (b) - Zachowaj otwarty umysł, unikając szybkich osądów, które mogłyby zamknąć rozmowę lub stworzyć napięcie\n3. \"Zadaj ciekawe pytanie, by zrozumieć perspektywę osoby\" (a) - Gdy rozmowa wydaje się spokojna i otwarta, zadaj ciekawe pytania, by lepiej zrozumieć, nie wystawiając ich na widok\n4. \"Krótko zastanów się nad tym, co usłyszałeś/aś, zanim podzielisz się własnym poglądem\" (d) - Po słuchaniu i zrozumieniu, łatwo jest podzielić się własnym poglądem z szacunkiem\n\nTa sekwencja demonstruje prawdziwą otwartość umysłu, priorytetyzując zrozumienie przed odpowiadaniem."
+    },
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "answerOverlay": {
+    "title": "Poprawna odpowiedź",
+    "continueButton": "Dalej"
+  },
+  "hints": {
+    "default": "Powinienem/Powinnam dokładnie się rozejrzeć.",
+    "findNote": {
+      "step0": "Karina powiedziała: 'Zacznij od sprawdzenia obszaru ekspresu do kawy.'",
+      "step1": "Nie przy ekspresie do kawy. Spróbuj tablicy ogłoszeń po lewej.",
+      "step2": "Nie na tablicy ogłoszeń. Spróbuj stolika kawowego."
+    },
+    "findPaper": {
+      "step0": "Karina wspomniała o biurku.",
+      "step1": "Nie na biurku. Spróbuj stołu ze strategiami.",
+      "step2": "Rozejrzyj się dokładniej wokół stołu ze strategiami."
+    },
+    "allQuestsComplete": "Porozmawiaj z Danielem, aby zakończyć."
+  },
+  "items": {
+    "note": {
+      "altText": "Wydrukowany plan działania ze wskazówkami dotyczącymi otwartości umysłu.",
+      "inventoryTitle": "Zobacz Plan działania"
+    },
+    "paper": {
+      "altText": "Kartka z ciekawymi faktami",
+      "inventoryTitle": "Zobacz Kartkę",
+      "title": "OTWIERAJĄCE OCZY FAKTY O OTWARTOŚCI UMYSŁU",
+      "facts": [
+        {
+          "strong": "Twój mózg faktycznie lubi nowe pomysły.",
+          "text": "Gdy słyszysz nową perspektywę, twój mózg uwalnia mały zastrzyk dopaminy — tej samej substancji chemicznej powiązanej z ciekawością i nauką. Otwartość umysłu dosłownie sprawia przyjemność w głowie!"
+        },
+        {
+          "strong": "Bycie w błędzie jest naukowo użyteczne.",
+          "text": "Badania pokazują, że gdy ludzie zdają sobie sprawę, że mylili się w czymś, ich mózg tworzy silniejsze połączenia uczenia się. Więc popełnianie błędów nie jest zawstydzające — to ulepszenie dla twojego umysłu."
+        },
+        {
+          "strong": "Pytanie \"Dlaczego?\" może zmniejszyć stres.",
+          "text": "Ciekawość zamienia stresującą niezgodę w zagadkę. Zamiast się kłócić, twój mózg przełącza się w \"tryb eksploracji\", co obniża napięcie i poprawia rozwiązywanie problemów."
+        },
+        {
+          "strong": "Próbowanie nowych rzeczy czyni twój mózg bardziej elastycznym.",
+          "text": "Nawet małe zmiany — jak wybranie nowej drogi do domu lub spróbowanie jedzenia, które zwykle pomijasz — pomagają twojemu mózgowi stać się bardziej adaptacyjnym. Ta elastyczność wspiera większe otwarte myślenie później."
+        },
+        {
+          "strong": "Otwarci umysłem ludzie podejmują decyzje szybciej, nie wolniej.",
+          "text": "Co zaskakujące, ludzie, którzy słyszą różne punkty widzenia, często szybciej dochodzą do rozwiązań, ponieważ widzą więcej opcji, unikają upartych blokad i łatwiej się dostosowują"
+        }
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Zobacz Karteczkę"
+    }
+  },
+  "systemDialogues": {
+    "coffeeMachineSearch": "O nie! Ktoś wyszedł bez kubka po kawie. Wygląda na to, że to, czego szukasz, nie jest tutaj. Spójrz na tablicę ogłoszeń po lewej.",
+    "leftNoticeboardSearch": "To tylko motywacyjny plakat. Może znajdziesz to, czego potrzebujesz, na drugim stoliku kawowym. Spróbuj ponownie!",
+    "deskSearch": "O nie, tu nie ma. Sprawdź stół, przy którym Daniel i Karina rozmawiali o strategiach. Sprawdź na stole. To może pomóc.",
+    "noteFoundReturn": "Dobra robota! Wróć do Liderki Rozwoju Produktu Kariny.",
+    "paperFoundReturn": "Świetnie ci idzie! Wróć do Daniela."
+  },
+  "completion": {
+    "title": "Szkolenie zakończone!",
+    "message": "Gratulacje! Z powodzeniem wykazałeś/aś doskonałe umiejętności otwartości umysłu i komunikacji.",
+    "buttonText": "Powrót do menu głównego"
+  },
+  "dialogueActions": {
+    "continue": "Dalej",
+    "startQuiz": "Rozpocznij quiz",
+    "finishTraining": "Zakończ szkolenie"
+  },
+  "buttons": {
+    "toggleFullscreen": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów"
+  },
+  "ui": {
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź",
+    "finishTrainingButton": "Zakończ szkolenie"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "loading": "Loading...",
+  "intro": {
+    "title": "Cultural awareness",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Today is your first day in the office. The HR Manager, Fatma, will help you discover what cultural awareness really means and how to navigate diverse perspectives respectfully at work."
+    ],
+    "buttonText": "Start Game"
+  },
+  "characters": {
+    "fatma": {
+      "name": "Fatma (HR Manager)",
+      "dialogues": {
+        "introduction": "Hi (username)! Before you start working here, there are a few things you should know about our company's approach to cultural awareness, as many of our colleagues come from different countries around the world.",
+        "introduction_part2": "Somewhere in this room, there's a sticky note with some useful tips regarding cultural awareness. Try to find it and read it carefully, then come back to me. Start by checking the drawer.",
+        "findNote": "Somewhere in this room, there's a sticky note with some useful tips regarding cultural awareness. Try to find it and read it carefully, then come back to me. Start by checking the drawer.",
+        "noteFound": "Well done, you found the sticky note!",
+        "noteFound_part2": "Therefore, cultural awareness involves recognizing one's own cultural influences while also understanding the cultural values, beliefs, and practices of others. It goes beyond mere acknowledgment as it requires an active effort to appreciate and engage with different cultures in a respectful and informed manner.",
+        "noteFound_part3": "Cultural awareness is essential in combating stereotypes, biases, and misunderstandings that often arise from cultural differences.",
+        "noteFound_part4": "Let's continue with a quiz. Good luck!",
+        "quizComplete": "I guess you are now more culturally sensitive!",
+        "quizComplete_part2": "I wrote you in a paper some interesting facts you might want to know about cultural awareness, but I don't remember where I left it. Please have a look around the room. Check on my desk, the one behind me.",
+        "findPaper": "I wrote you in a paper some interesting facts you might want to know about cultural awareness, but I don't remember where I left it. Please have a look around the room. Check on my desk, the one behind me.",
+        "paperFound": "Perfect, you found it!",
+        "paperFound_part2": "I have a few more quizzes for you, so give it your best shot!",
+        "puzzleInProgress": "Please finish the task first.",
+        "allQuestsComplete": "Perfect! You've shown how to handle international communication with respect. That's true cultural awareness.",
+        "allQuestsComplete_part2": "Congratulations, you've completed everything and leveled up your cultural awareness. You're one step closer to thriving in the company.",
+        "allQuestsComplete_part3": "The training has been completed! Press 'Finish Training' to continue."
+      }
+    },
+    "jun": {
+      "name": "Jun (Colleague)",
+      "dialogues": {
+        "default": "Hey (username), welcome! I'm Jun. I'm just finishing up a report. Let me know if you need anything.",
+        "findPaper_noProgress": "Hey (username). I'm just finishing this report. Did you check Fatma's desk?",
+        "findPaper_laptopHint": "I haven't seen the paper, but of course you can look under my laptop!",
+        "findPaper_laptopReminder": "Just click on the laptop to check.",
+        "allQuestsComplete": "Good luck!"
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Cultural awareness quiz- True or False",
+      "trueButton": "True",
+      "falseButton": "False",
+      "questions": [
+        {
+          "text": "Gestures can sometimes carry different meanings in different cultures.",
+          "answer": true,
+          "hint": "Think again… In one country, a thumb-up means 'good job' (Western countries - USA, UK, Europe), but in another (Middle Eastern countries - Iran, parts of Iraq, Afghanistan), it can be seen as rude. Are gestures always universal?"
+        },
+        {
+          "text": "People coming from the same country share the same culture and communication style.",
+          "answer": false,
+          "hint": "Think about how people from different regions, age groups, or professions behave, even within one country. Culture isn't one-size-fits-all!"
+        },
+        {
+          "text": "When someone doesn't immediately say 'no,' it means they agree.",
+          "answer": false,
+          "hint": "In some cultures, people avoid saying 'no' directly to stay polite or maintain harmony. Maybe silence or hesitation means something else?"
+        }
+      ],
+      "answerOverlay": {
+        "prefix": "After 3 attempts, here's the answer:",
+        "questionLabel": "Question:",
+        "correctAnswerLabel": "Correct Answer:",
+        "explanationLabel": "Explanation:",
+        "trueValue": "TRUE",
+        "falseValue": "FALSE"
+      }
+    },
+    "puzzleTwo": {
+      "title": "Cultural awareness quiz- Multiple choice",
+      "question": "What is the best way to show cultural awareness during a meeting?",
+      "options": {
+        "a": "Assume everyone shares the same customs",
+        "b": "Pay attention to how colleagues from different backgrounds communicate",
+        "c": "Correct people when their customs seem unusual",
+        "d": "Avoid interacting with colleagues from other cultures"
+      },
+      "feedback": "Think: cultural awareness is about observing and respecting differences, not ignoring or judging them.",
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: When a colleague from another country speaks, what's the best response to show cultural awareness?\n\nOptions:\na) Correct their pronunciation to help them improve\nb) Listen carefully and ask questions if needed\nc) Assume you already know what they mean\nd) Speak more slowly so they can understand you better\n\nCorrect Answer: b) Listen carefully and ask questions if needed\n\nExplanation: Cultural awareness is about observing and respecting differences, not ignoring or judging them. Listening carefully shows respect and genuine interest in understanding the person."
+    },
+    "puzzleThree": {
+      "title": "Cultural awareness quiz- Sequence ordering",
+      "question": "Place the following actions in the most respectful order.",
+      "availableStepsLabel": "Available Steps",
+      "yourSequenceLabel": "Your Sequence",
+      "placeholderText": "Click steps on the left to add them here.",
+      "resetButton": "Reset",
+      "submitButton": "Submit Order",
+      "options": {
+        "a": "Politely ask for clarification if you don't understand something.",
+        "b": "Refrain from jokes or comments about someone's accent.",
+        "c": "Listen carefully without interrupting.",
+        "d": "Thank and acknowledge their contribution."
+      },
+      "feedback": {
+        "position1": "Start by being quiet and focused — what helps you actually hear and understand someone?",
+        "position2": "After listening, what should you not do that could embarrass them or shut the conversation down?",
+        "position3": "If you still need details, what's the polite way to get them without putting the person on the spot?",
+        "position4": "What's a simple, positive thing to do after someone shares their thoughts that builds goodwill?",
+        "incomplete": "Please complete the sequence.",
+        "threeAttempts": "After 3 attempts, here's the answer:\n\nQuestion: What is the correct sequence for handling international communication with respect?\n\nCorrect Answer:\n1. 'Listen carefully without interrupting' (c) - You must first give your full attention to understand what the person is saying\n2. 'Refrain from jokes or comments about someone's accent' (b) - Avoid anything that could make them uncomfortable or shut down communication\n3. 'Politely ask for clarification if you don't understand something' (a) - Once you've listened, respectfully seek to understand better\n4. 'Thank and acknowledge their contribution' (d) - Show appreciation to build goodwill and positive relationships"
+      }
+    },
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "default": "I'm not sure what to do...",
+    "findNote": {
+      "step0": "Fatma said: 'Start by checking the drawer.'",
+      "step1": "The note in the drawer said to check the noticeboard on the left.",
+      "step2": "The message on the left board said to check the 'other noticeboard' (the right one)."
+    },
+    "findPaper": {
+      "step0": "Fatma said to check her desk.",
+      "step1": "I should check near Jun's laptop."
+    },
+    "allQuestsComplete": "Let's move to the next room."
+  },
+  "items": {
+    "note": {
+      "altText": "A sticky note with three rules listed.",
+      "inventoryTitle": "View Sticky Note",
+      "foundDialogue": "Good job! Click on Fatma to continue.",
+      "returnDialogue": "Well done! Click on Fatma to continue."
+    },
+    "paper": {
+      "inventoryTitle": "View Paper",
+      "foundDialogue": "You're doing great! Click on Fatma to continue.",
+      "popupTitle": "FUN FACTS ABOUT CULTURAL AWARENESS",
+      "popupContent": [
+        {
+          "title": "The \"thumbs up\" isn't always positive!",
+          "text": "In many Western countries, it means \"good job,\" but in places like Iran, parts of West Africa, etc., it's considered offensive."
+        },
+        {
+          "title": "Nodding doesn't always mean \"yes.\"",
+          "text": "In Bulgaria, a nod means \"no,\" and shaking your head side to side can mean \"yes.\""
+        },
+        {
+          "title": "Silence can speak volumes.",
+          "text": "In some cultures (Japan, Finland, etc.), silence is seen as a sign of respect and thoughtfulness, not awkwardness."
+        },
+        {
+          "title": "Personal space is cultural!",
+          "text": "People from Latin America or the Middle East often stand closer in conversation than those from Northern Europe or North America."
+        },
+        {
+          "title": "\"OK\" hand gesture emoji is not okay everywhere.",
+          "text": "In Brazil, the \"OK\" sign (thumb and index finger forming a circle) is a rude gesture."
+        }
+      ]
+    }
+  },
+  "systemDialogues": {
+    "drawerSearch": "Only some old files inside. It seems what you're searching for isn't here. Take a look at the noticeboard on the left.",
+    "deskDossiersSearch": "Just a bunch of dossiers. The note isn't here.",
+    "leftBoardMessage": "This is just a reminder about a meeting. Perhaps you'll find what you need on the other noticeboard. Give it another try!",
+    "deskDrawersSearch": "There's nothing here. Looks like the paper is somewhere else. Check under Jun's laptop, but first ask him.",
+    "alreadySearched": "I already looked here. Fatma said to check the desk.",
+    "askJunFirst": "I should probably ask Jun before touching his laptop.",
+    "quizCompleteReturn": "Well done! Click on Fatma to continue."
+  },
+  "completion": {
+    "title": "Training Complete!",
+    "message": "Congratulations! You have successfully demonstrated excellent cultural awareness and communication skills.",
+    "buttonText": "Back to Main Menu"
+  },
+  "quizComplete": {
+    "title": "Correct!",
+    "message": "Excellent work! You've completed the first step in your cultural awareness training.",
+    "buttonText": "Continue"
+  },
+  "answerOverlay": {
+    "title": "Correct Answer",
+    "buttonText": "Continue"
+  },
+  "dialogueActions": {
+    "continue": "Continue",
+    "startQuiz": "Start Quiz",
+    "finishTraining": "Finish Training"
+  },
+  "ui": {
+    "toggleFullscreen": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "loading": "Ładowanie...",
+  "intro": {
+    "title": "Myślenie strategiczne",
+    "paragraphs": [
+      "Jesteś <username>, młodą, ambitną osobą, która właśnie została zatrudniona jako menedżer dużej firmy audio o nazwie \"SoundWave\".",
+      "Choć pełen/pełna zapału i gotowy/a do pracy, nie masz jeszcze dużego doświadczenia w trudnych sytuacjach, z którymi przyjdzie ci się zmierzyć jako menedżer.",
+      "Szybko zdajesz sobie sprawę, że będziesz musiał/a podejmować trudne decyzje, planować z wyprzedzeniem i myśleć strategicznie."
+    ],
+    "buttonText": "Rozpocznij grę"
+  },
+  "characters": {
+    "jake": {
+      "name": "Jake",
+      "dialogues": {
+        "introduction": "Dzień dobry, <username>! Cieszymy się, że jesteś z nami. Słyszeliśmy o tobie wiele dobrego i nie możemy się doczekać, aż zaczniemy pracować pod twoim kierownictwem! Jestem Jake, miło mi cię poznać! Ale po kolei. Poprzedni menedżer zostawił dla ciebie kilka rad i wskazówek, mając nadzieję, że pomogą ci w pierwszych dniach tutaj. To naprawdę ważne, więc przypiął je do tablicy korkowej tam dalej… No, przynajmniej do jednej z nich. Idź zobaczyć, na pewno znajdziesz. To niebieska karteczka.",
+        "findNote": "Spójrz na tablice korkowe. Karteczka, której szukasz, jest niebieska.",
+        "noteFound": "Tak, znalazłeś/aś karteczkę!",
+        "noteFoundPart2": "Jak widzisz, <username>, myślenie strategiczne to kluczowa umiejętność, ponieważ pozwala rozpoznawać i wykorzystywać różne długoterminowe wzorce poprzez analizę całości systemu. Można je stosować w wielu sytuacjach, ale jest szczególnie ważne na stanowiskach kierowniczych, takich jak twoje!",
+        "noteFoundPart3": "Skoro zdobyłeś/aś już podstawową wiedzę o myśleniu strategicznym, sprawdźmy ją teraz w prostym ćwiczeniu.",
+        "noteFoundPart4": "Gdy będziesz gotowy/a, kliknij przycisk poniżej, aby rozpocząć quiz.",
+        "quizComplete": "Brawo. Od pierwszego razu widziałem, że szybko się uczysz! No dobrze, podstawy mamy z głowy, więc możemy przejść do nieco bardziej zaawansowanych rzeczy. Sofia przejmie pałeczkę — przywitaj się z nią i porozmawiajcie. Dziękuję i powodzenia, <username>!",
+        "findUsb": "Co się stało? Zgubiony pendrive? Nie, nie widziałem. Ja sam też zgubiłem już kilka swoich!",
+        "allQuestsComplete": "Powodzenia!",
+        "default": "Zajmij się obecnym zadaniem."
+      }
+    },
+    "sofia": {
+      "name": "Sofia",
+      "dialogues": {
+        "findUsb": "Cześć! Ty musisz być <username>, prawda? Czekaliśmy na ciebie. Tak się cieszę, że wreszcie się spotykamy. Mam na imię Sofia. Chciałam cię oprowadzić i przekazać niezbędne szkolenie, ale… nie mogę znaleźć swojego pendrive'a, a były na nim wszystkie pliki szkoleniowe. Czy mógłbyś/mogłabyś pomóc mi go znaleźć? Był czerwony. Wydaje mi się, że ostatnio widziałam go przy ekspresie do kawy… ale przysięgam, że już sprawdzałam i tam go nie było. Choć może warto sprawdzić jeszcze raz, prawda?",
+        "findUsbFollowUp": "Wciąż szukasz? Mój czerwony pendrive ostatnio widziałam przy ekspresie do kawy — może zajrzyj tam ponownie.",
+        "usbFound": "Nie wierzę! Udało ci się go znaleźć! Jesteś moim wybawcą/moją wybawicielką. Już teraz mogę powiedzieć, że jesteś najbardziej spostrzegawczą osobą w firmie. No to weźmy się za pliki. Spotkajmy się przy moim laptopie.",
+        "readTrainingFileDone": "Widzę, że jesteś też szybkim/szybką czytelnikiem/czytelniczką. Zanotowane! Przejdźmy teraz do następnego pli… O nie! Czyli system plików NAPRAWDĘ został uszkodzony! Czy mógłbyś/mogłabyś, proszę, pomóc? Musimy dopasować każdy z pomysłów z pierwszej kolumny do właściwego rezultatu synergii z drugiej.",
+        "puzzleTwoComplete": "Tak! O to chodzi! Udało się! O… Bardzo przepraszam, ale muszę odebrać ten telefon — jest naprawdę ważny. Dział B+R jest bardzo blisko technologicznego przełomu w nowej przetwornicy do słuchawek! To może być rewolucja na całą branżę, JEŚLI zagramy mądrze. Pytanie brzmi — co teraz zrobić? I w jakiej kolejności? Jestem pewna, że wymyślisz to, <username>. Wierzymy w ciebie!",
+        "allQuestsComplete": "Tak! Masz absolutną rację! To najlepsza strategia, jaką możemy obrać! Pozwoli nam rozpoznać wszystkie zależności, uwzględnić informacje ze wszystkich działów, omówić szczegóły naszego przełomu i wreszcie zintegrować innowację z naszą długofalową strategią. Świetnie! Szkolenie zakończone!",
+        "farewell": "Trzymaj się, <username>. Powodzenia w tym, co przed tobą!",
+        "default": "Zajmij się obecnym zadaniem."
+      }
+    }
+  },
+  "puzzles": {
+    "puzzleOne": {
+      "title": "Nowy początek! Ale jak zacząć?",
+      "question": "Wyobraź sobie, że przygotowujesz się do swojego pierwszego spotkania z zespołem. Aby od pierwszej chwili pokazać umiejętność myślenia strategicznego, jak powinieneś/powinnaś zacząć?",
+      "options": {
+        "a": "Od razu rozdajesz zadania, żeby pokazać autorytet",
+        "b": "Dziękujesz zespołowi za przybycie, nadajesz pozytywny ton i wyjaśniasz cel spotkania",
+        "c": "Zaczynasz od krytyki tego, co zespół zrobił źle przed twoim przyjściem",
+        "d": "Opowiadasz długą osobistą historię, żeby wszyscy mogli cię lepiej poznać"
+      },
+      "correct": "b",
+      "hint": "Rozsądnym sposobem rozpoczęcia jest unikanie skrajności i trzymanie się bezpiecznej drogi.",
+      "completeOverlay": {
+        "title": "Poprawnie!",
+        "message": "Świetna robota! Ukończyłeś/aś pierwsze ćwiczenie.",
+        "buttonText": "Dalej"
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Wyobraź sobie, że przygotowujesz się do swojego pierwszego spotkania z zespołem. Aby od pierwszej chwili pokazać umiejętność myślenia strategicznego, jak powinieneś/powinnaś zacząć?\n\nPoprawna odpowiedź: b) Podziękuj zespołowi za przybycie, nadaj pozytywny ton i wyjaśnij cel spotkania\n\nWyjaśnienie: Rozpoczęcie spotkania od podziękowania zespołowi, nadania pozytywnego tonu i wyjaśnienia celu pokazuje myślenie strategiczne, ponieważ:\n• Tworzy przyjazną atmosferę sprzyjającą współpracy\n• Pokazuje przywództwo bez wchodzenia w autorytarność\n• Od początku ustawia jasne oczekiwania i kierunek\n• Unika skrajności — nie jesteś ani zbyt agresywny/a, ani zbyt swobodny/a"
+    },
+    "matching": {
+      "title": "Dopasowanie pomysłów do synergii",
+      "question": "Dopasuj każdy pomysł rozwoju produktu do właściwego rezultatu synergii.",
+      "columnHeaders": {
+        "ideas": "Pomysły rozwoju produktu",
+        "outcomes": "Rezultat synergii"
+      },
+      "selectPlaceholder": "Wybierz rezultat",
+      "rows": {
+        "1": "Jeśli produkcja i projektowanie wcześnie się zgrają, unikamy kosztownych zmian później.",
+        "2": "Włączając obsługę klienta, możemy przewidzieć typowe problemy jeszcze przed premierą.",
+        "3": "Jeśli Dział B+R ściśle współpracuje z Marketingiem, możemy projektować funkcje, których faktycznie chcą klienci.",
+        "4": "Współpraca z Finansami zapewnia, że nasza innowacja jest zrównoważona, a nie tylko ekscytująca."
+      },
+      "options": {
+        "A": "Produkty dopasowane do potrzeb klientów już od początku.",
+        "B": "Mniej reklamacji i płynniejsze doświadczenie klienta.",
+        "C": "Długoterminowa rentowność i zrównoważone inwestycje.",
+        "D": "Sprawne procesy oszczędzające czas i pieniądze."
+      },
+      "answerKey": {
+        "1": "D",
+        "2": "B",
+        "3": "A",
+        "4": "C"
+      },
+      "feedback": {
+        "notAllPicked": "Dopasuj wszystkie pomysły przed wysłaniem.",
+        "wrong": "Nie do końca. Pomyśl: która współpraca działów prowadzi do którego rezultatu?"
+      },
+      "completeOverlay": {
+        "title": "Świetnie!",
+        "message": "Dopasowałeś/aś wszystkie pomysły poprawnie.",
+        "buttonText": "Dalej"
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Dopasuj każdy pomysł rozwoju produktu do właściwego rezultatu synergii.\n\nPoprawne dopasowania:\n• \"Jeśli produkcja i projektowanie wcześnie się zgrają, unikamy kosztownych zmian później.\" → D: Sprawne procesy oszczędzające czas i pieniądze\n• \"Włączając obsługę klienta, możemy przewidzieć typowe problemy jeszcze przed premierą.\" → B: Mniej reklamacji i płynniejsze doświadczenie klienta\n• \"Jeśli B+R ściśle współpracuje z Marketingiem, możemy projektować funkcje, których faktycznie chcą klienci.\" → A: Produkty dopasowane do potrzeb klientów już od początku\n• \"Współpraca z Finansami zapewnia, że nasza innowacja jest zrównoważona, a nie tylko ekscytująca.\" → C: Długoterminowa rentowność i zrównoważone inwestycje\n\nMyślenie strategiczne oznacza łączenie działów tak, by ich wspólny wysiłek dawał lepsze rezultaty niż praca w pojedynkę.",
+      "resetButtonText": "Zresetuj",
+      "submitButtonText": "Wyślij"
+    },
+    "sequence": {
+      "title": "Pierwsze prawdziwe zadanie",
+      "question": "Ułóż kroki w odpowiedniej kolejności, aby przeprowadzić proces decyzyjny zgodny z zasadą perspektywy systemowej.",
+      "availableStepsLabel": "Dostępne kroki",
+      "yourSequenceLabel": "Twoja kolejność",
+      "placeholderText": "Kliknij kroki po lewej, aby je tu dodać.",
+      "options": {
+        "a": "Omów nowy prototyp słuchawek z inżynierami z laboratorium",
+        "b": "Określ, jak ta innowacja może wpłynąć na produkcję, marketing i obsługę klienta",
+        "c": "Zbierz informacje zwrotne z różnych działów, aby dostrzec szanse i zagrożenia",
+        "d": "Dopasuj ostateczną decyzję do ogólnej długofalowej strategii firmy"
+      },
+      "correctSequence": [
+        "b",
+        "c",
+        "a",
+        "d"
+      ],
+      "hints": {
+        "attempt1": "Wskazówka: Najpierw zrozum większy obraz — jak decyzja wpływa na cały system.",
+        "attempt2": "Wskazówka: Następnie zbierz informacje zwrotne z działów, aby dostrzec szanse i zagrożenia."
+      },
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Dział B+R jest bardzo blisko technologicznego przełomu w nowej przetwornicy do słuchawek! Co teraz zrobić? I w jakiej kolejności?\n\nPoprawna odpowiedź:\n1. \"Krok B: Określ, jak ta innowacja może wpłynąć na produkcję, marketing i obsługę klienta\" — Najpierw zrozum większy obraz i jak decyzja wpłynie na wszystkie powiązane zmienne w systemie\n2. \"Krok C: Zbierz informacje zwrotne z różnych działów, aby dostrzec szanse i zagrożenia\" — Dobry proces decyzyjny opiera się na całości dostępnych danych z każdej perspektywy\n3. \"Krok A: Omów nowy prototyp słuchawek z inżynierami z laboratorium\" — Gdy kontekst jest jasny, skup się na technicznych szczegółach i specyfice innowacji\n4. \"Krok D: Dopasuj ostateczną decyzję do ogólnej długofalowej strategii firmy\" — Na końcu zintegruj wszystko w systemową decyzję, która służy długofalowym celom\n\nTo podejście pokazuje myślenie strategiczne, biorąc pod uwagę cały system zanim zagłębisz się w szczegóły.",
+      "resetButtonText": "Zresetuj",
+      "submitButtonText": "Zatwierdź kolejność"
+    },
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "answerOverlay": {
+    "title": "Poprawna odpowiedź",
+    "buttonText": "Dalej"
+  },
+  "hints": {
+    "findNote": "Wypróbuj *lewą, dużą tablicę korkową*. Jake mówił, że właściwa karteczka jest niebieska.",
+    "findUsb": "Sofia ostatnio widziała czerwony pendrive przy ekspresie do kawy.",
+    "puzzleThree": "Wskazówka co do kolejności: szerszy system → informacje zwrotne → szczegóły techniczne → długofalowe dopasowanie.",
+    "default": "Szukaj tego, co wydaje się najistotniejsze dla bieżącego celu."
+  },
+  "items": {
+    "blueNote": {
+      "altText": "Niebieska karteczka samoprzylepna ze wskazówkami dotyczącymi myślenia strategicznego.",
+      "inventoryTitle": "Zobacz niebieską karteczkę"
+    },
+    "usb": {
+      "altText": "Czerwony pendrive Sofii.",
+      "inventoryTitle": "Zobacz pendrive"
+    },
+    "trainingFile": {
+      "altText": "Plik szkoleniowy",
+      "inventoryTitle": "Zobacz plik SZKOLENIE",
+      "title": "SZKOLENIE",
+      "content": "Myślenie strategiczne to nie tylko dobre pomysły — to łączenie właściwych ludzi tak, aby te pomysły stawały się silniejsze i tworzyły synergię. Każdy dział widzi firmę z innego kąta: produkcja, projektowanie, marketing, finanse, badania i rozwój oraz obsługa klienta — każdy dysponuje unikalną wiedzą. Gdy umożliwi się im współpracę od wczesnych etapów procesu, zespoły mogą uniknąć kosztownych błędów, lepiej przewidywać potrzeby klientów i tworzyć rozwiązania jednocześnie nowatorskie i realistyczne. Synergia to to, co dzieje się, gdy te perspektywy współpracują, zamiast działać osobno.",
+      "closeHint": "Kliknij gdziekolwiek, aby zamknąć."
+    }
+  },
+  "systemDialogues": {
+    "introSelfTalk": "No to jest — pierwszy dzień w nowej pracy. Menedżer/menedżerka. Cóż, jestem optymistą/optymistką. Zobaczmy, co przyniesie dzień. Ruszamy.",
+    "findNotePrompt": "Na jednej z tablic korkowych wisi niebieska karteczka z ważną wiadomością od poprzedniego menedżera. Rozejrzyj się po pomieszczeniu i spróbuj ją znaleźć.",
+    "noteFoundSuccess": "Brawo! Wygląda na to, że Jake chce z tobą jeszcze pogadać.",
+    "wrongCorkboard": "Tylko schematy, mapy i dokumenty strategiczne. Spróbuj innej tablicy.",
+    "laptopTooEarly": "Elegancki, nowoczesny laptop. Lepiej najpierw pomóż Sofii znaleźć jej pendrive.",
+    "laptopNoUsb": "Bez pendrive'a nie ma plików szkoleniowych.",
+    "usbFoundSuccess": "Znalazłeś/aś pendrive Sofii — brawo! Chodźmy podzielić się dobrą wiadomością!",
+    "trainingFileDone": "Świetna robota! Twoje skupienie robi wrażenie! Teraz pogadajmy znów z Sofią.",
+    "findUsbPrompt": "Pomóż Sofii i znajdź jej czerwony pendrive. Myśli, że może być w pobliżu ekspresu do kawy.",
+    "talkToSofiaPrompt": "Teraz kliknij Sofię, aby się przywitać — to ona poprowadzi resztę szkolenia.",
+    "quizCompletePrompt": "Świetna robota, <username>! Teraz pogadajmy znów z Jake'iem.",
+    "matchingCompletePrompt": "Brawo! Zobaczmy, co ma do powiedzenia Sofia!",
+    "sequenceCompletePrompt": "Świetna robota! Teraz kliknij Sofię, aby zakończyć szkolenie.",
+    "sequenceCompletePromptAfterReveal": "Teraz kliknij Sofię, aby zakończyć szkolenie."
+  },
+  "completion": {
+    "title": "Szkolenie zakończone!",
+    "message": "Gratulacje! Ukończyłeś/aś moduł myślenia strategicznego.",
+    "buttonText": "Powrót do menu głównego"
+  },
+  "ui": {
+    "fullscreenTitle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRoomsTitle": "Powrót do escape roomów",
+    "startQuizButton": "Rozpocznij quiz",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "skipButton": "Pomiń",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

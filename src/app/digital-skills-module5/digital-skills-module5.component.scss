@@ -1,0 +1,306 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Digital Skills room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(10, 20, 35, 0.95);
+  border: 2px solid rgba(0, 104, 116, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* --- Progress label --- */
+.progress-label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* --- Password Audit --- */
+.password-display {
+  text-align: center;
+  margin: 1.5rem 0;
+
+  .password-value {
+    font-size: 1.5rem;
+    font-family: 'Courier New', monospace;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 12px 24px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    user-select: none;
+    display: inline-block;
+  }
+}
+
+.password-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 1rem 0;
+
+  button {
+    min-width: 120px;
+
+    mat-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+/* --- Feedback messages --- */
+.feedback-message {
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+
+  &.feedback-correct {
+    background: rgba(76, 175, 80, 0.15);
+    color: #2e7d32;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+  }
+
+  &.feedback-wrong {
+    background: rgba(244, 67, 54, 0.15);
+    color: #c62828;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+  }
+}
+
+/* --- Email card (Phishing puzzle) --- */
+.email-card {
+  max-width: 750px;
+}
+
+.email-preview {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 12px 0;
+
+  .email-header {
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    .email-subject {
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        opacity: 0.6;
+      }
+    }
+
+    .email-sender {
+      font-size: 0.85rem;
+      margin-top: 4px;
+      opacity: 0.7;
+      position: relative;
+
+      .sender-address {
+        cursor: help;
+        text-decoration: underline dotted;
+      }
+
+      .sender-tooltip {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        z-index: 10;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .email-body {
+    padding: 16px;
+
+    p { margin: 0 0 8px; }
+
+    .email-link {
+      position: relative;
+      margin-top: 12px;
+
+      .fake-link {
+        color: #1976d2;
+        text-decoration: underline;
+        cursor: help;
+        font-weight: 500;
+      }
+
+      .link-tooltip {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: rgba(200, 0, 0, 0.9);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        z-index: 10;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.email-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 12px 0;
+
+  button mat-icon {
+    margin-right: 4px;
+  }
+}
+
+/* --- Social Post sub-step --- */
+.sub-instruction {
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+/* --- Options vertical overrides --- */
+.options-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 1rem 0;
+
+  button {
+    text-align: left;
+    white-space: normal;
+    line-height: 1.4;
+    padding: 10px 16px;
+    min-height: 44px;
+  }
+}
+
+/* --- Comment display --- */
+.comment-display {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+
+  .comment-author {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--sys-primary, #006874);
+    margin-bottom: 6px;
+  }
+
+  .comment-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 12px 0;
+
+  button mat-icon {
+    margin-right: 4px;
+  }
+}
+
+/* --- Malware infection overlay --- */
+.malware-overlay {
+  .malware-card {
+    border: 2px solid #c62828;
+
+    mat-card-title {
+      color: #c62828;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .malware-icon {
+      font-size: 28px;
+      width: 28px;
+      height: 28px;
+      color: #c62828;
+    }
+  }
+}
+
+/* --- Red herring hotspots (invisible by default — only show on hover) --- */
+.hotspot.red-herring {
+  border: none;
+  background: transparent;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* --- Question text --- */
+.question {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* --- Score summary --- */
+.score-summary {
+  margin-top: 1rem;
+  text-align: center;
+
+  .score-label {
+    font-size: 1.1rem;
+  }
+
+  .score-feedback {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+}

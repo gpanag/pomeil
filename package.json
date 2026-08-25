@@ -1,6 +1,6 @@
 {
   "name": "pomeil",
-  "version": "0.0.0",
+  "version": "0.2.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,13 +11,19 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.0.0",
+    "@angular/cdk": "^18.2.13",
     "@angular/common": "^18.0.0",
     "@angular/compiler": "^18.0.0",
     "@angular/core": "^18.0.0",
+    "@angular/flex-layout": "^15.0.0-beta.42",
     "@angular/forms": "^18.0.0",
+    "@angular/material": "^18.2.13",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@colsen1991/ngx-translate-extract-marker": "^3.0.1",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

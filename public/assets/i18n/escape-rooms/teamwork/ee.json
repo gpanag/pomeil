@@ -1,0 +1,210 @@
+{
+  "loading": "Meeskonnatöö laadimine...",
+  "intro": {
+    "title": "Meeskonnatöö",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua ettevõte, mis toob inimesi kokku.",
+      "Sind võttis just tööle suur rahvusvaheline ettevõte, kus erinevatest kultuuridest, taustadest ja erialadest pärit inimesed töötavad koos. Selles ettevõttes töötamine on sinu jaoks õppimiskogemus, sest erinevate väljakutsete läbimisel omandad oskusi, mis on POMEIL Pädevuste Kaardis ja mis on iga ettevõtja jaoks hädavajalikud.",
+      "Täna sisened Coworking-ruumi, kus rekonstrueerimismeeskond koordineerib suurt renoveerimisprojekti. Vana hoone kaks korrust vajavad taastamist. See on täiuslik hetk arendada oma meeskonnatöö oskusi."
+    ],
+    "buttonText": "Sisene Coworking-ruumi"
+  },
+  "characters": {
+    "priya": {
+      "name": "Priya",
+      "dialogues": {
+        "greet": "Hea on sind näha! Kas tahaksid meiega liituda? Töötame koos meeskonnana, kuigi pean tunnistama — see ei ole alati nii lihtne, kui paistab. Olen Priya, selle projekti peadisainer ja praegu taastame me vana hoone kahte korrust. Peame uuendama aknad, mööbli, värvima sisemuse, lisama uue valgustuse ja vahetama välja kogu juhtmestiku.\n\nSeda on palju, ma tean — kuid miski sellest pole võimalik ilma meeskonnatööta. Niisiis, alustagem.\n\nLubage mul tutvustada teile Olehit.",
+        "quiz1Done": "Nüüd alustasime sinu meeskonnatöö võimete ülesehitamist!",
+        "findPoster": "Olen sulle kingituseks ette valmistanud plakati seinale panemiseks ja see sisaldab tõeliselt väärtuslikku teavet — selliseid asju, mida on parem õppida varakult. Püüame seda koos leida.\n\nOh, see üks plakat, mis sisaldab olulist teavet täpsete sammude kohta, me ei saa lasta sellel puududa. Seda materjali on parem õppida varakult, nii et palun alusta selle otsimist.",
+        "findPosterInstructions": "Otsime seinale paigutamiseks plakatit. Palun alusta teadetetahvli kontrollimisest. Pärast seda vaata toa eesotsas asuvat lauda ja jätka seejärel mujal otsimist. Võiksid ka uurida tagumiste sülearvutite juures.",
+        "posterFound": "Suurepärane. See on tõeliselt väärtuslikud 10 sammu edasi liikumiseks ja meeskonnatöö probleemide lahendamiseks, mis kindlasti tekivad igas ettevõttes, kus sa juhid või töötad. Aga see sõltub sinust. Paneme selle teadmise praktikasse.",
+        "puzzle2Intro": "On aeg järgmiseks viktoriiniks. Palun vasta nendele küsimustele eelnevale teabele viidates.",
+        "finalWords": "Sa tegid väga hästi. Hindame tõeliselt sinu pingutusi ja osavõttu. Sinu võime meeskonnatööd üles ehitada on muljetavaldav ja loodame, et rakendad neid oskusi oma töökohas, kodus, perega või isegi sõpradega.\n\nMeeskonnatööd saab kasutada igal pool ja kui sa kunagi soovid sellesse moodulisse tagasi pöörduda, oleme alati sinu jaoks olemas. Võid ka soovitada neid viktoriine kõigile, kellele võiks tugevamate meeskonnatöö oskuste arendamine kasuks tulla.\n\nKohtumiseni järgmine kord!",
+        "completion": "Sinu meeskonnatöö oskused säravad. Õnnitlused saavutuse puhul. Oled nüüd valmis olema tugeva meeskonna osa, mõistes, kuidas meeskonnatöö protsess tegelikult toimib. Kuid uurida on veel palju oskusi — niisiis tunne end vabalt jätkata ja avastada, mis edasi tuleb.",
+        "default": "Jätka coworking-ruumis vihjete otsimist."
+      }
+    },
+    "oleh": {
+      "name": "Oleh",
+      "dialogues": {
+        "greet": "Tere, mina olen Oleh. Olen aus — meeskonnatöö ei ole alati lihtne. Me kõik tuleme erinevatest taustadest ja vahel vajame hetke, et üksteise tööviisidega kohaneda. Aga just see teebki vanade hoonete taastamise nii rahuldustpakkuvaks. See on olnud minu kirg juba aastaid ja iga projekt õpetab meile midagi uut selle kohta, kuidas paremini koos töötada.\n\nMul on midagi huvitavat sinuga jagada.\n\nAlustagem oma teekonda meeskonnatöösse.",
+        "findFolder": "Oleme viimasel ajal saanud meie töövõtjalt palju taotlusi, nii et oleme need erinevatesse kaustadesse ja dokumentide kaustadesse sorteerinud. Kuid üks neist on kadunud ja see on oluline. Kas sa saaksid mind aidata seda leida?",
+        "findFolderInstructions": "See allkirjastatud kaust sisaldab olulisi meeskonnatöö samme, mida peame kasutama. Alusta otsimist teadetetahvli juures, seejärel jätka ülejäänud toa uurimisega.",
+        "folderFound": "Suurepärane töö! Nüüd on meil see, mida vajame. Aga enne kui edasi liigume, siin on natuke rohkem teavet, mille üle järele mõelda. Need meeskonnatöö ideed võivad sind aidata, kui jätkad oma töös ja igapäevaelus kasvamist.",
+        "teamworkInfo": "Meeskonnatöö tähendab inimesi, kes töötavad koos ühise eesmärgi nimel, kasutades iga inimese tugevaid külgi grupi toetamiseks.\n\nSee on enamat kui lihtsalt ülesannete jagamine — see nõuab selget suhtlemist, vastastikust austust ja valmisolekut kuulata.\n\nHea meeskonnatöö aitab probleeme kiiremini lahendada, sest kõik panustavad ideede ja pingutusega.\n\nKui meeskonnaliikmed üksteist toetavad, tunduvad väljakutsed väiksemad, edasiminek muutub lihtsamaks ja edu jagatakse kõigi vahel.",
+        "quiz1Intro": "Noh, ma kindlasti tean, kuidas asju ehitada — aga nüüd on meil aeg ehitada oma meeskonnatöö oskusi. Valmis viktoriiniks?",
+        "default": "Olen renoveerimisplaanidega hõivatud. Räägi Priyaga, kui vajad juhiseid."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Meeskonnatöö Viktoriin — Õige või Vale",
+      "instructions": "Tee kindlaks, kas iga väide on Õige või Vale.",
+      "questions": [
+        {
+          "text": "Tõhus meeskonnatöö tähendab vastutuse jagamist ja üksteise toetamist ühise eesmärgi suunas.",
+          "correct": true,
+          "hint": "Meeskonnatöö kasvab, kui kõik panustavad ja toetavad gruppi, mitte siis, kui inimesed töötavad eraldi."
+        },
+        {
+          "text": "Hea meeskonnatöö toimub, kui kõik nõuavad ülesannete tegemist enda viisil, teisi kuulamata.",
+          "correct": false,
+          "hint": "Mõtle, kas meeskonnatöö paraneb, kui inimesed teevad koostööd, või kui nad ignoreerivad üksteise ideid."
+        },
+        {
+          "text": "Selge suhtlus aitab vältida arusaamatusi ja hoiab meeskonnatöö sujuvalt töös.",
+          "correct": true,
+          "hint": "Küsi endalt, kui palju lihtsamaks muutub meeskonnatöö, kui kõik mõistavad plaani."
+        },
+        {
+          "text": "Kui tekib konflikt, on parim lähenemisviis seda ignoreerida ja loota, et see kaob iseenesest.",
+          "correct": false,
+          "hint": "Konfliktid paranevad, kui meeskonnaliikmed käsitlevad neid austusega — mitte siis, kui nad neid väldivad."
+        },
+        {
+          "text": "Meeskonnatöö on tugevam, kui inimesed tunnustavad üksteise tugevaid külgi ja jagavad ülesandeid vastavalt.",
+          "correct": true,
+          "hint": "Mõtle, kuidas meeskonnad saavad kasu, kui iga inimene kasutab oskusi, milles ta on parim."
+        }
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle uuesti.",
+        "correct": "Tubli töö! Mõistad meeskonnatöö põhitõdesid."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. ÕIGE — Tõhus meeskonnatöö tähendab vastutuse jagamist ja üksteise toetamist.\n2. VALE — Hea meeskonnatöö nõuab teiste kuulamist, mitte üksi tegutsemise nõudmist.\n3. ÕIGE — Selge suhtlus väldib arusaamatusi.\n4. VALE — Konflikte tuleks käsitleda austusega, mitte ignoreerida.\n5. ÕIGE — Meeskonnad on tugevamad, kui ülesanded jagatakse tugevuste põhjal."
+    },
+    "singleChoice": {
+      "title": "Meeskonnatöö Viktoriin — Mitu Valikuvõimalust",
+      "instructions": "Vali parim vastus.",
+      "question": "Kui meeskonnaprojekt hakkab graafikust maha jääma, mis on kõige tõhusam meeskonnatöö tegevus, mis esimesena ette võtta?",
+      "options": {
+        "a": "Ignoreeri probleemi ja loota, et keegi teine märkab",
+        "b": "Käsi kõigil kiiremini töötada ilma nende arvamust küsimata",
+        "c": "Suhtle meeskonnaga, et mõista, kus viivitus toimub",
+        "d": "Lõpeta oma osa üksi ja väldi teiste kaasamist"
+      },
+      "hint": "Mõtle, milline valik tugevdab suhtlemist ja aitab meeskonnal koos probleemist aru saada selle asemel, et eraldatuses töötada.",
+      "feedback": {
+        "wrong": "Mõtle, milline valik tugevdab suhtlemist ja aitab meeskonnal koos probleemist aru saada selle asemel, et eraldatuses töötada.",
+        "correct": "Õige! Meeskonnaga suhtlemine on kõige tõhusam esimene samm."
+      },
+      "answerOverlay": "Õige vastus on: Suhtle meeskonnaga, et mõista, kus viivitus toimub."
+    },
+    "sequenceOrder": {
+      "title": "Meeskonnatöö Viktoriin — Järjekorra Seadmine",
+      "instructions": "Seo järgmised meeskonnatöö tegevused õigesse järjekorda.",
+      "items": [
+        "Selgita probleem koos, jagades seda, mida iga meeskonnaliige näeb",
+        "Jää rahulikuks ja kuula teisi, enne kui reageerid",
+        "Otsusta ühe väikese tegevuse üle, mida meeskond saab järgmisena teha",
+        "Suhtle selgelt selle üle, mille eest iga inimene vastutab"
+      ],
+      "correctOrder": [
+        "Jää rahulikuks ja kuula teisi, enne kui reageerid",
+        "Selgita probleem koos, jagades seda, mida iga meeskonnaliige näeb",
+        "Otsusta ühe väikese tegevuse üle, mida meeskond saab järgmisena teha",
+        "Suhtle selgelt selle üle, mille eest iga inimene vastutab"
+      ],
+      "hints": [
+        "1. samm: Alusta rahulikkuse hoidmise ja kuulamisega.",
+        "2. samm: Seejärel selgita probleem koos.",
+        "3. samm: Otsusta ühe järgmise sammu üle.",
+        "4. samm: Suhtle vastutused selgelt."
+      ],
+      "feedback": {
+        "wrong": "Tõhus meeskonnatöö algab rahuliku kuulamisega. Pärast seda meeskonnad selgitavad probleemi koos, valivad ühe juhitava järgmise sammu ja seejärel lepivad selgelt kokku, kes mida teeb.",
+        "correct": "Suurepärane! Seadsid meeskonnatöö sammud õigesse järjekorda."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Jää rahulikuks ja kuula teisi, enne kui reageerid.\n2. Selgita probleem koos, jagades seda, mida iga meeskonnaliige näeb.\n3. Otsusta ühe väikese tegevuse üle, mida meeskond saab järgmisena teha.\n4. Suhtle selgelt selle üle, mille eest iga inimene vastutab."
+    },
+    "answerOverlayTitle": "Vastus Avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Kontrolli Järjekorda",
+      "resetButton": "Lähtesta"
+    }
+  },
+  "hints": {
+    "intro": "Klõpsa Priyat tahvli juures, et alustada.",
+    "talkToOleh": "Klõpsa Olehit, et alustada.",
+    "findFolder": "Kontrolli teadetetahvlit, seejärel konverentsilauda, seejärel infolauda.",
+    "talkToOleh2": "Naase Olehi juurde.",
+    "puzzle1": "Vasta igale Õige või Vale küsimusele selle põhjal, mida tead meeskonnatööst.",
+    "findPoster": "Kontrolli lauda, seejärel teadetetahvlit, seejärel taga olevaid sülearvuteid.",
+    "talkToPriya2": "Naase Priya juurde sellega, mille leidsid.",
+    "completion": "Koolitus on lõppenud!",
+    "default": "Vaata coworking-ruumis ringi vihjete otsimiseks."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa sisened avarasse coworking-ruumi. Tahvel on täis värvilisi jooniseid, meeskonnamärkmeid ja post-it'e. Märkad keskmise rekonstrueerimisosakonna peadisainerit ja töövõtjat. Sa peaksid klõpsama Priyat, peadisainerit.",
+    "clickNoticeBoard": "Mäletan, et hoidsin seda varem selle kõrval, aga nüüd… Ma ei leia seda kuskilt.\n\nKas sa saaksid mind aidata seda otsida?\nProovi kõigepealt kontrollida klaasukse taga olevat konverentsiruumi — võisin selle sealt laualt jätta.",
+    "clickBackTable": "Hmm… tundub, et kausta, mida otsid, siin pole. See sisaldab ainult teavet ümberehitustööde ja klientide taotluste kohta. Palun jätka otsimist. Võiksid kontrollida toa kaugemas otsas olevaid laudu. Vaatame, kus veel võivad märkmed asuda",
+    "foundFolder": "Oh, lõpuks—siin see on. Öeldakse, et kui tahad midagi peita, pane see kõige nähtavamasse kohta, ja see näib olevat täpselt see, mis juhtus. Sinine kleepmärkus on see, mida me vajame. Aitäh sinu abi eest.",
+    "folderOpened": "Hästi, vaatame, mis meil siin on. Need sammud kirjeldavad, kuidas alustada meeskonnatöö tugevdamist, kui ilmneb arusaamatust või sidemete katkemist.",
+    "folderRead": "Tubli töö! Naase Ehitustöövõtja Olehi juurde.",
+    "clickDesk": "Tundub, et seda siin pole. Vaatame märkmetahvlit.",
+    "clickNoticeBoardPoster": "Hmm… ka siin pole. Lihtsalt mõned kliendi taotluste märkmed. Olgu, keegi printis selle välja, nii et heitkem pilk sülearvutite juurde, võib-olla on mõni neist seal lahti.",
+    "foundPoster": "Ah—vabandust. See oli kogu aeg sellel laual!"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "MEESKONNATÖÖ SAMMUD",
+      "popupContent": [
+        "Peatu ja jää lugupidavaks — lase emotsioonidel rahuneda enne reageerimist",
+        "Selgita probleem koos — keskendu probleemile, mitte inimesele",
+        "Vali üks ühine tegevus — leppige kokku väikeses järgmises sammus, mille saate meeskonnana ette võtta"
+      ]
+    },
+    "poster": {
+      "popupTitle": "MEESKONNATÖÖ ARENDAMISE SAMMUD",
+      "popupContent": [
+        "Lepi kokku ühes eesmärgis — Esiteks veendu, et kõik mõistavad, mida meeskond püüab saavutada. Üks selge eesmärk aitab inimestel töötada samas suunas.",
+        "Räägi varakult ja selgelt — Jaga teavet niipea kui võimalik ja hoia see lihtne. Selge suhtlus aitab hiljem segadust vältida.",
+        "Kuula enne, kui vastad — Lase teistel rääkimine lõpetada, enne kui reageerid. Kuulamine aitab usaldust üles ehitada ja näitab austust.",
+        "Anna ülesandeid tugevuste põhjal — Määra töö, mis sobib sellega, mida iga inimene kõige paremini teeb. See teeb töö kõigi jaoks lihtsamaks ja kiiremaks.",
+        "Kontrolli edusamme tihti — Võta lühikesi hetki, et näha, kuidas asjad lähevad. Regulaarsed kontrollid aitavad väikesi probleeme varakult parandada.",
+        "Küsi, kui midagi on ebaselge — Kui sa ei mõista, esita küsimus. Varajane küsimine aitab vigu ennetada.",
+        "Jää rahulikuks lahkarvamuste ajal — Konfliktid võivad juhtuda, kuid rahulik vestlus aitab neid lahendada. Austus hoiab meeskonna hästi koos töötamas.",
+        "Ole paindlik, kui plaanid muutuvad — Mõnikord plaanid muutuvad ja see on okei. Kiire kohanemine aitab meeskonnal edasi liikuda.",
+        "Aita meeskonnaliikmeid, kui vaja — Kui keegi vaeva näeb, paku abi. Toetus teeb meeskonna tugevamaks ja vähendab stressi.",
+        "Tähistage väikseid edusamme — Märka edu ja ütle aitäh. Koos tähistamine ehitab motivatsiooni ja meeskonnavaimu."
+      ]
+    },
+    "teamworkFolder": {
+      "inventoryTitle": "Meeskonnatöö Sammude Kaust"
+    },
+    "developmentPoster": {
+      "inventoryTitle": "Arendamise Sammude Plakat"
+    }
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Sinu meeskonnatöö oskused säravad. Õnnitlused saavutuse puhul. Oled nüüd valmis olema tugeva meeskonna osa, mõistes, kuidas meeskonnatöö protsess tegelikult toimib. Kuid uurida on veel palju oskusi — niisiis tunne end vabalt jätkata ja avastada, mis edasi tuleb.",
+    "buttonText": "Välju Coworking-ruumist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

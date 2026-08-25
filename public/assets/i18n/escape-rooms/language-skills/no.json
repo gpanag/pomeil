@@ -1,0 +1,176 @@
+{
+  "loading": "Laster Språkferdigheter...",
+  "intro": {
+    "title": "Språkferdigheter",
+    "paragraphs": [
+      "Drømmen din er å bli en suksessrik gründer og skape et selskap som forener mennesker.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap, der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringsopplevelse for deg, ettersom du gjennom å fullføre ulike utfordringer vil tilegne deg ferdigheter fra POMEIL Kompetansekart, som er essensielle for enhver gründer.",
+      "Den første oppgaven din tar deg til FoU-venterommet, der du møter nye kolleger fra ulike land. Sterke kommunikasjonsferdigheter vil hjelpe deg å bygge bro over enhver språkbarriere og bygge varige profesjonelle relasjoner."
+    ],
+    "buttonText": "Gå inn i venterommet"
+  },
+  "characters": {
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hei! Velkommen til FoU-venterommet. Teamene våre jobber med partnere fra hele verden, så sterke språkferdigheter er essensielt. De hjelper deg å kommunisere klart, forbedrer karrieremulighetene dine og lar deg vokse profesjonelt.",
+        "findTablet": "Før du går inn i FoU-avdelingen, er det viktig å forstå de fire grunnleggende komponentene i språkferdigheter. Jeg la et nettbrett på fellespulten her med en interaktiv guide. Kan du finne det?",
+        "tabletFound": "Bra jobbet! Tale og lytting er avgjørende under møter og diskusjoner, mens lesing og skriving er essensielt for rapporter, e-poster og dokumentasjon i FoU.",
+        "quiz1Intro": "La oss teste forståelsen din av disse konseptene.",
+        "quiz1Done": "Nå som du forstår grunnleggende, la oss snakke om hvordan du utvikler disse ferdighetene. Det er spesielt viktig i et krevende miljø som FoU.",
+        "findFlipchart": "Det finnes vanlige utfordringer som mangel på motivasjon eller begrenset tid. Jeg skrev noen løsninger på flipchart-en her etter siste personalseminar. Gå og se.",
+        "flipchartFound": "Strålende. Klare mål og smart bruk av teknologi gjør språkinnlæring overkommelig, selv med en travel FoU-timeplan.",
+        "puzzle2Intro": "Nå, fullfør disse siste oppgavene for å avslutte opplæringen.",
+        "finalWords": "Fantastisk! Du forstår hvordan du utvikler språkferdigheter i ekte arbeidssituasjoner. Sterk kommunikasjon gjør deg tryggere og mer effektiv.\n\nHusk, språkferdigheter lar deg delta fullt ut i internasjonale prosjekter og det globale arbeidsmarkedet. Lykke til!",
+        "completion": "Gratulerer, du har fullført alt og nådd et nytt nivå i Språkferdigheter. Klikk på den åpne døren for å gå ut.",
+        "default": "Fortsett å se deg om i venterommet etter spor."
+      }
+    },
+    "kenji": {
+      "name": "Kenji",
+      "dialogues": {
+        "busy": "Jeg forbereder FoU-presentasjonen min. Digitale verktøy hjelper virkelig med uttale og selvtillit!",
+        "default": "Fortsatt øver… snakk med Maria."
+      }
+    }
+  },
+  "puzzles": {
+    "fillGap": {
+      "title": "De 4 Komponentene i Språk",
+      "instructions": "Dra de riktige ordene inn i de manglende plassene for å fullføre definisjonene.",
+      "sentenceParts": [
+        "Lytting er en ",
+        " ferdighet som fokuserer på evnen til å tolke et budskap riktig. Skriving er en ",
+        " ferdighet som lar oss dele meninger gjennom tekst."
+      ],
+      "options": [
+        "reseptiv",
+        "produktiv",
+        "passiv",
+        "stille"
+      ],
+      "correctAnswers": [
+        "reseptiv",
+        "produktiv"
+      ],
+      "feedback": {
+        "wrong": "Det er ikke helt riktig. Tenk på hvilke ferdigheter som mottar informasjon og hvilke som produserer den.",
+        "correct": "Riktig! Du kjenner forskjellen mellom å motta og produsere språk."
+      },
+      "answerOverlay": "De riktige svarene er:\n1. Lytting er en RESEPTIV ferdighet.\n2. Skriving er en PRODUKTIV ferdighet.",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Sjekk svar"
+    },
+    "singleChoice": {
+      "title": "Overvinne språkbarrierer",
+      "instructions": "Velg det beste svaret.",
+      "question": "Du sliter med å finne tid til å øve på et nytt språk og føler deg umotivert. Ifølge opplæringen, hva er en god løsning?",
+      "options": {
+        "a": "Slutt å lære til du har en hel fri dag.",
+        "b": "Utnytt teknologi (digitale verktøy) og bli med i nettsamfunn.",
+        "c": "Bruk bare formelle utdanningsmetoder som dyre seminarer.",
+        "d": "Unngå å snakke til du er perfekt."
+      },
+      "hint": "Tenk på moderne verktøy. Hva kan du bruke på farten for å gjøre læringen personlig og sosial?",
+      "feedback": {
+        "wrong": "Tenk på moderne verktøy. Hva kan du bruke på farten for å gjøre læringen personlig og sosial?",
+        "correct": "Riktig! Teknologi og nettsamfunn gjør språkinnlæring tilgjengelig og sosial."
+      },
+      "answerOverlay": "Det riktige svaret er: Utnytt teknologi (digitale verktøy) og bli med i nettsamfunn."
+    },
+    "sequenceOrder": {
+      "title": "Rollespilløvelsen",
+      "instructions": "Du deltar på et språkverksted. Sett trinnene i den scenariobaserte rollespilløvelsen i riktig rekkefølge.",
+      "items": [
+        "Deltakerne velger én situasjon og presenterer sine meninger.",
+        "Skriv vanlige arbeidsplassituasjoner (f.eks. å presentere en mening) på papir.",
+        "Alle deltakerne samhandler og diskuterer emnet videre.",
+        "Identifiser scenariet."
+      ],
+      "correctOrder": [
+        "Identifiser scenariet.",
+        "Skriv vanlige arbeidsplassituasjoner (f.eks. å presentere en mening) på papir.",
+        "Deltakerne velger én situasjon og presenterer sine meninger.",
+        "Alle deltakerne samhandler og diskuterer emnet videre."
+      ],
+      "hints": [
+        "Først, skriv ned mulige arbeidsplassituasjoner. Så, bestem hvilket scenario du vil fokusere på. Etter det, presenter det og til slutt diskuter det sammen."
+      ],
+      "feedback": {
+        "wrong": "Først, skriv ned mulige arbeidsplassituasjoner. Så, bestem hvilket scenario du vil fokusere på. Etter det, presenter det og til slutt diskuter det sammen.",
+        "correct": "Strålende! Du satte rollespilltrinnene i riktig rekkefølge."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n1. Identifiser scenariet.\n2. Skriv vanlige arbeidsplassituasjoner på papir.\n3. Deltakerne velger én situasjon og presenterer sine meninger.\n4. Alle samhandler og diskuterer emnet videre."
+    },
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Klikk på Maria ved den venstre veggen for å begynne.",
+    "talkToMaria": "Klikk på Maria for å begynne.",
+    "findTablet": "Se etter nettbrettet på fellespulten.",
+    "talkToMaria2": "Gå tilbake til Maria.",
+    "puzzle1FillGap": "Tenk på hvilke språkferdigheter som mottar informasjon og hvilke som produserer den.",
+    "findFlipchart": "Maria nevnte flipcharten nær vinduene. Se etter den.",
+    "talkToMaria3": "Gå tilbake til Maria med det du lærte.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg om i venterommet etter spor."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i det stille, profesjonelle venterommet utenfor FoU-avdelingen. En stor verdenskartmural med 'Hei' på mange språk dekorerer bakveggen. Du legger merke til Maria, språkkoordinatoren, som står ved en flipchart.",
+    "clickBookshelves": "Mest manualer, ordbøker og tekniske dokumenter. Maria nevnte at guiden er på en digital enhet.",
+    "foundTablet": "Du fant det! Skjermen lyser opp med en læringsapp.",
+    "tabletRead": "Du lærte grunnleggende! Gå tilbake til Maria.",
+    "clickWorldMap": "Det fremhever våre internasjonale FoU-samarbeid. Se etter flipcharten nær vinduene.",
+    "foundFlipchart": "Du har strategiene! Gå tilbake til Maria."
+  },
+  "items": {
+    "tablet": {
+      "popupTitle": "De 4 Komponentene i Språkferdigheter",
+      "popupContent": [
+        "Tale: Bruke språk til å uttrykke ideer, følelser og meninger.",
+        "Lytting: En reseptiv ferdighet som brukes for å tolke talte budskap riktig.",
+        "Lesing: Avkoding og forståelse av skreven tekst.",
+        "Skriving: En produktiv ferdighet som brukes til å kommunisere gjennom tekst."
+      ],
+      "inventoryTitle": "Nettbrett"
+    },
+    "flipchart": {
+      "popupTitle": "Utfordringer & Løsninger",
+      "popupContent": [
+        "Utfordring: Forbedre ferdigheter uten et klart mål.",
+        "Løsning: Sett klare mål — formål øker motivasjonen.",
+        "Utfordring: Inkonsekvent motivasjon og mangel på tid.",
+        "Løsning: Utnytt teknologi og delta i nettbaserte læringssamfunn."
+      ],
+      "inventoryTitle": "Flipchart-notater"
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Gratulerer, du har fullført alt og nådd et nytt nivå i Språkferdigheter.",
+    "buttonText": "Forlat venterommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

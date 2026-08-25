@@ -1,0 +1,193 @@
+{
+  "id": "cultural-awareness",
+  "moduleNumber": 21,
+  "title": "Cultural Awareness",
+  "subtitle": "Module 21",
+  "coverImage": "assets/thumbs/cultural-awareness.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 21",
+      "title": "Cultural Awareness",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/cultural-awareness.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module seeks to enhance learners' comprehension of cultural awareness as an essential skill for communication and collaboration. Participants will investigate the significance of cross-cultural communication, emotional intelligence, and cultural understanding in fostering respectful and inclusive settings. The module also aims to improve learners' capacity to reflect on their own biases, appreciate diversity, and adjust to varied cultural situations. Furthermore, learners will analyze typical challenges such as stereotypes, language obstacles, and opposition to diversity."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Cultural awareness means being sensitive to the differences and similarities that exist in different cultures when communicating with others. Cultural awareness involves respecting values, understanding attitudes, and focusing on the knowledge that displays openness and respect for different cultures, religions, languages, manner of dress, and communication styles. Cultural awareness is essential in communication in order to create a safe environment for all (Quappe, 2005)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: You are about to present your entrepreneurial idea. It is most likely that the audience or investors will have various characteristics, possibly stemming from different cultures. Cultural awareness can help you to understand diverse needs and create a safe environment for communication (Hofstede, 2011). A safe environment can help to create successful ideas and receive continuous feedback, because everyone is encouraged to express their feelings and concerns. Also, it is easier to adapt each entrepreneurial idea to the local needs (Neeley, 2015)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Cross-cultural communication skills",
+          "definition": "These include the ability of the individual to show respect towards culturally different people, to recognize the value of cultural diversity, and to reflect comparatively but without prejudice on cultural differences. In addition, they include the ability to be open and ready to eliminate any distrust towards other cultures, as well as to demonstrate curiosity, willingness, and interest in seeking out intercultural interactions and discovering the different, to see it as a learning opportunity and as a positive experience (Deardorff, 2006)"
+        },
+        {
+          "kind": "definition",
+          "term": "Emotional skills",
+          "definition": "These include the ability of the individual to understand the reason for the existence of some stereotypical emotions and their consequences, as well as how to deal with them. In addition, they include the ability to manage emotions such as xenophobia, anxiety, uncertainty, ambiguity, frustration, anger, and ethnocentrism that are caused in unfamiliar cultural contexts (Stier, 2006)"
+        },
+        {
+          "kind": "definition",
+          "term": "Cultural knowledge",
+          "definition": "Τhat is, the knowledge that an individual needs to have about his or her own culture and then specific knowledge about other cultures, starting from their history, values, beliefs, proceeding with their politics and economy, and ending with their forms of communication, beliefs, and practices (Deardorff, 2006)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Steps to develop cultural awareness:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Value other cultures by listening, observing, and evaluating different characteristics.",
+            "Reflect on personal biases because self-reflection helps identify and address cultural assumptions (Thomas & Peterson, 2017)",
+            "Seek feedback and remain open-minded, because openness to different perspectives and feedback promotes ongoing growth in cultural competence (Minkov & Hofstede, 2012).",
+            "Be adaptive to the norms set each time by different audiences, stakeholders."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Some challenges that we can face are related to individuals adopting stereotypes and assuming that being different is not beneficial. The solution to this is to promote the importance of diversity (Gudykunst, 2004). Another challenge is related to language barriers that lead to miscommunication or misunderstandings. To overcome this obstacle, it is essential to encourage language learning and the use of clear communication (Thomas & Peterson, 2017). Additionally, another problem is resistance to change and a lack of exposure to diversity. So, it is important to create opportunities for intercultural experiences (Minkov & Hofstede, 2012)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Try to carry out the following exercise to understand the importance of cultural awareness."
+        },
+        {
+          "kind": "definition",
+          "term": "Title",
+          "definition": "Critical Incident"
+        },
+        {
+          "kind": "definition",
+          "term": "Objective",
+          "definition": "To enable the individual to eliminate any distrust towards others and acquire intercultural communication skills."
+        },
+        {
+          "kind": "definition",
+          "term": "Description",
+          "definition": "This is a role-playing game around a critical incident of racism in the working environment."
+        },
+        {
+          "kind": "definition",
+          "term": "The Critical Incident",
+          "definition": "A foreign employee has been complaining systematically to the Human Resources Department about the comments of some of his coworkers that are related to race. The HR then sends an email to all employees about the importance of cultural awareness. At this point, the question asked is: “Do you think the matter has been resolved satisfactorily?”- DISCUSSION Despite this email, the racist comments continue. The question asked at this point is: “What is your opinion now?” -DISCUSSION. Finally, the HR department is asked to design a policy for managing incidents related to racism in the workplace. The question that will help them is this: \"What could be done to eliminate racist behaviors in the workplace and society?\""
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Consider seeking support related to questions you answered with “NO”"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Do I respect cultural differences?",
+            "Do I avoid making assumptions about people from other cultures?",
+            "Am I open to learn from people of different cultural backgrounds?",
+            "Do I adapt my communication style based on the cultural context of my audience?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Today's societies and working environments are characterized by cultural diversity. This means that there is an increasing number of distinct cultural groups living among us and contributing to the social development of the country and its economy. Inevitably, therefore, individuals, despite their cultural differences, are called upon to communicate with each other and cooperate in order to achieve smooth and creative coexistence. In achieving cultural awareness, it is very important to focus on the individual's receptivity, adaptability, and empathy. Especially in the entrepreneurial environment, it is very important to accept diversity and be aware of the tailored needs of each audience. This step will create not only successful entrepreneurial models but will also improve the well-being of the employees by making them feel safe."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the conclusion of this module, participants will understand the significance of cultural awareness in varied social and professional settings. They will show enhanced sensitivity to cultural variations and greater receptiveness during intercultural exchanges. Participants will be capable of implementing strategies that foster respectful communication, inclusivity, and flexibility. Additionally, learners will be more prepared to recognize and constructively address issues such as stereotypes, misconceptions, and cultural conflicts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Videos: The importance of intercultural awareness",
+            "How to get serious about diversity and inclusion in the workplace"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Cultural Awareness",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/cultural-awareness.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "loading": "Ładowanie Krytycznego Myślenia...",
+  "intro": {
+    "title": "Krytyczne Myślenie",
+    "paragraphs": [
+      "Właśnie dotarłeś/aś do biura swojej firmy na spotkanie o 10:00 z menedżerem. Wchodząc do poczekalni przed salą konferencyjną, zauważasz, że jesteś wcześnie.",
+      "W poczekalni znajduje się wygodny zestaw wypoczynkowy, stolik kawowy z laptopem oraz duży telewizor z płaskim ekranem zawieszony na ścianie. Tablica korkowa wisi w pobliżu drzwi sali konferencyjnej.",
+      "Siadasz i czekasz. Ale ta cicha chwila niedługo stanie się sprawdzianem twoich umiejętności krytycznego myślenia..."
+    ],
+    "buttonText": "Wejdź do Poczekalni"
+  },
+  "characters": {
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "greet": "Też jesteś tu na spotkanie o 10:00?",
+        "intro": "Och, nie? No cóż... Jestem Mark z FastSupply Ltd. Dostarczamy materiały biurowe i usługi w niezrównanych cenach. Słyszałeś/aś o nas?",
+        "offer": "Mamy teraz niesamowitą ofertę. 50% zniżki na wszystkie nasze usługi premium, jeśli zapiszesz się dzisiaj. Co ty na to?",
+        "offerWrongHint": "Uważaj! Zawsze powinieneś/aś weryfikować szczegóły każdej umowy przed jej zawarciem.",
+        "pressure": "Ta oferta jest ważna tylko dziś. Jutro cena wraca do normalnej. Naprawdę nie chcesz tego przegapić.",
+        "pressureWrongHint": "Nie ulegaj presji czasu. Naprawdę dobra oferta powinna nadal być dostępna po dokładnym przemyśleniu.",
+        "careful": "Ostrożny typ, widzę. Szanuję to. Niewielu ludzi poświęca dziś czas na przemyślenie spraw.",
+        "vagueClaims": "Słuchaj. Oferta jest prosta: duże oszczędności, jakość premium i setki zadowolonych klientów. Nigdzie indziej nie znajdziesz lepszej oferty.",
+        "vagueClaimsWrongHint": "Bądź sceptyczny/a wobec niejasnych twierdzeń bez dowodów. Zawsze proś o pisemną dokumentację i weryfikowalne referencje.",
+        "sendDocs": "Oczywiście, wyślę ci wszystko. Pełną pisemną ofertę, referencje, wszystko. Zobaczysz, że wszystko się zgadza.",
+        "farewell": "Po prostu pamiętaj. Im szybciej zadziałasz, tym lepiej! Będę w kontakcie. Oto moja wizytówka.",
+        "farewellWrongHint": "Unikaj udzielania niejasnych lub niezobowiązujących odpowiedzi. Bądź jasny/a co do swoich zamiarów przejrzenia i zbadania sprawy przed podjęciem decyzji.",
+        "default": "Jestem Mark z FastSupply. Zawsze chętnie porozmawiam!"
+      }
+    },
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hej! Widziałam, jak rozmawiasz z tym facetem. Czy to był Mark z FastSupply?",
+        "warning1": "Tak myślałam. Rozpoznaję go. Przyszedł do mojej poprzedniej firmy około sześć miesięcy temu z tą samą propozycją.",
+        "warning2": "Nam też zaoferował ogromną zniżkę. Wszystko brzmiało idealnie - usługa premium, najwyższa jakość, niesamowite oszczędności.",
+        "warning3": "Mój menedżer był pod wrażeniem i podpisał umowę na miejscu. Nie zrobiliśmy żadnego rozeznania.",
+        "warning4": "Pierwsza dostawa była opóźniona. Kiedy w końcu dotarła, połowa rzeczy była nie ta i jakość była okropna.",
+        "warning5": "Próbowaliśmy skontaktować się z ich obsługą klienta, ale otrzymanie odpowiedzi zajęło tygodnie. Ciągle nas przekierowywali.",
+        "warning6": "W końcu musieliśmy rozwiązać umowę. Naprawienie problemów kosztowało nas więcej niż kiedykolwiek zaoszczędziliśmy na ich zniżce.",
+        "warning7": "Nie mówię, że to oszustwo, ale gorąco polecam, żebyś odrobił/a pracę domową przed podpisaniem czegokolwiek.",
+        "warning8": "Sprawdź recenzje online, poproś o prawdziwe referencje i przeczytaj drobny druk. Zaufaj mi w tej sprawie.",
+        "completion": "Powodzenia z decyzją! Jestem pewna, że podejmiesz właściwy wybór.",
+        "default": "Tylko upewnij się, że odrobisz pracę domową przed podjęciem jakichkolwiek decyzji."
+      }
+    }
+  },
+  "conversation": {
+    "player": {
+      "response1": "Nie, czekam tylko na mojego menedżera.",
+      "response2": "Chyba nie...",
+      "response3_correct": "Brzmi interesująco, ale będę musiał/a przejrzeć szczegóły zanim się do czegokolwiek zobowiążę.",
+      "response3_wrong": "Brzmi fantastycznie! Zróbmy to.",
+      "response4_correct": "Jeśli twoja oferta jest naprawdę dobra, powinna być dobra także jutro. Nie podejmuję decyzji pod presją czasu.",
+      "response4_wrong": "Dobra, przekonałeś mnie. Zapiszę się przed terminem.",
+      "response5": "Cóż-",
+      "response6_correct": "Czy mógłbyś przesłać mi pisemną ofertę i kilka weryfikowalnych referencji? Chciał(a)bym wszystko porządnie przejrzeć.",
+      "response6_wrong": "To mi wystarczy. Gdzie podpisuję?",
+      "response7": "Świetnie. Czekam na nie z niecierpliwością.",
+      "response8_correct": "Dokładnie przejrzę dokumenty i przeprowadzę niezależne badania zanim podejmę decyzję.",
+      "response8_wrong": "Pewnie powiem tak, gdy tylko zobaczę papiery. Wygląda na oczywistą decyzję."
+    }
+  },
+  "email": {
+    "subject": "EKSKLUZYWNA OFERTA - 50% ZNIŻKI na Usługi Premium - DZIAŁAJ TERAZ!",
+    "from": "Mark Thompson <mark.t@fastsupply-deals.com>",
+    "to": "Ty",
+    "date": "Dzisiaj",
+    "greeting": "Szanowny Kliencie,",
+    "body1": "Dziękujemy za zainteresowanie FastSupply Ltd! Zgodnie z naszą rozmową, z przyjemnością przedstawiam naszą ekskluzywną ofertę:",
+    "offerLine": "50% ZNIŻKI na WSZYSTKIE usługi premium - ważne TYLKO DZIŚ!",
+    "body2": "Nasi klienci konsekwentnie oceniają nas jako najlepszych w branży. Oto, co niektórzy z nich powiedzieli:",
+    "testimonial1": "\"FastSupply zmieniło naszą firmę!\" - Zadowolony klient",
+    "testimonial2": "\"Niesamowita wartość za pieniądze!\" - Szczęśliwy klient",
+    "testimonial3": "\"Nie moglibyśmy być bardziej zadowoleni!\" - Lojalny partner",
+    "body3": "Obowiązują Warunki i Regulamin. Aby uzyskać pełne szczegóły, prosimy o kontakt z naszym zespołem sprzedaży.",
+    "signature": "Z poważaniem,\nMark Thompson\nStarszy Przedstawiciel Handlowy\nFastSupply Ltd",
+    "clues": {
+      "subject": {
+        "label": "Temat Wiadomości",
+        "thought": "Temat wiadomości używa taktyki pilności: \"EKSKLUZYWNA\", \"DZIAŁAJ TERAZ!\", wszystko wielkimi literami. To powszechna technika sprzedaży pod wysoką presją, mająca skłonić mnie do działania bez przemyślenia."
+      },
+      "discount": {
+        "label": "50% Zniżki",
+        "thought": "50% zniżki na wszystkie usługi premium? To niezwykle duża zniżka. Gdyby ich usługi były naprawdę najwyższej jakości, dlaczego musieliby oferować tak ogromną redukcję? To wygląda zbyt dobrze, by mogło być prawdziwe."
+      },
+      "todayOnly": {
+        "label": "Tylko Dziś",
+        "thought": "\"Ważne TYLKO DZIŚ\" - to klasyczny sztuczny niedobór. Tworzenie fałszywego terminu wywiera presję na klienta, by podjął pochopną decyzję bez odpowiedniego rozeznania."
+      },
+      "testimonials": {
+        "label": "Ogólne Opinie",
+        "thought": "Te opinie są zupełnie ogólnikowe - brak prawdziwych nazwisk, brak nazw firm, brak konkretnych szczegółów. \"Zadowolony klient\" mógłby być kimkolwiek, lub w ogóle nikim. Legalne firmy podają weryfikowalne referencje."
+      },
+      "terms": {
+        "label": "Warunki i Regulamin",
+        "thought": "\"Obowiązują Warunki i Regulamin. Aby uzyskać pełne szczegóły, prosimy o kontakt z naszym zespołem sprzedaży.\" - Warunki nie są dołączone do emaila. Przejrzysta firma podałaby pełne warunki z góry, a nie ukrywała je za rozmową telefoniczną."
+      }
+    }
+  },
+  "reviews": {
+    "siteName": "BusinessReview.com",
+    "siteSubtitle": "FastSupply Ltd - Recenzje Klientów",
+    "overallRating": "2.1 / 5",
+    "totalReviews": "47 recenzji",
+    "items": {
+      "0": {
+        "author": "Sarah_Operations_Mgr",
+        "rating": 1,
+        "title": "Okropne doświadczenie - unikać za wszelką cenę",
+        "text": "Zapisałam się po tym, jak przedstawiciel handlowy obiecał jakość premium. Dostawy były ciągle opóźnione, produkty były niskiej jakości, a obsługa klienta nie istniała. Rozwiązanie umowy zajęło 3 miesiące."
+      },
+      "1": {
+        "author": "NotMarkThompson",
+        "rating": 5,
+        "title": "Najlepszy dostawca w historii!!!",
+        "text": "FastSupply to najwspanialsza firma, z jaką kiedykolwiek miałem do czynienia. Idealna pod każdym względem. 100% polecam wszystkim. Żadnych zastrzeżeń."
+      },
+      "2": {
+        "author": "TechStartup_James",
+        "rating": 2,
+        "title": "Mylące zniżki",
+        "text": "50% zniżki, które reklamują, jest obliczane z zawyżonej ceny bazowej. Skończyło się na tym, że płaciliśmy więcej niż naszemu poprzedniemu dostawcy za towary niższej jakości."
+      },
+      "3": {
+        "author": "Definitely_Not_Mark_Thompson",
+        "rating": 5,
+        "title": "Wspaniała firma prowadzona przez wspaniałych ludzi",
+        "text": "Jestem całkowicie prawdziwym klientem i mogę powiedzieć, że FastSupply jest bezbłędne. Ich przedstawiciele handlowi są szczególnie przystojni i czarujący."
+      },
+      "4": {
+        "author": "Office_Manager_Lima",
+        "rating": 1,
+        "title": "Wszędzie ukryte opłaty",
+        "text": "Umowa zawierała ukryte opłaty, o których nie wspomniano podczas rozmowy sprzedażowej. Opłaty za dostawę, opłaty manipulacyjne, kara za wcześniejsze rozwiązanie. Czytajcie uważnie drobny druk!"
+      },
+      "5": {
+        "author": "HR_Director_Chen",
+        "rating": 2,
+        "title": "Niereagująca obsługa klienta",
+        "text": "Kiedy pojawiały się problemy, ich obsługa klienta była niemożliwa do uzyskania. Emaile pozostawały bez odpowiedzi przez tygodnie. Rozmowy telefoniczne kierowane były przez niekończące się menu. Bardzo frustrujące."
+      },
+      "6": {
+        "author": "NotMarksSister",
+        "rating": 5,
+        "title": "Idealna firma, brak uwag!",
+        "text": "Z całą pewnością nie jestem spokrewniona z nikim z FastSupply i myślę, że zasługują na 10 gwiazdek. Ich materiały biurowe zmieniły moje życie na zawsze."
+      },
+      "7": {
+        "author": "Procurement_Specialist_EU",
+        "rating": 1,
+        "title": "Zrób rozeznanie przed podpisaniem",
+        "text": "Agresywne taktyki sprzedażowe powinny być sygnałem ostrzegawczym. Presja na natychmiastowe podpisanie, niejasne obietnice, a kiedy poprosiliśmy o referencje, dostaliśmy ogólne cytaty bez danych kontaktowych."
+      }
+    },
+    "thoughts": {
+      "fakePositive": "Kilka pozytywnych recenzji wygląda podejrzanie. Nazwy użytkowników takie jak \"NotMarkThompson\" i \"Definitely_Not_Mark_Thompson\" są oczywiście fałszywe. Recenzje są nadmiernie pozytywne bez konkretnych szczegółów - to znak rozpoznawczy sfabrykowanych recenzji.",
+      "negativePattern": "Negatywne recenzje malują spójny obraz: opóźnione dostawy, niska jakość, ukryte opłaty, niereagująca obsługa klienta i agresywne taktyki sprzedażowe. Wielu niezależnych recenzentów zgłaszających te same problemy to silny sygnał."
+    }
+  },
+  "objects": {
+    "calendar": {
+      "title": "Ekran Rezerwacji Sali Konferencyjnej",
+      "content": "Dzisiejszy Plan:\n\n09:00 - 09:45  |  Standup Zespołu Marketingowego\n10:00 - 11:00  |  Spotkanie z Menedżerem (Twoje Imię)\n11:30 - 12:00  |  Sesja Onboardingu HR\n13:00 - 14:00  |  Rozmowa z Klientem - Acme Corp\n14:30 - 15:30  |  Demo Produktu\n\nNa dziś nie zaplanowano żadnych spotkań z dostawcami.",
+      "thought": "Nie ma żadnego spotkania z FastSupply ani żadnym innym dostawcą w dzisiejszym harmonogramie sali konferencyjnej. Mark powiedział, że jest tu na spotkanie, ale nie ma na to żadnych dowodów. Wygląda na to, że pojawił się bez zaproszenia."
+    },
+    "flyer": {
+      "title": "FastSupply Ltd - Ulotka Promocyjna",
+      "content": "FastSupply Ltd\n\"Twój Partner w Doskonałości Biurowej\"\n\nUsługi:\n- Materiały biurowe\n- Usługi premium\n- Rozwiązania korporacyjne\n\nSkontaktuj się z nami dzisiaj!\nwww.fastsupply-deals.com\n\n*Ceny i dostępność mogą ulec zmianie bez powiadomienia.",
+      "thought": "Ta ulotka jest niezwykle ogólnikowa. Brak konkretnych szczegółów produktów, brak informacji o cenach, brak numeru rejestracyjnego firmy, brak fizycznego adresu. Legalna firma podałaby znacznie bardziej konkretne informacje o swoich ofertach."
+    },
+    "businessCard": {
+      "title": "Wizytówka",
+      "content": "Mark Thompson\nStarszy Przedstawiciel Handlowy\nFastSupply Ltd\n\nmark.t@fastsupply-deals.com\nwww.fastsupply-deals.com",
+      "thought": "Wizytówka nie zawiera numeru telefonu, fizycznego adresu biura ani numeru rejestracyjnego firmy. Domena emaila to 'fastsupply-deals.com' zamiast bardziej profesjonalnej domeny. Wygląda to nieprofesjonalnie jak na rzekomo ugruntowaną firmę."
+    },
+    "poster": {
+      "title": "Plakat Firmowy",
+      "content": "Chroń Się Przed Manipulacyjnymi Taktykami Sprzedażowymi:\n\n1. Uważaj na sztuczną pilność (\"tylko dziś!\")\n2. Żądaj pisemnych ofert i weryfikowalnych referencji\n3. Badaj niezależnie przed zobowiązaniem się\n4. Nigdy nie podpisuj pod presją\n5. Jeśli brzmi zbyt dobrze, by było prawdziwe, prawdopodobnie takie nie jest",
+      "thought": ""
+    },
+    "magazine": {
+      "title": "Magazyn Branżowy - Procurement Weekly",
+      "content": "\"Jak Zweryfikować Nowego Dostawcę\"\nautor: Dr. Elena Martinez\n\nKluczowe kroki due diligence:\n- Poproś o pisemną propozycję z pełnymi warunkami\n- Sprawdź niezależne strony z recenzjami\n- Poproś o weryfikowalne referencje klientów\n- Zweryfikuj rejestrację firmy i jej historię\n- Porównaj z co najmniej 2 innymi dostawcami\n- Nigdy nie zobowiązuj się pod presją czasu",
+      "thought": ""
+    }
+  },
+  "researchNotes": {
+    "notes": {
+      "conversation_written_offer": {
+        "id": "conversation_written_offer",
+        "text": "Mark zgodził się przesłać pisemną ofertę z pełnymi szczegółami i referencjami.",
+        "correctCategory": "PRO"
+      },
+      "conversation_consistent": {
+        "id": "conversation_consistent",
+        "text": "Oferta Marka była spójna przez całą rozmowę - 50% zniżki na usługi premium.",
+        "correctCategory": "PRO"
+      },
+      "conversation_good_offer": {
+        "id": "conversation_good_offer",
+        "text": "50% zniżki na usługi premium to znaczna potencjalna oszczędność, jeśli jest prawdziwa.",
+        "correctCategory": "PRO"
+      },
+      "conversation_pressure": {
+        "id": "conversation_pressure",
+        "text": "Mark użył taktyk presji czasu: \"ważne tylko dziś\", \"im szybciej zadziałasz, tym lepiej\".",
+        "correctCategory": "CON"
+      },
+      "conversation_vague": {
+        "id": "conversation_vague",
+        "text": "Mark wygłaszał niejasne twierdzenia o \"setkach zadowolonych klientów\" bez podania jakichkolwiek weryfikowalnych dowodów.",
+        "correctCategory": "CON"
+      },
+      "conversation_uninvited": {
+        "id": "conversation_uninvited",
+        "text": "Mark twierdził, że jest tu na spotkanie, ale harmonogram sali konferencyjnej nie pokazuje żadnych spotkań z dostawcami na dziś.",
+        "correctCategory": "CON"
+      },
+      "maria_bad_experience": {
+        "id": "maria_bad_experience",
+        "text": "Poprzednia firma Marii miała okropne doświadczenia z FastSupply: opóźnione dostawy, błędne towary, niska jakość i niereagująca obsługa klienta.",
+        "correctCategory": "CON"
+      },
+      "email_urgency": {
+        "id": "email_urgency",
+        "text": "Email używa agresywnych taktyk pilności: temat wielkimi literami, \"DZIAŁAJ TERAZ!\", \"TYLKO DZIŚ\".",
+        "correctCategory": "CON"
+      },
+      "email_discount_suspicious": {
+        "id": "email_discount_suspicious",
+        "text": "50% zniżki na wszystkie usługi premium wygląda zbyt dobrze, by było prawdziwe i może wskazywać na zawyżone ceny bazowe.",
+        "correctCategory": "CON"
+      },
+      "email_generic_testimonials": {
+        "id": "email_generic_testimonials",
+        "text": "Opinie w emailu są całkowicie ogólne, bez prawdziwych nazwisk czy firm - są nieweryfikowalne.",
+        "correctCategory": "CON"
+      },
+      "email_hidden_terms": {
+        "id": "email_hidden_terms",
+        "text": "Warunki i Regulamin nie są zawarte w emailu i wymagają kontaktu ze sprzedażą, aby je zobaczyć.",
+        "correctCategory": "CON"
+      },
+      "email_time_pressure": {
+        "id": "email_time_pressure",
+        "text": "Email wzmacnia sztuczny termin \"tylko dziś\", aby stworzyć presję czasu.",
+        "correctCategory": "CON"
+      },
+      "reviews_fake": {
+        "id": "reviews_fake",
+        "text": "Wiele pozytywnych recenzji wydaje się być fałszywych, opublikowanych przez użytkowników z podejrzanymi nazwami jak \"NotMarkThompson\".",
+        "correctCategory": "CON"
+      },
+      "reviews_negative_pattern": {
+        "id": "reviews_negative_pattern",
+        "text": "Wiele niezależnych negatywnych recenzji zgłasza te same problemy: opóźnione dostawy, niska jakość, ukryte opłaty i niereagująca obsługa klienta.",
+        "correctCategory": "CON"
+      },
+      "calendar_no_meeting": {
+        "id": "calendar_no_meeting",
+        "text": "Ekran rezerwacji sali konferencyjnej nie pokazuje żadnego zaplanowanego spotkania z dostawcą na dziś - Mark wygląda, jakby pojawił się bez zaproszenia.",
+        "correctCategory": "CON"
+      },
+      "flyer_lacking": {
+        "id": "flyer_lacking",
+        "text": "Ulotka promocyjna FastSupply jest niezwykle ogólnikowa: brak konkretnych produktów, brak cen, brak rejestracji firmy, brak adresu.",
+        "correctCategory": "CON"
+      },
+      "card_unprofessional": {
+        "id": "card_unprofessional",
+        "text": "Wizytówka Marka nie zawiera numeru telefonu, adresu biura ani numeru rejestracyjnego firmy - nieprofesjonalnie jak na ugruntowaną firmę.",
+        "correctCategory": "CON"
+      }
+    },
+    "proLabel": "ZA",
+    "conLabel": "PRZECIW",
+    "wrongPlacementHint": "Pomyśl jeszcze raz. Czy ten dowód wspiera czy podważa wiarygodność FastSupply?",
+    "allSortedMessage": "Posortowałeś/aś wszystkie dowody. Teraz czas na podjęcie decyzji."
+  },
+  "decision": {
+    "title": "Podejmij Swoją Decyzję",
+    "instructions": "Na podstawie wszystkich zebranych dowodów, czy powinieneś/aś przyjąć czy odrzucić ofertę FastSupply?",
+    "acceptLabel": "Przyjmij Ofertę",
+    "rejectLabel": "Odrzuć Ofertę",
+    "acceptFeedback": "Wybrałeś/aś przyjęcie oferty. Choć potencjalne oszczędności są kuszące, przytłaczające dowody wskazują na znaczne ryzyko: fałszywe recenzje, taktyki nacisku, ukryte warunki i negatywne doświadczenia koleżanki. W prawdziwym życiu ta decyzja mogłaby prowadzić do problemów. Jednak jeśli zdecydujesz się kontynuować, upewnij się, że wynegocjujesz lepsze warunki, dostaniesz wszystko na piśmie i ustanowisz zabezpieczenia. Krytyczne myślenie oznacza dokonywanie świadomych wyborów, nawet gdy wybór jest ryzykowny.",
+    "rejectFeedback": "Wybrałeś/aś odrzucenie oferty. Biorąc pod uwagę przytłaczające dowody - taktyki nacisku, fałszywe recenzje, niejasne twierdzenia, ukryte warunki, złe doświadczenia koleżanki i brak zaplanowanego spotkania - jest to dobrze uzasadniona decyzja. Krytyczne myślenie nie oznacza bycia cynikiem, ale oznacza wymaganie dowodów przed podjęciem zobowiązań. Zawsze możesz przemyśleć ponownie, jeśli FastSupply dostarczy weryfikowalne referencje i przejrzyste warunki w przyszłości."
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Odpowiedź Ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "phase1_talkToMark": "Kliknij na Marka, aby rozpocząć rozmowę.",
+    "phase2_talkToMaria": "Kliknij na Marię, aby usłyszeć o jej doświadczeniu z FastSupply.",
+    "phase2_checkLaptop": "Kliknij na laptop, aby sprawdzić email od FastSupply.",
+    "phase2_checkTV": "Kliknij na ekran telewizora, aby sprawdzić recenzje online.",
+    "phase2_checkCalendar": "Kliknij na ekran rezerwacji w pobliżu drzwi sali konferencyjnej, aby sprawdzić dzisiejszy harmonogram.",
+    "phase2_checkFlyer": "Na podłodze leży ulotka. Kliknij na nią, aby ją obejrzeć.",
+    "phase2_checkCard": "Sprawdź wizytówkę, którą Mark zostawił na stoliku kawowym.",
+    "phase2_checkPoster": "Na ścianie wisi plakat firmowy. Może zawierać przydatne informacje.",
+    "phase2_checkMagazine": "Na stole leży magazyn branżowy. Może zaoferować wskazówki.",
+    "phase2_goCorkboard": "Zebrałeś/aś wszystkie dowody. Kliknij na tablicę korkową, aby posortować swoje ustalenia.",
+    "phase3_sorting": "Posortuj każdą notatkę z badań na ZA lub PRZECIW na podstawie dowodów.",
+    "phase3_decision": "Wszystkie dowody są posortowane. Podejmij ostateczną decyzję dotyczącą oferty FastSupply.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po pokoju, aby znaleźć więcej informacji, które pomogą ci zdecydować."
+  },
+  "systemDialogues": {
+    "intro": "Jestem wcześnie na moje spotkanie. Poczekalnia jest cicha. Usiądę i-",
+    "markExits": "Mark zbiera swoje rzeczy i wychodzi z pewnym uśmiechem. Gdy wychodzi, zauważasz wizytówkę na stoliku kawowym, ulotkę na podłodze, oraz że laptop na stole ma nowe powiadomienie email. Zanim podejmiesz jakiekolwiek decyzje, powinieneś/aś zebrać jak najwięcej informacji.",
+    "mariaNoteDone": "Doświadczenie Marii daje ci relację z pierwszej ręki o tym, jak naprawdę wygląda współpraca z FastSupply. Powinieneś/aś to zanotować.",
+    "emailAnalysisDone": "Zidentyfikowałeś/aś kilka sygnałów ostrzegawczych w emailu. Czas spojrzeć na więcej źródeł.",
+    "reviewAnalysisDone": "Recenzje malują jasny obraz. Niektóre są oczywiście fałszywe, a te prawdziwe są przytłaczająco negatywne.",
+    "allResearchDone": "Zebrałeś/aś wszystkie dowody. Czas uporządkować swoje ustalenia i podjąć decyzję. Idź do tablicy korkowej w pobliżu drzwi sali konferencyjnej.",
+    "sortingComplete": "Wszystkie dowody są posortowane. Obraz jest jasny. Teraz musisz podjąć decyzję: przyjąć czy odrzucić ofertę FastSupply.",
+    "gameComplete": "Świetnie. Niezależnie od tego, czy przyjąłeś/aś czy odrzuciłeś/aś ofertę, ważne jest to, że stosowałeś/aś krytyczne myślenie przez cały proces. Zebrałeś/aś dowody, kwestionowałeś/aś twierdzenia i podjąłeś/aś świadomą decyzję."
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Pomyślnie ukończyłeś/aś escape room Krytyczne Myślenie! Wykazałeś/aś zdolność do kwestionowania twierdzeń, zbierania dowodów z wielu źródeł, identyfikowania taktyk manipulacyjnych i podejmowania świadomych decyzji. Są to niezbędne umiejętności krytycznego myślenia w każdym środowisku zawodowym.",
+    "buttonText": "Wyjdź z Pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "nextReview": "Następna Recenzja",
+    "previousReview": "Poprzednia Recenzja",
+    "closePopup": "Zamknij",
+    "emailCluePrefix": "Wskazówka",
+    "reviewOf": "z",
+    "researchNotesCollected": "Zebrane Notatki z Badań",
+    "sortEvidence": "Sortuj Dowody",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  },
+  "emailFields": {
+    "from": "Od:",
+    "date": "Data:",
+    "subject": "Temat:"
+  }
+}

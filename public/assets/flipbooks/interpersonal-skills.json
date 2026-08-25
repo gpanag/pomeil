@@ -1,0 +1,193 @@
+{
+  "id": "interpersonal-skills",
+  "moduleNumber": 24,
+  "title": "Interpersonal Skills",
+  "subtitle": "Module 24",
+  "coverImage": "assets/thumbs/interpersonal-skills.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 24",
+      "title": "Interpersonal Skills",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/interpersonal-skills.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module is designed to enhance learners' comprehension of interpersonal skills as vital behaviors for successful interaction and collaboration. Participants will investigate important elements such as communication, problem-solving, adaptability, teamwork, and emotional intelligence. The module aims to improve learners' capacity to understand social cues, react suitably, and foster positive relationships. Furthermore, learners will evaluate methods for enhancing interpersonal effectiveness through empathy, open-mindedness, constructive feedback, and ongoing skill development."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Interpersonal skills are the behaviors and methods a person uses to interact effectively with others. Interpersonal skills are often referred to as people skills, social skills, or social intelligence. They involve reading the signals/meanings that others send and interpreting them accurately in order to form effective responses (Robles, 2012)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Interpersonal skills can be useful in the workplace, in social situations, or within a family. In the business world, the term generally refers to an employee's ability to work well with others. Interpersonal skills range from communication and listening skills to attitude and behavior (Heckman & Kautz, 2012). These skills are developed through interaction with others. Everyone has a personal and interpersonal style. Some people are more successful than others at using interpersonal skills for specific, desired outcomes. These skills may be based in part on personality and instinct. However, anyone can improve on them (Riggio, 2014)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "numberedList",
+          "items": [
+            "Communication Skills",
+            "Problem-solving skills",
+            "Adaptability and Flexibility",
+            "Leadership Skills",
+            "Technical Skills",
+            "Teamwork and Collaboration",
+            "Emotional Intelligence",
+            "Time Management and Organization Having a combination of these skills can significantly increase employability and make the employee a valuable asset to any organization. While technical skills are important, employers also place a high emphasis on soft skills such as communication, problem-solving, and adaptability. By continually developing and improving these skills, the employees can be competitive in the job market (Robles, 2012)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Some steps to develop interpersonal skills are the following (Carnegie, 2010)"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Engage in Team Activities: Seek continuous interaction with others and prefer to participate in various activities outside your comfort zone.",
+            "Attend Workshops or Take Courses: You can improve your hard and soft skills with the guidance of experts.",
+            "Practice Empathy: Try to experience the emotions of others and respect diversity",
+            "Be Open-Minded and Respectful: Be open to different perspectives",
+            "Seek and Accept Feedback: Constructive criticism can help you to improve in different aspects."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Some challenges related to interpersonal skills and their solutions are the following (Riggio, 2014):"
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Poor Communication/ Solution: Active listening and team activities"
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Lack of skills (hard and soft)/ Solution: Training related to attaining new skills"
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Conflict or Disagreement/ Solution: Focus on solutions and teamwork"
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Low empathy/ Solution: Try to understand how others feel by continuously communicating."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Try a scenario-based role play. Write on paper common interpersonal situations in the workplace, like greeting a coworker or negotiating in a meeting. Then the participants will choose one situation and will perform what they would do in such a case. All participants will give feedback based on this situation."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Try to answer the following questions to understand whether your interpersonal skills are at a good level."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I show empathy and understand others’ feelings.",
+            "I collaborate effectively with colleagues.",
+            "I handle disagreements constructively.",
+            "I monitor my body language to ensure it’s open and positive.",
+            "I actively seek to build good relationships with others."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Interpersonal skills in the work environment, such as communication, can help employees be active members of the labour market. They will have confidence and be motivated. These skills may be based in part on personality and instinct. However, anyone can improve on them. There are methods of improving interpersonal skills, and these methods vary depending on the type of skills they want to develop. The improvement of interpersonal skills can enhance team effectiveness and improve trust in the working environment."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the conclusion of this module, participants will be able to identify the significance of interpersonal skills in workplace performance and employability. They will show enhanced capabilities in effective communication, teamwork, and resolving conflicts in a positive manner. Learners will be more prepared to implement empathy, adaptability, and strategies for building relationships in professional settings. Additionally, participants will gain insight into typical challenges encountered in interpersonal interactions and methods to tackle these issues."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Videos: The Ultimate Guide to Expert Interpersonal Skills",
+            "How to improve communication skills in the workplace fast | Professional communication training"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Interpersonal Skills",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/interpersonal-skills.pdf"
+      }
+    }
+  ]
+}

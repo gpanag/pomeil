@@ -1,0 +1,210 @@
+{
+  "loading": "Laster Teamarbeid...",
+  "intro": {
+    "title": "Teamarbeid",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en bedrift som bringer mennesker sammen.",
+      "Du har nettopp blitt ansatt av et stort multinasjonalt selskap, der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringsopplevelse for deg, ettersom du gjennom å fullføre ulike utfordringer i det vil tilegne deg ferdigheter inkludert i POMEIL Kompetansekartet, som er essensielle for enhver gründer.",
+      "I dag går du inn i Coworking-rommet, der gjenoppbyggingsteamet koordinerer et stort renoveringsprosjekt. To etasjer av en gammel bygning trenger restaurering. Dette er det perfekte øyeblikket til å utvikle dine ferdigheter i Teamarbeid."
+    ],
+    "buttonText": "Gå inn i Coworking-rommet"
+  },
+  "characters": {
+    "priya": {
+      "name": "Priya",
+      "dialogues": {
+        "greet": "Hyggelig å se deg! Vil du bli med oss? Vi jobber sammen som et team, selv om jeg må innrømme — det er ikke alltid så enkelt som det ser ut. Jeg er Priya, hoveddesigner på dette prosjektet, og akkurat nå restaurerer vi to etasjer av en gammel bygning. Vi må renovere vinduene, oppdatere møblene, male interiøret på nytt, legge til ny belysning og bytte ut hele ledningssystemet.\n\nDet er mye, jeg vet — men ingenting av det er mulig uten teamarbeid. Så, la oss komme i gang.\n\nLa meg presentere deg for Oleh.",
+        "quiz1Done": "Nå har vi begynt å bygge teamarbeidsevnen din!",
+        "findPoster": "Jeg har forberedt en gave til deg, en plakat å henge på veggen, og den inneholder virkelig verdifull informasjon — den typen som er best å lære tidlig. La oss prøve å finne den sammen.\n\nÅ, den ene plakaten som inneholder viktig informasjon for nøyaktige trinn, vi kan ikke la den mangle. Dette materialet er best å lære tidlig, så vær så snill og begynn å lete etter det.",
+        "findPosterInstructions": "Vi leter etter en plakat å henge på veggen. Vennligst begynn med å sjekke oppslagstavlen. Etter det, se på bordet foran i rommet, og fortsett deretter søket andre steder. Du vil kanskje også undersøke bærbare datamaskiner bak.",
+        "posterFound": "Perfekt. Dette er virkelig verdifulle 10 trinn for å gå videre og fikse teamarbeidsproblemer, som definitivt vil dukke opp i ethvert selskap når du leder eller arbeider med. Men det er opp til deg. La oss sette denne kunnskapen i praksis.",
+        "puzzle2Intro": "Det er tid for neste quiz. Vennligst svar på disse spørsmålene med henvisning til den forrige informasjonen.",
+        "finalWords": "Du gjorde det veldig bra. Vi setter virkelig pris på din innsats og deltakelse. Din evne til å bygge teamarbeid er imponerende, og vi håper du vil anvende disse ferdighetene på arbeidsplassen din, hjemme, med familien din eller til og med med venner.\n\nTeamarbeid kan brukes hvor som helst, og hvis du noen gang vil gå tilbake til denne modulen, er vi alltid her for deg. Du kan også anbefale disse quizene til alle som kan ha nytte av å utvikle sterkere teamarbeidsferdigheter.\n\nVi sees neste gang!",
+        "completion": "Dine teamarbeidsferdigheter stråler. Gratulerer med prestasjonen din. Du er nå klar til å være en del av et sterkt team, og forstår hvordan teamarbeidsprosessen virkelig fungerer. Men det er fortsatt mange flere ferdigheter å utforske — så føl deg fri til å fortsette og oppdage hva som kommer neste.",
+        "default": "Fortsett å se deg rundt i coworking-rommet etter ledetråder."
+      }
+    },
+    "oleh": {
+      "name": "Oleh",
+      "dialogues": {
+        "greet": "Hei, jeg er Oleh. Jeg skal være ærlig — teamarbeid er ikke alltid enkelt. Vi kommer alle fra ulike bakgrunner, og noen ganger trenger vi et øyeblikk for å tilpasse oss hverandres måter å jobbe på. Men det er nettopp det som gjør restaurering av gamle bygninger så givende. Det har vært min lidenskap i årevis, og hvert prosjekt lærer oss noe nytt om hvordan vi kan jobbe bedre sammen.\n\nJeg har noe interessant å dele med deg.\n\nLa oss begynne reisen vår inn i teamarbeid.",
+        "findFolder": "Vi har fått mange forespørsler fra entreprenøren vår i det siste, så vi har sortert dem i forskjellige mapper og dokumentmapper. Men en av dem mangler, og det er en viktig en. Kunne du hjelpe meg å finne den?",
+        "findFolderInstructions": "Denne signerte mappen inneholder viktige teamarbeidstrinn vi må bruke. Begynn søket ditt ved oppslagstavlen, fortsett deretter med å utforske resten av rommet.",
+        "folderFound": "Strålende jobb! Nå har vi det vi trenger. Men før vi går videre, her er litt mer informasjon å tenke på. Disse teamarbeidsidéene kan hjelpe deg når du fortsetter å vokse i arbeidet ditt og hverdagen.",
+        "teamworkInfo": "Teamarbeid betyr at folk jobber sammen mot et felles mål, ved å bruke hver persons styrker for å støtte gruppen.\n\nDet er mer enn bare å dele oppgaver — det krever klar kommunikasjon, gjensidig respekt og vilje til å lytte.\n\nGodt teamarbeid hjelper med å løse problemer raskere fordi alle bidrar med ideer og innsats.\n\nNår lagkamerater støtter hverandre, føles utfordringer mindre, fremgang blir lettere, og suksess deles av alle.",
+        "quiz1Intro": "Vel, jeg vet definitivt hvordan jeg skal bygge ting — men nå er det tid for oss å bygge teamarbeidsferdighetene våre. Klar for en quiz?",
+        "default": "Jeg er opptatt med renoveringsplanene. Snakk med Priya hvis du trenger veiledning."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Teamarbeid Quiz — Sant eller Usant",
+      "instructions": "Avgjør om hver påstand er Sann eller Usann.",
+      "questions": [
+        {
+          "text": "Effektivt teamarbeid betyr å dele ansvar og støtte hverandre mot et felles mål.",
+          "correct": true,
+          "hint": "Teamarbeid vokser når alle bidrar og støtter gruppen, ikke når folk jobber separat."
+        },
+        {
+          "text": "Godt teamarbeid skjer når alle insisterer på å gjøre oppgavene på sin egen måte uten å lytte til andre.",
+          "correct": false,
+          "hint": "Tenk på om teamarbeid forbedres når folk samarbeider eller når de ignorerer hverandres ideer."
+        },
+        {
+          "text": "Klar kommunikasjon hjelper med å forhindre misforståelser og holder teamarbeidet i gang jevnt.",
+          "correct": true,
+          "hint": "Spør deg selv hvor mye lettere teamarbeid blir når alle forstår planen."
+        },
+        {
+          "text": "Hvis en konflikt oppstår, er den beste tilnærmingen å ignorere den og håpe at den forsvinner av seg selv.",
+          "correct": false,
+          "hint": "Konflikter forbedres når lagkamerater tar tak i dem med respekt — ikke når de unngår dem."
+        },
+        {
+          "text": "Teamarbeid er sterkere når folk anerkjenner hverandres styrker og deler oppgavene deretter.",
+          "correct": true,
+          "hint": "Vurder hvordan team drar nytte når hver person bruker ferdighetene de er best på."
+        }
+      ],
+      "feedback": {
+        "wrong": "Det er ikke helt riktig. Tenk på det igjen.",
+        "correct": "Godt gjort! Du forstår grunnleggende teamarbeid."
+      },
+      "answerOverlay": "De riktige svarene er:\n1. SANT — Effektivt teamarbeid betyr å dele ansvar og støtte hverandre.\n2. USANT — Godt teamarbeid krever å lytte til andre, ikke insistere på å gjøre ting alene.\n3. SANT — Klar kommunikasjon forhindrer misforståelser.\n4. USANT — Konflikter bør håndteres med respekt, ikke ignoreres.\n5. SANT — Team er sterkere når oppgaver deles basert på styrker."
+    },
+    "singleChoice": {
+      "title": "Teamarbeid Quiz — Flervalg",
+      "instructions": "Velg det beste svaret.",
+      "question": "Når et teamprosjekt begynner å falle bak skjema, hva er den mest effektive teamarbeidshandlingen å ta først?",
+      "options": {
+        "a": "Ignorer problemet og håp at noen andre legger merke til det",
+        "b": "Be alle om å jobbe raskere uten å spørre om deres innspill",
+        "c": "Kommuniser med teamet for å forstå hvor forsinkelsen skjer",
+        "d": "Avslutt din del alene og unngå å involvere andre"
+      },
+      "hint": "Tenk på hvilket alternativ som styrker kommunikasjonen og hjelper teamet å forstå problemet sammen i stedet for å jobbe isolert.",
+      "feedback": {
+        "wrong": "Tenk på hvilket alternativ som styrker kommunikasjonen og hjelper teamet å forstå problemet sammen i stedet for å jobbe isolert.",
+        "correct": "Riktig! Å kommunisere med teamet er det mest effektive første trinnet."
+      },
+      "answerOverlay": "Det riktige svaret er: Kommuniser med teamet for å forstå hvor forsinkelsen skjer."
+    },
+    "sequenceOrder": {
+      "title": "Teamarbeid Quiz — Sekvensrekkefølge",
+      "instructions": "Sett følgende teamarbeidshandlinger i riktig rekkefølge.",
+      "items": [
+        "Avklar problemet sammen ved å dele det hvert teammedlem ser",
+        "Hold deg rolig og lytt til andre før du reagerer",
+        "Bestem deg for én liten handling teamet kan ta deretter",
+        "Kommuniser tydelig hva hver person er ansvarlig for"
+      ],
+      "correctOrder": [
+        "Hold deg rolig og lytt til andre før du reagerer",
+        "Avklar problemet sammen ved å dele det hvert teammedlem ser",
+        "Bestem deg for én liten handling teamet kan ta deretter",
+        "Kommuniser tydelig hva hver person er ansvarlig for"
+      ],
+      "hints": [
+        "Trinn 1: Begynn med å holde deg rolig og lytte.",
+        "Trinn 2: Deretter avklar problemet sammen.",
+        "Trinn 3: Bestem deg for ett neste skritt.",
+        "Trinn 4: Kommuniser ansvar tydelig."
+      ],
+      "feedback": {
+        "wrong": "Effektivt teamarbeid begynner med rolig lytting. Etter det avklarer team problemet sammen, velger ett håndterbart neste trinn, og blir deretter tydelig enige om hvem som gjør hva.",
+        "correct": "Utmerket! Du har arrangert teamarbeidstrinnene i riktig rekkefølge."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n1. Hold deg rolig og lytt til andre før du reagerer.\n2. Avklar problemet sammen ved å dele det hvert teammedlem ser.\n3. Bestem deg for én liten handling teamet kan ta deretter.\n4. Kommuniser tydelig hva hver person er ansvarlig for."
+    },
+    "answerOverlayTitle": "Svar Avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {
+      "checkButton": "Sjekk Rekkefølge",
+      "resetButton": "Tilbakestill"
+    }
+  },
+  "hints": {
+    "intro": "Klikk på Priya nær tavlen for å begynne.",
+    "talkToOleh": "Klikk på Oleh for å starte.",
+    "findFolder": "Sjekk oppslagstavlen, deretter konferansebordet, deretter resepsjonen.",
+    "talkToOleh2": "Returner til Oleh.",
+    "puzzle1": "Svar på hvert Sant eller Usant-spørsmål basert på det du vet om teamarbeid.",
+    "findPoster": "Sjekk skrivebordet, deretter oppslagstavlen, deretter de bærbare datamaskinene bak.",
+    "talkToPriya2": "Returner til Priya med det du fant.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg rundt i coworking-rommet etter ledetråder."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i det romslige coworking-rommet. Tavlen er fylt med fargerike tegninger, teamnotater og post-it-lapper. Du legger merke til Sjefsdesigneren og Entreprenøren i avdelingen for middels rekonstruksjon. Du bør klikke på Priya, Sjefsdesigneren.",
+    "clickNoticeBoard": "Jeg husker jeg holdt den tidligere ved siden av den, men nå… Jeg kan ikke finne den noe sted.\n\nKunne du hjelpe meg å lete etter den?\nPrøv å sjekke konferanserommet bak glassdøren først — jeg kan ha lagt den på bordet der inne.",
+    "clickBackTable": "Hmm… det ser ut til at mappen du leter etter ikke er her. Denne inneholder bare informasjon om gjenoppbyggingsarbeid og kundeforespørsler. Vennligst fortsett søket ditt. Du vil kanskje sjekke bordene i den fjerneste enden av rommet. La oss se hvor andre notater kan være lokalisert",
+    "foundFolder": "Å, endelig—her er den. De sier at hvis du vil skjule noe, plasser det på det mest åpenbare stedet, og det ser ut til å være akkurat det som skjedde. Den blå klistrelappen er den vi trenger. Takk for hjelpen.",
+    "folderOpened": "Greit, la oss ta en titt på hva vi har her. Disse trinnene skisserer hvordan man begynner å styrke teamarbeid når feilkommunikasjon eller forbindelsesbrudd oppstår.",
+    "folderRead": "Godt jobbet! Returner til Byggentreprenør Oleh.",
+    "clickDesk": "Det virker som om den ikke er her. La oss sjekke notattavlen.",
+    "clickNoticeBoardPoster": "Hmm… ikke her heller. Bare noen kundeforespørselsnotater. Greit, noen skrev den ut, så la oss ta en titt ved siden av de bærbare datamaskinene, kanskje noen er åpnet der.",
+    "foundPoster": "Ah—beklager. Den var på det bordet hele tiden!"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "TEAMARBEIDSTRINN",
+      "popupContent": [
+        "Pause og hold deg respektfull — la følelsene legge seg før du reagerer",
+        "Avklar problemet sammen — fokuser på problemet, ikke personen",
+        "Velg én felles handling — bli enige om et lite neste trinn dere kan ta som team"
+      ]
+    },
+    "poster": {
+      "popupTitle": "TEAMARBEID UTVIKLINGSTRINN",
+      "popupContent": [
+        "Bli enige om ett mål — Først, sørg for at alle forstår hva teamet prøver å oppnå. Ett klart mål hjelper folk å jobbe i samme retning.",
+        "Snakk tidlig og tydelig — Del informasjon så snart som mulig og hold den enkel. Klar kommunikasjon hjelper med å unngå forvirring senere.",
+        "Lytt før du svarer — La andre snakke ferdig før du reagerer. Å lytte hjelper med å bygge tillit og viser respekt.",
+        "Gi oppgaver basert på styrker — Tildel arbeid som passer til det hver person gjør best. Dette gjør arbeidet enklere og raskere for alle.",
+        "Sjekk fremgang ofte — Ta korte øyeblikk for å se hvordan ting går. Regelmessige innsjekk hjelper med å fikse små problemer tidlig.",
+        "Spør når noe er uklart — Hvis du ikke forstår, still et spørsmål. Å spørre tidlig hjelper med å forhindre feil.",
+        "Hold deg rolig under uenigheter — Konflikter kan skje, men rolig prat hjelper med å løse dem. Respekt holder teamet til å jobbe godt sammen.",
+        "Vær fleksibel når planer endres — Noen ganger endres planer, og det er greit. Å justere raskt hjelper teamet å bevege seg fremover.",
+        "Hjelp lagkamerater når det trengs — Hvis noen sliter, tilby hjelp. Støtte gjør teamet sterkere og reduserer stress.",
+        "Feir små suksesser — Legg merke til fremgang og si takk. Å feire sammen bygger motivasjon og lagånd."
+      ]
+    },
+    "teamworkFolder": {
+      "inventoryTitle": "Teamarbeidstrinn-mappe"
+    },
+    "developmentPoster": {
+      "inventoryTitle": "Utviklingstrinn-plakat"
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Dine teamarbeidsferdigheter stråler. Gratulerer med prestasjonen din. Du er nå klar til å være en del av et sterkt team, og forstår hvordan teamarbeidsprosessen virkelig fungerer. Men det er fortsatt mange flere ferdigheter å utforske — så føl deg fri til å fortsette og oppdage hva som kommer neste.",
+    "buttonText": "Forlat Coworking-rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

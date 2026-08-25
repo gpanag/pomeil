@@ -1,0 +1,327 @@
+{
+  "loading": "Loading Decision-Making...",
+  "intro": {
+    "title": "Decision-Making",
+    "paragraphs": [
+      "You are about to enter an elevator in a modern office building.",
+      "What seems like a routine ride is about to become a lesson in decision-making.",
+      "Pay close attention to your surroundings — the choices you make will determine how this situation unfolds."
+    ],
+    "buttonText": "Approach the Elevator"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "dm": {
+      "identifyAlternativesTitle": "Identify Alternatives",
+      "identifyAlternativesDesc": "Click each box to reveal alternatives for escaping the elevator.",
+      "identifyOutcomesTitle": "Identify Outcomes",
+      "identifyOutcomesDesc": "Click each box to reveal possible outcomes for each alternative.",
+      "evaluateAlternativesTitle": "Evaluate Alternatives",
+      "evaluateAlternativesDesc": "Click each criterion to see how the alternatives measure up.",
+      "selectBestTitle": "Select the Best Alternative",
+      "selectBestDesc": "Choose the alternative you think is best. All choices lead to an escape!"
+    }
+  },
+  "items": {
+    "floorIndicator": {
+      "dialogue": "Stuck between floors 4 and 5? That’s pretty weird…"
+    },
+    "roofLamp": {
+      "dialogue": "The lights went out for a minute. Maybe there was a power outage?"
+    },
+    "buttonPanel": {
+      "dialogue": "Where was I going again?"
+    },
+    "wirePanel": {
+      "dialogue": "This probably covers the electrical wiring."
+    },
+    "inspectionPlaque": {
+      "dialogue": "Seems the elevator missed the inspection in 2022. And 2023. And 2024. And…",
+      "title": "ELEVATOR SAFETY CERTIFICATION",
+      "lines": [
+        "Inspected: 14.06.2021",
+        "Next inspection due: 14.06.2022",
+        "Certificate No.: EI-21-0487",
+        "Elevator ID: Lift 3"
+      ]
+    },
+    "safetyPoster": {
+      "title": "IN THE EVENT OF AN ELEVATOR EMERGENCY",
+      "lines": [
+        "Stay calm — There is plenty of air inside",
+        "Call for help — Use alarm bell or telephone",
+        "Do not attempt to climb out or pry doors open",
+        "Do not jump",
+        "Do not tamper with elevator systems",
+        "Don’t be a hero — Wait for rescue and follow directions from emergency personnel"
+      ]
+    },
+    "incidentPoster": {
+      "dialogue1": "Not exactly true anymore…",
+      "dialogue2": "There we go.",
+      "title": "Days Without Incident"
+    },
+    "roofHatch": {
+      "dialogue": "Is this an exit?"
+    }
+  },
+  "systemDialogues": {
+    "elevatorStalled": "Sigh… The elevator stalled. Just my luck.",
+    "whatNow": "Well… what now? How do I get out of here?",
+    "allInfoGathered": "What’s my best alternative for getting out of here?",
+    "posterFalls": "An ad poster falls from the notice board, revealing some text behind it…",
+    "alternativesRevealed": "These are all my alternatives.",
+    "outcomesRevealed": "These are all the possible outcomes…",
+    "evaluationComplete": "I guess it's up to me. What’s most important - risk, time cost, resource use or control?",
+    "chooseAlternative": "Now I need to decide. Which alternative is best?"
+  },
+  "alternatives": {
+    "pressAlarm": {
+      "label": "Press alarm button",
+      "outcomes": [
+        "Discovery and rescue",
+        "Nothing happens"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "A low-risk option. Exactly what emergency poster advised.",
+        "timeCost": "Response can be quick or slow, depending on how the alarm is monitored.",
+        "resourceUse": "Pressing the alarm costs little to no energy.",
+        "control": "You have control of pressing the alarm button. But you have no control over if, when and how someone responds."
+      },
+      "actualOutcome": {
+        "summary": "You used the alarm bell to call for help.\n\nFortunately, the service staff replied immediately, and emergency services were dispatched.\n\nYou were rescued in next to no time!",
+        "sound": "alarm-ring"
+      }
+    },
+    "callOut": {
+      "label": "Call out to people nearby",
+      "outcomes": [
+        "Discovery and rescue",
+        "Nothing happens"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "neutral",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "A low-risk option. Calling out for help does not in any way affect the elevator.",
+        "timeCost": "Someone might hear you immediately. Or you end up shouting for a long time.",
+        "resourceUse": "Calling out for a little while costs little energy. Calling out for hours can be very taxing and deplete your energy.",
+        "control": "Whether someone passes by to hear you is completely out of your control."
+      },
+      "actualOutcome": {
+        "summary": "You had to shout for a while. You became thirsty, hoarse and tired.\n\nFortunately, someone finally heard you and called emergency services.\n\nYou were rescued after 2 hours.",
+        "sound": "shout-help"
+      }
+    },
+    "pryDoors": {
+      "label": "Pry doors open",
+      "outcomes": [
+        "Self-evacuation",
+        "Elevator damage",
+        "Human injury"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Elevator guidelines warned against this. You or the elevator can get injured.",
+        "timeCost": "If you succeed, you escape quickly. If you fail, you waste time. Also, injury can make rescue more complex.",
+        "resourceUse": "Forcing the doors open requires a lot of strength and effort. You could deplete your energy.",
+        "control": "You take control of the situation. Success depends on your strengths and efforts. But you are not in control of how the elevator and doors respond."
+      },
+      "actualOutcome": {
+        "summary": "It took a lot of effort and strength to pry the doors open, and you struggled for a while. The doors finally opened half-way, revealing a wall behind them. Exhausted, you lied down on the elevator floor to rest.\n\nAfter what felt like half an eternity, someone walked by and found you.\nBefore freeing you, emergency services had to reset the doors, as they were out of sync after your rescue attempt.\n\nYou were rescued after 5 hours.",
+        "sound": "creaking"
+      }
+    },
+    "climbHatch": {
+      "label": "Climb through roof hatch",
+      "outcomes": [
+        "Self-evacuation",
+        "Elevator damage",
+        "Human injury"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Elevator guidelines warned against this. Doing this can lead to injury to yourself or the elevator.",
+        "timeCost": "If it works, you escape quickly. If it does not work, or an injury occurs, rescue can become more difficult and time-consuming.",
+        "resourceUse": "Climbing requires strength, balance, and focus. It can be very energy consuming.",
+        "control": "A successful outcome depends on your strength and abilities. But the outcome is not fully in your control. You do not know whether it is even possible to climb out."
+      },
+      "actualOutcome": {
+        "summary": "Climbing out the roof of the elevator proved harder than you expected. You tried to reach the handle by jumping and stretching your arms. But it was just too high. Frustrated, you slumped down on the floor.\n\nAfter sulking for a while, someone found you and alerted emergency services of the situation.\n\nYou were rescued after 3 hours.",
+        "sound": "action-hero"
+      }
+    },
+    "clickFloorButton": {
+      "label": "Click any floor button",
+      "outcomes": [
+        "Elevator starts working again",
+        "Nothing happens"
+      ],
+      "risk": "neutral",
+      "timeCost": "match",
+      "resourceUse": "neutral",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Pressing a floor button is low risk. You do not risk getting injured or damaging the elevator.",
+        "timeCost": "If the buttons work, you escape immediately. If they do not work, you are no closer to an escape.",
+        "resourceUse": "Pressing buttons uses minimal effort and energy.",
+        "control": "Initially, you are in control. But you have no control of the elevator system’s response."
+      },
+      "actualOutcome": {
+        "summary": "Nothing happened when you pressed the floor button. Becoming irritated, you mashed all the floor buttons to see if anything would happen. Still nothing happened.\n\nFortunately, someone walked by and discovered you. Emergency services were alerted and arrived quickly. While rescuing you, they explained that for safety reasons, floor buttons are disabled after power outages. The explanation made sense, but even so, you remained irritated.\n\nYou were freed after 2 hours.",
+        "sound": "button-click"
+      }
+    },
+    "jumpActivate": {
+      "label": "Jump to activate elevator",
+      "outcomes": [
+        "Elevator starts working again",
+        "Elevator damage",
+        "Human injury"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Elevator guidelines specifically warned against jumping. You can injure yourself or the elevator.",
+        "timeCost": "The elevator can start working immediately. Another possibility is that nothing happens. It can also result in injury, further delaying your rescue.",
+        "resourceUse": "Jumping requires physical effort and balance. It can use up a lot of your energy.",
+        "control": "You fully control the jump itself. You have little to no control over how the elevator reacts."
+      },
+      "actualOutcome": {
+        "summary": "Jumping in the elevator caused the emergency break to activate. This made a loud noise and attracted a small crowd of curious people. Several calls were made to emergency services.\n\nEven though emergency services arrived quickly, rescue was not equally quick. An elevator specialist had to be called to reset the breaks. Sadly, the town’s only elevator specialist was away on an elevator conference. While waiting for him to arrive, you huddled in a blanket and ate some pancakes that emergency services were able to squeeze through the elevator doors.\n\nYou slept in the elevator and were rescued after 10 hours.",
+        "sound": "creaking"
+      }
+    },
+    "fixWiring": {
+      "label": "Fix electrical wiring",
+      "outcomes": [
+        "Elevator starts working again",
+        "Elevator damage",
+        "Human injury"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Perhaps the riskiest option. Tampering with electrical systems is dangerous.",
+        "timeCost": "Depending on your knowledge of electrical systems, escape can be rather quick. Any mistakes can cause delays or new problems, complicating your rescue.",
+        "resourceUse": "Operating on electrical systems demands a lot of focus and effort, using quite a lot of your energy.",
+        "control": "You take control to fix the issue. Whether you succeed depends heavily on your skill and luck."
+      },
+      "actualOutcome": {
+        "summary": "Unfortunately, the wires did not power the elevator, just the lights. Instead of activating the elevator, the lights went out again.\n\nYou tried different things to pass time while waiting for rescue in the dark. The ABC-game; finding things starting with each letter of the alphabet, proved especially difficult in the dark.\n\nAfter what felt like a very long time, someone found you and called emergency services. They freed you while at the same time scolding you for tampering with the electrical wiring.\n\nYou were rescued after 5 hours.",
+        "sound": "voltage-shock"
+      }
+    },
+    "waitRescue": {
+      "label": "Wait for rescue",
+      "outcomes": [
+        "Discovery and rescue",
+        "Nothing happens"
+      ],
+      "risk": "match",
+      "timeCost": "mismatch",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "The emergency poster advised you to stay calm. There is no risk of injury to sitting down and waiting.",
+        "timeCost": "If you are lucky, you are found after a short wait. If you are unlucky, you will end up waiting a long time.",
+        "resourceUse": "Waiting requires very little effort. You conserve your energy.",
+        "control": "You have no control over the outcome. You rely entirely on someone else discovering you."
+      },
+      "actualOutcome": {
+        "summary": "It was very, very, very boring to wait.\n\nAn upside was the half-melted chocolate bar you found in your back pocket.\n\nThe downside was the elevator music. It became quite grating after a while. In fact, it was almost impossible to focus on anything else besides that stupid, repetitive music.\n\nYou were very grateful when someone finally found you and called emergency services.\n\nYou were rescued after 5 hours.",
+        "sound": "elevator-music"
+      }
+    }
+  },
+  "criteria": {
+    "risk": "Risk",
+    "timeCost": "Time Cost",
+    "resourceUse": "Resource Use",
+    "control": "Control"
+  },
+  "flowchart": {
+    "startNode": "You are stuck in an elevator"
+  },
+  "reviewOutcome": {
+    "title": "Reviewing the outcome",
+    "reflectionText": "Take a moment to reflect:",
+    "questions": [
+      "Were you satisfied with the outcome?",
+      "What did you learn?",
+      "Would you do anything differently in the future?"
+    ],
+    "finishButton": "Finish escape room"
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "subtitle": "You have finished the Decision-Making room!",
+    "sections": [
+      {
+        "heading": "The Decision-Making Process",
+        "text": "After the elevator stalled, you went through the steps in a decision-making process.\n\nFirst, you identified the decision you needed to make - how to escape the stalled elevator. You gathered information and identified the different alternatives and possible outcomes. You evaluated your options considering criteria like risk and time cost. You decided what was the best option and took action. Finally, you reviewed the outcome."
+      },
+      {
+        "heading": "Decision-Making Skills",
+        "text": "Decision-making is a skill that can be trained!\n\nYou can start by making smaller, everyday decisions with intent, such as \"How much time should I set aside for this task?\".\n\nYou can use the decision-making process when you are faced with more challenging decisions. This will help you map out alternatives and possible outcomes and consider them based on your chosen criteria.\n\nRemember – decisions do not always lead to the outcome we hope for. Even so, they can prove valuable experiences we can learn from."
+      }
+    ],
+    "wellDone": "Well done!",
+    "buttonText": "Exit Room"
+  },
+  "hints": {
+    "outsideElevator": "Click on the elevator call button to call the elevator.",
+    "enterElevator": "Click inside the elevator to enter.",
+    "pressFloor": "Press a floor button on the button panel.",
+    "gatherInfo": "Click on objects in the elevator to gather information.",
+    "clickNoticeBoard": "Click the notice board on the wall to continue.",
+    "identifyAlternatives": "Click the question marks on the notice board to reveal alternatives.",
+    "identifyOutcomes": "Click the question marks to reveal possible outcomes.",
+    "evaluateAlternatives": "Click on each criterion to see how the alternatives measure up.",
+    "selectAlternative": "Choose the alternative you think is best by clicking on it.",
+    "reviewOutcome": "Reflect on your decision and click Finish.",
+    "default": "Look around the elevator for clues."
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "intro": {
+    "title": "Open-mindedness",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire the 30 skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Today, in the cafeteria, you'll meet Karina from Product Development and her colleague Daniel. Together they'll guide you through what it really means to stay open to new ideas — even when they challenge your own."
+    ],
+    "buttonText": "Start Game"
+  },
+  "loading": "Loading...",
+  "characters": {
+    "karina": {
+      "name": "Karina",
+      "dialogues": {
+        "introduction": "Hey (username), nice to meet you! I'm the Product Development Lead, and I truly love working here. I've only just started, but I already feel like I need a new approach. All my life I've relied only on myself, so it's not easy for me to learn how to listen to someone else's ideas — especially while living in a new country. Daniel is helping me develop a selling strategy.",
+        "introduction_part2": "Somewhere in this room, there is a list with some useful tips regarding open-mindedness. Try to find it and read it carefully, then come back to me. Start by checking the coffee machine area.",
+        "noteFound": "Well done, you found the action plan!",
+        "noteFound_part2": "Open-mindedness means being aware of your own views while staying willing to understand the ideas and perspectives of others. It requires more than simply listening — it involves a genuine effort to appreciate different opinions and consider new information with respect. Open-mindedness helps reduce misunderstandings, challenges personal biases, and supports better communication with the people around you.",
+        "noteFound_part3": "Let's continue with a quiz. Good luck!",
+        "quizComplete": "Wow, your open-mindedness is impressive! Go talk to Daniel to continue the training.",
+        "fallback_findNote": "You're doing great! Keep looking for the list. Try checking the coffee machine area first, then the noticeboard.",
+        "fallback_quiz": "Focus on the quiz for now. You can do it!",
+        "fallback_findPaper": "Daniel is waiting for you. Go talk to him!",
+        "fallback_default": "Keep going, you're making good progress!",
+        "allQuestsComplete": "You did it! The training has been completed!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel",
+      "dialogues": {
+        "introduction": "Hi there! I'm Daniel. You should talk to Karina first - she'll get you started on your open-mindedness training.",
+        "findNote": "Karina is helping you with the first part. Once you're done with the quiz, come talk to me!",
+        "fallback_quiz": "Focus on the quiz first. You're doing great!",
+        "quizComplete": "I found some really cool facts about open-mindedness for you. I wrote them down on a piece of paper, but now I can't remember where I put it. It happens when we're overloaded with work. Could you look around the room for me? Oh—wait—I think I might have forgotten it next to the coffee cup I didn't take with me to the meeting earlier.",
+        "fallback_findPaper": "I think I left that paper somewhere around here. Try checking the desk first, then the strategies table.",
+        "paperFound": "Super! I am happy that you found it. Was it inspiring?",
+        "paperFound_part2": "I have a few more quizzes for you, so let's move on!",
+        "fallback_puzzle": "Take your time with the puzzle. Think it through carefully!",
+        "fallback_default": "You're doing great! Keep going!",
+        "sequenceComplete": "Well done! That was quite a puzzle, but you handled it beautifully. You're becoming more open-minded with every step. I hope you enjoyed the quiz — let's keep going, we're almost there.",
+        "allQuestsComplete": "Nice job, explorer! You cracked the puzzle and leveled up. More cool skills are waiting ahead — press Continue when you're ready."
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Open-Mindedness quiz - True or False",
+      "questions": [
+        {
+          "text": "Being open-minded means I must agree with every idea I hear.",
+          "answer": false,
+          "hint": "Open-mindedness is about learning, not agreeing with everything."
+        },
+        {
+          "text": "Listening to different opinions can help me understand situations better.",
+          "answer": true,
+          "hint": "Ask yourself: does hearing more viewpoints give me more information or less?"
+        },
+        {
+          "text": "If an idea feels new or uncomfortable, I should reject it immediately.",
+          "answer": false,
+          "hint": "Does open-mindedness happen when we close the door quickly, or when we stay curious?"
+        }
+      ],
+      "trueButton": "True",
+      "falseButton": "False",
+      "answerOverlayTitle": "Correct Answer",
+      "answerOverlayTemplate": "After 3 attempts, here's the answer:\n\nQuestion: \"{question}\"\n\nCorrect Answer: {correctAnswer}\n\nExplanation: {hint}",
+      "correctAnswerTrue": "TRUE",
+      "correctAnswerFalse": "FALSE",
+      "feedback": {
+        "incorrect_true": "Incorrect. The answer is True.",
+        "incorrect_false": "Incorrect. The answer is False."
+      }
+    },
+    "quizComplete": {
+      "title": "Correct!",
+      "message": "Excellent work! You've completed the first step in your open-mindedness training.",
+      "buttonText": "Continue"
+    },
+    "puzzleTwo": {
+      "title": "Open-Mindedness Quiz – Multiple Choice",
+      "question": "What is the best way to show open-mindedness during a discussion?",
+      "options": {
+        "a": "Decide your opinion before listening",
+        "b": "Pay attention to others' viewpoints and ask curious questions",
+        "c": "Ignore ideas that feel new or uncomfortable",
+        "d": "Interrupt to explain why your idea is better"
+      },
+      "optionLabels": {
+        "a": "a) Decide your opinion before listening",
+        "b": "b) Pay attention to others' viewpoints and ask curious questions",
+        "c": "c) Ignore ideas that feel new or uncomfortable",
+        "d": "d) Interrupt to explain why your idea is better"
+      },
+      "hint": "Think about which answer shows curiosity and willingness to understand others, instead of shutting their ideas down.",
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: When someone shares an idea you disagree with, what's the most open-minded response?\n\nOptions:\na) Immediately explain why you think they're wrong\nb) Ask questions to understand their perspective better\nc) Change the subject to avoid conflict\nd) Agree with them to keep the peace\n\nCorrect Answer: b) Ask questions to understand their perspective better\n\nExplanation: Open-mindedness is about showing curiosity and willingness to understand others, instead of shutting their ideas down. Asking questions helps you learn and shows respect for the other person's viewpoint."
+    },
+    "puzzleThree": {
+      "title": "Open-mindedness quiz- Sequence ordering",
+      "question": "Place the following actions in the most open-minded order.",
+      "availableSteps": "Available Steps",
+      "yourSequence": "Your Sequence",
+      "placeholderText": "Click steps on the left to add them here.",
+      "resetButton": "Reset",
+      "submitButton": "Submit Order",
+      "options": {
+        "a": "Ask a curious question to understand the person's perspective",
+        "b": "Avoid judging or reacting too quickly",
+        "c": "Listen openly to what the person is saying",
+        "d": "Reflect briefly on what you heard before sharing your own view"
+      },
+      "hints": {
+        "position1": "An open-minded person always begins by truly listening — that creates ease for both sides.",
+        "position2": "After listening, keep your mind open by avoiding fast judgments.",
+        "position3": "Once the conversation feels calm and open-minded, you can ask curious questions to understand better.",
+        "position4": "After that, it becomes easy to share your own view respectfully.",
+        "incomplete": "Please complete the sequence."
+      },
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: What is the correct sequence for practicing open-mindedness during a discussion?\n\nCorrect Answer:\n1. \"Listen openly to what the person is saying\" (c) - An open-minded person always begins by truly listening, which creates ease for both sides and allows you to actually understand their perspective\n2. \"Avoid judging or reacting too quickly\" (b) - Keep your mind open by avoiding fast judgments that could shut down the conversation or create tension\n3. \"Ask a curious question to understand the person's perspective\" (a) - Once the conversation feels calm and open-minded, ask curious questions to understand better without putting them on the spot\n4. \"Reflect briefly on what you heard before sharing your own view\" (d) - After listening and understanding, it becomes easy to share your own view respectfully\n\nThis sequence demonstrates true open-mindedness by prioritizing understanding before responding."
+    },
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "answerOverlay": {
+    "title": "Correct Answer",
+    "continueButton": "Continue"
+  },
+  "hints": {
+    "default": "I should look around carefully.",
+    "findNote": {
+      "step0": "Karina said: 'Start by checking the coffee machine area.'",
+      "step1": "Not near the coffee machine. Try the noticeboard on the left.",
+      "step2": "Not on the noticeboard. Try the coffee table."
+    },
+    "findPaper": {
+      "step0": "Karina mentioned the desk.",
+      "step1": "Not on the desk. Try the strategies table.",
+      "step2": "Look around the strategies table more carefully."
+    },
+    "allQuestsComplete": "Talk to Daniel to finish."
+  },
+  "items": {
+    "note": {
+      "altText": "A printed action plan with open-mindedness tips.",
+      "inventoryTitle": "View Action Plan"
+    },
+    "paper": {
+      "altText": "Fun facts paper",
+      "inventoryTitle": "View Paper",
+      "title": "Eye-Opening FACTS ABOUT OPEN-MINDEDNESS",
+      "facts": [
+        {
+          "strong": "Your brain actually likes new ideas.",
+          "text": "When you hear a new perspective, your brain releases a tiny boost of dopamine — the same chemical linked to curiosity and learning. Open-mindedness literally feels good inside your head!"
+        },
+        {
+          "strong": "Being wrong is scientifically useful.",
+          "text": "Studies show that when people realize they were wrong about something, their brain forms stronger learning connections. So making mistakes isn't embarrassing — it's an upgrade for your mind."
+        },
+        {
+          "strong": "Asking \"Why?\" can reduce stress.",
+          "text": "Curiosity turns a stressful disagreement into a puzzle. Instead of arguing, your brain switches into \"explore mode,\" which lowers tension and improves problem-solving."
+        },
+        {
+          "strong": "Trying new things makes your brain more flexible.",
+          "text": "Even small changes — like taking a new route home or tasting a food you usually skip — help your brain become more adaptable. That flexibility supports bigger open-minded thinking later."
+        },
+        {
+          "strong": "Open-minded people make decisions faster, not slower.",
+          "text": "Surprisingly, people who hear different viewpoints often reach solutions quicker, because they see more options, avoid stubborn blocks, and adjust more easily"
+        }
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "View Sticky Note"
+    }
+  },
+  "systemDialogues": {
+    "coffeeMachineSearch": "Oh, no! Somebody left without a coffee cup. It seems that what you're searching for isn't here. Look at the noticeboard on the left.",
+    "leftNoticeboardSearch": "This is just a motivational moto picture. Perhaps you'll find what you need on the other coffee table. Give it another try!",
+    "deskSearch": "Oh no, it's not here. Check the table where Daniel and Karina were talking about the strategies. Check on the table. That might help.",
+    "noteFoundReturn": "Good job! Return to Product Development Lead Karina.",
+    "paperFoundReturn": "You're doing great! Return to Daniel."
+  },
+  "completion": {
+    "title": "Training Complete!",
+    "message": "Congratulations! You have successfully demonstrated excellent open-mindedness and communication skills.",
+    "buttonText": "Back to Main Menu"
+  },
+  "dialogueActions": {
+    "continue": "Continue",
+    "startQuiz": "Start Quiz",
+    "finishTraining": "Finish Training"
+  },
+  "buttons": {
+    "toggleFullscreen": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms"
+  },
+  "ui": {
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer",
+    "finishTrainingButton": "Finish Training"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

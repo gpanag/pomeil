@@ -1,0 +1,285 @@
+{
+  "loading": "Laster forretningsplanlegging...",
+  "intro": {
+    "title": "Forretningsplanlegging",
+    "paragraphs": [
+      "Velkommen til Workshop i forretningsplanlegging! Du har nettopp gått inn i et konferanserom hvor alt er klargjort for en praktisk økt om å bygge en forretningsmodell-canvas (Business Model Canvas).",
+      "Rommet inneholder flere interaktive stasjoner - et tåkete vindu, et flippover-stativ, en TV på veggen, papirer på bordet og en mappe. Hver stasjon inneholder en oppgave som vil lære deg en sentral komponent av forretningsmodell-canvasen.",
+      "Fullfør alle fem oppgavene i den rekkefølgen du ønsker. Når alle er ferdige, vil tavlen foran lyse opp og avsløre din ferdige forretningsmodell-canvas. Lykke til!"
+    ],
+    "buttonText": "Gå inn i konferanserommet"
+  },
+  "puzzles": {
+    "customerSegments": {
+      "title": "Kundesegmenter",
+      "instructions": "Klassifiser hvert kundesegment som Gyldig eller Ugyldig. Gyldige segmenter er spesifikke og handlingsdyktige. Ugyldige segmenter er for brede, vage eller basert på antakelser.",
+      "customers": {
+        "0": "Frilansere og fjernarbeidere som verdsetter fleksible tjenester",
+        "1": "Foreldre til små barn som prioriterer sikkerhet",
+        "2": "Studenter som leter etter kostnadsbesparende alternativer",
+        "3": "Alle som noen gang har trengt noe",
+        "4": "Kontorarbeidere som trenger raske løsninger i løpet av arbeidsdagen",
+        "5": "Folk som liker fine ting",
+        "6": "Pensjonister som verdsetter personlig kundeservice",
+        "7": "Småbedriftseiere som ønsker å spare tid",
+        "8": "Folk som helt sikkert vil elske bedriften",
+        "9": "Folk som ved et uhell klikket på lenken til nettsiden",
+        "10": "Folk som jonglerer flere oppgaver gjennom arbeidsdagen og trenger effektive verktøy"
+      },
+      "invalidExplanations": {
+        "3": "For bredt - dette beskriver praktisk talt alle og er ikke et nyttig segment.",
+        "5": "For vagt - 'fine ting' definerer ikke et spesifikt behov eller atferd.",
+        "8": "Antakelsesbasert - du kan ikke anta at folk vil elske bedriften din.",
+        "9": "Ikke faktiske kunder - tilfeldige klikk representerer ikke ekte interesse."
+      },
+      "validButton": "Gyldig",
+      "invalidButton": "Ugyldig",
+      "feedback": {
+        "correct": "Riktig!",
+        "wrong": "Ikke helt. Tenk på om dette segmentet er spesifikt og handlingsdyktig.",
+        "allCorrect": "Utmerket! Du har klassifisert alle kundesegmenter riktig!"
+      },
+      "answerOverlay": "Gyldige segmenter: Frilansere og fjernarbeidere, Foreldre til små barn, Studenter som leter etter kostnadsbesparende alternativer, Kontorarbeidere som trenger raske løsninger, Pensjonister som verdsetter personlig service, Småbedriftseiere som ønsker å spare tid, Folk som jonglerer flere oppgaver.\n\nUgyldige segmenter: 'Alle som noen gang har trengt noe' (for bredt), 'Folk som liker fine ting' (for vagt), 'Folk som helt sikkert vil elske bedriften' (antakelsesbasert), 'Folk som ved et uhell klikket på lenken' (ikke faktiske kunder)."
+    },
+    "valueProposition": {
+      "title": "Verdiforslag",
+      "instructions": "Dette verdiforslaget inneholder unødvendige moteord. Klikk på delene som skal FJERNES (overstrøket). Behold bare de meningsfulle delene, og send deretter inn.",
+      "parts": {
+        "0": "Vi tilbyr innovative",
+        "1": "løsninger som hjelper folk å spare tid",
+        "2": "verdensklasse kvalitet",
+        "3": "ved å redusere unødvendige steg i hverdagslige oppgaver",
+        "4": "gjennom fortreffelighet",
+        "5": "og banebrytende synergi",
+        "6": "ved bruk av neste generasjons funksjoner"
+      },
+      "submitButton": "Bla side for å sende inn",
+      "feedback": {
+        "wrong": "Noen deler er ikke riktig markert. Husk: behold det som er meningsfullt og spesifikt, fjern moteord og fyllstoff.",
+        "hint": "Tips: Behold bare delene som beskriver en konkret fordel eller handling. Fjern bedriftsjargong.",
+        "correct": "Perfekt! Du fjernet moteordene og beholdt det klare verdiforslaget."
+      },
+      "answerOverlay": "Behold: 'løsninger som hjelper folk å spare tid' og 'ved å redusere unødvendige steg i hverdagslige oppgaver'.\n\nFjern: 'Vi tilbyr innovative', 'verdensklasse kvalitet', 'gjennom fortreffelighet', 'og banebrytende synergi', 'ved bruk av neste generasjons funksjoner'."
+    },
+    "channels": {
+      "title": "Kanaler",
+      "introText": "Match hver kundeatferd med den mest passende kanalen for å nå dem. Bruk pilene for å bla gjennom tilgjengelige kanaler, og bekreft deretter ditt valg.",
+      "startButton": "Start",
+      "behaviors": {
+        "0": "Kunder som er aktive på nett og engasjerer seg på sosiale plattformer",
+        "1": "Kunder som stoler på anbefalinger fra venner og familie",
+        "2": "Kunder som leter etter tjenester i nærheten i arbeidstiden",
+        "3": "Kunder som foretrekker direkte personlig kontakt for henvendelser"
+      },
+      "channelOptions": [
+        "Sosiale medier",
+        "Jungeltelegrafen",
+        "Fysisk lokasjon",
+        "Direkte kontakt via e-post eller telefon",
+        "TV-reklame",
+        "Trykte medier",
+        "Mobilapp",
+        "Nettmarkedsplass",
+        "Messer"
+      ],
+      "confirmButton": "Bekreft",
+      "feedback": {
+        "correct": "Riktig match!",
+        "wrong": "Den kanalen passer ikke med denne kundeatferden. Prøv en annen.",
+        "allCorrect": "Flott jobb! Du matchet alle kundeatferder med deres ideelle kanaler!"
+      },
+      "answerOverlay": "Riktige matcher:\n1. Aktive på nett/sosiale plattformer -> Sosiale medier\n2. Stoler på anbefalinger -> Jungeltelegrafen\n3. Leter etter tjenester i arbeidstiden -> Fysisk lokasjon\n4. Foretrekker direkte personlig kontakt -> Direkte kontakt via e-post eller telefon"
+    },
+    "revenueStreams": {
+      "title": "Inntektsstrømmer",
+      "instructions": "Les hvert regnskapsdokument og tilordne det til den riktige kategorien for inntektsstrøm.",
+      "documents": {
+        "0": {
+          "title": "Dokument A: Månedlig tilgangsavgift",
+          "content": "Faktura for tilbakevendende månedlig tilgang til premium-plattformen. Kunden faktureres automatisk hver måned for fortsatt tjeneste.",
+          "category": "subscription"
+        },
+        "1": {
+          "title": "Dokument B: Kvittering for produktkjøp",
+          "content": "Kvittering for et enkelt produktkjøp. Kunden betalte hele beløpet på forskudd uten tilbakevendende belastninger.",
+          "category": "one-time"
+        },
+        "2": {
+          "title": "Dokument C: Målt tjenesteregning",
+          "content": "Regning beregnet basert på faktisk bruk denne måneden: 150 API-kall til 0,02 USD hver. Totalen varierer fra måned til måned avhengig av forbruk.",
+          "category": "usage-based"
+        },
+        "3": {
+          "title": "Dokument D: Oppgraderingsfaktura",
+          "content": "Faktura for oppgradering fra gratisversjonen til Pro-planen. De grunnleggende funksjonene forblir gratis, men avanserte funksjoner krever betaling.",
+          "category": "freemium"
+        }
+      },
+      "categories": {
+        "subscription": "Abonnement",
+        "one-time": "Engangsbetaling",
+        "usage-based": "Bruksbasert betaling",
+        "freemium": "Freemium"
+      },
+      "feedback": {
+        "correct": "Riktig klassifisering!",
+        "wrong": "Det er ikke riktig kategori. Les dokumentet på nytt og vurder hvordan betalingen fungerer.",
+        "allCorrect": "Utmerket! Du klassifiserte alle inntektsstrømdokumentene riktig!"
+      },
+      "answerOverlay": "Riktige klassifiseringer:\nDokument A (Månedlig tilgangsavgift) -> Abonnement\nDokument B (Kvittering for produktkjøp) -> Engangsbetaling\nDokument C (Målt tjenesteregning) -> Bruksbasert betaling\nDokument D (Oppgraderingsfaktura) -> Freemium"
+    },
+    "costStructure": {
+      "title": "Kostnadsstruktur",
+      "instructions": "Klassifiser hver månedlige kostnad som enten Fast (forblir lik uavhengig av produksjon) eller Variabel (endres basert på produksjons-/salgsvolum).",
+      "costs": {
+        "0": {
+          "name": "Kontorhusleie",
+          "type": "fixed"
+        },
+        "1": {
+          "name": "Forsikring",
+          "type": "fixed"
+        },
+        "2": {
+          "name": "Lånebetalinger",
+          "type": "fixed"
+        },
+        "3": {
+          "name": "Ansatteslønninger",
+          "type": "fixed"
+        },
+        "4": {
+          "name": "Salgsprovisjoner",
+          "type": "variable"
+        },
+        "5": {
+          "name": "Råvarer",
+          "type": "variable"
+        },
+        "6": {
+          "name": "Emballasje",
+          "type": "variable"
+        },
+        "7": {
+          "name": "Frakt",
+          "type": "variable"
+        }
+      },
+      "fixedButton": "Fast",
+      "variableButton": "Variabel",
+      "checkButton": "Sjekk svar",
+      "feedback": {
+        "wrong": "Noen kostnader er feil klassifisert. De uthevede elementene må endres.",
+        "correct": "Godt gjort! Du klassifiserte alle kostnader riktig!"
+      },
+      "answerOverlay": "Faste kostnader: Kontorhusleie, Forsikring, Lånebetalinger, Ansatteslønninger.\nVariable kostnader: Salgsprovisjoner, Råvarer, Emballasje, Frakt."
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "bmc": {
+      "customerSegmentsTitle": "Kundesegmenter",
+      "valuePropositionTitle": "Verdiforslag",
+      "channelsTitle": "Kanaler",
+      "revenueStreamsTitle": "Inntektsstrømmer",
+      "costStructureTitle": "Kostnadsstruktur"
+    },
+    "whyInvalid": "Hvorfor er dette ugyldig?"
+  },
+  "canvas": {
+    "title": "Forretningsmodell-canvas",
+    "message": "Gratulerer! Du har fullført alle fem oppgavene. Her er din ferdige forretningsmodell-canvas. Hold musen over hver blokk for å lære mer.",
+    "blocks": {
+      "customerSegments": {
+        "label": "Kundesegmenter",
+        "description": "De spesifikke gruppene av mennesker eller organisasjoner som bedriften din har som mål å betjene. Gode segmenter er spesifikke, målbare og handlingsdyktige."
+      },
+      "valueProposition": {
+        "label": "Verdiforslag",
+        "description": "Pakken med produkter og tjenester som skaper verdi for et spesifikt kundesegment. Den bør tydelig kommunisere fordelen uten bedriftsjargong."
+      },
+      "channels": {
+        "label": "Kanaler",
+        "description": "Hvordan bedriften din kommuniserer med og når kundesegmentene sine for å levere sitt verdiforslag."
+      },
+      "revenueStreams": {
+        "label": "Inntektsstrømmer",
+        "description": "Pengene en bedrift genererer fra hvert kundesegment. Modeller inkluderer abonnement, engangsbetaling, bruksbasert og freemium."
+      },
+      "costStructure": {
+        "label": "Kostnadsstruktur",
+        "description": "Alle kostnader som påløper for å drive en forretningsmodell. Kostnader kan være faste (uendret av volum) eller variable (proporsjonale med volum)."
+      },
+      "keyPartners": {
+        "label": "Nøkkelpartnere",
+        "description": "Nettverket av leverandører og partnere som får forretningsmodellen til å fungere."
+      },
+      "keyActivities": {
+        "label": "Nøkkelaktiviteter",
+        "description": "De viktigste tingene en bedrift må gjøre for at forretningsmodellen skal fungere."
+      },
+      "keyResources": {
+        "label": "Nøkkelressurser",
+        "description": "De viktigste eiendelene som kreves for at en forretningsmodell skal fungere."
+      },
+      "customerRelationships": {
+        "label": "Kunderelasjoner",
+        "description": "Typene av relasjoner en bedrift etablerer med spesifikke kundesegmenter."
+      }
+    },
+    "finishButton": "Fullfør fluktrom"
+  },
+  "hints": {
+    "explore": "Se deg rundt i rommet. Du kan samhandle med det tåkete vinduet, flippover-stativet, TV-fjernkontrollen, papirene på bordet og mappen.",
+    "window": "Prøv å klikke på det tåkete vinduet for å starte oppgaven Kundesegmenter.",
+    "flipchart": "Flippover-stativet inneholder en øvelse med verdiforslag.",
+    "tv": "Bruk TV-fjernkontrollen for å starte Kanaler-oppgaven.",
+    "papers": "Papirene på bordet inneholder regnskapsdokumenter for Inntektsstrømmer-oppgaven.",
+    "folder": "Mappen på bordet har et månedlig kostnadsark for Kostnadsstruktur-oppgaven.",
+    "whiteboard": "Alle oppgaver er fullført! Klikk på tavlen for å se din forretningsmodell-canvas.",
+    "completion": "Treningen er fullført!",
+    "default": "Se deg rundt i rommet etter interaktive objekter.",
+    "puzzle_customers": "Klassifiser hver kundeprofil som Gyldig eller Ugyldig. Gyldige segmenter er spesifikke og handlingsdyktige; ugyldige er for brede, vage eller basert på antakelser.",
+    "puzzle_channels": "Bruk pilene for å bla gjennom de tilgjengelige kanalene, og bekreft den som best passer med kundeatferden som vises.",
+    "puzzle_revenue": "Les hvert regnskapsdokument nøye, og dra det deretter til kategorien for inntektsstrøm som best beskriver hvordan betalingen fungerer.",
+    "puzzle_costs": "Tilordne hver månedlige kostnad som Fast (lik hver måned) eller Variabel (endres med produksjons- eller salgsvolum), og sjekk deretter svarene dine."
+  },
+  "systemDialogues": {
+    "windowFogged": "Vinduet er helt tåkete. Du legger merke til en nal i nærheten. Kanskje du kan bruke den til å rense glasset.",
+    "windowCleaned": "Tåken forsvinner og avslører kundeprofiler på glasset! Tid for å klassifisere dem.",
+    "flipchartIntro": "Flippover-stativet viser en uttalelse om verdiforslag, men den er full av bedriftsmessige moteord. La oss rydde opp i den.",
+    "tvIntro": "TV-skjermen lyser opp og viser kundeatferder. Du må matche hver enkelt med riktig kanal.",
+    "papersIntro": "Du ser fire regnskapsdokumenter spredt på bordet. Hver av dem representerer en annen type inntektsstrøm.",
+    "folderIntro": "Mappen inneholder en oversikt over månedlige kostnader. Du må klassifisere hver kostnad som fast eller variabel.",
+    "puzzleComplete": "Oppgave fullført! Godt gjort.",
+    "allPuzzlesComplete": "Alle fem oppgavene er ferdige! Tavlen foran i rommet glør nå. Klikk på den for å se din ferdige forretningsmodell-canvas.",
+    "canvasViewed": "Du har gjennomgått den komplette forretningsmodell-canvasen. Døren er nå åpen - du kan forlate rommet!"
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har fullført fluktrommet for forretningsplanlegging med suksess! Du forstår nå nøkkelkomponentene i en forretningsmodell-canvas: Kundesegmenter, Verdiforslag, Kanaler, Inntektsstrømmer og Kostnadsstruktur.",
+    "buttonText": "Forlat rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "puzzlesCompleted": "oppgaver",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar",
+    "backToDocuments": "Tilbake til dokumenter"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

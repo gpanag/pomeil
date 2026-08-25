@@ -1,0 +1,208 @@
+{
+  "id": "language-skills",
+  "moduleNumber": 25,
+  "title": "Language Skills",
+  "subtitle": "Module 25",
+  "coverImage": "assets/thumbs/language-skills.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 25",
+      "title": "Language Skills",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/language-skills.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The objective of this module is to enhance learners’ comprehension of language skills as vital abilities for effective communication in the workplace. Participants will investigate the four primary aspects of language proficiency: speaking, listening, reading, and writing. The module aims to bolster learners’ capacity to express ideas clearly, interpret messages accurately, and participate in real-life interactions. Furthermore, learners will explore methods for enhancing fluency through practice, formal education, and digital resources."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "In order to expand their global presence and to remain competitive and sustainable for the long term, all organizations focus on strong language skills, which can help their members be effective and improve their networking opportunities. When we refer to language skills, we focus on four basic elements: speaking, listening, reading, and writing. Speaking and listening are vital for real-time interactions, like meetings, while reading and writing are essential for processing and producing documentation, emails, and reports (Shogi Javan & Ghonsooly, 2018)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Language skills are extremely important in the workplace as the world becomes more globalized. Having the ability to communicate effectively in English and in the official language of a country is very valuable. High language skills are essential for working success. Language skills can a) enhance communication, b) improve career opportunities, and c) contribute to personal growth. Language skills are highly valuable in the workplace and add benefits to businesses by being able to communicate with stakeholders in the field and become international “players” in the labour market (Crystal, 2003)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Language skills are divided into four key components (Nation, 2009)"
+        },
+        {
+          "kind": "definition",
+          "term": "Speaking",
+          "definition": "includes the use of language to express feelings, opinions, and participate in interactions with others."
+        },
+        {
+          "kind": "definition",
+          "term": "Listening",
+          "definition": "is a receptive skill that focuses on the ability to receive and interpret correctly a message during communication."
+        },
+        {
+          "kind": "definition",
+          "term": "Reading",
+          "definition": "is the ability to understand the messages of a written text, decode it, and analyze it."
+        },
+        {
+          "kind": "definition",
+          "term": "Writing",
+          "definition": "is a productive skill that allows us to share opinions, messages through text."
+        },
+        {
+          "kind": "paragraph",
+          "text": "These components form a comprehensive framework for language proficiency"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "In order to develop your language skills, there are various ways. Some of them include formal learning like seminars, and others focus on informal ways like everyday interaction in the language you want to improve your fluency (Lightbown & Spada, 2013)."
+        },
+        {
+          "kind": "definition",
+          "term": "Formal education",
+          "definition": "Through systematic training, you can be exposed to the basic elements of a language and improve your understanding."
+        },
+        {
+          "kind": "definition",
+          "term": "Regular practice",
+          "definition": "This method includes daily practice through short exercises."
+        },
+        {
+          "kind": "definition",
+          "term": "Use of digital tools",
+          "definition": "The use of digital interactive tools can lead to a personalized experience."
+        },
+        {
+          "kind": "definition",
+          "term": "Engage in real-world communication",
+          "definition": "Interactions with others can help you improve the way you use the language in various social and professional settings."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The most common mistakes in developing your language skills are the following (Lightbown & Spada, 2013):"
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Focus on improving your skills without having a certain aim. Solution: This may seem obvious, but reason is a powerful motivator to learn, so set goals."
+        },
+        {
+          "kind": "definition",
+          "term": "Challenge",
+          "definition": "Inconsistent motivation and time constraints. Solution: Leveraging technology and participating in online communities can help you improve your skills."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Try a scenario-based role play. Write on paper common situations in the workplace, like presenting your opinion on a relevant topic. Then the participants will choose one situation and will present their opinions. All participants will try to interact and discuss further the subject."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Try to answer the following questions."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can express my thoughts clearly in the target language.",
+            "I can understand different types of texts (emails, articles).",
+            "I can write different types of texts (emails, essays, reports).",
+            "I can follow conversations or videos without subtitles.",
+            "I feel confident to communitcate in the targeted language."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Developing language skills can improve your understanding of others and your confidence. Especially in the workplace, being fluent in the language used improves your confidence and makes you more competitive in the labour market because you are capable of communicating your ideas and interacting with others. It is important to be able and adapt in an environment, and language skills are vital so that you can be open to a new culture or philosophy related to the working environment."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the conclusion of this module, learners will grasp the significance of language abilities for achieving professional success and engaging in global communication. They will show enhanced capabilities in articulating their ideas, comprehending spoken and written messages, and creating coherent documents. Participants will be more prepared to utilize their language skills in work-related scenarios, such as conversations and presentations. Additionally, learners will identify typical obstacles in language acquisition and strategies for overcoming them."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Videos: Importance of language skills",
+            "The Importance of Language in the Workplace with Joanne Lockwood"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Language Skills",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/language-skills.pdf"
+      }
+    }
+  ]
+}

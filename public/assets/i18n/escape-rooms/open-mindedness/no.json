@@ -1,0 +1,228 @@
+{
+  "intro": {
+    "title": "Åpenhet i tankegangen",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en bedrift som bringer folk sammen.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra forskjellige kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringsopplevelse for deg, da du ved å fullføre ulike utfordringer i det vil tilegne deg de 30 ferdighetene inkludert i POMEIL-kompetansekartet, som er essensielle for enhver gründer.",
+      "I dag, i kantinen, vil du møte Karina fra Produktutvikling og hennes kollega Daniel. Sammen vil de veilede deg gjennom hva det virkelig betyr å forbli åpen for nye ideer — selv når de utfordrer dine egne."
+    ],
+    "buttonText": "Start spillet"
+  },
+  "loading": "Laster...",
+  "characters": {
+    "karina": {
+      "name": "Karina",
+      "dialogues": {
+        "introduction": "Hei (username), hyggelig å møte deg! Jeg er Produktutviklingslederen, og jeg elsker virkelig å jobbe her. Jeg har akkurat begynt, men jeg føler allerede at jeg trenger en ny tilnærming. Hele livet har jeg bare stolt på meg selv, så det er ikke lett for meg å lære å lytte til andres ideer — spesielt mens jeg bor i et nytt land. Daniel hjelper meg å utvikle en salgsstrategi.",
+        "introduction_part2": "Et sted i dette rommet er det en liste med noen nyttige tips angående åpenhet. Prøv å finne den og les den nøye, og kom så tilbake til meg. Begynn med å sjekke kaffemaskin-området.",
+        "noteFound": "Bra jobbet, du fant handlingsplanen!",
+        "noteFound_part2": "Åpenhet i tankegangen betyr å være bevisst på dine egne synspunkter samtidig som du er villig til å forstå andres ideer og perspektiver. Det krever mer enn å bare lytte — det innebærer en ekte innsats for å sette pris på ulike meninger og vurdere ny informasjon med respekt. Åpenhet hjelper med å redusere misforståelser, utfordrer personlige fordommer og støtter bedre kommunikasjon med folk rundt deg.",
+        "noteFound_part3": "La oss fortsette med en quiz. Lykke til!",
+        "quizComplete": "Wow, åpenheten din er imponerende! Gå og snakk med Daniel for å fortsette opplæringen.",
+        "fallback_findNote": "Du gjør det flott! Fortsett å lete etter listen. Prøv først å sjekke kaffemaskin-området, deretter oppslagstavlen.",
+        "fallback_quiz": "Fokuser på quizen nå. Du klarer det!",
+        "fallback_findPaper": "Daniel venter på deg. Gå og snakk med ham!",
+        "fallback_default": "Fortsett, du gjør gode fremskritt!",
+        "allQuestsComplete": "Du klarte det! Opplæringen er fullført!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel",
+      "dialogues": {
+        "introduction": "Hei der! Jeg er Daniel. Du burde snakke med Karina først - hun vil starte deg på din åpenhetsopplæring.",
+        "findNote": "Karina hjelper deg med den første delen. Når du er ferdig med quizen, kom og snakk med meg!",
+        "fallback_quiz": "Fokuser først på quizen. Du gjør det flott!",
+        "quizComplete": "Jeg fant noen virkelig kule fakta om åpenhet til deg. Jeg skrev dem ned på et stykke papir, men nå husker jeg ikke hvor jeg la det. Det skjer når vi er overbelastet med arbeid. Kunne du se deg om i rommet for meg? Å—vent—jeg tror jeg kan ha glemt det ved siden av kaffekoppen jeg ikke tok med meg til møtet tidligere.",
+        "fallback_findPaper": "Jeg tror jeg la det papiret et sted her. Prøv å sjekke pulten først, deretter strategibordet.",
+        "paperFound": "Super! Jeg er glad du fant det. Var det inspirerende?",
+        "paperFound_part2": "Jeg har noen flere quizer til deg, så la oss gå videre!",
+        "fallback_puzzle": "Ta deg tid med oppgaven. Tenk det grundig gjennom!",
+        "fallback_default": "Du gjør det flott! Fortsett!",
+        "sequenceComplete": "Bra jobbet! Det var en ganske oppgave, men du håndterte det vakkert. Du blir mer åpensinnet med hvert skritt. Jeg håper du likte quizen — la oss fortsette, vi er nesten der.",
+        "allQuestsComplete": "Bra jobbet, utforsker! Du knakk oppgaven og oppgraderte. Flere kule ferdigheter venter — trykk Fortsett når du er klar."
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Åpenhet quiz - Sant eller usant",
+      "questions": [
+        {
+          "text": "Å være åpensinnet betyr at jeg må være enig i hver idé jeg hører.",
+          "answer": false,
+          "hint": "Åpenhet handler om å lære, ikke å være enig i alt."
+        },
+        {
+          "text": "Å lytte til ulike meninger kan hjelpe meg å forstå situasjoner bedre.",
+          "answer": true,
+          "hint": "Spør deg selv: gir det å høre flere synspunkter meg mer informasjon eller mindre?"
+        },
+        {
+          "text": "Hvis en idé føles ny eller ubehagelig, burde jeg avvise den umiddelbart.",
+          "answer": false,
+          "hint": "Skjer åpenhet når vi raskt lukker døren, eller når vi forblir nysgjerrige?"
+        }
+      ],
+      "trueButton": "Sant",
+      "falseButton": "Usant",
+      "answerOverlayTitle": "Riktig svar",
+      "answerOverlayTemplate": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: \"{question}\"\n\nRiktig svar: {correctAnswer}\n\nForklaring: {hint}",
+      "correctAnswerTrue": "SANT",
+      "correctAnswerFalse": "USANT",
+      "feedback": {
+        "incorrect_true": "Feil. Svaret er Sant.",
+        "incorrect_false": "Feil. Svaret er Usant."
+      }
+    },
+    "quizComplete": {
+      "title": "Riktig!",
+      "message": "Utmerket arbeid! Du har fullført det første trinnet i åpenhetsopplæringen din.",
+      "buttonText": "Fortsett"
+    },
+    "puzzleTwo": {
+      "title": "Åpenhet quiz – Flervalg",
+      "question": "Hva er den beste måten å vise åpenhet under en diskusjon?",
+      "options": {
+        "a": "Bestem din mening før du lytter",
+        "b": "Vær oppmerksom på andres synspunkter og still nysgjerrige spørsmål",
+        "c": "Ignorer ideer som føles nye eller ubehagelige",
+        "d": "Avbryt for å forklare hvorfor din idé er bedre"
+      },
+      "optionLabels": {
+        "a": "a) Bestem din mening før du lytter",
+        "b": "b) Vær oppmerksom på andres synspunkter og still nysgjerrige spørsmål",
+        "c": "c) Ignorer ideer som føles nye eller ubehagelige",
+        "d": "d) Avbryt for å forklare hvorfor din idé er bedre"
+      },
+      "hint": "Tenk på hvilket svar som viser nysgjerrighet og vilje til å forstå andre, i stedet for å stenge ned ideene deres.",
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Når noen deler en idé du er uenig i, hva er den mest åpensinnede responsen?\n\nAlternativer:\na) Forklar umiddelbart hvorfor du tror de tar feil\nb) Still spørsmål for å forstå deres perspektiv bedre\nc) Skift emne for å unngå konflikt\nd) Vær enig med dem for å holde freden\n\nRiktig svar: b) Still spørsmål for å forstå deres perspektiv bedre\n\nForklaring: Åpenhet handler om å vise nysgjerrighet og vilje til å forstå andre, i stedet for å stenge ned ideene deres. Å stille spørsmål hjelper deg å lære og viser respekt for den andre personens synspunkt."
+    },
+    "puzzleThree": {
+      "title": "Åpenhet quiz - Sekvensordning",
+      "question": "Plasser følgende handlinger i den mest åpensinnede rekkefølgen.",
+      "availableSteps": "Tilgjengelige trinn",
+      "yourSequence": "Din sekvens",
+      "placeholderText": "Klikk på trinn til venstre for å legge dem til her.",
+      "resetButton": "Tilbakestill",
+      "submitButton": "Send inn rekkefølge",
+      "options": {
+        "a": "Still et nysgjerrig spørsmål for å forstå personens perspektiv",
+        "b": "Unngå å dømme eller reagere for raskt",
+        "c": "Lytt åpent til hva personen sier",
+        "d": "Reflekter kort over det du hørte før du deler ditt eget syn"
+      },
+      "hints": {
+        "position1": "En åpensinnet person begynner alltid med å virkelig lytte — det skaper letthet for begge sider.",
+        "position2": "Etter å ha lyttet, hold sinnet åpent ved å unngå raske dommer.",
+        "position3": "Når samtalen føles rolig og åpensinnet, kan du stille nysgjerrige spørsmål for å forstå bedre.",
+        "position4": "Etter det blir det lett å dele ditt eget syn respektfullt.",
+        "incomplete": "Vennligst fullfør sekvensen."
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Hva er den riktige sekvensen for å praktisere åpenhet under en diskusjon?\n\nRiktig svar:\n1. \"Lytt åpent til hva personen sier\" (c) - En åpensinnet person begynner alltid med å virkelig lytte, som skaper letthet for begge sider og lar deg faktisk forstå deres perspektiv\n2. \"Unngå å dømme eller reagere for raskt\" (b) - Hold sinnet åpent ved å unngå raske dommer som kunne stenge ned samtalen eller skape spenning\n3. \"Still et nysgjerrig spørsmål for å forstå personens perspektiv\" (a) - Når samtalen føles rolig og åpensinnet, still nysgjerrige spørsmål for å forstå bedre uten å sette dem i forlegenhet\n4. \"Reflekter kort over det du hørte før du deler ditt eget syn\" (d) - Etter å ha lyttet og forstått, blir det lett å dele ditt eget syn respektfullt\n\nDenne sekvensen demonstrerer ekte åpenhet ved å prioritere forståelse før respondering."
+    },
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "answerOverlay": {
+    "title": "Riktig svar",
+    "continueButton": "Fortsett"
+  },
+  "hints": {
+    "default": "Jeg burde se nøye rundt meg.",
+    "findNote": {
+      "step0": "Karina sa: 'Begynn med å sjekke kaffemaskin-området.'",
+      "step1": "Ikke nær kaffemaskinen. Prøv oppslagstavlen til venstre.",
+      "step2": "Ikke på oppslagstavlen. Prøv kaffebordet."
+    },
+    "findPaper": {
+      "step0": "Karina nevnte pulten.",
+      "step1": "Ikke på pulten. Prøv strategibordet.",
+      "step2": "Se nøyere rundt strategibordet."
+    },
+    "allQuestsComplete": "Snakk med Daniel for å fullføre."
+  },
+  "items": {
+    "note": {
+      "altText": "En trykt handlingsplan med åpenhetstips.",
+      "inventoryTitle": "Vis Handlingsplan"
+    },
+    "paper": {
+      "altText": "Morsomme fakta-papir",
+      "inventoryTitle": "Vis Papir",
+      "title": "ØYEÅPNENDE FAKTA OM ÅPENHET",
+      "facts": [
+        {
+          "strong": "Hjernen din liker faktisk nye ideer.",
+          "text": "Når du hører et nytt perspektiv, frigjør hjernen din en liten dose dopamin — det samme stoffet knyttet til nysgjerrighet og læring. Åpenhet føles bokstavelig talt godt inni hodet ditt!"
+        },
+        {
+          "strong": "Å ta feil er vitenskapelig nyttig.",
+          "text": "Studier viser at når folk innser at de tok feil om noe, danner hjernen deres sterkere læringsforbindelser. Så å gjøre feil er ikke pinlig — det er en oppgradering for sinnet ditt."
+        },
+        {
+          "strong": "Å spørre \"Hvorfor?\" kan redusere stress.",
+          "text": "Nysgjerrighet gjør en stressende uenighet til en gåte. I stedet for å krangle, bytter hjernen din til \"utforskningsmodus\", som senker spenning og forbedrer problemløsning."
+        },
+        {
+          "strong": "Å prøve nye ting gjør hjernen din mer fleksibel.",
+          "text": "Selv små endringer — som å ta en ny rute hjem eller smake mat du vanligvis hopper over — hjelper hjernen din å bli mer tilpasningsdyktig. Den fleksibiliteten støtter større åpensinnet tenkning senere."
+        },
+        {
+          "strong": "Åpensinnede mennesker tar avgjørelser raskere, ikke saktere.",
+          "text": "Overraskende nok når mennesker som hører ulike synspunkter ofte løsninger raskere, fordi de ser flere alternativer, unngår sta blokker og tilpasser seg lettere"
+        }
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Vis Klistrelapp"
+    }
+  },
+  "systemDialogues": {
+    "coffeeMachineSearch": "Å nei! Noen dro uten en kaffekopp. Det ser ut som det du leter etter, ikke er her. Se på oppslagstavlen til venstre.",
+    "leftNoticeboardSearch": "Dette er bare et motiverende mottobilde. Kanskje du finner det du trenger på det andre kaffebordet. Prøv igjen!",
+    "deskSearch": "Å nei, det er ikke her. Sjekk bordet hvor Daniel og Karina snakket om strategier. Sjekk på bordet. Det kan hjelpe.",
+    "noteFoundReturn": "Bra jobbet! Gå tilbake til Produktutviklingsleder Karina.",
+    "paperFoundReturn": "Du gjør det flott! Gå tilbake til Daniel."
+  },
+  "completion": {
+    "title": "Opplæring fullført!",
+    "message": "Gratulerer! Du har vellykket demonstrert utmerket åpenhet og kommunikasjonsferdigheter.",
+    "buttonText": "Tilbake til hovedmenyen"
+  },
+  "dialogueActions": {
+    "continue": "Fortsett",
+    "startQuiz": "Start quiz",
+    "finishTraining": "Fullfør opplæring"
+  },
+  "buttons": {
+    "toggleFullscreen": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom"
+  },
+  "ui": {
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar",
+    "finishTrainingButton": "Fullfør opplæring"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

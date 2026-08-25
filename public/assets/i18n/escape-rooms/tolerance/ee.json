@@ -1,0 +1,250 @@
+{
+  "loading": "Sallivuse laadimine...",
+  "intro": {
+    "title": "Sallivus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua äri, mis viib inimesi kokku.",
+      "Sind palgati just suurde rahvusvahelisse ettevõttesse, kus töötavad koos erineva kultuuri, tausta ja erialaga inimesed. Selles ettevõttes töötamine on sulle õpikogemus, kuna erinevaid väljakutseid lahendades omandad oskusi, mis sisalduvad POMEIL kompetentsikaardis ja on igale ettevõtjale hädavajalikud.",
+      "Täna astud rahulikku jagatud kontorisse, mis on sisustatud aruteluks ja peegelduseks. Amelia ja Marco on siin valmistumas avatud kultuuripäevaks, kuid neil on lahkarvamus selle korraldamise üle. Nad võiksid sinu abi kasutada."
+    ],
+    "buttonText": "Sisene jagatud kontorisse"
+  },
+  "characters": {
+    "amelia": {
+      "name": "Amelia",
+      "dialogues": {
+        "greet": "Tere, hea sind siin näha. Mul on tõesti hea meel, et meiega liitusid — täna kuluksid värsked ideed marjaks ära. Mu kolleeg Marco ja mina ei jõudnud kokkuleppele, kuidas korraldada meie ettevõtte suurt üritust. See on meie avatud kultuuripäev, kus püüame edendada sallivust, tuvastada väljakutseid ja tugevdada võrdsust meie mitmekultuurilises töökohas.\n\nKuid meie vaated planeerimisele on väga erinevad ja võib-olla vajame su abi, et leida tee edasi.",
+        "findFolder": "Lahkarvamused mitmekultuurilises keskkonnas on igapäevatöö normaalne osa, kuid neid saab lahendada. Sellega aitavad sammud, mis on toas kuhugi peidetud. Palun hakka neid otsima.",
+        "findFolderHint": "Sa võid klõpsata erinevatel objektidel toas. Need juhatavad sind millegi sisuka juurde — info, mida vajame oma sallivuse tugevdamiseks ja lahkarvamuse lahendamiseks. Proovi otsida laualt",
+        "puzzle1Done": "Kas oli raske? Või oli lihtne? Kuid lõpuks said sa hakkama, nii et oleme valmis sellest võtmekohast edasi liikuma. Pean tunnistama, et su sallivus kasvab iga lahendatud ülesandega, nii et meil on sulle veel mõned.",
+        "findFrame": "Nüüd on aeg otsida midagi tõeliselt erilist. Sa tead reegleid ja korda. Vaatame seda tuba väga hoolikalt ja klõpsame erinevatel esemetel. Võib-olla leiame veel kord midagi väärtuslikku. Võib-olla peaksime alustama sülearvutitest",
+        "frameFound": "Need mõtted aitavad sul ehitada tugeva ja kindla sallivuse. Nüüd on meil päris palju ja oleme valmis kontrollima. Kas saame oma sallivusega edasi minna? Niisiis, valmistu järgmisteks viktoriinideks!",
+        "finalWords": "Mõistan su tundeid. Tõenäoliselt polnud see lihtne. Aga elu polegi alati lihtne. Nüüd oli sul mõned stsenaariumid, mis õnnestusid. See oli suurepärane harjutus mõelda mõnedele töö- ja eluga seotud olukordadele oma sallivuse arendamiseks. Ja saan öelda, et said suurepäraselt hakkama. Olen sinu üle uhke!\n\nNiisiis ära kunagi alla anna ja jätka edasi!",
+        "skillComplete": "Saavutasid sallivuse võime. Nüüd on see täielikult välja arenenud. Sa võid igal ajal tagasi tulla ja viktoriine proovida, kui tunned, et seda vajad.",
+        "completion": "Oled lõpetanud nimekirja viimase oskuse!\nSaad nüüd uurida oskusi, mida sa pole veel proovinud, või naasta nende juurde, mida soovid uuesti harjutada. Kaart juhatab sind, kuhu iganes otsustad järgmisena minna.\n\nVabalt jaga seda mängu ja selle linki sõprade, kolleegide või kellegagi, kes võib vajada tuge uue riigiga kohanemisel. See tööriist loodi ettevõtjate võimestamiseks õppimise ja kasvamise ajal.\n\nTegid suurepärast tööd. Edu sulle ja täname, et oled selle teekonna osa.",
+        "default": "Otsi toast edasi vihjeid."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "folderFound": "See näeb välja nagu kindel plaan. Peaksime kontrollima, kas oleme tõesti kasutanud neid samme ükshaaval või valisime tahtlikult vaid mõned neist, kuid iga neist on otsustava tähtsusega. Vaatame, mida sellega teha saame.",
+        "toleranceExplained": "Sallivus elus tähendab aktsepteerimist, et inimestel on erinevad uskumused, harjumused ja maailma nägemise viisid. See seisneb kannatlikkuses, avatuses ja austuses, isegi kui keegi mõtleb teistmoodi kui sina.",
+        "toleranceDetails": "Sallivus pole harjumus, selle saavutamine nõuab aega, haridust ja praktikat, siin on mõned levinumad viisid ja olukorrad, kus meie sallivuse võime saab paraneda:\n\n1. Sallivus elus — Igapäevaelus sallivuse arendamiseks alusta sellega, et märkad oma reaktsioone, kui keegi käitub või mõtleb teistmoodi kui sina. Harjuta enne hindamist pausi tegemist ja vali kriitika asemel uudishimu. Kuula inimeste lugusid ja püüa mõista, mis kujundas nende vaateid.\n\n2. Sallivus tööümbruses — Sallivuse loomiseks tööl keskendu avatud suhtlusele ja rahulikule, lugupidavale kuulamisele. Inimesed tulevad erinevatest kultuuridest ja neil on erinevad tööstiilid, seega küsi selgitusi selle asemel, et eeldada, ja anna kolleegidele ruumi oma ideid väljendada.\n\n3. Sallivus kodus või perekonnas — Sallivus kodus algab arusaamisest, et igal pereliikmel on omad emotsioonid, harjumused ja mõtteviisid. Harjuta lahkarvamuste ajal lahkelt rääkimist ja võta aega selgitamaks oma tundeid ilma süüdistamata. Kehtesta ühised suhtlemise reeglid — näiteks kuulata täielikult enne vastamist.",
+        "toleranceSummary": "Sallivus kasvab, kui me õpime mõistma ja austama erinevusi igas oma elu osas — kodus, tööl ja meid ümbritsevas maailmas. See areneb läbi rahuliku kuulamise, avatud suhtluse ja valmiduse oma vaatenurka vajadusel kohandada. Kui me harjutame sallivust järjepidevalt, saavad meie suhted tugevamaks, konfliktid muutuvad lihtsamini lahendatavaks ja meie keskkonnad muutuvad turvalisemaks ja toetavamaks kõigile.",
+        "letsQuiz": "See oli palju väärtuslikku infot. See oli selge ja päris arusaadav. Tead, mis on parim viis õppimiseks? Praktika! Niisiis, teeme seda!",
+        "default": "Vaatan need sallivuse sammud üle. Räägi Ameliaga, et jätkata."
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "See näib olevat soe ja lahke kontor. Näen kahte inimest — Ameliat ja Marcot. Nad näivad arutavat midagi tähtsat. Pean kõigepealt Ameliaga rääkima.",
+    "clickTable": "Siin on lihtsalt mõned aastased andmearuanded, mitte midagi, mida saaksime praegu kasutada, proovi otsida pilte raamides",
+    "clickFrames1": "Siin on mõned suurepärased faktid ja motivatsiooniideed, kuid praegu paneme need kõrvale, võib-olla on Marcol midagi, mida saame kasutada",
+    "foundFolder": "See on tegelikult suurepärane leid. Nii et see, mida me selle teadmisega teeme, on... vaatame. Pöördu palun Marco poole, ta teab, kuidas seda kasutada.",
+    "clickLaptop": "Siin on lihtsalt mõned sülearvutid ja meilid. Mitte midagi huvitavat. Liigume edasi ja vaatame suurt ekraani. Võib-olla on selles aastaaruandes midagi. Võib-olla on see jälle Marco kaust? Talle meeldib hoida asju enda lähedal.",
+    "clickPocket": "Noh, mitte sel korral. Mäletan. Olen sulle nendest piltidest raamides midagi rääkinud. Võib-olla on üks neist see asi.",
+    "foundFrame": "Vau, see oli kiire! Lähme tagasi Amelia juurde."
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Sobita sallivuse vastus olukorraga",
+      "instructions": "Vali olukord veerust A ja sobita see veerust B sobiva sallivuse vastusega.",
+      "columnA": {
+        "heading": "Olukorrad",
+        "items": {
+          "1": "Kellelgi on sinust erinev arvamus",
+          "2": "Kolleeg töötab aeglasemalt kui ootasid",
+          "3": "Pereliige läheb vestluse käigus ärritunuks",
+          "4": "Sa ei saa aru kellegi sõnadest või aktsendist"
+        }
+      },
+      "columnB": {
+        "heading": "Sallivuse vastused",
+        "items": {
+          "A": "Kuula rahulikult ja lase neil rääkimine lõpetada",
+          "B": "Ole kannatlik ja anna neile rohkem aega",
+          "C": "Palu lahkelt korrata või selgitada",
+          "D": "Püsi rahulik ja püüa mõista nende tundeid"
+        }
+      },
+      "feedback": {
+        "wrong": "Mõtle, milline tegevus näitab kannatlikkust ja mõistmist. Sallivus tähendab rahulikuks jäämist, hästi kuulamist ja püüdmist teist inimest mõista.",
+        "allCorrect": "Suurepärane! Sobitasid kõik sallivuse vastused õigesti!"
+      },
+      "answerOverlay": "Õiged vasted on:\n1. Kellelgi on erinev arvamus → Kuula rahulikult ja lase neil rääkimine lõpetada\n2. Kolleeg töötab aeglasemalt → Ole kannatlik ja anna neile rohkem aega\n3. Pereliige läheb ärritunuks → Püsi rahulik ja püüa mõista nende tundeid\n4. Sa ei saa aru kellegi sõnadest → Palu lahkelt korrata või selgitada"
+    },
+    "fillGap": {
+      "title": "Koostöö meeskonnatööga",
+      "instructions": "Vali õiged sõnad lause täiendamiseks. Loe kõigepealt kõik valikud läbi, seejärel vali sõnad, mis moodustavad hea meeskonnatöö tegevuse.",
+      "sentenceParts": [
+        "Kui meeskonnal on probleem, aitab ",
+        ", ",
+        " koos ja valida üks ",
+        " tegevus, et hakata seda lahendama."
+      ],
+      "options": [
+        "kuulata",
+        "vaielda",
+        "väike",
+        "süüdistada",
+        "planeerida"
+      ],
+      "correctAnswers": [
+        "kuulata",
+        "planeerida",
+        "väike"
+      ],
+      "feedback": {
+        "wrong": "Meeskonnatöö paraneb, kui inimesed kuulavad, planeerivad koos ja alustavad väikese sammuga — mitte siis, kui nad vaidlevad või süüdistavad.",
+        "correct": "Tubli! Meeskonnatöö seisneb kuulamises, koos planeerimises ja väikeste sammudega alustamises."
+      },
+      "answerOverlay": "Õige lause on:\n\"Kui meeskonnal on probleem, aitab kuulata, planeerida koos ja valida üks väike tegevus, et hakata seda lahendama.\"",
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli vastust"
+    },
+    "pattern": {
+      "title": "Meeskonnatöö mustri lugemine",
+      "instructions": "Loe iga lühike lugu. Seejärel vali meeskonnatöö muster, mis kõige paremini sobib toimuvaga. Otsi meeskonnatöö käitumist, mitte negatiivseid reaktsioone.",
+      "scenarioLabel": "Stsenaarium",
+      "scenarios": [
+        {
+          "text": "Meeskond on ülesande osas segaduses. Üks inimene räägib rahulikult, küsib kõigilt, mida nad arvavad, ja kirjutab üles plaani, millega kõik nõustuvad.",
+          "options": [
+            {
+              "text": "Segadus + vaikus",
+              "correct": false
+            },
+            {
+              "text": "Rahulik suhtlus + ühine planeerimine",
+              "correct": true
+            },
+            {
+              "text": "Süüdistamine + frustratsioon",
+              "correct": false
+            },
+            {
+              "text": "Üksinda töötamine + grupi ignoreerimine",
+              "correct": false
+            }
+          ],
+          "hint": "Hea meeskonnatöö algab rahulikust vestlusest ja plaanist, mille grupp koos loob."
+        },
+        {
+          "text": "Meeskonnaliige töötab aeglaselt. Selle asemel, et kurta, pakub teine meeskonnaliige abi ja küsib, kas nad sooviksid ülesannet jagada.",
+          "options": [
+            {
+              "text": "Hinnang + surve",
+              "correct": false
+            },
+            {
+              "text": "Kannatlikkus + tugi",
+              "correct": true
+            },
+            {
+              "text": "Vältimine + ignoreerimine",
+              "correct": false
+            },
+            {
+              "text": "Konkurents + kiirustamine",
+              "correct": false
+            }
+          ],
+          "hint": "Meeskonnatöö kasvab, kui inimesed toetavad üksteist, mitte ei mõista hukka."
+        },
+        {
+          "text": "Lahkarvamuse ajal lõpetavad kaks kolleegi üksteise üle rääkimise. Nad kuulavad, kordavad seda, mida nad kuulsid, ja otsivad ühte ideed, millega mõlemad saavad nõustuda.",
+          "options": [
+            {
+              "text": "Vaidlus + segamine",
+              "correct": false
+            },
+            {
+              "text": "Kuulamine + ühisosa leidmine",
+              "correct": true
+            },
+            {
+              "text": "Loobumine + lahkumine",
+              "correct": false
+            },
+            {
+              "text": "Süüdistamine + kaitsmine",
+              "correct": false
+            }
+          ],
+          "hint": "Meeskonnatöö paraneb, kui inimesed kuulavad esmalt ja leiavad midagi, milles saavad kokku leppida."
+        }
+      ],
+      "answerOverlayPrefix": "Stsenaariumile:\n\"",
+      "answerOverlayCorrectLabel": "\"\n\nÕige vastus on: ",
+      "answerOverlayExplanationLabel": "\n\nSelgitus: "
+    },
+    "answerOverlayTitle": "Siin on õige vastus",
+    "answerOverlayContinue": "Jätka"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Sallivuse sammud",
+      "inventoryTitle": "Sallivuse kaust",
+      "popupContent": [
+        "Paus — Võta enne vastamist hetk. Lühike paus aitab vältida emotsionaalseid reaktsioone ja hoiab suhtluse lugupidavana.",
+        "Kuula — Pööra täielikku tähelepanu sellele, mida teine inimene räägib. Avatud kuulamine aitab sul mõista nende kogemust enne, kui kujundad oma vastuse.",
+        "Reflekteeri — Mõtle, miks olukord tundub pingeline või ebamugav. Refleksioon aitab eraldada eeldusi tegelikest faktidest.",
+        "Küsi — Kasuta rahulikke, uudishimulikke küsimusi, et mõista teise vaatenurka. Küsimine näitab austust ja vähendab arusaamatusi.",
+        "Tunnista — Tunnista teiste tundeid, vaatenurki või kogemusi, isegi kui sa ei nõustu. Tunnistamine ehitab usaldust ja vähendab kaitsehoiakut.",
+        "Kohanda — Ole valmis kohandama oma suhtlust või ootusi, kui töötad erineva taustaga inimestega. Kohanemisvõime aitab ületada kultuurilisi või isiklikke erinevusi.",
+        "Lahenda — Otsi õiglane lahendus, mis austab kõiki asjaosalisi. Lahenduses ei ole asi võitmises — see seisneb mõistmise loomises ja koos edasi liikumises."
+      ]
+    },
+    "frame": {
+      "popupTitle": "Sallivuse mõtted",
+      "popupContent": [
+        "Sallivus kasvab, kui jääd rahulikuks ja püüad mõista inimesi, kes on sinust erinevad.",
+        "Sa ei pea olema kõigiga nõus — austuse ülesnäitamine on juba suur samm rahu suunas.",
+        "Iga kord, kui sa kuulad ilma hindamata, muudad teistega töötamise, elamise ja suhtlemise lihtsamaks.",
+        "Väikesed kannatlikkuse hetked võivad muuta konfliktid mõistmiseks ja aidata ehitada tugevamaid suhteid."
+      ],
+      "inventoryTitle": "Raam"
+    }
+  },
+  "hints": {
+    "talkToAmelia1": "Vestluse alustamiseks klõpsa Amelial.",
+    "findFolder": "Otsi Marco valget kausta. Proovi klõpsata toa esemetel.",
+    "talkToMarco": "Klõpsa Marcol, et õppida sallivuse samme.",
+    "puzzle1Matching": "Sobita iga olukord sallivuse vastusega, mis näitab kannatlikkust ja austust.",
+    "findFrame": "Otsi toast uuesti. Proovi sülearvuteid, Marco taskut või seinal olevaid pildiraame.",
+    "talkToAmelia2": "Klõpsa Amelial, et jätkata.",
+    "puzzle2FillGap": "Vali sõnad, mis kirjeldavad positiivseid meeskonnatöö tegevusi — kuulamine, planeerimine ja väikesed sammud.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Uuri tuba, klõpsates esemetel ja tegelastel."
+  },
+  "completion": {
+    "title": "Sallivus lõpetatud!",
+    "message": "Lõpetasid edukalt sallivuse põgenemistoa. Näitasid kannatlikkust, mõistmist ja võimet lugupidavalt lahkarvamustest läbi pääseda.",
+    "buttonText": "Tagasi põgenemistubadesse"
+  },
+  "ui": {
+    "continueButton": "Jätka",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "fullscreenToggle": "Lülita täisekraan",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "______",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

@@ -1,0 +1,517 @@
+/* ────────────────────────────────────────────────────────────────────
+   Individual news article — editorial layout
+   Pulls from the v2 design tokens declared in styles.scss.
+   ──────────────────────────────────────────────────────────────── */
+
+:host { display: block; }
+
+.new-article {
+  position: relative;
+}
+
+/* ─── HERO (magazine spread) ─────────────────────────────────────
+   The cover image for these items is a portrait PDF screenshot of the
+   newsletter's first page (1414×2000). Display it AS what it is — a
+   printed page — alongside the eyebrow and date, on the cream paper
+   surface that the rest of the v2 design lives on. No dark vignette,
+   no aspect-cropping. The reader can see the newsletter at a glance.
+   ────────────────────────────────────────────────────────────── */
+.new-article-hero {
+  position: relative;
+  /* Top is intentionally tight — the toolbar already has 72px of
+     space above the hero. Bottom keeps generous breathing room
+     before the body type begins. */
+  padding: clamp(18px, 2.6vw, 32px) clamp(20px, 4vw, 32px) clamp(40px, 5vw, 64px);
+  background:
+    linear-gradient(180deg, rgba(244, 235, 222, 0.55) 0%, transparent 60%),
+    var(--pomeil-cream);
+  overflow: hidden;
+
+  /* Hairline editorial accent at the very top of the hero, tying it
+     into the same "POMEIL editorial page" metaphor used on home and
+     other v2 pages. */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: clamp(20px, 4vw, 40px);
+    right: clamp(20px, 4vw, 40px);
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--pomeil-teal-deep) 30%,
+      var(--pomeil-warm) 70%,
+      transparent
+    );
+    opacity: 0.45;
+  }
+}
+
+/* Back-link, top-left, slightly above the hero grid */
+.hero-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pomeil-teal-deep) !important;
+  text-decoration: none;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 63, 71, 0.14);
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: clamp(16px, 2.4vw, 28px);
+  transition:
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    border-color var(--md-duration-short3) var(--md-easing-standard),
+    color var(--md-duration-short3) var(--md-easing-standard);
+}
+.hero-back:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: var(--pomeil-warm);
+  color: var(--pomeil-warm) !important;
+}
+.hero-back mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: inherit !important;
+}
+
+/* Two-column editorial grid: paper on the left, meta on the right.
+   On narrow viewports it stacks into a single column with the paper
+   on top — same reading order as desktop. */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  /* Top-align meta so the eyebrow + date sit level with the
+     newsletter's masthead, not pushed below the fold by the tall
+     portrait paper card. */
+  align-items: start;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+@media (max-width: 880px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 28px;
+    max-width: 460px;
+  }
+}
+
+/* Paper card — the newsletter cover rendered as a printed page.
+   Slight tilt and layered shadow simulate weight and lift it off the
+   cream surface; on hover the page straightens and rises, with a
+   zoom-in cursor signalling the click-to-enlarge interaction. */
+.hero-paper {
+  position: relative;
+  display: block;
+  background: #fffefb;
+  padding: 12px 12px 16px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 1px 2px rgba(0, 31, 36, 0.10),
+    0 10px 28px rgba(0, 31, 36, 0.16),
+    0 28px 60px rgba(0, 31, 36, 0.18);
+  cursor: zoom-in;
+  isolation: isolate;
+  transform: rotate(-0.6deg);
+  transition:
+    transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate),
+    box-shadow var(--md-duration-medium2) var(--md-easing-emphasized-decelerate);
+}
+.hero-paper::after {
+  /* Subtle paper grain — adds tactile depth without visual noise. */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 100% 80% at 50% 0%, rgba(0, 31, 36, 0.04), transparent 70%);
+  z-index: 1;
+}
+.hero-paper:hover,
+.hero-paper:focus-visible {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 2px 4px rgba(0, 31, 36, 0.12),
+    0 14px 36px rgba(0, 31, 36, 0.18),
+    0 36px 80px rgba(0, 31, 36, 0.22);
+  outline: none;
+}
+.hero-paper-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 31, 36, 0.06);
+  position: relative;
+  z-index: 0;
+}
+/* Zoom badge bottom-right of the paper card. Becomes more prominent
+   on hover so the click affordance is unmistakable. */
+.hero-paper-zoom {
+  position: absolute;
+  right: 22px;
+  bottom: 26px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--pomeil-teal-deep);
+  color: var(--pomeil-cream);
+  box-shadow: 0 4px 12px rgba(0, 31, 36, 0.30);
+  z-index: 2;
+  opacity: 0.90;
+  transform: scale(0.92);
+  transition:
+    opacity var(--md-duration-short3) var(--md-easing-standard),
+    transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate),
+    background-color var(--md-duration-short3) var(--md-easing-standard);
+}
+.hero-paper-zoom mat-icon {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: inherit !important;
+  line-height: 1;
+}
+.hero-paper:hover .hero-paper-zoom,
+.hero-paper:focus-visible .hero-paper-zoom {
+  opacity: 1;
+  transform: scale(1);
+  background: var(--pomeil-warm);
+}
+
+/* Right column: eyebrow, italic date. Bottom-aligned with the paper
+   card so the type sits at the same baseline as the newsletter foot
+   on desktop — a small editorial nicety. */
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.4vw, 14px);
+  padding-bottom: clamp(8px, 2vw, 18px);
+}
+.hero-eyebrow {
+  margin: 0 !important;
+}
+.hero-date {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  color: var(--pomeil-teal-deep);
+  font-variation-settings: "opsz" 60, "SOFT" 60;
+  letter-spacing: -0.005em;
+}
+
+/* QR "second page" appended below the newsletter cover for English
+   newsletters. Centered, max-width matched to the paper card. */
+.new-article-qr {
+  display: flex;
+  justify-content: center;
+  padding: clamp(16px, 3vw, 32px) clamp(20px, 4vw, 32px) clamp(8px, 2vw, 16px);
+  background: var(--pomeil-cream);
+
+  .qr-paper {
+    transform: rotate(0.4deg);
+    max-width: 420px;
+    width: 100%;
+  }
+  .qr-paper:hover,
+  .qr-paper:focus-visible {
+    transform: rotate(0deg) translateY(-4px);
+  }
+}
+
+/* ─── BODY ─────────────────────────────────────────────────────── */
+.new-article-body {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 32px) clamp(56px, 8vw, 96px) !important;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--pomeil-ink);
+}
+
+.new-article-title {
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: clamp(2.25rem, 5vw, 3.75rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.02em !important;
+  font-variation-settings: "opsz" 144, "SOFT" 60 !important;
+  color: var(--pomeil-teal-deep) !important;
+  margin: 0 0 1.5em !important;
+  text-align: left;
+}
+
+/* Prose styling — same drop-cap treatment as the home about section.
+   Every font-family / font-style / font-weight here is !important so
+   it overrides the legacy `p / span { font-family: "Fira Sans" !important; }`
+   global rule that was added pre-v2. */
+.new-article-prose {
+  > p:empty { display: none; }
+  > p {
+    margin: 0 0 1.1em;
+    font-family: var(--font-body) !important;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--pomeil-ink);
+
+    /* Inner span (Strapi wraps every text fragment in a span) needs the
+       same family override to win against the legacy global rule. */
+    > span {
+      font-family: var(--font-body) !important;
+    }
+  }
+
+  /* All-bold paragraphs are treated as headings (decision made in
+     new.component.ts isHeading()): italic Fraunces, larger, teal-deep.
+     This catches both genuine headings and editor mishaps that split a
+     heading across two paragraph blocks. */
+  > p.is-heading {
+    font-family: var(--font-display) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: clamp(1.45rem, 2.6vw, 1.95rem) !important;
+    line-height: 1.25 !important;
+    color: var(--pomeil-teal-deep) !important;
+    font-variation-settings: "opsz" 80, "SOFT" 60 !important;
+    letter-spacing: -0.005em !important;
+    text-transform: none !important;
+    margin: 1.6em 0 0.8em !important;
+
+    /* The first heading on the page is the article lede — no top
+       margin needed since the h1 sits above it. */
+    &:first-child { margin-top: 0 !important; }
+
+    > span,
+    > span.text-bold {
+      font-family: var(--font-display) !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+      color: var(--pomeil-teal-deep) !important;
+      letter-spacing: -0.005em !important;
+      text-transform: none !important;
+    }
+  }
+
+  /* Drop-cap is now class-driven (.is-body-lede) instead of position-
+     driven, so editor-added paragraph splits inside a heading — like
+     the Strapi data on newsletter#5 that broke the Greek heading
+     into two paragraph blocks — no longer drag the drop-cap onto a
+     heading word. */
+  > p.is-body-lede::first-letter {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4.5em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.06em 0.08em 0 -0.04em;
+    color: var(--pomeil-warm);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    text-shadow: 0 2px 6px rgba(179, 89, 58, 0.15);
+  }
+
+  .text-bold {
+    font-weight: 600 !important;
+    color: var(--pomeil-teal-deep) !important;
+  }
+  .text-italic { font-style: italic !important; }
+
+  .is-heading,
+  > p.is-heading {
+    font-family: var(--font-display) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: 1.45rem !important;
+    color: var(--pomeil-teal-deep) !important;
+    margin: 1.8em 0 0.6em !important;
+    font-variation-settings: "opsz" 60, "SOFT" 50 !important;
+    letter-spacing: -0.005em !important;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    padding: 2px 0 6px 20px;
+    &::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      top: 0.05em;
+      color: var(--pomeil-warm);
+      font-size: 0.85em;
+      opacity: 0.7;
+    }
+  }
+}
+
+/* ─── GALLERY ─────────────────────────────────────────────────── */
+.new-article-gallery {
+  margin: 2.5rem 0;
+
+  .md-eyebrow {
+    margin-bottom: 1rem;
+  }
+
+  ::ng-deep .mat-grid-tile-content {
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--md-shape-md);
+  }
+}
+.image-grid-tile {
+  border-radius: var(--md-shape-md);
+  overflow: hidden;
+  isolation: isolate;
+}
+.more-image-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--pomeil-cream-deep);
+  border: 1px solid rgba(0, 63, 71, 0.10);
+  border-radius: var(--md-shape-md);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  isolation: isolate;
+  transition: transform var(--md-duration-short3) var(--md-easing-emphasized-decelerate);
+}
+.more-image-button:hover { transform: translateY(-2px); }
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1s var(--md-easing-emphasized);
+}
+.more-image-button:hover .main-image { transform: scale(1.05); }
+.zoom-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 31, 36, 0.55);
+  color: var(--pomeil-cream);
+  opacity: 0;
+  transition: opacity var(--md-duration-short3) var(--md-easing-standard);
+}
+.zoom-overlay mat-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  color: var(--pomeil-cream) !important;
+}
+.more-image-button:hover .zoom-overlay { opacity: 1; }
+
+/* ─── DOWNLOAD ─────────────────────────────────────────────────── */
+.new-article-download {
+  margin: 2rem 0;
+  text-align: center;
+
+  a.new-article-download-btn.mat-mdc-raised-button {
+    border-radius: 999px !important;
+    height: 52px !important;
+    padding: 0 28px !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    background-color: var(--pomeil-teal-deep) !important;
+    color: var(--pomeil-cream) !important;
+    --mdc-protected-button-container-color: var(--pomeil-teal-deep);
+    --mdc-protected-button-label-text-color: var(--pomeil-cream);
+    box-shadow: 0 8px 22px -8px rgba(0, 63, 71, 0.45) !important;
+
+    /* Cream colour for the label + icon. Critically: do NOT touch the
+       icon's font-family — `<mat-icon>download</mat-icon>` is a ligature
+       in the Material Symbols / Material Icons font, and forcing Inter
+       on it makes the literal text "download" render instead of the
+       glyph. */
+    .mdc-button__label,
+    span:not(.mat-icon) {
+      color: var(--pomeil-cream) !important;
+      font-family: var(--font-body) !important;
+    }
+    .mat-icon {
+      color: var(--pomeil-cream) !important;
+      /* font-family stays whatever the global Material rule sets it
+         to (Material Symbols Outlined / Material Icons). */
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -8px rgba(0, 63, 71, 0.55) !important;
+    }
+  }
+}
+
+/* ─── BACK LINK AT BOTTOM ──────────────────────────────────────── */
+.new-article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pomeil-warm) !important;
+  text-decoration: none;
+  transition: color var(--md-duration-short3) var(--md-easing-standard);
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: inherit !important;
+    transition: transform var(--md-duration-short3) var(--md-easing-emphasized-decelerate);
+  }
+  &:hover {
+    color: var(--state-attention-deep) !important;
+  }
+  &:hover mat-icon { transform: translateX(-4px); }
+}
+
+/* ─── ORNAMENT RULE ──────────────────────────────────────────── */
+.ornament-rule {
+  border: none;
+  height: 28px;
+  margin: 2.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  position: relative;
+}
+.ornament-rule::before {
+  content: "✦ · · · ✦ · · · ✦";
+  color: var(--pomeil-warm);
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
+  opacity: 0.55;
+}

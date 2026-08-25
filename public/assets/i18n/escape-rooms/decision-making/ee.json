@@ -1,0 +1,327 @@
+{
+  "loading": "Laadin Otsuste tegemist...",
+  "intro": {
+    "title": "Otsuste tegemine",
+    "paragraphs": [
+      "Sa kavatsed astuda kaasaegse büroohoone lifti.",
+      "See, mis tundub rutiinse sõiduga, on muutumas otsuste tegemise õppetunniks.",
+      "Pööra tähelepanu ümbrusele — sinu valikud määravad, kuidas see olukord laheneb."
+    ],
+    "buttonText": "Lähene liftile"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "dm": {
+      "identifyAlternativesTitle": "Tuvasta alternatiivid",
+      "identifyAlternativesDesc": "Klõpsa igal kastil, et avalikustada alternatiivid liftist põgenemiseks.",
+      "identifyOutcomesTitle": "Tuvasta tulemused",
+      "identifyOutcomesDesc": "Klõpsa igal kastil, et avalikustada võimalikud tulemused iga alternatiivi jaoks.",
+      "evaluateAlternativesTitle": "Hinda alternatiive",
+      "evaluateAlternativesDesc": "Klõpsa igal kriteeriumil, et näha, kuidas alternatiivid sobivad.",
+      "selectBestTitle": "Vali parim alternatiiv",
+      "selectBestDesc": "Vali alternatiiv, mida pead parimaks. Kõik valikud viivad põgenemiseni!"
+    }
+  },
+  "items": {
+    "floorIndicator": {
+      "dialogue": "Kinni 4. ja 5. korruse vahel? See on üsna imelik…"
+    },
+    "roofLamp": {
+      "dialogue": "Tuled kustusid hetkeks. Võib-olla oli elektrikatkestus?"
+    },
+    "buttonPanel": {
+      "dialogue": "Kuhu ma jälle läksin?"
+    },
+    "wirePanel": {
+      "dialogue": "See ilmselt katab elektrijuhtmeid."
+    },
+    "inspectionPlaque": {
+      "dialogue": "Tundub, et lift jättis kontrolli vahele 2022. aastal. Ja 2023. Ja 2024. Ja…",
+      "title": "LIFTI OHUTUSE SERTIFIKAAT",
+      "lines": [
+        "Kontrollitud: 14.06.2021",
+        "Järgmine kontroll: 14.06.2022",
+        "Sertifikaadi nr: EI-21-0487",
+        "Lifti ID: Lift 3"
+      ]
+    },
+    "safetyPoster": {
+      "title": "LIFTI HÄDAOLUKORRA KORRAL",
+      "lines": [
+        "Jää rahulikuks — Sees on palju õhku",
+        "Helista appi — Kasuta häirenuppu või telefoni",
+        "Ära püüa välja ronida ega uksi avada",
+        "Ära hüppa",
+        "Ära riku liftisüsteemidega",
+        "Ära ole kangelane — Oota päästet ja järgi hädaabipersonali juhiseid"
+      ]
+    },
+    "incidentPoster": {
+      "dialogue1": "Pole enam päris tõsi…",
+      "dialogue2": "Nii.",
+      "title": "Päevad ilma intsidentideta"
+    },
+    "roofHatch": {
+      "dialogue": "Kas see on väljapääs?"
+    }
+  },
+  "systemDialogues": {
+    "elevatorStalled": "Ohh… Lift jäi seisma. Just minu õnn.",
+    "whatNow": "Noh… mis nüüd? Kuidas ma siit välja saan?",
+    "allInfoGathered": "Mis on minu parim alternatiiv siit välja saamiseks?",
+    "posterFalls": "Reklaamplakat kukub teadetetahvlilt, paljastades selle taga olevat teksti…",
+    "alternativesRevealed": "Need on kõik mu alternatiivid.",
+    "outcomesRevealed": "Need on kõik võimalikud tulemused…",
+    "evaluationComplete": "Vist on minu otsustada. Mis on kõige tähtsam - risk, ajakulu, ressursikasutus või kontroll?",
+    "chooseAlternative": "Nüüd pean otsustama. Milline alternatiiv on parim?"
+  },
+  "alternatives": {
+    "pressAlarm": {
+      "label": "Vajuta häirenuppu",
+      "outcomes": [
+        "Avastamine ja pääsemine",
+        "Midagi ei juhtu"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Madala riskiga valik. Täpselt see, mida hädaolukorra plakat soovitas.",
+        "timeCost": "Vastus võib olla kiire või aeglane, sõltuvalt sellest, kuidas häiret jälgitakse.",
+        "resourceUse": "Häire vajutamine kulutab vähe või üldse mitte energiat.",
+        "control": "Sa kontrollid häirenupu vajutamist. Kuid sul pole kontrolli selle üle, kas, millal ja kuidas keegi vastab."
+      },
+      "actualOutcome": {
+        "summary": "Kasutasid häirekella, et appi kutsuda.\n\nÕnneks vastas teenindav personal kohe ja päästeteenistus saadeti välja.\n\nSind päästeti kiiresti!",
+        "sound": "alarm-ring"
+      }
+    },
+    "callOut": {
+      "label": "Hüüa lähedalolijaid",
+      "outcomes": [
+        "Avastamine ja pääsemine",
+        "Midagi ei juhtu"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "neutral",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Madala riskiga valik. Appi hüüdmine ei mõjuta kuidagi lifti.",
+        "timeCost": "Keegi võib sind kohe kuulda. Või satud pikalt karjuma.",
+        "resourceUse": "Veidi aega hüüdmine kulutab vähe energiat. Tundide kaupa hüüdmine võib olla väga kurnav ja energiat ammendada.",
+        "control": "See, kas keegi mööda läheb ja sind kuuleb, on täielikult sinu kontrolli alt väljas."
+      },
+      "actualOutcome": {
+        "summary": "Pidid mõnda aega karjuma. Said janu, hääle kähedaks ja väsisid.\n\nÕnneks kuulis keegi sind lõpuks ja kutsus päästeteenistuse.\n\nSind päästeti pärast 2 tundi.",
+        "sound": "shout-help"
+      }
+    },
+    "pryDoors": {
+      "label": "Suru uksed lahti",
+      "outcomes": [
+        "Iseseisev evakuatsioon",
+        "Lifti kahjustus",
+        "Inimese vigastus"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Lifti juhised hoiatasid selle eest. Sina või lift võib viga saada.",
+        "timeCost": "Kui õnnestub, pääsed kiiresti. Kui ebaõnnestud, raiskad aega. Samuti võib vigastus muuta päästmise keerulisemaks.",
+        "resourceUse": "Uste sundlahtitõmbamine nõuab palju jõudu ja pingutust. Võid oma energia ammendada.",
+        "control": "Võtad olukorra kontrolli alla. Edu sõltub sinu jõust ja pingutustest. Kuid sa ei kontrolli, kuidas lift ja uksed reageerivad."
+      },
+      "actualOutcome": {
+        "summary": "Uste lahtitõmbamine nõudis palju pingutust ja jõudu ning sa pingutasid mõnda aega. Uksed avanesid lõpuks pooleldi, paljastades nende taga seina. Kurnatuna heitsid sa lifti põrandale puhkama.\n\nPärast seda, mis tundus pool igavikku, kõndis keegi mööda ja leidis sind.\nEnne sinu vabastamist pidi päästeteenistus uksed lähtestama, kuna need olid sinu päästekatse järel paigast ära.\n\nSind päästeti pärast 5 tundi.",
+        "sound": "creaking"
+      }
+    },
+    "climbHatch": {
+      "label": "Roni katuseluugist välja",
+      "outcomes": [
+        "Iseseisev evakuatsioon",
+        "Lifti kahjustus",
+        "Inimese vigastus"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Lifti juhised hoiatasid selle eest. See võib põhjustada vigastusi sulle endale või liftile.",
+        "timeCost": "Kui see töötab, pääsed kiiresti. Kui see ei tööta või tekib vigastus, võib päästmine muutuda keerulisemaks ja aeganõudvamaks.",
+        "resourceUse": "Ronimine nõuab jõudu, tasakaalu ja keskendumist. See võib olla väga energiat kulutav.",
+        "control": "Edukas tulemus sõltub sinu jõust ja võimetest. Kuid tulemus ei ole täielikult sinu kontrolli all. Sa ei tea, kas üldse on võimalik välja ronida."
+      },
+      "actualOutcome": {
+        "summary": "Lifti katusele ronimine osutus raskemaks, kui ootasid. Sa püüdsid hüpates ja käsi sirutades käepidet kätte saada. Kuid see oli liiga kõrgel. Pettunud, kukkusid sa põrandale.\n\nPärast mõnda aega tujude all kannatamist leidis keegi sind ja teavitas päästeteenistust olukorrast.\n\nSind päästeti pärast 3 tundi.",
+        "sound": "action-hero"
+      }
+    },
+    "clickFloorButton": {
+      "label": "Klõpsa mõnel korruse nupul",
+      "outcomes": [
+        "Lift hakkab uuesti tööle",
+        "Midagi ei juhtu"
+      ],
+      "risk": "neutral",
+      "timeCost": "match",
+      "resourceUse": "neutral",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Korruse nupu vajutamine on madala riskiga. Sa ei riski viga saada ega lifti kahjustada.",
+        "timeCost": "Kui nupud töötavad, pääsed kohe. Kui need ei tööta, ei ole sa põgenemisele lähemal.",
+        "resourceUse": "Nuppude vajutamine kasutab minimaalselt pingutust ja energiat.",
+        "control": "Algselt oled sina kontrollis. Kuid sul pole kontrolli liftisüsteemi reaktsiooni üle."
+      },
+      "actualOutcome": {
+        "summary": "Midagi ei juhtunud, kui korruse nuppu vajutasid. Ärritudes vajutasid sa kõiki korruse nuppe, et näha, kas midagi juhtub. Endiselt ei juhtunud midagi.\n\nÕnneks kõndis keegi mööda ja avastas sind. Päästeteenistust teavitati ja see saabus kiiresti. Sind päästes selgitasid nad, et ohutuse kaalutlustel keelatakse korruse nupud pärast elektrikatkestust. Selgitus oli mõistlik, kuid siiski jäid sa ärritunuks.\n\nSind vabastati pärast 2 tundi.",
+        "sound": "button-click"
+      }
+    },
+    "jumpActivate": {
+      "label": "Hüppa, et lifti aktiveerida",
+      "outcomes": [
+        "Lift hakkab uuesti tööle",
+        "Lifti kahjustus",
+        "Inimese vigastus"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Lifti juhised hoiatasid spetsiaalselt hüppamise eest. Sa võid endale või liftile viga teha.",
+        "timeCost": "Lift võib kohe tööle hakata. Teine võimalus on, et midagi ei juhtu. See võib põhjustada ka vigastusi, lükates sinu päästmist edasi.",
+        "resourceUse": "Hüppamine nõuab füüsilist pingutust ja tasakaalu. See võib palju sinu energiat ära kasutada.",
+        "control": "Sa kontrollid täielikult hüpet ennast. Sul on vähe või üldse mitte kontrolli, kuidas lift reageerib."
+      },
+      "actualOutcome": {
+        "summary": "Lifti hüppamine põhjustas hädapidurite aktiveerumise. See tegi valju müra ja meelitas väikese uudishimulike inimeste rahvahulga. Päästeteenistusele tehti mitu kõnet.\n\nKuigi päästeteenistus saabus kiiresti, ei olnud päästmine sama kiire. Lifti spetsialist tuli kutsuda pidureid lähtestama. Kahjuks oli linna ainus liftispetsialist liftikonverentsil. Tema saabumist oodates kerisid sa tekki ja sõid pannkooke, mida päästeteenistus suutis läbi liftiuste pigistada.\n\nSa magasid liftis ja sind päästeti pärast 10 tundi.",
+        "sound": "creaking"
+      }
+    },
+    "fixWiring": {
+      "label": "Paranda elektrijuhtmed",
+      "outcomes": [
+        "Lift hakkab uuesti tööle",
+        "Lifti kahjustus",
+        "Inimese vigastus"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Võib-olla kõige riskantsem valik. Elektrisüsteemidega rikkumine on ohtlik.",
+        "timeCost": "Sõltuvalt sinu teadmistest elektrisüsteemidest võib põgenemine olla üsna kiire. Vead võivad põhjustada viivitusi või uusi probleeme, raskendades sinu päästmist.",
+        "resourceUse": "Elektrisüsteemidega töötamine nõuab palju keskendumist ja pingutust, kasutades üsna palju sinu energiat.",
+        "control": "Võtad probleemi lahendamise kontrolli alla. See, kas sul õnnestub, sõltub väga oluliselt sinu oskusest ja õnnest."
+      },
+      "actualOutcome": {
+        "summary": "Kahjuks ei toitnud juhtmed lifti, vaid ainult tulesid. Selle asemel, et lifti aktiveerida, kustusid tuled uuesti.\n\nProovisid pimedas erinevaid asju, et päästmise ootamise aega täita. ABC-mäng; iga tähestiku tähega algavate asjade leidmine, osutus pimedas eriti raskeks.\n\nPärast seda, mis tundus väga pikk aeg, leidis keegi sind ja kutsus päästeteenistuse. Nad vabastasid sind, samal ajal sind elektrijuhtmetega rikkumise pärast manitsedes.\n\nSind päästeti pärast 5 tundi.",
+        "sound": "voltage-shock"
+      }
+    },
+    "waitRescue": {
+      "label": "Oota päästmist",
+      "outcomes": [
+        "Avastamine ja pääsemine",
+        "Midagi ei juhtu"
+      ],
+      "risk": "match",
+      "timeCost": "mismatch",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Hädaolukorra plakat soovitas sul rahulik püsida. Maha istumisel ja ootamisel pole vigastuste riski.",
+        "timeCost": "Kui sul on õnne, leitakse sind pärast lühikest ootamist. Kui sul pole õnne, satud pikalt ootama.",
+        "resourceUse": "Ootamine nõuab väga vähe pingutust. Säilitad oma energiat.",
+        "control": "Sul ei ole kontrolli tulemuse üle. Sõltud täielikult sellest, et keegi sind avastab."
+      },
+      "actualOutcome": {
+        "summary": "Oodata oli väga, väga, väga igav.\n\nÜks pluss oli pooleldi sulanud šokolaaditahvel, mille leidsid oma tagataskust.\n\nMiinus oli liftimuusika. See muutus mõne aja pärast üsna ärritavaks. Tegelikult oli peaaegu võimatu millelegi muule peale selle rumala, korduva muusika keskenduda.\n\nSa olid väga tänulik, kui keegi sind lõpuks leidis ja päästeteenistuse kutsus.\n\nSind päästeti pärast 5 tundi.",
+        "sound": "elevator-music"
+      }
+    }
+  },
+  "criteria": {
+    "risk": "Risk",
+    "timeCost": "Ajakulu",
+    "resourceUse": "Ressursikasutus",
+    "control": "Kontroll"
+  },
+  "flowchart": {
+    "startNode": "Sa oled liftis kinni"
+  },
+  "reviewOutcome": {
+    "title": "Tulemuse ülevaatamine",
+    "reflectionText": "Võta hetk mõtisklemiseks:",
+    "questions": [
+      "Kas olid tulemusega rahul?",
+      "Mida õppisid?",
+      "Kas teeksid tulevikus midagi teisiti?"
+    ],
+    "finishButton": "Lõpeta põgenemistuba"
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "subtitle": "Sa lõpetasid Otsuste tegemise toa!",
+    "sections": [
+      {
+        "heading": "Otsuste tegemise protsess",
+        "text": "Pärast lifti seismajäämist läbisid sa otsuste tegemise protsessi etapid.\n\nEsmalt tuvastasid sa otsuse, mida pidid tegema - kuidas seisma jäänud liftist välja saada. Sa kogusid teavet ja tuvastasid erinevad alternatiivid ja võimalikud tulemused. Sa hindasid oma valikuid, võttes arvesse selliseid kriteeriume nagu risk ja ajakulu. Sa otsustasid, mis oli parim valik ja tegutsesid. Lõpuks vaatasid tulemuse üle."
+      },
+      {
+        "heading": "Otsuste tegemise oskused",
+        "text": "Otsuste tegemine on oskus, mida saab treenida!\n\nVõid alustada väiksemate, igapäevaste otsuste teadlikust tegemisest, näiteks „Kui palju aega ma peaksin sellele ülesandele eraldama?“.\n\nSaad kasutada otsuste tegemise protsessi, kui seisad silmitsi keerulisemate otsustega. See aitab sul kaardistada alternatiive ja võimalikke tulemusi ning kaaluda neid valitud kriteeriumite põhjal.\n\nPea meeles – otsused ei vii alati selleni, mida loodame. Isegi siis võivad need osutuda väärtuslikeks kogemusteks, millest saame õppida."
+      }
+    ],
+    "wellDone": "Tubli!",
+    "buttonText": "Välju toast"
+  },
+  "hints": {
+    "outsideElevator": "Klõpsa lifti kutsumisnupul, et lifti kutsuda.",
+    "enterElevator": "Klõpsa lifti sees, et siseneda.",
+    "pressFloor": "Vajuta nupupaneelil korruse nupule.",
+    "gatherInfo": "Klõpsa liftis olevatel objektidel, et teavet koguda.",
+    "clickNoticeBoard": "Klõpsa seinal oleval teadetetahvlil, et jätkata.",
+    "identifyAlternatives": "Klõpsa teadetetahvli küsimärkidel, et alternatiive avalikustada.",
+    "identifyOutcomes": "Klõpsa küsimärkidel, et võimalikke tulemusi avalikustada.",
+    "evaluateAlternatives": "Klõpsa igal kriteeriumil, et näha, kuidas alternatiivid sobivad.",
+    "selectAlternative": "Vali alternatiiv, mida pead parimaks, sellel klõpsates.",
+    "reviewOutcome": "Mõtiskle oma otsuse üle ja klõpsa Lõpeta.",
+    "default": "Vaata liftis ringi vihjete järele."
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

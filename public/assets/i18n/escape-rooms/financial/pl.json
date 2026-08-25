@@ -1,0 +1,267 @@
+{
+  "loading": "Ładowanie...",
+  "intro": {
+    "title": "Edukacja finansowa i zarządzanie",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie wszedłeś/aś do biura księgowej dużej międzynarodowej firmy. Tutaj nauczysz się o Edukacji finansowej i zarządzaniu — jednej z najważniejszych umiejętności dla każdego przedsiębiorcy.",
+      "Pani Amina Darwish, Główna Księgowa, poprowadzi cię przez różne wyzwania, by pomóc ci opanować budżetowanie, terminy finansowe i odpowiedzialne zarządzanie pieniędzmi."
+    ],
+    "buttonText": "Rozpocznij grę"
+  },
+  "buttons": {
+    "toggleFullscreen": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continue": "Dalej",
+    "startPuzzle": "Rozpocznij zagadkę",
+    "finishTraining": "Zakończ szkolenie",
+    "reset": "Zresetuj",
+    "submit": "Wyślij",
+    "backToMainMenu": "Powrót do menu głównego"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina Darwish (Główna Księgowa)",
+      "dialogues": {
+        "introduction": "Witaj, (username)! Dziś popracujemy nad Edukacją finansową i zarządzaniem — jedną z najważniejszych umiejętności dla każdego przedsiębiorcy.",
+        "introduction_part2": "Na początek ukryłam małą Kartę Planowania Budżetu gdzieś w tym biurze. Wyjaśnia ona podstawowe zasady kontroli finansowej.",
+        "introduction_part3": "Zacznij od sprawdzenia biurka.",
+        "findCard": "Na początek ukryłam małą Kartę Planowania Budżetu gdzieś w tym biurze. Wyjaśnia ona podstawowe zasady kontroli finansowej. Zacznij od sprawdzenia biurka.",
+        "cardFound": "Brawo. Zanim przejdziemy dalej, zapamiętaj to.",
+        "cardFound_part2": "Edukacja finansowa to nie tylko liczby. Chodzi o podejmowanie decyzji na podstawie faktów, a nie założeń.",
+        "cardFound_part3": "Wiedza, dokąd idą twoje pieniądze, daje ci moc, by stawiać realistyczne cele, kontrolować wydatki i mądrze inwestować.",
+        "cardFound_part4": "Wprowadźmy to w życie.",
+        "puzzleOneComplete": "Świetnie sobie radzisz. Zostawiłam gdzieś krótką refleksję o odpowiedzialności finansowej... może na tablicy.",
+        "findReflection": "Pasek z refleksją powinien być gdzieś w tym pokoju. Spróbuj poszukać przy szafie z dokumentami.",
+        "reflectionFound": "Wspaniale! Teraz przejdźmy do kolejnej zagadki.",
+        "duringPuzzle": "Najpierw dokończ obecną zagadkę.",
+        "allQuestsComplete": "Doskonała robota, (username). Wykazałeś/aś się rozumieniem finansów, świadomością budżetowania i odpowiedzialnym podejmowaniem decyzji.",
+        "allQuestsComplete_part2": "Ukończyłeś/aś umiejętność Edukacja finansowa i zarządzanie!",
+        "allQuestsComplete_part3": "Stajesz się bardziej świadomym i odpowiedzialnym finansowo przedsiębiorcą.",
+        "allQuestsComplete_part4": "Gotowy/a przejść do następnej umiejętności?",
+        "default": "Witaj, (username)! Kliknij mnie, gdy będziesz gotowy/a, by zacząć.",
+        "doorOpen": "Świetna robota! Szkolenie zakończone!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel Petrov (Młodszy asystent)",
+      "dialogues": {
+        "default": "Chwilę, sortuję paragony... tyle paragonów!",
+        "allQuestsComplete": "Świetna robota z ukończeniem szkolenia!"
+      }
+    }
+  },
+  "exploration": {
+    "findCard": {
+      "deskLaptopCalculator": "Przydatne narzędzia... ale nie karta. Może spróbuj szafy z dokumentami.",
+      "filingCabinet": "Tylko teczki na razie. Spróbuj poszukać w szafce z szufladami.",
+      "drawer": "Tylko ołówki i zszywki... może sprawdź pod biurkiem."
+    },
+    "findReflection": {
+      "whiteboard": "Tylko wykresy i notatki tutaj. Spróbuj sejfu na ścianie.",
+      "safeBox": "Jest zamknięty... może zajrzyj jeszcze raz przy szafie z dokumentami."
+    }
+  },
+  "items": {
+    "card": {
+      "title": "PODSTAWY PLANOWANIA BUDŻETU",
+      "items": [
+        {
+          "label": "Śledź swoje dochody",
+          "description": "Zawsze wiedz, ile pieniędzy wpływa."
+        },
+        {
+          "label": "Zapisuj swoje wydatki",
+          "description": "Każdy koszt ma znaczenie, duży czy mały."
+        },
+        {
+          "label": "Planuj z wyprzedzeniem",
+          "description": "Przewiduj miesięczne wydatki, podatki i oszczędności."
+        },
+        {
+          "label": "Dostosowuj i ulepszaj",
+          "description": "Często przeglądaj swój budżet i dostosowuj się do zmian."
+        }
+      ],
+      "foundDialogue": "Świetna robota! Przynieś kartę z powrotem do pani Aminy.",
+      "inventoryTitle": "Zobacz Kartę Planowania Budżetu"
+    },
+    "reflection": {
+      "title": "REFLEKSJE FINANSOWE",
+      "quotes": [
+        "Dyscyplina finansowa buduje długoterminową stabilność.",
+        "Nie możesz kontrolować tego, czego nie mierzysz.",
+        "Małe oszczędności w czasie tworzą znaczące bezpieczeństwo."
+      ],
+      "foundDialogue": "Świetne znalezisko! Wróć do pani Aminy.",
+      "inventoryTitle": "Zobacz Pasek z Refleksją"
+    },
+    "budgetCard": {
+      "inventoryTitle": "Zobacz Kartę Planowania Budżetu"
+    },
+    "reflectionStrip": {
+      "inventoryTitle": "Zobacz Pasek z Refleksją"
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dopasuj termin finansowy do jego znaczenia",
+      "termsLabel": "Terminy",
+      "meaningsLabel": "Znaczenia",
+      "progressText": "Dopasowane: {{count}} / 4",
+      "terms": [
+        {
+          "id": "1",
+          "text": "Faktura"
+        },
+        {
+          "id": "2",
+          "text": "Przepływ gotówki"
+        },
+        {
+          "id": "3",
+          "text": "Stały wydatek"
+        },
+        {
+          "id": "4",
+          "text": "Marża zysku"
+        }
+      ],
+      "meanings": [
+        {
+          "id": "a",
+          "text": "Pieniądze przepływające do i z firmy"
+        },
+        {
+          "id": "b",
+          "text": "Dokument żądający płatności"
+        },
+        {
+          "id": "c",
+          "text": "Procent przychodu, który staje się zyskiem"
+        },
+        {
+          "id": "d",
+          "text": "Powtarzający się koszt, który się nie zmienia"
+        }
+      ],
+      "feedback": "Pomyśl, co przepływa, co pozostaje stałe i co mierzy zysk.",
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: Dopasuj terminy finansowe do ich definicji.\n\nPoprawne dopasowania:\n• „Faktura” → „Dokument żądający płatności” - Faktura to formalny zapis wysyłany w celu zażądania płatności za towary lub usługi\n• „Przepływ gotówki” → „Pieniądze przepływające do i z firmy” - Przepływ gotówki śledzi rzeczywisty ruch funduszy w czasie\n• „Stały wydatek” → „Powtarzający się koszt, który się nie zmienia” - Stałe wydatki, takie jak czynsz, pozostają stałe z miesiąca na miesiąc\n• „Marża zysku” → „Procent przychodu, który staje się zyskiem” - Ten wskaźnik pokazuje, ile z twojego dochodu staje się rzeczywistym zyskiem\n\nZrozumienie tych terminów jest niezbędne dla edukacji finansowej!",
+      "completeTitle": "Świetnie!",
+      "completeMessage": "Pomyślnie dopasowałeś/aś wszystkie terminy finansowe do ich znaczeń!",
+      "completeAfterDialogue": "Brawo! Wróć do pani Aminy."
+    },
+    "fillGap": {
+      "title": "Mądre zachowanie finansowe",
+      "instruction": "Wypełnij luki, by uzupełnić zdanie:",
+      "sentence": "By pozostać w zdrowiu finansowym, niezbędne jest (___) wydatków, planowanie na (___) i prowadzenie jasnej ewidencji wszystkich (___).",
+      "availableWordsLabel": "Dostępne słowa",
+      "yourAnswersLabel": "Twoje odpowiedzi (w kolejności)",
+      "placeholderText": "Kliknij słowa po lewej, by wypełnić luki.",
+      "removeHint": "(kliknij, by usunąć)",
+      "options": [
+        "śledzenie",
+        "sytuacje awaryjne",
+        "transakcji",
+        "ignorowanie",
+        "zgadywanie"
+      ],
+      "correct": [
+        "śledzenie",
+        "sytuacje awaryjne",
+        "transakcji"
+      ],
+      "feedback": "Zarządzanie finansowe nigdy nie opiera się na ignorowaniu lub zgadywaniu.",
+      "answerOverlay": "Po 3 próbach, oto odpowiedź:\n\nPytanie: By pozostać w zdrowiu finansowym, niezbędne jest (___) wydatków, planowanie na (___) i prowadzenie jasnej ewidencji wszystkich (___).\n\nPoprawna odpowiedź:\n• Pierwsza luka: „śledzenie” - Musisz monitorować i rejestrować, dokąd idą twoje pieniądze, by utrzymać kontrolę\n• Druga luka: „sytuacje awaryjne” - Planowanie z wyprzedzeniem na nieoczekiwane sytuacje buduje bezpieczeństwo finansowe\n• Trzecia luka: „transakcji” - Prowadzenie jasnych zapisów wszystkich działań finansowych umożliwia świadome podejmowanie decyzji\n\nKompletne zdanie: „By pozostać w zdrowiu finansowym, niezbędne jest śledzenie wydatków, planowanie na sytuacje awaryjne i prowadzenie jasnej ewidencji wszystkich transakcji.”\n\nPamiętaj: Zarządzanie finansowe nigdy nie opiera się na ignorowaniu lub zgadywaniu!",
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "pattern": {
+      "title": "Rozpoznawanie wzorców (Scenariusz {{current}}/{{total}})",
+      "scenarios": [
+        {
+          "question": "Firma ma wysoką sprzedaż, ale ciągle brakuje jej pieniędzy na koniec każdego miesiąca.",
+          "options": [
+            "Słabe zarządzanie przepływem gotówki",
+            "Mocne planowanie finansowe",
+            "Nadmiar oszczędności",
+            "Niskie wydatki"
+          ],
+          "correct": "Słabe zarządzanie przepływem gotówki",
+          "hint": "Wysoka sprzedaż nie zawsze oznacza dostępną gotówkę."
+        },
+        {
+          "question": "Czynsz, pensje i rachunek za internet sklepu pozostają takie same co miesiąc.",
+          "options": [
+            "Wydatki zmienne",
+            "Nieoczekiwane koszty",
+            "Wydatki stałe",
+            "Nieregularne wydawanie"
+          ],
+          "correct": "Wydatki stałe",
+          "hint": "Te koszty nie zmieniają się z miesiąca na miesiąc."
+        },
+        {
+          "question": "Firma wydaje więcej, niż zarabia, przez trzy kolejne miesiące.",
+          "options": [
+            "Zysk",
+            "Punkt zerowy",
+            "Strata",
+            "Nadwyżka"
+          ],
+          "correct": "Strata",
+          "hint": "Gdy wydatki przekraczają dochód, jaki jest wynik?"
+        }
+      ],
+      "answerOverlayTemplate": "Po 3 próbach, oto odpowiedź:\n\nPytanie: {{question}}\n\nPoprawna odpowiedź: „{{correct}}”\n\nWyjaśnienie: {{hint}}"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "answerOverlay": {
+    "title": "Poprawna odpowiedź"
+  },
+  "hints": {
+    "defaultHint": "Nie jestem pewien/a, co robić...",
+    "findCard": {
+      "step0": "Pani Amina powiedziała: „Zacznij od sprawdzenia biurka.”",
+      "step1": "Nie ma na biurku. Spróbuj szafy z dokumentami.",
+      "step2": "Nie ma w szafie z dokumentami. Spróbuj szuflady.",
+      "step3": "Karta może być w pudełku pod biurkiem."
+    },
+    "findReflection": {
+      "step0": "Pani Amina wspomniała o tablicy.",
+      "step1": "Nie ma na tablicy. Spróbuj sejfu.",
+      "step2": "Spójrz w pobliżu szafy z dokumentami - coś może wystawać."
+    },
+    "allQuestsComplete": "Przejdźmy do następnego pokoju."
+  },
+  "completion": {
+    "title": "Szkolenie zakończone!",
+    "message": "Gratulacje! Pomyślnie ukończyłeś/aś szkolenie umiejętności Edukacja finansowa i zarządzanie.",
+    "submessage": "Stajesz się bardziej świadomym i odpowiedzialnym finansowo przedsiębiorcą!",
+    "buttonText": "Powrót do menu głównego"
+  },
+  "ui": {
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

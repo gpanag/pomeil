@@ -1,0 +1,222 @@
+{
+  "loading": "Juhtimisoskuse laadimine...",
+  "intro": {
+    "title": "Juhtimisoskus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua ettevõte, mis toob inimesi kokku.",
+      "Sind on äsja palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuride, taustade ja ametite inimesed.",
+      "Täna astud sa HR-kontori ette ootealasse. HR-juht hakkab kontrollima sinu arusaama sellest, mida juhtimine tegelikult tähendab."
+    ],
+    "buttonText": "Sisene ootealasse"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR-juht",
+      "dialogues": {
+        "greet": "Juhtimine ei tähenda võimu.\nSee on vastutus, otsuste tegemine ja see, kuidas sa teisi kohtled.",
+        "enterOffice": "Enne kui jätkad oma teekonda, pead tõestama, et mõistad, mida juhtimine tegelikult tähendab.",
+        "enterOffice2": "Sisene HR-kontorisse. Sinu juhtimise väljakutse algab nüüd.",
+        "whiteboardFound": "Juhtimine algab põhiväärtuste mõistmisest.",
+        "puzzle1Intro": "Vasta juhtimistegevus õige väärtusega.",
+        "puzzle1Done": "Head juhid ei väldi vastutust.\nNad astuvad edasi, kui asjad muutuvad raskeks.",
+        "puzzle1Done2": "Vaatame nüüd, kuidas sa päris olukordades käitud.",
+        "puzzle2Intro": "Loe stsenaariumi hoolikalt ja vali parim vastus.",
+        "puzzle2Done": "Õigesti. Tõeline juht suhtleb, toetab ja kohaneb. Leia nüüd selle kontori peidetud Juhtimise refleksioonikaart.",
+        "findCard": "Vihjed: kontrolli lauda, sahtlit ja seinaraami. Kaart on kuhugi peidetud.",
+        "cardFound": "Suurepärane. See kaart püüab kinni juhtimise olemuse. Tõesta nüüd, et suudad lõpetada juhtimise põhimõtte.",
+        "puzzle3Intro": "Täida tühikud, et lõpetada juhtimise põhimõte.",
+        "puzzle3Done": "Tubli. Vaatame nüüd, kas suudad eraldada juhtimisfakte müütidest.",
+        "puzzle4Intro": "Vasta neile õige/vale küsimustele juhtimise kohta.",
+        "finalWords1": "Suurepärane töö.",
+        "finalWords2": "Sa näitasid teadlikkust, vastutust ja eetilist juhtimist.",
+        "finalWords3": "Pea meeles: juhtimine avaldub tegevustes, mitte tiitlites.",
+        "finalWords4": "Sa lõpetasid edukalt juhtimisoskuse.",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Vaata kontoris ringi vihjete järele."
+      }
+    },
+    "candidate": {
+      "name": "Ootav kandidaat",
+      "dialogues": {
+        "busy": "Ootan oma järjekorda. Edu sealt sees!",
+        "default": "Edu sulle!"
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Vasta juhtimistegevus õige väärtusega",
+      "columnA": {
+        "heading": "Tegevused",
+        "items": {
+          "1": "Meeskonna murede kuulamine",
+          "2": "Raske otsuse tegemine surve all",
+          "3": "Vastutuse võtmine meeskonna vea eest",
+          "4": "Eesmärkide ja ootuste selge selgitamine"
+        }
+      },
+      "columnB": {
+        "heading": "Väärtused",
+        "items": {
+          "a": "Vastutus",
+          "b": "Suhtlemine",
+          "c": "Empaatia",
+          "d": "Otsustamine"
+        }
+      },
+      "feedback": {
+        "wrong": "Juhi tegevused peegeldavad alati tema väärtusi.",
+        "allCorrect": "Tubli! Sa kõrvutasid kõik juhtimistegevused õigete väärtustega."
+      },
+      "answerOverlay": "Õiged vastendused on:\n1. Meeskonna murede kuulamine → Empaatia\n2. Raske otsuse tegemine surve all → Otsustamine\n3. Vastutuse võtmine meeskonna vea eest → Vastutus\n4. Eesmärkide ja ootuste selge selgitamine → Suhtlemine"
+    },
+    "singleChoice": {
+      "title": "Juhtimine praktikas",
+      "instructions": "Vali parim vastus sellele stsenaariumile.",
+      "question": "Sinu meeskond on graafikust maas. Üks liige hädas ja tähtaeg läheneb.",
+      "options": {
+        "a": "Eira probleemi ja oota tulemusi",
+        "b": "Süüdista meeskonnaliiget teiste ees",
+        "c": "Räägi privaatselt meeskonnaliikmega ja kohanda plaani",
+        "d": "Tühista projekt ilma selgituseta"
+      },
+      "hint": "Juhtimine nõuab õiglust, suhtlemist ja toetust.",
+      "feedback": {
+        "wrong": "Juhtimine nõuab õiglust, suhtlemist ja toetust.",
+        "correct": "Õigesti! Räägi privaatselt meeskonnaliikmega ja kohanda plaani."
+      },
+      "answerOverlay": "Õige vastus on: Räägi privaatselt meeskonnaliikmega ja kohanda plaani."
+    },
+    "fillGap": {
+      "title": "Lõpeta juhtimise põhimõte",
+      "instructions": "Täida tühikud õigete sõnadega.",
+      "sentenceParts": [
+        "Tõeline juht võtab ",
+        ", suhtleb ",
+        " ja juhib meeskonda ",
+        "."
+      ],
+      "options": [
+        "vastutust",
+        "austusega",
+        "võimu",
+        "selgusega",
+        "hirmuga",
+        "visiooniga"
+      ],
+      "correctAnswers": [
+        "vastutust",
+        "austusega",
+        "selgusega"
+      ],
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli vastust",
+      "feedback": {
+        "wrong": "Juhtimine ei tähenda hirmu ega võimu.",
+        "correct": "Tubli! Sa lõpetasid juhtimise põhimõtte õigesti."
+      },
+      "answerOverlay": "Õiged vastused on:\nTõeline juht võtab vastutust, suhtleb austusega ja juhib meeskonda selgusega."
+    },
+    "trueFalse": {
+      "title": "Juhtimise müüdid",
+      "instructions": "Otsusta, kas iga väide on õige või vale.",
+      "questions": [
+        {
+          "text": "Juhtidel peavad alati olema kõik vastused.",
+          "correct": false,
+          "hint": "Tõhusad juhid teavad, millal teistelt sisendit otsida."
+        },
+        {
+          "text": "Juhtimine hõlmab teiste kuulamist ja neilt õppimist.",
+          "correct": true,
+          "hint": "Kuulamine ja õppimine on juhtimisel võtmeomadused."
+        },
+        {
+          "text": "Hea juhtimine tekitab meeskonnas usaldust.",
+          "correct": true,
+          "hint": "Usaldus on hea juhtimise põhitulemus."
+        }
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle uuesti.",
+        "correct": "Suurepärane! Sa eristad juhtimise fakte müütidest."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. VALE – Juhid ei vaja kõiki vastuseid; nad kuulavad ja õpivad.\n2. ÕIGE – Teiste kuulamine ja neilt õppimine on hädavajalik.\n3. ÕIGE – Hea juhtimine tekitab meeskonnas usaldust."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Klõpsa HR-juhil, et alustada.",
+    "talkToHRManager": "Klõpsa HR-juhil, et alustada.",
+    "findWhiteboard": "Vaata HR-kontori sees olevat tahvlit.",
+    "talkToHRManager2": "Pöördu tagasi HR-juhi juurde.",
+    "puzzle1Matching": "Vasta iga juhtimistegevus väärtusega, mida see kõige paremini esindab.",
+    "findCard": "Kontrolli lauda, sahtlit ja seinaraami.",
+    "talkToHRManager3": "Pöördu HR-juhi juurde sellega, mis leidsid.",
+    "puzzle3FillGap": "Mõtle vastutusele, austusele ja selgusele.",
+    "puzzle4TrueFalse": "Mõtle, mida tõelised juhid teevad — nad kuulavad, õpivad ja loovad usaldust.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata HR-kontoris ringi vihjete järele."
+  },
+  "systemDialogues": {
+    "selfTalk": "Mängija siseneb HR-kontori ette ootealasse.\nLühike paus.\nHR uks avaneb.",
+    "clickDesk": "Ainult dokumendid siin.",
+    "clickDrawer": "Kontoritarbed… midagi kasulikku pole.",
+    "clickWallFrame": "Midagi tundub lahti olevat…",
+    "foundCard": "Sa leidsid Juhtimise refleksioonikaardi.",
+    "cardRead": "Tubli! Mine tagasi HR-juhi juurde.",
+    "whiteboardFound": "Juhtimine algab põhiväärtuste mõistmisest."
+  },
+  "items": {
+    "whiteboard": {
+      "popupTitle": "Põhilised juhtimisväärtused",
+      "popupContent": [
+        "Visioon",
+        "Suhtlemine",
+        "Vastutus",
+        "Empaatia",
+        "Otsustamine"
+      ],
+      "inventoryTitle": "Tahvli märkmed"
+    },
+    "reflectionCard": {
+      "popupTitle": "Juhtimise refleksioon",
+      "popupContent": [
+        "Juhtimine on mõju, mitte kontroll.",
+        "Tugevad juhid kuulavad rohkem kui räägivad.",
+        "Usaldus ehitatakse järjepidevuse ja austuse kaudu."
+      ],
+      "inventoryTitle": "Refleksioonikaart"
+    }
+  },
+  "completion": {
+    "title": "Oskus lõpetatud: Juhtimine",
+    "message": "Väärtused mõistetud. Otsused hinnatud. Eetiline käitumine näidatud.\nOled valmis liikuma järgmisele oskusele.",
+    "buttonText": "Lahku HR-kontorist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "____",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "loading": "Loading Project Management...",
+  "intro": {
+    "title": "Project Management",
+    "paragraphs": [
+      "Welcome to the director's office. You have just been handed a running project — a Building Security Upgrade — and you are now the project manager in charge.",
+      "The previous project manager left a progress report. On paper, everything is fine. In reality, things are messier than they look.",
+      "Work through what is on your desk: the progress report, the pile of notes, the laptop, the phone, and the calendar. Your team member Caroline will stop by at the end."
+    ],
+    "buttonText": "Start Managing"
+  },
+  "characters": {
+    "caroline": {
+      "name": "Caroline",
+      "dialogues": {
+        "step1": "Hey, do you have a minute? I just read the progress report…",
+        "step2": "Have you had time to read it? It says everything is clear and on track… But to be honest, I'm not really sure what I'm supposed to be doing.",
+        "step3": "Oh? What have you decided?",
+        "step4": "That helps a lot. But just so you know… there are a lot of opinions on the project. I heard someone from IT talking about biometrics and facial recognition and all sorts of advanced stuff.",
+        "step5": "That sounds good. But I must say, I am a bit worried. We haven't made much progress so far, and time just keeps passing by.",
+        "step6": "*Gulp*",
+        "step7": "Okay, I can take that on.",
+        "step8": "Will do. Thanks!"
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Of course, come in.",
+    "step2": "You're not the only one. It hasn't been clear. But I am fixing that now.",
+    "step3": "We'll focus on getting a basic security setup. A new access control system, camera monitoring and an alarm system. We won't be able to get everything in place immediately, but at least we now have a clear direction.",
+    "step4": "I've heard that too. I've gotten emails from several people wanting to share their views. But right now, we need to focus on the most urgent issues. We need to do something about the situation at reception. Once that's fixed, we'll move forward with other tasks.",
+    "step5": "You're right to be concerned. I am too. The deadline for the first phase of the project is in two weeks.",
+    "step6": "So, here's what we'll do: we'll focus on what we can realistically deliver by then. Getting a new access system in place is the number one priority. I'll need your help contacting suppliers.",
+    "step7": "Great. And remember, come talk to me right away if anything is unclear. It's my job to make sure everyone knows what's happening and what to do.",
+    "step8": ""
+  },
+  "puzzles": {
+    "progressReport": {
+      "introThought1": "It's not a dream situation to take over a project that's already underway… But I can't dwell on that now.",
+      "introThought2": "The progress report should contain everything I need to know. I better read it.",
+      "reportTitle": "Progress Report Summary",
+      "reportProject": "Project: Building Security Upgrade",
+      "reportAnne": "Project Manager: Anne",
+      "reportHandover": "Handover to: (username)",
+      "reportStatus": "Overall status",
+      "reportStatusText": "Work on the building security upgrade is moving forward as expected. No immediate actions are required at this stage.",
+      "reportSection1Title": "Objective",
+      "reportSection1Text": "The objective and scope of the project is clear and fully understood by everyone involved.",
+      "reportSection2Title": "Progress and Timeline",
+      "reportSection2Text": "Work is progressing as planned. There are no delays at the current stage.",
+      "reportSection3Title": "Stakeholders",
+      "reportSection3Text": "There is good communication with stakeholders. Stakeholders are aligned; no major concerns have been raised.",
+      "reportSection4Title": "Resources",
+      "reportSection4Text": "The team has sufficient capacity to deliver on planned activities.",
+      "closeButton": "Close Report",
+      "closedThought1": "Anne was managing the project before me. It sounds like she had everything under control.",
+      "closedThought2": "But the report was pretty vague… If I'm taking over the project, I'm going to need a much better overview than this."
+    },
+    "objective": {
+      "introThought": "This must be Anne's notes. Seems like the project's objective wasn't so clear after all… At least not as clear as the report claimed.",
+      "introDialogue": "Should the project have a chance to succeed; it needs to have a clear objective. Perhaps I can create one from these messy notes…",
+      "instruction": "Click the notes that belong in a clear project objective.",
+      "notes": [
+        {
+          "id": "access",
+          "text": "Access cards for doors",
+          "correct": true,
+          "thought": "A concrete measure to improve building security."
+        },
+        {
+          "id": "cameras",
+          "text": "Cameras in entrance and hallways",
+          "correct": true,
+          "thought": "Monitoring the building is essential."
+        },
+        {
+          "id": "alarm",
+          "text": "Alarm system for the building",
+          "correct": true,
+          "thought": "Having an alarm system will prevent break ins."
+        },
+        {
+          "id": "guards",
+          "text": "24/7 guards",
+          "correct": false,
+          "thought": "This might be overkill…"
+        },
+        {
+          "id": "biometrics",
+          "text": "Biometric scanners on all doors",
+          "correct": false,
+          "thought": "Very advanced and expensive. I think it is better to start with something basic."
+        },
+        {
+          "id": "scarecrows",
+          "text": "Scare away the thieves",
+          "correct": false,
+          "thought": "How? With scarecrows?"
+        },
+        {
+          "id": "hood",
+          "text": "Cameras in the whole neighbourhood",
+          "correct": false,
+          "thought": "I don't think that's legal…"
+        }
+      ],
+      "preliminaryObjective": "Implement a basic building security system, with access control, camera monitoring, and an alarm system.",
+      "objectiveDoneThought": "Much better! The objective now clearly defines what we need to do.",
+      "deadlinePrompt": "Just one thing missing. When should the deadline be?",
+      "deadlineOptions": {
+        "asap": "As soon as possible",
+        "threeMonths": "Within 3 months"
+      },
+      "deadlineTooltip": "\"As soon as possible\" is not a clear deadline. It sounds great… but when is it? That's up to interpretation.",
+      "finalObjective": "Implement a basic building security system, with access control, camera monitoring, and an alarm system, within 3 months.",
+      "completionThought": "A concrete and measurable objective! It clearly defines what needs to be done, and by when. This should be helpful for planning and tracking progress in the project.",
+      "submitButton": "Save Objective",
+      "continueButton": "Continue"
+    },
+    "stakeholders": {
+      "introThought": "I see some stakeholders have emailed me... Hopefully all good things. Anne's report did say no issues had been raised, after all…",
+      "emails": [
+        {
+          "id": "reception",
+          "sender": "Reception",
+          "subject": "Manual check-ins are drowning us",
+          "body": "Hi (username),\n\nI am reaching out on behalf of us at reception. We're spending a lot of time manually checking people in and out of the building. We're feeling totally swamped!\n\nAt times we have long lines and understandably a lot of irritated people. And even though we try our best, some people end up skipping the line and just walking in, meaning we're unable to keep full control over who's coming and going.\n\nWe really need a better system in place soon. Like, yesterday!",
+          "thought": "This is a real problem for the reception, but also for the overall building security. Perhaps a new access system should be the number one priority…"
+        },
+        {
+          "id": "accounting",
+          "sender": "Amina from Accounting",
+          "subject": "Be mindful of costs",
+          "body": "Dear (username),\n\nWe are going over quarterly budgets. Before you move too far ahead with purchasing new security systems, we want to urge you to be mindful of costs. We advise you to select something that doesn't require a lot of investing upfront.",
+          "thought": "Having cost awareness is always good advice. But there will be some costs, no matter what we decide on. I hope they don't have unrealistic expectations…"
+        },
+        {
+          "id": "it",
+          "sender": "IT Department",
+          "subject": "Go advanced — biometrics",
+          "body": "Hi, I heard you've been put in charge of the building security upgrade.\n\nSecurity isn't what it was 20 years ago, and security systems get outdated quickly. I've been looking into some of the newer systems, and there are some really good options out there.\n\nWe urge you to go for something advanced from the start. Look into biometrics and facial recognition software. That would eliminate human error completely. It costs a lot, but it is almost foolproof.",
+          "thought": "Biometrics? Facial recognition? I'm sure it would improve building safety, but I think there could be a lot of drawbacks as well. It would probably also cost a lot more than accounting would be happy with…"
+        },
+        {
+          "id": "robn",
+          "sender": "Rob N. Steely",
+          "subject": "Everything is fine",
+          "body": "Honestly, everything works great as it is today. No need to change anything :)",
+          "thought": "Hmmm…"
+        }
+      ],
+      "replyPrompt": "How should I answer them?",
+      "replyIntro": "Dear stakeholders, thank you for all the valuable input.",
+      "replyOptions": [
+        {
+          "id": "keepHappy",
+          "shorthand": "Try to keep everyone happy",
+          "full": "We'll try to balance everyone's wishes and meet everyone's expectations.",
+          "correct": false,
+          "reflection": "This sounds good in theory… But there is a conflict between the stakeholders' wishes, and it's impossible to please everyone. In fact, it could leave us without a clear direction."
+        },
+        {
+          "id": "advanced",
+          "shorthand": "Go for an advanced solution",
+          "full": "We have decided to buy an advanced biometrics system to manage building access.\n\nWe will soon start contacting suppliers. We ask for patience as this process will take some time.",
+          "correct": false,
+          "reflection": "This could resolve long-term security concerns… But it's expensive and ignores reception's need for a quick solution. It doesn't solve the most urgent issue."
+        },
+        {
+          "id": "wait",
+          "shorthand": "Wait for more information",
+          "full": "We have decided to postpone the purchase of new security systems until we have more information.",
+          "correct": false,
+          "reflection": "To wait and see might seem like a safe option. But reception is already struggling with today's system. If I delay this, the situation might get worse."
+        },
+        {
+          "id": "startSimple",
+          "shorthand": "Start simple, expand later",
+          "full": "We have decided to purchase a basic building access system to address the most urgent needs.\n\nWe will assess the situation after some time and add more advanced security features if needed.",
+          "correct": true,
+          "reflection": "This could work. It addresses the problem at reception but also takes costs into consideration. We can always upgrade to something more advanced later. Not perfect for everyone, but we can move forward."
+        }
+      ],
+      "sendButton": "Send",
+      "inboxTitle": "Inbox",
+      "backToInbox": "Back to inbox",
+      "composeTitle": "Compose reply",
+      "readAllMessage": "All emails read — now decide on a reply."
+    },
+    "scopeCreep": {
+      "phoneIntroThought": "Phone is ringing…",
+      "callerIntro": "? from marketing:\n\"I heard you're in charge of the security upgrades for the building. The thing is - we've had some complaints about our waiting rooms. Renovating them would really improve visitors' experience. And it makes sense to get it done now that we're already doing other upgrades. What do you think, could you include it in your project?\"",
+      "replyOptions": [
+        {
+          "id": "include",
+          "text": "Say yes and include it",
+          "correct": false,
+          "feedback": "Renovations would improve the building overall. But it won't improve building security. If I keep saying yes to things like this, I'll have a lot of work on my hands."
+        },
+        {
+          "id": "reject",
+          "text": "Reject it directly",
+          "correct": false,
+          "feedback": "Saying no protects the scope. But I should probably acknowledge the suggestion. Else I might come across as dismissive."
+        },
+        {
+          "id": "ifTime",
+          "text": "Add it if time allows",
+          "correct": false,
+          "feedback": "This sounds like a good compromise. But it makes the scope unclear. And it can lead to more work and more requests down the line."
+        },
+        {
+          "id": "acknowledge",
+          "text": "Acknowledge but redirect",
+          "correct": true,
+          "feedback": ""
+        }
+      ],
+      "correctReplyText": "That's a good point. But in this project, we need to stay focused on security upgrades. Perhaps you can bring it up to management as a separate initiative?",
+      "npcResponse": "That makes sense. I'll suggest it to management. Thank you.",
+      "afterCallThought1": "I replied in a constructive and appreciative way, while still protecting the project's scope.",
+      "afterCallThought2": "It's always challenging when people want to add more things to a project. It can be tempting to say yes. But not protecting the scope will often result in a lot of work, and too little time and resources to complete it.",
+      "continueButton": "Continue"
+    },
+    "calendar": {
+      "deadlineThought": "The deadline… is in two weeks?!\n\nThat deadline must be for the first phase of the project. There is no way the whole project can be finished in two weeks.\n\nI better make sure everyone knows what to do!",
+      "continueButton": "Continue"
+    },
+    "caroline": {
+      "knockPrompt": "There's a knock at the door…",
+      "arrivalDialogue": "Someone is knocking at the door. It sounds like one of your team members.",
+      "continueButton": "Continue"
+    },
+    "objectiveTitle": "Formulate a clear objective",
+    "finalObjectiveTitle": "Final Objective"
+  },
+  "hints": {
+    "readReport": "There is a printed progress report on the desk. Click it to read.",
+    "afterReport": "Anne's report is vague. Try the pile of notes on the desk.",
+    "objective": "Pick the notes that describe a concrete, relevant project objective.",
+    "pickDeadline": "Choose a clear, specific deadline for the project.",
+    "closeReport": "Read the report, then click Close Report to continue.",
+    "objectiveWrong": "Not quite — re-read Anne's report and pick the notes that fit a clear objective.",
+    "emails": "Click the laptop to check stakeholder emails.",
+    "readEmails": "Read all four emails, then choose how to reply.",
+    "chooseReply": "Pick the reply that balances the conflicting needs.",
+    "phone": "The phone is ringing. Pick it up.",
+    "phoneReply": "Choose how to respond to the scope-creep request.",
+    "calendar": "The wall calendar is worth a look.",
+    "doorKnock": "Someone is knocking. Click the door to let them in.",
+    "talkCaroline": "Talk to Caroline to finish the room.",
+    "completion": "The door is open. Click it to exit.",
+    "default": "Look around the director's office for interactive objects."
+  },
+  "completion": {
+    "title": "Project Management Complete",
+    "message": "Congratulations, you have completed the Project Management escape room!\n\nIn the room, you had to take over as project manager of an already ongoing project. On paper, everything seemed to be going well. But soon, you uncovered several ongoing issues. The project's objective was unclear, the stakeholders had conflicting needs, there was a risk of a scope creep and there was a lot of time pressure.\n\nFortunately, you took the challenges on headfirst. You decided on a specific, relevant and measurable objective, achievable within a certain timeframe. You chose a direction for the project, balancing stakeholders' needs. When someone asked you to expand the scope, you resisted and protected the scope in a constructive way. Finally, you took action by prioritizing realistically and communicating clearly with your team.\n\nWell done!",
+    "buttonText": "Leave the Office"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "puzzlesCompleted": "puzzles",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer",
+    "exitDoorTitle": "Door"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  },
+  "items": {
+    "progressReport": {
+      "inventoryTitle": "Progress Report"
+    },
+    "notes": {
+      "inventoryTitle": "Pile of notes"
+    },
+    "phone": {
+      "inventoryTitle": "Phone"
+    },
+    "calendar": {
+      "inventoryTitle": "Calendar"
+    }
+  },
+  "answerOverlay": {
+    "title": "Answer"
+  }
+}

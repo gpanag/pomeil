@@ -1,0 +1,300 @@
+{
+  "loading": "Projektijuhtimise laadimine...",
+  "intro": {
+    "title": "Projektijuhtimine",
+    "paragraphs": [
+      "Tere tulemast direktori kabinetti. Sulle anti just üle käimasolev projekt — hoone turvalisuse uuendamine — ja sina oled nüüd vastutav projektijuht.",
+      "Eelmine projektijuht jättis edenemisaruande. Paberil on kõik korras. Tegelikkuses on asjad palju segasemad, kui paistab.",
+      "Töötle läbi see, mis sul lauale on jäetud: edenemisaruanne, märkmevirn, sülearvuti, telefon ja kalender. Sinu meeskonnaliige Caroline tuleb sisse päeva lõpus."
+    ],
+    "buttonText": "Alusta juhtimist"
+  },
+  "characters": {
+    "caroline": {
+      "name": "Caroline",
+      "dialogues": {
+        "step1": "Hei, kas sul on hetk aega? Lugesin just edenemisaruannet…",
+        "step2": "Kas oled jõudnud seda lugeda? Seal seisab, et kõik on selge ja ajakavas… Aga ausalt öeldes ei ole ma päris kindel, mida ma õieti tegema peaksin.",
+        "step3": "Oh? Mida sa otsustasid?",
+        "step4": "See aitab palju. Aga teadmiseks… projekti kohta on palju arvamusi. Kuulsin, kuidas keegi IT-st rääkis biomeetriast ja näotuvastusest ja igasugustest edasijõudnud asjadest.",
+        "step5": "Kõlab hästi. Aga pean ütlema, et olen pisut mures. Me ei ole seni eriti edasi liikunud ja aeg lihtsalt möödub.",
+        "step6": "*Neelatab*",
+        "step7": "Hästi, ma võin selle peale võtta.",
+        "step8": "Teen seda. Aitäh!"
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Muidugi, tule sisse.",
+    "step2": "Sa ei ole ainus. See ei ole olnud selge. Aga ma parandan seda nüüd.",
+    "step3": "Keskendume põhilise turvasüsteemi seadistamisele. Uus juurdepääsu kontrollisüsteem, kaameravalve ja häiresüsteem. Me ei suuda kõike kohe paika panna, aga vähemalt on meil nüüd selge suund.",
+    "step4": "Mina olen ka seda kuulnud. Olen saanud e-kirju mitmelt inimeselt, kes tahavad oma seisukohta jagada. Aga praegu peame keskenduma kõige pakilisematele teemadele. Me peame midagi ette võtma vastuvõtulauas valitseva olukorraga. Kui see on parandatud, läheme edasi teiste ülesannetega.",
+    "step5": "Sul on õigus muretseda. Mina ka. Projekti esimese etapi tähtaeg on kahe nädala pärast.",
+    "step6": "Niisiis, vaata, mida me teeme: keskendume sellele, mida saame realistlikult selleks ajaks ära teha. Uue juurdepääsusüsteemi paigaldamine on prioriteet number üks. Mul läheb sinu abi vaja tarnijatega ühenduse võtmiseks.",
+    "step7": "Suurepärane. Ja pea meeles, tule kohe minuga rääkima, kui midagi on ebaselge. Minu töö on tagada, et kõik teaksid, mis toimub ja mida teha.",
+    "step8": ""
+  },
+  "puzzles": {
+    "progressReport": {
+      "introThought1": "See ei ole unistuste olukord võtta üle projekti, mis on juba käimas… Aga ma ei saa selle peale praegu jääda mõtlema.",
+      "introThought2": "Edenemisaruanne peaks sisaldama kõike, mida ma teadma pean. Loen seda parem.",
+      "reportTitle": "Edenemisaruande kokkuvõte",
+      "reportProject": "Projekt: Hoone turvalisuse uuendamine",
+      "reportAnne": "Projektijuht: Anne",
+      "reportHandover": "Üleandmine: (username)",
+      "reportStatus": "Üldine staatus",
+      "reportStatusText": "Töö hoone turvalisuse uuendamisel edeneb ootuspäraselt. Käesolevas etapis ei ole vaja kohest tegutsemist.",
+      "reportSection1Title": "Eesmärk",
+      "reportSection1Text": "Projekti eesmärk ja ulatus on selge ja kõigile osapooltele täielikult arusaadav.",
+      "reportSection2Title": "Edenemine ja ajakava",
+      "reportSection2Text": "Töö edeneb plaanipäraselt. Käesolevas etapis viivitusi ei ole.",
+      "reportSection3Title": "Sidusrühmad",
+      "reportSection3Text": "Sidusrühmadega on hea suhtlus. Sidusrühmad on ühtsel meelel; suuremaid muresid ei ole tõstatatud.",
+      "reportSection4Title": "Ressursid",
+      "reportSection4Text": "Meeskonnal on piisav võimekus planeeritud tegevuste täideviimiseks.",
+      "closeButton": "Sulge aruanne",
+      "closedThought1": "Anne juhtis projekti enne mind. Kõlab nii, nagu oleks tal kõik kontrolli all olnud.",
+      "closedThought2": "Aga aruanne oli üsna ebamäärane… Kui ma projekti üle võtan, vajan ma palju paremat ülevaadet kui see."
+    },
+    "objective": {
+      "introThought": "Need peavad olema Anne märkmed. Tundub, et projekti eesmärk ei olnudki nii selge… Vähemalt mitte nii selge, nagu aruanne väitis.",
+      "introDialogue": "Et projektil oleks võimalus õnnestuda, peab sellel olema selge eesmärk. Võib-olla saan ma neist segastest märkmetest sellise koostada…",
+      "instruction": "Klõpsa märkmetel, mis kuuluvad selgesse projekti eesmärki.",
+      "notes": [
+        {
+          "id": "access",
+          "text": "Juurdepääsukaardid uste jaoks",
+          "correct": true,
+          "thought": "Konkreetne meede hoone turvalisuse parandamiseks."
+        },
+        {
+          "id": "cameras",
+          "text": "Kaamerad sissepääsus ja koridorides",
+          "correct": true,
+          "thought": "Hoone jälgimine on hädavajalik."
+        },
+        {
+          "id": "alarm",
+          "text": "Häiresüsteem hoone jaoks",
+          "correct": true,
+          "thought": "Häiresüsteemi olemasolu väldib sissemurdmisi."
+        },
+        {
+          "id": "guards",
+          "text": "Valvurid 24/7",
+          "correct": false,
+          "thought": "See võib olla liialdus…"
+        },
+        {
+          "id": "biometrics",
+          "text": "Biomeetrilised skannerid kõigil ustel",
+          "correct": false,
+          "thought": "Väga edasijõudnud ja kallis. Ma arvan, et parem on alustada millestki põhilisemast."
+        },
+        {
+          "id": "scarecrows",
+          "text": "Peleta vargad ära",
+          "correct": false,
+          "thought": "Kuidas? Hernehirmutistega?"
+        },
+        {
+          "id": "hood",
+          "text": "Kaamerad kogu naabruskonnas",
+          "correct": false,
+          "thought": "Ma ei usu, et see on legaalne…"
+        }
+      ],
+      "preliminaryObjective": "Põhilise hoone turvasüsteemi rakendamine, mis hõlmab juurdepääsu kontrolli, kaameravalvet ja häiresüsteemi.",
+      "objectiveDoneThought": "Palju parem! Eesmärk määrab nüüd selgelt, mida me peame tegema.",
+      "deadlinePrompt": "Üks asi on veel puudu. Millal peaks tähtaeg olema?",
+      "deadlineOptions": {
+        "asap": "Nii kiiresti kui võimalik",
+        "threeMonths": "3 kuu jooksul"
+      },
+      "deadlineTooltip": "„Nii kiiresti kui võimalik“ ei ole selge tähtaeg. See kõlab hästi… aga millal see siis on? See on tõlgenduse küsimus.",
+      "finalObjective": "Põhilise hoone turvasüsteemi rakendamine, mis hõlmab juurdepääsu kontrolli, kaameravalvet ja häiresüsteemi, 3 kuu jooksul.",
+      "completionThought": "Konkreetne ja mõõdetav eesmärk! See määrab selgelt, mida tuleb teha ja millal. See peaks aitama projekti planeerimisel ja edenemise jälgimisel.",
+      "submitButton": "Salvesta eesmärk",
+      "continueButton": "Jätka"
+    },
+    "stakeholders": {
+      "introThought": "Ma näen, et mõned sidusrühmad on mulle e-kirju saatnud... Loodetavasti kõik head asjad. Anne aruandes oli ju öeldud, et ühtegi muret pole tõstatatud…",
+      "emails": [
+        {
+          "id": "reception",
+          "sender": "Vastuvõtt",
+          "subject": "Käsitsi sisseregistreerimine uputab meid",
+          "body": "Tere (username),\n\nKirjutan kõigi meie nimel vastuvõtus. Me kulutame palju aega inimeste käsitsi hoonesse sisse- ja välja registreerimisele. Tunneme end täiesti uppumas!\n\nMõnikord on meil pikad järjekorrad ja arusaadavalt palju ärritunud inimesi. Ja kuigi me anname endast parima, jäävad mõned inimesed lihtsalt järjekorrast mööda kõndima ja sisse marssima, mis tähendab, et me ei suuda täielikult kontrolli all hoida, kes tuleb ja läheb.\n\nMeil on tõsiselt vaja peatselt paremat süsteemi. Soovitavalt eile!",
+          "thought": "See on tõeline probleem vastuvõtu, aga ka hoone üldise turvalisuse jaoks. Võib-olla peakski uus juurdepääsusüsteem olema prioriteet number üks…"
+        },
+        {
+          "id": "accounting",
+          "sender": "Amina raamatupidamisest",
+          "subject": "Pööra tähelepanu kuludele",
+          "body": "Lugupeetud (username),\n\nMe vaatame üle kvartali eelarved. Enne kui sa läheb uute turvasüsteemide ostmisega liiga kaugele, tahame sind õhutada kuludele tähelepanu pöörama. Soovitame valida midagi, mis ei nõua suurt esmast investeeringut.",
+          "thought": "Kulude teadlikkus on alati hea nõuanne. Aga mingid kulud tulevad olema, mille iganes me ka otsustame. Loodan, et neil ei ole ebareaalseid ootusi…"
+        },
+        {
+          "id": "it",
+          "sender": "IT-osakond",
+          "subject": "Mine edasijõudnumaks — biomeetria",
+          "body": "Tere, kuulsin, et sind on määratud hoone turvalisuse uuendamise eest vastutama.\n\nTurvalisus ei ole enam see, mis 20 aastat tagasi, ja turvasüsteemid vananevad kiiresti. Olen vaadanud mõnda uuemat süsteemi ja seal on tõesti häid valikuid.\n\nÕhutame sind algusest peale midagi edasijõudnut valima. Vaata biomeetriat ja näotuvastustarkvara. See kõrvaldaks inimliku eksimuse täielikult. Maksab palju, aga on peaaegu eksimatu.",
+          "thought": "Biomeetria? Näotuvastus? Olen kindel, et see parandaks hoone turvalisust, aga ma arvan, et sellel oleks ka palju puudujääke. See maksaks tõenäoliselt ka palju rohkem, kui raamatupidamine rahul oleks…"
+        },
+        {
+          "id": "robn",
+          "sender": "Rob N. Steely",
+          "subject": "Kõik on korras",
+          "body": "Ausalt, kõik töötab praegu suurepäraselt. Pole vaja midagi muuta :)",
+          "thought": "Hmmm…"
+        }
+      ],
+      "replyPrompt": "Kuidas peaksin neile vastama?",
+      "replyIntro": "Lugupeetud sidusrühmad, tänan teid kogu väärtusliku panuse eest.",
+      "replyOptions": [
+        {
+          "id": "keepHappy",
+          "shorthand": "Püüa kõiki rahul hoida",
+          "full": "Püüame tasakaalustada kõigi soove ja täita kõigi ootusi.",
+          "correct": false,
+          "reflection": "Teoorias kõlab see hästi… Aga sidusrühmade soovide vahel on konflikt ja kõiki on võimatu rahuldada. Tegelikult võib see jätta meid ilma selge suunata."
+        },
+        {
+          "id": "advanced",
+          "shorthand": "Vali edasijõudnud lahendus",
+          "full": "Oleme otsustanud osta edasijõudnud biomeetrilise süsteemi hoonesse pääsemise haldamiseks.\n\nVarsti hakkame tarnijatega ühendust võtma. Palume kannatlikkust, kuna see protsess võtab aega.",
+          "correct": false,
+          "reflection": "See võiks lahendada pikaajalisi turvamuresid… Aga see on kallis ja eirab vastuvõtu vajadust kiire lahenduse järele. See ei lahenda kõige pakilisemat probleemi."
+        },
+        {
+          "id": "wait",
+          "shorthand": "Oota rohkem teavet",
+          "full": "Oleme otsustanud uute turvasüsteemide ostu edasi lükata, kuni meil on rohkem teavet.",
+          "correct": false,
+          "reflection": "Oodata ja vaadata võib tunduda turvalise valikuna. Aga vastuvõtt vaevleb juba praeguse süsteemiga. Kui ma seda viivitan, võib olukord halveneda."
+        },
+        {
+          "id": "startSimple",
+          "shorthand": "Alusta lihtsast, laienda hiljem",
+          "full": "Oleme otsustanud osta põhilise hoonesse pääsemise süsteemi, et katta kõige pakilisemad vajadused.\n\nHindame olukorda mõne aja pärast ja lisame vajadusel edasijõudnumaid turvafunktsioone.",
+          "correct": true,
+          "reflection": "See võib töötada. See lahendab vastuvõtu probleemi, aga arvestab ka kuludega. Saame alati hiljem millekski edasijõudnumaks uuendada. Mitte täiuslik kõigi jaoks, aga saame edasi liikuda."
+        }
+      ],
+      "sendButton": "Saada",
+      "inboxTitle": "Postkast",
+      "backToInbox": "Tagasi postkasti",
+      "composeTitle": "Kirjuta vastus",
+      "readAllMessage": "Kõik e-kirjad loetud — otsusta nüüd vastuse osas."
+    },
+    "scopeCreep": {
+      "phoneIntroThought": "Telefon heliseb…",
+      "callerIntro": "? turundusest:\n„Kuulsin, et oled hoone turvauuenduste eest vastutav. Asi on selles — meil on olnud mõningaid kaebusi meie ooteruumide kohta. Nende renoveerimine parandaks tõesti külastajate kogemust. Ja loogiline on see ära teha nüüd, kui me niigi teeme teisi uuendusi. Mis sa arvad, kas saaksid selle oma projekti lisada?“",
+      "replyOptions": [
+        {
+          "id": "include",
+          "text": "Ütle jah ja lisa see",
+          "correct": false,
+          "feedback": "Renoveerimised parandaksid hoonet üldiselt. Aga need ei paranda hoone turvalisust. Kui ma jätkan selliste asjade peale jah ütlemisega, saab mul palju tööd kaela."
+        },
+        {
+          "id": "reject",
+          "text": "Lükka kohe tagasi",
+          "correct": false,
+          "feedback": "Ei ütlemine kaitseb ulatust. Aga ma peaksin ilmselt ettepanekut tunnustama. Muidu võin tunduda tõrjuv."
+        },
+        {
+          "id": "ifTime",
+          "text": "Lisa, kui aega jätkub",
+          "correct": false,
+          "feedback": "See kõlab nagu hea kompromiss. Aga see muudab ulatuse ebaselgeks. Ja võib viia rohkemate tööde ja rohkemate taotlusteni."
+        },
+        {
+          "id": "acknowledge",
+          "text": "Tunnusta, kuid suuna mujale",
+          "correct": true,
+          "feedback": ""
+        }
+      ],
+      "correctReplyText": "See on hea mõte. Aga selles projektis peame jääma turvauuendustele keskendunuks. Võib-olla saaksite seda juhtkonnale eraldi algatusena tutvustada?",
+      "npcResponse": "See on mõistlik. Soovitan seda juhtkonnale. Aitäh.",
+      "afterCallThought1": "Vastasin konstruktiivselt ja tunnustaval moel, kaitstes samal ajal projekti ulatust.",
+      "afterCallThought2": "Alati on keeruline, kui inimesed tahavad projektile rohkem asju lisada. Võib olla kiusatuslik öelda jah. Aga ulatuse mittekaitsmine viib sageli palju tööni ning liiga vähese aja ja ressurssideni selle lõpetamiseks.",
+      "continueButton": "Jätka"
+    },
+    "calendar": {
+      "deadlineThought": "Tähtaeg… on kahe nädala pärast?!\n\nSee tähtaeg peab olema projekti esimese etapi jaoks. Pole võimalik, et kogu projekt saaks kahe nädalaga valmis.\n\nPean veenduma, et kõik teaksid, mida teha!",
+      "continueButton": "Jätka"
+    },
+    "caroline": {
+      "knockPrompt": "Uksele koputatakse…",
+      "arrivalDialogue": "Keegi koputab uksele. Kõlab nagu üks sinu meeskonnaliikmetest.",
+      "continueButton": "Jätka"
+    },
+    "objectiveTitle": "Sõnasta selge eesmärk",
+    "finalObjectiveTitle": "Lõplik eesmärk"
+  },
+  "hints": {
+    "readReport": "Laual on prinditud edenemisaruanne. Klõpsa, et lugeda.",
+    "afterReport": "Anne aruanne on ebamäärane. Proovi laual olevat märkmevirna.",
+    "objective": "Vali märkmed, mis kirjeldavad konkreetset, asjakohast projekti eesmärki.",
+    "pickDeadline": "Vali projektile selge ja konkreetne tähtaeg.",
+    "closeReport": "Loe aruanne läbi ja klõpsa siis jätkamiseks „Sulge aruanne“.",
+    "objectiveWrong": "Mitte päris — loe Anne aruanne uuesti läbi ja vali märkmed, mis sobivad selge eesmärgiga.",
+    "emails": "Klõpsa sülearvutil, et kontrollida sidusrühmade e-kirju.",
+    "readEmails": "Loe kõik neli e-kirja läbi ja vali siis, kuidas vastata.",
+    "chooseReply": "Vali vastus, mis tasakaalustab vastuolulisi vajadusi.",
+    "phone": "Telefon heliseb. Võta vastu.",
+    "phoneReply": "Vali, kuidas vastata ulatuse laienemise taotlusele.",
+    "calendar": "Seinakalender on pilku väärt.",
+    "doorKnock": "Keegi koputab. Klõpsa uksel, et nad sisse lasta.",
+    "talkCaroline": "Räägi Caroline'iga, et toa läbida.",
+    "completion": "Uks on lahti. Klõpsa, et väljuda.",
+    "default": "Vaata direktori kabinetis ringi interaktiivsete objektide järele."
+  },
+  "completion": {
+    "title": "Projektijuhtimine lõpetatud",
+    "message": "Õnnitleme, oled läbinud projektijuhtimise põgenemistoa!\n\nToas pidid sa võtma üle projektijuhi rolli juba käimasolevas projektis. Paberil tundus kõik hästi minevat. Kuid peagi avastasid sa mitmeid jooksvaid probleeme. Projekti eesmärk oli ebaselge, sidusrühmadel olid vastuolulised vajadused, oli risk ulatuse laienemiseks ja palju ajalist survet.\n\nÕnneks võtsid sa väljakutsed otse vastu. Otsustasid konkreetse, asjakohase ja mõõdetava eesmärgi, mis on saavutatav teatud aja jooksul. Valisid projektile suuna, tasakaalustades sidusrühmade vajadusi. Kui keegi palus sul ulatust laiendada, vastu seisid ja kaitsesid ulatust konstruktiivselt. Lõpuks tegutsesid, seades realistlikke prioriteete ja suheldes oma meeskonnaga selgelt.\n\nTubli töö!",
+    "buttonText": "Lahku kabinetist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "puzzlesCompleted": "ülesanded",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus",
+    "exitDoorTitle": "Uks"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  },
+  "items": {
+    "progressReport": {
+      "inventoryTitle": "Edenemisaruanne"
+    },
+    "notes": {
+      "inventoryTitle": "Märkmevirn"
+    },
+    "phone": {
+      "inventoryTitle": "Phone"
+    },
+    "calendar": {
+      "inventoryTitle": "Kalender"
+    }
+  },
+  "answerOverlay": {
+    "title": "Vastus"
+  }
+}

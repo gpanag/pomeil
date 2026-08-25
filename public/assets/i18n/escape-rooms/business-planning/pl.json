@@ -1,0 +1,285 @@
+{
+  "loading": "Ładowanie Planowania Biznesowego...",
+  "intro": {
+    "title": "Planowanie Biznesowe",
+    "paragraphs": [
+      "Witamy na Warsztatach Planowania Biznesowego! Właśnie wszedłeś do sali konferencyjnej, gdzie wszystko zostało przygotowane do praktycznej sesji budowania Modelu Biznesowego (Business Model Canvas).",
+      "W pomieszczeniu znajduje się kilka interaktywnych stanowisk - zaparowane okno, flipchart, telewizor na ścianie, papiery na stole oraz teczka. Każde stanowisko zawiera zagadkę, która nauczy cię kluczowego elementu Modelu Biznesowego.",
+      "Rozwiąż wszystkie pięć zagadek w dowolnej kolejności. Po ukończeniu wszystkich, tablica z przodu zaświeci się i odsłoni twój ukończony Model Biznesowy. Powodzenia!"
+    ],
+    "buttonText": "Wejdź do sali konferencyjnej"
+  },
+  "puzzles": {
+    "customerSegments": {
+      "title": "Segmenty klientów",
+      "instructions": "Sklasyfikuj każdy segment klientów jako Prawidłowy lub Nieprawidłowy. Prawidłowe segmenty są konkretne i wykonalne. Nieprawidłowe segmenty są zbyt szerokie, niejasne lub oparte na założeniach.",
+      "customers": {
+        "0": "Freelancerzy i pracownicy zdalni, którzy cenią elastyczne usługi",
+        "1": "Rodzice małych dzieci, dla których priorytetem jest bezpieczeństwo",
+        "2": "Studenci szukający opcji oszczędnościowych",
+        "3": "Każdy, kto kiedykolwiek czegoś potrzebował",
+        "4": "Pracownicy biurowi potrzebujący szybkich rozwiązań w trakcie dnia pracy",
+        "5": "Ludzie, którzy lubią ładne rzeczy",
+        "6": "Emeryci ceniący osobistą obsługę klienta",
+        "7": "Właściciele małych firm, którzy chcą zaoszczędzić czas",
+        "8": "Ludzie, którzy z pewnością pokochają tę firmę",
+        "9": "Ludzie, którzy przypadkowo kliknęli w link strony internetowej",
+        "10": "Ludzie żonglujący wieloma zadaniami w trakcie dnia pracy i potrzebujący wydajnych narzędzi"
+      },
+      "invalidExplanations": {
+        "3": "Zbyt szerokie - opisuje praktycznie każdego i nie jest użytecznym segmentem.",
+        "5": "Zbyt niejasne - „ładne rzeczy\" nie definiują konkretnej potrzeby ani zachowania.",
+        "8": "Oparte na założeniach - nie można zakładać, że ludzie pokochają twoją firmę.",
+        "9": "Nie są to faktyczni klienci - przypadkowe kliknięcia nie oznaczają prawdziwego zainteresowania."
+      },
+      "validButton": "Prawidłowy",
+      "invalidButton": "Nieprawidłowy",
+      "feedback": {
+        "correct": "Prawidłowo!",
+        "wrong": "Niezupełnie. Zastanów się, czy ten segment jest konkretny i wykonalny.",
+        "allCorrect": "Doskonale! Poprawnie sklasyfikowałeś wszystkie segmenty klientów!"
+      },
+      "answerOverlay": "Prawidłowe segmenty: Freelancerzy i pracownicy zdalni, Rodzice małych dzieci, Studenci szukający opcji oszczędnościowych, Pracownicy biurowi potrzebujący szybkich rozwiązań, Emeryci ceniący osobistą obsługę, Właściciele małych firm chcący oszczędzić czas, Ludzie żonglujący wieloma zadaniami.\n\nNieprawidłowe segmenty: „Każdy, kto kiedykolwiek czegoś potrzebował\" (zbyt szerokie), „Ludzie, którzy lubią ładne rzeczy\" (zbyt niejasne), „Ludzie, którzy z pewnością pokochają tę firmę\" (oparte na założeniach), „Ludzie, którzy przypadkowo kliknęli w link\" (nie są to faktyczni klienci)."
+    },
+    "valueProposition": {
+      "title": "Propozycja wartości",
+      "instructions": "Ta propozycja wartości zawiera niepotrzebne modne hasła. Kliknij na części, które powinny zostać USUNIĘTE (przekreślone). Zachowaj tylko sensowne fragmenty, a następnie wyślij.",
+      "parts": {
+        "0": "Oferujemy innowacyjne",
+        "1": "rozwiązania pomagające ludziom zaoszczędzić czas",
+        "2": "światowej klasy jakość",
+        "3": "poprzez redukcję zbędnych kroków w codziennych zadaniach",
+        "4": "dzięki doskonałości",
+        "5": "i nowatorskiej synergii",
+        "6": "wykorzystując funkcje nowej generacji"
+      },
+      "submitButton": "Przewróć stronę aby wysłać",
+      "feedback": {
+        "wrong": "Niektóre części nie są poprawnie zaznaczone. Pamiętaj: zachowaj to, co sensowne i konkretne, usuń modne hasła i wypełniacze.",
+        "hint": "Wskazówka: Zachowaj tylko części opisujące konkretną korzyść lub działanie. Usuń żargon korporacyjny.",
+        "correct": "Doskonale! Usunąłeś modne hasła i zachowałeś jasną propozycję wartości."
+      },
+      "answerOverlay": "Zachowaj: „rozwiązania pomagające ludziom zaoszczędzić czas\" oraz „poprzez redukcję zbędnych kroków w codziennych zadaniach\".\n\nUsuń: „Oferujemy innowacyjne\", „światowej klasy jakość\", „dzięki doskonałości\", „i nowatorskiej synergii\", „wykorzystując funkcje nowej generacji\"."
+    },
+    "channels": {
+      "title": "Kanały",
+      "introText": "Dopasuj każde zachowanie klienta do najbardziej odpowiedniego kanału, aby do niego dotrzeć. Użyj strzałek do przewijania dostępnych kanałów, a następnie potwierdź swój wybór.",
+      "startButton": "Rozpocznij",
+      "behaviors": {
+        "0": "Klienci aktywni online i korzystający z platform społecznościowych",
+        "1": "Klienci polegający na rekomendacjach od przyjaciół i rodziny",
+        "2": "Klienci szukający usług w pobliżu w godzinach pracy",
+        "3": "Klienci preferujący bezpośredni kontakt osobisty w sprawie zapytań"
+      },
+      "channelOptions": [
+        "Media społecznościowe",
+        "Poczta pantoflowa",
+        "Lokalizacja fizyczna",
+        "Bezpośredni kontakt e-mailem lub telefonem",
+        "Reklama telewizyjna",
+        "Prasa drukowana",
+        "Aplikacja mobilna",
+        "Platforma handlowa online",
+        "Targi branżowe"
+      ],
+      "confirmButton": "Potwierdź",
+      "feedback": {
+        "correct": "Prawidłowe dopasowanie!",
+        "wrong": "Ten kanał nie pasuje do tego zachowania klienta. Spróbuj innego.",
+        "allCorrect": "Świetna robota! Dopasowałeś wszystkie zachowania klientów do idealnych kanałów!"
+      },
+      "answerOverlay": "Prawidłowe dopasowania:\n1. Aktywni online/platformy społecznościowe -> Media społecznościowe\n2. Polegają na rekomendacjach -> Poczta pantoflowa\n3. Szukają usług w godzinach pracy -> Lokalizacja fizyczna\n4. Preferują bezpośredni kontakt osobisty -> Bezpośredni kontakt e-mailem lub telefonem"
+    },
+    "revenueStreams": {
+      "title": "Źródła przychodów",
+      "instructions": "Przeczytaj każdy dokument księgowy i przypisz go do właściwej kategorii źródła przychodów.",
+      "documents": {
+        "0": {
+          "title": "Dokument A: Miesięczna opłata za dostęp",
+          "content": "Faktura za cykliczny miesięczny dostęp do platformy premium. Klient jest automatycznie obciążany każdego miesiąca za kontynuację usługi.",
+          "category": "subscription"
+        },
+        "1": {
+          "title": "Dokument B: Paragon za zakup produktu",
+          "content": "Paragon za jednorazowy zakup produktu. Klient zapłacił całą kwotę z góry, bez cyklicznych opłat.",
+          "category": "one-time"
+        },
+        "2": {
+          "title": "Dokument C: Rachunek za usługę rozliczaną według użycia",
+          "content": "Rachunek obliczony na podstawie rzeczywistego użycia w tym miesiącu: 150 wywołań API po 0,02 USD każde. Suma różni się z miesiąca na miesiąc w zależności od konsumpcji.",
+          "category": "usage-based"
+        },
+        "3": {
+          "title": "Dokument D: Faktura za upgrade",
+          "content": "Faktura za przejście z poziomu darmowego na plan Pro. Podstawowe funkcje pozostają darmowe, ale zaawansowane funkcje wymagają płatności.",
+          "category": "freemium"
+        }
+      },
+      "categories": {
+        "subscription": "Subskrypcja",
+        "one-time": "Płatność jednorazowa",
+        "usage-based": "Płatność według użycia",
+        "freemium": "Freemium"
+      },
+      "feedback": {
+        "correct": "Prawidłowa klasyfikacja!",
+        "wrong": "To nie jest właściwa kategoria. Przeczytaj ponownie dokument i zastanów się, jak działa płatność.",
+        "allCorrect": "Doskonale! Poprawnie sklasyfikowałeś wszystkie dokumenty źródeł przychodów!"
+      },
+      "answerOverlay": "Prawidłowe klasyfikacje:\nDokument A (Miesięczna opłata za dostęp) -> Subskrypcja\nDokument B (Paragon za zakup produktu) -> Płatność jednorazowa\nDokument C (Rachunek za usługę rozliczaną według użycia) -> Płatność według użycia\nDokument D (Faktura za upgrade) -> Freemium"
+    },
+    "costStructure": {
+      "title": "Struktura kosztów",
+      "instructions": "Sklasyfikuj każdy miesięczny koszt jako Stały (pozostaje taki sam niezależnie od produkcji) lub Zmienny (zmienia się wraz z wielkością produkcji/sprzedaży).",
+      "costs": {
+        "0": {
+          "name": "Czynsz biurowy",
+          "type": "fixed"
+        },
+        "1": {
+          "name": "Ubezpieczenie",
+          "type": "fixed"
+        },
+        "2": {
+          "name": "Spłaty kredytu",
+          "type": "fixed"
+        },
+        "3": {
+          "name": "Wynagrodzenia pracowników",
+          "type": "fixed"
+        },
+        "4": {
+          "name": "Prowizje od sprzedaży",
+          "type": "variable"
+        },
+        "5": {
+          "name": "Surowce",
+          "type": "variable"
+        },
+        "6": {
+          "name": "Opakowania",
+          "type": "variable"
+        },
+        "7": {
+          "name": "Wysyłka",
+          "type": "variable"
+        }
+      },
+      "fixedButton": "Stały",
+      "variableButton": "Zmienny",
+      "checkButton": "Sprawdź odpowiedzi",
+      "feedback": {
+        "wrong": "Niektóre koszty są nieprawidłowo sklasyfikowane. Wyróżnione pozycje wymagają zmiany.",
+        "correct": "Brawo! Poprawnie sklasyfikowałeś wszystkie koszty!"
+      },
+      "answerOverlay": "Koszty stałe: Czynsz biurowy, Ubezpieczenie, Spłaty kredytu, Wynagrodzenia pracowników.\nKoszty zmienne: Prowizje od sprzedaży, Surowce, Opakowania, Wysyłka."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "bmc": {
+      "customerSegmentsTitle": "Segmenty klientów",
+      "valuePropositionTitle": "Propozycja wartości",
+      "channelsTitle": "Kanały",
+      "revenueStreamsTitle": "Źródła przychodów",
+      "costStructureTitle": "Struktura kosztów"
+    },
+    "whyInvalid": "Dlaczego jest to nieprawidłowe?"
+  },
+  "canvas": {
+    "title": "Model Biznesowy (Business Model Canvas)",
+    "message": "Gratulacje! Ukończyłeś wszystkie pięć zagadek. Oto twój ukończony Model Biznesowy. Najedź na każdy blok, aby dowiedzieć się więcej.",
+    "blocks": {
+      "customerSegments": {
+        "label": "Segmenty klientów",
+        "description": "Konkretne grupy ludzi lub organizacji, których celem ma być twoja firma. Dobre segmenty są konkretne, mierzalne i wykonalne."
+      },
+      "valueProposition": {
+        "label": "Propozycja wartości",
+        "description": "Pakiet produktów i usług, które tworzą wartość dla konkretnego segmentu klientów. Powinna jasno komunikować korzyść bez żargonu korporacyjnego."
+      },
+      "channels": {
+        "label": "Kanały",
+        "description": "Sposób, w jaki firma komunikuje się i dociera do swoich segmentów klientów, aby dostarczyć swoją propozycję wartości."
+      },
+      "revenueStreams": {
+        "label": "Źródła przychodów",
+        "description": "Gotówka generowana przez firmę z każdego segmentu klientów. Modele obejmują subskrypcję, jednorazową, według użycia i freemium."
+      },
+      "costStructure": {
+        "label": "Struktura kosztów",
+        "description": "Wszystkie koszty ponoszone w celu prowadzenia modelu biznesowego. Koszty mogą być stałe (niezmienne wraz z wolumenem) lub zmienne (proporcjonalne do wolumenu)."
+      },
+      "keyPartners": {
+        "label": "Kluczowi partnerzy",
+        "description": "Sieć dostawców i partnerów, dzięki którym model biznesowy działa."
+      },
+      "keyActivities": {
+        "label": "Kluczowe działania",
+        "description": "Najważniejsze rzeczy, które firma musi zrobić, aby jej model biznesowy działał."
+      },
+      "keyResources": {
+        "label": "Kluczowe zasoby",
+        "description": "Najważniejsze aktywa wymagane do działania modelu biznesowego."
+      },
+      "customerRelationships": {
+        "label": "Relacje z klientami",
+        "description": "Rodzaje relacji, jakie firma nawiązuje z konkretnymi segmentami klientów."
+      }
+    },
+    "finishButton": "Zakończ escape room"
+  },
+  "hints": {
+    "explore": "Rozejrzyj się po pokoju. Możesz wchodzić w interakcje z zaparowanym oknem, flipchartem, pilotem do telewizora, papierami na stole i teczką.",
+    "window": "Spróbuj kliknąć w zaparowane okno, aby rozpocząć zagadkę Segmentów klientów.",
+    "flipchart": "Flipchart zawiera ćwiczenie z propozycją wartości.",
+    "tv": "Użyj pilota do telewizora, aby rozpocząć zagadkę Kanałów.",
+    "papers": "Papiery na stole zawierają dokumenty księgowe do zagadki Źródeł przychodów.",
+    "folder": "Teczka na stole zawiera arkusz miesięcznych kosztów do zagadki Struktury kosztów.",
+    "whiteboard": "Wszystkie zagadki ukończone! Kliknij tablicę, aby zobaczyć swój Model Biznesowy.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po pokoju w poszukiwaniu interaktywnych obiektów.",
+    "puzzle_customers": "Sklasyfikuj każdy profil klienta jako Prawidłowy lub Nieprawidłowy. Prawidłowe segmenty są konkretne i wykonalne; nieprawidłowe są zbyt szerokie, niejasne lub oparte na założeniach.",
+    "puzzle_channels": "Użyj strzałek do przewijania dostępnych kanałów i potwierdź ten, który najlepiej pasuje do pokazanego zachowania klienta.",
+    "puzzle_revenue": "Przeczytaj uważnie każdy dokument księgowy, a następnie przeciągnij go do kategorii źródła przychodów, która najlepiej opisuje, jak działa płatność.",
+    "puzzle_costs": "Przypisz każdy miesięczny koszt jako Stały (taki sam co miesiąc) lub Zmienny (zmienia się wraz z wielkością produkcji lub sprzedaży), a następnie sprawdź odpowiedzi."
+  },
+  "systemDialogues": {
+    "windowFogged": "Okno jest całkowicie zaparowane. Zauważasz w pobliżu ściągaczkę. Może uda ci się jej użyć, aby oczyścić szybę.",
+    "windowCleaned": "Para znika i odsłania profile klientów na szybie! Czas je sklasyfikować.",
+    "flipchartIntro": "Flipchart pokazuje deklarację propozycji wartości, ale jest pełna korporacyjnych modnych haseł. Wyczyśćmy ją.",
+    "tvIntro": "Ekran telewizora rozjaśnia się, pokazując zachowania klientów. Musisz dopasować każde z nich do właściwego kanału.",
+    "papersIntro": "Widzisz cztery dokumenty księgowe rozłożone na stole. Każdy reprezentuje inny typ źródła przychodów.",
+    "folderIntro": "Teczka zawiera zestawienie miesięcznych kosztów. Musisz sklasyfikować każdy koszt jako stały lub zmienny.",
+    "puzzleComplete": "Zagadka rozwiązana! Brawo.",
+    "allPuzzlesComplete": "Wszystkie pięć zagadek ukończonych! Tablica z przodu pokoju teraz świeci. Kliknij na nią, aby zobaczyć swój ukończony Model Biznesowy.",
+    "canvasViewed": "Przejrzałeś kompletny Model Biznesowy. Drzwi są teraz otwarte - możesz opuścić pokój!"
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Pomyślnie ukończyłeś escape room Planowania Biznesowego! Teraz rozumiesz kluczowe elementy Modelu Biznesowego: Segmenty klientów, Propozycja wartości, Kanały, Źródła przychodów i Struktura kosztów.",
+    "buttonText": "Wyjdź z pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "puzzlesCompleted": "zagadki",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź",
+    "backToDocuments": "Powrót do dokumentów"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

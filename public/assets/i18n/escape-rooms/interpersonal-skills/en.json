@@ -1,0 +1,186 @@
+{
+  "loading": "Loading Interpersonal Skills...",
+  "intro": {
+    "title": "Interpersonal Skills",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "You enter the Reception area and spot the Team Leader, Carlos."
+    ],
+    "buttonText": "Enter the Reception Area"
+  },
+  "characters": {
+    "carlos": {
+      "name": "Carlos",
+      "dialogues": {
+        "greet": "Welcome! This reception area is where first impressions are made—both with visitors and with colleagues. In business, technical skills are important, but your ability to communicate and work well with others—your Interpersonal Skills—is what truly makes you valuable to the organization.",
+        "findMagazine": "I was reading an article about the key components of interpersonal skills earlier, but I left the magazine somewhere in this reception area. Can you find it for me? Check the coffee table.",
+        "magazineFound": "Excellent! As you can see, interpersonal skills go far beyond talking—they include attitude, empathy, and behavior. These skills are developed through daily interactions, even here in reception.",
+        "quiz1Intro": "Let's test your understanding with a quick quiz.",
+        "quiz1Done": "You have a solid understanding of the basics. Now let's look at challenges. Miscommunication and conflict can happen anywhere—even in reception, where stress and misunderstandings are common.",
+        "findFolder": "I prepared a 'Cheat Sheet' with solutions to common interpersonal challenges. I think I left it inside a blue folder on the bookshelf. Go grab it!",
+        "folderFound": "Perfect. This sheet is very useful when things get tense. Let's see if you can apply these solutions to real situations.",
+        "puzzle2Intro": "Solve these puzzles to prove you are ready to work with the team.",
+        "finalWords": "Fantastic! You understand that empathy, feedback, and teamwork are essential, especially in places like reception, where first impressions matter.\n\nBy continuously developing these skills, you'll become a valuable and trusted member of any organization. Good luck!",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the reception area for clues."
+      }
+    },
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "busy": "Hi! I'm just sketching some ideas for the new logo. Even in reception, communication and first impressions really matter!",
+        "default": "Still sketching... talk to Carlos."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Interpersonal Skills Basics - True or False",
+      "instructions": "Determine if each statement is True or False.",
+      "questions": [
+        {
+          "text": "Interpersonal skills are based entirely on personality and instinct, so they cannot be improved.",
+          "correct": false,
+          "hint": "Recall the introduction... While personality plays a part, anyone can improve these skills through practice."
+        },
+        {
+          "text": "In the business world, interpersonal skills refer to an employee's ability to work well with others.",
+          "correct": true,
+          "hint": "Think about why companies value 'people skills'. It's all about collaboration and team effectiveness."
+        },
+        {
+          "text": "Employers only care about hard technical skills, not soft skills like communication.",
+          "correct": false,
+          "hint": "Employers place a high emphasis on soft skills because they increase employability and team trust."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about it again.",
+        "correct": "Well done! You understand the basics of interpersonal skills."
+      },
+      "answerOverlay": "The correct answers are:\n1. FALSE – While personality plays a part, anyone can improve these skills through practice.\n2. TRUE – Interpersonal skills refer to an employee's ability to work well with others.\n3. FALSE – Employers place a high emphasis on soft skills because they increase employability and team trust."
+    },
+    "singleChoice": {
+      "title": "Solving Interpersonal Challenges",
+      "instructions": "Choose the best answer.",
+      "question": "You are in the reception area, and two colleagues begin arguing about a project in front of visitors. What is the best interpersonal solution?",
+      "options": {
+        "a": "Ignore them and hope it stops.",
+        "b": "Pick a side and argue back.",
+        "c": "Focus on solutions and teamwork to resolve the issue.",
+        "d": "Leave the area immediately."
+      },
+      "hint": "Check the Cheat Sheet. The goal is collaboration, not escalation or avoidance.",
+      "feedback": {
+        "wrong": "That's not the best approach. Check the Cheat Sheet. The goal is collaboration, not escalation or avoidance.",
+        "correct": "Correct! Focusing on solutions and teamwork is the best interpersonal approach."
+      },
+      "answerOverlay": "The correct answer is: Focus on solutions and teamwork to resolve the issue."
+    },
+    "sequenceOrder": {
+      "title": "Developing Interpersonal Skills",
+      "instructions": "You want to improve your interpersonal skills effectively. Arrange the following steps in a logical order.",
+      "items": [
+        "Seek and accept constructive feedback from others.",
+        "Engage in team activities and interact with others.",
+        "Reflect on the feedback to improve your behavior.",
+        "Practice empathy by trying to understand others' feelings."
+      ],
+      "correctOrder": [
+        "Engage in team activities and interact with others.",
+        "Practice empathy by trying to understand others' feelings.",
+        "Seek and accept constructive feedback from others.",
+        "Reflect on the feedback to improve your behavior."
+      ],
+      "hints": [
+        "Start by interacting with others.",
+        "Try to understand their feelings.",
+        "Ask how you did.",
+        "Use that feedback to improve."
+      ],
+      "feedback": {
+        "wrong": "That's not the right order. Remember: engage, empathize, seek feedback, then reflect.",
+        "correct": "Excellent! You know the steps to improve interpersonal skills."
+      },
+      "answerOverlay": "The correct order is:\n1. Engage in team activities and interact with others.\n2. Practice empathy by trying to understand others' feelings.\n3. Seek and accept constructive feedback from others.\n4. Reflect on the feedback to improve your behavior."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Carlos near the corkboard to begin.",
+    "talkToCarlos": "Click on Carlos to start.",
+    "findMagazine": "Check the coffee table for the magazine.",
+    "talkToCarlos2": "Return to Carlos.",
+    "puzzle1": "Read each statement carefully and decide: True or False?",
+    "findFolder": "Carlos mentioned the bookshelf. Look for a blue folder there.",
+    "talkToCarlos3": "Return to Carlos with what you found.",
+    "completion": "The training has been completed!",
+    "default": "Look around the reception area for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the company reception area. It's a modern space with comfortable seating, a coffee table with magazines, and a bookshelf along the wall. You notice Carlos, the team leader, standing near the corkboard behind the reception desk, greeting people and observing interactions.",
+    "clickVendingMachine": "Just snacks for visitors here. The magazine Carlos mentioned is probably on the coffee table.",
+    "foundMagazine": "You found it! It's a business magazine open to a specific page.",
+    "magazineRead": "Great find! Return to Carlos.",
+    "clickBookshelfWrong": "Mostly brochures, books, and some old magazines for visitors. Look closer to where people sit and wait.",
+    "foundFolder": "You have the solutions! Return to Carlos."
+  },
+  "items": {
+    "magazine": {
+      "popupTitle": "Key Interpersonal Competencies",
+      "popupContent": [
+        "Communication Skills: Reading signals and interpreting them accurately.",
+        "Teamwork and Collaboration: Working effectively with others.",
+        "Emotional Intelligence: Understanding your own and others' emotions.",
+        "Problem-solving skills: Finding solutions together.",
+        "Adaptability: Being flexible in social situations."
+      ],
+      "inventoryTitle": "Magazine"
+    },
+    "folder": {
+      "popupTitle": "Challenges & Solutions",
+      "popupContent": [
+        "Poor Communication → Active listening and team activities.",
+        "Conflict or Disagreement → Focus on solutions and teamwork.",
+        "Low Empathy → Try to understand how others feel by communicating.",
+        "Lack of Skills → Training related to attaining new skills."
+      ],
+      "inventoryTitle": "Folder"
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "Congratulations, you've completed everything and leveled up your Interpersonal Skills. Let's move on to the next skill.",
+    "buttonText": "Exit the Reception Area"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="page-parent mat-app-background">
+    <div class="title">
+        <h5 class="title">{{"NAVIGATION.RESOURCES" | translate}}</h5>
+    </div>
+
+    <div class="resources-empty">
+        <div class="resources-empty-card">
+            <span class="resources-empty-eyebrow">{{ "RESOURCES.EYEBROW" | translate }}</span>
+            <p class="resources-empty-lead">{{ "RESOURCES.EMPTY_LEAD" | translate }}</p>
+            <p class="resources-empty-detail">{{ "RESOURCES.EMPTY_DETAIL" | translate }}</p>
+            <a routerLink="/news" class="resources-empty-link">
+                <span>{{ "RESOURCES.FOLLOW_NEWS" | translate }}</span>
+                <mat-icon>arrow_forward</mat-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

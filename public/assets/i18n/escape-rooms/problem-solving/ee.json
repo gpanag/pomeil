@@ -1,0 +1,212 @@
+{
+  "loading": "Laadin Probleemilahendust...",
+  "intro": {
+    "title": "Probleemilahendus",
+    "paragraphs": [
+      "Sa astusid kontori laoruumi, et võtta uus klammerdaja. Kuid Laojuht jättis sulle märkme suurema probleemi kohta — siit kaovad pidevalt asjad.",
+      "See ruum käsitleb probleemilahenduse üht olulist aspekti: probleemi selget defineerimist enne lahendustele asumist. Vaata ringi, uuri ja püüa mitte teha esimest oletust lõplikuks vastuseks.",
+      "Loe alustamiseks ukse külge kleebitud märget. Siis lase ruumil sulle öelda, mis tegelikult toimub."
+    ],
+    "buttonText": "Sisene laoruumi"
+  },
+  "characters": {
+    "knut": {
+      "name": "Knut",
+      "dialogues": {
+        "step1": "Hei, kas sul on minut aega?",
+        "step2": "Tulin lihtsalt uut klaviatuuri tooma…",
+        "step3": "… aga ma ei leia siit ühtegi klaviatuuri!",
+        "step4": "Jah, mulle öeldi, et meil on neid laos.",
+        "step5": "Noh, vähemalt ruum näeb välja palju parem kui tavaliselt.",
+        "step6": "Võib-olla pole segadus probleem. Võib-olla toimub midagi täiesti muud."
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Muidugi, mis lahti?",
+    "step2": "Olgu…",
+    "step3": "See on imelik.",
+    "step4": "Hmm… Ma just lõpetasin siin koristamise. Ma ei mäleta klaviatuure näinud olevat.",
+    "step5": "Jah…",
+    "step6": "Võib olla… Ma vist peaks selle välja uurima."
+  },
+  "puzzles": {
+    "stickyNote": {
+      "title": "Märge Laojuhilt",
+      "letter": "Kallis (username)\n\nViimasel ajal on meil laos olnud probleeme. Asjad kaovad pidevalt. Just hiljuti saime uue tooli saadetise ja ma ei leia neid kuskilt!\n\nOlen kontorist väljas ja kahjuks polnud mul aega seda enne lahkumist uurida…\n\nKas sa võiksid pilgu peale visata? Olen sulle palju võlgu!\n\n- Laojuht",
+      "thought": "Ja siin ma mõtlen, et ainult uue klammerdaja järele tulin… Vist parem käärin käised üles.",
+      "continueButton": "Jätka"
+    },
+    "cleanRoom": {
+      "introThought": "Vau, laoruum on muutunud üsna segaseks. Olen valmis kihla vedama, et see on probleem. Parem ma koristan siin.",
+      "startButton": "Jätka",
+      "completionThought": "Kõik näeb kenasti korrastatud välja!",
+      "continueButton": "Jätka"
+    },
+    "knutConversation": {
+      "title": "Knut siseneb laoruumi",
+      "continueButton": "Jätka",
+      "startDialogue": "Keegi astus laoruumi — tundub nagu Knut kontorist. Tundub, et ta otsib midagi."
+    },
+    "investigate": {
+      "introThought": "Knutil on õigus. Võib-olla polnud segadus kunagi tegelik probleem. On aeg tõsiselt vihjeid otsida.",
+      "continueButton": "Jätka",
+      "objects": {
+        "chewedBox": {
+          "thought": "Tundub närituna."
+        },
+        "vent": {
+          "thought": "Hiir… ja hiir. Armas või vastik, oleneb kuidas vaatad. Kas see väike võiks olla kogu selle põhjus?"
+        },
+        "halfOpenDoor": {
+          "thought": "Võib-olla jättis keegi ukse lahti… ja keegi sai sisse ja varastas meie varustuse."
+        },
+        "emptyShelf": {
+          "thought": "Kas siit on midagi kadunud?"
+        },
+        "brokenBox": {
+          "thought": "Siin pole midagi."
+        },
+        "cleaningChecklist": {
+          "title": "Koristusnimekiri",
+          "content": "☐ Eemalda kogu prügi ja tühi pakend\n☐ Tolmuta riiulid\n☐ Pühi pinnad üle\n☐ Pese põrandad\n☐ Kontrolli, et kõik on õigel kohal",
+          "thought": "Keegi juba proovis seda probleemi koristamisega lahendada."
+        },
+        "deliveryNotes": {
+          "title": "Tarnemärkmed",
+          "content": "Kontoritarvete saadetis\nTarne kuupäev: Täna\nTarnitud: Laoruumi\n\nVastu võetud: Laojuht",
+          "thought": "Selle järgi tarniti kõik korrektselt… Hiir ei saanud kuidagi seda kõike ära viia?!"
+        },
+        "tablesBox": {
+          "revealText": "Kaablid",
+          "thought": "See on imelik…"
+        },
+        "chargersBox": {
+          "revealText": "Toolid",
+          "thought": "Olgu, see on nüüd kaks korda…"
+        },
+        "pansBox": {
+          "revealText": "Pliiatsid",
+          "thought": "Pannid… Pliiatsid… Kõik need sildid tunduvad valed!"
+        },
+        "labelPrinter": {
+          "thought": "Ilmselt kasutatakse seda kastide märgistamiseks."
+        },
+        "marketsBox": {
+          "revealText": "Markerid",
+          "thought": "Keegi muutis silte… ja eksis!"
+        }
+      },
+      "phaseCompleteThoughts": {
+        "phase1": "See katab ilmsed kahtlusalused. Lubage mul edasi otsida — ehk on paberitee.",
+        "phase2": "Koristamine ja tarnedokumendid kattuvad. Probleem peab olema kuskil mujal. Kontrollime kaste endid.",
+        "phase3": "Kõigi kolme kasti sisu oli vale. See pole juhus. Siltidega on midagi valesti."
+      }
+    },
+    "defineProblem": {
+      "question": "Mis on laoruumi peamine probleem?",
+      "options": [
+        {
+          "id": "mess",
+          "text": "Ruum on segane",
+          "correct": false
+        },
+        {
+          "id": "theft",
+          "text": "Keegi murdis sisse ja varastas varustust",
+          "correct": false
+        },
+        {
+          "id": "labels",
+          "text": "Sildid ei sobi sisuga",
+          "correct": true
+        },
+        {
+          "id": "delivery",
+          "text": "Tarnefirma teeb vigu",
+          "correct": false
+        },
+        {
+          "id": "mouse",
+          "text": "Hiir varastas varustuse",
+          "correct": false
+        }
+      ],
+      "tooltips": {
+        "mess": "Koristamine ei lahendanud midagi. Segadus pole peamine probleem.",
+        "theft": "Oli mõned tühjad riiulid ja uks oli lahti. Kuid pole kindlat tõendit, et midagi varastati.",
+        "labels": "Õige. Esemed olid kogu aeg seal, aga need olid hoiul valede siltide all. See tegi laoruumis asjade leidmise väga raskeks.",
+        "delivery": "Tarnemärge näitas, et kõik tarniti korrektselt. Tegelik probleem peab olema midagi, mis juhtub pärast tarnet.",
+        "mouse": "Laoruumis on hiireprobleem, kuid see pole peamine probleem."
+      },
+      "continueButton": "Jätka"
+    }
+  },
+  "hints": {
+    "stickyNote": "Sissepääsuuksel on märge. Klõpsa seda, et näha, mis seal kirjas on.",
+    "readStickyNote": "Knut vajab sinu abi. Jätka märget, et alustada.",
+    "cleanRoom": "Ruum on segane. Klõpsa põrandal olevatel kastidel ja prügil, et koristada.",
+    "boxesRemaining": "Põrandal on veel kaste ja prügi. Klõpsa neid, kuni ruum on puhas.",
+    "waitForKnut": "Knut on teel — oota hetk.",
+    "knutArrival": "Tundub, et keegi astus just sisse. Klõpsa Knutil, et temaga rääkida.",
+    "knutConversation": "Kuula Knut välja. Vali esiletõstetud vastus, et vestlust jätkata.",
+    "investigatePhase1": "Vaata nüüd uuendatud pilguga. Klõpsa ilmsetel kahtlusalustel: kahjustatud kastid, ventilatsioon, uks, tühjad riiulid.",
+    "investigatePhase2": "Ilmsed kahtlusalused ei selgitanud kõike. Klõpsa rohkemate vihjete jaoks koristusnimekirjal ja tarnemärkmetel.",
+    "investigatePhase3": "Dokumendid kattuvad. Proovi avada riiulitel olevad sildistatud kastid.",
+    "investigatePhase4": "Märkasid, et sildid tunduvad valed. Klõpsa sildiprinteril ja Markets-kastil, et kinnitada.",
+    "defineProblem": "Vali variant, mis tegelikult selgitab, mis on laoruumis valesti.",
+    "defineProblemExplained": "Klõpsa „Jätka”, et edasi liikuda.",
+    "completion": "Tagumine uks just lukust lahti. Klõpsa sellel, et väljuda.",
+    "default": "Vaata laoruumis interaktiivseid esemeid."
+  },
+  "items": {
+    "stickyNote": {
+      "popupTitle": "Märge",
+      "popupContent": [
+        "Kallis (username)",
+        "Viimasel ajal on meil laos olnud probleeme. Asjad kaovad pidevalt. Just hiljuti saime uue tooli saadetise ja ma ei leia neid kuskilt!",
+        "Olen kontorist väljas ja kahjuks polnud mul aega seda enne lahkumist uurida…",
+        "Kas sa võiksid pilgu peale visata? Olen sulle palju võlgu!",
+        "- Laojuht"
+      ],
+      "inventoryTitle": "Märge"
+    }
+  },
+  "completion": {
+    "title": "Probleemilahendus lõpetatud",
+    "message": "Õnnitlused, sa lõpetasid probleemilahenduse ruumi!\n\nOli lihtne eeldada, et asjade kadumise probleemi põhjustas segadus. Ja oli loomulik hüpata otse lahendusele — ruumi koristada ja korrastada.\n\nKuid sa avastasid peagi, et see ei lahendanud midagi. Põhiprobleem pidi olema midagi muud.\n\nSeetõttu astusid sammu tagasi ja uurisid alternatiivseid selgitusi. Vihjeid ja tõendeid kogudes suutsid identifitseerida põhiprobleemi: kastide vale sildistamise.\n\nRuum esindab probleemilahenduse üht olulist aspekti: probleemi selget defineerimist enne tegutsemist. See võib säästa palju raisatud aega ja energiat.\n\nTubli!",
+    "buttonText": "Lahku laoruumist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "skipPuzzle": "Jäta see ülesanne vahele",
+    "hintButton": "Vihje",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "systemDialogues": {
+    "cleanBoxMoved": "Riiulile.",
+    "trashRemoved": "Prügikasti.",
+    "investigateComplete": "See on piisavalt tõendeid. Arvan, et saan nüüd tegeliku probleemi defineerida.",
+    "wrongAnswer": "Mõtle, mis tegelikult selgitab, mida sa leidsid."
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  },
+  "answerOverlay": {
+    "title": "Vastus"
+  }
+}

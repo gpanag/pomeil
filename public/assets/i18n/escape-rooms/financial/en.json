@@ -1,0 +1,267 @@
+{
+  "loading": "Loading...",
+  "intro": {
+    "title": "Financial Literacy & Management",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just entered the accountant's office of a large multinational company. Here, you will learn about Financial Literacy & Management — one of the most important skills for any entrepreneur.",
+      "Ms. Amina Darwish, the Senior Accountant, will guide you through various challenges to help you master budgeting, financial terms, and responsible money management."
+    ],
+    "buttonText": "Start Game"
+  },
+  "buttons": {
+    "toggleFullscreen": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continue": "Continue",
+    "startPuzzle": "Start Puzzle",
+    "finishTraining": "Finish Training",
+    "reset": "Reset",
+    "submit": "Submit",
+    "backToMainMenu": "Back to Main Menu"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina Darwish (Senior Accountant)",
+      "dialogues": {
+        "introduction": "Welcome, (username)! Today we'll work on Financial Literacy & Management — one of the most important skills for any entrepreneur.",
+        "introduction_part2": "To begin, I hid a small Budget Planning Card somewhere in this office. It explains the basic principles of financial control.",
+        "introduction_part3": "Start by checking the desk.",
+        "findCard": "To begin, I hid a small Budget Planning Card somewhere in this office. It explains the basic principles of financial control. Start by checking the desk.",
+        "cardFound": "Well done. Before we continue, keep this in mind.",
+        "cardFound_part2": "Financial literacy is not just about numbers. It's about making decisions based on facts, not assumptions.",
+        "cardFound_part3": "Knowing where your money goes empowers you to set realistic goals, control spending, and invest wisely.",
+        "cardFound_part4": "Let's put this into practice.",
+        "puzzleOneComplete": "You're doing very well. I left a small reflection about financial responsibility somewhere... maybe on the whiteboard.",
+        "findReflection": "The reflection strip should be somewhere in this room. Try looking around the filing cabinet area.",
+        "reflectionFound": "Excellent! Now let's continue with another puzzle.",
+        "duringPuzzle": "Please finish the current puzzle first.",
+        "allQuestsComplete": "Excellent work, (username). You demonstrated financial understanding, budgeting awareness, and responsible decision-making.",
+        "allQuestsComplete_part2": "You've completed the Financial Literacy & Management skill!",
+        "allQuestsComplete_part3": "You're becoming a more informed and financially responsible entrepreneur.",
+        "allQuestsComplete_part4": "Ready to move on to the next skill?",
+        "default": "Welcome, (username)! Click on me when you're ready to begin.",
+        "doorOpen": "Great work! The training has been completed!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel Petrov (Junior Assistant)",
+      "dialogues": {
+        "default": "One moment, I'm sorting receipts... so many receipts!",
+        "allQuestsComplete": "Great job on finishing the training!"
+      }
+    }
+  },
+  "exploration": {
+    "findCard": {
+      "deskLaptopCalculator": "Useful tools... but not the card. Maybe try the filing cabinet.",
+      "filingCabinet": "Just folders for now. Try looking in the drawer unit.",
+      "drawer": "Only pencils and staples... maybe check under the desk."
+    },
+    "findReflection": {
+      "whiteboard": "Only charts and notes here. Try the safe box on the wall.",
+      "safeBox": "It's locked... maybe look near the filing cabinet again."
+    }
+  },
+  "items": {
+    "card": {
+      "title": "BUDGET PLANNING BASICS",
+      "items": [
+        {
+          "label": "Track your income",
+          "description": "Always know how much money comes in."
+        },
+        {
+          "label": "Record your expenses",
+          "description": "Every cost matters, big or small."
+        },
+        {
+          "label": "Plan ahead",
+          "description": "Anticipate monthly expenses, taxes, and savings."
+        },
+        {
+          "label": "Adjust & improve",
+          "description": "Review your budget often and adapt to changes."
+        }
+      ],
+      "foundDialogue": "Great job! Bring the card back to Ms. Amina.",
+      "inventoryTitle": "View Budget Planning Card"
+    },
+    "reflection": {
+      "title": "FINANCIAL REFLECTIONS",
+      "quotes": [
+        "Financial discipline builds long-term stability.",
+        "You cannot control what you do not measure.",
+        "Small savings over time create meaningful security."
+      ],
+      "foundDialogue": "Great find! Return to Ms. Amina.",
+      "inventoryTitle": "View Reflection Strip"
+    },
+    "budgetCard": {
+      "inventoryTitle": "View Budget Planning Card"
+    },
+    "reflectionStrip": {
+      "inventoryTitle": "View Reflection Strip"
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match the financial term to its meaning",
+      "termsLabel": "Terms",
+      "meaningsLabel": "Meanings",
+      "progressText": "Matched: {{count}} / 4",
+      "terms": [
+        {
+          "id": "1",
+          "text": "Invoice"
+        },
+        {
+          "id": "2",
+          "text": "Cash Flow"
+        },
+        {
+          "id": "3",
+          "text": "Fixed Expense"
+        },
+        {
+          "id": "4",
+          "text": "Profit Margin"
+        }
+      ],
+      "meanings": [
+        {
+          "id": "a",
+          "text": "Money moving in and out of a business"
+        },
+        {
+          "id": "b",
+          "text": "A document requesting payment"
+        },
+        {
+          "id": "c",
+          "text": "Percentage of revenue that becomes profit"
+        },
+        {
+          "id": "d",
+          "text": "A recurring cost that doesn't change"
+        }
+      ],
+      "feedback": "Think about what flows, what stays constant, and what measures profit.",
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: Match financial terms with their definitions.\n\nCorrect Matches:\n• \"Invoice\" → \"A document requesting payment\" - An invoice is the formal record sent to request payment for goods or services\n• \"Cash Flow\" → \"Money moving in and out of a business\" - Cash flow tracks the actual movement of funds over time\n• \"Fixed Expense\" → \"A recurring cost that doesn't change\" - Fixed expenses like rent remain constant month to month\n• \"Profit Margin\" → \"Percentage of revenue that becomes profit\" - This ratio shows how much of your income becomes actual profit\n\nUnderstanding these terms is essential for financial literacy!",
+      "completeTitle": "Excellent!",
+      "completeMessage": "You've successfully matched all the financial terms with their meanings!",
+      "completeAfterDialogue": "Well done! Return to Ms. Amina."
+    },
+    "fillGap": {
+      "title": "Smart Financial Behavior",
+      "instruction": "Fill in the blanks to complete the sentence:",
+      "sentence": "To stay financially healthy, it is essential to (___) expenses, plan for (___), and keep a clear record of all (___).",
+      "availableWordsLabel": "Available Words",
+      "yourAnswersLabel": "Your Answers (in order)",
+      "placeholderText": "Click words on the left to fill in the blanks.",
+      "removeHint": "(click to remove)",
+      "options": [
+        "track",
+        "emergencies",
+        "transactions",
+        "ignore",
+        "guess"
+      ],
+      "correct": [
+        "track",
+        "emergencies",
+        "transactions"
+      ],
+      "feedback": "Financial management is never based on ignoring or guessing.",
+      "answerOverlay": "After 3 attempts, here's the answer:\n\nQuestion: To stay financially healthy, it is essential to (___) expenses, plan for (___), and keep a clear record of all (___).\n\nCorrect Answer:\n• First blank: \"track\" - You must monitor and record where your money goes to maintain control\n• Second blank: \"emergencies\" - Planning ahead for unexpected situations builds financial security\n• Third blank: \"transactions\" - Keeping clear records of all financial activities enables informed decision-making\n\nComplete sentence: \"To stay financially healthy, it is essential to track expenses, plan for emergencies, and keep a clear record of all transactions.\"\n\nRemember: Financial management is never based on ignoring or guessing!",
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "pattern": {
+      "title": "Pattern Recognition (Scenario {{current}}/{{total}})",
+      "scenarios": [
+        {
+          "question": "A business has high sales but keeps running out of money at the end of each month.",
+          "options": [
+            "Poor cash flow management",
+            "Strong financial planning",
+            "Excess savings",
+            "Low expenses"
+          ],
+          "correct": "Poor cash flow management",
+          "hint": "High sales don't always mean available cash."
+        },
+        {
+          "question": "A shop's rent, salaries, and internet bill remain the same every month.",
+          "options": [
+            "Variable expenses",
+            "Unexpected costs",
+            "Fixed expenses",
+            "Irregular spending"
+          ],
+          "correct": "Fixed expenses",
+          "hint": "These costs don't change month to month."
+        },
+        {
+          "question": "A business spends more than it earns for three consecutive months.",
+          "options": [
+            "Profit",
+            "Break-even",
+            "Loss",
+            "Surplus"
+          ],
+          "correct": "Loss",
+          "hint": "When spending exceeds income, what is the result?"
+        }
+      ],
+      "answerOverlayTemplate": "After 3 attempts, here's the answer:\n\nQuestion: {{question}}\n\nCorrect Answer: \"{{correct}}\"\n\nExplanation: {{hint}}"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "answerOverlay": {
+    "title": "Correct Answer"
+  },
+  "hints": {
+    "defaultHint": "I'm not sure what to do...",
+    "findCard": {
+      "step0": "Ms. Amina said: 'Start by checking the desk.'",
+      "step1": "Not on the desk. Try the filing cabinet.",
+      "step2": "Not in the filing cabinet. Try the drawer.",
+      "step3": "The card might be in the box under the desk."
+    },
+    "findReflection": {
+      "step0": "Ms. Amina mentioned the whiteboard.",
+      "step1": "Not on the whiteboard. Try the safe box.",
+      "step2": "Look near the filing cabinet - something might be sticking out."
+    },
+    "allQuestsComplete": "Let's move to the next room."
+  },
+  "completion": {
+    "title": "Training Complete!",
+    "message": "Congratulations! You have successfully completed the Financial Literacy & Management skill training.",
+    "submessage": "You're becoming a more informed and financially responsible entrepreneur!",
+    "buttonText": "Back to Main Menu"
+  },
+  "ui": {
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

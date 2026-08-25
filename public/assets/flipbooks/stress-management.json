@@ -1,0 +1,209 @@
+{
+  "id": "stress-management",
+  "moduleNumber": 17,
+  "title": "Stress Management",
+  "subtitle": "Module 17",
+  "coverImage": "assets/thumbs/stress-management.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 17",
+      "title": "Stress Management",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/stress-management.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module you will"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Understand the underlying mechanisms causing stress,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Know how to improve your skill of stress management,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Learn actionable techniques for lowering your stress levels,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Discover valuable resources for further individual development,"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Stress is one of the core functions of our bodies, originally meant to increase our chances of survival in the natural environment. Now, in modern times, various internal and external stressors (things causing stress reaction), such as important business presentations, conversations with investors, etc., contribute to frequent and strong feelings of being stressed, which has adverse effects on our bodies and minds. Stress management is the key competence enabling us to reduce the negative effects that stress has on us, thus continuing to carry out everyday tasks and build the career with optimal performance (Nagoski & Nagoski, 2019)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: you are about to talk with the investor, that you’re hoping will support your business idea financially. Not being able to control your stress might lead to your overall decreased performance, visible signs (shakiness, short breath, sweating), which from the professional point of view, isn’t a favourable situation for you. Through the application of relevant stress management techniques, such as positive reappraisal or planful problem-solving (more on them on the following pages), you will be able to maintain your composure, effectively engage with investor, and ultimately, receive your funding (Nagoski & Nagoski, 2019)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Understanding the mechanism - in order to effectively counter the adverse effects of stress caused by various stressors, you need to become aware of the principles of your body stress response,",
+            "Learning effective techniques - once you know how your body and mind works, you need to discover relevant methods and techniques enabling you to reduce levels of stress, develop higher stress resistance and foster your regeneration processes,",
+            "Practice - the overall effectiveness of the actions undertaken to deal with stress and stressors depends on how much time and energy you assign to practicing and exercising them. Give yourself time, don’t set the bar too high and celebrate even small wins."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Below we present you with a few effective methods of reducing the negative effects stress has on your body (Nagoski & Nagoski, 2019; Davis, Robbins Eschelman, McKay, 2019):"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Planful problem-solving - it refers to planning in order to prepare for certain stressful situations, in order to feel more confident. As for the investor conversation example, you can e.g read books on the current market state, train your speech skills, etc.,",
+            "Positive reappraisal - its the state of mind, in which you try to stop perceiving difficulties and obstacles as stressors. It's about finding worth, opportunity and chance in everything that happens, also seemingly adverse situations ,",
+            "The 80-20 principle - this method lowers your stress through enabling you to relax, thanks to prioritization. 80% of your gains come from 20% of your effort."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "The most common challenges and the way of dealing with them include"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "The lack of quick results - while stuck in the “quick effort - instant reward” mindset, you might find it discouraging to not see any positive effects of applying these methods right away. Be patient, practice them regularly, and cherish every progress.",
+            "Forgetting to apply these methods - in case you are forgetting learned techniques in stressful situations, try using strategically-placed reminders, such as most effective techniques written down on a note in your wallet or on your phone’s lock screen."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Exercises"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Try to carry out the following tasks and exercises to improve your stress management skills:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Unhooking - practice unhooking in 3 simple steps: 1. realize that you’re hooked on a difficult feeling/thought; 2. silently name it (e.g. “here is tightness in my chest”); 3. refocus on what you are currently doing and who is around you.",
+            "Grounding - learn how to refocus by exercising grounding: 1. slow down, become aware of your body and surroundings; 2. focus on your senses - what you can smell, taste, hear, touch; 3. practice whenever you will find a free moment, to make it easier to use this technique during more stressful situations (WHO, 2020)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The checklist below will let you better understand your stressors and stress resilience. Consider seeking support related to areas / questions you answered with “YES” (University of Edinburgh, 2010)."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Do you generally feel your skills and abilities meet the demands of your professional path?",
+            "Are you aware of the importance of keeping physically active?",
+            "Do you generally feel you are able to create adequate quality time with family / friends?",
+            "Do you generally have a clear idea of your day-to-day activities?",
+            "Are you free from significant concerns regarding your financial security /wellbeing?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The ability to effectively manage stress is one of the biggest allies of modern-times entrepreneurs, employees, and students. Even though some amounts of stress can be motivating, oftentimes it has rather adverse effects on your bodies, minds, and overall performance. Fortunately, stress management is just another skill that we can practice and train to become more resilient to it. Make sure to find a bit of time everyday to exercise this skill, whether at home, or in stressful situations, as it's the best way to increase your proficiency. Moreover, we encourage you to expand the knowledge you have found in this module, as it's a vast and deep topic, which we haven’t exactly exhausted on the pages above. The knowledge we have passed in this module, such as the importance, definition, relevancy, core principles and most common applications, could serve as a starting point for your further journey."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Learners who completed this module are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be able to explain how stress affects body and mind,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Gain a certain level of control over their stress levels,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Identify characteristics of personal stress resilience,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Apply stress management techniques in difficult situations."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Books: Principles and Practice of Stress Management by Paul M. Lehrer, Robert L. Woolfolk, The Upside of Stress by Kelly McGonigal,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Videos: Stress Management Strategies: Ways to Unwind, Tools for Managing Stress & Anxiety | Huberman Lab Essentials"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Stress Management",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/stress-management.pdf"
+      }
+    }
+  ]
+}

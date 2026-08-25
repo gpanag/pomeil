@@ -1,0 +1,181 @@
+{
+  "loading": "Laster Etterlevelse...",
+  "intro": {
+    "title": "Etterlevelse",
+    "paragraphs": [
+      "Drømmen din er å bli en suksessrik gründer og skape et selskap som forener mennesker.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen.",
+      "I dag går du inn i Juridisk avdeling. Dokumenter er pent ordnet. Atmosfæren er stille og alvorlig. Dette er det perfekte øyeblikket for å teste etterlevelses-ferdighetene dine."
+    ],
+    "buttonText": "Gå inn i Juridisk avdeling"
+  },
+  "characters": {
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "greet": "Alle beslutninger vi tar har juridiske konsekvenser. Etterlevelse handler ikke om å kunne hver lov utenat. Det handler om å gjenkjenne risiko, handle ansvarlig og vite når man skal spørre.",
+        "findDocument": "Før vi tester kunnskapen din, må jeg be deg undersøke dette kontoret. Jeg la fra meg en sjekkliste for etterlevelsesrisiko et sted på pulten min. Kan du finne den? Begynn med å se i arkivskapet.",
+        "documentFound": "Etterlevelse begynner med bevissthet. Å gjenkjenne hvor risikoer skjuler seg er første steg. La meg teste forståelsen din.",
+        "quiz1Intro": "Dra hvert dokument til riktig kategori.",
+        "quiz1Done": "Ikke all informasjon skal behandles likt. Nå må vi gå dypere.",
+        "findEmail": "Tidligere i dag skrev jeg ut en mistenkelig e-post som ble flagget av etterlevelsessystemet vårt. Jeg la den ved bokhyllen. Kan du hente den?",
+        "emailFound": "Denne e-posten har flere røde flagg. Men først, la meg utfordre forståelsen din av etterlevende prosesser.",
+        "puzzle2Intro": "En kollega merket en liten prosedyrefeil i en kontrakt, men sa ingenting. Sett handlingene fra minst til mest etterlevende.",
+        "finalWords": "Du identifiserte risikoer. Du valgte ansvar fremfor enkelhet. Det er etterlevelse i praksis.\n\nHusk: etterlevelse beskytter mennesker, organisasjoner og tillit. Du er klar for neste utfordring!",
+        "completion": "Opplæringen er fullført!",
+        "default": "Fortsett å se deg om i juridisk avdeling etter spor."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "De fleste brudd starter ikke med dårlige hensikter. De starter med uoppmerksomhet.",
+        "default": "Fortsatt gjennomgår saker… snakk med Sarah."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dokumentklassifisering",
+      "instructions": "Dra hvert dokument til riktig kategori.",
+      "leftItems": [
+        {"id": "doc1", "text": "Klientkontrakt"},
+        {"id": "doc2", "text": "Intern policy-retningslinje"},
+        {"id": "doc3", "text": "Personlige notater"},
+        {"id": "doc4", "text": "Konfidensiell ansattmappe"}
+      ],
+      "rightItems": [
+        {"id": "cat1", "text": "Konfidensielt"},
+        {"id": "cat2", "text": "Intern bruk"},
+        {"id": "cat3", "text": "Offentlig / ikke-sensitivt"}
+      ],
+      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "feedback": {
+        "wrong": "Ikke helt riktig. Tenk på hvem som skal ha tilgang til hvert dokument.",
+        "correct": "Ikke all informasjon skal behandles likt."
+      },
+      "answerOverlay": "Riktig klassifisering:\n• Klientkontrakt → Konfidensielt\n• Ansattmappe → Konfidensielt\n• Intern policy → Intern bruk\n• Personlige notater → Offentlig / ikke-sensitivt"
+    },
+    "sequenceOrder": {
+      "title": "Stillhet vs Ansvar",
+      "instructions": "En kollega merker en liten prosedyrefeil i en kontrakt, men sier ingenting. Plasser handlingene på en tidslinje fra minst til mest etterlevende.",
+      "items": [
+        "Dokumenter saken og korrigerende tiltak",
+        "Ignorer saken",
+        "Informer ansvarlig leder",
+        "Rett opp i stillhet uten å rapportere"
+      ],
+      "correctOrder": [
+        "Ignorer saken",
+        "Rett opp i stillhet uten å rapportere",
+        "Informer ansvarlig leder",
+        "Dokumenter saken og korrigerende tiltak"
+      ],
+      "hints": [
+        "Steg 1: Det verste svaret er å ikke gjøre noe.",
+        "Steg 2: Å rette opp uten å rapportere er litt bedre, men fortsatt ikke i tråd med etterlevelse.",
+        "Steg 3: Å informere den ansvarlige er god praksis.",
+        "Steg 4: Full dokumentasjon er gullstandarden i etterlevelse."
+      ],
+      "feedback": {
+        "wrong": "Det er ikke riktig rekkefølge. Tenk på hvilken handling som viser minst og mest etterlevelse.",
+        "correct": "Etterlevelse krever åpenhet, ikke snarveier."
+      },
+      "answerOverlay": "Riktig rekkefølge fra minst til mest etterlevende:\n1. Ignorer saken\n2. Rett opp i stillhet\n3. Informer ansvarlig leder\n4. Dokumenter sak og korrigering",
+      "checkButton": "Sjekk rekkefølge"
+    },
+    "singleChoice": {
+      "title": "Identifisering av Røde Flagg",
+      "instructions": "Marker fraser som er røde flagg.",
+      "question": "\"Vi bør gå raskt fram før noen begynner å stille for mange spørsmål.\nLa oss holde dette mellom oss.\"",
+      "options": {
+        "a": "«gå raskt fram» og «for mange spørsmål»",
+        "b": "«før noen begynner» og «holde dette mellom oss»",
+        "c": "«Vi bør gå» og «La oss holde dette»",
+        "d": "Det finnes ingen røde flagg i denne e-posten"
+      },
+      "hint": "Se etter språk som tyder på hemmelighold eller unngåelse av tilsyn.",
+      "feedback": {
+        "wrong": "Det er ikke riktig. Se etter setninger som tyder på unngåelse av tilsyn eller hemmelighold.",
+        "correct": "Språk avslører ofte etterlevelsesrisiko."
+      },
+      "answerOverlay": "Riktig svar er: «før noen begynner» og «holde dette mellom oss» — disse setningene tyder på hemmelighold og unngåelse av riktige prosedyrer."
+    },
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {"checkButton": "Send inn", "resetButton": "Tilbakestill"}
+  },
+  "hints": {
+    "intro": "Klikk på Sarah ved hovedpulten for å begynne.",
+    "talkToSarah": "Klikk på Sarah for å begynne.",
+    "findDocument": "Sjekk arkivskapet ved pulten.",
+    "talkToSarah2": "Gå tilbake til Sarah med det du fant.",
+    "puzzle1Matching": "Koble hvert dokument til riktig kategori — tenk på hvem som skal ha tilgang.",
+    "findEmail": "Sarah nevnte bokhyllen. Se etter den utskrevne e-posten der.",
+    "talkToSarah3": "Gå tilbake til Sarah med e-posten du fant.",
+    "puzzle2SequenceOrder": "Dra handlingene i rekkefølge fra minst til mest etterlevende.",
+    "puzzle3SingleChoice": "Se etter fraser som tyder på hemmelighold eller unngåelse av tilsyn.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg om i juridisk avdeling etter spor."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i den stille juridiske avdelingen. Dokumenter er pent ordnet på pulter og hyller. Du legger merke til etterlevelsesansvarlig som ser opp fra skjermen, og juridisk konsulent som leser saksdokumenter ved pulten sin.",
+    "clickCabinet": "Arkivskapet er ulåst — det er en etterlevelsesrisiko i seg selv. Men det er en dokumentmappe inni med en sjekkliste.",
+    "foundDocument": "Du fant den! En sjekkliste for etterlevelsesrisiko lå i det ulåste skapet.",
+    "documentRead": "Bra jobbet! Gå tilbake til Sarah.",
+    "clickDesk": "Bare vanlige kontorrekvisita og en halv kaffekopp. Morsom faktum: gjennomsnittlig kontorarbeider bruker rundt 10 000 ark papir per år. Fortsett å lete!",
+    "foundEmail": "Du fant den flaggede e-posten! Gå tilbake til Sarah.",
+    "scales": "Bare en dekorativ gjenstand. Rettferdighetens vekt — et fint symbol, men ikke det du trenger akkurat nå."
+  },
+  "items": {
+    "document": {
+      "popupTitle": "Sjekkliste for etterlevelsesrisiko",
+      "popupContent": [
+        "Ulåst arkivskap: Fysiske dokumenter må alltid være sikret.",
+        "Signert kontrakt etterlatt uten oppsyn: Sensitive avtaler skal aldri ligge åpent.",
+        "Dataskjerm med åpne klientopplysninger: Skjermer med konfidensiell info må låses når de er uten oppsyn."
+      ]
+    },
+    "email": {
+      "popupTitle": "Flagget e-post – Etterlevelsesgjennomgang",
+      "popupContent": [
+        "Fra: Ukjent avsender",
+        "Emne: Rask beslutning kreves",
+        "«Vi bør gå raskt fram før noen begynner å stille for mange spørsmål. La oss holde dette mellom oss.»",
+        "Denne e-posten er flagget av etterlevelses-overvåkingssystemet."
+      ]
+    },
+    "checklist": {"inventoryTitle": "Etterlevelses-sjekkliste"},
+    "flaggedEmail": {"inventoryTitle": "Flagget e-post"}
+  },
+  "completion": {
+    "title": "Ferdighet fullført: Etterlevelse",
+    "message": "Du viste: Risikobevissthet, Etisk dømmekraft, Håndtering av informasjon, Prosedyremessig ansvar.\n\nEtterlevelse beskytter mennesker, organisasjoner og tillit.",
+    "buttonText": "Forlat Juridisk avdeling"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar",
+    "resetButton": "Tilbakestill"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

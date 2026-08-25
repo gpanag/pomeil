@@ -1,0 +1,217 @@
+{
+  "loading": "Laadin...",
+  "intro": {
+    "title": "Kultuuriline teadlikkus",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind palgati just suurde rahvusvahelisse ettevõttesse, kus töötavad koos eri kultuuridest, taustadest ja ametitest pärit inimesed. Selles ettevõttes töötamine on sulle õpikogemus, kuna erinevate väljakutsete täitmise käigus omandad oskused, mis sisalduvad POMEIL-i kompetentsikaardil ja on igale ettevõtjale hädavajalikud.",
+      "Täna on sinu esimene päev kontoris. HR-juht Fatma aitab sul avastada, mida kultuuriline teadlikkus tegelikult tähendab ja kuidas erinevatel vaatenurkadel tööl lugupidavalt navigeerida."
+    ],
+    "buttonText": "Alusta mängu"
+  },
+  "characters": {
+    "fatma": {
+      "name": "Fatma (HR-juht)",
+      "dialogues": {
+        "introduction": "Tere (username)! Enne kui hakkad siin tööle, on mõned asjad, mida sa peaksid teadma meie ettevõtte lähenemise kohta kultuurilisele teadlikkusele, kuna paljud meie kolleegid tulevad eri riikidest üle maailma.",
+        "introduction_part2": "Kuskil selles ruumis on märge mõnede kasulike näpunäidetega kultuurilise teadlikkuse kohta. Püüa see leida ja loe seda hoolikalt, siis tule minu juurde tagasi. Alusta sahtli kontrollimisest.",
+        "findNote": "Kuskil selles ruumis on märge mõnede kasulike näpunäidetega kultuurilise teadlikkuse kohta. Püüa see leida ja loe seda hoolikalt, siis tule minu juurde tagasi. Alusta sahtli kontrollimisest.",
+        "noteFound": "Tubli, sa leidsid märkme!",
+        "noteFound_part2": "Seega kultuuriline teadlikkus hõlmab oma kultuuriliste mõjude tunnistamist, mõistes samal ajal teiste kultuurilisi väärtusi, uskumusi ja praktikaid. See ulatub kaugemale lihtsast tunnustamisest, kuna nõuab aktiivset pingutust, et erinevaid kultuure lugupidavalt ja teadlikult väärtustada ja nendega suhelda.",
+        "noteFound_part3": "Kultuuriline teadlikkus on hädavajalik stereotüüpide, eelarvamuste ja arusaamatuste vastu võitlemisel, mis sageli tekivad kultuurilistest erinevustest.",
+        "noteFound_part4": "Jätkame viktoriiniga. Edu!",
+        "quizComplete": "Arvan, et oled nüüd kultuuriliselt tundlikum!",
+        "quizComplete_part2": "Kirjutasin sulle paberile mõned huvitavad faktid, mida võiksid kultuurilise teadlikkuse kohta teada, kuid ma ei mäleta, kuhu ma selle jätsin. Palun vaata ringi ruumis. Kontrolli minu lauda, seda minu taga.",
+        "findPaper": "Kirjutasin sulle paberile mõned huvitavad faktid, mida võiksid kultuurilise teadlikkuse kohta teada, kuid ma ei mäleta, kuhu ma selle jätsin. Palun vaata ringi ruumis. Kontrolli minu lauda, seda minu taga.",
+        "paperFound": "Suurepärane, sa leidsid selle!",
+        "paperFound_part2": "Mul on sulle veel mõned viktoriinid, nii et anna oma parim!",
+        "puzzleInProgress": "Palun lõpeta esmalt ülesanne.",
+        "allQuestsComplete": "Suurepärane! Sa näitasid, kuidas rahvusvahelist suhtlust lugupidavalt käsitleda. See on tõeline kultuuriline teadlikkus.",
+        "allQuestsComplete_part2": "Õnnitlused, sa lõpetasid kõik ja tõstsid oma kultuurilise teadlikkuse taset. Oled ettevõttes õitsemisele üks samm lähemal.",
+        "allQuestsComplete_part3": "Koolitus on lõpetatud! Vajuta „Lõpeta koolitus“, et jätkata."
+      }
+    },
+    "jun": {
+      "name": "Jun (kolleeg)",
+      "dialogues": {
+        "default": "Tere (username), tere tulemast! Olen Jun. Lõpetan lihtsalt aruannet. Anna teada, kui midagi vajad.",
+        "findPaper_noProgress": "Tere (username). Lõpetan lihtsalt seda aruannet. Kontrollisid Fatma lauda?",
+        "findPaper_laptopHint": "Pole paberit näinud, aga loomulikult võid vaadata mu sülearvuti alla!",
+        "findPaper_laptopReminder": "Lihtsalt klõpsa sülearvutil, et kontrollida.",
+        "allQuestsComplete": "Edu!"
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Kultuurilise teadlikkuse viktoriin - Tõsi või Vale",
+      "trueButton": "Tõsi",
+      "falseButton": "Vale",
+      "questions": [
+        {
+          "text": "Žestidel võib mõnikord olla erinevates kultuurides erinev tähendus.",
+          "answer": true,
+          "hint": "Mõtle uuesti… Ühes riigis tähendab pöial üles „tubli töö“ (lääneriigid - USA, Suurbritannia, Euroopa), kuid teises (Lähis-Ida riigid - Iraan, osa Iraagist, Afganistan) võib seda näha ebaviisakana. Kas žestid on alati universaalsed?"
+        },
+        {
+          "text": "Samast riigist pärit inimesed jagavad sama kultuuri ja suhtlusstiili.",
+          "answer": false,
+          "hint": "Mõtle, kuidas eri piirkondadest, vanusegruppidest või ametitest pärit inimesed käituvad, isegi ühe riigi sees. Kultuur ei ole üks suurus kõigile!"
+        },
+        {
+          "text": "Kui keegi ei ütle kohe „ei“, tähendab see, et ta nõustub.",
+          "answer": false,
+          "hint": "Mõnes kultuuris väldivad inimesed otsekohe „ei“ ütlemist, et jääda viisakaks või säilitada harmoonia. Võib-olla tähendab vaikus või kõhklus midagi muud?"
+        }
+      ],
+      "answerOverlay": {
+        "prefix": "Pärast 3 katset, siin on vastus:",
+        "questionLabel": "Küsimus:",
+        "correctAnswerLabel": "Õige vastus:",
+        "explanationLabel": "Selgitus:",
+        "trueValue": "TÕSI",
+        "falseValue": "VALE"
+      }
+    },
+    "puzzleTwo": {
+      "title": "Kultuurilise teadlikkuse viktoriin - Mitmikvalik",
+      "question": "Kuidas on parim viis kultuurilist teadlikkust koosolekul näidata?",
+      "options": {
+        "a": "Eelda, et kõigil on samad kombed",
+        "b": "Pööra tähelepanu sellele, kuidas eri taustadega kolleegid suhtlevad",
+        "c": "Paranda inimesi, kui nende kombed tunduvad ebaharilikud",
+        "d": "Väldi suhtlust teiste kultuuride kolleegidega"
+      },
+      "feedback": "Mõtle: kultuuriline teadlikkus on erinevuste märkamine ja austamine, mitte nende ignoreerimine või hindamine.",
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Kui teisest riigist pärit kolleeg räägib, mis on parim vastus, et näidata kultuurilist teadlikkust?\n\nVariandid:\na) Paranda nende hääldust, et aidata neid parandada\nb) Kuula hoolikalt ja küsi vajadusel küsimusi\nc) Eelda, et tead juba, mida nad mõtlevad\nd) Räägi aeglasemalt, et nad sind paremini mõistaksid\n\nÕige vastus: b) Kuula hoolikalt ja küsi vajadusel küsimusi\n\nSelgitus: Kultuuriline teadlikkus on erinevuste märkamine ja austamine, mitte nende ignoreerimine või hindamine. Hoolikas kuulamine näitab austust ja siirast huvi inimese mõistmise vastu."
+    },
+    "puzzleThree": {
+      "title": "Kultuurilise teadlikkuse viktoriin - Järjekord",
+      "question": "Pane järgmised tegevused kõige lugupidavamasse järjekorda.",
+      "availableStepsLabel": "Saadaolevad sammud",
+      "yourSequenceLabel": "Sinu järjekord",
+      "placeholderText": "Klõpsa vasakul olevatel sammudel, et neid siia lisada.",
+      "resetButton": "Lähtesta",
+      "submitButton": "Esita järjekord",
+      "options": {
+        "a": "Küsi viisakalt selgitust, kui millestki aru ei saa.",
+        "b": "Hoidu naljadest ega kommentaaridest kellegi aktsendi kohta.",
+        "c": "Kuula hoolikalt segamata.",
+        "d": "Tänu ja tunnusta nende panust."
+      },
+      "feedback": {
+        "position1": "Alusta vaikse ja keskendununa olemisest — mis aitab sul kedagi tegelikult kuulda ja mõista?",
+        "position2": "Pärast kuulamist, mida sa ei tohiks teha, mis võiks neid häbistada või vestlust sulgeda?",
+        "position3": "Kui vajad endiselt üksikasju, mis on viisakas viis nende saamiseks, panemata inimest piinlikku olukorda?",
+        "position4": "Mis on lihtne, positiivne asi, mida teha pärast seda, kui keegi jagab oma mõtteid, mis ehitab heatahtlikkust?",
+        "incomplete": "Palun lõpeta järjekord.",
+        "threeAttempts": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Mis on rahvusvahelise suhtluse lugupidava käsitlemise õige järjekord?\n\nÕige vastus:\n1. „Kuula hoolikalt segamata“ (c) - Pead esmalt andma oma täieliku tähelepanu, et mõista, mida inimene ütleb\n2. „Hoidu naljadest ega kommentaaridest kellegi aktsendi kohta“ (b) - Väldi kõike, mis võiks neid ebamugavasse olukorda panna või suhtluse sulgeda\n3. „Küsi viisakalt selgitust, kui millestki aru ei saa“ (a) - Kui oled kuulanud, püüa lugupidavalt paremini mõista\n4. „Tänu ja tunnusta nende panust“ (d) - Näita tunnustust, et ehitada heatahtlikkust ja positiivseid suhteid"
+      }
+    },
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "default": "Ma pole kindel, mida teha...",
+    "findNote": {
+      "step0": "Fatma ütles: „Alusta sahtli kontrollimisest.“",
+      "step1": "Sahtlis olev märge ütles, et kontrollida vasakul olevat teadetetahvlit.",
+      "step2": "Vasakul tahvlil olev sõnum ütles, et kontrollida „teist teadetetahvlit“ (paremal olevat)."
+    },
+    "findPaper": {
+      "step0": "Fatma ütles, et kontrollida tema lauda.",
+      "step1": "Pean kontrollima Juni sülearvuti lähedal."
+    },
+    "allQuestsComplete": "Liigume järgmisesse ruumi."
+  },
+  "items": {
+    "note": {
+      "altText": "Märge kolme reegliga.",
+      "inventoryTitle": "Vaata märget",
+      "foundDialogue": "Hea töö! Klõpsa Fatmal, et jätkata.",
+      "returnDialogue": "Tubli! Klõpsa Fatmal, et jätkata."
+    },
+    "paper": {
+      "inventoryTitle": "Vaata paberit",
+      "foundDialogue": "Sa saad suurepäraselt hakkama! Klõpsa Fatmal, et jätkata.",
+      "popupTitle": "LÕBUSAD FAKTID KULTUURILISE TEADLIKKUSE KOHTA",
+      "popupContent": [
+        {
+          "title": "„Pöial üles“ pole alati positiivne!",
+          "text": "Paljudes lääneriikides tähendab see „tubli töö“, kuid kohtades nagu Iraan, osa Lääne-Aafrikast jne, peetakse seda solvavaks."
+        },
+        {
+          "title": "Noogutamine ei tähenda alati „jah“.",
+          "text": "Bulgaarias tähendab noogutamine „ei“ ja pea küljelt küljele raputamine võib tähendada „jah“."
+        },
+        {
+          "title": "Vaikus võib palju öelda.",
+          "text": "Mõnedes kultuurides (Jaapan, Soome jne) peetakse vaikust austuse ja mõtlikkuse, mitte ebamugavuse märgiks."
+        },
+        {
+          "title": "Isiklik ruum on kultuuriline!",
+          "text": "Ladina-Ameerikast või Lähis-Idast pärit inimesed seisavad vestluses sageli lähemal kui need Põhja-Euroopast või Põhja-Ameerikast."
+        },
+        {
+          "title": "„OK“ käeliigutus pole kõikjal okei.",
+          "text": "Brasiilias on „OK“ märk (pöial ja nimetissõrm moodustamas ringi) ebaviisakas žest."
+        }
+      ]
+    }
+  },
+  "systemDialogues": {
+    "drawerSearch": "Sees ainult mõned vanad failid. Tundub, et see, mida otsid, ei ole siin. Vaata vasakul olevat teadetetahvlit.",
+    "deskDossiersSearch": "Ainult hulk dokumendikaustu. Märget pole siin.",
+    "leftBoardMessage": "See on lihtsalt meeldetuletus koosoleku kohta. Võib-olla leiad selle, mida vajad, teiselt teadetetahvlilt. Proovi uuesti!",
+    "deskDrawersSearch": "Siin pole midagi. Tundub, et paber on kuskil mujal. Kontrolli Juni sülearvuti all, kuid kõigepealt küsi temalt.",
+    "alreadySearched": "Olen siin juba vaadanud. Fatma ütles, et kontrollida lauda.",
+    "askJunFirst": "Peaksin tõenäoliselt Juni käest enne tema sülearvuti puudutamist küsima.",
+    "quizCompleteReturn": "Tubli! Klõpsa Fatmal, et jätkata."
+  },
+  "completion": {
+    "title": "Koolitus lõpetatud!",
+    "message": "Õnnitlused! Sa demonstreerisid edukalt suurepäraseid kultuurilise teadlikkuse ja suhtlemisoskusi.",
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "quizComplete": {
+    "title": "Õige!",
+    "message": "Suurepärane töö! Sa lõpetasid esimese sammu oma kultuurilise teadlikkuse koolituses.",
+    "buttonText": "Jätka"
+  },
+  "answerOverlay": {
+    "title": "Õige vastus",
+    "buttonText": "Jätka"
+  },
+  "dialogueActions": {
+    "continue": "Jätka",
+    "startQuiz": "Alusta viktoriini",
+    "finishTraining": "Lõpeta koolitus"
+  },
+  "ui": {
+    "toggleFullscreen": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Lülita täisekraan",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

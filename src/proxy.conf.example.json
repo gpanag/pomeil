@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "http://YOUR-STRAPI-HOST:1337/api/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": { "^/api": "" }
+  },
+  "/uploads": {
+    "target": "http://YOUR-STRAPI-HOST:1337/uploads/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": { "^/uploads": "" }
+  }
+}

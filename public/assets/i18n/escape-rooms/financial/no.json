@@ -1,0 +1,267 @@
+{
+  "loading": "Laster...",
+  "intro": {
+    "title": "Finansiell kompetanse og forvaltning",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en bedrift som bringer folk sammen.",
+      "Du har akkurat gått inn på regnskapsfører-kontoret til et stort multinasjonalt selskap. Her vil du lære om Finansiell kompetanse og forvaltning — en av de viktigste ferdighetene for enhver gründer.",
+      "Fru Amina Darwish, seniorregnskapsfører, vil veilede deg gjennom ulike utfordringer for å hjelpe deg å mestre budsjettering, finansielle begreper og ansvarlig pengeforvaltning."
+    ],
+    "buttonText": "Start spillet"
+  },
+  "buttons": {
+    "toggleFullscreen": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continue": "Fortsett",
+    "startPuzzle": "Start oppgave",
+    "finishTraining": "Fullfør opplæring",
+    "reset": "Tilbakestill",
+    "submit": "Send inn",
+    "backToMainMenu": "Tilbake til hovedmenyen"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina Darwish (seniorregnskapsfører)",
+      "dialogues": {
+        "introduction": "Velkommen, (username)! I dag skal vi jobbe med finansiell kompetanse og forvaltning — en av de viktigste ferdighetene for enhver gründer.",
+        "introduction_part2": "Til å begynne med har jeg gjemt et lite Budsjettplanleggingskort et sted på dette kontoret. Det forklarer de grunnleggende prinsippene for finansiell kontroll.",
+        "introduction_part3": "Begynn med å sjekke pulten.",
+        "findCard": "Til å begynne med har jeg gjemt et lite Budsjettplanleggingskort et sted på dette kontoret. Det forklarer de grunnleggende prinsippene for finansiell kontroll. Begynn med å sjekke pulten.",
+        "cardFound": "Bra jobbet. Før vi fortsetter, ha dette i tankene.",
+        "cardFound_part2": "Finansiell kompetanse handler ikke bare om tall. Det handler om å ta beslutninger basert på fakta, ikke antakelser.",
+        "cardFound_part3": "Å vite hvor pengene dine går styrker deg til å sette realistiske mål, kontrollere forbruk og investere klokt.",
+        "cardFound_part4": "La oss sette dette i praksis.",
+        "puzzleOneComplete": "Du gjør det veldig bra. Jeg la igjen en liten refleksjon om finansielt ansvar et sted... kanskje på tavlen.",
+        "findReflection": "Refleksjonsstrimmelen burde være et sted i dette rommet. Prøv å se rundt arkivskapet.",
+        "reflectionFound": "Utmerket! La oss fortsette med en annen oppgave.",
+        "duringPuzzle": "Vennligst fullfør den nåværende oppgaven først.",
+        "allQuestsComplete": "Utmerket arbeid, (username). Du demonstrerte finansiell forståelse, budsjettbevissthet og ansvarlig beslutningstaking.",
+        "allQuestsComplete_part2": "Du har fullført ferdigheten Finansiell kompetanse og forvaltning!",
+        "allQuestsComplete_part3": "Du er i ferd med å bli en mer informert og finansielt ansvarlig gründer.",
+        "allQuestsComplete_part4": "Klar til å gå videre til neste ferdighet?",
+        "default": "Velkommen, (username)! Klikk på meg når du er klar til å begynne.",
+        "doorOpen": "Bra jobbet! Opplæringen er fullført!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel Petrov (juniorassistent)",
+      "dialogues": {
+        "default": "Et øyeblikk, jeg sorterer kvitteringer... så mange kvitteringer!",
+        "allQuestsComplete": "Bra jobbet med å fullføre opplæringen!"
+      }
+    }
+  },
+  "exploration": {
+    "findCard": {
+      "deskLaptopCalculator": "Nyttige verktøy... men ikke kortet. Kanskje prøv arkivskapet.",
+      "filingCabinet": "Bare mapper foreløpig. Prøv å se i skuffeenheten.",
+      "drawer": "Bare blyanter og stifter... kanskje sjekk under pulten."
+    },
+    "findReflection": {
+      "whiteboard": "Bare diagrammer og notater her. Prøv safen på veggen.",
+      "safeBox": "Den er låst... kanskje se nær arkivskapet igjen."
+    }
+  },
+  "items": {
+    "card": {
+      "title": "BUDSJETTPLANLEGGINGENS GRUNNLEGGENDE",
+      "items": [
+        {
+          "label": "Spor inntekten din",
+          "description": "Vit alltid hvor mye penger som kommer inn."
+        },
+        {
+          "label": "Registrer utgiftene dine",
+          "description": "Hver kostnad teller, stor eller liten."
+        },
+        {
+          "label": "Planlegg fremover",
+          "description": "Forutse månedlige utgifter, skatter og sparing."
+        },
+        {
+          "label": "Juster og forbedre",
+          "description": "Gjennomgå budsjettet ditt ofte og tilpass deg endringer."
+        }
+      ],
+      "foundDialogue": "Bra jobbet! Ta kortet tilbake til fru Amina.",
+      "inventoryTitle": "Vis Budsjettplanleggingskort"
+    },
+    "reflection": {
+      "title": "FINANSIELLE REFLEKSJONER",
+      "quotes": [
+        "Finansiell disiplin bygger langsiktig stabilitet.",
+        "Du kan ikke kontrollere det du ikke måler.",
+        "Små besparelser over tid skaper meningsfull sikkerhet."
+      ],
+      "foundDialogue": "Flott funn! Gå tilbake til fru Amina.",
+      "inventoryTitle": "Vis Refleksjonsstrimmel"
+    },
+    "budgetCard": {
+      "inventoryTitle": "Vis Budsjettplanleggingskort"
+    },
+    "reflectionStrip": {
+      "inventoryTitle": "Vis Refleksjonsstrimmel"
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match det finansielle begrepet med dets betydning",
+      "termsLabel": "Begreper",
+      "meaningsLabel": "Betydninger",
+      "progressText": "Matchet: {{count}} / 4",
+      "terms": [
+        {
+          "id": "1",
+          "text": "Faktura"
+        },
+        {
+          "id": "2",
+          "text": "Kontantstrøm"
+        },
+        {
+          "id": "3",
+          "text": "Fast utgift"
+        },
+        {
+          "id": "4",
+          "text": "Profittmargin"
+        }
+      ],
+      "meanings": [
+        {
+          "id": "a",
+          "text": "Penger som beveger seg inn og ut av en virksomhet"
+        },
+        {
+          "id": "b",
+          "text": "Et dokument som ber om betaling"
+        },
+        {
+          "id": "c",
+          "text": "Prosentandel av inntekten som blir profitt"
+        },
+        {
+          "id": "d",
+          "text": "En tilbakevendende kostnad som ikke endrer seg"
+        }
+      ],
+      "feedback": "Tenk på hva som strømmer, hva som forblir konstant, og hva som måler profitt.",
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Match finansielle begreper med deres definisjoner.\n\nRiktige matchinger:\n• «Faktura» → «Et dokument som ber om betaling» - En faktura er den formelle registreringen som sendes for å be om betaling for varer eller tjenester\n• «Kontantstrøm» → «Penger som beveger seg inn og ut av en virksomhet» - Kontantstrøm sporer den faktiske bevegelsen av midler over tid\n• «Fast utgift» → «En tilbakevendende kostnad som ikke endrer seg» - Faste utgifter som leie forblir konstante fra måned til måned\n• «Profittmargin» → «Prosentandel av inntekten som blir profitt» - Dette forholdet viser hvor mye av inntekten din som blir faktisk profitt\n\nÅ forstå disse begrepene er essensielt for finansiell kompetanse!",
+      "completeTitle": "Utmerket!",
+      "completeMessage": "Du har vellykket matchet alle de finansielle begrepene med deres betydninger!",
+      "completeAfterDialogue": "Bra jobbet! Gå tilbake til fru Amina."
+    },
+    "fillGap": {
+      "title": "Smart finansiell atferd",
+      "instruction": "Fyll inn de tomme feltene for å fullføre setningen:",
+      "sentence": "For å holde seg finansielt sunn, er det essensielt å (___) utgifter, planlegge for (___), og holde en klar oversikt over alle (___).",
+      "availableWordsLabel": "Tilgjengelige ord",
+      "yourAnswersLabel": "Dine svar (i rekkefølge)",
+      "placeholderText": "Klikk på ord til venstre for å fylle inn de tomme feltene.",
+      "removeHint": "(klikk for å fjerne)",
+      "options": [
+        "spore",
+        "nødssituasjoner",
+        "transaksjoner",
+        "ignorere",
+        "gjette"
+      ],
+      "correct": [
+        "spore",
+        "nødssituasjoner",
+        "transaksjoner"
+      ],
+      "feedback": "Finansiell forvaltning er aldri basert på å ignorere eller gjette.",
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: For å holde seg finansielt sunn, er det essensielt å (___) utgifter, planlegge for (___), og holde en klar oversikt over alle (___).\n\nRiktig svar:\n• Første tomme felt: «spore» - Du må overvåke og registrere hvor pengene dine går for å beholde kontrollen\n• Andre tomme felt: «nødssituasjoner» - Å planlegge fremover for uventede situasjoner bygger finansiell sikkerhet\n• Tredje tomme felt: «transaksjoner» - Å holde klare oversikter over alle finansielle aktiviteter muliggjør informert beslutningstaking\n\nKomplett setning: «For å holde seg finansielt sunn, er det essensielt å spore utgifter, planlegge for nødssituasjoner, og holde en klar oversikt over alle transaksjoner.»\n\nHusk: Finansiell forvaltning er aldri basert på å ignorere eller gjette!",
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "pattern": {
+      "title": "Mønstergjenkjenning (Scenario {{current}}/{{total}})",
+      "scenarios": [
+        {
+          "question": "En virksomhet har høyt salg, men går stadig tom for penger på slutten av hver måned.",
+          "options": [
+            "Dårlig kontantstrømstyring",
+            "Sterk finansiell planlegging",
+            "Overskudd av sparing",
+            "Lave utgifter"
+          ],
+          "correct": "Dårlig kontantstrømstyring",
+          "hint": "Høyt salg betyr ikke alltid tilgjengelige kontanter."
+        },
+        {
+          "question": "En butikks leie, lønninger og internettregning forblir det samme hver måned.",
+          "options": [
+            "Variable utgifter",
+            "Uventede kostnader",
+            "Faste utgifter",
+            "Uregelmessige utgifter"
+          ],
+          "correct": "Faste utgifter",
+          "hint": "Disse kostnadene endrer seg ikke fra måned til måned."
+        },
+        {
+          "question": "En virksomhet bruker mer enn den tjener i tre måneder på rad.",
+          "options": [
+            "Profitt",
+            "Break-even",
+            "Tap",
+            "Overskudd"
+          ],
+          "correct": "Tap",
+          "hint": "Når forbruk overstiger inntekt, hva er resultatet?"
+        }
+      ],
+      "answerOverlayTemplate": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: {{question}}\n\nRiktig svar: «{{correct}}»\n\nForklaring: {{hint}}"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "answerOverlay": {
+    "title": "Riktig svar"
+  },
+  "hints": {
+    "defaultHint": "Jeg er ikke sikker på hva jeg skal gjøre...",
+    "findCard": {
+      "step0": "Fru Amina sa: «Begynn med å sjekke pulten.»",
+      "step1": "Ikke på pulten. Prøv arkivskapet.",
+      "step2": "Ikke i arkivskapet. Prøv skuffen.",
+      "step3": "Kortet kan være i boksen under pulten."
+    },
+    "findReflection": {
+      "step0": "Fru Amina nevnte tavlen.",
+      "step1": "Ikke på tavlen. Prøv safen.",
+      "step2": "Se nær arkivskapet - noe kan stikke ut."
+    },
+    "allQuestsComplete": "La oss gå videre til neste rom."
+  },
+  "completion": {
+    "title": "Opplæring fullført!",
+    "message": "Gratulerer! Du har vellykket fullført opplæringen i ferdigheten Finansiell kompetanse og forvaltning.",
+    "submessage": "Du er i ferd med å bli en mer informert og finansielt ansvarlig gründer!",
+    "buttonText": "Tilbake til hovedmenyen"
+  },
+  "ui": {
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

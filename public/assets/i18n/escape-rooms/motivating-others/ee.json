@@ -1,0 +1,193 @@
+{
+  "loading": "Teiste motiveerimise ja inspireerimise laadimine...",
+  "intro": {
+    "title": "Teiste motiveerimine ja inspireerimine",
+    "paragraphs": [
+      "Sa astud HR-kontori ette ootealasse. Vestlused on käimas ja õhustik tundub märgatavalt pingeline.",
+      "Aktiivne kandidaat seisab läheduses, silmad fikseeritud HR-uksele, hoides oma dokumente tihedalt. Tema närvilisust on raske jätta märkamata.",
+      "Täna õpid, kuidas teisi motiveerida ja inspireerida väikeste, tahtlike tegude kaudu: tugevuste märkamine, õigete küsimuste esitamine ja inimeste aitamine taastada enesekindlust hetkedel, kui neil seda kõige rohkem vaja on."
+    ],
+    "buttonText": "Sisene ootealasse"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR-juht",
+      "dialogues": {
+        "observe": "Teiste inspireerimine nõuab kannatlikkust ja teadlikkust. Vaatame, kuidas sa aitad kellelgi edasi liikuda.",
+        "finalWords": "Sa ei andnud käske.\nSa ei pakkunud tühja julgustust.\nSa kuulasid, mõtisklesid ja tugevdasid.\n\nSee tähendab teiste inspireerimist ja motiveerimist.",
+        "completion": "Tubli! Koolitus on lõpetatud!",
+        "default": "Vaata hoolega. Mõnikord tuleb parim motivatsioon mõistmisest."
+      }
+    },
+    "candidate": {
+      "name": "Kandidaat",
+      "dialogues": {
+        "greet": "Olen oodanud kaua… Pole kindel, kas olen selleks valmis.",
+        "greet2": "Kõik ütlevad, et motivatsioon tuleb seestpoolt, aga mõnikord… ei tule.",
+        "afterTask1": "Kardan, et ma pole piisavalt hea… Olen pingutanud, aga mu tee pole olnud kerge.",
+        "afterStrengths": "Ma pole neid kunagi tugevusteks pidanud… Võib-olla on mul siiski midagi pakkuda.",
+        "afterPuzzle2": "Sa oled jõudnud nii kaugele. See juba näitab tugevust.",
+        "thankYou": "Aitäh. Tunnen end nüüd kindlamalt.",
+        "default": "Püüan vaid julgust koguda…"
+      }
+    }
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Emotsionaalse teadlikkuse interaktsioon",
+      "instructions": "Vali, kuidas vastata.",
+      "question": "Kandidaat ütleb: „Olen oodanud kaua… Pole kindel, kas olen selleks valmis.“ Kuidas vastad?",
+      "options": {
+        "a": "Saad hakkama. Kõik on närvilised.",
+        "b": "Püüa sellest mitte liiga palju mõelda.",
+        "c": "Selline tunne on normaalne. Mis sind kõige rohkem praegu muretseb?",
+        "d": "Peaksid keskenduma sellele, mida võiksid võita."
+      },
+      "hint": "Motivatsioon algab mõistmisest, mitte rahustamisest või survest.",
+      "feedback": {
+        "wrong": "See pole parim lähenemine. Motivatsioon algab mõistmisest, mitte rahustamisest või survest.",
+        "correct": "Motivatsioon algab mõistmisest, mitte rahustamisest või survest. Kandidaat lõdvestub nähtavalt."
+      },
+      "answerOverlay": "Õige vastus on: „Selline tunne on normaalne. Mis sind kõige rohkem praegu muretseb?“\n\nMotivatsioon algab mõistmisest, mitte rahustamisest või survest."
+    },
+    "sequenceOrder": {
+      "title": "Sammud inspireerimiseks",
+      "instructions": "Pane järgmised tegevused õigesse järjekorda, et motivatsiooni üles ehitada.",
+      "items": [
+        "Julgusta tugevusi",
+        "Kuula aktiivselt",
+        "Paku realistlikku toetust",
+        "Inspireeri enesekindlust"
+      ],
+      "correctOrder": [
+        "Kuula aktiivselt",
+        "Julgusta tugevusi",
+        "Paku realistlikku toetust",
+        "Inspireeri enesekindlust"
+      ],
+      "hints": [
+        "Samm 1: Enne kui saad aidata, pead aru saama.",
+        "Samm 2: Tõsta esile see, mis neil juba on.",
+        "Samm 3: Paku praktilisi viise edasiminekuks.",
+        "Samm 4: Ehita pikaajalist usku iseendasse."
+      ],
+      "feedback": {
+        "wrong": "Inspiratsioon kasvab samm-sammult — mitte kõik korraga.",
+        "correct": "Suurepärane! Sa mõistad, kuidas motivatsiooni samm-sammult üles ehitada."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Kuula aktiivselt\n2. Julgusta tugevusi\n3. Paku realistlikku toetust\n4. Inspireeri enesekindlust"
+    },
+    "matching": {
+      "title": "Heitumuse muutmine motivatsiooniks",
+      "instructions": "Lohista iga lause, et muuta see motiveerivaks sõnumiks.",
+      "pairs": [
+        {"left": "Mul pole piisavalt kogemust.", "right": "Kogemus omandatakse õppimise ja praktika kaudu."},
+        {"left": "Mu taust on liiga erinev.", "right": "Erinevad taustad toovad väärtuslikke vaatenurki."},
+        {"left": "Olen varem läbi kukkunud.", "right": "Varasemad ebaõnnestumised aitavad meil kasvada ja paraneda."}
+      ],
+      "feedback": {
+        "wrong": "See pole õige paar. Mõtle, kuidas iga väidet positiivselt ümber sõnastada.",
+        "correct": "Motivatsioon tähendab sageli vaatenurga muutmist, mitte tegelikkuse muutmist."
+      },
+      "answerOverlay": "Õiged vastendused on:\n1. „Mul pole piisavalt kogemust.“ → „Kogemus omandatakse õppimise ja praktika kaudu.“\n2. „Mu taust on liiga erinev.“ → „Erinevad taustad toovad väärtuslikke vaatenurki.“\n3. „Olen varem läbi kukkunud.“ → „Varasemad ebaõnnestumised aitavad meil kasvada ja paraneda.“"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {"checkButton": "Esita", "resetButton": "Lähtesta"},
+    "discouragingTitle": "Heidutav",
+    "motivatingTitle": "Motiveeriv"
+  },
+  "hints": {
+    "intro": "Klõpsa kandidaadil, et alustada vestlust.",
+    "talkToCandidate": "Klõpsa kandidaadil, et alustada.",
+    "talkToCandidate2": "Mine kandidaadi juurde tagasi.",
+    "findFolder": "Otsi kandidaadi kaust — klõpsa dokumentidel, mida ta hoiab.",
+    "talkToHrManager": "Klõpsa HR-juhil.",
+    "strengthRecognition": "Vali kaustast kaks elementi, mis toovad esile tõelise tugevuse.",
+    "matching": "Sobita iga heidutav väide positiivse ümbersõnastusega, mis seda kõige paremini ümber lükkab.",
+    "bodyLanguage": "Vali kaks kehakeele märki, mis paljastavad kandidaadi ebakindluse.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ootealas vihjete järele ringi."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda HR-kontori ette ootealasse. Õhustik on pingeline. Aktiivne kandidaat seisab läheduses, vaatab HR-uksele ja hoiab dokumente tihedalt.",
+    "strengthsIntro": "Sa avad kandidaadi kausta. Sees leiad sertifikaate, vabatahtliku töö kogemust, keeleoskusi ja lünki tööajaloos. Vali 2 elementi, mida positiivselt esile tõsta.",
+    "strengthsCorrect": "Motivatsioon kasvab, kui inimesed näevad oma väärtust.",
+    "strengthsWrong": "Need elemendid ei pruugi enesekindlust üles ehitada. Keskendu tõelistele tugevustele.",
+    "bodyLanguageIntro": "Klõpsa elementidel, mis näitavad, et kandidaat tunneb end ebakindlalt.",
+    "bodyLanguageCorrect": "Motivatsioon algab teiste tunnete märkamisest — isegi siis, kui nad seda ei ütle.",
+    "bodyLanguageWrong": "Vaata kandidaadi kehakeelt hoolikamalt.",
+    "foundFolder": "Sa uurisid kandidaadi kausta ja tõid esile tema tugevused."
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Kandidaadi kaust",
+      "popupContent": [
+        "Sertifikaadid",
+        "Vabatahtliku töö kogemus",
+        "Keeleoskused",
+        "Lüngad tööajaloos"
+      ]
+    },
+    "candidateFolder": {"inventoryTitle": "Kandidaadi kaust"}
+  },
+  "strengths": {
+    "title": "Tugevuste tuvastamise väljakutse",
+    "instructions": "Vali 2 elementi, mida positiivselt esile tõsta.",
+    "options": [
+      {"id": "language", "text": "Keeleoskused", "correct": true},
+      {"id": "volunteering", "text": "Vabatahtliku töö kogemus", "correct": true},
+      {"id": "gaps", "text": "Tööelu lüngad", "correct": false},
+      {"id": "references", "text": "Puuduvad soovitused", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motivatsioon kasvab, kui inimesed näevad oma väärtust.",
+      "wrong": "Need elemendid ei pruugi enesekindlust üles ehitada. Keskendu tõelistele tugevustele."
+    }
+  },
+  "bodyLanguage": {
+    "title": "Motivatsioonisignaalide lugemine",
+    "instructions": "Klõpsa elementidel, mis näitavad, et kandidaat tunneb end ebakindlalt.",
+    "options": [
+      {"id": "clenched", "text": "Pingul käed dokumentidel", "correct": true},
+      {"id": "relaxed", "text": "Lõdvestunud kehahoiak", "correct": false},
+      {"id": "eyeContact", "text": "Silmside vältimine", "correct": true},
+      {"id": "smile", "text": "Enesekindel naeratus", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motivatsioon algab teiste tunnete märkamisest — isegi siis, kui nad seda ei ütle.",
+      "wrong": "Vaata kandidaadi kehakeelt hoolikamalt."
+    }
+  },
+  "completion": {
+    "title": "Oskus lõpetatud: Teiste inspireerimine ja motiveerimine",
+    "message": "Sa näitasid:\n\nEmotsionaalset teadlikkust\nPositiivset suhtlemist\nVõimestamist tunnustamise kaudu\nEetilist motiveerimist\n\nInspiratsioon on juhtimine tegevuses.",
+    "buttonText": "Lahku ootealast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "checkButton": "Kontrolli vastust",
+    "submitButton": "Esita",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

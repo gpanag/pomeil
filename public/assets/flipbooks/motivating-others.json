@@ -1,0 +1,216 @@
+{
+  "id": "motivating-others",
+  "moduleNumber": 10,
+  "title": "Motivating & Inspiring Others",
+  "subtitle": "Module 10",
+  "coverImage": "assets/thumbs/motivating-others.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 10",
+      "title": "Motivating & Inspiring Others",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/motivating-others.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module aims to help participants understand motivation and inspiration as intentional leadership practices that strengthen team engagement and performance. It seeks to develop learners’ ability to articulate a compelling vision, communicate with clarity and emotional resonance, model integrity and commitment, and provide individualized support to team members. The module also aims to enhance participants’ capacity to foster creativity, encourage initiative, and build inclusive and cohesive teams, particularly within multicultural and migrant-led business environments."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Motivating and inspiring other people describes the deliberate actions leaders take to energize, empower, and nudge their teams past ordinary goals. At the heart of this practice lies the skill to share a vivid vision, build a clear sense of purpose, and act in ways that mirror the values of the organization. Both transformational and inspirational leadership theories stress that real engagement-emotional and intellectual-happens when leaders speak clearly, uphold personal integrity, and relate to followers on a human level (Bass & Avolio, 1991; Burns, 1978). For migrant entrepreneurs this skill is especially crucial, because it helps forge tight, committed teams that can move flexibly through varied and shifting contexts. In this module participants will explore core motivational practices and gain hands-on tools for building trust, shaping a shared vision, and lifting both individual and group performance in their ventures."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Research demonstrates that genuine inspiration markedly boosts employees engagement, creativity, and commitment to the organisation (Bass & Avolio, 1991; Judge & Piccolo, 2004). Numerous studies connect inspirational leaders with higher work involvement, deeper loyalty, and increased morale and satisfaction among staff (Zhu et al., 2022; Inc., 2024). These effects matter most in migrant-led firms, where leaders move between cultures and tackle language, social, and institutional hurdles. A leaders ability to uplift people builds team unity, curbs turnover, and creates inclusive, flexible, high-performing groups. Therefore, cultivating inspirational skills is vital for keeping productivity steady and securing long-term success in migrant business contexts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Inspirational motivation",
+          "definition": "Articulation of a compelling vision and goals that energize people toward shared objectives (Bass & Avolio, 1991; Zhu et al., 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Idealized influence",
+          "definition": "Modeling of integrity, calmness, and courage in order to build trust and respect (Inc., 2024)."
+        },
+        {
+          "kind": "definition",
+          "term": "Intellectual stimulation",
+          "definition": "Encouragement of innovation and autonomy so that individuals feel empowered to solve problems creatively (Bass & Avolio, 1991)."
+        },
+        {
+          "kind": "definition",
+          "term": "Individualized consideration",
+          "definition": "Recognition of each person’s needs and provision of support, feedback, and coaching (Zhu et al., 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Motivating language",
+          "definition": "Use of clear directions, shared emotions, and meaningful communication that strengthens follower commitment (Sullivan, 1988)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Below are presented some effective ways that support the development of leadership skills:"
+        },
+        {
+          "kind": "definition",
+          "term": "Articulate your vision",
+          "definition": "You can practice speech and rhetoric that connects ideas to followers’ values and aspirations (Parsons, 2020)."
+        },
+        {
+          "kind": "definition",
+          "term": "Lead by example",
+          "definition": "You can demonstrate the behaviors and attitudes you expect, such as calmness, passion, humility (Inc., 2024)."
+        },
+        {
+          "kind": "definition",
+          "term": "Cultivate intellectual curiosity",
+          "definition": "You can invite team members to generate ideas and try new approaches (Bass & Avolio, 1991)."
+        },
+        {
+          "kind": "definition",
+          "term": "Use inclusive communication",
+          "definition": "You can employ motivating language (Sullivan, 1988)."
+        },
+        {
+          "kind": "definition",
+          "term": "Provide personal attention",
+          "definition": "You can tailor feedback, recognize progress, and mentor individuals one-on-one (Zhu et al., 2022)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Followers lack belief in vision Communication gaps across Use moti cultures adaptive Difficulty in sustaining energy High pressure leads to burnout",
+          "definition": "Engage stakeholders early to develop a shared vision (Bass & Avolio, 1991). vating language and clarify meaning in culturally ways (Sullivan, 1988). Use role modeling and acknowledge small wins (Kouzes & Posner, 2023). Balance intellectual stimulation with support and well-being (Burns, 1978)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Inspiration Action Plan"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Define a compelling mission statement for your venture.",
+            "Draft a 3-minute “motivation speech” for team members or customers.",
+            "Select and record 2 one-on-one coaching sessions offering personalized feedback.",
+            "Plan a small innovation challenge: invite team ideas and praise contributions.",
+            "Gather brief feedback on how your communication felt—did it feel meaningful and energizing?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Tick the box if you agree"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can clearly articulate a vision that resonates emotionally.",
+            "I model the values and behavior I expect from others.",
+            "I encourage new ideas and praise initiative.",
+            "I use personal communication to motivate individuals.",
+            "I adapt my message to cultural sensitivities.",
+            "I regularly recognize achievements and progress."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "A leaders capacity to inspire people sits at the heart of transformational leadership, and it matters even more for migrant entrepreneurs working in shifting, multicultural environments. When such leaders share a vivid vision, model the behaviours they wish to see, invite critical thinking, communicate with energy, and provide tailored support, they strengthen commitment, spark creativity, and knit their teams together. These abilities help build inclusive, resilient, and goal-oriented enterprises that are better equipped to handle cultural differences and the everyday trials of entrepreneurship."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the end of this module, learners are expected to be able to formulate and communicate a clear and motivating vision for their venture. They should demonstrate the ability to inspire trust through consistent role modelling, encourage innovation and participation, and provide constructive, personalised feedback. Learners will be better equipped to sustain team motivation, strengthen collaboration, and create a positive organisational climate that supports long-term commitment and performance."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Article Xue, H., Luo, Y., Luan, Y., & Wang, N. (2022). A meta-analysis of leadership and intrinsic motivation: Examining relative importance and moderators. Frontiers in Psychology, 13,"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "941161. https://doi.org/10.3389/fpsyg.2022.941161",
+            "Video How to inspire others https://www.youtube.com/watch?v=IvZ0UWb4UsA"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Motivating & Inspiring Others",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/motivating-others.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+<div class="new-parent">
+    <div class="new-img-parent" (click)="openImageDialog(images, newItem?.image?.id)"
+        [style.background-image]="'url(' + newItem?.image?.url + ')'">
+    </div>
+    <!-- <div class="new-img-parent">
+        <img *ngIf="newItem?.image" class="new-image"
+            [src]="newItem?.image.url" (click)="openImageDialog(images, newItem?.attributes.news_image.data.id)">
+    </div> -->
+    <div class="new-content-parent">
+        <h1 class="new-title">{{ effectiveTitle() }}</h1>
+        <p>{{newItem?.publishedAt | date : undefined: undefined: lang === 'ee' ? 'ee' : lang ===
+            'gr' ? 'gr' : lang === 'no' ? 'no' : lang === 'pl' ? 'pl' : lang === 'ua' ? 'ua' : 'en' }}</p>
+
+        <div *ngIf="effectiveLang() === 'en'">
+            <div class="blocks" *ngFor="let par of newItem?.content"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+
+        </div>
+        <div *ngIf="effectiveLang() === 'ee'">
+            <div class="blocks" *ngFor="let par of newItem?.content_ee"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+        </div>
+        <div *ngIf="effectiveLang() === 'gr'">
+            <div class="blocks" *ngFor="let par of newItem?.content_gr"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+        </div>
+        <div *ngIf="effectiveLang() === 'no'">
+            <div class="blocks" *ngFor="let par of newItem?.content_no"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+        </div>
+        <div *ngIf="effectiveLang() === 'pl'">
+            <div class="blocks" *ngFor="let par of newItem?.content_pl"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+        </div>
+        <div *ngIf="effectiveLang() === 'ua'">
+            <div class="blocks" *ngFor="let par of newItem?.content_ua"
+                [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                <span *ngFor="let text of par.children"
+                    [ngClass]="{'text-italic' : text.italic, 'text-bold' : text.bold}">{{text.text}}</span>
+                <li *ngIf="par.children[0].children">
+                    {{par.children[0].children[0].text}}
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="more-images-container">
+        <p class="bold" *ngIf="newItem?.more_images"></p>
+
+        <mat-grid-list cols="4" rowHeight="1.3:1" *ngIf="newItem?.more_images">
+            <mat-grid-tile class="image-grid-tile" *ngFor="let image of newItem?.more_images">
+                <div class="more-image-container" (click)="openImageDialog(images, image.id)"><img class="main-image"
+                        [src]="image.url">
+                    <div class="middle">
+                        <div class="fullscreen-image-button">
+                            <mat-icon style="transform: scale(2);">zoom_in</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+
+
+        </mat-grid-list>
+
+    </div>
+    <!-- <div class="news-download">
+        <a *ngIf="lang === 'en'" mat-raised-button [href]="newItem?.download?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+        <a *ngIf="lang === 'ee'" mat-raised-button [href]="newItem?.download_ee?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+        <a *ngIf="lang === 'gr'" mat-raised-button [href]="newItem?.download_gr?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+        <a *ngIf="lang === 'no'" mat-raised-button [href]="newItem?.download_no?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+        <a *ngIf="lang === 'pl'" mat-raised-button [href]="newItem?.download_pl?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+        <a *ngIf="lang === 'ua'" mat-raised-button [href]="newItem?.download_ua?.url" download>{{"TOOLS.DOWNLOAD" | translate}}</a>
+    </div> -->
+</div>
+<app-footer></app-footer>

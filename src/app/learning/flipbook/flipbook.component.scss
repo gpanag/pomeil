@@ -1,0 +1,546 @@
+// =====================================================================
+// Flipbook component
+// Two-page book layout on desktop, single page on mobile.
+// Uses CSS perspective + slide-in animation for a book-like feel.
+// =====================================================================
+
+:host {
+  display: block;
+  height: calc(100vh - 64px);
+  background: linear-gradient(180deg, #2a241e 0%, #1a1612 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.flipbook-shell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// ---------- Top bar ----------
+.flipbook-topbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  color: #f5efe5;
+  flex-shrink: 0;
+
+  button[mat-icon-button] { color: #f5efe5; }
+
+  .flipbook-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+
+    .meta-module {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .meta-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .draft-pill {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #ff9800;
+      color: #1a1612;
+      font-weight: 700;
+    }
+  }
+
+  .flipbook-counter {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+}
+
+// ---------- Status / loading ----------
+.flipbook-status {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #f5efe5;
+
+  mat-icon { font-size: 48px; width: 48px; height: 48px; opacity: 0.6; }
+  p { max-width: 400px; text-align: center; opacity: 0.85; }
+}
+
+// ---------- Stage ----------
+.flipbook-stage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  perspective: 2400px;
+  min-height: 0;
+}
+
+// Navigation arrows
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(245, 239, 229, 0.9) !important;
+  color: #1a1612 !important;
+
+  &.nav-prev { left: 1rem; }
+  &.nav-next { right: 1rem; }
+
+  &[disabled] { opacity: 0.3; }
+
+  &:hover:not([disabled]) {
+    background: #f5efe5 !important;
+  }
+}
+
+// ---------- Book frame ----------
+.book-frame {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+
+  &.mobile {
+    max-width: 540px;
+  }
+}
+
+.book {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background: #2a241e;
+  transform-style: preserve-3d;
+  position: relative;
+
+  // entry animations driven by direction
+  &.dir-forward { animation: flipForward 420ms cubic-bezier(0.4, 0.0, 0.2, 1); }
+  &.dir-back { animation: flipBack 420ms cubic-bezier(0.4, 0.0, 0.2, 1); }
+}
+
+@keyframes flipForward {
+  from { opacity: 0; transform: translateX(40px) rotateY(-4deg); }
+  to   { opacity: 1; transform: translateX(0) rotateY(0); }
+}
+@keyframes flipBack {
+  from { opacity: 0; transform: translateX(-40px) rotateY(4deg); }
+  to   { opacity: 1; transform: translateX(0) rotateY(0); }
+}
+
+// ---------- Pages ----------
+.page {
+  flex: 1;
+  background:
+    radial-gradient(ellipse at top left, rgba(0,0,0,0.04) 0%, transparent 60%),
+    linear-gradient(180deg, #fbf6ec 0%, #f3ebda 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
+  &.page-left {
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: inset -16px 0 24px -16px rgba(0, 0, 0, 0.18);
+  }
+  &.page-right {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: inset 16px 0 24px -16px rgba(0, 0, 0, 0.18);
+  }
+  &.page-single {
+    border-radius: 4px;
+  }
+
+  &.blank .blank-page-content {
+    width: 100%;
+    height: 100%;
+    background:
+      repeating-linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.015) 0 2px,
+        transparent 2px 12px
+      );
+  }
+}
+
+.spine {
+  width: 8px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+// ---------- Cover page ----------
+.cover-page {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(0,0,0,0.05) 0%,
+      rgba(0,0,0,0.55) 65%,
+      rgba(0,0,0,0.85) 100%);
+  }
+
+  .cover-overlay {
+    position: relative;
+    padding: 2.5rem 2rem;
+    color: #f5efe5;
+    width: 100%;
+  }
+
+  .cover-module-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 0.5rem;
+  }
+
+  .cover-title {
+    margin: 0 0 0.4rem;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .cover-subtitle {
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+}
+
+// ---------- Content page ----------
+.content-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem 2.5rem 1.25rem;
+  color: #2a241e;
+  overflow: hidden;
+
+  .page-header {
+    border-bottom: 1px solid rgba(42, 36, 30, 0.15);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-shrink: 0;
+
+    h2 {
+      margin: 0;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--sys-primary, #006874);
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .page-body {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+
+    // subtle scrollbar
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) transparent;
+    &::-webkit-scrollbar { width: 6px; }
+    &::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 3px; }
+  }
+
+  .page-footer {
+    flex-shrink: 0;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgba(42, 36, 30, 0.4);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+// ---------- Block styles ----------
+.block-paragraph {
+  margin: 0 0 0.85rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.block-heading {
+  font-size: 1.1rem;
+  margin: 0.6rem 0 0.6rem;
+  color: #2a241e;
+  font-weight: 600;
+}
+
+.block-list, .block-list.numbered {
+  margin: 0 0 0.85rem;
+  padding-left: 1.4rem;
+  li { margin-bottom: 0.4rem; }
+}
+
+.block-callout {
+  display: flex;
+  gap: 0.75rem;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  margin: 0 0 0.85rem;
+  background: rgba(0, 104, 116, 0.08);
+  border-left: 3px solid var(--sys-primary, #006874);
+
+  &[data-tone="warning"] {
+    background: rgba(255, 152, 0, 0.1);
+    border-left-color: #e08200;
+    .callout-icon { color: #e08200; }
+  }
+  &[data-tone="success"] {
+    background: rgba(46, 125, 50, 0.1);
+    border-left-color: #2e7d32;
+    .callout-icon { color: #2e7d32; }
+  }
+
+  .callout-icon {
+    flex-shrink: 0;
+    color: var(--sys-primary, #006874);
+    mat-icon { font-size: 22px; width: 22px; height: 22px; }
+  }
+
+  .callout-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.block-definition {
+  margin: 0 0 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px dashed rgba(42, 36, 30, 0.2);
+
+  &:last-child { border-bottom: none; }
+
+  .def-term {
+    font-weight: 700;
+    color: var(--sys-primary, #006874);
+    margin-bottom: 0.2rem;
+  }
+  .def-meaning { color: #4a4038; }
+}
+
+.block-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.6rem;
+    border: 1px solid rgba(42, 36, 30, 0.18);
+    vertical-align: top;
+  }
+  th {
+    background: rgba(0, 104, 116, 0.1);
+    font-weight: 600;
+    color: var(--sys-primary, #006874);
+  }
+  td:first-child { width: 45%; }
+
+  .table-input {
+    width: 100%;
+    padding: 0.3rem 0.4rem;
+    border: 1px solid rgba(42, 36, 30, 0.15);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    font: inherit;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+      border-color: var(--sys-primary, #006874);
+      background: #fff;
+    }
+  }
+}
+
+.block-quote {
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid rgba(0, 104, 116, 0.4);
+  font-style: italic;
+  color: #4a4038;
+  cite {
+    display: block;
+    margin-top: 0.4rem;
+    font-style: normal;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+}
+
+.block-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 120ms;
+
+    &:hover { background: rgba(0, 0, 0, 0.04); }
+  }
+
+  .check-box {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--sys-primary, #006874);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: background 120ms;
+    margin-top: 1px;
+
+    &.checked {
+      background: var(--sys-primary, #006874);
+      mat-icon {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        color: var(--sys-on-primary, #fff);
+      }
+    }
+  }
+
+  .check-label { flex: 1; }
+}
+
+// ---------- Back cover ----------
+.back-cover-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at center, rgba(0, 104, 116, 0.08) 0%, transparent 65%),
+    linear-gradient(180deg, #fbf6ec 0%, #f3ebda 100%);
+  color: #2a241e;
+  gap: 1rem;
+
+  .back-cover-mark {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--sys-primary, #006874);
+    color: var(--sys-on-primary, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    mat-icon { font-size: 38px; width: 38px; height: 38px; }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--sys-primary, #006874);
+  }
+
+  .back-subtitle { opacity: 0.7; }
+
+  .back-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// ---------- Bottom progress ----------
+.flipbook-progress {
+  flex-shrink: 0;
+  padding: 0.5rem 1rem 0.75rem;
+
+  .progress-track {
+    height: 3px;
+    background: rgba(245, 239, 229, 0.15);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--sys-primary, #006874);
+    transition: width 320ms ease-out;
+  }
+}
+
+// ---------- Mobile adjustments ----------
+@media (max-width: 720px) {
+  .flipbook-stage {
+    padding: 0.75rem;
+  }
+  .nav-arrow {
+    &.nav-prev { left: 0.25rem; }
+    &.nav-next { right: 0.25rem; }
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .flipbook-topbar {
+    .flipbook-meta .meta-title { font-size: 0.95rem; }
+  }
+  .content-page {
+    padding: 1.25rem 1.25rem 0.75rem;
+
+    .page-header h2 { font-size: 1.2rem; }
+    .page-body { font-size: 0.92rem; }
+  }
+}

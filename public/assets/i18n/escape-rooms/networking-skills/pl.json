@@ -1,0 +1,236 @@
+{
+  "loading": "Ładowanie umiejętności networkingu...",
+  "intro": {
+    "title": "Umiejętności networkingu",
+    "paragraphs": [
+      "Siedzisz w poczekalni przed pokojem rozmów, czekając na uczestnictwo w wydarzeniu networkingowym dla startupów. Pomieszczenie jest długie i wąskie, jak korytarz, z beżowym dywanem i ścianami.",
+      "Dwie kanapy — jedna żółta, jedna turkusowa — stoją przy ścianach z małymi stolikami obok. W rogu znajduje się ekspres do kawy z papierowymi kubeczkami i koszem na śmieci. Zielone rośliny i plakat na ścianie dodają trochę życia tej przestrzeni.",
+      "W pomieszczeniu są z Tobą jeszcze trzy osoby. To może być świetna okazja, by przećwiczyć swoje umiejętności networkingu..."
+    ],
+    "buttonText": "Wejdź do poczekalni"
+  },
+  "characters": {
+    "npc1": {
+      "name": "Marcus",
+      "dialogues": {
+        "busy": "Przepraszam, muszę dokończyć tu pracę.",
+        "default": "Wydaje się skupiony na swoim laptopie."
+      }
+    },
+    "npc2": {
+      "name": "Tomás",
+      "dialogues": {
+        "line1_you": "Cześć, czy ty też jesteś tu na wydarzeniu dla startupów?",
+        "line1_him": "Tak.",
+        "line2_you": "W jakiej branży pracujesz?",
+        "line2_him": "IT.",
+        "line3_you": "Co Cię tu dziś sprowadza?",
+        "line3_him": "Wysłał mnie szef.",
+        "line4_awkward": "...",
+        "summary": "Nie wyglądał na zbyt zainteresowanego rozmową. Rozmowa szybko zgasła. Może z kimś innym zadziała inne podejście.",
+        "default": "Cicho patrzy w telefon."
+      }
+    },
+    "edith": {
+      "name": "Edith",
+      "dialogues": {
+        "line1_you": "Cześć! Też jesteś tu na wydarzeniu dla startupów?",
+        "line1_her": "Tak, jestem! Jestem Edith. Prowadzę mały inkubator biznesu w centrum. Jesteś założycielem?",
+        "line2_you": "Jeszcze nie, ale rozważam to. Z jakimi startupami pracujesz?",
+        "line2_her": "Głównie z technologicznymi i społecznymi przedsiębiorstwami na wczesnym etapie. Pomagamy we wszystkim, od biznesplanów po pozyskiwanie finansowania. To bardzo satysfakcjonująca praca.",
+        "line3_you": "To brzmi niesamowicie. Co Cię w to wciągnęło?",
+        "line3_her": "Lata temu założyłam własną firmę i żałowałam, że nie miałam wtedy większego wsparcia. Więc zbudowałam takie miejsce, jakie wtedy chciałabym mieć. Proszę, weź moją wizytówkę — bądźmy w kontakcie!",
+        "line4_you": "Dziękuję, Edith! Chętnie dowiem się kiedyś więcej o Twoim inkubatorze.",
+        "summary": "Świetna rozmowa! Nawiązałeś autentyczną relację z Edith i wymieniliście dane kontaktowe. To prawdziwy networking.",
+        "buildIntro": "Edith wraca do Ciebie ze świeżą filiżanką kawy.",
+        "build1_her": "Powiedz mi — co Cię naprawdę napędza? Jaki wielki pomysł nosisz w sobie?",
+        "build2a_you": "Zależy mi na tym, by edukacja stała się dostępniejsza dzięki technologii. Z jakimi wyzwaniami najczęściej mierzą się założyciele według Ciebie?",
+        "build2b_you": "Cóż, mam ten pomysł na aplikację, która zarobi miliony. Pozwól, że Ci o niej opowiem...",
+        "build2a_response": "Cudowna misja! Największe wyzwanie, jakie widzę, to to, że założyciele próbują robić wszystko sami. Właśnie dlatego istnieje inkubator — nikt nie powinien przechodzić przez wszystko w pojedynkę.",
+        "build2b_response": "Och... to... ambitne. Wiesz, najbardziej skuteczni założyciele, jakich widziałam, to ci, którzy zadają pytania, a nie tylko pitchują.",
+        "build3_her": "Skoro mowa o wsparciu, czy myślałeś o tym, jakiej sieci kontaktów byś potrzebował, by zrealizować swój pomysł?",
+        "build4_you_typed": "",
+        "build4_her": "To przemyślana odpowiedź. Budowanie sieci kontaktów to naprawdę szukanie ludzi, których mocne strony uzupełniają Twoje.",
+        "build5a_you": "Jaką radę dałabyś komuś, kto dopiero zaczyna budować swoją profesjonalną sieć kontaktów?",
+        "build5b_you": "Mam już całkiem niezłą sieć. Tak naprawdę potrzebuję głównie finansowania.",
+        "build5a_response": "Zacznij od bycia szczerze ciekawym innych ludzi. Pytaj o ich pracę, ich wyzwania. Networking nie polega na zbieraniu kontaktów — chodzi o budowanie relacji, w których obie strony korzystają.",
+        "build5b_response": "Hmm, networking to coś więcej niż tylko to, czego sam potrzebujesz. Najlepsze połączenia powstają, gdy zastanawiasz się też nad tym, co możesz zaoferować.",
+        "build6_her": "Wiesz, naprawdę cieszyła mnie ta rozmowa. Rzadko spotyka się kogoś, kto słucha tyle samo, ile mówi. To prawdziwa siła w networkingu.",
+        "build7a_you": "Dziękuję, Edith. Wiele się od Ciebie nauczyłem. W jaki sposób mogę być Ci pomocny w zamian?",
+        "build7b_you": "Dzięki! Co do tego inkubatora — możesz załatwić mi miejsce?",
+        "build7a_response": "Doceniam, że pytasz! Tak naprawdę zawsze szukamy świeżych perspektyw na naszych wieczorach z mentorami. Chciałbyś przyjść na jeden?",
+        "build7b_response": "Ha! Podoba mi się Twoja bezpośredniość, ale networking działa najlepiej, gdy nie ma charakteru transakcyjnego. Najpierw zbudujmy relację.",
+        "build8_her": "Pamiętaj — networking to umiejętność składająca się z czterech części: Inicjowanie, Budowanie, Utrzymywanie i Wykorzystywanie. Dziś przerobiliśmy dwie pierwsze. Ćwicz dalej!",
+        "buildSummary": "Świetna robota! Pogłębiłeś swoją relację z Edith, zadając otwarte pytania, okazując szczere zainteresowanie i myśląc o obustronnej wartości.",
+        "default": "Edith uśmiecha się do Ciebie ciepło."
+      }
+    }
+  },
+  "puzzles": {
+    "initiate": {
+      "title": "Zagadka 1: Inicjuj",
+      "instructions": "Klikaj na osoby w pomieszczeniu, by spróbować rozpocząć z nimi rozmowę. Nie każda próba się powiedzie — to normalne w networkingu!",
+      "skillUnlocked": "Odblokowano umiejętność networkingu: Inicjuj",
+      "feedback": {
+        "npc1Done": "Jest teraz zbyt zajęty. To w porządku — nie każdy jest dostępny do networkingu w każdej chwili.",
+        "npc2Done": "Krótkie, zamknięte odpowiedzi. Czasem rozmowy po prostu się nie kleją. Nie bierz tego do siebie.",
+        "edithDone": "Świetne połączenie! Edith była otwarta, zaangażowana i wymieniliście kontakty.",
+        "allComplete": "Spróbowałeś porozmawiać ze wszystkimi w pomieszczeniu. Nauczyłeś się, że networking wymaga czytania sytuacji — niektórzy nie są dostępni, niektóre rozmowy nie wychodzą, a czasem znajdujesz prawdziwe połączenie."
+      }
+    },
+    "mirror": {
+      "popupTitle": "Twoje odbicie",
+      "popupContent": "Brak sałaty między zębami, sprawdzone.",
+      "selfReflection": "Wyglądasz dobrze. Ale networking to nie tylko wygląd — to bycie obecnym, ciekawym i autentycznym. Czas wprowadzić to w życie.",
+      "edithReturns": "Zauważasz, że Edith wraca od ekspresu do kawy. To może być dobra okazja, by kontynuować rozmowę..."
+    },
+    "build": {
+      "title": "Zagadka 2: Buduj",
+      "instructions": "Kontynuuj rozmowę z Edith. Gdy dostaniesz opcje, wybierz odpowiedź, która buduje autentyczną, dwukierunkową relację.",
+      "skillUnlocked": "Odblokowano umiejętność networkingu: Buduj",
+      "typedPrompt": "Edith pyta o Twoje potrzeby związane z siecią kontaktów. Wpisz swoje przemyślenia:",
+      "typedPlaceholder": "Podziel się swoimi przemyśleniami...",
+      "feedback": {
+        "goodChoice": "Dobry wybór! Ta odpowiedź pokazuje szczere zainteresowanie i buduje relację.",
+        "poorChoice": "Ta odpowiedź zbyt mocno koncentruje się na Tobie. Spróbuj pomyśleć też o drugiej osobie.",
+        "complete": "Pomyślnie pogłębiłeś relację z Edith dzięki autentycznej rozmowie."
+      }
+    },
+    "maintain": {
+      "title": "Zagadka 3: Utrzymuj",
+      "instructions": "Twój telefon brzęczy z powiadomieniem. Czas przećwiczyć utrzymywanie kontaktów w sieci poprzez wiadomości.",
+      "skillUnlocked": "Odblokowano umiejętność networkingu: Utrzymuj",
+      "phoneNotification": "Nowa wiadomość od Fredrika!",
+      "fredrik": {
+        "name": "Fredrik",
+        "incoming": "Hej! Świetnie było wpaść na Ciebie wcześniej na wydarzeniu. Może spotkamy się na kawie w tym tygodniu?",
+        "optionA": "Jasne! Co powiesz na czwartkowe popołudnie? Niedaleko centrum konferencyjnego jest świetna kawiarnia.",
+        "optionB": "Może. Dam znać.",
+        "feedbackA": "Świetna odpowiedź! Konkretna i entuzjastyczna — pokazuje, że cenisz tę relację.",
+        "feedbackB": "Zbyt ogólnikowe. Utrzymując kontakty, bądź konkretny i okazuj szczere zainteresowanie."
+      },
+      "contacts": {
+        "maksym": {
+          "name": "Maksym (były kolega z pracy)",
+          "optionA": "Cześć Maksym, dawno się nie widzieliśmy! Co u Ciebie? Widziałem, że Twoja firma właśnie wypuściła nowy produkt — gratulacje!",
+          "optionB": "Heyyyy",
+          "feedbackA": "Idealnie! Osobiste, konkretne i pokazuje, że śledzisz ich pracę.",
+          "feedbackB": "Zbyt ogólnikowe — ta wiadomość nie daje im niczego, na co mogliby odpowiedzieć."
+        },
+        "iman": {
+          "name": "Iman (organizatorka wydarzeń)",
+          "optionA": "Cześć Iman! Co u Ciebie? Szykują się jakieś fajne wydarzenia? Naprawdę podobało mi się ostatnie, które zorganizowałaś.",
+          "optionB": "Hej Iman, mam prośbę. Możesz mnie wpuścić na następny mikser branżowy?",
+          "feedbackA": "Brawo! Pokazujesz zainteresowanie ich pracą, zanim o coś poprosisz.",
+          "feedbackB": "Zbyt bezpośrednie i transakcyjne. Najpierw zbuduj relację, zanim poprosisz o przysługę."
+        },
+        "lars": {
+          "name": "Lars (właściciel małej firmy)",
+          "optionA": "Cześć Lars! Natknąłem się na artykuł o zrównoważonym pakowaniu, który przypomniał mi o Twoim biznesie. Pomyślałem, że może Cię to zainteresować!",
+          "optionB": "Hej Lars, szukam nowych możliwości. Daj znać, jeśli o czymś usłyszysz.",
+          "feedbackA": "Doskonale! Dzielenie się czymś istotnym pokazuje, że myślisz o zainteresowaniach swoich kontaktów.",
+          "feedbackB": "Zbyt egoistyczne. Utrzymywanie relacji oznacza dawanie, a nie tylko branie."
+        }
+      },
+      "feedback": {
+        "allSent": "Świetna robota w utrzymywaniu sieci kontaktów! Pamiętaj: dobre utrzymywanie sieci to okazywanie szczerego zainteresowania, bycie konkretnym i oferowanie wartości — a nie kontaktowanie się tylko wtedy, gdy czegoś potrzebujesz."
+      }
+    },
+    "leverage": {
+      "title": "Zagadka 4: Wykorzystaj",
+      "instructions": "Zauważyłeś okazję na grant na plakacie na ścianie. Teraz czas mądrze wykorzystać swoją sieć kontaktów.",
+      "posterTitle": "MOŻLIWOŚĆ DOFINANSOWANIA STARTUPU",
+      "posterDetails": "Dostępne granty: 2 000 EUR - 10 000 EUR dla startupów na wczesnym etapie. Termin składania wniosków: 15 czerwca. Otwarte dla wszystkich branż.",
+      "question": "To może być świetna okazja! Ale potrzebujesz pomocy z wnioskiem. Do kogo z Twojej sieci powinieneś się zwrócić?",
+      "options": {
+        "maksym": "Skontaktuj się z Maksymem (byłym kolegą z IT)",
+        "edith": "Skontaktuj się z Edith (kierowniczką inkubatora biznesu)",
+        "iman": "Skontaktuj się z Iman (organizatorką wydarzeń)",
+        "lars": "Skontaktuj się z Larsem (właścicielem małej firmy)"
+      },
+      "explanations": {
+        "maksym": "Maksym jest świetny do porad w IT, ale wnioski o granty nie są naprawdę jego specjalnością.",
+        "edith": "Edith prowadzi inkubator biznesu, który pomaga startupom dokładnie w takich sprawach — biznesplany, finansowanie, granty. Jest idealną osobą do zapytania!",
+        "iman": "Iman jest świetna w wydarzeniach i kontaktach, ale wnioski o granty nie są jej specjalnością.",
+        "lars": "Lars jest takim samym właścicielem małej firmy, który może konkurować o ten sam grant. Mogłoby to wywołać niezręczną sytuację."
+      },
+      "skillUnlocked": "Odblokowano umiejętność networkingu: Wykorzystaj",
+      "feedback": {
+        "wrong": "Pomyśl, kto w Twojej sieci ma najtrafniejszą wiedzę dotyczącą wniosków o granty i wsparcia startupów.",
+        "correct": "Dokładnie tak! Inkubator Edith jest stworzony, by pomagać startupom w pozyskiwaniu finansowania. Wykorzystywanie sieci kontaktów oznacza zwracanie się do właściwej osoby do właściwego zadania."
+      },
+      "answerOverlay": "Poprawna odpowiedź to: Skontaktuj się z Edith. Jej inkubator biznesu specjalizuje się w pomaganiu startupom z biznesplanami i finansowaniem — czyli dokładnie z tym, czego potrzebujesz przy wniosku o grant."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "initiate": "Spróbuj klikać na osoby w pokoju, aby rozpocząć rozmowy.",
+    "initiateNpc1Done": "Rozmawiałeś już z Marcusem. Spróbuj kogoś innego!",
+    "initiateNpc2Done": "Spróbuj porozmawiać z kobietą przy ekspresie do kawy.",
+    "mirror": "Poszukaj swojej torby na kanapie — może być w niej coś przydatnego.",
+    "mirrorReflection": "Zatrzymaj się na chwilę, by się zastanowić, a potem poszukaj Edith.",
+    "build": "Kliknij Edith, by kontynuować rozmowę.",
+    "buildConversation": "Wybierz odpowiedź, która pokazuje szczere zainteresowanie drugą osobą.",
+    "maintain": "Sprawdź telefon, by odpowiedzieć na wiadomości od kontaktów.",
+    "maintainContacts": "Wybieraj odpowiedzi, które pokazują szczere zainteresowanie i oferują wartość.",
+    "leverage": "Spójrz na plakat na ścianie, gdzie znajdziesz okazję.",
+    "leverageQuestion": "Pomyśl, który kontakt ma najtrafniejszą wiedzę o grantach dla startupów.",
+    "completion": "Trening został ukończony!",
+    "default": "Rozejrzyj się po pokoju i wchodź w interakcje z osobami i przedmiotami."
+  },
+  "systemDialogues": {
+    "enterRoom": "OK, jestem na miejscu. Poczekalnia pełna obcych. Idealna okazja, by przećwiczyć moje umiejętności networkingu. Zobaczmy, kto tu jest...",
+    "npc1Rejection": "Jest zajęty. To w porządku — wiedzieć, kiedy ktoś nie jest dostępny, to też ważna część networkingu.",
+    "npc2Awkward": "Cóż, to było... krótkie. Czasem rozmowy po prostu nie ruszają. Najważniejsze, by się nie poddawać.",
+    "edithSuccess": "Poszło naprawdę dobrze! Dostałem wizytówkę Edith i wydaje się być szczerze zainteresowana utrzymaniem kontaktu.",
+    "initiateComplete": "Porozmawiałem ze wszystkimi. Niektóre rozmowy szły lepiej niż inne, ale z każdej czegoś się nauczyłem. Networking to czytanie sytuacji i znajdowanie właściwych połączeń.",
+    "mirrorFound": "Hmm, moja torba leży tu na kanapie. Sprawdzę...",
+    "mirrorClose": "Dobrze, wyglądam reprezentacyjnie. Ale networking to coś więcej niż wygląd — chodzi o autentyczność i ciekawość.",
+    "edithReturns": "Och, Edith idzie w tę stronę. To okazja, by oprzeć się na tym pierwszym połączeniu!",
+    "buildComplete": "Co za świetna rozmowa! Naprawdę czuję, że zbudowałem autentyczne połączenie z Edith. Zaprosiła mnie nawet na wieczór z mentorami.",
+    "phoneNotification": "Mój telefon brzęczy. Sprawdzę wiadomości...",
+    "maintainComplete": "Gotowe! Utrzymywanie kontaktu z moją siecią nie musi być skomplikowane — wystarczy, że jest autentyczne.",
+    "noticePoster": "Hmm, ten plakat na ścianie wygląda interesująco. Przyjrzyjmy się dokładniej...",
+    "leverageComplete": "Mądry ruch. Wiedza, do kogo się zwrócić — i dlaczego — to ostatni element układanki networkingu.",
+    "congratulations": "Gratulacje! Opanowałeś wszystkie cztery umiejętności networkingu: Inicjowanie, Budowanie, Utrzymywanie i Wykorzystywanie. Czas zastosować je w prawdziwym świecie!"
+  },
+  "items": {
+    "mirror": {
+      "popupTitle": "Lustro",
+      "popupContent": [
+        "Brak sałaty między zębami, sprawdzone."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Pomyślnie ukończyłeś escape room Umiejętności networkingu! Nauczyłeś się i przećwiczyłeś cztery kluczowe umiejętności networkingu: Inicjowanie (rozpoczynanie rozmów), Budowanie (pogłębianie relacji), Utrzymywanie (pozostawanie w kontakcie) oraz Wykorzystywanie (mądre korzystanie z sieci). Te umiejętności posłużą Ci dobrze w Twojej zawodowej drodze!",
+    "buttonText": "Wyjdź z pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "sendButton": "Wyślij",
+    "nextContact": "Następny kontakt",
+    "optionA": "A",
+    "optionB": "B",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "loading": "Loading Negotiation Skills...",
+  "intro": {
+    "title": "Negotiation Skills",
+    "paragraphs": [
+      "You are an independent event-planning consultant. You have just arrived at a meeting room to negotiate a contract with a potential client for a series of corporate events.",
+      "You don't know much about the client yet, and you feel a bit underprepared. But the meeting is about to start, and there's no time to back out now.",
+      "Take a deep breath and step into the interview room..."
+    ],
+    "buttonText": "Enter the Interview Room"
+  },
+  "characters": {
+    "bilal": {
+      "name": "Bilal Ahmed",
+      "dialogues": {
+        "phase1_1": "Good morning. Please, have a seat. I'm Bilal Ahmed, Head of Corporate Events at Meridian Holdings. Thank you for coming in today.",
+        "phase1_2": "We are looking for an external agency to handle the planning and coordination of the full event series for this fiscal year. It's quite a significant undertaking.",
+        "phase1_3": "There will be four major events throughout the year: a team-building retreat, a product launch, our annual gala, and a stakeholder conference. Each one requires a unique approach.",
+        "phase1_4": "Naturally, we want to ensure we work with someone who understands the scope. Our budget for the full package is around 6,000 euros.",
+        "phase1_5": "We're committed to staying within budget, particularly during early stages of collaboration. Cost-efficiency is very important to us.",
+        "phase1_6": "I should mention that other agencies are also being considered. We want to compare proposals before making a final decision.",
+        "phase1_7": "...",
+        "phase1_8": "Well, I think that covers the basics for now. We'll take everything into account and follow up soon. Negotiations will be continued.",
+        "phase1_9": "Thank you for your time. I'll be in touch.",
+        "phase1_exit": "Bilal gets up, gathers his folder, and walks out of the room.",
+        "phase4_1": "Welcome back. I've had a chance to review the initial notes from our earlier conversation. Shall we pick up where we left off?",
+        "phase4_2": "So, let's talk numbers. What are you proposing for the full event series?",
+        "phase4_3": "That's significantly above our initial budget. Can you help me understand the breakdown?",
+        "phase4_4": "I see. And the insurance and logistics?",
+        "phase4_5": "Hmm. I appreciate the transparency. But we still have budget constraints to work with.",
+        "phase4_6": "...",
+        "phase4_7": "I'll admit, the silence gave me a moment to think. You raise a fair point about quality and cost.",
+        "phase4_8": "Still, there are other agencies offering to do this for less. Why should we go with you?",
+        "phase4_9": "That's a fair point. Experience does count. Let me think about this.",
+        "phase4_10": "What if we can't commit to the full 8,500 upfront?",
+        "phase4_11": "That could work. A phased payment would help with cash flow on our end.",
+        "phase4_12": "Interesting. Tell me more about these event concepts.",
+        "phase4_13": "I must say, the bundled retreat and product launch idea is creative. It could save us time and resources.",
+        "phase4_14": "You've given me a lot to consider. Let me discuss this with the board.",
+        "phase4_15": "I think we have a strong basis for moving forward. Let's schedule a follow-up to finalize the terms.",
+        "phase4_final": "It's been a pleasure negotiating with you. I can see you came prepared this time. I look forward to working together.",
+        "completion": "Well done! The training has been completed!",
+        "default": "Let's continue our discussion."
+      }
+    }
+  },
+  "phase1": {
+    "options": {
+      "1a": "Good morning, Mr. Ahmed. Thank you for having me. I'm excited about the opportunity.",
+      "1b": "Hi. Thanks for fitting me in. I'm ready to hear what you need.",
+      "2a": "That sounds like a great opportunity. I'd love to be a part of it.",
+      "2b": "Understood. Can you tell me more about the specific events?",
+      "3a": "That's impressive. I've handled similar events before, though not quite at this scale.",
+      "3b": "Four events? That's quite a lot. I'll do my best to deliver on all of them.",
+      "4a": "6,000 euros... that seems reasonable. I think we can work something out.",
+      "4b": "I appreciate you sharing the budget upfront. I'll keep that in mind as we discuss further.",
+      "5a": "Absolutely, cost-efficiency is important to me as well.",
+      "5b": "I understand. I always try to deliver maximum value within the given budget.",
+      "6a": "I'm confident that my approach will stand out compared to others.",
+      "6b": "That's understandable. Competition keeps everyone on their toes.",
+      "7a": "(Stay silent and wait)",
+      "7b": "So... shall we discuss the details further?",
+      "8a": "Thank you. I look forward to hearing from you.",
+      "8b": "Before you go, is there anything else I should know about the project?"
+    },
+    "selfTalkAfter": "Phew... That was uncomfortable. I wasn't prepared at all. I didn't know my costs, I didn't have a strategy, and I just went along with everything. I need to do better if I get another chance."
+  },
+  "phase2": {
+    "faxSound": "You hear the fax machine whirring. Something is coming through...",
+    "pickUpFax": "You walk over and pick up the printed transcript of your earlier meeting with Bilal.",
+    "transcriptTitle": "Meeting Transcript",
+    "transcriptIntro": "Review the transcript of your earlier conversation. Click on the highlighted phrases to reflect on what you missed.",
+    "phrases": {
+      "1": {
+        "text": "planning and coordination of the full event series",
+        "thought": "What does it actually include? I never asked for details about the scope, deliverables, or expectations for each event. I should have clarified this before discussing price."
+      },
+      "2": {
+        "text": "budget of around 6,000 euros",
+        "thought": "Will I make a profit, loss, or break even? I accepted this number without knowing my own costs. I need to calculate my bottom line before negotiating."
+      },
+      "3": {
+        "text": "staying within budget, particularly during early stages",
+        "thought": "Are they concerned about the total cost, or about cash flow? This distinction matters. Maybe I can propose a payment structure that addresses their concern."
+      },
+      "4": {
+        "text": "other agencies are also being considered",
+        "thought": "I could have explained why they should choose me specifically. What's my unique value proposition? I need to prepare a compelling case."
+      },
+      "5": {
+        "text": "Negotiations will be continued",
+        "thought": "Don't panic! This means the door is still open. I have another chance. I need to use this time wisely to prepare."
+      }
+    },
+    "allPhrasesReflected": "Now I see all the opportunities I missed. I need to calculate my bottom line and prepare a real strategy before Bilal comes back.",
+    "transitionToPhase3": "Time to prepare. Let me look around the room for tools that can help me get ready for round two."
+  },
+  "phase3": {
+    "spreadsheet": {
+      "title": "Cost Estimate - Event Series",
+      "intro": "Review your cost breakdown to determine your bottom line.",
+      "rows": {
+        "labor": "Labor: 185 hours x 35 euros/h",
+        "laborTotal": "6,475 euros",
+        "software": "Event management software licenses",
+        "softwareTotal": "400 euros",
+        "insurance": "Liability insurance",
+        "insuranceTotal": "250 euros",
+        "logistics": "Logistics and transportation",
+        "logisticsTotal": "500 euros",
+        "overhead": "Office overhead and communications",
+        "overheadTotal": "150 euros",
+        "total": "Total Cost",
+        "totalAmount": "7,775 euros"
+      },
+      "conclusion": "Accepting 6,000 euros would mean a loss of 1,775 euros. I need to negotiate for at least 7,775 to break even, and ideally more to make a profit. I should propose 8,500 to give myself room."
+    },
+    "hourglass": {
+      "title": "The Hourglass",
+      "description": "You turn the hourglass on the windowsill and watch the sand flow slowly.",
+      "reflection": "Silence is a powerful negotiation tool. When the other side makes an offer or a statement, I don't have to respond immediately. A strategic pause shows confidence and gives me time to think. I should use silence deliberately in the next conversation."
+    },
+    "folder": {
+      "title": "Win-Win Solutions",
+      "description": "You open the folder and three documents fly out onto the table.",
+      "documents": {
+        "payment": {
+          "title": "Payment Options",
+          "content": "Instead of demanding the full amount upfront, I could propose a phased payment structure: an initial deposit, mid-project payments, and a final payment upon completion. This addresses the client's cash flow concerns while ensuring I get paid."
+        },
+        "concepts": {
+          "title": "Event Concept Ideas",
+          "content": "I could propose creative event concepts that add value without adding cost: bundling the team-building retreat with the product launch preparation, using the gala as a networking opportunity for stakeholder engagement, and creating a unified theme across all four events."
+        },
+        "resume": {
+          "title": "Company Resume",
+          "content": "I should highlight my experience: 12 years in event planning, 50+ corporate events delivered, specialization in multi-event series management, and a 95% client satisfaction rate. This justifies my pricing."
+        }
+      }
+    },
+    "posters": {
+      "eye": {
+        "title": "See",
+        "content": "Focus on the speaker. Maintain eye contact. Look for non-verbal cues - body language, facial expressions, and gestures often reveal more than words."
+      },
+      "ear": {
+        "title": "Hear",
+        "content": "Listen before speaking. Don't interrupt. Let the other person finish their thought completely before formulating your response."
+      },
+      "mouth": {
+        "title": "Speak",
+        "content": "Paraphrase the other person's statements to show understanding. Ask open-ended questions to explore their needs and interests deeper."
+      }
+    },
+    "allPrepComplete": "I've done my homework. I know my costs, I have creative solutions ready, I understand the power of silence and active listening. I'm ready for round two.",
+    "bilalReturns": "The door opens. Bilal walks back into the room and takes his seat."
+  },
+  "phase4": {
+    "options": {
+      "1a": "Absolutely. I've had some time to prepare, and I'm confident we can find a great arrangement.",
+      "1b": "Yes, let's continue. I have a clearer picture now.",
+      "2a": "Based on my detailed cost analysis, the full event series would come to 8,500 euros. This covers labor, software, insurance, logistics, and overhead, with a small margin for quality assurance.",
+      "2b": "I'm looking at around 8,500 euros for the complete package. That's my professional assessment.",
+      "3a": "Of course. The largest portion is 185 hours of professional labor at 35 euros per hour, totaling 6,475. Then there's 400 for software licenses, 250 for liability insurance, 500 for logistics, and 150 for overhead.",
+      "3b": "Certainly. Labor makes up the bulk at 6,475, with the remainder covering essential operational costs like software, insurance, and logistics.",
+      "4a": "The insurance protects both of us from liability during events, and logistics covers transportation of equipment and materials across four venues. These are non-negotiable for quality delivery.",
+      "4b": "Insurance is 250 and logistics is 500. Both are essential to ensure smooth and safe event execution.",
+      "5a": "(Pause deliberately, maintain eye contact, and wait)",
+      "5b": "I understand. And I want to make sure we find a number that works for both of us.",
+      "6a": "(Continue the strategic silence for a moment longer)",
+      "6b": "(Nod thoughtfully and wait for Bilal to continue)",
+      "7a": "I appreciate that. Quality events require proper investment, and cutting corners often costs more in the long run.",
+      "7b": "Thank you. I believe in transparent pricing because it builds trust from the start.",
+      "8a": "Because I bring 12 years of specialized experience in multi-event series management, a 95% client satisfaction rate, and the ability to create cohesive experiences across all four events. Cheaper isn't always better when your company's reputation is on the line.",
+      "8b": "Experience and reliability. I've delivered over 50 corporate events, and I specialize in exactly this type of year-long series. My track record speaks for itself.",
+      "9a": "I'd suggest a phased payment structure. An initial 30% deposit, then payments at each event milestone, with the final balance upon completion of the last event.",
+      "9b": "We could structure the payments across the project timeline, so you're not committing the full amount at once.",
+      "10a": "Exactly. And it aligns with your earlier concern about managing costs during early stages. You'd only pay 2,550 upfront, with the rest spread across the year.",
+      "10b": "It gives both of us flexibility. You manage cash flow, and I can plan resources effectively.",
+      "11a": "I've also prepared some creative event concepts. For instance, we could bundle the team-building retreat with product launch preparation, creating a two-in-one experience that maximizes your investment.",
+      "11b": "I have some ideas for the events themselves that could add extra value without increasing the budget.",
+      "12a": "The retreat could include collaborative product brainstorming sessions. And the gala could double as a stakeholder engagement platform with a unified theme running through all four events.",
+      "12b": "Each event would build on the previous one, creating a narrative arc for the whole year. It's a holistic approach.",
+      "13a": "Thank you. And from what you've shared, I can tell that Meridian Holdings values both efficiency and impact. That's exactly the kind of client I work best with.",
+      "13b": "I appreciate that. Creative solutions are what set a good event planner apart."
+    },
+    "betterChoice": "a",
+    "betterChoiceLabel": "More strategic approach",
+    "acceptableChoiceLabel": "Acceptable approach"
+  },
+  "puzzles": {
+    "transcript": {
+      "title": "Meeting Transcript Analysis",
+      "instructions": "Click on each highlighted phrase to reflect on what you could have done differently.",
+      "feedback": {
+        "allComplete": "Excellent analysis! You've identified all the key moments you missed during the first negotiation."
+      }
+    },
+    "negotiation": {
+      "title": "The Prepared Negotiation",
+      "feedback": {
+        "perfect": "Outstanding negotiation! You made all the best strategic choices.",
+        "good": "Good negotiation skills! You made mostly strategic choices.",
+        "acceptable": "Decent negotiation. There's room to improve your strategic approach."
+      }
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "activeListeningTitle": "Active Listening"
+  },
+  "hints": {
+    "phase1": "Click on Bilal Ahmed to begin the negotiation.",
+    "phase1Conversation": "Continue the conversation with Bilal by choosing a reply option.",
+    "phase2Fax": "You hear a sound from the fax machine. Click on it to investigate.",
+    "phase2Transcript": "Read through the transcript and click on all highlighted phrases.",
+    "phase3Laptop": "Click on the laptop to review your cost breakdown.",
+    "phase3Hourglass": "Click on the hourglass in the windowsill.",
+    "phase3Folder": "Click on the folder on the table.",
+    "phase3Posters": "Click on the posters on the wall.",
+    "phase3General": "Look around the room for preparation tools. Check the laptop, hourglass, folder, and posters.",
+    "phase4": "Click on Bilal Ahmed to start the prepared negotiation.",
+    "phase4Conversation": "Continue the negotiation by choosing a reply option.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room for clues."
+  },
+  "systemDialogues": {
+    "enterRoom": "Here I am. The interview room. Simple but professional. Let me take a seat and wait for the client to arrive.",
+    "bilalArrives": "The door opens. A well-dressed man in a navy suit walks in confidently and sits across from me.",
+    "phase3Start": "Alright, Bilal has left but said negotiations will continue. I need to use this time to prepare. Let me look around the room for anything that can help.",
+    "prepItem": "Good. That's useful information.",
+    "allPrepDone": "I feel much more prepared now. I know my numbers, I have a strategy, and I'm ready for active listening. Now I just need to wait for Bilal to return.",
+    "phase4Intro": "The door opens again. Bilal walks back in with his folder and takes his seat. This is my chance. Let's do this right."
+  },
+  "items": {
+    "transcript": {
+      "popupTitle": "Meeting Transcript",
+      "header": "Transcript of your earlier meeting with Bilal Ahmed"
+    },
+    "spreadsheet": {
+      "popupTitle": "Cost Estimate Spreadsheet"
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully demonstrated the art of negotiation! From an unprepared first meeting to a strategic, well-prepared second negotiation, you've learned the importance of preparation, knowing your bottom line, using silence strategically, active listening, and finding win-win solutions.",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "chooseReply": "Choose your reply:",
+    "optionA": "Option A",
+    "optionB": "Option B",
+    "clickToReflect": "Click to reflect",
+    "reflected": "Reflected",
+    "phrasesRemaining": "phrases remaining",
+    "closeTranscript": "Close",
+    "closeSpreadsheet": "Close",
+    "prepProgress": "Preparation Progress",
+    "itemsFound": "items completed",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

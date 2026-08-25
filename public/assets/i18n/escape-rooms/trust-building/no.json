@@ -1,0 +1,230 @@
+{
+  "loading": "Laster tillitsbygging...",
+  "intro": {
+    "title": "Tillitsbygging",
+    "paragraphs": [
+      "Du er en ansatt i et IT-selskap, som nettopp ble forfremmet til stillingen som teamleder. Begeistret over alle de nye oppgavene og erfaringene, kan du knapt vente med å møte teamet ditt - for første gang som deres leder.",
+      "Du har blandede følelser om denne endringen. Du er ivrig etter å ta på deg denne nye rollen, og tror sterkt på at du har den nødvendige kunnskapen og ferdighetene. På den annen side er du ikke sikker på hvor godt du vil prestere i sosiale interaksjoner og opprettholdelse av et sunt forhold basert på gjensidig tillit, ærlighet og åpenhet.",
+      "Du går inn i HR-kontoret - stedet hvor du ba teamet ditt om å samles, for å gjennomføre en slags orienteringsmøte…"
+    ],
+    "buttonText": "Gå inn i HR-kontoret"
+  },
+  "characters": {
+    "kate": {
+      "name": "Kate",
+      "dialogues": {
+        "greet": "Hei! Vi har ventet på deg! Jeg og Hiroshi er virkelig spente på at det er du som skal ta roret for det lille teamet vårt. Vi er sikre på at du vil gjøre det enestående bra i din nye stilling. Jeg er sikker på at du har mye å si til oss, men jeg snakket med Hiroshi, og vi vil benytte anledningen til å be deg om å delta i en felles øvelse av et slag. For å være sikker på at teamarbeidet vårt går så jevnt som mulig. Vil du være med oss?",
+        "proposeExercise": "Flott! La oss begynne med litt teori. Jeg har akkurat sendt deg en e-post med en tekstfil som inneholder grunnleggende informasjon om effektiv tillitsbygging i teamet. Innholdet er utviklet av selskapet, men jeg tror det vil komme godt med i vårt tilfelle. Vennligst gjør deg kjent med det og gi meg beskjed når du er klar til å fortsette!",
+        "goToWhiteboard": "Wow! Det tok deg bare et øyeblikk. Meldte du deg på et hurtiglesningskurs? Jeg vedder på at du gjorde det. Uansett, vi er klare til å fortsette og komme til hoveddelen av øvelsen. La oss ta en titt på tavla.",
+        "puzzle1Intro": "Jeg og Hiroshi har forberedt denne korte matchings-oppgaven for deg for raskt å sjekke din forståelse av de grunnleggende ideene i tillitsbyggingsprosessen. La oss gjøre det!",
+        "puzzle1Complete": "Selvfølgelig fullførte du øvelsen vår med glans! Jeg tvilte ikke på deg et eneste sekund. Greit, med det ute av veien, ville jeg faktisk snakke med deg om noe… Jeg tenkte det ville være et godt øyeblikk, og jeg håper du ikke har noe imot, men…",
+        "personalStory": "Takk. Jeg visste at du ville forstå meg. Ok, her kommer det. Jeg hadde spesifikke, ubehagelige opplevelser med vår forrige teamleder. Hun var ikke dårlig totalt sett, hun var en grei leder, men av en eller annen grunn avviste hun alltid ideene mine. Selvfølgelig sa hun at hun ville vurdere det, at hun ville tenke på det. Men til slutt ble ingen av forslagene mine noensinne tatt i betraktning. Med tiden sluttet jeg å dele dem. Det jeg prøver å si er… Jeg vil stole på deg, at under ditt lederskap vil ideene mine bli hørt. Det ville bety så mye for meg.",
+        "puzzle3Thanks": "Tusen takk. Det er alt jeg håpet å høre, og enda mer. Du er allerede min favoritt teamleder! Jeg lover at jeg alltid vil gjøre mitt beste for teamet, slik at mitt bidrag er verdifullt og mine bidrag dytter oss fremover. Tusen takk en gang til.",
+        "finalWords": "Det har vært en spesiell dag, ikke sant? Som Hiroshi sa, du vil bli en perfekt teamleder, jeg er helt sikker på det nå. Og… vet du, historien jeg delte tidligere var ikke en del av selskapets test, det var min ekte erfaring og bekymring. Og for meg er det enda mer verdifullt enn selve testresultatet. Igjen, takk for at du har bevist at du er en pålitelig person, klar til å stole på teammedlemmene dine på vår felles reise! Godt jobbet!",
+        "completion": "Vi gleder oss til å begynne å jobbe med deg! Treningen er fullført!",
+        "default": "Jeg er her hvis du trenger meg. Hvis du har glemt hva du skal gjøre, klikk på hint-knappen (lyspæren) øverst til venstre."
+      }
+    },
+    "hiroshi": {
+      "name": "Hiroshi",
+      "dialogues": {
+        "puzzle3Complete": "Din tilnærming og handlinger så langt betyr virkelig mye for oss. Vi er heldige som har deg som vår teamleder. Jeg er sikker på at samarbeidet vårt vil gå jevnt. Å, ja, snakker om samarbeid… I går introduserte selskapet et helt nytt verktøy for teamarbeidsplanlegging. Det kan operere i to moduser – Delt synlighet-modus og Begrenset synlighet-modus. Den første gjør det mulig for alle teammedlemmer å se oppgaver, arbeidsbelastning og tildelte ressurser. Den andre viser all denne informasjonen kun til teamlederen. Begge har fordeler og ulemper. Vennligst velg det valgte alternativet på laptopen, når du er klar.",
+        "reveal": "Det stemmer. Det var aldri noen ny verktøyimplementering. Det var bare en test. Men vi måtte være sikre. Vel, selskapet måtte – det var deres idé. Og ja, vi lurte deg litt, men vi er et bransjeledende IT-selskap, og vi kan ikke tillate oss å tildele feil personer til så krevende stillinger. Med det sagt, har du bestått alle testene våre! Vi gleder oss til å begynne å jobbe under ditt lederskap! Velkommen om bord!",
+        "completion": "Velkommen til teamet, leder!",
+        "default": "Jeg er her, klar når du er det."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Tillitsbygging - Sjekke grunnleggende forståelse",
+      "instructions": "Lag logiske setninger ved å matche hver begynnelse med riktig avslutning.",
+      "columnA": {
+        "heading": "Setningsbegynnelser",
+        "items": {
+          "1": "Felles mål hjelper teamet å…",
+          "2": "Når en leder lytter…",
+          "3": "Å myndiggjøre folk hjelper dem å…",
+          "4": "Åpenhet under endringer lar folk…",
+          "5": "Forutsigbare prosesser gjør det enklere å…",
+          "6": "Anerkjennelse hjelper folk å…",
+          "7": "En leder som leder ved eksempel inspirerer andre til å…"
+        }
+      },
+      "columnB": {
+        "heading": "Setningsavslutninger",
+        "items": {
+          "A": "…dele ideer åpent.",
+          "B": "…handle med lignende integritet.",
+          "C": "…holde seg rolige og tilpasse seg.",
+          "D": "…ta eierskap.",
+          "E": "…samarbeide effektivt.",
+          "F": "…unngå misforståelser.",
+          "G": "…holde seg motivert og forbedre seg."
+        }
+      },
+      "feedback": {
+        "wrong": "Ikke helt riktig. Prøv igjen!",
+        "allCorrect": "Flott jobb! Du matchet alle setningene riktig!",
+        "revealedComplete": "Her er de riktige matchene — gjennomgå dem og la oss fortsette."
+      },
+      "answerOverlay": "Her er de riktige matchene: 1→E, 2→A, 3→D, 4→C, 5→F, 6→G, 7→B"
+    },
+    "singleChoice1": {
+      "title": "Hjelpe Kate",
+      "instructions": "Velg det beste svaret. Kun ett er riktig.",
+      "question": "Basert på konteksten og din streben etter å bygge et sunt, tillitsbasert forhold til teamet ditt, hva bør du si til Kate akkurat nå?",
+      "options": {
+        "a": "Du virker usikker. Kanskje vi bør holde oss til agendaen for nå og snakke om dette en annen gang?",
+        "b": "Det er greit, Kate. Jeg er sikker på at det ikke er noe alvorlig. La oss gå videre.",
+        "c": "Kate, hvis noe plager deg, er jeg her. Vennligst, fortsett - jeg lytter.",
+        "d": "Før du fortsetter, må jeg vite hvordan dette påvirker arbeidet vårt. Kan du være mer direkte?"
+      },
+      "hint": "Prøv å være mer skånsom og betryggende - Kate vil sette pris på det.",
+      "feedback": {
+        "wrong": "Det er kanskje ikke det beste svaret for å bygge tillit. Prøv å være mer skånsom og betryggende.",
+        "correct": "Utmerket valg! Det er akkurat den typen empatisk respons som bygger tillit."
+      },
+      "answerOverlay": "Det riktige svaret er: \"Kate, hvis noe plager deg, er jeg her. Vennligst, fortsett - jeg lytter.\""
+    },
+    "fillGap": {
+      "title": "Første skritt",
+      "instructions": "Fullfør setningene med manglende ord og utform svaret ditt til Kate.",
+      "sentenceParts": [
+        "Kate, takk for at du fortalte meg om dette. Jeg vil at du skal vite at jeg ",
+        " og at jeg anerkjenner at det krevde mye mot å ta det opp.\n\nIdeene dine ",
+        ", og jeg er forpliktet til å sikre at stemmen din blir hørt.\n\nFremover vil jeg at vi skal ",
+        ", slik at vi former samarbeidet vårt på en måte som føles støttende og rettferdig.\n\nVi tar de neste skrittene ",
+        ", med åpenhet og tillit."
+      ],
+      "options": [
+        "delta i denne prosessen sammen",
+        "hører og verdsetter ditt bidrag",
+        "side om side",
+        "virkelig har betydning for dette teamet"
+      ],
+      "correctOrder": [
+        "hører og verdsetter ditt bidrag",
+        "virkelig har betydning for dette teamet",
+        "delta i denne prosessen sammen",
+        "side om side"
+      ],
+      "feedback": {
+        "wrong": "Noen ord er ikke på rett plass. Prøv igjen!",
+        "correct": "Perfekt! Du har komponert et gjennomtenkt, tillitsbyggende svar."
+      },
+      "answerOverlay": "Riktig rekkefølge er: [1] hører og verdsetter ditt bidrag, [2] virkelig har betydning for dette teamet, [3] delta i denne prosessen sammen, [4] side om side",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Send inn"
+    },
+    "singleChoice2": {
+      "title": "Store beslutninger",
+      "instructions": "Velg det beste svaret.",
+      "question": "Med tanke på alle fordeler og ulemper, ta beslutningen angående modusen til det nye verktøyet for teamarbeidsplanlegging.",
+      "options": {
+        "a": "Velg modus med begrenset synlighet",
+        "b": "Velg modus med delt synlighet"
+      },
+      "hint": "Selv om begrenset synlighet har sine fordeler, oppveier ulempene dem, noe som gjør delt modus mer sannsynlig å gagne teamet ditt.",
+      "feedback": {
+        "wrong": "Er du sikker? Vurder innvirkningen på teamtillit og åpenhet.",
+        "correct": "Flott valg! Delt synlighet er i tråd med tillit og åpenhet."
+      },
+      "answerOverlay": "Det riktige svaret er: Velg modus med delt synlighet"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Klikk på Kate for å starte orienteringsmøtet.",
+    "talkToKate1": "Klikk på Kate for å begynne.",
+    "findPhone": "Du kan kjenne summing fra telefonen i vesken din. Se etter vesken nær stolene.",
+    "readEmail": "Les e-posten på telefonen din.",
+    "talkToKate2": "Snakk med Kate igjen - hun venter på deg.",
+    "goToWhiteboard": "Klikk på tavla som Kate foreslo.",
+    "puzzle1Matching": "Match hver setningsbegynnelse med avslutningen som best beskriver et tillitsbyggende prinsipp.",
+    "puzzle1Complete": "Kate vil snakke med deg. Klikk på henne.",
+    "kateStory": "Kate virker nervøs. Klikk på henne for å lytte.",
+    "readPaper": "Du legger merke til et papir på bordet. Klikk på bordet for å lese det.",
+    "puzzle3FillGap": "Bruk ordbanken til å fylle ut de tomme feltene i riktig rekkefølge for å fullføre svaret ditt til Kate.",
+    "puzzle3Complete": "Hiroshi vil snakke med deg. Klikk på ham.",
+    "clickLaptop": "Klikk på laptopen for å ta beslutningen.",
+    "readStickyNote": "Les klistrelappen på laptopskjermen.",
+    "reveal": "Hiroshi har noe å fortelle deg. Klikk på ham.",
+    "completion": "Treningen er fullført!",
+    "default": "Se rundt i rommet etter ledetråder."
+  },
+  "systemDialogues": {
+    "selfTalk": "Jeg ser at Kate og Hiroshi har vellykket fullført den første oppgaven jeg delegerte til dem som teamleder… som var å samles på HR-kontoret. Uansett, nå er det min tur til å gjøre jobben min godt også. Lykke til til meg…",
+    "findPhone": "Du kan kjenne summing fra telefonen i vesken din, som varsler deg om e-posten fra Kate. Ta en titt inni vesken og se etter den hvite telefonen din.",
+    "emailRead": "Bra jobbet! Du har akkurat oppdaget det viktigste som Kate ville dele med deg! Du bør gå og snakke med henne nå.",
+    "goToWhiteboard": "La oss ta en titt på tavla og fullføre øvelsen.",
+    "reactToStory": "Når pausen i Kates tale blir lengre, har du en følelse av at det er øyeblikket for deg å reagere.",
+    "noticePaper": "Selv om du føler at du allerede vet hva du skal si til Kate, legger du plutselig merke til et papir på bordet, med tittel 'Lyttingens kraft'. Du bør lese det først.",
+    "paperRead": "Styrket med nyervervet innsikt og veiledet av din empati og lederegenskaper, begynner du å komponere svaret ditt til Kate…",
+    "clickLaptop": "Hiroshi snur laptopen mot deg. Du legger merke til to store knapper og en gul digital klistrelapp på skrivebordet. Les klistrelappen før du bestemmer deg.",
+    "stickyNoteRead": "Du legger merke til to sitater, sannsynligvis Hiroshis favoritter. Du kan kjenne din voksende selvtillit i en av løsningene…",
+    "talkToKateAgain": "Kate ser ut som om hun har mer å si. Klikk på henne igjen for å høre henne ut.",
+    "talkToHiroshi": "Snakk nå med Hiroshi — han har sett på deg hele tiden og virker som om han vil ha et ord."
+  },
+  "items": {
+    "phone": {
+      "inventoryTitle": "Tillitsbygging 101",
+      "popupTitle": "Tillitsbygging 101",
+      "popupContent": [
+        "Kommuniser tydelig - si hva og hvorfor.",
+        "Lytt først - folk stoler når de føler seg hørt.",
+        "Sett felles mål - slik at alle vet hvor teamet er på vei.",
+        "Myndiggjør folk - gi rom for ideer og eierskap.",
+        "Vær forutsigbar - klare prosesser bygger pålitelighet.",
+        "Gi anerkjennelse - tilbakemelding forbedrer motivasjon og tillit.",
+        "Vær åpen i endring - ærlighet reduserer frykt.",
+        "Led ved eksempel - konsistens bygger troverdighet."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Lyttingens kraft",
+      "popupTitle": "Lyttingens kraft",
+      "popupContent": [
+        "1. Anerkjenn deres erfaring — Vis at du hørte hva de sa. Valider motet det krevde å dele det.",
+        "2. Spør i stedet for å anta — Inviter dem til å forklare hva de trenger. Forståelse bygger klarhet.",
+        "3. Svar med partnerskap — Ikke løfter. Ikke beslutninger. Et felles neste skritt."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Klistrelapp",
+      "popupTitle": "Klistrelapp",
+      "popupContent": [
+        "\"Når alle ser det samme bildet, kan teamet bevege seg sammen.\"",
+        "\"Folk som ikke kan se prosessen, slutter å stole på resultatet.\""
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har bevist at du ikke bare er en medfølende, empatisk og pålitelig person, men også en god teamleder som kan stole på sine egne teammedlemmer. Du har vellykket ervervet ferdigheten Tillitsbygging!",
+    "buttonText": "Forlat rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

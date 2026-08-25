@@ -1,0 +1,206 @@
+{
+  "id": "adaptability",
+  "moduleNumber": 20,
+  "title": "Adaptability",
+  "subtitle": "Module 20",
+  "coverImage": "assets/thumbs/adaptability.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 20",
+      "title": "Adaptability",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/adaptability.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "By the end of this module you will"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Recognize the importance of the adaptability in entrepreneurial settings,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Understand the concepts of agility, innovation and dynamic resource allocation,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Develop problem-diagnosis skills,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Become aware of challenges and solutions related to applying this competence."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Adaptability in the entrepreneurial context can be defined as a collection of actions aimed at adjusting systems, behaviours, and structures to better respond to the newly appearing conditions or given challenges. It's a complex process which doesn’t affect just individuals, but the entire organisation or company. Such adaptation practices include experimenting with new approaches, acting to newly established standards or based on novel assumptions in order to cope with change. Adaptability is a crucial skill for entrepreneurs, as the business environment is changing rapidly and requires constant adjustment to become effective. (Hasyim et al., 2023)"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The entrepreneurial landscape is a very quickly evolving space, with a multitude of factors constantly affecting each other, influencing prices, achievable supply levels, audience’s expectations, their habits, etc. Therefore, companies that are able to quickly re-adjust their offerings, frameworks or approaches, are more likely to gain the advantage over their competitors. Example: your company focuses on the provision of skin-care products, when suddenly new regulations ban one of the key components of your formula. Through the series of quick actions, your company is able to replace it with another ingredient, therefore rapidly going back to market, before your competitors do (Nguyen, 2024)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Below we present the three fundamental components of adaptability (Lutz, 2025)"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Agility - agility is the first key component of the competence of adaptability, enabling companies (or individuals) to quickly respond to the newly emerging challenges, market shifts, etc., while not letting go of the long-term goals.",
+            "Innovation - the ability to react to the new situation through the implementation of novel, revolutionary products, services or solutions, techniques and organisational methods, effectively gaining the edge over the rest of the market.",
+            "Dynamic resource allocation - the skill of strategically managing available resources, such as personnel, technologies, raw materials, to effectively carry out adaptation processes, without hindering the rest of the company operations."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Eric Ries in his book The Lean Startup recommends the “Five Whys” method, which, simply put, requires the user to ask the question “why?” five times, whenever a new challenge/obstacle appears. It enables the user to diagnose the root cause of the problem in a quick and efficient manner, and to proceed to development of the solution. The flow: Machine X broke down. Why? Because part Y got overloaded. Why? Because part Z didn’t work properly. Why? Because it was worn-out. Why? Because the employee didn’t replace it on time. Why? Because they weren’t trained and didn’t know how to do it. This assessment method will let you easily diagnose areas to work on and adapt your company’s operations accordingly (Ries, 2011)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Below we present the most significant challenges related to applying this skill"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "The lack of time or resources - executing additional processes aimed at adaptability efforts requires extra time and resources to be allocated, which aren’t always available. Focus on micro-adaptations, integrating them with existing workflows.",
+            "Resistance to change - some organisational structures or even individuals might prove to be specifically resistant to any change, even the one for the better, and prefer stability. Introduce small changes gradually, to make the process more comfortable."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Exercises"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Below you can find two simple exercises to help you develop the skill of strategic thinking:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Company adjustment - imagine that the product you’re offering suddenly became outdated due to the development of new technology. Write down 3 strategies of adaptation to this new situation (new product, collaboration).",
+            "“Plan B” - identify three key areas of your company, without which it wouldn’t be able to operate. Next to each one write the most probable (in your opinion) cause of the failure that might happen, and a realistic plan B, which will restore its operation, using available resources."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Check the right box based on the way you perceive yourself (LLC, 2022)."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can quickly adapt to the sudden change.",
+            "I am open to learning new skills, procedures and techniques.",
+            "I am willing to try out new ideas.",
+            "I focus on making changes work, instead of discouraging myself.",
+            "Am I clear and honest in my communication?",
+            "I remain calm and try to think constructively in the face of change."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Adaptability is the competence essential and necessary to anyone embarking on the entrepreneurial journey. Given how dynamic the business environment is, and that the only constant found there is the change itself, attempts to establish a functioning company without the skill of adaptation will be very difficult. Therefore, throughout the pages we have provided you with the relevant knowledge on the skill of adaptability, we have explained why it's important, when you can use it, and how to develop it in the most effective way.’ Exercises included and checklist included in the end of the chapter can serve as a starting point to your own development of this crucial competence."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Learners who completed this module are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Recognize and address resistance to change,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Apply structured problem-solving methods,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be able to locate their resources in strategic manner,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Reflect on personal adaptability level."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Books: Adapt: Why Success Always Starts with Failure by Tim Harford; Adaptability: The Art of Winning In An Age of Uncertainty by Max McKeown; The Fourth Industrial Revolution by Klaus Schwab"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Videos: 3 ways to measure your adaptability -- and how to improve it | Natalie Fratto; How to be Adaptable -- Tips to Improve Adaptability as a Power Skill; Adaptability creates opportunities | Jasper Reid | TEDxFMS"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Adaptability",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/adaptability.pdf"
+      }
+    }
+  ]
+}

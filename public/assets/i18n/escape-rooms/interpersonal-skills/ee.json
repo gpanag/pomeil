@@ -1,0 +1,186 @@
+{
+  "loading": "Laadin Inimestevahelisi oskusi...",
+  "intro": {
+    "title": "Inimestevahelised oskused",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind palgati just suurde rahvusvahelisse ettevõttesse, kus töötavad koos eri kultuuridest, taustadest ja ametitest pärit inimesed. Selles ettevõttes töötamine on sulle õpikogemus, kuna erinevate väljakutsete täitmise käigus omandad oskused, mis sisalduvad POMEIL-i kompetentsikaardil ja on igale ettevõtjale hädavajalikud.",
+      "Sa siseneda vastuvõtuala ja märkad meeskonnajuhti, Carlost."
+    ],
+    "buttonText": "Sisene vastuvõtualasse"
+  },
+  "characters": {
+    "carlos": {
+      "name": "Carlos",
+      "dialogues": {
+        "greet": "Tere tulemast! See vastuvõtuala on koht, kus tekivad esimesed muljed—nii külalistega kui kolleegidega. Äris on tehnilised oskused tähtsad, kuid sinu võime suhelda ja teistega hästi koostööd teha—sinu Inimestevahelised Oskused—on see, mis teeb sind organisatsioonile tõeliselt väärtuslikuks.",
+        "findMagazine": "Lugesin varem artiklit inimestevaheliste oskuste põhikomponentidest, kuid jätsin ajakirja kuhugi sellesse vastuvõtualasse. Kas saaksid selle minu jaoks leida? Kontrolli kohvilauda.",
+        "magazineFound": "Suurepärane! Nagu näed, ulatuvad inimestevahelised oskused palju kaugemale rääkimisest—need hõlmavad hoiakut, empaatiat ja käitumist. Need oskused arenevad igapäevaste suhtluste kaudu, isegi siin vastuvõtus.",
+        "quiz1Intro": "Testime su arusaama kiire viktoriiniga.",
+        "quiz1Done": "Sul on põhitõdedest kindel arusaam. Vaatame nüüd väljakutseid. Vääritimõistmist ja konflikti võib juhtuda kõikjal—isegi vastuvõtus, kus stress ja arusaamatused on tavalised.",
+        "findFolder": "Valmistasin „spikri“ tavaliste inimestevaheliste väljakutsete lahendustega. Arvan, et jätsin selle sinise kausta sisse raamaturiiulile. Mine võta see!",
+        "folderFound": "Ideaalne. See leht on väga kasulik, kui asjad pingelisteks muutuvad. Vaatame, kas oskad neid lahendusi reaalsetes olukordades rakendada.",
+        "puzzle2Intro": "Lahenda need ülesanded, et tõestada, et oled valmis meeskonnaga koos töötama.",
+        "finalWords": "Fantastiline! Sa mõistad, et empaatia, tagasiside ja meeskonnatöö on hädavajalikud, eriti sellistes kohtades nagu vastuvõtt, kus esimesed muljed on olulised.\n\nNeid oskusi pidevalt arendades saad sa väärtuslikuks ja usaldusväärseks liikmeks igas organisatsioonis. Edu!",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Otsi edasi vastuvõtualast vihjeid."
+      }
+    },
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "busy": "Tere! Joonistan lihtsalt ideid uue logo jaoks. Isegi vastuvõtus on suhtlus ja esimesed muljed tõesti olulised!",
+        "default": "Joonistan endiselt... räägi Carlosega."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Inimestevaheliste oskuste põhitõed - Tõsi või Vale",
+      "instructions": "Otsusta, kas iga väide on tõsi või vale.",
+      "questions": [
+        {
+          "text": "Inimestevahelised oskused põhinevad täielikult isiksusel ja instinktil, seega ei saa neid parandada.",
+          "correct": false,
+          "hint": "Pea meeles sissejuhatust... Kuigi isiksus mängib rolli, võib igaüks neid oskusi harjutamise abil parandada."
+        },
+        {
+          "text": "Ärimaailmas viitavad inimestevahelised oskused töötaja võimele teistega hästi koos töötada.",
+          "correct": true,
+          "hint": "Mõtle, miks ettevõtted hindavad „inimoskusi“. See on kõik koostöö ja meeskonna tõhususe kohta."
+        },
+        {
+          "text": "Tööandjaid huvitavad ainult kõvad tehnilised oskused, mitte pehmed oskused nagu suhtlus.",
+          "correct": false,
+          "hint": "Tööandjad panevad pehmetele oskustele suurt rõhku, sest need suurendavad tööalast konkurentsivõimet ja meeskonna usaldust."
+        }
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle veel.",
+        "correct": "Tubli! Sa mõistad inimestevaheliste oskuste põhitõdesid."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. VALE – Kuigi isiksus mängib rolli, võib igaüks neid oskusi harjutamise abil parandada.\n2. TÕSI – Inimestevahelised oskused viitavad töötaja võimele teistega hästi koos töötada.\n3. VALE – Tööandjad panevad pehmetele oskustele suurt rõhku, sest need suurendavad tööalast konkurentsivõimet ja meeskonna usaldust."
+    },
+    "singleChoice": {
+      "title": "Inimestevaheliste väljakutsete lahendamine",
+      "instructions": "Vali parim vastus.",
+      "question": "Sa oled vastuvõtualas ja kaks kolleegi hakkavad külaliste ees projekti üle tülitsema. Mis on parim inimestevaheline lahendus?",
+      "options": {
+        "a": "Ignoreeri neid ja loota, et see lõppeb.",
+        "b": "Vali pool ja vaidle vastu.",
+        "c": "Keskendu lahendustele ja meeskonnatööle, et probleem lahendada.",
+        "d": "Lahku alalt kohe."
+      },
+      "hint": "Kontrolli spikrit. Eesmärk on koostöö, mitte eskaleerumine või vältimine.",
+      "feedback": {
+        "wrong": "See pole parim lähenemine. Kontrolli spikrit. Eesmärk on koostöö, mitte eskaleerumine või vältimine.",
+        "correct": "Õige! Lahendustele ja meeskonnatööle keskendumine on parim inimestevaheline lähenemine."
+      },
+      "answerOverlay": "Õige vastus on: Keskendu lahendustele ja meeskonnatööle, et probleem lahendada."
+    },
+    "sequenceOrder": {
+      "title": "Inimestevaheliste oskuste arendamine",
+      "instructions": "Sa tahad oma inimestevahelisi oskusi tõhusalt parandada. Pane järgmised sammud loogilisse järjekorda.",
+      "items": [
+        "Otsi ja võta vastu konstruktiivset tagasisidet teistelt.",
+        "Osale meeskonnaüritustel ja suhtle teistega.",
+        "Mõtiskle tagasiside üle, et oma käitumist parandada.",
+        "Harjuta empaatiat, püüdes mõista teiste tundeid."
+      ],
+      "correctOrder": [
+        "Osale meeskonnaüritustel ja suhtle teistega.",
+        "Harjuta empaatiat, püüdes mõista teiste tundeid.",
+        "Otsi ja võta vastu konstruktiivset tagasisidet teistelt.",
+        "Mõtiskle tagasiside üle, et oma käitumist parandada."
+      ],
+      "hints": [
+        "Alusta teistega suhtlemisest.",
+        "Püüa mõista nende tundeid.",
+        "Küsi, kuidas sul läks.",
+        "Kasuta seda tagasisidet enda parandamiseks."
+      ],
+      "feedback": {
+        "wrong": "See pole õige järjekord. Pea meeles: osale, näita empaatiat, küsi tagasisidet, siis mõtiskle.",
+        "correct": "Suurepärane! Sa tunned inimestevaheliste oskuste parandamise samme."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Osale meeskonnaüritustel ja suhtle teistega.\n2. Harjuta empaatiat, püüdes mõista teiste tundeid.\n3. Otsi ja võta vastu konstruktiivset tagasisidet teistelt.\n4. Mõtiskle tagasiside üle, et oma käitumist parandada."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    }
+  },
+  "hints": {
+    "intro": "Klõpsa Carlosel korkitahvli juures, et alustada.",
+    "talkToCarlos": "Klõpsa Carlosel, et alustada.",
+    "findMagazine": "Kontrolli kohvilauda ajakirja jaoks.",
+    "talkToCarlos2": "Mine Carlose juurde tagasi.",
+    "puzzle1": "Loe iga väidet hoolikalt ja otsusta: tõsi või vale?",
+    "findFolder": "Carlos mainis raamaturiiulit. Otsi sealt sinist kausta.",
+    "talkToCarlos3": "Mine Carlose juurde tagasi sellega, mille leidsid.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata vastuvõtualas vihjeid."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda ettevõtte vastuvõtualasse. See on moodne ruum mugavate istmete, ajakirjadega kohvilaua ja seinaäärse raamaturiiuliga. Sa märkad Carlost, meeskonnajuhti, seismas korkitahvli juures vastuvõtuleti taga, tervitamas inimesi ja jälgimas suhtlusi.",
+    "clickVendingMachine": "Just snacks for visitors here. The magazine Carlos mentioned is probably on the coffee table.",
+    "foundMagazine": "Sa leidsid selle! See on äriajakiri konkreetsel leheküljel avatuna.",
+    "magazineRead": "Suurepärane leid! Mine Carlose juurde tagasi.",
+    "clickBookshelfWrong": "Enamasti brošüürid, raamatud ja vanad ajakirjad külastajatele. Vaata lähemalt sinna, kus inimesed istuvad ja ootavad.",
+    "foundFolder": "Sul on lahendused! Mine Carlose juurde tagasi."
+  },
+  "items": {
+    "magazine": {
+      "popupTitle": "Peamised inimestevahelised pädevused",
+      "popupContent": [
+        "Suhtlemisoskused: Signaalide lugemine ja täpne tõlgendamine.",
+        "Meeskonnatöö ja koostöö: Tõhus töö teistega.",
+        "Emotsionaalne intelligentsus: Enda ja teiste emotsioonide mõistmine.",
+        "Probleemilahendamise oskused: Lahenduste leidmine koos.",
+        "Kohanemisvõime: Olla paindlik sotsiaalsetes olukordades."
+      ],
+      "inventoryTitle": "Ajakiri"
+    },
+    "folder": {
+      "popupTitle": "Väljakutsed ja lahendused",
+      "popupContent": [
+        "Halb suhtlus → Aktiivne kuulamine ja meeskonnaüritused.",
+        "Konflikt või lahkarvamus → Keskendu lahendustele ja meeskonnatööle.",
+        "Madal empaatia → Püüa mõista, kuidas teised tunnevad, suheldes.",
+        "Oskuste puudumine → Uute oskuste omandamisega seotud koolitus."
+      ],
+      "inventoryTitle": "Kaust"
+    }
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Õnnitlused, sa oled kõik lõpetanud ja tõstnud oma inimestevaheliste oskuste taset. Liigume edasi järgmise oskuse juurde.",
+    "buttonText": "Lahku vastuvõtualast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

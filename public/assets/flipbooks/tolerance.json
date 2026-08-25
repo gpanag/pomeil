@@ -1,0 +1,301 @@
+{
+  "id": "tolerance",
+  "moduleNumber": 30,
+  "title": "Tolerance",
+  "subtitle": "Module 30",
+  "coverImage": "assets/thumbs/tolerance.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 30",
+      "title": "Tolerance",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/tolerance.webp"
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Tolerance is the ability to respect and accept people who are different from you. It means staying open-minded, even when someone has a different opinion, background, or way of doing things. For migrant entrepreneurs, tolerance is more than politeness — it’s a key skill for building connections, trust, and partnerships in a new and diverse environment."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The objective of this module is to deepen participants’ understanding of tolerance as a fundamental cross-cultural and entrepreneurial competence. Learners will explore how respect, empathy, cultural awareness, and non-judgment contribute to inclusive communication and constructive cooperation in diverse environments. The module encourages reflection on personal attitudes, biases, and reactions to differences, while highlighting the importance of tolerance in building trust and sustainable professional relationships."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Imagine Amelia, a mother of four who moved from the United States to a post-Soviet country, hoping to build a safe and stable life for her children. A talented seamstress, she dreamed of starting a small business making handmade clothes and decorative pillows. But being a Muslim woman in a new country brought unexpected challenges. Some neighbours treated her with suspicion, and local markets were hesitant to give her a chance."
+        },
+        {
+          "kind": "paragraph",
+          "text": "At first, Amelia felt isolated and unsure if her dream was possible. But instead of giving up, she began attending free craft fairs and sewing meetups. Slowly, she found people who appreciated her work — and who were curious, not critical, about her background. A fellow vendor offered to help her understand local business rules, and a kind neighbour helped translate her product descriptions."
+        },
+        {
+          "kind": "paragraph",
+          "text": "With time, Amelia’s patience, kindness, and openness helped shift people’s attitudes. She built a small, loyal customer base and even started teaching sewing classes to local women, both migrants and locals. Today, Amelia’s shop is known not only for its beautiful designs but also for creating a space where people from all walks of life feel respected and welcome — proving that tolerance can turn barriers into bridges."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Open-mindedness – Accept that others may think, live, or believe differently than you. Respect – Treat everyone with dignity, even when you disagree. Empathy – Try to understand how others feel or what they’ve been through. Patience – Give people time to explain, grow, or change— without rushing to judge. Cultural awareness – learn about other traditions, customs, and values with curiosity. Non-judgment – Focus on listening and learning instead of labelling or assuming."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "numberedList",
+          "items": [
+            "Start with listening: Take time to hear someone’s story without interrupting. Listening is the first step to understanding others.",
+            "Learn about other cultures: Read, watch, or ask about different traditions and lifestyles. Knowing more helps reduce fear or assumptions.",
+            "Notice your reactions: Pay attention to when you feel uncomfortable or judgmental — and ask yourself why. Awareness brings growth.",
+            "Talk to someone different: Start a friendly conversation with someone who doesn’t share your background. A small chat can shift big views.",
+            "Challenge stereotypes: When you catch yourself thinking in generalizations, stop and remind yourself: every person is unique.",
+            "Choose respect over agreement: You don’t have to agree with someone to respect them. Focus on kindness, not winning the argument.",
+            "Practice tolerance daily: Hold the door open, smile, listen, and stay patient. Small respectful actions build big inner strength."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions (1 of 2)",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Common difficulties (tolerance)"
+        },
+        {
+          "kind": "definition",
+          "term": "Quick judgment",
+          "definition": "Jumping to conclusions about people based on appearance, accent, religion, or customs can block understanding before it even begins."
+        },
+        {
+          "kind": "definition",
+          "term": "Cultural bias",
+          "definition": "Everyone grows up with certain beliefs or habits. Sometimes we assume they’re “normal” or “better,” making it hard to accept different ways."
+        },
+        {
+          "kind": "definition",
+          "term": "Fear of the unknown",
+          "definition": "New cultures or beliefs may feel strange or even threatening at first, which can lead to distance instead of connection."
+        },
+        {
+          "kind": "definition",
+          "term": "Lack of exposure",
+          "definition": "If someone has never interacted with people from different backgrounds, they may feel unsure or uncomfortable—simply from lack of experience."
+        },
+        {
+          "kind": "definition",
+          "term": "Defensiveness",
+          "definition": "When challenged by a different opinion or lifestyle, some people feel personally attacked and close down instead of opening up."
+        },
+        {
+          "kind": "definition",
+          "term": "Language barriers",
+          "definition": "Misunderstandings due to limited vocabulary or tone can easily create frustration or false impressions."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions (2 of 2)",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Stereotyping",
+          "definition": "Believing that “all people from X group are the same” leads to unfair treatment and limits true connection."
+        },
+        {
+          "kind": "heading",
+          "text": "Solutions and Strategies"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Pause before judging:Take a moment to think before reacting. Ask yourself: “Do I really know this person’s story?”",
+            "Learn about others:Take time to explore other cultures, faiths, and lifestyles. Curiosity helps replace fear with understanding.",
+            "Start small conversations: Say hello, ask a question, or join a local event. Regular contact with different people builds comfort over time.",
+            "Expose yourself to difference:Watch films, read stories, or listen to podcasts by people from other cultures. The more you learn, the easier it gets.",
+            "Stay calm in disagreement:You don’t have to agree, but you can stay respectful. Listen fully before responding.",
+            "Be patient with language:If someone struggles to explain, help gently. Tolerance grows when we give each other time to speak and be heard.",
+            "Challenge stereotypes: Remind yourself: one person doesn’t represent a whole group. Meet people as individuals, not labels."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Daily Tolerance Check-In Prompt:"
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Think of someone you recently disagreed with or didn’t understand. What’s one thing you could do to respond with more tolerance next time? Write down one assumption you can let go of, one question you could ask instead, and one way to show more respect."
+        },
+        {
+          "kind": "definition",
+          "term": "Objective",
+          "definition": "To help you build everyday habits of tolerance by slowing down, staying curious, and choosing understanding over judgment — one moment at a time."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Evaluate Your Tolerance Rate each statement from 1 (Strongly Disagree) to 5 (Strongly Agree)"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I stay open-minded when someone has different beliefs or values",
+            "I listen to people even when I don’t agree with them",
+            "I try to understand where others are coming from",
+            "I avoid judging people based on their background or culture",
+            "I stay calm and respectful during disagreements",
+            "I am willing to learn about different ways of life",
+            "I treat everyone with kindness, no matter how different they seem"
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Score 21–25",
+          "definition": "Very related"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 16–20",
+          "definition": "Generally related"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 11–15",
+          "definition": "Needs some work"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 5–10",
+          "definition": "Room to grow—start with small steps"
+        },
+        {
+          "kind": "heading",
+          "text": "Scoring"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Tolerance is essential for migrant entrepreneurs because they often live and work in places where people think, speak, or act differently than they’re used to. Being tolerant means staying calm, curious, and respectful — even when someone’s views or habits feel unfamiliar. It helps create safer spaces, better relationships, and stronger communities."
+        },
+        {
+          "kind": "paragraph",
+          "text": "With tolerance, entrepreneurs can connect with more people, serve a wider range of customers, and face less conflict. It makes life and business smoother, fairer, and more human — for everyone."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "After completing this module, participants will be able to demonstrate respectful and inclusive behavior in interactions with people from different cultural, social, or professional backgrounds. They will be better equipped to manage disagreements calmly, challenge stereotypes, and create supportive environments that promote collaboration and mutual understanding. Participants will also be able to apply tolerance as a practical skill in business and everyday communication."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Websites:"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "● Learning for Justice (formerly Teaching Tolerance) A rich hub of free resources, lesson plans, and activities designed to promote equity, inclusion, and respect across cultures and identities. earningforjustice.org"
+        },
+        {
+          "kind": "paragraph",
+          "text": "● DBT Distress Tolerance Skills – Dialectical Behavior Therapy Offers practical worksheets and exercises like radical acceptance, self-soothing, and distraction techniques to help manage emotional stress and build patience and understanding. dialecticalbehaviortherapy.com positivepsychology.com+2dialecticalbehaviortherapy.com+2therapistaid.com+2"
+        },
+        {
+          "kind": "paragraph",
+          "text": "● Centre for Clinical Interventions – Distress Tolerance Workbook A free, downloadable workbook with guided modules on accepting discomfort, managing strong emotions, and improving emotional resilience. cci.health.wa.gov.au therapistaid.com+4cci.health.wa.gov.au+4sunrisertc.com+4"
+        },
+        {
+          "kind": "paragraph",
+          "text": "● Museum of Tolerance – Tools for Tolerance Provides interactive programs and workshops aimed at fostering understanding and respect among diverse communities, including resources tailored for professionals. museumoftolerance.com"
+        },
+        {
+          "kind": "paragraph",
+          "text": "● SALTO Youth – \"On the Way to Tolerance\" e-Booklet An engaging, activity-based guide for youth and community leaders to explore and promote tolerance through games, discussions, and reflections."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Download PDF",
+            "Courses:"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "● \"Entrepreneurship for Migrants and Refugees\" – UNITAR Learn how to support and empower migrants and refugees through inclusive entrepreneurship. https://unitar.org/event/full-catalog/entrepreneurship-migrants-and-refugees"
+        },
+        {
+          "kind": "paragraph",
+          "text": "● \"Supporting Refugees and Asylum Seekers through Trauma-Informed Practice\" – FutureLearn. Understand the impact of trauma and how to offer respectful, inclusive support. https://www.futurelearn.com/courses/supporting-refugees-and-asylum- seekers-through-trauma-informed-practice"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Tolerance",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/tolerance.pdf"
+      }
+    }
+  ]
+}

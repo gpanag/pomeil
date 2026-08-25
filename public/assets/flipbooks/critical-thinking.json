@@ -1,0 +1,260 @@
+{
+  "id": "critical-thinking",
+  "moduleNumber": 2,
+  "title": "Critical Thinking",
+  "subtitle": "Module 2",
+  "coverImage": "assets/thumbs/critical-thinking.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 2",
+      "title": "Critical Thinking",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/critical-thinking.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, you will be able to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Identify the use of emotional manipulation and pressure tactics"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. Recognize signs of unreliable and misleading information"
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Examine whether a judgment is influenced by bias"
+        },
+        {
+          "kind": "paragraph",
+          "text": "4. Investigate a claim’s validity by comparing multiple sources of information"
+        },
+        {
+          "kind": "paragraph",
+          "text": "5. Distinguish between evidence-based and unsubstantiated claims"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Critical thinking is the ability to analyse information and make reasoned judgments (POMEIL Project, 2025, p. 44). People who are critical thinkers, look at problems from different angles, question assumptions, analyse facts, and avoid jumping to rash conclusions. Critical thinking promotes curiosity, creativity and better problem solving (University of the People)."
+        },
+        {
+          "kind": "paragraph",
+          "text": "As an entrepreneur, being a critical thinker can help you make better business decisions, avoiding costly mistakes, risky investments and being misled by disinformation. Being a curious and creative critical thinker can also help you navigate an unfamiliar environment, with new laws, customs, and expectations."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: Samuel runs a Ghanaian restaurant. A supplier has offered him a cheap deal on vegetables. Samuel considers accepting the offer but decides that he needs more information before making a judgment."
+        },
+        {
+          "kind": "paragraph",
+          "text": "To do so, Samuel does research on other suppliers' prices and reads reviews online. He also asks some neighbouring restaurant owners about their experiences with the supplier. He discovers that the supplier has a bad reputation. More than one restaurant owner tells him that the supplier's produce is of bad quality, and that he rarely delivers on time."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Using his critical thinking skills, Samuel was able to analyse his options. He discovered that the offer was too good to be true and avoided being misled into a bad deal. Instead, he can find a better supplier to work with. Samuel made a good business decision that supports his long-term goals."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Ask questions",
+          "definition": "Be curious. Ask questions to clarify and improve your understanding of the issue at hand."
+        },
+        {
+          "kind": "definition",
+          "term": "Analyse information",
+          "definition": "Compare and check facts from different sources. Use reputable, trustworthy sources."
+        },
+        {
+          "kind": "definition",
+          "term": "Recognize bias",
+          "definition": "Examine if your or others' judgment is being afflicted by emotions, stereotypes or assumptions."
+        },
+        {
+          "kind": "definition",
+          "term": "Logical reasoning",
+          "definition": "Draw conclusions from what evidence you have. Challenge groundless claims."
+        },
+        {
+          "kind": "definition",
+          "term": "Think ahead",
+          "definition": "Imagine alternative outcomes of a situation. Weigh the short- and long- term risks and benefits of each option against each other."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Ask follow-up questions like: “Why?”, “How?”, “What if?” and \"What's missing?\" during meetings and conversations.",
+            "Paraphrase what you just heard back to the speaker, to establish whether you understood correctly.",
+            "Practice active listening by paying attention to body language, the actual words uttered and the intent of the speaker.",
+            "Seek information from more than one source to verify claims. Use reputable sources.",
+            "Train your logic skills by drawing conclusions based on what you do know, rather than what you believe. Examine whether you are making assumptions.",
+            "Discuss issues with peers and mentors to get different perspectives.",
+            "When faced with an important decision, break it down by writing a pros and cons list."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "“I’m not sure who or what to trust.” o Check with at least two independent sources to verify. Check government run sites or other reliable sources. Ask for advice from locals, mentors or others with practical experience. Be cautious: if something seems too good to be true, it most likely is.",
+            "“I'm uncomfortable disagreeing with others.” o A good start is to ask for clarification, with neutral questions like: “Can you explain that again?” Practice respectful disagreement in role-plays or group tasks. Remember: disagreement does not equal conflict.",
+            "“All the information makes me feel overwhelmed and stressed.” o Take a deep breath. Break the information down by writing a pros and cons list. It is okay to ask for more time to think, either for a few hours or days."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Scenario",
+          "definition": "A supplier offers you a cash-only deal that seems cheaper than your current one. They need you to decide today."
+        },
+        {
+          "kind": "heading",
+          "text": "Task"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "List 3 questions you would ask the supplier.",
+            "List at least 2 risks and 2 benefits of each option (taking or rejecting the offer).",
+            "What decision would you make? Why?"
+          ]
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Discuss in pairs or small groups afterward."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "I take different perspectives into account",
+            "I compare different options",
+            "I ask questions, especially when something feels unclear or suspicious",
+            "I recognize when I am influenced by emotions or assumptions",
+            "I consider both risks and benefits",
+            "I check the reliability of sources before accepting them",
+            "I feel more confident analysing business options",
+            "I feel more confident solving problems logically"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Being a critical thinker does not mean you need to know everything. Instead, be curious, question assumptions, evaluate facts and think things through."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Critical thinking is a skill that can be learned and improved. Through practice, it becomes easier to expose false claims and avoid being misled. Training yourself in critical thinking enables you to make better and safer business decisions."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, participants are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Better recognize and resist common manipulation and pressure tactics"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Exercise more caution when evaluating business offers and claims"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Better identify and question misleading information"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• More easily recognize when a judgment is influenced by bias"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Use multiple sources of evidence to verify important information"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "• GCFGlobal Critical Thinking Tutorials",
+            "• Harvard Business Review: 3 Ways to Build Critical-Thinking Skills",
+            "• Book: Thinking, Fast and Slow by Daniel Kahneman"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Critical Thinking",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/critical-thinking.pdf"
+      }
+    }
+  ]
+}

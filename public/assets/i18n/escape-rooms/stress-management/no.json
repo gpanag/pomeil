@@ -1,0 +1,264 @@
+{
+  "loading": "Laster modulen Stresshåndtering...",
+  "intro": {
+    "title": "Stresshåndtering",
+    "paragraphs": [
+      "Du er (username), ansatt i et svært prestisjefylt finansielt handelsselskap. Etter mange år med erfaring, måneder med å se på stillingsannonser og uker med intervjuer, klarte du endelig å få drømmejobben.",
+      "Du var veldig glad, entusiastisk og full av håp, men du var også klar over de økte stressnivåene knyttet til en slik stilling.",
+      "Bare noen få uker var nok til å vise deg den unike dynamikken og kravene i den nye jobben din – konstant press, hyppige stressende situasjoner, valg som må tas. For hver dag som går øker innsatsen, beslutningene blir vanskeligere, og det mentale presset ditt blir stadig større.",
+      "Men i dag var det annerledes. I dag ble du invitert til <strong>Panikkrommet</strong>. Stedet der selskapets skarpeste hoder håndterer de mest alvorlige utfordringene og plutselige problemene."
+    ],
+    "buttonText": "Gå inn i Panikkrommet"
+  },
+  "characters": {
+    "kevin": {
+      "name": "Kevin",
+      "dialogues": {
+        "greeting": "Bra du endelig er her, (username)! Kom, det er ingen tid å miste! Du aner ikke… Hele systemet… *han ser ut til å mumle for seg selv; plutselig ser han rett på deg og sier enda mer nervøst* Hele handelssystemet krasjet for 30 minutter siden! Og det midt i rushtiden. Hvert minutt det er nede koster oss mye, vi må komme på en løsning ASAP!",
+        "itTeamUnavailable": "IT-teamet vårt er utilgjengelig. Resten av kontoret er enten på ferie eller blitt syke. Det er bare oss tre, og vi må gjøre noe NÅ!",
+        "youTrembling": "Hei, går det bra? *Kevins stemme virker fjern og uklar, du føler deg svimmel* Du skjelver… La oss sette oss ned litt nå. Jeg vet det er mye. Bli med meg.",
+        "drinkWater": "Du ser så blek ut. Her, drikk litt vann. La oss roe deg litt ned. På veggene rundt oss kan du se forskjellige viktige dokumenter i rammer. Jeg er ganske sikker på at ett av dem vil være til hjelp akkurat nå. Jeg ser dem ikke så godt herfra. Kan du fortelle meg hvilket jeg skal hente til deg?",
+        "findDocumentHint": "Se på dokumentene på veggene rundt oss. Ett av dem vil hjelpe deg. Tittelen er i større, grønn skrift.",
+        "checkBasics": "Dette er det grunnleggende, men vi kommer ikke videre uten den kunnskapen. Ta noen minutter til deg selv og følg tipsene du nettopp har lært. Men først, la oss sjekke om du virkelig har forstått det.",
+        "composeYourself": "Ja, det stemmer. Som jeg sa, ta deg litt tid til å samle deg, følg retningslinjene, og… *plutselig høres en høy ringetone fra kontortelefonen. Kevin ser på den, så ser han på deg. Han er livredd*",
+        "priorityClient": "Det er en av våre prioriterte kunder! *sier han med nervøs, skjelvende stemme* Du er den mest kompetente blant oss. Du blir nødt til å ta samtalen…",
+        "impressed": "Wow! Du klarte det faktisk! Jeg var ikke sikker på om du ville klare å tyde min hektiske skriving, men DU GJORDE DET. Du håndterte den kunden virkelig bra, og du lot ikke stresset overvelde deg. Du gjør fremgang virkelig raskt. Snart vil du være i stand til å…",
+        "completionThankYou": "Jeg kunne ikke ha sagt det bedre selv, (username). Takket være deg ser alt ut til å fungere bra igjen. Så dette var faktisk en test. En grundig test satt opp av våre «bekymrede hackere», for å sikre at du vil overvinne dine stressreaksjoner. Men seriøst, du gjorde det virkelig veldig bra i dag, (username). Hele selskapet vil alltid være takknemlig. Tusen takk!",
+        "completionClick": "Du gjorde det virkelig bra i dag, (username). Tusen takk!",
+        "defaultBusy": "Vi må fokusere! Hvert sekund teller!"
+      }
+    },
+    "ahmed": {
+      "name": "Ahmed",
+      "dialogues": {
+        "comeQuickly": "Folkens!? Kom hit fort!",
+        "screenTurnedBlue": "Se! Jeg vet ikke hva som skjer. Plutselig ble skjermen min blå, og alt jeg ser nå er litt tekst, en slags oppgave og EN TIMER! Jeg tror vi har blitt hacket. Det var sannsynligvis grunnen til systemkrasjet hele tiden!",
+        "solveExercise": "Kanskje hvis vi løser oppgaven riktig, stopper vi nedtellingen, får systemet online igjen og redder dagen? (username), du er den mest stress-tolerante av oss alle! Du må hjelpe oss. Fokuser på oppgaven, jeg vet du kan klare det!",
+        "ahmedCallsClick": "Se! Jeg vet ikke hva som skjer. Plutselig ble skjermen min blå, og alt jeg ser nå er litt tekst, en slags oppgave og EN TIMER! Jeg tror vi har blitt hacket. Det var sannsynligvis grunnen til systemkrasjet hele tiden! Kanskje hvis vi løser oppgaven riktig, stopper vi nedtellingen og får systemet online igjen!",
+        "hurry": "Fort! Vi har ikke mye tid igjen! Nå til oppgaven!",
+        "systemReboots": "JA! Ja, det fungerer! *Ahmed hopper i stolen sin* Se! Hele systemet starter på nytt, alt begynner å fungere normalt igjen. Du klarte det faktisk, du reddet oss.",
+        "completionClick": "Du klarte det faktisk, du reddet oss! Tusen takk, (username)!",
+        "defaultMonitoring": "Jeg overvåker systemene. Si fra hvis du trenger noe."
+      }
+    }
+  },
+  "selfTalk": {
+    "enterPanicRoom": "Og der er det, Panikkrommet. Jeg trodde ikke jeg ville bli invitert hit etter bare noen få uker – jeg antar at situasjonen er alvorlig nok til at ledelsen ønsker alle om bord. Uansett, la oss se hva det handler om. Jeg føler meg så engstelig allerede…",
+    "characterName": "(Tankene dine)"
+  },
+  "systemDialogues": {
+    "findDocumentInstruction": "Ett av disse dokumentene vil være til hjelp for deg. Tittelen vil være skrevet i større skrift enn de andre dokumentene, og tittelens skriftfarge vil være grønn. Prøv å finne det.",
+    "wrongDocument": "Dette er tekniske manualer. Visste du at å lese noe urelatert faktisk kan hjelpe med å redusere stressnivåene? Men akkurat nå, la oss finne det vi trenger.",
+    "documentFound": "Bra jobbet! Du har oppdaget de essensielle tipsene for å regulere sinn og kropp i stressende øyeblikk. Det ser ut til at Kevin vil snakke med deg igjen.",
+    "puzzle1Correct": "Du har rett, (username)! La oss snakke med Kevin nå.",
+    "phonePickUp": "Du tar opp telefonen. Akkurat som du forestilte deg, er kunden rasende. De er svært emosjonelle, skriker inn i telefonen, og klandrer selskapet ditt for det enorme tapet systemkrasjet skaper. Blant alle de sterke følelsene er det vanskelig for deg å i det hele tatt forstå hva de sier, enn si å komme på en god respons.",
+    "kevinTyping": "Med øyekroken legger du merke til at Kevin skriver noe raskt på laptopen. Han skriver så fort han kan, kaotisk, han fullfører ikke engang setninger. Du innser at han prøver å hjelpe deg, å gi deg råd. Du fokuserer på det han skriver, og prøver å få mening ut av det…",
+    "puzzle2Complete": "Mens du leser Kevins råd nøye, begynner du å innse at kundens raseri ikke er rettet mot deg, men mot selve systemets svikt. Med nye teknikker klarer du å gi en ad hoc-løsning på kundens problem, forsikre dem om at du gjør alt du kan, og love å ringe tilbake snart. Overraskende nok – det fungerer. De ber om unnskyldning og sier de vil vente på samtalen din.",
+    "kevinImpressed": "Kevin ser på deg med stolthet i øynene – han er imponert. Han vil snakke med deg."
+  },
+  "items": {
+    "document": {
+      "title": "GRUNNLEGGENDE STRESSLINDRING",
+      "altText": "Dokument om grunnleggende stresslindring",
+      "inventoryTitle": "Se Grunnleggende stresslindring",
+      "tips": [
+        "Pust saktere enn du tror du trenger - lange utpust forteller kroppen at faren er over.",
+        "Slapp av i kjeven og senk skuldrene - stress gjemmer seg i små muskler.",
+        "Gjør én ting om gangen - multitasking øker spenning - fokuser på neste enkeltsteg.",
+        "Sett ord på det du føler - å si \"jeg er stresset\" eller \"jeg er overveldet\" reduserer intensiteten.",
+        "Reis deg og endre stilling - en 10-sekunders strekk tilbakestiller nervesystemet ditt."
+      ]
+    },
+    "documentSelection": {
+      "title": "Innrammede dokumenter",
+      "instruction": "Flere dokumenter henger på veggen. Ett av dem har en tittel i større, grønn skrift. Klikk på det riktige.",
+      "wrong1": "Systemprotokoller v2.3",
+      "correct": "GRUNNLEGGENDE STRESSLINDRING",
+      "wrong2": "Nettverksarkitektur",
+      "wrong3": "Nødkontakter"
+    }
+  },
+  "pcScreen": {
+    "title": "Systemmelding",
+    "text1": "Når stress plutselig blir overveldende, <strong>innsnevres</strong> sinnet ditt og reagerer automatisk. I det øyeblikket er den raskeste måten å gjenvinne kontroll på å gå litt «utenfor» opplevelsen: legg merke til <strong>mønsteret</strong> i tenkningen din, skill det som faktisk skjer fra det stresset ditt forteller deg, og prøv å rette fokus mot den ene delen av situasjonen du faktisk har under kontroll, som du kan <strong>påvirke</strong>. Denne «mentale distansen» lar deg bryte den emosjonelle loopen og gjenoppretter klarhet.",
+    "text2": "Langsiktig stressreduksjon fungerer annerledes. Den baserer seg på langsom trening av nervesystemet ditt slik at det restituerer raskere og blir mindre <strong>sårbart</strong> for ulike stressorer gjennom dagen. Korte pauser mellom oppgaver, bevisste vaner og rutiner, regelmessig påtaking av små utfordringer – disse endringene, hvis de brukes riktig, vil <strong>senke</strong> ditt grunnleggende stressnivå, gjøre intense øyeblikk lettere å håndtere, og få roen tilbake mer naturlig.",
+    "continueButton": "Fortsett",
+    "dialogueText1": "Når stress plutselig blir overveldende, innsnevres sinnet ditt og reagerer automatisk. I det øyeblikket er den raskeste måten å gjenvinne kontroll på å gå litt «utenfor» opplevelsen: legg merke til mønsteret i tenkningen din, skill det som faktisk skjer fra det stresset ditt forteller deg, og prøv å rette fokus mot den ene delen av situasjonen du faktisk har under kontroll, som du kan påvirke. Denne «mentale distansen» lar deg bryte den emosjonelle loopen og gjenoppretter klarhet.",
+    "dialogueText2": "Langsiktig stressreduksjon fungerer annerledes. Den baserer seg på langsom trening av nervesystemet ditt slik at det restituerer raskere og blir mindre sårbart for ulike stressorer gjennom dagen. Korte pauser mellom oppgaver, bevisste vaner og rutiner, regelmessig påtaking av små utfordringer – disse endringene, hvis de brukes riktig, vil senke ditt grunnleggende stressnivå, gjøre intense øyeblikk lettere å håndtere, og få roen tilbake mer naturlig."
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Sjekker den grunnleggende forståelsen",
+      "subtitle": "Velg det beste svaret. Bare ett er riktig.",
+      "question": "Hvilke handlinger bør du gjøre nå for å redusere stressnivået ditt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reis deg, begynn å gå raskt rundt for å bli kvitt nervøs energi, og prøv å planlegge alle gjenværende oppgaver samtidig så du ikke blir forsinket med noe.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ignorer de fysiske følelsene, prøv å fortsette å jobbe umiddelbart, og håp at følelsene forsvinner av seg selv.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "List opp i hodet alt som har gått galt i dag og tenk på de mulige verste scenariene for å «forberede deg».",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ta noen lange utpust, slapp av i kjeven og skuldrene, si høyt hva du føler, og velg den neste enkeltoppgaven du skal fokusere på.",
+          "correct": true
+        }
+      ],
+      "hint": "Prøv å huske retningslinjene fra dokumentet «Grunnleggende stresslindring».",
+      "answerOverlay": "Etter 3 forsøk, her er det riktige svaret:\n\nSpørsmål: Hvilke handlinger bør du gjøre nå for å redusere stressnivået ditt?\n\nRiktig svar: «Ta noen lange utpust, slapp av i kjeven og skuldrene, si høyt hva du føler, og velg den neste enkeltoppgaven du skal fokusere på.»\n\nDette kombinerer nøkkelelementene i grunnleggende stresslindring:\n• Lange utpust forteller kroppen din at faren er over\n• Avslapping av kjeve og skuldre frigjør spenning fra små muskler\n• Å sette ord på det du føler reduserer intensiteten\n• Fokus på én oppgave forhindrer spenning forårsaket av multitasking"
+    },
+    "matching": {
+      "title": "Kevins kaotiske støtte",
+      "subtitle": "Match begynnelsen på setningene med slutten på dem for å oppdage stresshåndteringsteknikker.",
+      "beginningsHeading": "Setningsbegynnelser",
+      "endingsHeading": "Setningsslutter",
+      "pairs": [
+        {
+          "id": "1",
+          "beginning": "Trekk en mental grense…",
+          "endingId": "D"
+        },
+        {
+          "id": "2",
+          "beginning": "Flytt oppmerksomheten din fra kundens tone…",
+          "endingId": "F"
+        },
+        {
+          "id": "3",
+          "beginning": "Bruk en positiv setning i tankene…",
+          "endingId": "C"
+        },
+        {
+          "id": "4",
+          "beginning": "Overvåk talehastigheten og tonen din…",
+          "endingId": "B"
+        },
+        {
+          "id": "5",
+          "beginning": "Forestill deg at du plasserer kundens ord…",
+          "endingId": "A"
+        },
+        {
+          "id": "6",
+          "beginning": "Reduser mental belastning ved stille å identifisere…",
+          "endingId": "E"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "…på et «mentalt skrivebord», så du fokuserer på innhold, ikke følelsesintensitet."
+        },
+        {
+          "id": "B",
+          "text": "…for å sikre at du ikke begynner å snakke raskere eller høyere når kundens volum øker."
+        },
+        {
+          "id": "C",
+          "text": "…som «Vær rolig» eller «Du klarer dette» for å forhindre overveldelse."
+        },
+        {
+          "id": "D",
+          "text": "…mellom kundens følelser og din egen identitet."
+        },
+        {
+          "id": "E",
+          "text": "…hovedproblemet de beskriver, i stedet for å reagere på hver detalj."
+        },
+        {
+          "id": "F",
+          "text": "…og analyser hva de trenger, ikke hvordan de høres ut."
+        }
+      ],
+      "hint": "Tenk på hvilken teknikk som matcher hver begynnelse. Fokuser på logikken i hver setning.",
+      "answerOverlay": "Etter 3 forsøk, her er de riktige sammenkoblingene:\n\n1. «Trekk en mental grense…» → «…mellom kundens følelser og din egen identitet.»\n2. «Flytt oppmerksomheten din fra kundens tone…» → «…og analyser hva de trenger, ikke hvordan de høres ut.»\n3. «Bruk en positiv setning i tankene…» → «…som 'Vær rolig' eller 'Du klarer dette' for å forhindre overveldelse.»\n4. «Overvåk talehastigheten og tonen din…» → «…for å sikre at du ikke begynner å snakke raskere eller høyere når kundens volum øker.»\n5. «Forestill deg at du plasserer kundens ord…» → «…på et 'mentalt skrivebord', så du fokuserer på innhold, ikke følelsesintensitet.»\n6. «Reduser mental belastning ved stille å identifisere…» → «…hovedproblemet de beskriver, i stedet for å reagere på hver detalj.»"
+    },
+    "fillGap": {
+      "title": "Den endelige nedtellingen",
+      "subtitle": "Fullfør setningene med de manglende ordene.",
+      "sentenceParts": [
+        "Når stress blir overveldende, ",
+        " sinnet ditt og reagerer automatisk. For å gjenvinne kontroll kan du gå litt «utenfor» opplevelsen og observere ",
+        " i tenkningen din, og skille reelle hendelser fra det stresset ditt forteller deg. Å rette fokus tilbake til den delen av situasjonen du faktisk kan ",
+        " hjelper med å bryte den emosjonelle loopen og gjenoppretter klarhet. Langsiktig lindring utvikles ved å trene nervesystemet ditt til å restituere raskere og bli mindre ",
+        " for hverdagens stressorer. Med konsekvente vaner ",
+        " standardspenningen din, noe som gjør intense øyeblikk lettere å håndtere og roen kommer mer naturlig tilbake."
+      ],
+      "options": [
+        "innsnevres",
+        "mønsteret",
+        "påvirke",
+        "sårbart",
+        "synker",
+        "utvides"
+      ],
+      "correct": [
+        "innsnevres",
+        "mønsteret",
+        "påvirke",
+        "sårbart",
+        "synker"
+      ],
+      "hint": "Les nøye gjennom teksten på PC-skjermen igjen. Ordene beskriver hvordan stress påvirker tenkning og hvordan man bygger motstandsdyktighet.",
+      "answerOverlay": "Etter 3 forsøk, her er de riktige svarene:\n\n1. «innsnevres» – Når stress blir overveldende, innsnevres sinnet ditt og reagerer automatisk.\n2. «mønsteret» – Observer mønsteret i tenkningen din.\n3. «påvirke» – Refokusering på det du faktisk kan påvirke.\n4. «sårbart» – Bli mindre sårbart for hverdagens stressorer.\n5. «synker» – Standardspenningen din synker.\n\nDisse begrepene beskriver både umiddelbar stressrespons (mental innsnevring, mønstergjenkjenning, fokus på påvirkning) og langsiktig stresshåndtering (redusere sårbarhet, senke grunnspenning).",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Sjekk"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "default": "Jeg burde se nøye rundt i rommet.",
+    "clickKevin": "Jeg burde snakke med Kevin. Han ser ut til å vite hva som skjer.",
+    "findDocument": "Kevin sa at ett av de innrammede dokumentene har en tittel med grønn, større skrift. Jeg burde sjekke dokumentene på veggen.",
+    "phoneCall": "Telefonen ringer! Jeg må ta den.",
+    "findLaptop": "Kevin skriver noe på laptopen. Jeg burde sjekke det.",
+    "ahmedOrPCScreen": "Ahmed pekte på PC-skjermen. Jeg burde sjekke den.",
+    "completion": "Døren er åpen! Jeg kan forlate Panikkrommet nå."
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": [
+      "Du har klart å lære nye stress-resiliensferdigheter raskt og bruke dem i virkelige situasjoner, sannsynligvis enda tidligere enn du forestilte deg – alt mens du reddet selskapet i prosessen.",
+      "Du har med suksess tilegnet deg ferdigheten <strong>Stresshåndtering</strong>."
+    ],
+    "buttonText": "Tilbake til hovedmeny"
+  },
+  "answerOverlay": {
+    "title": "Riktig svar",
+    "continueButton": "Fortsett"
+  },
+  "ui": {
+    "continueButton": "Fortsett",
+    "fullscreenTitle": "Veksle fullskjerm",
+    "backToEscapeRoomsTitle": "Tilbake til fluktrom",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

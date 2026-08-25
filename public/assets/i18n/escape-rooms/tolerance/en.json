@@ -1,0 +1,250 @@
+{
+  "loading": "Loading Tolerance...",
+  "intro": {
+    "title": "Tolerance",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Today you enter a tranquil co-working office arranged for discussion and reflection. Amelia and Marco are here preparing for Open Culture Day, but they have a disagreement about how to organize the event. They could use your help."
+    ],
+    "buttonText": "Enter the Co-Working Office"
+  },
+  "characters": {
+    "amelia": {
+      "name": "Amelia",
+      "dialogues": {
+        "greet": "Hi, it's nice to see you here. I'm really glad you joined us — we could use some fresh ideas today. My colleague Marco and I had a disagreement about how to organize a large event for our company. It's our Open Culture Day, where we try to promote tolerance, identify challenges, and strengthen equality in our multicultural workplace.\n\nBut our perspectives on how to plan it are very different, and we may need your help to find a way forward.",
+        "findFolder": "Disagreements in multicultural environments are a normal part of daily work, but they can be resolved. The steps to help with this are hidden somewhere in the room. Please begin searching for them.",
+        "findFolderHint": "You can click on different objects around the room. They will guide you toward something meaningful — the information we need to strengthen our tolerance and help resolve the disagreement.Try search the table",
+        "puzzle1Done": "Was it hard? Or was it easy? But in the end, you did it, so we're ready to move on from this key point. I have to admit that your tolerance is growing with each completed task, so we have some more for you.",
+        "findFrame": "Now it's time to look for something really special. You know the rules and you know the drill. Let's take a look really closely around this room and click on different objects. Maybe we'll find something valuable one more time. Maybe we should start from the laptops",
+        "frameFound": "Those reflections will help you to build up your tolerance strong and solid. So, now we have pretty much a lot, and we're ready to check. Can we move on with our tolerance? So, get ready for the next quizzes!",
+        "finalWords": "I got your feelings. Probably it was not easy. But life is not always easy. Now you had few scenarios that worked out. It was a great practice to consider some work and life-related situations to develop your tolerance. And I can tell, you did great. I'm proud of you!\n\nSo never give up and keep on going!",
+        "skillComplete": "You achieved the ability of tolerance. Now it's fully developed. You may go back and try the quizzes out anytime when you feel like you need it.",
+        "completion": "You have completed the final skill in the list!\nYou can now explore any skills you haven't tried yet, or return to the ones you want to practice again. The map will help guide you wherever you choose to go next.\n\nFeel free to share this game and its link with friends, colleagues, or anyone who may need support adjusting to a new country. This tool was created to empower entrepreneurs as they learn and grow.\n\nYou did a great job. Good luck, and thank you for being part of this journey.",
+        "default": "Keep looking around the room for clues."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "folderFound": "It looks like a solid plan. We should check are we really have been using these steps one by one, or we just deliberately picked few of them, but each of them are crucial. Let's see what can we do with it.",
+        "toleranceExplained": "Tolerance in life means accepting that people have different beliefs, habits, and ways of seeing the world. It's about staying patient, open, and respectful even when someone thinks differently than you do.",
+        "toleranceDetails": "Tolerance It's not a habit, It takes time, education and practice to achieve, here are some most common ways and situations where our tolerance ability can be improved:\n\n1. Tolerance in Life — To develop tolerance in daily life, start by noticing your reactions when someone behaves or thinks differently than you. Practice pausing before judging, and choose curiosity instead of criticism. Listen to people's stories and try to understand what shaped their views.\n\n2. Tolerance in Your Work Surroundings — To build tolerance at work, focus on open communication and calm, respectful listening. People come from different cultures and have different working styles, so ask for clarification instead of assuming and give teammates the space to express their ideas.\n\n3. Tolerance in Your Household or Family — Tolerance at home begins with understanding that each family member has their own emotions, habits, and ways of thinking. Practice speaking kindly during disagreements and take time to explain your feelings without blaming. Set shared rules for communication — such as listening fully before responding.",
+        "toleranceSummary": "Tolerance grows when we learn to understand and respect differences in every part of our lives — at home, at work, and in the world around us. It develops through calm listening, open communication, and a willingness to adjust our perspective when needed. When we practice tolerance consistently, our relationships become stronger, conflicts become easier to solve, and our environments become safer and more supportive for everyone.",
+        "letsQuiz": "That was a lot of valuable information. It was clear and pretty understandable. You know, what's the best way to learn? Practice! So let's do it!",
+        "default": "I'm reviewing these tolerance steps. Talk to Amelia to continue."
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "This seems like a warm and welcoming office. I see two people — Amelia and Marco. They seem to be discussing something important. I should talk to Amelia first.",
+    "clickTable": "Here are just some annual data report, not something we can use now, try search the  pictures in  frames",
+    "clickFrames1": "Here are some great facts and motivation ideas, but for now we set them aside, maybe Marco has something we can use",
+    "foundFolder": "This is actually a great finding. So, what we're gonna do with this knowledge is, let's see....Please turn to Marco, he knows how to use it.",
+    "clickLaptop": "Here are just some laptops and emailing. Nothing interesting. Let's move on and take a look on a big screen. Maybe something is in this annual report. Maybe it's Marco's folder again? He likes to keep things closer to him.",
+    "clickPocket": "Well, not this time. I remember. I have told you something about those pictures in the frames. Maybe one of them is the thing.",
+    "foundFrame": "Wow that was fast! Let's go back to Amelia."
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match the tolerance response to the situation",
+      "instructions": "Select a situation from Column A, then match it to the correct tolerance response in Column B.",
+      "columnA": {
+        "heading": "Situations",
+        "items": {
+          "1": "Someone has a different opinion from you",
+          "2": "A co-worker works slower than you expected",
+          "3": "A family member gets upset during a conversation",
+          "4": "You do not understand someone's words or accent"
+        }
+      },
+      "columnB": {
+        "heading": "Tolerance responses",
+        "items": {
+          "A": "Listen calmly and let them finish speaking",
+          "B": "Be patient and give them more time",
+          "C": "Ask kindly for them to repeat or explain",
+          "D": "Stay calm and try to understand their feelings"
+        }
+      },
+      "feedback": {
+        "wrong": "Think about which action shows patience and understanding. Tolerance means staying calm, listening well, and trying to understand the other person.",
+        "allCorrect": "Excellent! You matched all tolerance responses correctly!"
+      },
+      "answerOverlay": "The correct matches are:\n1. Someone has a different opinion → Listen calmly and let them finish speaking\n2. A co-worker works slower → Be patient and give them more time\n3. A family member gets upset → Stay calm and try to understand their feelings\n4. You do not understand someone's words → Ask kindly for them to repeat or explain"
+    },
+    "fillGap": {
+      "title": "Working together with teamwork",
+      "instructions": "Choose the correct words to complete the sentence. Read all options first, then select the words that make a good teamwork action.",
+      "sentenceParts": [
+        "When a team has a problem, it helps to ",
+        ", ",
+        " together, and choose one ",
+        " action to begin solving it."
+      ],
+      "options": [
+        "listen",
+        "argue",
+        "small",
+        "blame",
+        "plan"
+      ],
+      "correctAnswers": [
+        "listen",
+        "plan",
+        "small"
+      ],
+      "feedback": {
+        "wrong": "Teamwork improves when people listen, plan together, and start with a small step — not when they argue or blame.",
+        "correct": "Well done! Teamwork is about listening, planning together, and starting with small steps."
+      },
+      "answerOverlay": "The correct sentence is:\n\"When a team has a problem, it helps to listen, plan together, and choose one small action to begin solving it.\"",
+      "resetButton": "Reset",
+      "checkButton": "Check Answer"
+    },
+    "pattern": {
+      "title": "Teamwork pattern reading",
+      "instructions": "Read each short story. Then choose the teamwork pattern that best matches what is happening. Look for teamwork behaviors, not negative reactions.",
+      "scenarioLabel": "Scenario",
+      "scenarios": [
+        {
+          "text": "A team is confused about a task. One person speaks calmly, asks everyone what they think, and writes down a plan they all agree on.",
+          "options": [
+            {
+              "text": "Confusion + silence",
+              "correct": false
+            },
+            {
+              "text": "Calm communication + shared planning",
+              "correct": true
+            },
+            {
+              "text": "Blaming + frustration",
+              "correct": false
+            },
+            {
+              "text": "Working alone + ignoring the group",
+              "correct": false
+            }
+          ],
+          "hint": "Good teamwork begins with calm talk and a plan the group creates together."
+        },
+        {
+          "text": "A teammate is working slowly. Instead of complaining, another teammate offers help and asks if they want to divide the task.",
+          "options": [
+            {
+              "text": "Judgment + pressure",
+              "correct": false
+            },
+            {
+              "text": "Patience + support",
+              "correct": true
+            },
+            {
+              "text": "Avoidance + ignoring",
+              "correct": false
+            },
+            {
+              "text": "Competition + rushing",
+              "correct": false
+            }
+          ],
+          "hint": "Teamwork grows when people support each other instead of judging."
+        },
+        {
+          "text": "During a disagreement, two coworkers stop talking over each other. They listen, repeat what they heard, and look for one idea they both can accept.",
+          "options": [
+            {
+              "text": "Arguing + interrupting",
+              "correct": false
+            },
+            {
+              "text": "Listening + finding common ground",
+              "correct": true
+            },
+            {
+              "text": "Giving up + walking away",
+              "correct": false
+            },
+            {
+              "text": "Blaming + defending",
+              "correct": false
+            }
+          ],
+          "hint": "Teamwork improves when people listen first and find something they can agree on."
+        }
+      ],
+      "answerOverlayPrefix": "For the scenario:\n\"",
+      "answerOverlayCorrectLabel": "\"\n\nThe correct answer is: ",
+      "answerOverlayExplanationLabel": "\n\nExplanation: "
+    },
+    "answerOverlayTitle": "Here's the correct answer",
+    "answerOverlayContinue": "Continue"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Tolerance Steps",
+      "inventoryTitle": "Tolerance Folder",
+      "popupContent": [
+        "Pause — Take a moment before responding. A short pause helps prevent emotional reactions and keeps communication respectful.",
+        "Listen — Give full attention to what the other person is saying. Listening openly helps you understand their experience before forming your own response.",
+        "Reflect — Consider why the situation feels tense or uncomfortable. Reflection helps separate assumptions from actual facts.",
+        "Ask — Use calm, curious questions to understand the other person's viewpoint. Asking shows respect and reduces misunderstandings.",
+        "Acknowledge — Recognize the feelings, perspectives, or experiences of others, even if you don't agree. Acknowledgment builds trust and reduces defensiveness.",
+        "Adapt — Be willing to adjust your communication or expectations when working with people from different backgrounds. Adaptability helps bridge cultural or personal differences.",
+        "Resolve — Look for a fair solution that respects everyone involved. Resolution is not about winning — it's about creating understanding and moving forward together."
+      ]
+    },
+    "frame": {
+      "popupTitle": "Tolerance Reflections",
+      "popupContent": [
+        "Tolerance grows when you stay calm and try to understand people who are different from you.",
+        "You do not need to agree with everyone — showing respect is already a big step toward peace.",
+        "Every time you listen without judging, you make it easier to work, live, and communicate with others.",
+        "Small moments of patience can turn conflicts into understanding and help build stronger relationships."
+      ],
+      "inventoryTitle": "Frame"
+    }
+  },
+  "hints": {
+    "talkToAmelia1": "Click on Amelia to start a conversation.",
+    "findFolder": "Look for Marco's white folder. Try clicking on objects around the room.",
+    "talkToMarco": "Click on Marco to learn about the tolerance steps.",
+    "puzzle1Matching": "Match each situation to the tolerance response that shows patience and respect.",
+    "findFrame": "Search the room again. Try the laptops, Marco's pocket, or the picture frames on the wall.",
+    "talkToAmelia2": "Click on Amelia to continue.",
+    "puzzle2FillGap": "Choose words that describe positive teamwork actions — listening, planning, and small steps.",
+    "completion": "The training has been completed!",
+    "default": "Explore the room by clicking on objects and characters."
+  },
+  "completion": {
+    "title": "Tolerance Complete!",
+    "message": "You have successfully completed the Tolerance escape room. You demonstrated patience, understanding, and the ability to work through disagreements respectfully.",
+    "buttonText": "Back to Escape Rooms"
+  },
+  "ui": {
+    "continueButton": "Continue",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "fullscreenToggle": "Toggle fullscreen",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "______",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

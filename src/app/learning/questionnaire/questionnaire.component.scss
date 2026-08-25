@@ -1,0 +1,398 @@
+/* Questionnaire — POMEIL editorial language
+   Reads as a printed evaluation booklet for the MOOC platform: numbered
+   sections, editorial italic headings, terracotta required marks. */
+
+.questionnaire-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+
+  > h1 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.6rem) !important;
+    color: var(--pomeil-teal-deep);
+    letter-spacing: -0.018em;
+    font-variation-settings: "opsz" 96, "SOFT" 40;
+    margin: 0 0 0.4rem !important;
+  }
+  > h1::before {
+    content: "Reflection";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: var(--font-display);
+    font-style: italic;
+    color: var(--pomeil-ink);
+    margin: 0 0 0.5rem;
+    line-height: 1.55;
+    font-size: 1.05rem;
+    max-width: 660px;
+    font-variation-settings: "opsz" 80, "SOFT" 80;
+  }
+
+  .scale-hint {
+    font-family: var(--font-body);
+    color: var(--pomeil-ink-muted);
+    font-size: 0.9rem;
+    margin: 0 0 1.5rem;
+  }
+}
+
+/* ----- Section card: numbered editorial section ----- */
+.section-card {
+  margin-bottom: 1.5rem !important;
+  padding: 1.75rem 1.75rem 1.25rem !important;
+  position: relative;
+  counter-increment: q-section;
+}
+
+.questionnaire-container { counter-reset: q-section; }
+
+/* Override the global .mat-mdc-card::before hairline rule —
+   reset its left/width/height/opacity so our pill sizes to content. */
+.section-card::before {
+  content: counter(q-section, decimal-leading-zero);
+  position: absolute;
+  top: 1.4rem;
+  right: 1.6rem;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  height: auto;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--pomeil-warm);
+  background: var(--state-attention-tint);
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--pomeil-warm) 30%, transparent);
+  font-variation-settings: "opsz" 48, "SOFT" 30;
+  opacity: 1;
+  z-index: 2;
+}
+
+.section-title {
+  font-family: var(--font-display) !important;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.25rem !important;
+  color: var(--pomeil-teal-deep) !important;
+  margin: 0 0 1rem !important;
+  padding-right: 50px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 63, 71, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-variation-settings: "opsz" 60, "SOFT" 40;
+
+  .required-mark {
+    color: var(--pomeil-warm);
+    font-size: 1rem;
+    font-style: normal;
+  }
+}
+
+.question-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  margin: 0 0 0.85rem;
+  line-height: 1.55;
+  color: var(--pomeil-ink);
+}
+
+/* ----- Demographics ----- */
+.demographic-block {
+  margin-bottom: 1.25rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.85rem 1.5rem;
+  }
+}
+
+/* ----- Likert scale ----- */
+.likert-question {
+  margin-bottom: 1.6rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.likert-scale {
+  display: grid;
+  grid-template-columns: minmax(110px, auto) 1fr minmax(110px, auto);
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.likert-label-end {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--pomeil-ink-muted);
+  line-height: 1.25;
+  font-variation-settings: "opsz" 48, "SOFT" 80;
+
+  &.likert-label-low { text-align: right; }
+  &.likert-label-high { text-align: left; }
+}
+
+.likert-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 50%;
+    height: 1.5px;
+    background:
+      repeating-linear-gradient(
+        to right,
+        rgba(0, 63, 71, 0.18) 0,
+        rgba(0, 63, 71, 0.18) 4px,
+        transparent 4px,
+        transparent 9px
+      );
+    z-index: 0;
+  }
+}
+
+.likert-option {
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 63, 71, 0.22);
+  background: var(--pomeil-cream);
+  color: var(--pomeil-ink-muted);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform var(--md-duration-short3) var(--md-easing-emphasized-decelerate),
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    border-color var(--md-duration-short3) var(--md-easing-standard),
+    color var(--md-duration-short3) var(--md-easing-standard),
+    box-shadow var(--md-duration-short3) var(--md-easing-standard);
+  font-variation-settings: "opsz" 48, "SOFT" 30;
+
+  &:hover:not(.selected) {
+    border-color: var(--pomeil-teal);
+    color: var(--pomeil-teal-deep);
+    transform: scale(1.06);
+  }
+
+  &.selected {
+    background: linear-gradient(140deg, var(--pomeil-teal-deep), var(--pomeil-teal));
+    border-color: var(--pomeil-teal);
+    color: var(--pomeil-cream);
+    transform: scale(1.10);
+    box-shadow:
+      0 0 0 4px rgba(0, 104, 116, 0.14),
+      0 6px 14px -4px rgba(0, 104, 116, 0.45);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--pomeil-warm);
+    outline-offset: 3px;
+  }
+}
+
+.likert-num { line-height: 1; }
+
+/* ----- Open feedback ----- */
+.open-question {
+  margin-bottom: 1.25rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.textarea-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  min-height: 96px;
+  /* The global rule in styles.scss handles bg/border/focus styling */
+}
+
+/* ----- Footer ----- */
+.required-note {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--pomeil-ink-muted);
+  margin: 0 0 1.25rem;
+  padding-left: 16px;
+  border-left: 2px solid var(--pomeil-warm);
+  font-variation-settings: "opsz" 48, "SOFT" 80;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.incomplete-hint {
+  margin-top: 0.85rem;
+  color: var(--state-attention-deep);
+  background: var(--state-attention-tint);
+  border: 1px solid color-mix(in srgb, var(--state-attention) 30%, transparent);
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border-radius: var(--md-shape-sm);
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+/* ----- Submitted (thank-you) ----- */
+.submitted-message {
+  margin-top: 2rem !important;
+  padding: 2.5rem 1.5rem !important;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%23006874' stroke-opacity='0.06' stroke-width='0.6'><circle cx='100' cy='100' r='86'/><circle cx='100' cy='100' r='66'/><circle cx='100' cy='100' r='44'/></g></svg>");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .success-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .success-icon {
+    font-size: 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+    color: var(--pomeil-teal) !important;
+    margin-bottom: 1.25rem !important;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+  }
+
+  h2 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2rem !important;
+    color: var(--pomeil-teal-deep) !important;
+    margin: 0 0 0.6rem !important;
+    font-variation-settings: "opsz" 96, "SOFT" 40;
+  }
+  h2::before {
+    content: "Reflection Submitted";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 6px;
+  }
+
+  > .success-content > p,
+  p {
+    color: var(--pomeil-ink-muted);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    line-height: 1.55;
+    font-variation-settings: "opsz" 60, "SOFT" 80;
+  }
+
+  .defer-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--state-attention-deep);
+    background: var(--state-attention-tint);
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--state-attention) 30%, transparent);
+    margin-bottom: 1rem;
+    font-size: 0.82rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+
+    mat-icon {
+      font-size: 18px !important;
+      width: 18px !important;
+      height: 18px !important;
+    }
+  }
+}
+
+/* ----- Mobile ----- */
+@media (max-width: 600px) {
+  .likert-scale {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+
+    .likert-label-low,
+    .likert-label-high {
+      text-align: center;
+    }
+  }
+
+  .likert-option {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .radio-group.horizontal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .section-card {
+    padding: 1.5rem 1.25rem 1rem !important;
+  }
+}

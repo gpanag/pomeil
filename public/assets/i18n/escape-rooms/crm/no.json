@@ -1,0 +1,782 @@
+{
+  "loading": "Laster Kundeserviceavdelingen...",
+  "intro": {
+    "title": "Kunderelasjonshåndtering",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en virksomhet som bringer folk sammen.",
+      "Du har akkurat blitt ansatt i et stort multinasjonalt selskap der mennesker fra forskjellige kulturer, bakgrunner og yrker jobber sammen.",
+      "I dag går du inn i Kundeserviceavdelingen, hvor det er litt kaotisk. En kollega sliter med en sint kunde, arkivskapet har eksplodert, og en tilbakemeldingsundersøkelse må fullføres. På tide å sette ferdighetene dine i Kunderelasjonshåndtering i bruk!"
+    ],
+    "buttonText": "Gå inn i Kundeserviceavdelingen"
+  },
+  "characters": {
+    "peter": {
+      "name": "Peter",
+      "dialogues": {
+        "intro1": "Jeg prøvde å hjelpe denne kunden… Men han begynte å skrike på meg. Han sier hele tiden at jeg er dårlig i jobben min…",
+        "intro2": "Uansett hva jeg sier, så roer han seg ikke ned. Jeg gjør det bare verre.",
+        "intro3": "Kan du være så snill å overta samtalen?",
+        "default": "Takk for hjelpen med den samtalen…"
+      }
+    },
+    "simone": {
+      "name": "Simone",
+      "dialogues": {
+        "intro1": "Å, der er du! Jeg lager en tilbakemeldingsundersøkelse for kundene våre, men jeg trenger litt hjelp...",
+        "intro2": "Jeg har skrevet utkast til en haug med spørsmål. Jeg synes noen er bra… men noen er, vel… forferdelige.",
+        "intro3": "Kan du hjelpe meg å velge hvilke spørsmål jeg skal bruke i undersøkelsen? Jeg viser deg to om gangen.",
+        "default": "Si fra hvis du trenger noe annet!"
+      }
+    }
+  },
+  "puzzles": {
+    "complaintCall": {
+      "title": "Kundeklage-samtalen",
+      "instructions": "Naviger telefonsamtalen med en frustrert kunde. Velg svarene dine klokt — kundens humør avhenger av det.",
+      "moodLabel": "Kundens Humør",
+      "holdButton": "Sett på vent",
+      "holdWarning": "Advarsel: Å sette kunden på vent vil senke humøret deres betydelig!",
+      "holdResponse": "Jeg kan ikke tro at de satte meg på vent! Hallo? Halloooo?",
+      "holdReturn": "Takk for at du ventet. La oss fortsette. Hvor var vi?",
+      "holdFailure": "Vet du hva? Glem det. Jeg er ferdig.",
+      "stages": [
+        {
+          "customerStatement": "Hei. Kollegaen din sa at du kunne hjelpe meg. Jeg har prøvd å få kontakt i dagevis!",
+          "options": {
+            "good": "Jeg er virkelig lei for at det har vært så vanskelig å nå oss. Jeg forstår hvor frustrerende det må være. Jeg er her for å hjelpe deg nå.",
+            "neutral": "Jeg skjønner. Jeg kan hjelpe deg nå.",
+            "bad": "Vel, vi har vært veldig opptatt i det siste. Det er nok derfor du ikke har kommet gjennom."
+          },
+          "customerReplies": {
+            "good": "Takk. Jeg har følt meg ganske ignorert!",
+            "neutral": "Greit… Jeg håper bare noen faktisk hjelper meg denne gangen.",
+            "bad": "Ok… Men jeg har ventet i dagevis…"
+          },
+          "userFollowUp": {
+            "good": "Jeg forstår. La oss gå gjennom hva som har skjedd og få ting ordnet.",
+            "neutral": "La oss gå gjennom hva som har skjedd.",
+            "bad": "Ok, fortell meg hva problemet er."
+          }
+        },
+        {
+          "customerStatement": "Bestillingen min har ikke blitt sendt! Det skulle være en bursdagsgave, men nå kommer det kanskje ikke i tide!",
+          "options": {
+            "good": "Jeg forstår at dette er frustrerende. La oss gå gjennom det sammen og se hva vi kan gjøre.",
+            "neutral": "Jeg skjønner at det er irriterende.",
+            "bad": "Du trenger ikke å bli så opphisset!"
+          },
+          "customerReplies": {
+            "good": "Takk for at du faktisk lytter til meg.",
+            "neutral": "Ja… jeg antar det. Jeg vil bare vite hva som skjer.",
+            "bad": "Seriøst? Dette er virkelig viktig!"
+          },
+          "userFollowUp": {
+            "good": "Selvfølgelig. La oss ta dette steg for steg.",
+            "neutral": "Jeg skal undersøke det.",
+            "bad": "Greit…"
+          }
+        },
+        {
+          "customerStatement": "Så hva skjedde egentlig med bestillingen min?",
+          "options": {
+            "good": "Jeg skal slå det opp med en gang. Kan du bekrefte bestillingsnummeret ditt, slik at jeg sjekker riktige detaljer?",
+            "neutral": "Jeg kan sjekke. Hva er bestillingsnummeret?",
+            "bad": "Du får det etter hvert. Du må bare være tålmodig."
+          },
+          "customerReplies": {
+            "good": "Klart. Bestillingsnummeret mitt er 38492.",
+            "neutral": "Nummeret er 38492.",
+            "bad": "Det er ikke godt nok. Jeg må vite det! Vennligst sjekk bestillingsnummeret mitt 38492!"
+          },
+          "userFollowUp": {
+            "good": "Takk. Jeg skal sjekke det umiddelbart.",
+            "neutral": "Greit, la meg hente det opp.",
+            "bad": "Greit… jeg skal slå det opp…"
+          }
+        },
+        {
+          "customerStatement": "Fant du bestillingen min?",
+          "options": {
+            "good": "Ja. Jeg ser at det var en forsinkelse fra lageret. Jeg skal sjekke forsendelsesoppdateringen og holde deg oppdatert.",
+            "neutral": "Ja. Jeg ser at den er forsinket. Jeg skal se på siste oppdatering.",
+            "bad": "Ja, den er forsinket. Ikke min feil."
+          },
+          "customerReplies": {
+            "good": "Greit… takk for forklaringen.",
+            "neutral": "Ok. Jeg vil bare vite hva som skjer.",
+            "bad": "Tar du ikke noe ansvar? Flott."
+          },
+          "userFollowUp": {
+            "good": "Jeg skal sørge for at du får den nyeste informasjonen.",
+            "neutral": "Jeg skal sjekke tidslinjen nå.",
+            "bad": "Sukk… feil skjer, vet du."
+          }
+        },
+        {
+          "customerStatement": "Hva skjer nå?",
+          "options": {
+            "good": "Jeg skal følge med på forsendelsen og oppdatere deg så snart noe endres.",
+            "neutral": "Vi må bare vente på neste sporingsoppdatering.",
+            "bad": "Det kommer når det kommer. Du burde ha bestilt tidligere hvis tidspunkt var viktig."
+          },
+          "customerReplies": {
+            "good": "Takk. Det hjelper.",
+            "neutral": "Ok… jeg antar det ikke er noe annet å gjøre.",
+            "bad": "Wow… det er veldig uhøflig! Nettsiden deres sa at den ville komme innen 3 virkedager!"
+          },
+          "userFollowUp": {
+            "good": "Jeg skal sørge for at du holdes informert.",
+            "neutral": "Jeg sier fra hvis jeg ser noe nytt.",
+            "bad": "Du må være tålmodig. Det er ingenting annet vi kan gjøre."
+          }
+        },
+        {
+          "customerStatement": "Greit… takk for hjelpen...",
+          "options": {
+            "good": "Før vi avslutter samtalen, er det noe annet du ønsker hjelp med i dag?",
+            "neutral": "Ja, det er all informasjonen jeg har for nå.",
+            "bad": "Hvis det er alt, skal jeg avslutte samtalen nå."
+          },
+          "customerReplies": {
+            "good": "Nei, det var alt. Takk for at du tok deg tid til å hjelpe meg!",
+            "neutral": "Greit… jeg håper det kommer snart. Ha det.",
+            "bad": "Greit… jeg antar det er det."
+          },
+          "userFollowUp": {
+            "good": "Jeg er glad jeg kunne hjelpe. Takk for at du ringte og ha en flott dag.",
+            "neutral": "Ha det.",
+            "bad": "Ha det."
+          }
+        }
+      ],
+      "failure": {
+        "title": "Samtale Avsluttet",
+        "message": "Kunden din la på på grunn av dårlig service.\n\nFor å gi kundene en bedre opplevelse:\n• Hold deg rolig og tålmodig\n• Lytt til kunden og anerkjenn følelsene deres\n• Beklag og ta ansvar for situasjonen\n• Vær tydelig og løsningsorientert\n• Følg opp løfter\n• Unngå venting når det er mulig",
+        "retryButton": "Prøv Igjen"
+      },
+      "success": {
+        "title": "Godt Jobbet!",
+        "message": "Gratulerer, du håndterte den samtalen godt!\n\nDu holdt deg rolig og lyttet aktivt. Du tok ansvar for situasjonen ved å beklage og tilby en konkret løsning. Dette fikk kunden til å føle seg sett og hørt, noe som førte til en positiv løsning på situasjonen.",
+        "continueButton": "Avslutt Kundeklage-samtalen"
+      }
+    },
+    "customerRegistry": {
+      "title": "Det Kaotiske Kunderegisteret",
+      "instructions": "Sorter gjennom kundedataene. Dra hver dataoppføring til riktig kolonne: Behold eller Slett.",
+      "thought1": "Å nei, kundedataene våre!",
+      "thought2": "Vel… å organisere kundedataene har stått på gjøremålslisten min en stund. Jeg burde ta tak i det.",
+      "startSortingButton": "Sorter Kunderegisteret",
+      "readGuidelinesButton": "Les Personvernregler",
+      "startWithoutButton": "Start sortering",
+      "keepColumn": "Behold",
+      "eraseColumn": "Slett",
+      "saveEditsButton": "Lagre Endringer",
+      "nextFileButton": "Neste Fil",
+      "privacyGuidelines": [
+        {
+          "title": "Hva regnes som personopplysninger?",
+          "content": "Enhver informasjon knyttet til en bestemt person. Eksempler:\n• Navn, adresse, telefonnummer, e-postadresse\n• Personnummer\n• Kredittkortinformasjon, betalingsdetaljer\n• Internett-protokoll (IP)-adresse\n• Notater om kunder\n\nOg mange flere… Hvis det kan identifisere noen, er det personopplysninger!"
+        },
+        {
+          "title": "Spesielle (ekstra sensitive!) data",
+          "content": "Håndter med ekstrem forsiktighet:\n• Rase og etnisk opprinnelse\n• Politiske, religiøse og filosofiske overbevisninger\n• Fagforeningsmedlemskap\n• Helse og genetikk\n• Biometri (som fingeravtrykk eller netthinneskanninger)\n• Seksuelt liv og seksuell orientering"
+        },
+        {
+          "title": "Behandling betyr",
+          "content": "Alt du gjør med personopplysninger: samle inn, lagre, oppdatere, slette, dele"
+        },
+        {
+          "title": "Overlevelsesregler for databehandling (GDPR-prinsipper)",
+          "content": "• Ha en god grunn (lovlig grunnlag)\n• Vær rettferdig, ikke skadelig eller villedende\n• Fortell folk tydelig hva du gjør\n• Ikke gjenbruk data til andre formål\n• Behold bare det du trenger\n• Hold det nøyaktig og oppdatert\n• Slett det når du er ferdig\n• Hold det trygt\n• Vær i stand til å bevise at du følger disse reglene"
+        },
+        {
+          "title": "Lovlig grunnlag – hvorfor får vi lov til å beholde dataene?",
+          "content": "1. Samtykke — Kunden sa «ja» til databehandling. Brukes for: nyhetsbrev, lojalitetsprogrammer, markedsføring\n2. Kontrakt — Vi trenger det for å oppfylle kontraktsforpliktelser. Brukes for: bestillinger, leveringer, refusjoner\n3. Juridisk forpliktelse — Loven krever at vi beholder det. Brukes for: fakturaer, kvitteringer, regnskapsregistre, skattedokumentasjoner\n4. Berettiget interesse — Vi trenger det for å drive virksomheten. Viktig: det må ikke være skadelig for kunden. Brukes for: B2B-kontaktinformasjon, faktiske kundeservicenotater"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Elena Torres",
+          "type": "Nettkunde",
+          "consent": "ingen",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Navn",
+              "content": "Elena Torres",
+              "action": "keep",
+              "hint": "Trenger du kundens navn for å identifisere bestillingen hennes?"
+            },
+            {
+              "type": "E-post",
+              "content": "elena.torres@example.com",
+              "action": "keep",
+              "hint": "Trenger du en e-post for å sende bekreftelser eller kvitteringer?"
+            },
+            {
+              "type": "Telefonnummer",
+              "content": "+45 28 28 11 11",
+              "action": "keep",
+              "hint": "Kan support- eller leveringstjenester trenge telefonnummeret?"
+            },
+            {
+              "type": "Leveringsadresse",
+              "content": "Vesterbrogade 6790",
+              "action": "keep",
+              "hint": "Er en adresse nødvendig for å sende henne produktet?"
+            },
+            {
+              "type": "Faktureringsadresse",
+              "content": "Samme som levering",
+              "action": "keep",
+              "hint": "Er en adresse nødvendig for fakturering eller skatteregler?"
+            },
+            {
+              "type": "Bestillingsnummer",
+              "content": "#38492",
+              "action": "keep",
+              "hint": "Ville du være i stand til å håndtere returer uten bestillingsnummeret?"
+            },
+            {
+              "type": "Bestillingsdetaljer",
+              "content": "Blå Vinterjakke, Størrelse M",
+              "action": "keep",
+              "hint": "Trenger du å vite hva hun kjøpte for kundeservice?"
+            },
+            {
+              "type": "Betalingskvittering",
+              "content": "Mastercard som slutter på 4410",
+              "action": "keep",
+              "hint": "Krever bokføring betalingskvitteringen?"
+            },
+            {
+              "type": "Faktura",
+              "content": "INV-38492",
+              "action": "keep",
+              "hint": "Krever skatteloven oppbevaring av fakturaer?"
+            },
+            {
+              "type": "Sporingsnummer",
+              "content": "POSTDK-9981883",
+              "action": "keep",
+              "hint": "Ville du være i stand til å spore bestillingen hennes uten et sporingsnummer?"
+            },
+            {
+              "type": "Kundeservicenotat",
+              "content": "E-post 10/02 ang.: forsinkelse",
+              "action": "keep",
+              "hint": "Kan et kundeservicenotat være nyttig for support?"
+            },
+            {
+              "type": "Politiske synspunkter",
+              "content": "Skjermbilde fra Sosiale Medier",
+              "action": "erase",
+              "hint": "Er sensitiv informasjon om politiske overbevisninger nødvendig for å levere bestillingen hennes?"
+            },
+            {
+              "type": "Bilde fra sosiale medier",
+              "content": "Elena_Social_Media_Profile.jpg",
+              "action": "erase",
+              "hint": "Er et bilde fra sosiale medier nødvendig for å behandle bestillingen hennes?"
+            },
+            {
+              "type": "Subjektiv mening",
+              "content": "Virker grinete",
+              "action": "erase",
+              "hint": "Er dette et faktisk og nyttig notat?"
+            },
+            {
+              "type": "Medisinsk fil",
+              "content": "prescription_scan.pdf",
+              "action": "erase",
+              "hint": "Er sensitiv medisinsk informasjon relevant for hennes kjøp?"
+            }
+          ],
+          "explanation": {
+            "title": "Bra jobbet! Du sorterte Elenas nettkundedata riktig.",
+            "keepTitle": "Informasjonen du bestemte deg for å beholde",
+            "keepContent": "Du beholdt informasjonen du trengte for å oppfylle kontrakten om å levere produktet Elena kjøpte:\n• Navn, e-post og telefonnummer\n• Leveringsadresse\n• Bestillingsnummer, bestillingsdetaljer og sporingsnummer\n\nDu beholdt informasjonen du har en juridisk forpliktelse til å beholde, i henhold til skatte- og regnskapsregelverket:\n• Faktureringsadresse\n• Betalingskvittering\n• Faktura\n\nDu beholdt informasjon du har berettiget interesse i å lagre:\n• Et faktisk kundeservicenotat",
+            "eraseTitle": "Informasjonen du bestemte deg for å slette",
+            "eraseContent": "Informasjonen du slettet var sensitiv, irrelevant og ikke gitt av kunden, noe som betyr at det var ulovlig eller upassende å lagre under GDPR:\n• Et skjermbilde av hennes politiske synspunkter\n• Et bilde fra sosiale medier hun ikke ga\n• En subjektiv mening («Virker grinete»)\n• En urelatert medisinsk fil"
+          }
+        },
+        {
+          "name": "Marco Hansen",
+          "type": "Butikk-kunde",
+          "consent": "lojalitetsprogram",
+          "consentDetails": "Samtykke dekker:\n• E-postadresse\n• Lojalitets-ID\n• Handlepreferanser",
+          "data": [
+            {
+              "type": "Kvittering",
+              "content": "RCPT-79211 – 449 DKK",
+              "action": "keep",
+              "hint": "Ville kvitteringen være nødvendig for å overholde regnskapslovgivning?"
+            },
+            {
+              "type": "Kjøpsdato",
+              "content": "14/02/2025",
+              "action": "keep",
+              "hint": "Kan kjøpsdatoen være nødvendig for garantikrav?"
+            },
+            {
+              "type": "Betalingsmetode",
+              "content": "Kredittkort",
+              "action": "keep",
+              "hint": "Er betalingsmetoden nødvendig for refusjoner eller regnskap?"
+            },
+            {
+              "type": "Garantikort",
+              "content": "Gyldig til 2027",
+              "action": "keep",
+              "hint": "Er kunden avhengig av at du oppbevarer garantikortet?"
+            },
+            {
+              "type": "Lojalitets-ID",
+              "content": "12877219",
+              "action": "keep",
+              "hint": "Samtykket kunden til å bli med i lojalitetsprogrammet?"
+            },
+            {
+              "type": "Preferanse",
+              "content": "Foretrekker henting i butikk",
+              "action": "keep",
+              "hint": "Samles kundens preferanse inn med samtykke?"
+            },
+            {
+              "type": "Samtykkepost",
+              "content": "Signert 14/02/2020",
+              "action": "keep",
+              "hint": "Trenger du å bevise at kunden samtykket?"
+            },
+            {
+              "type": "E-postadresse",
+              "content": "marco.coolguy@gmail.com",
+              "action": "keep",
+              "hint": "Ga kunden frivillig e-postadressen sin da han ble med i lojalitetsprogrammet?"
+            },
+            {
+              "type": "Telefonnummer",
+              "content": "+45 20 11 88 99",
+              "action": "erase",
+              "hint": "Samtykket kunden til å lagre telefonnummeret sitt da han ble med i lojalitetsprogrammet?"
+            },
+            {
+              "type": "CCTV-stillbilde",
+              "content": "cctv_14-02-2020.png",
+              "action": "erase",
+              "hint": "Har du lov til å oppbevare CCTV-opptak så lenge, i tilfelle?"
+            },
+            {
+              "type": "Personalnotat",
+              "content": "Snakker for mye",
+              "action": "erase",
+              "hint": "Er personalnotatet et faktisk eller en personlig vurdering?"
+            },
+            {
+              "type": "Boardingkort",
+              "content": "Flybillett",
+              "action": "erase",
+              "hint": "Hører flybilletten til i kundens fil?"
+            }
+          ],
+          "explanation": {
+            "title": "Godt jobbet! Du sorterte dataene i Marcos kundefil riktig.",
+            "keepTitle": "Informasjonen du bestemte deg for å beholde",
+            "keepContent": "Du beholdt informasjon du er juridisk forpliktet til å oppbevare i henhold til regnskapslovgivning:\n• Kvitteringen, kjøpsdatoen og betalingsmetoden\n\nDu beholdt informasjon GDPR juridisk forplikter deg til å oppbevare:\n• Samtykkeposten\n\nDu beholdt informasjonen du trenger for å oppfylle kontrakten om å la kundene kreve reparasjoner eller utskiftninger:\n• Garantikortet\n\nFordi kundens samtykke var innhentet, hadde du rett i også å lagre:\n• Lojalitets-ID\n• Valgfrie preferanser\n• E-postadresse",
+            "eraseTitle": "Informasjonen du bestemte deg for å slette",
+            "eraseContent": "Du slettet riktig elementer som enten var feilaktig samlet inn, irrelevante eller upassende, inkludert:\n• Et telefonnummer lagret uten samtykke\n• Et CCTV-stillbilde som var for gammelt til at lagring kunne rettferdiggjøres\n• Et subjektivt personalnotat\n• Et feilplassert boardingkort"
+          }
+        },
+        {
+          "name": "Aisha Rahman",
+          "type": "B2B-kontakt",
+          "consent": "ingen",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Selskap",
+              "content": "NordTek Solutions AS",
+              "action": "keep",
+              "hint": "Er det nyttig å vite firmanavnet?"
+            },
+            {
+              "type": "Jobb-e-post",
+              "content": "aisha.rahman@nordtek.no",
+              "action": "keep",
+              "hint": "Er jobb-e-postadressen nødvendig for å oppfylle serviceavtalen?"
+            },
+            {
+              "type": "Jobbtelefon",
+              "content": "+47 39 39 29 29",
+              "action": "keep",
+              "hint": "Er jobbtelefonnummeret nyttig for å opprettholde et forretningsforhold?"
+            },
+            {
+              "type": "Kontrakt-ID",
+              "content": "CNT-55213",
+              "action": "keep",
+              "hint": "Er kontrakt-ID-en essensiell for kontrakten?"
+            },
+            {
+              "type": "Servicenivåavtale",
+              "content": "Gold Tier Support",
+              "action": "keep",
+              "hint": "Setter servicenivåavtalen vilkårene for tjenestelevering?"
+            },
+            {
+              "type": "Faktura-e-post",
+              "content": "accounts@nordtek.no",
+              "action": "keep",
+              "hint": "Kan faktura-e-posten være nødvendig for å sende fakturaer?"
+            },
+            {
+              "type": "Møtenotat",
+              "content": "Rapport innen 15. mars",
+              "action": "keep",
+              "hint": "Inneholder møtenotatet faktisk informasjon som er nødvendig for å drive virksomhet?"
+            },
+            {
+              "type": "Supportbillett",
+              "content": "Servervedlikehold planlagt",
+              "action": "keep",
+              "hint": "Er en supportbillett en del av å oppfylle servicekontrakten?"
+            },
+            {
+              "type": "Hjemmeadresse",
+              "content": "Kongens gate…",
+              "action": "erase",
+              "hint": "Er en hjemmeadresse nødvendig for forretningskommunikasjon?"
+            },
+            {
+              "type": "Privattelefon",
+              "content": "+47 50 50 90 90",
+              "action": "erase",
+              "hint": "Ble det private telefonnummeret oppgitt for profesjonell bruk?"
+            },
+            {
+              "type": "Skjermbilde fra Sosiale Medier",
+              "content": "socialmediaprofile.png",
+              "action": "erase",
+              "hint": "Ga Aisha deg skjermbildet fra sosiale medier?"
+            },
+            {
+              "type": "Personalnotat",
+              "content": "Hun er krevende",
+              "action": "erase",
+              "hint": "Er personalnotatet en faktisk eller subjektiv mening?"
+            },
+            {
+              "type": "Selskap (feil fil)",
+              "content": "Tilhører BioNordic AS",
+              "action": "erase",
+              "hint": "Stemmer informasjonen med denne kunden?"
+            }
+          ],
+          "explanation": {
+            "title": "Utmerket arbeid! Du beholdt den passende forretningsrelaterte informasjonen i Aishas fil.",
+            "keepTitle": "Informasjonen du bestemte deg for å beholde",
+            "keepContent": "For å oppfylle kontrakten (servicenivåavtale), hadde du rett i å beholde:\n• Firmanavnet\n• Jobb-e-posten\n• Kontrakt-ID, SLA og supportbillett\n\nDu beholdt informasjonen du har en juridisk forpliktelse til å oppbevare i henhold til regnskapslov:\n• Faktura-e-posten\n\nDu beholdt også informasjon som er i din berettigede interesse å oppbevare, og sikrer profesjonell kommunikasjon:\n• Jobbtelefonnummer\n• Et faktisk møtenotat",
+            "eraseTitle": "Informasjonen du bestemte deg for å slette",
+            "eraseContent": "Du slettet riktig data som var for personlig, feilaktig samlet inn eller feil, inkludert:\n• En hjemmeadresse og privat telefonnummer\n• Et skjermbilde fra sosiale medier hun ikke ga\n• Et subjektivt personalnotat\n• Et notat som tilhører et annet selskap"
+          }
+        },
+        {
+          "name": "Jonas Berg",
+          "type": "Nyhetsbrevabonnent",
+          "consent": "nyhetsbrev",
+          "consentDetails": "Samtykke dekker:\n• E-postadresse\n• Nyhetsbrevfrekvens og innholdspreferanser",
+          "data": [
+            {
+              "type": "E-post",
+              "content": "jonas.berg@mailbox.nu",
+              "action": "keep",
+              "hint": "Samtykket kunden til å motta nyhetsbrev via e-post?"
+            },
+            {
+              "type": "Abonnementsdato",
+              "content": "21/01/2025",
+              "action": "keep",
+              "hint": "Er du pålagt å dokumentere når samtykket ble gitt?"
+            },
+            {
+              "type": "Samtykkepost",
+              "content": "Dobbel opt-in",
+              "action": "keep",
+              "hint": "Er du pålagt å dokumentere at samtykke ble gitt?"
+            },
+            {
+              "type": "Nyhetsbrevpreferanser",
+              "content": "Ukentlige produktnyheter",
+              "action": "keep",
+              "hint": "Har du lov til å beholde preferanser under nyhetsbrev-samtykket?"
+            },
+            {
+              "type": "Lokasjonsestimering",
+              "content": "Aarhus",
+              "action": "erase",
+              "hint": "Ble lokasjonsdata oppgitt av kunden?"
+            },
+            {
+              "type": "Cookie-sporer",
+              "content": "browser_activity.json",
+              "action": "erase",
+              "hint": "Ga brukeren cookie-samtykke?"
+            },
+            {
+              "type": "Adresse",
+              "content": "Nordre Fasanvej…",
+              "action": "erase",
+              "hint": "Ga brukeren samtykke til at du lagrer adressen hans?"
+            },
+            {
+              "type": "Profileringsetikett",
+              "content": "Storforbruker",
+              "action": "erase",
+              "hint": "Samtykket brukeren til profilering?"
+            }
+          ],
+          "explanation": {
+            "title": "Bra jobbet! Du sorterte gjennom dataene i Jonas' fil riktig.",
+            "keepTitle": "Informasjonen du bestemte deg for å beholde",
+            "keepContent": "Fordi Jonas eksplisitt ga samtykke til å motta markedsføringsnyhetsbrevet, hadde du rett i å beholde:\n• E-postadressen\n• Nyhetsbrevpreferansene\n\nSiden du er juridisk pålagt (GDPR) å dokumentere at nyhetsbrev-samtykket ble riktig innhentet, hadde du rett i å beholde:\n• Abonnementsdatoen\n• Samtykkeposten med dobbel opt-in",
+            "eraseTitle": "Informasjonen du bestemte deg for å slette",
+            "eraseContent": "Du fjernet riktig data som var gjettet, unøyaktig eller samlet inn uten samtykke, inkludert:\n• En lokasjonsestimering\n• En cookie-sporingsfil uten cookie-samtykke\n• En adresse\n• En profileringsetikett («Storforbruker»)"
+          }
+        },
+        {
+          "name": "Sofia Lindgren",
+          "type": "Kundeklage",
+          "consent": "ingen",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Navn",
+              "content": "Sofia Lindgren",
+              "action": "keep",
+              "hint": "Trenger du kundens navn for å identifisere hvem som sendte inn klagen?"
+            },
+            {
+              "type": "E-post",
+              "content": "sofia.l@mailservice.dk",
+              "action": "keep",
+              "hint": "Er e-posten nyttig for å kontakte kunden?"
+            },
+            {
+              "type": "Telefon",
+              "content": "+45 22 44 44 22",
+              "action": "keep",
+              "hint": "Ville du trenge å ringe kunden om klagen hennes?"
+            },
+            {
+              "type": "Bestillingsinformasjon",
+              "content": "Bestilling #55201",
+              "action": "keep",
+              "hint": "Trenger du å vite hvilken bestilling hun klager på?"
+            },
+            {
+              "type": "Klageskjema",
+              "content": "Vare ankom sprukket",
+              "action": "keep",
+              "hint": "Er klageskjemaet direkte relatert til klagen?"
+            },
+            {
+              "type": "Bilder",
+              "content": "cracked_screen1.jpg",
+              "action": "keep",
+              "hint": "Er fotobeviset relevant for klagen?"
+            },
+            {
+              "type": "Løsningsnotat",
+              "content": "Erstatning godkjent",
+              "action": "keep",
+              "hint": "Hjelper løsningsnotatet med å dokumentere hvordan du løste problemet?"
+            },
+            {
+              "type": "Oppfølgingsnotat",
+              "content": "Behold emballasje",
+              "action": "keep",
+              "hint": "Er oppfølgingsnotatet en del av å håndtere returen riktig?"
+            },
+            {
+              "type": "Personalnotat",
+              "content": "Virket hormonell",
+              "action": "erase",
+              "hint": "Er personalnotatet en faktisk eller en upassende mening?"
+            },
+            {
+              "type": "Kundeanmeldelse",
+              "content": "3 stjerner – 12.03.2019",
+              "action": "erase",
+              "hint": "Relaterer anmeldelsen seg til det skadede produktkravet?"
+            },
+            {
+              "type": "Skjermbilde fra sosiale medier",
+              "content": "profile.png",
+              "action": "erase",
+              "hint": "Ga kunden skjermbildet fra sosiale medier?"
+            },
+            {
+              "type": "Navn (feil fil)",
+              "content": "Emma Larsen",
+              "action": "erase",
+              "hint": "Tilhører navnet samme kunde?"
+            },
+            {
+              "type": "Klageskjema (duplikat)",
+              "content": "Vare ankom sprukket",
+              "action": "erase",
+              "hint": "Trenger du to kopier av samme klage?"
+            }
+          ],
+          "explanation": {
+            "title": "Godt arbeid! Du beholdt bare de faktiske og nødvendige dataene i Sofias fil.",
+            "keepTitle": "Informasjonen du bestemte deg for å beholde",
+            "keepContent": "Du bestemte deg riktig for å beholde all informasjon som kreves for å oppfylle kontrakten; håndtere og løse klagen hennes:\n• Navn, e-post, telefonnummer\n• Bestillingsinformasjonen\n• Klageskjemaet\n• Bildet hun sendte inn\n• Oppfølgingsnotatet relatert til returprosessen\n\nDu beholdt også informasjon du har berettiget interesse i å oppbevare for interne dokumentasjonsformål:\n• Løsningsnotatet («Erstatning godkjent»)",
+            "eraseTitle": "Informasjonen du bestemte deg for å slette",
+            "eraseContent": "Du fjernet riktig data som var irrelevante, sensitive eller upassende, inkludert:\n• Et subjektivt og diskriminerende personalnotat («Virket hormonell»)\n• En gammel anmeldelse urelatert til klagen\n• Et skjermbilde fra sosiale medier hun ikke ga\n• Et feilarkivert notat fra en annen kunde\n• En duplikatklagefil"
+          }
+        }
+      ],
+      "completion": {
+        "title": "Kunderegister Sortert!",
+        "message": "Gratulerer! Du sorterte kunderegisteret med suksess.\n\nAll informasjonen du beholdt var dekket av et lovlig grunnlag:\n• Kontrakt: informasjon som er nødvendig for å oppfylle kundeforespørsler, levere produkter, løse klager, administrere garantier og opprettholde forretningsavtaler.\n• Juridisk forpliktelse: fakturaer, kvitteringer og samtykkeposter som loven krever lagring av\n• Berettiget interesse: faktisk og nyttig informasjon for å drive en virksomhet\n• Samtykke: tilleggsdata innhentet gjennom klart og skriftlig samtykke\n\nBrudd på GDPR og personvernlovgivning kan være skadelig for virksomheten. Heldigvis slettet du all unøyaktig, feilplassert, subjektiv, diskriminerende, duplisert og irrelevant informasjon.\n\nEt oppdatert kunderegister bidrar til å beskytte personvernet til kunden vår og bygge tillit. Godt jobbet!"
+      }
+    },
+    "feedbackSurvey": {
+      "title": "Kundeundersøkelsen",
+      "instructions": "Hjelp Simone med å lage en god tilbakemeldingsundersøkelse. For hvert par, velg det bedre spørsmålet å inkludere.",
+      "questions": [
+        {
+          "correct": "Hvor enkelt var det å finne informasjonen du trengte på nettsiden vår?",
+          "wrong": "Hva er ditt favoritt feriereisemål?",
+          "explanation": "Still relevante spørsmål.\nEt spørsmål om feriereisemål er irrelevant og vil ikke gi noen nyttig tilbakemelding. Det kan også være forvirrende og distraherende for respondenten."
+        },
+        {
+          "correct": "Hvor fornøyd var du med produktet du kjøpte?",
+          "wrong": "Hvor fornøyd var du med det fantastiske produktet du kjøpte?",
+          "explanation": "Still nøytrale spørsmål.\nÅ kalle produktet «fantastisk» gjør spørsmålet ledende. Dette kan påvirke kundens svar."
+        },
+        {
+          "correct": "Hvor fornøyd var du med våre kundeservicetjenester?",
+          "wrong": "Hvis du hadde kontaktet vårt kundeserviceteam, og de hadde vært ekstremt responsive på dine forespørsler, ville du anbefalt vår virksomhet til vennene og familien din?",
+          "explanation": "Spør om faktiske erfaringer.\nGenerelt vil hypotetiske spørsmål gi tilbakemelding som er usikker og vanskelig å handle på."
+        },
+        {
+          "correct": "Hvordan vil du vurdere din samlede opplevelse i dag?",
+          "wrong": "Med tanke på samspillet mellom vår nettside, chat, telefon og e-post-supporttjenester… hvordan ville du vurdert vår ytelse?",
+          "explanation": "Still klare og enkle spørsmål.\nLange og komplekse spørsmål kan overvelde respondenten."
+        },
+        {
+          "correct": "Hvor hjelpsom var personalet vårt? (1–5)",
+          "wrong": "Var personalet vårt hjelpsomt? Ja/Nei",
+          "explanation": "Bruk vurderingsskalaer for å få mer detaljerte data.\nErfaringer og meninger vil ofte være på et spektrum av positivt og negativt. Ja/nei-spørsmål kan forenkle for mye og skjule nyanser."
+        },
+        {
+          "correct": "Hvordan hørte du først om oss? Søkemotorer / Sosiale Medier / Henvisning / Kundeanmeldelser-side / Internett-annonse / Avisannonse / Annet",
+          "wrong": "Hvordan hørte du først om oss? Søkemotorer / Sosiale Medier",
+          "explanation": "Inkluder alle relevante svaralternativer. Inkluder «annet» eller «jeg vet ikke»-alternativer.\nEllers kan respondentene tvinges til å velge et unøyaktig alternativ, hoppe over spørsmålet eller forlate undersøkelsen."
+        },
+        {
+          "correct": "Hvor fornøyd var du med produktet du kjøpte?",
+          "wrong": "Hvor fornøyd var du med produktet og kundeservicen?",
+          "explanation": "Fokuser på ett tema per spørsmål.\nÅ spørre om to forskjellige ting i samme spørsmål kan føre til unøyaktig og uklar tilbakemelding."
+        },
+        {
+          "correct": "Hva kunne vi forbedre med våre leveringstjenester?",
+          "wrong": "Liker du våre merkefarger?",
+          "explanation": "Hold målet for undersøkelsen i tankene (kundeerfaringer).\nStill spørsmål som vil gi konkret tilbakemelding på saken."
+        },
+        {
+          "correct": "Hvor enkel var betalingsprosessen?",
+          "wrong": "Hvorfor var du så forvirret under betalingen?",
+          "explanation": "Bruk respektfullt språk.\nUnngå anklagende spørsmål som kan få respondentene til å føle seg ubekvemme."
+        }
+      ],
+      "resultTitle": "Din Kundeundersøkelse",
+      "allCorrectMessage": "Perfekt! Alle dine undersøkelsesspørsmål er godt utformet.",
+      "someWrongMessage": "Noen spørsmål kunne forbedres. Klikk på de røde spørsmålene for forklaringer."
+    },
+    "answerOverlayTitle": "Svar Avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "betterQuestion": "Bedre spørsmål:"
+  },
+  "hints": {
+    "default": "Se deg rundt i Kundeserviceavdelingen etter spor.",
+    "talkToPeter": "Klikk på Peter — han ser ut som han trenger hjelp.",
+    "talkToSimone": "Klikk på Simone i nærheten av tavlen.",
+    "findCabinet": "Sjekk det overfylte arkivskapet.",
+    "puzzleInProgress": "Fokuser på den nåværende oppgaven.",
+    "completion": "Opplæringen er fullført!"
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i Kundeserviceavdelingen. Rommet bobler av aktivitet. Du ser Peter bøyd over pulten sin, ser bekymret ut. Det er også et overfylt arkivskap som ser ut som det kan sprenge når som helst. Simone står ved tavlen, med tusj i hånden.",
+    "cabinetBurst": "Å nei, kundedataene våre!",
+    "cabinetSort": "Vel… å organisere kundedataene har stått på gjøremålslisten min en stund. Jeg burde ta tak i det.",
+    "guidelinesPrompt": "Ønsker du å gå gjennom selskapets personvernregler før du sorterer kunderegisteret?"
+  },
+  "interactiveObjects": {
+    "rubberDuck": {
+      "title": "Gummi-and",
+      "text": "Sitter du fast? Å forklare problemet høyt kan hjelpe deg å løse det. Anden er her for å lytte!"
+    },
+    "coffeeMachine": {
+      "title": "Kaffemaskin",
+      "text": "Feil 404: Kaffe ikke funnet"
+    },
+    "notebook": {
+      "title": "Notatbok",
+      "text": "En notatbok for å holde oversikt over kunder? Det kan være en god start når du driver en liten virksomhet.\n\nÅ skrive ned viktig informasjon gjør det lettere å følge opp løfter og klager, huske preferanser og tilby mer personlige opplevelser.\n\nDu kan gå videre til regneark eller et digitalt system for Kunderelasjonshåndtering (CRM) når du føler deg mer komfortabel."
+    },
+    "deerPoster": {
+      "title": "Motivasjonsplakat",
+      "text": "En plakat med et rådyr i en skog. Bildeteksten lyder: «Tålmodighet — Store ting tar tid»."
+    },
+    "naturePoster": {
+      "title": "Motivasjonsplakat",
+      "text": "En plakat med et fjellandskap. Bildeteksten lyder: «Perspektiv — Se det store bildet»."
+    },
+    "bearPoster": {
+      "title": "Motivasjonsplakat",
+      "text": "En plakat med en bjørn ved en elv. Bildeteksten lyder: «Utholdenhet — Fortsett»."
+    }
+  },
+  "completion": {
+    "title": "Skift Fullført!",
+    "message": "Du har fullført ditt skift i Kundeserviceavdelingen.\n\nDu håndterte en kundeklage-samtale, oppdaterte kunderegisteret og opprettet en nyttig kundeundersøkelse. Godt jobbet!",
+    "buttonText": "Forlat Kundeserviceavdelingen"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "startButton": "Start",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "closeButton": "Lukk",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  },
+  "speakers": {
+    "customer": "Kunde:",
+    "you": "Du:"
+  }
+}

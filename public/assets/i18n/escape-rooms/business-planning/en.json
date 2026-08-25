@@ -1,0 +1,285 @@
+{
+  "loading": "Loading Business Planning...",
+  "intro": {
+    "title": "Business Planning",
+    "paragraphs": [
+      "Welcome to the Business Planning Workshop! You have just entered a conference room where everything has been prepared for a hands-on session about building a Business Model Canvas.",
+      "The room contains several interactive stations - a fogged window, a flip chart, a wall-mounted TV, papers on the table, and a folder. Each station holds a puzzle that will teach you a key component of the Business Model Canvas.",
+      "Complete all five puzzles in any order you like. Once all are done, the whiteboard at the front will light up to reveal your completed Business Model Canvas. Good luck!"
+    ],
+    "buttonText": "Enter the Conference Room"
+  },
+  "puzzles": {
+    "customerSegments": {
+      "title": "Customer Segments",
+      "instructions": "Classify each customer segment as Valid or Invalid. Valid segments are specific and actionable. Invalid segments are too broad, vague, or assumption-based.",
+      "customers": {
+        "0": "Freelancers and remote workers who value flexible services",
+        "1": "Parents of young children who prioritize safety",
+        "2": "Students looking for cost-saving options",
+        "3": "Everyone who has ever needed something",
+        "4": "Office workers who need quick solutions during the workday",
+        "5": "People who like nice things",
+        "6": "Retirees who value personal customer service",
+        "7": "Small business owners who want to save time",
+        "8": "People who will definitely love the business",
+        "9": "People who accidentally clicked the website link",
+        "10": "People who juggle several tasks during the workday, and need efficient tools"
+      },
+      "invalidExplanations": {
+        "3": "Too broad - this describes virtually everyone and is not a useful segment.",
+        "5": "Too vague - 'nice things' does not define a specific need or behavior.",
+        "8": "Assumption-based - you cannot assume people will love your business.",
+        "9": "Not actual customers - accidental clicks do not represent real interest."
+      },
+      "validButton": "Valid",
+      "invalidButton": "Invalid",
+      "feedback": {
+        "correct": "Correct!",
+        "wrong": "Not quite. Think about whether this segment is specific and actionable.",
+        "allCorrect": "Excellent! You have correctly classified all customer segments!"
+      },
+      "answerOverlay": "Valid segments: Freelancers and remote workers, Parents of young children, Students looking for cost-saving options, Office workers who need quick solutions, Retirees who value personal customer service, Small business owners who want to save time, People who juggle several tasks.\n\nInvalid segments: 'Everyone who has ever needed something' (too broad), 'People who like nice things' (too vague), 'People who will definitely love the business' (assumption-based), 'People who accidentally clicked the website link' (not actual customers)."
+    },
+    "valueProposition": {
+      "title": "Value Proposition",
+      "instructions": "This value proposition contains unnecessary buzzwords. Click on the parts that should be REMOVED (struck through). Keep only the meaningful parts, then submit.",
+      "parts": {
+        "0": "We offer innovative",
+        "1": "solutions that help people save time",
+        "2": "world-class quality",
+        "3": "by reducing unnecessary steps in everyday tasks",
+        "4": "through excellence",
+        "5": "and cutting-edge synergy",
+        "6": "using next-generation features"
+      },
+      "submitButton": "Flip Page to Submit",
+      "feedback": {
+        "wrong": "Some parts are not correctly marked. Remember: keep what is meaningful and specific, remove buzzwords and filler.",
+        "hint": "Hint: Keep only the parts that describe a concrete benefit or action. Remove corporate jargon.",
+        "correct": "Perfect! You stripped away the buzzwords and kept the clear value proposition."
+      },
+      "answerOverlay": "Keep: 'solutions that help people save time' and 'by reducing unnecessary steps in everyday tasks'.\n\nRemove: 'We offer innovative', 'world-class quality', 'through excellence', 'and cutting-edge synergy', 'using next-generation features'."
+    },
+    "channels": {
+      "title": "Channels",
+      "introText": "Match each customer behavior with the most appropriate channel to reach them. Use the arrows to scroll through available channels, then confirm your selection.",
+      "startButton": "Start",
+      "behaviors": {
+        "0": "Customers who are active online and engage with social platforms",
+        "1": "Customers who rely on recommendations from friends and family",
+        "2": "Customers who are looking for services during work hours nearby",
+        "3": "Customers who prefer direct personal contact for inquiries"
+      },
+      "channelOptions": [
+        "Social Media",
+        "Word of Mouth",
+        "Physical Location",
+        "Direct Contact via Email or Phone",
+        "TV Advertising",
+        "Print Media",
+        "Mobile App",
+        "Online Marketplace",
+        "Trade Shows"
+      ],
+      "confirmButton": "Confirm",
+      "feedback": {
+        "correct": "Correct match!",
+        "wrong": "That channel does not match this customer behavior. Try another.",
+        "allCorrect": "Great job! You matched all customer behaviors to their ideal channels!"
+      },
+      "answerOverlay": "Correct matches:\n1. Active online/social platforms -> Social Media\n2. Rely on recommendations -> Word of Mouth\n3. Looking for services during work hours -> Physical Location\n4. Prefer direct personal contact -> Direct Contact via Email or Phone"
+    },
+    "revenueStreams": {
+      "title": "Revenue Streams",
+      "instructions": "Read each accounting document and assign it to the correct revenue stream category.",
+      "documents": {
+        "0": {
+          "title": "Document A: Monthly Access Fee",
+          "content": "Invoice for recurring monthly access to the premium platform. Customer is billed automatically each month for continued service.",
+          "category": "subscription"
+        },
+        "1": {
+          "title": "Document B: Product Purchase Receipt",
+          "content": "Receipt for a single product purchase. The customer paid the full amount upfront with no recurring charges.",
+          "category": "one-time"
+        },
+        "2": {
+          "title": "Document C: Metered Service Bill",
+          "content": "Bill calculated based on actual usage this month: 150 API calls at $0.02 each. Total varies month to month depending on consumption.",
+          "category": "usage-based"
+        },
+        "3": {
+          "title": "Document D: Upgrade Invoice",
+          "content": "Invoice for upgrading from the free tier to the Pro plan. The basic features remain free, but advanced features require payment.",
+          "category": "freemium"
+        }
+      },
+      "categories": {
+        "subscription": "Subscription",
+        "one-time": "One-time Payment",
+        "usage-based": "Usage-based Payment",
+        "freemium": "Freemium"
+      },
+      "feedback": {
+        "correct": "Correct classification!",
+        "wrong": "That is not the right category. Re-read the document and consider how the payment works.",
+        "allCorrect": "Excellent! You correctly classified all revenue stream documents!"
+      },
+      "answerOverlay": "Correct classifications:\nDocument A (Monthly Access Fee) -> Subscription\nDocument B (Product Purchase Receipt) -> One-time Payment\nDocument C (Metered Service Bill) -> Usage-based Payment\nDocument D (Upgrade Invoice) -> Freemium"
+    },
+    "costStructure": {
+      "title": "Cost Structure",
+      "instructions": "Classify each monthly cost as either Fixed (stays the same regardless of output) or Variable (changes based on production/sales volume).",
+      "costs": {
+        "0": {
+          "name": "Office rent",
+          "type": "fixed"
+        },
+        "1": {
+          "name": "Insurance",
+          "type": "fixed"
+        },
+        "2": {
+          "name": "Loan payments",
+          "type": "fixed"
+        },
+        "3": {
+          "name": "Employee salaries",
+          "type": "fixed"
+        },
+        "4": {
+          "name": "Sales commissions",
+          "type": "variable"
+        },
+        "5": {
+          "name": "Raw material",
+          "type": "variable"
+        },
+        "6": {
+          "name": "Packaging",
+          "type": "variable"
+        },
+        "7": {
+          "name": "Shipping",
+          "type": "variable"
+        }
+      },
+      "fixedButton": "Fixed",
+      "variableButton": "Variable",
+      "checkButton": "Check Answers",
+      "feedback": {
+        "wrong": "Some costs are incorrectly classified. The highlighted items need to be changed.",
+        "correct": "Well done! You correctly classified all costs!"
+      },
+      "answerOverlay": "Fixed costs: Office rent, Insurance, Loan payments, Employee salaries.\nVariable costs: Sales commissions, Raw material, Packaging, Shipping."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "bmc": {
+      "customerSegmentsTitle": "Customer Segments",
+      "valuePropositionTitle": "Value Proposition",
+      "channelsTitle": "Channels",
+      "revenueStreamsTitle": "Revenue Streams",
+      "costStructureTitle": "Cost Structure"
+    },
+    "whyInvalid": "Why is this invalid?"
+  },
+  "canvas": {
+    "title": "Business Model Canvas",
+    "message": "Congratulations! You have completed all five puzzles. Here is your completed Business Model Canvas. Hover over each block to learn more.",
+    "blocks": {
+      "customerSegments": {
+        "label": "Customer Segments",
+        "description": "The specific groups of people or organizations your business aims to serve. Good segments are specific, measurable, and actionable."
+      },
+      "valueProposition": {
+        "label": "Value Proposition",
+        "description": "The bundle of products and services that create value for a specific customer segment. It should clearly communicate the benefit without corporate jargon."
+      },
+      "channels": {
+        "label": "Channels",
+        "description": "How your company communicates with and reaches its customer segments to deliver its value proposition."
+      },
+      "revenueStreams": {
+        "label": "Revenue Streams",
+        "description": "The cash a company generates from each customer segment. Models include subscription, one-time, usage-based, and freemium."
+      },
+      "costStructure": {
+        "label": "Cost Structure",
+        "description": "All costs incurred to operate a business model. Costs can be fixed (unchanged by volume) or variable (proportional to volume)."
+      },
+      "keyPartners": {
+        "label": "Key Partners",
+        "description": "The network of suppliers and partners that make the business model work."
+      },
+      "keyActivities": {
+        "label": "Key Activities",
+        "description": "The most important things a company must do to make its business model work."
+      },
+      "keyResources": {
+        "label": "Key Resources",
+        "description": "The most important assets required to make a business model work."
+      },
+      "customerRelationships": {
+        "label": "Customer Relationships",
+        "description": "The types of relationships a company establishes with specific customer segments."
+      }
+    },
+    "finishButton": "Finish Escape Room"
+  },
+  "hints": {
+    "explore": "Look around the room. You can interact with the fogged window, the flip chart, the TV remote, the papers on the table, and the folder.",
+    "window": "Try clicking on the fogged window to start the Customer Segments puzzle.",
+    "flipchart": "The flip chart contains a value proposition exercise.",
+    "tv": "Use the TV remote to start the Channels puzzle.",
+    "papers": "The papers on the table contain accounting documents for the Revenue Streams puzzle.",
+    "folder": "The folder on the table has a monthly costs sheet for the Cost Structure puzzle.",
+    "whiteboard": "All puzzles are complete! Click the whiteboard to see your Business Model Canvas.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room for interactive objects.",
+    "puzzle_customers": "Classify each customer profile as Valid or Invalid. Valid segments are specific and actionable; invalid ones are too broad, vague, or assumption-based.",
+    "puzzle_channels": "Use the arrows to scroll through the available channels and confirm the one that best matches the customer behavior shown.",
+    "puzzle_revenue": "Read each accounting document carefully, then drag it to the revenue stream category that best describes how the payment works.",
+    "puzzle_costs": "Assign each monthly cost to Fixed (same every month) or Variable (changes with production or sales volume), then check your answers."
+  },
+  "systemDialogues": {
+    "windowFogged": "The window is completely fogged up. You notice a squeegee nearby. Maybe you can use it to clear the glass.",
+    "windowCleaned": "The fog clears to reveal customer profiles on the glass! Time to classify them.",
+    "flipchartIntro": "The flip chart shows a value proposition statement, but it is full of corporate buzzwords. Let's clean it up.",
+    "tvIntro": "The TV screen lights up showing customer behaviors. You need to match each one with the right channel.",
+    "papersIntro": "You see four accounting documents spread on the table. Each one represents a different type of revenue stream.",
+    "folderIntro": "The folder contains a monthly costs breakdown. You need to classify each cost as fixed or variable.",
+    "puzzleComplete": "Puzzle complete! Well done.",
+    "allPuzzlesComplete": "All five puzzles are done! The whiteboard at the front of the room is now glowing. Click on it to see your completed Business Model Canvas.",
+    "canvasViewed": "You have reviewed the complete Business Model Canvas. The door is now open - you can exit the room!"
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully completed the Business Planning escape room! You now understand the key components of a Business Model Canvas: Customer Segments, Value Proposition, Channels, Revenue Streams, and Cost Structure.",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "puzzlesCompleted": "puzzles",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer",
+    "backToDocuments": "Back to documents"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "id": "strategic-thinking",
+  "moduleNumber": 16,
+  "title": "Strategic Thinking",
+  "subtitle": "Module 16",
+  "coverImage": "assets/thumbs/strategic-thinking.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 16",
+      "title": "Strategic Thinking",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/strategic-thinking.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module you will"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Gain the fundamental understanding of strategic thinking and its importance,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Identify and utilize specific components of this skill in your entrepreneurial journey,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Develop related competences through implementation of practical activities,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Become aware of your strengths and weaknesses within this area."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Strategic thinking is the ability to visualise the future world based on our vision of it, and to employ a series of actions aimed at making this vision a reality. This approach requires both creativity, skills, resources and organizational efforts. The competence of strategic thinking holds a significant power, and, when utilized properly, it can be used to improve the operations of a poorly performing company, even to the extent of fully restructuring it. Aside from purely entrepreneurial dimension, as its often perceived, it can be seen as the ability to introduce an individual's life to increase their professional potential as well (Betz, 2016)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The competence of strategic thinking is very closely connected to the ability of decision making. By introducing specific principles, a person can increase their effectiveness in that area. Example: you’re facing a challenging decision regarding your next investment. Through the employment of specific strategic thinking methods, you are able to diagnose the problem more accurately, gather the optimal amount of data to operate on, and as a result, make a decision that is the most likely to result in the optimal outcome for you. The key development is to follow established principles that will guide your decision-making process. (Dalio, 2017)"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Jayne Cormie identifies 3 core components of the strategic thinking"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Strategic insight - concentrates on the assessment of the current situation of the company or the individual, evaluating strengths, weaknesses, opportunities and threats applying to the given subject.",
+            "Strategic vision - this step focuses on creating a vision, a strategic direction serving both as a motivator empowering individuals or employees to invest their resources into achieving this vision, and as a general guidance towards reaching the goal.",
+            "Strategic ideas - the final step including the development of actionable plans and tactics directed at making the vision a reality. Steps 1 and 2 are interchangeable, as formulating a vision is possible to be carried out as a first action. (Jayne Cormie, 2020)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Ask insightful questions - focusing on “why?”, “how?”, and “what if?”, instead of just “what?”, and “when?”. Practice it to uncover underlying threats and opportunities.",
+            "Practice reflective observation - interpret discovered insights, include both hard data and human aspect, get various perspectives on a given problem, keep re-examining.",
+            "acknowledge different perspectives - try to question yourself from opposite angles to expand your outlook. You can conduct “internal debates” to build upon this idea.",
+            "practice to understand - remember to apply gained skills in real-life scenarios as often as possible, e.g. through taking the lead of the project or daily problem-solving (The Strategy Institute, 2024)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The most common difficulties related to applying this skill, along with mitigation methods:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "The need to re-adjust and change habits - we are naturally avoiding situations, where we have to acknowledge our own failures and shortcomings due to psychological prerequisites. It's the crucial part of strategic thinking - it's necessary to practice self- reflection in pursuit of constant improvement of this competence.",
+            "Short-term mindset - many individuals focus on immediate tasks and challenges, while finding it difficult to take a step back and see the entirety of the problem. Try to regularly engage yourself in self-evaluation actions and long-term planning."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Exercises"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Below you can find two simple exercises to help you develop the skill of strategic thinking:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Strategic journaling - Write 1-2 short paragraphs regarding a strategic idea or personal concern. Start with questions like \"What strategic opportunity do I see today?\", \"What risk might be emerging?\". Practice it daily to develop your habit of articulating strategic thoughts.",
+            "Scenario visualization - Start from coming up with a potential future scenario, like \"What if remote work becomes the norm in our industry?\" Try to visualise various scenarios (best case, worst case, most likely) and how various trends could affect these outcomes (Watkins, 2024)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Rate each question with S or D. S = the area of strength for you; D = the area to work on (CMC, 2020)."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can easily identify both the opportunities and risk(s) associated with a decision.",
+            "I always keep putting an effort to broaden my knowledge and experience so I can recognize patterns and connections.",
+            "I try to predict how a situation might change in the medium or long term.",
+            "I adjust my approach when new data informs me that it's needed.",
+            "I can easily identify what impact my decision will have on various stakeholders.",
+            "I make intentional decisions by prioritizing one alternative and letting go of the other."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Over the pages of this module we have been focusing on the skill of strategic thinking. This crucial, and oftentimes overlooked competence, holds a significant potential of improving various areas of your life, both personal and professional one. Simply put, through the development of the ability to think strategically you will always position yourself in advantageous position thanks to being able to effectively assess your (or your company’s) situation, formulate the future direction, gather the data from various source, carry out the inference process and develop valuable insights, that you will be able to utilize during your next steps. Make sure to practice this skill as often as possible, as consistency and frequent real-life application is the key to steadily increasing your level of proficiency."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Learners who completed this module are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Be able to define the competence of strategic thinking and its components,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Implement gained knowledge in real-life situations,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Demonstrate improved decision-making skills,"
+        },
+        {
+          "kind": "paragraph",
+          "text": "- Understand how to further develop the skill of strategic thinking."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Books: Blue Ocean Strategy by W. Chan Kim and Renée Mauborgne; Good Strategy Bad Strategy: The Difference and Why It Matters by Richard Rumelt; The Art of Strategy: A Game Theorist's Guide to Success in Business and Life by Avinash K. Dixit and Barry J. Nalebuff"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Videos: Become a great strategic thinker | Ian Bremmer; Use Strategic Thinking to Create the Life You Want"
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Strategic Thinking",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/strategic-thinking.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Risk Management room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(20, 15, 10, 0.95);
+  border: 2px solid rgba(180, 120, 40, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .character-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f0c040;
+  }
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* --- Risk Counter --- */
+.risk-counter {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* --- Found risk indicator on hotspot --- */
+.hotspot.found-risk {
+  background: rgba(76, 175, 80, 0.25);
+  border: 2px solid rgba(76, 175, 80, 0.6);
+  pointer-events: auto;
+  cursor: pointer;
+
+  .found-check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4caf50;
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+  }
+}
+
+/* --- Red herring hotspot --- */
+.red-herring-hotspot {
+  &.dismissed {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+/* --- Thought Bubble Card --- */
+.thought-card {
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  padding: 24px;
+
+  .thought-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    .thought-icon {
+      font-size: 32px;
+      width: 32px;
+      height: 32px;
+
+      &.risk { color: #ff9800; }
+      &.safe { color: #4caf50; }
+    }
+
+    .thought-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .thought-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+  }
+
+  &.risk-thought {
+    border-left: 4px solid #ff9800;
+  }
+
+  &.safe-thought {
+    border-left: 4px solid #4caf50;
+  }
+}
+
+/* --- Risk Assessment Card --- */
+.assessment-card {
+  max-width: 700px;
+  width: 95%;
+
+  .risk-nav-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+
+    button {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.12);
+      color: rgba(0, 0, 0, 0.6);
+      box-shadow: none;
+
+      &.active {
+        background: var(--sys-primary, #006874);
+        color: var(--sys-on-primary, white);
+      }
+
+      &.completed:not(.active) {
+        background: rgba(76, 175, 80, 0.2);
+        color: #4caf50;
+      }
+    }
+  }
+
+  .risk-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+
+    .risk-info-icon {
+      font-size: 36px;
+      width: 36px;
+      height: 36px;
+      color: var(--sys-primary, #006874);
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      margin: 8px 0 4px;
+      font-size: 1.15rem;
+    }
+
+    .risk-description {
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 4px 0 0;
+    }
+  }
+
+  .assessment-row {
+    margin-bottom: 16px;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      cursor: help;
+
+      .info-icon {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .scale-buttons {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+
+      button {
+        min-width: 44px;
+        font-size: 1rem;
+
+        &.selected {
+          background: var(--sys-primary, #006874);
+          color: var(--sys-on-primary, white);
+        }
+      }
+    }
+  }
+
+  .risk-score-display {
+    text-align: center;
+    margin: 16px 0 8px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    cursor: help;
+
+    .risk-score-label {
+      font-weight: 600;
+      margin-right: 8px;
+    }
+
+    .risk-score-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      &.low-risk { color: #4caf50; }
+      &.medium-risk { color: #ff9800; }
+      &.high-risk { color: #f44336; }
+    }
+  }
+
+  .assessment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* --- Review Card --- */
+.review-card {
+  max-width: 750px;
+  width: 95%;
+  max-height: 80vh;
+
+  .review-content {
+    overflow-y: auto;
+    max-height: 55vh;
+  }
+
+  .general-feedback {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  }
+
+  .review-section {
+    margin-bottom: 16px;
+
+    h4 {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1rem;
+      margin-bottom: 8px;
+
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &.correct-section h4 {
+      color: #4caf50;
+    }
+
+    &.incorrect-section h4 {
+      color: #f44336;
+    }
+  }
+
+  .review-entry {
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+
+    &.correct {
+      background: rgba(76, 175, 80, 0.08);
+      border-left: 3px solid #4caf50;
+    }
+
+    &.incorrect {
+      background: rgba(244, 67, 54, 0.08);
+      border-left: 3px solid #f44336;
+    }
+
+    .review-risk-name {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+      flex: 1;
+      min-width: 160px;
+
+      mat-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .review-scores {
+      display: flex;
+      gap: 12px;
+      font-size: 0.9rem;
+
+      .review-risk-score {
+        font-weight: 700;
+
+        &.low-risk { color: #4caf50; }
+        &.medium-risk { color: #ff9800; }
+        &.high-risk { color: #f44336; }
+      }
+    }
+
+    .review-feedback {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+
+      .feedback-item {
+        font-size: 0.85rem;
+        color: #d32f2f;
+        background: rgba(244, 67, 54, 0.08);
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+/* --- Skip button positioning --- */
+.skip-puzzle-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+}

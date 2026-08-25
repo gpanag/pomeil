@@ -1,0 +1,185 @@
+{
+  "loading": "Laster Fleksibilitet...",
+  "intro": {
+    "title": "Fleksibilitet",
+    "paragraphs": [
+      "Drømmen din er å bli en suksessrik gründer og skape et selskap som forener mennesker.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen.",
+      "I dag går du inn i FoU-rommet, der teamet står overfor en alvorlig utfordring. Klienten har akkurat endret kravene, og hovedutviklingsverktøyet er nede. Dette er det perfekte øyeblikket for å teste fleksibiliteten din."
+    ],
+    "buttonText": "Gå inn i FoU-rommet"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena",
+      "dialogues": {
+        "greet": "Hei! Vi står overfor en alvorlig utfordring. Klienten har akkurat endret kravene, og hovedutviklingsverktøyet vårt er nede. Dette er det perfekte øyeblikket for å teste fleksibiliteten din.",
+        "findStickyNote": "Fleksibilitet handler ikke bare om å endre planer. Det handler om å håndtere stress og finne nye løsninger raskt. På siste FoU-møte skrev jeg ned nøkkelegenskapene til en fleksibel tankegang på en gul lapp — men jeg mistet den i dette rotet. Kan du finne den? Begynn med å sjekke bordet.",
+        "stickyNoteFound": "Bra! Som du ser, lar fleksibilitet FoU-team reagere raskt når eksperimenter feiler eller krav endres. Det hjelper oss å overleve og skille oss ut. La oss se om du forstår grunnleggende.",
+        "quiz1Intro": "La oss ta en rask quiz.",
+        "quiz1Done": "Du forstår konseptet. Nå må vi anvende det på FoU-utfordringen vår.",
+        "findPaper": "Tidligere i dag kastet jeg en gammel utviklingsplan fordi den var for stiv. På baksiden hadde jeg skrevet en sjekkliste for hvordan utvikle fleksibilitet. Jeg kastet den i søppelet. Gå og hent den!",
+        "paperFound": "Strålende. Denne sjekklisten vil hjelpe oss å navigere i usikkerhet. Men først må du møte noen utfordringer.",
+        "puzzle2Intro": "Løs disse oppgavene for å bevise at du er klar for å lede.",
+        "finalWords": "Perfekt! Du holdt deg rolig, tilpasset deg og handlet proaktivt. Det er essensen av fleksibilitet i FoU.\n\nHusk: å være åpen for endring og kontinuerlig lære nye verktøy vil styrke selvtilliten din. Du er klar for neste utfordring!",
+        "completion": "Opplæringen er fullført!",
+        "default": "Fortsett å se deg om i rommet etter spor."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "busy": "Den siste systemoppdateringen ødela prototypsimulasjonen vår! Jeg må fokusere på å fikse koden. Snakk med Elena om utviklingsplanen.",
+        "default": "Fortsatt feilsøker… snakk med Elena."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Fleksibilitet – Sant eller Usant",
+      "instructions": "Avgjør om hver påstand er sann eller usann.",
+      "questions": [
+        {
+          "text": "Forskning innen nevrovitenskap beviser at fleksibilitet er lokalisert i ett bestemt senter i hjernen.",
+          "correct": false,
+          "hint": "Nevrovitenskap viser at fleksibilitet er en kompleks ferdighet, ikke begrenset til ett enkelt hjerneområde."
+        },
+        {
+          "text": "Ansatte som er fleksible og føler seg produktive, har som regel mindre stress og høyere jobbtilfredshet.",
+          "correct": true,
+          "hint": "Tilpasning reduserer motstand og stress."
+        },
+        {
+          "text": "Fleksibilitet handler bare om å endre ferieplaner eller hverdagsrutiner.",
+          "correct": false,
+          "hint": "På arbeidsplassen betyr fleksibilitet å reagere effektivt på endring."
+        }
+      ],
+      "feedback": {
+        "wrong": "Det er ikke helt riktig. Tenk på det igjen.",
+        "correct": "Bra jobbet! Du forstår grunnleggende fleksibilitet."
+      },
+      "answerOverlay": "De riktige svarene er:\n1. USANT – Fleksibilitet er en kompleks ferdighet, ikke begrenset til ett hjerneområde.\n2. SANT – Fleksible ansatte har som regel mindre stress.\n3. USANT – Fleksibilitet strekker seg langt utover hverdagsrutiner."
+    },
+    "singleChoice": {
+      "title": "Utfordringer & Løsninger Quiz",
+      "instructions": "Velg det beste svaret.",
+      "question": "Du føler deg engstelig over en ny FoU-programvareoppdatering fordi du ikke vet hvordan du skal bruke den (frykt for det ukjente). Hva er den beste løsningen?",
+      "options": {
+        "a": "Unngå å bruke programvaren til det gamle systemet kommer tilbake.",
+        "b": "Fokuser på ferdighetsutvikling for å forberede deg på endringen.",
+        "c": "Klag til ledelsen.",
+        "d": "Be en kollega gjøre arbeidet ditt."
+      },
+      "hint": "Forberedelse og læring reduserer frykt.",
+      "feedback": {
+        "wrong": "Det er ikke den beste tilnærmingen. Forberedelse og læring reduserer frykt.",
+        "correct": "Riktig! Ferdighetsutvikling er den beste måten å overvinne frykt for det ukjente."
+      },
+      "answerOverlay": "Det riktige svaret er: Fokuser på ferdighetsutvikling for å forberede deg på endringen."
+    },
+    "sequenceOrder": {
+      "title": "Håndtere det Uventede",
+      "instructions": "En plutselig prosjektforsinkelse oppstår på grunn av en lederendring. Sett trinnene i rekkefølge for å håndtere situasjonen fleksibelt.",
+      "items": [
+        "Juster timeplanen din og prioriter kritiske oppgaver på nytt.",
+        "Erkjenne den uventede situasjonen rolig.",
+        "Diskuter alternativer med teamet for å velge det beste scenariet.",
+        "Utfør den nye planen med selvtillit."
+      ],
+      "correctOrder": [
+        "Erkjenne den uventede situasjonen rolig.",
+        "Diskuter alternativer med teamet for å velge det beste scenariet.",
+        "Juster timeplanen din og prioriter kritiske oppgaver på nytt.",
+        "Utfør den nye planen med selvtillit."
+      ],
+      "hints": [
+        "Trinn 1: Innse virkeligheten.",
+        "Trinn 2: Bygg en strategi med teamet ditt.",
+        "Trinn 3: Bruk tiden klokt.",
+        "Trinn 4: Gå til handling."
+      ],
+      "feedback": {
+        "wrong": "Det er ikke riktig rekkefølge. Husk: erkjenn, lag strategi, prioriter tid, så handle.",
+        "correct": "Strålende! Du håndterte den uventede situasjonen med fleksibilitet."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n1. Erkjenne den uventede situasjonen rolig.\n2. Diskuter alternativer med teamet.\n3. Juster timeplanen og prioriter på nytt.\n4. Utfør den nye planen med selvtillit."
+    },
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    }
+  },
+  "hints": {
+    "intro": "Klikk på Elena nær tavlen for å begynne.",
+    "talkToElena": "Klikk på Elena for å begynne.",
+    "findStickyNote": "Sjekk bordet — kanskje under kaffekoppen?",
+    "talkToElena2": "Gå tilbake til Elena.",
+    "puzzle1": "Les hver påstand og avgjør om den er sann eller usann.",
+    "puzzle1Complete": "Snakk med Elena — hun har den neste utfordringen til deg.",
+    "findPaper": "Elena nevnte søppelbøtta. Se etter den nær tavlen.",
+    "talkToElena3": "Gå tilbake til Elena med det du fant.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg om i FoU-rommet etter spor."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går inn i det travle FoU-rommet. Tavlen er full av strøkne planer og reviderte tidslinjer. Noe alvorlig pågår her. Du legger merke til Elena, prosjektlederen, som ser over endringer ved tavlen.",
+    "clickLaptop": "Bare Marcos kode. Ingenting om fleksibilitet her. Kanskje sjekke under kaffekoppen?",
+    "foundStickyNote": "Du fant den! En gul lapp var festet under koppen.",
+    "stickyNoteRead": "Bra jobbet! Gå tilbake til Elena.",
+    "clickWhiteboard": "Dette er utdaterte forskningsmilepæler. De gjelder ikke lenger. Se etter søppelbøtta.",
+    "foundPaper": "Du fant strategien! Gå tilbake til Elena."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "Fleksibel Tankegang – Nøkkelegenskaper",
+      "popupTitle": "Fleksibel Tankegang – Nøkkelegenskaper",
+      "popupContent": [
+        "Raske reaksjoner: Reager umiddelbart på markedsendringer og kundebehov.",
+        "Adaptiv filosofi: Omdefiner umiddelbart behov og identifiser nye muligheter.",
+        "Alternative valg: Finn nye måter å håndtere teknologisk utvikling og usikkerhet."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Hvordan utvikle fleksibilitet",
+      "popupTitle": "Hvordan utvikle fleksibilitet",
+      "popupContent": [
+        "Forbedre tidshåndtering: Prioriter oppgaver for å tilpasse deg nye data.",
+        "Adopter en ny tankegang: Vær åpen for endring og kontinuerlig fremgang.",
+        "Vær proaktiv: Vær klar for endringer i stedet for å vente på dem.",
+        "Omfavn innovasjon: Vær åpen for å bruke moderne verktøy og teknologi."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har fullført Fleksibilitet-ferdigheten! Du holdt deg rolig, tilpasset deg og handlet proaktivt. Det er essensen av fleksibilitet i FoU. Du er klar for neste utfordring!",
+    "buttonText": "Forlat FoU-rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

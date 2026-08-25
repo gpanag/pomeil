@@ -1,0 +1,17 @@
+<mat-card class="auth-card">
+  <div class="auth-header">
+    <mat-icon class="success-icon">mark_email_read</mat-icon>
+    <h2>{{ 'AUTH.EMAIL_CONFIRMED_TITLE' | translate }}</h2>
+  </div>
+
+  <mat-card-content class="check-email-view">
+    <p>{{ 'AUTH.EMAIL_CONFIRMED_BODY' | translate }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" routerLink="/login">
+      <mat-icon>login</mat-icon>
+      {{ 'AUTH.LOGIN_BUTTON' | translate }}
+    </button>
+  </mat-card-actions>
+</mat-card>

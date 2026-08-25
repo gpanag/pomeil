@@ -1,0 +1,28 @@
+.front-partner-card {
+    padding: 32px !important;
+    align-self: center;
+    scale: 1;
+    transition: 0.5s ease;
+}
+
+.front-partner-card:hover {
+    scale: 1.2;
+    transition: 0.5s ease;
+}
+
+.front-patern-image {
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+.front-partner-title {
+    text-align: center;
+}
+
+.front-partners-parent {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}

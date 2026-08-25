@@ -1,0 +1,236 @@
+{
+  "loading": "Laster Empati-modulen...",
+  "intro": {
+    "title": "Empati",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en bedrift som bringer folk sammen.",
+      "Du har akkurat gått inn i Wellness-senteret til et stort multinasjonalt selskap. Her vil du lære om Empati — evnen til å forstå hva noen andre føler, selv om deres opplevelse er forskjellig fra din.",
+      "Dr. Elena Ruiz, wellness-coachen, vil veilede deg gjennom ulike utfordringer for å hjelpe deg å utvikle emosjonell oppfatning, oppmerksom lytting og medfølende resonnering."
+    ],
+    "buttonText": "Start spillet"
+  },
+  "characters": {
+    "coach": {
+      "name": "Dr. Elena Ruiz (wellness-coach)",
+      "dialogues": {
+        "intro": "Hei (username)! Nå skal vi utforske empati, nemlig å forstå emosjoner hos andre, og svare med omsorg.",
+        "findStones_initial": "For denne ferdigheten har jeg gjemt meditasjonssteiner som inneholder en melding. Begynn med å sjekke hyllen med meditasjonsobjekter.",
+        "findStones_reminder": "Meditasjonsstenene burde være et sted i rommet. Begynn med å sjekke hyllen med meditasjonsobjekter.",
+        "stonesFound": "Du fant steinene! Klikk på dem for å lese meldingen, og bring dem så tilbake til meg.",
+        "stonesReturned": "Flott, disse trinnene er ditt fundament. Men før vi fortsetter, la meg dele noe viktig.",
+        "empathyExplanation1": "Empati er ikke bare «å være snill». Empati er evnen til å forstå hva noen andre føler, selv om deres opplevelse er forskjellig fra din.",
+        "empathyExplanation2": "Det er faktisk to sider ved empati:\nEmosjonell empati: å sanse hva noen føler gjennom tone, holdning eller uttrykk.\nKognitiv empati: å forstå deres perspektiv og hva som kan ligge bak emosjonene deres.",
+        "empathyExplanation3": "Når begge fungerer sammen, legger du ikke bare merke til emosjoner, men du svarer på en måte som gjør at personen føler seg trygg og støttet. Det er det som bygger sterke relasjoner på jobben.",
+        "empathyExplanation4": "Greit, la oss sette disse ideene i praksis.",
+        "puzzle1Complete": "Du gjør fine fremskritt. Jeg forberedte en kort refleksjon om empati. Jeg tror jeg la den i bokhyllen, men jeg er ikke sikker.",
+        "findFabric_reminder": "Refleksjonsstoffet burde være nær bokhylleområdet. Fortsett å lete!",
+        "fabricFound": "Utmerket! Les refleksjonen nøye, og kom så tilbake til meg.",
+        "fabricReturned": "Perfekt. Disse refleksjonene vil veilede dine neste øvelser.",
+        "patternComplete": "Det var utmerket arbeid, (username). Du har demonstrert emosjonell oppfatning, oppmerksom lytting og medfølende resonnering.",
+        "completion": "Du har gjort det vidunderlig! Opplæringen er fullført!",
+        "default": "Fortsett, du gjør det flott!"
+      }
+    },
+    "mark": {
+      "name": "Mark",
+      "dialogues": {
+        "default": "Å, hei… mediterer bare.",
+        "completion": "Bra jobbet med å fullføre empati-opplæringen! Døren er åpen for deg."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match emosjonsantydningen med betydningen",
+      "columnA": {
+        "heading": "Kolonne A – Emosjonelle signaler",
+        "items": {
+          "1": "Unngår øyekontakt",
+          "2": "Snakker uvanlig fort",
+          "3": "Skuldre lent fremover",
+          "4": "Lange pauser før svar"
+        }
+      },
+      "columnB": {
+        "heading": "Kolonne B – Sannsynlige emosjonelle tilstander",
+        "items": {
+          "a": "Føler seg overveldet",
+          "b": "Føler seg usikker eller nølende",
+          "c": "Føler seg trist eller beseiret",
+          "d": "Føler seg engstelig."
+        }
+      },
+      "feedback": {
+        "wrong": "Tenk på hvordan kroppen uttrykker emosjoner. For eksempel, hengende skuldre signaliserer ofte lav energi eller tristhet.",
+        "allCorrect": "Bra jobbet! Fortsett med neste oppgave."
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Match kroppsspråk-signaler med emosjonelle tilstander.\n\nRiktige matchinger:\n• «Unngår øyekontakt» → «Føler seg usikker eller nølende» - Når folk føler seg usikre, ser de ofte bort for å unngå direkte engasjement\n• «Snakker uvanlig fort» → «Føler seg engstelig» - Rask tale indikerer ofte nervøsitet eller angst\n• «Skuldre lent fremover» → «Føler seg trist eller beseiret» - Kroppsholdning synker når energien er lav\n• «Lange pauser før svar» → «Føler seg overveldet» - Når man bearbeider for mye, trenger folk mer tid til å svare\n\nHusk: Kroppsspråk avslører ofte emosjoner som ord ikke uttrykker."
+    },
+    "fillGap": {
+      "title": "Svare med empati",
+      "sentenceParts": [
+        "Når noen er opprørt, hjelper det å ",
+        " følelsene deres, ",
+        " fullt ut, og stille et ",
+        " spørsmål for å forstå bedre."
+      ],
+      "options": [
+        "validere",
+        "lytte",
+        "dømmende",
+        "skånsomt",
+        "ignorere"
+      ],
+      "correctAnswers": [
+        "validere",
+        "lytte",
+        "skånsomt"
+      ],
+      "feedback": {
+        "wrong": "Empatiske svar innebærer aldri å være dømmende eller å ignorere noen."
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Når noen er opprørt, hjelper det å (___) følelsene deres, (___) fullt ut, og stille et (___) spørsmål for å forstå bedre.\n\nRiktig svar:\n• Første tomme felt: «validere» - Å anerkjenne noens følelser viser at du forstår og støtter dem\n• Andre tomme felt: «lytte» - Gi din fulle oppmerksomhet uten å avbryte slik at personen føler seg hørt og respektert\n• Tredje tomme felt: «skånsomt» - Still et skånsomt spørsmål for å vise at du bryr deg og forstår hva som foregår under overflaten\n\nKomplett setning: «Når noen er opprørt, hjelper det å validere følelsene deres, lytte fullt ut, og stille et skånsomt spørsmål for å forstå bedre.»",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Sjekk"
+    },
+    "pattern": {
+      "title": "Lese emosjonelle mønstre",
+      "scenarioLabel": "Scenario",
+      "scenarios": [
+        {
+          "text": "En kollega gir veldig korte svar, unngår øyekontakt, og fikler stadig med hendene.",
+          "options": [
+            {"text": "Rolig + reflekterende", "correct": false},
+            {"text": "Engstelig + usikker", "correct": true},
+            {"text": "Glad + energisk", "correct": false},
+            {"text": "Motivert + fokusert", "correct": false}
+          ],
+          "hint": "Å fikle og unngå øyekontakt reflekterer vanligvis indre spenning eller bekymring."
+        },
+        {
+          "text": "I en teamdiskusjon snakker en kollega saktere enn vanlig, svarer med en myk stemme, og holder skuldrene senket.",
+          "options": [
+            {"text": "Trist + lav energi", "correct": true},
+            {"text": "Selvsikker + avslappet", "correct": false},
+            {"text": "Irritert + utålmodig", "correct": false},
+            {"text": "Distrahert + leken", "correct": false}
+          ],
+          "hint": "Senkede skuldre og myk stemme indikerer vanligvis senket emosjonell energi snarere enn selvtillit eller irritasjon."
+        },
+        {
+          "text": "En medarbeider snakker veldig fort, avbryter ofte, og gestene er raske og overdrevne.",
+          "options": [
+            {"text": "Nervøs spenning + overstimulering", "correct": true},
+            {"text": "Rolig + fredelig", "correct": false},
+            {"text": "Forvirret + sliten", "correct": false},
+            {"text": "Nøytral + likegyldig", "correct": false}
+          ],
+          "hint": "Når noen snakker for fort eller gestikulerer mye, reflekterer det ofte forhøyet aktivering — ikke ro eller likegyldighet."
+        }
+      ],
+      "answerOverlayPrefix": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: ",
+      "answerOverlayCorrectLabel": "\n\nRiktig svar: ",
+      "answerOverlayExplanationLabel": "\n\nForklaring: "
+    },
+    "answerOverlayTitle": "Riktig svar",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "default": "Jeg burde sjekke rommet nøye.",
+    "intro": "Jeg burde snakke med dr. Elena Ruiz.",
+    "stonesReturned": "Jeg burde snakke med dr. Elena Ruiz.",
+    "stonesFound": "Les meldingen på steinene, og bring dem så tilbake til wellness-coachen.",
+    "fabricFound": "Les refleksjonen på stoffet, og gå så tilbake til wellness-coachen.",
+    "puzzle1Matching": "Match hvert kroppsspråk-signal i kolonne A med den emosjonelle tilstanden det antyder i kolonne B.",
+    "puzzle2FillGap": "Velg ordene som fullfører det empatiske svaret: valider følelsene, lytt fullt ut, still et skånsomt spørsmål.",
+    "findStones": {
+      "step0": "Dr. Elena sa: «Begynn med å sjekke hyllen med meditasjonsobjekter.»",
+      "step1": "Hyllen var tom. Jeg burde sjekke fontenen.",
+      "step2": "Ingenting i fontenen. Jeg burde sjekke under den oransje puten."
+    },
+    "findFabric": {
+      "step0": "Jeg må finne refleksjonen. Dr. Elena nevnte bokhyllen.",
+      "step1": "Ikke i bokhyllen. Jeg burde sjekke de sammenbrettede teppene.",
+      "step2": "Ikke i teppene. Jeg burde sjekke yogamattene."
+    },
+    "completion": "Jeg burde rapportere tilbake til HR-sjefen for å fullføre."
+  },
+  "items": {
+    "stones": {
+      "altText": "Meditasjonssteiner",
+      "title": "EMPATI-TRINN",
+      "steps": [
+        {
+          "label": "Legg merke til",
+          "text": "Vær oppmerksom på emosjonelle signaler som tone eller holdning, slik at du kan sanse hvordan noen kan føle."
+        },
+        {
+          "label": "Sjekk inn",
+          "text": "Still et skånsomt spørsmål for å vise at du bryr deg og forstå hva som foregår under overflaten."
+        },
+        {
+          "label": "Lytt",
+          "text": "Gi din fulle oppmerksomhet uten å avbryte slik at personen føler seg hørt og respektert."
+        },
+        {
+          "label": "Validere",
+          "text": "Anerkjenn følelsene deres for å vise forståelse og hjelpe dem å føle seg støttet."
+        }
+      ],
+      "inventoryTitle": "Vis Meditasjonssteiner",
+      "foundDialogue": "Bra jobbet! Bring steinene tilbake til wellness-coachen.",
+      "returnDialogue": "Flott, disse trinnene er ditt fundament. Men før vi fortsetter, la meg dele noe viktig."
+    },
+    "fabric": {
+      "altText": "Stoffstrimmel",
+      "title": "EMPATI-REFLEKSJONER",
+      "reflections": [
+        "Folk skjuler ofte følelsene sine bak korte svar — empati hjelper deg å legge merke til det som ikke sies.",
+        "Du trenger ikke å fikse emosjoner; å anerkjenne dem er allerede støtte.",
+        "Å forstå noens følelser styrker tillit og samarbeid."
+      ],
+      "inventoryTitle": "Vis Refleksjonsstoff",
+      "foundDialogue": "Flott funn! Gå tilbake til wellness-coachen.",
+      "returnDialogue": "Perfekt. Disse refleksjonene vil veilede dine neste øvelser."
+    }
+  },
+  "systemDialogues": {
+    "findStones": {
+      "shelf": "Det er mange ting her… men ikke det du trenger. Kanskje i fontenen.",
+      "fountain": "Ingenting her. Kanskje sjekk under en av meditasjonsputene."
+    },
+    "findFabric": {
+      "bookshelf": "Bare bøker og diffusorer her. Kanskje sjekk de sammenbrettede teppene ved siden av bokhyllen.",
+      "blankets": "Fortsatt ingenting. Kanskje se nær yogamattene mot veggen."
+    },
+    "empathyComplete": "Du har fullført empati-ferdigheten! Du er i ferd med å bli et sterkere, mer støttende lagmedlem.",
+    "readyNextSkill": "Klar til å gå videre til neste ferdighet?"
+  },
+  "completion": {
+    "title": "Opplæring fullført!",
+    "message": "Du har vellykket fullført empati-ferdighetsmodulen.",
+    "buttonText": "Tilbake til hovedmenyen"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "____",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

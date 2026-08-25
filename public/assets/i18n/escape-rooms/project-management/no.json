@@ -1,0 +1,300 @@
+{
+  "loading": "Laster Prosjektledelse...",
+  "intro": {
+    "title": "Prosjektledelse",
+    "paragraphs": [
+      "Velkommen til direktørens kontor. Du har nettopp fått overlevert et pågående prosjekt — en sikkerhetsoppgradering av bygningen — og du er nå prosjektlederen som har ansvaret.",
+      "Den forrige prosjektlederen etterlot en fremdriftsrapport. På papiret er alt i orden. I virkeligheten er ting mer rotete enn det ser ut.",
+      "Jobb deg gjennom det som ligger på pulten din: fremdriftsrapporten, bunken med notater, laptopen, telefonen og kalenderen. Teammedlemmet ditt Caroline kommer innom til slutt."
+    ],
+    "buttonText": "Begynn å lede"
+  },
+  "characters": {
+    "caroline": {
+      "name": "Caroline",
+      "dialogues": {
+        "step1": "Hei, har du et minutt? Jeg har akkurat lest fremdriftsrapporten…",
+        "step2": "Har du fått tid til å lese den? Den sier at alt er klart og i rute… Men ærlig talt, jeg er ikke helt sikker på hva jeg egentlig skal gjøre.",
+        "step3": "Å? Hva har du bestemt?",
+        "step4": "Det hjelper veldig. Men bare så du vet det… det er mange meninger om prosjektet. Jeg hørte noen fra IT snakke om biometri og ansiktsgjenkjenning og alt mulig avansert.",
+        "step5": "Det høres bra ut. Men jeg må si, jeg er litt bekymret. Vi har ikke kommet langt så langt, og tiden bare går.",
+        "step6": "*Gulp*",
+        "step7": "Greit, jeg kan ta det på meg.",
+        "step8": "Skal bli. Takk!"
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Selvfølgelig, kom inn.",
+    "step2": "Du er ikke den eneste. Det har ikke vært klart. Men det fikser jeg nå.",
+    "step3": "Vi vil fokusere på å få på plass et grunnleggende sikkerhetsoppsett. Et nytt adgangskontrollsystem, kameraovervåking og et alarmsystem. Vi får ikke alt på plass med en gang, men i det minste har vi nå en klar retning.",
+    "step4": "Det har jeg også hørt. Jeg har fått e-poster fra flere som vil dele synet sitt. Men akkurat nå må vi fokusere på de mest presserende sakene. Vi må gjøre noe med situasjonen i resepsjonen. Når det er fikset, går vi videre med andre oppgaver.",
+    "step5": "Du har god grunn til å være bekymret. Det er jeg også. Fristen for første fase av prosjektet er om to uker.",
+    "step6": "Så, dette er hva vi gjør: vi fokuserer på det vi realistisk kan levere innen den tid. Å få et nytt adgangssystem på plass er førsteprioritet. Jeg trenger din hjelp til å kontakte leverandører.",
+    "step7": "Flott. Og husk, kom og snakk med meg med en gang hvis noe er uklart. Det er min jobb å sørge for at alle vet hva som skjer og hva de skal gjøre.",
+    "step8": ""
+  },
+  "puzzles": {
+    "progressReport": {
+      "introThought1": "Det er ingen drømmesituasjon å overta et prosjekt som allerede er i gang… Men jeg kan ikke dvele ved det nå.",
+      "introThought2": "Fremdriftsrapporten bør inneholde alt jeg trenger å vite. Best jeg leser den.",
+      "reportTitle": "Sammendrag av fremdriftsrapport",
+      "reportProject": "Prosjekt: Sikkerhetsoppgradering av bygning",
+      "reportAnne": "Prosjektleder: Anne",
+      "reportHandover": "Overlevering til: (username)",
+      "reportStatus": "Overordnet status",
+      "reportStatusText": "Arbeidet med sikkerhetsoppgraderingen av bygningen går som forventet. Ingen umiddelbare tiltak kreves på dette stadiet.",
+      "reportSection1Title": "Mål",
+      "reportSection1Text": "Prosjektets mål og omfang er klart og fullt ut forstått av alle involverte.",
+      "reportSection2Title": "Fremdrift og tidslinje",
+      "reportSection2Text": "Arbeidet skrider frem som planlagt. Det er ingen forsinkelser på nåværende stadium.",
+      "reportSection3Title": "Interessenter",
+      "reportSection3Text": "Det er god kommunikasjon med interessentene. Interessentene er samkjørte; ingen vesentlige bekymringer er reist.",
+      "reportSection4Title": "Ressurser",
+      "reportSection4Text": "Teamet har tilstrekkelig kapasitet til å levere på planlagte aktiviteter.",
+      "closeButton": "Lukk rapport",
+      "closedThought1": "Anne ledet prosjektet før meg. Det høres ut som hun hadde alt under kontroll.",
+      "closedThought2": "Men rapporten var ganske vag… Hvis jeg overtar prosjektet, kommer jeg til å trenge en mye bedre oversikt enn dette."
+    },
+    "objective": {
+      "introThought": "Dette må være Annes notater. Det virker som om prosjektets mål ikke var så klart likevel… I hvert fall ikke så klart som rapporten påsto.",
+      "introDialogue": "For at prosjektet skal ha mulighet til å lykkes, trenger det et klart mål. Kanskje jeg kan lage ett ut av disse rotete notatene…",
+      "instruction": "Klikk på notatene som hører hjemme i et klart prosjektmål.",
+      "notes": [
+        {
+          "id": "access",
+          "text": "Adgangskort til dører",
+          "correct": true,
+          "thought": "Et konkret tiltak for å forbedre bygningssikkerheten."
+        },
+        {
+          "id": "cameras",
+          "text": "Kameraer ved inngang og i korridorer",
+          "correct": true,
+          "thought": "Overvåking av bygningen er essensielt."
+        },
+        {
+          "id": "alarm",
+          "text": "Alarmsystem for bygningen",
+          "correct": true,
+          "thought": "Å ha et alarmsystem vil forhindre innbrudd."
+        },
+        {
+          "id": "guards",
+          "text": "Vakter 24/7",
+          "correct": false,
+          "thought": "Dette kan være overdrevet…"
+        },
+        {
+          "id": "biometrics",
+          "text": "Biometriske skannere på alle dører",
+          "correct": false,
+          "thought": "Veldig avansert og dyrt. Jeg tror det er bedre å starte med noe grunnleggende."
+        },
+        {
+          "id": "scarecrows",
+          "text": "Skrem bort tyvene",
+          "correct": false,
+          "thought": "Hvordan? Med fugleskremsler?"
+        },
+        {
+          "id": "hood",
+          "text": "Kameraer i hele nabolaget",
+          "correct": false,
+          "thought": "Jeg tror ikke det er lovlig…"
+        }
+      ],
+      "preliminaryObjective": "Innføre et grunnleggende sikkerhetssystem for bygningen, med adgangskontroll, kameraovervåking og alarmsystem.",
+      "objectiveDoneThought": "Mye bedre! Målet definerer nå tydelig hva vi må gjøre.",
+      "deadlinePrompt": "Bare én ting mangler. Når bør fristen være?",
+      "deadlineOptions": {
+        "asap": "Så snart som mulig",
+        "threeMonths": "Innen 3 måneder"
+      },
+      "deadlineTooltip": "«Så snart som mulig» er ikke en klar frist. Det høres bra ut… men når er det? Det er åpent for tolkning.",
+      "finalObjective": "Innføre et grunnleggende sikkerhetssystem for bygningen, med adgangskontroll, kameraovervåking og alarmsystem, innen 3 måneder.",
+      "completionThought": "Et konkret og målbart mål! Det definerer tydelig hva som må gjøres, og innen når. Dette burde være nyttig for planlegging og oppfølging av fremdrift i prosjektet.",
+      "submitButton": "Lagre mål",
+      "continueButton": "Fortsett"
+    },
+    "stakeholders": {
+      "introThought": "Jeg ser at noen interessenter har sendt meg e-post... Forhåpentligvis bare gode ting. Annes rapport sa jo at ingen bekymringer var reist…",
+      "emails": [
+        {
+          "id": "reception",
+          "sender": "Resepsjonen",
+          "subject": "Manuelle innsjekkinger drukner oss",
+          "body": "Hei (username),\n\nJeg tar kontakt på vegne av oss i resepsjonen. Vi bruker mye tid på å manuelt sjekke folk inn og ut av bygningen. Vi føler oss helt overveldet!\n\nNoen ganger har vi lange køer og, forståelig nok, mange irriterte folk. Og selv om vi gjør vårt beste, ender noen opp med å snike i køen og bare gå inn, noe som betyr at vi ikke klarer å holde full kontroll over hvem som kommer og går.\n\nVi trenger virkelig et bedre system snart. Som, i går!",
+          "thought": "Dette er et reelt problem for resepsjonen, men også for bygningssikkerheten generelt. Kanskje et nytt adgangssystem bør være førsteprioritet…"
+        },
+        {
+          "id": "accounting",
+          "sender": "Amina fra regnskap",
+          "subject": "Vær oppmerksom på kostnader",
+          "body": "Kjære (username),\n\nVi går gjennom kvartalsbudsjetter. Før du går for langt med å kjøpe nye sikkerhetssystemer, vil vi oppfordre deg til å være bevisst på kostnader. Vi anbefaler at du velger noe som ikke krever mye investering på forhånd.",
+          "thought": "Å ha kostnadsbevissthet er alltid godt råd. Men det vil være noen kostnader, uansett hva vi bestemmer oss for. Jeg håper de ikke har urealistiske forventninger…"
+        },
+        {
+          "id": "it",
+          "sender": "IT-avdelingen",
+          "subject": "Gå avansert — biometri",
+          "body": "Hei, jeg hørte du har fått ansvaret for sikkerhetsoppgraderingen av bygningen.\n\nSikkerhet er ikke det den var for 20 år siden, og sikkerhetssystemer blir raskt utdaterte. Jeg har sett på noen av de nyere systemene, og det finnes virkelig gode alternativer der ute.\n\nVi oppfordrer deg til å gå for noe avansert fra starten. Se på biometri og ansiktsgjenkjenningsprogramvare. Det ville eliminert menneskelige feil fullstendig. Det koster mye, men er nesten idiotsikkert.",
+          "thought": "Biometri? Ansiktsgjenkjenning? Jeg er sikker på at det ville forbedret bygningssikkerheten, men jeg tror det også kunne være mange ulemper. Det ville sannsynligvis også koste mye mer enn regnskap ville vært fornøyd med…"
+        },
+        {
+          "id": "robn",
+          "sender": "Rob N. Steely",
+          "subject": "Alt er i orden",
+          "body": "Ærlig talt, alt fungerer flott som det er i dag. Ingen grunn til å endre noe :)",
+          "thought": "Hmmm…"
+        }
+      ],
+      "replyPrompt": "Hvordan bør jeg svare dem?",
+      "replyIntro": "Kjære interessenter, takk for alle de verdifulle innspillene.",
+      "replyOptions": [
+        {
+          "id": "keepHappy",
+          "shorthand": "Prøv å holde alle fornøyde",
+          "full": "Vi vil prøve å balansere alles ønsker og innfri alles forventninger.",
+          "correct": false,
+          "reflection": "Dette høres bra ut i teorien… Men det er en konflikt mellom interessentenes ønsker, og det er umulig å gjøre alle fornøyde. Faktisk kunne det etterlate oss uten en klar retning."
+        },
+        {
+          "id": "advanced",
+          "shorthand": "Velg en avansert løsning",
+          "full": "Vi har bestemt oss for å kjøpe et avansert biometrisk system for å håndtere bygningstilgang.\n\nVi vil snart begynne å kontakte leverandører. Vi ber om tålmodighet ettersom denne prosessen vil ta noe tid.",
+          "correct": false,
+          "reflection": "Dette kunne løse langsiktige sikkerhetsbekymringer… Men det er dyrt og ignorerer resepsjonens behov for en rask løsning. Det løser ikke det mest presserende problemet."
+        },
+        {
+          "id": "wait",
+          "shorthand": "Vent på mer informasjon",
+          "full": "Vi har bestemt oss for å utsette kjøpet av nye sikkerhetssystemer til vi har mer informasjon.",
+          "correct": false,
+          "reflection": "Å vente og se kan virke som et trygt alternativ. Men resepsjonen sliter allerede med dagens system. Hvis jeg utsetter dette, kan situasjonen bli verre."
+        },
+        {
+          "id": "startSimple",
+          "shorthand": "Start enkelt, utvid senere",
+          "full": "Vi har bestemt oss for å kjøpe et grunnleggende adgangssystem for bygningen for å imøtekomme de mest presserende behovene.\n\nVi vil vurdere situasjonen etter en tid og legge til mer avanserte sikkerhetsfunksjoner ved behov.",
+          "correct": true,
+          "reflection": "Dette kan fungere. Det adresserer problemet i resepsjonen, men tar også kostnader i betraktning. Vi kan alltid oppgradere til noe mer avansert senere. Ikke perfekt for alle, men vi kan gå videre."
+        }
+      ],
+      "sendButton": "Send",
+      "inboxTitle": "Innboks",
+      "backToInbox": "Tilbake til innboks",
+      "composeTitle": "Skriv svar",
+      "readAllMessage": "Alle e-poster lest — bestem deg nå for et svar."
+    },
+    "scopeCreep": {
+      "phoneIntroThought": "Telefonen ringer…",
+      "callerIntro": "? fra markedsføring:\n«Jeg hørte at du har ansvaret for sikkerhetsoppgraderingene av bygningen. Saken er — vi har fått noen klager om venterommene våre. Å pusse dem opp ville virkelig forbedre besøkendes opplevelse. Og det gir mening å gjøre det nå som vi allerede gjør andre oppgraderinger. Hva tenker du, kunne du inkludert det i prosjektet ditt?»",
+      "replyOptions": [
+        {
+          "id": "include",
+          "text": "Si ja og inkluder det",
+          "correct": false,
+          "feedback": "Oppussinger ville forbedret bygningen totalt sett. Men det vil ikke forbedre bygningssikkerheten. Hvis jeg fortsetter å si ja til ting som dette, kommer jeg til å ha mye arbeid på beina."
+        },
+        {
+          "id": "reject",
+          "text": "Avvis det direkte",
+          "correct": false,
+          "feedback": "Å si nei beskytter omfanget. Men jeg burde nok anerkjenne forslaget. Ellers kan jeg fremstå som avvisende."
+        },
+        {
+          "id": "ifTime",
+          "text": "Legg det til hvis tiden tillater",
+          "correct": false,
+          "feedback": "Dette høres ut som et godt kompromiss. Men det gjør omfanget uklart. Og det kan føre til mer arbeid og flere forespørsler senere."
+        },
+        {
+          "id": "acknowledge",
+          "text": "Anerkjenn, men omdiriger",
+          "correct": true,
+          "feedback": ""
+        }
+      ],
+      "correctReplyText": "Det er et godt poeng. Men i dette prosjektet må vi holde fokus på sikkerhetsoppgraderinger. Kanskje du kan ta det opp med ledelsen som et eget initiativ?",
+      "npcResponse": "Det gir mening. Jeg foreslår det til ledelsen. Takk.",
+      "afterCallThought1": "Jeg svarte på en konstruktiv og vennlig måte, samtidig som jeg beskyttet prosjektets omfang.",
+      "afterCallThought2": "Det er alltid utfordrende når folk vil legge til mer ting i et prosjekt. Det kan være fristende å si ja. Men å ikke beskytte omfanget vil ofte resultere i mye arbeid, og for lite tid og ressurser til å fullføre det.",
+      "continueButton": "Fortsett"
+    },
+    "calendar": {
+      "deadlineThought": "Fristen… er om to uker?!\n\nDen fristen må være for første fase av prosjektet. Det er ingen sjanse for at hele prosjektet kan ferdigstilles på to uker.\n\nJeg må sørge for at alle vet hva de skal gjøre!",
+      "continueButton": "Fortsett"
+    },
+    "caroline": {
+      "knockPrompt": "Det banker på døren…",
+      "arrivalDialogue": "Noen banker på døren. Det høres ut som et av teammedlemmene dine.",
+      "continueButton": "Fortsett"
+    },
+    "objectiveTitle": "Formuler et klart mål",
+    "finalObjectiveTitle": "Endelig mål"
+  },
+  "hints": {
+    "readReport": "Det ligger en utskrevet fremdriftsrapport på pulten. Klikk for å lese den.",
+    "afterReport": "Annes rapport er vag. Prøv bunken med notater på pulten.",
+    "objective": "Velg notatene som beskriver et konkret, relevant prosjektmål.",
+    "pickDeadline": "Velg en klar, spesifikk frist for prosjektet.",
+    "closeReport": "Les rapporten, og klikk deretter Lukk rapport for å fortsette.",
+    "objectiveWrong": "Ikke helt — les Annes rapport på nytt og velg notatene som passer til et klart mål.",
+    "emails": "Klikk på laptopen for å sjekke e-poster fra interessentene.",
+    "readEmails": "Les alle fire e-postene, og velg deretter hvordan du svarer.",
+    "chooseReply": "Velg svaret som balanserer de motstridende behovene.",
+    "phone": "Telefonen ringer. Ta den.",
+    "phoneReply": "Velg hvordan du svarer på forespørselen om utvidelse av omfang.",
+    "calendar": "Veggkalenderen er verdt et blikk.",
+    "doorKnock": "Noen banker. Klikk på døren for å slippe dem inn.",
+    "talkCaroline": "Snakk med Caroline for å fullføre rommet.",
+    "completion": "Døren er åpen. Klikk for å gå ut.",
+    "default": "Se deg rundt på direktørens kontor etter interaktive objekter."
+  },
+  "completion": {
+    "title": "Prosjektledelse fullført",
+    "message": "Gratulerer, du har fullført fluktrommet om prosjektledelse!\n\nI rommet måtte du overta som prosjektleder for et allerede pågående prosjekt. På papiret virket alt å gå bra. Men snart oppdaget du flere pågående problemer. Prosjektets mål var uklart, interessentene hadde motstridende behov, det var risiko for omfangsutglidning og mye tidspress.\n\nHeldigvis tok du utfordringene på strak arm. Du bestemte deg for et spesifikt, relevant og målbart mål, oppnåelig innen en bestemt tidsramme. Du valgte en retning for prosjektet, og balanserte interessentenes behov. Da noen ba deg utvide omfanget, motsto du og beskyttet omfanget på en konstruktiv måte. Til slutt tok du grep ved å prioritere realistisk og kommunisere tydelig med teamet ditt.\n\nGodt jobbet!",
+    "buttonText": "Forlat kontoret"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "puzzlesCompleted": "oppgaver",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar",
+    "exitDoorTitle": "Dør"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  },
+  "items": {
+    "progressReport": {
+      "inventoryTitle": "Fremdriftsrapport"
+    },
+    "notes": {
+      "inventoryTitle": "Bunke med notater"
+    },
+    "phone": {
+      "inventoryTitle": "Phone"
+    },
+    "calendar": {
+      "inventoryTitle": "Kalender"
+    }
+  },
+  "answerOverlay": {
+    "title": "Svar"
+  }
+}

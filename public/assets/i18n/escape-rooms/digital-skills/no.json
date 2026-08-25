@@ -1,0 +1,433 @@
+{
+  "loading": "Laster Digitale Ferdigheter...",
+  "intro": {
+    "title": "Digitale Ferdigheter",
+    "paragraphs": [
+      "Du er ansatt i et lite selskap. I dag kom du tidlig til IT-avdelingen for å sette opp noen ting før resten av teamet ankommer.",
+      "Serverrommet er svakt opplyst, med serverskap langs veggene og blinkende lys overalt. Det står et skrivebord med skjerm, tastatur, smarttelefon og en kaffekopp. Du legger merke til en passordserver med ødelagte kabler, en makulator i hjørnet, noen plakater på veggen, en frakkknagg med en bag, og en dør med en 'Gone Fishing'-lapp.",
+      "Dagens oppgaver innebærer å styrke selskapets digitale sikkerhet, håndtere din profesjonelle tilstedeværelse i sosiale medier og takle potensielle cybertrusler. La oss komme i gang!"
+    ],
+    "buttonText": "Gå inn i IT-avdelingen"
+  },
+  "systemDialogues": {
+    "selfTalk": "Greit, la meg ta en titt rundt. Serveren ser ut til å være nede - de kablene ser ødelagte ut. Jeg bør fikse det først. Jeg må også sjekke e-postene mine og oppdatere sosiale medier. La meg starte med serveren.",
+    "cablesBroken": "Disse kablene er tydelig ødelagte. Jeg må fjerne dem og koble til de nye jeg ser på gulvet.",
+    "cablesRemoved": "Bra, de ødelagte kablene er ute. Nå skal jeg ta de nye kablene fra gulvet.",
+    "cablesUnwrapped": "De nye kablene er pakket ut og klare. På tide å koble dem til serveren.",
+    "cablesConnected": "Serveren starter opp! Jeg kan se påloggingsskjermen nå. La meg logge på.",
+    "serverLoggedIn": "Jeg er inne! Det er et varsel om passordretningslinjer og en ventende passordrevisjon. Jeg bør kjøre revisjonen nå.",
+    "passwordAuditComplete": "Passordrevisjonen er ferdig! Nå skal jeg sjekke e-postene på skjermen.",
+    "monitorOpened": "Her er e-postklienten. Det er et varsel fra IT-sikkerhet. La meg lese det først.",
+    "securityNoticeRead": "Bra, jeg har notert IT-sikkerhetsretningslinjene. La meg arkivere dette og sjekke de andre e-postene.",
+    "emailsArrived": "Fem nye e-poster har kommet. Jeg må sjekke hver enkelt nøye - noen kan være phishing-forsøk.",
+    "phishingComplete": "Utmerket arbeid! Alle e-postene er sortert riktig. Nå skal jeg sjekke smarttelefonen for sosiale medier-oppgavene våre.",
+    "phoneOpened": "Sosiale medier-appen er åpen. Det er et varsel om et utkast som må gjennomgås før publisering.",
+    "postReviewed": "Innlegget i sosiale medier er publisert! Men vent - det er noen kommentarer som trenger moderering.",
+    "commentsComplete": "Alle kommentarer er håndtert på passende måte. Flott jobb med håndteringen av sosiale medier!",
+    "stickyNoteFound": "Det er en post-it-lapp på serveren som sier 'Server-password: OfficeAccess!' - det er en sikkerhetsrisiko! Jeg bør makulere den.",
+    "stickyNoteShredded": "Bra valg! Passordlappen er trygt destruert.",
+    "stickyNoteKept": "Hmm, å la passord ligge på post-it-lapper er en sikkerhetsrisiko, men du valgte å beholde den foreløpig.",
+    "usbFound": "Det er en USB-pinne i denne skuffen. Den er umerket - kan være hva som helst.",
+    "usbPluggedIn": "Å nei! USB-en inneholdt skadevare! Systemet er infisert. Jeg må ringe IT for hjelp umiddelbart.",
+    "usbIgnored": "Smart valg! Aldri koble til ukjente USB-enheter. Du vet aldri hva de kan inneholde.",
+    "malwareRecovery": "IT-støtte har eksternt fjernet infeksjonen. Det var nært! Husk: aldri koble til ukjente USB-enheter.",
+    "adPopup": "En blinkende reklame dukket nettopp opp: 'Gratulerer! Du har vunnet en GRATIS laptop! Klikk her for å hente!' Dette ser mistenkelig ut...",
+    "adClicked": "Å nei! Det var en ondsinnet reklame. Skadevare har blitt lastet ned. Jeg må ringe IT for hjelp!",
+    "adClosed": "God instinkt! Det var tydelig en ondsinnet reklame. Lukk alltid mistenkelige popup-vinduer umiddelbart.",
+    "systemUpdate": "Et varsel dukket opp: 'Kritisk sikkerhetsoppdatering tilgjengelig. Denne oppdateringen tetter kjente sårbarheter.'",
+    "updateInstalled": "Flott avgjørelse! Å holde programvare oppdatert er et av de beste forsvarene mot cybertrusler.",
+    "updatePostponed": "Det er risikabelt! Å utsette sikkerhetsoppdateringer gjør systemet sårbart for kjente angrep. Systemet er kompromittert! Ringer IT for hjelp...",
+    "wifiPrompt": "Wi-Fi-tilkoblingen ble avbrutt. To nettverk er tilgjengelige: 'Free_WiFi' og 'Internal Company WiFi'.",
+    "wifiFree": "Å nei! 'Free_WiFi' var et falskt hotspot. Dataene dine har blitt avlyttet! Ringer IT for hjelp...",
+    "wifiCompany": "Bra valg! Koble alltid til pålitelige, selskapsleverte nettverk. Offentlig eller ukjent WiFi kan brukes for man-in-the-middle-angrep.",
+    "allComplete": "Fantastisk arbeid! Du har håndtert alle digitale sikkerhetsoppgaver, administrert sosiale medier og navigert cybertruslene. Døren er nå åpen - du kan forlate IT-avdelingen!",
+    "leafletRead": "En informativ brosjyre om beste praksis for cybersikkerhet. Bra å gjennomgå, men ingenting handlingsrettet akkurat nå.",
+    "coffeeMugRead": "En kaffekopp med '#CaffeineAndContent' skrevet på den. Noen i denne avdelingen har sans for humor!",
+    "passwordListFound": "En liste med gamle passord i den nederste skuffen. Dette er en sikkerhetsrisiko, men det er ikke en del av dine nåværende oppgaver.",
+    "mouseInWall": "Det er et hull i veggen... og en bitteliten mus som sitter ved en miniatyr-datamaskin! Selv musene er digitale her.",
+    "bagContents": "Inni bagen: en tannbørste og en notatblokk. Noen var forberedt på en lang natt med servervedlikehold!",
+    "posterPadlock": "En plakat som viser en hengelås med teksten 'Lock it or Lose it'. God sikkerhetspåminnelse!",
+    "posterCat": "En motivasjonsplakat med en katt som henger fra en gren: 'Hang in there!' Klassisk IT-avdelingsdekor.",
+    "posterHandshake": "En plakat som viser et håndtrykk med teksten 'Trust is Built, Not Given'. Relevant også for digital sikkerhet!"
+  },
+  "puzzles": {
+    "passwordAudit": {
+      "title": "Passordrevisjon",
+      "instructions": "Gå gjennom hvert passord og klassifiser det som Sterkt eller Svakt basert på beste sikkerhetspraksis.",
+      "passwords": {
+        "0": {
+          "value": "123456",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! '123456' er et av de vanligste og mest gjettede passordene.",
+          "feedbackWrong": "Tenk igjen. '123456' er et sekvensielt tallmønster - en av de første kombinasjonene angripere prøver."
+        },
+        "1": {
+          "value": "MyDogBella",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! Personlig informasjon som kjæledyrnavn er lett å oppdage gjennom sosiale medier.",
+          "feedbackWrong": "Tenk på at kjæledyrnavn kan finnes på sosiale medier. Personlig informasjon gir svake passord."
+        },
+        "2": {
+          "value": "qwerty",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! 'qwerty' er et tastaturmønster som vises i hver passordordbok.",
+          "feedbackWrong": "Se på tastaturet ditt - 'qwerty' er bare den øverste raden av bokstaver. Det er et av de vanligste passordene."
+        },
+        "3": {
+          "value": "m4R!timE$un_92",
+          "correct": "strong",
+          "feedbackCorrect": "Riktig! Dette passordet bruker store, små bokstaver, tall, spesialtegn og er 14 tegn langt.",
+          "feedbackWrong": "Se nøyere - dette passordet har store, små bokstaver, tall, spesialtegn og god lengde."
+        },
+        "4": {
+          "value": "password",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! 'password' er bokstavelig talt ordet 'passord' - det mest åpenbare valget en angriper ville prøve.",
+          "feedbackWrong": "Ordet 'password' er det første en angriper ville prøve. Det gir null sikkerhet."
+        },
+        "5": {
+          "value": "P@ssw0rd!",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! Til tross for spesialtegn bruker 'P@ssw0rd!' åpenbare bokstav-til-symbol-erstatninger som finnes i alle hackere-ordbøker.",
+          "feedbackWrong": "Vanlige bokstav-erstatninger (a->@, o->0) gjør ikke et passord sterkt. Hackere kjenner disse mønstrene."
+        },
+        "6": {
+          "value": "111111",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! Gjentatte tegn gir i hovedsak ingen sikkerhet.",
+          "feedbackWrong": "Et passord med alle samme tegn er trivielt enkelt å knekke. Det har ingen kompleksitet i det hele tatt."
+        },
+        "7": {
+          "value": "g!T7k^2p#rL0",
+          "correct": "strong",
+          "feedbackCorrect": "Riktig! Dette er en virkelig tilfeldig blanding av tegn uten gjenkjennelige mønstre - utmerket sikkerhet.",
+          "feedbackWrong": "Dette passordet har ingen ordbok-ord, ingen mønstre, blandet store/små, tall og symboler. Det gjør det sterkt."
+        },
+        "8": {
+          "value": "OfficeAccess!",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! Selv om det har en stor bokstav og spesialtegn, bruker det vanlige ordbokord som er lett å knekke.",
+          "feedbackWrong": "Ordbokord kombinert er sårbare for ordbokangrep, selv med stor bokstav og utropstegn."
+        },
+        "9": {
+          "value": "iloveyou",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! 'iloveyou' er en vanlig frase som vises blant topp 10 på de fleste passordlister.",
+          "feedbackWrong": "Vanlige fraser og uttrykk er blant de første tingene passordknekkere prøver."
+        },
+        "10": {
+          "value": "admin",
+          "correct": "weak",
+          "feedbackCorrect": "Riktig! 'admin' er en standardlegitimasjon - det aller første en angriper prøver når han får tilgang til et system.",
+          "feedbackWrong": "'admin' er et standard brukernavn OG passord på mange systemer. Det er det første angripere sjekker."
+        }
+      },
+      "buttonStrong": "Sterkt",
+      "buttonWeak": "Svakt",
+      "progressLabel": "Passord",
+      "answerOverlay": "De sterke passordene er: 'm4R!timE$un_92' og 'g!T7k^2p#rL0'. Alle andre er svake på grunn av vanlige mønstre, ordbok-ord, personlig info eller enkle erstatninger.",
+      "allCorrect": "Utmerket! Du identifiserte korrekt alle sterke og svake passord. Du har en stor forståelse av passordsikkerhet!"
+    },
+    "phishing": {
+      "title": "Phishing-deteksjon",
+      "instructions": "Gå gjennom hver e-post og avgjør om det er en legitim e-post eller et phishing-forsøk. Hold musepekeren over lenker og avsenderadresser for å inspisere dem.",
+      "emails": {
+        "0": {
+          "subject": "Faktura forfalt - Umiddelbar betaling kreves",
+          "sender": "finance@yourcompany-payment.com",
+          "senderReal": "finance@yourcompany-payment.com (IKKE ditt ekte selskapsdomene!)",
+          "preview": "Kjære ansatt, vennligst finn vedlagt din forfalt faktura. Klikk på lenken nedenfor for å behandle betaling umiddelbart for å unngå tjenestebrudd.",
+          "linkText": "Behandle betaling nå",
+          "linkReal": "http://malicious-site.ru/payment",
+          "correct": "phishing",
+          "feedbackCorrect": "Riktig! Avsenderdomenet 'yourcompany-payment.com' er ikke ditt ekte selskapsdomene, og lenken fører til et .ru-domene. Klassiske phishing-indikatorer!",
+          "feedbackWrong": "Se nøyere på avsenderadressen - 'yourcompany-payment.com' er IKKE ditt ekte selskapsdomene. Betalingslenken fører også til et mistenkelig .ru-domene."
+        },
+        "1": {
+          "subject": "Møteagenda for team - Torsdag kl 14",
+          "sender": "project.lead@yourcompany.com",
+          "senderReal": "project.lead@yourcompany.com (verifisert intern adresse)",
+          "preview": "Hei team, her er agendaen for vårt torsdagsmøte: 1) Q3-gjennomgang, 2) Nye prosjekttildelinger, 3) Teamlunsjplanlegging. Vennligst gjennomgå og legg til punkter.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Riktig! Dette er fra en verifisert intern adresse, har en normal forretningstone, ingen mistenkelige lenker, og skaper ikke hastverk eller ber om sensitiv informasjon.",
+          "feedbackWrong": "Denne e-posten er fra en verifisert intern adresse (@yourcompany.com), diskuterer rutinemessig forretning, har ingen mistenkelige lenker og ber ikke om sensitive data. Den er legitim."
+        },
+        "2": {
+          "subject": "Passordet ditt utløper - Handling kreves",
+          "sender": "support@it-secure.net",
+          "senderReal": "support@it-secure.net (IKKE din IT-avdeling!)",
+          "preview": "Selskapets passord utløper om 24 timer. Klikk nedenfor for å verifisere identiteten din og tilbakestille passordet umiddelbart for å beholde tilgangen.",
+          "linkText": "Tilbakestill passord nå",
+          "linkReal": "http://credential-harvest.xyz/reset",
+          "correct": "phishing",
+          "feedbackCorrect": "Riktig! Din IT-avdeling ville aldri sendt passordtilbakestillinger fra 'it-secure.net', og tilbakestillingslenken går til et mistenkelig .xyz-domene. Dette er innsamling av legitimasjon!",
+          "feedbackWrong": "Din ekte IT-avdeling bruker @yourcompany.com, ikke 'it-secure.net'. Tilbakestillingslenken for passord fører til et .xyz-domene - dette er et forsøk på å samle inn legitimasjon."
+        },
+        "3": {
+          "subject": "Delt dokument: Q3 budsjettrapport",
+          "sender": "noreply@drive.cloudservice.com",
+          "senderReal": "noreply@drive.cloudservice.com (selskapets autoriserte skytjenesteleverandør)",
+          "preview": "Din kollega Sarah Johnson har delt 'Q3 Budget Report.xlsx' med deg. Du kan få tilgang via selskapets skydashboard.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Riktig! Dette er fra selskapets autoriserte skytjenesteleverandør, nevner en spesifikk kollega ved navn og refererer til et legitimt forretningsdokument.",
+          "feedbackWrong": "Denne e-posten er fra selskapets autoriserte skyleverandør (drive.cloudservice.com), nevner en spesifikk kollega og refererer til et rutinemessig forretningsdokument. Den er legitim."
+        },
+        "4": {
+          "subject": "Du vant en premie! Hent din belønning",
+          "sender": "hr@your-company-rewards.com",
+          "senderReal": "hr@your-company-rewards.com (IKKE selskapets HR-avdeling!)",
+          "preview": "Gratulerer! Du har blitt valgt for vårt Employee Appreciation-program. Hent ditt $500-gavekort ved å klikke på lenken nedenfor før det utløper!",
+          "linkText": "Hent ditt gavekort",
+          "linkReal": "http://bonusgift.biz/claim",
+          "correct": "phishing",
+          "feedbackCorrect": "Riktig! 'your-company-rewards.com' er ikke ditt ekte selskapsdomene, og lenken fører til 'bonusgift.biz'. Uoppfordrede premievarsler er en klassisk phishing-taktikk!",
+          "feedbackWrong": "Avsenderen bruker 'your-company-rewards.com', ikke ditt faktiske selskapsdomene. Premielenken går til 'bonusgift.biz'. Uoppfordrede belønninger er et stort phishing-faresignal."
+        }
+      },
+      "buttonPhishing": "Phishing",
+      "buttonLegitimate": "Legitim",
+      "hoverSender": "Avsender: ",
+      "hoverLink": "Lenkemål: ",
+      "progressLabel": "E-post",
+      "answerOverlay": "Phishing-e-poster: 'Faktura forfalt' (falskt domene + .ru-lenke), 'Passord utløper' (it-secure.net + .xyz-lenke), 'Du vant en premie' (falskt domene + bonusgift.biz). Legitime: 'Møteagenda for team' (intern adresse), 'Delt dokument' (autorisert skyleverandør).",
+      "allCorrect": "Perfekt e-postsortering! Du identifiserte korrekt alle phishing-forsøk og legitime e-poster."
+    },
+    "socialPost": {
+      "title": "Gjennomgang av innlegg i sosiale medier",
+      "instructions": "Gå gjennom utkastet til sosiale medier-innlegget og fiks tre problemer før publisering.",
+      "draftCaption": "Vi er begeisra å annonsre vår nye prodkutlinje! Sjekk det ut på vår nettside.",
+      "fixedCaption": "Vi er begeistret for å annonsere vår nye produktlinje! Innovasjon møter kvalitet i hvert stykke. Besøk nettsiden vår for å utforske hele kolleksjonen og oppdage hva som er nytt.",
+      "captionLabel": "Bildetekst",
+      "captionInstruction": "Bildeteksten har skrivefeil og er for kort. Velg den korrigerte versjonen.",
+      "captionOptions": {
+        "a": "Vi er begeisra å annonsre vår nye prodkutlinje! Sjekk det ut på vår nettside.",
+        "b": "Vi er begeistret for å annonsere vår nye produktlinje! Innovasjon møter kvalitet i hvert stykke. Besøk nettsiden vår for å utforske hele kolleksjonen og oppdage hva som er nytt.",
+        "c": "Vi er begeistret for å annonsere vår nye produktlinje! Sjekk det ut på vår nettside.",
+        "d": "NY PRODKUTLINJE!!! KJØP NÅ!!! KLIKK LENKE I BIO!!!"
+      },
+      "captionCorrect": "b",
+      "captionFeedbackCorrect": "Riktig! Bildeteksten fikser alle skrivefeil og legger til engasjerende detaljer som oppmuntrer til interaksjon.",
+      "captionFeedbackWrong": "Det er ikke det beste alternativet. Se etter versjonen som fikser ALLE skrivefeil og legger til profesjonelle, engasjerende detaljer.",
+      "imageLabel": "Bilde",
+      "imageInstruction": "Hvilket bilde skal følge dette innlegget? Velg passende bilde og alt-tekst.",
+      "imageOptions": {
+        "a": "Et uskarpt bilde uten alt-tekst",
+        "b": "Et høykvalitets produktbilde med alt-tekst: 'Visning av ny produktlinje med våre nyeste design'",
+        "c": "Et tilfeldig stockbilde av en solnedgang med alt-tekst: 'Vakker solnedgang'",
+        "d": "Et konkurrent-produktbilde uten alt-tekst"
+      },
+      "imageCorrect": "b",
+      "imageFeedbackCorrect": "Riktig! Et høykvalitets, relevant bilde med beskrivende alt-tekst forbedrer både engasjement og tilgjengelighet.",
+      "imageFeedbackWrong": "Tenk på hva som gjør et godt sosiale medier-bilde: relevant, høykvalitet og med riktig alt-tekst for tilgjengelighet.",
+      "hashtagLabel": "Hashtags",
+      "hashtagInstruction": "Hvilket sett med hashtags er mest passende for dette innlegget?",
+      "hashtagOptions": {
+        "a": "#NewProdcut #Exicting #Company",
+        "b": "#NewProduct #Innovation #Quality #CompanyName #ProductLaunch",
+        "c": "#followforfollow #like4like #viral #trending",
+        "d": "#NewProduct #Innovation"
+      },
+      "hashtagCorrect": "b",
+      "hashtagFeedbackCorrect": "Riktig! Disse hashtagene er korrekt stavet, relevante for innholdet og inkluderer en god blanding av merkevare og emnetagger.",
+      "hashtagFeedbackWrong": "Gode hashtags bør være korrekt stavet, relevante for innholdet og inkludere en blanding av merkevare og emnetagger.",
+      "publishButton": "Publiser",
+      "scheduleButton": "Planlegg",
+      "stepLabel": "Fiks",
+      "answerOverlay": "Bildetekst: Fiks skrivefeil og legg til engasjerende detaljer (alternativ B). Bilde: Høykvalitets produktbilde med beskrivende alt-tekst (alternativ B). Hashtags: Korrekt stavet, relevant blanding av merkevare og emnetagger (alternativ B).",
+      "allCorrect": "Innlegget er klart til publisering! Alle tre problemer er fikset."
+    },
+    "comments": {
+      "title": "Moderering av kommentarer i sosiale medier",
+      "instructions": "Gå gjennom hver kommentar og velg passende handling: Svar på ekte kundeinteraksjoner, Slett spam og ondsinnet innhold.",
+      "comments": {
+        "0": {
+          "author": "@CoffeeLover42",
+          "text": "Elsker kaffen deres! Beste blanding jeg noen gang har prøvd!",
+          "correct": "reply",
+          "feedbackCorrect": "Riktig! Positive kundetilbakemeldinger fortjener et profesjonelt, takknemlig svar for å bygge fellesskap.",
+          "feedbackWrong": "Dette er ekte positiv tilbakemelding fra en kunde. Du bør svare for å engasjere deg med fellesskapet ditt!",
+          "suggestedReply": "Tusen takk! Vi er glade for at du liker den. Følg med for nye sesongblandinger som kommer snart!"
+        },
+        "1": {
+          "author": "@TotallyNotABot",
+          "text": "Klikk her for 10.000 GRATIS følgere!!! www.fake-followers.com",
+          "correct": "delete",
+          "feedbackCorrect": "Riktig! Dette er åpenbar spam med en mistenkelig lenke. Slett den umiddelbart for å beskytte følgerne dine.",
+          "feedbackWrong": "Dette er tydelig spam - det promoterer en mistenkelig lenke for falske følgere. Den bør slettes."
+        },
+        "2": {
+          "author": "@BudgetMinded",
+          "text": "Ærlig talt, prisene deres er for høye. Jeg fant samme kvalitet for halvparten av prisen andre steder.",
+          "correct": "reply",
+          "feedbackCorrect": "Riktig! Selv negativ tilbakemelding bør håndteres profesjonelt. Det viser at du verdsetter alle kundemeninger.",
+          "feedbackWrong": "Negativ tilbakemelding bør håndteres, ikke slettes. En profesjonell respons viser at du bryr deg om kundebekymringer.",
+          "suggestedReply": "Vi setter pris på din ærlige tilbakemelding. Kvalitet er vår prioritet, og vi vil gjerne diskutere hvordan vi kan tjene deg bedre. Send oss en DM!"
+        }
+      },
+      "buttonReply": "Svar",
+      "buttonDelete": "Slett",
+      "progressLabel": "Kommentar",
+      "answerOverlay": "'Elsker kaffen deres!' -> Svar (positivt engasjement). 'Klikk her for gratis følgere' -> Slett (spam). 'For dyrt' -> Svar (håndter bekymringer profesjonelt).",
+      "allCorrect": "Utmerket moderering! Du vet hvordan du skal engasjere deg med ekte tilbakemelding og fjerne skadelig innhold."
+    },
+    "stickyNote": {
+      "title": "Sikkerhetsrisiko: Eksponert passord",
+      "instructions": "Du fant en post-it-lapp med et serverpassord skrevet på. Dette er en sikkerhetsrisiko.",
+      "question": "Post-it-lappen sier: 'Server-password: OfficeAccess!'. Bør du ødelegge denne lappen?",
+      "options": {
+        "yes": "Ja - Makuler den umiddelbart",
+        "no": "Nei - La den være som referanse"
+      },
+      "correctAnswer": "yes",
+      "feedbackCorrect": "Riktig! Passord skal aldri skrives ned og legges åpent. Å makulere den eliminerer risikoen.",
+      "feedbackWrong": "Å la passord ligge åpent er en stor sikkerhetssårbarhet. Hvem som helst som kommer inn i dette rommet kan se det."
+    },
+    "usb": {
+      "title": "Ukjent USB-enhet",
+      "instructions": "Du fant en umerket USB-pinne i skuffen.",
+      "question": "Hva bør du gjøre med denne ukjente USB-enheten?",
+      "options": {
+        "plugin": "Koble den til for å sjekke innholdet",
+        "leave": "La den være - ikke koble til ukjente enheter"
+      },
+      "correctAnswer": "leave",
+      "feedbackCorrect": "Riktig! Ukjente USB-enheter kan inneholde skadevare. Koble aldri til en enhet du ikke stoler på.",
+      "feedbackWrong": "Det var risikabelt! Ukjente USB-enheter er en vanlig angrepsvektor for skadevare."
+    },
+    "ad": {
+      "title": "Mistenkelig reklame",
+      "instructions": "En blinkende popup-annonse dukket opp på skjermen.",
+      "question": "'Gratulerer! Du har vunnet en GRATIS laptop! Klikk her for å hente!' Hva gjør du?",
+      "options": {
+        "click": "Klikk for å hente premien",
+        "close": "Lukk annonsen umiddelbart"
+      },
+      "correctAnswer": "close",
+      "feedbackCorrect": "Riktig! Uoppfordrede premie-popups er nesten alltid ondsinnet. Lukk dem umiddelbart uten å klikke.",
+      "feedbackWrong": "Det var en ondsinnet annonse! Klikk aldri på uoppfordrede premie- eller belønnings-popups."
+    },
+    "systemUpdate": {
+      "title": "Systemoppdatering tilgjengelig",
+      "instructions": "Et systemvarsel har dukket opp.",
+      "question": "'Kritisk sikkerhetsoppdatering tilgjengelig. Denne oppdateringen tetter kjente sårbarheter.' Hva gjør du?",
+      "options": {
+        "install": "Installer oppdateringen nå",
+        "postpone": "Utsett - jeg gjør det senere"
+      },
+      "correctAnswer": "install",
+      "feedbackCorrect": "Riktig! Sikkerhetsoppdateringer bør installeres raskt for å beskytte mot kjente sårbarheter.",
+      "feedbackWrong": "Å utsette sikkerhetsoppdateringer gjør systemet utsatt for kjente trusler!"
+    },
+    "wifi": {
+      "title": "Wi-Fi-tilkobling",
+      "instructions": "Wi-Fi-tilkoblingen din ble avbrutt. To nettverk er tilgjengelige.",
+      "question": "Hvilket nettverk bør du koble til?",
+      "options": {
+        "free": "Free_WiFi (Åpent nettverk, uten passord)",
+        "company": "Internal Company WiFi (Sikret, krever legitimasjon)"
+      },
+      "correctAnswer": "company",
+      "feedbackCorrect": "Riktig! Bruk alltid selskapets sikrede nettverk. Åpne/ukjente WiFi-nettverk kan brukes for dataavlytting.",
+      "feedbackWrong": "Åpne WiFi-nettverk kan være falske hotspots satt opp for å avlytte dataene dine!"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Se rundt i rommet. Serverkablene ser ødelagte ut - start der.",
+    "fixCables": "Klikk på de ødelagte kablene på serveren for å begynne å fikse dem.",
+    "serverBoot": "Serveren starter opp. Vent på påloggingsskjermen.",
+    "passwordAudit": "Klassifiser hvert passord som Sterkt eller Svakt basert på kompleksitet, lengde og mønstre.",
+    "openMonitor": "Klikk på skrivebordsskjermen for å sjekke e-postene dine.",
+    "readSecurityNotice": "Les IT-sikkerhetsvarslet først, deretter arkiver det.",
+    "phishing": "Sjekk avsenderadresser og lenkemål nøye. Hold musepekeren over for å inspisere.",
+    "openPhone": "Klikk på smarttelefonen for å sjekke sosiale medier-oppgavene dine.",
+    "socialPost": "Gå gjennom innleggets utkast og fiks bildeteksten, bildet og hashtags.",
+    "comments": "Svar på ekte kundeinteraksjoner og slett spam.",
+    "stickyNote": "Det er en post-it-lapp med passord på serveren. Det er en sikkerhetsrisiko!",
+    "miniPuzzles": "Vær årvåken for sikkerhetstrusler - USB-enheter, popups, oppdateringer og WiFi-nettverk.",
+    "allComplete": "Alt er ferdig! Opplæringen er fullført!",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se rundt i IT-avdelingen etter ting som trenger oppmerksomhet."
+  },
+  "items": {
+    "leaflet": {
+      "popupTitle": "Beste praksis for cybersikkerhet",
+      "popupContent": [
+        "1. Bruk sterke, unike passord for hver konto.",
+        "2. Aktiver tofaktorautentisering der det er mulig.",
+        "3. Klikk aldri på mistenkelige lenker eller last ned ukjente vedlegg.",
+        "4. Hold all programvare og systemer oppdatert.",
+        "5. Rapporter mistenkelig aktivitet til IT umiddelbart."
+      ]
+    },
+    "coffeeMug": {
+      "popupTitle": "Kaffekopp",
+      "popupContent": [
+        "#CaffeineAndContent",
+        "Det uoffisielle mottoet til IT-avdelingen."
+      ]
+    },
+    "passwordList": {
+      "popupTitle": "Liste over gamle passord",
+      "popupContent": [
+        "En krøllete liste over gamle passord funnet i den nederste skuffen.",
+        "Dette er nøyaktig den typen ting som ikke skal eksistere på en sikker arbeidsplass."
+      ]
+    },
+    "mouseInWall": {
+      "popupTitle": "En liten oppdagelse",
+      "popupContent": [
+        "Det er en bitteliten mus som sitter ved en miniatyr-datamaskin inne i et hull i veggen!",
+        "Selv musene i denne avdelingen er teknologikyndige."
+      ]
+    },
+    "bag": {
+      "popupTitle": "Innholdet i bagen",
+      "popupContent": [
+        "Inne i bagen finner du en tannbørste og en notatblokk.",
+        "Noen var forberedt på en lang natt med servervedlikehold!"
+      ]
+    },
+    "itNotice": {
+      "title": "IT-sikkerhetsvarsel",
+      "domainLine": "Vårt selskapsdomene er",
+      "malwareWarning": "Skadevare har blitt oppdaget på dette systemet. Filene og dataene dine kan være i fare.",
+      "domainNotice": "Vårt selskapsdomene er <strong>&#64;yourcompany.com</strong>. Ethvert annet domene som hevder å være fra vårt selskap er potensielt svindel."
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har vellykket fullført alle digitale ferdighetsoppgaver! Du fikset serveren, reviderte passord, identifiserte phishing-e-poster, administrerte sosiale medier profesjonelt og håndterte flere cybertrusler. Du er nå bedre rustet til å navigere det digitale arbeidsplassen trygt og effektivt!",
+    "buttonText": "Forlat rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "callIT": "Ring IT for hjelp",
+    "itRecovery": "IT-støtte rydder opp infeksjonen...",
+    "archive": "Arkiver",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

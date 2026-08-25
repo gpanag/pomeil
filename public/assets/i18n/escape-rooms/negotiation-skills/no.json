@@ -1,0 +1,279 @@
+{
+  "loading": "Laster Forhandlingsferdigheter...",
+  "intro": {
+    "title": "Forhandlingsferdigheter",
+    "paragraphs": [
+      "Du er en uavhengig konsulent for arrangementsplanlegging. Du har akkurat ankommet et møterom for å forhandle en kontrakt med en potensiell kunde for en serie bedriftsarrangementer.",
+      "Du vet ennå ikke mye om kunden, og du føler deg litt uforberedt. Men møtet er i ferd med å starte, og det er ikke tid til å trekke seg nå.",
+      "Ta et dypt pust og gå inn i intervjurommet..."
+    ],
+    "buttonText": "Gå inn i intervjurommet"
+  },
+  "characters": {
+    "bilal": {
+      "name": "Bilal Ahmed",
+      "dialogues": {
+        "phase1_1": "God morgen. Vær så god, sett deg. Jeg er Bilal Ahmed, leder for Bedriftsarrangementer hos Meridian Holdings. Takk for at du kom i dag.",
+        "phase1_2": "Vi ser etter et eksternt byrå som kan håndtere planleggingen og koordineringen av hele arrangementsserien for dette regnskapsåret. Det er et ganske betydelig prosjekt.",
+        "phase1_3": "Det blir fire store arrangementer i løpet av året: en team-building-tur, en produktlansering, vår årlige gala og en interessentkonferanse. Hver av dem krever en unik tilnærming.",
+        "phase1_4": "Naturligvis vil vi sikre at vi jobber med noen som forstår omfanget. Vårt budsjett for hele pakken er rundt 6 000 euro.",
+        "phase1_5": "Vi er forpliktet til å holde oss innenfor budsjett, særlig i tidlige stadier av samarbeidet. Kostnadseffektivitet er svært viktig for oss.",
+        "phase1_6": "Jeg burde nevne at andre byråer også vurderes. Vi vil sammenligne forslag før vi tar en endelig beslutning.",
+        "phase1_7": "...",
+        "phase1_8": "Vel, jeg tror det dekker det grunnleggende for nå. Vi tar alt i betraktning og kommer tilbake snart. Forhandlingene vil fortsette.",
+        "phase1_9": "Takk for tiden din. Jeg holder kontakten.",
+        "phase1_exit": "Bilal reiser seg, samler mappen sin og går ut av rommet.",
+        "phase4_1": "Velkommen tilbake. Jeg har hatt sjansen til å gå gjennom de første notatene fra vår tidligere samtale. Skal vi fortsette der vi slapp?",
+        "phase4_2": "La oss snakke om tall. Hva foreslår du for hele arrangementsserien?",
+        "phase4_3": "Det er betydelig over vårt opprinnelige budsjett. Kan du hjelpe meg å forstå spesifikasjonen?",
+        "phase4_4": "Jeg skjønner. Og forsikringen og logistikken?",
+        "phase4_5": "Hmm. Jeg setter pris på åpenheten. Men vi har fortsatt budsjettbegrensninger å forholde oss til.",
+        "phase4_6": "...",
+        "phase4_7": "Jeg må innrømme, stillheten ga meg et øyeblikk til å tenke. Du har et godt poeng om kvalitet og kostnad.",
+        "phase4_8": "Likevel er det andre byråer som tilbyr å gjøre dette for mindre. Hvorfor skulle vi velge deg?",
+        "phase4_9": "Det er et godt poeng. Erfaring teller. La meg tenke på dette.",
+        "phase4_10": "Hva om vi ikke kan forplikte oss til hele 8 500 på forhånd?",
+        "phase4_11": "Det kan fungere. En faseinndelt betaling ville hjelpe med kontantstrømmen vår.",
+        "phase4_12": "Interessant. Fortell meg mer om disse arrangementskonseptene.",
+        "phase4_13": "Jeg må si, ideen om å kombinere team-building-tur og produktlansering er kreativ. Det kan spare oss tid og ressurser.",
+        "phase4_14": "Du har gitt meg mye å vurdere. La meg diskutere dette med styret.",
+        "phase4_15": "Jeg tror vi har et solid grunnlag for å gå videre. La oss avtale et oppfølgingsmøte for å fullføre vilkårene.",
+        "phase4_final": "Det har vært en glede å forhandle med deg. Jeg kan se du kom forberedt denne gangen. Jeg ser frem til å samarbeide.",
+        "completion": "Bra jobbet! Treningen er fullført!",
+        "default": "La oss fortsette diskusjonen vår."
+      }
+    }
+  },
+  "phase1": {
+    "options": {
+      "1a": "God morgen, herr Ahmed. Takk for at du tok meg imot. Jeg er begeistret for muligheten.",
+      "1b": "Hei. Takk for at du fikk meg inn. Jeg er klar til å høre hva du trenger.",
+      "2a": "Det høres ut som en flott mulighet. Jeg vil veldig gjerne være en del av det.",
+      "2b": "Forstått. Kan du fortelle meg mer om de spesifikke arrangementene?",
+      "3a": "Det er imponerende. Jeg har håndtert lignende arrangementer før, men ikke i denne skalaen.",
+      "3b": "Fire arrangementer? Det er ganske mye. Jeg skal gjøre mitt beste for å levere på alle.",
+      "4a": "6 000 euro... det virker rimelig. Jeg tror vi kan finne en løsning.",
+      "4b": "Jeg setter pris på at du deler budsjettet på forhånd. Jeg skal ha det i bakhodet når vi diskuterer videre.",
+      "5a": "Absolutt, kostnadseffektivitet er viktig for meg også.",
+      "5b": "Jeg forstår. Jeg prøver alltid å levere maksimal verdi innenfor det gitte budsjettet.",
+      "6a": "Jeg er trygg på at min tilnærming vil skille seg ut sammenlignet med andres.",
+      "6b": "Det er forståelig. Konkurranse holder alle på tå hev.",
+      "7a": "(Vær stille og vent)",
+      "7b": "Så... skal vi diskutere detaljene videre?",
+      "8a": "Takk. Jeg ser frem til å høre fra deg.",
+      "8b": "Før du går, er det noe annet jeg burde vite om prosjektet?"
+    },
+    "selfTalkAfter": "Puh... Det var ubehagelig. Jeg var ikke forberedt i det hele tatt. Jeg visste ikke kostnadene mine, jeg hadde ingen strategi, og jeg gikk bare med på alt. Jeg må gjøre det bedre hvis jeg får en ny sjanse."
+  },
+  "phase2": {
+    "faxSound": "Du hører faksmaskinen surre. Noe kommer gjennom...",
+    "pickUpFax": "Du går bort og henter den utskrevne transkripsjonen av ditt tidligere møte med Bilal.",
+    "transcriptTitle": "Møtetranskripsjon",
+    "transcriptIntro": "Gå gjennom transkripsjonen av din tidligere samtale. Klikk på de uthevede frasene for å reflektere over hva du gikk glipp av.",
+    "phrases": {
+      "1": {
+        "text": "planlegging og koordinering av hele arrangementsserien",
+        "thought": "Hva inkluderer det egentlig? Jeg spurte aldri om detaljer om omfang, leveranser eller forventninger for hvert arrangement. Jeg burde ha avklart dette før vi diskuterte pris."
+      },
+      "2": {
+        "text": "budsjett på rundt 6 000 euro",
+        "thought": "Vil jeg gå med overskudd, underskudd, eller gå i null? Jeg aksepterte dette tallet uten å vite mine egne kostnader. Jeg må regne ut min minimumspris før jeg forhandler."
+      },
+      "3": {
+        "text": "holde seg innenfor budsjett, særlig i tidlige stadier",
+        "thought": "Er de bekymret for totalkostnaden, eller for kontantstrømmen? Denne forskjellen er viktig. Kanskje jeg kan foreslå en betalingsstruktur som adresserer deres bekymring."
+      },
+      "4": {
+        "text": "andre byråer vurderes også",
+        "thought": "Jeg kunne ha forklart hvorfor de spesifikt bør velge meg. Hva er mitt unike verdiforslag? Jeg må forberede en overbevisende sak."
+      },
+      "5": {
+        "text": "Forhandlingene vil fortsette",
+        "thought": "Ikke få panikk! Det betyr at døren fortsatt er åpen. Jeg har en ny sjanse. Jeg må bruke denne tiden klokt for å forberede meg."
+      }
+    },
+    "allPhrasesReflected": "Nå ser jeg alle mulighetene jeg gikk glipp av. Jeg må regne ut minimumsprisen og forberede en ekte strategi før Bilal kommer tilbake.",
+    "transitionToPhase3": "På tide å forberede seg. La meg se meg om i rommet etter verktøy som kan hjelpe meg å klargjøre meg for andre runde."
+  },
+  "phase3": {
+    "spreadsheet": {
+      "title": "Kostnadsoverslag - Arrangementsserie",
+      "intro": "Gå gjennom kostnadsspesifikasjonen for å bestemme minimumsprisen din.",
+      "rows": {
+        "labor": "Arbeid: 185 timer x 35 euro/t",
+        "laborTotal": "6 475 euro",
+        "software": "Programvarelisenser for arrangementsstyring",
+        "softwareTotal": "400 euro",
+        "insurance": "Ansvarsforsikring",
+        "insuranceTotal": "250 euro",
+        "logistics": "Logistikk og transport",
+        "logisticsTotal": "500 euro",
+        "overhead": "Kontorkostnader og kommunikasjon",
+        "overheadTotal": "150 euro",
+        "total": "Totalkostnad",
+        "totalAmount": "7 775 euro"
+      },
+      "conclusion": "Å akseptere 6 000 euro ville bety et tap på 1 775 euro. Jeg må forhandle for minst 7 775 for å gå i null, og helst mer for å få overskudd. Jeg burde foreslå 8 500 for å ha rom."
+    },
+    "hourglass": {
+      "title": "Timeglasset",
+      "description": "Du snur timeglasset på vinduskarmen og ser sanden flyte sakte.",
+      "reflection": "Stillhet er et kraftig forhandlingsverktøy. Når den andre siden gir et tilbud eller en uttalelse, trenger jeg ikke svare umiddelbart. En strategisk pause viser selvtillit og gir meg tid til å tenke. Jeg burde bruke stillhet bevisst i neste samtale."
+    },
+    "folder": {
+      "title": "Win-Win-løsninger",
+      "description": "Du åpner mappen og tre dokumenter flyr ut på bordet.",
+      "documents": {
+        "payment": {
+          "title": "Betalingsalternativer",
+          "content": "I stedet for å kreve hele beløpet på forhånd, kunne jeg foreslå en faseinndelt betalingsstruktur: et innledende depositum, midtveisutbetalinger, og en sluttbetaling ved fullført arbeid. Dette adresserer kundens bekymringer for kontantstrøm samtidig som jeg får betalt."
+        },
+        "concepts": {
+          "title": "Idéer for arrangementskonsept",
+          "content": "Jeg kunne foreslå kreative arrangementskonsepter som tilfører verdi uten å øke kostnaden: kombinere team-building-turen med produktlanseringsforberedelse, bruke galaen som en nettverksmulighet for interessentengasjement, og skape et samlet tema for alle fire arrangementer."
+        },
+        "resume": {
+          "title": "Selskapets CV",
+          "content": "Jeg burde fremheve min erfaring: 12 år i arrangementsplanlegging, 50+ leverte bedriftsarrangementer, spesialisering i styring av flere arrangementsserier, og 95 % kundetilfredshetsrate. Dette begrunner prisingen min."
+        }
+      }
+    },
+    "posters": {
+      "eye": {
+        "title": "Se",
+        "content": "Fokuser på taleren. Hold øyekontakt. Se etter ikke-verbale signaler – kroppsspråk, ansiktsuttrykk og gester avslører ofte mer enn ord."
+      },
+      "ear": {
+        "title": "Hør",
+        "content": "Lytt før du snakker. Ikke avbryt. La den andre personen fullføre tanken sin helt før du former svaret ditt."
+      },
+      "mouth": {
+        "title": "Snakk",
+        "content": "Omformuler den andre personens utsagn for å vise forståelse. Still åpne spørsmål for å utforske deres behov og interesser dypere."
+      }
+    },
+    "allPrepComplete": "Jeg har gjort hjemmeleksen min. Jeg kjenner kostnadene mine, har kreative løsninger klare, jeg forstår kraften i stillhet og aktiv lytting. Jeg er klar for andre runde.",
+    "bilalReturns": "Døren åpnes. Bilal går tilbake inn i rommet og setter seg."
+  },
+  "phase4": {
+    "options": {
+      "1a": "Absolutt. Jeg har hatt litt tid til å forberede meg, og jeg er trygg på at vi kan finne en god avtale.",
+      "1b": "Ja, la oss fortsette. Jeg har et klarere bilde nå.",
+      "2a": "Basert på min detaljerte kostnadsanalyse vil hele arrangementsserien komme på 8 500 euro. Dette dekker arbeid, programvare, forsikring, logistikk og overhead, med en liten margin for kvalitetssikring.",
+      "2b": "Jeg ser på rundt 8 500 euro for hele pakken. Det er min profesjonelle vurdering.",
+      "3a": "Selvfølgelig. Den største delen er 185 timer profesjonelt arbeid til 35 euro per time, totalt 6 475. Så er det 400 for programvarelisenser, 250 for ansvarsforsikring, 500 for logistikk, og 150 for overhead.",
+      "3b": "Absolutt. Arbeid utgjør hoveddelen på 6 475, mens resten dekker essensielle driftskostnader som programvare, forsikring og logistikk.",
+      "4a": "Forsikringen beskytter oss begge mot ansvar under arrangementer, og logistikken dekker transport av utstyr og materialer på tvers av fire steder. Disse er ikke forhandlingsbare for kvalitetslevering.",
+      "4b": "Forsikringen er 250 og logistikken er 500. Begge er essensielle for å sikre smidig og trygg gjennomføring av arrangementer.",
+      "5a": "(Pause bevisst, hold øyekontakt og vent)",
+      "5b": "Jeg forstår. Og jeg vil sikre at vi finner et tall som fungerer for oss begge.",
+      "6a": "(Fortsett den strategiske stillheten litt lenger)",
+      "6b": "(Nikk ettertenksomt og vent på at Bilal skal fortsette)",
+      "7a": "Jeg setter pris på det. Kvalitetsarrangementer krever ordentlig investering, og å kutte hjørner koster ofte mer i det lange løp.",
+      "7b": "Takk. Jeg tror på transparent prising fordi det bygger tillit fra starten.",
+      "8a": "Fordi jeg bringer 12 års spesialisert erfaring innen styring av flere arrangementsserier, en 95 % kundetilfredshetsrate, og evnen til å skape sammenhengende opplevelser på tvers av alle fire arrangementer. Billigere er ikke alltid bedre når selskapets omdømme står på spill.",
+      "8b": "Erfaring og pålitelighet. Jeg har levert over 50 bedriftsarrangementer og spesialiserer meg nettopp på denne typen årlange serier. Min historikk taler for seg selv.",
+      "9a": "Jeg foreslår en faseinndelt betalingsstruktur. Et innledende 30 % depositum, så betalinger ved hver milepæl for arrangementene, med sluttbalansen ved fullført siste arrangement.",
+      "9b": "Vi kunne strukturere betalingene over prosjektets tidslinje, slik at dere ikke forplikter dere til hele beløpet på en gang.",
+      "10a": "Nettopp. Og det samsvarer med deres tidligere bekymring om å håndtere kostnader i tidlige stadier. Dere ville kun betale 2 550 på forhånd, med resten spredt over året.",
+      "10b": "Det gir oss begge fleksibilitet. Dere håndterer kontantstrømmen, og jeg kan planlegge ressurser effektivt.",
+      "11a": "Jeg har også forberedt noen kreative arrangementskonsepter. For eksempel kunne vi kombinere team-building-turen med produktlanseringsforberedelse, og skape en to-i-ett-opplevelse som maksimerer investeringen deres.",
+      "11b": "Jeg har noen idéer for selve arrangementene som kunne tilføre ekstra verdi uten å øke budsjettet.",
+      "12a": "Turen kunne inkludere samarbeidende produktbrainstorming-økter. Og galaen kunne fungere som en plattform for interessentengasjement med et samlet tema som går gjennom alle fire arrangementer.",
+      "12b": "Hvert arrangement ville bygge på det forrige, og skape en narrativ bue for hele året. Det er en helhetlig tilnærming.",
+      "13a": "Takk. Og fra det dere har delt, kan jeg se at Meridian Holdings verdsetter både effektivitet og innvirkning. Det er nettopp den typen kunde jeg jobber best med.",
+      "13b": "Jeg setter pris på det. Kreative løsninger er det som skiller en god arrangementsplanlegger fra andre."
+    },
+    "betterChoice": "a",
+    "betterChoiceLabel": "Mer strategisk tilnærming",
+    "acceptableChoiceLabel": "Akseptabel tilnærming"
+  },
+  "puzzles": {
+    "transcript": {
+      "title": "Analyse av møtetranskripsjon",
+      "instructions": "Klikk på hver uthevet frase for å reflektere over hva du kunne gjort annerledes.",
+      "feedback": {
+        "allComplete": "Utmerket analyse! Du har identifisert alle de viktigste øyeblikkene du gikk glipp av under den første forhandlingen."
+      }
+    },
+    "negotiation": {
+      "title": "Den forberedte forhandlingen",
+      "feedback": {
+        "perfect": "Enestående forhandling! Du tok alle de beste strategiske valgene.",
+        "good": "Gode forhandlingsferdigheter! Du tok hovedsakelig strategiske valg.",
+        "acceptable": "Anstendig forhandling. Det er rom for å forbedre din strategiske tilnærming."
+      }
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "activeListeningTitle": "Aktiv lytting"
+  },
+  "hints": {
+    "phase1": "Klikk på Bilal Ahmed for å starte forhandlingen.",
+    "phase1Conversation": "Fortsett samtalen med Bilal ved å velge et svaralternativ.",
+    "phase2Fax": "Du hører en lyd fra faksmaskinen. Klikk på den for å undersøke.",
+    "phase2Transcript": "Les gjennom transkripsjonen og klikk på alle uthevede fraser.",
+    "phase3Laptop": "Klikk på laptopen for å gå gjennom kostnadsspesifikasjonen.",
+    "phase3Hourglass": "Klikk på timeglasset i vinduskarmen.",
+    "phase3Folder": "Klikk på mappen på bordet.",
+    "phase3Posters": "Klikk på plakatene på veggen.",
+    "phase3General": "Se deg om i rommet etter forberedelsesverktøy. Sjekk laptopen, timeglasset, mappen og plakatene.",
+    "phase4": "Klikk på Bilal Ahmed for å starte den forberedte forhandlingen.",
+    "phase4Conversation": "Fortsett forhandlingen ved å velge et svaralternativ.",
+    "completion": "Treningen er fullført!",
+    "default": "Se deg om i rommet etter ledetråder."
+  },
+  "systemDialogues": {
+    "enterRoom": "Her er jeg. Intervjurommet. Enkelt, men profesjonelt. La meg ta plass og vente på at kunden skal komme.",
+    "bilalArrives": "Døren åpnes. En velkledd mann i marineblå dress går selvsikkert inn og setter seg foran meg.",
+    "phase3Start": "Greit, Bilal har gått, men sa at forhandlingene vil fortsette. Jeg må bruke denne tiden til å forberede meg. La meg se meg om i rommet etter alt som kan hjelpe.",
+    "prepItem": "Bra. Det er nyttig informasjon.",
+    "allPrepDone": "Jeg føler meg mye bedre forberedt nå. Jeg kjenner tallene mine, jeg har en strategi, og jeg er klar for aktiv lytting. Nå må jeg bare vente på at Bilal skal komme tilbake.",
+    "phase4Intro": "Døren åpnes igjen. Bilal går tilbake inn med mappen sin og setter seg. Dette er sjansen min. La oss gjøre dette riktig."
+  },
+  "items": {
+    "transcript": {
+      "popupTitle": "Møtetranskripsjon",
+      "header": "Transkripsjon av ditt tidligere møte med Bilal Ahmed"
+    },
+    "spreadsheet": {
+      "popupTitle": "Kostnadsoverslag-regneark"
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har vellykket demonstrert kunsten å forhandle! Fra et uforberedt første møte til en strategisk, godt forberedt andre forhandling, har du lært viktigheten av forberedelse, kjenne minimumsprisen din, bruke stillhet strategisk, aktiv lytting og finne win-win-løsninger.",
+    "buttonText": "Gå ut av rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "chooseReply": "Velg svaret ditt:",
+    "optionA": "Alternativ A",
+    "optionB": "Alternativ B",
+    "clickToReflect": "Klikk for å reflektere",
+    "reflected": "Reflektert",
+    "phrasesRemaining": "fraser igjen",
+    "closeTranscript": "Lukk",
+    "closeSpreadsheet": "Lukk",
+    "prepProgress": "Forberedelsesfremgang",
+    "itemsFound": "elementer fullført",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

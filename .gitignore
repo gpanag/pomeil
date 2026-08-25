@@ -41,3 +41,69 @@ testem.log
 .DS_Store
 Thumbs.db
 image-audit/
+
+# ---------------------------------------------------------------------------
+# Public-release exclusions (added 2026-08-25 for the open-source publication)
+# Anything below is deliberately kept out of the public repository: partner
+# material, internal correspondence, local tooling, or files too large for git.
+# ---------------------------------------------------------------------------
+
+# Partner source material and internal project correspondence
+/public/assets/scenarios/
+/documents/
+/feedback/
+/fixes_additions/
+/new_additions/
+/POMEIL Curriculum - Individual modules (PDF)/
+/CLAUDE.md
+
+# Partner-authored PDFs — not cleared for redistribution
+/public/assets/modules/
+/public/assets/newsletters/
+
+# Backend configuration: the committed file is proxy.conf.example.json
+/src/proxy.conf.json
+
+# Local ML tooling and model weights (far over GitHub's file-size limit)
+/.vqascore-model/
+/.sam3-test/
+/.playwright-mcp/
+/yolo11x.pt
+*.pt
+*.safetensors
+*.bin
+
+# Local agent/editor state
+/.claude/
+
+# Image-production pipeline: bound to a specific local GPU rig
+/*.py
+/deep_validation_report.json
+/hotspot_audit_report.json
+/hotspot_audit_results.json
+/hotspot_audit_vlm_results.json
+/hotspot_corrections.json
+/image_validation_results.json
+/hotspot_overlays/
+/HOTSPOT_CORRECTIONS.md
+/IMAGE_VALIDATION_REPORT.md
+/TESTING_METHODOLOGY.md
+
+# Working screenshots and scratch captures
+/e2e-screenshots/
+/*.png
+/*.jpg
+/*.jpeg
+!/public/**/*.png
+!/public/**/*.jpg
+/public/assets/schoolyard-placeholder.jpg
+/validation_report.json
+/strict_validation_report.json
+/questionnaire-snapshot.yml
+/hotspot_audit_report.md
+
+# Third-party stock photography (Rawpixel and similar) — licensed for use in the
+# platform but not for redistribution under this repository's MIT licence.
+/public/assets/images/image_1.jpg
+/public/assets/images/notebook-bg.jpg
+/public/assets/images/paper-texture.jpg

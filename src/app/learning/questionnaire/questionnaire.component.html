@@ -1,0 +1,96 @@
+<div class="questionnaire-container">
+  <h1>{{"LEARNING_PAGE.QUESTIONNAIRE.TITLE" | translate}}</h1>
+  <p class="subtitle">{{"LEARNING_PAGE.QUESTIONNAIRE.PURPOSE" | translate}}</p>
+  <p class="scale-hint">{{"LEARNING_PAGE.QUESTIONNAIRE.SCALE_HINT" | translate}}</p>
+
+  <div *ngIf="!submitted" class="questions-list">
+
+    <!-- Section 1: Demographics -->
+    <mat-card class="section-card">
+      <h2 class="section-title">
+        {{"LEARNING_PAGE.QUESTIONNAIRE.SECTION_DEMOGRAPHICS" | translate}}
+        <span class="required-mark">*</span>
+      </h2>
+
+      <div class="demographic-block">
+        <p class="question-text">{{"LEARNING_PAGE.QUESTIONNAIRE.GENDER_LABEL" | translate}}</p>
+        <mat-radio-group [(ngModel)]="answers[k('gender')]" class="radio-group horizontal">
+          <mat-radio-button *ngFor="let opt of genderOptions" [value]="opt.value">
+            {{ opt.labelKey | translate }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <div class="demographic-block">
+        <p class="question-text">{{"LEARNING_PAGE.QUESTIONNAIRE.AGE_LABEL" | translate}}</p>
+        <mat-radio-group [(ngModel)]="answers[k('ageGroup')]" class="radio-group horizontal">
+          <mat-radio-button *ngFor="let opt of ageOptions" [value]="opt.value">
+            {{ opt.labelKey | translate }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </mat-card>
+
+    <!-- Sections 2-7: Likert questions -->
+    <mat-card *ngFor="let section of sections; trackBy: trackBySection" class="section-card">
+      <h2 class="section-title">
+        {{ section.titleKey | translate }}
+        <span class="required-mark">*</span>
+      </h2>
+
+      <div *ngFor="let q of section.questions; trackBy: trackByQuestion" class="likert-question">
+        <p class="question-text">{{ q.textKey | translate }}</p>
+        <div class="likert-scale">
+          <span class="likert-label-end likert-label-low">
+            {{"LEARNING_PAGE.QUESTIONNAIRE.LIKERT_1" | translate}}
+          </span>
+          <div class="likert-options">
+            <button type="button"
+                    *ngFor="let v of likertScale; trackBy: trackByLikert"
+                    class="likert-option"
+                    [class.selected]="isLikertSelected(q.key, v)"
+                    (click)="setLikert(q.key, v)"
+                    [attr.aria-label]="('LEARNING_PAGE.QUESTIONNAIRE.LIKERT_' + v) | translate">
+              <span class="likert-num">{{ v }}</span>
+            </button>
+          </div>
+          <span class="likert-label-end likert-label-high">
+            {{"LEARNING_PAGE.QUESTIONNAIRE.LIKERT_5" | translate}}
+          </span>
+        </div>
+      </div>
+    </mat-card>
+
+    <p class="required-note">{{"LEARNING_PAGE.QUESTIONNAIRE.REQUIRED_NOTE" | translate}}</p>
+
+    <div class="actions">
+      <button mat-raised-button color="primary" [disabled]="!allRequiredAnswered" (click)="submit()">
+        {{"LEARNING_PAGE.QUESTIONNAIRE.SUBMIT" | translate}}
+      </button>
+      <button mat-stroked-button (click)="goToFlow()">
+        {{"LEARNING_PAGE.QUESTIONNAIRE.BACK_TO_FLOW" | translate}}
+      </button>
+    </div>
+
+    <p *ngIf="!allRequiredAnswered" class="incomplete-hint">
+      {{"LEARNING_PAGE.QUESTIONNAIRE.INCOMPLETE_HINT" | translate}}
+    </p>
+  </div>
+
+  <div *ngIf="submitted" class="submitted-message">
+    <mat-card>
+      <mat-card-content class="success-content">
+        <mat-icon class="success-icon">check_circle</mat-icon>
+        <h2>{{"LEARNING_PAGE.QUESTIONNAIRE.THANKS_TITLE" | translate}}</h2>
+        <p>{{"LEARNING_PAGE.QUESTIONNAIRE.THANKS_BODY" | translate}}</p>
+        <p *ngIf="remoteSubmitDeferred" class="defer-note">
+          <mat-icon>cloud_off</mat-icon>
+          {{"LEARNING_PAGE.QUESTIONNAIRE.SUBMIT_FAILED_REMOTE" | translate}}
+        </p>
+        <button mat-raised-button color="primary" (click)="goToFlow()">
+          {{"LEARNING_PAGE.QUESTIONNAIRE.RETURN_TO_FLOW" | translate}}
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

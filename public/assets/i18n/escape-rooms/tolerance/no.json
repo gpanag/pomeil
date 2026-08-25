@@ -1,0 +1,250 @@
+{
+  "loading": "Laster Toleranse...",
+  "intro": {
+    "title": "Toleranse",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en virksomhet som fører folk sammen.",
+      "Du har akkurat blitt ansatt i et stort multinasjonalt selskap, der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringserfaring for deg, fordi ved å fullføre ulike utfordringer der, vil du tilegne deg ferdigheter som inngår i POMEIL kompetansekartet, og som er essensielle for enhver gründer.",
+      "I dag går du inn i et rolig coworking-kontor som er innredet for diskusjon og refleksjon. Amelia og Marco er her og forbereder Open Culture Day, men de er uenige om hvordan arrangementet skal organiseres. De kunne trenge hjelpen din."
+    ],
+    "buttonText": "Gå inn på coworking-kontoret"
+  },
+  "characters": {
+    "amelia": {
+      "name": "Amelia",
+      "dialogues": {
+        "greet": "Hei, hyggelig å se deg her. Jeg er virkelig glad for at du ble med oss — vi kan bruke noen friske ideer i dag. Min kollega Marco og jeg var uenige om hvordan vi skulle arrangere et stort arrangement for selskapet vårt. Det er vår Open Culture Day, hvor vi prøver å fremme toleranse, identifisere utfordringer og styrke likestilling på vår flerkulturelle arbeidsplass.\n\nMen perspektivene våre på hvordan vi skal planlegge det er svært ulike, og vi trenger kanskje hjelpen din for å finne en vei videre.",
+        "findFolder": "Uenigheter i flerkulturelle miljøer er en normal del av det daglige arbeidet, men de kan løses. Trinnene som hjelper med dette er gjemt et sted i rommet. Begynn å lete etter dem.",
+        "findFolderHint": "Du kan klikke på ulike gjenstander rundt i rommet. De vil lede deg mot noe meningsfullt — informasjonen vi trenger for å styrke toleransen vår og hjelpe til med å løse uenigheten. Prøv å lete på bordet",
+        "puzzle1Done": "Var det vanskelig? Eller var det lett? Men til slutt fikk du det til, så vi er klare til å gå videre fra dette nøkkelpunktet. Jeg må innrømme at toleransen din vokser med hver fullført oppgave, så vi har noen flere til deg.",
+        "findFrame": "Nå er det tid for å lete etter noe virkelig spesielt. Du kjenner reglene og prosedyren. La oss se nøye rundt dette rommet og klikke på forskjellige gjenstander. Kanskje finner vi noe verdifullt enda en gang. Kanskje vi bør starte med laptopene",
+        "frameFound": "Disse refleksjonene vil hjelpe deg å bygge opp en sterk og solid toleranse. Så nå har vi ganske mye, og vi er klare til å sjekke. Kan vi gå videre med toleransen vår? Så gjør deg klar for de neste quizene!",
+        "finalWords": "Jeg forstår følelsene dine. Det var sikkert ikke lett. Men livet er ikke alltid lett. Nå hadde du noen scenarier som gikk bra. Det var en flott øvelse å vurdere noen arbeids- og livsrelaterte situasjoner for å utvikle toleransen din. Og jeg kan si at du gjorde det flott. Jeg er stolt av deg!\n\nSå gi aldri opp og fortsett å gå videre!",
+        "skillComplete": "Du har oppnådd evnen til toleranse. Nå er den fullt utviklet. Du kan gå tilbake og prøve quizene når som helst når du føler at du trenger det.",
+        "completion": "Du har fullført den siste ferdigheten på listen!\nDu kan nå utforske ferdigheter du ennå ikke har prøvd, eller gå tilbake til de du vil øve på igjen. Kartet vil hjelpe deg uansett hvor du velger å gå videre.\n\nDel gjerne dette spillet og lenken med venner, kolleger eller andre som kan trenge støtte for å tilpasse seg et nytt land. Dette verktøyet ble laget for å styrke gründere mens de lærer og vokser.\n\nDu gjorde en flott jobb. Lykke til, og takk for at du er en del av denne reisen.",
+        "default": "Fortsett å se rundt i rommet etter ledetråder."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "folderFound": "Det ser ut som en solid plan. Vi bør sjekke om vi virkelig har brukt disse trinnene ett etter ett, eller om vi bevisst bare har plukket noen av dem, men hvert av dem er avgjørende. La oss se hva vi kan gjøre med det.",
+        "toleranceExplained": "Toleranse i livet betyr å akseptere at folk har ulike trosretninger, vaner og måter å se verden på. Det handler om å være tålmodig, åpen og respektfull selv når noen tenker annerledes enn deg.",
+        "toleranceDetails": "Toleranse er ikke en vane, det krever tid, utdanning og praksis å oppnå, her er noen av de vanligste måtene og situasjonene der vår toleranseevne kan forbedres:\n\n1. Toleranse i livet — For å utvikle toleranse i hverdagen, begynn med å legge merke til reaksjonene dine når noen oppfører seg eller tenker annerledes enn deg. Øv på å pause før du dømmer, og velg nysgjerrighet i stedet for kritikk. Lytt til folks historier og prøv å forstå hva som formet deres synspunkter.\n\n2. Toleranse i ditt arbeidsmiljø — For å bygge toleranse på jobb, fokuser på åpen kommunikasjon og rolig, respektfull lytting. Folk kommer fra forskjellige kulturer og har ulike arbeidsstiler, så be om avklaringer i stedet for å anta, og gi kollegene rom til å uttrykke ideene sine.\n\n3. Toleranse i hjemmet eller familien — Toleranse hjemme begynner med å forstå at hvert familiemedlem har sine egne følelser, vaner og tankemåter. Øv på å snakke vennlig under uenigheter og ta deg tid til å forklare følelsene dine uten å skylde på. Sett felles regler for kommunikasjon — som å lytte fullt ut før du svarer.",
+        "toleranceSummary": "Toleranse vokser når vi lærer å forstå og respektere forskjeller i alle deler av livet vårt — hjemme, på jobb og i verden rundt oss. Den utvikles gjennom rolig lytting, åpen kommunikasjon og en vilje til å justere perspektivet vårt når det trengs. Når vi praktiserer toleranse konsekvent, blir relasjonene våre sterkere, konflikter blir lettere å løse, og omgivelsene våre blir tryggere og mer støttende for alle.",
+        "letsQuiz": "Det var mye verdifull informasjon. Det var tydelig og ganske forståelig. Du vet, hva er den beste måten å lære på? Praksis! Så la oss gjøre det!",
+        "default": "Jeg går gjennom disse toleransetrinnene. Snakk med Amelia for å fortsette."
+      }
+    }
+  },
+  "systemDialogues": {
+    "selfTalk": "Dette ser ut som et varmt og innbydende kontor. Jeg ser to personer — Amelia og Marco. De ser ut til å diskutere noe viktig. Jeg bør snakke med Amelia først.",
+    "clickTable": "Her er bare noen årlige datarapporter, ikke noe vi kan bruke nå, prøv å lete etter bildene i rammene",
+    "clickFrames1": "Her er noen flotte fakta og motivasjonsidéer, men foreløpig legger vi dem til side, kanskje Marco har noe vi kan bruke",
+    "foundFolder": "Dette er faktisk et flott funn. Så det vi skal gjøre med denne kunnskapen er, la oss se... Vennligst snu deg til Marco, han vet hvordan han skal bruke den.",
+    "clickLaptop": "Her er bare noen laptoper og e-post. Ingenting interessant. La oss gå videre og ta en titt på den store skjermen. Kanskje det er noe i denne årsrapporten. Kanskje det er Marcos mappe igjen? Han liker å holde ting nær seg.",
+    "clickPocket": "Vel, ikke denne gangen. Jeg husker det. Jeg har fortalt deg noe om disse bildene i rammene. Kanskje en av dem er greia.",
+    "foundFrame": "Wow, det var raskt! La oss gå tilbake til Amelia."
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Matche toleranseresponsen til situasjonen",
+      "instructions": "Velg en situasjon fra kolonne A, og match den deretter med riktig toleranserespons i kolonne B.",
+      "columnA": {
+        "heading": "Situasjoner",
+        "items": {
+          "1": "Noen har en annen mening enn deg",
+          "2": "En kollega jobber tregere enn forventet",
+          "3": "Et familiemedlem blir opprørt under en samtale",
+          "4": "Du forstår ikke noens ord eller aksent"
+        }
+      },
+      "columnB": {
+        "heading": "Toleranseresponser",
+        "items": {
+          "A": "Lytt rolig og la dem snakke ferdig",
+          "B": "Vær tålmodig og gi dem mer tid",
+          "C": "Be vennlig om å gjenta eller forklare",
+          "D": "Hold deg rolig og prøv å forstå følelsene deres"
+        }
+      },
+      "feedback": {
+        "wrong": "Tenk på hvilken handling som viser tålmodighet og forståelse. Toleranse betyr å holde seg rolig, lytte godt og prøve å forstå den andre personen.",
+        "allCorrect": "Utmerket! Du matchet alle toleranseresponsene riktig!"
+      },
+      "answerOverlay": "De riktige matchene er:\n1. Noen har en annen mening → Lytt rolig og la dem snakke ferdig\n2. En kollega jobber tregere → Vær tålmodig og gi dem mer tid\n3. Et familiemedlem blir opprørt → Hold deg rolig og prøv å forstå følelsene deres\n4. Du forstår ikke noens ord → Be vennlig om å gjenta eller forklare"
+    },
+    "fillGap": {
+      "title": "Samarbeid i team",
+      "instructions": "Velg de riktige ordene for å fullføre setningen. Les alle alternativene først, og velg deretter ordene som danner en god teamhandling.",
+      "sentenceParts": [
+        "Når et team har et problem, hjelper det å ",
+        ", ",
+        " sammen og velge ett ",
+        " tiltak for å begynne å løse det."
+      ],
+      "options": [
+        "lytte",
+        "krangle",
+        "lite",
+        "skylde på",
+        "planlegge"
+      ],
+      "correctAnswers": [
+        "lytte",
+        "planlegge",
+        "lite"
+      ],
+      "feedback": {
+        "wrong": "Teamarbeid blir bedre når folk lytter, planlegger sammen og starter med et lite skritt — ikke når de krangler eller skylder på.",
+        "correct": "Bra jobbet! Teamarbeid handler om å lytte, planlegge sammen og starte med små skritt."
+      },
+      "answerOverlay": "Den riktige setningen er:\n\"Når et team har et problem, hjelper det å lytte, planlegge sammen og velge ett lite tiltak for å begynne å løse det.\"",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Sjekk svar"
+    },
+    "pattern": {
+      "title": "Lese teammønster",
+      "instructions": "Les hver kort historie. Velg deretter teammønsteret som best matcher det som skjer. Se etter teamatferd, ikke negative reaksjoner.",
+      "scenarioLabel": "Scenario",
+      "scenarios": [
+        {
+          "text": "Et team er forvirret om en oppgave. En person snakker rolig, spør alle hva de mener, og skriver ned en plan de alle er enige om.",
+          "options": [
+            {
+              "text": "Forvirring + stillhet",
+              "correct": false
+            },
+            {
+              "text": "Rolig kommunikasjon + felles planlegging",
+              "correct": true
+            },
+            {
+              "text": "Skylden + frustrasjon",
+              "correct": false
+            },
+            {
+              "text": "Jobbe alene + ignorere gruppen",
+              "correct": false
+            }
+          ],
+          "hint": "Godt teamarbeid begynner med rolig prat og en plan gruppen lager sammen."
+        },
+        {
+          "text": "En lagkamerat jobber tregt. I stedet for å klage, tilbyr en annen lagkamerat hjelp og spør om de vil dele oppgaven.",
+          "options": [
+            {
+              "text": "Dom + press",
+              "correct": false
+            },
+            {
+              "text": "Tålmodighet + støtte",
+              "correct": true
+            },
+            {
+              "text": "Unngåelse + ignorering",
+              "correct": false
+            },
+            {
+              "text": "Konkurranse + hastverk",
+              "correct": false
+            }
+          ],
+          "hint": "Teamarbeid vokser når folk støtter hverandre i stedet for å dømme."
+        },
+        {
+          "text": "Under en uenighet slutter to kolleger å snakke i munnen på hverandre. De lytter, gjentar det de har hørt, og leter etter én idé de begge kan akseptere.",
+          "options": [
+            {
+              "text": "Krangle + avbryte",
+              "correct": false
+            },
+            {
+              "text": "Lytte + finne felles grunn",
+              "correct": true
+            },
+            {
+              "text": "Gi opp + gå",
+              "correct": false
+            },
+            {
+              "text": "Skylden + forsvare",
+              "correct": false
+            }
+          ],
+          "hint": "Teamarbeid blir bedre når folk lytter først og finner noe de kan bli enige om."
+        }
+      ],
+      "answerOverlayPrefix": "For scenarioet:\n\"",
+      "answerOverlayCorrectLabel": "\"\n\nDet riktige svaret er: ",
+      "answerOverlayExplanationLabel": "\n\nForklaring: "
+    },
+    "answerOverlayTitle": "Her er det riktige svaret",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Toleransetrinn",
+      "inventoryTitle": "Toleransemappe",
+      "popupContent": [
+        "Pause — Ta et øyeblikk før du svarer. En kort pause hjelper med å forhindre emosjonelle reaksjoner og holder kommunikasjonen respektfull.",
+        "Lytt — Gi full oppmerksomhet til det den andre personen sier. Åpen lytting hjelper deg å forstå deres opplevelse før du formulerer ditt eget svar.",
+        "Reflekter — Vurder hvorfor situasjonen føles spent eller ubehagelig. Refleksjon hjelper med å skille antagelser fra faktiske fakta.",
+        "Spør — Bruk rolige, nysgjerrige spørsmål for å forstå den andres synspunkt. Å spørre viser respekt og reduserer misforståelser.",
+        "Anerkjenn — Anerkjenn andres følelser, perspektiver eller erfaringer, selv om du ikke er enig. Anerkjennelse bygger tillit og reduserer forsvarsholdning.",
+        "Tilpass — Vær villig til å tilpasse kommunikasjon eller forventninger når du jobber med folk fra ulike bakgrunner. Tilpasningsdyktighet hjelper med å bygge bro over kulturelle eller personlige forskjeller.",
+        "Løs — Se etter en rettferdig løsning som respekterer alle involverte. Løsning handler ikke om å vinne — det handler om å skape forståelse og gå videre sammen."
+      ]
+    },
+    "frame": {
+      "popupTitle": "Toleranserefleksjoner",
+      "popupContent": [
+        "Toleranse vokser når du holder deg rolig og prøver å forstå mennesker som er annerledes enn deg.",
+        "Du trenger ikke være enig med alle — å vise respekt er allerede et stort skritt mot fred.",
+        "Hver gang du lytter uten å dømme, gjør du det lettere å jobbe, leve og kommunisere med andre.",
+        "Små øyeblikk av tålmodighet kan gjøre konflikter til forståelse og bidra til å bygge sterkere relasjoner."
+      ],
+      "inventoryTitle": "Ramme"
+    }
+  },
+  "hints": {
+    "talkToAmelia1": "Klikk på Amelia for å starte en samtale.",
+    "findFolder": "Se etter Marcos hvite mappe. Prøv å klikke på gjenstander rundt i rommet.",
+    "talkToMarco": "Klikk på Marco for å lære om toleransetrinnene.",
+    "puzzle1Matching": "Match hver situasjon med toleranseresponsen som viser tålmodighet og respekt.",
+    "findFrame": "Søk i rommet igjen. Prøv laptopene, Marcos lomme eller bilderammene på veggen.",
+    "talkToAmelia2": "Klikk på Amelia for å fortsette.",
+    "puzzle2FillGap": "Velg ord som beskriver positive teamhandlinger — å lytte, planlegge og ta små skritt.",
+    "completion": "Treningen er fullført!",
+    "default": "Utforsk rommet ved å klikke på gjenstander og karakterer."
+  },
+  "completion": {
+    "title": "Toleranse fullført!",
+    "message": "Du har fullført Toleranse-fluktrommet med suksess. Du viste tålmodighet, forståelse og evnen til å løse uenigheter på en respektfull måte.",
+    "buttonText": "Tilbake til fluktrom"
+  },
+  "ui": {
+    "continueButton": "Fortsett",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "______",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": "decision-making",
+  "moduleNumber": 4,
+  "title": "Decision-making",
+  "subtitle": "Module 4",
+  "coverImage": "assets/thumbs/decision-making.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 4",
+      "title": "Decision-making",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/decision-making.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, you will be able to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Describe the steps in a decision-making process"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. Identify and clearly define a decision, including the relevant options and possible outcomes"
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Assess possible options and outcomes of a decision based on selected criteria"
+        },
+        {
+          "kind": "paragraph",
+          "text": "4. Apply a decision-making process to a real-life decision"
+        },
+        {
+          "kind": "paragraph",
+          "text": "5. Reflect on outcomes of previous decisions to improve future ones"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "As an entrepreneur you will be faced with countless decisions: setting prices on your products, choosing a supplier or deciding when to expand your business."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Decision-making is the ability to evaluate options and choose the best course of action out of several options. It means making decisions based on all available information, risks and opportunities, and in line with your goals (Harvard). Over time, practicing your decision- making skills will build confidence and help you overcome uncertainty and pressure. This is especially useful when information is limited, the context is unfamiliar or when things do not go as planned."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: Khaled runs a food stand in the city. Over time he has saved up €500 to invest in his business. He must now decide on how to spend the money. He considers two options: upgrading his oven or advertising his business locally."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Khaled decides he needs to gather more information before deciding. He looks at his recent customer feedback and asks a mentor for advice. He then makes a pro and con list, writing down the short-term and long-term outcomes for both options. He realizes that better customer outreach will bring faster returns and decides to use the money towards advertising. The result is a rise in customers, and enough revenue to upgrade the oven later."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Through taking his time and combining facts, goals, and careful thinking, Khaled was able to make the best decision for his business."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Identify the Decision",
+          "definition": "What exactly needs to be decided? What do you hope to achieve with the decision?"
+        },
+        {
+          "kind": "definition",
+          "term": "Gather Information",
+          "definition": "What do you already know? What do you need to know more about? Look for facts from different sources. Ask questions."
+        },
+        {
+          "kind": "definition",
+          "term": "Identify the options",
+          "definition": "What are the alternative options? Write them all down, even the less likely ones."
+        },
+        {
+          "kind": "definition",
+          "term": "List pros and cons",
+          "definition": "List the benefits and drawbacks of all the options."
+        },
+        {
+          "kind": "definition",
+          "term": "Review the alternatives",
+          "definition": "Consider the information and options you have gathered. Which option best supports your business goals? Do any options conflict with your values? Consider cost, time, risks, effort, safety, income, quality, and any other factors that are relevant to your decision. Eliminate options that conflict with"
+        },
+        {
+          "kind": "definition",
+          "term": "Take action",
+          "definition": "Make the decision and act on it. Do not wait forever."
+        },
+        {
+          "kind": "definition",
+          "term": "Review the outcome",
+          "definition": "Reflect on the results of your decision. Did you achieve what you hoped? Will you do anything differently in the future?"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Start by making smaller decisions with intent, such as: \"How much time should I set aside to complete this task?\".",
+            "Take time to make your decisions, especially in the beginning.",
+            "Get an overview of all factors related to the decision. You can use mind map, pros/cons list or a “if-then” flowchart for this.",
+            "Ask for help. It can be helpful to talk through a decision before you make it. Others might offer perspectives you have not considered.",
+            "Reflect on previous decisions and their outcomes. What did you find challenging? How can you improve?"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "“I’m afraid of choosing the wrong option.\" o Start small. See every decision as a learning opportunity. Should you truly choose the wrong option, do not despair. Decisions can be revised and reversed.",
+            "“I feel pressured by my family or community.” o It can be useful to listen to advice from others, but keep in mind that it is your business, and your goals and values should come first. If criticised, clarify your goals, and calmly explain your reasoning.",
+            "“I don’t know enough about my options.” o Seek more information. Ask questions, read reviews or ask for advice from others. Ask to do a small-scale test before committing, like test-selling a product.",
+            "“I'm overwhelmed by all my options.” o Write down all your options. Then narrow it down by removing all options that are unrealistic or irrelevant. Then compare the pros and cons of each option."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Scenario",
+          "definition": "You have €300 to invest in your business. You can decide between two options:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "(A) Buy new tools to improve your service",
+            "(B) Pay for an online ad campaign"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Task"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "List at least 2 pros and 2 cons of option A (buying new tools)",
+            "List at least 2 pros and 2 cons of option B (paying for an online campaign)",
+            "Compare the pros and cons of the two options.",
+            "Write down what decision you would make and why."
+          ]
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Discuss your choice with another peer and explain your thinking."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "I clearly define the decisions I need to make before I act",
+            "I compare the different options before choosing, weighing pros and cons of each one",
+            "I ask for advice when I need it",
+            "I consider what factors matters most before deciding",
+            "I make choices that are in line with my long-term goals and values",
+            "I learn from the outcome of my past decisions to improve my future decisions",
+            "I feel more confident in making decisions"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Decision-making is a daily part of being an entrepreneur, and you will face both big and small decisions. Sometimes you might feel overwhelmed or fear you will make the wrong decision."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Mistakes and wrong choices will happen. Luckily, decision making is a practical skill that improves with use. When you practice decision making, you learn to make choices based on what you know, what you value, and what you want to achieve. This builds confidence and helps you keep cool under pressure. A well-thought-out decision saves time, money and energy, moving your business in the right direction."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, participants are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Approach business decisions more systematically and less by impulse"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Assess a decision’s options and outcomes using four criteria"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Compare risks and benefits of different options"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Reflect on past decisions to improve future ones"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "• IDEO.org Decision-Making Toolkit",
+            "• App: “Decision Maker” (free pros/cons app on mobile)",
+            "• Book: Decisive by Chip & Dan Heath (summarized versions available online)",
+            "• Templates for pros/cons lists (available via SCORE.org or small business support sites)",
+            "• Simple decision matrix templates (search: “pros and cons list PDF”)",
+            "• MindTools: “How to Make a Decision” guide"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Decision-making",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/decision-making.pdf"
+      }
+    }
+  ]
+}

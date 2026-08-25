@@ -1,0 +1,185 @@
+{
+  "loading": "Paindlikkuse laadimine...",
+  "intro": {
+    "title": "Paindlikkus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua ettevõte, mis toob inimesi kokku.",
+      "Sind on äsja palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuride, taustade ja ametite inimesed.",
+      "Täna astud sa T&A-tuppa, kus meeskond seisab silmitsi tõsise väljakutsega. Klient just muutis nõudeid ja peamine arendustarkvara on maas. See on ideaalne hetk testida sinu Paindlikkust."
+    ],
+    "buttonText": "Sisene T&A-tuppa"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena",
+      "dialogues": {
+        "greet": "Tere! Meil on tõsine väljakutse. Klient just muutis nõudeid ja meie peamine arendustarkvara on maas. See on ideaalne hetk sinu Paindlikkuse testimiseks.",
+        "findStickyNote": "Paindlikkus pole ainult plaanide muutmine. See on stressi haldamine ja uute lahenduste kiire leidmine. Viimasel T&A-koosolekul kirjutasin paindliku mõtteviisi võtmeomadused märkmepaberile — aga kaotasin selle siia segadusse. Kas leiad selle? Alusta laua kontrollimisest.",
+        "stickyNoteFound": "Suurepärane! Nagu näed, võimaldab paindlikkus T&A-meeskondadel kiiresti reageerida, kui katsed ebaõnnestuvad või nõuded muutuvad. See aitab meil ellu jääda ja silma paista. Vaatame, kas mõistad põhitõdesid.",
+        "quiz1Intro": "Teeme kiire viktoriini.",
+        "quiz1Done": "Sa mõistad mõistet. Nüüd peame seda rakendama meie T&A-väljakutsele.",
+        "findPaper": "Varem täna viskasin minema vana arendusplaani, sest see oli liiga jäik. Selle tagaküljele olin kirjutanud paindlikkuse arendamise kontrollnimekirja. Viskasin selle prügikasti. Mine too see tagasi!",
+        "paperFound": "Suurepärane. See nimekiri aitab meil ebakindluses navigeerida. Aga kõigepealt pead silmitsi seisma mõne väljakutsega.",
+        "puzzle2Intro": "Lahenda need probleemid, et tõestada, et oled valmis juhtima.",
+        "finalWords": "Suurepärane! Sa jäid rahulikuks, kohanesid ja tegutsesid ennetavalt. See on T&A paindlikkuse olemus.\n\nPea meeles: avatus muutustele ja pidev uute tööriistade õppimine tugevdab sinu enesekindlust. Oled valmis järgmiseks väljakutseks!",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Vaata ruumis ringi vihjete järele."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "busy": "Viimane süsteemi uuendus rikkus meie prototüübi simulatsiooni! Pean keskenduma koodi parandamisele. Räägi Elenaga arendusgraafikust.",
+        "default": "Veel silun viga… räägi Elenaga."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Paindlikkuse põhitõed – Õige või Vale",
+      "instructions": "Otsusta, kas iga väide on õige või vale.",
+      "questions": [
+        {
+          "text": "Neuroteaduse uuringud tõestavad, et paindlikkus asub ühes kindlas ajukeskuses.",
+          "correct": false,
+          "hint": "Neuroteadus näitab, et paindlikkus on keeruline oskus, mis ei piirdu ühe ajupiirkonnaga."
+        },
+        {
+          "text": "Töötajatel, kes on paindlikud ja tunnevad end produktiivsetena, on enamasti vähem stressi ja kõrgem tööga rahulolu.",
+          "correct": true,
+          "hint": "Kohanemine vähendab vastupanu ja stressi."
+        },
+        {
+          "text": "Paindlikkus on ainult puhkuseplaanide või igapäevarutiinide muutmine.",
+          "correct": false,
+          "hint": "Töökohas tähendab paindlikkus tõhusat reageerimist muutustele."
+        }
+      ],
+      "feedback": {
+        "wrong": "See pole päris õige. Mõtle uuesti.",
+        "correct": "Tubli! Sa mõistad paindlikkuse põhitõdesid."
+      },
+      "answerOverlay": "Õiged vastused on:\n1. VALE – Paindlikkus on keeruline oskus, mis ei piirdu ühe ajupiirkonnaga.\n2. ÕIGE – Paindlikel töötajatel on enamasti vähem stressi.\n3. VALE – Paindlikkus ulatub palju kaugemale igapäevarutiinidest."
+    },
+    "singleChoice": {
+      "title": "Väljakutsete ja Lahenduste Viktoriin",
+      "instructions": "Vali parim vastus.",
+      "question": "Sa tunned ärevust uue T&A-tarkvara uuenduse pärast, sest sa ei tea, kuidas seda kasutada (tundmatu hirm). Mis on parim lahendus?",
+      "options": {
+        "a": "Väldi tarkvara kasutamist, kuni vana süsteem tagasi tuleb.",
+        "b": "Keskendu oskuste arendamisele, et muutuseks valmistuda.",
+        "c": "Kaeba juhtkonnale.",
+        "d": "Palu kolleegil oma tööd teha."
+      },
+      "hint": "Ettevalmistus ja õppimine vähendavad hirmu.",
+      "feedback": {
+        "wrong": "See pole parim lähenemine. Ettevalmistus ja õppimine vähendavad hirmu.",
+        "correct": "Õigesti! Oskuste arendamine on parim viis tundmatu hirmu ületamiseks."
+      },
+      "answerOverlay": "Õige vastus on: Keskendu oskuste arendamisele, et muutuseks valmistuda."
+    },
+    "sequenceOrder": {
+      "title": "Ootamatu olukorra käsitlemine",
+      "instructions": "Juhtuvad äkilised projekti viivitused juhtkonna muudatuse tõttu. Korralda sammud paindlikuks olukorra käsitsemiseks.",
+      "items": [
+        "Kohanda graafikut ja sea kriitiliste ülesannete prioriteedid uuesti.",
+        "Tunnista ootamatut olukorda rahulikult.",
+        "Aruta meeskonnaga võimalusi, et valida parim stsenaarium.",
+        "Vii uus plaan enesekindlalt ellu."
+      ],
+      "correctOrder": [
+        "Tunnista ootamatut olukorda rahulikult.",
+        "Aruta meeskonnaga võimalusi, et valida parim stsenaarium.",
+        "Kohanda graafikut ja sea kriitiliste ülesannete prioriteedid uuesti.",
+        "Vii uus plaan enesekindlalt ellu."
+      ],
+      "hints": [
+        "Samm 1: Tunnista tegelikkust.",
+        "Samm 2: Loo meeskonnaga strateegia.",
+        "Samm 3: Halda aega targalt.",
+        "Samm 4: Tegutse."
+      ],
+      "feedback": {
+        "wrong": "See pole õige järjekord. Pea meeles: tunne ära, koosta strateegia, halda aega, siis tegutse.",
+        "correct": "Suurepärane! Sa käsitsesid ootamatut olukorda paindlikult."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Tunnista ootamatut olukorda rahulikult.\n2. Aruta võimalusi meeskonnaga.\n3. Kohanda graafikut ja prioriteete.\n4. Vii uus plaan enesekindlalt ellu."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    }
+  },
+  "hints": {
+    "intro": "Klõpsa Elenal tahvli juures, et alustada.",
+    "talkToElena": "Klõpsa Elenal, et alustada.",
+    "findStickyNote": "Kontrolli lauda — võib-olla kohvitassi all?",
+    "talkToElena2": "Mine Elena juurde tagasi.",
+    "puzzle1": "Loe iga väide läbi ja otsusta, kas see on õige või vale.",
+    "puzzle1Complete": "Räägi Elenaga — tal on sinu jaoks järgmine väljakutse.",
+    "findPaper": "Elena mainis prügikasti. Otsi seda tahvli juurest.",
+    "talkToElena3": "Mine Elena juurde tagasi sellega, mis leidsid.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata T&A-toas vihjete järele ringi."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda hõivatud T&A-tuppa. Tahvel on täidetud läbikriipsutatud plaanide ja muudetud ajakavadega. Midagi tõsist toimub siin. Märkad Elenat, projekti juhti, kes vaatab muudatusi tahvli juures.",
+    "clickLaptop": "Ainult Marco kood. Midagi paindlikkusest pole. Võib-olla kontrolli kohvitassi all?",
+    "foundStickyNote": "Sa leidsid selle! Märkmepaber oli kinnitatud tassi alla.",
+    "stickyNoteRead": "Tubli! Mine Elena juurde tagasi.",
+    "clickWhiteboard": "Need on aegunud uurimise verstapostid. Need ei kehti enam. Otsi prügikasti.",
+    "foundPaper": "Sa leidsid strateegia! Mine Elena juurde tagasi."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "Paindlik mõtteviis – Võtmeomadused",
+      "popupTitle": "Paindlik mõtteviis – Võtmeomadused",
+      "popupContent": [
+        "Kiired reaktsioonid: Reageeri kohe turumuutustele ja klientide nõudmistele.",
+        "Kohanev filosoofia: Defineeri vajadused kohe ümber ja tuvasta uusi võimalusi.",
+        "Alternatiivsed valikud: Leia uusi viise tehnoloogilise arengu ja ebakindlusega toimetulemiseks."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Kuidas paindlikkust arendada",
+      "popupTitle": "Kuidas paindlikkust arendada",
+      "popupContent": [
+        "Paranda ajaplaneerimist: Sea ülesannetel prioriteedid, et uutele andmetele kohaneda.",
+        "Võta omaks uus mõtteviis: Ole avatud muutustele ja pidevale arengule.",
+        "Ole ennetav: Ole muutusteks valmis, mitte ära oota neid.",
+        "Võta innovatsioon omaks: Ole avatud uusimate tööriistade ja tehnoloogia kasutamisele."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Sa lõpetasid Paindlikkuse oskuse! Sa jäid rahulikuks, kohanesid ja tegutsesid ennetavalt. See on T&A paindlikkuse olemus. Oled valmis järgmiseks väljakutseks!",
+    "buttonText": "Lahku T&A-toast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

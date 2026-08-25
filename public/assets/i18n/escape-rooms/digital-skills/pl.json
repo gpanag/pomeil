@@ -1,0 +1,433 @@
+{
+  "loading": "Ładowanie Umiejętności Cyfrowych...",
+  "intro": {
+    "title": "Umiejętności Cyfrowe",
+    "paragraphs": [
+      "Jesteś pracownikiem w małej firmie. Dziś przyszedłeś wcześnie do działu IT, aby skonfigurować kilka rzeczy zanim dotrze reszta zespołu.",
+      "Serwerownia jest słabo oświetlona, z szafami serwerowymi wzdłuż ścian i migającymi światełkami wszędzie. Jest biurko z monitorem, klawiaturą, smartfonem i kubkiem kawy. Zauważasz serwer haseł z uszkodzonymi kablami, niszczarkę w rogu, kilka plakatów na ścianie, wieszak z torbą i drzwi z notatką 'Gone Fishing'.",
+      "Twoje dzisiejsze zadania obejmują wzmocnienie cyfrowego bezpieczeństwa firmy, zarządzanie obecnością w zawodowych mediach społecznościowych i radzenie sobie z potencjalnymi cyberzagrożeniami. Zaczynajmy!"
+    ],
+    "buttonText": "Wejdź do Działu IT"
+  },
+  "systemDialogues": {
+    "selfTalk": "Dobrze, rozejrzyjmy się. Serwer wydaje się nie działać - te kable wyglądają na uszkodzone. Powinienem to najpierw naprawić. Muszę też sprawdzić maile i zaktualizować media społecznościowe. Zacznę od serwera.",
+    "cablesBroken": "Te kable są wyraźnie uszkodzone. Muszę je usunąć i podłączyć nowe, które widzę na podłodze.",
+    "cablesRemoved": "Dobrze, uszkodzone kable wyjęte. Teraz wezmę te nowe kable z podłogi.",
+    "cablesUnwrapped": "Nowe kable są rozpakowane i gotowe. Czas podłączyć je do serwera.",
+    "cablesConnected": "Serwer się uruchamia! Widzę teraz ekran logowania. Zaloguję się.",
+    "serverLoggedIn": "Wszedłem! Jest powiadomienie o wytycznych dotyczących haseł i oczekujący audyt haseł. Powinienem teraz uruchomić audyt.",
+    "passwordAuditComplete": "Audyt haseł zakończony! Teraz sprawdzę maile na monitorze.",
+    "monitorOpened": "Oto klient pocztowy. Jest powiadomienie z działu bezpieczeństwa IT. Najpierw je przeczytam.",
+    "securityNoticeRead": "Dobrze, zanotowałem wytyczne bezpieczeństwa IT. Zarchiwizuję to i sprawdzę pozostałe maile.",
+    "emailsArrived": "Przyszło pięć nowych maili. Muszę sprawdzić każdy z nich uważnie - niektóre mogą być próbami phishingu.",
+    "phishingComplete": "Świetna robota! Wszystkie maile zostały prawidłowo posortowane. Teraz sprawdzę smartfon w sprawie zadań w mediach społecznościowych.",
+    "phoneOpened": "Aplikacja mediów społecznościowych jest otwarta. Jest powiadomienie o szkicu posta, który wymaga przeglądu przed publikacją.",
+    "postReviewed": "Post w mediach społecznościowych został opublikowany! Ale zaraz - są komentarze, które wymagają moderacji.",
+    "commentsComplete": "Wszystkie komentarze zostały odpowiednio obsłużone. Świetna praca z zarządzaniem mediami społecznościowymi!",
+    "stickyNoteFound": "Na serwerze jest karteczka, na której napisano 'Server-password: OfficeAccess!' - to zagrożenie bezpieczeństwa! Powinienem ją zniszczyć.",
+    "stickyNoteShredded": "Dobra decyzja! Karteczka z hasłem została bezpiecznie zniszczona.",
+    "stickyNoteKept": "Hmm, zostawianie haseł na karteczkach to zagrożenie bezpieczeństwa, ale na razie zdecydowałeś się to zachować.",
+    "usbFound": "W szufladzie jest pendrive USB. Jest nieoznaczony - może zawierać cokolwiek.",
+    "usbPluggedIn": "O nie! USB zawierało malware! System jest zainfekowany. Muszę natychmiast zadzwonić do IT po pomoc.",
+    "usbIgnored": "Mądry wybór! Nigdy nie podłączaj nieznanych urządzeń USB. Nigdy nie wiesz, co mogą zawierać.",
+    "malwareRecovery": "Wsparcie IT zdalnie usunęło infekcję. Mało brakowało! Pamiętaj: nigdy nie podłączaj nieznanych urządzeń USB.",
+    "adPopup": "Pojawiła się krzykliwa reklama: 'Gratulacje! Wygrałeś DARMOWY laptop! Kliknij tutaj, aby odebrać!' To wygląda podejrzanie...",
+    "adClicked": "O nie! To była złośliwa reklama. Pobrane zostało malware. Muszę zadzwonić do IT po pomoc!",
+    "adClosed": "Dobry instynkt! To była wyraźnie złośliwa reklama. Zawsze zamykaj podejrzane wyskakujące okienka natychmiast.",
+    "systemUpdate": "Pojawiło się powiadomienie: 'Dostępna krytyczna aktualizacja zabezpieczeń. Ta aktualizacja łata znane luki.'",
+    "updateInstalled": "Świetna decyzja! Aktualizowanie oprogramowania to jedna z najlepszych obron przed cyberzagrożeniami.",
+    "updatePostponed": "To ryzykowne! Odkładanie aktualizacji zabezpieczeń pozostawia system podatny na znane exploity. System został naruszony! Dzwonię do IT po pomoc...",
+    "wifiPrompt": "Połączenie Wi-Fi zostało przerwane. Dostępne są dwie sieci: 'Free_WiFi' i 'Internal Company WiFi'.",
+    "wifiFree": "O nie! 'Free_WiFi' było fałszywym hotspotem. Twoje dane zostały przechwycone! Dzwonię do IT po pomoc...",
+    "wifiCompany": "Dobry wybór! Zawsze łącz się z zaufanymi sieciami zapewnionymi przez firmę. Publiczne lub nieznane WiFi może być wykorzystywane do ataków man-in-the-middle.",
+    "allComplete": "Fantastyczna robota! Poradziłeś sobie ze wszystkimi zadaniami bezpieczeństwa cyfrowego, zarządzałeś mediami społecznościowymi i nawigowałeś przez cyberzagrożenia. Drzwi są teraz otwarte - możesz opuścić dział IT!",
+    "leafletRead": "Informacyjna ulotka o najlepszych praktykach cyberbezpieczeństwa. Dobre do przejrzenia, ale nic do zrobienia w tej chwili.",
+    "coffeeMugRead": "Kubek kawy z napisem '#CaffeineAndContent'. Ktoś w tym dziale ma poczucie humoru!",
+    "passwordListFound": "Lista starych haseł w dolnej szufladzie. To zagrożenie bezpieczeństwa, ale nie jest to część twoich obecnych zadań.",
+    "mouseInWall": "W ścianie jest dziura... a w niej mała myszka siedząca przy miniaturowym komputerze! Nawet myszki tutaj są cyfrowe.",
+    "bagContents": "W torbie: szczoteczka do zębów i notes. Ktoś był przygotowany na długą noc konserwacji serwerów!",
+    "posterPadlock": "Plakat przedstawiający kłódkę z tekstem 'Lock it or Lose it'. Dobre przypomnienie o bezpieczeństwie!",
+    "posterCat": "Motywacyjny plakat z kotem wiszącym na gałęzi: 'Hang in there!' Klasyczna dekoracja działu IT.",
+    "posterHandshake": "Plakat przedstawiający uścisk dłoni z tekstem 'Trust is Built, Not Given'. Trafne także dla bezpieczeństwa cyfrowego!"
+  },
+  "puzzles": {
+    "passwordAudit": {
+      "title": "Audyt Haseł",
+      "instructions": "Przejrzyj każde hasło i sklasyfikuj je jako Silne lub Słabe na podstawie najlepszych praktyk bezpieczeństwa.",
+      "passwords": {
+        "0": {
+          "value": "123456",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! '123456' to jedno z najczęstszych i najłatwiejszych do odgadnięcia haseł.",
+          "feedbackWrong": "Pomyśl jeszcze raz. '123456' to wzorzec sekwencyjnych liczb - jedna z pierwszych kombinacji, które próbują atakujący."
+        },
+        "1": {
+          "value": "MyDogBella",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! Informacje osobiste, takie jak imiona zwierząt, są łatwe do odkrycia poprzez media społecznościowe.",
+          "feedbackWrong": "Pomyśl, że imiona zwierząt można znaleźć w mediach społecznościowych. Dane osobowe tworzą słabe hasła."
+        },
+        "2": {
+          "value": "qwerty",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! 'qwerty' to wzorzec klawiatury, który występuje w każdym słowniku haseł.",
+          "feedbackWrong": "Spójrz na klawiaturę - 'qwerty' to po prostu górny rząd liter. To jedno z najczęstszych haseł."
+        },
+        "3": {
+          "value": "m4R!timE$un_92",
+          "correct": "strong",
+          "feedbackCorrect": "Poprawnie! To hasło używa wielkich, małych liter, cyfr, znaków specjalnych i ma 14 znaków.",
+          "feedbackWrong": "Spójrz uważniej - to hasło ma wielkie, małe litery, cyfry, znaki specjalne i odpowiednią długość."
+        },
+        "4": {
+          "value": "password",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! 'password' to dosłownie słowo 'hasło' - najbardziej oczywisty wybór, który spróbowałby atakujący.",
+          "feedbackWrong": "Słowo 'password' to pierwsza rzecz, której spróbowałby atakujący. Nie oferuje żadnego bezpieczeństwa."
+        },
+        "5": {
+          "value": "P@ssw0rd!",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! Pomimo posiadania znaków specjalnych, 'P@ssw0rd!' używa oczywistych zamian liter na symbole, które są w każdym słowniku łamania haseł.",
+          "feedbackWrong": "Powszechne zamiany liter (a->@, o->0) nie czynią hasła silnym. Łamacze haseł znają te wzorce."
+        },
+        "6": {
+          "value": "111111",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! Powtarzające się znaki praktycznie nie zapewniają bezpieczeństwa.",
+          "feedbackWrong": "Hasło składające się z tych samych znaków jest trywialnie łatwe do złamania. Nie ma żadnej złożoności."
+        },
+        "7": {
+          "value": "g!T7k^2p#rL0",
+          "correct": "strong",
+          "feedbackCorrect": "Poprawnie! To naprawdę losowa mieszanka znaków bez rozpoznawalnych wzorców - doskonałe bezpieczeństwo.",
+          "feedbackWrong": "To hasło nie ma słów słownikowych, wzorców, ma mieszankę wielkości liter, cyfry i symbole. To czyni je silnym."
+        },
+        "8": {
+          "value": "OfficeAccess!",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! Choć ma wielką literę i znak specjalny, używa popularnych słów słownikowych, które łatwo złamać.",
+          "feedbackWrong": "Połączone słowa słownikowe są podatne na ataki słownikowe, nawet z wielką literą i wykrzyknikiem."
+        },
+        "9": {
+          "value": "iloveyou",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! 'iloveyou' to popularna fraza, która pojawia się w pierwszej dziesiątce większości list haseł.",
+          "feedbackWrong": "Popularne frazy i sentymenty są jednymi z pierwszych rzeczy, których próbują łamacze haseł."
+        },
+        "10": {
+          "value": "admin",
+          "correct": "weak",
+          "feedbackCorrect": "Poprawnie! 'admin' to domyślne dane uwierzytelniające - pierwsza rzecz, której próbuje atakujący przy dostępie do systemu.",
+          "feedbackWrong": "'admin' to domyślna nazwa użytkownika I hasło w wielu systemach. To pierwsza rzecz, którą sprawdzają atakujący."
+        }
+      },
+      "buttonStrong": "Silne",
+      "buttonWeak": "Słabe",
+      "progressLabel": "Hasło",
+      "answerOverlay": "Silne hasła to: 'm4R!timE$un_92' i 'g!T7k^2p#rL0'. Wszystkie pozostałe są słabe ze względu na popularne wzorce, słowa słownikowe, dane osobowe lub proste zamiany.",
+      "allCorrect": "Doskonale! Poprawnie zidentyfikowałeś wszystkie silne i słabe hasła. Masz świetne zrozumienie bezpieczeństwa haseł!"
+    },
+    "phishing": {
+      "title": "Wykrywanie Phishingu",
+      "instructions": "Przejrzyj każdy mail i ustal, czy jest to legalny mail, czy próba phishingu. Najedź na linki i adresy nadawców, aby je sprawdzić.",
+      "emails": {
+        "0": {
+          "subject": "Faktura do zapłaty - Wymagana natychmiastowa płatność",
+          "sender": "finance@yourcompany-payment.com",
+          "senderReal": "finance@yourcompany-payment.com (NIE jest to prawdziwa domena twojej firmy!)",
+          "preview": "Drogi pracowniku, w załączeniu zaległa faktura. Kliknij poniższy link, aby natychmiast zrealizować płatność i uniknąć przerwy w usłudze.",
+          "linkText": "Zrealizuj płatność teraz",
+          "linkReal": "http://malicious-site.ru/payment",
+          "correct": "phishing",
+          "feedbackCorrect": "Poprawnie! Domena nadawcy 'yourcompany-payment.com' nie jest twoją prawdziwą domeną firmową, a link prowadzi do domeny .ru. Klasyczne wskaźniki phishingu!",
+          "feedbackWrong": "Spójrz uważniej na adres nadawcy - 'yourcompany-payment.com' NIE jest twoją prawdziwą domeną firmową. Link płatności prowadzi też do podejrzanej domeny .ru."
+        },
+        "1": {
+          "subject": "Agenda Spotkania Zespołu - Czwartek 14:00",
+          "sender": "project.lead@yourcompany.com",
+          "senderReal": "project.lead@yourcompany.com (zweryfikowany adres wewnętrzny)",
+          "preview": "Cześć zespół, oto agenda na czwartkowe spotkanie: 1) Przegląd Q3, 2) Nowe przydziały projektów, 3) Planowanie lunchu zespołowego. Proszę przejrzyjcie i dodajcie punkty.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Poprawnie! To z zweryfikowanego adresu wewnętrznego, ma normalny biznesowy ton, brak podejrzanych linków i nie tworzy presji ani nie prosi o wrażliwe informacje.",
+          "feedbackWrong": "Ten mail jest z zweryfikowanego adresu wewnętrznego (@yourcompany.com), omawia rutynowe sprawy biznesowe, nie ma podejrzanych linków i nie żąda wrażliwych danych. Jest legalny."
+        },
+        "2": {
+          "subject": "Twoje hasło wygasa - Wymagane działanie",
+          "sender": "support@it-secure.net",
+          "senderReal": "support@it-secure.net (TO NIE jest twój dział IT!)",
+          "preview": "Twoje hasło firmowe wygaśnie za 24 godziny. Kliknij poniżej, aby zweryfikować swoją tożsamość i natychmiast zresetować hasło, aby zachować dostęp.",
+          "linkText": "Zresetuj hasło teraz",
+          "linkReal": "http://credential-harvest.xyz/reset",
+          "correct": "phishing",
+          "feedbackCorrect": "Poprawnie! Twój dział IT nigdy nie wysyłałby resetów haseł z 'it-secure.net', a link resetu prowadzi do podejrzanej domeny .xyz. To zbieranie poświadczeń!",
+          "feedbackWrong": "Twój prawdziwy dział IT używa @yourcompany.com, nie 'it-secure.net'. Link resetu hasła prowadzi do domeny .xyz - to próba zbierania poświadczeń."
+        },
+        "3": {
+          "subject": "Udostępniony Dokument: Raport Budżetu Q3",
+          "sender": "noreply@drive.cloudservice.com",
+          "senderReal": "noreply@drive.cloudservice.com (autoryzowany dostawca chmury twojej firmy)",
+          "preview": "Twoja koleżanka Sarah Johnson udostępniła ci 'Q3 Budget Report.xlsx'. Możesz uzyskać do niego dostęp poprzez panel chmury firmowej.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Poprawnie! To od autoryzowanego dostawcy usług chmurowych twojej firmy, wymienia konkretną koleżankę z imienia i nazwiska oraz odnosi się do legalnego dokumentu biznesowego.",
+          "feedbackWrong": "Ten mail jest od autoryzowanego dostawcy chmury twojej firmy (drive.cloudservice.com), wymienia konkretną koleżankę i odnosi się do rutynowego dokumentu biznesowego. Jest legalny."
+        },
+        "4": {
+          "subject": "Wygrałeś nagrodę! Odbierz swoją nagrodę",
+          "sender": "hr@your-company-rewards.com",
+          "senderReal": "hr@your-company-rewards.com (TO NIE jest dział HR twojej firmy!)",
+          "preview": "Gratulacje! Zostałeś wybrany do naszego Programu Doceniania Pracowników. Odbierz swoją kartę podarunkową o wartości 500$, klikając poniższy link, zanim wygaśnie!",
+          "linkText": "Odbierz swoją kartę podarunkową",
+          "linkReal": "http://bonusgift.biz/claim",
+          "correct": "phishing",
+          "feedbackCorrect": "Poprawnie! 'your-company-rewards.com' nie jest twoją prawdziwą domeną firmową, a link prowadzi do 'bonusgift.biz'. Niezamówione powiadomienia o nagrodach to klasyczna taktyka phishingu!",
+          "feedbackWrong": "Nadawca używa 'your-company-rewards.com', nie twojej rzeczywistej domeny firmowej. Link odbioru nagrody prowadzi do 'bonusgift.biz'. Niezamówione nagrody to ogromna czerwona flaga phishingu."
+        }
+      },
+      "buttonPhishing": "Phishing",
+      "buttonLegitimate": "Legalny",
+      "hoverSender": "Nadawca: ",
+      "hoverLink": "Cel linku: ",
+      "progressLabel": "Mail",
+      "answerOverlay": "Maile phishingowe: 'Faktura do zapłaty' (fałszywa domena + link .ru), 'Hasło wygasa' (it-secure.net + link .xyz), 'Wygrałeś nagrodę' (fałszywa domena + bonusgift.biz). Legalne: 'Agenda Spotkania' (adres wewnętrzny), 'Udostępniony Dokument' (autoryzowany dostawca chmury).",
+      "allCorrect": "Idealna selekcja maili! Poprawnie zidentyfikowałeś wszystkie próby phishingu i legalne maile."
+    },
+    "socialPost": {
+      "title": "Przegląd Posta w Mediach Społecznościowych",
+      "instructions": "Przejrzyj szkic posta w mediach społecznościowych i napraw trzy problemy przed publikacją.",
+      "draftCaption": "Jstesmy podekcytowani aby zapowiedzieć naszą nową line produktów! Sprawdź ją na naszej stronie.",
+      "fixedCaption": "Jesteśmy podekscytowani, aby zapowiedzieć naszą nową linię produktów! Innowacja spotyka się z jakością w każdym elemencie. Odwiedź naszą stronę, aby odkryć pełną kolekcję i zobaczyć, co nowego.",
+      "captionLabel": "Podpis",
+      "captionInstruction": "Podpis zawiera literówki i jest zbyt krótki. Wybierz poprawioną wersję.",
+      "captionOptions": {
+        "a": "Jstesmy podekcytowani aby zapowiedzieć naszą nową line produktów! Sprawdź ją na naszej stronie.",
+        "b": "Jesteśmy podekscytowani, aby zapowiedzieć naszą nową linię produktów! Innowacja spotyka się z jakością w każdym elemencie. Odwiedź naszą stronę, aby odkryć pełną kolekcję i zobaczyć, co nowego.",
+        "c": "Jesteśmy podekscytowani, aby zapowiedzieć naszą nową linię produktów! Sprawdź ją na naszej stronie.",
+        "d": "NOWA LINE PRODUKTÓW!!! KUP TERAZ!!! KLIKNIJ LINK W BIO!!!"
+      },
+      "captionCorrect": "b",
+      "captionFeedbackCorrect": "Poprawnie! Podpis naprawia wszystkie literówki i dodaje angażujący szczegół, który zachęca do interakcji.",
+      "captionFeedbackWrong": "To nie jest najlepsza opcja. Poszukaj wersji, która naprawia WSZYSTKIE literówki i dodaje profesjonalne, angażujące szczegóły.",
+      "imageLabel": "Obraz",
+      "imageInstruction": "Który obraz powinien towarzyszyć temu postowi? Wybierz odpowiedni obraz i tekst alternatywny.",
+      "imageOptions": {
+        "a": "Rozmazane zdjęcie bez tekstu alternatywnego",
+        "b": "Wysokiej jakości zdjęcie produktu z tekstem alternatywnym: 'Prezentacja nowej linii produktów z naszymi najnowszymi projektami'",
+        "c": "Losowe zdjęcie stockowe zachodu słońca z tekstem alternatywnym: 'Piękny zachód słońca'",
+        "d": "Zdjęcie produktu konkurencji bez tekstu alternatywnego"
+      },
+      "imageCorrect": "b",
+      "imageFeedbackCorrect": "Poprawnie! Wysokiej jakości, odpowiedni obraz z opisowym tekstem alternatywnym poprawia zarówno zaangażowanie, jak i dostępność.",
+      "imageFeedbackWrong": "Pomyśl o tym, co czyni dobry obraz w mediach społecznościowych: odpowiedni, wysokiej jakości i z odpowiednim tekstem alternatywnym dla dostępności.",
+      "hashtagLabel": "Hashtagi",
+      "hashtagInstruction": "Który zestaw hashtagów jest najbardziej odpowiedni dla tego posta?",
+      "hashtagOptions": {
+        "a": "#NewProdcut #Exicting #Company",
+        "b": "#NewProduct #Innovation #Quality #CompanyName #ProductLaunch",
+        "c": "#followforfollow #like4like #viral #trending",
+        "d": "#NewProduct #Innovation"
+      },
+      "hashtagCorrect": "b",
+      "hashtagFeedbackCorrect": "Poprawnie! Te hashtagi są poprawnie napisane, odnoszą się do treści i zawierają dobrą mieszankę markowych i tematycznych tagów.",
+      "hashtagFeedbackWrong": "Dobre hashtagi powinny być poprawnie napisane, odnosić się do treści i zawierać mieszankę markowych i tematycznych tagów.",
+      "publishButton": "Opublikuj",
+      "scheduleButton": "Zaplanuj",
+      "stepLabel": "Napraw",
+      "answerOverlay": "Podpis: Napraw literówki i dodaj angażujący szczegół (opcja B). Obraz: Wysokiej jakości zdjęcie produktu z opisowym tekstem alternatywnym (opcja B). Hashtagi: Poprawnie napisana, odpowiednia mieszanka markowych i tematycznych tagów (opcja B).",
+      "allCorrect": "Post jest gotowy do publikacji! Wszystkie trzy problemy zostały naprawione."
+    },
+    "comments": {
+      "title": "Moderacja Komentarzy w Mediach Społecznościowych",
+      "instructions": "Przejrzyj każdy komentarz i wybierz odpowiednie działanie: Odpowiedz na autentyczne interakcje klientów, Usuń spam i złośliwą treść.",
+      "comments": {
+        "0": {
+          "author": "@CoffeeLover42",
+          "text": "Uwielbiam waszą kawę! Najlepsza mieszanka, jaką kiedykolwiek próbowałem!",
+          "correct": "reply",
+          "feedbackCorrect": "Poprawnie! Pozytywne opinie klientów zasługują na profesjonalną, wdzięczną odpowiedź, aby budować społeczność.",
+          "feedbackWrong": "To autentyczna pozytywna opinia od klienta. Powinieneś odpowiedzieć, aby zaangażować się ze swoją społecznością!",
+          "suggestedReply": "Bardzo dziękujemy! Cieszymy się, że ci smakuje. Bądź na bieżąco - wkrótce nowe sezonowe mieszanki!"
+        },
+        "1": {
+          "author": "@TotallyNotABot",
+          "text": "Kliknij tutaj po 10 000 DARMOWYCH obserwujących!!! www.fake-followers.com",
+          "correct": "delete",
+          "feedbackCorrect": "Poprawnie! To oczywisty spam z podejrzanym linkiem. Usuń go natychmiast, aby chronić swoich obserwujących.",
+          "feedbackWrong": "To wyraźnie spam - promuje podejrzany link dla fałszywych obserwujących. Powinien zostać usunięty."
+        },
+        "2": {
+          "author": "@BudgetMinded",
+          "text": "Szczerze mówiąc, wasze ceny są zbyt wysokie. Znalazłem tę samą jakość gdzie indziej za połowę ceny.",
+          "correct": "reply",
+          "feedbackCorrect": "Poprawnie! Nawet negatywne opinie powinny być rozpatrywane profesjonalnie. To pokazuje, że cenisz wszystkie opinie klientów.",
+          "feedbackWrong": "Negatywne opinie powinny być rozpatrywane, a nie usuwane. Profesjonalna odpowiedź pokazuje, że zależy ci na obawach klienta.",
+          "suggestedReply": "Doceniamy twoją szczerą opinię. Jakość jest naszym priorytetem i chętnie omówimy, jak możemy lepiej spełnić twoje potrzeby. Napisz do nas DM!"
+        }
+      },
+      "buttonReply": "Odpowiedz",
+      "buttonDelete": "Usuń",
+      "progressLabel": "Komentarz",
+      "answerOverlay": "'Uwielbiam waszą kawę!' -> Odpowiedz (pozytywne zaangażowanie). 'Kliknij tutaj po darmowych obserwujących' -> Usuń (spam). 'Zbyt drogie' -> Odpowiedz (rozpatrz obawy profesjonalnie).",
+      "allCorrect": "Doskonała moderacja! Wiesz, jak angażować się z autentycznymi opiniami i usuwać szkodliwe treści."
+    },
+    "stickyNote": {
+      "title": "Zagrożenie Bezpieczeństwa: Ujawnione Hasło",
+      "instructions": "Znalazłeś karteczkę z hasłem serwera. To zagrożenie bezpieczeństwa.",
+      "question": "Karteczka mówi: 'Server-password: OfficeAccess!'. Czy powinieneś zniszczyć tę karteczkę?",
+      "options": {
+        "yes": "Tak - Zniszcz natychmiast",
+        "no": "Nie - Zostaw na potrzeby odniesienia"
+      },
+      "correctAnswer": "yes",
+      "feedbackCorrect": "Poprawnie! Hasła nigdy nie powinny być zapisywane i pozostawione na widoku. Zniszczenie ich eliminuje ryzyko.",
+      "feedbackWrong": "Zostawianie haseł zapisanych na widoku to poważna luka w zabezpieczeniach. Każdy, kto wejdzie do tego pokoju, może je zobaczyć."
+    },
+    "usb": {
+      "title": "Nieznane Urządzenie USB",
+      "instructions": "Znalazłeś nieoznaczony pendrive USB w szufladzie.",
+      "question": "Co powinieneś zrobić z tym nieznanym urządzeniem USB?",
+      "options": {
+        "plugin": "Podłącz, aby sprawdzić zawartość",
+        "leave": "Zostaw - nie podłączaj nieznanych urządzeń"
+      },
+      "correctAnswer": "leave",
+      "feedbackCorrect": "Poprawnie! Nieznane urządzenia USB mogą zawierać malware. Nigdy nie podłączaj urządzenia, któremu nie ufasz.",
+      "feedbackWrong": "To było ryzykowne! Nieznane urządzenia USB to częsty wektor ataku malware."
+    },
+    "ad": {
+      "title": "Podejrzana Reklama",
+      "instructions": "Na ekranie pojawiła się krzykliwa reklama wyskakująca.",
+      "question": "'Gratulacje! Wygrałeś DARMOWY laptop! Kliknij tutaj, aby odebrać!' Co robisz?",
+      "options": {
+        "click": "Kliknij, aby odebrać nagrodę",
+        "close": "Zamknij reklamę natychmiast"
+      },
+      "correctAnswer": "close",
+      "feedbackCorrect": "Poprawnie! Niezamówione wyskakujące okienka z nagrodami są prawie zawsze złośliwe. Zamykaj je natychmiast bez klikania.",
+      "feedbackWrong": "To była złośliwa reklama! Nigdy nie klikaj na niezamówione wyskakujące okienka z nagrodami."
+    },
+    "systemUpdate": {
+      "title": "Dostępna Aktualizacja Systemu",
+      "instructions": "Pojawiło się powiadomienie systemowe.",
+      "question": "'Dostępna krytyczna aktualizacja zabezpieczeń. Ta aktualizacja łata znane luki.' Co robisz?",
+      "options": {
+        "install": "Zainstaluj aktualizację teraz",
+        "postpone": "Odłóż - zrobię to później"
+      },
+      "correctAnswer": "install",
+      "feedbackCorrect": "Poprawnie! Aktualizacje zabezpieczeń powinny być instalowane szybko, aby chronić przed znanymi lukami.",
+      "feedbackWrong": "Odkładanie aktualizacji zabezpieczeń pozostawia system narażony na znane zagrożenia!"
+    },
+    "wifi": {
+      "title": "Połączenie Wi-Fi",
+      "instructions": "Twoje połączenie Wi-Fi zostało przerwane. Dostępne są dwie sieci.",
+      "question": "Z którą siecią powinieneś się połączyć?",
+      "options": {
+        "free": "Free_WiFi (Sieć otwarta, bez hasła)",
+        "company": "Internal Company WiFi (Zabezpieczona, wymaga poświadczeń)"
+      },
+      "correctAnswer": "company",
+      "feedbackCorrect": "Poprawnie! Zawsze używaj zabezpieczonej sieci firmy. Otwarte/nieznane sieci WiFi mogą być wykorzystywane do przechwytywania danych.",
+      "feedbackWrong": "Otwarte sieci WiFi mogą być fałszywymi hotspotami skonfigurowanymi do przechwytywania twoich danych!"
+    },
+    "answerOverlayTitle": "Odpowiedź Ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Rozejrzyj się po pokoju. Kable serwera wydają się uszkodzone - zacznij stamtąd.",
+    "fixCables": "Kliknij na uszkodzone kable na serwerze, aby zacząć je naprawiać.",
+    "serverBoot": "Serwer się uruchamia. Poczekaj na ekran logowania.",
+    "passwordAudit": "Sklasyfikuj każde hasło jako Silne lub Słabe na podstawie złożoności, długości i wzorców.",
+    "openMonitor": "Kliknij na monitor biurka, aby sprawdzić maile.",
+    "readSecurityNotice": "Najpierw przeczytaj powiadomienie o bezpieczeństwie IT, a następnie je zarchiwizuj.",
+    "phishing": "Sprawdź adresy nadawców i cele linków uważnie. Najedź, aby zbadać.",
+    "openPhone": "Kliknij na smartfon, aby sprawdzić swoje zadania w mediach społecznościowych.",
+    "socialPost": "Przejrzyj szkic posta i napraw podpis, obraz i hashtagi.",
+    "comments": "Odpowiadaj na autentyczne interakcje klientów i usuwaj spam.",
+    "stickyNote": "Na serwerze jest karteczka z hasłem. To zagrożenie bezpieczeństwa!",
+    "miniPuzzles": "Bądź czujny na zagrożenia bezpieczeństwa - urządzenia USB, wyskakujące okienka, aktualizacje i sieci WiFi.",
+    "allComplete": "Wszystko gotowe! Szkolenie zostało ukończone!",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po dziale IT w poszukiwaniu rzeczy wymagających uwagi."
+  },
+  "items": {
+    "leaflet": {
+      "popupTitle": "Najlepsze Praktyki Cyberbezpieczeństwa",
+      "popupContent": [
+        "1. Używaj silnych, unikalnych haseł do każdego konta.",
+        "2. Włącz uwierzytelnianie dwuskładnikowe wszędzie tam, gdzie to możliwe.",
+        "3. Nigdy nie klikaj na podejrzane linki ani nie pobieraj nieznanych załączników.",
+        "4. Aktualizuj całe oprogramowanie i systemy.",
+        "5. Zgłaszaj wszelkie podejrzane działania natychmiast do IT."
+      ]
+    },
+    "coffeeMug": {
+      "popupTitle": "Kubek Kawy",
+      "popupContent": [
+        "#CaffeineAndContent",
+        "Nieoficjalne motto działu IT."
+      ]
+    },
+    "passwordList": {
+      "popupTitle": "Lista Starych Haseł",
+      "popupContent": [
+        "Zmięta lista starych haseł znaleziona w dolnej szufladzie.",
+        "To dokładnie ten typ rzeczy, który nie powinien istnieć w bezpiecznym miejscu pracy."
+      ]
+    },
+    "mouseInWall": {
+      "popupTitle": "Maleńkie Odkrycie",
+      "popupContent": [
+        "W ścianie jest dziura, a w niej mała myszka siedząca przy miniaturowym komputerze!",
+        "Nawet myszki w tym dziale są obeznane z technologią."
+      ]
+    },
+    "bag": {
+      "popupTitle": "Zawartość Torby",
+      "popupContent": [
+        "W torbie znajdujesz szczoteczkę do zębów i notes.",
+        "Ktoś był przygotowany na długą noc konserwacji serwerów!"
+      ]
+    },
+    "itNotice": {
+      "title": "Powiadomienie Bezpieczeństwa IT",
+      "domainLine": "Naszą domeną firmową jest",
+      "malwareWarning": "Wykryto malware w tym systemie. Twoje pliki i dane mogą być zagrożone.",
+      "domainNotice": "Naszą domeną firmową jest <strong>&#64;yourcompany.com</strong>. Jakakolwiek inna domena podająca się za naszą firmę jest potencjalnie oszukańcza."
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Pomyślnie ukończyłeś wszystkie zadania umiejętności cyfrowych! Naprawiłeś serwer, przeprowadziłeś audyt haseł, zidentyfikowałeś maile phishingowe, profesjonalnie zarządzałeś mediami społecznościowymi i poradziłeś sobie z wieloma cyberzagrożeniami. Jesteś teraz lepiej wyposażony, aby bezpiecznie i skutecznie poruszać się po cyfrowym miejscu pracy!",
+    "buttonText": "Wyjdź z Pokoju"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "callIT": "Zadzwoń do IT po pomoc",
+    "itRecovery": "Wsparcie IT czyści infekcję...",
+    "archive": "Archiwizuj",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

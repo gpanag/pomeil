@@ -1,0 +1,25 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+// Room-specific overrides for paper popup
+.item-popup-base {
+  height: 550px;
+
+  .text-content {
+    ol {
+      padding-left: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    li {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      color: #333;
+
+      strong {
+        color: #1a5f2a;
+      }
+    }
+  }
+}

@@ -1,0 +1,404 @@
+/* Dashboard — POMEIL editorial language
+   Reads as a learner's progress journal: typeset numerals,
+   journey-progress bar, terracotta/teal status semantics. */
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+
+  > h1 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.75rem) !important;
+    color: var(--pomeil-teal-deep);
+    letter-spacing: -0.018em;
+    font-variation-settings: "opsz" 96, "SOFT" 40;
+    margin: 0 0 0.4rem !important;
+  }
+
+  > h1::before {
+    content: "Your Progress";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 8px;
+  }
+
+  > h2 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.6rem !important;
+    color: var(--pomeil-teal-deep);
+    margin: 2.5rem 0 1.25rem !important;
+    letter-spacing: -0.005em;
+    font-variation-settings: "opsz" 60, "SOFT" 40;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  > h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 63, 71, 0.18), transparent);
+    margin-bottom: 6px;
+  }
+}
+
+/* ----- Overview stats: trio of paper panels ----- */
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.stat-card {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75rem 1rem 1.5rem !important;
+  text-align: center;
+  position: relative;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 4.5vw, 3rem);
+  color: var(--pomeil-teal-deep);
+  line-height: 1;
+  font-variation-settings: "opsz" 96, "SOFT" 30;
+  letter-spacing: -0.02em;
+
+  &.warn { color: var(--state-attention-deep); }
+}
+
+.stat-label {
+  margin-top: 12px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pomeil-ink-muted);
+}
+
+/* ----- Score circles: editorial achievement orb ----- */
+.score-circle {
+  --orb-size: 64px;
+  --orb-pct: 100;
+  --orb-ring: var(--state-success);
+  --orb-ring-trail: rgba(0, 104, 116, 0.14);
+
+  position: relative;
+  width: var(--orb-size);
+  height: var(--orb-size);
+  flex-shrink: 0;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      var(--orb-ring) calc(var(--orb-pct) * 3.6deg),
+      var(--orb-ring-trail) calc(var(--orb-pct) * 3.6deg) 360deg
+    );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 0 1px rgba(0, 63, 71, 0.06),
+    0 4px 14px -6px rgba(0, 63, 71, 0.32);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-variation-settings: "opsz" 60, "SOFT" 30;
+  font-size: calc(var(--orb-size) * 0.30);
+  color: var(--state-success-deep);
+  letter-spacing: -0.01em;
+  line-height: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 50%;
+    background:
+      radial-gradient(ellipse at 30% 25%, rgba(255, 255, 255, 0.85), var(--pomeil-cream) 70%);
+    box-shadow: inset 0 0 0 1px rgba(0, 63, 71, 0.05);
+    z-index: -1;
+  }
+
+  > * { position: relative; z-index: 1; }
+  /* the number text content sits in normal flow; promote it */
+  position: relative;
+}
+/* Ensure direct text content of .score-circle sits above the ::before */
+.score-circle { isolation: isolate; }
+
+.score-circle.large {
+  --orb-size: 112px;
+  font-size: 1.7rem;
+}
+.score-circle.small {
+  --orb-size: 52px;
+  font-size: 0.95rem;
+}
+.score-circle.high-score {
+  --orb-ring: var(--state-success);
+  --orb-ring-trail: rgba(0, 104, 116, 0.14);
+  color: var(--state-success-deep);
+}
+.score-circle.low-score {
+  --orb-ring: var(--state-attention);
+  --orb-ring-trail: rgba(179, 89, 58, 0.14);
+  color: var(--state-attention-deep);
+}
+.score-circle.no-score {
+  --orb-ring: var(--state-neutral);
+  --orb-ring-trail: rgba(0, 0, 0, 0.06);
+  --orb-pct: 0;
+  color: var(--state-neutral);
+  font-style: normal;
+}
+
+/* ----- Room cards grid ----- */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.room-card {
+  display: flex !important;
+  flex-direction: column;
+
+  &:hover img[mat-card-image] {
+    transform: scale(1.04);
+  }
+
+  &.not-played {
+    opacity: 0.85;
+
+    img[mat-card-image] {
+      filter: grayscale(60%) contrast(0.9);
+    }
+
+    &:hover {
+      opacity: 1;
+      img[mat-card-image] { filter: grayscale(0) contrast(1); }
+    }
+  }
+
+  img[mat-card-image] {
+    height: 180px;
+    object-fit: cover;
+    transition: transform 600ms var(--md-easing-emphasized-decelerate),
+                filter 300ms var(--md-easing-standard);
+  }
+
+  mat-card-content { padding: 1.25rem 1.25rem 1rem !important; }
+
+  h3 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.25rem !important;
+    color: var(--pomeil-teal-deep) !important;
+    margin: 0 0 0.85rem !important;
+    line-height: 1.2;
+    font-variation-settings: "opsz" 60, "SOFT" 40;
+  }
+}
+
+/* ----- Score row: orb + status + date ----- */
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.score-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.pass-text,
+.fail-text {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.pass-text {
+  color: var(--state-success-deep);
+  background: var(--state-success-tint);
+  border-color: color-mix(in srgb, var(--state-success) 24%, transparent);
+}
+.fail-text {
+  color: var(--state-attention-deep);
+  background: var(--state-attention-tint);
+  border-color: color-mix(in srgb, var(--state-attention) 30%, transparent);
+}
+
+.completed-date {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--pomeil-ink-muted);
+  font-variation-settings: "opsz" 48, "SOFT" 60;
+}
+
+.not-played-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--pomeil-ink-muted);
+  margin: 0 0 0.85rem;
+  font-variation-settings: "opsz" 48, "SOFT" 80;
+
+  &::before {
+    content: "—";
+    margin-right: 8px;
+    color: var(--pomeil-warm);
+  }
+}
+
+/* ----- Per-puzzle progress bars ----- */
+.puzzle-scores {
+  margin-bottom: 1rem;
+  padding: 12px 14px;
+  background: rgba(0, 63, 71, 0.025);
+  border-radius: var(--md-shape-sm);
+  border-left: 3px solid var(--pomeil-teal-deep);
+
+  .puzzle-score-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.45rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    .puzzle-label {
+      min-width: 70px;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--pomeil-ink-muted);
+    }
+
+    mat-progress-bar { flex: 1; }
+
+    .puzzle-pct {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.85rem;
+      font-weight: 600;
+      min-width: 40px;
+      text-align: right;
+      color: var(--pomeil-teal-deep);
+      font-variation-settings: "opsz" 48, "SOFT" 30;
+    }
+  }
+}
+
+/* ----- Card actions ----- */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  .download-btn,
+  .replay-btn {
+    font-size: 0.8rem !important;
+    height: 38px !important;
+    padding: 0 14px !important;
+
+    mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+  }
+
+  .required-badge {
+    margin-left: 6px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: var(--state-attention-tint);
+    color: var(--state-attention-deep);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid color-mix(in srgb, var(--state-attention) 30%, transparent);
+  }
+}
+
+/* ----- Quick actions cluster ----- */
+.quick-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(160px, 30%, 320px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pomeil-warm) 50%, transparent);
+  }
+  &::after {
+    content: "✦";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: var(--pomeil-warm);
+    background: var(--pomeil-cream);
+    padding: 0 8px;
+  }
+
+  mat-icon { margin-right: 6px; }
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 600px) {
+  .rooms-grid { grid-template-columns: 1fr; }
+  .overview-stats { grid-template-columns: 1fr; }
+  .quick-actions { flex-direction: column; align-items: center; }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+}

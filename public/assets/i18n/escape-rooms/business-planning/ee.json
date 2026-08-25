@@ -1,0 +1,285 @@
+{
+  "loading": "Äriplaneerimise laadimine...",
+  "intro": {
+    "title": "Äriplaneerimine",
+    "paragraphs": [
+      "Tere tulemast Äriplaneerimise töötuppa! Sa just sisenesid konverentsiruumi, kus kõik on ette valmistatud praktiliseks sessiooniks ärimudeli lõuendi (Business Model Canvas) koostamise kohta.",
+      "Ruumis on mitu interaktiivset jaama - udune aken, paberitahvel, seinale paigaldatud teler, paberid laual ja kaust. Iga jaam sisaldab mõistatust, mis õpetab sulle ärimudeli lõuendi võtmekomponenti.",
+      "Lahenda kõik viis mõistatust sinu valitud järjekorras. Kui kõik on tehtud, süttib esiseinatahvel ja paljastab sinu valminud ärimudeli lõuendi. Edu!"
+    ],
+    "buttonText": "Sisene konverentsiruumi"
+  },
+  "puzzles": {
+    "customerSegments": {
+      "title": "Kliendisegmendid",
+      "instructions": "Klassifitseeri iga kliendisegment kui Kehtiv või Kehtetu. Kehtivad segmendid on konkreetsed ja teostatavad. Kehtetud segmendid on liiga laiad, ebamäärased või eeldustel põhinevad.",
+      "customers": {
+        "0": "Vabakutselised ja kaugtöötajad, kes hindavad paindlikke teenuseid",
+        "1": "Väikelaste vanemad, kes seavad esikohale turvalisuse",
+        "2": "Õpilased, kes otsivad kulusäästlikke valikuid",
+        "3": "Kõik, kes on kunagi midagi vajanud",
+        "4": "Kontoritöötajad, kes vajavad tööpäeva jooksul kiireid lahendusi",
+        "5": "Inimesed, kellele meeldivad ilusad asjad",
+        "6": "Pensionärid, kes hindavad isiklikku klienditeenindust",
+        "7": "Väikeettevõtete omanikud, kes soovivad aega säästa",
+        "8": "Inimesed, kes kindlasti armastavad seda ettevõtet",
+        "9": "Inimesed, kes klõpsasid kogemata veebilehe lingil",
+        "10": "Inimesed, kes žongleerivad tööpäeva jooksul mitme ülesandega ja vajavad tõhusaid tööriistu"
+      },
+      "invalidExplanations": {
+        "3": "Liiga lai - see kirjeldab praktiliselt kõiki ja ei ole kasulik segment.",
+        "5": "Liiga ebamäärane - 'ilusad asjad' ei määratle konkreetset vajadust ega käitumist.",
+        "8": "Eeldustel põhinev - sa ei saa eeldada, et inimesed armastavad sinu ettevõtet.",
+        "9": "Mitte tegelikud kliendid - juhuslikud klõpsud ei esinda tõelist huvi."
+      },
+      "validButton": "Kehtiv",
+      "invalidButton": "Kehtetu",
+      "feedback": {
+        "correct": "Õige!",
+        "wrong": "Mitte päris. Mõtle, kas see segment on konkreetne ja teostatav.",
+        "allCorrect": "Suurepärane! Klassifitseerisid kõik kliendisegmendid õigesti!"
+      },
+      "answerOverlay": "Kehtivad segmendid: Vabakutselised ja kaugtöötajad, Väikelaste vanemad, Õpilased, kes otsivad kulusäästlikke valikuid, Kontoritöötajad, kes vajavad kiireid lahendusi, Pensionärid, kes hindavad isiklikku teenindust, Väikeettevõtete omanikud, kes soovivad aega säästa, Inimesed, kes žongleerivad mitme ülesandega.\n\nKehtetud segmendid: 'Kõik, kes on kunagi midagi vajanud' (liiga lai), 'Inimesed, kellele meeldivad ilusad asjad' (liiga ebamäärane), 'Inimesed, kes kindlasti armastavad ettevõtet' (eeldustel põhinev), 'Inimesed, kes klõpsasid kogemata lingil' (mitte tegelikud kliendid)."
+    },
+    "valueProposition": {
+      "title": "Väärtuspakkumine",
+      "instructions": "See väärtuspakkumine sisaldab tarbetuid moesõnu. Klõpsa osadel, mida tuleks EEMALDADA (läbi kriipsutatud). Säilita ainult sisukad osad ja seejärel esita.",
+      "parts": {
+        "0": "Pakume innovaatilisi",
+        "1": "lahendusi, mis aitavad inimestel aega säästa",
+        "2": "maailmatasemel kvaliteet",
+        "3": "vähendades igapäevaste ülesannete tarbetuid samme",
+        "4": "tipptaseme kaudu",
+        "5": "ja tipptehnoloogilist sünergiat",
+        "6": "kasutades järgmise põlvkonna funktsioone"
+      },
+      "submitButton": "Keera lehte esitamiseks",
+      "feedback": {
+        "wrong": "Mõned osad ei ole õigesti märgitud. Pea meeles: säilita see, mis on sisukas ja konkreetne, eemalda moesõnad ja täitemata.",
+        "hint": "Vihje: Säilita ainult osad, mis kirjeldavad konkreetset kasu või tegevust. Eemalda korporatiivne žargoon.",
+        "correct": "Suurepärane! Eemaldasid moesõnad ja säilitasid selge väärtuspakkumise."
+      },
+      "answerOverlay": "Säilita: 'lahendusi, mis aitavad inimestel aega säästa' ja 'vähendades igapäevaste ülesannete tarbetuid samme'.\n\nEemalda: 'Pakume innovaatilisi', 'maailmatasemel kvaliteet', 'tipptaseme kaudu', 'ja tipptehnoloogilist sünergiat', 'kasutades järgmise põlvkonna funktsioone'."
+    },
+    "channels": {
+      "title": "Kanalid",
+      "introText": "Sobita iga kliendi käitumine kõige sobivama kanaliga, et neid kätte saada. Kasuta nooli saadaolevate kanalite sirvimiseks ja kinnita seejärel oma valik.",
+      "startButton": "Alusta",
+      "behaviors": {
+        "0": "Kliendid, kes on aktiivsed veebis ja suhtlevad sotsiaalplatvormidel",
+        "1": "Kliendid, kes toetuvad sõprade ja perekonna soovitustele",
+        "2": "Kliendid, kes otsivad teenuseid lähedal töötundide ajal",
+        "3": "Kliendid, kes eelistavad otsest isiklikku kontakti päringuteks"
+      },
+      "channelOptions": [
+        "Sotsiaalmeedia",
+        "Suust suhu",
+        "Füüsiline asukoht",
+        "Otsekontakt e-posti või telefoni teel",
+        "Telereklaam",
+        "Trükimeedia",
+        "Mobiilirakendus",
+        "Veebipoe platvorm",
+        "Kaubandusnäitused"
+      ],
+      "confirmButton": "Kinnita",
+      "feedback": {
+        "correct": "Õige sobitamine!",
+        "wrong": "See kanal ei sobi sellele kliendi käitumisele. Proovi teist.",
+        "allCorrect": "Suurepärane töö! Sobitasid kõik kliendi käitumised nende ideaalsete kanalitega!"
+      },
+      "answerOverlay": "Õiged sobitused:\n1. Aktiivne veebis/sotsiaalplatvormidel -> Sotsiaalmeedia\n2. Toetub soovitustele -> Suust suhu\n3. Otsib teenuseid töötundide ajal -> Füüsiline asukoht\n4. Eelistab otsest isiklikku kontakti -> Otsekontakt e-posti või telefoni teel"
+    },
+    "revenueStreams": {
+      "title": "Tulu allikad",
+      "instructions": "Loe iga raamatupidamisdokument ja määra see õigesse tulu allika kategooriasse.",
+      "documents": {
+        "0": {
+          "title": "Dokument A: Igakuine juurdepääsutasu",
+          "content": "Arve korduva igakuise juurdepääsu eest premium-platvormile. Klienti laaditakse automaatselt iga kuu jätkuva teenuse eest.",
+          "category": "subscription"
+        },
+        "1": {
+          "title": "Dokument B: Tooteostu kviitung",
+          "content": "Kviitung ühekordse tooteostu kohta. Klient maksis kogu summa ette ilma korduvate tasudeta.",
+          "category": "one-time"
+        },
+        "2": {
+          "title": "Dokument C: Mõõdetud teenuse arve",
+          "content": "Arve, mis arvutatakse selle kuu tegeliku kasutuse põhjal: 150 API-kõnet 0,02 USD eest. Kogusumma varieerub kuust kuusse sõltuvalt tarbimisest.",
+          "category": "usage-based"
+        },
+        "3": {
+          "title": "Dokument D: Uuendamise arve",
+          "content": "Arve tasuta tasandilt Pro-plaani uuendamiseks. Põhifunktsioonid jäävad tasuta, kuid täiustatud funktsioonid nõuavad maksmist.",
+          "category": "freemium"
+        }
+      },
+      "categories": {
+        "subscription": "Tellimus",
+        "one-time": "Ühekordne makse",
+        "usage-based": "Kasutusepõhine makse",
+        "freemium": "Freemium"
+      },
+      "feedback": {
+        "correct": "Õige klassifikatsioon!",
+        "wrong": "See ei ole õige kategooria. Loe dokument uuesti ja arvesta, kuidas makse toimib.",
+        "allCorrect": "Suurepärane! Klassifitseerisid kõik tulu allikate dokumendid õigesti!"
+      },
+      "answerOverlay": "Õiged klassifikatsioonid:\nDokument A (Igakuine juurdepääsutasu) -> Tellimus\nDokument B (Tooteostu kviitung) -> Ühekordne makse\nDokument C (Mõõdetud teenuse arve) -> Kasutusepõhine makse\nDokument D (Uuendamise arve) -> Freemium"
+    },
+    "costStructure": {
+      "title": "Kulustruktuur",
+      "instructions": "Klassifitseeri iga igakuine kulu kas Püsiv (jääb samaks olenemata toodangust) või Muutuv (muutub toodangu/müügi mahu põhjal).",
+      "costs": {
+        "0": {
+          "name": "Kontori üür",
+          "type": "fixed"
+        },
+        "1": {
+          "name": "Kindlustus",
+          "type": "fixed"
+        },
+        "2": {
+          "name": "Laenumaksed",
+          "type": "fixed"
+        },
+        "3": {
+          "name": "Töötajate palgad",
+          "type": "fixed"
+        },
+        "4": {
+          "name": "Müügikomisjonid",
+          "type": "variable"
+        },
+        "5": {
+          "name": "Tooraine",
+          "type": "variable"
+        },
+        "6": {
+          "name": "Pakendamine",
+          "type": "variable"
+        },
+        "7": {
+          "name": "Saatmine",
+          "type": "variable"
+        }
+      },
+      "fixedButton": "Püsiv",
+      "variableButton": "Muutuv",
+      "checkButton": "Kontrolli vastuseid",
+      "feedback": {
+        "wrong": "Mõned kulud on valesti klassifitseeritud. Esiletõstetud üksusi tuleb muuta.",
+        "correct": "Tubli! Klassifitseerisid kõik kulud õigesti!"
+      },
+      "answerOverlay": "Püsivad kulud: Kontori üür, Kindlustus, Laenumaksed, Töötajate palgad.\nMuutuvad kulud: Müügikomisjonid, Tooraine, Pakendamine, Saatmine."
+    },
+    "answerOverlayTitle": "Vastus paljastatud",
+    "answerOverlayContinue": "Jätka",
+    "bmc": {
+      "customerSegmentsTitle": "Kliendisegmendid",
+      "valuePropositionTitle": "Väärtuspakkumine",
+      "channelsTitle": "Kanalid",
+      "revenueStreamsTitle": "Tulu allikad",
+      "costStructureTitle": "Kulustruktuur"
+    },
+    "whyInvalid": "Miks see on kehtetu?"
+  },
+  "canvas": {
+    "title": "Ärimudeli lõuend",
+    "message": "Õnnitleme! Oled lõpetanud kõik viis mõistatust. Siin on sinu valminud ärimudeli lõuend. Hõlju iga bloki kohal, et rohkem teada saada.",
+    "blocks": {
+      "customerSegments": {
+        "label": "Kliendisegmendid",
+        "description": "Konkreetsed inimeste või organisatsioonide grupid, keda sinu ettevõte soovib teenindada. Head segmendid on konkreetsed, mõõdetavad ja teostatavad."
+      },
+      "valueProposition": {
+        "label": "Väärtuspakkumine",
+        "description": "Toodete ja teenuste komplekt, mis loob väärtust konkreetsele kliendisegmendile. See peaks selgelt edastama kasu ilma korporatiivse žargoonita."
+      },
+      "channels": {
+        "label": "Kanalid",
+        "description": "Kuidas sinu ettevõte suhtleb ja jõuab oma kliendisegmentideni, et toimetada oma väärtuspakkumine."
+      },
+      "revenueStreams": {
+        "label": "Tulu allikad",
+        "description": "Raha, mida ettevõte teenib igast kliendisegmendist. Mudelid hõlmavad tellimust, ühekordset, kasutusepõhist ja freemiumi."
+      },
+      "costStructure": {
+        "label": "Kulustruktuur",
+        "description": "Kõik kulud, mis tekivad ärimudeli toimimiseks. Kulud võivad olla püsivad (mahust sõltumatud) või muutuvad (mahule proportsionaalsed)."
+      },
+      "keyPartners": {
+        "label": "Võtmepartnerid",
+        "description": "Tarnijate ja partnerite võrgustik, mis muudab ärimudeli toimivaks."
+      },
+      "keyActivities": {
+        "label": "Võtmetegevused",
+        "description": "Kõige olulisemad asjad, mida ettevõte peab tegema, et ärimudel toimiks."
+      },
+      "keyResources": {
+        "label": "Võtmeressursid",
+        "description": "Kõige olulisemad varad, mida on vaja ärimudeli toimimiseks."
+      },
+      "customerRelationships": {
+        "label": "Kliendisuhted",
+        "description": "Suhete tüübid, mida ettevõte loob konkreetsete kliendisegmentidega."
+      }
+    },
+    "finishButton": "Lõpeta põgenemistuba"
+  },
+  "hints": {
+    "explore": "Vaata ringi ruumis. Saad suhelda udusa akna, paberitahvli, teleripuldiga, paberitega laual ja kaustaga.",
+    "window": "Proovi klõpsata udusal aknal, et alustada Kliendisegmentide mõistatust.",
+    "flipchart": "Paberitahvel sisaldab väärtuspakkumise harjutust.",
+    "tv": "Kasuta teleripulti, et alustada Kanalite mõistatust.",
+    "papers": "Paberid laual sisaldavad raamatupidamisdokumente Tulu allikate mõistatuse jaoks.",
+    "folder": "Kaust laual sisaldab igakuiste kulude lehte Kulustruktuuri mõistatuse jaoks.",
+    "whiteboard": "Kõik mõistatused on lahendatud! Klõpsa tahvlil, et näha oma ärimudeli lõuendit.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ruumis ringi interaktiivsete objektide otsides.",
+    "puzzle_customers": "Klassifitseeri iga kliendiprofiil kui Kehtiv või Kehtetu. Kehtivad segmendid on konkreetsed ja teostatavad; kehtetud on liiga laiad, ebamäärased või eeldustel põhinevad.",
+    "puzzle_channels": "Kasuta nooli saadaolevate kanalite sirvimiseks ja kinnita see, mis kõige paremini sobib näidatud kliendi käitumisega.",
+    "puzzle_revenue": "Loe iga raamatupidamisdokument hoolikalt läbi ja lohista see seejärel tulu allika kategooriasse, mis kõige paremini kirjeldab, kuidas makse toimib.",
+    "puzzle_costs": "Määra iga igakuine kulu kas Püsivaks (sama iga kuu) või Muutuvaks (muutub koos toodangu või müügi mahuga) ning seejärel kontrolli oma vastuseid."
+  },
+  "systemDialogues": {
+    "windowFogged": "Aken on täiesti udune. Märkad lähedal kummiharja. Võib-olla saad seda kasutada klaasi puhastamiseks.",
+    "windowCleaned": "Udu hajub ja paljastab klaasil kliendiprofiilid! Aeg neid klassifitseerida.",
+    "flipchartIntro": "Paberitahvel näitab väärtuspakkumise avaldust, kuid see on täis korporatiivseid moesõnu. Puhastame selle ära.",
+    "tvIntro": "Telekraan süttib näidates kliendi käitumisi. Pead sobitama iga ühe õige kanaliga.",
+    "papersIntro": "Näed laual nelja raamatupidamisdokumenti. Igaüks neist esindab erinevat tüüpi tulu allikat.",
+    "folderIntro": "Kaust sisaldab igakuiste kulude jaotust. Pead klassifitseerima iga kulu kui püsiva või muutuva.",
+    "puzzleComplete": "Mõistatus lahendatud! Tubli.",
+    "allPuzzlesComplete": "Kõik viis mõistatust on lahendatud! Toa esiosa tahvel hõõgub nüüd. Klõpsa sellel, et näha oma valminud ärimudeli lõuendit.",
+    "canvasViewed": "Oled vaadanud üle kogu ärimudeli lõuendi. Uks on nüüd avatud - saad ruumist välja minna!"
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Lõpetasid edukalt äriplaneerimise põgenemistoa! Mõistad nüüd ärimudeli lõuendi võtmekomponente: Kliendisegmendid, Väärtuspakkumine, Kanalid, Tulu allikad ja Kulustruktuur.",
+    "buttonText": "Välju ruumist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "puzzlesCompleted": "ülesanded",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus",
+    "backToDocuments": "Tagasi dokumentide juurde"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

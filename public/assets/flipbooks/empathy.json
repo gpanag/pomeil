@@ -1,0 +1,184 @@
+{
+  "id": "empathy",
+  "moduleNumber": 22,
+  "title": "Empathy",
+  "subtitle": "Module 22",
+  "coverImage": "assets/thumbs/empathy.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 22",
+      "title": "Empathy",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/empathy.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module is designed to enhance learners' comprehension of empathy as a cognitive, emotional, and behavioral capability. Participants will investigate how empathy facilitates effective communication, teamwork, and adaptability in various roles and situations. The module aims to improve learners' skills in recognizing others' thoughts, connecting with their emotions, and responding with suitable actions. Furthermore, learners will practice techniques like active listening, shifting perspectives, and emotional awareness."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Empathy is a fundamental mental function for all aspects of everyday life and consists of an outward movement of the psyche, which concerns the ability to mentally move into the experiential position of another person and to understand their mental state, their emotions, and their thoughts (Davis, 1983). Although there are different views on the definition of empathy, it seems to be a multifactorial concept of human connection with cognitive, emotional, behavioral, and moral content."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: Imagine being an entrepreneur. You are going to have different roles like marketer, accountant, product manager, and web designer. To be successful in these roles, the solution is to have empathy. Empathy makes you more persuasive, more determined, and more innovative because you understand the needs of each audience and adapt to different needs in a creative way."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Empathy is a skill that can be learned, rather than a fixed trait, and people can be encouraged to make the effort (Dweck, 2006). The 3 Parts of Empathy are the following (Gerdes et al., 2011):"
+        },
+        {
+          "kind": "definition",
+          "term": "Thoughts-Recogize",
+          "definition": "We try to understand how others think, what they experience, and why they feel certain emotions."
+        },
+        {
+          "kind": "definition",
+          "term": "Feelings-Relate",
+          "definition": "We connect emotionally with others, and this helps to build genuine caring."
+        },
+        {
+          "kind": "definition",
+          "term": "Actions-Respond",
+          "definition": "We offer support or help when needed based on our understanding."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Cultivating empathy is not possible without the desire. Remember that it may take time, practice, and patience. Here are some methods that can help to develop empathy:"
+        },
+        {
+          "kind": "definition",
+          "term": "Active listening",
+          "definition": "Active listening involves giving the speaker your full attention without interrupting (Rogers & Farson, 1957)."
+        },
+        {
+          "kind": "definition",
+          "term": "Perspective-shifting",
+          "definition": "This involves imagining yourself in the other person’s shoes to better understand their feelings and point of view (Galinsky & Moskowitz, 2000)."
+        },
+        {
+          "kind": "definition",
+          "term": "Learning",
+          "definition": "Structured approaches that include role-playing, mindfulness exercises are designed to increase empathy and emotional intelligence. (Teding van Berkhout & Malouff, 2016)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "People tend to empathize more with those who are similar to them, which can exclude others. Cultural education can expose individuals to different characteristics and result in better levels of empathy. Also, another challenge that may occur is digital communication barriers in online interaction. Education in the field can also help individuals adopt approaches that are inclusive in online interaction. Empathy is generally considered a positive trait that allows people to connect with others emotionally, understand their perspectives, and respond with compassion. However, like any trait, having it to an excessive degree can cause us problems. These are situations where we constantly and exclusively focus on what others are feeling and thinking, completely ignoring ourselves."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "We write on paper different emotions and place them in a container. Each participant chooses one paper and reads it. The participant then tries to enact the emotion on the rest of the group. The other participants are asked to watch and guess the emotion. If correct, they explain why they chose that emotion."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "If you answer YES to the majority of questions, it is possible to have empathy for the others. It is an interesting approach to understand this concept."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "Many people tend to tell you their problems.",
+            "You are a giver, and sometimes you give too much.",
+            "You find it hard not to care about others and are often curious to learn about them.",
+            "You don't do well in crowded places. If you can easily sense how others are feeling, you will probably have a hard time handling the emotional \"noise\" from a crowd for a long time.",
+            "You recharge your batteries and find relief in nature."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Empathy doesn’t mean to lose the individual’s identity, but to understand others, and not to avoid facing \"difficult\" emotions. On the contrary, the development of empathy can be influenced by cognitive development, as well as the ability of the individual to see from the perspective of the other. The best way to strengthen empathy is through one's own personal experiences and efforts. Being open to diversity and trying to understand the difficulties somebody faces are the first steps."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the conclusion of this module, participants will be able to identify how empathy contributes to comprehending the emotions, thoughts, and viewpoints of others. They will show enhanced capabilities in active listening, interpreting emotional signals, and providing supportive responses. Learners will be more prepared to tackle typical challenges, such as biases regarding similarities and obstacles in online communication. In addition, participants will grasp the significance of balancing empathy with self-awareness."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Videos: How empathy works - and sympathy can't",
+            "Understanding Empathy"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Empathy",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/empathy.pdf"
+      }
+    }
+  ]
+}

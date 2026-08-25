@@ -1,0 +1,176 @@
+{
+  "loading": "Loading Language Skills...",
+  "intro": {
+    "title": "Language Skills",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company, where people from different cultures, backgrounds, and professions work together. Working at this company is a learning experience for you, as by completing various challenges within it, you will acquire skills included in the POMEIL Competency Map, which are essential for every entrepreneur.",
+      "Your first task takes you to the R&D waiting area, where you'll meet new colleagues from different countries. Strong communication skills will help you bridge any language barrier and build lasting professional relationships."
+    ],
+    "buttonText": "Enter the Waiting Room"
+  },
+  "characters": {
+    "maria": {
+      "name": "Maria",
+      "dialogues": {
+        "greet": "Hello! Welcome to the R&D waiting area. Our teams work with partners from all over the world, so strong Language Skills are essential. They help you communicate clearly, improve your career opportunities, and grow professionally.",
+        "findTablet": "Before you enter the R&D department, it's important to understand the four basic components of language proficiency. I left a digital tablet on the shared desk here with an interactive guide. Can you find it?",
+        "tabletFound": "Well done! Speaking and listening are crucial during meetings and discussions, while reading and writing are essential for reports, emails, and documentation in R&D.",
+        "quiz1Intro": "Let's test your understanding of these concepts.",
+        "quiz1Done": "Now that you understand the basics, let's talk about how to develop these skills. This is especially important when working in a demanding environment like R&D.",
+        "findFlipchart": "There are common challenges, such as lack of motivation or limited time. I wrote some solutions on the flipchart here after our last staff seminar. Go take a look.",
+        "flipchartFound": "Excellent. Clear goals and smart use of technology make language learning manageable, even with a busy R&D schedule.",
+        "puzzle2Intro": "Now, complete these final tasks to finish your training.",
+        "finalWords": "Fantastic! You understand how to develop language skills in real work situations. Strong communication makes you more confident and effective.\n\nRemember, language skills allow you to participate fully in international projects and the global labor market. Good luck!",
+        "completion": "Congratulations, you've completed everything and leveled up your Language Skills. Click the open door to exit.",
+        "default": "Keep looking around the waiting room for clues."
+      }
+    },
+    "kenji": {
+      "name": "Kenji",
+      "dialogues": {
+        "busy": "I'm preparing for my R&D presentation. Using digital tools really helps with pronunciation and confidence!",
+        "default": "Still rehearsing... talk to Maria."
+      }
+    }
+  },
+  "puzzles": {
+    "fillGap": {
+      "title": "The 4 Components of Language",
+      "instructions": "Drag the correct words into the missing spaces to complete the definitions.",
+      "sentenceParts": [
+        "Listening is a ",
+        " skill that focuses on the ability to interpret a message correctly. Writing is a ",
+        " skill that allows us to share opinions through text."
+      ],
+      "options": [
+        "receptive",
+        "productive",
+        "passive",
+        "silent"
+      ],
+      "correctAnswers": [
+        "receptive",
+        "productive"
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about which skills receive information and which produce it.",
+        "correct": "Correct! You know the difference between receiving and producing language."
+      },
+      "answerOverlay": "The correct answers are:\n1. Listening is a RECEPTIVE skill.\n2. Writing is a PRODUCTIVE skill.",
+      "resetButton": "Reset",
+      "checkButton": "Check Answer"
+    },
+    "singleChoice": {
+      "title": "Overcoming Language Barriers",
+      "instructions": "Choose the best answer.",
+      "question": "You are struggling to find time to practice a new language and feel unmotivated. According to the training, what is a good solution?",
+      "options": {
+        "a": "Stop learning until you have a full free day.",
+        "b": "Leverage technology (digital tools) and join online communities.",
+        "c": "Only use formal education methods like expensive seminars.",
+        "d": "Avoid speaking until you are perfect."
+      },
+      "hint": "Think about modern tools. What can you use on the go to make learning personalized and social?",
+      "feedback": {
+        "wrong": "Think about modern tools. What can you use on the go to make learning personalized and social?",
+        "correct": "Correct! Technology and online communities make language learning accessible and social."
+      },
+      "answerOverlay": "The correct answer is: Leverage technology (digital tools) and join online communities."
+    },
+    "sequenceOrder": {
+      "title": "The Role-Play Exercise",
+      "instructions": "You are participating in a language workshop. Arrange the steps of the scenario-based role-play exercise in the correct order.",
+      "items": [
+        "Participants choose one situation and present their opinions.",
+        "Write common workplace situations (e.g., presenting an opinion) on paper.",
+        "All participants interact and discuss the subject further.",
+        "Identify the scenario."
+      ],
+      "correctOrder": [
+        "Identify the scenario.",
+        "Write common workplace situations (e.g., presenting an opinion) on paper.",
+        "Participants choose one situation and present their opinions.",
+        "All participants interact and discuss the subject further."
+      ],
+      "hints": [
+        "First, write down possible workplace situations. Then, decide which scenario you will focus on. After that, present it and finally discuss it together."
+      ],
+      "feedback": {
+        "wrong": "First, write down possible workplace situations. Then, decide which scenario you will focus on. After that, present it and finally discuss it together.",
+        "correct": "Excellent! You arranged the role-play steps correctly."
+      },
+      "answerOverlay": "The correct order is:\n1. Identify the scenario.\n2. Write common workplace situations on paper.\n3. Participants choose one situation and present their opinions.\n4. All participants interact and discuss the subject further."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Click on Maria at the left wall to begin.",
+    "talkToMaria": "Click on Maria to start.",
+    "findTablet": "Look for the digital tablet on the shared desk.",
+    "talkToMaria2": "Return to Maria.",
+    "puzzle1FillGap": "Think about which language skills receive information and which produce it.",
+    "findFlipchart": "Maria mentioned the flipchart near the windows. Look for it.",
+    "talkToMaria3": "Return to Maria with what you learned.",
+    "completion": "The training has been completed!",
+    "default": "Look around the waiting room for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the quiet, professional waiting room outside the R&D department. A large world map mural with 'Hello' in many languages decorates the back wall. You notice Maria, the Language Coordinator, standing near a flipchart.",
+    "clickBookshelves": "Mostly manuals, dictionaries, and technical documents. Maria mentioned the guide is on a digital device.",
+    "foundTablet": "You found it! The screen lights up with a learning app.",
+    "tabletRead": "You learned the basics! Return to Maria.",
+    "clickWorldMap": "It highlights our international R&D collaborations. Look for the flipchart near the windows.",
+    "foundFlipchart": "You have the strategies! Return to Maria."
+  },
+  "items": {
+    "tablet": {
+      "popupTitle": "The 4 Components of Language Proficiency",
+      "popupContent": [
+        "Speaking: Using language to express ideas, feelings, and opinions.",
+        "Listening: A receptive skill used to correctly interpret spoken messages.",
+        "Reading: Decoding and understanding written text.",
+        "Writing: A productive skill used to communicate through text."
+      ],
+      "inventoryTitle": "Digital Tablet"
+    },
+    "flipchart": {
+      "popupTitle": "Challenges & Solutions",
+      "popupContent": [
+        "Challenge: Improving skills without a certain goal.",
+        "Solution: Set clear goals—purpose increases motivation.",
+        "Challenge: Inconsistent motivation and lack of time.",
+        "Solution: Leverage technology and participate in online learning communities."
+      ],
+      "inventoryTitle": "Flipchart Notes"
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "Congratulations, you've completed everything and leveled up your Language Skills.",
+    "buttonText": "Exit the Waiting Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

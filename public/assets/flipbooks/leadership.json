@@ -1,0 +1,212 @@
+{
+  "id": "leadership",
+  "moduleNumber": 7,
+  "title": "Leadership",
+  "subtitle": "Module 7",
+  "coverImage": "assets/thumbs/leadership.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 7",
+      "title": "Leadership",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/leadership.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module aims to help participants understand leadership as a set of practical, learnable skills that can be applied in everyday entrepreneurial contexts. It seeks to strengthen self- awareness, emotional regulation, motivation, communication, cultural intelligence, and decision-making abilities. The module also aims to support learners in recognising their own leadership potential and in developing the confidence to guide others, particularly within diverse and multicultural environments."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The term leadership denotes the ability to steer, encourage, and rally a group around a set of common objectives. Migrant founders, in particular, draw on solid leadership to weave themselves into local communities, build robust networks, and keep their ventures healthy (Day, 2000). Good leaders know themselves well, speak plainly, and shift their style to fit varying cultural and social landscapes. This module zeroes in on four core habits-self- awareness, open communication, sound decision-making, and flexible response-and shows how mastering each one boosts entrepreneurial performance no matter where a business lands."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Effective leadership cultivates an atmosphere of trust while energizing team members, two prerequisites for resilient projects. Entrepreneurs who can project confidence in a shared goal are better positioned to steer through uncertainty and untangle the inevitable crises that arise. Scholars have long asserted that intrapersonal competencies-self-awareness, agility of mindset, and disciplined self-control-lie at the core of lasting leadership influence, especially when circumstances shift unexpectedly (Day, 2000)."
+        },
+        {
+          "kind": "paragraph",
+          "text": "For migrant entrepreneurs, such traits grow even more vital; they frequently find themselves negotiating foreign social norms and navigating alien regulatory mazes. In culturally mixed workplaces, the capacity for cultural intelligence becomes indispensable. It equips a leader to decode different value systems, converse meaningfully across language barriers, and foster a climate where diverse voices can contribute without fear of dismissal (Nosratabadi et al., 2020). Mastering the practice of leadership, then, means moving through complexity with a blend of composure, insight, and genuine empathy for others."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Self-awareness",
+          "definition": "Insight into personal strengths and emotional triggers (Goleman, 1998)"
+        },
+        {
+          "kind": "definition",
+          "term": "Self-regulation",
+          "definition": "Emotional control, adaptability, and responsibility (Day, 2000)"
+        },
+        {
+          "kind": "definition",
+          "term": "Self-motivation",
+          "definition": "Initiative, persistence, and goal‑orientation (Day, 2000) ."
+        },
+        {
+          "kind": "definition",
+          "term": "Social awareness and empathy",
+          "definition": "Understanding others’ perspectives and cultural contexts (Nosratabadi et al., 2020)"
+        },
+        {
+          "kind": "definition",
+          "term": "Communication and feedback",
+          "definition": "Active listening, clarity, and openness to feedback, including 360° methods (Day, 2000) ."
+        },
+        {
+          "kind": "definition",
+          "term": "Decision-making & problem-solving",
+          "definition": "Confident, timely choices grounded in analysis and input."
+        },
+        {
+          "kind": "definition",
+          "term": "Coaching and development",
+          "definition": "Guiding others’ growth through mentorship, delegation, and modeling."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Below are presented some effective ways that support the development of leadership skills:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Formal training: You can participate in Interactive workshops on emotional intelligence, cultural competence, and decision-making.",
+            "Developmental assignments: You can take on leadership roles or projects that stretch abilities",
+            "360° Feedback and coaching: You can use structured feedback loops and seek professional coaching for reflection and improvement .",
+            "Practice cultural intelligence: You can work in diverse groups and reflect on cross- cultural dynamics (Nosratabadi et al., 2020)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Limited self-awareness Cultural misunderstandings Fear of delegation Lack of confidence",
+          "definition": "Use tools like the Johari window and frequent feedback cycles. Engage in cultural competence training and inclusive practices. Start small—delegate simple tasks and build trust progressively. Pair mentorship with experiential learning and reflection."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Leadership Reflection and Action Plan"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Complete a self-assessment on intrapersonal competencies: self-awareness, self- regulation, and motivation.",
+            "Collect short feedback from peers or family on your leadership strengths and areas to improve.",
+            "Describe a real or hypothetical situation where cultural intelligence would be critical— for example, negotiating with clients from different backgrounds.",
+            "Set SMART goals for improving one leadership aspect over six weeks (e.g., schedule weekly 360° feedback sessions; enroll in a cultural‑intelligence webinar)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Tick the box if you agree"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I understand my emotional triggers and strengths.",
+            "I can regulate my emotions under stress.",
+            "I stay committed and optimistic when facing challenges.",
+            "I actively seek feedback from others.",
+            "I adapt communication to different cultures.",
+            "I delegate tasks and mentor others."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Leadership entails a constellation of personal abilities, including sharp self-awareness, steady emotional control, genuine empathy, and a fine-tuned sensitivity to different cultures. For migrants who are launching new businesses in foreign settings, these soft skills help forge trust, invite broader participation, and steer eclectic teams through the inevitable confusion of an unfamiliar economic terrain. Skilled leaders can also paint a vivid collective picture of success, pivot nimbly when problems arise, and cultivate workplaces where collaboration feels both natural and rewarding."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the end of this module, participants are expected to demonstrate greater self- understanding and emotional control in professional situations. They should be able to communicate more effectively, make thoughtful decisions, adapt their leadership style to different cultural contexts, and delegate responsibilities with confidence. Ultimately, learners will be better prepared to lead teams, build trust, and foster inclusive and resilient business environments."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Article Kouzes, J. M., & Posner, B. Z. (2019). The leadership challenge: How to make extraordinary things happen in organizations (6th ed.). Jossey-Bass."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Video What makes a good leader https://www.youtube.com/watch?v=ME5arjlSTGQ"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Leadership",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/leadership.pdf"
+      }
+    }
+  ]
+}

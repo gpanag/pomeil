@@ -1,0 +1,327 @@
+{
+  "loading": "Ładowanie podejmowania decyzji...",
+  "intro": {
+    "title": "Podejmowanie decyzji",
+    "paragraphs": [
+      "Masz wejść do windy w nowoczesnym budynku biurowym.",
+      "To, co wydaje się rutynową przejażdżką, ma stać się lekcją podejmowania decyzji.",
+      "Zwracaj uwagę na otoczenie — wybory, których dokonasz, zdecydują o tym, jak rozwinie się ta sytuacja."
+    ],
+    "buttonText": "Podejdź do windy"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "dm": {
+      "identifyAlternativesTitle": "Zidentyfikuj alternatywy",
+      "identifyAlternativesDesc": "Kliknij każde pole, aby ujawnić alternatywy ucieczki z windy.",
+      "identifyOutcomesTitle": "Zidentyfikuj wyniki",
+      "identifyOutcomesDesc": "Kliknij każde pole, aby ujawnić możliwe wyniki dla każdej alternatywy.",
+      "evaluateAlternativesTitle": "Oceń alternatywy",
+      "evaluateAlternativesDesc": "Kliknij każde kryterium, aby zobaczyć, jak alternatywy wypadają w jego świetle.",
+      "selectBestTitle": "Wybierz najlepszą alternatywę",
+      "selectBestDesc": "Wybierz alternatywę, którą uważasz za najlepszą. Wszystkie wybory prowadzą do ucieczki!"
+    }
+  },
+  "items": {
+    "floorIndicator": {
+      "dialogue": "Utknięcie między 4. a 5. piętrem? Dość dziwne…"
+    },
+    "roofLamp": {
+      "dialogue": "Światła zgasły na chwilę. Może doszło do awarii zasilania?"
+    },
+    "buttonPanel": {
+      "dialogue": "Dokąd to ja jechałem?"
+    },
+    "wirePanel": {
+      "dialogue": "To prawdopodobnie zakrywa instalację elektryczną."
+    },
+    "inspectionPlaque": {
+      "dialogue": "Wygląda na to, że winda nie miała przeglądu w 2022. I 2023. I 2024. I…",
+      "title": "CERTYFIKAT BEZPIECZEŃSTWA WINDY",
+      "lines": [
+        "Sprawdzono: 14.06.2021",
+        "Następny przegląd: 14.06.2022",
+        "Nr certyfikatu: EI-21-0487",
+        "ID windy: Lift 3"
+      ]
+    },
+    "safetyPoster": {
+      "title": "W RAZIE AWARII WINDY",
+      "lines": [
+        "Zachowaj spokój — Wewnątrz jest dużo powietrza",
+        "Wezwij pomoc — Użyj dzwonka alarmowego lub telefonu",
+        "Nie próbuj wspinać się ani rozsuwać drzwi siłą",
+        "Nie skacz",
+        "Nie manipuluj systemami windy",
+        "Nie bądź bohaterem — Czekaj na pomoc i postępuj zgodnie z instrukcjami służb ratowniczych"
+      ]
+    },
+    "incidentPoster": {
+      "dialogue1": "To już nie jest do końca prawda…",
+      "dialogue2": "Proszę bardzo.",
+      "title": "Dni bez incydentu"
+    },
+    "roofHatch": {
+      "dialogue": "Czy to wyjście?"
+    }
+  },
+  "systemDialogues": {
+    "elevatorStalled": "Westchnienie… Winda stanęła. Mam szczęście.",
+    "whatNow": "No więc… co teraz? Jak się stąd wydostać?",
+    "allInfoGathered": "Jaka jest moja najlepsza alternatywa, by się stąd wydostać?",
+    "posterFalls": "Plakat reklamowy spada z tablicy ogłoszeń, odsłaniając pewien tekst za nim…",
+    "alternativesRevealed": "To są wszystkie moje alternatywy.",
+    "outcomesRevealed": "To są wszystkie możliwe wyniki…",
+    "evaluationComplete": "Chyba zależy to ode mnie. Co jest najważniejsze — ryzyko, koszt czasu, zużycie zasobów czy kontrola?",
+    "chooseAlternative": "Teraz muszę zdecydować. Która alternatywa jest najlepsza?"
+  },
+  "alternatives": {
+    "pressAlarm": {
+      "label": "Naciśnij przycisk alarmu",
+      "outcomes": [
+        "Odkrycie i ratunek",
+        "Nic się nie dzieje"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Opcja niskiego ryzyka. Dokładnie to, co zalecał plakat awaryjny.",
+        "timeCost": "Reakcja może być szybka lub wolna, w zależności od tego, jak monitorowany jest alarm.",
+        "resourceUse": "Naciśnięcie alarmu kosztuje niewiele lub zerową ilość energii.",
+        "control": "Masz kontrolę nad naciśnięciem przycisku alarmu. Ale nie masz kontroli nad tym, czy, kiedy i jak ktoś zareaguje."
+      },
+      "actualOutcome": {
+        "summary": "Użyłeś dzwonka alarmowego, by wezwać pomoc.\n\nNa szczęście personel serwisowy odpowiedział natychmiast, a służby ratunkowe zostały wezwane.\n\nUratowano cię w mgnieniu oka!",
+        "sound": "alarm-ring"
+      }
+    },
+    "callOut": {
+      "label": "Wołaj o pomoc do osób w pobliżu",
+      "outcomes": [
+        "Odkrycie i ratunek",
+        "Nic się nie dzieje"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "neutral",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Opcja niskiego ryzyka. Wzywanie pomocy w żaden sposób nie wpływa na windę.",
+        "timeCost": "Ktoś może cię usłyszeć od razu. Albo skończysz wołając przez długi czas.",
+        "resourceUse": "Wołanie przez chwilę kosztuje niewiele energii. Wołanie przez godziny może być bardzo wyczerpujące i zużyć twoją energię.",
+        "control": "To, czy ktoś przejdzie i cię usłyszy, jest zupełnie poza twoją kontrolą."
+      },
+      "actualOutcome": {
+        "summary": "Musiałeś krzyczeć przez chwilę. Stałeś się spragniony, ochrypły i zmęczony.\n\nNa szczęście ktoś w końcu cię usłyszał i zadzwonił po służby ratunkowe.\n\nUratowano cię po 2 godzinach.",
+        "sound": "shout-help"
+      }
+    },
+    "pryDoors": {
+      "label": "Rozsuń drzwi siłą",
+      "outcomes": [
+        "Samowolna ewakuacja",
+        "Uszkodzenie windy",
+        "Uraz człowieka"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Wytyczne windy ostrzegały przed tym. Ty lub winda możecie zostać uszkodzeni.",
+        "timeCost": "Jeśli ci się uda, uciekasz szybko. Jeśli zawiedziesz, marnujesz czas. Również uraz może uczynić ratunek bardziej skomplikowanym.",
+        "resourceUse": "Rozsuwanie drzwi siłą wymaga dużo siły i wysiłku. Możesz wyczerpać swoją energię.",
+        "control": "Bierzesz kontrolę nad sytuacją. Sukces zależy od twoich sił i wysiłków. Ale nie masz kontroli nad tym, jak winda i drzwi zareagują."
+      },
+      "actualOutcome": {
+        "summary": "Rozsunięcie drzwi wymagało dużo wysiłku i siły, i przez chwilę walczyłeś. Drzwi w końcu otworzyły się do połowy, ujawniając ścianę za nimi. Wyczerpany, położyłeś się na podłodze windy, by odpocząć.\n\nPo czasie, który wydawał się połową wieczności, ktoś przeszedł obok i cię znalazł.\nPrzed twoim uwolnieniem służby ratunkowe musiały zresetować drzwi, ponieważ były niezsynchronizowane po twojej próbie ratunku.\n\nUratowano cię po 5 godzinach.",
+        "sound": "creaking"
+      }
+    },
+    "climbHatch": {
+      "label": "Wspinaj się przez właz dachowy",
+      "outcomes": [
+        "Samowolna ewakuacja",
+        "Uszkodzenie windy",
+        "Uraz człowieka"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Wytyczne windy ostrzegały przed tym. Robienie tego może doprowadzić do urazu twojego lub windy.",
+        "timeCost": "Jeśli zadziała, uciekasz szybko. Jeśli nie zadziała lub dojdzie do urazu, ratunek może stać się trudniejszy i bardziej czasochłonny.",
+        "resourceUse": "Wspinanie się wymaga siły, równowagi i koncentracji. Może być bardzo energochłonne.",
+        "control": "Pomyślny wynik zależy od twojej siły i zdolności. Ale wynik nie jest w pełni pod twoją kontrolą. Nie wiesz nawet, czy w ogóle da się wyjść tą drogą."
+      },
+      "actualOutcome": {
+        "summary": "Wspinanie się przez dach windy okazało się trudniejsze, niż się spodziewałeś. Próbowałeś dosięgnąć uchwytu skacząc i wyciągając ramiona. Ale to było po prostu za wysoko. Sfrustrowany, opadłeś na podłogę.\n\nPo dłuższym dąsaniu się ktoś cię znalazł i powiadomił służby ratunkowe o sytuacji.\n\nUratowano cię po 3 godzinach.",
+        "sound": "action-hero"
+      }
+    },
+    "clickFloorButton": {
+      "label": "Kliknij dowolny przycisk piętra",
+      "outcomes": [
+        "Winda zaczyna znów działać",
+        "Nic się nie dzieje"
+      ],
+      "risk": "neutral",
+      "timeCost": "match",
+      "resourceUse": "neutral",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Naciśnięcie przycisku piętra to niskie ryzyko. Nie ryzykujesz urazu ani uszkodzenia windy.",
+        "timeCost": "Jeśli przyciski działają, uciekasz natychmiast. Jeśli nie działają, nie jesteś bliżej ucieczki.",
+        "resourceUse": "Naciskanie przycisków wymaga minimalnego wysiłku i energii.",
+        "control": "Na początku masz kontrolę. Ale nie masz kontroli nad odpowiedzią systemu windy."
+      },
+      "actualOutcome": {
+        "summary": "Nic się nie stało, gdy nacisnąłeś przycisk piętra. Zirytowany, naciskałeś wszystkie przyciski pięter, by zobaczyć, czy coś się stanie. Nadal nic się nie działo.\n\nNa szczęście ktoś przeszedł obok i cię odkrył. Powiadomiono służby ratunkowe i te szybko przybyły. Ratując cię, wyjaśnili, że ze względów bezpieczeństwa przyciski pięter są wyłączane po awariach zasilania. Wyjaśnienie miało sens, ale mimo to pozostałeś zirytowany.\n\nUwolniono cię po 2 godzinach.",
+        "sound": "button-click"
+      }
+    },
+    "jumpActivate": {
+      "label": "Skacz, by aktywować windę",
+      "outcomes": [
+        "Winda zaczyna znów działać",
+        "Uszkodzenie windy",
+        "Uraz człowieka"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Wytyczne windy szczególnie ostrzegały przed skakaniem. Możesz zranić siebie lub uszkodzić windę.",
+        "timeCost": "Winda może zacząć działać natychmiast. Inną możliwością jest, że nic się nie stanie. Może to również skutkować urazem, dalej opóźniając twój ratunek.",
+        "resourceUse": "Skakanie wymaga wysiłku fizycznego i równowagi. Może zużyć dużo twojej energii.",
+        "control": "W pełni kontrolujesz sam skok. Masz niewielką lub żadną kontrolę nad tym, jak zareaguje winda."
+      },
+      "actualOutcome": {
+        "summary": "Skakanie w windzie spowodowało aktywację hamulca awaryjnego. To zrobiło głośny hałas i przyciągnęło niewielki tłum ciekawskich ludzi. Wykonano kilka połączeń do służb ratunkowych.\n\nMimo że służby ratunkowe szybko przybyły, ratunek nie był równie szybki. Trzeba było wezwać specjalistę od wind, by zresetować hamulce. Niestety, jedyny w mieście specjalista od wind był na konferencji o windach. Czekając na jego przybycie, otuliłeś się kocem i zjadłeś trochę naleśników, które służby ratunkowe zdołały przepchnąć przez drzwi windy.\n\nSpałeś w windzie i uratowano cię po 10 godzinach.",
+        "sound": "creaking"
+      }
+    },
+    "fixWiring": {
+      "label": "Napraw instalację elektryczną",
+      "outcomes": [
+        "Winda zaczyna znów działać",
+        "Uszkodzenie windy",
+        "Uraz człowieka"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Być może najbardziej ryzykowna opcja. Manipulowanie systemami elektrycznymi jest niebezpieczne.",
+        "timeCost": "W zależności od twojej wiedzy o systemach elektrycznych, ucieczka może być dość szybka. Wszelkie błędy mogą spowodować opóźnienia lub nowe problemy, komplikując twój ratunek.",
+        "resourceUse": "Praca przy systemach elektrycznych wymaga dużo skupienia i wysiłku, zużywając sporo twojej energii.",
+        "control": "Bierzesz kontrolę, by naprawić problem. To, czy ci się uda, zależy w dużej mierze od twoich umiejętności i szczęścia."
+      },
+      "actualOutcome": {
+        "summary": "Niestety przewody nie zasilały windy, tylko światła. Zamiast aktywować windę, światła zgasły ponownie.\n\nPróbowałeś różnych rzeczy, by zabić czas, czekając na ratunek w ciemności. Gra ABC; znajdowanie rzeczy zaczynających się od każdej litery alfabetu, okazała się szczególnie trudna w ciemności.\n\nPo czasie, który wydawał się bardzo długi, ktoś cię znalazł i zadzwonił po służby ratunkowe. Uwolnili cię, jednocześnie strofując za manipulowanie instalacją elektryczną.\n\nUratowano cię po 5 godzinach.",
+        "sound": "voltage-shock"
+      }
+    },
+    "waitRescue": {
+      "label": "Czekaj na ratunek",
+      "outcomes": [
+        "Odkrycie i ratunek",
+        "Nic się nie dzieje"
+      ],
+      "risk": "match",
+      "timeCost": "mismatch",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Plakat awaryjny radził ci zachować spokój. Nie ma ryzyka urazu, gdy siedzisz i czekasz.",
+        "timeCost": "Jeśli masz szczęście, znajdą cię po krótkiej chwili. Jeśli masz pecha, skończysz długim oczekiwaniem.",
+        "resourceUse": "Czekanie wymaga bardzo niewielkiego wysiłku. Oszczędzasz swoją energię.",
+        "control": "Nie masz kontroli nad wynikiem. Polegasz całkowicie na tym, że ktoś inny cię odkryje."
+      },
+      "actualOutcome": {
+        "summary": "Czekanie było bardzo, bardzo, bardzo nudne.\n\nPlusem była na wpół roztopiona tabliczka czekolady, którą znalazłeś w tylnej kieszeni.\n\nMinusem była muzyka windowa. Stała się dość drażniąca po pewnym czasie. W rzeczywistości było prawie niemożliwe skupić się na czymkolwiek innym oprócz tej głupiej, powtarzalnej muzyki.\n\nByłeś bardzo wdzięczny, gdy ktoś w końcu cię znalazł i zadzwonił po służby ratunkowe.\n\nUratowano cię po 5 godzinach.",
+        "sound": "elevator-music"
+      }
+    }
+  },
+  "criteria": {
+    "risk": "Ryzyko",
+    "timeCost": "Koszt czasu",
+    "resourceUse": "Zużycie zasobów",
+    "control": "Kontrola"
+  },
+  "flowchart": {
+    "startNode": "Utknąłeś w windzie"
+  },
+  "reviewOutcome": {
+    "title": "Przegląd wyniku",
+    "reflectionText": "Zatrzymaj się na chwilę i zastanów:",
+    "questions": [
+      "Czy byłeś zadowolony z wyniku?",
+      "Czego się nauczyłeś?",
+      "Czy w przyszłości zrobiłbyś coś inaczej?"
+    ],
+    "finishButton": "Zakończ escape room"
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "subtitle": "Ukończyłeś pokój podejmowania decyzji!",
+    "sections": [
+      {
+        "heading": "Proces podejmowania decyzji",
+        "text": "Po tym, jak winda stanęła, przeszedłeś przez kroki w procesie podejmowania decyzji.\n\nNajpierw zidentyfikowałeś decyzję, którą musiałeś podjąć — jak uciec z zatrzymanej windy. Zebrałeś informacje i zidentyfikowałeś różne alternatywy oraz możliwe wyniki. Oceniłeś swoje opcje, biorąc pod uwagę kryteria takie jak ryzyko i koszt czasu. Zdecydowałeś, która opcja jest najlepsza, i podjąłeś działanie. Wreszcie zrecenzowałeś wynik."
+      },
+      {
+        "heading": "Umiejętności podejmowania decyzji",
+        "text": "Podejmowanie decyzji to umiejętność, którą można trenować!\n\nMożesz zacząć od podejmowania mniejszych, codziennych decyzji w sposób przemyślany, takich jak „Ile czasu powinienem przeznaczyć na to zadanie?”.\n\nMożesz korzystać z procesu podejmowania decyzji, gdy stajesz przed trudniejszymi decyzjami. To pomoże ci zmapować alternatywy i możliwe wyniki oraz rozważyć je na podstawie wybranych kryteriów.\n\nPamiętaj — decyzje nie zawsze prowadzą do wyniku, na który liczymy. Mimo to mogą okazać się cennymi doświadczeniami, z których możemy się uczyć."
+      }
+    ],
+    "wellDone": "Brawo!",
+    "buttonText": "Wyjdź z pokoju"
+  },
+  "hints": {
+    "outsideElevator": "Kliknij przycisk przywoływania windy, aby wezwać windę.",
+    "enterElevator": "Kliknij wewnątrz windy, aby wejść.",
+    "pressFloor": "Naciśnij przycisk piętra na panelu przycisków.",
+    "gatherInfo": "Klikaj przedmioty w windzie, aby zebrać informacje.",
+    "clickNoticeBoard": "Kliknij tablicę ogłoszeń na ścianie, aby kontynuować.",
+    "identifyAlternatives": "Kliknij znaki zapytania na tablicy ogłoszeń, aby ujawnić alternatywy.",
+    "identifyOutcomes": "Kliknij znaki zapytania, aby ujawnić możliwe wyniki.",
+    "evaluateAlternatives": "Kliknij każde kryterium, aby zobaczyć, jak alternatywy wypadają w jego świetle.",
+    "selectAlternative": "Wybierz alternatywę, którą uważasz za najlepszą, klikając ją.",
+    "reviewOutcome": "Zastanów się nad swoją decyzją i kliknij Zakończ.",
+    "default": "Rozejrzyj się po windzie w poszukiwaniu wskazówek."
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

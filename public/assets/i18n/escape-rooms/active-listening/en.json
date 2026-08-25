@@ -1,0 +1,218 @@
+{
+  "loading": "Loading Active Listening...",
+  "intro": {
+    "title": "Active Listening",
+    "paragraphs": [
+      "You are a new employee of a financial company. After sorting out the initial matters, you have been invited to participate in the internal development program. The main focus of this program is the enhancement of the skill of Active Listening among the company's staff.",
+      "As you arrive to the workplace, you are told that the training has an individual character, and you will be invited on the rooftop, where the training is taking place, when your time comes.",
+      "You're excited about it, and you are hoping that this upskill program will really turn out to be effective. To unlock the skill of active listening you need to successfully accomplish the training prepared for you by the company."
+    ],
+    "buttonText": "Go to the Rooftop"
+  },
+  "characters": {
+    "mateo": {
+      "name": "Mateo",
+      "dialogues": {
+        "greet": "Good morning! It's really nice to meet you. Let me start from the short explanation of today's activities. You will be tasked with solving three different exercises, each one focusing on the development of your ability of active listening. Before each of them, you will have to find a piece of theoretical knowledge hidden somewhere around, enabling you to successfully complete the exercise. Sounds simple, right? Let's get to it then!",
+        "clue": "We will start with basics. Somewhere around this area, we have hidden the first piece of knowledge, that you will need to familiarize yourself with. We have for you this clue, which should help you find it:\n\n\"Not on the bench, not on the floor -\nwhere plants grow tall, there's something more\"\n\nAre you ready? Let the search begin!",
+        "fastLearner": "Oh, you have found that document very fast, well done! Now, as our first exercise, let's test your newly gained knowledge! Take a look at the laptop.",
+        "puzzle1Done": "Exactly! You're a fast learner! Now, before we will move on to the next task, I would like to… Hm, what is it, Zainabu?",
+        "interrupted": "*Mateo gets interrupted, as Zainabu is trying to tell him something. He's turning to her, she starts talking to him.*",
+        "backToYou": "Anyway, I'm sorry for that. I do believe we are ready for the next exercise, right? It's already displayed for you on the laptop. Let's take a look.",
+        "congratsFinal": "That's true. It was really impressive! You have mastered the skill of active listening and passed our tests with flying colors! You set the bar really high - the next participants will have a really tough time trying to beat your score! Thank you once again for your time and effort.",
+        "completion": "The training has been completed!",
+        "default": "I'm here if you need me."
+      }
+    },
+    "zainabu": {
+      "name": "Zainabu",
+      "dialogues": {
+        "conv1": "I'm sorry to interrupt, but this is important. Did you review the updated risk report template that came in this morning?",
+        "conv3": "I noticed that the specific values are grouped differently now, especially in the risk section, and I wasn't sure if that changes how we calculate the quarterly summaries.",
+        "conv5": "Alright. What made me worry was that the comparison table no longer shows the same totals as last quarter.",
+        "conv7": "Let me check if I understand you correctly. From your perspective, the calculations stay the same and only the presentation has changed?",
+        "conv9": "That's helpful to clarify. In that case, maybe we should verify it before sending the final report.",
+        "pendriveTask": "You're a really good listener yourself, you know. You have done very well with this last assignment. But we have one more task ahead of you, before we consider this training completed. Somewhere around here we have hidden a pendrive. On that pendrive, there is the last piece of knowledge that you need to solve your last task. It's a red pendrive. Let me know once you find it!",
+        "readyForFinal": "Yes. Now you're ready to face the final challenge. Go ahead and click on the laptop, whenever you're ready.",
+        "congratsFinal": "This is it! You're fully correct! It's not your first active listening training, is it? You have done really well today. You have managed to not only quickly learn from our materials, but also perfectly recognize and understand all the live cues that we have prepared for you!",
+        "completion": "It was a pleasure working with you today!",
+        "default": "I'm listening attentively."
+      }
+    },
+    "mateoConv": {
+      "name": "Mateo",
+      "dialogues": {
+        "conv2": "Not in detail. I assumed it's the same as before, just a standard update.",
+        "conv4": "I don't think so. These updates are usually cosmetic. We've had similar ones before.",
+        "conv6": "It's probably fine. If compliance changed the layout, the numbers themselves should still be correct.",
+        "conv8": "Yes, that's what I mean. But now that you mention the totals, I realize I haven't actually confirmed it.",
+        "conv10": "You're right. I'll check the calculation rules and confirm with compliance before we submit anything."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Understanding the Basics",
+      "instructions": "Choose TWO correct answers.",
+      "question": "Which behaviors are examples of active listening?",
+      "options": {
+        "a": "Thinking ahead about how to respond while the other person speaks.",
+        "b": "Allowing pauses and moments of silence without interrupting.",
+        "c": "Focusing mainly on reaching agreement as quickly as possible.",
+        "d": "Paying attention to the speaker's words, tone, and body language."
+      },
+      "hint": "Remember that an important part of active listening is respecting your interlocutor and what they're saying.",
+      "feedback": {
+        "wrong": "That's not quite right. Remember that active listening is about respecting your interlocutor and what they're saying.",
+        "correct": "Well done! Those are the correct examples of active listening."
+      },
+      "answerOverlay": "The correct answers are:\n• Allowing pauses and moments of silence without interrupting.\n• Paying attention to the speaker's words, tone, and body language."
+    },
+    "fillGap": {
+      "title": "Recognizing Active Listening Cues",
+      "instructions": "Complete the sentences with the missing words to create logical sentences related to the skill of active listening.",
+      "sentenceParts": [
+        "Even when something seems familiar, active listening means avoiding quick ",
+        " and checking the details.\nWhen something is unclear, it helps to focus on ",
+        " examples instead of speaking generally.\nRepeating information in your own words helps ",
+        " understanding between people.\nActive listening can reveal that information has not yet been properly ",
+        ".\nA conversation moves forward when people agree to ",
+        " the information before acting."
+      ],
+      "options": [
+        "confirm",
+        "assumptions",
+        "verify",
+        "checked",
+        "specific"
+      ],
+      "correctOrder": [
+        "assumptions",
+        "specific",
+        "confirm",
+        "checked",
+        "verify"
+      ],
+      "feedback": {
+        "wrong": "Some words are not in the right place. Try again!",
+        "correct": "Great job! You have caught all the subtle active listening signals and proved that you understand their underlying meaning."
+      },
+      "answerOverlay": "The correct order is:\n[1] assumptions\n[2] specific\n[3] confirm\n[4] checked\n[5] verify",
+      "resetButton": "Reset",
+      "checkButton": "Submit"
+    },
+    "matching": {
+      "title": "Active Listening – The Final Task",
+      "instructions": "Create logical sentences by matching each beginning with its correct ending.",
+      "columnA": {
+        "heading": "Sentence Beginnings",
+        "items": {
+          "1": "Effective listening requires awareness of your own reactions so they do not…",
+          "2": "Changes in how someone speaks can signal that…",
+          "3": "Choosing to pause before responding can help…",
+          "4": "Reflecting a message accurately focuses on the speaker's meaning rather than…",
+          "5": "When people feel truly listened to, they often begin to…"
+        }
+      },
+      "columnB": {
+        "heading": "Sentence Endings",
+        "items": {
+          "A": "…the exact words they used.",
+          "B": "…interfere with understanding the message.",
+          "C": "…slow the conversation and prevent unnecessary tension.",
+          "D": "…clarify their thoughts on their own.",
+          "E": "…the message itself is shifting."
+        }
+      },
+      "feedback": {
+        "wrong": "That's not quite right. Try again!",
+        "allCorrect": "Excellent! You matched all the sentences correctly!",
+        "revealedComplete": "Here are the correct matches — review them and let's continue."
+      },
+      "answerOverlay": "Here are the correct matches:\n1→B (reactions… interfere with understanding)\n2→E (changes… message is shifting)\n3→C (pause… slow conversation)\n4→A (reflecting… exact words)\n5→D (listened to… clarify thoughts)"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Go talk to Mateo to learn about today's training.",
+    "talkToMateo1": "Click on Mateo to begin.",
+    "findPaper": "Look near the plants in the corners – \"where plants grow tall, there's something more.\"",
+    "readPaper": "Read the document you found.",
+    "talkToMateo2": "Talk to Mateo again – he's waiting for you.",
+    "clickLaptop": "Click on the laptop on the table.",
+    "puzzle1Complete": "Mateo wants to talk. Click on him.",
+    "conversation": "Watch the conversation between Zainabu and Mateo carefully.",
+    "puzzle2FillGap": "Fill in each blank with the word that fits best. Think about what active listening involves when details are unclear.",
+    "puzzle2Complete": "Talk to Zainabu – she has your next task.",
+    "findPendrive": "Zainabu said there's a red pendrive hidden somewhere. Look on the floor, near the table legs.",
+    "puzzle3Matching": "Match each sentence beginning on the left with its correct ending on the right.",
+    "readTextFile": "Read the text file displayed on the laptop.",
+    "talkToZainabu": "Talk to Zainabu – she'll tell you when you're ready.",
+    "reveal": "The training has been completed!",
+    "completion": "The training has been completed!",
+    "default": "Look around the rooftop for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "As you're climbing up the stairs to the rooftop, you're thinking about the upcoming events – \"It's my first training of such a kind. And it's also an individual one – the corporate really outdid themselves on this one. I really hope it will be a beneficial, positive experience. Let's go.\" You press the door handle and walk out on the rooftop…",
+    "wrongObject": "Hmm, nothing useful here. But the view from this rooftop is incredible — you can see the whole city! Let's keep searching.",
+    "foundPaper": "You have found the instructions prepared for you by Zainabu and Mateo. Let's read it.",
+    "paperRead": "Good job. You have just gained the fundamental understanding of the skill of active listening, its meaning and benefits. Let's talk to Mateo again.",
+    "noticeCues": "As the conversation between Zainabu and Mateo goes on, you're starting to notice various cues related to their ability to implement the skill of active listening in real life…",
+    "foundPendrive": "Good job! You have found it. Let's access the information stored on it now. Click on the laptop.",
+    "wrongPendrive": "Not quite. Wait, is that a bird's nest behind the plant pot? How did that get up here? Keep looking for the pendrive.",
+    "textFileRead": "You've reviewed the advanced active listening guidelines. Talk to Zainabu when you're ready."
+  },
+  "items": {
+    "paper": {
+      "inventoryTitle": "Active Listening – The Basics",
+      "popupTitle": "Active Listening – The Basics",
+      "popupContent": [
+        "Active listening means being fully present in a conversation. It is not about waiting for your turn to speak or thinking about what you will say next while the other person is talking.",
+        "When you listen actively, your attention is focused on the speaker only, without distractions or interruptions. You notice not only the words being spoken, but also other characteristics, such as tone of voice, pauses, and body language, allowing you to understand the message more completely.",
+        "The purpose of active listening is understanding, not agreement. It involves giving the speaker time, allowing silence when it appears, and responding only after the message has been fully received.",
+        "When people feel listened to in such a way, they are more likely to feel respected, understood, and willing to communicate openly. Active listening helps reduce misunderstandings, improves trust, and supports better cooperation in everyday work interactions."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Active Listening – Advanced Guidelines",
+      "popupTitle": "Active Listening – Advanced Guidelines",
+      "popupContent": [
+        "Active listening includes managing your own reactions so they don't interrupt the understanding of the message.",
+        "Good listeners notice changes in tone or pace as signals that meaning may be changing.",
+        "Listening well sometimes means not responding immediately, even when you know what you want to say.",
+        "Paraphrasing is most effective when it captures meaning, not exact words.",
+        "Active listening helps prevent escalation by slowing conversations before emotions rise.",
+        "Being listened to often helps the speaker clarify their own thinking, even without feedback."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have managed to successfully accomplish the active listening training prepared for you by Zainabu and Mateo. You have showcased not only your ability to learn quickly, but also to correctly apply the acquired knowledge. You have successfully mastered the skill of Active Listening!",
+    "buttonText": "Exit the Rooftop"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "selectTwo": "Select 2 answers",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

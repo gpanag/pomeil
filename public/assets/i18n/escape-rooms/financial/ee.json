@@ -1,0 +1,267 @@
+{
+  "loading": "Laadin...",
+  "intro": {
+    "title": "Finantskirjaoskus ja juhtimine",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sa just sisenesid suure rahvusvahelise ettevõtte raamatupidaja kontorisse. Siin õpid Finantskirjaoskuse ja juhtimise kohta — üks tähtsamaid oskusi iga ettevõtja jaoks.",
+      "Pr Amina Darwish, vanempaamatupidaja, juhendab sind läbi erinevate väljakutsete, et aidata sul omandada eelarvestamine, finantsterminid ja vastutustundlik raha haldamine."
+    ],
+    "buttonText": "Alusta mängu"
+  },
+  "buttons": {
+    "toggleFullscreen": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continue": "Jätka",
+    "startPuzzle": "Alusta ülesannet",
+    "finishTraining": "Lõpeta koolitus",
+    "reset": "Lähtesta",
+    "submit": "Esita",
+    "backToMainMenu": "Tagasi peamenüüsse"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina Darwish (vanempaamatupidaja)",
+      "dialogues": {
+        "introduction": "Tere tulemast, (username)! Täna töötame Finantskirjaoskuse ja juhtimise kallal — üks tähtsamaid oskusi iga ettevõtja jaoks.",
+        "introduction_part2": "Alustuseks peitsin väikese eelarve planeerimise kaardi kuhugi siia kontorisse. See selgitab finantskontrolli põhiprintsiipe.",
+        "introduction_part3": "Alusta laua kontrollimisest.",
+        "findCard": "Alustuseks peitsin väikese eelarve planeerimise kaardi kuhugi siia kontorisse. See selgitab finantskontrolli põhiprintsiipe. Alusta laua kontrollimisest.",
+        "cardFound": "Tubli. Enne kui jätkame, pea seda meeles.",
+        "cardFound_part2": "Finantskirjaoskus ei seisne ainult numbrites. See on otsuste tegemine faktide, mitte oletuste põhjal.",
+        "cardFound_part3": "Teadmine, kuhu sinu raha läheb, annab sulle võime seada realistlikke eesmärke, kontrollida kulutusi ja tark investeerida.",
+        "cardFound_part4": "Paneme selle praktikasse.",
+        "puzzleOneComplete": "Sa saad väga hästi hakkama. Jätsin väikese mõtiskluse finantsvastutuse kohta kuhugi... võib-olla tahvlile.",
+        "findReflection": "Mõtisklusriba peaks olema kuskil selles ruumis. Proovi vaadata kapi piirkonnas.",
+        "reflectionFound": "Suurepärane! Jätkame nüüd uue ülesandega.",
+        "duringPuzzle": "Palun lõpeta praegune ülesanne kõigepealt.",
+        "allQuestsComplete": "Suurepärane töö, (username). Sa demonstreerisid finantsmõistmist, eelarveteadlikkust ja vastutustundlikku otsuste tegemist.",
+        "allQuestsComplete_part2": "Sa lõpetasid Finantskirjaoskuse ja juhtimise oskuse!",
+        "allQuestsComplete_part3": "Sa muutud teadlikumaks ja finantsvastutavamaks ettevõtjaks.",
+        "allQuestsComplete_part4": "Valmis liikuma järgmise oskuse juurde?",
+        "default": "Tere tulemast, (username)! Klõpsa minul, kui oled valmis alustama.",
+        "doorOpen": "Suurepärane töö! Koolitus on lõpetatud!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel Petrov (nooremabi)",
+      "dialogues": {
+        "default": "Üks hetk, sorteerin tšekke... nii palju tšekke!",
+        "allQuestsComplete": "Suurepärane töö koolituse lõpetamisega!"
+      }
+    }
+  },
+  "exploration": {
+    "findCard": {
+      "deskLaptopCalculator": "Kasulikud tööriistad... aga mitte kaart. Võib-olla proovi kappi.",
+      "filingCabinet": "Praegu ainult kaustad. Proovi sahtlit.",
+      "drawer": "Ainult pliiatsid ja klambrid... võib-olla kontrolli laua all."
+    },
+    "findReflection": {
+      "whiteboard": "Siin ainult diagrammid ja märkused. Proovi seinal olevat seifi.",
+      "safeBox": "See on lukus... vaata kapi juures uuesti."
+    }
+  },
+  "items": {
+    "card": {
+      "title": "EELARVE PLANEERIMISE PÕHITÕED",
+      "items": [
+        {
+          "label": "Jälgi oma sissetulekut",
+          "description": "Tea alati, kui palju raha sisse tuleb."
+        },
+        {
+          "label": "Salvesta oma kulud",
+          "description": "Iga kulu on oluline, suur või väike."
+        },
+        {
+          "label": "Planeeri ette",
+          "description": "Eeldate kuukulutusi, makse ja säästmist."
+        },
+        {
+          "label": "Kohanda ja paranda",
+          "description": "Vaata oma eelarvet sageli üle ja kohane muutustega."
+        }
+      ],
+      "foundDialogue": "Tubli! Vii kaart pr Amina juurde tagasi.",
+      "inventoryTitle": "Vaata eelarve planeerimise kaarti"
+    },
+    "reflection": {
+      "title": "FINANTSMÕTISKLUSED",
+      "quotes": [
+        "Finantsdistsipliin loob pikaajalist stabiilsust.",
+        "Sa ei saa kontrollida seda, mida sa ei mõõda.",
+        "Väikesed säästud aja jooksul loovad sisukat turvalisust."
+      ],
+      "foundDialogue": "Suurepärane leid! Mine pr Amina juurde tagasi.",
+      "inventoryTitle": "Vaata mõtisklusriba"
+    },
+    "budgetCard": {
+      "inventoryTitle": "Vaata eelarve planeerimise kaarti"
+    },
+    "reflectionStrip": {
+      "inventoryTitle": "Vaata mõtisklusriba"
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Sobita finantstermin selle tähendusega",
+      "termsLabel": "Terminid",
+      "meaningsLabel": "Tähendused",
+      "progressText": "Sobitatud: {{count}} / 4",
+      "terms": [
+        {
+          "id": "1",
+          "text": "Arve"
+        },
+        {
+          "id": "2",
+          "text": "Rahavoog"
+        },
+        {
+          "id": "3",
+          "text": "Püsikulu"
+        },
+        {
+          "id": "4",
+          "text": "Kasumimarginaal"
+        }
+      ],
+      "meanings": [
+        {
+          "id": "a",
+          "text": "Raha, mis liigub ettevõttesse sisse ja välja"
+        },
+        {
+          "id": "b",
+          "text": "Dokument, mis nõuab maksmist"
+        },
+        {
+          "id": "c",
+          "text": "Tulust kasumiks saav protsent"
+        },
+        {
+          "id": "d",
+          "text": "Korduv kulu, mis ei muutu"
+        }
+      ],
+      "feedback": "Mõtle, mis voolab, mis jääb püsivaks ja mis mõõdab kasumit.",
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Sobita finantsterminid nende definitsioonidega.\n\nÕiged sobitused:\n• „Arve“ → „Dokument, mis nõuab maksmist“ - Arve on ametlik kirje, mis saadetakse, et nõuda kaupade või teenuste eest maksmist\n• „Rahavoog“ → „Raha, mis liigub ettevõttesse sisse ja välja“ - Rahavoog jälgib vahendite tegelikku liikumist aja jooksul\n• „Püsikulu“ → „Korduv kulu, mis ei muutu“ - Püsikulud nagu üür jäävad kuust kuusse muutumatuks\n• „Kasumimarginaal“ → „Tulust kasumiks saav protsent“ - See suhe näitab, kui palju sinu sissetulekust saab tegelikuks kasumiks\n\nNende terminite mõistmine on finantskirjaoskuse jaoks hädavajalik!",
+      "completeTitle": "Suurepärane!",
+      "completeMessage": "Sa sobitasid edukalt kõik finantsterminid nende tähendustega!",
+      "completeAfterDialogue": "Tubli! Mine pr Amina juurde tagasi."
+    },
+    "fillGap": {
+      "title": "Tark finantskäitumine",
+      "instruction": "Täida tühjad kohad, et lause lõpetada:",
+      "sentence": "Et püsida finantsiliselt terve, on hädavajalik (___) kulusid, planeerida (___) ja pidada selget arvestust kõigi (___).",
+      "availableWordsLabel": "Saadaolevad sõnad",
+      "yourAnswersLabel": "Sinu vastused (järjekorras)",
+      "placeholderText": "Klõpsa vasakul olevatel sõnadel, et tühjad kohad täita.",
+      "removeHint": "(klõpsa eemaldamiseks)",
+      "options": [
+        "jälgida",
+        "hädaolukordadeks",
+        "tehingute üle",
+        "ignoreerida",
+        "arvata"
+      ],
+      "correct": [
+        "jälgida",
+        "hädaolukordadeks",
+        "tehingute üle"
+      ],
+      "feedback": "Finantsjuhtimine ei põhine kunagi ignoreerimisel ega arvamisel.",
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Et püsida finantsiliselt terve, on hädavajalik (___) kulusid, planeerida (___) ja pidada selget arvestust kõigi (___).\n\nÕige vastus:\n• Esimene tühik: „jälgida“ - Pead jälgima ja salvestama, kuhu su raha läheb, et säilitada kontrolli\n• Teine tühik: „hädaolukordadeks“ - Etteplaneerimine ootamatuteks olukordadeks loob finantsturvalisust\n• Kolmas tühik: „tehingute üle“ - Selgete arvete pidamine kõigi finantstegevuste kohta võimaldab teadlikku otsustamist\n\nTäielik lause: „Et püsida finantsiliselt terve, on hädavajalik jälgida kulusid, planeerida hädaolukordadeks ja pidada selget arvestust kõigi tehingute üle.“\n\nPea meeles: Finantsjuhtimine ei põhine kunagi ignoreerimisel ega arvamisel!",
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "pattern": {
+      "title": "Mustrite tuvastamine (Stsenaarium {{current}}/{{total}})",
+      "scenarios": [
+        {
+          "question": "Ettevõttel on suur müük, kuid raha saab iga kuu lõpus otsa.",
+          "options": [
+            "Halb rahavoo juhtimine",
+            "Tugev finantsplaneerimine",
+            "Liigne säästmine",
+            "Madalad kulud"
+          ],
+          "correct": "Halb rahavoo juhtimine",
+          "hint": "Suur müük ei tähenda alati saadaolevat raha."
+        },
+        {
+          "question": "Poe üür, palgad ja Internet jäävad iga kuu samaks.",
+          "options": [
+            "Muutuvkulud",
+            "Ootamatud kulud",
+            "Püsikulud",
+            "Ebaregulaarsed kulutused"
+          ],
+          "correct": "Püsikulud",
+          "hint": "Need kulud ei muutu kuust kuusse."
+        },
+        {
+          "question": "Ettevõte kulutab kolm kuud järjest rohkem kui teenib.",
+          "options": [
+            "Kasum",
+            "Tasakaal",
+            "Kahjum",
+            "Ülejääk"
+          ],
+          "correct": "Kahjum",
+          "hint": "Kui kulutused ületavad sissetuleku, mis on tulemus?"
+        }
+      ],
+      "answerOverlayTemplate": "Pärast 3 katset, siin on vastus:\n\nKüsimus: {{question}}\n\nÕige vastus: „{{correct}}“\n\nSelgitus: {{hint}}"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "answerOverlay": {
+    "title": "Õige vastus"
+  },
+  "hints": {
+    "defaultHint": "Ma pole kindel, mida teha...",
+    "findCard": {
+      "step0": "Pr Amina ütles: „Alusta laua kontrollimisest.“",
+      "step1": "Mitte laual. Proovi kappi.",
+      "step2": "Mitte kapis. Proovi sahtlit.",
+      "step3": "Kaart võib olla laua all asuvas kastis."
+    },
+    "findReflection": {
+      "step0": "Pr Amina mainis tahvlit.",
+      "step1": "Mitte tahvlil. Proovi seifi.",
+      "step2": "Vaata kapi juures - midagi võib välja paistma."
+    },
+    "allQuestsComplete": "Liigume järgmisesse ruumi."
+  },
+  "completion": {
+    "title": "Koolitus lõpetatud!",
+    "message": "Õnnitlused! Sa lõpetasid edukalt Finantskirjaoskuse ja juhtimise oskuse koolituse.",
+    "submessage": "Sa muutud teadlikumaks ja finantsvastutavamaks ettevõtjaks!",
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "ui": {
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

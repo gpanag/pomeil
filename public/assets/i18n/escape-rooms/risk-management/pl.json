@@ -1,0 +1,183 @@
+{
+  "loading": "Ładowanie modułu Zarządzanie ryzykiem...",
+  "intro": {
+    "title": "Zarządzanie ryzykiem",
+    "paragraphs": [
+      "Wchodzisz przez drzwi szukając toalety, ale zamiast tego trafiasz do słabo oświetlonej szafy gospodarczej.",
+      "Betonowe podłogi, zagracone półki i delikatny brzęk uszkodzonego kabla witają cię. To miejsce to wypadek czekający na okazję.",
+      "Twoje zadanie: zidentyfikuj wszystkie zagrożenia w pomieszczeniu i oceń je za pomocą właściwej macierzy ryzyka. Zaczynamy!"
+    ],
+    "buttonText": "Wejdź do schowka"
+  },
+  "dialogues": {
+    "enterRoom": "Chwila… To nie jest toaleta.",
+    "realizeCloset": "To musi być szafa gospodarcza.",
+    "unsafeRoom": "To najbardziej niebezpieczne pomieszczenie, jakie kiedykolwiek widziałem/widziałam!",
+    "zoomCable": "Spójrz na ten przetarty kabel… sypią się iskry!",
+    "zoomBoxes": "Te pudełka są ułożone zdecydowanie za wysoko… przechylają się!",
+    "zoomPuddle": "Na podłodze jest kałuża. Ktoś może się poślizgnąć!",
+    "uncoverRisks": "Lepiej znaleźć wszystkie zagrożenia, zanim ktoś się zrobi krzywdę!",
+    "allRisksFound": "Zidentyfikowałem/am wszystkie zagrożenia w tym pomieszczeniu! Teraz muszę ocenić każde z nich. Pójdę do tablicy.",
+    "startAssessment": "Czas ocenić każde zagrożenie używając skali prawdopodobieństwa i wpływu. Pozwól mi się dobrze zastanowić nad każdym.",
+    "assessmentComplete": "Skończyłem/am ocenę ryzyka! Sprawdźmy moją pracę.",
+    "congratulations": "Świetna robota! Ocena ryzyka została wykonana. To pomieszczenie nie jest już zagadką — każde zagrożenie zostało zidentyfikowane i ocenione. Czas się stąd zbierać!"
+  },
+  "risks": {
+    "cable": {
+      "name": "Przetarty kabel elektryczny",
+      "icon": "flash_on",
+      "thought": "Ten kabel jest przetarty i iskrzy! Może wywołać pożar lub porazić kogoś prądem.",
+      "description": "Przetarty kabel elektryczny z widocznymi iskrami, stwarzający zagrożenie pożarem i porażeniem prądem."
+    },
+    "extinguisher": {
+      "name": "Zablokowana gaśnica",
+      "icon": "local_fire_department",
+      "thought": "Gaśnica jest zablokowana drabiną. W razie nagłego wypadku powinna być zawsze dostępna.",
+      "description": "Gaśnica zablokowana drabiną, niedostępna w sytuacji awaryjnej."
+    },
+    "ladder": {
+      "name": "Niestabilna drabina",
+      "icon": "warning",
+      "thought": "Ta drabina wygląda na niestabilną. Ktoś może spaść, próbując po niej wejść.",
+      "description": "Niestabilna drabina oparta o ścianę, ryzyko upadku."
+    },
+    "boxes": {
+      "name": "Niestabilny stos pudełek",
+      "icon": "inventory_2",
+      "thought": "Te pudełka są ułożone za wysoko i przechylają się! Mogą spaść i kogoś zranić.",
+      "description": "Wysoki, przechylony stos pudełek, który może się przewrócić."
+    },
+    "puddle": {
+      "name": "Kałuża na podłodze",
+      "icon": "water_drop",
+      "thought": "Ta kałuża to ryzyko poślizgnięcia! Ktoś może łatwo stracić równowagę.",
+      "description": "Kałuża wody na podłodze stwarzająca zagrożenie poślizgnięciem i upadkiem."
+    },
+    "chemicals_unlabeled": {
+      "name": "Nieoznakowane chemikalia",
+      "icon": "science",
+      "thought": "Te butelki z chemikaliami nie mają żadnego oznakowania. Bez wiedzy, co jest w środku, nikt nie może bezpiecznie się nimi posługiwać.",
+      "description": "Butelki z chemikaliami bez właściwych etykiet, uniemożliwiające bezpieczne użytkowanie."
+    },
+    "chemicals_sunlight": {
+      "name": "Chemikalia w bezpośrednim świetle słonecznym",
+      "icon": "wb_sunny",
+      "thought": "Te chemikalia stoją w bezpośrednim świetle słonecznym! Chemikalia nigdy nie powinny być przechowywane tam, gdzie dociera słońce — może to wywołać niebezpieczne reakcje.",
+      "description": "Butelki z chemikaliami w bezpośrednim świetle słonecznym, ryzyko degradacji lub niebezpiecznych reakcji."
+    },
+    "chemical_edge": {
+      "name": "Otwarta chemia na krawędzi półki",
+      "icon": "report_problem",
+      "thought": "Ta otwarta butelka z chemikaliami stoi na samej krawędzi półki. Może spaść i się rozlać w każdej chwili!",
+      "description": "Otwarta butelka z chemikaliami umieszczona ryzykownie na krawędzi półki."
+    },
+    "sandwich": {
+      "name": "Kanapka / ryzyko szkodników",
+      "icon": "pest_control",
+      "thought": "Ktoś zostawił kanapkę na biurku! Jedzenie pozostawione w taki sposób przyciąga szkodniki — widzę już mrówki obok.",
+      "description": "Niezabezpieczona kanapka na biurku przyciągająca szkodniki do miejsca pracy."
+    },
+    "bucket": {
+      "name": "Niehigieniczne wiadro do sprzątania",
+      "icon": "cleaning_services",
+      "thought": "To wiadro do sprzątania wygląda obrzydliwie. W stojącej brudnej wodzie szybko rozwijają się bakterie — to zagrożenie dla zdrowia.",
+      "description": "Brudne wiadro do sprzątania ze stojącą wodą, w której rozwijają się bakterie."
+    },
+    "gloves": {
+      "name": "Uszkodzone rękawice ochronne",
+      "icon": "back_hand",
+      "thought": "Te rękawice ochronne są podarte i uszkodzone. Mogą już nie chronić przed chemikaliami ani ostrymi przedmiotami.",
+      "description": "Zużyte i uszkodzone rękawice ochronne, które nie zapewniają już odpowiedniej ochrony."
+    }
+  },
+  "redHerrings": {
+    "labels": {
+      "thought": "Etykiety są trochę wyblakłe, ale wciąż widać, co jest na nich napisane. To nie zagrożenie."
+    },
+    "fragile_box": {
+      "thought": "To pudełko jest oznaczone jako kruche, ale jest zamknięte i bezpiecznie przechowywane na półce. Wszystko w porządku."
+    },
+    "taped_cable": {
+      "thought": "Ten kabel jest przyklejony taśmą do podłogi. Dobrze — jest właściwie zamocowany, więc nikt się nie potknie."
+    },
+    "door_sign": {
+      "thought": "Drzwi mają znak ostrzegawczy. To dobry środek bezpieczeństwa — sytuacja jest pod kontrolą."
+    },
+    "chair": {
+      "thought": "Krzesło jest lekko odsunięte od biurka. To nie zagrożenie."
+    }
+  },
+  "riskAssessment": {
+    "title": "Macierz oceny ryzyka",
+    "instructions": "Dla każdego zidentyfikowanego zagrożenia oceń Prawdopodobieństwo (1-5) oraz Wpływ (1-5). Wynik ryzyka jest obliczany automatycznie.",
+    "likelihoodLabel": "Prawdopodobieństwo",
+    "impactLabel": "Wpływ",
+    "riskScoreLabel": "Wynik ryzyka",
+    "likelihoodTooltip": "Jak prawdopodobne jest wystąpienie tego zagrożenia? 1 = Bardzo mało prawdopodobne, 2 = Mało prawdopodobne, 3 = Możliwe, 4 = Prawdopodobne, 5 = Bardzo prawdopodobne",
+    "impactTooltip": "Jak poważne byłyby konsekwencje? 1 = Zaniedbywalne, 2 = Drobne, 3 = Umiarkowane, 4 = Poważne, 5 = Katastrofalne",
+    "riskScoreTooltip": "Wynik ryzyka = Prawdopodobieństwo × Wpływ. Wyższe wyniki oznaczają większy priorytet ryzyka.",
+    "submitButton": "Wyślij ocenę",
+    "nextRisk": "Następne ryzyko",
+    "prevRisk": "Poprzednie ryzyko",
+    "riskCounter": "Ryzyko {current} z {total}",
+    "selectValue": "Wybierz"
+  },
+  "review": {
+    "title": "Przegląd oceny ryzyka",
+    "correctSection": "Poprawnie ocenione zagrożenia",
+    "incorrectSection": "Zagrożenia wymagające ponownej oceny",
+    "likelihoodTooHigh": "Prawdopodobieństwo zawyżone",
+    "likelihoodTooLow": "Prawdopodobieństwo zaniżone",
+    "impactTooHigh": "Wpływ zawyżony",
+    "impactTooLow": "Wpływ zaniżony",
+    "generalFeedbackHigh": "Wykazałeś/aś tendencję do zawyżania oceny zagrożeń. Pamiętaj, że nie każde zagrożenie jest jednakowo prawdopodobne lub poważne.",
+    "generalFeedbackLow": "Wykazałeś/aś tendencję do niedoceniania zagrożeń. W bezpieczeństwie pracy ważne jest, by traktować poważnie nawet umiarkowane ryzyka.",
+    "perfectScore": "Doskonała robota! Wszystkie zagrożenia oceniono w dopuszczalnych zakresach.",
+    "goodScore": "Dobra robota! Większość twoich ocen była trafna.",
+    "endButton": "Zakończ ocenę ryzyka"
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Pomyślnie zidentyfikowałeś/aś wszystkie zagrożenia w miejscu pracy i przeprowadziłeś/aś dokładną ocenę ryzyka. Pokazałeś/aś silne umiejętności zarządzania ryzykiem — zdolność dostrzegania zagrożeń i ich systematycznej oceny jest kluczowa w każdym miejscu pracy!",
+    "buttonText": "Wyjdź z pomieszczenia"
+  },
+  "hints": {
+    "intro": "Rozejrzyj się uważnie. Klikaj na obiekty, które wyglądają niebezpiecznie lub nie na swoim miejscu.",
+    "identifying": "Wciąż są zagrożenia do znalezienia. Szukaj zagrożeń elektrycznych, problemów z przechowywaniem chemikaliów, zagrożeń strukturalnych i problemów higienicznych.",
+    "assessment": "Oceń prawdopodobieństwo i wpływ każdego zagrożenia. Pomyśl, jak często to mogłoby się zdarzyć i jak złe byłyby konsekwencje.",
+    "review": "Przejrzyj wyniki oceny i kliknij „Zakończ ocenę ryzyka”, gdy będziesz gotowy/a.",
+    "allRisksFound": "Znalazłeś/aś wszystkie zagrożenia. Kliknij tablicę, aby rozpocząć ocenę ryzyka.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po pomieszczeniu w poszukiwaniu potencjalnych zagrożeń."
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "risksFound": "Znalezione zagrożenia",
+    "of": "z",
+    "clickToInspect": "Kliknij na obiekty, aby je zbadać",
+    "notARisk": "Nie zagrożenie",
+    "riskIdentified": "Zagrożenie zidentyfikowane!",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

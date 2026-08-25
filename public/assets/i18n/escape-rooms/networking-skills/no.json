@@ -1,0 +1,236 @@
+{
+  "loading": "Laster Nettverksferdigheter...",
+  "intro": {
+    "title": "Nettverksferdigheter",
+    "paragraphs": [
+      "Du sitter i et venterom utenfor et intervjurom, like før du skal delta på et nettverksarrangement for oppstartsbedrifter. Rommet er langt og smalt, som en korridor, med beige teppe og vegger.",
+      "To sofaer — én gul, én turkis — står langs veggene med små salongbord ved siden av. En kaffemaskin står i hjørnet med papirkopper og en søppelbøtte i nærheten. Grønne planter og en plakat på veggen gir litt liv til rommet.",
+      "Tre andre personer er i rommet sammen med deg. Dette kan være en flott mulighet til å øve på nettverksferdighetene dine..."
+    ],
+    "buttonText": "Gå inn på venterommet"
+  },
+  "characters": {
+    "npc1": {
+      "name": "Marcus",
+      "dialogues": {
+        "busy": "Beklager, jeg må fullføre dette her.",
+        "default": "Han ser ut til å være fokusert på laptopen sin."
+      }
+    },
+    "npc2": {
+      "name": "Tomás",
+      "dialogues": {
+        "line1_you": "Hei, er du her for oppstartsarrangementet?",
+        "line1_him": "Ja.",
+        "line2_you": "Hva slags bransje jobber du i?",
+        "line2_him": "IT.",
+        "line3_you": "Hva bringer deg hit i dag?",
+        "line3_him": "Sjefen min sendte meg.",
+        "line4_awkward": "...",
+        "summary": "Han virket ikke spesielt interessert i å snakke. Samtalen døde ut raskt. Kanskje en annen tilnærming ville fungere med noen andre.",
+        "default": "Han ser stille på telefonen sin."
+      }
+    },
+    "edith": {
+      "name": "Edith",
+      "dialogues": {
+        "line1_you": "Hei der! Er du også her for oppstartsarrangementet?",
+        "line1_her": "Ja, det er jeg! Jeg er Edith. Jeg driver en liten bedriftsinkubator i sentrum. Er du en gründer?",
+        "line2_you": "Ikke ennå, men jeg har tenkt på det. Hva slags oppstartsbedrifter jobber du med?",
+        "line2_her": "Mest tidligfase teknologi- og sosiale virksomheter. Vi hjelper med alt fra forretningsplaner til å finne finansiering. Det er veldig givende arbeid.",
+        "line3_you": "Det høres fantastisk ut. Hva fikk deg inn på det?",
+        "line3_her": "Jeg startet mitt eget selskap for mange år siden og skulle ønske jeg hadde hatt mer støtte. Så jeg bygde den typen sted jeg ville hatt selv. Her, ta visittkortet mitt — la oss holde kontakten!",
+        "line4_you": "Takk, Edith! Jeg vil gjerne lære mer om inkubatoren din en gang.",
+        "summary": "Flott samtale! Du fikk en ekte forbindelse med Edith og utvekslet kontaktinformasjon. Det er nettverksbygging gjort riktig.",
+        "buildIntro": "Edith går tilbake til deg med en fersk kopp kaffe.",
+        "build1_her": "Så, fortell meg — hva er det som virkelig driver deg? Hva er den store ideen du har gått og tenkt på?",
+        "build2a_you": "Jeg har vært opptatt av å gjøre utdanning mer tilgjengelig gjennom teknologi. Hvilke utfordringer ser du at gründere møter mest?",
+        "build2b_you": "Vel, jeg har denne app-ideen som kommer til å tjene millioner. La meg fortelle deg alt om den...",
+        "build2a_response": "Det er et fantastisk oppdrag! Den største utfordringen jeg ser, er at gründere prøver å gjøre alt alene. Det er nettopp derfor inkubatoren finnes — ingen burde måtte finne ut av alt på egen hånd.",
+        "build2b_response": "Å... det er... ambisiøst. Vet du, de mest suksessfulle gründerne jeg har sett, er de som stiller spørsmål, ikke bare presenterer.",
+        "build3_her": "Apropos støtte, har du tenkt på hva slags nettverk du ville trenge for å virkeliggjøre ideen din?",
+        "build4_you_typed": "",
+        "build4_her": "Det er et gjennomtenkt svar. Å bygge et nettverk handler virkelig om å finne folk hvis styrker utfyller dine.",
+        "build5a_you": "Hva slags råd vil du gi til noen som akkurat har begynt å bygge sitt profesjonelle nettverk?",
+        "build5b_you": "Jeg har faktisk allerede et ganske bra nettverk. Jeg trenger mest bare finansiering.",
+        "build5a_response": "Begynn med å være ekte nysgjerrig på andre mennesker. Spør om jobben deres, utfordringene deres. Nettverksbygging handler ikke om å samle kontakter — det handler om å bygge relasjoner der begge parter har nytte.",
+        "build5b_response": "Hmm, nettverksbygging handler om mer enn bare det du trenger. De beste forbindelsene oppstår når du tenker på hva du kan tilby også.",
+        "build6_her": "Vet du, jeg har virkelig kost meg med denne samtalen. Det er sjelden å møte noen som lytter like mye som de snakker. Det er en ekte styrke i nettverksbygging.",
+        "build7a_you": "Takk, Edith. Jeg har lært mye av å snakke med deg. Hvordan kan jeg være til hjelp for deg i retur?",
+        "build7b_you": "Takk! Så, om den inkubatoren — kan du skaffe meg en plass?",
+        "build7a_response": "Jeg setter pris på at du spør! Faktisk leter vi alltid etter friske perspektiver på mentorkveldene våre. Vil du være interessert i å delta på en?",
+        "build7b_response": "Ha! Jeg beundrer direktheten, men nettverksbygging fungerer best når det ikke føles transaksjonelt. La oss bygge relasjonen først.",
+        "build8_her": "Husk — nettverksbygging er en ferdighet med fire deler: Initier, Bygg, Vedlikehold og Utnytt. Vi har dekket de to første i dag. Fortsett å øve!",
+        "buildSummary": "Utmerket arbeid! Du har fordypet forbindelsen din med Edith ved å stille åpne spørsmål, vise ekte interesse og tenke på toveis verdi.",
+        "default": "Edith smiler varmt til deg."
+      }
+    }
+  },
+  "puzzles": {
+    "initiate": {
+      "title": "Oppgave 1: Initier",
+      "instructions": "Klikk på folkene i rommet for å prøve å starte en samtale. Ikke alle forsøk vil lykkes — det er normalt i nettverksbygging!",
+      "skillUnlocked": "Nettverksferdighet låst opp: Initier",
+      "feedback": {
+        "npc1Done": "Han er for opptatt akkurat nå. Det er greit — ikke alle er tilgjengelige for å nettverke til enhver tid.",
+        "npc2Done": "Korte, lukkede svar. Noen ganger flyter samtaler bare ikke. Ikke ta det personlig.",
+        "edithDone": "En flott forbindelse! Edith var åpen, engasjert, og dere utvekslet kontaktinfo.",
+        "allComplete": "Du har prøvd å snakke med alle i rommet. Du lærte at nettverksbygging krever å lese situasjonen — noen er ikke tilgjengelige, noen samtaler klikker ikke, og noen ganger finner du en ekte forbindelse."
+      }
+    },
+    "mirror": {
+      "popupTitle": "Refleksjonen din",
+      "popupContent": "Ingen salat mellom tennene, sjekk.",
+      "selfReflection": "Du ser bra ut. Men nettverksbygging handler ikke bare om utseende — det handler om å være til stede, være nysgjerrig og være ekte. På tide å sette det ut i livet.",
+      "edithReturns": "Du legger merke til at Edith kommer tilbake fra kaffemaskinen. Dette kan være en god sjanse til å fortsette samtalen..."
+    },
+    "build": {
+      "title": "Oppgave 2: Bygg",
+      "instructions": "Fortsett samtalen din med Edith. Når du får alternativer, velg svaret som bygger en ekte, toveis forbindelse.",
+      "skillUnlocked": "Nettverksferdighet låst opp: Bygg",
+      "typedPrompt": "Edith spør om dine nettverksbehov. Skriv inn tankene dine:",
+      "typedPlaceholder": "Del tankene dine...",
+      "feedback": {
+        "goodChoice": "Godt valg! Det svaret viser ekte interesse og bygger relasjonen.",
+        "poorChoice": "Det svaret fokuserer for mye på deg selv. Prøv å tenke på den andre personen også.",
+        "complete": "Du har vellykket bygget en dypere relasjon med Edith gjennom ekte samtale."
+      }
+    },
+    "maintain": {
+      "title": "Oppgave 3: Vedlikehold",
+      "instructions": "Telefonen din vibrerer med et varsel. På tide å øve på å vedlikeholde nettverksforbindelsene dine via meldinger.",
+      "skillUnlocked": "Nettverksferdighet låst opp: Vedlikehold",
+      "phoneNotification": "Ny melding fra Fredrik!",
+      "fredrik": {
+        "name": "Fredrik",
+        "incoming": "Hei! Veldig hyggelig å løpe på deg på arrangementet tidligere. Vil du ta en kaffe en gang denne uken?",
+        "optionA": "Absolutt! Hva med torsdag ettermiddag? Det er en flott kafé i nærheten av kongressenteret.",
+        "optionB": "Kanskje. Jeg gir deg beskjed.",
+        "feedbackA": "Flott svar! Spesifikt og entusiastisk — det viser at du verdsetter forbindelsen.",
+        "feedbackB": "For vagt. Når du vedlikeholder kontakter, vær spesifikk og vis ekte interesse."
+      },
+      "contacts": {
+        "maksym": {
+          "name": "Maksym (tidligere kollega)",
+          "optionA": "Hei Maksym, det har vært en stund! Hvordan har du det? Jeg så at selskapet ditt nettopp lanserte et nytt produkt — gratulerer!",
+          "optionB": "Heyyyy",
+          "feedbackA": "Perfekt! Personlig, spesifikt og viser at du har fulgt med på arbeidet deres.",
+          "feedbackB": "For vagt — denne meldingen gir dem ingenting å svare på."
+        },
+        "iman": {
+          "name": "Iman (arrangementsplanlegger)",
+          "optionA": "Hei Iman! Hvordan har du hatt det? Noen kule arrangementer på gang? Jeg likte virkelig det siste du arrangerte.",
+          "optionB": "Hei Iman, jeg trenger en tjeneste. Kan du få meg inn på neste bransjemikser?",
+          "feedbackA": "Bra gjort! Du viser interesse for arbeidet deres før du ber om noe.",
+          "feedbackB": "For direkte og transaksjonelt. Bygg relasjonen før du ber om tjenester."
+        },
+        "lars": {
+          "name": "Lars (småbedriftseier)",
+          "optionA": "Hei Lars! Jeg kom over en artikkel om bærekraftig emballasje som minnet meg om virksomheten din. Tenkte du kanskje synes det er interessant!",
+          "optionB": "Hei Lars, jeg ser etter nye muligheter. Gi meg beskjed hvis du hører om noe.",
+          "feedbackA": "Utmerket! Å dele noe relevant viser at du tenker på interessene til kontaktene dine.",
+          "feedbackB": "For egoistisk. Å vedlikeholde relasjoner handler om å gi, ikke bare å ta."
+        }
+      },
+      "feedback": {
+        "allSent": "Flott jobb med å vedlikeholde nettverket ditt! Husk: godt nettverksvedlikehold handler om å vise ekte interesse, være spesifikk og tilby verdi — ikke bare å ta kontakt når du trenger noe."
+      }
+    },
+    "leverage": {
+      "title": "Oppgave 4: Utnytt",
+      "instructions": "Du har lagt merke til en stipendmulighet på plakaten på veggen. Nå er det på tide å utnytte nettverket ditt klokt.",
+      "posterTitle": "STIPENDMULIGHET FOR OPPSTARTSBEDRIFTER",
+      "posterDetails": "Tilgjengelige stipender: EUR 2 000 - EUR 10 000 for tidligfase oppstartsbedrifter. Søknadsfrist: 15. juni. Åpent for alle sektorer.",
+      "question": "Dette kan være en flott mulighet! Men du trenger hjelp med søknaden. Hvem fra nettverket ditt bør du kontakte?",
+      "options": {
+        "maksym": "Ta kontakt med Maksym (tidligere IT-kollega)",
+        "edith": "Ta kontakt med Edith (leder av bedriftsinkubator)",
+        "iman": "Ta kontakt med Iman (arrangementsplanlegger)",
+        "lars": "Ta kontakt med Lars (småbedriftseier)"
+      },
+      "explanations": {
+        "maksym": "Maksym er flott for IT-råd, men stipendsøknader er ikke akkurat hans ekspertiseområde.",
+        "edith": "Edith driver en bedriftsinkubator som hjelper oppstartsbedrifter med akkurat slike ting — forretningsplaner, finansiering, stipender. Hun er den perfekte personen å spørre!",
+        "iman": "Iman er fantastisk for arrangementer og forbindelser, men stipendsøknader er ikke hennes spesialitet.",
+        "lars": "Lars er en annen småbedriftseier som kan konkurrere om det samme stipendet. Det kan skape en pinlig situasjon."
+      },
+      "skillUnlocked": "Nettverksferdighet låst opp: Utnytt",
+      "feedback": {
+        "wrong": "Tenk på hvem i nettverket ditt som har den mest relevante ekspertisen for stipendsøknader og oppstartsstøtte.",
+        "correct": "Akkurat riktig! Ediths inkubator er designet for å hjelpe oppstartsbedrifter å navigere finansieringsmuligheter. Å utnytte nettverket ditt betyr å ta kontakt med riktig person for riktig oppgave."
+      },
+      "answerOverlay": "Det riktige svaret er: Ta kontakt med Edith. Hennes bedriftsinkubator spesialiserer seg på å hjelpe oppstartsbedrifter med forretningsplaner og finansiering — akkurat det du trenger for en stipendsøknad."
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "initiate": "Prøv å klikke på folkene i rommet for å starte samtaler.",
+    "initiateNpc1Done": "Du har snakket med Marcus. Prøv noen andre!",
+    "initiateNpc2Done": "Prøv å snakke med kvinnen ved kaffemaskinen.",
+    "mirror": "Se etter vesken din på sofaen — det kan være noe nyttig inni.",
+    "mirrorReflection": "Ta et øyeblikk til å reflektere, og se så etter Edith.",
+    "build": "Klikk på Edith for å fortsette samtalen din.",
+    "buildConversation": "Velg svaret som viser ekte interesse for den andre personen.",
+    "maintain": "Sjekk telefonen din for å svare på meldinger fra kontaktene dine.",
+    "maintainContacts": "Velg svar som viser ekte interesse og tilbyr verdi.",
+    "leverage": "Se på plakaten på veggen for en mulighet.",
+    "leverageQuestion": "Tenk på hvilken kontakt som har mest relevant ekspertise for oppstartsstipender.",
+    "completion": "Treningen er fullført!",
+    "default": "Se deg rundt i rommet og samhandle med folkene og gjenstandene."
+  },
+  "systemDialogues": {
+    "enterRoom": "Greit, her er jeg. Et venterom fullt av fremmede. Perfekt mulighet til å øve på nettverksferdighetene mine. La meg se hvem som er her...",
+    "npc1Rejection": "Han er opptatt. Det er greit — å vite når noen ikke er tilgjengelige er en viktig del av nettverksbygging også.",
+    "npc2Awkward": "Vel, det var... kort. Noen ganger tar samtaler bare ikke av. Nøkkelen er å ikke gi opp.",
+    "edithSuccess": "Det gikk virkelig bra! Jeg fikk Ediths visittkort og hun virket genuint interessert i å holde kontakten.",
+    "initiateComplete": "Jeg har snakket med alle. Noen samtaler gikk bedre enn andre, men jeg lærte noe av hver enkelt. Nettverksbygging handler om å lese rommet og finne de riktige forbindelsene.",
+    "mirrorFound": "Hmm, vesken min er her på sofaen. La meg sjekke...",
+    "mirrorClose": "Greit, jeg ser presentabel ut. Men nettverksbygging er mer enn utseende — det handler om å være ekte og nysgjerrig.",
+    "edithReturns": "Å, Edith kommer tilbake denne veien. Dette er en sjanse til å bygge videre på den første forbindelsen!",
+    "buildComplete": "For en flott samtale! Jeg føler virkelig at jeg har bygget en ekte forbindelse med Edith. Hun inviterte meg til og med på en mentorkveld.",
+    "phoneNotification": "Telefonen min vibrerer. La meg sjekke meldingene mine...",
+    "maintainComplete": "Ferdig! Å holde kontakten med nettverket mitt trenger ikke være komplisert — det må bare være ekte.",
+    "noticePoster": "Hmm, den plakaten på veggen ser interessant ut. La meg se nærmere på den...",
+    "leverageComplete": "Smart trekk. Å vite hvem du skal ta kontakt med — og hvorfor — er den siste delen av nettverkspuslespillet.",
+    "congratulations": "Gratulerer! Du har mestret alle de fire nettverksferdighetene: Initier, Bygg, Vedlikehold og Utnytt. På tide å sette dem ut i livet i den virkelige verden!"
+  },
+  "items": {
+    "mirror": {
+      "popupTitle": "Speil",
+      "popupContent": [
+        "Ingen salat mellom tennene, sjekk."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har vellykket fullført fluktrommet Nettverksferdigheter! Du har lært og øvd på de fire viktigste nettverksferdighetene: Initier (starte samtaler), Bygg (utdype forbindelser), Vedlikehold (holde kontakten) og Utnytt (bruke nettverket ditt klokt). Disse ferdighetene vil tjene deg godt på din profesjonelle reise!",
+    "buttonText": "Forlat rommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "sendButton": "Send",
+    "nextContact": "Neste kontakt",
+    "optionA": "A",
+    "optionB": "B",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

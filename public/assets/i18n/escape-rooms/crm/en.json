@@ -1,0 +1,782 @@
+{
+  "loading": "Loading Customer Service Department...",
+  "intro": {
+    "title": "Customer Relationship Management",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company where people from different cultures, backgrounds, and professions work together.",
+      "Today you enter the Customer Service Department, where things are a bit chaotic. A colleague is struggling with an angry customer, the filing cabinet has exploded, and a feedback survey needs finishing. Time to put your Customer Relationship Management skills to work!"
+    ],
+    "buttonText": "Enter the Customer Service Department"
+  },
+  "characters": {
+    "peter": {
+      "name": "Peter",
+      "dialogues": {
+        "intro1": "I tried helping this customer… But he started screaming at me. He keeps saying I'm bad at my job…",
+        "intro2": "No matter what I say, he won't calm down. I'm just making it worse.",
+        "intro3": "Can you please take over the call?",
+        "default": "Thanks for helping with that call…"
+      }
+    },
+    "simone": {
+      "name": "Simone",
+      "dialogues": {
+        "intro1": "Oh, there you are! I'm making feedback survey for our customers, but I need some help...",
+        "intro2": "I've drafted a bunch of questions. I think some are good… but some are, well… terrible.",
+        "intro3": "Can you help me choose which questions to use in the survey? I'll show you two at a time.",
+        "default": "Let me know if you need anything else!"
+      }
+    }
+  },
+  "puzzles": {
+    "complaintCall": {
+      "title": "The Customer Complaint Call",
+      "instructions": "Navigate the phone call with a frustrated customer. Choose your responses wisely — the customer's mood depends on it.",
+      "moodLabel": "Customer Mood",
+      "holdButton": "Put on Hold",
+      "holdWarning": "Warning: Putting the customer on hold will lower their mood significantly!",
+      "holdResponse": "I can't believe they put me on hold! Hello? Helloooo?",
+      "holdReturn": "Thanks for waiting. Let's continue. Where were we?",
+      "holdFailure": "You know what? Forget it. I'm done.",
+      "stages": [
+        {
+          "customerStatement": "Hi. Your colleague said you could help me. I've been trying to get in contact for days!",
+          "options": {
+            "good": "I'm really sorry it's been so hard to reach us. I understand how frustrating that must be. I'm here to help you now.",
+            "neutral": "I see. I can help you now.",
+            "bad": "Well, we've been very busy lately. That's probably why you haven't gotten through."
+          },
+          "customerReplies": {
+            "good": "Thank you. I've been feeling pretty ignored!",
+            "neutral": "Okay… I just hope someone actually helps me this time.",
+            "bad": "Ok… But I've been waiting for days…"
+          },
+          "userFollowUp": {
+            "good": "I understand. Let's go over what's been happening and get things sorted out.",
+            "neutral": "Let's go over what's been happening.",
+            "bad": "Ok, tell me what the problem is."
+          }
+        },
+        {
+          "customerStatement": "My order hasn't been shipped! It was supposed to be a birthday gift, but now it might not arrive in time!",
+          "options": {
+            "good": "I understand that this is frustrating. Let's go through it together and see what we can do.",
+            "neutral": "I get that it's annoying.",
+            "bad": "You don't need to get worked up!"
+          },
+          "customerReplies": {
+            "good": "Thank you for actually listening to me.",
+            "neutral": "Yeah… I guess. I just want to know what's going on.",
+            "bad": "Seriously? This is really important!"
+          },
+          "userFollowUp": {
+            "good": "Of course. Let's take this step by step.",
+            "neutral": "I'll investigate it.",
+            "bad": "Alright…"
+          }
+        },
+        {
+          "customerStatement": "So what actually happened to my order?",
+          "options": {
+            "good": "I'll look it up right now. Could you confirm your order number, so I check the right details?",
+            "neutral": "I can check. What's the order number?",
+            "bad": "You'll get it eventually. You just have to be patient."
+          },
+          "customerReplies": {
+            "good": "Sure. My order number is 38492.",
+            "neutral": "The number is 38492.",
+            "bad": "That's not good enough. I need to know! Please check my order number 38492!"
+          },
+          "userFollowUp": {
+            "good": "Thank you. I'll check that immediately.",
+            "neutral": "Alright, let me pull that up.",
+            "bad": "Fine… I'll look it up…"
+          }
+        },
+        {
+          "customerStatement": "Did you find my order?",
+          "options": {
+            "good": "Yes. I see there was a delay from the warehouse. I'll check the shipment update and keep you posted.",
+            "neutral": "Yes. I see that it's delayed. I'll look at the latest update.",
+            "bad": "Yeah, it's delayed. Not my fault."
+          },
+          "customerReplies": {
+            "good": "Alright… thank you for explaining.",
+            "neutral": "Okay. I just want to know what's happening.",
+            "bad": "You're not taking any responsibility? Great."
+          },
+          "userFollowUp": {
+            "good": "I'll make sure you get the latest information.",
+            "neutral": "I'll check the timeline now.",
+            "bad": "Sigh… mistakes happen, you know."
+          }
+        },
+        {
+          "customerStatement": "What will happen now?",
+          "options": {
+            "good": "I'll keep an eye on the shipment and update you as soon as anything changes.",
+            "neutral": "We just need to wait for the next tracking update.",
+            "bad": "It comes when it comes. You should've ordered earlier if timing was important."
+          },
+          "customerReplies": {
+            "good": "Thank you. That helps.",
+            "neutral": "Okay… I guess there's nothing else to do.",
+            "bad": "Wow… that's very rude! Your website stated it would arrive within 3 business days!"
+          },
+          "userFollowUp": {
+            "good": "I'll make sure you stay informed.",
+            "neutral": "I'll let you know if I see anything new.",
+            "bad": "You have to be patient. There's nothing else we can do."
+          }
+        },
+        {
+          "customerStatement": "Alright… thanks for the help...",
+          "options": {
+            "good": "Before we end the call, is there anything else you'd like our assistance with today?",
+            "neutral": "Yes, that's all the information I have for now.",
+            "bad": "If that's everything, I'm going to end the call now."
+          },
+          "customerReplies": {
+            "good": "No, that's all. Thanks for taking the time to help me!",
+            "neutral": "Alright… I hope it comes soon. Bye.",
+            "bad": "Fine… I guess that's it."
+          },
+          "userFollowUp": {
+            "good": "I'm happy to help. Thanks for calling and have a great day.",
+            "neutral": "Goodbye.",
+            "bad": "Goodbye."
+          }
+        }
+      ],
+      "failure": {
+        "title": "Call Ended",
+        "message": "Your customer hung up due to poor service.\n\nTo give customers a better experience:\n• Stay calm and patient\n• Listen to the customer and acknowledge their feelings\n• Apologize and take ownership of the situation\n• Be clear and solution-oriented\n• Follow through on promises\n• Avoid hold whenever possible",
+        "retryButton": "Try Again"
+      },
+      "success": {
+        "title": "Well Done!",
+        "message": "Congratulations, you handled that call well!\n\nYou stayed calm and listened actively. You took ownership of the situation by apologizing and offering a concrete solution. This made the customer feel seen and heard, leading to a positive resolution of the situation.",
+        "continueButton": "End the Customer Complaint Call"
+      }
+    },
+    "customerRegistry": {
+      "title": "The Chaotic Customer Registry",
+      "instructions": "Sort through the customer records. Drag each data entry into the correct column: Keep or Erase.",
+      "thought1": "Oh no, our customer records!",
+      "thought2": "Well… organizing the customer records has been on my to do-list for a while. I better get to it.",
+      "startSortingButton": "Sort the Customer Registry",
+      "readGuidelinesButton": "Read Privacy Guidelines",
+      "startWithoutButton": "Start sorting",
+      "keepColumn": "Keep",
+      "eraseColumn": "Erase",
+      "saveEditsButton": "Save Edits",
+      "nextFileButton": "Next File",
+      "privacyGuidelines": [
+        {
+          "title": "What counts as personal data?",
+          "content": "Any information related to a specific person. Examples:\n• Name, address, phone number, email address\n• National Identification Number\n• Credit card information, payment details\n• Internet Protocol (IP) address\n• Notes about customers\n\nAnd many more… If it can identify someone, it is personal data!"
+        },
+        {
+          "title": "Special (extra sensitive!) data",
+          "content": "Handle with extreme care:\n• Race and ethnic origin\n• Political, religious and philosophical beliefs\n• Trade union membership\n• Health and genetics\n• Biometrics (like fingerprints or retina scans)\n• Sex life and sexual orientation"
+        },
+        {
+          "title": "Processing means",
+          "content": "Anything you do with personal data: collecting, storing, updating, deleting, sharing"
+        },
+        {
+          "title": "Survival rules for data processing (GDPR principles)",
+          "content": "• Have a proper reason (lawful basis)\n• Be fair, not harmful or misleading\n• Tell people clearly what you're doing\n• Do not reuse data for other purposes\n• Keep only what you need\n• Keep it accurate and up to date\n• Delete it when you're done\n• Keep it safe\n• Be able to prove you follow these rules"
+        },
+        {
+          "title": "Lawful basis – why are we allowed to keep the data?",
+          "content": "1. Consent — Customer said \"yes\" to data processing. Used for: newsletters, loyalty programs, marketing\n2. Contract — We need it to fulfil contract obligations. Used for: orders, deliveries, refunds\n3. Legal Obligation — The law makes us keep it. Used for: invoices, receipts, accounting records, tax documentations\n4. Legitimate Interest — We need it to run the business. Important: it must not be harmful for the customer. Used for: B2B contact details, factual customer service notes"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Elena Torres",
+          "type": "Online customer",
+          "consent": "none",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Name",
+              "content": "Elena Torres",
+              "action": "keep",
+              "hint": "Do you need the customer's name to identify her order?"
+            },
+            {
+              "type": "Email",
+              "content": "elena.torres@example.com",
+              "action": "keep",
+              "hint": "Do you need an email to send confirmations or receipts?"
+            },
+            {
+              "type": "Phone number",
+              "content": "+45 28 28 11 11",
+              "action": "keep",
+              "hint": "Could support or delivery services need the phone number?"
+            },
+            {
+              "type": "Shipping address",
+              "content": "Vesterbrogade 6790",
+              "action": "keep",
+              "hint": "Is an address required to send her the product?"
+            },
+            {
+              "type": "Billing address",
+              "content": "Same as shipping",
+              "action": "keep",
+              "hint": "Is an address necessary for invoicing or tax rules?"
+            },
+            {
+              "type": "Order number",
+              "content": "#38492",
+              "action": "keep",
+              "hint": "Would you be able to manage returns without the order number?"
+            },
+            {
+              "type": "Order details",
+              "content": "Blue Winter Jacket, Size M",
+              "action": "keep",
+              "hint": "Do you need to know what she bought for customer support?"
+            },
+            {
+              "type": "Payment receipt",
+              "content": "Mastercard ending 4410",
+              "action": "keep",
+              "hint": "Does bookkeeping require the payment receipt?"
+            },
+            {
+              "type": "Invoice",
+              "content": "INV-38492",
+              "action": "keep",
+              "hint": "Does tax law require storing invoices?"
+            },
+            {
+              "type": "Tracking number",
+              "content": "POSTDK-9981883",
+              "action": "keep",
+              "hint": "Would you be able to track her order without a tracking number?"
+            },
+            {
+              "type": "Customer service note",
+              "content": "Emailed 10/02 re: delay",
+              "action": "keep",
+              "hint": "Could a customer service note be helpful for support?"
+            },
+            {
+              "type": "Political views",
+              "content": "Screenshot from Social Media",
+              "action": "erase",
+              "hint": "Is sensitive information about political beliefs required for delivering her order?"
+            },
+            {
+              "type": "Social media photo",
+              "content": "Elena_Social_Media_Profile.jpg",
+              "action": "erase",
+              "hint": "Is a social media photo necessary for processing her order?"
+            },
+            {
+              "type": "Subjective opinion",
+              "content": "Seems grumpy",
+              "action": "erase",
+              "hint": "Is this a factual and helpful note?"
+            },
+            {
+              "type": "Medical file",
+              "content": "prescription_scan.pdf",
+              "action": "erase",
+              "hint": "Is sensitive medical information relevant to her purchase?"
+            }
+          ],
+          "explanation": {
+            "title": "Great job! You sorted Elena's online customer data correctly.",
+            "keepTitle": "The information you decided to keep",
+            "keepContent": "You kept the information you needed to fulfil the contract of delivering the product Elena purchased:\n• Name, email, and phone number\n• Shipping address\n• Order number, order details and tracking number\n\nYou kept the information you have a legal obligation to keep, according to tax and accounting regulations:\n• Billing address\n• Payment receipt\n• Invoice\n\nYou kept information you have legitimate interest in storing:\n• A factual customer service note",
+            "eraseTitle": "The information you decided to erase",
+            "eraseContent": "The information you deleted was sensitive, irrelevant and not provided by the customer, meaning it was illegal or inappropriate to store under GDPR:\n• A screenshot of her political views\n• A social media photo she didn't provide\n• A subjective opinion (\"Seems grumpy\")\n• An unrelated medical file"
+          }
+        },
+        {
+          "name": "Marco Hansen",
+          "type": "In-store customer",
+          "consent": "loyalty program",
+          "consentDetails": "Consent covers:\n• Email address\n• Loyalty ID\n• Shopping preferences",
+          "data": [
+            {
+              "type": "Receipt",
+              "content": "RCPT-79211 – 449 DKK",
+              "action": "keep",
+              "hint": "Would the receipt be needed to comply with accounting laws?"
+            },
+            {
+              "type": "Purchase date",
+              "content": "14/02/2025",
+              "action": "keep",
+              "hint": "Could the purchase date be needed for warranty claims?"
+            },
+            {
+              "type": "Payment method",
+              "content": "Credit Card",
+              "action": "keep",
+              "hint": "Is the payment method needed for refunds or accounting?"
+            },
+            {
+              "type": "Warranty card",
+              "content": "Valid until 2027",
+              "action": "keep",
+              "hint": "Does the customer rely on you to keep the warranty card?"
+            },
+            {
+              "type": "Loyalty ID",
+              "content": "12877219",
+              "action": "keep",
+              "hint": "Did the customer agree to join the loyalty program?"
+            },
+            {
+              "type": "Preference",
+              "content": "Prefers in-store pickup",
+              "action": "keep",
+              "hint": "Is the customer preference collected with consent?"
+            },
+            {
+              "type": "Consent record",
+              "content": "Signed 14/02/2020",
+              "action": "keep",
+              "hint": "Do you need to prove the customer consented?"
+            },
+            {
+              "type": "Email address",
+              "content": "marco.coolguy@gmail.com",
+              "action": "keep",
+              "hint": "Did the customer voluntarily provide the email when joining the loyalty program?"
+            },
+            {
+              "type": "Phone number",
+              "content": "+45 20 11 88 99",
+              "action": "erase",
+              "hint": "Did the customer consent to storing his phone number when joining the loyalty program?"
+            },
+            {
+              "type": "CCTV still",
+              "content": "cctv_14-02-2020.png",
+              "action": "erase",
+              "hint": "Are you allowed to keep CCTV footage for this long, just in case?"
+            },
+            {
+              "type": "Staff note",
+              "content": "Talks too much",
+              "action": "erase",
+              "hint": "Is the staff note a factual or a personal judgment?"
+            },
+            {
+              "type": "Boarding pass",
+              "content": "Flight ticket",
+              "action": "erase",
+              "hint": "Does the plane ticket belong in the customer's file?"
+            }
+          ],
+          "explanation": {
+            "title": "Well done! You correctly sorted the data in Marco's customer file.",
+            "keepTitle": "The information you decided to keep",
+            "keepContent": "You kept information you are legally obliged to keep according to accounting laws:\n• The receipt, purchase date, and payment method\n\nYou kept information GDPR legally obliges you to keep:\n• The consent record\n\nYou kept the information you need to fulfil the contract of allowing customers to claim repairs or replacements:\n• The warranty card\n\nBecause customer consent had been obtained, you were right to also store:\n• Loyalty ID\n• Optional preferences\n• Email address",
+            "eraseTitle": "The information you decided to erase",
+            "eraseContent": "You correctly deleted items that were either improperly collected, irrelevant, or inappropriate, including:\n• A phone number stored without consent\n• A CCTV still, that was too old for storage to be justified\n• A subjective staff note\n• A misplaced boarding pass"
+          }
+        },
+        {
+          "name": "Aisha Rahman",
+          "type": "B2B contact",
+          "consent": "none",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Company",
+              "content": "NordTek Solutions AS",
+              "action": "keep",
+              "hint": "Is it useful to know the company name?"
+            },
+            {
+              "type": "Work email",
+              "content": "aisha.rahman@nordtek.no",
+              "action": "keep",
+              "hint": "Is the work email address needed to fulfil the service agreement?"
+            },
+            {
+              "type": "Work phone",
+              "content": "+47 39 39 29 29",
+              "action": "keep",
+              "hint": "Is the work phone number useful for maintaining a business relationship?"
+            },
+            {
+              "type": "Contract ID",
+              "content": "CNT-55213",
+              "action": "keep",
+              "hint": "Is the contract ID essential to the contract?"
+            },
+            {
+              "type": "Service Level Agreement",
+              "content": "Gold Tier Support",
+              "action": "keep",
+              "hint": "Does the service level agreement set the terms of service delivery?"
+            },
+            {
+              "type": "Invoice email",
+              "content": "accounts@nordtek.no",
+              "action": "keep",
+              "hint": "Could the invoice email be needed for sending invoices?"
+            },
+            {
+              "type": "Meeting note",
+              "content": "Report due March 15",
+              "action": "keep",
+              "hint": "Does the meeting note contain factual information that is needed for doing business?"
+            },
+            {
+              "type": "Support ticket",
+              "content": "Server maintenance scheduled",
+              "action": "keep",
+              "hint": "Is a support ticket part of fulfilling the service contract?"
+            },
+            {
+              "type": "Home address",
+              "content": "Kongens gate…",
+              "action": "erase",
+              "hint": "Is a home address needed for business communications?"
+            },
+            {
+              "type": "Private phone",
+              "content": "+47 50 50 90 90",
+              "action": "erase",
+              "hint": "Was the private phone number provided for professional use?"
+            },
+            {
+              "type": "Social Media Screenshot",
+              "content": "socialmediaprofile.png",
+              "action": "erase",
+              "hint": "Did Aisha give you the social media screenshot?"
+            },
+            {
+              "type": "Staff note",
+              "content": "She is demanding",
+              "action": "erase",
+              "hint": "Is the staff note a factual or subjective opinion?"
+            },
+            {
+              "type": "Company (wrong file)",
+              "content": "Belongs to BioNordic AS",
+              "action": "erase",
+              "hint": "Does the information match this customer?"
+            }
+          ],
+          "explanation": {
+            "title": "Excellent work! You kept the appropriate business-related information in Aisha's file.",
+            "keepTitle": "The information you decided to keep",
+            "keepContent": "To fulfil the contract (service level agreement), you were correct in keeping:\n• The company name\n• The work email\n• The contract ID, SLA, and support ticket\n\nYou kept the information you have a legal obligation of keeping according to accounting law:\n• The invoice email\n\nYou also kept information that is in your legitimate interest to keep, ensuring professional communication:\n• Work phone number\n• A factual meeting note",
+            "eraseTitle": "The information you decided to erase",
+            "eraseContent": "You correctly deleted data that was too personal, improperly collected, or incorrect, including:\n• A home address and private phone number\n• A social media screenshot she did not provide\n• A subjective staff note\n• A note belonging to a different company"
+          }
+        },
+        {
+          "name": "Jonas Berg",
+          "type": "Newsletter subscriber",
+          "consent": "newsletter",
+          "consentDetails": "Consent covers:\n• Email address\n• Newsletter frequency and content preferences",
+          "data": [
+            {
+              "type": "Email",
+              "content": "jonas.berg@mailbox.nu",
+              "action": "keep",
+              "hint": "Did the customer agree to receive newsletters via email?"
+            },
+            {
+              "type": "Subscription date",
+              "content": "21/01/2025",
+              "action": "keep",
+              "hint": "Are you required to document when the consent was provided?"
+            },
+            {
+              "type": "Consent record",
+              "content": "Double opt-in",
+              "action": "keep",
+              "hint": "Are you required to document that consent was provided?"
+            },
+            {
+              "type": "Newsletter preferences",
+              "content": "Weekly product news",
+              "action": "keep",
+              "hint": "Are you allowed to keep preferences under the newsletter consent?"
+            },
+            {
+              "type": "Location estimate",
+              "content": "Aarhus",
+              "action": "erase",
+              "hint": "Was the location data provided by the customer?"
+            },
+            {
+              "type": "Cookie tracker",
+              "content": "browser_activity.json",
+              "action": "erase",
+              "hint": "Did the user give cookie consent?"
+            },
+            {
+              "type": "Address",
+              "content": "Nordre Fasanvej…",
+              "action": "erase",
+              "hint": "Did the user give consent for you to store his address?"
+            },
+            {
+              "type": "Profiling tag",
+              "content": "High spender",
+              "action": "erase",
+              "hint": "Did the user consent to profiling?"
+            }
+          ],
+          "explanation": {
+            "title": "Great job! You correctly sorted through the data in Jonas' file.",
+            "keepTitle": "The information you decided to keep",
+            "keepContent": "Because Jonas explicitly gave consent to receive the marketing newsletter, you were right in keeping:\n• The email address\n• The newsletter preferences\n\nAs you are legally obliged (GDPR) to document that the newsletter consent was properly collected, you were right to keep:\n• The subscription date\n• The double opt-in consent record",
+            "eraseTitle": "The information you decided to erase",
+            "eraseContent": "You correctly removed data that was guessed, inaccurate, or collected without consent, including:\n• A location estimate\n• A cookie tracking file without cookie consent\n• An address\n• A profiling tag (\"High spender\")"
+          }
+        },
+        {
+          "name": "Sofia Lindgren",
+          "type": "Customer complaint",
+          "consent": "none",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Name",
+              "content": "Sofia Lindgren",
+              "action": "keep",
+              "hint": "Do you need the customer's name to identify who submitted the complaint?"
+            },
+            {
+              "type": "Email",
+              "content": "sofia.l@mailservice.dk",
+              "action": "keep",
+              "hint": "Is the email useful for contacting the customer?"
+            },
+            {
+              "type": "Phone",
+              "content": "+45 22 44 44 22",
+              "action": "keep",
+              "hint": "Would you need to call the customer about her complaint?"
+            },
+            {
+              "type": "Order information",
+              "content": "Order #55201",
+              "action": "keep",
+              "hint": "Do you need to know which order she is complaining about?"
+            },
+            {
+              "type": "Complaint form",
+              "content": "Item arrived cracked",
+              "action": "keep",
+              "hint": "Is the complaint form directly related to the complaint?"
+            },
+            {
+              "type": "Photos",
+              "content": "cracked_screen1.jpg",
+              "action": "keep",
+              "hint": "Is the photo evidence relevant for the complaint?"
+            },
+            {
+              "type": "Resolution note",
+              "content": "Replacement approved",
+              "action": "keep",
+              "hint": "Does the resolution note help document how you fixed the issue?"
+            },
+            {
+              "type": "Follow-up note",
+              "content": "Keep packaging",
+              "action": "keep",
+              "hint": "Is the follow-up note part of handling the return properly?"
+            },
+            {
+              "type": "Staff note",
+              "content": "Seemed hormonal",
+              "action": "erase",
+              "hint": "Is the staff note a factual or an inappropriate opinion?"
+            },
+            {
+              "type": "Customer review",
+              "content": "3 stars – 12.03.2019",
+              "action": "erase",
+              "hint": "Does the review relate to the damaged product claim?"
+            },
+            {
+              "type": "Social media screenshot",
+              "content": "profile.png",
+              "action": "erase",
+              "hint": "Did the customer provide the social media screenshot?"
+            },
+            {
+              "type": "Name (wrong file)",
+              "content": "Emma Larsen",
+              "action": "erase",
+              "hint": "Does the name belong to the same customer?"
+            },
+            {
+              "type": "Complaint form (duplicate)",
+              "content": "Item arrived cracked",
+              "action": "erase",
+              "hint": "Do you need two copies of the same complaint?"
+            }
+          ],
+          "explanation": {
+            "title": "Great work! You kept only the factual and necessary data in Sofia's file.",
+            "keepTitle": "The information you decided to keep",
+            "keepContent": "You correctly decided to keep all the information required to fulfil the contract; handle and resolve her complaint:\n• Name, email, phone number\n• The order information\n• The complaint form\n• The photo she submitted\n• The follow-up note related to the return process\n\nYou also kept information you have a legitimate interest in keeping for internal documentation purposes:\n• The resolution note (\"Replacement approved\")",
+            "eraseTitle": "The information you decided to erase",
+            "eraseContent": "You correctly removed data that was irrelevant, sensitive, or inappropriate, including:\n• A subjective and discriminatory staff note (\"Seemed hormonal\")\n• An old review unrelated to the complaint\n• A social media screenshot she did not provide\n• A misfiled note from another customer\n• A duplicate complaint file"
+          }
+        }
+      ],
+      "completion": {
+        "title": "Customer Registry Sorted!",
+        "message": "Congratulations! You successfully sorted the customer registry.\n\nAll the information you kept was covered by a legal basis:\n• Contract: information needed to fulfil customer requests, deliver products, resolve complaints, manage warranties, and maintain business agreements.\n• Legal obligation: invoices, receipts, and consent records required by law to store\n• Legitimate interest: factual and useful information for running a business\n• Consent: additional data obtained through clear and written consent\n\nBreaching GDPR and privacy laws could be harmful for the business. Thankfully, you erased all inaccurate, misplaced, subjective, discriminatory, duplicate and irrelevant information.\n\nAn up-to-date customer registry helps protect our customer's privacy and build trust. Well done!"
+      }
+    },
+    "feedbackSurvey": {
+      "title": "The Customer Feedback Survey",
+      "instructions": "Help Simone build a good feedback survey. For each pair, choose the better question to include.",
+      "questions": [
+        {
+          "correct": "How easy was it to find the information you needed on our website?",
+          "wrong": "What is your favourite holiday destination?",
+          "explanation": "Ask relevant questions.\nA question about holiday destinations is irrelevant and will not provide any useful feedback. It can also be confusing and distracting for the respondent."
+        },
+        {
+          "correct": "How satisfied were you with the product you purchased?",
+          "wrong": "How satisfied were you with the fantastic product you purchased?",
+          "explanation": "Ask neutral questions.\nCalling the product \"fantastic\" makes the question leading. This can influence the customer's response."
+        },
+        {
+          "correct": "How satisfied were you with our customer support services?",
+          "wrong": "If you had contacted our customer support team, and they had been extremely responsive to your requests, would you recommend our business to your friends and family?",
+          "explanation": "Ask about actual experiences.\nIn general, hypothetical questions will provide feedback that is uncertain and difficult to act upon."
+        },
+        {
+          "correct": "How would you rate your overall experience today?",
+          "wrong": "Considering the interplay between our website, chat, phone and email support services… how would you evaluate our performance?",
+          "explanation": "Ask clear and straightforward questions.\nLong and complex questions can overwhelm the respondent."
+        },
+        {
+          "correct": "How helpful was our staff? (1–5)",
+          "wrong": "Was our staff helpful? Yes/No",
+          "explanation": "Use rating scales to get more detailed data.\nExperiences and opinions will often be on spectrum of positive and negative. Yes/no questions can oversimplify and hide nuances."
+        },
+        {
+          "correct": "How did you first hear about us? Search Engines / Social Media / Referral / Customer Review site / Internet Ad / Newspaper Ad / Other",
+          "wrong": "How did you first hear about us? Search Engines / Social Media",
+          "explanation": "Include all relevant answering options. Include \"other\" or \"I don't know\" options.\nOtherwise, respondents can be forced to select an inaccurate option, skip the question or abandon the survey."
+        },
+        {
+          "correct": "How satisfied were you with the product you purchased?",
+          "wrong": "How satisfied were you with the product and the customer service?",
+          "explanation": "Focus at one topic per question.\nAsking about two different things in the same question can lead to inaccurate and unclear feedback."
+        },
+        {
+          "correct": "What could we improve about our delivery services?",
+          "wrong": "Do you like our brand colours?",
+          "explanation": "Keep the goal of the survey in mind (customer experiences).\nAsk questions that will provide concrete feedback on the matter at hand."
+        },
+        {
+          "correct": "How easy was the checkout process?",
+          "wrong": "Why were you so confused during checkout?",
+          "explanation": "Use respectful language.\nAvoid accusatory questions that can make respondents feel uncomfortable."
+        }
+      ],
+      "resultTitle": "Your Customer Feedback Survey",
+      "allCorrectMessage": "Perfect! All your survey questions are well-crafted.",
+      "someWrongMessage": "Some questions could be improved. Click on the red questions for explanations."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "betterQuestion": "Better question:"
+  },
+  "hints": {
+    "default": "Look around the Customer Service Department for clues.",
+    "talkToPeter": "Click on Peter — he looks like he needs help.",
+    "talkToSimone": "Click on Simone near the whiteboard.",
+    "findCabinet": "Check the overflowing filing cabinet.",
+    "puzzleInProgress": "Focus on the current task.",
+    "completion": "The training has been completed!"
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the Customer Service Department. The room is bustling with activity. You see Peter hunched over his desk, looking distressed. There's also an overflowing filing cabinet that looks like it might burst at any moment. Simone is standing by the whiteboard, marker in hand.",
+    "cabinetBurst": "Oh no, our customer records!",
+    "cabinetSort": "Well… organizing the customer records has been on my to do-list for a while. I better get to it.",
+    "guidelinesPrompt": "Do you wish to go through the company's privacy guidelines before you sort the customer registry?"
+  },
+  "interactiveObjects": {
+    "rubberDuck": {
+      "title": "Rubber Duck",
+      "text": "Are you stuck? Explaining the problem out loud might help you solve it. The duck is here to listen!"
+    },
+    "coffeeMachine": {
+      "title": "Coffee Machine",
+      "text": "Error 404: Coffee not found"
+    },
+    "notebook": {
+      "title": "Notebook",
+      "text": "A notebook to keep track on customers? It can be a good start when you run a small business.\n\nWriting down important information makes it easier to follow up on promises and complaints, remember preferences and offer more personalized experiences.\n\nYou can move on to spreadsheets or a digital Customer Relationship Management (CRM) system when you feel more comfortable."
+    },
+    "deerPoster": {
+      "title": "Motivational Poster",
+      "text": "A poster with a deer in a forest. The caption reads: \"Patience — Great things take time.\""
+    },
+    "naturePoster": {
+      "title": "Motivational Poster",
+      "text": "A poster with a mountain landscape. The caption reads: \"Perspective — See the bigger picture.\""
+    },
+    "bearPoster": {
+      "title": "Motivational Poster",
+      "text": "A poster with a bear by a river. The caption reads: \"Persistence — Keep going.\""
+    }
+  },
+  "completion": {
+    "title": "Shift Complete!",
+    "message": "You've completed your shift in the Customer Service Department.\n\nYou handled a customer complaint call, updated the customer registry and created a useful customer feedback survey. Well done!",
+    "buttonText": "Exit the Customer Service Department"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "startButton": "Start",
+    "trueButton": "True",
+    "falseButton": "False",
+    "closeButton": "Close",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  },
+  "speakers": {
+    "customer": "Customer:",
+    "you": "You:"
+  }
+}

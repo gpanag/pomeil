@@ -1,0 +1,186 @@
+/* Escape Rooms hub — POMEIL editorial language
+   The room grid reads as a printed catalogue: numbered cards,
+   editorial italic titles, and a hover state that lifts the card
+   while warming the hairline at the top edge. */
+
+:host {
+  display: block;
+}
+
+.page-parent {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 2rem;
+
+  > h5.title {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.75rem) !important;
+    color: var(--pomeil-teal-deep);
+    letter-spacing: -0.018em;
+    font-variation-settings: "opsz" 144, "SOFT" 40;
+    margin: 0 !important;
+    line-height: 1.05;
+  }
+  > h5.title::before {
+    content: "Catalogue";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 6px;
+  }
+  > h5.title::after {
+    content: "✦";
+    display: block;
+    color: var(--pomeil-warm);
+    font-size: 0.9rem;
+    margin-top: 12px;
+    opacity: 0.6;
+  }
+}
+
+/* Grid */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 16px 0;
+  counter-reset: room-num;
+}
+
+.item-card {
+  display: flex;
+  position: relative;
+  counter-increment: room-num;
+}
+
+.room-card {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  /* Override default card styles for editorial feel — but the global
+     .mat-mdc-card hairline-on-hover treatment from styles.scss
+     still applies (warm gradient at top). */
+}
+
+/* Numbered plate — top-left corner, like a museum plaque.
+   NOTE: Material's .mat-mdc-card::after sets width/height: 100%; we
+   must explicitly reset them so our pill sizes to its content. */
+.item-card .room-card::after {
+  content: counter(room-num, decimal-leading-zero);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: auto;
+  height: auto;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--pomeil-cream);
+  background: rgba(0, 63, 71, 0.85);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: none;
+  backdrop-filter: blur(6px);
+  z-index: 2;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.30);
+  font-variation-settings: "opsz" 48, "SOFT" 30;
+  pointer-events: none;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 700ms var(--md-easing-emphasized-decelerate),
+              filter 400ms var(--md-easing-standard);
+}
+
+.room-card:hover .card-image {
+  transform: scale(1.06);
+  filter: saturate(1.08) contrast(1.02);
+}
+
+.room-card mat-card-header {
+  padding: 1.1rem 1.25rem 0 !important;
+}
+
+.room-card .mat-mdc-card-title.room-title,
+.room-title {
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  color: var(--pomeil-teal-deep) !important;
+  margin: 0 !important;
+  line-height: 1.25 !important;
+  font-variation-settings: "opsz" 60, "SOFT" 40;
+  letter-spacing: -0.005em;
+}
+
+.room-card mat-card-actions {
+  padding: 0.75rem 1.25rem 1.25rem !important;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    font-family: var(--font-body) !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--pomeil-warm) !important;
+    border-radius: 999px !important;
+    transition:
+      background-color var(--md-duration-short3) var(--md-easing-standard),
+      color var(--md-duration-short3) var(--md-easing-standard);
+
+    &:hover {
+      background: var(--state-attention-tint) !important;
+      color: var(--state-attention-deep) !important;
+    }
+
+    /* Right-pointing arrow appended after the text */
+    &::after {
+      content: " →";
+      margin-left: 4px;
+      transition: transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate);
+      display: inline-block;
+    }
+    &:hover::after { transform: translateX(4px); }
+  }
+}
+
+.room-description {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--pomeil-ink-muted);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+  .grid-list {
+    grid-template-columns: 1fr;
+  }
+}

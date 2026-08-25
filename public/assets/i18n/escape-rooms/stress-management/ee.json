@@ -1,0 +1,264 @@
+{
+  "loading": "Stressi juhtimise mooduli laadimine...",
+  "intro": {
+    "title": "Stressi juhtimine",
+    "paragraphs": [
+      "Sa oled (username), prestiižse finantskaubandusettevõtte töötaja. Pärast aastatepikkust kogemuste kogumist, kuudepikkust töökuulutuste sirvimist ja nädalatepikkuseid intervjuusid said sa lõpuks oma unistuste töökoha.",
+      "Sa olid väga rõõmus, entusiastlik ja täis lootusi, kuid olid ka teadlik selle ametikohaga seotud kõrgemast stressitasemest.",
+      "Vaid mõnest nädalast piisas, et näidata sulle uue töö ainulaadset dünaamikat ja nõudmisi – pidev surve, sagedased stressirohked olukorrad, otsuste tegemine. Iga mööduva päevaga muutuvad panused suuremaks, otsused raskemaks ning sinu vaimne pinge järjest kasvab.",
+      "Aga täna oli teisiti. Täna kutsuti sind <strong>Paanikatuppa</strong>. Kohta, kus ettevõtte kõige helgemad pead tegelevad kõige tõsisemate väljakutsete ja äkiliste probleemidega."
+    ],
+    "buttonText": "Sisene Paanikatuppa"
+  },
+  "characters": {
+    "kevin": {
+      "name": "Kevin",
+      "dialogues": {
+        "greeting": "Hea, et oled lõpuks siin, (username)! Tule, aega ei ole raisata! Sul pole aimugi… Kogu süsteem… *ta näib endamisi pomisevat; äkki vaatab ta sulle otsa ja ütleb veelgi närvilisemalt* Kogu kauplemissüsteem kukkus 30 minutit tagasi kokku! Ja seda tipptundidel. Iga minut, mil see maas on, maksab meile palju, peame koheselt mingi lahenduse leidma!",
+        "itTeamUnavailable": "Meie IT-meeskond ei ole saadaval. Ülejäänud kontor on kas puhkusel või haigeks jäänud. Meid on ainult kolmekesi ja peame midagi tegema KOHE!",
+        "youTrembling": "Hei, kas sul on kõik korras? *Kevini hääl tundub kauge ja ebaselge, sul on pearinglus* Sa väriseb… Istume korraks. Tean, et seda on palju. Tule minuga.",
+        "drinkWater": "Sa näed nii kahvatu välja. Siin, joo veidi vett. Rahustame sind veidi maha. Meie ümber seintel näed sa erinevaid raamitud olulisi dokumente. Olen üsna kindel, et üks neist on sulle praegu abiks. Ma ei näe neid siit hästi. Kas saad mulle öelda, millise sulle tuua?",
+        "findDocumentHint": "Vaata dokumente meie ümber seintel. Üks neist aitab sind. Selle pealkiri on suuremas, rohelises kirjas.",
+        "checkBasics": "Need on põhitõed, kuid me ei saa ilma selle teadmiseta edasi liikuda. Võta endale paar minutit ja järgi nõuandeid, mida just õppisid. Kuid kõigepealt kontrollime, kas sa oled need tõesti mõistnud.",
+        "composeYourself": "Jah, õige. Nagu ütlesin, võta veidi aega, et end kokku võtta, järgi juhiseid ja… *äkki kostab kontoritelefoni vali helin. Kevin vaatab seda, siis sind. Ta on hirmunud*",
+        "priorityClient": "See on üks meie prioriteetsetest klientidest! *ütleb ta närvilise, väriseva häälega* Sa oled meist kõige pädevam. Pead vastama sellele kõnele…",
+        "impressed": "Vau! Sa tegid seda tõesti! Polnud kindel, kas suudad mu kaootilist trükkimist dešifreerida, aga SA TEGID. Sa käitusid selle kliendiga tõesti hästi ega lasknud stressil end üle võtta. Sa teed väga kiiret edusamme. Varsti suudad sa…",
+        "completionThankYou": "Ma poleks ise paremini öelda saanud, (username). Tänu sulle näib kõik jälle hästi töötavat. Niisiis, tegelikult oli see test. Põhjalik test, mille panid kokku meie „murelikud häkkerid”, et tagada, et sa saaksid oma stressireaktsioonidest üle. Tõsiselt rääkides, sa tegid täna tõesti väga hästi, (username). Kogu ettevõte on sulle alati tänulik. Aitäh!",
+        "completionClick": "Sa tegid täna tõesti hästi, (username). Aitäh sulle!",
+        "defaultBusy": "Peame keskenduma! Iga sekund loeb!"
+      }
+    },
+    "ahmed": {
+      "name": "Ahmed",
+      "dialogues": {
+        "comeQuickly": "Kuule!? Tulge kiiresti siia!",
+        "screenTurnedBlue": "Vaadake! Ma ei tea, mis toimub. Äkki muutus mu ekraan siniseks ja kõik, mida ma näen, on mingi tekst, mingi ülesanne ja TAIMER! Arvan, et meid on häkitud. Tõenäoliselt oli see kogu süsteemi rikke põhjus algusest peale!",
+        "solveExercise": "Võib-olla kui me ülesande õigesti lahendame, peatame loenduse, taastame süsteemi ja päästame päeva? (username), sa oled meist kõige stressikindlam! Pead meid aitama. Keskendu ülesandele, ma tean, et sa suudad seda!",
+        "ahmedCallsClick": "Vaadake! Ma ei tea, mis toimub. Äkki muutus mu ekraan siniseks ja kõik, mida ma näen, on mingi tekst, mingi ülesanne ja TAIMER! Arvan, et meid on häkitud. Tõenäoliselt oli see kogu süsteemi rikke põhjus algusest peale! Võib-olla kui me ülesande õigesti lahendame, peatame loenduse ja taastame süsteemi!",
+        "hurry": "Kiiresti! Meil pole palju aega! Nüüd ülesande juurde!",
+        "systemReboots": "JAH! Jah, töötab! *Ahmed hüppab oma toolil* Vaadake! Kogu süsteem taaskäivitub, kõik hakkab uuesti normaalselt tööle. Sa tegid seda tõesti, sa päästsid meid.",
+        "completionClick": "Sa tegid seda tõesti, sa päästsid meid! Aitäh, (username)!",
+        "defaultMonitoring": "Ma jälgin süsteeme. Anna teada, kui midagi vajad."
+      }
+    }
+  },
+  "selfTalk": {
+    "enterPanicRoom": "Ja seal see on, Paanikatuba. Ma ei oodanud, et mind kutsutakse siia juba mõne nädala pärast – ilmselt on olukord piisavalt tõsine, et juhtkond tahtis kõik laeval. Nojah, vaatame, milles asi. Tunnen end juba nii ärevana…",
+    "characterName": "(Sinu mõtted)"
+  },
+  "systemDialogues": {
+    "findDocumentInstruction": "Üks nendest dokumentidest on sulle abiks. Selle pealkiri on kirjutatud suuremas kirjas kui ülejäänud dokumentide oma ja pealkirja kirja värv on roheline. Püüa see leida.",
+    "wrongDocument": "Need on tehnilised juhendid. Kas teadsid, et millegi mitteseotud lugemine võib tegelikult aidata stressitasemeid maandada? Kuid praegu otsime üles selle, mida vajame.",
+    "documentFound": "Tubli töö! Oled avastanud olulised nõuanded oma vaimu ja keha reguleerimiseks stressirohketel hetkedel. Tundub, et Kevin tahab sinuga uuesti rääkida.",
+    "puzzle1Correct": "Sul on õigus, (username)! Räägime nüüd Keviniga.",
+    "phonePickUp": "Sa võtad telefoni vastu. Just nagu kujutlesid, on klient raevukas. Ta on väga emotsionaalne, karjub telefoni, süüdistab su ettevõtet tohutu kahju eest, mida süsteemi rike tekitab. Kõigi nende tugevate emotsioonide seas on sul raske isegi täielikult mõista, mida ta ütleb, rääkimata heast vastusest.",
+    "kevinTyping": "Silmanurgast märkad, et Kevin trükib midagi kiiresti sülearvutile. Ta trükib nii kiiresti kui suudab, kaootiliselt, isegi ei lõpeta lauseid. Saad aru, et ta üritab sind aidata, anda sulle nõuandeid. Keskendud sellele, mida ta trükib, ja püüad sellest mingit mõtet välja võtta…",
+    "puzzle2Complete": "Kui loed hoolikalt Kevini nõuandeid, hakkad mõistma, et kliendi raev ei ole suunatud sinule, vaid süsteemi enda riketele. Uute tehnikatega volitatuna suudad pakkuda kliendi probleemile ad hoc lahenduse, kinnitada talle, et teed kõik mis võimalik, ja lubada peagi tagasi helistada. Üllatuslikult – see töötab. Klient palub vabandust ja ütleb, et ootab su kõnet.",
+    "kevinImpressed": "Kevin vaatab sind silmis uhkusega – ta on muljet avaldanud. Ta tahab sinuga rääkida."
+  },
+  "items": {
+    "document": {
+      "title": "STRESSI LEEVENDAMISE PÕHITÕED",
+      "altText": "Stressi leevendamise põhitõdede dokument",
+      "inventoryTitle": "Vaata stressi leevendamise põhitõdesid",
+      "tips": [
+        "Hinga aeglasemalt kui arvad, et vajaks - pikad väljahingamised ütlevad kehale, et oht on möödas.",
+        "Lõdvesta lõug ja lase õlad alla - stress peidab end väikestes lihastes.",
+        "Tee üks asi korraga - mitme ülesande täitmine tõstab pinget - keskendu järgmisele üksikule sammule.",
+        "Anna nimi sellele, mida tunned - öeldes \"olen stressis\" või \"olen ülekoormatud\" vähendab intensiivsust.",
+        "Tõuse püsti ja muuda asendit - 10-sekundiline venitus lähtestab närvisüsteemi."
+      ]
+    },
+    "documentSelection": {
+      "title": "Raamitud dokumendid",
+      "instruction": "Seinal ripub mitu dokumenti. Ühel neist on pealkiri suuremas, rohelises kirjas. Klõpsa õigele.",
+      "wrong1": "Süsteemi protokollid v2.3",
+      "correct": "STRESSI LEEVENDAMISE PÕHITÕED",
+      "wrong2": "Võrgu arhitektuur",
+      "wrong3": "Hädaabi kontaktid"
+    }
+  },
+  "pcScreen": {
+    "title": "Süsteemi sõnum",
+    "text1": "Kui stress muutub äkki ülevõimsaks, sinu mõistus <strong>kitseneb</strong> ja reageerib automaatselt. Sel hetkel on kiireim viis kontroll tagasi saada astuda veidi kogemusest „välja”: pane tähele oma mõtlemise <strong>mustrit</strong>, eralda see, mis tegelikult juhtub, sellest, mida stress sulle ütleb, ning püüa suunata oma tähelepanu ühele osale olukorrast, mis on sul tegelikult kontrolli all, mida saad <strong>mõjutada</strong>. See „vaimne distants” lubab sul katkestada emotsionaalse tsükli ja taastab selguse.",
+    "text2": "Pikaajaline stressi vähendamine toimib teisiti. See tugineb sinu närvisüsteemi aeglasele treenimisele, et see taastuks kiiremini ja muutuks päeva jooksul erinevatele stressoritele vähem <strong>haavatavaks</strong>. Lühikesed pausid ülesannete vahel, teadlikud harjumused ja rutiinid, regulaarsed väikesed väljakutsed – need muudatused, kui neid õigesti rakendada, <strong>vähendavad</strong> sinu vaiketasemel stressi, muutes intensiivsed hetked kergemini hallatavaks ning rahu naasmise loomulikumaks.",
+    "continueButton": "Jätka",
+    "dialogueText1": "Kui stress muutub äkki ülevõimsaks, sinu mõistus kitseneb ja reageerib automaatselt. Sel hetkel on kiireim viis kontroll tagasi saada astuda veidi kogemusest „välja”: pane tähele oma mõtlemise mustrit, eralda see, mis tegelikult juhtub, sellest, mida stress sulle ütleb, ning püüa suunata oma tähelepanu ühele osale olukorrast, mis on sul tegelikult kontrolli all, mida saad mõjutada. See „vaimne distants” lubab sul katkestada emotsionaalse tsükli ja taastab selguse.",
+    "dialogueText2": "Pikaajaline stressi vähendamine toimib teisiti. See tugineb sinu närvisüsteemi aeglasele treenimisele, et see taastuks kiiremini ja muutuks päeva jooksul erinevatele stressoritele vähem haavatavaks. Lühikesed pausid ülesannete vahel, teadlikud harjumused ja rutiinid, regulaarsed väikesed väljakutsed – need muudatused, kui neid õigesti rakendada, vähendavad sinu vaiketasemel stressi, muutes intensiivsed hetked kergemini hallatavaks ning rahu naasmise loomulikumaks."
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Põhilise arusaamise kontrollimine",
+      "subtitle": "Vali parim vastus. Ainult üks on õige.",
+      "question": "Milliseid tegevusi peaksid praegu tegema, et oma stressitaset vähendada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tõuse püsti, hakka kiiresti ringi käima, et närvienergia ära kulutada, ja püüa kõik järelejäänud ülesanded korraga ära planeerida, et millegagi hilinema ei jääks.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eira kehalisi tundeid, püüa kohe edasi töötada ja loota, et tunded kaovad iseenesest.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Loetle peast üles kõik, mis täna valesti läks, ja mõtle võimalikele halvimatele stsenaariumidele, et „end ette valmistada”.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tee paar pikka väljahingamist, lõdvesta lõug ja õlad, ütle valjusti, mida tunned, ja vali järgmine üksik ülesanne, millele keskenduda.",
+          "correct": true
+        }
+      ],
+      "hint": "Püüa meenutada juhiseid dokumendist „Stressi leevendamise põhitõed”.",
+      "answerOverlay": "Pärast 3 katset, siin on õige vastus:\n\nKüsimus: Milliseid tegevusi peaksid praegu tegema, et oma stressitaset vähendada?\n\nÕige vastus: „Tee paar pikka väljahingamist, lõdvesta lõug ja õlad, ütle valjusti, mida tunned, ja vali järgmine üksik ülesanne, millele keskenduda.”\n\nSee ühendab stressi leevendamise põhitõdede võtmeelemendid:\n• Pikad väljahingamised ütlevad kehale, et oht on möödas\n• Lõua ja õlgade lõdvestamine vabastab pinge väikestest lihastest\n• Selle nimetamine, mida tunned, vähendab intensiivsust\n• Ühele ülesandele keskendumine takistab mitme ülesande täitmisest tekkivat pinget"
+    },
+    "matching": {
+      "title": "Kevini kaootiline tugi",
+      "subtitle": "Sobita lausete algused nende lõppudega, et avastada stressi juhtimise tehnikaid.",
+      "beginningsHeading": "Lausete algused",
+      "endingsHeading": "Lausete lõpud",
+      "pairs": [
+        {
+          "id": "1",
+          "beginning": "Tõmba mõttes piir…",
+          "endingId": "D"
+        },
+        {
+          "id": "2",
+          "beginning": "Suuna oma tähelepanu kliendi toonilt…",
+          "endingId": "F"
+        },
+        {
+          "id": "3",
+          "beginning": "Kasuta mõttes positiivset fraasi…",
+          "endingId": "C"
+        },
+        {
+          "id": "4",
+          "beginning": "Jälgi oma kõnetempot ja tooni…",
+          "endingId": "B"
+        },
+        {
+          "id": "5",
+          "beginning": "Kujuta ette, et asetad kliendi sõnad…",
+          "endingId": "A"
+        },
+        {
+          "id": "6",
+          "beginning": "Vähenda vaimset pinget, vaikselt tuvastades…",
+          "endingId": "E"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "…„vaimsele lauale”, et keskenduda sisule, mitte emotsionaalsele intensiivsusele."
+        },
+        {
+          "id": "B",
+          "text": "…tagamaks, et sa ei hakka kiiremini või valjemini rääkima, kui kliendi häälitsus tõuseb."
+        },
+        {
+          "id": "C",
+          "text": "…nagu „Püsi rahulik” või „Sa saad sellega hakkama”, et ennetada ülekoormust."
+        },
+        {
+          "id": "D",
+          "text": "…kliendi emotsiooni ja sinu enesetunde vahel."
+        },
+        {
+          "id": "E",
+          "text": "…peamise probleemi, mida ta kirjeldab, mitte reageerides igale detailile."
+        },
+        {
+          "id": "F",
+          "text": "…ja analüüsi, mida ta vajab, mitte kuidas ta kõlab."
+        }
+      ],
+      "hint": "Mõtle, milline tehnika sobib iga algusega. Keskendu iga lause loogikale.",
+      "answerOverlay": "Pärast 3 katset on õiged vastavused järgmised:\n\n1. „Tõmba mõttes piir…” → „…kliendi emotsiooni ja sinu enesetunde vahel.”\n2. „Suuna oma tähelepanu kliendi toonilt…” → „…ja analüüsi, mida ta vajab, mitte kuidas ta kõlab.”\n3. „Kasuta mõttes positiivset fraasi…” → „…nagu 'Püsi rahulik' või 'Sa saad sellega hakkama', et ennetada ülekoormust.”\n4. „Jälgi oma kõnetempot ja tooni…” → „…tagamaks, et sa ei hakka kiiremini või valjemini rääkima, kui kliendi häälitsus tõuseb.”\n5. „Kujuta ette, et asetad kliendi sõnad…” → „…'vaimsele lauale', et keskenduda sisule, mitte emotsionaalsele intensiivsusele.”\n6. „Vähenda vaimset pinget, vaikselt tuvastades…” → „…peamise probleemi, mida ta kirjeldab, mitte reageerides igale detailile.”"
+    },
+    "fillGap": {
+      "title": "Lõpp-pöördloendus",
+      "subtitle": "Täida laused puuduvate sõnadega.",
+      "sentenceParts": [
+        "Kui stress muutub ülevõimsaks, sinu mõistus ",
+        " ja reageerib automaatselt. Kontrolli tagasi saamiseks võid astuda veidi kogemusest „välja” ja jälgida oma mõtlemise ",
+        ", eraldades reaalsed sündmused sellest, mida stress sulle ütleb. Tähelepanu uuesti olukorra sellele osale suunamine, mida saad tegelikult ",
+        ", aitab katkestada emotsionaalse tsükli ja taastab selguse. Pikaajaline leevendus areneb närvisüsteemi treenimise teel, et see taastuks kiiremini ja muutuks ",
+        " igapäevastele stressoritele vähem haavatavaks. Järjepidevate harjumustega sinu vaikepinge ",
+        ", muutes intensiivsed hetked kergemini hallatavaks ja rahu naasmise loomulikumaks."
+      ],
+      "options": [
+        "kitseneb",
+        "mustrit",
+        "mõjutada",
+        "haavatavaks",
+        "väheneb",
+        "laieneb"
+      ],
+      "correct": [
+        "kitseneb",
+        "mustrit",
+        "mõjutada",
+        "haavatavaks",
+        "väheneb"
+      ],
+      "hint": "Loe arvutiekraanil olev tekst hoolikalt uuesti läbi. Sõnad kirjeldavad, kuidas stress mõjutab mõtlemist ja kuidas vastupidavust üles ehitada.",
+      "answerOverlay": "Pärast 3 katset on õiged vastused järgmised:\n\n1. „kitseneb” – Kui stress muutub ülevõimsaks, sinu mõistus kitseneb ja reageerib automaatselt.\n2. „mustrit” – Jälgi oma mõtlemise mustrit.\n3. „mõjutada” – Tähelepanu uuesti suunamine sellele, mida saad tegelikult mõjutada.\n4. „haavatavaks” – Muutu igapäevastele stressoritele vähem haavatavaks.\n5. „väheneb” – Sinu vaikepinge väheneb.\n\nNeed mõisted kirjeldavad nii vahetut stressireaktsiooni (vaimne kitsenemine, mustrite tundmine, mõju keskendumine) kui ka pikaajalist stressi juhtimist (haavatavuse vähendamine, vaiketaseme pinge alandamine).",
+      "resetButton": "Lähtesta",
+      "checkButton": "Kontrolli"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "default": "Ma peaksin ruumis hoolikalt ringi vaatama.",
+    "clickKevin": "Ma peaksin Keviniga rääkima. Ta tundub teadvat, mis toimub.",
+    "findDocument": "Kevin ütles, et ühel raamitud dokumentidest on pealkiri rohelises, suuremas kirjas. Ma peaksin seinal olevaid dokumente kontrollima.",
+    "phoneCall": "Telefon heliseb! Pean selle vastu võtma.",
+    "findLaptop": "Kevin trükib midagi sülearvutile. Ma peaksin seda kontrollima.",
+    "ahmedOrPCScreen": "Ahmed osutas arvutiekraanile. Ma peaksin seda kontrollima.",
+    "completion": "Uks on lahti! Ma võin nüüd Paanikatoast lahkuda."
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": [
+      "Sul on õnnestunud kiiresti omandada uusi stressikindluse oskusi ja rakendada neid päriselu olukordades, ilmselt isegi varem kui kujutlesid – kõik seda tehes päästsid samal ajal ettevõtte.",
+      "Oled edukalt omandanud <strong>Stressi juhtimise</strong> oskuse."
+    ],
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "answerOverlay": {
+    "title": "Õige vastus",
+    "continueButton": "Jätka"
+  },
+  "ui": {
+    "continueButton": "Jätka",
+    "fullscreenTitle": "Lülita täisekraan",
+    "backToEscapeRoomsTitle": "Tagasi põgenemistubadesse",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

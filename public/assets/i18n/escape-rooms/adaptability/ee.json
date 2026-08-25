@@ -1,0 +1,213 @@
+{
+  "loading": "Kohanemisvõime laadimine...",
+  "intro": {
+    "title": "Kohanemisvõime",
+    "paragraphs": [
+      "Sa oled uus töötaja kiiresti kasvavas ja laienevas idufirmas. Esimesel päeval palutakse sul alustada onboarding-protsessist.",
+      "Üllataval kombel öeldakse sulle, et pead minema trepikotta, sest just seal peaks toimuma sinu kohtumine. Veidi segaduses, hakkad liikuma trepikoja uste suunas, kindel olemata, mida sealt oodata…",
+      "Kohanemisvõime oskuse avamiseks pead edukalt läbima ettevõtte poolt sulle ette valmistatud ebatavalise onboardingu."
+    ],
+    "buttonText": "Astu trepikotta"
+  },
+  "characters": {
+    "anastasia": {
+      "name": "Anastasia",
+      "dialogues": {
+        "greet": "Tere. Me oleme sind oodanud. Me oleme rõõmsad, et oled meie meeskonnaga liitunud — ja lubame sulle, et see keskkond ei lase sul kunagi igavleda ega uusi väljakutseid otsida, sest neid ilmub niikuinii iga päev.\n\nSoovitame sul seda näha kui midagi head, pidevaid võimalusi kasvamiseks. Aga kui on üks võtmeoskus, mida vajad, et siin edeneda, on see Kohanemisvõime. Ja see onboarding ongi just sellest.\n\nNiisiis alustagem. Esitan sulle peagi küsimuse, aga enne seda vaata ringi, eriti seintele, et leida kasulikke infokilde, mis aitavad sind sinu ülesandega.",
+        "puzzle1Intro": "Näen, et oled ka väga tähelepanelik — see annab tõesti hea märgi sinu kohta! Liigume nüüd selle küsimuseni.",
+        "puzzle1Done": "Väga hea! Sa tõestasid, et mõistad, milles kohanemisvõime seisneb. Liigume nüüd ühe taseme võrra kõrgemale, eks? Mine järgmisele korrusele ja räägi Aminaga, tema võtab edasi. Edu!",
+        "default": "Vaata seintel ringi kasuliku info järele."
+      }
+    },
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Tere, mu nimi on Amina. Kuulsin natuke su vestlust Anastasiaga ja sa tegid seda väga hästi. Enamik inimesi ei haara kohanemisvõime põhitõdesid nii kiiresti. Sa oled loomulik talent!\n\nIgatahes olen ka mina sulle ühe väljakutse ette valmistanud. Aga… ma pean paluma sind, et aitaksid mind selle leidmisel. Mu tahvelarvuti avakuval näed mitmesuguseid ikoone, otseteid ja rakendusi. Ja kogu selle kaose seas peame leidma märkmiku-ikooniga tekstifaili pealkirjaga „adaptability_LVL2“. Alustagem kohe!",
+        "readFile": "Nüüd, kui oleme selle leidnud, palun loe faili sisu.",
+        "puzzle2Intro": "Jah, see on täpselt see info, mida ma sinuga jagada soovisin. Sa oled valmis minu väljakutset proovima! Ma olen kindel, et tuled sellega hästi toime. Vaata uuesti tahvelarvutit, harjutus peaks juba laaditud olema.",
+        "puzzle2Done": "Oot, kas oled juba lõpetanud? Tuled toime isegi paremini, kui ma ootasin.\n\nOlgu, sellega olen ma täiesti kindel, et oled valmis meie koolituse viimaseks väljakutseks. Sa võid liikuda järgmisele korrusele.",
+        "default": "Vaata mu tahvelarvutist harjutust."
+      }
+    },
+    "wei": {
+      "name": "Wei",
+      "dialogues": {
+        "greet": "Sa oled uus töötaja, jah? Vau, sa lõpetasid kaks eelmist väljakutset rekordajaga, kas tead?\n\nNüüd olen tõesti uudishimulik, kuidas tuled toime minu ülesandega. Aga esimesed asjad esmalt — alustame natukesest teadmistest sinu jaoks.\n\nEt mitte teha seda liiga lihtsaks, ütlen sulle ainult, et see on kuskil minu lähedal. Kas sa suudad selle leida nii puuduliku info põhjal? Vaatame.",
+        "puzzle3Intro": "Nüüd näib, et see info ei olnud piisav viimase, raske väljakutse jaoks. Aga usu mind, see, koos kõigega, mida oled täna õppinud, on enam kui piisav, et minu ülesanne edukalt lahendada. Ole ettevaatlik, see harjutus on teistsugune kui ükski teine, millega oled siiani kokku puutunud. Alustagem!",
+        "puzzle3Done": "Muidugi! See on see! Selle ülesande eesmärk ei olnud järgida traditsioonilist marsruuti, vaid kohaneda äkki muutunud edu nõuetega, et harjutus lõpule viia. Vastuste tagurpidi järjekord näib väikese muutusena, aga see paneb sind ikkagi proovima uusi lähenemisi ja sunnib raamidest välja mõtlema. Ja sa tegid seda kõike! Tõesti silmapaistev sooritus! Tubli. Aitäh osalemast ja edu!",
+        "completion": "Suurepärane töö täna! Koolitus on lõpetatud!",
+        "default": "Vaata hoolikalt ringi — vihje on minu lähedal."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Kõigepealt esmased asjad",
+      "instructions": "Vali KAKS õiget vastust.",
+      "question": "Millised tegevused näitavad kõige paremini kohanemisvõime oskuse rakendamist?",
+      "options": {
+        "a": "Oma lähenemise muutmine pärast uue info saamist, säilitades samal ajal algse eesmärgi.",
+        "b": "Prioriteetide sage muutmine kiireks reageerimiseks, isegi kui üldine eesmärk muutub ebaselgeks.",
+        "c": "Plaanide kohandamine, kui tingimused muutuvad, kaotamata silmist soovitud tulemust.",
+        "d": "Stabiilsete tingimuste ootamine enne mistahes tegevuse alustamist."
+      },
+      "hint": "Kohanemisvõime tähendab oma lähenemise kohandamist, et tagada selgelt määratletud eesmärgi saavutamine.",
+      "feedback": {
+        "wrong": "See pole päris õige. Kohanemisvõime tähendab oma lähenemise kohandamist, hoides eesmärki selgena.",
+        "correct": "Sul on õigus! Need on parimad näited kohanemisvõime kohta praktikas."
+      },
+      "answerOverlay": "Õiged vastused on:\n• Oma lähenemise muutmine pärast uue info saamist, säilitades samal ajal algse eesmärgi.\n• Plaanide kohandamine, kui tingimused muutuvad, kaotamata silmist soovitud tulemust."
+    },
+    "fillGap": {
+      "title": "Edasijõudnute kohanemisvõime treening",
+      "instructions": "Täida laused puuduvate sõnadega, et luua loogilised laused, mis on seotud kohanemisvõime oskusega.",
+      "sentenceParts": [
+        "Kohanemisvõimeline inimene teab, et mõnikord on parim valik ",
+        " tegevus, kuni olukord on selgem.\nReageerimine igale muutusele ilma järelemõtlemiseta võib viia ",
+        " otsusteni.\nTõhus kohanemine nõuab plaani ühe osa muutmise ",
+        " ennustamist ja selle mõju analüüsimist teistele.\nKui info on puudulik, tuleb edasiminek sageli õppimisest läbi ",
+        " mitte kindluse ootamisest.\nTugev kohanemisvõime ühendab õigeaegse tegevuse hoolika ",
+        " mitte impulsiga."
+      ],
+      "options": [
+        "edasi lükata",
+        "tagajärgede",
+        "otsustusvõimega",
+        "katsetamise",
+        "ebastabiilsete"
+      ],
+      "correctOrder": [
+        "edasi lükata",
+        "ebastabiilsete",
+        "tagajärgede",
+        "katsetamise",
+        "otsustusvõimega"
+      ],
+      "feedback": {
+        "wrong": "Mõned sõnad ei ole õigel kohal. Proovi uuesti!",
+        "correct": "Sul on täiesti õigus! Suurepärane arusaam kohanemisvõime mõistetest."
+      },
+      "answerOverlay": "Õige järjekord on:\n[1] edasi lükata\n[2] ebastabiilsete\n[3] tagajärgede\n[4] katsetamise\n[5] otsustusvõimega",
+      "resetButton": "Lähtesta",
+      "checkButton": "Esita"
+    },
+    "sequenceOrder": {
+      "title": "Kohanemisvõime – Viimane väljakutse",
+      "instructions": "Pane järgnevad muutusega kohanemise protsessi sammud õigesse järjekorda. Ole ettevaatlik — see harjutus on teistsugune kui see, mida oled siiani kohanud!",
+      "hint": "„Kui edenemine tundub takerduvat ja kõik laguneb koost, alusta lõpust, mitte algusest.“",
+      "items": [
+        "Rakenda kohandus.",
+        "Tuvasta, mis enam ei toimi.",
+        "Saa uut infot.",
+        "Vaata tulemus üle.",
+        "Otsusta, mida on vaja muuta.",
+        "Kontrolli, kuidas see mõjutab praegust plaani."
+      ],
+      "correctOrder": [
+        "Vaata tulemus üle.",
+        "Rakenda kohandus.",
+        "Otsusta, mida on vaja muuta.",
+        "Tuvasta, mis enam ei toimi.",
+        "Kontrolli, kuidas see mõjutab praegust plaani.",
+        "Saa uut infot."
+      ],
+      "feedback": {
+        "wrong": "See pole õige järjekord. Mõtle vihjele, mille leidsid kleeplehekesel…",
+        "correct": "Tubli! Sa kohanesid tagurpidise järjekorra väljakutsega täiuslikult!"
+      },
+      "answerOverlay": "Õige järjekord (TAGURPIDI) on:\n1. Vaata tulemus üle.\n2. Rakenda kohandus.\n3. Otsusta, mida on vaja muuta.\n4. Tuvasta, mis enam ei toimi.\n5. Kontrolli, kuidas see mõjutab praegust plaani.\n6. Saa uut infot."
+    },
+    "answerOverlayTitle": "Vastus paljastatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Otsi sellelt korruselt Anastasiat.",
+    "talkToAnastasia": "Klõpsa Anastasial, et alustada.",
+    "findPoster": "Vaata seintele — leia raamis plakat kasuliku infoga.",
+    "readPoster": "Loe leitud plakat.",
+    "talkToAnastasia2": "Räägi Anastasiaga uuesti.",
+    "talkToAmina": "Mine järgmisele korrusele ja klõpsa Aminal.",
+    "findTabletIcon": "Vaata tahvelarvuti ekraani — leia fail pealkirjaga „adaptability_LVL2“.",
+    "readTextFile": "Loe tekstifail tahvelarvutist.",
+    "talkToAmina2": "Räägi Aminaga uuesti.",
+    "clickTablet": "Klõpsa tahvelarvutil, et harjutust näha.",
+    "talkToWei": "Mine järgmisele korrusele ja klõpsa Weil.",
+    "findStickyNote": "Vaata Wei lähedal hoolikalt — tema selja taga on peidetud kleepleheke.",
+    "readStickyNote": "Loe leitud kleepleheke.",
+    "talkToWei2": "Räägi Weiga uuesti, et alustada viimast väljakutset.",
+    "puzzle2FillGap": "Täida iga lünk ühe sõnaga lause all olevast sõnavalikust.",
+    "completion": "Uksed on lahti! Klõpsa neil, et väljuda.",
+    "default": "Vaata vihjete järele ringi."
+  },
+  "systemDialogues": {
+    "selfTalk": "Onboarding-protsess trepikojas… See on midagi uut. See ei ole see, millega ma tuttav olen, aga ka kogu firma on väga dünaamiline ja ebatraditsiooniline. Kes teab, võib-olla on see neil moodsatel aegadel õige lähenemine? Vaatame, milles asi.",
+    "wrongObject": "Huvitav teadaanne, aga mitte see, mida sul praegu vaja on. Keegi on aga siia jätnud motiveeriva tsitaadi: „Muutus on ainus konstant.“ Otsi edasi!",
+    "foundPoster": "Jah, just seda otsisimegi. Loe õppesisu.",
+    "posterRead": "Tubli. Sul on nüüd Kohanemisvõime oskuse põhiline arusaam. Räägime Anastasiaga ja vastame tema küsimusele.",
+    "wrongTabletIcon": "Neid ikoone on nii lihtne segi ajada. See ei ole see, mida me otsime. Proovime uuesti.",
+    "foundTabletIcon": "JAH! Sa leidsid selle! Jätkame nüüd.",
+    "textFileRead": "Suurepärane, oled edasijõudnute mõisted omandanud. Räägi Aminaga, kui oled valmis.",
+    "wrongStickyNote": "See on kellegi ostunimekiri — munad, piim ja… kohanemisvõime? Lihtsalt nali. Kleepleheke, mida sa vajad, on kuskil mujal.",
+    "foundStickyNote": "Sa oled Wei märkme omandanud. Mine tagasi ja anna Weile teada, et oled valmis jätkama.",
+    "moveToFloor2": "Lähme järgmisele korrusele.",
+    "moveToFloor3": "Aeg minna ülemisele korrusele."
+  },
+  "items": {
+    "poster": {
+      "inventoryTitle": "Kohanemisvõime põhitõed",
+      "popupTitle": "Kohanemisvõime põhitõed",
+      "popupContent": [
+        "Kohanemisvõime on oskus oma lähenemist muuta, kui asjaolud muutuvad. Ettevõtluskeskkonnas on muutus pidev — prioriteedid muutuvad, info uueneb ja plaanid arenevad.",
+        "Kohanemisvõime ei tähenda tegutsemist ilma suunata. See tähendab paindlikuks jäämist, hoides oma eesmärki silme ees."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Kohanemisvõime – Tase 2",
+      "popupTitle": "Kohanemisvõime – Tase 2",
+      "popupContent": [
+        "Kohanemisvõime hõlmab otsustamist, millal kohaneda ja millal jääda järjekindlaks. Mitte iga muutus ei nõua kohest tegutsemist ja tõhus kohanemine sõltub sellest, milliseid signaale hindame oluliseks ja millised võivad oodata.",
+        "Tugev kohanemisvõime tasakaalustab kiirust otsustusvõimega. Liiga kiire tegutsemine võib viia ebastabiilsete otsusteni, samas kui liiga aeglane tegutsemine võib edenemist piirata. Kohanemisvõimelised professionaalid kaaluvad iga tegevuse tagajärgi ja mõistavad, et ühe elemendi muutmine mõjutab sageli teisi.",
+        "Ettevõtluskeskkondades tähendab kohanemisvõime puudulikust infost hoolimata edasi liikumist eelduste testimise, tulemuste vaatlemise ja tegevuste täiustamise kaudu aja jooksul."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Kleepleheke",
+      "popupTitle": "Kleepleheke",
+      "popupContent": [
+        "„Kui edenemine tundub takerduvat ja kõik laguneb koost,\nAlusta lõpust, mitte algusest.“"
+      ]
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Oled edukalt lõpetanud onboarding-kursuse, mis keskendub Kohanemisvõime oskuse arendamisele. Sa lahendasid kõik väljakutsed, isegi need, kus oli puudulik info, ning need, mis nõudsid ebatraditsioonilist lähenemist. Sa oled tõesti tõestanud oma sügavat arusaamist sellest, mida tähendab kohaneda!",
+    "buttonText": "Lahku trepikojast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "selectTwo": "Vali 2 vastust",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "floorTransition": {
+    "toFloor2": "Lähed mööda treppi järgmisele korrusele. Amina ootab sind ees mademe peal.",
+    "toFloor3": "Lähed mööda treppi ülemisele korrusele. Wei seisab uste juures üleval."
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

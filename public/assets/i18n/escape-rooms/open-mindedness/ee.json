@@ -1,0 +1,228 @@
+{
+  "intro": {
+    "title": "Avatud meel",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind palgati just suurde rahvusvahelisse ettevõttesse, kus töötavad koos eri kultuuridest, taustadest ja ametitest pärit inimesed. Selles ettevõttes töötamine on sulle õpikogemus, kuna erinevate väljakutsete täitmise käigus omandad 30 oskust, mis sisalduvad POMEIL-i kompetentsikaardil ja on igale ettevõtjale hädavajalikud.",
+      "Täna sööklas kohtud Karinaga tootearendusest ja tema kolleegi Danieliga. Koos juhendavad nad sind selles, mida tegelikult tähendab uutele ideedele avatuks jäämine — isegi siis, kui need esitavad väljakutse sinu enda omadele."
+    ],
+    "buttonText": "Alusta mängu"
+  },
+  "loading": "Laadin...",
+  "characters": {
+    "karina": {
+      "name": "Karina",
+      "dialogues": {
+        "introduction": "Tere (username), tore tutvuda! Olen tootearenduse juht ja armastan tõesti siin töötada. Olen alles alustanud, kuid juba tunnen, et vajan uut lähenemist. Olen kogu elu tuginenud ainult endale, nii et mul pole lihtne õppida teiste ideid kuulama — eriti uues riigis elades. Daniel aitab mul müügistrategiat välja töötada.",
+        "introduction_part2": "Kuskil selles ruumis on nimekiri mõnede kasulike näpunäidetega avatud meele kohta. Püüa see leida ja loe seda hoolikalt, siis tule minu juurde tagasi. Alusta kohvimasina ala kontrollimisest.",
+        "noteFound": "Tubli, sa leidsid tegevuskava!",
+        "noteFound_part2": "Avatud meel tähendab oma vaadete teadvustamist, jäädes samal ajal valmis mõistma teiste ideid ja vaatenurki. See nõuab enamat kui lihtsalt kuulamist — see hõlmab tõsist pingutust hinnata erinevaid arvamusi ja kaaluda uut teavet austusega. Avatud meel aitab vähendada arusaamatusi, esitab väljakutse isiklikele eelarvamustele ja toetab paremat suhtlust ümbritsevate inimestega.",
+        "noteFound_part3": "Jätkame viktoriiniga. Edu!",
+        "quizComplete": "Vau, sinu avatud meel on muljetavaldav! Mine räägi Danieliga, et koolitust jätkata.",
+        "fallback_findNote": "Sa saad suurepäraselt hakkama! Otsi nimekirja edasi. Proovi kõigepealt kohvimasina ala, siis teadetetahvlit.",
+        "fallback_quiz": "Keskendu nüüd viktoriinile. Sa saad hakkama!",
+        "fallback_findPaper": "Daniel ootab sind. Mine räägi temaga!",
+        "fallback_default": "Mine edasi, sa teed head edusamme!",
+        "allQuestsComplete": "Sa tegid seda! Koolitus on lõpetatud!"
+      }
+    },
+    "daniel": {
+      "name": "Daniel",
+      "dialogues": {
+        "introduction": "Tere! Olen Daniel. Sa peaksid kõigepealt Karinaga rääkima - tema alustab sind sinu avatud meele koolitusega.",
+        "findNote": "Karina aitab sind esimese osaga. Kui oled viktoriiniga lõpetanud, tule minuga rääkima!",
+        "fallback_quiz": "Keskendu kõigepealt viktoriinile. Sa saad suurepäraselt hakkama!",
+        "quizComplete": "Leidsin sulle tõesti lahedaid fakte avatud meele kohta. Kirjutasin need paberile, kuid nüüd ei mäleta, kuhu ma selle panin. See juhtub, kui oleme tööga ülekoormatud. Kas sa võiksid mu eest ringi vaadata? Oh—oota—arvan, et võisin selle unustada kohvitassi kõrvale, mida ma varem koosolekule kaasa ei võtnud.",
+        "fallback_findPaper": "Arvan, et jätsin selle paberi siia kuhugi. Proovi kõigepealt lauda, siis strateegiate lauda.",
+        "paperFound": "Suurepärane! Mul on hea meel, et leidsid selle. Kas see oli inspireeriv?",
+        "paperFound_part2": "Mul on sulle veel mõned viktoriinid, nii et liigume edasi!",
+        "fallback_puzzle": "Võta mõistatusega aega. Mõtle see hoolikalt läbi!",
+        "fallback_default": "Sa saad suurepäraselt hakkama! Mine edasi!",
+        "sequenceComplete": "Tubli! See oli üsna mõistatus, kuid sa käsitlesid seda kaunilt. Sa muutud iga sammuga avatumeelseks. Loodan, et viktoriin meeldis sulle — jätkame, oleme peaaegu kohal.",
+        "allQuestsComplete": "Tubli, uurija! Sa lahendasid mõistatuse ja tõstsid taset. Veel lahedaid oskusi ootab ees — vajuta Jätka, kui oled valmis."
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Avatud meele viktoriin - Tõsi või Vale",
+      "questions": [
+        {
+          "text": "Avatud meelega olemine tähendab, et pean nõustuma iga ideega, mida kuulen.",
+          "answer": false,
+          "hint": "Avatud meel on õppimisest, mitte kõigega nõustumisest."
+        },
+        {
+          "text": "Eri arvamuste kuulamine võib aidata mul olukordi paremini mõista.",
+          "answer": true,
+          "hint": "Küsi endalt: kas rohkemate vaatenurkade kuulmine annab mulle rohkem teavet või vähem?"
+        },
+        {
+          "text": "Kui idee tundub uus või ebamugav, peaksin selle kohe tagasi lükkama.",
+          "answer": false,
+          "hint": "Kas avatud meel toimib siis, kui sulgeme ukse kiiresti, või kui jääme uudishimulikuks?"
+        }
+      ],
+      "trueButton": "Tõsi",
+      "falseButton": "Vale",
+      "answerOverlayTitle": "Õige vastus",
+      "answerOverlayTemplate": "Pärast 3 katset, siin on vastus:\n\nKüsimus: \"{question}\"\n\nÕige vastus: {correctAnswer}\n\nSelgitus: {hint}",
+      "correctAnswerTrue": "TÕSI",
+      "correctAnswerFalse": "VALE",
+      "feedback": {
+        "incorrect_true": "Vale. Õige vastus on Tõsi.",
+        "incorrect_false": "Vale. Õige vastus on Vale."
+      }
+    },
+    "quizComplete": {
+      "title": "Õige!",
+      "message": "Suurepärane töö! Sa lõpetasid esimese sammu oma avatud meele koolituses.",
+      "buttonText": "Jätka"
+    },
+    "puzzleTwo": {
+      "title": "Avatud meele viktoriin – Mitmikvalik",
+      "question": "Kuidas on parim viis avatud meelt arutelus näidata?",
+      "options": {
+        "a": "Otsusta oma arvamus enne kuulamist",
+        "b": "Pööra tähelepanu teiste vaatenurkadele ja küsi uudishimulikke küsimusi",
+        "c": "Ignoreeri ideid, mis tunduvad uued või ebamugavad",
+        "d": "Sega vahele, et selgitada, miks sinu idee on parem"
+      },
+      "optionLabels": {
+        "a": "a) Otsusta oma arvamus enne kuulamist",
+        "b": "b) Pööra tähelepanu teiste vaatenurkadele ja küsi uudishimulikke küsimusi",
+        "c": "c) Ignoreeri ideid, mis tunduvad uued või ebamugavad",
+        "d": "d) Sega vahele, et selgitada, miks sinu idee on parem"
+      },
+      "hint": "Mõtle, milline vastus näitab uudishimu ja valmidust teisi mõista, selle asemel, et nende ideid maha lüüa.",
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Kui keegi jagab ideed, millega sa ei nõustu, mis on kõige avatud meelega vastus?\n\nVariandid:\na) Selgita kohe, miks sa arvad, et nad eksivad\nb) Küsi küsimusi, et nende vaatenurka paremini mõista\nc) Vaheta teemat, et konflikti vältida\nd) Nõustu nendega, et rahu hoida\n\nÕige vastus: b) Küsi küsimusi, et nende vaatenurka paremini mõista\n\nSelgitus: Avatud meel on uudishimu ja teiste mõistmise valmiduse näitamine, selle asemel, et nende ideid maha lüüa. Küsimuste esitamine aitab sul õppida ja näitab austust teise inimese vaatenurga vastu."
+    },
+    "puzzleThree": {
+      "title": "Avatud meele viktoriin - Järjekord",
+      "question": "Pane järgmised tegevused kõige avatumeelsemasse järjekorda.",
+      "availableSteps": "Saadaolevad sammud",
+      "yourSequence": "Sinu järjekord",
+      "placeholderText": "Klõpsa vasakul olevatel sammudel, et neid siia lisada.",
+      "resetButton": "Lähtesta",
+      "submitButton": "Esita järjekord",
+      "options": {
+        "a": "Küsi uudishimulikku küsimust, et inimese vaatenurka mõista",
+        "b": "Väldi liiga kiiret hindamist või reageerimist",
+        "c": "Kuula avatult, mida inimene ütleb",
+        "d": "Mõtiskle korraks selle üle, mida kuulsid, enne kui jagad oma vaadet"
+      },
+      "hints": {
+        "position1": "Avatud meelega inimene alustab alati tõelisest kuulamisest — see loob mõlemale poolele kergust.",
+        "position2": "Pärast kuulamist hoia oma meel avatuna, vältides kiireid hinnanguid.",
+        "position3": "Kui vestlus tundub rahulik ja avatumeelne, võid küsida uudishimulikke küsimusi, et paremini mõista.",
+        "position4": "Pärast seda muutub lihtsaks oma vaate austusega jagamine.",
+        "incomplete": "Palun lõpeta järjekord."
+      },
+      "answerOverlay": "Pärast 3 katset, siin on vastus:\n\nKüsimus: Mis on avatud meele praktiseerimise õige järjekord arutelus?\n\nÕige vastus:\n1. \"Kuula avatult, mida inimene ütleb\" (c) - Avatud meelega inimene alustab alati tõelisest kuulamisest, mis loob mõlemale poolele kergust ja võimaldab sul nende vaatenurka tegelikult mõista\n2. \"Väldi liiga kiiret hindamist või reageerimist\" (b) - Hoia oma meel avatuna, vältides kiireid hinnanguid, mis võivad vestluse sulgeda või pinget tekitada\n3. \"Küsi uudishimulikku küsimust, et inimese vaatenurka mõista\" (a) - Kui vestlus tundub rahulik ja avatumeelne, küsi uudishimulikke küsimusi, et paremini mõista, panemata neid piinlikku olukorda\n4. \"Mõtiskle korraks selle üle, mida kuulsid, enne kui jagad oma vaadet\" (d) - Pärast kuulamist ja mõistmist muutub lihtsaks oma vaate austusega jagamine\n\nSee järjekord demonstreerib tõelist avatud meelt, prioritiseerides mõistmist enne vastamist."
+    },
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "answerOverlay": {
+    "title": "Õige vastus",
+    "continueButton": "Jätka"
+  },
+  "hints": {
+    "default": "Pean ringi hoolikalt vaatama.",
+    "findNote": {
+      "step0": "Karina ütles: 'Alusta kohvimasina ala kontrollimisest.'",
+      "step1": "Kohvimasina lähedal mitte. Proovi vasakul olevat teadetetahvlit.",
+      "step2": "Mitte teadetetahvlil. Proovi kohvilauda."
+    },
+    "findPaper": {
+      "step0": "Karina mainis lauda.",
+      "step1": "Mitte laual. Proovi strateegiate lauda.",
+      "step2": "Vaata strateegiate laua ümber hoolikamalt."
+    },
+    "allQuestsComplete": "Räägi Danieliga, et lõpetada."
+  },
+  "items": {
+    "note": {
+      "altText": "Trükitud tegevuskava avatud meele näpunäidetega.",
+      "inventoryTitle": "Vaata tegevuskava"
+    },
+    "paper": {
+      "altText": "Lõbusate faktide paber",
+      "inventoryTitle": "Vaata paberit",
+      "title": "SILMA AVAVAD FAKTID AVATUD MEELE KOHTA",
+      "facts": [
+        {
+          "strong": "Sinu aju armastab tegelikult uusi ideid.",
+          "text": "Kui kuuled uut vaatenurka, vabastab su aju väikese annuse dopamiini — sama keemilise aine, mis on seotud uudishimu ja õppimisega. Avatud meel tunneb otse pähe sees head!"
+        },
+        {
+          "strong": "Eksimine on teaduslikult kasulik.",
+          "text": "Uuringud näitavad, et kui inimesed mõistavad, et nad eksisid millegi suhtes, moodustab nende aju tugevamaid õppimisühendusi. Niisiis pole vigade tegemine piinlik — see on uuendus sinu meelele."
+        },
+        {
+          "strong": "Küsimine \"Miks?\" võib stressi vähendada.",
+          "text": "Uudishimu muudab stressirohke lahkarvamuse mõistatuseks. Vaidlemise asemel lülitub su aju \"uurimisrežiimi\", mis vähendab pinget ja parandab probleemilahendust."
+        },
+        {
+          "strong": "Uute asjade proovimine muudab su aju paindlikumaks.",
+          "text": "Isegi väikesed muudatused — nagu uue tee koju võtmine või toidu maitsmine, mille tavaliselt vahele jätad — aitavad sinu ajul muutuda kohanemisvõimelisemaks. See paindlikkus toetab suuremat avatumeelset mõtlemist hiljem."
+        },
+        {
+          "strong": "Avatud meelega inimesed teevad otsuseid kiiremini, mitte aeglasemalt.",
+          "text": "Üllatuslikult jõuavad inimesed, kes kuulevad eri vaatenurki, sageli kiiremini lahendusteni, sest nad näevad rohkem võimalusi, väldivad kangekaelseid blokke ja kohanevad kergemini"
+        }
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Vaata märget"
+    }
+  },
+  "systemDialogues": {
+    "coffeeMachineSearch": "Oh ei! Keegi lahkus ilma kohvitassita. Tundub, et see, mida otsid, ei ole siin. Vaata vasakul olevat teadetetahvlit.",
+    "leftNoticeboardSearch": "See on lihtsalt motiveeriv mottopilt. Võib-olla leiad selle, mida vajad, teiselt kohvilaualt. Proovi uuesti!",
+    "deskSearch": "Oh ei, see pole siin. Kontrolli lauda, kus Daniel ja Karina strateegiatest rääkisid. Kontrolli laual. See võib aidata.",
+    "noteFoundReturn": "Hea töö! Mine tootearenduse juhi Karina juurde tagasi.",
+    "paperFoundReturn": "Sa saad suurepäraselt hakkama! Mine Danieli juurde tagasi."
+  },
+  "completion": {
+    "title": "Koolitus lõpetatud!",
+    "message": "Õnnitlused! Sa demonstreerisid edukalt suurepärast avatud meelt ja suhtlemisoskusi.",
+    "buttonText": "Tagasi peamenüüsse"
+  },
+  "dialogueActions": {
+    "continue": "Jätka",
+    "startQuiz": "Alusta viktoriini",
+    "finishTraining": "Lõpeta koolitus"
+  },
+  "buttons": {
+    "toggleFullscreen": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse"
+  },
+  "ui": {
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus",
+    "finishTrainingButton": "Lõpeta koolitus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

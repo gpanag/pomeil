@@ -1,0 +1,190 @@
+{
+  "loading": "Ładowanie modułu Świadomość rynku...",
+  "intro": {
+    "title": "Świadomość rynku",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów.",
+      "Dziś wchodzisz do Biura Marketingu, gdzie zespół pracuje nad nową kampanią. Elena Vasquez, Dyrektorka Marketingu, stoi przy centralnym stole. To idealny moment, by nauczyć się Świadomości rynku."
+    ],
+    "buttonText": "Wejdź do Biura Marketingu"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena Vasquez",
+      "dialogues": {
+        "greet": "Hola! Witaj w Dziale Marketingu. Jeśli chcesz, by twój biznes się rozwijał, musisz opanować Świadomość rynku.",
+        "explainMarket": "To znaczy rozumieć, kim są twoi klienci i co robią twoi konkurenci. Na początek zostawiłam gdzieś w tym pokoju kartę Profilu Grupy Docelowej. Opisuje ona profil naszego idealnego klienta.",
+        "findCard": "Rozejrzyj się. Zacznij od sprawdzenia centralnego stołu.",
+        "cardFound": "Świetnie! Znalazłeś/aś ją.",
+        "cardFoundExplain": "Pamiętaj: Nie możesz sprzedawać „wszystkim”. Musisz dokładnie wiedzieć, kto potrzebuje twojego produktu. Sprawdźmy twoją wiedzę.",
+        "quiz1Done": "Świetna robota! Teraz, by być naprawdę świadomym rynku, musisz spojrzeć na większy obraz, używając Analizy SWOT.",
+        "findSwot": "Wydrukowałam ściągę, ale chyba pożyczył ją David. Sprawdź obok jego biurka.",
+        "swotFound": "Masz ściągę. SWOT to twój najlepszy przyjaciel w planowaniu strategicznym. Zobaczmy, czy potrafisz to zastosować.",
+        "finalWords": "Bravissimo! Teraz rozumiesz podstawy Świadomości rynku.\n\nZnasz swojego klienta, obserwujesz konkurencję i analizujesz sytuację przed działaniem. Jesteś gotowy/a podbić rynek!",
+        "goodbye": "Powodzenia!",
+        "completion": "Szkolenie zakończone!",
+        "default": "Rozglądaj się dalej po biurze w poszukiwaniu wskazówek."
+      }
+    },
+    "david": {
+      "name": "David Morel",
+      "dialogues": {
+        "busy": "Bonjour! Właśnie planuję posty na przyszły tydzień. Rozmawiałeś/aś już z Eleną?",
+        "default": "Wciąż pracuję nad social mediami... porozmawiaj z Eleną."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Terminy marketingowe – dopasuj definicje",
+      "instructions": "Dopasuj każdy termin marketingowy do jego prawidłowej definicji.",
+      "columnA": {
+        "heading": "Terminy",
+        "items": {
+          "1": "Grupa docelowa",
+          "2": "Analiza konkurencji",
+          "3": "USP (Unikalna propozycja sprzedaży)",
+          "4": "Trend rynkowy"
+        }
+      },
+      "columnB": {
+        "heading": "Definicje",
+        "items": {
+          "A": "To, co czyni twój produkt innym i lepszym od pozostałych.",
+          "B": "Konkretna grupa ludzi, którzy najprawdopodobniej kupią twój produkt.",
+          "C": "Badanie innych firm w celu znalezienia ich mocnych i słabych stron.",
+          "D": "Ogólny kierunek, w którym zmienia się rynek."
+        }
+      },
+      "hint": "Pomyśl, kto kupuje (Grupa), kto konkuruje (Analiza), co cię wyróżnia (USP) i dokąd zmierza rynek (Trend).",
+      "feedback": {
+        "wrong": "To nie jest właściwe dopasowanie. Pomyśl, kto kupuje (Grupa), kto konkuruje (Analiza), co cię wyróżnia (USP) i dokąd zmierza rynek (Trend).",
+        "allCorrect": "Brawo! Dopasowałeś/aś wszystkie terminy marketingowe poprawnie."
+      },
+      "answerOverlay": "Poprawne dopasowania:\n1. Grupa docelowa → Konkretna grupa ludzi, którzy najprawdopodobniej kupią twój produkt.\n2. Analiza konkurencji → Badanie innych firm w celu znalezienia ich mocnych i słabych stron.\n3. USP → To, co czyni twój produkt innym i lepszym od pozostałych.\n4. Trend rynkowy → Ogólny kierunek, w którym zmienia się rynek."
+    },
+    "singleChoice": {
+      "title": "Analiza SWOT – zidentyfikuj element",
+      "instructions": "Wybierz właściwy element SWOT.",
+      "question": "Otwierasz kawiarnię. Nagle wprowadzony zostaje nowy podatek na importowane ziarna kawy, zwiększając twoje koszty. Którą częścią SWOT jest to?",
+      "options": {
+        "a": "Mocna strona",
+        "b": "Słaba strona",
+        "c": "Szansa",
+        "d": "Zagrożenie"
+      },
+      "hint": "Czy to coś wewnętrznego, co możesz kontrolować, czy czynnik zewnętrzny (jak prawo), który może zaszkodzić twojemu biznesowi?",
+      "feedback": {
+        "wrong": "To nie jest poprawne. Czy to coś wewnętrznego, co możesz kontrolować, czy czynnik zewnętrzny (jak prawo), który może zaszkodzić twojemu biznesowi?",
+        "correct": "Poprawnie! Nowy podatek to zewnętrzne zagrożenie, które może zaszkodzić twojemu biznesowi."
+      },
+      "answerOverlay": "Poprawna odpowiedź: d) Zagrożenie — Nowy podatek na importowane ziarna kawy to czynnik zewnętrzny, który może zaszkodzić twojemu biznesowi."
+    },
+    "sequenceOrder": {
+      "title": "Etapy badania rynku",
+      "instructions": "Ułóż etapy prowadzenia prostego badania rynku w prawidłowej kolejności.",
+      "items": [
+        "Przeanalizuj dane, by znaleźć wzorce.",
+        "Zdefiniuj problem lub cel (np. „Dlaczego sprzedaż spada?”).",
+        "Zbierz dane (ankiety, wywiady, obserwacja konkurencji).",
+        "Podejmij decyzję na podstawie ustaleń."
+      ],
+      "correctOrder": [
+        "Zdefiniuj problem lub cel (np. „Dlaczego sprzedaż spada?”).",
+        "Zbierz dane (ankiety, wywiady, obserwacja konkurencji).",
+        "Przeanalizuj dane, by znaleźć wzorce.",
+        "Podejmij decyzję na podstawie ustaleń."
+      ],
+      "hints": [
+        "Najpierw musisz wiedzieć, CZEGO szukasz (Zdefiniuj).",
+        "Potem wychodzisz i zbierasz informacje (Zbierz).",
+        "Następnie czytasz i rozumiesz to, co znalazłeś/aś (Przeanalizuj).",
+        "Wreszcie działasz na tej podstawie (Zdecyduj)."
+      ],
+      "feedback": {
+        "wrong": "To nie jest właściwa kolejność. Pamiętaj: Zdefiniuj, Zbierz, Przeanalizuj, potem Zdecyduj.",
+        "correct": "Świetnie! Ułożyłeś/aś etapy badania rynku w prawidłowej kolejności."
+      },
+      "answerOverlay": "Poprawna kolejność:\n1. Zdefiniuj problem lub cel.\n2. Zbierz dane (ankiety, wywiady, obserwacja konkurencji).\n3. Przeanalizuj dane, by znaleźć wzorce.\n4. Podejmij decyzję na podstawie ustaleń."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    }
+  },
+  "hints": {
+    "intro": "Kliknij Elenę przy centralnym stole, by rozpocząć.",
+    "talkToElena": "Kliknij Elenę, by rozpocząć.",
+    "findCard": "Sprawdź centralny stół — karta Profilu powinna tam być.",
+    "talkToElena2": "Wróć do Eleny ze znalezioną kartą.",
+    "findSwot": "Elena wspomniała o biurku Davida. Sprawdź obok jego biurka, czy jest tam kartka SWOT.",
+    "talkToElena3": "Wróć do Eleny ze ściągą SWOT.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po biurze marketingu w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do Biura Marketingu. Wykresy i makiety kampanii są przypięte do ścian. Elena Vasquez, Dyrektorka Marketingu, stoi przy centralnym stole, przeglądając jakieś dane. David Morel pisze przy swoim biurku obok.",
+    "clickWhiteboard": "Świetne strategie na tablicy, ale to nie ta konkretna karta. Sprawdź stół.",
+    "clickDavid": "David jest zajęty pracą. Spróbuj najpierw poszukać gdzie indziej.",
+    "clickWindow": "Widok jest świetny — z tego miejsca widać billboard konkurencji. Ciekawe! Ale przedmiot, którego potrzebujesz, jest wewnątrz pokoju.",
+    "foundCard": "Znalazłeś/aś kartę Profilu Grupy Docelowej na centralnym stole!",
+    "cardRead": "Dobra robota! Wróć do Eleny.",
+    "clickDavidDeskWrong": "David skupiony jest na swoich ekranach. Poszukaj kartki na krawędzi jego biurka.",
+    "foundSwot": "Widzisz kartkę na krawędzi biurka.",
+    "swotRead": "Idealnie! Wróć do Eleny."
+  },
+  "items": {
+    "personaCard": {
+      "popupTitle": "PROFIL GRUPY DOCELOWEJ",
+      "popupContent": [
+        "Demografia - Kim są? (Wiek, lokalizacja, płeć, dochód).",
+        "Psychografia - Co lubią? (Zainteresowania, wartości, styl życia).",
+        "Punkty bólu - Jakie mają problemy, które TY możesz rozwiązać?",
+        "Zachowania zakupowe - Jak wolą robić zakupy? (Online, w sklepie)."
+      ],
+      "inventoryTitle": "Karta Profilu"
+    },
+    "swotPaper": {
+      "popupTitle": "ŚCIĄGA ANALIZY SWOT",
+      "popupContent": [
+        "Mocne strony (Wewnętrzne) - Co twój biznes robi dobrze?",
+        "Słabe strony (Wewnętrzne) - Gdzie musisz się poprawić?",
+        "Szanse (Zewnętrzne) - Z jakich trendów rynkowych możesz skorzystać?",
+        "Zagrożenia (Zewnętrzne) - Jacy konkurenci lub przepisy mogą ci zaszkodzić?"
+      ],
+      "inventoryTitle": "Kartka SWOT"
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Ukończyłeś/aś umiejętność Świadomość rynku! Znasz swojego klienta, obserwujesz konkurencję i analizujesz sytuację przed działaniem. Jesteś gotowy/a podbić rynek!",
+    "buttonText": "Wyjdź z Biura Marketingu"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

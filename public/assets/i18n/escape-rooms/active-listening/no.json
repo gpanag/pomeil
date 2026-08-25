@@ -1,0 +1,218 @@
+{
+  "loading": "Laster aktiv lytting...",
+  "intro": {
+    "title": "Aktiv lytting",
+    "paragraphs": [
+      "Du er en ny ansatt i et finansselskap. Etter å ha ordnet de innledende sakene, er du blitt invitert til å delta i det interne utviklingsprogrammet. Hovedfokuset i dette programmet er forbedring av ferdigheten Aktiv lytting blant selskapets ansatte.",
+      "Når du ankommer arbeidsplassen, blir du fortalt at opplæringen har individuell karakter, og du vil bli invitert opp på taket, der opplæringen finner sted, når din tur kommer.",
+      "Du er begeistret for det, og du håper at dette oppskaleringsprogrammet virkelig vil vise seg å være effektivt. For å låse opp ferdigheten aktiv lytting må du fullføre opplæringen som er forberedt for deg av selskapet."
+    ],
+    "buttonText": "Gå opp på taket"
+  },
+  "characters": {
+    "mateo": {
+      "name": "Mateo",
+      "dialogues": {
+        "greet": "God morgen! Det er virkelig hyggelig å møte deg. La meg starte med en kort forklaring av dagens aktiviteter. Du vil få i oppgave å løse tre forskjellige øvelser, hver med fokus på utvikling av din evne til aktiv lytting. Før hver av dem må du finne et stykke teoretisk kunnskap gjemt et sted i nærheten, som vil sette deg i stand til å fullføre øvelsen. Høres enkelt ut, ikke sant? La oss komme i gang da!",
+        "clue": "Vi skal starte med det grunnleggende. Et sted i dette området har vi gjemt det første kunnskapsstykket som du må gjøre deg kjent med. Vi har dette hintet til deg, som skal hjelpe deg å finne det:\n\n\"Ikke på benken, ikke på gulvet -\nder plantene vokser høyt, finnes det noe mer\"\n\nEr du klar? La søket begynne!",
+        "fastLearner": "Å, du fant det dokumentet veldig raskt, godt jobbet! Nå, som vår første øvelse, la oss teste din nyervervede kunnskap! Ta en titt på laptopen.",
+        "puzzle1Done": "Akkurat! Du er en rask elev! Nå, før vi går videre til neste oppgave, vil jeg gjerne… Hm, hva er det, Zainabu?",
+        "interrupted": "*Mateo blir avbrutt, da Zainabu prøver å fortelle ham noe. Han snur seg mot henne, hun begynner å snakke til ham.*",
+        "backToYou": "Uansett, beklager det. Jeg tror vi er klare for neste øvelse, ikke sant? Den vises allerede for deg på laptopen. La oss ta en titt.",
+        "congratsFinal": "Det er sant. Det var virkelig imponerende! Du har mestret ferdigheten aktiv lytting og bestått testene våre med glans! Du satte lista virkelig høyt - de neste deltakerne vil ha det virkelig vanskelig med å slå din poengsum! Takk igjen for din tid og innsats.",
+        "completion": "Treningen er fullført!",
+        "default": "Jeg er her hvis du trenger meg."
+      }
+    },
+    "zainabu": {
+      "name": "Zainabu",
+      "dialogues": {
+        "conv1": "Beklager at jeg avbryter, men dette er viktig. Har du gjennomgått den oppdaterte risikorapportmalen som kom i morges?",
+        "conv3": "Jeg la merke til at de spesifikke verdiene er gruppert annerledes nå, spesielt i risikodelen, og jeg var ikke sikker på om det endrer hvordan vi beregner kvartalsoppsummeringene.",
+        "conv5": "Greit. Det som bekymret meg, var at sammenligningstabellen ikke lenger viser de samme totalsummene som forrige kvartal.",
+        "conv7": "La meg sjekke om jeg forstår deg riktig. Fra ditt perspektiv forblir beregningene de samme, og bare presentasjonen har endret seg?",
+        "conv9": "Det er nyttig å avklare. I så fall bør vi kanskje verifisere det før vi sender den endelige rapporten.",
+        "pendriveTask": "Du er en virkelig god lytter selv, vet du. Du har gjort det veldig bra med denne siste oppgaven. Men vi har en oppgave til foran deg, før vi anser denne treningen som fullført. Et sted her omkring har vi gjemt en pendrive. På den pendriven er det siste kunnskapsstykket du trenger for å løse din siste oppgave. Det er en rød pendrive. Gi meg beskjed når du finner den!",
+        "readyForFinal": "Ja. Nå er du klar til å møte den siste utfordringen. Klikk på laptopen når du er klar.",
+        "congratsFinal": "Dette er det! Du har helt rett! Dette er ikke din første aktive lytte-trening, er det vel? Du har gjort det virkelig bra i dag. Du har klart ikke bare å lære raskt fra materialet vårt, men også å gjenkjenne og forstå alle de levende signalene vi har forberedt for deg!",
+        "completion": "Det var en glede å jobbe med deg i dag!",
+        "default": "Jeg lytter oppmerksomt."
+      }
+    },
+    "mateoConv": {
+      "name": "Mateo",
+      "dialogues": {
+        "conv2": "Ikke i detalj. Jeg antok at det er det samme som før, bare en standardoppdatering.",
+        "conv4": "Det tror jeg ikke. Disse oppdateringene er vanligvis kosmetiske. Vi har hatt lignende før.",
+        "conv6": "Det er sannsynligvis greit. Hvis compliance endret oppsettet, skal selve tallene fortsatt være korrekte.",
+        "conv8": "Ja, det er det jeg mener. Men nå som du nevner totalsummene, innser jeg at jeg faktisk ikke har bekreftet det.",
+        "conv10": "Du har rett. Jeg skal sjekke beregningsreglene og bekrefte med compliance før vi sender inn noe."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Forstå det grunnleggende",
+      "instructions": "Velg TO riktige svar.",
+      "question": "Hvilke atferder er eksempler på aktiv lytting?",
+      "options": {
+        "a": "Å tenke på forhånd om hvordan man skal svare mens den andre personen snakker.",
+        "b": "Å tillate pauser og stunder med stillhet uten å avbryte.",
+        "c": "Å fokusere hovedsakelig på å oppnå enighet så raskt som mulig.",
+        "d": "Å være oppmerksom på talerens ord, tone og kroppsspråk."
+      },
+      "hint": "Husk at en viktig del av aktiv lytting er å respektere samtalepartneren din og det vedkommende sier.",
+      "feedback": {
+        "wrong": "Ikke helt riktig. Husk at aktiv lytting handler om å respektere samtalepartneren din og det vedkommende sier.",
+        "correct": "Godt jobbet! Det er de riktige eksemplene på aktiv lytting."
+      },
+      "answerOverlay": "De riktige svarene er:\n• Å tillate pauser og stunder med stillhet uten å avbryte.\n• Å være oppmerksom på talerens ord, tone og kroppsspråk."
+    },
+    "fillGap": {
+      "title": "Gjenkjenne aktive lyttesignaler",
+      "instructions": "Fullfør setningene med de manglende ordene for å lage logiske setninger relatert til ferdigheten aktiv lytting.",
+      "sentenceParts": [
+        "Selv når noe virker kjent, betyr aktiv lytting å unngå raske ",
+        " og å sjekke detaljene.\nNår noe er uklart, hjelper det å fokusere på ",
+        " eksempler i stedet for å snakke generelt.\nÅ gjenta informasjon med dine egne ord hjelper å ",
+        " forståelsen mellom mennesker.\nAktiv lytting kan avsløre at informasjon ennå ikke er ordentlig ",
+        ".\nEn samtale går videre når folk er enige om å ",
+        " informasjonen før de handler."
+      ],
+      "options": [
+        "bekrefte",
+        "antakelser",
+        "verifisere",
+        "sjekket",
+        "spesifikke"
+      ],
+      "correctOrder": [
+        "antakelser",
+        "spesifikke",
+        "bekrefte",
+        "sjekket",
+        "verifisere"
+      ],
+      "feedback": {
+        "wrong": "Noen ord er ikke på rett plass. Prøv igjen!",
+        "correct": "Flott jobbet! Du har fanget alle de subtile signalene for aktiv lytting og bevist at du forstår deres underliggende betydning."
+      },
+      "answerOverlay": "Riktig rekkefølge er:\n[1] antakelser\n[2] spesifikke\n[3] bekrefte\n[4] sjekket\n[5] verifisere",
+      "resetButton": "Tilbakestill",
+      "checkButton": "Send inn"
+    },
+    "matching": {
+      "title": "Aktiv lytting – Den siste oppgaven",
+      "instructions": "Lag logiske setninger ved å matche hver begynnelse med riktig avslutning.",
+      "columnA": {
+        "heading": "Setningsbegynnelser",
+        "items": {
+          "1": "Effektiv lytting krever bevissthet om dine egne reaksjoner slik at de ikke…",
+          "2": "Endringer i hvordan noen snakker kan signalere at…",
+          "3": "Å velge å pause før man svarer kan hjelpe…",
+          "4": "Å reflektere et budskap nøyaktig fokuserer på talerens mening fremfor…",
+          "5": "Når folk føler seg virkelig lyttet til, begynner de ofte å…"
+        }
+      },
+      "columnB": {
+        "heading": "Setningsavslutninger",
+        "items": {
+          "A": "…de eksakte ordene de brukte.",
+          "B": "…forstyrrer forståelsen av budskapet.",
+          "C": "…å roe ned samtalen og unngå unødvendig spenning.",
+          "D": "…avklare tankene sine på egen hånd.",
+          "E": "…selve budskapet skifter."
+        }
+      },
+      "feedback": {
+        "wrong": "Ikke helt riktig. Prøv igjen!",
+        "allCorrect": "Utmerket! Du matchet alle setningene riktig!",
+        "revealedComplete": "Her er de riktige matchene — gjennomgå dem og la oss fortsette."
+      },
+      "answerOverlay": "Her er de riktige matchene:\n1→B (reaksjoner… forstyrrer forståelse)\n2→E (endringer… budskapet skifter)\n3→C (pause… roe ned samtale)\n4→A (refleksjon… eksakte ord)\n5→D (lyttet til… avklare tanker)"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Gå og snakk med Mateo for å lære om dagens trening.",
+    "talkToMateo1": "Klikk på Mateo for å begynne.",
+    "findPaper": "Se nær plantene i hjørnene – \"der plantene vokser høyt, finnes det noe mer.\"",
+    "readPaper": "Les dokumentet du fant.",
+    "talkToMateo2": "Snakk med Mateo igjen – han venter på deg.",
+    "clickLaptop": "Klikk på laptopen på bordet.",
+    "puzzle1Complete": "Mateo vil snakke. Klikk på ham.",
+    "conversation": "Følg samtalen mellom Zainabu og Mateo nøye.",
+    "puzzle2FillGap": "Fyll inn hvert tomrom med ordet som passer best. Tenk på hva aktiv lytting innebærer når detaljene er uklare.",
+    "puzzle2Complete": "Snakk med Zainabu – hun har neste oppgave til deg.",
+    "findPendrive": "Zainabu sa det er en rød pendrive gjemt et sted. Se på gulvet, nær bordbenene.",
+    "puzzle3Matching": "Match hver setningsbegynnelse til venstre med riktig avslutning til høyre.",
+    "readTextFile": "Les tekstfilen som vises på laptopen.",
+    "talkToZainabu": "Snakk med Zainabu – hun forteller deg når du er klar.",
+    "reveal": "Treningen er fullført!",
+    "completion": "Treningen er fullført!",
+    "default": "Se rundt på taket etter ledetråder."
+  },
+  "systemDialogues": {
+    "selfTalk": "Mens du går opp trappen til taket, tenker du på de kommende hendelsene – \"Det er min første trening av et slikt slag. Og det er også en individuell - selskapet har virkelig overgått seg selv på dette. Jeg håper virkelig det vil bli en gunstig, positiv opplevelse. La oss gå.\" Du trykker ned dørhåndtaket og går ut på taket…",
+    "wrongObject": "Hmm, ingenting nyttig her. Men utsikten fra dette taket er utrolig — du kan se hele byen! La oss fortsette å lete.",
+    "foundPaper": "Du har funnet instruksjonene som er forberedt for deg av Zainabu og Mateo. La oss lese dem.",
+    "paperRead": "Bra jobbet. Du har akkurat fått grunnleggende forståelse av ferdigheten aktiv lytting, dens betydning og fordeler. La oss snakke med Mateo igjen.",
+    "noticeCues": "Mens samtalen mellom Zainabu og Mateo fortsetter, begynner du å legge merke til ulike signaler relatert til deres evne til å implementere ferdigheten aktiv lytting i virkelige situasjoner…",
+    "foundPendrive": "Bra jobbet! Du fant den. La oss få tilgang til informasjonen som er lagret på den nå. Klikk på laptopen.",
+    "wrongPendrive": "Ikke helt. Vent, er det et fuglerede bak blomsterpotten? Hvordan kom det opp hit? Fortsett å lete etter pendriven.",
+    "textFileRead": "Du har gjennomgått de avanserte retningslinjene for aktiv lytting. Snakk med Zainabu når du er klar."
+  },
+  "items": {
+    "paper": {
+      "inventoryTitle": "Aktiv lytting – Det grunnleggende",
+      "popupTitle": "Aktiv lytting – Det grunnleggende",
+      "popupContent": [
+        "Aktiv lytting betyr å være fullt til stede i en samtale. Det handler ikke om å vente på din tur til å snakke eller om å tenke på hva du skal si neste mens den andre personen snakker.",
+        "Når du lytter aktivt, er oppmerksomheten din kun fokusert på taleren, uten distraksjoner eller avbrytelser. Du legger ikke bare merke til ordene som blir sagt, men også andre kjennetegn, som tonefall, pauser og kroppsspråk, slik at du kan forstå budskapet mer fullstendig.",
+        "Hensikten med aktiv lytting er forståelse, ikke enighet. Det innebærer å gi taleren tid, tillate stillhet når den oppstår, og bare svare etter at budskapet er blitt fullt mottatt.",
+        "Når folk føler seg lyttet til på denne måten, er det mer sannsynlig at de føler seg respektert, forstått og villige til å kommunisere åpent. Aktiv lytting hjelper med å redusere misforståelser, forbedrer tillit og støtter bedre samarbeid i daglige arbeidsinteraksjoner."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Aktiv lytting – Avanserte retningslinjer",
+      "popupTitle": "Aktiv lytting – Avanserte retningslinjer",
+      "popupContent": [
+        "Aktiv lytting inkluderer å håndtere dine egne reaksjoner slik at de ikke avbryter forståelsen av budskapet.",
+        "Gode lyttere legger merke til endringer i tone eller tempo som signaler om at meningen kan være i endring.",
+        "Å lytte godt betyr noen ganger å ikke svare umiddelbart, selv når du vet hva du vil si.",
+        "Parafrasering er mest effektivt når den fanger meningen, ikke eksakte ord.",
+        "Aktiv lytting hjelper å forhindre eskalering ved å roe ned samtaler før følelsene stiger.",
+        "Å bli lyttet til hjelper ofte taleren å avklare sin egen tenkning, selv uten tilbakemelding."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har klart å fullføre treningen i aktiv lytting som ble forberedt for deg av Zainabu og Mateo. Du har vist ikke bare evnen din til å lære raskt, men også å anvende den ervervede kunnskapen riktig. Du har vellykket mestret ferdigheten aktiv lytting!",
+    "buttonText": "Forlat taket"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "selectTwo": "Velg 2 svar",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

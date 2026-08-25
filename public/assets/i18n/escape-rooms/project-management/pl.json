@@ -1,0 +1,300 @@
+{
+  "loading": "Ładowanie zarządzania projektami...",
+  "intro": {
+    "title": "Zarządzanie projektami",
+    "paragraphs": [
+      "Witaj w gabinecie dyrektora. Właśnie przekazano ci trwający projekt — modernizację bezpieczeństwa budynku — i to ty jesteś teraz kierownikiem projektu.",
+      "Poprzedni kierownik projektu zostawił raport z postępu prac. Na papierze wszystko wygląda dobrze. W rzeczywistości sprawy są bardziej zagmatwane, niż się wydaje.",
+      "Zajmij się tym, co masz na biurku: raportem z postępu, stosem notatek, laptopem, telefonem i kalendarzem. Twoja koleżanka z zespołu Caroline zajrzy na koniec."
+    ],
+    "buttonText": "Zacznij zarządzać"
+  },
+  "characters": {
+    "caroline": {
+      "name": "Caroline",
+      "dialogues": {
+        "step1": "Cześć, masz chwilę? Właśnie czytałam raport z postępu…",
+        "step2": "Zdążyłeś/aś go przeczytać? Pisze, że wszystko jest jasne i zgodne z planem… Ale szczerze mówiąc, nie do końca wiem, co właściwie mam robić.",
+        "step3": "Och? Co postanowiłeś/aś?",
+        "step4": "To bardzo pomaga. Ale żebyś wiedział/a… na temat projektu jest mnóstwo opinii. Słyszałam, jak ktoś z IT mówił o biometrii, rozpoznawaniu twarzy i innych zaawansowanych rzeczach.",
+        "step5": "Brzmi dobrze. Ale muszę przyznać, że trochę się martwię. Do tej pory niewiele zrobiliśmy, a czas leci.",
+        "step6": "*Przełyka ślinę*",
+        "step7": "Dobrze, mogę się tym zająć.",
+        "step8": "Zrobię to. Dzięki!"
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Oczywiście, wejdź.",
+    "step2": "Nie tylko ty. To nie było jasne. Ale teraz to naprawiam.",
+    "step3": "Skupimy się na uzyskaniu podstawowej konfiguracji bezpieczeństwa. Nowy system kontroli dostępu, monitoring kamerami i system alarmowy. Nie uda nam się wszystkiego ustawić od razu, ale przynajmniej teraz mamy jasny kierunek.",
+    "step4": "Ja też to słyszałem/am. Dostałem/am e-maile od kilku osób, które chcą podzielić się swoimi opiniami. Ale teraz musimy się skupić na najpilniejszych sprawach. Trzeba coś zrobić z sytuacją na recepcji. Kiedy to naprawimy, ruszymy z innymi zadaniami.",
+    "step5": "Słusznie się martwisz. Ja też. Termin pierwszej fazy projektu mija za dwa tygodnie.",
+    "step6": "A więc, oto co zrobimy: skupimy się na tym, co realnie możemy do tego czasu dostarczyć. Wprowadzenie nowego systemu dostępu jest priorytetem numer jeden. Będę potrzebować twojej pomocy w kontaktowaniu się z dostawcami.",
+    "step7": "Świetnie. I pamiętaj, przyjdź porozmawiać ze mną od razu, jeśli coś będzie niejasne. Moim zadaniem jest dopilnować, by wszyscy wiedzieli, co się dzieje i co robić.",
+    "step8": ""
+  },
+  "puzzles": {
+    "progressReport": {
+      "introThought1": "Przejmowanie trwającego projektu to nie jest sytuacja marzeń… Ale teraz nie mogę się nad tym zastanawiać.",
+      "introThought2": "Raport z postępu powinien zawierać wszystko, co muszę wiedzieć. Lepiej go przeczytam.",
+      "reportTitle": "Podsumowanie raportu z postępu",
+      "reportProject": "Projekt: Modernizacja bezpieczeństwa budynku",
+      "reportAnne": "Kierownik projektu: Anne",
+      "reportHandover": "Przekazanie do: (username)",
+      "reportStatus": "Ogólny status",
+      "reportStatusText": "Prace nad modernizacją bezpieczeństwa budynku postępują zgodnie z oczekiwaniami. Na tym etapie nie są wymagane żadne natychmiastowe działania.",
+      "reportSection1Title": "Cel",
+      "reportSection1Text": "Cel i zakres projektu są jasne i w pełni zrozumiałe dla wszystkich zaangażowanych.",
+      "reportSection2Title": "Postęp i harmonogram",
+      "reportSection2Text": "Prace postępują zgodnie z planem. Na obecnym etapie nie ma opóźnień.",
+      "reportSection3Title": "Interesariusze",
+      "reportSection3Text": "Komunikacja z interesariuszami jest dobra. Interesariusze są zgodni; nie zgłoszono żadnych istotnych obaw.",
+      "reportSection4Title": "Zasoby",
+      "reportSection4Text": "Zespół ma wystarczające możliwości, aby zrealizować zaplanowane działania.",
+      "closeButton": "Zamknij raport",
+      "closedThought1": "Anne zarządzała projektem przede mną. Brzmi to tak, jakby miała wszystko pod kontrolą.",
+      "closedThought2": "Ale raport był dość ogólnikowy… Jeśli przejmuję projekt, będę potrzebować dużo lepszego obrazu sytuacji niż ten."
+    },
+    "objective": {
+      "introThought": "To muszą być notatki Anne. Wygląda na to, że cel projektu nie był jednak taki jasny… Przynajmniej nie tak jasny, jak twierdził raport.",
+      "introDialogue": "Aby projekt miał szansę powodzenia, musi mieć jasny cel. Może uda mi się go ułożyć z tych chaotycznych notatek…",
+      "instruction": "Kliknij notatki, które pasują do jasnego celu projektu.",
+      "notes": [
+        {
+          "id": "access",
+          "text": "Karty dostępu do drzwi",
+          "correct": true,
+          "thought": "Konkretne działanie poprawiające bezpieczeństwo budynku."
+        },
+        {
+          "id": "cameras",
+          "text": "Kamery przy wejściu i na korytarzach",
+          "correct": true,
+          "thought": "Monitorowanie budynku jest niezbędne."
+        },
+        {
+          "id": "alarm",
+          "text": "System alarmowy dla budynku",
+          "correct": true,
+          "thought": "Posiadanie systemu alarmowego zapobiegnie włamaniom."
+        },
+        {
+          "id": "guards",
+          "text": "Ochroniarze 24/7",
+          "correct": false,
+          "thought": "To może być przesada…"
+        },
+        {
+          "id": "biometrics",
+          "text": "Skanery biometryczne we wszystkich drzwiach",
+          "correct": false,
+          "thought": "Bardzo zaawansowane i drogie. Myślę, że lepiej zacząć od czegoś podstawowego."
+        },
+        {
+          "id": "scarecrows",
+          "text": "Odstraszanie złodziei",
+          "correct": false,
+          "thought": "Jak? Strachami na wróble?"
+        },
+        {
+          "id": "hood",
+          "text": "Kamery w całej okolicy",
+          "correct": false,
+          "thought": "Nie sądzę, żeby to było legalne…"
+        }
+      ],
+      "preliminaryObjective": "Wdrożenie podstawowego systemu bezpieczeństwa budynku, obejmującego kontrolę dostępu, monitoring kamerami oraz system alarmowy.",
+      "objectiveDoneThought": "Dużo lepiej! Cel teraz jasno określa, co musimy zrobić.",
+      "deadlinePrompt": "Brakuje tylko jednej rzeczy. Kiedy ma być termin?",
+      "deadlineOptions": {
+        "asap": "Tak szybko, jak to możliwe",
+        "threeMonths": "W ciągu 3 miesięcy"
+      },
+      "deadlineTooltip": "„Tak szybko, jak to możliwe” to nie jest jasny termin. Brzmi nieźle… ale kiedy konkretnie? To kwestia interpretacji.",
+      "finalObjective": "Wdrożenie podstawowego systemu bezpieczeństwa budynku, obejmującego kontrolę dostępu, monitoring kamerami oraz system alarmowy, w ciągu 3 miesięcy.",
+      "completionThought": "Konkretny i mierzalny cel! Jasno określa, co należy zrobić i do kiedy. To powinno pomóc w planowaniu i śledzeniu postępów projektu.",
+      "submitButton": "Zapisz cel",
+      "continueButton": "Dalej"
+    },
+    "stakeholders": {
+      "introThought": "Widzę, że niektórzy interesariusze wysłali do mnie e-maile... Mam nadzieję, że z dobrymi wieściami. Raport Anne mówił przecież, że nie zgłoszono żadnych problemów…",
+      "emails": [
+        {
+          "id": "reception",
+          "sender": "Recepcja",
+          "subject": "Ręczna obsługa wejść nas zalewa",
+          "body": "Cześć (username),\n\nPiszę w imieniu nas wszystkich z recepcji. Spędzamy mnóstwo czasu, ręcznie rejestrując wejścia i wyjścia ludzi z budynku. Czujemy się kompletnie przytłoczeni!\n\nCzasami mamy długie kolejki i, co zrozumiałe, mnóstwo zirytowanych osób. I nawet jeśli staramy się jak możemy, niektórzy ludzie omijają kolejkę i po prostu wchodzą, więc nie jesteśmy w stanie w pełni kontrolować, kto wchodzi i wychodzi.\n\nNaprawdę szybko potrzebujemy lepszego systemu. Najlepiej już wczoraj!",
+          "thought": "To prawdziwy problem dla recepcji, ale również dla ogólnego bezpieczeństwa budynku. Może nowy system dostępu powinien być priorytetem numer jeden…"
+        },
+        {
+          "id": "accounting",
+          "sender": "Amina z księgowości",
+          "subject": "Pamiętaj o kosztach",
+          "body": "Drogi/Droga (username),\n\nPrzeglądamy budżety kwartalne. Zanim posuniesz się za daleko z zakupem nowych systemów bezpieczeństwa, chcemy cię prosić o uważność na koszty. Zalecamy wybór czegoś, co nie wymaga dużych inwestycji na początku.",
+          "thought": "Świadomość kosztów to zawsze dobra rada. Ale jakieś koszty będą, niezależnie od tego, na co się zdecydujemy. Mam nadzieję, że nie mają nierealistycznych oczekiwań…"
+        },
+        {
+          "id": "it",
+          "sender": "Dział IT",
+          "subject": "Postaw na zaawansowane — biometrię",
+          "body": "Cześć, słyszałem/am, że zostałeś/aś wyznaczony/a do modernizacji bezpieczeństwa budynku.\n\nBezpieczeństwo to już nie to, co 20 lat temu, a systemy bezpieczeństwa szybko się starzeją. Przyjrzałem/am się niektórym nowszym systemom i dostępne są naprawdę dobre opcje.\n\nNamawiamy cię, żeby od razu postawić na coś zaawansowanego. Sprawdź biometrię i oprogramowanie do rozpoznawania twarzy. To całkowicie wyeliminowałoby błąd ludzki. Kosztuje sporo, ale jest niemal niezawodne.",
+          "thought": "Biometria? Rozpoznawanie twarzy? Pewnie poprawiłoby to bezpieczeństwo budynku, ale myślę, że mogłoby też mieć wiele wad. Pewnie kosztowałoby też dużo więcej, niż chciałaby księgowość…"
+        },
+        {
+          "id": "robn",
+          "sender": "Rob N. Steely",
+          "subject": "Wszystko jest w porządku",
+          "body": "Szczerze mówiąc, dziś wszystko działa świetnie. Nic nie trzeba zmieniać :)",
+          "thought": "Hmmm…"
+        }
+      ],
+      "replyPrompt": "Jak mam im odpowiedzieć?",
+      "replyIntro": "Drodzy interesariusze, dziękuję za wszystkie cenne uwagi.",
+      "replyOptions": [
+        {
+          "id": "keepHappy",
+          "shorthand": "Próbuj zadowolić wszystkich",
+          "full": "Postaramy się wyważyć życzenia wszystkich i spełnić oczekiwania każdego.",
+          "correct": false,
+          "reflection": "W teorii brzmi to dobrze… Ale życzenia interesariuszy są ze sobą sprzeczne i nie da się zadowolić wszystkich. Wręcz przeciwnie, mogłoby to pozostawić nas bez jasnego kierunku."
+        },
+        {
+          "id": "advanced",
+          "shorthand": "Wybierz zaawansowane rozwiązanie",
+          "full": "Postanowiliśmy zakupić zaawansowany system biometryczny do zarządzania dostępem do budynku.\n\nWkrótce zaczniemy kontaktować się z dostawcami. Prosimy o cierpliwość, ponieważ ten proces zajmie trochę czasu.",
+          "correct": false,
+          "reflection": "To mogłoby rozwiązać długoterminowe problemy z bezpieczeństwem… Ale jest drogie i ignoruje potrzebę szybkiego rozwiązania dla recepcji. Nie rozwiązuje najpilniejszego problemu."
+        },
+        {
+          "id": "wait",
+          "shorthand": "Poczekaj na więcej informacji",
+          "full": "Postanowiliśmy odłożyć zakup nowych systemów bezpieczeństwa do czasu, aż będziemy mieć więcej informacji.",
+          "correct": false,
+          "reflection": "Poczekać i zobaczyć może wydawać się bezpieczną opcją. Ale recepcja już teraz nie radzi sobie z obecnym systemem. Jeśli to opóźnię, sytuacja może się pogorszyć."
+        },
+        {
+          "id": "startSimple",
+          "shorthand": "Zacznij od prostego, rozszerzaj później",
+          "full": "Postanowiliśmy zakupić podstawowy system dostępu do budynku, aby zaspokoić najpilniejsze potrzeby.\n\nPo pewnym czasie ocenimy sytuację i w razie potrzeby dodamy bardziej zaawansowane funkcje bezpieczeństwa.",
+          "correct": true,
+          "reflection": "To może zadziałać. Rozwiązuje problem na recepcji, a jednocześnie uwzględnia koszty. Później zawsze możemy zaktualizować do czegoś bardziej zaawansowanego. Nie idealne dla wszystkich, ale możemy iść do przodu."
+        }
+      ],
+      "sendButton": "Wyślij",
+      "inboxTitle": "Skrzynka odbiorcza",
+      "backToInbox": "Powrót do skrzynki",
+      "composeTitle": "Napisz odpowiedź",
+      "readAllMessage": "Wszystkie e-maile przeczytane — teraz zdecyduj o odpowiedzi."
+    },
+    "scopeCreep": {
+      "phoneIntroThought": "Telefon dzwoni…",
+      "callerIntro": "? z marketingu:\n„Słyszałam, że zajmujesz się modernizacjami bezpieczeństwa budynku. Rzecz w tym — mamy kilka skarg dotyczących naszych poczekalni. Ich remont naprawdę poprawiłby wrażenia odwiedzających. I ma sens zrobić to teraz, kiedy już wykonujemy inne modernizacje. Co myślisz, mógłbyś/mogłabyś włączyć to do swojego projektu?”",
+      "replyOptions": [
+        {
+          "id": "include",
+          "text": "Zgódź się i to dołącz",
+          "correct": false,
+          "feedback": "Remonty poprawiłyby ogólny stan budynku. Ale nie poprawią bezpieczeństwa budynku. Jeśli będę dalej zgadzać się na takie rzeczy, będę mieć mnóstwo pracy."
+        },
+        {
+          "id": "reject",
+          "text": "Odrzuć bezpośrednio",
+          "correct": false,
+          "feedback": "Powiedzenie nie chroni zakres. Ale prawdopodobnie powinienem/powinnam uznać tę sugestię. Inaczej mogę się wydać lekceważący/a."
+        },
+        {
+          "id": "ifTime",
+          "text": "Dodaj, jeśli czas pozwoli",
+          "correct": false,
+          "feedback": "Brzmi to jak dobry kompromis. Ale sprawia, że zakres jest niejasny. I może prowadzić do większej ilości pracy oraz kolejnych próśb w przyszłości."
+        },
+        {
+          "id": "acknowledge",
+          "text": "Doceń, ale przekieruj",
+          "correct": true,
+          "feedback": ""
+        }
+      ],
+      "correctReplyText": "To słuszna uwaga. Ale w tym projekcie musimy pozostać skupieni na modernizacjach bezpieczeństwa. Może mogłabyś przedstawić to kierownictwu jako oddzielną inicjatywę?",
+      "npcResponse": "To ma sens. Zaproponuję to kierownictwu. Dziękuję.",
+      "afterCallThought1": "Odpowiedziałem/am w konstruktywny i wyrozumiały sposób, jednocześnie chroniąc zakres projektu.",
+      "afterCallThought2": "Zawsze jest trudno, kiedy ludzie chcą dodać więcej rzeczy do projektu. Może być kuszące, by się zgodzić. Ale brak ochrony zakresu często skutkuje mnóstwem pracy oraz zbyt małą ilością czasu i zasobów, by ją wykonać.",
+      "continueButton": "Dalej"
+    },
+    "calendar": {
+      "deadlineThought": "Termin… jest za dwa tygodnie?!\n\nTen termin musi dotyczyć pierwszej fazy projektu. Nie ma mowy, żeby cały projekt można było zakończyć w dwa tygodnie.\n\nLepiej upewnię się, że wszyscy wiedzą, co robić!",
+      "continueButton": "Dalej"
+    },
+    "caroline": {
+      "knockPrompt": "Pukanie do drzwi…",
+      "arrivalDialogue": "Ktoś puka do drzwi. Brzmi to jak ktoś z twojego zespołu.",
+      "continueButton": "Dalej"
+    },
+    "objectiveTitle": "Sformułuj jasny cel",
+    "finalObjectiveTitle": "Cel końcowy"
+  },
+  "hints": {
+    "readReport": "Na biurku leży wydrukowany raport z postępu. Kliknij, aby go przeczytać.",
+    "afterReport": "Raport Anne jest niejasny. Spróbuj stosu notatek na biurku.",
+    "objective": "Wybierz notatki opisujące konkretny, istotny cel projektu.",
+    "pickDeadline": "Wybierz jasny, konkretny termin dla projektu.",
+    "closeReport": "Przeczytaj raport, a następnie kliknij Zamknij raport, aby kontynuować.",
+    "objectiveWrong": "Niezupełnie — przeczytaj ponownie raport Anne i wybierz notatki pasujące do jasnego celu.",
+    "emails": "Kliknij laptopa, aby sprawdzić e-maile od interesariuszy.",
+    "readEmails": "Przeczytaj wszystkie cztery e-maile, a następnie wybierz, jak odpowiedzieć.",
+    "chooseReply": "Wybierz odpowiedź, która równoważy sprzeczne potrzeby.",
+    "phone": "Telefon dzwoni. Odbierz.",
+    "phoneReply": "Wybierz, jak odpowiedzieć na prośbę o rozszerzenie zakresu.",
+    "calendar": "Warto rzucić okiem na kalendarz ścienny.",
+    "doorKnock": "Ktoś puka. Kliknij drzwi, aby go wpuścić.",
+    "talkCaroline": "Porozmawiaj z Caroline, aby ukończyć pokój.",
+    "completion": "Drzwi są otwarte. Kliknij, aby wyjść.",
+    "default": "Rozejrzyj się po gabinecie dyrektora w poszukiwaniu interaktywnych obiektów."
+  },
+  "completion": {
+    "title": "Zarządzanie projektami ukończone",
+    "message": "Gratulacje, ukończyłeś/aś escape room poświęcony zarządzaniu projektami!\n\nW pokoju musiałeś/aś przejąć rolę kierownika trwającego już projektu. Na papierze wszystko wydawało się iść dobrze. Ale wkrótce odkryłeś/aś kilka istniejących problemów. Cel projektu był niejasny, interesariusze mieli sprzeczne potrzeby, istniało ryzyko rozrostu zakresu i była duża presja czasu.\n\nNa szczęście stawiłeś/aś czoła wyzwaniom. Zdecydowałeś/aś się na konkretny, istotny i mierzalny cel, możliwy do osiągnięcia w określonym czasie. Wybrałeś/aś kierunek dla projektu, równoważąc potrzeby interesariuszy. Gdy ktoś poprosił o rozszerzenie zakresu, oparłeś/aś się temu i ochroniłeś/aś zakres w konstruktywny sposób. Wreszcie podjąłeś/aś działanie, ustalając realistyczne priorytety i jasno komunikując się ze swoim zespołem.\n\nDobra robota!",
+    "buttonText": "Wyjdź z biura"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "puzzlesCompleted": "zagadki",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź",
+    "exitDoorTitle": "Drzwi"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  },
+  "items": {
+    "progressReport": {
+      "inventoryTitle": "Raport z postępu"
+    },
+    "notes": {
+      "inventoryTitle": "Stos notatek"
+    },
+    "phone": {
+      "inventoryTitle": "Phone"
+    },
+    "calendar": {
+      "inventoryTitle": "Kalendarz"
+    }
+  },
+  "answerOverlay": {
+    "title": "Odpowiedź"
+  }
+}

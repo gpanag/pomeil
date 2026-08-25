@@ -1,0 +1,309 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Negotiation Skills room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(15, 25, 35, 0.95);
+  border: 2px solid rgba(0, 104, 116, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .character-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* --- Reply card for Phase 1 & 4 options --- */
+.reply-card {
+  max-width: 700px;
+
+  .options-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1rem;
+
+    button {
+      text-align: left;
+      white-space: normal;
+      line-height: 1.5;
+      padding: 12px 16px;
+      min-height: 48px;
+    }
+  }
+
+  .option-label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 8px;
+    color: var(--sys-primary);
+  }
+}
+
+/* --- Transcript card --- */
+.transcript-card {
+  max-width: 750px;
+
+  .transcript-content {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .transcript-phrase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border: 2px solid rgba(0, 104, 116, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover:not(.reflected) {
+      border-color: var(--sys-primary);
+      background: rgba(0, 104, 116, 0.08);
+    }
+
+    &.reflected {
+      border-color: rgba(76, 175, 80, 0.5);
+      background: rgba(76, 175, 80, 0.08);
+      cursor: default;
+    }
+
+    .phrase-text {
+      font-style: italic;
+      flex: 1;
+    }
+
+    .check-icon {
+      color: #4caf50;
+      margin-left: 8px;
+    }
+
+    .click-icon {
+      color: var(--sys-primary);
+      margin-left: 8px;
+      opacity: 0.6;
+    }
+  }
+
+  .phrases-remaining {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.9em;
+    opacity: 0.7;
+  }
+}
+
+/* --- Thought bubble --- */
+.thought-card {
+  max-width: 550px;
+
+  .thought-icon {
+    text-align: center;
+    margin-bottom: 12px;
+
+    mat-icon {
+      font-size: 48px;
+      width: 48px;
+      height: 48px;
+      color: var(--sys-primary);
+    }
+  }
+
+  .thought-text {
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+/* --- Spreadsheet card --- */
+.spreadsheet-card {
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+
+    tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      td {
+        padding: 10px 12px;
+      }
+
+      .amount {
+        text-align: right;
+        font-family: monospace;
+        font-size: 1.05em;
+      }
+    }
+
+    .total-row {
+      border-top: 2px solid var(--sys-primary);
+      border-bottom: none;
+
+      td {
+        padding-top: 14px;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+/* --- Folder card --- */
+.folder-card {
+  .folder-docs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1rem;
+  }
+
+  .folder-doc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    white-space: normal;
+    padding: 14px 16px;
+    min-height: 48px;
+
+    &.viewed {
+      opacity: 0.6;
+
+      mat-icon {
+        color: #4caf50;
+      }
+    }
+  }
+
+  .folder-doc-content {
+    h3 {
+      margin-bottom: 12px;
+      color: var(--sys-primary);
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/* --- Posters card --- */
+.posters-card {
+  .poster-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1rem;
+  }
+
+  .poster-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    white-space: normal;
+    padding: 14px 16px;
+    min-height: 48px;
+
+    &.viewed {
+      opacity: 0.6;
+    }
+
+    .check {
+      color: #4caf50;
+      margin-left: auto;
+    }
+  }
+
+  .poster-content {
+    h3 {
+      margin-bottom: 12px;
+      color: var(--sys-primary);
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/* --- Preparation progress panel --- */
+.prep-progress-panel {
+  position: absolute;
+  top: 80px;
+  right: 16px;
+  z-index: 25;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #fff;
+  text-align: center;
+  min-width: 120px;
+
+  .prep-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  .prep-items {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 6px;
+
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      opacity: 0.4;
+
+      &.done {
+        color: #4caf50;
+        opacity: 1;
+      }
+    }
+  }
+
+  .prep-count {
+    font-size: 0.85em;
+    opacity: 0.7;
+  }
+}
+
+/* --- Options vertical overrides --- */
+.options-vertical {
+  margin-top: 1rem;
+}

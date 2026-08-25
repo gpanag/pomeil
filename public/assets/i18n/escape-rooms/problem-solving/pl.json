@@ -1,0 +1,212 @@
+{
+  "loading": "Ładowanie modułu Rozwiązywanie problemów...",
+  "intro": {
+    "title": "Rozwiązywanie problemów",
+    "paragraphs": [
+      "Wszedłeś/aś do magazynu biurowego po nowy zszywacz. Ale Kierownik Magazynu zostawił ci notatkę o większym problemie — tu ciągle giną rzeczy.",
+      "Ten pokój dotyczy kluczowego aspektu rozwiązywania problemów: jasnego zdefiniowania problemu przed przejściem do rozwiązań. Rozejrzyj się, badaj i staraj się nie traktować pierwszego założenia jak ostatecznej odpowiedzi.",
+      "Przeczytaj karteczkę na drzwiach, aby zacząć. Potem pozwól pokojowi powiedzieć ci, co naprawdę się dzieje."
+    ],
+    "buttonText": "Wejdź do Magazynu"
+  },
+  "characters": {
+    "knut": {
+      "name": "Knut",
+      "dialogues": {
+        "step1": "Hej, masz minutę?",
+        "step2": "Po prostu wpadłem po nową klawiaturę…",
+        "step3": "… ale nie mogę tu znaleźć ani jednej klawiatury!",
+        "step4": "Tak, powiedziano mi, że będziemy mieli kilka w magazynie.",
+        "step5": "No cóż, przynajmniej pokój wygląda dużo lepiej niż zwykle.",
+        "step6": "Może bałagan to nie jest problem. Może dzieje się coś zupełnie innego."
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Pewnie, co się dzieje?",
+    "step2": "Okej…",
+    "step3": "To dziwne.",
+    "step4": "Hmm… Właśnie skończyłem/am tu sprzątać. Nie pamiętam, żebym widział/a jakieś klawiatury.",
+    "step5": "Tak…",
+    "step6": "Może… Chyba powinienem/powinnam to rozgryźć."
+  },
+  "puzzles": {
+    "stickyNote": {
+      "title": "Notatka od Kierownika Magazynu",
+      "letter": "Drogi/a (username)\n\nMieliśmy ostatnio pewne problemy w magazynie. Rzeczy ciągle gdzieś znikają. Niedawno dostaliśmy nową dostawę krzeseł i nie mogę ich nigdzie znaleźć!\n\nJestem poza biurem i niestety nie miałem czasu sprawdzić tego przed wyjazdem…\n\nMógłbyś/Mogłabyś rzucić okiem? Wisieć ci będę przysługę!\n\n- Kierownik Magazynu",
+      "thought": "A ja sobie myślę, że tylko wpadłem/am po nowy zszywacz… Chyba lepiej zakaszę rękawy.",
+      "continueButton": "Dalej"
+    },
+    "cleanRoom": {
+      "introThought": "Wow, magazyn zrobił się dość bałaganiarski. Stawiam, że to jest problem. Lepiej tu posprzątam.",
+      "startButton": "Dalej",
+      "completionThought": "Wszystko wygląda schludnie poukładane!",
+      "continueButton": "Dalej"
+    },
+    "knutConversation": {
+      "title": "Knut wchodzi do magazynu",
+      "continueButton": "Dalej",
+      "startDialogue": "Ktoś wszedł do magazynu — wygląda jak Knut z biura. Wygląda, jakby czegoś szukał."
+    },
+    "investigate": {
+      "introThought": "Knut ma rację. Może bałagan nigdy nie był prawdziwym problemem. Czas naprawdę poszukać wskazówek.",
+      "continueButton": "Dalej",
+      "objects": {
+        "chewedBox": {
+          "thought": "Wygląda na obgryziony."
+        },
+        "vent": {
+          "thought": "Mysz… i mysz. Słodkie albo obrzydliwe, zależy jak się patrzy. Czy ten mały mógłby być przyczyną tego wszystkiego?"
+        },
+        "halfOpenDoor": {
+          "thought": "Może ktoś zostawił otwarte drzwi… i ktoś wszedł i ukradł nasz sprzęt."
+        },
+        "emptyShelf": {
+          "thought": "Czy stąd coś zniknęło?"
+        },
+        "brokenBox": {
+          "thought": "Tu nic nie ma."
+        },
+        "cleaningChecklist": {
+          "title": "Lista Sprzątania",
+          "content": "☐ Usuń wszystkie śmieci i puste opakowania\n☐ Odkurz półki\n☐ Wytrzyj powierzchnie\n☐ Posprzątaj podłogi\n☐ Sprawdź, czy wszystko jest na właściwym miejscu",
+          "thought": "Ktoś już próbował rozwiązać ten problem przez sprzątanie."
+        },
+        "deliveryNotes": {
+          "title": "Notatki Dostawy",
+          "content": "Dostawa Materiałów Biurowych\nData Dostawy: Dzisiaj\nDostarczono do: Magazynu\n\nOdebrane przez: Kierownika Magazynu",
+          "thought": "Według tego wszystko zostało dostarczone prawidłowo… Nie ma sposobu, żeby mysz mogła to wszystko zabrać?!"
+        },
+        "tablesBox": {
+          "revealText": "Kable",
+          "thought": "To dziwne…"
+        },
+        "chargersBox": {
+          "revealText": "Krzesła",
+          "thought": "Okej, to już drugi raz…"
+        },
+        "pansBox": {
+          "revealText": "Długopisy",
+          "thought": "Patelnie… Długopisy… Wszystkie te etykiety wydają się błędne!"
+        },
+        "labelPrinter": {
+          "thought": "To pewnie tym etykietują pudełka."
+        },
+        "marketsBox": {
+          "revealText": "Markery",
+          "thought": "Ktoś zmienił etykiety… i zrobił to źle!"
+        }
+      },
+      "phaseCompleteThoughts": {
+        "phase1": "To pokrywa oczywistych podejrzanych. Pozwólmy mi szukać dalej — może jest jakiś ślad papierowy.",
+        "phase2": "Sprzątanie i zapisy dostaw się zgadzają. Problem musi być gdzie indziej. Sprawdźmy same pudełka.",
+        "phase3": "Wszystkie trzy pudełka miały złą zawartość. To nie zbieg okoliczności. Coś jest nie tak z etykietami."
+      }
+    },
+    "defineProblem": {
+      "question": "Jaki jest główny problem w magazynie?",
+      "options": [
+        {
+          "id": "mess",
+          "text": "Pokój jest bałaganiarski",
+          "correct": false
+        },
+        {
+          "id": "theft",
+          "text": "Ktoś włamał się i ukradł sprzęt",
+          "correct": false
+        },
+        {
+          "id": "labels",
+          "text": "Etykiety nie pasują do zawartości",
+          "correct": true
+        },
+        {
+          "id": "delivery",
+          "text": "Firma dostawcza popełnia błędy",
+          "correct": false
+        },
+        {
+          "id": "mouse",
+          "text": "Mysz ukradła sprzęt",
+          "correct": false
+        }
+      ],
+      "tooltips": {
+        "mess": "Sprzątanie niczego nie rozwiązało. Bałagan nie jest głównym problemem.",
+        "theft": "Były puste półki, a drzwi zostały otwarte. Ale nie ma twardego dowodu, że coś zostało skradzione.",
+        "labels": "Poprawnie. Przedmioty były tam cały czas, ale przechowywano je pod nieprawidłowymi etykietami. To bardzo utrudniało znajdowanie rzeczy w magazynie.",
+        "delivery": "Notatka dostawy pokazała, że wszystko zostało dostarczone prawidłowo. Prawdziwy problem musi być czymś, co dzieje się po dostawie.",
+        "mouse": "Magazyn ma problem z myszami, ale to nie jest główny problem."
+      },
+      "continueButton": "Dalej"
+    }
+  },
+  "hints": {
+    "stickyNote": "Na drzwiach wejściowych jest karteczka. Kliknij ją, aby zobaczyć, co tam jest.",
+    "readStickyNote": "Knut potrzebuje twojej pomocy. Kontynuuj notatkę, aby zacząć.",
+    "cleanRoom": "Pokój jest zagracony. Klikaj pudełka i śmieci na podłodze, aby posprzątać.",
+    "boxesRemaining": "Wciąż są pudełka i śmieci na podłodze. Klikaj je, aż pokój będzie czysty.",
+    "waitForKnut": "Knut już idzie — poczekaj chwilę.",
+    "knutArrival": "Wygląda na to, że ktoś właśnie wszedł. Kliknij Knuta, aby z nim porozmawiać.",
+    "knutConversation": "Wysłuchaj Knuta. Wybierz podświetloną odpowiedź, aby kontynuować rozmowę.",
+    "investigatePhase1": "Teraz rozejrzyj się świeżym okiem. Klikaj oczywistych podejrzanych: uszkodzone pudełka, kratkę wentylacyjną, drzwi, puste półki.",
+    "investigatePhase2": "Oczywiste tropy nie wyjaśniły wszystkiego. Kliknij listę sprzątania i notatki dostaw, aby uzyskać więcej wskazówek.",
+    "investigatePhase3": "Zapisy się zgadzają. Spróbuj otworzyć oznakowane pudełka na półkach.",
+    "investigatePhase4": "Zauważyłeś/aś, że etykiety wydają się błędne. Kliknij drukarkę etykiet i pudełko Markets, aby potwierdzić.",
+    "defineProblem": "Wybierz opcję, która faktycznie wyjaśnia, co jest nie tak w magazynie.",
+    "defineProblemExplained": "Kliknij „Dalej”, aby przejść dalej.",
+    "completion": "Tylne drzwi właśnie się odblokowały. Kliknij je, aby wyjść.",
+    "default": "Rozejrzyj się po magazynie w poszukiwaniu interaktywnych obiektów."
+  },
+  "items": {
+    "stickyNote": {
+      "popupTitle": "Karteczka",
+      "popupContent": [
+        "Drogi/a (username)",
+        "Mieliśmy ostatnio pewne problemy w magazynie. Rzeczy ciągle gdzieś znikają. Niedawno dostaliśmy nową dostawę krzeseł i nie mogę ich nigdzie znaleźć!",
+        "Jestem poza biurem i niestety nie miałem czasu sprawdzić tego przed wyjazdem…",
+        "Mógłbyś/Mogłabyś rzucić okiem? Wisieć ci będę przysługę!",
+        "- Kierownik Magazynu"
+      ],
+      "inventoryTitle": "Karteczka"
+    }
+  },
+  "completion": {
+    "title": "Rozwiązywanie problemów ukończone",
+    "message": "Gratulacje, ukończyłeś/aś pokój rozwiązywania problemów!\n\nŁatwo było założyć, że problem ze znikającymi rzeczami był spowodowany bałaganem. I naturalne było przejście od razu do rozwiązania — sprzątania i organizowania pokoju.\n\nAle szybko odkryłeś/aś, że to niczego nie rozwiązało. Główny problem musiał być czymś innym.\n\nDlatego cofnąłeś/aś się i zbadałeś/aś alternatywne wyjaśnienia. Zbierając wskazówki i dowody, mogłeś/aś zidentyfikować główny problem: błędne etykietowanie pudełek.\n\nPokój reprezentuje kluczowy aspekt rozwiązywania problemów: jasne zdefiniowanie problemu przed działaniem. Może to zaoszczędzić wiele zmarnowanego czasu i energii.\n\nDobra robota!",
+    "buttonText": "Wyjdź z Magazynu"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "skipPuzzle": "Pomiń tę zagadkę",
+    "hintButton": "Wskazówka",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "systemDialogues": {
+    "cleanBoxMoved": "Trafiło na półkę.",
+    "trashRemoved": "Do kosza.",
+    "investigateComplete": "To wystarczy dowodów. Myślę, że teraz mogę zdefiniować prawdziwy problem.",
+    "wrongAnswer": "Pomyśl, co naprawdę wyjaśnia to, co znalazłeś/aś."
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  },
+  "answerOverlay": {
+    "title": "Odpowiedź"
+  }
+}

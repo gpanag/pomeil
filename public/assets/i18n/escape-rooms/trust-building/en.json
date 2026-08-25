@@ -1,0 +1,230 @@
+{
+  "loading": "Loading Trust Building...",
+  "intro": {
+    "title": "Trust Building",
+    "paragraphs": [
+      "You are an employee of an IT company, who just got promoted to a position of Team Leader. Excited about all the new tasks and experiences, you can't wait to meet with your team - for the first time as their leader.",
+      "You have mixed feelings about this change. You're eager to take on this new role, strongly believing that you have the necessary knowledge and skills. On the other hand, you're not sure how well you'll perform in terms of social interactions and maintaining a healthy relationship based on mutual trust, honesty and openness.",
+      "You're entering the HR office - the place where you asked your team to gather, to conduct a sort of orientation meeting…"
+    ],
+    "buttonText": "Enter the HR Office"
+  },
+  "characters": {
+    "kate": {
+      "name": "Kate",
+      "dialogues": {
+        "greet": "Hello! We've been waiting for you! Me and Hiroshi are really excited that you are the one to take the steer of our small team. We are sure that you will do exceptionally well in your new position. I'm sure you have a lot of things to say to us, but I was talking with Hiroshi, and taking the opportunity, we would like to ask you to take part in a common exercise of sorts. To make sure that our teamwork will go as smoothly as it can. Would you like to join us?",
+        "proposeExercise": "Great! Let's start with a bit of theory. I have just sent you an e-mail with a text file containing some basic information related to effective trust building among the team. Its content has been developed by corporate, but I think it will come in handy in our case. Please, get familiar with it and let me know when you're ready to proceed!",
+        "goToWhiteboard": "Wow! It took you just a moment. Did you enrol in the fast reading course? I bet you did. Anyway, we're ready to proceed and get to the main part of the exercise. Let's take a look at the whiteboard.",
+        "puzzle1Intro": "Me and Hiroshi have prepared this short matching task for you to quickly check your understanding of the fundamental ideas of the trust-building process. Let's do it!",
+        "puzzle1Complete": "Of course you completed our exercise with flying colours! I didn't doubt you for even a second. Alright, with that out of the way, I actually wanted to talk with you about something… I thought it would be a good moment, and I hope you don't mind but…",
+        "personalStory": "Thank you. I knew you would understand me. Okay, here goes. I had specific, unpleasant experiences with our previous team leader. She wasn't bad overall, she was a decent leader, but for some reason she always dismissed my ideas. Of course, she would say that she would consider, that she would think about it. But in the end, none of my suggestions were ever taken into account. With time I stopped sharing them. What I'm trying to say is… I want to trust you, that under your leadership my ideas will be heard. It would mean so much to me.",
+        "puzzle3Thanks": "Thank you so much. It's all I was hoping to hear, and even more. You're my favourite Team Leader already! I promise that I will always do my best for the team, so my input is valuable, and my contributions push us forward. Thank you so much once again.",
+        "finalWords": "It's been quite a day, wasn't it? As Hiroshi said, you will make a perfect Team Leader, I'm full sure of it now. And… you know, the story I shared before wasn't a part of the corporate test, it was my genuine experience and concern. And for me it's even more valuable than the result of the test itself. Once again, thank you for proving to be a trust-worthy person, ready to trust your team members on our common journey! Great job!",
+        "completion": "We can't wait to start working with you! The training has been completed!",
+        "default": "I'm here if you need me. If you've forgotten what to do, click the hint button (the lightbulb) at the top-left."
+      }
+    },
+    "hiroshi": {
+      "name": "Hiroshi",
+      "dialogues": {
+        "puzzle3Complete": "Your approach and actions so far mean really a lot for us. We are lucky to have you as our Team Leader. I'm sure that our collaboration will go smoothly. Ah yes, speaking of collaboration… Yesterday the corporate introduced a brand new teamwork planning tool. It can operate in two modes – Shared-visibility mode and Limited-visibility mode. The first one enables all team members to see tasks, workload, and assigned resources. The second one displays all this information only to the Team Leader. Both have pros and cons. Please, select the chosen option on the laptop, whenever you're ready.",
+        "reveal": "That's right. There was never any new tool implementation. It was all just a test. But we had to be sure. Well, corporate had to – it was their idea. And yes, we tricked you a little, but hey, we are an industry leading IT company, and we can't let ourselves assign incorrect people to such demanding positions. With that being said, you have passed all our tests! We can't wait to start working under your leadership! Welcome aboard!",
+        "completion": "Welcome to the team, leader!",
+        "default": "I'm here, ready when you are."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Trust Building - Checking the Basic Understanding",
+      "instructions": "Create logical sentences by matching each beginning with its correct ending.",
+      "columnA": {
+        "heading": "Sentence Beginnings",
+        "items": {
+          "1": "Shared goals help the team…",
+          "2": "When a leader listens…",
+          "3": "Empowering people helps them…",
+          "4": "Transparency during change lets people…",
+          "5": "Predictable processes make it easier to…",
+          "6": "Recognition helps people…",
+          "7": "A leader who leads by example inspires others to…"
+        }
+      },
+      "columnB": {
+        "heading": "Sentence Endings",
+        "items": {
+          "A": "…share ideas openly.",
+          "B": "…act with similar integrity.",
+          "C": "…stay calm and adapt.",
+          "D": "…take ownership.",
+          "E": "…collaborate effectively.",
+          "F": "…avoid misunderstandings.",
+          "G": "…stay motivated and improve."
+        }
+      },
+      "feedback": {
+        "wrong": "That's not quite right. Try again!",
+        "allCorrect": "Great job! You matched all the sentences correctly!",
+        "revealedComplete": "Here are the correct matches — review them and let's continue."
+      },
+      "answerOverlay": "Here are the correct matches: 1→E, 2→A, 3→D, 4→C, 5→F, 6→G, 7→B"
+    },
+    "singleChoice1": {
+      "title": "Helping Kate",
+      "instructions": "Choose the best answer. Only one is correct.",
+      "question": "Based on the context, and your striving to build a healthy, trust-based relationship with your team, what should you say to Kate right now?",
+      "options": {
+        "a": "You seem unsure. Maybe we should stick to the agenda for now and talk about this another time?",
+        "b": "It's fine, Kate. I'm sure it's nothing serious. Let's move on.",
+        "c": "Kate, if something is on your mind, I'm here. Please, go on - I'm listening.",
+        "d": "Before you continue, I need to know how this affects our work. Can you be more direct?"
+      },
+      "hint": "Try to be more gentle and reassuring - Kate will appreciate it.",
+      "feedback": {
+        "wrong": "That might not be the best response for building trust. Try to be more gentle and reassuring.",
+        "correct": "Excellent choice! That's exactly the kind of empathetic response that builds trust."
+      },
+      "answerOverlay": "The correct answer is: \"Kate, if something is on your mind, I'm here. Please, go on - I'm listening.\""
+    },
+    "fillGap": {
+      "title": "First Steps",
+      "instructions": "Complete the sentences with missing words and design your response to Kate.",
+      "sentenceParts": [
+        "Kate, thank you for telling me about this. I want you to know that I ",
+        " and that I acknowledge that it took a lot of courage to bring it up.\n\nYour ideas ",
+        ", and I'm committed to making sure your voice is heard.\n\nGoing forward, I want us to ",
+        ", so that we shape our collaboration in a way that feels supportive and fair.\n\nWe will take the next steps ",
+        ", with openness and trust."
+      ],
+      "options": [
+        "participate in this process together",
+        "hear and value your input",
+        "side by side",
+        "truly matter to this team"
+      ],
+      "correctOrder": [
+        "hear and value your input",
+        "truly matter to this team",
+        "participate in this process together",
+        "side by side"
+      ],
+      "feedback": {
+        "wrong": "Some words are not in the right place. Try again!",
+        "correct": "Perfect! You've composed a thoughtful, trust-building response."
+      },
+      "answerOverlay": "The correct order is: [1] hear and value your input, [2] truly matter to this team, [3] participate in this process together, [4] side by side",
+      "resetButton": "Reset",
+      "checkButton": "Submit"
+    },
+    "singleChoice2": {
+      "title": "Big Decisions",
+      "instructions": "Choose the best answer.",
+      "question": "Considering all the pros and cons, make the decision regarding the mode of the new teamwork planning tool.",
+      "options": {
+        "a": "Choose Limited-visibility mode",
+        "b": "Choose Shared-visibility mode"
+      },
+      "hint": "While Limited-visibility has its advantages, its downsides outweigh them, making the Shared mode more likely to benefit your team.",
+      "feedback": {
+        "wrong": "Are you sure? Consider the impact on team trust and transparency.",
+        "correct": "Great choice! Shared-visibility aligns with trust and transparency."
+      },
+      "answerOverlay": "The correct answer is: Choose Shared-visibility mode"
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Click on Kate to start the orientation meeting.",
+    "talkToKate1": "Click on Kate to begin.",
+    "findPhone": "You can feel the buzz of your phone in your bag. Look for your bag near the chairs.",
+    "readEmail": "Read the email on your phone.",
+    "talkToKate2": "Talk to Kate again - she's waiting for you.",
+    "goToWhiteboard": "Click on the whiteboard as Kate suggested.",
+    "puzzle1Matching": "Match each sentence beginning with the ending that best describes a trust-building principle.",
+    "puzzle1Complete": "Kate wants to talk to you. Click on her.",
+    "kateStory": "Kate seems nervous. Click on her to listen.",
+    "readPaper": "You notice a paper on the table. Click the table to read it.",
+    "puzzle3FillGap": "Use the word bank to fill in the blanks in the correct order to complete your response to Kate.",
+    "puzzle3Complete": "Hiroshi wants to speak with you. Click on him.",
+    "clickLaptop": "Click on the laptop to make your decision.",
+    "readStickyNote": "Read the sticky note on the laptop screen.",
+    "reveal": "Hiroshi has something to tell you. Click on him.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "I see that Kate and Hiroshi have successfully completed the first task I have delegated to them as a Team Leader… which was to gather in the HR office. Anyway, now it's my turn to get my job done well too. Good luck to me…",
+    "findPhone": "You can feel the buzz of your phone in your bag, notifying you about the e-mail from Kate. Take a look inside your bag and look for your white phone.",
+    "emailRead": "Well done! You have just discovered the essentials that Kate wanted to share with you! You should go talk to her now.",
+    "goToWhiteboard": "Let's take a look at the whiteboard and complete the exercise.",
+    "reactToStory": "As the pause in Kate's speech gets longer, you have a feeling that it's the moment for you to react.",
+    "noticePaper": "Even though you feel that you already know what to say to Kate, you suddenly notice a paper on the table, titled 'The Power of Listening'. You should read it first.",
+    "paperRead": "Empowered with newly gained insights, and guided by your empathy and leadership skills, you start composing your reply to Kate…",
+    "clickLaptop": "Hiroshi turns the laptop towards you. You notice two big buttons and a yellow digital sticky note on the desktop. Read the sticky note before deciding.",
+    "stickyNoteRead": "You notice two quotes, probably Hiroshi's favourites. You can feel your growing confidence in one of the solutions…",
+    "talkToKateAgain": "Kate looks like she has more to say. Click on her again to hear her out.",
+    "talkToHiroshi": "Now talk to Hiroshi — he was watching you the whole time and seems to want a word."
+  },
+  "items": {
+    "phone": {
+      "inventoryTitle": "Trust Building 101",
+      "popupTitle": "Trust Building 101",
+      "popupContent": [
+        "Communicate clearly - say the what and the why.",
+        "Listen first - people trust when they feel heard.",
+        "Set shared goals - so everyone knows where the team is going.",
+        "Empower people - give space for ideas and ownership.",
+        "Be predictable - clear processes build reliability.",
+        "Give recognition - feedback enhances motivation and trust.",
+        "Be transparent in change - honesty reduces fear.",
+        "Lead by example - consistency builds credibility."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "The Power of Listening",
+      "popupTitle": "The Power of Listening",
+      "popupContent": [
+        "1. Acknowledge their experience — Show that you heard what they said. Validate the courage it took to share it.",
+        "2. Ask instead of assuming — Invite them to explain what they need. Understanding builds clarity.",
+        "3. Respond with partnership — Not promises. Not decisions. A shared next step."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Sticky Note",
+      "popupTitle": "Sticky Note",
+      "popupContent": [
+        "\"When everyone sees the same picture, the team can move together.\"",
+        "\"People who can't see the process, stop trusting the outcome.\""
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have proven yourself to not only be a compassionate, empathetic and trust-worthy person, but also a good Team Leader who can trust their own team members. You have successfully acquired the skill of Trust Building!",
+    "buttonText": "Exit the Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

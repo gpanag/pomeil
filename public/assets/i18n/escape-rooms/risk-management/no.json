@@ -1,0 +1,183 @@
+{
+  "loading": "Laster Risikostyring...",
+  "intro": {
+    "title": "Risikostyring",
+    "paragraphs": [
+      "Du går gjennom en dør og leter etter toalettet, men havner i stedet i et svakt opplyst vaskerom.",
+      "Betonggulv, rotete hyller og en svak summing fra en defekt elektrisk kabel møter deg. Dette stedet er en ulykke som venter på å skje.",
+      "Oppgaven din: identifiser alle risikoer i rommet, og vurder dem deretter med en skikkelig risikomatrise. La oss begynne!"
+    ],
+    "buttonText": "Gå inn i vaskerommet"
+  },
+  "dialogues": {
+    "enterRoom": "Vent litt… Dette er ikke toalettet.",
+    "realizeCloset": "Dette må være vaskerommet.",
+    "unsafeRoom": "Dette er det mest utrygge rommet jeg noen gang har sett!",
+    "zoomCable": "Se på den frynsete kabelen… det spruter gnister!",
+    "zoomBoxes": "De boksene er stablet altfor høyt… de heller!",
+    "zoomPuddle": "Det ligger en sølepytt på gulvet. Noen kan skli!",
+    "uncoverRisks": "Bedre at jeg avdekker alle risikoer før noen blir skadet!",
+    "allRisksFound": "Jeg har identifisert alle risikoene i rommet! Nå må jeg vurdere hver enkelt skikkelig. La meg gå til tavlen.",
+    "startAssessment": "På tide å vurdere hver risiko ut fra sannsynlighet og konsekvens. La meg tenke nøye gjennom hver av dem.",
+    "assessmentComplete": "Jeg har fullført risikovurderingen! La meg se gjennom arbeidet mitt.",
+    "congratulations": "Strålende jobb! Risikovurderingen er fullført. Dette rommet er ikke lenger et mysterium — hver risiko er identifisert og vurdert. På tide å komme seg ut herfra!"
+  },
+  "risks": {
+    "cable": {
+      "name": "Frynset elektrisk kabel",
+      "icon": "flash_on",
+      "thought": "Den kabelen er frynset og gnistrer! Den kan starte brann eller gi noen elektrisk støt.",
+      "description": "En frynset elektrisk kabel med synlige gnister, som utgjør brann- og strømfare."
+    },
+    "extinguisher": {
+      "name": "Blokkert brannslukker",
+      "icon": "local_fire_department",
+      "thought": "Brannslukkeren er blokkert av stigen. Den må alltid være tilgjengelig i nødstilfeller.",
+      "description": "En brannslukker blokkert av en stige, som gjør den utilgjengelig i en nødssituasjon."
+    },
+    "ladder": {
+      "name": "Ustabil stige",
+      "icon": "warning",
+      "thought": "Den stigen ser ustabil ut. Noen kan falle hvis de prøver å klatre opp.",
+      "description": "En ustabil stige som lener seg mot veggen, fare for fall."
+    },
+    "boxes": {
+      "name": "Ustabil eskestabel",
+      "icon": "inventory_2",
+      "thought": "De boksene er stablet for høyt og heller! De kan velte og skade noen.",
+      "description": "En høy, hellende eskestabel som kan velte."
+    },
+    "puddle": {
+      "name": "Våt sølepytt på gulvet",
+      "icon": "water_drop",
+      "thought": "Den sølepytten er en sklifare! Noen kan lett miste fotfestet.",
+      "description": "En våt sølepytt på gulvet som skaper sklifare."
+    },
+    "chemicals_unlabeled": {
+      "name": "Umerkede kjemikalier",
+      "icon": "science",
+      "thought": "Disse kjemikalieflaskene har ingen merking. Uten å vite hva som er inni, kan ingen håndtere dem trygt.",
+      "description": "Kjemikalieflasker uten ordentlige etiketter, som hindrer trygg håndtering."
+    },
+    "chemicals_sunlight": {
+      "name": "Kjemikalier i direkte sollys",
+      "icon": "wb_sunny",
+      "thought": "De kjemikaliene står i direkte sollys! Kjemikalier skal aldri lagres der sollyset når dem — det kan utløse farlige reaksjoner.",
+      "description": "Kjemikalieflasker lagret i direkte sollys, med risiko for forringelse eller farlige reaksjoner."
+    },
+    "chemical_edge": {
+      "name": "Åpen kjemikalieflaske på hyllekanten",
+      "icon": "report_problem",
+      "thought": "Den åpne kjemikalieflasken står helt på kanten av hyllen. Den kan velte og søle når som helst!",
+      "description": "En åpen kjemikalieflaske usikkert plassert på kanten av en hylle."
+    },
+    "sandwich": {
+      "name": "Smørbrød / fare for skadedyr",
+      "icon": "pest_control",
+      "thought": "Det ligger et smørbrød igjen på pulten! Mat som ligger sånn vil tiltrekke skadedyr — jeg ser allerede maur i nærheten.",
+      "description": "Et eksponert smørbrød på pulten som tiltrekker skadedyr til arbeidsplassen."
+    },
+    "bucket": {
+      "name": "Uhygienisk vaskebøtte",
+      "icon": "cleaning_services",
+      "thought": "Den vaskebøtta ser ekkel ut. Bakterier vokser fort i stillestående, skittent vann — dette er en helsefare.",
+      "description": "En skitten vaskebøtte med stillestående vann, der bakterier formerer seg."
+    },
+    "gloves": {
+      "name": "Skadede vernehansker",
+      "icon": "back_hand",
+      "thought": "Disse vernehanskene er revet og skadet. De beskytter kanskje ikke lenger mot kjemikalier eller skarpe gjenstander.",
+      "description": "Slitte og skadede vernehansker som ikke lenger gir tilstrekkelig beskyttelse."
+    }
+  },
+  "redHerrings": {
+    "labels": {
+      "thought": "Etikettene er litt falmet, men jeg kan fortsatt se hva det står. Egentlig ingen risiko."
+    },
+    "fragile_box": {
+      "thought": "Denne esken er merket som skjør, men er lukket og trygt lagret på hyllen. Det er greit."
+    },
+    "taped_cable": {
+      "thought": "Denne kabelen er teipet fast til gulvet. Bra — den er ordentlig festet, så ingen snubler."
+    },
+    "door_sign": {
+      "thought": "Døra har et advarselsskilt på seg. Det er faktisk et godt sikkerhetstiltak — situasjonen er under kontroll."
+    },
+    "chair": {
+      "thought": "Stolen er litt trukket ut fra pulten. Egentlig ingen fare."
+    }
+  },
+  "riskAssessment": {
+    "title": "Risikomatrise",
+    "instructions": "For hver identifisert risiko, vurder Sannsynlighet (1-5) og Konsekvens (1-5). Risikopoengsummen beregnes automatisk.",
+    "likelihoodLabel": "Sannsynlighet",
+    "impactLabel": "Konsekvens",
+    "riskScoreLabel": "Risikopoeng",
+    "likelihoodTooltip": "Hvor sannsynlig er det at denne faren oppstår? 1 = Svært usannsynlig, 2 = Usannsynlig, 3 = Mulig, 4 = Sannsynlig, 5 = Svært sannsynlig",
+    "impactTooltip": "Hvor alvorlige ville konsekvensene være? 1 = Ubetydelig, 2 = Mindre, 3 = Moderat, 4 = Stor, 5 = Katastrofal",
+    "riskScoreTooltip": "Risikopoeng = Sannsynlighet × Konsekvens. Høyere poeng betyr høyere prioritet.",
+    "submitButton": "Send inn vurdering",
+    "nextRisk": "Neste risiko",
+    "prevRisk": "Forrige risiko",
+    "riskCounter": "Risiko {current} av {total}",
+    "selectValue": "Velg"
+  },
+  "review": {
+    "title": "Gjennomgang av risikovurdering",
+    "correctSection": "Riktig vurderte risikoer",
+    "incorrectSection": "Risikoer som krever ny vurdering",
+    "likelihoodTooHigh": "Sannsynlighet vurdert for høyt",
+    "likelihoodTooLow": "Sannsynlighet vurdert for lavt",
+    "impactTooHigh": "Konsekvens vurdert for høyt",
+    "impactTooLow": "Konsekvens vurdert for lavt",
+    "generalFeedbackHigh": "Du hadde tendens til å vurdere risikoene høyere enn forventet. Husk at ikke alle farer er like sannsynlige eller alvorlige.",
+    "generalFeedbackLow": "Du hadde tendens til å undervurdere risikoer. I arbeidssikkerhet er det viktig å ta selv moderate farer på alvor.",
+    "perfectScore": "Strålende jobb! Alle risikoer ble vurdert innenfor akseptable rammer.",
+    "goodScore": "Bra jobbet! De fleste vurderingene dine traff blink.",
+    "endButton": "Avslutt risikovurdering"
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Du har identifisert alle farer på arbeidsplassen og fullført en grundig risikovurdering. Du har vist sterke ferdigheter i risikostyring — evnen til å oppdage farer og vurdere dem systematisk er avgjørende på enhver arbeidsplass!",
+    "buttonText": "Forlat rommet"
+  },
+  "hints": {
+    "intro": "Se nøye rundt i rommet. Klikk på objekter som ser farlige ut eller virker malplasserte.",
+    "identifying": "Det er fortsatt risikoer å finne. Se etter elektriske farer, problemer med kjemikalielagring, strukturelle farer og hygieneproblemer.",
+    "assessment": "Vurder sannsynligheten og konsekvensen av hver risiko. Tenk på hvor ofte dette kan skje og hvor alvorlige konsekvensene ville være.",
+    "review": "Se gjennom vurderingsresultatene dine og klikk «Avslutt risikovurdering» når du er klar.",
+    "allRisksFound": "Du har funnet alle risikoene. Klikk på tavlen for å starte risikovurderingen.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se rundt i rommet etter potensielle farer."
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "risksFound": "Risikoer funnet",
+    "of": "av",
+    "clickToInspect": "Klikk på objekter for å undersøke dem",
+    "notARisk": "Ikke en risiko",
+    "riskIdentified": "Risiko identifisert!",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

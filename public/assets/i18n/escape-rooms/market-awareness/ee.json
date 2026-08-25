@@ -1,0 +1,190 @@
+{
+  "loading": "Laadin Turuteadlikkust...",
+  "intro": {
+    "title": "Turuteadlikkus",
+    "paragraphs": [
+      "Sinu unistuseks on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind palgati just suurde rahvusvahelisse ettevõttesse, kus töötavad koos eri kultuuridest, taustadest ja ametitest pärit inimesed.",
+      "Täna sisened Turundusosakonda, kus meeskond töötab uue kampaania kallal. Elena Vasquez, turundusdirektor, seisab keskse laua juures. See on ideaalne hetk Turuteadlikkusest õppimiseks."
+    ],
+    "buttonText": "Sisene Turundusosakonda"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena Vasquez",
+      "dialogues": {
+        "greet": "Hola! Tere tulemast Turundusosakonda. Kui soovid, et su äri kasvaks, pead omandama Turuteadlikkuse.",
+        "explainMarket": "See tähendab mõista, kes on sinu kliendid ja mida teevad sinu konkurendid. Alustuseks olen jätnud sihtgrupi persoona kaardi siia ruumi kuhugi. See kirjeldab meie ideaalse kliendi profiili.",
+        "findCard": "Vaata ringi. Alusta keskse laua kontrollimisest.",
+        "cardFound": "Suurepärane! Sa leidsid selle.",
+        "cardFoundExplain": "Pea meeles: Sa ei saa müüa „kõigile“. Pead täpselt teadma, kes vajab sinu toodet. Testime sinu teadmisi.",
+        "quiz1Done": "Tubli töö! Nüüd, et olla tõeliselt turuteadlik, pead vaatama suuremat pilti SWOT-analüüsi abil.",
+        "findSwot": "Trükkisin spikri, aga ma arvan, et David laenas selle. Vaata tema laua juurest.",
+        "swotFound": "Sul on spikker. SWOT on sinu parim sõber strateegilises planeerimises. Vaatame, kas oskad seda rakendada.",
+        "finalWords": "Bravissimo! Nüüd mõistad Turuteadlikkuse põhitõdesid.\n\nSa tunned oma klienti, jälgid konkurente ja analüüsid olukorda enne tegutsemist. Oled valmis turgu vallutama!",
+        "goodbye": "Edu!",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Otsi edasi kontorist vihjeid."
+      }
+    },
+    "david": {
+      "name": "David Morel",
+      "dialogues": {
+        "busy": "Bonjour! Lihtsalt planeerin järgmise nädala postitusi. Kas oled juba Elenaga rääkinud?",
+        "default": "Töötan endiselt sotsiaalmeediaga... räägi Elenaga."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Turundusterminid – sobita määratlused",
+      "instructions": "Sobita iga turundustermin selle õige määratlusega.",
+      "columnA": {
+        "heading": "Terminid",
+        "items": {
+          "1": "Sihtgrupp",
+          "2": "Konkurentide analüüs",
+          "3": "USP (Unikaalne müügipakkumine)",
+          "4": "Turutrend"
+        }
+      },
+      "columnB": {
+        "heading": "Määratlused",
+        "items": {
+          "A": "See, mis muudab sinu toote teistest erinevaks ja paremaks.",
+          "B": "Konkreetne grupp inimesi, kes kõige tõenäolisemalt sinu toodet ostavad.",
+          "C": "Teiste ettevõtete uurimine, et leida nende tugevused ja nõrkused.",
+          "D": "Üldine suund, kuhu turg muutub."
+        }
+      },
+      "hint": "Mõtle, kes ostab (Sihtgrupp), kes konkureerib (Analüüs), mis teeb sind eriliseks (USP) ja kuhu turg läheb (Trend).",
+      "feedback": {
+        "wrong": "See pole õige sobitus. Mõtle, kes ostab (Sihtgrupp), kes konkureerib (Analüüs), mis teeb sind eriliseks (USP) ja kuhu turg läheb (Trend).",
+        "allCorrect": "Tubli! Sobitasid kõik turundusterminid õigesti."
+      },
+      "answerOverlay": "Õiged sobitused on:\n1. Sihtgrupp → Konkreetne grupp inimesi, kes kõige tõenäolisemalt sinu toodet ostavad.\n2. Konkurentide analüüs → Teiste ettevõtete uurimine, et leida nende tugevused ja nõrkused.\n3. USP → See, mis muudab sinu toote teistest erinevaks ja paremaks.\n4. Turutrend → Üldine suund, kuhu turg muutub."
+    },
+    "singleChoice": {
+      "title": "SWOT-analüüs – tuvasta element",
+      "instructions": "Vali õige SWOT-element.",
+      "question": "Sa avad kohviku. Äkki kehtestatakse uus maks imporditud kohviubadele, mis suurendab sinu kulusid. Milline osa SWOT-st see on?",
+      "options": {
+        "a": "Tugevus",
+        "b": "Nõrkus",
+        "c": "Võimalus",
+        "d": "Oht"
+      },
+      "hint": "Kas see on midagi sisemist, mida saad kontrollida, või väline tegur (näiteks seadus), mis võib su äri kahjustada?",
+      "feedback": {
+        "wrong": "See pole õige. Kas see on midagi sisemist, mida saad kontrollida, või väline tegur (näiteks seadus), mis võib su äri kahjustada?",
+        "correct": "Õige! Uus maks on väline oht, mis võib su äri kahjustada."
+      },
+      "answerOverlay": "Õige vastus on: d) Oht — Uus maks imporditud kohviubadele on väline tegur, mis võib su äri kahjustada."
+    },
+    "sequenceOrder": {
+      "title": "Turu-uuringu sammud",
+      "instructions": "Pane lihtsa turu-uuringu läbiviimise sammud õigesse järjekorda.",
+      "items": [
+        "Analüüsi andmeid, et leida mustreid.",
+        "Defineeri probleem või eesmärk (nt „Miks müük langeb?“).",
+        "Kogu andmeid (küsitlused, intervjuud, konkurentide jälgimine).",
+        "Tee otsus tulemuste põhjal."
+      ],
+      "correctOrder": [
+        "Defineeri probleem või eesmärk (nt „Miks müük langeb?“).",
+        "Kogu andmeid (küsitlused, intervjuud, konkurentide jälgimine).",
+        "Analüüsi andmeid, et leida mustreid.",
+        "Tee otsus tulemuste põhjal."
+      ],
+      "hints": [
+        "Esiteks pead teadma, MIDA otsid (Defineeri).",
+        "Siis lähed välja ja saad teabe (Kogu).",
+        "Järgmiseks loed ja mõistad seda, mida leidsid (Analüüsi).",
+        "Lõpuks tegutsed selle põhjal (Otsusta)."
+      ],
+      "feedback": {
+        "wrong": "See pole õige järjekord. Pea meeles: Defineeri, Kogu, Analüüsi, siis Otsusta.",
+        "correct": "Suurepärane! Panid turu-uuringu sammud õigesse järjekorda."
+      },
+      "answerOverlay": "Õige järjekord on:\n1. Defineeri probleem või eesmärk.\n2. Kogu andmeid (küsitlused, intervjuud, konkurentide jälgimine).\n3. Analüüsi andmeid, et leida mustreid.\n4. Tee otsus tulemuste põhjal."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    }
+  },
+  "hints": {
+    "intro": "Klõpsa Elenal keskse laua juures, et alustada.",
+    "talkToElena": "Klõpsa Elenal, et alustada.",
+    "findCard": "Kontrolli keskset lauda — Persoona kaart peaks seal olema.",
+    "talkToElena2": "Mine Elena juurde tagasi leitud kaardiga.",
+    "findSwot": "Elena mainis Davidi lauda. Vaata SWOT-paberit tema laua juurest.",
+    "talkToElena3": "Mine Elena juurde tagasi SWOT-spikriga.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata turunduskontoris vihjeid."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda Turundusosakonda. Diagrammid ja kampaaniate makettid on seintele kinnitatud. Elena Vasquez, turundusdirektor, seisab keskse laua juures ja vaatab andmeid. David Morel kirjutab oma laua taga lähedal.",
+    "clickWhiteboard": "Suurepärased strateegiad tahvlil, kuid mitte konkreetne kaart. Kontrolli lauda.",
+    "clickDavid": "David on tööga hõivatud. Proovi kõigepealt mujalt vaadata.",
+    "clickWindow": "Vaade on suurepärane — siit on näha konkurendi reklaamtahvel. Huvitav! Aga ese, mida vajad, on toas.",
+    "foundCard": "Sa leidsid sihtgrupi Persoona kaardi keskselt laualt!",
+    "cardRead": "Tubli töö! Mine Elena juurde tagasi.",
+    "clickDavidDeskWrong": "David on keskendunud oma ekraanidele. Otsi paberit tema laua servast.",
+    "foundSwot": "Näed paberit laua serval.",
+    "swotRead": "Suurepärane! Mine Elena juurde tagasi."
+  },
+  "items": {
+    "personaCard": {
+      "popupTitle": "SIHTGRUPI PROFIIL",
+      "popupContent": [
+        "Demograafia - Kes nad on? (Vanus, asukoht, sugu, sissetulek).",
+        "Psühhograafia - Mis neile meeldib? (Huvid, väärtused, elustiil).",
+        "Valupunktid - Mis probleeme neil on, mida SINA saad lahendada?",
+        "Ostukäitumine - Kuidas nad eelistavad ostelda? (Veebis, poes)."
+      ],
+      "inventoryTitle": "Persoona kaart"
+    },
+    "swotPaper": {
+      "popupTitle": "SWOT-ANALÜÜSI SPIKKER",
+      "popupContent": [
+        "Tugevused (Sisemised) - Mida sinu äri teeb hästi?",
+        "Nõrkused (Sisemised) - Kus pead end parandama?",
+        "Võimalused (Välised) - Milliseid turutrende saad kasutada?",
+        "Ohud (Välised) - Millised konkurendid või regulatsioonid võivad sind kahjustada?"
+      ],
+      "inventoryTitle": "SWOT-paber"
+    }
+  },
+  "completion": {
+    "title": "Õnnitlused!",
+    "message": "Lõpetasid Turuteadlikkuse oskuse! Sa tunned oma klienti, jälgid konkurente ja analüüsid olukorda enne tegutsemist. Oled valmis turgu vallutama!",
+    "buttonText": "Lahku Turundusosakonnast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

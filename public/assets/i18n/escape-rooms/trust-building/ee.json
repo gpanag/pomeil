@@ -1,0 +1,230 @@
+{
+  "loading": "Usalduse loomise laadimine...",
+  "intro": {
+    "title": "Usalduse loomine",
+    "paragraphs": [
+      "Sa oled IT-ettevõtte töötaja, kes just edutati meeskonnajuhi positsioonile. Põnevil kõikide uute ülesannete ja kogemuste üle, ootad sa kannatamatult oma meeskonnaga kohtumist - esimest korda nende juhina.",
+      "Sul on selle muutuse suhtes segased tunded. Sa oled innukas seda uut rolli vastu võtma, kindlalt uskudes, et sul on vajalikud teadmised ja oskused. Teisalt pole sa kindel, kuidas sa hakkad sotsiaalsete suhtluste ja vastastikusele usaldusele, ausamale ja avatusele põhineva terve suhte hoidmise alal hakkama saama.",
+      "Sa siseneb HR-kontorisse - kohta, kus palusid oma meeskonnal koguneda, et viia läbi omamoodi orienteerumiskohtumine…"
+    ],
+    "buttonText": "Sisene HR-kontorisse"
+  },
+  "characters": {
+    "kate": {
+      "name": "Kate",
+      "dialogues": {
+        "greet": "Tere! Me oleme sind oodanud! Mina ja Hiroshi oleme tõesti põnevil, et just sina võtad meie väikese meeskonna juhtohjad. Oleme kindlad, et saad oma uues positsioonis erakordselt hästi hakkama. Olen kindel, et sul on meile palju öelda, kuid rääkisin Hiroshiga ja kasutades võimalust, sooviksime paluda sul osaleda mingit sorti ühises harjutuses. Et tagada, et meie meeskonnatöö läheks nii sujuvalt kui võimalik. Kas tahaksid meiega liituda?",
+        "proposeExercise": "Suurepärane! Alustame natuke teooriaga. Saatsin sulle just e-kirja koos tekstifailiga, mis sisaldab põhilist teavet meeskonna sees tõhusa usalduse loomise kohta. Selle sisu on välja töötatud korporatsiooni poolt, kuid arvan, et see tuleb meie puhul kasuks. Palun, tutvu sellega ja anna mulle teada, kui oled valmis edasi minema!",
+        "goToWhiteboard": "Vau! Sul kulus selleks vaid hetk. Kas käisid kiirlugemise kursusel? Vean kihla, et käisid. Igatahes, oleme valmis edasi liikuma ja jõudma harjutuse põhiosa juurde. Vaatame tahvlit.",
+        "puzzle1Intro": "Mina ja Hiroshi valmistasime sulle ette selle lühikese sobitamise ülesande, et kiiresti kontrollida sinu arusaamist usalduse loomise protsessi põhilistest ideedest. Teeme ära!",
+        "puzzle1Complete": "Muidugi lõpetasid sa meie harjutuse suurepäraselt! Ma ei kahelnud sinus hetkekski. Olgu, kui see on tehtud, tahtsin tegelikult sinuga millestki rääkida… Mõtlesin, et see oleks hea hetk, ja loodan, et sul pole midagi vastu, aga…",
+        "personalStory": "Aitäh. Teadsin, et saad minust aru. Olgu, alustan. Mul olid konkreetsed, ebameeldivad kogemused meie eelmise meeskonnajuhiga. Ta polnud üldiselt halb, ta oli korralik juht, kuid mingil põhjusel lükkas ta alati minu ideed tagasi. Loomulikult ütles ta, et kaalub seda, et mõtleb selle peale. Aga lõpuks ei võetud ühtki minu ettepanekut kunagi arvesse. Aja jooksul lakkasin ma neid jagamast. See, mida ma püüan öelda, on… Ma tahan sind usaldada, et sinu juhtimisel kuulatakse minu ideid. See tähendaks mulle nii palju.",
+        "puzzle3Thanks": "Tänan väga. See on kõik, mida lootsin kuulda, ja isegi rohkem. Sa oled juba mu lemmik meeskonnajuht! Luban, et annan alati endast parima meeskonna heaks, et minu panus oleks väärtuslik ja minu kaastöö viiks meid edasi. Tänan veel kord väga.",
+        "finalWords": "See on olnud üsna päev, eks? Nagu Hiroshi ütles, sinust saab täiuslik meeskonnajuht, olen selles nüüd täiesti kindel. Ja… tead, see lugu, mida ma varem jagasin, ei olnud osa korporatsiooni testist, see oli minu tõeline kogemus ja mure. Ja minu jaoks on see veelgi väärtuslikum kui testi tulemus ise. Tänan veel kord, et tõestasid end usaldusväärse inimesena, valmis usaldama oma meeskonnaliikmeid meie ühisel teekonnal! Suurepärane töö!",
+        "completion": "Me ei jõua ära oodata, et sinuga koos töötama hakata! Koolitus on lõpetatud!",
+        "default": "Olen siin, kui mind vajad. Kui oled unustanud, mida teha, klõpsa vihjenupul (lambipirnil) ülal vasakul."
+      }
+    },
+    "hiroshi": {
+      "name": "Hiroshi",
+      "dialogues": {
+        "puzzle3Complete": "Sinu lähenemine ja tegevused seni tähendavad meile tõesti palju. Meil veab, et sa oled meie meeskonnajuht. Olen kindel, et meie koostöö läheb sujuvalt. Ah jaa, koostööst rääkides… Eile tutvustas korporatsioon täiesti uut meeskonnatöö planeerimise tööriista. See võib töötada kahes režiimis – Jagatud nähtavuse režiim ja Piiratud nähtavuse režiim. Esimene võimaldab kõikidel meeskonnaliikmetel näha ülesandeid, töökoormust ja määratud ressursse. Teine kuvab kogu selle teabe ainult meeskonnajuhile. Mõlemal on plussid ja miinused. Palun vali sülearvutil valitud variant, kui oled valmis.",
+        "reveal": "Õige. Ühtki uue tööriista juurutust polnud kunagi. See oli kõik vaid test. Aga meil oli vaja kindel olla. Noh, korporatsioonil oli vaja – see oli nende idee. Ja jah, me natuke tõmbasime sind alt, kuid me oleme tööstuses juhtiv IT-ettevõte ja me ei saa endale lubada valede inimeste määramist nii nõudlikele ametikohtadele. Sellega öeldes, sa oled läbinud kõik meie testid! Me ei jõua ära oodata, et sinu juhtimise all tööd alustada! Tere tulemast meeskonda!",
+        "completion": "Tere tulemast meeskonda, juht!",
+        "default": "Olen siin, valmis siis, kui sa oled."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Usalduse loomine - Põhitõdede mõistmise kontroll",
+      "instructions": "Loo loogilisi lauseid, sobitades iga algust selle õige lõpuga.",
+      "columnA": {
+        "heading": "Lausete algused",
+        "items": {
+          "1": "Ühised eesmärgid aitavad meeskonnal…",
+          "2": "Kui juht kuulab…",
+          "3": "Inimeste võimustamine aitab neil…",
+          "4": "Läbipaistvus muutuste ajal võimaldab inimestel…",
+          "5": "Etteaimatavad protsessid teevad lihtsamaks…",
+          "6": "Tunnustus aitab inimestel…",
+          "7": "Juht, kes juhib eeskuju andes, inspireerib teisi…"
+        }
+      },
+      "columnB": {
+        "heading": "Lausete lõpud",
+        "items": {
+          "A": "…ideid avalikult jagada.",
+          "B": "…tegutsema sarnase ausameelsusega.",
+          "C": "…rahulikuks jääma ja kohanema.",
+          "D": "…vastutust võtma.",
+          "E": "…tõhusalt koostööd tegema.",
+          "F": "…vältima arusaamatusi.",
+          "G": "…motiveerituna püsima ja end parandama."
+        }
+      },
+      "feedback": {
+        "wrong": "See pole päris õige. Proovi uuesti!",
+        "allCorrect": "Suurepärane töö! Sa sobitasid kõik laused õigesti!",
+        "revealedComplete": "Siin on õiged sobitused — vaata need üle ja jätkame."
+      },
+      "answerOverlay": "Siin on õiged sobitused: 1→E, 2→A, 3→D, 4→C, 5→F, 6→G, 7→B"
+    },
+    "singleChoice1": {
+      "title": "Kate aitamine",
+      "instructions": "Vali parim vastus. Ainult üks on õige.",
+      "question": "Konteksti põhjal ja sinu püüdluse järgi luua oma meeskonnaga terve, usaldusele põhinev suhe, mida peaksid Katele praegu ütlema?",
+      "options": {
+        "a": "Sa tundud ebakindel. Võib-olla peaksime jääma esialgu päevakorra juurde ja rääkima sellest teine kord?",
+        "b": "Kõik on hästi, Kate. Olen kindel, et see pole midagi tõsist. Liigume edasi.",
+        "c": "Kate, kui miski sind häirib, olen siin. Palun, jätka - ma kuulan.",
+        "d": "Enne kui jätkad, pean teadma, kuidas see meie tööd mõjutab. Kas saaksid olla otsekohesem?"
+      },
+      "hint": "Püüa olla õrnem ja rahustavam - Kate hindab seda.",
+      "feedback": {
+        "wrong": "See ei pruugi olla parim vastus usalduse loomiseks. Püüa olla õrnem ja rahustavam.",
+        "correct": "Suurepärane valik! See on täpselt selline empaatiline vastus, mis ehitab usaldust."
+      },
+      "answerOverlay": "Õige vastus on: \"Kate, kui miski sind häirib, olen siin. Palun, jätka - ma kuulan.\""
+    },
+    "fillGap": {
+      "title": "Esimesed sammud",
+      "instructions": "Täienda lauseid puuduvate sõnadega ja koosta oma vastus Katele.",
+      "sentenceParts": [
+        "Kate, aitäh, et mulle sellest rääkisid. Tahan, et sa teaksid, et ma ",
+        " ja et tunnustan, et selle välja toomiseks oli vaja palju julgust.\n\nSinu ideed ",
+        " ja olen pühendunud tagama, et sinu hääl oleks kuuldav.\n\nEdaspidi tahan, et me ",
+        ", et kujundaksime oma koostöö viisil, mis tundub toetav ja õiglane.\n\nMe astume järgmised sammud ",
+        ", avatuse ja usaldusega."
+      ],
+      "options": [
+        "osaleksime selles protsessis koos",
+        "kuulen ja väärtustan sinu panust",
+        "kõrvuti",
+        "tõeliselt loevad selle meeskonna jaoks"
+      ],
+      "correctOrder": [
+        "kuulen ja väärtustan sinu panust",
+        "tõeliselt loevad selle meeskonna jaoks",
+        "osaleksime selles protsessis koos",
+        "kõrvuti"
+      ],
+      "feedback": {
+        "wrong": "Mõned sõnad pole õiges kohas. Proovi uuesti!",
+        "correct": "Suurepärane! Sa oled koostanud läbimõeldud, usaldust loova vastuse."
+      },
+      "answerOverlay": "Õige järjestus on: [1] kuulen ja väärtustan sinu panust, [2] tõeliselt loevad selle meeskonna jaoks, [3] osaleksime selles protsessis koos, [4] kõrvuti",
+      "resetButton": "Lähtesta",
+      "checkButton": "Esita"
+    },
+    "singleChoice2": {
+      "title": "Suured otsused",
+      "instructions": "Vali parim vastus.",
+      "question": "Kõiki plusse ja miinuseid kaaludes, tee otsus uue meeskonnatöö planeerimise tööriista režiimi kohta.",
+      "options": {
+        "a": "Vali piiratud nähtavuse režiim",
+        "b": "Vali jagatud nähtavuse režiim"
+      },
+      "hint": "Kuigi piiratud nähtavusel on oma eelised, kaaluvad selle puudused need üles, muutes jagatud režiimi tõenäolisemaks sinu meeskonnale kasuks tulema.",
+      "feedback": {
+        "wrong": "Kas oled kindel? Kaalu mõju meeskonna usaldusele ja läbipaistvusele.",
+        "correct": "Suurepärane valik! Jagatud nähtavus on kooskõlas usalduse ja läbipaistvusega."
+      },
+      "answerOverlay": "Õige vastus on: Vali jagatud nähtavuse režiim"
+    },
+    "answerOverlayTitle": "Vastus paljastatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Klõpsa Katel, et alustada orienteerumiskohtumist.",
+    "talkToKate1": "Klõpsa Katel, et alustada.",
+    "findPhone": "Tunned oma telefoni vibreerivat oma kotis. Otsi oma kotti toolide juurest.",
+    "readEmail": "Loe oma telefonil olevat e-kirja.",
+    "talkToKate2": "Räägi Katega uuesti - ta ootab sind.",
+    "goToWhiteboard": "Klõpsa tahvlil, nagu Kate soovitas.",
+    "puzzle1Matching": "Sobita iga lause algus selle lõpuga, mis kõige paremini kirjeldab usalduse loomise põhimõtet.",
+    "puzzle1Complete": "Kate tahab sinuga rääkida. Klõpsa temal.",
+    "kateStory": "Kate näeb närviline. Klõpsa temal, et kuulata.",
+    "readPaper": "Märkad lauale paberit. Klõpsa lauale, et seda lugeda.",
+    "puzzle3FillGap": "Kasuta sõnapanka, et täita lüngad õiges järjestuses ja koostada oma vastus Katele.",
+    "puzzle3Complete": "Hiroshi tahab sinuga rääkida. Klõpsa temal.",
+    "clickLaptop": "Klõpsa sülearvutil, et oma otsus teha.",
+    "readStickyNote": "Loe sülearvuti ekraanil olevat märkmepaberit.",
+    "reveal": "Hiroshil on sulle midagi öelda. Klõpsa temal.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ruumis ringi vihjete järele."
+  },
+  "systemDialogues": {
+    "selfTalk": "Näen, et Kate ja Hiroshi on edukalt täitnud esimese ülesande, mille olin neile kui meeskonnajuht delegerinud… mis oli HR-kontoris kogunemine. Igatahes, nüüd on minu kord oma tööd hästi teha. Edu mulle…",
+    "findPhone": "Tunned oma telefoni vibreerivat oma kotis, teavitades sind Kate e-kirjast. Vaata oma kotti sisse ja otsi oma valget telefoni.",
+    "emailRead": "Tubli! Sa just avastasid olulised asjad, mida Kate sinuga jagada tahtis! Sa peaksid nüüd minema temaga rääkima.",
+    "goToWhiteboard": "Vaatame tahvlit ja viime harjutuse lõpuni.",
+    "reactToStory": "Kui Kate kõnes paus pikeneb, tunned, et see on hetk, mil sul on aeg reageerida.",
+    "noticePaper": "Kuigi tunned, et tead juba, mida Katele öelda, märkad ootamatult lauale paberit pealkirjaga 'Kuulamise jõud'. Sa peaksid selle kõigepealt läbi lugema.",
+    "paperRead": "Värskelt omandatud teadmistest tugevdatuna ja oma empaatia ja juhtimisoskuste poolt suunatuna, hakkad koostama oma vastust Katele…",
+    "clickLaptop": "Hiroshi pöörab sülearvuti sinu poole. Märkad kahte suurt nuppu ja kollast digitaalset märkmepaberit töölaual. Loe enne otsustamist märkmepaberit.",
+    "stickyNoteRead": "Märkad kahte tsitaati, ilmselt Hiroshi lemmikuid. Tunned oma kasvavat enesekindlust ühe lahenduse suhtes…",
+    "talkToKateAgain": "Kate näeb välja, nagu tahaks veel midagi öelda. Klõpsa temal uuesti, et teda lõpuni kuulata.",
+    "talkToHiroshi": "Räägi nüüd Hiroshiga — ta vaatas sind kogu aja ja näib, et tahab sõnu vahetada."
+  },
+  "items": {
+    "phone": {
+      "inventoryTitle": "Usalduse loomine 101",
+      "popupTitle": "Usalduse loomine 101",
+      "popupContent": [
+        "Suhtle selgelt - ütle mida ja miks.",
+        "Kuula kõigepealt - inimesed usaldavad, kui nad tunnevad, et neid kuulatakse.",
+        "Sea ühised eesmärgid - et kõik teaksid, kuhu meeskond suundub.",
+        "Võimusta inimesi - anna ruumi ideedele ja vastutusele.",
+        "Ole etteaimatav - selged protsessid ehitavad usaldusväärsust.",
+        "Anna tunnustust - tagasiside suurendab motivatsiooni ja usaldust.",
+        "Ole muutuste ajal läbipaistev - ausus vähendab hirmu.",
+        "Juhi eeskujuga - järjekindlus ehitab usaldatavust."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "Kuulamise jõud",
+      "popupTitle": "Kuulamise jõud",
+      "popupContent": [
+        "1. Tunnusta nende kogemust — Näita, et kuulsid, mida nad ütlesid. Kinnita julgust, mida selle jagamiseks oli vaja.",
+        "2. Küsi eeldamise asemel — Kutsu neid selgitama, mida nad vajavad. Mõistmine ehitab selgust.",
+        "3. Vasta partnerlusega — Mitte lubadustega. Mitte otsustega. Ühise järgmise sammuga."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Märkmepaber",
+      "popupTitle": "Märkmepaber",
+      "popupContent": [
+        "\"Kui kõik näevad sama pilti, saab meeskond koos liikuda.\"",
+        "\"Inimesed, kes ei näe protsessi, lakkavad tulemust usaldamast.\""
+      ]
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Sa oled tõestanud, et oled mitte ainult kaastundlik, empaatiline ja usaldusväärne inimene, vaid ka hea meeskonnajuht, kes suudab oma meeskonnaliikmeid usaldada. Sa oled edukalt omandanud Usalduse loomise oskuse!",
+    "buttonText": "Välju ruumist"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

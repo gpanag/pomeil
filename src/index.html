@@ -6,8 +6,13 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Self-hosted fonts (Fraunces, Inter, Spectral, Caveat, Comic Neue, Poppins,
+       Fira Sans, Material Symbols Outlined, Material Icons). Downloaded into
+       public/assets/fonts via download-fonts.mjs so the app never depends on
+       Google's CDN at build or runtime. -->
+  <link href="assets/fonts/fonts.css" rel="stylesheet">
 </head>
-<body>
+<body class="mat-typography">
   <app-root></app-root>
 </body>
 </html>

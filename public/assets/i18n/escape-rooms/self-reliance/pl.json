@@ -1,0 +1,199 @@
+{
+  "loading": "Ładowanie samodzielności...",
+  "intro": {
+    "title": "Samodzielność",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać przedsiębiorcą odnoszącym sukcesy i stworzyć biznes, który łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie jest dla Ciebie doświadczeniem edukacyjnym — wykonując różne zadania, zdobędziesz 30 kompetencji ujętych w Mapie Kompetencji POMEIL, niezbędnych dla każdego przedsiębiorcy.",
+      "Dziś wychodzisz na dachowe miejsce pracy — spokojny taras z panoramicznym widokiem na miasto. Jasne światło dzienne i delikatny wiatr tworzą poczucie wolności i niezależności. To tutaj Amina, specjalistka ds. rozwoju produktu, przychodzi, by pomyśleć w spokoju."
+    ],
+    "buttonText": "Wejdź na dach"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "O! Cześć — witaj w naszym małym dachowym zakątku.\nPrzychodzę tu, gdy potrzebuję uporządkować myśli.\n\nJestem Amina, specjalistka ds. rozwoju produktu.\nUwielbiam to, co robię, ale… wciąż uczę się, jak prowadzić wszystko jak należy.",
+        "stressful": "Dziś był stresujący dzień. Klient otrzymał niewłaściwe zamówienie i wysłał list z reklamacją.\nZamarłam — nie wiedziałam, jak odpowiedzieć.\n\nDavid, nasz menedżer ds. komunikacji cyfrowej, przyszedł tu, żeby pomóc mi to rozwiązać.\nNaprawdę dobrze radzi sobie z zachowaniem spokoju i rozwiązywaniem spraw krok po kroku.",
+        "findStickyNote": "Gdzieś tu, na dachowej kawiarence, jest moja kartka z ważnymi wskazówkami dotyczącymi samodzielności.\nDavid napisał ją dla mnie wcześniej, żebym mogła ćwiczyć samodzielne rozwiązywanie problemów… ale nie pamiętam, gdzie ją zostawiłam.\n\nMożesz mi pomóc jej poszukać?\nSpróbuj najpierw sprawdzić salę konferencyjną za szklanymi drzwiami — mogłam ją zostawić tam na stole.",
+        "stickyNoteFound": "Świetnie, teraz mamy trochę informacji do przemyślenia.\n\nSamodzielność oznacza zaufanie do własnych zdolności i branie odpowiedzialności za swoje działania, zwłaszcza gdy stajemy przed wyzwaniami lub podejmujemy decyzje.\nWymaga ona czegoś więcej niż tylko robienia rzeczy w pojedynkę — wymaga świadomego wysiłku, by zachować spokój, jasno myśleć i podejmować małe niezależne kroki, zamiast czekać, aż inni rozwiążą problem.",
+        "quiz1Intro": "Teraz czas na quiz, wykorzystajmy nasze nowe spostrzeżenia, by go rozwiązać",
+        "quiz1Done": "Wspaniale, teraz jesteśmy o krok bliżej samodzielności",
+        "findPaper": "Spisałam kilka prostych wskazówek, które mają pomóc Ci ćwiczyć samodzielność — rzeczy, dzięki którym trudne chwile stają się łatwiejsze do opanowania. Zanotowałam je na małej kartce… ale teraz ją zgubiłam.\nWidać nawet ja bywam roztargniona, gdy dzień robi się zabiegany.\n\nMożesz szybko rozejrzeć się po dachu?\nJeśli dobrze pamiętam… chyba zostawiłam ją gdzieś koło kubka.\n\nKiedy ją znajdziesz, zrobimy razem krótki quiz o samodzielności.",
+        "paperFound": "Wow, te fakty są proste, ale zaskakująco mocne, gdy się nad nimi zastanowić.\nJeśli jesteś gotowy/a, sądzę, że możemy przejść do następnego zadania. Kontynuujmy.",
+        "puzzle2Intro": "Już prawie!",
+        "finalWords": "To było całkiem odkrycie, prawda?\nWidzę, że zaczynasz coraz wyraźniej korzystać ze swojej samodzielności. Weź spokojny oddech, przemyśl swoje kroki i spójrz na możliwości przed Tobą. Następnie wybierz jedną i ruszaj naprzód. Jeśli coś nie pójdzie idealnie, to nic — nauczysz się po drodze. Po prostu zachowaj spokój, skupienie i zbuduj prosty plan, który możesz realizować.\nMiło było z Tobą porozmawiać. Następnym razem wierzę, że poradzisz sobie sam(a) bez mojej pomocy. Naprawdę świetnie sobie poradziłeś/aś!",
+        "completion": "Drzwi są otwarte! Kliknij na nie, aby kontynuować.",
+        "default": "Szukaj wskazówek wokół dachu."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Pomagam Aminie poradzić sobie z reklamacją klienta. Uczy się sobie z tym radzić sama — to prawdziwa samodzielność. Najpierw porozmawiaj z nią!",
+        "default": "Skup się na Aminie — to ona dziś buduje swoją samodzielność."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Quiz o samodzielności (Prawda lub Fałsz)",
+      "instructions": "Określ, czy każde stwierdzenie jest Prawdą, czy Fałszem.",
+      "questions": [
+        {
+          "text": "Samodzielność to rozwiązywanie problemów poprzez postawienie pierwszego małego kroku samodzielnie, zanim poprosi się o pomoc.",
+          "correct": true,
+          "hint": "Samodzielność rośnie, gdy próbujesz działać jako pierwszy/a, nawet jeśli krok jest mały."
+        },
+        {
+          "text": "Jeśli czekam, aż inni zdecydują za mnie, z czasem staję się bardziej samodzielny/a.",
+          "correct": false,
+          "hint": "Samodzielność buduje się poprzez własne decyzje — nie przez czekanie, aż inni wybiorą za Ciebie."
+        },
+        {
+          "text": "Popełnianie błędów to normalna część stawania się bardziej samodzielnym/ą.",
+          "correct": true,
+          "hint": "Pamiętaj: pewność siebie rośnie, gdy uczysz się na błędach, a nie ich unikasz."
+        },
+        {
+          "text": "Jeśli czuję się niepewnie lub niekomfortowo, powinnam/powinienem unikać samodzielnego rozwiązywania problemu.",
+          "correct": false,
+          "hint": "Rozwój następuje, gdy mierzysz się z dyskomfortem małymi, możliwymi do opanowania działaniami."
+        },
+        {
+          "text": "Jednym z prostych sposobów ćwiczenia samodzielności jest podejmowanie codziennie jednej niezależnej decyzji.",
+          "correct": true,
+          "hint": "Drobne codzienne decyzje budują zaufanie do swoich zdolności do radzenia sobie z większymi sprawami."
+        }
+      ],
+      "feedback": {
+        "wrong": "Nie do końca. Pomyśl jeszcze raz.",
+        "correct": "Świetnie! Rozumiesz podstawy samodzielności."
+      },
+      "answerOverlay": "Poprawne odpowiedzi to:\n1. PRAWDA – Samodzielność rośnie, gdy sam(a) stawiasz pierwszy mały krok.\n2. FAŁSZ – Czekanie, aż inni zdecydują, nie buduje samodzielności.\n3. PRAWDA – Błędy są normalną częścią stawania się samodzielnym/ą.\n4. FAŁSZ – Mierzenie się z dyskomfortem małymi działaniami buduje rozwój.\n5. PRAWDA – Codzienne niezależne wybory budują zaufanie do Twoich zdolności."
+    },
+    "singleChoice": {
+      "title": "Quiz o samodzielności – Wybór jednokrotny",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Gdy stajesz przed problemem w pracy, jaki jest najbardziej samodzielny pierwszy krok?",
+      "options": {
+        "a": "Czekaj, aż ktoś inny powie Ci, co masz zrobić",
+        "b": "Wykonaj jedno małe działanie, które możesz zrobić sam(a)",
+        "c": "Unikaj problemu i miej nadzieję, że rozwiąże się sam",
+        "d": "Zapytaj trzy różne osoby o radę, zanim cokolwiek zaczniesz"
+      },
+      "hint": "Pomyśl, która opcja pokazuje gotowość do podejmowania inicjatywy zamiast polegania na innych.",
+      "feedback": {
+        "wrong": "Pomyśl, która opcja pokazuje gotowość do podejmowania inicjatywy zamiast polegania na innych.",
+        "correct": "Zgadza się! Wykonanie jednego małego działania samodzielnie jest najbardziej samodzielnym pierwszym krokiem."
+      },
+      "answerOverlay": "Poprawna odpowiedź to: Wykonaj jedno małe działanie, które możesz zrobić sam(a)."
+    },
+    "sequenceOrder": {
+      "title": "Quiz o samodzielności – Ułóż w kolejności",
+      "instructions": "Ułóż te działania w odpowiedniej kolejności, aby poradzić sobie z problemem w sposób samodzielny.",
+      "items": [
+        "Wskaż jedną małą część problemu, którą możesz teraz rozwiązać",
+        "Poświęć chwilę, by zachować spokój i nie reagować pochopnie",
+        "Sprawdź fakty lub szczegóły, które już masz",
+        "Wykonaj wybrane małe działanie"
+      ],
+      "correctOrder": [
+        "Poświęć chwilę, by zachować spokój i nie reagować pochopnie",
+        "Sprawdź fakty lub szczegóły, które już masz",
+        "Wskaż jedną małą część problemu, którą możesz teraz rozwiązać",
+        "Wykonaj wybrane małe działanie"
+      ],
+      "hints": [
+        "Krok 1: Najpierw zachowaj spokój.",
+        "Krok 2: Zbierz to, co już wiesz.",
+        "Krok 3: Wybierz wykonalny krok.",
+        "Krok 4: Doprowadź do końca."
+      ],
+      "feedback": {
+        "wrong": "Osoba samodzielna zaczyna od zachowania spokoju, następnie zbiera dostępne informacje. Potem wybiera mały, wykonalny krok i go realizuje.",
+        "correct": "Doskonale! Poradziłeś/aś sobie z sytuacją w samodzielny sposób."
+      },
+      "answerOverlay": "Poprawna kolejność to:\n1. Poświęć chwilę, by zachować spokój i nie reagować pochopnie.\n2. Sprawdź fakty lub szczegóły, które już masz.\n3. Wskaż jedną małą część problemu, którą możesz teraz rozwiązać.\n4. Wykonaj wybrane małe działanie."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Sprawdź kolejność",
+      "resetButton": "Zresetuj"
+    }
+  },
+  "hints": {
+    "intro": "Kliknij Aminę przy stole, aby zacząć.",
+    "talkToAmina": "Kliknij Aminę, aby rozpocząć.",
+    "findStickyNote": "Spróbuj sprawdzić drzwi sali konferencyjnej, roślinę lub stół Aminy.",
+    "talkToDavid": "Wróć do Davida, menedżera ds. komunikacji cyfrowej.",
+    "puzzle1TrueFalse": "Przeczytaj uważnie każde stwierdzenie i zdecyduj, czy jest Prawdą, czy Fałszem.",
+    "findPaper": "David wspomniał, że może być w pobliżu kubka. Sprawdź biurko, drzwi sali konferencyjnej lub kieszeń Davida.",
+    "talkToDavid2": "Wróć do Davida z tym, co znalazłeś/aś.",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po dachu w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz na dachowe miejsce pracy. Jasne światło dzienne i panoramiczny widok na miasto tworzą spokojną atmosferę. Pośrodku stoi mały drewniany stolik z laptopem i papierami. Zauważasz Aminę, specjalistkę ds. rozwoju produktu, siedzącą przy stole z zamyślonym wyrazem twarzy.",
+    "clickDoor": "Pamiętam, że trzymałam ją wcześniej, ale teraz… nigdzie jej nie widzę.",
+    "clickConferenceTable": "Hmm… stół jest pusty.\nWygląda na to, że spisanej notatki tu jednak nie ma.\n\nMoże wypadła z mojego notatnika, kiedy wychodziłam.\nSpróbuj sprawdzić roślinę obok drzwi sali konferencyjnej.",
+    "clickPlant": "Znalazłeś/aś liść… ale żadnej karteczki.\nMusiała upaść gdzie indziej.\n\nSpróbujmy jeszcze jednego miejsca — przy stoliku Aminy, gdzie siedzi.\nMoże znalazła się pod jej laptopem.",
+    "foundStickyNote": "Znalazłeś/aś!\nKarteczka była schowana pod laptopem Aminy.\n\nRzuć okiem na wskazówki — pomogą jej ćwiczyć samodzielność przy obsłudze spraw klientów.",
+    "stickyNoteRead": "Dobra robota! Wróć do menedżera ds. komunikacji cyfrowej Davida.",
+    "clickDesk": "Wygląda na to, że tu jej nie ma. Sprawdźmy jeszcze raz stół konferencyjny. Może się uda.",
+    "clickConferenceDoor2": "Hmm… tu też nic.\nWiesz, to też dobre przypomnienie dla mnie — bycie zorganizowanym to część samodzielności.\nMoże powinnam najpierw sprawdzić własne kieszenie, zanim będziemy szukać dalej.",
+    "foundPaper": "Ach — przepraszam. Cały czas była w mojej kieszeni.\nTak bywa, gdy dzień robi się trochę zbyt zabiegany."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "PRZYPOMNIENIA O SAMODZIELNOŚCI",
+      "popupTitle": "PRZYPOMNIENIA O SAMODZIELNOŚCI",
+      "popupContent": [
+        "Najpierw zatrzymaj się — odpowiadaj z jasnym umysłem",
+        "Podziel problem na jedno małe działanie",
+        "Zadaj sobie dziś jedno pomocne pytanie"
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "JAK OSIĄGNĄĆ SAMODZIELNOŚĆ",
+      "popupTitle": "JAK OSIĄGNĄĆ SAMODZIELNOŚĆ",
+      "popupContent": [
+        "Gdy podejmujesz małe niezależne działanie, Twój mózg uwalnia poczucie postępu, które wzmacnia wiarę we własne możliwości.",
+        "Rozwiązanie nawet prostego problemu samodzielnie obniża stres, ponieważ działanie sygnalizuje mózgowi, że potrafisz radzić sobie z wyzwaniami.",
+        "Korygowanie własnych błędów tworzy mocniejsze ścieżki uczenia się niż poleganie na innych, dzięki czemu samodzielność rośnie przez praktykę.",
+        "Każde wykonane zadanie zwiększa motywację, aktywując układ nagrody w mózgu, co zachęca do dalszego niezależnego podejmowania decyzji.",
+        "Osoby, które codziennie podejmują niezależne wybory, rozwijają jaśniejszy osąd, dzięki czemu z czasem decydują szybciej i pewniej."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Gratulacje! Odblokowałeś/aś moc samodzielności. Ta umiejętność jest niezbędna nie tylko w biznesie, ale i w codziennym życiu. Spróbuj swoich sił w kolejnych modułach. Dziękujemy za udział. Możesz wrócić w dowolnej chwili, jeśli chcesz odświeżyć swoją wiedzę — jesteśmy tu, aby wspierać Twoją naukę.!",
+    "buttonText": "Opuść dach"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

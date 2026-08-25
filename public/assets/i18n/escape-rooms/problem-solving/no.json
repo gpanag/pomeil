@@ -1,0 +1,212 @@
+{
+  "loading": "Laster Problemløsning...",
+  "intro": {
+    "title": "Problemløsning",
+    "paragraphs": [
+      "Du har gått inn i kontorets lagerrom for å hente en ny stiftemaskin. Men Lagersjefen har lagt igjen et notat til deg om et større problem — ting fortsetter å forsvinne her inne.",
+      "Dette rommet handler om et avgjørende aspekt ved problemløsning: å klart definere problemet før du hopper til løsninger. Se deg om, undersøk, og prøv å ikke gjøre den første antakelsen til det endelige svaret.",
+      "Les klistrelappen på døren for å komme i gang. La så rommet fortelle deg hva som virkelig foregår."
+    ],
+    "buttonText": "Gå inn i lagerrommet"
+  },
+  "characters": {
+    "knut": {
+      "name": "Knut",
+      "dialogues": {
+        "step1": "Hei, har du et minutt?",
+        "step2": "Jeg kom bare innom for å hente et nytt tastatur…",
+        "step3": "… men jeg kan ikke finne et eneste tastatur her inne!",
+        "step4": "Ja, jeg fikk beskjed om at vi skulle ha noen på lager.",
+        "step5": "Vel, i hvert fall ser rommet mye bedre ut enn det vanligvis gjør.",
+        "step6": "Kanskje rotet ikke er problemet. Kanskje det er noe helt annet som foregår."
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Klart, hva er det?",
+    "step2": "Ok…",
+    "step3": "Det er rart.",
+    "step4": "Hmm… Jeg er nettopp ferdig med å rydde opp her. Jeg husker ikke å ha sett noen tastaturer.",
+    "step5": "Ja…",
+    "step6": "Det kan være… Jeg antar jeg burde prøve å finne ut av det."
+  },
+  "puzzles": {
+    "stickyNote": {
+      "title": "Et notat fra Lagersjefen",
+      "letter": "Kjære (username)\n\nVi har hatt noen problemer på lageret i det siste. Ting fortsetter å forsvinne. Forleden dag fikk vi en ny forsendelse med stoler, og jeg kan ikke finne dem noe sted!\n\nJeg er ute av kontoret, og dessverre hadde jeg ikke tid til å se nærmere på det før jeg dro…\n\nKan du ta en titt? Skylder deg en stor en!\n\n- Lagersjefen",
+      "thought": "Og her tenker jeg at jeg bare stikker innom for å hente en ny stiftemaskin… Antar jeg får brette opp ermene.",
+      "continueButton": "Fortsett"
+    },
+    "cleanRoom": {
+      "introThought": "Wow, lagerrommet har blitt ganske rotete. Jeg er villig til å vedde på at det er problemet. Jeg får rydde opp her.",
+      "startButton": "Fortsett",
+      "completionThought": "Alt ser pent organisert ut!",
+      "continueButton": "Fortsett"
+    },
+    "knutConversation": {
+      "title": "Knut kommer inn på lagerrommet",
+      "continueButton": "Fortsett",
+      "startDialogue": "Noen har gått inn på lagerrommet — det ser ut som Knut fra kontoret. Han ser ut til å lete etter noe."
+    },
+    "investigate": {
+      "introThought": "Knut har rett. Kanskje rotet aldri var det egentlige problemet. På tide å virkelig se etter spor.",
+      "continueButton": "Fortsett",
+      "objects": {
+        "chewedBox": {
+          "thought": "Ser oppgnagd ut."
+        },
+        "vent": {
+          "thought": "En mus… og en mus. Søt eller ekkel, avhengig av hva du synes. Kan denne lille fyren være årsaken til alt dette?"
+        },
+        "halfOpenDoor": {
+          "thought": "Kanskje noen lot døren stå åpen… og noen kom inn og stjal utstyret vårt."
+        },
+        "emptyShelf": {
+          "thought": "Forsvant noe herfra?"
+        },
+        "brokenBox": {
+          "thought": "Ingenting her."
+        },
+        "cleaningChecklist": {
+          "title": "Rengjøringsliste",
+          "content": "☐ Fjern alt søppel og tom emballasje\n☐ Tørk støv av hyller\n☐ Tørk over overflater\n☐ Vask gulv\n☐ Sjekk at alt er på rett plass",
+          "thought": "Noen har allerede prøvd å løse dette problemet ved å rydde."
+        },
+        "deliveryNotes": {
+          "title": "Leveringsnotater",
+          "content": "Kontorrekvisitaforsendelse\nLeveringsdato: I dag\nLevert til: Lagerrommet\n\nMottatt av: Lagersjefen",
+          "thought": "Ifølge dette ble alt levert riktig… Musen kunne umulig ha gått av med alt dette?!"
+        },
+        "tablesBox": {
+          "revealText": "Kabler",
+          "thought": "Det er rart…"
+        },
+        "chargersBox": {
+          "revealText": "Stoler",
+          "thought": "Ok, det er to ganger nå…"
+        },
+        "pansBox": {
+          "revealText": "Penner",
+          "thought": "Panner… Penner… Alle disse etikettene virker feil!"
+        },
+        "labelPrinter": {
+          "thought": "Dette er sannsynligvis det de bruker for å merke esker."
+        },
+        "marketsBox": {
+          "revealText": "Tusjer",
+          "thought": "Noen byttet ut etikettene… og fikk det feil!"
+        }
+      },
+      "phaseCompleteThoughts": {
+        "phase1": "Det dekker de åpenbare mistenkte. La meg fortsette å lete — kanskje det finnes et papirspor.",
+        "phase2": "Rengjøringen og leveringsregistrene stemmer. Problemet må være et annet sted. La oss sjekke selve eskene.",
+        "phase3": "Alle tre eskene hadde feil innhold. Dette er ingen tilfeldighet. Noe er galt med etikettene."
+      }
+    },
+    "defineProblem": {
+      "question": "Hva er hovedproblemet i lagerrommet?",
+      "options": [
+        {
+          "id": "mess",
+          "text": "Rommet er rotete",
+          "correct": false
+        },
+        {
+          "id": "theft",
+          "text": "Noen brøt seg inn og stjal utstyr",
+          "correct": false
+        },
+        {
+          "id": "labels",
+          "text": "Etiketter samsvarer ikke med innhold",
+          "correct": true
+        },
+        {
+          "id": "delivery",
+          "text": "Leveringsfirmaet gjør feil",
+          "correct": false
+        },
+        {
+          "id": "mouse",
+          "text": "En mus stjal utstyret",
+          "correct": false
+        }
+      ],
+      "tooltips": {
+        "mess": "Rengjøringen løste ingenting. Rotet er ikke hovedproblemet.",
+        "theft": "Det var noen tomme hyller, og døren ble stående åpen. Men det er ingen håndfaste bevis på at noe ble stjålet.",
+        "labels": "Riktig. Tingene var der hele tiden, men de ble lagret under feil etiketter. Dette gjorde det svært vanskelig å finne ting på lageret.",
+        "delivery": "Leveringsnotatet viste at alt ble levert riktig. Det egentlige problemet må være noe som skjer etter levering.",
+        "mouse": "Lagerrommet har et museproblem, men dette er ikke hovedproblemet."
+      },
+      "continueButton": "Fortsett"
+    }
+  },
+  "hints": {
+    "stickyNote": "Det er en klistrelapp på inngangsdøren. Klikk på den for å se hva som står.",
+    "readStickyNote": "Knut trenger din hjelp. Fortsett notatet for å komme i gang.",
+    "cleanRoom": "Rommet er rotete. Klikk på eskene og søppelet på gulvet for å rydde.",
+    "boxesRemaining": "Det er fortsatt esker og søppel på gulvet. Fortsett å klikke på dem til rommet er rent.",
+    "waitForKnut": "Knut er på vei — vent et øyeblikk.",
+    "knutArrival": "Det ser ut som noen nettopp gikk inn. Klikk på Knut for å snakke med ham.",
+    "knutConversation": "Hør Knut ut. Velg det fremhevede svaret for å fortsette samtalen.",
+    "investigatePhase1": "Nå se rundt med friske øyne. Klikk på åpenbare mistenkte: skadde esker, ventilen, døren, tomme hyller.",
+    "investigatePhase2": "De åpenbare mistenkte forklarte ikke alt. Klikk på rengjøringslisten og leveringsnotatene for flere spor.",
+    "investigatePhase3": "Registrene stemmer. Prøv å åpne de merkede eskene på hyllene.",
+    "investigatePhase4": "Du har lagt merke til at etikettene virker feil. Klikk på etikettskriveren og Markets-esken for å bekrefte.",
+    "defineProblem": "Velg alternativet som faktisk forklarer hva som er galt på lageret.",
+    "defineProblemExplained": "Klikk på «Fortsett» for å gå videre.",
+    "completion": "Bakdøren ble nettopp låst opp. Klikk på den for å gå ut.",
+    "default": "Se deg om i lagerrommet etter interaktive objekter."
+  },
+  "items": {
+    "stickyNote": {
+      "popupTitle": "Klistrelapp",
+      "popupContent": [
+        "Kjære (username)",
+        "Vi har hatt noen problemer på lageret i det siste. Ting fortsetter å forsvinne. Forleden dag fikk vi en ny forsendelse med stoler, og jeg kan ikke finne dem noe sted!",
+        "Jeg er ute av kontoret, og dessverre hadde jeg ikke tid til å se nærmere på det før jeg dro…",
+        "Kan du ta en titt? Skylder deg en stor en!",
+        "- Lagersjefen"
+      ],
+      "inventoryTitle": "Klistrelapp"
+    }
+  },
+  "completion": {
+    "title": "Problemløsning fullført",
+    "message": "Gratulerer, du har fullført problemløsningsrommet!\n\nDet var lett å anta at problemet med ting som forsvant ble forårsaket av rotet. Og det var naturlig å hoppe rett til en løsning — å rydde og organisere rommet.\n\nMen du oppdaget snart at dette ikke løste noe. Kjerneproblemet måtte være noe annet.\n\nDu tok derfor et skritt tilbake og utforsket alternative forklaringer. Ved å samle spor og bevis, kunne du identifisere kjerneproblemet: feilmerking av esker.\n\nRommet representerer et avgjørende aspekt ved problemløsning: å klart definere problemet før handling. Å gjøre det kan spare deg for mye bortkastet tid og energi.\n\nBra jobbet!",
+    "buttonText": "Forlat lagerrommet"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "skipPuzzle": "Hopp over denne oppgaven",
+    "hintButton": "Hint",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "systemDialogues": {
+    "cleanBoxMoved": "Flyttet til hyllen.",
+    "trashRemoved": "I søppelbøtta.",
+    "investigateComplete": "Det er nok bevis. Jeg tror jeg kan definere det egentlige problemet nå.",
+    "wrongAnswer": "Tenk på hva som faktisk forklarer det du fant."
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  },
+  "answerOverlay": {
+    "title": "Svar"
+  }
+}

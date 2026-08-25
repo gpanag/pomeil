@@ -1,0 +1,181 @@
+{
+  "loading": "Õigusliku vastavuse laadimine...",
+  "intro": {
+    "title": "Õiguslik vastavus",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua ettevõte, mis toob inimesi kokku.",
+      "Sind on äsja palgatud suurde rahvusvahelisse ettevõttesse, kus koos töötavad eri kultuuride, taustade ja ametite inimesed.",
+      "Täna astud sa Õigusosakonda. Dokumendid on korralikult järjestatud. Õhkkond on vaikne ja tõsine. See on ideaalne hetk testida sinu õigusliku vastavuse oskusi."
+    ],
+    "buttonText": "Sisene Õigusosakonda"
+  },
+  "characters": {
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "greet": "Igal otsusel, mille teeme, on õiguslikud tagajärjed. Õiguslik vastavus ei tähenda iga seaduse pähe õppimist. See tähendab riski äratundmist, vastutustundlikku tegutsemist ja teadmist, millal küsida.",
+        "findDocument": "Enne kui testin su teadmisi, pean sind paluma seda kontorit uurida. Jätsin kuhugi oma laua peale vastavuse riski kontrollnimekirja. Kas leiad selle? Alusta kappide juurest.",
+        "documentFound": "Õiguslik vastavus algab teadlikkusest. Esimene samm on aru saada, kuhu riskid peituvad. Lubage mul su mõistmist testida.",
+        "quiz1Intro": "Lohista iga dokument õigesse kategooriasse.",
+        "quiz1Done": "Mitte kõiki teabevorme ei tohi kohelda samamoodi. Nüüd peame minema sügavamale.",
+        "findEmail": "Varem täna trükkisin välja kahtlase e-kirja, mille meie vastavussüsteem märgistas. Jätsin selle riiuli juurde. Kas saaksid selle tuua?",
+        "emailFound": "Sellel e-kirjal on mitu hoiatusmärki. Aga kõigepealt vaatame, kuidas mõistad vastavusprotsesse.",
+        "puzzle2Intro": "Kolleeg märkas väikest menetlusviga lepingus, kuid ei öelnud midagi. Korralda tegevused vähem vastavast kõige rohkem vastavasse järjekorda.",
+        "finalWords": "Sa tuvastasid riskid. Sa valisid vastutuse mugavuse asemel. See on õiguslik vastavus praktikas.\n\nPea meeles: vastavus kaitseb inimesi, organisatsioone ja usaldust. Oled valmis järgmiseks väljakutseks!",
+        "completion": "Koolitus on lõpetatud!",
+        "default": "Vaata õigusosakonnas vihjete järele ringi."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Enamik rikkumisi ei alga halbade kavatsustega. Need algavad tähelepanematusest.",
+        "default": "Vaatan veel juhtumeid… räägi Sarah'ga."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dokumentide klassifitseerimine",
+      "instructions": "Lohista iga dokument õigesse kategooriasse.",
+      "leftItems": [
+        {"id": "doc1", "text": "Klientleping"},
+        {"id": "doc2", "text": "Sisemine poliitika juhend"},
+        {"id": "doc3", "text": "Isiklikud märkmed"},
+        {"id": "doc4", "text": "Konfidentsiaalne töötaja toimik"}
+      ],
+      "rightItems": [
+        {"id": "cat1", "text": "Konfidentsiaalne"},
+        {"id": "cat2", "text": "Sisekasutus"},
+        {"id": "cat3", "text": "Avalik / mitte-tundlik"}
+      ],
+      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "feedback": {
+        "wrong": "Pole päris õige. Mõtle, kellel peaks olema juurdepääs igale dokumendile.",
+        "correct": "Mitte kõiki teavevormiseid ei tohi kohelda samamoodi."
+      },
+      "answerOverlay": "Õige klassifikatsioon:\n• Klientleping → Konfidentsiaalne\n• Töötaja toimik → Konfidentsiaalne\n• Sisemine poliitika → Sisekasutus\n• Isiklikud märkmed → Avalik / mitte-tundlik"
+    },
+    "sequenceOrder": {
+      "title": "Vaikimine vs Vastutus",
+      "instructions": "Kolleeg märkab väikest menetlusviga lepingus, kuid ei ütle midagi. Aseta tegevused ajaskaalale vähem vastavast kõige rohkem vastavasse järjekorda.",
+      "items": [
+        "Dokumenteeri probleem ja parandustegevus",
+        "Eira probleemi",
+        "Teavita vastutavat töötajat",
+        "Paranda vaikselt ilma teavitamata"
+      ],
+      "correctOrder": [
+        "Eira probleemi",
+        "Paranda vaikselt ilma teavitamata",
+        "Teavita vastutavat töötajat",
+        "Dokumenteeri probleem ja parandustegevus"
+      ],
+      "hints": [
+        "Samm 1: Halvim vastus on mitte midagi teha.",
+        "Samm 2: Vaikne parandamine ilma teavitamata on natuke parem, aga ikka mitteasjakohane.",
+        "Samm 3: Vastutava isiku teavitamine on hea tava.",
+        "Samm 4: Täielik dokumenteerimine on vastavuse kuldstandard."
+      ],
+      "feedback": {
+        "wrong": "See pole õige järjekord. Mõtle, milline tegevus näitab kõige vähem ja milline kõige rohkem vastavust.",
+        "correct": "Vastavus nõuab läbipaistvust, mitte otseteid."
+      },
+      "answerOverlay": "Õige järjekord vähem vastavast kõige rohkem vastavasse:\n1. Eira probleemi\n2. Paranda vaikselt\n3. Teavita vastutavat töötajat\n4. Dokumenteeri probleem ja parandus",
+      "checkButton": "Kontrolli järjekorda"
+    },
+    "singleChoice": {
+      "title": "Hoiatusmärkide tuvastamine",
+      "instructions": "Märgi hoiatusmärgi-fraasid.",
+      "question": "\"Peaksime kiiresti edasi liikuma, enne kui keegi hakkab liiga palju küsimusi esitama.\nHoiame seda omavahel.\"",
+      "options": {
+        "a": "„kiiresti edasi liikuma“ ja „liiga palju küsimusi“",
+        "b": "„enne kui keegi hakkab“ ja „hoiame seda omavahel“",
+        "c": "„Peaksime liikuma“ ja „Hoiame seda“",
+        "d": "Selles e-kirjas pole hoiatusmärke"
+      },
+      "hint": "Otsi keelt, mis viitab saladusele või järelevalve vältimisele.",
+      "feedback": {
+        "wrong": "See pole õige. Otsi fraase, mis viitavad järelevalve vältimisele või saladusele.",
+        "correct": "Keel paljastab sageli vastavusriske."
+      },
+      "answerOverlay": "Õige vastus on: „enne kui keegi hakkab“ ja „hoiame seda omavahel“ — need fraasid viitavad saladusele ja õigete menetluste vältimisele."
+    },
+    "answerOverlayTitle": "Vastus avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {"checkButton": "Esita", "resetButton": "Lähtesta"}
+  },
+  "hints": {
+    "intro": "Klõpsa Sarah'l peamise laua juures, et alustada.",
+    "talkToSarah": "Klõpsa Sarah'l, et alustada.",
+    "findDocument": "Kontrolli kappi laua juures.",
+    "talkToSarah2": "Mine Sarah'ni tagasi sellega, mis leidsid.",
+    "puzzle1Matching": "Sobita iga dokument õige kategooriaga — mõtle, kellel peaks olema juurdepääs.",
+    "findEmail": "Sarah mainis riiulit. Otsi sealt välja trükitud e-kirja.",
+    "talkToSarah3": "Mine Sarah'ni tagasi e-kirjaga, mis leidsid.",
+    "puzzle2SequenceOrder": "Lohista tegevused järjekorda vähem vastavast kõige rohkem vastavasse.",
+    "puzzle3SingleChoice": "Otsi fraase, mis viitavad saladusele või järelevalve vältimisele.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata õigusosakonnas vihjete järele ringi."
+  },
+  "systemDialogues": {
+    "selfTalk": "Sa siseneda vaikse õigusosakonda. Dokumendid on korralikult järjestatud laudadel ja riiulitel. Märkad vastavusametnikku oma ekraani tagant üles vaatamas, ja õigusabilist juhtumitoimikuid oma laual läbi vaatamas.",
+    "clickCabinet": "Kapp on lukustamata — see on iseenesest vastavusrisk. Aga seal sees on dokumendikaust kontrollnimekirjaga.",
+    "foundDocument": "Sa leidsid selle! Vastavusriski kontrollnimekiri oli lukustamata kapis sees.",
+    "documentRead": "Tubli! Mine Sarah'ni tagasi.",
+    "clickDesk": "Tavalised kontoritarbed ja pooleli kohv. Lõbus fakt: keskmine kontoritöötaja kasutab umbes 10 000 paberilehte aastas. Otsi edasi!",
+    "foundEmail": "Sa leidsid märgistatud e-kirja! Mine Sarah'ni tagasi.",
+    "scales": "Lihtsalt dekoratiivne ese. Õigluse kaalud — kena sümbol, kuid mitte see, mida sul praegu vaja on."
+  },
+  "items": {
+    "document": {
+      "popupTitle": "Vastavusriski kontrollnimekiri",
+      "popupContent": [
+        "Lukustamata arhiivikapp: Füüsilised dokumendid peavad alati olema kindlustatud.",
+        "Allkirjastatud leping järelevalveta jäetud: Tundlikud lepingud ei tohiks kunagi avalikult olla.",
+        "Avatud klientandmetega arvutiekraan: Konfidentsiaalse infoga ekraanid peavad olema lukustatud, kui pole järelevalve all."
+      ]
+    },
+    "email": {
+      "popupTitle": "Märgistatud e-kiri – Vastavusülevaade",
+      "popupContent": [
+        "Saatja: Tundmatu saatja",
+        "Teema: Vajalik kiire otsus",
+        "„Peaksime kiiresti edasi liikuma, enne kui keegi hakkab liiga palju küsimusi esitama. Hoiame seda omavahel.“",
+        "See e-kiri on märgistatud vastavuse jälgimissüsteemi poolt."
+      ]
+    },
+    "checklist": {"inventoryTitle": "Vastavuse kontrollnimekiri"},
+    "flaggedEmail": {"inventoryTitle": "Märgistatud e-kiri"}
+  },
+  "completion": {
+    "title": "Oskus lõpetatud: Õiguslik vastavus",
+    "message": "Sa näitasid: Riskiteadlikkust, Eetilist hinnangut, Teabe käsitlust, Menetluslikku vastutust.\n\nVastavus kaitseb inimesi, organisatsioone ja usaldust.",
+    "buttonText": "Lahku Õigusosakonnast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus",
+    "resetButton": "Lähtesta"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

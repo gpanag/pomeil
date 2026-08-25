@@ -1,0 +1,327 @@
+{
+  "loading": "Laster Beslutningstaking...",
+  "intro": {
+    "title": "Beslutningstaking",
+    "paragraphs": [
+      "Du er i ferd med å gå inn i en heis i en moderne kontorbygning.",
+      "Det som virker som en rutinemessig tur er i ferd med å bli en leksjon i beslutningstaking.",
+      "Vær oppmerksom på omgivelsene dine — valgene du tar vil avgjøre hvordan denne situasjonen utvikler seg."
+    ],
+    "buttonText": "Gå mot heisen"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "dm": {
+      "identifyAlternativesTitle": "Identifiser alternativer",
+      "identifyAlternativesDesc": "Klikk på hver boks for å avsløre alternativer for å rømme fra heisen.",
+      "identifyOutcomesTitle": "Identifiser utfall",
+      "identifyOutcomesDesc": "Klikk på hver boks for å avsløre mulige utfall for hvert alternativ.",
+      "evaluateAlternativesTitle": "Evaluer alternativer",
+      "evaluateAlternativesDesc": "Klikk på hvert kriterium for å se hvordan alternativene måler seg.",
+      "selectBestTitle": "Velg det beste alternativet",
+      "selectBestDesc": "Velg alternativet du synes er best. Alle valg fører til en flukt!"
+    }
+  },
+  "items": {
+    "floorIndicator": {
+      "dialogue": "Sitter fast mellom 4. og 5. etasje? Det er ganske rart…"
+    },
+    "roofLamp": {
+      "dialogue": "Lyset gikk ut et minutt. Kanskje det var et strømbrudd?"
+    },
+    "buttonPanel": {
+      "dialogue": "Hvor var det jeg skulle igjen?"
+    },
+    "wirePanel": {
+      "dialogue": "Dette dekker sannsynligvis den elektriske ledningen."
+    },
+    "inspectionPlaque": {
+      "dialogue": "Det ser ut som heisen mistet inspeksjonen i 2022. Og 2023. Og 2024. Og…",
+      "title": "HEIS-SIKKERHETSSERTIFISERING",
+      "lines": [
+        "Inspisert: 14.06.2021",
+        "Neste inspeksjon: 14.06.2022",
+        "Sertifikat nr.: EI-21-0487",
+        "Heis-ID: Lift 3"
+      ]
+    },
+    "safetyPoster": {
+      "title": "I TILFELLE HEISKRISE",
+      "lines": [
+        "Hold deg rolig — Det er rikelig med luft inne",
+        "Ring etter hjelp — Bruk alarmklokken eller telefonen",
+        "Ikke prøv å klatre ut eller åpne dørene med makt",
+        "Ikke hopp",
+        "Ikke tukle med heissystemene",
+        "Ikke vær en helt — Vent på redning og følg instruksjonene fra nødpersonell"
+      ]
+    },
+    "incidentPoster": {
+      "dialogue1": "Det er ikke akkurat sant lenger…",
+      "dialogue2": "Sånn ja.",
+      "title": "Dager uten hendelse"
+    },
+    "roofHatch": {
+      "dialogue": "Er dette en utgang?"
+    }
+  },
+  "systemDialogues": {
+    "elevatorStalled": "Sukk… Heisen stoppet. Akkurat min flaks.",
+    "whatNow": "Vel… hva nå? Hvordan kommer jeg meg ut herfra?",
+    "allInfoGathered": "Hva er mitt beste alternativ for å komme meg ut herfra?",
+    "posterFalls": "En reklameplakat faller fra oppslagstavla og avslører litt tekst bak seg…",
+    "alternativesRevealed": "Dette er alle mine alternativer.",
+    "outcomesRevealed": "Dette er alle mulige utfall…",
+    "evaluationComplete": "Det er vel opp til meg. Hva er viktigst — risiko, tidskostnad, ressursbruk eller kontroll?",
+    "chooseAlternative": "Nå må jeg bestemme meg. Hvilket alternativ er best?"
+  },
+  "alternatives": {
+    "pressAlarm": {
+      "label": "Trykk på alarmknappen",
+      "outcomes": [
+        "Oppdagelse og redning",
+        "Ingenting skjer"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Et lavrisikoalternativ. Akkurat det nødplakaten anbefalte.",
+        "timeCost": "Responsen kan være rask eller treg, avhengig av hvordan alarmen overvåkes.",
+        "resourceUse": "Å trykke på alarmen koster lite eller ingen energi.",
+        "control": "Du har kontroll over å trykke på alarmknappen. Men du har ingen kontroll over om, når og hvordan noen reagerer."
+      },
+      "actualOutcome": {
+        "summary": "Du brukte alarmklokken til å rope etter hjelp.\n\nHeldigvis svarte servicepersonalet umiddelbart, og nødetater ble sendt ut.\n\nDu ble reddet på et blunk!",
+        "sound": "alarm-ring"
+      }
+    },
+    "callOut": {
+      "label": "Rop til folk i nærheten",
+      "outcomes": [
+        "Oppdagelse og redning",
+        "Ingenting skjer"
+      ],
+      "risk": "match",
+      "timeCost": "neutral",
+      "resourceUse": "neutral",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Et lavrisikoalternativ. Å rope etter hjelp påvirker ikke heisen på noen måte.",
+        "timeCost": "Noen kan høre deg umiddelbart. Eller du ender opp med å rope i lang tid.",
+        "resourceUse": "Å rope en stund koster lite energi. Å rope i timevis kan være veldig krevende og tappe energien din.",
+        "control": "Om noen går forbi og hører deg er helt utenfor din kontroll."
+      },
+      "actualOutcome": {
+        "summary": "Du måtte rope en stund. Du ble tørst, hes og sliten.\n\nHeldigvis hørte noen deg til slutt og ringte nødetater.\n\nDu ble reddet etter 2 timer.",
+        "sound": "shout-help"
+      }
+    },
+    "pryDoors": {
+      "label": "Tving dørene opp",
+      "outcomes": [
+        "Selvevakuering",
+        "Skade på heis",
+        "Personskade"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Heisens retningslinjer advarte mot dette. Du eller heisen kan bli skadet.",
+        "timeCost": "Hvis du lykkes, slipper du raskt unna. Hvis du mislykkes, kaster du bort tid. Skade kan også gjøre redning mer komplisert.",
+        "resourceUse": "Å tvinge dørene opp krever mye styrke og innsats. Du kan tappe energien din.",
+        "control": "Du tar kontroll over situasjonen. Suksess avhenger av dine styrker og innsats. Men du har ikke kontroll over hvordan heisen og dørene reagerer."
+      },
+      "actualOutcome": {
+        "summary": "Det krevde mye innsats og styrke å tvinge dørene opp, og du slet en stund. Dørene åpnet seg endelig halvveis og avslørte en vegg bak dem. Utmattet la du deg ned på heisgulvet for å hvile.\n\nEtter det som føltes som halve evigheten, gikk noen forbi og fant deg.\nFør de befridde deg, måtte nødetater tilbakestille dørene, da de var ute av synk etter redningsforsøket ditt.\n\nDu ble reddet etter 5 timer.",
+        "sound": "creaking"
+      }
+    },
+    "climbHatch": {
+      "label": "Klatre gjennom takluka",
+      "outcomes": [
+        "Selvevakuering",
+        "Skade på heis",
+        "Personskade"
+      ],
+      "risk": "mismatch",
+      "timeCost": "neutral",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Heisens retningslinjer advarte mot dette. Å gjøre dette kan føre til skade på deg selv eller heisen.",
+        "timeCost": "Hvis det fungerer, slipper du raskt unna. Hvis det ikke fungerer, eller en skade oppstår, kan redning bli vanskeligere og mer tidkrevende.",
+        "resourceUse": "Å klatre krever styrke, balanse og fokus. Det kan være veldig energikrevende.",
+        "control": "Et vellykket utfall avhenger av styrken og evnene dine. Men utfallet er ikke fullt ut under din kontroll. Du vet ikke om det i det hele tatt er mulig å klatre ut."
+      },
+      "actualOutcome": {
+        "summary": "Å klatre ut taket på heisen viste seg å være vanskeligere enn du forventet. Du prøvde å nå håndtaket ved å hoppe og strekke armene. Men det var bare for høyt. Frustrert sank du ned på gulvet.\n\nEtter å ha sturet en stund, fant noen deg og varslet nødetater om situasjonen.\n\nDu ble reddet etter 3 timer.",
+        "sound": "action-hero"
+      }
+    },
+    "clickFloorButton": {
+      "label": "Klikk på en hvilken som helst etasjeknapp",
+      "outcomes": [
+        "Heisen begynner å fungere igjen",
+        "Ingenting skjer"
+      ],
+      "risk": "neutral",
+      "timeCost": "match",
+      "resourceUse": "neutral",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Å trykke på en etasjeknapp er lav risiko. Du risikerer ikke å bli skadet eller skade heisen.",
+        "timeCost": "Hvis knappene fungerer, slipper du unna umiddelbart. Hvis de ikke fungerer, er du ikke nærmere en flukt.",
+        "resourceUse": "Å trykke på knapper bruker minimal innsats og energi.",
+        "control": "Til å begynne med har du kontroll. Men du har ingen kontroll over heissystemets respons."
+      },
+      "actualOutcome": {
+        "summary": "Ingenting skjedde da du trykket på etasjeknappen. Du ble irritert og smasket på alle etasjeknappene for å se om noe ville skje. Fortsatt skjedde ingenting.\n\nHeldigvis gikk noen forbi og oppdaget deg. Nødetater ble varslet og ankom raskt. Mens de reddet deg, forklarte de at av sikkerhetsgrunner er etasjeknapper deaktivert etter strømbrudd. Forklaringen ga mening, men likevel forble du irritert.\n\nDu ble frigjort etter 2 timer.",
+        "sound": "button-click"
+      }
+    },
+    "jumpActivate": {
+      "label": "Hopp for å aktivere heisen",
+      "outcomes": [
+        "Heisen begynner å fungere igjen",
+        "Skade på heis",
+        "Personskade"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "neutral",
+      "tooltips": {
+        "risk": "Heisens retningslinjer advarte spesielt mot å hoppe. Du kan skade deg selv eller heisen.",
+        "timeCost": "Heisen kan begynne å fungere umiddelbart. En annen mulighet er at ingenting skjer. Det kan også resultere i skade og ytterligere forsinke redningen din.",
+        "resourceUse": "Å hoppe krever fysisk innsats og balanse. Det kan bruke opp mye av energien din.",
+        "control": "Du har full kontroll over selve hoppet. Du har liten eller ingen kontroll over hvordan heisen reagerer."
+      },
+      "actualOutcome": {
+        "summary": "Hopping i heisen fikk nødbremsen til å aktiveres. Dette laget en høy lyd og tiltrakk seg en liten gruppe nysgjerrige mennesker. Flere oppringinger ble gjort til nødetater.\n\nSelv om nødetater ankom raskt, var redning ikke like rask. En heisspesialist måtte tilkalles for å tilbakestille bremsene. Dessverre var byens eneste heisspesialist borte på en heiskonferanse. Mens du ventet på at han skulle ankomme, satte du deg sammen i et teppe og spiste noen pannekaker som nødetater klarte å klemme gjennom heisdørene.\n\nDu sov i heisen og ble reddet etter 10 timer.",
+        "sound": "creaking"
+      }
+    },
+    "fixWiring": {
+      "label": "Fiks elektrisk ledning",
+      "outcomes": [
+        "Heisen begynner å fungere igjen",
+        "Skade på heis",
+        "Personskade"
+      ],
+      "risk": "mismatch",
+      "timeCost": "match",
+      "resourceUse": "mismatch",
+      "control": "match",
+      "tooltips": {
+        "risk": "Kanskje det mest risikable alternativet. Å tukle med elektriske systemer er farlig.",
+        "timeCost": "Avhengig av kunnskapen din om elektriske systemer, kan flukt være ganske rask. Eventuelle feil kan forårsake forsinkelser eller nye problemer og komplisere redningen din.",
+        "resourceUse": "Å arbeide med elektriske systemer krever mye fokus og innsats, og bruker ganske mye av energien din.",
+        "control": "Du tar kontroll for å fikse problemet. Om du lykkes avhenger sterkt av ferdigheten og flaksen din."
+      },
+      "actualOutcome": {
+        "summary": "Dessverre drev ikke ledningene heisen, bare lysene. I stedet for å aktivere heisen, gikk lysene ut igjen.\n\nDu prøvde forskjellige ting for å fordrive tiden mens du ventet på redning i mørket. ABC-spillet, å finne ting som starter med hver bokstav i alfabetet, viste seg å være spesielt vanskelig i mørket.\n\nEtter det som føltes som veldig lang tid, fant noen deg og ringte nødetater. De befridde deg samtidig som de skjente på deg for å tukle med den elektriske ledningen.\n\nDu ble reddet etter 5 timer.",
+        "sound": "voltage-shock"
+      }
+    },
+    "waitRescue": {
+      "label": "Vent på redning",
+      "outcomes": [
+        "Oppdagelse og redning",
+        "Ingenting skjer"
+      ],
+      "risk": "match",
+      "timeCost": "mismatch",
+      "resourceUse": "match",
+      "control": "mismatch",
+      "tooltips": {
+        "risk": "Nødplakaten rådet deg til å holde deg rolig. Det er ingen risiko for skade ved å sette seg ned og vente.",
+        "timeCost": "Hvis du er heldig, blir du funnet etter en kort venting. Hvis du er uheldig, ender du opp med å vente lenge.",
+        "resourceUse": "Å vente krever veldig liten innsats. Du sparer energien din.",
+        "control": "Du har ingen kontroll over utfallet. Du stoler helt på at noen andre oppdager deg."
+      },
+      "actualOutcome": {
+        "summary": "Det var veldig, veldig, veldig kjedelig å vente.\n\nEn fordel var den halvsmeltede sjokoladeplaten du fant i baklomma.\n\nUlempen var heismusikken. Den ble ganske grusom etter en stund. Faktisk var det nesten umulig å fokusere på noe annet enn den dumme, repeterende musikken.\n\nDu var veldig takknemlig da noen endelig fant deg og ringte nødetater.\n\nDu ble reddet etter 5 timer.",
+        "sound": "elevator-music"
+      }
+    }
+  },
+  "criteria": {
+    "risk": "Risiko",
+    "timeCost": "Tidskostnad",
+    "resourceUse": "Ressursbruk",
+    "control": "Kontroll"
+  },
+  "flowchart": {
+    "startNode": "Du sitter fast i en heis"
+  },
+  "reviewOutcome": {
+    "title": "Gjennomgang av utfallet",
+    "reflectionText": "Ta et øyeblikk til å reflektere:",
+    "questions": [
+      "Var du fornøyd med utfallet?",
+      "Hva lærte du?",
+      "Ville du gjort noe annerledes i fremtiden?"
+    ],
+    "finishButton": "Avslutt fluktrom"
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "subtitle": "Du har fullført Beslutningstaking-rommet!",
+    "sections": [
+      {
+        "heading": "Beslutningstakingsprosessen",
+        "text": "Etter at heisen stoppet, gikk du gjennom trinnene i en beslutningstakingsprosess.\n\nFørst identifiserte du beslutningen du måtte ta — hvordan unnslippe den stoppede heisen. Du samlet informasjon og identifiserte de forskjellige alternativene og mulige utfall. Du evaluerte alternativene dine ved å vurdere kriterier som risiko og tidskostnad. Du bestemte hva som var det beste alternativet og handlet. Til slutt gjennomgikk du utfallet."
+      },
+      {
+        "heading": "Beslutningstakingsferdigheter",
+        "text": "Beslutningstaking er en ferdighet som kan trenes!\n\nDu kan starte med å ta mindre, hverdagslige beslutninger med hensikt, som «Hvor mye tid bør jeg sette av til denne oppgaven?».\n\nDu kan bruke beslutningstakingsprosessen når du står overfor mer utfordrende beslutninger. Dette vil hjelpe deg å kartlegge alternativer og mulige utfall og vurdere dem basert på dine valgte kriterier.\n\nHusk – beslutninger fører ikke alltid til det utfallet vi håper på. Likevel kan de vise seg å være verdifulle erfaringer vi kan lære av."
+      }
+    ],
+    "wellDone": "Bra jobbet!",
+    "buttonText": "Forlat rommet"
+  },
+  "hints": {
+    "outsideElevator": "Klikk på heisanropsknappen for å tilkalle heisen.",
+    "enterElevator": "Klikk inne i heisen for å gå inn.",
+    "pressFloor": "Trykk på en etasjeknapp på knappepanelet.",
+    "gatherInfo": "Klikk på gjenstander i heisen for å samle informasjon.",
+    "clickNoticeBoard": "Klikk på oppslagstavla på veggen for å fortsette.",
+    "identifyAlternatives": "Klikk på spørsmålstegnene på oppslagstavla for å avsløre alternativer.",
+    "identifyOutcomes": "Klikk på spørsmålstegnene for å avsløre mulige utfall.",
+    "evaluateAlternatives": "Klikk på hvert kriterium for å se hvordan alternativene måler seg.",
+    "selectAlternative": "Velg alternativet du synes er best ved å klikke på det.",
+    "reviewOutcome": "Reflekter over beslutningen din og klikk Avslutt.",
+    "default": "Se deg rundt i heisen etter ledetråder."
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

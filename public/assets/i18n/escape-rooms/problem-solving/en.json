@@ -1,0 +1,212 @@
+{
+  "loading": "Loading Problem Solving...",
+  "intro": {
+    "title": "Problem Solving",
+    "paragraphs": [
+      "You have stepped into the office storage room to grab a new stapler. But the Storage Manager has left you a note about a bigger issue — things keep going missing in here.",
+      "This room is about one crucial aspect of problem solving: clearly defining the problem before jumping to solutions. Look around, investigate, and try not to make the first assumption the final answer.",
+      "Read the sticky note on the door to get started. Then let the room tell you what is really going on."
+    ],
+    "buttonText": "Enter the Storage Room"
+  },
+  "characters": {
+    "knut": {
+      "name": "Knut",
+      "dialogues": {
+        "step1": "Hey, have you got a minute?",
+        "step2": "I just came by to grab a new keyboard…",
+        "step3": "… but I can't find a single keyboard in here!",
+        "step4": "Yeah, I was told we would have some in storage.",
+        "step5": "Oh well, at least the room looks a lot better than it usually does.",
+        "step6": "Maybe the mess isn't the problem. Maybe there's something entirely different going on."
+      }
+    }
+  },
+  "userReplies": {
+    "step1": "Sure, what's up?",
+    "step2": "Okay…",
+    "step3": "That's odd.",
+    "step4": "Hmm… I just finished cleaning up here. I don't remember seeing any keyboards.",
+    "step5": "Yeah…",
+    "step6": "It could be… I guess I should try to figure it out."
+  },
+  "puzzles": {
+    "stickyNote": {
+      "title": "A Note from the Storage Manager",
+      "letter": "Dear (username)\n\nWe've been having some issues in the storage room lately. Things keep going missing. Just the other day, we got a new shipment of chairs, and I can't find them anywhere!\n\nI'm out of office, and unfortunately, I didn't have the time to look into it before I left…\n\nCould you take a look? Owe you big time!\n\n- Storage Manager",
+      "thought": "And here I am, thinking I'm just stopping by to get a new stapler… Guess I better roll up my sleeves.",
+      "continueButton": "Continue"
+    },
+    "cleanRoom": {
+      "introThought": "Wow, the storage room has gotten pretty messy. I'm willing to bet that's the problem. I better clean up here.",
+      "startButton": "Continue",
+      "completionThought": "Everything looks neatly organized!",
+      "continueButton": "Continue"
+    },
+    "knutConversation": {
+      "title": "Knut enters the storage room",
+      "continueButton": "Continue",
+      "startDialogue": "Someone has walked into the storage room — it looks like Knut from the office. He seems to be looking for something."
+    },
+    "investigate": {
+      "introThought": "Knut is right. Maybe the mess was never the real issue. Time to actually look around for clues.",
+      "continueButton": "Continue",
+      "objects": {
+        "chewedBox": {
+          "thought": "Looks chewed up."
+        },
+        "vent": {
+          "thought": "A mouse… and a mouse. Cute or gross, depending on what you think. Could this little guy be the cause of all of this?"
+        },
+        "halfOpenDoor": {
+          "thought": "Perhaps someone left the door open… and someone got in and stole our equipment."
+        },
+        "emptyShelf": {
+          "thought": "Did anything go missing from here?"
+        },
+        "brokenBox": {
+          "thought": "Nothing here."
+        },
+        "cleaningChecklist": {
+          "title": "Cleaning Checklist",
+          "content": "☐ Remove all trash and empty packaging\n☐ Dust shelves\n☐ Wipe down surfaces\n☐ Clean floors\n☐ Check that everything is in the right place",
+          "thought": "Someone already tried solving this problem by cleaning."
+        },
+        "deliveryNotes": {
+          "title": "Delivery Notes",
+          "content": "Office Supplies Shipment\nDelivery Date: Today\nDelivered to: Storage Room\n\nReceived by: Storage Manager",
+          "thought": "According to this, everything was delivered correctly… The mouse couldn't possibly have walked off with all of this?!"
+        },
+        "tablesBox": {
+          "revealText": "Cables",
+          "thought": "That's strange…"
+        },
+        "chargersBox": {
+          "revealText": "Chairs",
+          "thought": "Okay, that's twice now…"
+        },
+        "pansBox": {
+          "revealText": "Pens",
+          "thought": "Pans… Pens… These labels all seem to be wrong!"
+        },
+        "labelPrinter": {
+          "thought": "This is probably what they use to label boxes."
+        },
+        "marketsBox": {
+          "revealText": "Markers",
+          "thought": "Someone changed the labels… and got it wrong!"
+        }
+      },
+      "phaseCompleteThoughts": {
+        "phase1": "That covers the obvious suspects. Let me keep searching — maybe there's a paper trail.",
+        "phase2": "The cleaning and the delivery records line up. The problem must be somewhere else. Let's check the boxes themselves.",
+        "phase3": "All three of these boxes had the wrong contents. This isn't a coincidence. Something is off with the labels."
+      }
+    },
+    "defineProblem": {
+      "question": "What is the main problem in the storage room?",
+      "options": [
+        {
+          "id": "mess",
+          "text": "The room is messy",
+          "correct": false
+        },
+        {
+          "id": "theft",
+          "text": "Someone broke in and stole equipment",
+          "correct": false
+        },
+        {
+          "id": "labels",
+          "text": "Labels do not match contents",
+          "correct": true
+        },
+        {
+          "id": "delivery",
+          "text": "The delivery company makes mistakes",
+          "correct": false
+        },
+        {
+          "id": "mouse",
+          "text": "A mouse stole the equipment",
+          "correct": false
+        }
+      ],
+      "tooltips": {
+        "mess": "Cleaning didn't solve anything. The mess is not the main problem.",
+        "theft": "There were some empty shelves, and the door was left open. But there is no hard proof that something was stolen.",
+        "labels": "Correct. The items were there the whole time, but they were stored under incorrect labels. This made it very difficult to find things in the storage room.",
+        "delivery": "The delivery note showed that everything was delivered correctly. The real problem must be something that happens after delivery.",
+        "mouse": "The storage room has a mouse problem, but this is not the main issue."
+      },
+      "continueButton": "Continue"
+    }
+  },
+  "hints": {
+    "stickyNote": "There is a sticky note on the entry door. Click it to see what it says.",
+    "readStickyNote": "Knut needs your help. Continue the note to get started.",
+    "cleanRoom": "The room is cluttered. Click the boxes and trash on the floor to tidy up.",
+    "boxesRemaining": "Still some boxes and trash on the floor. Keep clicking them until the room is clean.",
+    "waitForKnut": "Knut is on his way — wait a moment.",
+    "knutArrival": "It looks like someone just walked in. Click Knut to talk to him.",
+    "knutConversation": "Hear Knut out. Pick the highlighted reply to continue the conversation.",
+    "investigatePhase1": "Now look around with fresh eyes. Click obvious suspects: damaged boxes, the vent, the door, empty shelves.",
+    "investigatePhase2": "The obvious suspects didn't explain everything. Click the cleaning checklist and the delivery notes for more clues.",
+    "investigatePhase3": "The records line up. Try opening the labelled boxes on the shelves.",
+    "investigatePhase4": "You have noticed the labels seem wrong. Click the label printer and the Markets box to confirm.",
+    "defineProblem": "Pick the option that actually explains what is wrong in the storage room.",
+    "defineProblemExplained": "Click 'Continue' to proceed.",
+    "completion": "The back door just unlocked. Click it to exit.",
+    "default": "Look around the storage room for interactive objects."
+  },
+  "items": {
+    "stickyNote": {
+      "popupTitle": "Sticky Note",
+      "popupContent": [
+        "Dear (username)",
+        "We've been having some issues in the storage room lately. Things keep going missing. Just the other day, we got a new shipment of chairs, and I can't find them anywhere!",
+        "I'm out of office, and unfortunately, I didn't have the time to look into it before I left…",
+        "Could you take a look? Owe you big time!",
+        "- Storage Manager"
+      ],
+      "inventoryTitle": "Sticky note"
+    }
+  },
+  "completion": {
+    "title": "Problem Solving Complete",
+    "message": "Congratulations, you have completed the problem-solving room!\n\nIt was easy to assume that the issue with items going missing was caused by the mess. And it was natural to jump straight to a solution — cleaning and organizing the room.\n\nBut you soon discovered that this did not solve anything. The core issue had to be something else.\n\nYou therefore took a step back and explored alternative explanations. By gathering clues and evidence, you were able to identify the core issue: mislabelling of boxes.\n\nThe room represents a crucial aspect of problem-solving: clearly defining the problem before acting. Doing so can save you a lot of wasted time and energy.\n\nWell done!",
+    "buttonText": "Exit the Storage Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "skipPuzzle": "Skip this puzzle",
+    "hintButton": "Hint",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "systemDialogues": {
+    "cleanBoxMoved": "Moved onto the shelf.",
+    "trashRemoved": "Into the bin it goes.",
+    "investigateComplete": "That's enough evidence. I think I can define the real problem now.",
+    "wrongAnswer": "Think about what actually explains what you found."
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  },
+  "answerOverlay": {
+    "title": "Answer"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "loading": "Digioskuste laadimine...",
+  "intro": {
+    "title": "Digioskused",
+    "paragraphs": [
+      "Sa oled töötaja väikeses ettevõttes. Täna saabusid sa varakult IT-osakonda, et seadistada mõned asjad enne, kui ülejäänud meeskond saabub.",
+      "Serveriruum on hämaralt valgustatud, serveriraamid katavad seinu ja vilkuvad tuled on igal pool. Seal on laud monitori, klaviatuuri, nutitelefoni ja kohvitassiga. Märkad katkiste kaablitega paroolserverit, hävitajat nurgas, mõnda plakatit seinal, riidenagi koti ja uksega, millel on 'Gone Fishing' silt.",
+      "Sinu tänased ülesanded hõlmavad ettevõtte digitaalse turvalisuse tugevdamist, professionaalse sotsiaalmeedia kohaloleku haldamist ja võimalike küberohtudega tegelemist. Alustame!"
+    ],
+    "buttonText": "Sisene IT-osakonda"
+  },
+  "systemDialogues": {
+    "selfTalk": "Hea küll, lase ma vaatan ringi. Server tundub maas olevat - need kaablid näevad katki välja. Peaks need kõigepealt parandama. Pean ka oma e-kirju kontrollima ja sotsiaalmeediat uuendama. Alustan serverist.",
+    "cablesBroken": "Need kaablid on selgelt kahjustatud. Pean need eemaldama ja ühendama uued, mida näen põrandal.",
+    "cablesRemoved": "Hea, katkised kaablid on välja võetud. Nüüd võtan need uued kaablid põrandalt.",
+    "cablesUnwrapped": "Uued kaablid on lahti pakitud ja valmis. Aeg need serveriga ühendada.",
+    "cablesConnected": "Server käivitub! Näen nüüd sisselogimisekraani. Login sisse.",
+    "serverLoggedIn": "Olen sees! On teavitus parooli juhiste ja ootel oleva paroolauditi kohta. Peaksin auditi nüüd käivitama.",
+    "passwordAuditComplete": "Paroolaudit valmis! Nüüd kontrollin monitoril e-kirju.",
+    "monitorOpened": "Siin on e-posti klient. Seal on teavitus IT-turvalisuselt. Loen selle kõigepealt.",
+    "securityNoticeRead": "Hea, panin tähele IT-turvajuhiseid. Arhiveerin selle ja kontrollin teisi e-kirju.",
+    "emailsArrived": "Saabus viis uut e-kirja. Pean iga ühe hoolikalt üle vaatama - mõni võib olla õngitsuskatse.",
+    "phishingComplete": "Suurepärane töö! Kõik e-kirjad on korralikult sorteeritud. Nüüd kontrollin nutitelefoni meie sotsiaalmeedia ülesannete osas.",
+    "phoneOpened": "Sotsiaalmeedia rakendus on avatud. On teavitus mustandi postituse kohta, mis vajab enne avaldamist ülevaatust.",
+    "postReviewed": "Sotsiaalmeedia postitus on avaldatud! Aga oota - on mõned kommentaarid, mis vajavad modereerimist.",
+    "commentsComplete": "Kõik kommentaarid on sobivalt käsitletud. Suurepärane töö sotsiaalmeedia haldamisega!",
+    "stickyNoteFound": "Serveril on kleepekiri, kus on kirjas 'Server-password: OfficeAccess!' - see on turvarisk! Peaksin selle hävitama.",
+    "stickyNoteShredded": "Hea otsus! Parooli kleepekiri on turvaliselt hävitatud.",
+    "stickyNoteKept": "Hmm, paroolide kleepekirjadele jätmine on turvarisk, kuid otsustasid selle praegu alles jätta.",
+    "usbFound": "Selles sahtlis on USB-pulk. See on märgistamata - võib olla mistahes.",
+    "usbPluggedIn": "Oh ei! USB sisaldas pahavara! Süsteem on nakatunud. Pean kohe IT-le abi otsima helistama.",
+    "usbIgnored": "Tark valik! Ära kunagi ühenda tundmatuid USB-seadmeid. Sa ei tea kunagi, mida need võivad sisaldada.",
+    "malwareRecovery": "IT-tugi puhastas nakkuse kaugjuurdepääsu kaudu. See oli napilt! Pea meeles: ära kunagi ühenda tundmatuid USB-seadmeid.",
+    "adPopup": "Ilmus särav reklaam: 'Õnnitleme! Võitsid TASUTA sülearvuti! Klõpsa siia, et seda võtta!' See näeb kahtlane välja...",
+    "adClicked": "Oh ei! See oli pahatahtlik reklaam. Pahavara on alla laaditud. Pean IT-le abi otsima helistama!",
+    "adClosed": "Hea instinkt! See oli selgelt pahatahtlik reklaam. Sulge alati kahtlased hüpikaknad kohe.",
+    "systemUpdate": "Ilmus teavitus: 'Saadaval on kriitiline turvavärskendus. See värskendus parandab teadaolevad haavatavused.'",
+    "updateInstalled": "Suurepärane otsus! Tarkvara värskena hoidmine on üks parimaid kaitseid küberohtude vastu.",
+    "updatePostponed": "See on riskantne! Turvavärskenduste edasilükkamine jätab süsteemi haavatavaks teadaolevate ärakasutamiste suhtes. Süsteem on ohustatud! Helistan IT-le abi saamiseks...",
+    "wifiPrompt": "Wi-Fi ühendus katkes. Saadaval on kaks võrku: 'Free_WiFi' ja 'Internal Company WiFi'.",
+    "wifiFree": "Oh ei! 'Free_WiFi' oli petturlik tugijaam. Sinu andmed on pealt kuulatud! Helistan IT-le abi saamiseks...",
+    "wifiCompany": "Hea valik! Ühenda alati usaldusväärsete, ettevõtte poolt pakutavate võrkudega. Avalikku või tundmatut WiFi-d saab kasutada man-in-the-middle rünnakuteks.",
+    "allComplete": "Fantastiline töö! Oled hakkama saanud kõigi digitaalsete turvaülesannetega, juhtinud sotsiaalmeediat ja navigeerinud küberohtudes. Uks on nüüd avatud - võid IT-osakonnast lahkuda!",
+    "leafletRead": "Informatiivne brošüür küberturvalisuse parimate tavade kohta. Hea üle vaadata, kuid praegu pole midagi tegevuslikku.",
+    "coffeeMugRead": "Kohvitass, millel on kirjas '#CaffeineAndContent'. Kellelgi selles osakonnas on huumorimeelt!",
+    "passwordListFound": "Vanade paroolide nimekiri alumises sahtlis. See on turvarisk, kuid see ei ole osa sinu praegustest ülesannetest.",
+    "mouseInWall": "Seinas on auk... ja pisike hiir istub miniatuursel arvutil! Isegi hiired siin on digitaalsed.",
+    "bagContents": "Koti sees: hambahari ja märkmik. Keegi oli valmis pikaks serverihoolduse ööks!",
+    "posterPadlock": "Plakat, mis näitab tabalukku tekstiga 'Lock it or Lose it'. Hea turvameenutus!",
+    "posterCat": "Motiveeriv plakat oksal rippuva kassiga: 'Hang in there!' Klassikaline IT-osakonna kaunistus.",
+    "posterHandshake": "Plakat, mis näitab kätlemist tekstiga 'Trust is Built, Not Given'. Asjakohane ka digitaalse turvalisuse jaoks!"
+  },
+  "puzzles": {
+    "passwordAudit": {
+      "title": "Paroolaudit",
+      "instructions": "Vaata iga parool üle ja klassifitseeri see Tugevaks või Nõrgaks vastavalt turvalisuse parimatele tavadele.",
+      "passwords": {
+        "0": {
+          "value": "123456",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! '123456' on üks levinumaid ja kergesti äraarvatavaid paroole.",
+          "feedbackWrong": "Mõtle uuesti. '123456' on järjestikuste arvude muster - üks esimesi kombinatsioone, mida ründajad proovivad."
+        },
+        "1": {
+          "value": "MyDogBella",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! Isiklikku teavet, näiteks lemmikloomade nimesid, on lihtne sotsiaalmeediast leida.",
+          "feedbackWrong": "Arvesta, et lemmikloomade nimed on sotsiaalmeediast leitavad. Isiklikust infost saab nõrku paroole."
+        },
+        "2": {
+          "value": "qwerty",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! 'qwerty' on klaviatuuri muster, mis ilmub igas paroolisõnastikus.",
+          "feedbackWrong": "Vaata oma klaviatuuri - 'qwerty' on lihtsalt tähtede ülemine rida. See on üks levinumaid paroole."
+        },
+        "3": {
+          "value": "m4R!timE$un_92",
+          "correct": "strong",
+          "feedbackCorrect": "Õige! See parool kasutab suuri, väikeseid tähti, numbreid, erimärke ja on 14 tähemärki pikk.",
+          "feedbackWrong": "Vaata hoolikamalt - see parool sisaldab suuri, väikeseid tähti, numbreid, erimärke ja head pikkust."
+        },
+        "4": {
+          "value": "password",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! 'password' on sõna otseses mõttes sõna 'parool' - kõige ilmsem valik, mida ründaja prooviks.",
+          "feedbackWrong": "Sõna 'password' on esimene asi, mida ründaja prooviks. See ei paku mingit turvalisust."
+        },
+        "5": {
+          "value": "P@ssw0rd!",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! Vaatamata erimärkide olemasolule kasutab 'P@ssw0rd!' ilmseid tähtede-sümbolite asendusi, mis on igas murdmissõnastikus.",
+          "feedbackWrong": "Levinud tähtede asendused (a->@, o->0) ei muuda parooli tugevaks. Krakkijad teavad neid mustreid."
+        },
+        "6": {
+          "value": "111111",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! Korduvad tähemärgid pakuvad sisuliselt mingit turvalisust.",
+          "feedbackWrong": "Parool, mis koosneb ainult samadest tähemärkidest, on triviaalselt lihtne murda. Sellel pole üldse keerukust."
+        },
+        "7": {
+          "value": "g!T7k^2p#rL0",
+          "correct": "strong",
+          "feedbackCorrect": "Õige! See on tõeliselt juhuslik tähemärkide kombinatsioon ilma äratuntavate mustriteta - suurepärane turvalisus.",
+          "feedbackWrong": "Sellel paroolil pole sõnastikusõnu, mustreid, on segatud suurtähed, numbrid ja sümbolid. See teeb selle tugevaks."
+        },
+        "8": {
+          "value": "OfficeAccess!",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! Kuigi sellel on suurtäht ja erimärk, kasutab see levinud sõnastikusõnu, mida on lihtne murda.",
+          "feedbackWrong": "Sõnastikusõnad kombineerituna on haavatavad sõnastikurünnakute suhtes, isegi suurtähe ja hüüumärgi puhul."
+        },
+        "9": {
+          "value": "iloveyou",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! 'iloveyou' on levinud fraas, mis on enamiku paroolinimekirjade esikümnes.",
+          "feedbackWrong": "Levinud fraasid ja tunded on esimesed asjad, mida paroolimurdjad proovivad."
+        },
+        "10": {
+          "value": "admin",
+          "correct": "weak",
+          "feedbackCorrect": "Õige! 'admin' on vaikimisi mandaat - esimene asi, mida ründaja proovib süsteemile juurdepääsu saamisel.",
+          "feedbackWrong": "'admin' on vaikimisi kasutajanimi JA parool paljudes süsteemides. See on esimene asi, mida ründajad kontrollivad."
+        }
+      },
+      "buttonStrong": "Tugev",
+      "buttonWeak": "Nõrk",
+      "progressLabel": "Parool",
+      "answerOverlay": "Tugevad paroolid on: 'm4R!timE$un_92' ja 'g!T7k^2p#rL0'. Kõik teised on nõrgad levinud mustrite, sõnastikusõnade, isikliku info või lihtsate asenduste tõttu.",
+      "allCorrect": "Suurepärane! Tuvastasid õigesti kõik tugevad ja nõrgad paroolid. Sul on suurepärane arusaamine paroolide turvalisusest!"
+    },
+    "phishing": {
+      "title": "Õngitsemise tuvastamine",
+      "instructions": "Vaata iga e-kiri üle ja otsusta, kas see on legitiimne e-kiri või õngitsuskatse. Hoia hiirekursorit linkidel ja saatja aadressidel, et neid kontrollida.",
+      "emails": {
+        "0": {
+          "subject": "Arve tähtaeg ületatud - Vaja viivitamatut maksmist",
+          "sender": "finance@yourcompany-payment.com",
+          "senderReal": "finance@yourcompany-payment.com (EI OLE sinu päris ettevõtte domeen!)",
+          "preview": "Hea töötaja, palun leidke lisatud teie tähtaja ületatud arve. Klõpsake allpool olevale lingile, et makset kohe töödelda ja vältida teenuse katkemist.",
+          "linkText": "Töötle makset kohe",
+          "linkReal": "http://malicious-site.ru/payment",
+          "correct": "phishing",
+          "feedbackCorrect": "Õige! Saatja domeen 'yourcompany-payment.com' ei ole sinu päris ettevõtte domeen ja link viib .ru domeenile. Klassikalised õngitsuse näitajad!",
+          "feedbackWrong": "Vaata saatja aadressi hoolikamalt - 'yourcompany-payment.com' EI OLE sinu päris ettevõtte domeen. Maksulink viib samuti kahtlasele .ru domeenile."
+        },
+        "1": {
+          "subject": "Meeskonnakohtumise päevakord - Neljapäev kell 14",
+          "sender": "project.lead@yourcompany.com",
+          "senderReal": "project.lead@yourcompany.com (kinnitatud sisemine aadress)",
+          "preview": "Tere meeskond, siin on neljapäeva kohtumise päevakord: 1) Q3 ülevaade, 2) Uued projektimäärangud, 3) Meeskonnalõuna planeerimine. Palun vaadake üle ja lisage punkte.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Õige! See on kinnitatud sisemiselt aadressilt, normaalse äritoonil, ilma kahtlaste linkideta ja ei loo kiireloomulisust ega küsi tundlikku teavet.",
+          "feedbackWrong": "See e-kiri on kinnitatud sisemiselt aadressilt (@yourcompany.com), arutab tavalisi äriasju, ei sisalda kahtlasi linke ega küsi tundlikke andmeid. See on legitiimne."
+        },
+        "2": {
+          "subject": "Sinu parool aegub - Tegevus vajalik",
+          "sender": "support@it-secure.net",
+          "senderReal": "support@it-secure.net (EI OLE sinu IT-osakond!)",
+          "preview": "Sinu ettevõtte parool aegub 24 tunni jooksul. Klõpsa allpool, et oma identiteeti kinnitada ja parooli kohe lähtestada, et juurdepääs säilitada.",
+          "linkText": "Lähtesta parool kohe",
+          "linkReal": "http://credential-harvest.xyz/reset",
+          "correct": "phishing",
+          "feedbackCorrect": "Õige! Sinu IT-osakond ei saadaks kunagi parooli lähtestamisi aadressilt 'it-secure.net' ja lähtestamise link viib kahtlasele .xyz domeenile. See on mandaadi kogumine!",
+          "feedbackWrong": "Sinu päris IT-osakond kasutab @yourcompany.com, mitte 'it-secure.net'. Parooli lähtestamise link viib .xyz domeenile - see on mandaadi kogumise katse."
+        },
+        "3": {
+          "subject": "Jagatud dokument: Q3 eelarvearuanne",
+          "sender": "noreply@drive.cloudservice.com",
+          "senderReal": "noreply@drive.cloudservice.com (sinu ettevõtte volitatud pilveteenuse pakkuja)",
+          "preview": "Sinu kolleeg Sarah Johnson on sinuga jaganud 'Q3 Budget Report.xlsx'. Sa saad sellele juurdepääsu ettevõtte pilve juhtpaneeli kaudu.",
+          "linkText": "",
+          "linkReal": "",
+          "correct": "legitimate",
+          "feedbackCorrect": "Õige! See on sinu ettevõtte volitatud pilveteenuse pakkujalt, nimetab konkreetset kolleegi nimepidi ja viitab legitiimsele äridokumendile.",
+          "feedbackWrong": "See e-kiri on sinu ettevõtte volitatud pilveteenuse pakkujalt (drive.cloudservice.com), nimetab konkreetset kolleegi ja viitab tavalisele äridokumendile. See on legitiimne."
+        },
+        "4": {
+          "subject": "Võitsid auhinna! Võta oma tasu",
+          "sender": "hr@your-company-rewards.com",
+          "senderReal": "hr@your-company-rewards.com (EI OLE sinu ettevõtte HR-osakond!)",
+          "preview": "Õnnitleme! Sind on valitud meie töötajate hindamise programmi. Võta oma 500$ kinkekaart, klõpsates allpool olevat linki, enne kui see aegub!",
+          "linkText": "Võta oma kinkekaart",
+          "linkReal": "http://bonusgift.biz/claim",
+          "correct": "phishing",
+          "feedbackCorrect": "Õige! 'your-company-rewards.com' ei ole sinu päris ettevõtte domeen ja link viib aadressile 'bonusgift.biz'. Soovimata auhinnateavitused on klassikaline õngitsustaktika!",
+          "feedbackWrong": "Saatja kasutab 'your-company-rewards.com', mitte sinu tegelikku ettevõtte domeeni. Auhinna võtmise link viib aadressile 'bonusgift.biz'. Soovimata tasud on suur õngitsuse hoiatusmärk."
+        }
+      },
+      "buttonPhishing": "Õngitsus",
+      "buttonLegitimate": "Legitiimne",
+      "hoverSender": "Saatja: ",
+      "hoverLink": "Lingi sihtkoht: ",
+      "progressLabel": "E-kiri",
+      "answerOverlay": "Õngitsuse e-kirjad: 'Arve tähtaeg ületatud' (võltsdomeen + .ru link), 'Parool aegub' (it-secure.net + .xyz link), 'Võitsid auhinna' (võltsdomeen + bonusgift.biz). Legitiimsed: 'Meeskonnakohtumise päevakord' (sisemine aadress), 'Jagatud dokument' (volitatud pilveteenuse pakkuja).",
+      "allCorrect": "Täiuslik e-kirjade sortimine! Tuvastasid õigesti kõik õngitsuskatsed ja legitiimsed e-kirjad."
+    },
+    "socialPost": {
+      "title": "Sotsiaalmeedia postituse ülevaatus",
+      "instructions": "Vaata sotsiaalmeedia postituse mustand üle ja paranda enne avaldamist kolm probleemi.",
+      "draftCaption": "Olemme põnevil et tutvustada uut tooteseeria! Vaata seda meie veebisait.",
+      "fixedCaption": "Oleme põnevil tutvustamaks oma uut tooteseeriat! Innovatsioon kohtub kvaliteediga igas tükis. Külasta meie veebisaiti, et avastada täielikku kollektsiooni ja näha, mis on uut.",
+      "captionLabel": "Pealkiri",
+      "captionInstruction": "Pealkirjas on trükivigu ja see on liiga lühike. Vali parandatud versioon.",
+      "captionOptions": {
+        "a": "Olemme põnevil et tutvustada uut tooteseeria! Vaata seda meie veebisait.",
+        "b": "Oleme põnevil tutvustamaks oma uut tooteseeriat! Innovatsioon kohtub kvaliteediga igas tükis. Külasta meie veebisaiti, et avastada täielikku kollektsiooni ja näha, mis on uut.",
+        "c": "Oleme põnevil tutvustamaks oma uut tooteseeriat! Vaata seda meie veebisaidil.",
+        "d": "UUS TOOTESEERIA!!! OSTA KOHE!!! KLÕPSA LINK BIO-S!!!"
+      },
+      "captionCorrect": "b",
+      "captionFeedbackCorrect": "Õige! Pealkiri parandab kõik trükivead ja lisab huvitavaid detaile, mis julgustavad suhtlust.",
+      "captionFeedbackWrong": "See pole parim valik. Otsi versiooni, mis parandab KÕIK trükivead ja lisab professionaalseid, kaasahaaravaid detaile.",
+      "imageLabel": "Pilt",
+      "imageInstruction": "Milline pilt peaks seda postitust saatma? Vali sobiv pilt ja alt-tekst.",
+      "imageOptions": {
+        "a": "Hägune foto ilma alt-tekstita",
+        "b": "Kvaliteetne tootefoto alt-tekstiga: 'Uue tooteseeria esitlus, mis tutvustab meie uusimaid disaine'",
+        "c": "Juhuslik stock-foto päikeseloojangust alt-tekstiga: 'Ilus päikeseloojang'",
+        "d": "Konkurendi tootefoto ilma alt-tekstita"
+      },
+      "imageCorrect": "b",
+      "imageFeedbackCorrect": "Õige! Kõrgekvaliteediline asjakohane pilt kirjeldava alt-tekstiga parandab nii kaasatust kui ka ligipääsetavust.",
+      "imageFeedbackWrong": "Mõtle, mis teeb hea sotsiaalmeedia pildi: asjakohane, kõrgekvaliteediline ja õige alt-tekstiga ligipääsetavuse jaoks.",
+      "hashtagLabel": "Hashtagid",
+      "hashtagInstruction": "Milline hashtag-komplekt on selle postituse jaoks kõige sobivam?",
+      "hashtagOptions": {
+        "a": "#NewProdcut #Exicting #Company",
+        "b": "#NewProduct #Innovation #Quality #CompanyName #ProductLaunch",
+        "c": "#followforfollow #like4like #viral #trending",
+        "d": "#NewProduct #Innovation"
+      },
+      "hashtagCorrect": "b",
+      "hashtagFeedbackCorrect": "Õige! Need hashtagid on õigesti kirjutatud, sisule asjakohased ja sisaldavad head segu kaubamärgi ja teemaga seotud silte.",
+      "hashtagFeedbackWrong": "Head hashtagid peaksid olema õigesti kirjutatud, sisule asjakohased ja sisaldama segu kaubamärgi ja teemaga seotud silte.",
+      "publishButton": "Postita",
+      "scheduleButton": "Planeeri",
+      "stepLabel": "Paranda",
+      "answerOverlay": "Pealkiri: paranda trükivead ja lisa kaasahaaravad detailid (valik B). Pilt: kvaliteetne tootefoto kirjeldava alt-tekstiga (valik B). Hashtagid: õigesti kirjutatud, asjakohane segu kaubamärgi ja teemaga seotud siltidest (valik B).",
+      "allCorrect": "Postitus on avaldamiseks valmis! Kõik kolm probleemi on parandatud."
+    },
+    "comments": {
+      "title": "Sotsiaalmeedia kommentaaride modereerimine",
+      "instructions": "Vaata iga kommentaar üle ja vali sobiv tegevus: vasta tõelistele klientide suhtlustele, kustuta rämpspost ja pahatahtlik sisu.",
+      "comments": {
+        "0": {
+          "author": "@CoffeeLover42",
+          "text": "Armastan teie kohvi! Parim segu, mida olen kunagi proovinud!",
+          "correct": "reply",
+          "feedbackCorrect": "Õige! Positiivne klientide tagasiside väärib professionaalset, tänulikku vastust kogukonna ehitamiseks.",
+          "feedbackWrong": "See on tõeline positiivne tagasiside kliendilt. Peaksid vastama, et oma kogukonnaga suhelda!",
+          "suggestedReply": "Suur tänu! Oleme rõõmsad, et teile maitseb. Püsige lainel uute hooajaliste segude jaoks, mis tulevad varsti!"
+        },
+        "1": {
+          "author": "@TotallyNotABot",
+          "text": "Klõpsa siia 10 000 TASUTA jälgija saamiseks!!! www.fake-followers.com",
+          "correct": "delete",
+          "feedbackCorrect": "Õige! See on ilmne rämpspost kahtlase lingiga. Kustuta see kohe, et oma jälgijaid kaitsta.",
+          "feedbackWrong": "See on selgelt rämpspost - see reklaamib kahtlast linki võltsjälgijate jaoks. See tuleks kustutada."
+        },
+        "2": {
+          "author": "@BudgetMinded",
+          "text": "Ausalt öeldes on teie hinnad liiga kõrged. Leidsin sama kvaliteedi mujal poole hinnaga.",
+          "correct": "reply",
+          "feedbackCorrect": "Õige! Isegi negatiivset tagasisidet tuleks käsitleda professionaalselt. See näitab, et hindad kõiki klientide arvamusi.",
+          "feedbackWrong": "Negatiivset tagasisidet tuleks käsitleda, mitte kustutada. Professionaalne vastus näitab, et hoolid klientide muredest.",
+          "suggestedReply": "Hindame teie ausat tagasisidet. Kvaliteet on meie prioriteet ja sooviksime arutada, kuidas saaksime teid paremini teenindada. Saatke meile DM!"
+        }
+      },
+      "buttonReply": "Vasta",
+      "buttonDelete": "Kustuta",
+      "progressLabel": "Kommentaar",
+      "answerOverlay": "'Armastan teie kohvi!' -> Vasta (positiivne kaasamine). 'Klõpsa siia tasuta jälgijate saamiseks' -> Kustuta (rämpspost). 'Liiga kallis' -> Vasta (käsitle muresid professionaalselt).",
+      "allCorrect": "Suurepärane modereerimine! Sa tead, kuidas tõelise tagasisidega suhelda ja kahjulikku sisu eemaldada."
+    },
+    "stickyNote": {
+      "title": "Turvarisk: avalik parool",
+      "instructions": "Leidsid kleepekirja, millele on kirjutatud serveri parool. See on turvarisk.",
+      "question": "Kleepekirjal on kirjas: 'Server-password: OfficeAccess!'. Kas peaksid selle kleepekirja hävitama?",
+      "options": {
+        "yes": "Jah - hävita kohe",
+        "no": "Ei - jäta see viite jaoks"
+      },
+      "correctAnswer": "yes",
+      "feedbackCorrect": "Õige! Paroole ei tohi kunagi üles kirjutada ja avalikult jätta. Selle hävitamine kõrvaldab riski.",
+      "feedbackWrong": "Paroolide jätmine avalikult on suur turvahaavatavus. Igaüks, kes sellesse ruumi siseneb, võib seda näha."
+    },
+    "usb": {
+      "title": "Tundmatu USB-seade",
+      "instructions": "Leidsid sahtlist märgistamata USB-pulga.",
+      "question": "Mida peaksid selle tundmatu USB-seadmega tegema?",
+      "options": {
+        "plugin": "Ühenda see, et selle sisu kontrollida",
+        "leave": "Jäta rahule - ära ühenda tundmatuid seadmeid"
+      },
+      "correctAnswer": "leave",
+      "feedbackCorrect": "Õige! Tundmatud USB-seadmed võivad sisaldada pahavara. Ära kunagi ühenda seadet, mida sa ei usalda.",
+      "feedbackWrong": "See oli riskantne! Tundmatud USB-seadmed on tavaline pahavara rünnakuvektor."
+    },
+    "ad": {
+      "title": "Kahtlane reklaam",
+      "instructions": "Ekraanile ilmus särav hüpikaknareklaam.",
+      "question": "'Õnnitleme! Võitsid TASUTA sülearvuti! Klõpsa siia, et seda võtta!' Mida sa teed?",
+      "options": {
+        "click": "Klõpsa, et auhind võtta",
+        "close": "Sulge reklaam kohe"
+      },
+      "correctAnswer": "close",
+      "feedbackCorrect": "Õige! Soovimata auhinna hüpikaknad on peaaegu alati pahatahtlikud. Sulge need kohe ilma klõpsamata.",
+      "feedbackWrong": "See oli pahatahtlik reklaam! Ära kunagi klõpsa soovimata auhinna või tasu hüpikakendel."
+    },
+    "systemUpdate": {
+      "title": "Saadaval süsteemivärskendus",
+      "instructions": "Ilmus süsteemiteavitus.",
+      "question": "'Saadaval on kriitiline turvavärskendus. See värskendus parandab teadaolevad haavatavused.' Mida sa teed?",
+      "options": {
+        "install": "Paigalda värskendus kohe",
+        "postpone": "Lükka edasi - teen seda hiljem"
+      },
+      "correctAnswer": "install",
+      "feedbackCorrect": "Õige! Turvavärskendused tuleb paigaldada kohe, et kaitsta teadaolevate haavatavuste eest.",
+      "feedbackWrong": "Turvavärskenduste edasilükkamine jätab süsteemi teadaolevatele ohtudele avatuks!"
+    },
+    "wifi": {
+      "title": "Wi-Fi ühendus",
+      "instructions": "Sinu Wi-Fi ühendus katkes. Saadaval on kaks võrku.",
+      "question": "Millise võrguga peaksid ühenduma?",
+      "options": {
+        "free": "Free_WiFi (Avatud võrk, paroolita)",
+        "company": "Internal Company WiFi (Turvatud, vajab mandaate)"
+      },
+      "correctAnswer": "company",
+      "feedbackCorrect": "Õige! Kasuta alati oma ettevõtte turvatud võrku. Avatud/tundmatuid WiFi-võrke saab kasutada andmete pealtkuulamiseks.",
+      "feedbackWrong": "Avatud WiFi-võrgud võivad olla petturlikud tugijaamad, mis on seadistatud sinu andmete pealtkuulamiseks!"
+    },
+    "answerOverlayTitle": "Vastus avaldatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "intro": "Vaata ringi toas. Serveri kaablid tunduvad katki olevat - alusta sealt.",
+    "fixCables": "Klõpsa serveri katkistele kaablitele, et neid parandama hakata.",
+    "serverBoot": "Server käivitub. Oota sisselogimisekraani.",
+    "passwordAudit": "Klassifitseeri iga parool Tugevaks või Nõrgaks vastavalt keerukusele, pikkusele ja mustritele.",
+    "openMonitor": "Klõpsa lauaarvutil, et oma e-kirju kontrollida.",
+    "readSecurityNotice": "Loe esmalt IT-turvateatist, seejärel arhiveeri see.",
+    "phishing": "Kontrolli saatja aadresse ja linkide sihtkohti hoolikalt. Hoia hiirekursorit, et kontrollida.",
+    "openPhone": "Klõpsa nutitelefonil, et oma sotsiaalmeedia ülesandeid kontrollida.",
+    "socialPost": "Vaata postituse mustand üle ja paranda pealkiri, pilt ja hashtagid.",
+    "comments": "Vasta tõelistele klientide suhtlustele ja kustuta rämpspost.",
+    "stickyNote": "Serveril on parooliga kleepekiri. See on turvarisk!",
+    "miniPuzzles": "Püsi tähelepanelik turvaohtudele - USB-seadmed, hüpikaknad, värskendused ja WiFi-võrgud.",
+    "allComplete": "Kõik on tehtud! Koolitus on lõpetatud!",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata ringi IT-osakonnas asjade järele, mis vajavad tähelepanu."
+  },
+  "items": {
+    "leaflet": {
+      "popupTitle": "Küberturvalisuse parimad tavad",
+      "popupContent": [
+        "1. Kasuta tugevaid, unikaalseid paroole iga konto jaoks.",
+        "2. Luba kahefaktoriline autentimine kõikjal, kus võimalik.",
+        "3. Ära kunagi klõpsa kahtlastel linkidel ega laadi alla tundmatuid manuseid.",
+        "4. Hoia kogu tarkvara ja süsteemid värskendatud.",
+        "5. Teata kahtlastest tegevustest kohe IT-le."
+      ]
+    },
+    "coffeeMug": {
+      "popupTitle": "Kohvitass",
+      "popupContent": [
+        "#CaffeineAndContent",
+        "IT-osakonna mitteametlik moto."
+      ]
+    },
+    "passwordList": {
+      "popupTitle": "Vanade paroolide nimekiri",
+      "popupContent": [
+        "Kortsus vanade paroolide nimekiri, mis leiti alumisest sahtlist.",
+        "See on täpselt see, mida turvalises töökohas ei tohiks olla."
+      ]
+    },
+    "mouseInWall": {
+      "popupTitle": "Pisike avastus",
+      "popupContent": [
+        "Seina aukus on pisike hiir, kes istub miniatuursel arvutil!",
+        "Isegi hiired selles osakonnas tunnevad tehnoloogiat."
+      ]
+    },
+    "bag": {
+      "popupTitle": "Koti sisu",
+      "popupContent": [
+        "Koti sees leiad hambaharja ja märkmiku.",
+        "Keegi oli valmis pikaks serverihoolduse ööks!"
+      ]
+    },
+    "itNotice": {
+      "title": "IT-turvateatis",
+      "domainLine": "Meie ettevõtte domeen on",
+      "malwareWarning": "Süsteemis on tuvastatud pahavara. Sinu failid ja andmed võivad olla ohus.",
+      "domainNotice": "Meie ettevõtte domeen on <strong>&#64;yourcompany.com</strong>. Iga teine domeen, mis väidab end olevat meie ettevõttest, on potentsiaalselt pettus."
+    }
+  },
+  "completion": {
+    "title": "Õnnitleme!",
+    "message": "Oled edukalt lõpetanud kõik digioskuste ülesanded! Parandasid serveri, auditeerisid paroolid, tuvastasid õngitsuse e-kirjad, juhtisid sotsiaalmeediat professionaalselt ja tegelesid mitmete küberohtudega. Oled nüüd paremini varustatud, et navigeerida digitaalses töökohas turvaliselt ja tõhusalt!",
+    "buttonText": "Välju toast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "gapPlaceholder": "___",
+    "callIT": "Helista IT-le abi saamiseks",
+    "itRecovery": "IT-tugi puhastab nakkust...",
+    "archive": "Arhiveeri",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

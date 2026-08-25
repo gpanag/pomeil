@@ -1,0 +1,205 @@
+{
+  "loading": "Laster...",
+  "intro": {
+    "title": "Strategisk tenkning",
+    "paragraphs": [
+      "Du er <username>, en ung og ambisiøs person som nettopp har blitt ansatt som leder i et stort lydselskap kalt \"SoundWave\".",
+      "Selv om du er engasjert og klar for å jobbe, har du ikke mye erfaring med de vanskelige situasjonene du må håndtere som leder.",
+      "Du innser raskt at du må ta tøffe beslutninger, planlegge fremover og tenke strategisk."
+    ],
+    "buttonText": "Start spillet"
+  },
+  "characters": {
+    "jake": {
+      "name": "Jake",
+      "dialogues": {
+        "introduction": "God morgen, <username>! Vi er glade for at du er her. Vi har hørt mye bra om deg, og vi gleder oss til å begynne å jobbe under ditt lederskap! Jeg er Jake, hyggelig å møte deg! Men først det viktigste. Den forrige lederen la igjen noen råd og retningslinjer til deg, i håp om at de skal hjelpe deg de første dagene her. Det er virkelig viktig, så han festet det på korktavlen der borte… Vel, på en av dem i alle fall. Gå og se etter, jeg er sikker på at du finner det. Det er en blå lapp.",
+        "findNote": "Se på korktavlene. Lappen du leter etter er blå.",
+        "noteFound": "Ja, du fant lappen!",
+        "noteFoundPart2": "Som du ser, <username>, er strategisk tenkning en avgjørende ferdighet, fordi den lar deg gjenkjenne og utnytte ulike langsiktige mønstre gjennom analysen av hele systemet. Den kan brukes i mange situasjoner, men er spesielt viktig i lederstillinger som din!",
+        "noteFoundPart3": "Nå som du har fått grunnleggende forståelse av strategisk tenkning, skal vi teste kunnskapen din med en enkel oppgave.",
+        "noteFoundPart4": "Når du er klar, klikk på knappen nedenfor for å starte quizen.",
+        "quizComplete": "Bra jobbet. Jeg så fra første stund at du lærer raskt! Greit, med det grunnleggende på plass kan vi gå videre til litt mer avanserte ting. Sofia tar over herfra — hils på henne og snakk med henne nå. Takk og lykke til, <username>!",
+        "findUsb": "Hva er det? En forsvunnet USB? Nei, jeg har ikke sett den. Faktisk har jeg mistet et par av mine også!",
+        "allQuestsComplete": "Lykke til!",
+        "default": "Fortsett med oppgaven du holder på med."
+      }
+    },
+    "sofia": {
+      "name": "Sofia",
+      "dialogues": {
+        "findUsb": "Hei der! Du må være <username>, ikke sant? Vi har ventet på deg. Det er så hyggelig å endelig møte deg. Jeg heter Sofia. Jeg hadde tenkt å vise deg rundt og gi deg litt nødvendig opplæring, men… jeg finner ikke USB-pinnen min, og alle opplæringsfilene var på den. Tror du du kan hjelpe meg å finne den? Den var rød. Jeg tror jeg så den sist nær kaffemaskinen… men jeg sverger jeg har sjekket allerede, og den var ikke der. Men det skader ikke å sjekke en gang til, ikke sant?",
+        "findUsbFollowUp": "Leter du fortsatt? Den røde USB-pinnen min så jeg sist nær kaffemaskinen — kanskje sjekke der en gang til.",
+        "usbFound": "Jeg kan ikke tro det! Du klarte å finne den! Du er en livredder. Jeg kan allerede si at du er den mest oppmerksomme personen i firmaet. Greit, la oss komme i gang med filene da. Møt meg ved laptopen min.",
+        "readTrainingFileDone": "Jeg ser at du leser raskt også. Notert! La oss gå videre til neste fi… Å nei! Så filsystemet var FAKTISK ØDELAGT! Kan du, vær så snill, hjelpe meg? Det vi må gjøre, er å matche hver av idéene fra første kolonne med riktig synergiresultat fra andre kolonne.",
+        "puzzleTwoComplete": "Ja! Det er det jeg snakker om! Vi klarte det! Å… Jeg er så lei meg, men jeg må ta denne samtalen — det er superviktig. FoU er veldig nær et teknologisk gjennombrudd i en ny hodetelefon-driver! Det kan bli en bransjeforandrende revolusjon, HVIS vi spiller smart. Spørsmålet er — hva skal vi gjøre nå? Og i hvilken rekkefølge? Jeg er sikker på at du finner ut av dette, <username>. Vi tror på deg!",
+        "allQuestsComplete": "Ja! Du har helt rett! Det er den beste strategien å følge! Den lar oss kjenne igjen alle relasjoner og avhengigheter, ta hensyn til informasjon fra alle avdelinger, diskutere detaljene rundt gjennombruddet vårt og til slutt integrere innovasjonen i den langsiktige strategien. Fantastisk! Opplæringen er fullført!",
+        "farewell": "Ta vare på deg selv, <username>. Lykke til der ute!",
+        "default": "Fortsett med oppgaven du holder på med."
+      }
+    }
+  },
+  "puzzles": {
+    "puzzleOne": {
+      "title": "En ny start! Men hvordan begynne?",
+      "question": "Forestill deg at du forbereder ditt første teammøte. For å vise strategisk tenkning fra første øyeblikk, hvordan bør du begynne?",
+      "options": {
+        "a": "Hopper rett inn i å fordele oppgaver for å vise autoritet",
+        "b": "Takker teamet for at de kom, setter en positiv tone og forklarer formålet med møtet",
+        "c": "Begynner med å kritisere hva teamet gjorde feil før du kom",
+        "d": "Forteller en lang personlig historie så alle blir bedre kjent med deg"
+      },
+      "correct": "b",
+      "hint": "En fornuftig måte å begynne på er å unngå ytterpunkter og holde seg til den trygge ruten.",
+      "completeOverlay": {
+        "title": "Riktig!",
+        "message": "Glimrende jobb! Du har fullført den første oppgaven.",
+        "buttonText": "Fortsett"
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Forestill deg at du forbereder ditt første teammøte. For å vise strategisk tenkning fra første øyeblikk, hvordan bør du begynne?\n\nRiktig svar: b) Takk teamet for at de kom, sett en positiv tone og forklar formålet med møtet\n\nForklaring: Å starte et teammøte med å takke teamet, sette en positiv tone og forklare møtets formål viser strategisk tenkning fordi det:\n• Skaper en imøtekommende atmosfære som fremmer samarbeid\n• Viser lederskap uten å være autoritært\n• Setter klare forventninger og retning fra start\n• Unngår ytterpunktene — verken for aggressivt eller for avslappet"
+    },
+    "matching": {
+      "title": "Matche idéer med synergier",
+      "question": "Match hver produktutviklingsidé med riktig synergiresultat.",
+      "columnHeaders": {
+        "ideas": "Produktutviklingsidéer",
+        "outcomes": "Synergiresultat"
+      },
+      "selectPlaceholder": "Velg resultat",
+      "rows": {
+        "1": "Hvis produksjon og design samordnes tidlig, unngår vi dyre endringer senere.",
+        "2": "Ved å involvere kundeservice kan vi forutse vanlige problemer før lansering.",
+        "3": "Hvis FoU samarbeider tett med Markedsføring, kan vi designe funksjoner kundene faktisk ønsker.",
+        "4": "Samarbeid med Økonomi sikrer at innovasjonen vår er bærekraftig, ikke bare spennende."
+      },
+      "options": {
+        "A": "Produkter som passer kundebehov fra start.",
+        "B": "Færre klager og en jevnere kundeopplevelse.",
+        "C": "Langsiktig levedyktighet og balanserte investeringer.",
+        "D": "Effektive prosesser som sparer tid og penger."
+      },
+      "answerKey": {
+        "1": "D",
+        "2": "B",
+        "3": "A",
+        "4": "C"
+      },
+      "feedback": {
+        "notAllPicked": "Match alle idéene før du sender inn.",
+        "wrong": "Ikke helt. Tenk: hvilket avdelingssamarbeid fører til hvilket resultat?"
+      },
+      "completeOverlay": {
+        "title": "Bra jobbet!",
+        "message": "Du matchet alle idéene riktig.",
+        "buttonText": "Fortsett"
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Match hver produktutviklingsidé med riktig synergiresultat.\n\nRiktige matcher:\n• \"Hvis produksjon og design samordnes tidlig, unngår vi dyre endringer senere.\" → D: Effektive prosesser som sparer tid og penger\n• \"Ved å involvere kundeservice kan vi forutse vanlige problemer før lansering.\" → B: Færre klager og en jevnere kundeopplevelse\n• \"Hvis FoU samarbeider tett med Markedsføring, kan vi designe funksjoner kundene faktisk ønsker.\" → A: Produkter som passer kundebehov fra start\n• \"Samarbeid med Økonomi sikrer at innovasjonen vår er bærekraftig, ikke bare spennende.\" → C: Langsiktig levedyktighet og balanserte investeringer\n\nStrategisk tenkning er å koble avdelinger slik at deres samlede innsats gir bedre resultater enn å jobbe alene.",
+      "resetButtonText": "Tilbakestill",
+      "submitButtonText": "Send inn"
+    },
+    "sequence": {
+      "title": "Det første ordentlige oppdraget",
+      "question": "Endre rekkefølgen på trinnene slik at beslutningsprosessen følger prinsippet om systemperspektiv.",
+      "availableStepsLabel": "Tilgjengelige trinn",
+      "yourSequenceLabel": "Din rekkefølge",
+      "placeholderText": "Klikk på trinnene til venstre for å legge dem til her.",
+      "options": {
+        "a": "Diskuter den nye hodetelefon-prototypen med ingeniørene i laboratoriet",
+        "b": "Identifiser hvordan denne innovasjonen kan påvirke produksjon, markedsføring og kundeservice",
+        "c": "Innhent tilbakemeldinger fra ulike avdelinger for å oppdage muligheter og risikoer",
+        "d": "Tilpass den endelige beslutningen til selskapets overordnede langsiktige strategi"
+      },
+      "correctSequence": [
+        "b",
+        "c",
+        "a",
+        "d"
+      ],
+      "hints": {
+        "attempt1": "Tips: Forstå først det store bildet — hvordan beslutningen påvirker hele systemet.",
+        "attempt2": "Tips: Deretter, samle tilbakemeldinger på tvers av avdelinger for å oppdage muligheter og risikoer."
+      },
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: FoU er veldig nær et teknologisk gjennombrudd i en ny hodetelefon-driver! Hva skal vi gjøre nå? Og i hvilken rekkefølge?\n\nRiktig svar:\n1. \"Trinn B: Identifiser hvordan denne innovasjonen kan påvirke produksjon, markedsføring og kundeservice\" — Forstå først det store bildet og hvordan beslutningen vil påvirke alle relaterte variabler i systemet\n2. \"Trinn C: Innhent tilbakemeldinger fra ulike avdelinger for å oppdage muligheter og risikoer\" — En god beslutningsprosess krever at man baserer seg på all tilgjengelig data fra alle perspektiver\n3. \"Trinn A: Diskuter den nye hodetelefon-prototypen med ingeniørene i laboratoriet\" — Når konteksten er klar, fokuser på de tekniske detaljene og det spesifikke ved innovasjonen\n4. \"Trinn D: Tilpass den endelige beslutningen til selskapets overordnede langsiktige strategi\" — Til slutt, integrer alt i en systemisk beslutning som tjener de langsiktige målene\n\nDenne tilnærmingen viser strategisk tenkning ved å vurdere hele systemet før man dykker inn i detaljene.",
+      "resetButtonText": "Tilbakestill",
+      "submitButtonText": "Send inn rekkefølge"
+    },
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "answerOverlay": {
+    "title": "Riktig svar",
+    "buttonText": "Fortsett"
+  },
+  "hints": {
+    "findNote": "Prøv den *venstre, store korktavlen*. Jake sa at den riktige lappen er blå.",
+    "findUsb": "Sofia så sist den røde USB-pinnen nær kaffemaskinen.",
+    "puzzleThree": "Tips for rekkefølgen: større system → tilbakemelding → tekniske detaljer → langsiktig tilpasning.",
+    "default": "Se etter det som virker mest relevant for det aktuelle målet."
+  },
+  "items": {
+    "blueNote": {
+      "altText": "En blå klistrelapp med tips om strategisk tenkning.",
+      "inventoryTitle": "Se den blå lappen"
+    },
+    "usb": {
+      "altText": "Sofias røde USB-pinne.",
+      "inventoryTitle": "Se USB-pinnen"
+    },
+    "trainingFile": {
+      "altText": "Opplæringsfil",
+      "inventoryTitle": "Se OPPLÆRINGS-filen",
+      "title": "OPPLÆRING",
+      "content": "Strategisk tenkning handler ikke bare om å ha gode idéer — det handler om å koble sammen de rette menneskene slik at idéene blir sterkere og skaper synergi. Hver avdeling ser selskapet fra en annen vinkel: produksjon, design, markedsføring, økonomi, forskning og utvikling og kundeservice — alle har unik kunnskap. Når de får samarbeide fra tidlige stadier av prosessen, kan teamene unngå dyre feil, bedre forutse kundebehov og lage løsninger som er både nyskapende og realistiske. Synergi er det som skjer når disse perspektivene jobber sammen i stedet for hver for seg.",
+      "closeHint": "Klikk hvor som helst for å lukke."
+    }
+  },
+  "systemDialogues": {
+    "introSelfTalk": "Så det er det — første dag i den nye jobben. Leder. Vel, jeg er optimistisk. La oss se hva dagen bringer. La oss kjøre.",
+    "findNotePrompt": "På en av korktavlene henger en blå lapp med en viktig melding fra forrige leder. Se deg rundt i rommet og prøv å finne den.",
+    "noteFoundSuccess": "Bra jobbet! Det ser ut som Jake vil snakke med deg igjen.",
+    "wrongCorkboard": "Bare noen skjemaer, kart og strategidokumenter her. Prøv en annen korktavle.",
+    "laptopTooEarly": "En slank, moderne laptop. Best å hjelpe Sofia å finne USB-pinnen først.",
+    "laptopNoUsb": "Ingen opplæringsfiler uten USB-pinnen.",
+    "usbFoundSuccess": "Du fant Sofias USB-pinne — bra jobbet! La oss dele de gode nyhetene med henne!",
+    "trainingFileDone": "Bra jobbet! Konsentrasjonen din er imponerende! La oss snakke med Sofia igjen.",
+    "findUsbPrompt": "Hjelp Sofia og finn den røde USB-pinnen hennes. Hun tror den kan være nær kaffemaskinen.",
+    "talkToSofiaPrompt": "Klikk nå på Sofia for å hilse — hun har resten av opplæringen din.",
+    "quizCompletePrompt": "Bra jobbet, <username>! La oss snakke med Jake igjen.",
+    "matchingCompletePrompt": "Bra jobbet! La oss se hva Sofia har å si!",
+    "sequenceCompletePrompt": "Bra jobbet! Klikk nå på Sofia for å avslutte opplæringen.",
+    "sequenceCompletePromptAfterReveal": "Klikk nå på Sofia for å avslutte opplæringen."
+  },
+  "completion": {
+    "title": "Opplæringen er fullført!",
+    "message": "Gratulerer! Du har fullført modulen Strategisk tenkning.",
+    "buttonText": "Tilbake til hovedmenyen"
+  },
+  "ui": {
+    "fullscreenTitle": "Veksle fullskjerm",
+    "backToEscapeRoomsTitle": "Tilbake til fluktrom",
+    "startQuizButton": "Start quiz",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "skipButton": "Hopp over",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

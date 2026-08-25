@@ -1,0 +1,286 @@
+{
+  "id": "resilience",
+  "moduleNumber": 27,
+  "title": "Resilience",
+  "subtitle": "Module 27",
+  "coverImage": "assets/thumbs/resilience.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 27",
+      "title": "Resilience",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/resilience.webp"
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Resilience is the ability to keep going, even when things get tough. It’s about bouncing back from setbacks, staying motivated during uncertainty, and continuing to move forward no matter the obstacles. For migrant entrepreneurs, resilience is more than just a personal strength — it’s a vital skill that helps them navigate life and business in a new country"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "The objective of this module is to strengthen participants’ understanding of resilience as a key entrepreneurial competence. Learners will explore how resilience supports persistence, emotional regulation, and adaptive thinking in challenging situations. The module encourages reflection on personal reactions to stress, setbacks, and uncertainty, while helping participants recognize the importance of self-belief, flexibility, and problem-solving in both professional and personal contexts."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Hypothetical Scenario: Imagine Ivan, an English teacher who recently moved to a new country, hoping to continue doing what he loves—teaching. But starting from scratch wasn’t easy. The teaching system was different, his qualifications weren’t fully recognized, and he didn’t know many people. At times, it felt overwhelming. Still, Ivan didn’t give up. He began offering free language exchange meetups in local cafés, slowly building trust and connections. He took an online course to understand local education standards and started offering private lessons tailored to what his new community needed—practical English for work and daily life. There were moments of doubt, but Ivan stayed focused. Each small step, from finding his first client to creating a simple website, helped him grow more confident. His resilience—his 3 ability to keep going despite the setbacks—turned his dream into reality. Today, Ivan runs a small private tutoring business that supports him financially and helps newcomers and locals connect through language."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Initiative – Taking action without waiting to be told. Judgment – Making thoughtful decisions based on available information. Creativity – Finding new or clever ways to solve everyday problems. Flexibility – Adapting easily when plans or situations change. Self-belief – Trusting your ability to handle challenges. Ingenuity – Using what you have in smart, resourceful ways."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "numberedList",
+          "items": [
+            "Build small habits – Do one thing daily that keeps you grounded, like walking, journaling, or meditating.",
+            "Bounce back quickly – After a tough moment, take a breath and ask, “What’s the next best step I can take?”",
+            "Reframe your thoughts – When things go wrong, replace “I can’t” with “I’m still learning.”",
+            "Set tiny goals – Break big problems into small tasks you can finish today.",
+            "Stay connected – Talk to someone who lifts you up or helps you think clearly.",
+            "Expect discomfort – Hard times happen—remind yourself they’re temporary, not permanent.",
+            "Celebrate progress – Notice what’s working, even if it’s small, and give yourself credit."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Common Difficulties (Resilience)"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Negative self-talk – Doubting yourself with thoughts like “I can’t handle this.”",
+            "Avoiding emotions – Trying to stay strong by ignoring stress or sadness instead of working through it.",
+            "Fear of failure – Holding back from trying because you’re afraid it won’t work out.",
+            "Isolation – Facing difficulties alone instead of seeking support.",
+            "Burnout – Pushing too hard without rest, leading to exhaustion and low motivation."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Solutions and Strategies"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Shift your self-talk – Replace harsh thoughts with encouraging ones like “I’ve handled hard things before.”",
+            "Name your feelings – When you’re stressed or upset, simply identifying the emotion can help you process and move through it.",
+            "Try, even if unsure – Take action even when you're nervous; each try builds confidence and grit.",
+            "Reach out early – Talk to someone you trust before the pressure builds—connection strengthens recovery.",
+            "Take recovery breaks – Schedule short moments to rest and reset, even during busy days, to avoid burnout."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Daily Resilience Check-In"
+        },
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Prompt: Think of a moment today that felt stressful or discouraging. Write down:"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "What happened?",
+            "How did you react at first?",
+            "What small thing helped you recover, or what could help next time?"
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Objective",
+          "definition": "To help you build everyday resilience by reflecting on how you respond to stress, learning from each challenge, and preparing to bounce back stronger the next time."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Rate each statement from 1 (Strongly Disagree) to 5 (Strongly Agree)"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I recover quickly after stressful situations.",
+            "I can stay focused even when things feel overwhelming.",
+            "I believe setbacks are part of growth, not the end.",
+            "I ask for help when I need it instead of isolating myself.",
+            "I stay calm and keep moving forward during uncertainty.",
+            "I try again after failure instead of giving up.",
+            "I take care of my well-being, even on busy days."
+          ]
+        },
+        {
+          "kind": "definition",
+          "term": "Score 21–25",
+          "definition": "Strong resilience"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 16–20",
+          "definition": "Growing resilience"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 11–15",
+          "definition": "Needs strengthening"
+        },
+        {
+          "kind": "definition",
+          "term": "Score 7–10",
+          "definition": "Start with small recovery habits"
+        },
+        {
+          "kind": "heading",
+          "text": "Scoring"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Resilience is the ability to adapt, recover, and grow stronger after facing stress or adversity. It helps people stay steady in times of change, uncertainty, or personal challenge. Whether you're an entrepreneur, student, or employee, resilience supports your success and well- being. It’s not about avoiding stress but learning how to manage it. According to the American Psychological Association, resilient people stay focused on goals and hold onto hope, even when things get tough. Emotional regulation and mental flexibility are key parts of this skill. Research shows that resilience isn’t fixed—it grows with time, effort, and practice."
+        },
+        {
+          "kind": "paragraph",
+          "text": "You can strengthen it through small daily actions like reframing thoughts, staying connected with others, and solving problems step by step. Building resilience doesn’t happen overnight—it’s a habit, not a trait. Everyone starts somewhere, and setbacks are part of the process. The more you practice, the more natural it becomes to bounce back. Tools like mindfulness, journaling, or support groups can make a big difference. Every small effort today prepares you for tomorrow’s challenges. Keep exploring, practicing, and believing in your ability to grow stronger."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "After completing this module, participants will be able to respond more constructively to setbacks, apply practical strategies to manage stress and uncertainty, and maintain motivation during difficult periods. They will be better equipped to regulate emotions, reframe negative experiences into learning opportunities, and continue taking action toward their goals despite obstacles. Participants will also be able to identify small, consistent practices that help build long-term resilience in business and daily life."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources (1 of 2)",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Building Personal Resilience: Managing Anxiety and Mental Health",
+            "Provider: Harvard Medical School via edX",
+            "Format: Free online course (audit option)"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Overview: Led by Dr. Luana Marques, this course offers five science-backed skills to transform stress and anxiety into mental strength. It incorporates principles from Cognitive Behavioral Therapy (CBT) and includes practical exercises to enhance resilience."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Access: Enroll here",
+            "Resilience Skills in a Time of Uncertainty",
+            "Provider: University of Pennsylvania via Coursera",
+            "Format: Free online course (audit option)"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Overview: Taught by Dr. Karen Reivich, this course delves into resilience strategies, including managing anxiety, enhancing positive emotions, and strengthening personal relationships. It's designed to help individuals navigate uncertain times with greater psychological resilience."
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Access: Enroll here"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Creighton University (2023)."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Free Resilience Training Video Series: Resilience in Uncertain Times."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources (2 of 2)",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Providing short, structured video-based resilience modules for practical self-study. https://www.creighton.edu/continuing-professional/free-resilience-training-video- resilience-in-uncertain-times"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Coursera & Yale University (2024 Updated Run)."
+        },
+        {
+          "kind": "paragraph",
+          "text": "The Science of Well-Being. Taught by Dr. Laurie Santos. Teaching evidence-based mental habits (like gratitude, mindset shifts, and optimism) that directly support psychological resilience."
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Resilience",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/resilience.pdf"
+      }
+    }
+  ]
+}

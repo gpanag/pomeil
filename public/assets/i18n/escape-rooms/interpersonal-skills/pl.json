@@ -1,0 +1,186 @@
+{
+  "loading": "Ładowanie modułu Umiejętności interpersonalne...",
+  "intro": {
+    "title": "Umiejętności interpersonalne",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać udanym przedsiębiorcą i stworzyć biznes, który zbliża ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, w której współpracują ludzie z różnych kultur, środowisk i zawodów. Praca w tej firmie to dla ciebie doświadczenie edukacyjne, ponieważ wykonując różne wyzwania, zdobędziesz umiejętności zawarte w Mapie Kompetencji POMEIL, które są niezbędne dla każdego przedsiębiorcy.",
+      "Wchodzisz do strefy Recepcji i dostrzegasz Lidera Zespołu, Carlosa."
+    ],
+    "buttonText": "Wejdź do strefy Recepcji"
+  },
+  "characters": {
+    "carlos": {
+      "name": "Carlos",
+      "dialogues": {
+        "greet": "Witaj! Ta strefa recepcji jest miejscem, gdzie powstają pierwsze wrażenia—zarówno z gośćmi, jak i z kolegami. W biznesie umiejętności techniczne są ważne, ale twoja zdolność do komunikacji i dobrej współpracy z innymi—Twoje Umiejętności Interpersonalne—jest tym, co naprawdę czyni cię cennym/ą dla organizacji.",
+        "findMagazine": "Wcześniej czytałem artykuł o kluczowych elementach umiejętności interpersonalnych, ale zostawiłem czasopismo gdzieś w tej recepcji. Możesz mi je znaleźć? Sprawdź stolik kawowy.",
+        "magazineFound": "Świetnie! Jak widzisz, umiejętności interpersonalne wykraczają daleko poza mówienie—obejmują postawę, empatię i zachowanie. Te umiejętności rozwijają się poprzez codzienne interakcje, nawet tutaj w recepcji.",
+        "quiz1Intro": "Sprawdźmy twoje rozumienie szybkim quizem.",
+        "quiz1Done": "Masz solidną znajomość podstaw. Teraz spójrzmy na wyzwania. Nieporozumienia i konflikty mogą wystąpić wszędzie—nawet w recepcji, gdzie stres i nieporozumienia są częste.",
+        "findFolder": "Przygotowałem „Ściągę” z rozwiązaniami typowych wyzwań interpersonalnych. Myślę, że zostawiłem ją w niebieskiej teczce na regale. Idź ją zabrać!",
+        "folderFound": "Idealnie. Ta kartka jest bardzo przydatna, gdy sytuacja staje się napięta. Zobaczmy, czy potrafisz zastosować te rozwiązania w realnych sytuacjach.",
+        "puzzle2Intro": "Rozwiąż te zagadki, by udowodnić, że jesteś gotowy/a pracować z zespołem.",
+        "finalWords": "Fantastycznie! Rozumiesz, że empatia, informacja zwrotna i praca zespołowa są niezbędne, zwłaszcza w miejscach takich jak recepcja, gdzie pierwsze wrażenia mają znaczenie.\n\nStale rozwijając te umiejętności, staniesz się cennym i zaufanym członkiem każdej organizacji. Powodzenia!",
+        "completion": "Szkolenie zakończone!",
+        "default": "Rozglądaj się dalej po strefie recepcji w poszukiwaniu wskazówek."
+      }
+    },
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "busy": "Cześć! Po prostu szkicuję pomysły na nowe logo. Nawet w recepcji komunikacja i pierwsze wrażenia naprawdę mają znaczenie!",
+        "default": "Wciąż szkicuję... porozmawiaj z Carlosem."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Podstawy umiejętności interpersonalnych - Prawda czy fałsz",
+      "instructions": "Określ, czy każde stwierdzenie jest Prawdą czy Fałszem.",
+      "questions": [
+        {
+          "text": "Umiejętności interpersonalne opierają się całkowicie na osobowości i instynkcie, więc nie można ich poprawić.",
+          "correct": false,
+          "hint": "Przypomnij sobie wprowadzenie... Choć osobowość odgrywa rolę, każdy może poprawić te umiejętności poprzez praktykę."
+        },
+        {
+          "text": "W świecie biznesu umiejętności interpersonalne odnoszą się do zdolności pracownika do dobrej współpracy z innymi.",
+          "correct": true,
+          "hint": "Pomyśl, dlaczego firmy cenią „umiejętności miękkie”. Chodzi o współpracę i efektywność zespołu."
+        },
+        {
+          "text": "Pracodawcy dbają tylko o twarde umiejętności techniczne, a nie miękkie, jak komunikacja.",
+          "correct": false,
+          "hint": "Pracodawcy kładą duży nacisk na umiejętności miękkie, ponieważ zwiększają one zatrudnialność i zaufanie w zespole."
+        }
+      ],
+      "feedback": {
+        "wrong": "To nie do końca poprawne. Pomyśl ponownie.",
+        "correct": "Brawo! Rozumiesz podstawy umiejętności interpersonalnych."
+      },
+      "answerOverlay": "Poprawne odpowiedzi:\n1. FAŁSZ – Choć osobowość odgrywa rolę, każdy może poprawić te umiejętności poprzez praktykę.\n2. PRAWDA – Umiejętności interpersonalne odnoszą się do zdolności pracownika do dobrej współpracy z innymi.\n3. FAŁSZ – Pracodawcy kładą duży nacisk na umiejętności miękkie, ponieważ zwiększają one zatrudnialność i zaufanie w zespole."
+    },
+    "singleChoice": {
+      "title": "Rozwiązywanie wyzwań interpersonalnych",
+      "instructions": "Wybierz najlepszą odpowiedź.",
+      "question": "Jesteś w recepcji, a dwóch kolegów zaczyna kłócić się o projekt na oczach gości. Jakie jest najlepsze rozwiązanie interpersonalne?",
+      "options": {
+        "a": "Zignoruj ich i miej nadzieję, że się skończy.",
+        "b": "Wybierz stronę i odpowiedz argumentami.",
+        "c": "Skup się na rozwiązaniach i pracy zespołowej, by rozwiązać problem.",
+        "d": "Natychmiast opuść strefę."
+      },
+      "hint": "Sprawdź ściągę. Celem jest współpraca, a nie eskalacja czy unikanie.",
+      "feedback": {
+        "wrong": "To nie najlepsze podejście. Sprawdź ściągę. Celem jest współpraca, a nie eskalacja czy unikanie.",
+        "correct": "Poprawnie! Skupienie się na rozwiązaniach i pracy zespołowej to najlepsze podejście interpersonalne."
+      },
+      "answerOverlay": "Poprawna odpowiedź: Skup się na rozwiązaniach i pracy zespołowej, by rozwiązać problem."
+    },
+    "sequenceOrder": {
+      "title": "Rozwijanie umiejętności interpersonalnych",
+      "instructions": "Chcesz skutecznie poprawić swoje umiejętności interpersonalne. Ułóż następujące kroki w logicznej kolejności.",
+      "items": [
+        "Szukaj i akceptuj konstruktywną informację zwrotną od innych.",
+        "Angażuj się w działania zespołowe i wchodź w interakcje z innymi.",
+        "Refleksja nad informacją zwrotną, by poprawić swoje zachowanie.",
+        "Ćwicz empatię, próbując zrozumieć uczucia innych."
+      ],
+      "correctOrder": [
+        "Angażuj się w działania zespołowe i wchodź w interakcje z innymi.",
+        "Ćwicz empatię, próbując zrozumieć uczucia innych.",
+        "Szukaj i akceptuj konstruktywną informację zwrotną od innych.",
+        "Refleksja nad informacją zwrotną, by poprawić swoje zachowanie."
+      ],
+      "hints": [
+        "Zacznij od interakcji z innymi.",
+        "Postaraj się zrozumieć ich uczucia.",
+        "Zapytaj, jak ci poszło.",
+        "Wykorzystaj tę informację zwrotną, by się poprawić."
+      ],
+      "feedback": {
+        "wrong": "To nie jest właściwa kolejność. Pamiętaj: angażuj się, empatyzuj, szukaj informacji zwrotnej, potem reflektuj.",
+        "correct": "Świetnie! Znasz kroki do poprawy umiejętności interpersonalnych."
+      },
+      "answerOverlay": "Poprawna kolejność:\n1. Angażuj się w działania zespołowe i wchodź w interakcje z innymi.\n2. Ćwicz empatię, próbując zrozumieć uczucia innych.\n3. Szukaj i akceptuj konstruktywną informację zwrotną od innych.\n4. Refleksja nad informacją zwrotną, by poprawić swoje zachowanie."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    }
+  },
+  "hints": {
+    "intro": "Kliknij Carlosa przy tablicy korkowej, by rozpocząć.",
+    "talkToCarlos": "Kliknij Carlosa, by rozpocząć.",
+    "findMagazine": "Sprawdź stolik kawowy w poszukiwaniu czasopisma.",
+    "talkToCarlos2": "Wróć do Carlosa.",
+    "puzzle1": "Przeczytaj uważnie każde stwierdzenie i zdecyduj: prawda czy fałsz?",
+    "findFolder": "Carlos wspomniał o regale. Poszukaj tam niebieskiej teczki.",
+    "talkToCarlos3": "Wróć do Carlosa z tym, co znalazłeś/aś.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po strefie recepcji w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do strefy recepcji firmy. To nowoczesna przestrzeń z wygodnymi siedzeniami, stolikiem kawowym z czasopismami i regałem wzdłuż ściany. Zauważasz Carlosa, lidera zespołu, stojącego przy tablicy korkowej za biurkiem recepcji, witającego ludzi i obserwującego interakcje.",
+    "clickVendingMachine": "Just snacks for visitors here. The magazine Carlos mentioned is probably on the coffee table.",
+    "foundMagazine": "Znalazłeś/aś! To biznesowe czasopismo otwarte na konkretnej stronie.",
+    "magazineRead": "Świetne znalezisko! Wróć do Carlosa.",
+    "clickBookshelfWrong": "Głównie broszury, książki i stare czasopisma dla gości. Spójrz bliżej tam, gdzie ludzie siedzą i czekają.",
+    "foundFolder": "Masz rozwiązania! Wróć do Carlosa."
+  },
+  "items": {
+    "magazine": {
+      "popupTitle": "Kluczowe kompetencje interpersonalne",
+      "popupContent": [
+        "Umiejętności komunikacyjne: Odczytywanie sygnałów i ich dokładna interpretacja.",
+        "Praca zespołowa i współpraca: Skuteczna współpraca z innymi.",
+        "Inteligencja emocjonalna: Rozumienie własnych i cudzych emocji.",
+        "Umiejętności rozwiązywania problemów: Wspólne znajdowanie rozwiązań.",
+        "Adaptacyjność: Bycie elastycznym w sytuacjach społecznych."
+      ],
+      "inventoryTitle": "Czasopismo"
+    },
+    "folder": {
+      "popupTitle": "Wyzwania i rozwiązania",
+      "popupContent": [
+        "Słaba komunikacja → Aktywne słuchanie i działania zespołowe.",
+        "Konflikt lub niezgoda → Skup się na rozwiązaniach i pracy zespołowej.",
+        "Niska empatia → Spróbuj zrozumieć, jak czują się inni, poprzez komunikację.",
+        "Brak umiejętności → Szkolenia związane z zdobywaniem nowych umiejętności."
+      ],
+      "inventoryTitle": "Teczka"
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Gratulacje, ukończyłeś/aś wszystko i podniosłeś/aś poziom swoich Umiejętności Interpersonalnych. Przejdźmy do następnej umiejętności.",
+    "buttonText": "Wyjdź z strefy Recepcji"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

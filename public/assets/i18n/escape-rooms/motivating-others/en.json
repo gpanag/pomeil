@@ -1,0 +1,239 @@
+{
+  "loading": "Loading Motivating and Inspiring Others...",
+  "intro": {
+    "title": "Motivating and Inspiring Others",
+    "paragraphs": [
+      "You enter the waiting area outside the HR office. Interviews are in progress, and the atmosphere feels noticeably tense.",
+      "An Active Candidate stands nearby, eyes fixed on the HR door, holding their documents tightly. Their nervousness is hard to miss.",
+      "Today you will learn how to motivate and inspire others through small, intentional actions: noticing strengths, asking the right questions, and helping people regain their confidence at the moments when they need it most."
+    ],
+    "buttonText": "Enter the Waiting Area"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR Manager",
+      "dialogues": {
+        "observe": "Inspiring others requires patience and awareness. Let's see how you help someone move forward.",
+        "finalWords": "You didn't give orders.\nYou didn't offer empty encouragement.\nYou listened, reflected, and empowered.\n\nThat is what it means to inspire and motivate others.",
+        "completion": "Well done! The training has been completed!",
+        "default": "Observe carefully. Sometimes the best motivation comes from understanding."
+      }
+    },
+    "candidate": {
+      "name": "Candidate",
+      "dialogues": {
+        "greet": "I've been waiting for a long time… I'm not sure I'm ready for this.",
+        "greet2": "Everyone says motivation comes from within, but sometimes… it doesn't.",
+        "afterTask1": "I'm afraid I won't be good enough… I've worked hard, but my path hasn't been easy.",
+        "afterStrengths": "I never thought of those as strengths… Maybe I do have something to offer.",
+        "afterPuzzle2": "You've come this far. That already shows strength.",
+        "thankYou": "Thank you. I feel more confident now.",
+        "default": "I'm just trying to gather my courage…"
+      }
+    }
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Emotional Awareness Interaction",
+      "instructions": "Choose how to respond.",
+      "question": "The candidate says: \"I've been waiting for a long time… I'm not sure I'm ready for this.\" How do you respond?",
+      "options": {
+        "a": "You'll be fine. Everyone feels nervous.",
+        "b": "Try not to think about it too much.",
+        "c": "It's normal to feel this way. What worries you most right now?",
+        "d": "You should focus on what you might gain."
+      },
+      "hint": "Motivation begins with understanding, not reassurance or pressure.",
+      "feedback": {
+        "wrong": "That's not the best approach. Motivation begins with understanding, not reassurance or pressure.",
+        "correct": "Motivation begins with understanding, not reassurance or pressure. The candidate visibly relaxes."
+      },
+      "answerOverlay": "The correct answer is: \"It's normal to feel this way. What worries you most right now?\"\n\nMotivation begins with understanding, not reassurance or pressure."
+    },
+    "sequenceOrder": {
+      "title": "Steps to Inspire",
+      "instructions": "Put the following actions in the correct order to build motivation.",
+      "items": [
+        "Encourage strengths",
+        "Listen actively",
+        "Offer realistic support",
+        "Inspire confidence"
+      ],
+      "correctOrder": [
+        "Listen actively",
+        "Encourage strengths",
+        "Offer realistic support",
+        "Inspire confidence"
+      ],
+      "hints": [
+        "Step 1: Before you can help, you need to understand.",
+        "Step 2: Highlight what they already have.",
+        "Step 3: Provide practical ways forward.",
+        "Step 4: Build lasting belief in themselves."
+      ],
+      "feedback": {
+        "wrong": "Inspiration grows step by step — not all at once.",
+        "correct": "Excellent! You understand how to build motivation step by step."
+      },
+      "answerOverlay": "The correct order is:\n1. Listen actively\n2. Encourage strengths\n3. Offer realistic support\n4. Inspire confidence"
+    },
+    "matching": {
+      "title": "Turning discouragement into motivation",
+      "instructions": "Drag each sentence to transform it into a motivating message.",
+      "pairs": [
+        {
+          "left": "I don't have enough experience.",
+          "right": "Experience can be gained through learning and practice."
+        },
+        {
+          "left": "My background is too different.",
+          "right": "Different backgrounds bring valuable perspectives."
+        },
+        {
+          "left": "I've failed before.",
+          "right": "Past failures help us grow and improve."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not the right match. Think about how to reframe each statement positively.",
+        "correct": "Motivation is often about changing perspective, not changing reality."
+      },
+      "answerOverlay": "The correct matches are:\n1. \"I don't have enough experience.\" → \"Experience can be gained through learning and practice.\"\n2. \"My background is too different.\" → \"Different backgrounds bring valuable perspectives.\"\n3. \"I've failed before.\" → \"Past failures help us grow and improve.\""
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    },
+    "discouragingTitle": "Discouraging",
+    "motivatingTitle": "Motivating"
+  },
+  "hints": {
+    "intro": "Click on the Candidate to begin the conversation.",
+    "talkToCandidate": "Click on the Candidate to start.",
+    "talkToCandidate2": "Return to the Candidate.",
+    "findFolder": "Look for the Candidate's folder — click on the documents they are holding.",
+    "talkToHrManager": "Click on the HR Manager.",
+    "strengthRecognition": "Select the two elements from the folder that highlight a genuine strength.",
+    "matching": "Match each discouraging statement with the positive reframe that best counters it.",
+    "bodyLanguage": "Select the two body language signs that reveal the candidate's insecurity.",
+    "completion": "The training has been completed!",
+    "default": "Look around the waiting area for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the waiting area outside the HR office. The atmosphere feels tense. The Active Candidate is standing nearby, looking at the HR door, holding documents tightly.",
+    "strengthsIntro": "You open the Candidate's folder. Inside you find certificates, volunteering experience, language skills, and gaps in employment history. Select 2 elements to highlight positively.",
+    "strengthsCorrect": "Motivation grows when people see their value.",
+    "strengthsWrong": "Those elements might not help build confidence. Focus on genuine strengths.",
+    "bodyLanguageIntro": "Click on the elements that show the candidate is feeling insecure.",
+    "bodyLanguageCorrect": "Motivation starts with noticing how others feel — even when they don't say it.",
+    "bodyLanguageWrong": "Look more carefully at the candidate's body language.",
+    "foundFolder": "You examined the candidate's folder and highlighted their strengths."
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Candidate's Folder",
+      "popupContent": [
+        "Certificates",
+        "Volunteering experience",
+        "Language skills",
+        "Gaps in employment history"
+      ]
+    },
+    "candidateFolder": {
+      "inventoryTitle": "Candidate's Folder"
+    }
+  },
+  "strengths": {
+    "title": "Strength Recognition Challenge",
+    "instructions": "Select 2 elements to highlight positively.",
+    "options": [
+      {
+        "id": "language",
+        "text": "Language skills",
+        "correct": true
+      },
+      {
+        "id": "volunteering",
+        "text": "Volunteering experience",
+        "correct": true
+      },
+      {
+        "id": "gaps",
+        "text": "Employment gaps",
+        "correct": false
+      },
+      {
+        "id": "references",
+        "text": "Missing references",
+        "correct": false
+      }
+    ],
+    "feedback": {
+      "correct": "Motivation grows when people see their value.",
+      "wrong": "Those elements might not help build confidence. Focus on genuine strengths."
+    }
+  },
+  "bodyLanguage": {
+    "title": "Reading motivation signals",
+    "instructions": "Click on the elements that show the candidate is feeling insecure.",
+    "options": [
+      {
+        "id": "clenched",
+        "text": "Clenched hands on documents",
+        "correct": true
+      },
+      {
+        "id": "relaxed",
+        "text": "Relaxed posture",
+        "correct": false
+      },
+      {
+        "id": "eyeContact",
+        "text": "Avoiding eye contact",
+        "correct": true
+      },
+      {
+        "id": "smile",
+        "text": "Confident smile",
+        "correct": false
+      }
+    ],
+    "feedback": {
+      "correct": "Motivation starts with noticing how others feel — even when they don't say it.",
+      "wrong": "Look more carefully at the candidate's body language."
+    }
+  },
+  "completion": {
+    "title": "Skill Completed: Inspiring and Motivating Others",
+    "message": "You demonstrated:\n\nEmotional awareness\nPositive communication\nEmpowerment through recognition\nEthical motivation\n\nInspiration is leadership in action.",
+    "buttonText": "Exit the Waiting Area"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "checkButton": "Check Answer",
+    "submitButton": "Submit",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

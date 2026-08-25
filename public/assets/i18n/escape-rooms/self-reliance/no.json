@@ -1,0 +1,199 @@
+{
+  "loading": "Laster Selvstendighet...",
+  "intro": {
+    "title": "Selvstendighet",
+    "paragraphs": [
+      "Drømmen din er å bli en suksessfull gründer og skape en virksomhet som bringer mennesker sammen.",
+      "Du er nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringsopplevelse for deg, fordi ved å fullføre ulike utfordringer her vil du tilegne deg de 30 ferdighetene som inngår i POMEIL-kompetansekartet, og som er essensielle for enhver gründer.",
+      "I dag går du ut på takarbeidsplassen — en rolig terrasse med panoramautsikt over byen. Det klare dagslyset og den milde brisen skaper en følelse av frihet og uavhengighet. Det er hit Amina, produktutviklingsspesialisten, kommer for å tenke klart."
+    ],
+    "buttonText": "Gå opp på taket"
+  },
+  "characters": {
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Å! Hei der — velkommen til vårt lille tak-sted.\nJeg kommer hit når jeg trenger å klarne tankene.\n\nJeg er Amina, produktutviklingsspesialisten.\nJeg elsker det jeg gjør, men… jeg lærer fortsatt hvordan jeg skal styre alt skikkelig.",
+        "stressful": "I dag har vært stressende. En kunde mottok feil bestilling og sendte et klagebrev.\nJeg ble lammet — jeg var usikker på hvordan jeg skulle svare.\n\nDavid, vår digitale kommunikasjonsleder, kom hit opp for å hjelpe meg med å finne en løsning.\nHan er virkelig god til å holde seg rolig og løse ting steg for steg.",
+        "findStickyNote": "Et sted her oppe på takkafeen er det en lapp jeg har skrevet med noen viktige tips om selvstendighet.\nDavid skrev den til meg tidligere så jeg kunne øve på å løse problemer på egen hånd… men jeg husker ikke hvor jeg la den.\n\nKan du hjelpe meg å lete etter den?\nPrøv å sjekke konferanserommet bak glassdøren først — jeg kan ha lagt den på bordet der inne.",
+        "stickyNoteFound": "Bra jobbet, nå har vi noe informasjon å tenke over.\n\nSelvstendighet betyr å stole på egne evner og ta ansvar for egne handlinger, særlig når du møter utfordringer eller tar beslutninger.\nDet krever mer enn bare å gjøre ting alene — det innebærer en bevisst innsats for å holde seg rolig, tenke klart og ta små selvstendige skritt i stedet for å vente på at andre skal løse problemet.",
+        "quiz1Intro": "Nå er det quiz-tid, la oss bruke vår nye innsikt til å løse dette",
+        "quiz1Done": "Det var strålende, nå er vi ett skritt nærmere selvstendighet",
+        "findPaper": "Jeg skrev faktisk ned noen enkle tips for å hjelpe deg å øve på selvstendighet — ting som kan gjøre vanskelige øyeblikk lettere å håndtere. Jeg noterte dem på en liten papirlapp… men nå har jeg forlagt den.\nDet ser ut som selv jeg blir litt distré når dagen blir travel.\n\nKan du ta en rask kikk rundt på taket etter den?\nHvis jeg husker rett… tror jeg jeg la den et sted nær koppen.\n\nNår du finner den, kan vi gå gjennom en kort selvstendighets-quiz sammen.",
+        "paperFound": "Wow, disse fakta er enkle, men overraskende kraftige når du tenker på dem.\nHvis du er klar, tror jeg vi kan gå videre til neste oppgave. La oss fortsette.",
+        "puzzle2Intro": "Vi er nesten der!",
+        "finalWords": "Det var ganske en oppdagelse, ikke sant?\nJeg ser at du begynner å bruke selvstendigheten din tydeligere nå. Ta et rolig pust, tenk gjennom skrittene dine, og se på mulighetene foran deg. Velg så én og gå videre. Hvis noe ikke går perfekt, er det greit — du lærer underveis. Bare hold deg rolig, fokusert og bygg en enkel plan du kan følge.\nDet var hyggelig å snakke med deg. Neste gang tror jeg du klarer å håndtere ting på egen hånd uten min hjelp. Du gjorde det virkelig bra!",
+        "completion": "Døren er åpen! Klikk på den for å fortsette.",
+        "default": "Fortsett å lete rundt på taket etter ledetråder."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Jeg hjelper Amina med å håndtere en kundeklage. Hun lærer å takle ting selv — det er ekte selvstendighet. Snakk med henne først!",
+        "default": "Fokuser på Amina — det er hun som bygger selvstendigheten sin i dag."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Selvstendighets-quiz (Sant eller Usant)",
+      "instructions": "Avgjør om hver påstand er Sant eller Usant.",
+      "questions": [
+        {
+          "text": "Selvstendighet betyr å løse problemer ved å ta det første lille skrittet selv før du ber om hjelp.",
+          "correct": true,
+          "hint": "Selvstendighet vokser når du prøver å handle først, selv om skrittet er lite."
+        },
+        {
+          "text": "Hvis jeg venter på at andre skal bestemme for meg, blir jeg mer selvstendig over tid.",
+          "correct": false,
+          "hint": "Selvstendighet bygges gjennom dine egne beslutninger — ikke ved å vente på at andre velger for deg."
+        },
+        {
+          "text": "Å gjøre feil er en normal del av å bli mer selvstendig.",
+          "correct": true,
+          "hint": "Husk: selvtillit vokser når du lærer av feil, ikke unngår dem."
+        },
+        {
+          "text": "Hvis jeg føler meg usikker eller ukomfortabel, bør jeg unngå å prøve å løse problemet selv.",
+          "correct": false,
+          "hint": "Vekst skjer når du møter ubehag med små, håndterbare handlinger."
+        },
+        {
+          "text": "En enkel måte å øve på selvstendighet er å ta ett selvstendig valg hver dag.",
+          "correct": true,
+          "hint": "Små daglige beslutninger bygger tillit til din egen evne til å håndtere mer."
+        }
+      ],
+      "feedback": {
+        "wrong": "Det stemmer ikke helt. Tenk over det igjen.",
+        "correct": "Bra jobbet! Du forstår grunnlaget for selvstendighet."
+      },
+      "answerOverlay": "De riktige svarene er:\n1. SANT – Selvstendighet vokser når du selv tar det første lille skrittet.\n2. USANT – Å vente på at andre skal bestemme bygger ikke selvstendighet.\n3. SANT – Feil er en normal del av å bli selvstendig.\n4. USANT – Å møte ubehag med små handlinger bygger vekst.\n5. SANT – Daglige selvstendige valg bygger tillit til dine evner."
+    },
+    "singleChoice": {
+      "title": "Selvstendighets-quiz – Flervalg",
+      "instructions": "Velg det beste svaret.",
+      "question": "Når du møter et problem på jobben, hva er det mest selvstendige første skrittet?",
+      "options": {
+        "a": "Vent på at noen andre forteller deg hva du skal gjøre",
+        "b": "Ta én liten handling du kan gjøre selv",
+        "c": "Unngå problemet og håp at det løser seg",
+        "d": "Spør tre forskjellige personer om råd før du starter med noe"
+      },
+      "hint": "Tenk på hvilket alternativ som viser at du er villig til å ta initiativ i stedet for å være avhengig av andre.",
+      "feedback": {
+        "wrong": "Tenk på hvilket alternativ som viser at du er villig til å ta initiativ i stedet for å være avhengig av andre.",
+        "correct": "Riktig! Å ta én liten handling selv er det mest selvstendige første skrittet."
+      },
+      "answerOverlay": "Det riktige svaret er: Ta én liten handling du kan gjøre selv."
+    },
+    "sequenceOrder": {
+      "title": "Selvstendighets-quiz – Sett i rekkefølge",
+      "instructions": "Sett disse handlingene i riktig rekkefølge for å håndtere et problem på en selvstendig måte.",
+      "items": [
+        "Identifiser én liten del av problemet du kan håndtere nå",
+        "Ta et øyeblikk for å holde deg rolig og unngå å forhaste reaksjonen din",
+        "Sjekk fakta eller detaljer du allerede har",
+        "Fullfør den lille handlingen du valgte"
+      ],
+      "correctOrder": [
+        "Ta et øyeblikk for å holde deg rolig og unngå å forhaste reaksjonen din",
+        "Sjekk fakta eller detaljer du allerede har",
+        "Identifiser én liten del av problemet du kan håndtere nå",
+        "Fullfør den lille handlingen du valgte"
+      ],
+      "hints": [
+        "Steg 1: Vær rolig først.",
+        "Steg 2: Samle det du vet.",
+        "Steg 3: Velg et håndterbart skritt.",
+        "Steg 4: Følg gjennom."
+      ],
+      "feedback": {
+        "wrong": "En selvstendig person starter med å holde seg rolig, deretter samler informasjonen de allerede har. Etter det velger de et lite, håndterbart skritt og gjennomfører det.",
+        "correct": "Strålende! Du håndterte situasjonen med selvstendighet."
+      },
+      "answerOverlay": "Den riktige rekkefølgen er:\n1. Ta et øyeblikk for å holde deg rolig og unngå å forhaste reaksjonen din.\n2. Sjekk fakta eller detaljer du allerede har.\n3. Identifiser én liten del av problemet du kan håndtere nå.\n4. Fullfør den lille handlingen du valgte."
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett",
+    "fillGap": {
+      "checkButton": "Sjekk rekkefølge",
+      "resetButton": "Tilbakestill"
+    }
+  },
+  "hints": {
+    "intro": "Klikk på Amina nær bordet for å begynne.",
+    "talkToAmina": "Klikk på Amina for å starte.",
+    "findStickyNote": "Prøv å sjekke konferansedøren, planten eller Aminas bord.",
+    "talkToDavid": "Gå tilbake til David, den digitale kommunikasjonslederen.",
+    "puzzle1TrueFalse": "Les hver påstand nøye og avgjør om den er Sant eller Usant.",
+    "findPaper": "David nevnte at den kanskje er nær koppen. Sjekk pulten, konferansedøren eller Davids lomme.",
+    "talkToDavid2": "Gå tilbake til David med det du fant.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg rundt på taket etter ledetråder."
+  },
+  "systemDialogues": {
+    "selfTalk": "Du går ut på takarbeidsplassen. Det klare dagslyset og panoramautsikten over byen skaper en rolig atmosfære. Et lite trebord med en bærbar PC og papirer står nær midten. Du legger merke til Amina, produktutviklingsspesialisten, som sitter ved bordet og ser ettertenksom ut.",
+    "clickDoor": "Jeg husker jeg holdt den tidligere, men nå… finner jeg den ikke noe sted.",
+    "clickConferenceTable": "Hmm… bordet er tomt.\nDet ser ut som notatet ikke er her likevel.\n\nKanskje det glapp ut av notatboken min da jeg gikk.\nPrøv å sjekke planten ved siden av konferanseromsdøren.",
+    "clickPlant": "Du fant et blad… men ingen lapp.\nDen må ha falt et annet sted.\n\nLa oss prøve ett sted til — nær Aminas bord der hun sitter.\nKanskje den havnet under den bærbare PC-en hennes.",
+    "foundStickyNote": "Du fant den!\nLappen lå tilgjemt under Aminas bærbare PC.\n\nTa en titt på tipsene — de vil hjelpe henne å øve på selvstendighet når hun håndterer kundesaker.",
+    "stickyNoteRead": "Bra jobbet! Gå tilbake til den digitale kommunikasjonslederen David.",
+    "clickDesk": "Det ser ikke ut til at den er her. La oss sjekke konferansebordet en gang til. Kanskje vi har flaks.",
+    "clickConferenceDoor2": "Hmm… ikke her heller.\nVet du, dette er en god påminnelse også for meg — å være organisert er en del av selvstendighet.\nKanskje jeg burde sjekke mine egne lommer før vi leter videre.",
+    "foundPaper": "Å — beklager. Den lå i lommen min hele tiden.\nSlik blir det når dagen blir litt for travel."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "PÅMINNELSER OM SELVSTENDIGHET",
+      "popupTitle": "PÅMINNELSER OM SELVSTENDIGHET",
+      "popupContent": [
+        "Gjør først en pause — svar med klart hode",
+        "Bryt problemet ned til én liten handling",
+        "Still deg selv ett nyttig spørsmål i dag"
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "HVORDAN OPPNÅ SELVSTENDIGHET",
+      "popupTitle": "HVORDAN OPPNÅ SELVSTENDIGHET",
+      "popupContent": [
+        "Når du tar en liten selvstendig handling, frigjør hjernen din en følelse av fremgang som styrker troen på dine egne evner.",
+        "Å løse selv et enkelt problem på egen hånd reduserer stress, fordi handling signaliserer til hjernen at du er i stand til å håndtere utfordringer.",
+        "Å rette opp egne feil skaper sterkere læringsbaner enn å være avhengig av andre, slik at selvstendighet vokser gjennom øvelse.",
+        "Hver fullført oppgave øker motivasjonen ved å aktivere hjernens belønningssystem, noe som oppmuntrer til videre selvstendige beslutninger.",
+        "Mennesker som tar daglige selvstendige valg utvikler klarere dømmekraft, slik at de over tid kan ta beslutninger raskere og med mer trygghet."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulerer!",
+    "message": "Gratulerer! Du har låst opp kraften i selvstendighet. Denne ferdigheten er essensiell ikke bare i forretninger, men også i dagliglivet. Prøv lykken med de neste modulene. Takk for at du deltok. Du kan komme tilbake når som helst hvis du vil friske opp kunnskapen din — vi er her for å støtte læringen din.!",
+    "buttonText": "Forlat taket"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "___",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

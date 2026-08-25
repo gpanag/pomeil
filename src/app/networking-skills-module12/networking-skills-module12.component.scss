@@ -1,0 +1,213 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Networking Skills room-specific overrides --- */
+
+.dialogue-panel {
+  bottom: 80px;
+  background: rgba(15, 30, 25, 0.95);
+  border: 2px solid rgba(0, 104, 116, 0.6);
+  border-radius: 12px;
+  backdrop-filter: none;
+  padding: 20px;
+  min-height: auto;
+  box-shadow: none;
+
+  .character-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .dialogue-text { min-height: 3em; }
+  .dialogue-actions { margin-top: 10px; }
+}
+
+.overlay {
+  padding: 0;
+}
+
+.quiz-card {
+  max-width: 600px;
+  width: 90%;
+
+  &.wide-card { max-width: 800px; }
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+}
+
+/* --- Mirror popup --- */
+.item-popup-base.mirror-popup,
+.mirror-popup {
+  text-align: center;
+  padding: 2rem;
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+  }
+}
+
+/* --- Build conversation options --- */
+.build-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.build-option-btn {
+  text-align: left;
+  white-space: normal;
+  line-height: 1.5;
+  padding: 12px 16px;
+  min-height: 48px;
+
+  .option-label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--sys-primary, #006874);
+    color: var(--sys-on-primary, #fff);
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+}
+
+/* --- Typed reply input --- */
+.typed-prompt {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.typed-input-field {
+  width: 100%;
+}
+
+/* --- Phone / Messaging interface --- */
+.phone-card {
+  max-width: 700px;
+}
+
+.message-thread {
+  padding: 8px 0;
+}
+
+.contact-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: var(--sys-primary, #006874);
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+
+  &.incoming {
+    background: rgba(0, 104, 116, 0.1);
+    border: 1px solid rgba(0, 104, 116, 0.3);
+    margin-right: auto;
+  }
+}
+
+.message-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.msg-option {
+  text-align: left;
+  white-space: normal;
+  line-height: 1.5;
+  padding: 10px 14px;
+  min-height: 44px;
+
+  .option-label {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--sys-primary, #006874);
+    color: var(--sys-on-primary, #fff);
+    font-weight: bold;
+    font-size: 0.85em;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+}
+
+.message-feedback {
+  padding: 10px 14px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background: rgba(0, 104, 116, 0.08);
+  border-left: 3px solid var(--sys-primary, #006874);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.message-next {
+  margin-top: 16px;
+  text-align: right;
+}
+
+/* --- Poster / Leverage puzzle --- */
+.poster-content {
+  background: rgba(255, 243, 200, 0.9);
+  border: 2px solid #c5a84e;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.poster-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #5a4a00;
+  margin-bottom: 8px;
+}
+
+.poster-details {
+  color: #5a4a00;
+  line-height: 1.5;
+}
+
+/* --- Options vertical overrides --- */
+.options-vertical {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  button {
+    text-align: left;
+    white-space: normal;
+    line-height: 1.5;
+    padding: 10px 16px;
+  }
+}
+
+.question {
+  margin: 1rem 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.inventory-bar {
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.6);
+}

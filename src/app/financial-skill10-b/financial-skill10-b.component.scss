@@ -1,0 +1,253 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* --- Room-specific overrides --- */
+
+/* Financial room uses green theme for dialogue panel */
+.dialogue-panel {
+  border: 2px solid rgba(100, 180, 100, 0.5);
+
+  .dialogue-content {
+    .character-name {
+      color: #8bc34a;
+    }
+  }
+}
+
+/* Wider card for complex puzzles */
+.wide-card {
+  max-width: 750px !important;
+}
+
+/* --- Budget Planning Card Popup --- */
+.card-popup {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 600px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #fff9e6, #fff3cc);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 3px solid #d4a853;
+
+  .card-content {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    color: #333;
+
+    h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: #8b6914;
+      border-bottom: 2px solid #d4a853;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      list-style-type: none;
+    }
+
+    li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1.5rem;
+
+      &::before {
+        content: '\2713';
+        position: absolute;
+        left: 0;
+        color: #4caf50;
+        font-weight: bold;
+      }
+
+      strong {
+        color: #5d4e0d;
+      }
+    }
+  }
+}
+
+/* --- Reflection Strip Popup --- */
+.reflection-popup {
+  width: 100%;
+  max-width: 450px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-left: 6px solid #4caf50;
+
+  .reflection-content {
+    text-align: center;
+    color: #2e7d32;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .reflection-quote {
+      font-family: 'Caveat', cursive;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-style: italic;
+      color: #1b5e20;
+
+      &::before {
+        content: '\201C';
+      }
+      &::after {
+        content: '\201D';
+      }
+    }
+  }
+}
+
+/* --- Matching Puzzle Styles --- */
+.matching-container {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.matching-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+}
+
+.matching-button {
+  width: 100%;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.4;
+  padding: 0.75rem 1rem;
+  min-height: 48px;
+  transition: all 0.2s ease;
+
+  &.selected {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px #2196f3;
+  }
+
+  &.matched {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+    color: #2e7d32;
+    opacity: 0.7;
+
+    &::after {
+      content: ' \2713';
+      color: #4caf50;
+    }
+  }
+}
+
+.match-progress {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* --- Fill-the-gap Puzzle Styles --- */
+.fill-gap-sentence {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.fill-gap-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.fill-gap-options,
+.fill-gap-answers {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-height: 200px;
+
+  strong {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+}
+
+.placeholder-text {
+  color: #888;
+  font-style: italic;
+}
+
+.answer-item {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #ffcdd2;
+  }
+
+  .remove-hint {
+    font-size: 0.75rem;
+    color: #999;
+    font-style: italic;
+  }
+}
+
+/* --- Answer text formatting --- */
+.answer-text {
+  white-space: pre-line;
+}

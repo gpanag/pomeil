@@ -1,0 +1,252 @@
+{
+  "id": "digital-skills",
+  "moduleNumber": 5,
+  "title": "Digital Skills",
+  "subtitle": "Module 5",
+  "coverImage": "assets/thumbs/digital-skills.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 5",
+      "title": "Digital Skills",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/digital-skills.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, you will be able to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "1. Practice basic cyber safety"
+        },
+        {
+          "kind": "paragraph",
+          "text": "2. Identify and avoid common digital risks"
+        },
+        {
+          "kind": "paragraph",
+          "text": "3. Create basic social media content for a business"
+        },
+        {
+          "kind": "paragraph",
+          "text": "4. Communicate professionally with customers via social media"
+        },
+        {
+          "kind": "paragraph",
+          "text": "5. Apply digital tools for communication, marketing and organization of a business"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Having digital skills means being able to use technology to find, create, and share information (POMEIL project, 2025)."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Digital skills are essential to succeed as an entrepreneur today's digital world (Digital skills hub). By using a smartphone, computer or tablet, you can save time and complete your daily tasks more efficiently. Technology can be used for file management, communication with customers, marketing and e-commerce, to mention a few (EntrePubl). Technology helps breach geographical barriers"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Technology allows you to overcome barriers by enabling access information and resources, and reach customers beyond your geographical boundaries."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Example: Olga makes and sells handmaid leather products. She creates a free Instagram to promote her business. She uses her smartphone to take pictures of her creations and posts the photos from her account."
+        },
+        {
+          "kind": "paragraph",
+          "text": "In a few weeks, he gained followers, received orders, and even connected with a local store interested in reselling his items. By using simple tools, he turned a local hobby into a profitable business. He also saved time by organizing deliveries and payments online."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Digital skills can increase sales, simplify operations, and help small businesses grow without needing a physical store."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Cyber Safety – Protecting passwords, recognizing scams, keeping private info secure and using secure websites.",
+            "Communication tools – Using mail, messaging apps (e.g. WhatsApp, Messenger) professionally to communicate with suppliers, customers, or partners.",
+            "Information search – How to use Google or YouTube effectively. Finding answers, tutorials, and market data through search engines or online forums. Finding information, tutorials, or suppliers using Google or YouTube.",
+            "Cloud storage – Organize files with tools like Google Drive Saving files with tools like Google Drive or Dropbox. Using tools like Google Drive or Dropbox to save and organize business documents.",
+            "Social Media Basics – Creating business profiles and sharing content (e.g., Facebook, Instagram). Creating and managing business profiles on platforms like Facebook or Instagram. Basic use of social media, websites, and photos Digital marketing –",
+            "Online Services – Using local e-services (e.g., business registration, banking, appointments). E-commerce platforms, digital payments, online banking",
+            "Digital Tools for Business – Learning how to use spreadsheets, calendars, and basic accounting tools."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Start with familiar tools like a smartphone before moving to computer-based platforms.",
+            "Take free online courses and watch step-by-step video tutorials in your preferred language. (e.g., on YouTube or Google Digital Garage).",
+            "Practice sending emails, creating social media posts, storing files online or using spreadsheets",
+            "Ask for help from local libraries, community centers, or tech-savvy peers Ask peers or younger family members for help — many are tech-savvy!",
+            "Set personal digital goals (e.g., “I will post once per week” or “I will create a Gmail account”, \"I will send an e-mail\").",
+            "Join a local or online digital skills class for hands-on practice."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "“I’ve never used a computer before.” Or \"I don't have a computer\" o Start with a smartphone — most tools work on mobile and are easier to learn. Many tools work well on smartphones. Libraries or community centers may offer free access to computers.",
+            "“I don’t understand online systems or apps.” Follow step-by-step video guides in your language or with subtitles. o “I’m afraid of doing something wrong or being scammed.” Learn about digital safety and test things with someone you trust. Practice in safe spaces (e.g., a training account). Ask for support. Mistakes are part of learning. Learn simple safety steps such as checking website addresses, avoiding suspicious links, and using strong passwords.",
+            "“It all feels too fast or confusing.” → Focus on one tool at a time. Master basics before moving on.",
+            "Not comfortable with technology → Begin with basic actions like sending a message or setting up a profile. Repeat and build confidence gradually."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Exercise: Create a basic online presence for your business."
+        },
+        {
+          "kind": "definition",
+          "term": "Task",
+          "definition": "Choose and complete one of the following:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Create a Gmail account (or another email service)",
+            "Create a Facebook or Instagram business page",
+            "Take 2 clear photos of your product/service and write a short caption/description (include price and contact info)"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "(Share with the group or discuss what went well and what was difficult.)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "(Share your result with the group or explain what steps you followed.)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Take a screenshot or note what steps you followed. Share with a group or mentor for feedback."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "checklist",
+          "items": [
+            "I can send and read emails or messages.",
+            "I know how to search for information online.",
+            "I have created or plan to create an online presence for my business (social media or website).",
+            "I use social media or apps to promote my work or connect with others.",
+            "I can store and organize documents or photos digitally.",
+            "I understand basic online safety and avoid suspicious links or requests."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Digital skills open doors to opportunity, visibility, and efficiency. Digital tools can help your business grow faster, reach more people, and stay organized — even if you don’t have an office or a shop. You don’t need to be an expert. start with one or two tools that help your business. Even a few basic skills — like sending emails or posting online — can have a big impact. and use technology in a way that supports your business goals. With regular practice, these skills will grow and make you more independent and connected. digital confidence grows and opens new business opportunities."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "After completing this module, participants are expected to"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Practice safer digital behavior"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Reduce exposure to common digital risks"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Use digital tools more effectively for marketing, communication and business organization"
+        },
+        {
+          "kind": "paragraph",
+          "text": "• Maintain a more professional social media presence for their business"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "• Google Digital Garage – Free Skills Courses",
+            "• YouTube: “Basic Computer Skills for Beginners”",
+            "• App: Canva (for making simple social media posts)",
+            "• Booklet: “Smartphone Basics” from your local community tech support center",
+            "• Local library or support center tech courses (often free!)",
+            "• Trello task management"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Digital Skills",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/digital-skills.pdf"
+      }
+    }
+  ]
+}

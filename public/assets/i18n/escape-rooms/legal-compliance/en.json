@@ -1,0 +1,214 @@
+{
+  "loading": "Loading Legal Compliance...",
+  "intro": {
+    "title": "Legal Compliance",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company where people from different cultures, backgrounds, and professions work together.",
+      "Today you enter the Legal Department. Documents are neatly arranged. The atmosphere is quiet, serious. This is the perfect moment to test your Legal Compliance skills."
+    ],
+    "buttonText": "Enter the Legal Department"
+  },
+  "characters": {
+    "sarah": {
+      "name": "Sarah",
+      "dialogues": {
+        "greet": "Every decision we make has legal consequences. Legal compliance is not about knowing every law by heart. It's about recognizing risk, acting responsibly, and knowing when to ask.",
+        "findDocument": "Before we test your knowledge, I need you to investigate this office. I left a compliance risk checklist somewhere on my desk. Can you find it? Start by looking at the filing cabinet.",
+        "documentFound": "Legal compliance begins with awareness. Recognizing where risks hide is the first step. Let me test your understanding.",
+        "quiz1Intro": "Drag each document to the correct category.",
+        "quiz1Done": "Not all information should be treated the same. Now we need to go deeper.",
+        "findEmail": "Earlier today, I printed a suspicious email that was flagged by our compliance system. I left it near the bookshelf. Can you retrieve it?",
+        "emailFound": "This email contains several red flags. But first, let me challenge your understanding of compliant processes.",
+        "puzzle2Intro": "A colleague noticed a small procedural mistake in a contract but said nothing. Arrange the actions from least compliant to most compliant.",
+        "finalWords": "You identified risks. You chose responsibility over convenience. That is legal compliance in practice.\n\nRemember: compliance protects people, organizations, and trust. You're ready for the next challenge!",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the legal department for clues."
+      }
+    },
+    "david": {
+      "name": "David",
+      "dialogues": {
+        "busy": "Most violations don't start with bad intentions. They start with inattention.",
+        "default": "Still reviewing cases... talk to Sarah."
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Document Classification",
+      "instructions": "Drag each document to the correct category.",
+      "leftItems": [
+        {
+          "id": "doc1",
+          "text": "Client contract"
+        },
+        {
+          "id": "doc2",
+          "text": "Internal policy guideline"
+        },
+        {
+          "id": "doc3",
+          "text": "Personal notes"
+        },
+        {
+          "id": "doc4",
+          "text": "Confidential employee file"
+        }
+      ],
+      "rightItems": [
+        {
+          "id": "cat1",
+          "text": "Confidential"
+        },
+        {
+          "id": "cat2",
+          "text": "Internal use"
+        },
+        {
+          "id": "cat3",
+          "text": "Public / Non-sensitive"
+        }
+      ],
+      "correctPairs": {
+        "doc1": "cat1",
+        "doc2": "cat2",
+        "doc3": "cat3",
+        "doc4": "cat1"
+      },
+      "feedback": {
+        "wrong": "Not quite right. Think about who should have access to each document.",
+        "correct": "Not all information should be treated the same."
+      },
+      "answerOverlay": "The correct classification is:\n• Client contract → Confidential\n• Employee file → Confidential\n• Internal policy → Internal use\n• Personal notes → Public / Non-sensitive"
+    },
+    "sequenceOrder": {
+      "title": "Silence vs Responsibility",
+      "instructions": "A colleague notices a small procedural mistake in a contract but says nothing. Place actions on a timeline from least compliant to most compliant.",
+      "items": [
+        "Document the issue and corrective action",
+        "Ignore the issue",
+        "Inform the responsible officer",
+        "Fix it quietly without reporting"
+      ],
+      "correctOrder": [
+        "Ignore the issue",
+        "Fix it quietly without reporting",
+        "Inform the responsible officer",
+        "Document the issue and corrective action"
+      ],
+      "hints": [
+        "Step 1: The worst response is doing nothing.",
+        "Step 2: Fixing without reporting is slightly better but still non-compliant.",
+        "Step 3: Informing the responsible person is good practice.",
+        "Step 4: Full documentation is the gold standard of compliance."
+      ],
+      "feedback": {
+        "wrong": "That's not the right order. Think about which action shows the least to the most compliance.",
+        "correct": "Compliance requires transparency, not shortcuts."
+      },
+      "answerOverlay": "The correct order from least to most compliant is:\n1. Ignore the issue\n2. Fix quietly\n3. Inform responsible officer\n4. Document issue and correction",
+      "checkButton": "Check Order"
+    },
+    "singleChoice": {
+      "title": "Red Flag Highlighting",
+      "instructions": "Highlight the red-flag phrases.",
+      "question": "\"We should proceed quickly before anyone asks too many questions.\nLet's keep this between us.\"",
+      "options": {
+        "a": "\"proceed quickly\" and \"too many questions\"",
+        "b": "\"before anyone asks\" and \"keep this between us\"",
+        "c": "\"We should proceed\" and \"Let's keep this\"",
+        "d": "There are no red flags in this email"
+      },
+      "hint": "Look for language that suggests secrecy or avoidance of oversight.",
+      "feedback": {
+        "wrong": "That's not correct. Look for phrases that suggest avoidance of oversight or secrecy.",
+        "correct": "Language often reveals compliance risks."
+      },
+      "answerOverlay": "The correct answer is: \"before anyone asks\" and \"keep this between us\" — these phrases suggest secrecy and avoidance of proper procedures."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Sarah at the main desk to begin.",
+    "talkToSarah": "Click on Sarah to start.",
+    "findDocument": "Check the filing cabinet near the desk.",
+    "talkToSarah2": "Return to Sarah with what you found.",
+    "puzzle1Matching": "Match each document to its correct category — think about who should have access.",
+    "findEmail": "Sarah mentioned the bookshelf. Look for the printed email there.",
+    "talkToSarah3": "Return to Sarah with the email you found.",
+    "puzzle2SequenceOrder": "Drag the actions into order from least compliant to most compliant.",
+    "puzzle3SingleChoice": "Look for phrases that suggest secrecy or avoidance of oversight.",
+    "completion": "The training has been completed!",
+    "default": "Look around the legal department for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the quiet legal department. Documents are neatly arranged on desks and shelves. You notice the Compliance Officer looking up from her screen, and the Legal Associate reviewing case files at his desk.",
+    "clickCabinet": "The filing cabinet is unlocked — that's a compliance risk in itself. But there's a document folder inside with a checklist.",
+    "foundDocument": "You found it! A compliance risk checklist was inside the unlocked cabinet.",
+    "documentRead": "Good job! Return to Sarah.",
+    "clickDesk": "Just regular office supplies and a half-finished coffee. Fun fact: the average office worker uses about 10,000 sheets of paper per year. Keep looking!",
+    "foundEmail": "You found the flagged email! Return to Sarah.",
+    "scales": "Just a decorative item. The scales of justice — a nice symbol, but not what you need right now."
+  },
+  "items": {
+    "document": {
+      "popupTitle": "Compliance Risk Checklist",
+      "popupContent": [
+        "Unlocked filing cabinet: Physical documents must be secured at all times.",
+        "Signed contract left unattended: Sensitive agreements should never be left in the open.",
+        "Computer screen with open client data: Computer screens with confidential information must be locked when unattended."
+      ]
+    },
+    "email": {
+      "popupTitle": "Flagged Email – Compliance Review",
+      "popupContent": [
+        "From: Unknown Sender",
+        "Subject: Quick Decision Needed",
+        "\"We should proceed quickly before anyone asks too many questions. Let's keep this between us.\"",
+        "This email has been flagged by the compliance monitoring system."
+      ]
+    },
+    "checklist": {
+      "inventoryTitle": "Compliance Checklist"
+    },
+    "flaggedEmail": {
+      "inventoryTitle": "Flagged Email"
+    }
+  },
+  "completion": {
+    "title": "Skill Completed: Legal Compliance",
+    "message": "You demonstrated: Risk awareness, Ethical judgment, Information handling, Procedural responsibility.\n\nCompliance protects people, organizations, and trust.",
+    "buttonText": "Exit the Legal Department"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer",
+    "resetButton": "Reset"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

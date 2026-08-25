@@ -1,0 +1,183 @@
+{
+  "loading": "Loading Risk Management...",
+  "intro": {
+    "title": "Risk Management",
+    "paragraphs": [
+      "You step through a door looking for the restroom, but instead find yourself in a dimly lit janitor's closet.",
+      "Concrete floors, cluttered shelves, and the faint buzz of a faulty electrical cable greet you. This place is a hazard waiting to happen.",
+      "Your task: identify every risk in this room and then assess them using a proper risk matrix. Let's get started!"
+    ],
+    "buttonText": "Enter the Closet"
+  },
+  "dialogues": {
+    "enterRoom": "Hold on... This isn't the restroom.",
+    "realizeCloset": "This must be the janitor's closet.",
+    "unsafeRoom": "This is the most unsafe room I have ever seen!",
+    "zoomCable": "Look at that frayed cable... sparks are flying!",
+    "zoomBoxes": "Those boxes are stacked way too high... they're tilting!",
+    "zoomPuddle": "There's a puddle on the floor. Someone could slip!",
+    "uncoverRisks": "I better uncover all the risks before someone gets hurt!",
+    "allRisksFound": "I've identified all the risks in this room! Now I need to assess each one properly. Let me head to the whiteboard.",
+    "startAssessment": "Time to assess each risk using a likelihood and impact scale. Let me think carefully about each one.",
+    "assessmentComplete": "I've completed the risk assessment! Let me review my work.",
+    "congratulations": "Excellent work! The risk assessment is complete. This room is no longer a mystery - every hazard has been identified and evaluated. Time to get out of here!"
+  },
+  "risks": {
+    "cable": {
+      "name": "Frayed Electrical Cable",
+      "icon": "flash_on",
+      "thought": "That cable is frayed and sparking! It could start a fire or electrocute someone.",
+      "description": "A frayed electrical cable with visible sparks, posing fire and electrocution hazards."
+    },
+    "extinguisher": {
+      "name": "Blocked Fire Extinguisher",
+      "icon": "local_fire_department",
+      "thought": "The fire extinguisher is blocked by that ladder. It should always be accessible in case of emergency.",
+      "description": "A fire extinguisher blocked by a ladder, making it inaccessible in an emergency."
+    },
+    "ladder": {
+      "name": "Unstable Ladder",
+      "icon": "warning",
+      "thought": "That ladder looks unstable. Someone could fall if they tried to climb it.",
+      "description": "An unstable ladder leaning against the wall, risk of falling."
+    },
+    "boxes": {
+      "name": "Unstable Stack of Boxes",
+      "icon": "inventory_2",
+      "thought": "Those boxes are stacked too high and they're tilting! They could fall over and injure someone.",
+      "description": "A tall, tilting stack of boxes that could topple over."
+    },
+    "puddle": {
+      "name": "Wet Puddle on Floor",
+      "icon": "water_drop",
+      "thought": "That puddle is a slipping hazard! Someone could easily lose their footing.",
+      "description": "A wet puddle on the floor creating a slip-and-fall hazard."
+    },
+    "chemicals_unlabeled": {
+      "name": "Unlabeled Chemicals",
+      "icon": "science",
+      "thought": "These chemical bottles have no labeling at all. Without knowing what's inside, nobody can handle them safely.",
+      "description": "Chemical bottles without proper labels, preventing safe handling."
+    },
+    "chemicals_sunlight": {
+      "name": "Chemicals in Direct Sunlight",
+      "icon": "wb_sunny",
+      "thought": "Those chemicals are sitting in direct sunlight! Chemicals should never be stored where sunlight can reach them - it could cause dangerous reactions.",
+      "description": "Chemical bottles stored in direct sunlight, risking degradation or dangerous reactions."
+    },
+    "chemical_edge": {
+      "name": "Open Chemical at Shelf Edge",
+      "icon": "report_problem",
+      "thought": "That open chemical bottle is right at the edge of the shelf. It could topple and spill at any moment!",
+      "description": "An open chemical bottle precariously placed at the edge of a shelf."
+    },
+    "sandwich": {
+      "name": "Sandwich / Pest Risk",
+      "icon": "pest_control",
+      "thought": "There's a sandwich left on the desk! Food left out like this will attract pests - look, I can already see ants nearby.",
+      "description": "An exposed sandwich on the desk attracting pests to the workspace."
+    },
+    "bucket": {
+      "name": "Unhygienic Cleaning Bucket",
+      "icon": "cleaning_services",
+      "thought": "That cleaning bucket looks disgusting. Bacteria grows quickly in stagnant dirty water - this is a health hazard.",
+      "description": "A dirty cleaning bucket with stagnant water, breeding bacteria."
+    },
+    "gloves": {
+      "name": "Damaged Protection Gloves",
+      "icon": "back_hand",
+      "thought": "Those protective gloves are torn and damaged. They might not protect against chemicals or sharp objects anymore.",
+      "description": "Worn and damaged protective gloves that no longer provide adequate protection."
+    }
+  },
+  "redHerrings": {
+    "labels": {
+      "thought": "These labels are a bit faded, but I can still see what it says. Not really a risk."
+    },
+    "fragile_box": {
+      "thought": "This box is marked fragile but it's closed and stored securely on the shelf. It's fine."
+    },
+    "taped_cable": {
+      "thought": "This cable is taped down to the floor. Good - it's fastened properly so nobody trips on it."
+    },
+    "door_sign": {
+      "thought": "The door has a warning sign on it. That's actually a good safety measure - the situation is under control."
+    },
+    "chair": {
+      "thought": "The chair is slightly pulled out from the desk. Not really a hazard."
+    }
+  },
+  "riskAssessment": {
+    "title": "Risk Assessment Matrix",
+    "instructions": "For each identified risk, assess the Likelihood (1-5) and Impact (1-5). The Risk Score is calculated automatically.",
+    "likelihoodLabel": "Likelihood",
+    "impactLabel": "Impact",
+    "riskScoreLabel": "Risk Score",
+    "likelihoodTooltip": "How likely is this hazard to occur? 1 = Very Unlikely, 2 = Unlikely, 3 = Possible, 4 = Likely, 5 = Very Likely",
+    "impactTooltip": "How severe would the consequences be? 1 = Negligible, 2 = Minor, 3 = Moderate, 4 = Major, 5 = Catastrophic",
+    "riskScoreTooltip": "Risk Score = Likelihood x Impact. Higher scores indicate greater risk priority.",
+    "submitButton": "Submit Assessment",
+    "nextRisk": "Next Risk",
+    "prevRisk": "Previous Risk",
+    "riskCounter": "Risk {current} of {total}",
+    "selectValue": "Select"
+  },
+  "review": {
+    "title": "Risk Assessment Review",
+    "correctSection": "Correctly Assessed Risks",
+    "incorrectSection": "Risks Needing Reconsideration",
+    "likelihoodTooHigh": "Likelihood rated too high",
+    "likelihoodTooLow": "Likelihood rated too low",
+    "impactTooHigh": "Impact rated too high",
+    "impactTooLow": "Impact rated too low",
+    "generalFeedbackHigh": "You tended to rate risks higher than expected. Remember that not every hazard is equally likely or severe.",
+    "generalFeedbackLow": "You tended to underestimate risks. In workplace safety, it's important to take even moderate hazards seriously.",
+    "perfectScore": "Excellent work! All risks were assessed within acceptable ranges.",
+    "goodScore": "Good job! Most of your assessments were on target.",
+    "endButton": "End Risk Assessment"
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully identified all workplace hazards and completed a thorough risk assessment. You've demonstrated strong risk management skills - the ability to spot dangers and evaluate them systematically is crucial in any workplace!",
+    "buttonText": "Exit the Room"
+  },
+  "hints": {
+    "intro": "Look around the room carefully. Click on objects that look dangerous or out of place.",
+    "identifying": "There are still risks to find. Look for electrical hazards, chemical storage issues, structural dangers, and hygiene problems.",
+    "assessment": "Rate each risk's likelihood and impact. Think about how often this could happen and how bad the consequences would be.",
+    "review": "Review your assessment results and click 'End Risk Assessment' when ready.",
+    "allRisksFound": "You've found all the risks. Click the whiteboard to start the risk assessment.",
+    "completion": "The training has been completed!",
+    "default": "Look around the room for potential hazards."
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "risksFound": "Risks Found",
+    "of": "of",
+    "clickToInspect": "Click objects to inspect them",
+    "notARisk": "Not a risk",
+    "riskIdentified": "Risk identified!",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "puzzles": {
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

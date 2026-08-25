@@ -1,0 +1,229 @@
+{
+  "id": "market-awareness",
+  "moduleNumber": 9,
+  "title": "Market Awareness",
+  "subtitle": "Module 9",
+  "coverImage": "assets/thumbs/market-awareness.webp",
+  "pages": [
+    {
+      "type": "cover",
+      "moduleLabel": "Module 9",
+      "title": "Market Awareness",
+      "subtitle": "An interactive curriculum",
+      "image": "assets/thumbs/market-awareness.webp"
+    },
+    {
+      "type": "content",
+      "title": "Learning objectives",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "This module aims to strengthen participants’ understanding of market awareness as a strategic skill essential for entrepreneurial success. It seeks to equip learners with the ability to conduct basic market research, identify and evaluate customer segments, analyse competitors, and recognise viable market opportunities. The module also aims to help participants develop a structured approach to decision-making by using practical tools and frameworks, enabling them to align their business ideas with real market needs and regulatory conditions."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Market awareness refers to the ability to discern customer preferences, monitor rival behavior, and track overarching trends within an industry. Ramos-Rodrguez et al. (2024) have noted that a sharp grasp of these elements allows migrant entrepreneurs to adjust their offerings, respond adeptly to cultural nuances, and spot emerging openings. Entrepreneurs with this insight can weigh risks more accurately, choose informed paths, and boost their standing even in completely new settings. The present module guides participants through rigorous market research, helps them clarify unique value propositions, and teaches techniques for positioning a venture so it meets local tastes and distinguishes itself from competitors."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Why this matters",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Scholars have long argued that having a good knowledge of the local market rhythms- consumer tastes, rival products, shifting rules-is essential for the survival and expansion of any business (Liverpool University Management School, 2025). Since many migrant entrepreneurs lack easy access to formal market reports, tapping into their social and intellectual networks can boost both opportunity spotting and sound decision-making (Ramos Rodriguez et al., 2024). The first resource consists of ties inside both migrant circles and the wider host society, which yield unofficial tips on what buyers and regulators expect, while the second is shaped by earlier work experience and industry know-how that turn those tips into concrete plans. Studies show that these entrepreneurs commonly lean on friends, community leaders, and hard-won lessons to find openings and adjust quickly when they enter a new marketplace (Ashourizadeh & Saeedikiya, 2022)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Key components",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Market research",
+          "definition": "Systematic collection and analysis of customer and competitor information through surveys, interviews, and desk research (Liverpool University Management School, 2025)."
+        },
+        {
+          "kind": "definition",
+          "term": "Opportunity recognition",
+          "definition": "Identifying viable segments based on the firm's capabilities and market gaps (Ramos‑Rodriguez et al., 2024)."
+        },
+        {
+          "kind": "definition",
+          "term": "Competitive analysis",
+          "definition": "Mapping direct and indirect competitors, evaluating strengths, weaknesses, pricing, and positioning."
+        },
+        {
+          "kind": "definition",
+          "term": "Customer understanding",
+          "definition": "Defining target demographics, preferences, pain points, and purchasing behavior."
+        },
+        {
+          "kind": "definition",
+          "term": "Trends and regulatory awareness",
+          "definition": "Tracking industry evolution, consumer trends, and legal factors affecting demand and supply."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "How to develop the skill",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Below are presented some effective ways that support the development of market awareness:"
+        },
+        {
+          "kind": "definition",
+          "term": "Learn research methods",
+          "definition": "You can use questionnaires, focus groups, and secondary data to gather insights (Liverpool University Management School, 2025)."
+        },
+        {
+          "kind": "definition",
+          "term": "Leverage networks",
+          "definition": "You can draw on personal, ethnic, and professional contacts to tap into local insights (Ashourizadeh & Saeedikiya, 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Map opportunities",
+          "definition": "You can use frameworks like the Market Opportunity Navigator to explore and evaluate multiple potential markets (Gruber & Tal, 2017)."
+        },
+        {
+          "kind": "definition",
+          "term": "Test with MVPs",
+          "definition": "You can launch a basic version of a product or service to collect real customer feedback before scaling."
+        },
+        {
+          "kind": "definition",
+          "term": "Monitor environment",
+          "definition": "You can stay updated on new entrants, consumer preferences, and regulation changes—through local media, business associations, and online tools"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Challenges and solutions",
+      "blocks": [
+        {
+          "kind": "definition",
+          "term": "Limited knowledge of market research",
+          "definition": "Provide hands-on training using real tools (Liverpool University Management School, 2025)."
+        },
+        {
+          "kind": "definition",
+          "term": "Small or homogenous social Enc networks",
+          "definition": "ourage cross-cultural networking and partnerships (Ashourizadeh & Saeedikiya, 2022)."
+        },
+        {
+          "kind": "definition",
+          "term": "Over-reliance on anecdotal data",
+          "definition": "Emphasize rigorous data gathering and validation techniques."
+        },
+        {
+          "kind": "definition",
+          "term": "Difficulty evaluating market I options",
+          "definition": "ntroduce structured frameworks like the Market Opportunity Navigator (Gruber & Tal, 2017)."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Practical exercise",
+      "blocks": [
+        {
+          "kind": "callout",
+          "tone": "info",
+          "title": "Try it",
+          "text": "Choose a simple business idea (e.g., a household product):"
+        },
+        {
+          "kind": "numberedList",
+          "items": [
+            "Define 2–3 potential customer segments.",
+            "Design a short survey or guide for 5–10 interviews to understand needs and price sensitivity.",
+            "List at least three competitors and their key features and prices.",
+            "Use the Market Opportunity Navigator steps: generate possible segments, rank by attractiveness vs. fit, and choose one to focus on.",
+            "Create a brief action plan for a minimum viable product (MVP) test to validate customer interest."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Self-assessment",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Tick the box if you agree"
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            "I can conduct primary and secondary market research using basic tools.",
+            "I can chart competitors and compare offerings.",
+            "I can identify target customer segments and their needs.",
+            "I can apply the Market Opportunity Navigator for strategic focus.",
+            "I can design and execute a simple MVP test."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Summary",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Awareness of the market is one of the core skills an entrepreneur needs, especially for migrants who find themselves working in economies and regulatory systems that are completely foreign to them. When business planning rests on hard observation instead of gut feeling, choices are less likely to misfire. Solid market research, a strategic tap into personal and professional networks, and the use of checklist-style evaluative grids all help the founder spot realistic openings, tune a product to what local customers want, and sketch a value statement that actually lands. Staying relevant after launch means routinely testing earlier guesses, tweaking the plan, and shifting course as prices, competitors, and customer tastes start to wobble."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Expected outcomes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "By the end of this module, participants are expected to be able to gather and interpret relevant market data using both primary and secondary research methods. They should be capable of identifying target customer groups, assessing competitive landscapes, and selecting promising market segments using structured evaluation tools. Learners will also be able to design and test a simple minimum viable product (MVP) to validate demand. Overall, they will be better prepared to make informed, evidence-based decisions and to position their ventures effectively within the local market environment."
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Additional resources",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Article Gaweł, A., Mroczek-Dąbrowska, K., Głodowska, A., & Wach, K. (2024). Conceptual insights into the diverse pathways in migrant entrepreneurship. International Entrepreneurship Review, 10(4), 7–22. https://doi.org/10.15678/IER.2024.1004.01"
+        },
+        {
+          "kind": "list",
+          "items": [
+            "Video How to Conduct Market Research for Your Business Idea https://www.youtube.com/watch?v=iv63hyT9da0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "back-cover",
+      "title": "Market Awareness",
+      "subtitle": "End of module",
+      "ctaPrimary": {
+        "label": "Back to modules",
+        "route": "/learning/modules"
+      },
+      "ctaSecondary": {
+        "label": "Download PDF",
+        "href": "assets/modules/market-awareness.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+/* ────────────────────────────────────────────────────────────────────
+   About page — editorial v2 treatment
+   Cream paper background with a thin terracotta-teal hairline at the
+   top, italic Fraunces display title, drop-cap prose at body 760px,
+   numbered objective cards in a 3×2 grid.
+
+   All colors and shapes pull from the v2 design tokens declared in
+   styles.scss (--pomeil-*, --md-*, --sys-*). No hardcoded values.
+   ──────────────────────────────────────────────────────────── */
+
+:host { display: block; }
+
+.about-page {
+  position: relative;
+  background: var(--pomeil-cream);
+  color: var(--pomeil-ink);
+}
+
+/* ─── HERO ─────────────────────────────────────────────────────── */
+.about-hero {
+  position: relative;
+  padding: clamp(20px, 3vw, 36px) clamp(20px, 4vw, 40px) clamp(28px, 4vw, 48px);
+  max-width: 1180px;
+  margin: 0 auto;
+
+  /* Hairline editorial accent at the very top of the page, tying it
+     into the same magazine-spread metaphor used on home and /new/*. */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: clamp(20px, 4vw, 40px);
+    right: clamp(20px, 4vw, 40px);
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--pomeil-teal-deep) 30%,
+      var(--pomeil-warm) 70%,
+      transparent
+    );
+    opacity: 0.45;
+  }
+}
+
+.hero-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pomeil-teal-deep) !important;
+  text-decoration: none;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 63, 71, 0.14);
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: clamp(20px, 3vw, 32px);
+  transition:
+    background-color var(--md-duration-short3) var(--md-easing-standard),
+    border-color var(--md-duration-short3) var(--md-easing-standard),
+    color var(--md-duration-short3) var(--md-easing-standard);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: var(--pomeil-warm);
+    color: var(--pomeil-warm) !important;
+  }
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: inherit !important;
+  }
+}
+
+.about-title {
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: clamp(2.4rem, 5.4vw, 4rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  color: var(--pomeil-teal-deep);
+  margin: 0.4em 0 0 !important;
+  max-width: 14ch;
+}
+
+/* ─── FACTS STRIP ──────────────────────────────────────────────── */
+.about-facts {
+  padding: clamp(8px, 2vw, 16px) clamp(20px, 4vw, 40px) clamp(28px, 5vw, 56px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.about-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
+  border-top: 1px solid rgba(0, 63, 71, 0.10);
+  border-bottom: 1px solid rgba(0, 63, 71, 0.10);
+  padding: clamp(16px, 2.4vw, 26px) 0;
+}
+@media (max-width: 880px) {
+  .about-facts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .about-facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  padding-left: 18px;
+
+  /* Small terracotta tick to anchor each fact, signalling that it's
+     a discrete piece of project metadata rather than prose. */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--pomeil-warm);
+  }
+}
+.fact-label {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pomeil-ink-muted);
+}
+.fact-value {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  line-height: 1.3;
+  color: var(--pomeil-teal-deep);
+  font-variation-settings: "opsz" 32, "SOFT" 60;
+}
+
+/* ─── PROSE ────────────────────────────────────────────────────── */
+.about-prose-section {
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 32px) clamp(40px, 5vw, 64px);
+}
+.about-prose {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--pomeil-ink);
+
+  > p:empty { display: none; }
+
+  > p {
+    margin: 0 0 1.1em;
+    font-family: var(--font-body) !important;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--pomeil-ink);
+
+    /* Override the legacy `p span { font-family: "Fira Sans" !important }`
+       global rule. Strapi wraps every text fragment in a span. */
+    > span {
+      font-family: var(--font-body) !important;
+    }
+  }
+
+  /* All-bold paragraphs are headings. Match the new-article-prose
+     treatment so the editorial voice carries through. */
+  > p.is-heading {
+    font-family: var(--font-display) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: clamp(1.45rem, 2.6vw, 1.95rem) !important;
+    line-height: 1.25 !important;
+    color: var(--pomeil-teal-deep) !important;
+    font-variation-settings: "opsz" 80, "SOFT" 60 !important;
+    letter-spacing: -0.005em !important;
+    text-transform: none !important;
+    margin: 1.6em 0 0.8em !important;
+
+    &:first-child { margin-top: 0 !important; }
+
+    > span,
+    > span.text-bold {
+      font-family: var(--font-display) !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+      color: var(--pomeil-teal-deep) !important;
+      letter-spacing: -0.005em !important;
+      text-transform: none !important;
+    }
+  }
+
+  /* Drop-cap on the body lede only — class-driven, not position-
+     driven, so heading splits don't pull the cap onto a heading word. */
+  > p.is-body-lede::first-letter {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4.5em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.06em 0.08em 0 -0.04em;
+    color: var(--pomeil-warm);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    text-shadow: 0 2px 6px rgba(179, 89, 58, 0.15);
+  }
+
+  .text-bold {
+    font-weight: 600 !important;
+    color: var(--pomeil-teal-deep) !important;
+  }
+  .text-italic { font-style: italic !important; }
+}
+
+/* Decorative rule between sections — the v2 ornament rule used on
+   /new/* between body and gallery. */
+.ornament-rule {
+  border: 0;
+  height: 12px;
+  max-width: 80px;
+  margin: clamp(28px, 4vw, 40px) auto;
+  background:
+    radial-gradient(circle at 50% 50%, var(--pomeil-warm) 0 2px, transparent 3px),
+    linear-gradient(90deg, transparent 0 calc(50% - 30px), rgba(0, 63, 71, 0.18) calc(50% - 30px) calc(50% - 4px), transparent calc(50% - 4px) calc(50% + 4px), rgba(0, 63, 71, 0.18) calc(50% + 4px) calc(50% + 30px), transparent calc(50% + 30px) 100%);
+  background-size: 100% 100%, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%, 50% 50%;
+  opacity: 0.7;
+}
+
+/* ─── OBJECTIVES ───────────────────────────────────────────────── */
+.about-objectives {
+  padding: clamp(40px, 5vw, 64px) clamp(20px, 4vw, 40px) clamp(72px, 9vw, 112px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.about-objectives-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: clamp(28px, 4vw, 40px);
+  text-align: center;
+  align-items: center;
+
+  .md-eyebrow {
+    margin: 0;
+  }
+}
+.about-objectives-title {
+  font-family: var(--font-display) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.015em;
+  color: var(--pomeil-teal-deep);
+  font-variation-settings: "opsz" 96, "SOFT" 60;
+  margin: 0;
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2.4vw, 28px);
+}
+@media (max-width: 960px) {
+  .objectives-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .objectives-grid { grid-template-columns: 1fr; }
+}
+
+.objective-card {
+  position: relative;
+  background: var(--sys-surface-container-low-app, #fbf8f2);
+  border: 1px solid rgba(0, 63, 71, 0.08);
+  border-radius: var(--md-shape-md, 12px);
+  padding: clamp(20px, 2.4vw, 28px) clamp(20px, 2.4vw, 28px) clamp(24px, 2.8vw, 32px);
+  transition:
+    transform var(--md-duration-medium2) var(--md-easing-emphasized-decelerate),
+    box-shadow var(--md-duration-medium2) var(--md-easing-emphasized-decelerate),
+    border-color var(--md-duration-medium2) var(--md-easing-emphasized-decelerate);
+
+  /* Top hairline accent — switches from teal to warm when hovered,
+     mirroring the active-link cue used in the learning sidenav. */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: clamp(16px, 2vw, 24px);
+    right: clamp(16px, 2vw, 24px);
+    height: 2px;
+    background: linear-gradient(90deg, var(--pomeil-teal-deep), var(--pomeil-warm));
+    opacity: 0.55;
+    border-radius: 1px;
+    transition: opacity var(--md-duration-short3) var(--md-easing-standard);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 31, 36, 0.10);
+    border-color: rgba(0, 63, 71, 0.16);
+    &::before { opacity: 1; }
+  }
+}
+
+.objective-ordinal {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  line-height: 1;
+  color: var(--pomeil-warm);
+  font-variation-settings: "opsz" 96, "SOFT" 80;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+}
+
+.objective-content {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--pomeil-ink);
+
+  > p {
+    margin: 0 0 0.6em;
+    font-family: var(--font-body) !important;
+
+    > span { font-family: var(--font-body) !important; }
+  }
+
+  > p.is-heading {
+    font-family: var(--font-display) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: 1.15rem !important;
+    line-height: 1.25 !important;
+    color: var(--pomeil-teal-deep) !important;
+    font-variation-settings: "opsz" 60, "SOFT" 60 !important;
+    letter-spacing: -0.005em !important;
+    margin: 0 0 0.5em !important;
+
+    > span {
+      font-family: var(--font-display) !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+      color: var(--pomeil-teal-deep) !important;
+    }
+  }
+
+  .text-bold { font-weight: 600; color: var(--pomeil-teal-deep); }
+  .text-italic { font-style: italic; }
+}

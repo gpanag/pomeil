@@ -1,0 +1,193 @@
+{
+  "loading": "Ładowanie modułu Motywowanie i inspirowanie innych...",
+  "intro": {
+    "title": "Motywowanie i inspirowanie innych",
+    "paragraphs": [
+      "Wchodzisz do poczekalni przed biurem HR. Trwają rozmowy kwalifikacyjne, a atmosfera jest wyraźnie napięta.",
+      "W pobliżu stoi Aktywny Kandydat, z oczami utkwionymi w drzwiach HR, mocno trzymając dokumenty. Jego nerwowość trudno przeoczyć.",
+      "Dziś nauczysz się, jak motywować i inspirować innych poprzez małe, świadome działania: dostrzeganie mocnych stron, zadawanie właściwych pytań i pomaganie ludziom odzyskać pewność siebie w chwilach, gdy najbardziej tego potrzebują."
+    ],
+    "buttonText": "Wejdź do poczekalni"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "Manager HR",
+      "dialogues": {
+        "observe": "Inspirowanie innych wymaga cierpliwości i uważności. Zobaczmy, jak pomożesz komuś ruszyć naprzód.",
+        "finalWords": "Nie wydawałeś/aś poleceń.\nNie oferowałeś/aś pustej zachęty.\nWysłuchałeś/aś, zastanowiłeś/aś się i wzmocniłeś/aś.\n\nTo właśnie znaczy inspirować i motywować innych.",
+        "completion": "Brawo! Szkolenie zakończone!",
+        "default": "Obserwuj uważnie. Czasem najlepsza motywacja pochodzi ze zrozumienia."
+      }
+    },
+    "candidate": {
+      "name": "Kandydat",
+      "dialogues": {
+        "greet": "Czekam już długo… Nie jestem pewien/pewna, czy jestem na to gotowy/a.",
+        "greet2": "Wszyscy mówią, że motywacja przychodzi z wnętrza, ale czasem… nie.",
+        "afterTask1": "Boję się, że nie będę wystarczająco dobry/a… Pracowałem/am ciężko, ale moja droga nie była łatwa.",
+        "afterStrengths": "Nigdy nie myślałem/am o tym jako o mocnych stronach… Może jednak mam coś do zaoferowania.",
+        "afterPuzzle2": "Doszedłeś/Doszłaś tak daleko. To już pokazuje siłę.",
+        "thankYou": "Dziękuję. Czuję się teraz pewniej.",
+        "default": "Po prostu próbuję zebrać odwagę…"
+      }
+    }
+  },
+  "puzzles": {
+    "singleChoice": {
+      "title": "Interakcja Świadomości Emocjonalnej",
+      "instructions": "Wybierz, jak odpowiedzieć.",
+      "question": "Kandydat mówi: „Czekam już długo… Nie jestem pewien/pewna, czy jestem na to gotowy/a.” Jak odpowiadasz?",
+      "options": {
+        "a": "Dasz radę. Każdy się denerwuje.",
+        "b": "Postaraj się o tym za bardzo nie myśleć.",
+        "c": "To normalne, że tak się czujesz. Co najbardziej cię teraz martwi?",
+        "d": "Powinieneś/powinnaś skupić się na tym, co możesz zyskać."
+      },
+      "hint": "Motywacja zaczyna się od zrozumienia, nie od zapewnień czy presji.",
+      "feedback": {
+        "wrong": "To nie najlepsze podejście. Motywacja zaczyna się od zrozumienia, nie od zapewnień czy presji.",
+        "correct": "Motywacja zaczyna się od zrozumienia, nie od zapewnień czy presji. Kandydat wyraźnie się odpręża."
+      },
+      "answerOverlay": "Poprawna odpowiedź: „To normalne, że tak się czujesz. Co najbardziej cię teraz martwi?”\n\nMotywacja zaczyna się od zrozumienia, nie od zapewnień czy presji."
+    },
+    "sequenceOrder": {
+      "title": "Kroki, by inspirować",
+      "instructions": "Ułóż następujące działania w odpowiedniej kolejności, by zbudować motywację.",
+      "items": [
+        "Zachęcaj mocne strony",
+        "Słuchaj aktywnie",
+        "Oferuj realne wsparcie",
+        "Inspiruj pewność siebie"
+      ],
+      "correctOrder": [
+        "Słuchaj aktywnie",
+        "Zachęcaj mocne strony",
+        "Oferuj realne wsparcie",
+        "Inspiruj pewność siebie"
+      ],
+      "hints": [
+        "Krok 1: Zanim pomożesz, musisz zrozumieć.",
+        "Krok 2: Podkreślaj to, co już mają.",
+        "Krok 3: Pokaż praktyczne sposoby działania.",
+        "Krok 4: Buduj trwałą wiarę w siebie."
+      ],
+      "feedback": {
+        "wrong": "Inspiracja rośnie krok po kroku — nie wszystko naraz.",
+        "correct": "Świetnie! Rozumiesz, jak budować motywację krok po kroku."
+      },
+      "answerOverlay": "Poprawna kolejność:\n1. Słuchaj aktywnie\n2. Zachęcaj mocne strony\n3. Oferuj realne wsparcie\n4. Inspiruj pewność siebie"
+    },
+    "matching": {
+      "title": "Zamiana zniechęcenia w motywację",
+      "instructions": "Przeciągnij każde zdanie, by przekształcić je w motywujące przesłanie.",
+      "pairs": [
+        {"left": "Nie mam wystarczającego doświadczenia.", "right": "Doświadczenie zdobywa się poprzez naukę i praktykę."},
+        {"left": "Moje pochodzenie jest zbyt inne.", "right": "Różne pochodzenia wnoszą cenne perspektywy."},
+        {"left": "Już wcześniej zawiodłem/zawiodłam.", "right": "Przeszłe niepowodzenia pomagają nam rosnąć i się doskonalić."}
+      ],
+      "feedback": {
+        "wrong": "To nie ta para. Pomyśl, jak pozytywnie przeformułować każde stwierdzenie.",
+        "correct": "Motywacja często polega na zmianie perspektywy, nie zmianie rzeczywistości."
+      },
+      "answerOverlay": "Poprawne dopasowania:\n1. „Nie mam wystarczającego doświadczenia.” → „Doświadczenie zdobywa się poprzez naukę i praktykę.”\n2. „Moje pochodzenie jest zbyt inne.” → „Różne pochodzenia wnoszą cenne perspektywy.”\n3. „Już wcześniej zawiodłem/zawiodłam.” → „Przeszłe niepowodzenia pomagają nam rosnąć i się doskonalić.”"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {"checkButton": "Wyślij", "resetButton": "Zresetuj"},
+    "discouragingTitle": "Zniechęcające",
+    "motivatingTitle": "Motywujące"
+  },
+  "hints": {
+    "intro": "Kliknij Kandydata, by rozpocząć rozmowę.",
+    "talkToCandidate": "Kliknij Kandydata, by zacząć.",
+    "talkToCandidate2": "Wróć do Kandydata.",
+    "findFolder": "Poszukaj teczki Kandydata — kliknij dokumenty, które trzyma.",
+    "talkToHrManager": "Kliknij Managera HR.",
+    "strengthRecognition": "Wybierz z teczki dwa elementy, które uwypuklają prawdziwą mocną stronę.",
+    "matching": "Dopasuj każde zniechęcające stwierdzenie do pozytywnego przeformułowania, które najlepiej je odpiera.",
+    "bodyLanguage": "Wybierz dwa sygnały mowy ciała, które zdradzają niepewność Kandydata.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po poczekalni w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do poczekalni przed biurem HR. Atmosfera jest napięta. Aktywny Kandydat stoi w pobliżu, patrząc na drzwi HR i mocno trzymając dokumenty.",
+    "strengthsIntro": "Otwierasz teczkę Kandydata. W środku znajdujesz certyfikaty, doświadczenie wolontariackie, umiejętności językowe oraz luki w historii zatrudnienia. Wybierz 2 elementy, by je pozytywnie podkreślić.",
+    "strengthsCorrect": "Motywacja rośnie, gdy ludzie widzą swoją wartość.",
+    "strengthsWrong": "Te elementy mogą nie pomóc zbudować pewności siebie. Skup się na prawdziwych mocnych stronach.",
+    "bodyLanguageIntro": "Kliknij elementy pokazujące, że Kandydat czuje niepewność.",
+    "bodyLanguageCorrect": "Motywacja zaczyna się od zauważania, jak czują się inni — nawet gdy tego nie mówią.",
+    "bodyLanguageWrong": "Spójrz uważniej na mowę ciała Kandydata.",
+    "foundFolder": "Zbadałeś/aś teczkę Kandydata i podkreśliłeś/aś jego mocne strony."
+  },
+  "items": {
+    "folder": {
+      "popupTitle": "Teczka Kandydata",
+      "popupContent": [
+        "Certyfikaty",
+        "Doświadczenie wolontariackie",
+        "Umiejętności językowe",
+        "Luki w historii zatrudnienia"
+      ]
+    },
+    "candidateFolder": {"inventoryTitle": "Teczka Kandydata"}
+  },
+  "strengths": {
+    "title": "Wyzwanie Rozpoznawania Mocnych Stron",
+    "instructions": "Wybierz 2 elementy, by je pozytywnie podkreślić.",
+    "options": [
+      {"id": "language", "text": "Umiejętności językowe", "correct": true},
+      {"id": "volunteering", "text": "Doświadczenie wolontariackie", "correct": true},
+      {"id": "gaps", "text": "Luki w zatrudnieniu", "correct": false},
+      {"id": "references", "text": "Brakujące referencje", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motywacja rośnie, gdy ludzie widzą swoją wartość.",
+      "wrong": "Te elementy mogą nie pomóc zbudować pewności siebie. Skup się na prawdziwych mocnych stronach."
+    }
+  },
+  "bodyLanguage": {
+    "title": "Czytanie sygnałów motywacji",
+    "instructions": "Kliknij elementy pokazujące, że Kandydat czuje niepewność.",
+    "options": [
+      {"id": "clenched", "text": "Zaciśnięte dłonie na dokumentach", "correct": true},
+      {"id": "relaxed", "text": "Rozluźniona postawa", "correct": false},
+      {"id": "eyeContact", "text": "Unikanie kontaktu wzrokowego", "correct": true},
+      {"id": "smile", "text": "Pewny uśmiech", "correct": false}
+    ],
+    "feedback": {
+      "correct": "Motywacja zaczyna się od zauważania, jak czują się inni — nawet gdy tego nie mówią.",
+      "wrong": "Spójrz uważniej na mowę ciała Kandydata."
+    }
+  },
+  "completion": {
+    "title": "Umiejętność ukończona: Inspirowanie i motywowanie innych",
+    "message": "Pokazałeś/aś:\n\nŚwiadomość emocjonalną\nPozytywną komunikację\nWzmacnianie poprzez uznanie\nEtyczną motywację\n\nInspiracja to przywództwo w działaniu.",
+    "buttonText": "Wyjdź z poczekalni"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "checkButton": "Sprawdź odpowiedź",
+    "submitButton": "Wyślij",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

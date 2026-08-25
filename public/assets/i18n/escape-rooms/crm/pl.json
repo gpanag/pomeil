@@ -1,0 +1,782 @@
+{
+  "loading": "Ładowanie Działu Obsługi Klienta...",
+  "intro": {
+    "title": "Zarządzanie Relacjami z Klientami",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś zatrudniony przez dużą międzynarodową firmę, w której współpracują ludzie z różnych kultur, środowisk i zawodów.",
+      "Dziś wchodzisz do Działu Obsługi Klienta, gdzie panuje pewien chaos. Kolega zmaga się ze złym klientem, szafa kartotekowa wybuchła, a ankieta zwrotna wymaga ukończenia. Czas wykorzystać swoje umiejętności Zarządzania Relacjami z Klientami!"
+    ],
+    "buttonText": "Wejdź do Działu Obsługi Klienta"
+  },
+  "characters": {
+    "peter": {
+      "name": "Peter",
+      "dialogues": {
+        "intro1": "Próbowałem pomóc temu klientowi… Ale zaczął na mnie krzyczeć. Ciągle powtarza, że jestem zły w swojej pracy…",
+        "intro2": "Cokolwiek powiem, on się nie uspokoi. Tylko pogarszam sytuację.",
+        "intro3": "Czy możesz przejąć rozmowę?",
+        "default": "Dzięki za pomoc z tą rozmową…"
+      }
+    },
+    "simone": {
+      "name": "Simone",
+      "dialogues": {
+        "intro1": "Och, jesteś tu! Robię ankietę zwrotną dla naszych klientów, ale potrzebuję pomocy...",
+        "intro2": "Naszkicowałam mnóstwo pytań. Myślę, że niektóre są dobre… ale niektóre są, no cóż… straszne.",
+        "intro3": "Czy możesz mi pomóc wybrać, których pytań użyć w ankiecie? Pokażę ci po dwa naraz.",
+        "default": "Daj znać, jeśli będziesz potrzebować czegoś jeszcze!"
+      }
+    }
+  },
+  "puzzles": {
+    "complaintCall": {
+      "title": "Rozmowa ze Sfrustrowanym Klientem",
+      "instructions": "Poprowadź rozmowę telefoniczną ze sfrustrowanym klientem. Wybieraj odpowiedzi mądrze — nastrój klienta od tego zależy.",
+      "moodLabel": "Nastrój Klienta",
+      "holdButton": "Zawieś rozmowę",
+      "holdWarning": "Ostrzeżenie: Zawieszenie klienta znacząco obniży jego nastrój!",
+      "holdResponse": "Nie mogę uwierzyć, że mnie zawiesili! Halo? Halooo?",
+      "holdReturn": "Dziękuję za czekanie. Kontynuujmy. Na czym skończyliśmy?",
+      "holdFailure": "Wiesz co? Zapomnij. Mam dość.",
+      "stages": [
+        {
+          "customerStatement": "Cześć. Pańska koleżanka powiedziała, że może mi pan pomóc. Próbuję się skontaktować od kilku dni!",
+          "options": {
+            "good": "Naprawdę mi przykro, że tak trudno było się z nami skontaktować. Rozumiem, jak bardzo musi to być frustrujące. Jestem tu, żeby panu pomóc.",
+            "neutral": "Rozumiem. Mogę panu teraz pomóc.",
+            "bad": "Cóż, ostatnio byliśmy bardzo zajęci. Pewnie dlatego nie mógł się pan dodzwonić."
+          },
+          "customerReplies": {
+            "good": "Dziękuję. Czułem się dość ignorowany!",
+            "neutral": "Dobrze… Mam tylko nadzieję, że ktoś mi tym razem rzeczywiście pomoże.",
+            "bad": "Ok… Ale czekam już od dni…"
+          },
+          "userFollowUp": {
+            "good": "Rozumiem. Przejdźmy przez to, co się działo, i wszystko uporządkujmy.",
+            "neutral": "Przejdźmy przez to, co się działo.",
+            "bad": "Ok, proszę powiedzieć, na czym polega problem."
+          }
+        },
+        {
+          "customerStatement": "Moje zamówienie nie zostało wysłane! Miało być prezentem urodzinowym, ale teraz może nie dotrzeć na czas!",
+          "options": {
+            "good": "Rozumiem, że to frustrujące. Przejdźmy przez to razem i zobaczmy, co możemy zrobić.",
+            "neutral": "Rozumiem, że to irytujące.",
+            "bad": "Nie musi się pan tak denerwować!"
+          },
+          "customerReplies": {
+            "good": "Dziękuję, że naprawdę mnie pan słucha.",
+            "neutral": "Tak… chyba. Po prostu chcę wiedzieć, co się dzieje.",
+            "bad": "Serio? To naprawdę ważne!"
+          },
+          "userFollowUp": {
+            "good": "Oczywiście. Idźmy krok po kroku.",
+            "neutral": "Sprawdzę to.",
+            "bad": "Dobrze…"
+          }
+        },
+        {
+          "customerStatement": "Więc co właściwie stało się z moim zamówieniem?",
+          "options": {
+            "good": "Sprawdzę to teraz. Czy może pan potwierdzić numer zamówienia, żebym sprawdził właściwe szczegóły?",
+            "neutral": "Mogę sprawdzić. Jaki jest numer zamówienia?",
+            "bad": "W końcu pan to dostanie. Po prostu trzeba być cierpliwym."
+          },
+          "customerReplies": {
+            "good": "Jasne. Mój numer zamówienia to 38492.",
+            "neutral": "Numer to 38492.",
+            "bad": "To za mało. Muszę wiedzieć! Proszę sprawdzić mój numer zamówienia 38492!"
+          },
+          "userFollowUp": {
+            "good": "Dziękuję. Sprawdzę to natychmiast.",
+            "neutral": "Dobrze, otworzę to.",
+            "bad": "Dobrze… sprawdzę to…"
+          }
+        },
+        {
+          "customerStatement": "Znalazł pan moje zamówienie?",
+          "options": {
+            "good": "Tak. Widzę, że było opóźnienie z magazynu. Sprawdzę aktualizację wysyłki i będę pana informował.",
+            "neutral": "Tak. Widzę, że jest opóźnione. Sprawdzę najnowszą aktualizację.",
+            "bad": "Tak, jest opóźnione. To nie moja wina."
+          },
+          "customerReplies": {
+            "good": "Dobrze… dziękuję za wyjaśnienie.",
+            "neutral": "Dobrze. Po prostu chcę wiedzieć, co się dzieje.",
+            "bad": "Nie bierze pan żadnej odpowiedzialności? Świetnie."
+          },
+          "userFollowUp": {
+            "good": "Upewnię się, że otrzyma pan najnowsze informacje.",
+            "neutral": "Sprawdzę teraz oś czasu.",
+            "bad": "Eh… zdarzają się błędy, wie pan."
+          }
+        },
+        {
+          "customerStatement": "Co się teraz wydarzy?",
+          "options": {
+            "good": "Będę monitorował wysyłkę i informował pana, jak tylko coś się zmieni.",
+            "neutral": "Musimy po prostu poczekać na następną aktualizację śledzenia.",
+            "bad": "Przyjdzie, kiedy przyjdzie. Powinien pan zamówić wcześniej, jeśli czas był ważny."
+          },
+          "customerReplies": {
+            "good": "Dziękuję. To pomaga.",
+            "neutral": "Dobrze… chyba nie ma nic więcej do zrobienia.",
+            "bad": "Wow… to bardzo niegrzeczne! Wasza strona internetowa stwierdziła, że dotrze w ciągu 3 dni roboczych!"
+          },
+          "userFollowUp": {
+            "good": "Upewnię się, że będzie pan na bieżąco.",
+            "neutral": "Dam panu znać, jeśli zobaczę coś nowego.",
+            "bad": "Musi pan być cierpliwy. Nie ma nic więcej, co możemy zrobić."
+          }
+        },
+        {
+          "customerStatement": "Dobrze… dziękuję za pomoc...",
+          "options": {
+            "good": "Zanim zakończymy rozmowę, czy jest coś jeszcze, w czym mogę dziś panu pomóc?",
+            "neutral": "Tak, to wszystkie informacje, które mam na razie.",
+            "bad": "Jeśli to wszystko, zakończę teraz rozmowę."
+          },
+          "customerReplies": {
+            "good": "Nie, to wszystko. Dziękuję za poświęcenie czasu, żeby mi pomóc!",
+            "neutral": "Dobrze… mam nadzieję, że szybko przyjdzie. Pa.",
+            "bad": "Dobrze… chyba to wszystko."
+          },
+          "userFollowUp": {
+            "good": "Cieszę się, że mogłem pomóc. Dziękuję za telefon i życzę miłego dnia.",
+            "neutral": "Do widzenia.",
+            "bad": "Do widzenia."
+          }
+        }
+      ],
+      "failure": {
+        "title": "Rozmowa Zakończona",
+        "message": "Twój klient odłożył słuchawkę z powodu kiepskiej obsługi.\n\nAby zapewnić klientom lepsze doświadczenia:\n• Zachowaj spokój i cierpliwość\n• Słuchaj klienta i uznaj jego uczucia\n• Przeproś i przejmij odpowiedzialność za sytuację\n• Bądź jasny i zorientowany na rozwiązania\n• Dotrzymuj obietnic\n• Unikaj zawieszania rozmowy, kiedy to tylko możliwe",
+        "retryButton": "Spróbuj Ponownie"
+      },
+      "success": {
+        "title": "Świetna robota!",
+        "message": "Gratulacje, dobrze poradziłeś sobie z tą rozmową!\n\nZachowałeś spokój i aktywnie słuchałeś. Przejąłeś odpowiedzialność za sytuację, przepraszając i oferując konkretne rozwiązanie. Dzięki temu klient poczuł się zauważony i wysłuchany, co doprowadziło do pozytywnego rozwiązania sytuacji.",
+        "continueButton": "Zakończ Rozmowę ze Sfrustrowanym Klientem"
+      }
+    },
+    "customerRegistry": {
+      "title": "Chaotyczny Rejestr Klientów",
+      "instructions": "Posortuj rekordy klientów. Przeciągnij każdy wpis danych do właściwej kolumny: Zachowaj lub Usuń.",
+      "thought1": "O nie, nasze rekordy klientów!",
+      "thought2": "Cóż… organizowanie rekordów klientów było na mojej liście zadań od jakiegoś czasu. Lepiej się tym zajmę.",
+      "startSortingButton": "Posortuj Rejestr Klientów",
+      "readGuidelinesButton": "Przeczytaj Wytyczne Dotyczące Prywatności",
+      "startWithoutButton": "Rozpocznij sortowanie",
+      "keepColumn": "Zachowaj",
+      "eraseColumn": "Usuń",
+      "saveEditsButton": "Zapisz Edycje",
+      "nextFileButton": "Następny Plik",
+      "privacyGuidelines": [
+        {
+          "title": "Co liczy się jako dane osobowe?",
+          "content": "Wszelkie informacje związane z konkretną osobą. Przykłady:\n• Imię i nazwisko, adres, numer telefonu, adres e-mail\n• Numer Identyfikacji Narodowej\n• Informacje o karcie kredytowej, szczegóły płatności\n• Adres protokołu internetowego (IP)\n• Notatki o klientach\n\nI wiele więcej… Jeśli może zidentyfikować kogoś, są to dane osobowe!"
+        },
+        {
+          "title": "Specjalne (szczególnie wrażliwe!) dane",
+          "content": "Obchodź się z najwyższą ostrożnością:\n• Rasa i pochodzenie etniczne\n• Przekonania polityczne, religijne i filozoficzne\n• Członkostwo w związku zawodowym\n• Zdrowie i genetyka\n• Biometria (jak odciski palców czy skany siatkówki)\n• Życie seksualne i orientacja seksualna"
+        },
+        {
+          "title": "Przetwarzanie oznacza",
+          "content": "Wszystko, co robisz z danymi osobowymi: zbieranie, przechowywanie, aktualizowanie, usuwanie, udostępnianie"
+        },
+        {
+          "title": "Zasady przetrwania dla przetwarzania danych (zasady RODO)",
+          "content": "• Miej właściwy powód (podstawa prawna)\n• Bądź uczciwy, nie szkodliwy ani wprowadzający w błąd\n• Mów ludziom jasno, co robisz\n• Nie używaj danych ponownie do innych celów\n• Zachowaj tylko to, czego potrzebujesz\n• Utrzymuj je dokładnymi i aktualnymi\n• Usuń je, gdy skończysz\n• Trzymaj je bezpiecznie\n• Bądź w stanie udowodnić, że przestrzegasz tych zasad"
+        },
+        {
+          "title": "Podstawa prawna – dlaczego wolno nam przechowywać dane?",
+          "content": "1. Zgoda — Klient powiedział „tak\" na przetwarzanie danych. Stosowane do: newsletterów, programów lojalnościowych, marketingu\n2. Umowa — Potrzebujemy ich do wypełnienia zobowiązań umownych. Stosowane do: zamówień, dostaw, zwrotów\n3. Obowiązek prawny — Prawo nakazuje nam je przechowywać. Stosowane do: faktur, paragonów, dokumentacji księgowej, dokumentów podatkowych\n4. Uzasadniony interes — Potrzebujemy ich do prowadzenia firmy. Ważne: nie może to być szkodliwe dla klienta. Stosowane do: danych kontaktowych B2B, faktualnych notatek obsługi klienta"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Elena Torres",
+          "type": "Klientka online",
+          "consent": "brak",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Imię i nazwisko",
+              "content": "Elena Torres",
+              "action": "keep",
+              "hint": "Czy potrzebujesz nazwiska klientki, aby zidentyfikować jej zamówienie?"
+            },
+            {
+              "type": "E-mail",
+              "content": "elena.torres@example.com",
+              "action": "keep",
+              "hint": "Czy potrzebujesz adresu e-mail, aby wysyłać potwierdzenia lub paragony?"
+            },
+            {
+              "type": "Numer telefonu",
+              "content": "+45 28 28 11 11",
+              "action": "keep",
+              "hint": "Czy usługi wsparcia lub dostawy mogą potrzebować numeru telefonu?"
+            },
+            {
+              "type": "Adres dostawy",
+              "content": "Vesterbrogade 6790",
+              "action": "keep",
+              "hint": "Czy adres jest wymagany do wysłania jej produktu?"
+            },
+            {
+              "type": "Adres rozliczeniowy",
+              "content": "Taki sam jak dostawy",
+              "action": "keep",
+              "hint": "Czy adres jest niezbędny do wystawiania faktur lub przepisów podatkowych?"
+            },
+            {
+              "type": "Numer zamówienia",
+              "content": "#38492",
+              "action": "keep",
+              "hint": "Czy mógłbyś zarządzać zwrotami bez numeru zamówienia?"
+            },
+            {
+              "type": "Szczegóły zamówienia",
+              "content": "Niebieska Kurtka Zimowa, Rozmiar M",
+              "action": "keep",
+              "hint": "Czy potrzebujesz wiedzieć, co kupiła do obsługi klienta?"
+            },
+            {
+              "type": "Potwierdzenie płatności",
+              "content": "Mastercard kończąca się na 4410",
+              "action": "keep",
+              "hint": "Czy księgowość wymaga potwierdzenia płatności?"
+            },
+            {
+              "type": "Faktura",
+              "content": "INV-38492",
+              "action": "keep",
+              "hint": "Czy prawo podatkowe wymaga przechowywania faktur?"
+            },
+            {
+              "type": "Numer śledzenia",
+              "content": "POSTDK-9981883",
+              "action": "keep",
+              "hint": "Czy mógłbyś śledzić jej zamówienie bez numeru śledzenia?"
+            },
+            {
+              "type": "Notatka obsługi klienta",
+              "content": "E-mail 10/02 ws. opóźnienia",
+              "action": "keep",
+              "hint": "Czy notatka obsługi klienta może być pomocna w wsparciu?"
+            },
+            {
+              "type": "Poglądy polityczne",
+              "content": "Zrzut ekranu z Mediów Społecznościowych",
+              "action": "erase",
+              "hint": "Czy wrażliwe informacje o przekonaniach politycznych są wymagane do dostarczenia jej zamówienia?"
+            },
+            {
+              "type": "Zdjęcie z mediów społecznościowych",
+              "content": "Elena_Social_Media_Profile.jpg",
+              "action": "erase",
+              "hint": "Czy zdjęcie z mediów społecznościowych jest niezbędne do przetwarzania jej zamówienia?"
+            },
+            {
+              "type": "Subiektywna opinia",
+              "content": "Wydaje się zrzędliwa",
+              "action": "erase",
+              "hint": "Czy to faktualna i pomocna notatka?"
+            },
+            {
+              "type": "Karta medyczna",
+              "content": "prescription_scan.pdf",
+              "action": "erase",
+              "hint": "Czy wrażliwe informacje medyczne są istotne dla jej zakupu?"
+            }
+          ],
+          "explanation": {
+            "title": "Świetna robota! Poprawnie posortowałeś dane klientki online Eleny.",
+            "keepTitle": "Informacje, które zdecydowałeś się zachować",
+            "keepContent": "Zachowałeś informacje, których potrzebowałeś do wypełnienia umowy dostarczenia produktu, który zakupiła Elena:\n• Imię i nazwisko, e-mail i numer telefonu\n• Adres dostawy\n• Numer zamówienia, szczegóły zamówienia i numer śledzenia\n\nZachowałeś informacje, które masz prawny obowiązek przechowywać, zgodnie z przepisami podatkowymi i księgowymi:\n• Adres rozliczeniowy\n• Potwierdzenie płatności\n• Faktura\n\nZachowałeś informacje, które masz uzasadniony interes przechowywać:\n• Faktualną notatkę obsługi klienta",
+            "eraseTitle": "Informacje, które zdecydowałeś się usunąć",
+            "eraseContent": "Informacje, które usunąłeś, były wrażliwe, nieistotne i nie zostały dostarczone przez klientkę, co oznacza, że ich przechowywanie było nielegalne lub niewłaściwe zgodnie z RODO:\n• Zrzut ekranu jej poglądów politycznych\n• Zdjęcie z mediów społecznościowych, którego nie dostarczyła\n• Subiektywna opinia („Wydaje się zrzędliwa\")\n• Niezwiązana karta medyczna"
+          }
+        },
+        {
+          "name": "Marco Hansen",
+          "type": "Klient sklepu stacjonarnego",
+          "consent": "program lojalnościowy",
+          "consentDetails": "Zgoda obejmuje:\n• Adres e-mail\n• ID lojalnościowe\n• Preferencje zakupowe",
+          "data": [
+            {
+              "type": "Paragon",
+              "content": "RCPT-79211 – 449 DKK",
+              "action": "keep",
+              "hint": "Czy paragon byłby potrzebny do zgodności z prawem księgowym?"
+            },
+            {
+              "type": "Data zakupu",
+              "content": "14/02/2025",
+              "action": "keep",
+              "hint": "Czy data zakupu może być potrzebna do roszczeń gwarancyjnych?"
+            },
+            {
+              "type": "Metoda płatności",
+              "content": "Karta Kredytowa",
+              "action": "keep",
+              "hint": "Czy metoda płatności jest potrzebna do zwrotów lub księgowości?"
+            },
+            {
+              "type": "Karta gwarancyjna",
+              "content": "Ważna do 2027",
+              "action": "keep",
+              "hint": "Czy klient polega na tobie w przechowywaniu karty gwarancyjnej?"
+            },
+            {
+              "type": "ID lojalnościowe",
+              "content": "12877219",
+              "action": "keep",
+              "hint": "Czy klient wyraził zgodę na przystąpienie do programu lojalnościowego?"
+            },
+            {
+              "type": "Preferencja",
+              "content": "Preferuje odbiór w sklepie",
+              "action": "keep",
+              "hint": "Czy preferencja klienta jest zbierana za zgodą?"
+            },
+            {
+              "type": "Rekord zgody",
+              "content": "Podpisany 14/02/2020",
+              "action": "keep",
+              "hint": "Czy potrzebujesz udowodnić, że klient wyraził zgodę?"
+            },
+            {
+              "type": "Adres e-mail",
+              "content": "marco.coolguy@gmail.com",
+              "action": "keep",
+              "hint": "Czy klient dobrowolnie podał e-mail przy dołączaniu do programu lojalnościowego?"
+            },
+            {
+              "type": "Numer telefonu",
+              "content": "+45 20 11 88 99",
+              "action": "erase",
+              "hint": "Czy klient wyraził zgodę na przechowywanie jego numeru telefonu przy dołączaniu do programu lojalnościowego?"
+            },
+            {
+              "type": "Zrzut z monitoringu CCTV",
+              "content": "cctv_14-02-2020.png",
+              "action": "erase",
+              "hint": "Czy wolno ci przechowywać nagrania CCTV tak długo, na wszelki wypadek?"
+            },
+            {
+              "type": "Notatka pracownika",
+              "content": "Dużo gada",
+              "action": "erase",
+              "hint": "Czy notatka pracownika to fakt czy osobisty osąd?"
+            },
+            {
+              "type": "Karta pokładowa",
+              "content": "Bilet lotniczy",
+              "action": "erase",
+              "hint": "Czy bilet lotniczy należy do akt klienta?"
+            }
+          ],
+          "explanation": {
+            "title": "Świetnie! Poprawnie posortowałeś dane w aktach klienta Marco.",
+            "keepTitle": "Informacje, które zdecydowałeś się zachować",
+            "keepContent": "Zachowałeś informacje, które jesteś prawnie zobowiązany przechowywać zgodnie z prawem księgowym:\n• Paragon, datę zakupu i metodę płatności\n\nZachowałeś informacje, które RODO prawnie zobowiązuje cię do przechowywania:\n• Rekord zgody\n\nZachowałeś informacje, których potrzebujesz do wypełnienia umowy umożliwiającej klientom zgłaszanie napraw lub wymian:\n• Karta gwarancyjna\n\nPonieważ uzyskano zgodę klienta, słusznie przechowałeś również:\n• ID lojalnościowe\n• Opcjonalne preferencje\n• Adres e-mail",
+            "eraseTitle": "Informacje, które zdecydowałeś się usunąć",
+            "eraseContent": "Słusznie usunąłeś elementy, które były niewłaściwie zebrane, nieistotne lub nieodpowiednie, w tym:\n• Numer telefonu przechowywany bez zgody\n• Zrzut z monitoringu CCTV, który był zbyt stary, aby przechowywanie było uzasadnione\n• Subiektywna notatka pracownika\n• Źle umieszczona karta pokładowa"
+          }
+        },
+        {
+          "name": "Aisha Rahman",
+          "type": "Kontakt B2B",
+          "consent": "brak",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Firma",
+              "content": "NordTek Solutions AS",
+              "action": "keep",
+              "hint": "Czy przydatne jest znać nazwę firmy?"
+            },
+            {
+              "type": "E-mail służbowy",
+              "content": "aisha.rahman@nordtek.no",
+              "action": "keep",
+              "hint": "Czy służbowy adres e-mail jest potrzebny do wypełnienia umowy o świadczenie usług?"
+            },
+            {
+              "type": "Telefon służbowy",
+              "content": "+47 39 39 29 29",
+              "action": "keep",
+              "hint": "Czy służbowy numer telefonu jest przydatny do utrzymania relacji biznesowych?"
+            },
+            {
+              "type": "ID Umowy",
+              "content": "CNT-55213",
+              "action": "keep",
+              "hint": "Czy ID umowy jest niezbędne dla umowy?"
+            },
+            {
+              "type": "Umowa o Poziomie Usług",
+              "content": "Wsparcie Gold Tier",
+              "action": "keep",
+              "hint": "Czy umowa o poziomie usług określa warunki świadczenia usług?"
+            },
+            {
+              "type": "E-mail do faktur",
+              "content": "accounts@nordtek.no",
+              "action": "keep",
+              "hint": "Czy e-mail do faktur może być potrzebny do wysyłania faktur?"
+            },
+            {
+              "type": "Notatka ze spotkania",
+              "content": "Raport do 15 marca",
+              "action": "keep",
+              "hint": "Czy notatka ze spotkania zawiera faktualne informacje potrzebne do prowadzenia biznesu?"
+            },
+            {
+              "type": "Zgłoszenie wsparcia",
+              "content": "Zaplanowana konserwacja serwera",
+              "action": "keep",
+              "hint": "Czy zgłoszenie wsparcia jest częścią wypełniania umowy o świadczenie usług?"
+            },
+            {
+              "type": "Adres domowy",
+              "content": "Kongens gate…",
+              "action": "erase",
+              "hint": "Czy adres domowy jest potrzebny do komunikacji biznesowej?"
+            },
+            {
+              "type": "Telefon prywatny",
+              "content": "+47 50 50 90 90",
+              "action": "erase",
+              "hint": "Czy prywatny numer telefonu został udostępniony do użytku zawodowego?"
+            },
+            {
+              "type": "Zrzut z Mediów Społecznościowych",
+              "content": "socialmediaprofile.png",
+              "action": "erase",
+              "hint": "Czy Aisha dała ci zrzut z mediów społecznościowych?"
+            },
+            {
+              "type": "Notatka pracownika",
+              "content": "Jest wymagająca",
+              "action": "erase",
+              "hint": "Czy notatka pracownika to fakt czy subiektywna opinia?"
+            },
+            {
+              "type": "Firma (zły plik)",
+              "content": "Należy do BioNordic AS",
+              "action": "erase",
+              "hint": "Czy informacja pasuje do tego klienta?"
+            }
+          ],
+          "explanation": {
+            "title": "Doskonała praca! Zachowałeś odpowiednie informacje biznesowe w aktach Aishy.",
+            "keepTitle": "Informacje, które zdecydowałeś się zachować",
+            "keepContent": "Aby wypełnić umowę (umowę o poziomie usług), słusznie zachowałeś:\n• Nazwę firmy\n• E-mail służbowy\n• ID umowy, SLA i zgłoszenie wsparcia\n\nZachowałeś informacje, które masz prawny obowiązek przechowywać zgodnie z prawem księgowym:\n• E-mail do faktur\n\nZachowałeś również informacje, które są w twoim uzasadnionym interesie do przechowywania, zapewniając profesjonalną komunikację:\n• Służbowy numer telefonu\n• Faktualną notatkę ze spotkania",
+            "eraseTitle": "Informacje, które zdecydowałeś się usunąć",
+            "eraseContent": "Słusznie usunąłeś dane, które były zbyt osobiste, niewłaściwie zebrane lub nieprawidłowe, w tym:\n• Adres domowy i prywatny numer telefonu\n• Zrzut z mediów społecznościowych, którego nie dostarczyła\n• Subiektywną notatkę pracownika\n• Notatkę należącą do innej firmy"
+          }
+        },
+        {
+          "name": "Jonas Berg",
+          "type": "Subskrybent newslettera",
+          "consent": "newsletter",
+          "consentDetails": "Zgoda obejmuje:\n• Adres e-mail\n• Częstotliwość newslettera i preferencje treści",
+          "data": [
+            {
+              "type": "E-mail",
+              "content": "jonas.berg@mailbox.nu",
+              "action": "keep",
+              "hint": "Czy klient zgodził się na otrzymywanie newsletterów drogą e-mail?"
+            },
+            {
+              "type": "Data subskrypcji",
+              "content": "21/01/2025",
+              "action": "keep",
+              "hint": "Czy musisz udokumentować, kiedy została wyrażona zgoda?"
+            },
+            {
+              "type": "Rekord zgody",
+              "content": "Podwójny opt-in",
+              "action": "keep",
+              "hint": "Czy musisz udokumentować, że zgoda została wyrażona?"
+            },
+            {
+              "type": "Preferencje newslettera",
+              "content": "Cotygodniowe aktualności produktów",
+              "action": "keep",
+              "hint": "Czy wolno ci przechowywać preferencje w ramach zgody na newsletter?"
+            },
+            {
+              "type": "Szacowana lokalizacja",
+              "content": "Aarhus",
+              "action": "erase",
+              "hint": "Czy dane lokalizacyjne zostały podane przez klienta?"
+            },
+            {
+              "type": "Tracker plików cookie",
+              "content": "browser_activity.json",
+              "action": "erase",
+              "hint": "Czy użytkownik wyraził zgodę na pliki cookie?"
+            },
+            {
+              "type": "Adres",
+              "content": "Nordre Fasanvej…",
+              "action": "erase",
+              "hint": "Czy użytkownik wyraził zgodę na przechowywanie jego adresu?"
+            },
+            {
+              "type": "Tag profilowania",
+              "content": "Wysoko wydający",
+              "action": "erase",
+              "hint": "Czy użytkownik wyraził zgodę na profilowanie?"
+            }
+          ],
+          "explanation": {
+            "title": "Świetna robota! Poprawnie posortowałeś dane w aktach Jonasa.",
+            "keepTitle": "Informacje, które zdecydowałeś się zachować",
+            "keepContent": "Ponieważ Jonas jednoznacznie wyraził zgodę na otrzymywanie newslettera marketingowego, słusznie zachowałeś:\n• Adres e-mail\n• Preferencje newslettera\n\nPonieważ jesteś prawnie zobowiązany (RODO) do dokumentowania, że zgoda na newsletter została właściwie zebrana, słusznie zachowałeś:\n• Datę subskrypcji\n• Rekord zgody podwójnego opt-in",
+            "eraseTitle": "Informacje, które zdecydowałeś się usunąć",
+            "eraseContent": "Słusznie usunąłeś dane, które były zgadywane, niedokładne lub zebrane bez zgody, w tym:\n• Szacunkową lokalizację\n• Plik śledzenia cookie bez zgody na pliki cookie\n• Adres\n• Tag profilowania („Wysoko wydający\")"
+          }
+        },
+        {
+          "name": "Sofia Lindgren",
+          "type": "Reklamacja klienta",
+          "consent": "brak",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Imię i nazwisko",
+              "content": "Sofia Lindgren",
+              "action": "keep",
+              "hint": "Czy potrzebujesz nazwiska klientki, aby zidentyfikować, kto złożył reklamację?"
+            },
+            {
+              "type": "E-mail",
+              "content": "sofia.l@mailservice.dk",
+              "action": "keep",
+              "hint": "Czy e-mail jest przydatny do kontaktowania się z klientką?"
+            },
+            {
+              "type": "Telefon",
+              "content": "+45 22 44 44 22",
+              "action": "keep",
+              "hint": "Czy musiałbyś zadzwonić do klientki w sprawie jej reklamacji?"
+            },
+            {
+              "type": "Informacje o zamówieniu",
+              "content": "Zamówienie #55201",
+              "action": "keep",
+              "hint": "Czy musisz wiedzieć, którego zamówienia dotyczy reklamacja?"
+            },
+            {
+              "type": "Formularz reklamacji",
+              "content": "Przedmiot dotarł pęknięty",
+              "action": "keep",
+              "hint": "Czy formularz reklamacji jest bezpośrednio związany z reklamacją?"
+            },
+            {
+              "type": "Zdjęcia",
+              "content": "cracked_screen1.jpg",
+              "action": "keep",
+              "hint": "Czy dowody fotograficzne są istotne dla reklamacji?"
+            },
+            {
+              "type": "Notatka rozwiązania",
+              "content": "Zatwierdzono wymianę",
+              "action": "keep",
+              "hint": "Czy notatka rozwiązania pomaga udokumentować, jak naprawiłeś problem?"
+            },
+            {
+              "type": "Notatka follow-up",
+              "content": "Zachowaj opakowanie",
+              "action": "keep",
+              "hint": "Czy notatka follow-up jest częścią właściwej obsługi zwrotu?"
+            },
+            {
+              "type": "Notatka pracownika",
+              "content": "Wydawała się hormonalna",
+              "action": "erase",
+              "hint": "Czy notatka pracownika to fakt czy nieodpowiednia opinia?"
+            },
+            {
+              "type": "Recenzja klienta",
+              "content": "3 gwiazdki – 12.03.2019",
+              "action": "erase",
+              "hint": "Czy recenzja dotyczy roszczenia o uszkodzony produkt?"
+            },
+            {
+              "type": "Zrzut z mediów społecznościowych",
+              "content": "profile.png",
+              "action": "erase",
+              "hint": "Czy klientka dostarczyła zrzut z mediów społecznościowych?"
+            },
+            {
+              "type": "Imię i nazwisko (zły plik)",
+              "content": "Emma Larsen",
+              "action": "erase",
+              "hint": "Czy nazwisko należy do tej samej klientki?"
+            },
+            {
+              "type": "Formularz reklamacji (duplikat)",
+              "content": "Przedmiot dotarł pęknięty",
+              "action": "erase",
+              "hint": "Czy potrzebujesz dwóch kopii tej samej reklamacji?"
+            }
+          ],
+          "explanation": {
+            "title": "Świetna praca! Zachowałeś tylko faktualne i niezbędne dane w aktach Sofii.",
+            "keepTitle": "Informacje, które zdecydowałeś się zachować",
+            "keepContent": "Słusznie zdecydowałeś się zachować wszystkie informacje wymagane do wypełnienia umowy; obsługi i rozwiązania jej reklamacji:\n• Imię i nazwisko, e-mail, numer telefonu\n• Informacje o zamówieniu\n• Formularz reklamacji\n• Zdjęcie, które przesłała\n• Notatkę follow-up dotyczącą procesu zwrotu\n\nZachowałeś również informacje, które masz uzasadniony interes przechowywać do celów wewnętrznej dokumentacji:\n• Notatkę rozwiązania („Zatwierdzono wymianę\")",
+            "eraseTitle": "Informacje, które zdecydowałeś się usunąć",
+            "eraseContent": "Słusznie usunąłeś dane, które były nieistotne, wrażliwe lub nieodpowiednie, w tym:\n• Subiektywną i dyskryminującą notatkę pracownika („Wydawała się hormonalna\")\n• Starą recenzję niezwiązaną z reklamacją\n• Zrzut z mediów społecznościowych, którego nie dostarczyła\n• Niewłaściwie umieszczoną notatkę od innego klienta\n• Zduplikowany plik reklamacji"
+          }
+        }
+      ],
+      "completion": {
+        "title": "Rejestr Klientów Posortowany!",
+        "message": "Gratulacje! Z powodzeniem posortowałeś rejestr klientów.\n\nWszystkie informacje, które zachowałeś, były objęte podstawą prawną:\n• Umowa: informacje potrzebne do realizacji żądań klientów, dostarczania produktów, rozwiązywania reklamacji, zarządzania gwarancjami i utrzymywania umów biznesowych.\n• Obowiązek prawny: faktury, paragony i rekordy zgody wymagane przez prawo do przechowywania\n• Uzasadniony interes: faktualne i przydatne informacje do prowadzenia firmy\n• Zgoda: dodatkowe dane uzyskane poprzez jasną i pisemną zgodę\n\nNaruszenie RODO i przepisów o prywatności mogłoby być szkodliwe dla firmy. Na szczęście usunąłeś wszystkie nieprawidłowe, źle umieszczone, subiektywne, dyskryminujące, zduplikowane i nieistotne informacje.\n\nAktualny rejestr klientów pomaga chronić prywatność naszego klienta i budować zaufanie. Świetna robota!"
+      }
+    },
+    "feedbackSurvey": {
+      "title": "Ankieta Zwrotna Klienta",
+      "instructions": "Pomóż Simone zbudować dobrą ankietę zwrotną. Dla każdej pary wybierz lepsze pytanie do uwzględnienia.",
+      "questions": [
+        {
+          "correct": "Jak łatwo było znaleźć potrzebne informacje na naszej stronie internetowej?",
+          "wrong": "Jaki jest twój ulubiony cel wakacyjny?",
+          "explanation": "Zadawaj istotne pytania.\nPytanie o cele wakacyjne jest nieistotne i nie zapewni żadnej użytecznej informacji zwrotnej. Może być również mylące i odwracające uwagę respondenta."
+        },
+        {
+          "correct": "Jak bardzo byłeś zadowolony z zakupionego produktu?",
+          "wrong": "Jak bardzo byłeś zadowolony z fantastycznego produktu, który zakupiłeś?",
+          "explanation": "Zadawaj neutralne pytania.\nNazywanie produktu „fantastycznym\" sprawia, że pytanie staje się sugestywne. Może to wpłynąć na odpowiedź klienta."
+        },
+        {
+          "correct": "Jak bardzo byłeś zadowolony z naszych usług wsparcia klienta?",
+          "wrong": "Gdybyś skontaktował się z naszym zespołem wsparcia klienta, a oni byliby niezwykle responsywni na twoje prośby, czy poleciłbyś naszą firmę swoim przyjaciołom i rodzinie?",
+          "explanation": "Pytaj o rzeczywiste doświadczenia.\nGenerlnie pytania hipotetyczne dadzą informację zwrotną, która jest niepewna i trudna do podjęcia działań."
+        },
+        {
+          "correct": "Jak oceniłbyś swoje ogólne doświadczenie dzisiaj?",
+          "wrong": "Biorąc pod uwagę współdziałanie naszej strony internetowej, czatu, telefonu i usług wsparcia e-mail… jak oceniłbyś nasze działania?",
+          "explanation": "Zadawaj jasne i proste pytania.\nDługie i skomplikowane pytania mogą przytłoczyć respondenta."
+        },
+        {
+          "correct": "Jak pomocny był nasz personel? (1–5)",
+          "wrong": "Czy nasz personel był pomocny? Tak/Nie",
+          "explanation": "Używaj skal ocen, aby uzyskać bardziej szczegółowe dane.\nDoświadczenia i opinie często będą znajdować się na spektrum pozytywnym i negatywnym. Pytania tak/nie mogą uprościć i ukryć niuanse."
+        },
+        {
+          "correct": "Jak po raz pierwszy o nas usłyszałeś? Wyszukiwarki / Media Społecznościowe / Polecenie / Strona z Recenzjami Klientów / Reklama Internetowa / Reklama Prasowa / Inne",
+          "wrong": "Jak po raz pierwszy o nas usłyszałeś? Wyszukiwarki / Media Społecznościowe",
+          "explanation": "Uwzględnij wszystkie istotne opcje odpowiedzi. Uwzględnij opcje „inne\" lub „nie wiem\".\nW przeciwnym razie respondenci mogą być zmuszeni do wybrania nieprawidłowej opcji, pominięcia pytania lub porzucenia ankiety."
+        },
+        {
+          "correct": "Jak bardzo byłeś zadowolony z zakupionego produktu?",
+          "wrong": "Jak bardzo byłeś zadowolony z produktu i obsługi klienta?",
+          "explanation": "Skoncentruj się na jednym temacie na pytanie.\nPytanie o dwie różne rzeczy w tym samym pytaniu może prowadzić do nieprawidłowej i niejasnej informacji zwrotnej."
+        },
+        {
+          "correct": "Co moglibyśmy poprawić w naszych usługach dostawy?",
+          "wrong": "Czy podobają ci się kolory naszej marki?",
+          "explanation": "Pamiętaj o celu ankiety (doświadczenia klientów).\nZadawaj pytania, które dadzą konkretną informację zwrotną na omawiany temat."
+        },
+        {
+          "correct": "Jak łatwy był proces zakończenia zamówienia?",
+          "wrong": "Dlaczego byłeś tak zdezorientowany podczas zakończenia zamówienia?",
+          "explanation": "Używaj pełnego szacunku języka.\nUnikaj oskarżających pytań, które mogą sprawić, że respondenci poczują się niekomfortowo."
+        }
+      ],
+      "resultTitle": "Twoja Ankieta Zwrotna Klienta",
+      "allCorrectMessage": "Idealnie! Wszystkie twoje pytania ankiety są dobrze sformułowane.",
+      "someWrongMessage": "Niektóre pytania mogłyby być ulepszone. Kliknij czerwone pytania, aby zobaczyć wyjaśnienia."
+    },
+    "answerOverlayTitle": "Odpowiedź Ujawniona",
+    "answerOverlayContinue": "Dalej",
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
+    "betterQuestion": "Lepsze pytanie:"
+  },
+  "hints": {
+    "default": "Rozejrzyj się po Dziale Obsługi Klienta w poszukiwaniu wskazówek.",
+    "talkToPeter": "Kliknij Petera — wygląda na to, że potrzebuje pomocy.",
+    "talkToSimone": "Kliknij Simone obok tablicy.",
+    "findCabinet": "Sprawdź przepełnioną szafę kartotekową.",
+    "puzzleInProgress": "Skup się na bieżącym zadaniu.",
+    "completion": "Szkolenie zostało ukończone!"
+  },
+  "systemDialogues": {
+    "selfTalk": "Wchodzisz do Działu Obsługi Klienta. Pomieszczenie tętni działalnością. Widzisz Petera pochylonego nad biurkiem, wyglądającego na zmartwionego. Jest też przepełniona szafa kartotekowa, która wygląda, jakby mogła pęknąć w każdej chwili. Simone stoi obok tablicy, z markerem w ręku.",
+    "cabinetBurst": "O nie, nasze rekordy klientów!",
+    "cabinetSort": "Cóż… organizowanie rekordów klientów było na mojej liście zadań od jakiegoś czasu. Lepiej się tym zajmę.",
+    "guidelinesPrompt": "Czy chcesz przejrzeć wytyczne firmy dotyczące prywatności przed posortowaniem rejestru klientów?"
+  },
+  "interactiveObjects": {
+    "rubberDuck": {
+      "title": "Gumowa Kaczka",
+      "text": "Utknąłeś? Wyjaśnienie problemu na głos może pomóc go rozwiązać. Kaczka jest tu, aby słuchać!"
+    },
+    "coffeeMachine": {
+      "title": "Ekspres do Kawy",
+      "text": "Błąd 404: Kawa nie znaleziona"
+    },
+    "notebook": {
+      "title": "Notatnik",
+      "text": "Notatnik do śledzenia klientów? Może to być dobry początek, gdy prowadzisz małą firmę.\n\nZapisywanie ważnych informacji ułatwia kontynuowanie obietnic i reklamacji, zapamiętywanie preferencji i oferowanie bardziej spersonalizowanych doświadczeń.\n\nMożesz przejść do arkuszy kalkulacyjnych lub cyfrowego systemu Zarządzania Relacjami z Klientami (CRM), gdy poczujesz się bardziej komfortowo."
+    },
+    "deerPoster": {
+      "title": "Plakat Motywacyjny",
+      "text": "Plakat z jeleniem w lesie. Podpis brzmi: „Cierpliwość — Wielkie rzeczy wymagają czasu\"."
+    },
+    "naturePoster": {
+      "title": "Plakat Motywacyjny",
+      "text": "Plakat z górskim krajobrazem. Podpis brzmi: „Perspektywa — Zobacz większy obraz\"."
+    },
+    "bearPoster": {
+      "title": "Plakat Motywacyjny",
+      "text": "Plakat z niedźwiedziem nad rzeką. Podpis brzmi: „Wytrwałość — Idź dalej\"."
+    }
+  },
+  "completion": {
+    "title": "Zmiana Zakończona!",
+    "message": "Ukończyłeś swoją zmianę w Dziale Obsługi Klienta.\n\nObsłużyłeś rozmowę reklamacyjną klienta, zaktualizowałeś rejestr klientów i stworzyłeś użyteczną ankietę zwrotną klienta. Świetna robota!",
+    "buttonText": "Wyjdź z Działu Obsługi Klienta"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "startButton": "Start",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "closeButton": "Zamknij",
+    "gapPlaceholder": "___",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  },
+  "speakers": {
+    "customer": "Klient:",
+    "you": "Ty:"
+  }
+}

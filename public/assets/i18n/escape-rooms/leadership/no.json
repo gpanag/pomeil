@@ -1,0 +1,222 @@
+{
+  "loading": "Laster Lederskap...",
+  "intro": {
+    "title": "Lederskap",
+    "paragraphs": [
+      "Drømmen din er å bli en suksessrik gründer og skape et selskap som forener mennesker.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra ulike kulturer, bakgrunner og yrker jobber sammen.",
+      "I dag går du inn i venteområdet utenfor HR-kontoret. HR-sjefen skal nå teste din forståelse av hva lederskap egentlig betyr."
+    ],
+    "buttonText": "Gå inn i venteområdet"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "HR-sjef",
+      "dialogues": {
+        "greet": "Lederskap handler ikke om autoritet.\nDet handler om ansvar, beslutninger og hvordan du behandler andre.",
+        "enterOffice": "Før du går videre på reisen din, må du bevise at du forstår hva lederskap virkelig betyr.",
+        "enterOffice2": "Gå inn på HR-kontoret. Lederskapsutfordringen din starter nå.",
+        "whiteboardFound": "Lederskap begynner med forståelsen av kjerneverdier.",
+        "puzzle1Intro": "Match lederhandlingen til riktig verdi.",
+        "puzzle1Done": "Gode ledere unngår ikke ansvar.\nDe trår fram når ting blir vanskelige.",
+        "puzzle1Done2": "La oss nå se hvordan du handler i virkelige situasjoner.",
+        "puzzle2Intro": "Les scenariet nøye og velg det beste svaret.",
+        "puzzle2Done": "Riktig. En ekte leder kommuniserer, støtter og tilpasser seg. Finn nå Lederskap-refleksjonskortet som er gjemt på dette kontoret.",
+        "findCard": "Hint: sjekk pulten, skuffen og rammen på veggen. Kortet er gjemt et sted på kontoret.",
+        "cardFound": "Strålende. Dette kortet fanger essensen av lederskap. Bevis nå at du kan fullføre lederskapsprinsippet.",
+        "puzzle3Intro": "Fyll inn hullene for å fullføre lederskapsprinsippet.",
+        "puzzle3Done": "Bra jobbet. La oss nå se om du kan skille fakta om lederskap fra myter.",
+        "puzzle4Intro": "Svar på disse Sant eller Usant-spørsmålene om lederskap.",
+        "finalWords1": "Strålende jobb.",
+        "finalWords2": "Du viste bevissthet, ansvar og etisk lederskap.",
+        "finalWords3": "Husk: lederskap vises gjennom handlinger, ikke titler.",
+        "finalWords4": "Du har fullført Lederskaps-ferdigheten.",
+        "completion": "Opplæringen er fullført!",
+        "default": "Fortsett å se deg om på kontoret etter spor."
+      }
+    },
+    "candidate": {
+      "name": "Ventende kandidat",
+      "dialogues": {
+        "busy": "Jeg venter bare på min tur. Lykke til der inne!",
+        "default": "Lykke til!"
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Match lederhandlingen til riktig verdi",
+      "columnA": {
+        "heading": "Handlinger",
+        "items": {
+          "1": "Lytte til teamets bekymringer",
+          "2": "Ta en vanskelig avgjørelse under press",
+          "3": "Ta ansvar for et teams feil",
+          "4": "Forklare mål og forventninger tydelig"
+        }
+      },
+      "columnB": {
+        "heading": "Verdier",
+        "items": {
+          "a": "Ansvarlighet",
+          "b": "Kommunikasjon",
+          "c": "Empati",
+          "d": "Beslutningstaking"
+        }
+      },
+      "feedback": {
+        "wrong": "En leders handlinger gjenspeiler alltid verdiene deres.",
+        "allCorrect": "Bra jobbet! Du matchet alle lederhandlingene til riktige verdier."
+      },
+      "answerOverlay": "De riktige sammenkoblingene er:\n1. Lytte til teamets bekymringer → Empati\n2. Ta en vanskelig avgjørelse under press → Beslutningstaking\n3. Ta ansvar for et teams feil → Ansvarlighet\n4. Forklare mål og forventninger tydelig → Kommunikasjon"
+    },
+    "singleChoice": {
+      "title": "Lederskap i praksis",
+      "instructions": "Velg det beste svaret på dette scenariet.",
+      "question": "Teamet ditt er forsinket. Ett medlem strever, og fristen nærmer seg.",
+      "options": {
+        "a": "Ignorer problemet og vent på resultater",
+        "b": "Skyld på teammedlemmet foran andre",
+        "c": "Snakk privat med teammedlemmet og juster planen",
+        "d": "Avlys prosjektet uten forklaring"
+      },
+      "hint": "Lederskap krever rettferdighet, kommunikasjon og støtte.",
+      "feedback": {
+        "wrong": "Lederskap krever rettferdighet, kommunikasjon og støtte.",
+        "correct": "Riktig! Snakk privat med teammedlemmet og juster planen."
+      },
+      "answerOverlay": "Det riktige svaret er: Snakk privat med teammedlemmet og juster planen."
+    },
+    "fillGap": {
+      "title": "Fullfør lederskapsprinsippet",
+      "instructions": "Fyll inn hullene med de riktige ordene.",
+      "sentenceParts": [
+        "En ekte leder tar ",
+        ", kommuniserer med ",
+        " og veileder teamet med ",
+        "."
+      ],
+      "options": [
+        "ansvar",
+        "respekt",
+        "autoritet",
+        "klarhet",
+        "frykt",
+        "visjon"
+      ],
+      "correctAnswers": [
+        "ansvar",
+        "respekt",
+        "klarhet"
+      ],
+      "resetButton": "Tilbakestill",
+      "checkButton": "Sjekk svar",
+      "feedback": {
+        "wrong": "Lederskap handler ikke om frykt eller makt.",
+        "correct": "Bra jobbet! Du fullførte lederskapsprinsippet riktig."
+      },
+      "answerOverlay": "De riktige svarene er:\nEn ekte leder tar ansvar, kommuniserer med respekt og veileder teamet med klarhet."
+    },
+    "trueFalse": {
+      "title": "Lederskapsmyter",
+      "instructions": "Avgjør om hver påstand er sann eller usann.",
+      "questions": [
+        {
+          "text": "Ledere må alltid ha alle svarene.",
+          "correct": false,
+          "hint": "Effektive ledere vet når de skal søke innspill fra andre."
+        },
+        {
+          "text": "Lederskap inkluderer å lytte og lære av andre.",
+          "correct": true,
+          "hint": "Å lytte og lære er sentrale lederegenskaper."
+        },
+        {
+          "text": "Godt lederskap bygger tillit i et team.",
+          "correct": true,
+          "hint": "Tillit er et grunnleggende resultat av godt lederskap."
+        }
+      ],
+      "feedback": {
+        "wrong": "Det er ikke helt riktig. Tenk på det igjen.",
+        "correct": "Strålende! Du kan skille lederskapsfakta fra myter."
+      },
+      "answerOverlay": "De riktige svarene er:\n1. USANT – Ledere trenger ikke alle svarene; de lytter og lærer.\n2. SANT – Å lytte og lære av andre er essensielt.\n3. SANT – Godt lederskap bygger tillit i et team."
+    },
+    "answerOverlayTitle": "Svaret avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "intro": "Klikk på HR-sjefen for å begynne.",
+    "talkToHRManager": "Klikk på HR-sjefen for å begynne.",
+    "findWhiteboard": "Se på tavlen inne på HR-kontoret.",
+    "talkToHRManager2": "Gå tilbake til HR-sjefen.",
+    "puzzle1Matching": "Match hver lederhandling til verdien den best representerer.",
+    "findCard": "Sjekk pulten, skuffen og rammen på veggen.",
+    "talkToHRManager3": "Gå tilbake til HR-sjefen med det du fant.",
+    "puzzle3FillGap": "Tenk på ansvar, respekt og klarhet.",
+    "puzzle4TrueFalse": "Tenk på hva ekte ledere gjør — de lytter, lærer og bygger tillit.",
+    "completion": "Opplæringen er fullført!",
+    "default": "Se deg om på HR-kontoret etter spor."
+  },
+  "systemDialogues": {
+    "selfTalk": "Spilleren går inn i venteområdet utenfor HR-kontoret.\nDet er en kort pause.\nHR-døren åpnes.",
+    "clickDesk": "Bare dokumenter her.",
+    "clickDrawer": "Kontorrekvisita… ikke noe nyttig.",
+    "clickWallFrame": "Noe føles løst…",
+    "foundCard": "Du fant Lederskap-refleksjonskortet.",
+    "cardRead": "Bra jobbet! Gå tilbake til HR-sjefen.",
+    "whiteboardFound": "Lederskap begynner med forståelsen av kjerneverdier."
+  },
+  "items": {
+    "whiteboard": {
+      "popupTitle": "Sentrale lederskapsverdier",
+      "popupContent": [
+        "Visjon",
+        "Kommunikasjon",
+        "Ansvarlighet",
+        "Empati",
+        "Beslutningstaking"
+      ],
+      "inventoryTitle": "Tavle-notater"
+    },
+    "reflectionCard": {
+      "popupTitle": "Lederskapsrefleksjon",
+      "popupContent": [
+        "Lederskap er innflytelse, ikke kontroll.",
+        "Sterke ledere lytter mer enn de snakker.",
+        "Tillit bygges gjennom konsekvens og respekt."
+      ],
+      "inventoryTitle": "Refleksjonskort"
+    }
+  },
+  "completion": {
+    "title": "Ferdighet fullført: Lederskap",
+    "message": "Verdier forstått. Beslutninger evaluert. Etisk atferd vist.\nDu er klar til å gå videre til neste ferdighet.",
+    "buttonText": "Forlat HR-kontoret"
+  },
+  "ui": {
+    "fullscreenToggle": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "trueButton": "Sant",
+    "falseButton": "Usant",
+    "gapPlaceholder": "____",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

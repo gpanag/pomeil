@@ -1,0 +1,53 @@
+<div class="modules-library-container">
+  <h1>{{"LEARNING_PAGE.MODULES.TITLE" | translate}}</h1>
+  <p class="subtitle">{{"LEARNING_PAGE.MODULES.SUBTITLE" | translate}}</p>
+
+  <mat-card class="full-curriculum-card">
+    <div class="full-curriculum-content">
+      <div class="full-curriculum-icon">
+        <mat-icon>menu_book</mat-icon>
+      </div>
+      <div class="full-curriculum-text">
+        <h2>{{"LEARNING_PAGE.MODULES.FULL_CURRICULUM_TITLE" | translate}}</h2>
+        <p>{{"LEARNING_PAGE.MODULES.FULL_CURRICULUM_DESC" | translate}}</p>
+      </div>
+      <div class="full-curriculum-actions">
+        <a mat-raised-button color="primary" [href]="fullCurriculumPdfUrl" target="_blank" download>
+          <mat-icon>download</mat-icon>
+          {{"LEARNING_PAGE.MODULES.DOWNLOAD_FULL_CURRICULUM" | translate}}
+        </a>
+      </div>
+    </div>
+  </mat-card>
+
+  <h2 class="section-heading">{{"LEARNING_PAGE.MODULES.PER_SKILL_HEADING" | translate}}</h2>
+
+  <div class="modules-grid">
+    <mat-card *ngFor="let mod of modules" class="module-card">
+      <img mat-card-image [src]="mod.image" [alt]="mod.title">
+      <mat-card-header>
+        <mat-card-title>{{ mod.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ mod.description }}</p>
+      </mat-card-content>
+      <mat-card-actions class="module-actions">
+        <a *ngIf="mod.hasFlipbook" mat-raised-button color="primary" [routerLink]="['/flipbook', mod.id]">
+          <mat-icon>auto_stories</mat-icon>
+          {{"LEARNING_PAGE.MODULES.READ_FLIPBOOK" | translate}}
+        </a>
+        <a mat-stroked-button [href]="pdfUrlFor(mod)" target="_blank" download>
+          <mat-icon>download</mat-icon>
+          {{"LEARNING_PAGE.MODULES.DOWNLOAD_PDF" | translate}}
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="back-link">
+    <a mat-stroked-button routerLink="/learning">
+      <mat-icon>arrow_back</mat-icon>
+      {{"NAVIGATION.LEARNING" | translate}}
+    </a>
+  </div>
+</div>

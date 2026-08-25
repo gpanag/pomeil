@@ -1,0 +1,236 @@
+{
+  "loading": "Võrgustikuoskuste laadimine...",
+  "intro": {
+    "title": "Võrgustikuoskused",
+    "paragraphs": [
+      "Sa istud ootetoas intervjuuruumi taga, valmistudes osalema idufirmade võrgustikuüritusel. Tuba on pikk ja kitsas, nagu koridor, beežika vaiba ja seintega.",
+      "Kaks diivanit — üks kollane, üks tumesinine-roheline — seisavad seinte ääres koos väikeste kohvilaudadega. Nurgas seisab kohvimasin pabertopside ja prügikastiga lähedal. Rohelised taimed ja plakat seinal lisavad ruumile veidi elu.",
+      "Ruumis on sinuga koos veel kolm inimest. See võiks olla suurepärane võimalus harjutada oma võrgustikuoskusi..."
+    ],
+    "buttonText": "Sisene ootetuppa"
+  },
+  "characters": {
+    "npc1": {
+      "name": "Marcus",
+      "dialogues": {
+        "busy": "Vabandust, pean siin lõpetama.",
+        "default": "Ta tundub keskendunud oma sülearvutile."
+      }
+    },
+    "npc2": {
+      "name": "Tomás",
+      "dialogues": {
+        "line1_you": "Tere, kas oled siin idufirmade ürituse pärast?",
+        "line1_him": "Jah.",
+        "line2_you": "Mis valdkonnas töötad?",
+        "line2_him": "IT.",
+        "line3_you": "Mis sind täna siia toob?",
+        "line3_him": "Ülemus saatis mind.",
+        "line4_awkward": "...",
+        "summary": "Ta ei tundunud rääkimisest eriti huvitatud. Vestlus suri kiiresti. Võib-olla töötab teistsugune lähenemine kellegi teisega.",
+        "default": "Ta vaatab vaikselt oma telefoni."
+      }
+    },
+    "edith": {
+      "name": "Edith",
+      "dialogues": {
+        "line1_you": "Tere! Kas oled ka idufirmade ürituse pärast siin?",
+        "line1_her": "Jah, olen küll! Ma olen Edith. Pean kesklinnas väikest ettevõtte inkubaatorit. Kas oled asutaja?",
+        "line2_you": "Veel mitte, aga olen sellele mõelnud. Mis tüüpi idufirmadega sa töötad?",
+        "line2_her": "Peamiselt varajases staadiumis tehnoloogia- ja sotsiaalsete ettevõtetega. Aitame kõigega alates äriplaanidest kuni rahastuse leidmiseni. See on väga tasuv töö.",
+        "line3_you": "See kõlab hämmastavalt. Mis sind sellesse tõmbas?",
+        "line3_her": "Asutasin aastaid tagasi oma ettevõtte ja oleksin soovinud, et mul oleks olnud rohkem tuge. Niisiis ehitasin sellise koha, mida oleksin tahtnud. Siin, võta mu visiitkaart — jääme ühendusse!",
+        "line4_you": "Aitäh, Edith! Sooviksin kunagi rohkem teada saada sinu inkubaatorist.",
+        "summary": "Suurepärane vestlus! Tegid Edithiga ehtsa sideme ja vahetasite kontaktid. See on õige võrgustiku loomine.",
+        "buildIntro": "Edith tuleb su juurde tagasi värske tassi kohviga.",
+        "build1_her": "Niisiis, räägi mulle — mis sind tegelikult ajendab? Mis on suur idee, millega oled toime tulnud?",
+        "build2a_you": "Olen olnud kirglik selle suhtes, et muuta haridus tehnoloogia kaudu kättesaadavamaks. Milliste väljakutsetega näed asutajaid kõige rohkem silmitsi seismas?",
+        "build2b_you": "Noh, mul on selline rakenduse idee, mis hakkab miljoneid teenima. Las ma räägin sulle kõik selle kohta...",
+        "build2a_response": "See on imeline missioon! Suurim väljakutse, mida näen, on see, et asutajad üritavad kõike üksi teha. Just sellepärast inkubaator olemas ongi — keegi ei peaks pidama kõike üksinda välja mõtlema.",
+        "build2b_response": "Oh... see on... ambitsioonikas. Tead, kõige edukamad asutajad, keda olen näinud, on need, kes esitavad küsimusi, mitte ainult ei pitcha.",
+        "build3_her": "Toetusest rääkides, kas oled mõelnud, millist võrgustikku sul oma idee elluviimiseks vaja oleks?",
+        "build4_you_typed": "",
+        "build4_her": "See on läbimõeldud vastus. Võrgustiku loomine on tegelikult selliste inimeste leidmine, kelle tugevused täiendavad sinu omasid.",
+        "build5a_you": "Mis nõu annaksid kellelegi, kes alles alustab oma professionaalse võrgustiku loomist?",
+        "build5b_you": "Mul on tegelikult juba päris hea võrgustik. Vajan peamiselt vaid rahastust.",
+        "build5a_response": "Alusta sellega, et oled teiste inimeste suhtes ehedalt uudishimulik. Küsi nende töö, nende väljakutsete kohta. Võrgustiku loomine ei seisne kontaktide kogumises — see seisneb suhete loomises, kus mõlemad pooled saavad kasu.",
+        "build5b_response": "Hmm, võrgustiku loomine seisneb rohkemas kui ainult selles, mida sina vajad. Parimad sidemed tekivad, kui mõtled ka selle peale, mida saad ise pakkuda.",
+        "build6_her": "Tead, see vestlus on mulle väga meeldinud. On haruldane kohata kedagi, kes kuulab sama palju kui räägib. See on tõeline võrgustiku loomise tugevus.",
+        "build7a_you": "Aitäh, Edith. Sinuga rääkides olen palju õppinud. Kuidas saaksin sulle vastutasuks abiks olla?",
+        "build7b_you": "Aitäh! Niisiis, selle inkubaatori kohta — kas saaksid mulle koha hankida?",
+        "build7a_response": "Hindan, et küsid! Tegelikult otsime alati värskeid vaatenurki oma mentoriõhtutele. Kas oleksid huvitatud ühel osalemast?",
+        "build7b_response": "Ha! Imetlen otsekohesust, kuid võrgustiku loomine toimib parimini, kui see ei tundu tehinguline. Ehitame esmalt suhe.",
+        "build8_her": "Pea meeles — võrgustiku loomine on neljaosaline oskus: alusta, ehita, säilita ja võimenda. Täna katsime kaks esimest. Jätka harjutamist!",
+        "buildSummary": "Suurepärane töö! Süvendasid oma sidet Edithiga, esitades avatud küsimusi, näidates ehedat huvi ja mõeldes kahepoolsele väärtusele.",
+        "default": "Edith naeratab sulle soojalt."
+      }
+    }
+  },
+  "puzzles": {
+    "initiate": {
+      "title": "Ülesanne 1: Alusta",
+      "instructions": "Klõpsa toas olevatel inimestel, et proovida vestlust alustada. Mitte iga katse ei õnnestu — see on võrgustiku loomisel normaalne!",
+      "skillUnlocked": "Võrgustikuoskus avatud: Alusta",
+      "feedback": {
+        "npc1Done": "Ta on praegu liiga hõivatud. See on okei — mitte kõik ei ole iga hetk võrgustiku loomiseks saadaval.",
+        "npc2Done": "Lühikesed, suletud vastused. Mõnikord vestlused lihtsalt ei voola. Ära võta seda isiklikult.",
+        "edithDone": "Suurepärane side! Edith oli avatud, kaasatud ja vahetasite kontaktid.",
+        "allComplete": "Oled proovinud kõigiga toas rääkida. Õppisid, et võrgustiku loomine nõuab olukorra lugemist — mõned inimesed pole saadaval, mõned vestlused ei klapi, ja mõnikord leiad tõelise sideme."
+      }
+    },
+    "mirror": {
+      "popupTitle": "Sinu peegeldus",
+      "popupContent": "Ei mingit salatit hammaste vahel, kontrollitud.",
+      "selfReflection": "Näed hea välja. Kuid võrgustiku loomine ei seisne ainult välimuses — see seisneb kohalolus, uudishimus ja ehedaks olemises. Aeg seda praktikasse rakendada.",
+      "edithReturns": "Märkad, et Edith tuleb kohvimasinast tagasi. See võiks olla hea võimalus vestlust jätkata..."
+    },
+    "build": {
+      "title": "Ülesanne 2: Ehita",
+      "instructions": "Jätka oma vestlust Edithiga. Kui antakse valikud, vali vastus, mis loob ehedat, kahepoolset sidet.",
+      "skillUnlocked": "Võrgustikuoskus avatud: Ehita",
+      "typedPrompt": "Edith küsib sinu võrgustiku vajaduste kohta. Trüki oma mõtted:",
+      "typedPlaceholder": "Jaga oma mõtteid...",
+      "feedback": {
+        "goodChoice": "Hea valik! See vastus näitab ehedat huvi ja ehitab suhet.",
+        "poorChoice": "See vastus keskendub liiga palju iseendale. Püüa mõelda ka teisele inimesele.",
+        "complete": "Oled edukalt ehitanud Edithiga sügavama suhte ehedat vestlust kasutades."
+      }
+    },
+    "maintain": {
+      "title": "Ülesanne 3: Säilita",
+      "instructions": "Sinu telefon vibreerib teavitusega. Aeg harjutada võrgustiku ühenduste säilitamist sõnumite kaudu.",
+      "skillUnlocked": "Võrgustikuoskus avatud: Säilita",
+      "phoneNotification": "Uus sõnum Fredrikilt!",
+      "fredrik": {
+        "name": "Fredrik",
+        "incoming": "Hei! Tore oli sind varem üritusel kohata. Kas tahaksid sel nädalal kunagi kohvi võtta?",
+        "optionA": "Kindlasti! Mis sa arvad neljapäeva pärastlõunast? Konverentsikeskuse lähedal on suurepärane kohvik.",
+        "optionB": "Võib-olla. Annan teada.",
+        "feedbackA": "Suurepärane vastus! Konkreetne ja entusiastlik — see näitab, et hindad sidet.",
+        "feedbackB": "Liiga ähmane. Kontaktide säilitamisel ole konkreetne ja näita ehedat huvi."
+      },
+      "contacts": {
+        "maksym": {
+          "name": "Maksym (endine kolleeg)",
+          "optionA": "Tere Maksym, ammu pole näinud! Kuidas sul läheb? Nägin, et su ettevõte just lansseeris uue toote — palju õnne!",
+          "optionB": "Heyyyy",
+          "feedbackA": "Täiuslik! Isiklik, konkreetne ja näitab, et oled nende tööle tähelepanu pööranud.",
+          "feedbackB": "Liiga ähmane — see sõnum ei anna neile midagi, millele vastata."
+        },
+        "iman": {
+          "name": "Iman (ürituste korraldaja)",
+          "optionA": "Tere Iman! Kuidas oled olnud? On lähenemas mingeid lõbusaid üritusi? Mulle väga meeldis viimane, mille korraldasid.",
+          "optionB": "Hei Iman, vajan teenet. Kas saaksid mind järgmisele tööstusharu kokkutulekule?",
+          "feedbackA": "Tubli! Näitad huvi nende töö vastu enne, kui midagi palud.",
+          "feedbackB": "Liiga otsekohene ja tehinguline. Loo suhe enne, kui teeneid pead."
+        },
+        "lars": {
+          "name": "Lars (väikeettevõtte omanik)",
+          "optionA": "Tere Lars! Sattusin lugema artiklit jätkusuutlikust pakendist, mis tuletas mulle meelde sinu äri. Mõtlesin, et sul võib see huvi pakkuda!",
+          "optionB": "Hei Lars, otsin uusi võimalusi. Anna teada, kui midagi kuuled.",
+          "feedbackA": "Suurepärane! Millegi asjakohase jagamine näitab, et mõtled oma kontaktide huvidele.",
+          "feedbackB": "Liiga isekas. Suhete säilitamine tähendab andmist, mitte ainult võtmist."
+        }
+      },
+      "feedback": {
+        "allSent": "Suurepärane töö oma võrgustiku säilitamisel! Pea meeles: hea võrgustiku säilitamine on ehedat huvi näitamine, konkreetseks olemine ja väärtuse pakkumine — mitte ainult ühenduse võtmine, kui midagi vajad."
+      }
+    },
+    "leverage": {
+      "title": "Ülesanne 4: Võimenda",
+      "instructions": "Märkasid seinaplakatil toetuse võimalust. Nüüd on aeg oma võrgustikku targalt võimendada.",
+      "posterTitle": "IDUFIRMA TOETUSE VÕIMALUS",
+      "posterDetails": "Saadaolevad toetused: 2000 EUR - 10 000 EUR varajases staadiumis idufirmadele. Avalduse tähtaeg: 15. juuni. Avatud kõikidele sektoritele.",
+      "question": "See võiks olla suurepärane võimalus! Kuid avalduse jaoks vajad abi. Kelle poole peaksid oma võrgustikust pöörduma?",
+      "options": {
+        "maksym": "Pöördu Maksymi poole (endine IT-kolleeg)",
+        "edith": "Pöördu Edithi poole (ettevõtte inkubaatori juhataja)",
+        "iman": "Pöördu Imani poole (ürituste korraldaja)",
+        "lars": "Pöördu Larsi poole (väikeettevõtte omanik)"
+      },
+      "explanations": {
+        "maksym": "Maksym on suurepärane IT-nõu jaoks, kuid toetuste avaldused pole tõesti tema spetsialiteet.",
+        "edith": "Edith juhib ettevõtte inkubaatorit, mis aitab idufirmadel just selliste asjadega — äriplaanid, rahastus, toetused. Ta on täiuslik inimene, kelle käest küsida!",
+        "iman": "Iman on imeline ürituste ja sidemete jaoks, kuid toetuste avaldused pole tema eriala.",
+        "lars": "Lars on samasugune väikeettevõtte omanik, kes võib sama toetuse pärast konkureerida. See võiks luua ebamugava olukorra."
+      },
+      "skillUnlocked": "Võrgustikuoskus avatud: Võimenda",
+      "feedback": {
+        "wrong": "Mõtle, kellel sinu võrgustikus on toetuste avalduste ja idufirma toe jaoks kõige asjakohasem oskusteave.",
+        "correct": "Täpselt õige! Edithi inkubaator on loodud, et aidata idufirmadel rahastuse võimalustes navigeerida. Võrgustiku võimendamine tähendab õigele inimesele õigeks ülesandeks pöördumist."
+      },
+      "answerOverlay": "Õige vastus on: Pöördu Edithi poole. Tema ettevõtte inkubaator spetsialiseerub idufirmade abistamisele äriplaanide ja rahastusega — täpselt see, mida toetuse avalduseks vajad."
+    },
+    "answerOverlayTitle": "Vastus avaldatud",
+    "answerOverlayContinue": "Jätka"
+  },
+  "hints": {
+    "initiate": "Proovi klõpsata toas olevatel inimestel, et alustada vestlusi.",
+    "initiateNpc1Done": "Oled Marcusega rääkinud. Proovi kedagi teist!",
+    "initiateNpc2Done": "Proovi rääkida naisega kohvimasina juures.",
+    "mirror": "Otsi diivanil oma kotti — sees võib olla midagi kasulikku.",
+    "mirrorReflection": "Võta hetk reflekteerimiseks ja siis otsi Edithi.",
+    "build": "Klõpsa Edithil, et oma vestlust jätkata.",
+    "buildConversation": "Vali vastus, mis näitab ehedat huvi teise inimese vastu.",
+    "maintain": "Vaata oma telefoni, et vastata oma kontaktide sõnumitele.",
+    "maintainContacts": "Vali vastused, mis näitavad ehedat huvi ja pakuvad väärtust.",
+    "leverage": "Vaata seinal olevat plakatit võimaluse leidmiseks.",
+    "leverageQuestion": "Mõtle, millisel kontaktil on idufirma toetuste jaoks kõige asjakohasem oskusteave.",
+    "completion": "Koolitus on lõpetatud!",
+    "default": "Vaata toas ringi ja suhtle inimeste ja esemetega."
+  },
+  "systemDialogues": {
+    "enterRoom": "Olgu, siin ma olen. Ootetuba täis võõraid. Suurepärane võimalus harjutada oma võrgustikuoskusi. Vaatame, kes siin on...",
+    "npc1Rejection": "Ta on hõivatud. See on okei — teadmine, millal keegi pole saadaval, on samuti võrgustiku loomise oluline osa.",
+    "npc2Awkward": "Noh, see oli... lühike. Mõnikord vestlused lihtsalt ei läinud käima. Võtmesõna on mitte alla anda.",
+    "edithSuccess": "See läks päris hästi! Sain Edithi visiitkaardi ja ta tundus ehedalt huvitatud ühenduses olemast.",
+    "initiateComplete": "Olen kõigiga rääkinud. Mõned vestlused läksid paremini kui teised, kuid igaühest õppisin midagi. Võrgustiku loomine seisneb ruumi lugemises ja õigete sidemete leidmises.",
+    "mirrorFound": "Hmm, mu kott on siin diivanil. Lubage vaadata...",
+    "mirrorClose": "Olgu, näen esinduslik välja. Kuid võrgustiku loomine on rohkem kui välimus — see on ehedaks ja uudishimulikuks olemine.",
+    "edithReturns": "Oh, Edith tuleb sellest suunast. See on võimalus tugineda algsele sidemele!",
+    "buildComplete": "Milline suurepärane vestlus! Ma tõesti tunnen, et olen Edithiga ehedat sidet ehitanud. Ta isegi kutsus mind mentoriõhtule.",
+    "phoneNotification": "Mu telefon vibreerib. Lubage mul oma sõnumeid kontrollida...",
+    "maintainComplete": "Tehtud! Oma võrgustikuga ühenduses olemine ei pea olema keeruline — see peab lihtsalt olema ehedat.",
+    "noticePoster": "Hmm, see plakat seinal näeb huvitav välja. Lubage mul lähemalt vaadata...",
+    "leverageComplete": "Tark käik. Teadmine, kelle poole pöörduda — ja miks — on võrgustiku loomise mõistatuse viimane osa.",
+    "congratulations": "Palju õnne! Oled omandanud kõik neli võrgustikuoskust: Alusta, Ehita, Säilita ja Võimenda. Aeg need päriselus ellu rakendada!"
+  },
+  "items": {
+    "mirror": {
+      "popupTitle": "Peegel",
+      "popupContent": [
+        "Ei mingit salatit hammaste vahel, kontrollitud."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Palju õnne!",
+    "message": "Oled edukalt lõpetanud Võrgustikuoskuste põgenemistoa! Oled õppinud ja harjutanud nelja peamist võrgustikuoskust: Alusta (vestluste alustamine), Ehita (sidemete süvendamine), Säilita (ühenduses püsimine) ja Võimenda (oma võrgustiku targalt kasutamine). Need oskused teenivad sind hästi sinu professionaalsel teekonnal!",
+    "buttonText": "Välju toast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "sendButton": "Saada",
+    "nextContact": "Järgmine kontakt",
+    "optionA": "A",
+    "optionB": "B",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  }
+}

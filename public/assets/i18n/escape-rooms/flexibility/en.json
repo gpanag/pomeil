@@ -1,0 +1,185 @@
+{
+  "loading": "Loading Flexibility...",
+  "intro": {
+    "title": "Flexibility",
+    "paragraphs": [
+      "Your dream is to become a successful entrepreneur and create a business that brings people together.",
+      "You have just been hired by a large multinational company where people from different cultures, backgrounds, and professions work together.",
+      "Today you enter the R&D Room, where the team is facing a serious challenge. The client has just changed the requirements, and the main development software is down. This is the perfect moment to test your Flexibility."
+    ],
+    "buttonText": "Enter the R&D Room"
+  },
+  "characters": {
+    "elena": {
+      "name": "Elena",
+      "dialogues": {
+        "greet": "Hello! We're facing a serious challenge. The client has just changed the requirements, and our main development software is down. This is the perfect moment to test your Flexibility.",
+        "findStickyNote": "Flexibility isn't just about changing plans. It's about managing stress and finding new solutions quickly. During the last R&D meeting, I wrote the key characteristics of a flexible mindset on a sticky note — but I lost it in this mess. Can you find it? Start by checking the table.",
+        "stickyNoteFound": "Great! As you can see, flexibility allows R&D teams to react quickly when experiments fail or requirements change. It helps us survive and stand out. Let's see if you understand the basics.",
+        "quiz1Intro": "Let's do a quick quiz.",
+        "quiz1Done": "You understand the concept. Now we need to apply it to our R&D challenge.",
+        "findPaper": "Earlier today, I threw away an old development plan because it was too rigid. On the back of it, I had written a checklist on how to develop flexibility. I tossed it in the trash bin. Go retrieve it!",
+        "paperFound": "Excellent. This checklist will help us navigate uncertainty. But first, you must face some challenges.",
+        "puzzle2Intro": "Solve these problems to prove you are ready to lead.",
+        "finalWords": "Perfect! You stayed calm, adapted, and acted proactively. That's the essence of flexibility in R&D.\n\nRemember: staying open to change and continuously learning new tools will strengthen your confidence. You're ready for the next challenge!",
+        "completion": "The training has been completed!",
+        "default": "Keep looking around the room for clues."
+      }
+    },
+    "marco": {
+      "name": "Marco",
+      "dialogues": {
+        "busy": "The latest system update broke our prototype simulation! I need to focus on fixing this code. Talk to Elena about the development schedule.",
+        "default": "Still debugging... talk to Elena."
+      }
+    }
+  },
+  "puzzles": {
+    "trueFalse": {
+      "title": "Flexibility Basics – True or False",
+      "instructions": "Determine if each statement is True or False.",
+      "questions": [
+        {
+          "text": "Research in neuroscience proves that flexibility is located in one specific center of the brain.",
+          "correct": false,
+          "hint": "Neuroscience shows flexibility is a complex skill, not limited to a single brain area."
+        },
+        {
+          "text": "Employees who are flexible and feel productive tend to have less stress and higher job satisfaction.",
+          "correct": true,
+          "hint": "Adaptation reduces resistance and stress."
+        },
+        {
+          "text": "Flexibility is only about changing your vacation plans or everyday routines.",
+          "correct": false,
+          "hint": "In the workplace, flexibility means responding effectively to change."
+        }
+      ],
+      "feedback": {
+        "wrong": "That's not quite right. Think about it again.",
+        "correct": "Well done! You understand the basics of flexibility."
+      },
+      "answerOverlay": "The correct answers are:\n1. FALSE – Flexibility is a complex skill, not limited to one brain area.\n2. TRUE – Flexible employees tend to have less stress.\n3. FALSE – Flexibility extends far beyond everyday routines."
+    },
+    "singleChoice": {
+      "title": "Challenges & Solutions Quiz",
+      "instructions": "Choose the best answer.",
+      "question": "You feel anxious about a new R&D software update because you don't know how to use it (fear of the unknown). What is the best solution?",
+      "options": {
+        "a": "Avoid using the software until the old system returns.",
+        "b": "Focus on skill development to prepare for the change.",
+        "c": "Complain to management.",
+        "d": "Ask a colleague to do your work."
+      },
+      "hint": "Preparation and learning reduce fear.",
+      "feedback": {
+        "wrong": "That's not the best approach. Preparation and learning reduce fear.",
+        "correct": "Correct! Skill development is the best way to overcome fear of the unknown."
+      },
+      "answerOverlay": "The correct answer is: Focus on skill development to prepare for the change."
+    },
+    "sequenceOrder": {
+      "title": "Handling the Unexpected",
+      "instructions": "A sudden project delay occurs due to a leadership change. Arrange the steps to handle the situation flexibly.",
+      "items": [
+        "Adjust your schedule and reprioritize critical tasks.",
+        "Acknowledge the unexpected situation calmly.",
+        "Discuss options with the team to choose the best scenario.",
+        "Execute the new plan confidently."
+      ],
+      "correctOrder": [
+        "Acknowledge the unexpected situation calmly.",
+        "Discuss options with the team to choose the best scenario.",
+        "Adjust your schedule and reprioritize critical tasks.",
+        "Execute the new plan confidently."
+      ],
+      "hints": [
+        "Step 1: Recognize reality.",
+        "Step 2: Build a strategy with your team.",
+        "Step 3: Manage your time wisely.",
+        "Step 4: Take action."
+      ],
+      "feedback": {
+        "wrong": "That's not the right order. Remember: recognize, strategize, manage time, then act.",
+        "correct": "Excellent! You handled the unexpected situation with flexibility."
+      },
+      "answerOverlay": "The correct order is:\n1. Acknowledge the unexpected situation calmly.\n2. Discuss options with the team.\n3. Adjust your schedule and reprioritize.\n4. Execute the new plan confidently."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue",
+    "fillGap": {
+      "checkButton": "Submit",
+      "resetButton": "Reset"
+    }
+  },
+  "hints": {
+    "intro": "Click on Elena near the whiteboard to begin.",
+    "talkToElena": "Click on Elena to start.",
+    "findStickyNote": "Check the table – maybe the coffee cup?",
+    "talkToElena2": "Return to Elena.",
+    "puzzle1": "Read each statement and decide if it is True or False.",
+    "puzzle1Complete": "Talk to Elena — she has the next challenge for you.",
+    "findPaper": "Elena mentioned the trash bin. Look for it near the whiteboard.",
+    "talkToElena3": "Return to Elena with what you found.",
+    "completion": "The training has been completed!",
+    "default": "Look around the R&D room for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "You enter the busy R&D room. The whiteboard is covered with crossed-out plans and revised timelines. Something serious is going on here. You notice Elena, the project lead, reviewing changes near the whiteboard.",
+    "clickLaptop": "Just Marco's code. Nothing about flexibility here. Maybe check under the coffee cup?",
+    "foundStickyNote": "You found it! A sticky note was stuck to the bottom of the cup.",
+    "stickyNoteRead": "Good job! Return to Elena.",
+    "clickWhiteboard": "These are outdated research milestones. They no longer apply. Look for the trash bin.",
+    "foundPaper": "You found the strategy! Return to Elena."
+  },
+  "items": {
+    "stickyNote": {
+      "inventoryTitle": "Flexible Mindset – Key Characteristics",
+      "popupTitle": "Flexible Mindset – Key Characteristics",
+      "popupContent": [
+        "Quick Responses: Respond immediately to market changes and customer demands.",
+        "Adaptive Philosophy: Immediately redefine needs and identify new opportunities.",
+        "Alternative Options: Find new ways to deal with technological development and uncertainty."
+      ]
+    },
+    "paper": {
+      "inventoryTitle": "How to Develop Flexibility",
+      "popupTitle": "How to Develop Flexibility",
+      "popupContent": [
+        "Improve time management: Prioritize tasks to adapt to new data.",
+        "Adopt a new mindset: Be open to change and continuous progress.",
+        "Be proactive: Be ready for changes rather than waiting for them to happen.",
+        "Embrace innovation: Be open to using cutting-edge tools and technology."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You've completed the Flexibility skill! You stayed calm, adapted, and acted proactively. That's the essence of flexibility in R&D. You're ready for the next challenge!",
+    "buttonText": "Exit the R&D Room"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "trueButton": "True",
+    "falseButton": "False",
+    "gapPlaceholder": "___",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

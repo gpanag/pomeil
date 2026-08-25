@@ -1,0 +1,218 @@
+{
+  "loading": "Ładowanie Aktywnego Słuchania...",
+  "intro": {
+    "title": "Aktywne słuchanie",
+    "paragraphs": [
+      "Jesteś nowym pracownikiem firmy finansowej. Po załatwieniu początkowych spraw zostałeś zaproszony do udziału w wewnętrznym programie rozwoju. Głównym celem tego programu jest rozwój umiejętności Aktywnego słuchania wśród pracowników firmy.",
+      "Po przybyciu do miejsca pracy informują cię, że szkolenie ma charakter indywidualny i zostaniesz zaproszony na dach, gdzie odbywa się szkolenie, gdy nadejdzie twoja kolej.",
+      "Jesteś tym podekscytowany i masz nadzieję, że ten program podnoszenia umiejętności okaże się naprawdę skuteczny. Aby odblokować umiejętność aktywnego słuchania, musisz pomyślnie ukończyć szkolenie przygotowane dla ciebie przez firmę."
+    ],
+    "buttonText": "Idź na dach"
+  },
+  "characters": {
+    "mateo": {
+      "name": "Mateo",
+      "dialogues": {
+        "greet": "Dzień dobry! Naprawdę miło cię poznać. Pozwól, że zacznę od krótkiego wyjaśnienia dzisiejszych zajęć. Twoim zadaniem będzie rozwiązanie trzech różnych ćwiczeń, z których każde skupia się na rozwoju twojej zdolności aktywnego słuchania. Przed każdym z nich będziesz musiał znaleźć fragment teoretycznej wiedzy ukrytej gdzieś w pobliżu, co pozwoli ci pomyślnie ukończyć ćwiczenie. Brzmi prosto, prawda? No to do dzieła!",
+        "clue": "Zaczniemy od podstaw. Gdzieś w tej okolicy ukryliśmy pierwszy fragment wiedzy, z którym musisz się zapoznać. Mamy dla ciebie taką wskazówkę, która powinna pomóc ci go znaleźć:\n\n„Ani na ławce, ani na podłodze -\ntam, gdzie rośliny rosną wysoko, kryje się coś więcej\"\n\nJesteś gotów? Niech się rozpoczną poszukiwania!",
+        "fastLearner": "Och, znalazłeś ten dokument bardzo szybko, brawo! Teraz, jako nasze pierwsze ćwiczenie, sprawdźmy twoją nowo zdobytą wiedzę! Spójrz na laptopa.",
+        "puzzle1Done": "Dokładnie! Szybko się uczysz! Teraz, zanim przejdziemy do następnego zadania, chciałbym… Hm, co się dzieje, Zainabu?",
+        "interrupted": "*Mateo zostaje przerwany, gdy Zainabu próbuje mu coś powiedzieć. Odwraca się do niej, ona zaczyna z nim rozmawiać.*",
+        "backToYou": "Tak czy inaczej, przepraszam za to. Wierzę, że jesteśmy gotowi na następne ćwiczenie, prawda? Już jest dla ciebie wyświetlone na laptopie. Spójrzmy.",
+        "congratsFinal": "To prawda. To było naprawdę imponujące! Opanowałeś umiejętność aktywnego słuchania i przeszedłeś nasze testy celująco! Postawiłeś poprzeczkę naprawdę wysoko - następni uczestnicy będą mieli naprawdę trudno, próbując pobić twój wynik! Dziękujemy ci raz jeszcze za czas i wysiłek.",
+        "completion": "Szkolenie zostało ukończone!",
+        "default": "Jestem tu, jeśli mnie potrzebujesz."
+      }
+    },
+    "zainabu": {
+      "name": "Zainabu",
+      "dialogues": {
+        "conv1": "Przepraszam, że przerywam, ale to ważne. Czy przejrzałeś zaktualizowany szablon raportu ryzyka, który przyszedł dziś rano?",
+        "conv3": "Zauważyłam, że konkretne wartości są teraz inaczej pogrupowane, zwłaszcza w sekcji ryzyka, i nie byłam pewna, czy to zmienia sposób, w jaki obliczamy podsumowania kwartalne.",
+        "conv5": "Dobrze. Tym, co mnie zaniepokoiło, było to, że tabela porównawcza nie pokazuje już tych samych sum co w poprzednim kwartale.",
+        "conv7": "Pozwól, że sprawdzę, czy dobrze cię rozumiem. Z twojej perspektywy obliczenia pozostają takie same i zmieniła się tylko prezentacja?",
+        "conv9": "To pomocne wyjaśnienie. W takim razie może powinniśmy to zweryfikować przed wysłaniem ostatecznego raportu.",
+        "pendriveTask": "Sam jesteś naprawdę dobrym słuchaczem, wiesz. Bardzo dobrze poradziłeś sobie z tym ostatnim zadaniem. Ale mamy jeszcze jedno zadanie przed tobą, zanim uznamy to szkolenie za ukończone. Gdzieś tutaj ukryliśmy pendrive. Na tym pendrive znajduje się ostatni fragment wiedzy, którego potrzebujesz do rozwiązania ostatniego zadania. To czerwony pendrive. Daj mi znać, gdy go znajdziesz!",
+        "readyForFinal": "Tak. Teraz jesteś gotowy stawić czoła ostatniemu wyzwaniu. Śmiało, kliknij na laptopa, kiedy będziesz gotowy.",
+        "congratsFinal": "To jest to! Masz całkowitą rację! To nie jest twoje pierwsze szkolenie z aktywnego słuchania, prawda? Spisałeś się dziś naprawdę dobrze. Udało ci się nie tylko szybko nauczyć z naszych materiałów, ale także doskonale rozpoznać i zrozumieć wszystkie żywe sygnały, które dla ciebie przygotowaliśmy!",
+        "completion": "Praca z tobą dziś była prawdziwą przyjemnością!",
+        "default": "Słucham uważnie."
+      }
+    },
+    "mateoConv": {
+      "name": "Mateo",
+      "dialogues": {
+        "conv2": "Nie szczegółowo. Zakładałem, że to to samo co wcześniej, tylko standardowa aktualizacja.",
+        "conv4": "Nie sądzę. Te aktualizacje są zwykle kosmetyczne. Mieliśmy podobne wcześniej.",
+        "conv6": "Pewnie wszystko w porządku. Jeśli compliance zmieniło układ, same liczby powinny pozostać prawidłowe.",
+        "conv8": "Tak, o to mi chodzi. Ale teraz, gdy wspominasz o sumach, zdaję sobie sprawę, że tak naprawdę tego nie potwierdziłem.",
+        "conv10": "Masz rację. Sprawdzę zasady obliczeń i potwierdzę z compliance, zanim cokolwiek prześlemy."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Zrozumienie podstaw",
+      "instructions": "Wybierz DWIE prawidłowe odpowiedzi.",
+      "question": "Które zachowania są przykładami aktywnego słuchania?",
+      "options": {
+        "a": "Zastanawianie się z wyprzedzeniem nad odpowiedzią, gdy druga osoba mówi.",
+        "b": "Pozwalanie na pauzy i momenty ciszy bez przerywania.",
+        "c": "Skupianie się głównie na osiągnięciu porozumienia jak najszybciej.",
+        "d": "Zwracanie uwagi na słowa, ton i mowę ciała mówcy."
+      },
+      "hint": "Pamiętaj, że ważną częścią aktywnego słuchania jest szacunek dla rozmówcy i tego, co mówi.",
+      "feedback": {
+        "wrong": "Nie do końca. Pamiętaj, że aktywne słuchanie to szacunek dla rozmówcy i tego, co mówi.",
+        "correct": "Brawo! To są prawidłowe przykłady aktywnego słuchania."
+      },
+      "answerOverlay": "Prawidłowe odpowiedzi to:\n• Pozwalanie na pauzy i momenty ciszy bez przerywania.\n• Zwracanie uwagi na słowa, ton i mowę ciała mówcy."
+    },
+    "fillGap": {
+      "title": "Rozpoznawanie sygnałów aktywnego słuchania",
+      "instructions": "Uzupełnij zdania brakującymi słowami, aby utworzyć logiczne zdania związane z umiejętnością aktywnego słuchania.",
+      "sentenceParts": [
+        "Nawet gdy coś wydaje się znajome, aktywne słuchanie oznacza unikanie szybkich ",
+        " i sprawdzanie szczegółów.\nGdy coś jest niejasne, pomocne jest skupienie się na ",
+        " przykładach zamiast mówienia ogólnie.\nPowtarzanie informacji własnymi słowami pomaga ",
+        " zrozumienie między ludźmi.\nAktywne słuchanie może ujawnić, że informacje nie zostały jeszcze odpowiednio ",
+        ".\nRozmowa posuwa się do przodu, gdy ludzie zgadzają się ",
+        " informacje przed podjęciem działań."
+      ],
+      "options": [
+        "potwierdzić",
+        "założeń",
+        "zweryfikować",
+        "sprawdzone",
+        "konkretnych"
+      ],
+      "correctOrder": [
+        "założeń",
+        "konkretnych",
+        "potwierdzić",
+        "sprawdzone",
+        "zweryfikować"
+      ],
+      "feedback": {
+        "wrong": "Niektóre słowa nie są na właściwym miejscu. Spróbuj ponownie!",
+        "correct": "Świetna robota! Wychwyciłeś wszystkie subtelne sygnały aktywnego słuchania i udowodniłeś, że rozumiesz ich głębokie znaczenie."
+      },
+      "answerOverlay": "Prawidłowa kolejność to:\n[1] założeń\n[2] konkretnych\n[3] potwierdzić\n[4] sprawdzone\n[5] zweryfikować",
+      "resetButton": "Zresetuj",
+      "checkButton": "Wyślij"
+    },
+    "matching": {
+      "title": "Aktywne słuchanie – Ostatnie zadanie",
+      "instructions": "Twórz logiczne zdania, dopasowując każdy początek do odpowiedniego zakończenia.",
+      "columnA": {
+        "heading": "Początki zdań",
+        "items": {
+          "1": "Skuteczne słuchanie wymaga świadomości własnych reakcji, aby nie…",
+          "2": "Zmiany w tym, jak ktoś mówi, mogą sygnalizować, że…",
+          "3": "Wybór, by zrobić pauzę przed odpowiedzią, może pomóc…",
+          "4": "Dokładne odzwierciedlenie wiadomości skupia się na znaczeniu mówcy, a nie…",
+          "5": "Gdy ludzie czują się naprawdę wysłuchani, często zaczynają…"
+        }
+      },
+      "columnB": {
+        "heading": "Zakończenia zdań",
+        "items": {
+          "A": "…na dokładnych słowach, których użyli.",
+          "B": "…zakłócały zrozumienia wiadomości.",
+          "C": "…spowolnić rozmowę i zapobiec niepotrzebnemu napięciu.",
+          "D": "…samodzielnie wyjaśniać swoje myśli.",
+          "E": "…sama wiadomość się zmienia."
+        }
+      },
+      "feedback": {
+        "wrong": "Nie do końca. Spróbuj ponownie!",
+        "allCorrect": "Doskonale! Dopasowałeś wszystkie zdania prawidłowo!",
+        "revealedComplete": "Oto prawidłowe dopasowania — przejrzyj je i kontynuujmy."
+      },
+      "answerOverlay": "Oto prawidłowe dopasowania:\n1→B (reakcje… zakłócały zrozumienie)\n2→E (zmiany… wiadomość się zmienia)\n3→C (pauza… spowolnić rozmowę)\n4→A (odzwierciedlenie… dokładne słowa)\n5→D (wysłuchani… wyjaśniać myśli)"
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Idź porozmawiać z Mateo, aby dowiedzieć się o dzisiejszym szkoleniu.",
+    "talkToMateo1": "Kliknij na Mateo, aby rozpocząć.",
+    "findPaper": "Spójrz w pobliżu roślin w rogach – „tam, gdzie rośliny rosną wysoko, kryje się coś więcej\".",
+    "readPaper": "Przeczytaj dokument, który znalazłeś.",
+    "talkToMateo2": "Porozmawiaj z Mateo ponownie – czeka na ciebie.",
+    "clickLaptop": "Kliknij na laptopa na stole.",
+    "puzzle1Complete": "Mateo chce porozmawiać. Kliknij na niego.",
+    "conversation": "Obserwuj uważnie rozmowę między Zainabu a Mateo.",
+    "puzzle2FillGap": "Uzupełnij każdą lukę słowem, które pasuje najlepiej. Pomyśl, na czym polega aktywne słuchanie, gdy szczegóły są niejasne.",
+    "puzzle2Complete": "Porozmawiaj z Zainabu – ma dla ciebie następne zadanie.",
+    "findPendrive": "Zainabu powiedziała, że gdzieś ukryty jest czerwony pendrive. Spójrz na podłogę, blisko nóg stołu.",
+    "puzzle3Matching": "Dopasuj każdy początek zdania po lewej do odpowiedniego zakończenia po prawej.",
+    "readTextFile": "Przeczytaj plik tekstowy wyświetlony na laptopie.",
+    "talkToZainabu": "Porozmawiaj z Zainabu – powie ci, kiedy jesteś gotowy.",
+    "reveal": "Szkolenie zostało ukończone!",
+    "completion": "Szkolenie zostało ukończone!",
+    "default": "Rozejrzyj się po dachu w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Wspinając się po schodach na dach, myślisz o nadchodzących wydarzeniach – „To moje pierwsze szkolenie tego rodzaju. I jest indywidualne – korporacja naprawdę przeszła samą siebie tym razem. Naprawdę mam nadzieję, że będzie to korzystne, pozytywne doświadczenie. No to do dzieła.\" Naciskasz klamkę i wychodzisz na dach…",
+    "wrongObject": "Hmm, nic przydatnego tutaj. Ale widok z tego dachu jest niesamowity — widać całe miasto! Szukajmy dalej.",
+    "foundPaper": "Znalazłeś instrukcje przygotowane dla ciebie przez Zainabu i Mateo. Przeczytajmy je.",
+    "paperRead": "Dobra robota. Właśnie zdobyłeś podstawową wiedzę o umiejętności aktywnego słuchania, jej znaczeniu i korzyściach. Porozmawiajmy znów z Mateo.",
+    "noticeCues": "W miarę trwania rozmowy między Zainabu a Mateo zaczynasz dostrzegać różne sygnały związane z ich umiejętnością wdrażania aktywnego słuchania w prawdziwym życiu…",
+    "foundPendrive": "Dobra robota! Znalazłeś go. Sięgnijmy teraz po informacje na nim zapisane. Kliknij na laptopa.",
+    "wrongPendrive": "Niezupełnie. Czekaj, czy to gniazdo ptaka za doniczką? Jak ono się tu dostało? Szukaj dalej pendrive.",
+    "textFileRead": "Przejrzałeś zaawansowane wytyczne aktywnego słuchania. Porozmawiaj z Zainabu, gdy będziesz gotowy."
+  },
+  "items": {
+    "paper": {
+      "inventoryTitle": "Aktywne słuchanie – Podstawy",
+      "popupTitle": "Aktywne słuchanie – Podstawy",
+      "popupContent": [
+        "Aktywne słuchanie oznacza pełną obecność w rozmowie. Nie chodzi o czekanie na swoją kolej, by mówić, ani o myślenie o tym, co powiesz dalej, gdy druga osoba mówi.",
+        "Gdy słuchasz aktywnie, twoja uwaga jest skupiona wyłącznie na mówcy, bez rozproszeń lub przerw. Zauważasz nie tylko wypowiadane słowa, ale także inne cechy, takie jak ton głosu, pauzy i mowę ciała, co pozwala ci pełniej zrozumieć wiadomość.",
+        "Celem aktywnego słuchania jest zrozumienie, a nie zgoda. Polega ono na daniu mówcy czasu, dopuszczeniu ciszy, gdy się pojawi, i odpowiadaniu dopiero po pełnym odebraniu wiadomości.",
+        "Gdy ludzie czują się tak wysłuchani, są bardziej skłonni czuć się szanowani, zrozumiani i chętni do otwartej komunikacji. Aktywne słuchanie pomaga zmniejszać nieporozumienia, poprawia zaufanie i wspiera lepszą współpracę w codziennych interakcjach zawodowych."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Aktywne słuchanie – Zaawansowane wytyczne",
+      "popupTitle": "Aktywne słuchanie – Zaawansowane wytyczne",
+      "popupContent": [
+        "Aktywne słuchanie obejmuje zarządzanie własnymi reakcjami, aby nie zakłócały zrozumienia wiadomości.",
+        "Dobrzy słuchacze zauważają zmiany w tonie lub tempie jako sygnały, że znaczenie może się zmieniać.",
+        "Dobre słuchanie czasami oznacza brak natychmiastowej odpowiedzi, nawet gdy wiesz, co chcesz powiedzieć.",
+        "Parafrazowanie jest najskuteczniejsze, gdy oddaje znaczenie, a nie dokładne słowa.",
+        "Aktywne słuchanie pomaga zapobiegać eskalacji, spowalniając rozmowy zanim emocje wzrosną.",
+        "Bycie wysłuchanym często pomaga mówcy wyjaśnić własne myślenie, nawet bez informacji zwrotnej."
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Udało ci się pomyślnie ukończyć szkolenie z aktywnego słuchania przygotowane dla ciebie przez Zainabu i Mateo. Pokazałeś nie tylko zdolność szybkiego uczenia się, ale także prawidłowego stosowania zdobytej wiedzy. Pomyślnie opanowałeś umiejętność Aktywnego słuchania!",
+    "buttonText": "Wyjdź z dachu"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "selectTwo": "Wybierz 2 odpowiedzi",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "loading": "Laster...",
+  "intro": {
+    "title": "Kulturell bevissthet",
+    "paragraphs": [
+      "Drømmen din er å bli en vellykket gründer og skape en bedrift som bringer folk sammen.",
+      "Du har nettopp blitt ansatt i et stort multinasjonalt selskap der mennesker fra forskjellige kulturer, bakgrunner og yrker jobber sammen. Å jobbe i dette selskapet er en læringsopplevelse for deg, da du ved å fullføre ulike utfordringer i det vil tilegne deg ferdigheter inkludert i POMEIL-kompetansekartet, som er essensielle for enhver gründer.",
+      "I dag er din første dag på kontoret. HR-sjefen, Fatma, vil hjelpe deg å oppdage hva kulturell bevissthet virkelig betyr og hvordan å navigere ulike perspektiver respektfullt på jobben."
+    ],
+    "buttonText": "Start spillet"
+  },
+  "characters": {
+    "fatma": {
+      "name": "Fatma (HR-sjef)",
+      "dialogues": {
+        "introduction": "Hei (username)! Før du begynner å jobbe her, er det noen ting du burde vite om vårt selskaps tilnærming til kulturell bevissthet, da mange av våre kolleger kommer fra forskjellige land rundt om i verden.",
+        "introduction_part2": "Et sted i dette rommet er det en klistrelapp med noen nyttige tips angående kulturell bevissthet. Prøv å finne den og les den nøye, og kom så tilbake til meg. Begynn med å sjekke skuffen.",
+        "findNote": "Et sted i dette rommet er det en klistrelapp med noen nyttige tips angående kulturell bevissthet. Prøv å finne den og les den nøye, og kom så tilbake til meg. Begynn med å sjekke skuffen.",
+        "noteFound": "Bra jobbet, du fant klistrelappen!",
+        "noteFound_part2": "Derfor innebærer kulturell bevissthet å gjenkjenne ens egne kulturelle påvirkninger samtidig som man forstår de kulturelle verdiene, troene og praksisene til andre. Det går utover bare anerkjennelse, da det krever en aktiv innsats for å sette pris på og engasjere seg med ulike kulturer på en respektfull og informert måte.",
+        "noteFound_part3": "Kulturell bevissthet er essensielt i å bekjempe stereotyper, fordommer og misforståelser som ofte oppstår fra kulturelle forskjeller.",
+        "noteFound_part4": "La oss fortsette med en quiz. Lykke til!",
+        "quizComplete": "Jeg antar at du nå er mer kulturelt sensitiv!",
+        "quizComplete_part2": "Jeg skrev ned noen interessante fakta du kanskje vil vite om kulturell bevissthet på et papir, men jeg husker ikke hvor jeg la det. Vennligst se deg om i rommet. Sjekk på pulten min, den bak meg.",
+        "findPaper": "Jeg skrev ned noen interessante fakta du kanskje vil vite om kulturell bevissthet på et papir, men jeg husker ikke hvor jeg la det. Vennligst se deg om i rommet. Sjekk på pulten min, den bak meg.",
+        "paperFound": "Perfekt, du fant det!",
+        "paperFound_part2": "Jeg har noen flere quizer til deg, så gjør ditt beste!",
+        "puzzleInProgress": "Vennligst fullfør oppgaven først.",
+        "allQuestsComplete": "Perfekt! Du har vist hvordan å håndtere internasjonal kommunikasjon med respekt. Det er ekte kulturell bevissthet.",
+        "allQuestsComplete_part2": "Gratulerer, du har fullført alt og oppgradert din kulturelle bevissthet. Du er ett skritt nærmere å lykkes i selskapet.",
+        "allQuestsComplete_part3": "Opplæringen er fullført! Trykk «Fullfør opplæring» for å fortsette."
+      }
+    },
+    "jun": {
+      "name": "Jun (kollega)",
+      "dialogues": {
+        "default": "Hei (username), velkommen! Jeg er Jun. Jeg avslutter bare en rapport. Si fra hvis du trenger noe.",
+        "findPaper_noProgress": "Hei (username). Jeg avslutter bare denne rapporten. Sjekket du Fatmas pult?",
+        "findPaper_laptopHint": "Jeg har ikke sett papiret, men selvfølgelig kan du se under den bærbare datamaskinen min!",
+        "findPaper_laptopReminder": "Bare klikk på den bærbare for å sjekke.",
+        "allQuestsComplete": "Lykke til!"
+      }
+    }
+  },
+  "puzzles": {
+    "quiz": {
+      "title": "Quiz om kulturell bevissthet - Sant eller usant",
+      "trueButton": "Sant",
+      "falseButton": "Usant",
+      "questions": [
+        {
+          "text": "Gester kan noen ganger ha forskjellige betydninger i forskjellige kulturer.",
+          "answer": true,
+          "hint": "Tenk igjen… I ett land betyr en tommel opp «bra jobbet» (vestlige land - USA, Storbritannia, Europa), men i et annet (Midtøsten-land - Iran, deler av Irak, Afghanistan) kan det sees på som uhøflig. Er gester alltid universelle?"
+        },
+        {
+          "text": "Folk fra samme land deler samme kultur og kommunikasjonsstil.",
+          "answer": false,
+          "hint": "Tenk på hvordan folk fra forskjellige regioner, aldersgrupper eller yrker oppfører seg, selv innenfor ett land. Kultur er ikke ett størrelse passer alle!"
+        },
+        {
+          "text": "Når noen ikke umiddelbart sier «nei», betyr det at de er enige.",
+          "answer": false,
+          "hint": "I noen kulturer unngår folk å si «nei» direkte for å være høflige eller opprettholde harmoni. Kanskje stillhet eller nøling betyr noe annet?"
+        }
+      ],
+      "answerOverlay": {
+        "prefix": "Etter 3 forsøk, her er svaret:",
+        "questionLabel": "Spørsmål:",
+        "correctAnswerLabel": "Riktig svar:",
+        "explanationLabel": "Forklaring:",
+        "trueValue": "SANT",
+        "falseValue": "USANT"
+      }
+    },
+    "puzzleTwo": {
+      "title": "Quiz om kulturell bevissthet - Flervalg",
+      "question": "Hva er den beste måten å vise kulturell bevissthet under et møte?",
+      "options": {
+        "a": "Anta at alle deler de samme skikkene",
+        "b": "Vær oppmerksom på hvordan kolleger fra forskjellige bakgrunner kommuniserer",
+        "c": "Korriger folk når deres skikker virker uvanlige",
+        "d": "Unngå å samhandle med kolleger fra andre kulturer"
+      },
+      "feedback": "Tenk: kulturell bevissthet handler om å observere og respektere forskjeller, ikke ignorere eller dømme dem.",
+      "answerOverlay": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Når en kollega fra et annet land snakker, hva er den beste responsen for å vise kulturell bevissthet?\n\nAlternativer:\na) Korriger uttalen deres for å hjelpe dem å forbedre seg\nb) Lytt nøye og still spørsmål om nødvendig\nc) Anta at du allerede vet hva de mener\nd) Snakk saktere så de kan forstå deg bedre\n\nRiktig svar: b) Lytt nøye og still spørsmål om nødvendig\n\nForklaring: Kulturell bevissthet handler om å observere og respektere forskjeller, ikke ignorere eller dømme dem. Å lytte nøye viser respekt og ekte interesse for å forstå personen."
+    },
+    "puzzleThree": {
+      "title": "Quiz om kulturell bevissthet - Sekvens",
+      "question": "Plasser følgende handlinger i den mest respektfulle rekkefølgen.",
+      "availableStepsLabel": "Tilgjengelige trinn",
+      "yourSequenceLabel": "Din sekvens",
+      "placeholderText": "Klikk på trinn til venstre for å legge dem til her.",
+      "resetButton": "Tilbakestill",
+      "submitButton": "Send inn rekkefølge",
+      "options": {
+        "a": "Be høflig om avklaring hvis du ikke forstår noe.",
+        "b": "Avstå fra vitser eller kommentarer om noens aksent.",
+        "c": "Lytt nøye uten å avbryte.",
+        "d": "Takk og anerkjenn deres bidrag."
+      },
+      "feedback": {
+        "position1": "Begynn med å være stille og fokusert — hva hjelper deg faktisk å høre og forstå noen?",
+        "position2": "Etter å ha lyttet, hva burde du ikke gjøre som kunne gjøre dem flau eller stoppe samtalen?",
+        "position3": "Hvis du fortsatt trenger detaljer, hva er den høflige måten å få dem på uten å sette personen i forlegenhet?",
+        "position4": "Hva er en enkel, positiv ting å gjøre etter at noen har delt tankene sine som bygger godvilje?",
+        "incomplete": "Vennligst fullfør sekvensen.",
+        "threeAttempts": "Etter 3 forsøk, her er svaret:\n\nSpørsmål: Hva er den riktige sekvensen for å håndtere internasjonal kommunikasjon med respekt?\n\nRiktig svar:\n1. «Lytt nøye uten å avbryte» (c) - Du må først gi din fulle oppmerksomhet for å forstå hva personen sier\n2. «Avstå fra vitser eller kommentarer om noens aksent» (b) - Unngå alt som kunne gjøre dem ukomfortable eller stoppe kommunikasjon\n3. «Be høflig om avklaring hvis du ikke forstår noe» (a) - Når du har lyttet, søk respektfullt å forstå bedre\n4. «Takk og anerkjenn deres bidrag» (d) - Vis verdsettelse for å bygge godvilje og positive relasjoner"
+      }
+    },
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
+    "answerOverlayTitle": "Svar avslørt",
+    "answerOverlayContinue": "Fortsett"
+  },
+  "hints": {
+    "default": "Jeg er ikke sikker på hva jeg skal gjøre...",
+    "findNote": {
+      "step0": "Fatma sa: «Begynn med å sjekke skuffen.»",
+      "step1": "Lappen i skuffen sa å sjekke oppslagstavlen til venstre.",
+      "step2": "Meldingen på venstre tavle sa å sjekke «den andre oppslagstavlen» (den til høyre)."
+    },
+    "findPaper": {
+      "step0": "Fatma sa å sjekke pulten hennes.",
+      "step1": "Jeg burde sjekke nær Juns bærbare."
+    },
+    "allQuestsComplete": "La oss gå til neste rom."
+  },
+  "items": {
+    "note": {
+      "altText": "En klistrelapp med tre regler oppført.",
+      "inventoryTitle": "Vis Klistrelapp",
+      "foundDialogue": "Bra jobbet! Klikk på Fatma for å fortsette.",
+      "returnDialogue": "Bra jobbet! Klikk på Fatma for å fortsette."
+    },
+    "paper": {
+      "inventoryTitle": "Vis Papir",
+      "foundDialogue": "Du gjør det flott! Klikk på Fatma for å fortsette.",
+      "popupTitle": "MORSOMME FAKTA OM KULTURELL BEVISSTHET",
+      "popupContent": [
+        {
+          "title": "«Tommel opp» er ikke alltid positivt!",
+          "text": "I mange vestlige land betyr det «bra jobbet», men på steder som Iran, deler av Vest-Afrika osv., regnes det som støtende."
+        },
+        {
+          "title": "Å nikke betyr ikke alltid «ja».",
+          "text": "I Bulgaria betyr et nikk «nei», og å riste på hodet fra side til side kan bety «ja»."
+        },
+        {
+          "title": "Stillhet kan tale volumer.",
+          "text": "I noen kulturer (Japan, Finland, osv.) sees stillhet som et tegn på respekt og betenksomhet, ikke ubehag."
+        },
+        {
+          "title": "Personlig rom er kulturelt!",
+          "text": "Folk fra Latin-Amerika eller Midtøsten står ofte nærmere i samtale enn de fra Nord-Europa eller Nord-Amerika."
+        },
+        {
+          "title": "«OK»-håndgesten er ikke ok overalt.",
+          "text": "I Brasil er «OK»-tegnet (tommel og pekefinger som danner en sirkel) en uhøflig gest."
+        }
+      ]
+    }
+  },
+  "systemDialogues": {
+    "drawerSearch": "Bare noen gamle filer inni. Det ser ut som det du leter etter, ikke er her. Ta en titt på oppslagstavlen til venstre.",
+    "deskDossiersSearch": "Bare en haug med dossierer. Lappen er ikke her.",
+    "leftBoardMessage": "Dette er bare en påminnelse om et møte. Kanskje du finner det du trenger på den andre oppslagstavlen. Prøv igjen!",
+    "deskDrawersSearch": "Det er ingenting her. Det ser ut som papiret er et annet sted. Sjekk under Juns bærbare, men spør ham først.",
+    "alreadySearched": "Jeg har allerede sett her. Fatma sa å sjekke pulten.",
+    "askJunFirst": "Jeg burde nok spørre Jun før jeg rører hans bærbare.",
+    "quizCompleteReturn": "Bra jobbet! Klikk på Fatma for å fortsette."
+  },
+  "completion": {
+    "title": "Opplæring fullført!",
+    "message": "Gratulerer! Du har vellykket demonstrert utmerkede ferdigheter i kulturell bevissthet og kommunikasjon.",
+    "buttonText": "Tilbake til hovedmenyen"
+  },
+  "quizComplete": {
+    "title": "Riktig!",
+    "message": "Utmerket arbeid! Du har fullført det første trinnet i opplæringen din i kulturell bevissthet.",
+    "buttonText": "Fortsett"
+  },
+  "answerOverlay": {
+    "title": "Riktig svar",
+    "buttonText": "Fortsett"
+  },
+  "dialogueActions": {
+    "continue": "Fortsett",
+    "startQuiz": "Start quiz",
+    "finishTraining": "Fullfør opplæring"
+  },
+  "ui": {
+    "toggleFullscreen": "Veksle fullskjerm",
+    "backToEscapeRooms": "Tilbake til fluktrom",
+    "continueButton": "Fortsett",
+    "gapPlaceholder": "___",
+    "fullscreenToggle": "Veksle fullskjerm",
+    "skipButton": "Hopp over",
+    "startQuizButton": "Start quiz",
+    "answerButton": "Svar"
+  },
+  "learning": {
+    "modeLabel": "Læringsmodus",
+    "puzzlesWord": "oppgaver",
+    "scoreLabel": "Din poengsum:",
+    "continueLearning": "Fortsett læring"
+  },
+  "skipConfirm": {
+    "title": "Hoppe over oppgaven?",
+    "question": "Er du sikker på at du vil hoppe over denne oppgaven?",
+    "warning": "Du får 0 poeng for denne oppgaven.",
+    "cancel": "Avbryt",
+    "confirm": "Hopp over oppgaven"
+  }
+}

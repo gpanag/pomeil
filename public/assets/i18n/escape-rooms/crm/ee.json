@@ -1,0 +1,782 @@
+{
+  "loading": "Klienditeeninduse osakonna laadimine...",
+  "intro": {
+    "title": "Kliendisuhete Juhtimine",
+    "paragraphs": [
+      "Sinu unistus on saada edukaks ettevõtjaks ja luua äri, mis toob inimesi kokku.",
+      "Sind on just palgatud suurde rahvusvahelisse ettevõttesse, kus töötavad koos erinevatest kultuuridest, taustadest ja ametitest pärit inimesed.",
+      "Täna astud sa Klienditeeninduse osakonda, kus asjad on natuke kaootilised. Üks kolleeg võitleb vihase kliendiga, kartoteegikapp on plahvatanud ja tagasiside küsitlus vajab lõpetamist. Aeg panna oma Kliendisuhete Juhtimise oskused tööle!"
+    ],
+    "buttonText": "Sisene Klienditeeninduse osakonda"
+  },
+  "characters": {
+    "peter": {
+      "name": "Peter",
+      "dialogues": {
+        "intro1": "Ma proovisin seda klienti aidata… Aga ta hakkas mu peale karjuma. Ta ütleb pidevalt, et ma olen oma töös halb…",
+        "intro2": "Mida ma ka ei ütleks, ta ei rahune. Ma ainult muudan asju hullemaks.",
+        "intro3": "Kas sa palun saaksid kõne üle võtta?",
+        "default": "Aitäh, et selle kõnega aitasid…"
+      }
+    },
+    "simone": {
+      "name": "Simone",
+      "dialogues": {
+        "intro1": "Oo, sa oled siin! Ma teen oma klientide jaoks tagasiside küsitlust, aga vajan natuke abi...",
+        "intro2": "Ma olen kavandanud hulga küsimusi. Ma arvan, et mõned on head… aga mõned on, noh… kohutavad.",
+        "intro3": "Kas sa saaksid mind aidata valida, milliseid küsimusi küsitluses kasutada? Näitan sulle korraga kahte.",
+        "default": "Anna teada, kui vajad veel midagi!"
+      }
+    }
+  },
+  "puzzles": {
+    "complaintCall": {
+      "title": "Kliendi Kaebuse Kõne",
+      "instructions": "Suhtle telefonikõnes pettunud kliendiga. Vali oma vastused targalt — kliendi tuju sõltub sellest.",
+      "moodLabel": "Kliendi Tuju",
+      "holdButton": "Pane ootele",
+      "holdWarning": "Hoiatus: Kliendi ootele panemine alandab tema tuju märkimisväärselt!",
+      "holdResponse": "Ma ei suuda uskuda, et nad mind ootele panid! Halloo? Hallooooo?",
+      "holdReturn": "Aitäh ootamise eest. Jätkame. Kus me jäime?",
+      "holdFailure": "Tead mis? Unusta ära. Mul on kõrini.",
+      "stages": [
+        {
+          "customerStatement": "Tere. Su kolleeg ütles, et sa võiksid mind aidata. Olen päevi proovinud kontakti saada!",
+          "options": {
+            "good": "Mul on tõesti kahju, et meiega kontakti saamine on olnud nii raske. Ma mõistan, kui pettumust valmistav see peab olema. Olen siin, et nüüd sind aidata.",
+            "neutral": "Saan aru. Ma saan sind nüüd aidata.",
+            "bad": "Noh, oleme viimasel ajal väga hõivatud olnud. Tõenäoliselt seetõttu sa läbi ei saanud."
+          },
+          "customerReplies": {
+            "good": "Aitäh. Ma olen end üsna ignoreerituna tundnud!",
+            "neutral": "Olgu… Ma loodan vaid, et keegi seekord tegelikult aitab.",
+            "bad": "Ok… Aga ma olen oodanud päevi…"
+          },
+          "userFollowUp": {
+            "good": "Saan aru. Vaatame üle, mis on toimunud, ja korrastame asjad.",
+            "neutral": "Vaatame üle, mis on toimunud.",
+            "bad": "Ok, ütle mulle, mis on probleem."
+          }
+        },
+        {
+          "customerStatement": "Mu tellimust ei ole saadetud! See pidi olema sünnipäevakink, aga nüüd ei pruugi see õigeks ajaks kohale jõuda!",
+          "options": {
+            "good": "Ma mõistan, et see on pettumust valmistav. Vaatame seda koos läbi ja näeme, mida saame teha.",
+            "neutral": "Saan aru, et see on tüütu.",
+            "bad": "Sa ei pea ennast nii üles töötama!"
+          },
+          "customerReplies": {
+            "good": "Aitäh, et tegelikult mind kuulad.",
+            "neutral": "Jah… arvan küll. Tahan vaid teada, mis toimub.",
+            "bad": "Tõsiselt? See on tõesti tähtis!"
+          },
+          "userFollowUp": {
+            "good": "Muidugi. Võtame seda samm-sammult.",
+            "neutral": "Ma uurin seda.",
+            "bad": "Olgu…"
+          }
+        },
+        {
+          "customerStatement": "Niisiis, mis tegelikult mu tellimusega juhtus?",
+          "options": {
+            "good": "Vaatan kohe järele. Kas saaksid kinnitada oma tellimuse numbri, et ma kontrolliksin õigeid andmeid?",
+            "neutral": "Ma saan kontrollida. Mis on tellimuse number?",
+            "bad": "Sa saad selle lõpuks kätte. Pead lihtsalt kannatlik olema."
+          },
+          "customerReplies": {
+            "good": "Muidugi. Mu tellimuse number on 38492.",
+            "neutral": "Number on 38492.",
+            "bad": "Sellest ei piisa. Ma pean teadma! Palun kontrolli mu tellimuse numbrit 38492!"
+          },
+          "userFollowUp": {
+            "good": "Aitäh. Kontrollin seda kohe.",
+            "neutral": "Olgu, vaatan selle välja.",
+            "bad": "Hästi… vaatan järele…"
+          }
+        },
+        {
+          "customerStatement": "Kas leidsid mu tellimuse?",
+          "options": {
+            "good": "Jah. Näen, et laost oli viivitus. Kontrollin saatmise värskendust ja hoian sind kursis.",
+            "neutral": "Jah. Näen, et see on viibinud. Vaatan viimast värskendust.",
+            "bad": "Jah, see on viibinud. Pole minu süü."
+          },
+          "customerReplies": {
+            "good": "Olgu… aitäh selgituse eest.",
+            "neutral": "Olgu. Tahan vaid teada, mis toimub.",
+            "bad": "Sa ei võta üldse vastutust? Tore."
+          },
+          "userFollowUp": {
+            "good": "Hoolitsen, et saaksid uusima info.",
+            "neutral": "Vaatan ajakava nüüd.",
+            "bad": "Ohh… vigu juhtub, tead."
+          }
+        },
+        {
+          "customerStatement": "Mis nüüd juhtub?",
+          "options": {
+            "good": "Hoian saadetisel silma peal ja annan sulle teada, niipea kui midagi muutub.",
+            "neutral": "Peame lihtsalt ootama järgmist jälgimisuuendust.",
+            "bad": "See tuleb, kui tuleb. Oleksid pidanud varem tellima, kui ajastus oli oluline."
+          },
+          "customerReplies": {
+            "good": "Aitäh. See aitab.",
+            "neutral": "Olgu… arvan, et midagi muud teha ei ole.",
+            "bad": "Vau… see on väga ebaviisakas! Teie veebileht ütles, et see jõuab kohale 3 tööpäeva jooksul!"
+          },
+          "userFollowUp": {
+            "good": "Hoolitsen, et oleksid kursis.",
+            "neutral": "Annan teada, kui näen midagi uut.",
+            "bad": "Pead kannatlik olema. Midagi muud me teha ei saa."
+          }
+        },
+        {
+          "customerStatement": "Olgu… aitäh abi eest...",
+          "options": {
+            "good": "Enne kui kõne lõpetame, kas on midagi muud, millega täna meie abi sooviksid?",
+            "neutral": "Jah, see on kogu info, mis mul praegu on.",
+            "bad": "Kui see on kõik, lõpetan nüüd kõne."
+          },
+          "customerReplies": {
+            "good": "Ei, see on kõik. Aitäh, et võtsid aega mind aidata!",
+            "neutral": "Olgu… loodan, et see jõuab varsti kohale. Hüvasti.",
+            "bad": "Hästi… vist ongi kõik."
+          },
+          "userFollowUp": {
+            "good": "Mul on hea meel aidata. Aitäh helistamise eest ja head päeva.",
+            "neutral": "Hüvasti.",
+            "bad": "Hüvasti."
+          }
+        }
+      ],
+      "failure": {
+        "title": "Kõne Lõpetatud",
+        "message": "Sinu klient pani toru ära halva teeninduse tõttu.\n\nEt anda klientidele paremat kogemust:\n• Püsi rahulik ja kannatlik\n• Kuula klienti ja tunnusta tema tundeid\n• Vabanda ja võta olukorra eest vastutus\n• Ole selge ja lahendusele orienteeritud\n• Pea oma lubadustest kinni\n• Väldi ootele panemist alati, kui võimalik",
+        "retryButton": "Proovi Uuesti"
+      },
+      "success": {
+        "title": "Hästi Tehtud!",
+        "message": "Õnnitlused, sa käsitlesid seda kõnet hästi!\n\nSa püsid rahulik ja kuulasid aktiivselt. Võtsid olukorra eest vastutuse, vabandades ja pakkudes konkreetset lahendust. See pani kliendi end nähtuna ja kuulduna tundma, mis viis olukorra positiivse lahenduseni.",
+        "continueButton": "Lõpeta Kliendi Kaebuse Kõne"
+      }
+    },
+    "customerRegistry": {
+      "title": "Kaootiline Klientide Register",
+      "instructions": "Sorteeri kliendiandmeid. Lohista iga andmekirje õigesse veergu: Hoia või Kustuta.",
+      "thought1": "Oh ei, meie kliendiandmed!",
+      "thought2": "Noh… kliendiandmete korrastamine on olnud mu ülesannete nimekirjas juba mõnda aega. Parem hakkan tegelema.",
+      "startSortingButton": "Sorteeri Klientide Register",
+      "readGuidelinesButton": "Loe Privaatsusjuhiseid",
+      "startWithoutButton": "Alusta sortimist",
+      "keepColumn": "Hoia",
+      "eraseColumn": "Kustuta",
+      "saveEditsButton": "Salvesta Muudatused",
+      "nextFileButton": "Järgmine Fail",
+      "privacyGuidelines": [
+        {
+          "title": "Mis loetakse isikuandmeteks?",
+          "content": "Igasugune kindla isikuga seotud teave. Näited:\n• Nimi, aadress, telefoninumber, e-posti aadress\n• Isikukood\n• Krediitkaardi info, makseandmed\n• Interneti-protokolli (IP) aadress\n• Märkmed klientide kohta\n\nJa palju muud… Kui see suudab kedagi tuvastada, on see isikuandmed!"
+        },
+        {
+          "title": "Erilised (eriti tundlikud!) andmed",
+          "content": "Käsitse äärmise ettevaatusega:\n• Rass ja etniline päritolu\n• Poliitilised, religioossed ja filosoofilised veendumused\n• Ametiühingusse kuulumine\n• Tervis ja geneetika\n• Biomeetria (näiteks sõrmejäljed või võrkkesta skaneeringud)\n• Seksuaalelu ja seksuaalne orientatsioon"
+        },
+        {
+          "title": "Töötlemine tähendab",
+          "content": "Kõik, mida sa isikuandmetega teed: kogumine, säilitamine, uuendamine, kustutamine, jagamine"
+        },
+        {
+          "title": "Andmetöötluse ellujäämisreeglid (GDPR põhimõtted)",
+          "content": "• Sul on õige põhjus (õiguslik alus)\n• Ole õiglane, mitte kahjustav ega eksitav\n• Räägi inimestele selgelt, mida sa teed\n• Ära kasuta andmeid muudel eesmärkidel uuesti\n• Hoia ainult seda, mida vajad\n• Hoia see täpne ja ajakohane\n• Kustuta see, kui oled valmis\n• Hoia see turvaliselt\n• Suuda tõestada, et järgid neid reegleid"
+        },
+        {
+          "title": "Õiguslik alus – miks meil on lubatud andmeid hoida?",
+          "content": "1. Nõusolek — Klient ütles andmetöötlusele „jah\". Kasutatakse: uudiskirjad, lojaalsusprogrammid, turundus\n2. Leping — Vajame seda lepinguliste kohustuste täitmiseks. Kasutatakse: tellimused, tarned, tagasimaksed\n3. Õiguslik kohustus — Seadus sunnib meid seda hoidma. Kasutatakse: arved, kviitungid, raamatupidamise dokumendid, maksudokumentatsioon\n4. Õigustatud huvi — Vajame seda äri ajamiseks. Tähtis: see ei tohi olla kliendile kahjulik. Kasutatakse: B2B kontaktandmed, faktilised klienditeeninduse märkmed"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Elena Torres",
+          "type": "Veebiklient",
+          "consent": "puudub",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Nimi",
+              "content": "Elena Torres",
+              "action": "keep",
+              "hint": "Kas sa vajad kliendi nime tema tellimuse tuvastamiseks?"
+            },
+            {
+              "type": "E-post",
+              "content": "elena.torres@example.com",
+              "action": "keep",
+              "hint": "Kas vajad e-posti aadressi kinnituste või kviitungite saatmiseks?"
+            },
+            {
+              "type": "Telefoninumber",
+              "content": "+45 28 28 11 11",
+              "action": "keep",
+              "hint": "Kas tugi- või tarneteenused võivad telefoninumbrit vajada?"
+            },
+            {
+              "type": "Tarneaadress",
+              "content": "Vesterbrogade 6790",
+              "action": "keep",
+              "hint": "Kas aadress on vajalik talle toote saatmiseks?"
+            },
+            {
+              "type": "Arveldusaadress",
+              "content": "Sama mis tarne",
+              "action": "keep",
+              "hint": "Kas aadress on vajalik arveldamiseks või maksureeglite jaoks?"
+            },
+            {
+              "type": "Tellimuse number",
+              "content": "#38492",
+              "action": "keep",
+              "hint": "Kas saaksid hallata tagastusi ilma tellimuse numbrita?"
+            },
+            {
+              "type": "Tellimuse detailid",
+              "content": "Sinine Talvejakk, Suurus M",
+              "action": "keep",
+              "hint": "Kas pead teadma, mida ta ostis, klienditoe jaoks?"
+            },
+            {
+              "type": "Maksekviitung",
+              "content": "Mastercard, lõpeb 4410",
+              "action": "keep",
+              "hint": "Kas raamatupidamine vajab maksekviitungit?"
+            },
+            {
+              "type": "Arve",
+              "content": "INV-38492",
+              "action": "keep",
+              "hint": "Kas maksuseadus nõuab arvete säilitamist?"
+            },
+            {
+              "type": "Jälgimisnumber",
+              "content": "POSTDK-9981883",
+              "action": "keep",
+              "hint": "Kas saaksid tema tellimust jälgida ilma jälgimisnumbrita?"
+            },
+            {
+              "type": "Klienditeeninduse märkus",
+              "content": "E-kiri 10/02 viivituse kohta",
+              "action": "keep",
+              "hint": "Kas klienditeeninduse märkus võiks tugi jaoks kasulik olla?"
+            },
+            {
+              "type": "Poliitilised vaated",
+              "content": "Ekraanitõmmis sotsiaalmeediast",
+              "action": "erase",
+              "hint": "Kas tundlik info poliitiliste veendumuste kohta on vajalik tema tellimuse tarnimiseks?"
+            },
+            {
+              "type": "Sotsiaalmeedia foto",
+              "content": "Elena_Social_Media_Profile.jpg",
+              "action": "erase",
+              "hint": "Kas sotsiaalmeedia foto on vajalik tema tellimuse töötlemiseks?"
+            },
+            {
+              "type": "Subjektiivne arvamus",
+              "content": "Tundub torssis",
+              "action": "erase",
+              "hint": "Kas see on faktiline ja kasulik märkus?"
+            },
+            {
+              "type": "Meditsiiniline toimik",
+              "content": "prescription_scan.pdf",
+              "action": "erase",
+              "hint": "Kas tundlik meditsiiniline info on tema ostuga seotud?"
+            }
+          ],
+          "explanation": {
+            "title": "Hästi tehtud! Sorteerisid Elena veebiklienti andmed õigesti.",
+            "keepTitle": "Info, mille otsustasid hoida",
+            "keepContent": "Sa hoidsid info, mida vajasid Elena ostetud toote tarnelepingu täitmiseks:\n• Nimi, e-post ja telefoninumber\n• Tarneaadress\n• Tellimuse number, tellimuse detailid ja jälgimisnumber\n\nSa hoidsid info, mida sul on õiguslik kohustus hoida vastavalt maksu- ja raamatupidamiseeskirjadele:\n• Arveldusaadress\n• Maksekviitung\n• Arve\n\nSa hoidsid infot, mille säilitamiseks sul on õigustatud huvi:\n• Faktilist klienditeeninduse märkust",
+            "eraseTitle": "Info, mille otsustasid kustutada",
+            "eraseContent": "Info, mille kustutasid, oli tundlik, ebaoluline ja kliendilt mitte saadud, mis tähendab, et seda oli GDPR alusel ebaseaduslik või ebakohane säilitada:\n• Ekraanitõmmis tema poliitilistest vaadetest\n• Sotsiaalmeedia foto, mida ta ei andnud\n• Subjektiivne arvamus („Tundub torssis\")\n• Mitteseotud meditsiiniline toimik"
+          }
+        },
+        {
+          "name": "Marco Hansen",
+          "type": "Poeklient",
+          "consent": "lojaalsusprogramm",
+          "consentDetails": "Nõusolek hõlmab:\n• E-posti aadress\n• Lojaalsus-ID\n• Ostueelistused",
+          "data": [
+            {
+              "type": "Kviitung",
+              "content": "RCPT-79211 – 449 DKK",
+              "action": "keep",
+              "hint": "Kas kviitung oleks vajalik raamatupidamisseaduste järgimiseks?"
+            },
+            {
+              "type": "Ostukuupäev",
+              "content": "14/02/2025",
+              "action": "keep",
+              "hint": "Kas ostukuupäev võib olla vajalik garantiinõuete jaoks?"
+            },
+            {
+              "type": "Maksemeetod",
+              "content": "Krediitkaart",
+              "action": "keep",
+              "hint": "Kas maksemeetod on vajalik tagasimaksete või raamatupidamise jaoks?"
+            },
+            {
+              "type": "Garantiitalong",
+              "content": "Kehtib kuni 2027",
+              "action": "keep",
+              "hint": "Kas klient sõltub sinust garantiitalongi hoidmises?"
+            },
+            {
+              "type": "Lojaalsus-ID",
+              "content": "12877219",
+              "action": "keep",
+              "hint": "Kas klient nõustus lojaalsusprogrammiga liituma?"
+            },
+            {
+              "type": "Eelistus",
+              "content": "Eelistab poest järelevõtmist",
+              "action": "keep",
+              "hint": "Kas kliendi eelistus on kogutud nõusolekuga?"
+            },
+            {
+              "type": "Nõusoleku kirje",
+              "content": "Allkirjastatud 14/02/2020",
+              "action": "keep",
+              "hint": "Kas pead tõestama, et klient nõustus?"
+            },
+            {
+              "type": "E-posti aadress",
+              "content": "marco.coolguy@gmail.com",
+              "action": "keep",
+              "hint": "Kas klient andis e-posti vabatahtlikult lojaalsusprogrammiga liitudes?"
+            },
+            {
+              "type": "Telefoninumber",
+              "content": "+45 20 11 88 99",
+              "action": "erase",
+              "hint": "Kas klient nõustus telefoninumbri säilitamisega lojaalsusprogrammiga liitudes?"
+            },
+            {
+              "type": "CCTV kaader",
+              "content": "cctv_14-02-2020.png",
+              "action": "erase",
+              "hint": "Kas tohid CCTV salvestust nii kaua igaks juhuks hoida?"
+            },
+            {
+              "type": "Töötaja märkus",
+              "content": "Räägib liiga palju",
+              "action": "erase",
+              "hint": "Kas töötaja märkus on faktiline või isiklik hinnang?"
+            },
+            {
+              "type": "Pardakaart",
+              "content": "Lennupilet",
+              "action": "erase",
+              "hint": "Kas lennupilet kuulub kliendi toimikusse?"
+            }
+          ],
+          "explanation": {
+            "title": "Tubli! Sorteerisid Marco kliendi toimiku andmed õigesti.",
+            "keepTitle": "Info, mille otsustasid hoida",
+            "keepContent": "Sa hoidsid infot, mida sul on õiguslik kohustus säilitada vastavalt raamatupidamisseadustele:\n• Kviitung, ostukuupäev ja maksemeetod\n\nSa hoidsid infot, mida GDPR juriidiliselt sundib sind säilitama:\n• Nõusoleku kirje\n\nSa hoidsid infot, mida vajad lepingu täitmiseks, mis võimaldab klientidel nõuda parandusi või asendusi:\n• Garantiitalong\n\nKuna kliendi nõusolek oli saadud, oli sul õigus säilitada ka:\n• Lojaalsus-ID\n• Valikulised eelistused\n• E-posti aadress",
+            "eraseTitle": "Info, mille otsustasid kustutada",
+            "eraseContent": "Sa kustutasid õigesti elemendid, mis olid kas valesti kogutud, ebaolulised või ebakohased, sealhulgas:\n• Telefoninumber, mis oli salvestatud nõusolekuta\n• CCTV kaader, mis oli salvestamise õigustamiseks liiga vana\n• Subjektiivne töötaja märkus\n• Valesti paigutatud pardakaart"
+          }
+        },
+        {
+          "name": "Aisha Rahman",
+          "type": "B2B kontakt",
+          "consent": "puudub",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Ettevõte",
+              "content": "NordTek Solutions AS",
+              "action": "keep",
+              "hint": "Kas on kasulik teada ettevõtte nime?"
+            },
+            {
+              "type": "Töö e-post",
+              "content": "aisha.rahman@nordtek.no",
+              "action": "keep",
+              "hint": "Kas töö e-posti aadress on vajalik teenuselepingu täitmiseks?"
+            },
+            {
+              "type": "Töötelefon",
+              "content": "+47 39 39 29 29",
+              "action": "keep",
+              "hint": "Kas töötelefoni number on kasulik ärisuhete säilitamiseks?"
+            },
+            {
+              "type": "Lepingu ID",
+              "content": "CNT-55213",
+              "action": "keep",
+              "hint": "Kas lepingu ID on lepingu jaoks oluline?"
+            },
+            {
+              "type": "Teenusetaseme leping",
+              "content": "Gold Tier Tugi",
+              "action": "keep",
+              "hint": "Kas teenusetaseme leping määrab teenuse osutamise tingimused?"
+            },
+            {
+              "type": "Arve e-post",
+              "content": "accounts@nordtek.no",
+              "action": "keep",
+              "hint": "Kas arve e-posti võib vaja minna arvete saatmiseks?"
+            },
+            {
+              "type": "Koosoleku märkus",
+              "content": "Aruanne 15. märtsiks",
+              "action": "keep",
+              "hint": "Kas koosoleku märkus sisaldab faktilist infot, mida vajatakse äri tegemiseks?"
+            },
+            {
+              "type": "Tugipilet",
+              "content": "Serveri hooldus planeeritud",
+              "action": "keep",
+              "hint": "Kas tugipilet on osa teenuselepingu täitmisest?"
+            },
+            {
+              "type": "Koduaadress",
+              "content": "Kongens gate…",
+              "action": "erase",
+              "hint": "Kas koduaadress on vajalik äriliseks suhtluseks?"
+            },
+            {
+              "type": "Privaattelefon",
+              "content": "+47 50 50 90 90",
+              "action": "erase",
+              "hint": "Kas privaattelefon anti professionaalseks kasutamiseks?"
+            },
+            {
+              "type": "Sotsiaalmeedia ekraanitõmmis",
+              "content": "socialmediaprofile.png",
+              "action": "erase",
+              "hint": "Kas Aisha andis sulle sotsiaalmeedia ekraanitõmmise?"
+            },
+            {
+              "type": "Töötaja märkus",
+              "content": "Ta on nõudlik",
+              "action": "erase",
+              "hint": "Kas töötaja märkus on faktiline või subjektiivne arvamus?"
+            },
+            {
+              "type": "Ettevõte (vale fail)",
+              "content": "Kuulub BioNordic AS-le",
+              "action": "erase",
+              "hint": "Kas info sobib selle kliendiga?"
+            }
+          ],
+          "explanation": {
+            "title": "Suurepärane töö! Hoidsid Aisha toimikus sobiva äriga seotud info.",
+            "keepTitle": "Info, mille otsustasid hoida",
+            "keepContent": "Lepingu (teenusetaseme lepingu) täitmiseks oli sul õigus hoida:\n• Ettevõtte nime\n• Töö e-posti\n• Lepingu ID, SLA ja tugipileti\n\nSa hoidsid infot, mida sul on õiguslik kohustus säilitada vastavalt raamatupidamisseadusele:\n• Arve e-post\n\nSa hoidsid ka infot, mida sul on õigustatud huvi säilitada, tagades professionaalse suhtluse:\n• Töötelefoni number\n• Faktiline koosoleku märkus",
+            "eraseTitle": "Info, mille otsustasid kustutada",
+            "eraseContent": "Sa kustutasid õigesti andmed, mis olid liiga isiklikud, valesti kogutud või ebakorrektsed, sealhulgas:\n• Koduaadress ja privaattelefoni number\n• Sotsiaalmeedia ekraanitõmmis, mida ta ei andnud\n• Subjektiivne töötaja märkus\n• Märkus, mis kuulub teisele ettevõttele"
+          }
+        },
+        {
+          "name": "Jonas Berg",
+          "type": "Uudiskirja tellija",
+          "consent": "uudiskiri",
+          "consentDetails": "Nõusolek hõlmab:\n• E-posti aadress\n• Uudiskirja sagedus ja sisueelistused",
+          "data": [
+            {
+              "type": "E-post",
+              "content": "jonas.berg@mailbox.nu",
+              "action": "keep",
+              "hint": "Kas klient nõustus uudiskirjade saamisega e-posti teel?"
+            },
+            {
+              "type": "Tellimise kuupäev",
+              "content": "21/01/2025",
+              "action": "keep",
+              "hint": "Kas pead dokumenteerima, millal nõusolek anti?"
+            },
+            {
+              "type": "Nõusoleku kirje",
+              "content": "Topelt opt-in",
+              "action": "keep",
+              "hint": "Kas pead dokumenteerima, et nõusolek anti?"
+            },
+            {
+              "type": "Uudiskirja eelistused",
+              "content": "Iganädalased tooteuudised",
+              "action": "keep",
+              "hint": "Kas tohid uudiskirja nõusoleku alusel eelistusi hoida?"
+            },
+            {
+              "type": "Asukoha hinnang",
+              "content": "Aarhus",
+              "action": "erase",
+              "hint": "Kas asukohaandmed andis klient?"
+            },
+            {
+              "type": "Küpsiste jälgija",
+              "content": "browser_activity.json",
+              "action": "erase",
+              "hint": "Kas kasutaja andis küpsiste nõusoleku?"
+            },
+            {
+              "type": "Aadress",
+              "content": "Nordre Fasanvej…",
+              "action": "erase",
+              "hint": "Kas kasutaja andis nõusoleku tema aadressi salvestamiseks?"
+            },
+            {
+              "type": "Profileerimise silt",
+              "content": "Suur kulutaja",
+              "action": "erase",
+              "hint": "Kas kasutaja nõustus profileerimisega?"
+            }
+          ],
+          "explanation": {
+            "title": "Hästi tehtud! Sorteerisid Jonase toimiku andmed õigesti läbi.",
+            "keepTitle": "Info, mille otsustasid hoida",
+            "keepContent": "Kuna Jonas andis selgesõnalise nõusoleku turundusliku uudiskirja saamiseks, oli sul õigus hoida:\n• E-posti aadress\n• Uudiskirja eelistused\n\nKuna sul on õiguslik kohustus (GDPR) dokumenteerida, et uudiskirja nõusolek koguti õigesti, oli sul õigus hoida:\n• Tellimise kuupäev\n• Topelt opt-in nõusoleku kirje",
+            "eraseTitle": "Info, mille otsustasid kustutada",
+            "eraseContent": "Sa eemaldasid õigesti andmed, mis olid arvatud, ebatäpsed või kogutud nõusolekuta, sealhulgas:\n• Asukoha hinnang\n• Küpsiste jälgimise fail ilma küpsiste nõusolekuta\n• Aadress\n• Profileerimise silt („Suur kulutaja\")"
+          }
+        },
+        {
+          "name": "Sofia Lindgren",
+          "type": "Kliendi kaebus",
+          "consent": "puudub",
+          "consentDetails": "",
+          "data": [
+            {
+              "type": "Nimi",
+              "content": "Sofia Lindgren",
+              "action": "keep",
+              "hint": "Kas vajad kliendi nime, et tuvastada, kes kaebuse esitas?"
+            },
+            {
+              "type": "E-post",
+              "content": "sofia.l@mailservice.dk",
+              "action": "keep",
+              "hint": "Kas e-post on kasulik kliendiga ühenduse võtmiseks?"
+            },
+            {
+              "type": "Telefon",
+              "content": "+45 22 44 44 22",
+              "action": "keep",
+              "hint": "Kas peaksid kliendile tema kaebuse asjus helistama?"
+            },
+            {
+              "type": "Tellimuse info",
+              "content": "Tellimus #55201",
+              "action": "keep",
+              "hint": "Kas pead teadma, millise tellimuse kohta ta kaebab?"
+            },
+            {
+              "type": "Kaebuse vorm",
+              "content": "Toode saabus pragunenuna",
+              "action": "keep",
+              "hint": "Kas kaebuse vorm on kaebusega otseselt seotud?"
+            },
+            {
+              "type": "Fotod",
+              "content": "cracked_screen1.jpg",
+              "action": "keep",
+              "hint": "Kas fotograafilised tõendid on kaebuse jaoks olulised?"
+            },
+            {
+              "type": "Lahenduse märkus",
+              "content": "Asendamine kinnitatud",
+              "action": "keep",
+              "hint": "Kas lahenduse märkus aitab dokumenteerida, kuidas sa probleemi lahendasid?"
+            },
+            {
+              "type": "Järelvalve märkus",
+              "content": "Säilita pakend",
+              "action": "keep",
+              "hint": "Kas järelvalve märkus on osa tagastuse korralikust käsitlemisest?"
+            },
+            {
+              "type": "Töötaja märkus",
+              "content": "Tundus hormonaalne",
+              "action": "erase",
+              "hint": "Kas töötaja märkus on faktiline või sobimatu arvamus?"
+            },
+            {
+              "type": "Kliendi arvustus",
+              "content": "3 tärni – 12.03.2019",
+              "action": "erase",
+              "hint": "Kas arvustus puudutab kahjustatud toote nõuet?"
+            },
+            {
+              "type": "Sotsiaalmeedia ekraanitõmmis",
+              "content": "profile.png",
+              "action": "erase",
+              "hint": "Kas klient andis sotsiaalmeedia ekraanitõmmise?"
+            },
+            {
+              "type": "Nimi (vale fail)",
+              "content": "Emma Larsen",
+              "action": "erase",
+              "hint": "Kas nimi kuulub samale kliendile?"
+            },
+            {
+              "type": "Kaebuse vorm (duplikaat)",
+              "content": "Toode saabus pragunenuna",
+              "action": "erase",
+              "hint": "Kas vajad sama kaebuse kahte koopiat?"
+            }
+          ],
+          "explanation": {
+            "title": "Suurepärane töö! Hoidsid Sofia toimikus ainult faktilised ja vajalikud andmed.",
+            "keepTitle": "Info, mille otsustasid hoida",
+            "keepContent": "Sa otsustasid õigesti hoida kogu info, mida on vaja lepingu täitmiseks; tema kaebuse käsitlemiseks ja lahendamiseks:\n• Nimi, e-post, telefoninumber\n• Tellimuse info\n• Kaebuse vorm\n• Foto, mille ta esitas\n• Tagastusprotsessiga seotud järelvalve märkus\n\nSa hoidsid ka infot, mida sul on õigustatud huvi hoida sisemise dokumenteerimise eesmärgil:\n• Lahenduse märkus („Asendamine kinnitatud\")",
+            "eraseTitle": "Info, mille otsustasid kustutada",
+            "eraseContent": "Sa eemaldasid õigesti andmed, mis olid ebaolulised, tundlikud või ebakohased, sealhulgas:\n• Subjektiivne ja diskrimineeriv töötaja märkus („Tundus hormonaalne\")\n• Vana arvustus, mis polnud kaebusega seotud\n• Sotsiaalmeedia ekraanitõmmis, mida ta ei andnud\n• Valesti paigutatud märkus teiselt kliendilt\n• Kaebuse faili duplikaat"
+          }
+        }
+      ],
+      "completion": {
+        "title": "Klientide Register Sorteeritud!",
+        "message": "Õnnitlused! Sorteerisid edukalt klientide registri.\n\nKogu info, mida hoidsid, oli kaetud õigusliku alusega:\n• Leping: info, mida on vaja kliendi taotluste täitmiseks, toodete tarnimiseks, kaebuste lahendamiseks, garantiide haldamiseks ja ärilepingute säilitamiseks.\n• Õiguslik kohustus: arved, kviitungid ja nõusoleku kirjed, mida seadus nõuab säilitada\n• Õigustatud huvi: faktiline ja kasulik info äri ajamiseks\n• Nõusolek: lisaandmed, mis on saadud selge ja kirjaliku nõusolekuga\n\nGDPR-i ja privaatsusseaduste rikkumine võib olla ärile kahjulik. Õnneks kustutasid kõik ebatäpsed, valesti paigutatud, subjektiivsed, diskrimineerivad, dubleerivad ja ebaolulised andmed.\n\nAjakohane klientide register aitab kaitsta meie kliendi privaatsust ja luua usaldust. Hästi tehtud!"
+      }
+    },
+    "feedbackSurvey": {
+      "title": "Klientide Tagasiside Küsitlus",
+      "instructions": "Aita Simonel ehitada hea tagasiside küsitlus. Iga paari kohta vali parem küsimus, mille lisada.",
+      "questions": [
+        {
+          "correct": "Kui lihtne oli leida vajalikku infot meie veebilehelt?",
+          "wrong": "Mis on sinu lemmik puhkusesihtkoht?",
+          "explanation": "Esita asjakohaseid küsimusi.\nKüsimus puhkusesihtkohtade kohta on ebaoluline ega anna kasulikku tagasisidet. See võib olla ka segadusttekitav ja vastajat segav."
+        },
+        {
+          "correct": "Kui rahul olid ostetud tootega?",
+          "wrong": "Kui rahul olid ostetud fantastilise tootega?",
+          "explanation": "Esita neutraalseid küsimusi.\nToote nimetamine „fantastiliseks\" muudab küsimuse suunavaks. See võib mõjutada kliendi vastust."
+        },
+        {
+          "correct": "Kui rahul olid meie klienditoeteenustega?",
+          "wrong": "Kui sa oleksid meie klienditoe meeskonnaga ühendust võtnud, ja nad oleksid olnud sinu taotlustele äärmiselt vastutulelikud, kas sa soovitaksid meie ettevõtet oma sõpradele ja perele?",
+          "explanation": "Küsi tegelike kogemuste kohta.\nÜldjuhul annavad hüpoteetilised küsimused tagasiside, mis on ebakindel ja millele on raske reageerida."
+        },
+        {
+          "correct": "Kuidas hindaksid oma üldist tänast kogemust?",
+          "wrong": "Arvestades meie veebilehe, vestluse, telefoni ja e-posti tugiteenuste vahelist koosmõju… kuidas hindaksid meie sooritust?",
+          "explanation": "Esita selgeid ja arusaadavaid küsimusi.\nPikad ja keerulised küsimused võivad vastaja üle koormata."
+        },
+        {
+          "correct": "Kui abivalmis olid meie töötajad? (1–5)",
+          "wrong": "Kas meie töötajad olid abivalmid? Jah/Ei",
+          "explanation": "Kasuta hindamisskaalasid, et saada üksikasjalikumaid andmeid.\nKogemused ja arvamused on sageli positiivse ja negatiivse spektril. Jah/ei küsimused võivad liigselt lihtsustada ja varjata nüansse."
+        },
+        {
+          "correct": "Kuidas sa esimesena meist kuulsid? Otsingumootorid / Sotsiaalmeedia / Soovitus / Kliendiarvustuste leht / Internetireklaam / Ajalehereklaam / Muu",
+          "wrong": "Kuidas sa esimesena meist kuulsid? Otsingumootorid / Sotsiaalmeedia",
+          "explanation": "Lisa kõik asjakohased vastusevõimalused. Lisa „muu\" või „ma ei tea\" valikud.\nVastasel juhul võib vastajaid sundida valima ebatäpse valiku, küsimuse vahele jätma või küsitlusest loobuma."
+        },
+        {
+          "correct": "Kui rahul olid ostetud tootega?",
+          "wrong": "Kui rahul olid toote ja klienditeenindusega?",
+          "explanation": "Keskendu ühele teemale küsimuse kohta.\nKahe erineva asja küsimine ühes küsimuses võib viia ebatäpse ja ebaselge tagasisideni."
+        },
+        {
+          "correct": "Mida saaksime parandada oma tarneteenustes?",
+          "wrong": "Kas sulle meeldivad meie kaubamärgi värvid?",
+          "explanation": "Pea küsitluse eesmärki meeles (kliendikogemused).\nEsita küsimusi, mis annavad konkreetset tagasisidet käesolevas asjas."
+        },
+        {
+          "correct": "Kui lihtne oli ostuprotsess?",
+          "wrong": "Miks olid ostuprotsessi ajal nii segaduses?",
+          "explanation": "Kasuta lugupidavat keelt.\nVäldi süüdistavaid küsimusi, mis võivad panna vastajad end ebamugavalt tundma."
+        }
+      ],
+      "resultTitle": "Sinu Klientide Tagasiside Küsitlus",
+      "allCorrectMessage": "Suurepärane! Kõik su küsitluse küsimused on hästi koostatud.",
+      "someWrongMessage": "Mõnda küsimust saaks parandada. Klõpsa punastel küsimustel selgituste saamiseks."
+    },
+    "answerOverlayTitle": "Vastus Avalikustatud",
+    "answerOverlayContinue": "Jätka",
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
+    "betterQuestion": "Parem küsimus:"
+  },
+  "hints": {
+    "default": "Vaata Klienditeeninduse osakonnas vihjeid.",
+    "talkToPeter": "Klõpsa Peteril — ta tundub, et vajab abi.",
+    "talkToSimone": "Klõpsa Simonel valgetahvli juures.",
+    "findCabinet": "Kontrolli ülevoolavat kartoteegikappi.",
+    "puzzleInProgress": "Keskendu praegusele ülesandele.",
+    "completion": "Koolitus on lõpetatud!"
+  },
+  "systemDialogues": {
+    "selfTalk": "Astud Klienditeeninduse osakonda. Tuba kihab tegevusest. Näed Peterit oma laua kohale kõverduvana, kes tundub murelikuna. Seal on ka ülevoolav kartoteegikapp, mis näeb välja, et võib iga hetk lõhkeda. Simone seisab valgetahvli kõrval, marker käes.",
+    "cabinetBurst": "Oh ei, meie kliendiandmed!",
+    "cabinetSort": "Noh… kliendiandmete korrastamine on olnud mu ülesannete nimekirjas juba mõnda aega. Parem hakkan tegelema.",
+    "guidelinesPrompt": "Kas soovid enne klientide registri sorteerimist ettevõtte privaatsusjuhiseid läbi vaadata?"
+  },
+  "interactiveObjects": {
+    "rubberDuck": {
+      "title": "Kummipart",
+      "text": "Oled kinni? Probleemi valjusti seletamine võib aidata seda lahendada. Part on siin, et kuulata!"
+    },
+    "coffeeMachine": {
+      "title": "Kohvimasin",
+      "text": "Viga 404: Kohvi ei leitud"
+    },
+    "notebook": {
+      "title": "Märkmik",
+      "text": "Märkmik klientide jälgimiseks? See võib olla hea algus, kui juhid väikest ettevõtet.\n\nTähtsa info üleskirjutamine teeb lubaduste ja kaebuste järelkontrolli, eelistuste meelespidamise ja personaalsemate kogemuste pakkumise lihtsamaks.\n\nVõid edasi liikuda arvutustabelitele või digitaalsele Kliendisuhete Juhtimise (CRM) süsteemile, kui tunned end mugavamalt."
+    },
+    "deerPoster": {
+      "title": "Motiveeriv Plakat",
+      "text": "Plakat hirvega metsas. Pealkirjas on kirjas: „Kannatlikkus — Suured asjad võtavad aega\"."
+    },
+    "naturePoster": {
+      "title": "Motiveeriv Plakat",
+      "text": "Plakat mäemaastikuga. Pealkirjas on kirjas: „Perspektiiv — Vaata suuremat pilti\"."
+    },
+    "bearPoster": {
+      "title": "Motiveeriv Plakat",
+      "text": "Plakat karuga jõe ääres. Pealkirjas on kirjas: „Visadus — Mine edasi\"."
+    }
+  },
+  "completion": {
+    "title": "Vahetus Lõpetatud!",
+    "message": "Oled lõpetanud oma vahetuse Klienditeeninduse osakonnas.\n\nKäsitlesid kliendi kaebuse kõnet, uuendasid klientide registrit ja lõid kasuliku klientide tagasiside küsitluse. Hästi tehtud!",
+    "buttonText": "Välju Klienditeeninduse osakonnast"
+  },
+  "ui": {
+    "fullscreenToggle": "Lülita täisekraan",
+    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "continueButton": "Jätka",
+    "startButton": "Alusta",
+    "trueButton": "Õige",
+    "falseButton": "Vale",
+    "closeButton": "Sulge",
+    "gapPlaceholder": "___",
+    "skipButton": "Jäta vahele",
+    "startQuizButton": "Alusta viktoriini",
+    "answerButton": "Vastus"
+  },
+  "learning": {
+    "modeLabel": "Õppimisrežiim",
+    "puzzlesWord": "ülesanded",
+    "scoreLabel": "Sinu tulemus:",
+    "continueLearning": "Jätka õppimist"
+  },
+  "skipConfirm": {
+    "title": "Jätta ülesanne vahele?",
+    "question": "Kas oled kindel, et soovid selle ülesande vahele jätta?",
+    "warning": "Selle ülesande eest saad 0 punkti.",
+    "cancel": "Tühista",
+    "confirm": "Jäta ülesanne vahele"
+  },
+  "speakers": {
+    "customer": "Klient:",
+    "you": "Sina:"
+  }
+}

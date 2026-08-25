@@ -1,0 +1,362 @@
+/* Modules Library — POMEIL editorial language
+   Reads as the table-of-contents page of a learning publication. */
+
+.modules-library-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+
+  > h1 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.75rem) !important;
+    color: var(--pomeil-teal-deep);
+    letter-spacing: -0.018em;
+    font-variation-settings: "opsz" 96, "SOFT" 40;
+    margin: 0 0 0.4rem !important;
+  }
+
+  > h1::before {
+    content: "Library";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm);
+    margin-bottom: 8px;
+  }
+
+  > .subtitle {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.55;
+    color: var(--pomeil-ink-muted);
+    margin: 0 0 2rem;
+    max-width: 660px;
+    font-variation-settings: "opsz" 80, "SOFT" 80;
+  }
+}
+
+/* ----- Full curriculum hero card: bold editorial banner ----- */
+.full-curriculum-card {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 2rem 2rem !important;
+  background: linear-gradient(135deg, var(--pomeil-teal-deep) 0%, var(--pomeil-teal) 60%, #003F47 100%) !important;
+  border: none !important;
+  border-radius: var(--md-shape-xl) !important;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--pomeil-cream);
+  box-shadow:
+    0 12px 32px -12px rgba(0, 63, 71, 0.45),
+    0 1px 3px rgba(0, 63, 71, 0.30) !important;
+
+  /* Layered atmospheric overlays */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 0% 0%, rgba(255, 255, 255, 0.10), transparent 55%),
+      radial-gradient(ellipse 90% 80% at 100% 100%, rgba(179, 89, 58, 0.30), transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  /* NOTE: Material's .mat-mdc-card::after sets top:0; left:0; width/height:100%
+     plus a 1px transparent border. We explicitly reset and re-anchor. */
+  &::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: -100px;
+    bottom: -100px;
+    width: 380px;
+    height: 380px;
+    border: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%23faf6ee' stroke-opacity='0.14' stroke-width='0.6'><circle cx='100' cy='100' r='86'/><circle cx='100' cy='100' r='66'/><circle cx='100' cy='100' r='44'/><circle cx='100' cy='100' r='22'/><path d='M100 14 L100 186 M14 100 L186 100' stroke-opacity='0.10'/><path d='M100 14 L106 100 L100 28 L94 100 Z' fill='%23faecd9' fill-opacity='0.30' stroke='none'/></g></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 0;
+    animation: compass-rotate 60s linear infinite;
+  }
+
+  &:hover { transform: none !important; box-shadow:
+      0 18px 42px -16px rgba(0, 63, 71, 0.55),
+      0 2px 4px rgba(0, 63, 71, 0.30) !important;
+  }
+
+  &:hover::before { background:
+      radial-gradient(ellipse 80% 60% at 0% 0%, rgba(255, 255, 255, 0.10), transparent 55%),
+      radial-gradient(ellipse 90% 80% at 100% 100%, rgba(179, 89, 58, 0.30), transparent 55%);
+  }
+}
+
+.full-curriculum-content {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.full-curriculum-icon {
+  flex-shrink: 0;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.05));
+  border: 1.5px solid rgba(250, 246, 238, 0.40);
+  color: var(--pomeil-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 0 0 4px rgba(250, 246, 238, 0.10),
+    0 0 0 8px rgba(250, 246, 238, 0.04);
+
+  mat-icon {
+    font-size: 38px;
+    width: 38px;
+    height: 38px;
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 40;
+  }
+}
+
+.full-curriculum-text {
+  flex: 1 1 320px;
+
+  h2 {
+    font-family: var(--font-display) !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 3vw, 2rem) !important;
+    color: var(--pomeil-cream) !important;
+    margin: 0 0 0.5rem !important;
+    font-variation-settings: "opsz" 96, "SOFT" 40;
+    letter-spacing: -0.01em;
+  }
+  h2::before {
+    content: "Whole Curriculum";
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pomeil-warm-tint);
+    margin-bottom: 4px;
+    opacity: 0.9;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.55;
+    font-size: 1rem;
+    color: var(--pomeil-cream);
+    opacity: 0.88;
+    max-width: 560px;
+  }
+}
+
+.full-curriculum-actions {
+  flex-shrink: 0;
+
+  /* Override the global teal-fill primary-button rules — on the dark
+     teal hero, the button needs to flip to a cream pill with dark-teal
+     ink to read at all. The deep selectors target the MDC label / icon
+     because the global rule sets those to white via !important. */
+  a.mat-mdc-raised-button,
+  a.mat-mdc-raised-button[color="primary"] {
+    background-color: var(--pomeil-cream) !important;
+    color: var(--pomeil-teal-deep) !important;
+    border: 1px solid rgba(250, 246, 238, 0.40) !important;
+    font-weight: 600 !important;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.30) !important;
+
+    .mdc-button__label,
+    .mat-icon {
+      color: var(--pomeil-teal-deep) !important;
+    }
+
+    &:hover {
+      background-color: #fff !important;
+      transform: translateY(-2px);
+      box-shadow:
+        0 0 0 1px rgba(250, 246, 238, 0.50),
+        0 16px 36px -10px rgba(0, 0, 0, 0.40) !important;
+    }
+  }
+
+  mat-icon { margin-right: 6px; }
+}
+
+/* ----- Section heading: per-skill modules ----- */
+.section-heading {
+  font-family: var(--font-display) !important;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6rem !important;
+  color: var(--pomeil-teal-deep) !important;
+  margin: 2.5rem 0 1.25rem 0 !important;
+  font-variation-settings: "opsz" 80, "SOFT" 40;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 63, 71, 0.18), transparent);
+    margin-bottom: 6px;
+  }
+}
+
+/* ----- Module cards grid ----- */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.module-card {
+  display: flex !important;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  /* Module index plate — top-left corner.
+     NOTE: Material's .mat-mdc-card::after sets width/height: 100%; we
+     must explicitly reset them so our pill sizes to its content. */
+  &::after {
+    counter-increment: module-num;
+    content: counter(module-num, decimal-leading-zero);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: auto;
+    height: auto;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--pomeil-cream);
+    background: rgba(0, 63, 71, 0.85);
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: none;
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.30);
+    font-variation-settings: "opsz" 48, "SOFT" 30;
+    pointer-events: auto;
+  }
+
+  img[mat-card-image] {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 700ms var(--md-easing-emphasized-decelerate);
+  }
+  &:hover img[mat-card-image] { transform: scale(1.06); }
+
+  mat-card-header { padding: 1.1rem 1.25rem 0 !important; }
+
+  .mat-mdc-card-title {
+    font-family: var(--font-display) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: 1.3rem !important;
+    color: var(--pomeil-teal-deep) !important;
+    line-height: 1.25 !important;
+    font-variation-settings: "opsz" 60, "SOFT" 40;
+  }
+
+  mat-card-content {
+    flex: 1;
+    padding: 0.6rem 1.25rem 1rem !important;
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--pomeil-ink-muted);
+      margin: 0;
+    }
+  }
+}
+
+/* Reset numbering on the grid */
+.modules-grid { counter-reset: module-num; }
+
+.module-actions {
+  padding: 0.5rem 1.25rem 1.25rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  mat-icon { margin-right: 6px; }
+
+  a.mat-mdc-outlined-button[routerLink^="/flipbook"] {
+    color: var(--pomeil-warm) !important;
+    border-color: rgba(179, 89, 58, 0.30) !important;
+
+    &:hover {
+      background: var(--state-attention-tint) !important;
+      border-color: var(--pomeil-warm) !important;
+    }
+  }
+}
+
+/* ----- Back link ----- */
+.back-link {
+  margin-top: 2rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--pomeil-ink-muted) !important;
+
+    &:hover { color: var(--pomeil-warm) !important; }
+
+    mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+    }
+  }
+}
+
+@keyframes compass-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .full-curriculum-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+}

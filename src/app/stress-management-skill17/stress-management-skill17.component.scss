@@ -1,0 +1,150 @@
+@import '../shared/escape-room/escape-room-base.component';
+
+/* Room-specific styles for Stress Management */
+
+.item-popup-base.document-style {
+  background: #fefef6;
+  border: 3px solid #8b7355;
+}
+
+.green-title {
+  color: #2e7d32 !important;
+}
+
+.big-title {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+
+  .doc-btn {
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+    white-space: normal;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: #666;
+    }
+
+    .doc-title {
+      font-size: 1rem;
+      display: block;
+    }
+
+    &.correct-doc {
+      .doc-title {
+        color: #2e7d32;
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Override wide-card max-width for this room's larger content */
+.wide-card {
+  max-width: 900px !important;
+}
+
+/* Override quiz-card sizing for this room */
+.quiz-card {
+  max-width: 600px;
+
+  .answer-text {
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .pc-screen-text {
+    text-align: left;
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+/* Override matching layout button font-size for 6-pair matching */
+.matching-layout .col button {
+  font-size: 1rem;
+}
+
+/* Override dialogue-panel bottom position to accommodate inventory bar */
+.dialogue-panel {
+  bottom: 80px;
+
+  .dialogue-text { min-height: 3em; }
+}
+
+/* Options button styling for single choice puzzle */
+.options-vertical button {
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Puzzle 3 hacking countdown timer (matches Ahmed's "…and A TIMER!" line) */
+.hack-timer {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(20, 20, 30, 0.85);
+  color: #6cffb3;
+  border: 1px solid rgba(108, 255, 179, 0.5);
+  border-radius: 999px;
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  z-index: 2;
+  text-shadow: 0 0 6px rgba(108, 255, 179, 0.55);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+
+  .timer-value { min-width: 3.4em; text-align: right; }
+
+  &.timer-urgent {
+    color: #ff6f6f;
+    border-color: rgba(255, 111, 111, 0.6);
+    text-shadow: 0 0 6px rgba(255, 111, 111, 0.7);
+    animation: hack-timer-blink 1s steps(2) infinite;
+  }
+
+  &.timer-expired {
+    color: #ff3a3a;
+    border-color: rgba(255, 58, 58, 0.7);
+    animation: none;
+    opacity: 0.85;
+  }
+}
+
+@keyframes hack-timer-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.6; }
+}

@@ -1,0 +1,222 @@
+{
+  "loading": "Ładowanie modułu Przywództwo...",
+  "intro": {
+    "title": "Przywództwo",
+    "paragraphs": [
+      "Twoim marzeniem jest zostać odnoszącym sukcesy przedsiębiorcą i stworzyć firmę, która łączy ludzi.",
+      "Właśnie zostałeś/aś zatrudniony/a w dużej międzynarodowej firmie, gdzie pracują razem osoby z różnych kultur, środowisk i zawodów.",
+      "Dziś wchodzisz do poczekalni przed biurem HR. Manager HR za chwilę sprawdzi twoje rozumienie tego, czym naprawdę jest przywództwo."
+    ],
+    "buttonText": "Wejdź do poczekalni"
+  },
+  "characters": {
+    "hrManager": {
+      "name": "Manager HR",
+      "dialogues": {
+        "greet": "Przywództwo nie polega na władzy.\nChodzi o odpowiedzialność, podejmowanie decyzji i to, jak traktujesz innych.",
+        "enterOffice": "Zanim ruszysz dalej w swojej podróży, musisz udowodnić, że rozumiesz, czym naprawdę jest przywództwo.",
+        "enterOffice2": "Wejdź do biura HR. Twoje wyzwanie przywódcze zaczyna się teraz.",
+        "whiteboardFound": "Przywództwo zaczyna się od zrozumienia podstawowych wartości.",
+        "puzzle1Intro": "Dopasuj działanie przywódcze do właściwej wartości.",
+        "puzzle1Done": "Dobrzy liderzy nie unikają odpowiedzialności.\nWyciągają rękę, gdy sytuacja jest trudna.",
+        "puzzle1Done2": "Teraz zobaczmy, jak działasz w prawdziwych sytuacjach.",
+        "puzzle2Intro": "Przeczytaj uważnie scenariusz i wybierz najlepszą reakcję.",
+        "puzzle2Done": "Zgadza się. Prawdziwy lider komunikuje się, wspiera i dostosowuje. Teraz znajdź Kartę refleksji przywódczej ukrytą w tym biurze.",
+        "findCard": "Wskazówki: sprawdź biurko, szufladę i ramę na ścianie. Karta jest gdzieś ukryta w biurze.",
+        "cardFound": "Świetnie. Ta karta uchwyca esencję przywództwa. Teraz udowodnij, że potrafisz dokończyć zasadę przywództwa.",
+        "puzzle3Intro": "Wypełnij luki, aby ukończyć zasadę przywództwa.",
+        "puzzle3Done": "Brawo. Zobaczmy, czy potrafisz odróżnić fakty o przywództwie od mitów.",
+        "puzzle4Intro": "Odpowiedz na te pytania prawda/fałsz dotyczące przywództwa.",
+        "finalWords1": "Świetna robota.",
+        "finalWords2": "Pokazałeś/aś świadomość, odpowiedzialność i etyczne przywództwo.",
+        "finalWords3": "Pamiętaj: przywództwo widać w działaniach, nie w tytułach.",
+        "finalWords4": "Pomyślnie ukończyłeś/aś umiejętność Przywództwo.",
+        "completion": "Szkolenie zakończone!",
+        "default": "Rozejrzyj się dalej po biurze w poszukiwaniu wskazówek."
+      }
+    },
+    "candidate": {
+      "name": "Czekający kandydat",
+      "dialogues": {
+        "busy": "Czekam tylko na swoją kolej. Powodzenia tam w środku!",
+        "default": "Powodzenia!"
+      }
+    }
+  },
+  "puzzles": {
+    "matching": {
+      "title": "Dopasuj działanie przywódcze do właściwej wartości",
+      "columnA": {
+        "heading": "Działania",
+        "items": {
+          "1": "Wysłuchanie obaw zespołu",
+          "2": "Podjęcie trudnej decyzji pod presją",
+          "3": "Wzięcie odpowiedzialności za błąd zespołu",
+          "4": "Jasne wyjaśnienie celów i oczekiwań"
+        }
+      },
+      "columnB": {
+        "heading": "Wartości",
+        "items": {
+          "a": "Odpowiedzialność",
+          "b": "Komunikacja",
+          "c": "Empatia",
+          "d": "Podejmowanie decyzji"
+        }
+      },
+      "feedback": {
+        "wrong": "Działania lidera zawsze odzwierciedlają jego wartości.",
+        "allCorrect": "Brawo! Dopasowałeś/aś wszystkie działania przywódcze do właściwych wartości."
+      },
+      "answerOverlay": "Poprawne dopasowania:\n1. Wysłuchanie obaw zespołu → Empatia\n2. Podjęcie trudnej decyzji pod presją → Podejmowanie decyzji\n3. Wzięcie odpowiedzialności za błąd zespołu → Odpowiedzialność\n4. Jasne wyjaśnienie celów i oczekiwań → Komunikacja"
+    },
+    "singleChoice": {
+      "title": "Przywództwo w praktyce",
+      "instructions": "Wybierz najlepszą reakcję na ten scenariusz.",
+      "question": "Twój zespół jest opóźniony. Jeden członek ma trudności, a termin się zbliża.",
+      "options": {
+        "a": "Zignoruj sprawę i czekaj na rezultaty",
+        "b": "Obwiń członka zespołu przy innych",
+        "c": "Porozmawiaj prywatnie z członkiem zespołu i dostosuj plan",
+        "d": "Anuluj projekt bez wyjaśnienia"
+      },
+      "hint": "Przywództwo wymaga sprawiedliwości, komunikacji i wsparcia.",
+      "feedback": {
+        "wrong": "Przywództwo wymaga sprawiedliwości, komunikacji i wsparcia.",
+        "correct": "Poprawnie! Porozmawiaj prywatnie z członkiem zespołu i dostosuj plan."
+      },
+      "answerOverlay": "Poprawna odpowiedź: Porozmawiaj prywatnie z członkiem zespołu i dostosuj plan."
+    },
+    "fillGap": {
+      "title": "Uzupełnij zasadę przywództwa",
+      "instructions": "Wpisz luki właściwymi słowami.",
+      "sentenceParts": [
+        "Prawdziwy lider bierze ",
+        ", komunikuje się z ",
+        " i prowadzi zespół z ",
+        "."
+      ],
+      "options": [
+        "odpowiedzialność",
+        "szacunkiem",
+        "władzą",
+        "jasnością",
+        "strachem",
+        "wizją"
+      ],
+      "correctAnswers": [
+        "odpowiedzialność",
+        "szacunkiem",
+        "jasnością"
+      ],
+      "resetButton": "Zresetuj",
+      "checkButton": "Sprawdź odpowiedź",
+      "feedback": {
+        "wrong": "Przywództwo nie polega na strachu ani władzy.",
+        "correct": "Brawo! Poprawnie ukończyłeś/aś zasadę przywództwa."
+      },
+      "answerOverlay": "Poprawne odpowiedzi:\nPrawdziwy lider bierze odpowiedzialność, komunikuje się z szacunkiem i prowadzi zespół z jasnością."
+    },
+    "trueFalse": {
+      "title": "Mity o przywództwie",
+      "instructions": "Określ, czy każde stwierdzenie jest prawdziwe czy fałszywe.",
+      "questions": [
+        {
+          "text": "Liderzy zawsze muszą mieć wszystkie odpowiedzi.",
+          "correct": false,
+          "hint": "Skuteczni liderzy wiedzą, kiedy zasięgać opinii innych."
+        },
+        {
+          "text": "Przywództwo obejmuje słuchanie i uczenie się od innych.",
+          "correct": true,
+          "hint": "Słuchanie i uczenie się to kluczowe cechy przywódcze."
+        },
+        {
+          "text": "Dobre przywództwo buduje zaufanie w zespole.",
+          "correct": true,
+          "hint": "Zaufanie to fundamentalny rezultat dobrego przywództwa."
+        }
+      ],
+      "feedback": {
+        "wrong": "To nie do końca tak. Pomyśl jeszcze raz.",
+        "correct": "Świetnie! Potrafisz oddzielić fakty o przywództwie od mitów."
+      },
+      "answerOverlay": "Poprawne odpowiedzi:\n1. FAŁSZ – Liderzy nie muszą mieć wszystkich odpowiedzi; słuchają i uczą się.\n2. PRAWDA – Słuchanie i uczenie się od innych jest kluczowe.\n3. PRAWDA – Dobre przywództwo buduje zaufanie w zespole."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Kliknij Managera HR, aby zacząć.",
+    "talkToHRManager": "Kliknij Managera HR, aby zacząć.",
+    "findWhiteboard": "Spójrz na tablicę wewnątrz biura HR.",
+    "talkToHRManager2": "Wróć do Managera HR.",
+    "puzzle1Matching": "Dopasuj każde działanie przywódcze do wartości, którą najlepiej reprezentuje.",
+    "findCard": "Sprawdź biurko, szufladę i ramę na ścianie.",
+    "talkToHRManager3": "Wróć do Managera HR z tym, co znalazłeś/aś.",
+    "puzzle3FillGap": "Pomyśl o odpowiedzialności, szacunku i jasności.",
+    "puzzle4TrueFalse": "Pomyśl, co robią prawdziwi liderzy — słuchają, uczą się i budują zaufanie.",
+    "completion": "Szkolenie zakończone!",
+    "default": "Rozejrzyj się po biurze HR w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Gracz wchodzi do poczekalni przed biurem HR.\nKrótka pauza.\nDrzwi HR otwierają się.",
+    "clickDesk": "Tylko dokumenty.",
+    "clickDrawer": "Materiały biurowe… nic użytecznego.",
+    "clickWallFrame": "Coś się luźno trzyma…",
+    "foundCard": "Znalazłeś/aś Kartę refleksji przywódczej.",
+    "cardRead": "Brawo! Wróć do Managera HR.",
+    "whiteboardFound": "Przywództwo zaczyna się od zrozumienia podstawowych wartości."
+  },
+  "items": {
+    "whiteboard": {
+      "popupTitle": "Kluczowe wartości przywództwa",
+      "popupContent": [
+        "Wizja",
+        "Komunikacja",
+        "Odpowiedzialność",
+        "Empatia",
+        "Podejmowanie decyzji"
+      ],
+      "inventoryTitle": "Notatki z tablicy"
+    },
+    "reflectionCard": {
+      "popupTitle": "Refleksja przywódcza",
+      "popupContent": [
+        "Przywództwo to wpływ, nie kontrola.",
+        "Silni liderzy słuchają więcej, niż mówią.",
+        "Zaufanie buduje się przez konsekwencję i szacunek."
+      ],
+      "inventoryTitle": "Karta refleksji"
+    }
+  },
+  "completion": {
+    "title": "Umiejętność ukończona: Przywództwo",
+    "message": "Wartości zrozumiane. Decyzje ocenione. Etyczne zachowanie zademonstrowane.\nJesteś gotowy/a, aby przejść do następnej umiejętności.",
+    "buttonText": "Wyjdź z biura HR"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "trueButton": "Prawda",
+    "falseButton": "Fałsz",
+    "gapPlaceholder": "____",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}

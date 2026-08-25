@@ -1,0 +1,213 @@
+{
+  "loading": "Loading Adaptability...",
+  "intro": {
+    "title": "Adaptability",
+    "paragraphs": [
+      "You are a new employee of a quickly growing and expanding start-up company. On your first day you're asked to start from the onboarding process.",
+      "Curiously, you're told to go to the staircase, as this is where your meeting is supposed to take place. A little thrown off, you are starting to move towards the staircase doors, not sure what to expect there…",
+      "To unlock the skill of adaptability you need to successfully accomplish the unusual onboarding prepared for you by the company."
+    ],
+    "buttonText": "Enter the Staircase"
+  },
+  "characters": {
+    "anastasia": {
+      "name": "Anastasia",
+      "dialogues": {
+        "greet": "Hello there. We've been waiting for you. We are happy that you have joined our team – and we promise you that this environment will never make you bored or looking for new challenges, as they will appear daily anyway.\n\nWe encourage you to see it as a good thing, constant opportunities to grow. But if there is one key skill that you need to thrive here, it's Adaptability. And this onboarding is all about it.\n\nLet's start then. I will ask you a question soon, but before that, look around, at the walls specifically, to find useful bits of information, that will help you with your assignment.",
+        "puzzle1Intro": "I see you're very perceptive too – it really bodes well for you! Let's get to that question now.",
+        "puzzle1Done": "Very good! You have proved that you understand what adaptability is about. Now, let's get one level higher, okay? Proceed to the next floor and talk to Amina, she will take it from here. And good luck!",
+        "default": "Look around the walls for useful information."
+      }
+    },
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Hello, my name is Amina. I overheard a bit of your conversation with Anastasia, and you handled it really well. Most people aren't that quick to grasp the fundamentals of adaptability. You're a natural!\n\nAnyway, I have prepared some challenge for you as well. But… I need to ask you to help me find it. On the home screen of my tablet you will see various icons, shortcuts and apps. And among all this chaos we need to find a text file with a notebook icon titled \"adaptability_LVL2\". Let's start right away!",
+        "readFile": "Now that we have found it, please, read the content of the file.",
+        "puzzle2Intro": "Yes, this is exactly the information I wanted to share with you. You're ready to attempt to solve my challenge now! I'm sure you will handle it well. Look at the tablet again, the exercise should be already loaded.",
+        "puzzle2Done": "Wait, you have already finished? You are doing even better than I expected.\n\nOkay, with that I'm fully sure that you are ready for the final challenge of our training. You can move on to the next floor.",
+        "default": "Check my tablet for the exercise."
+      }
+    },
+    "wei": {
+      "name": "Wei",
+      "dialogues": {
+        "greet": "You're the new hire, right? Wow, you have completed two previous challenges in record time, you know?\n\nNow I'm really curious how you're going to deal with my task. But first things first – let's start from a bit of knowledge for you.\n\nTo not make it too easy, I will only tell you that it's somewhere near me. Can you find it based on that incomplete information? Let's see.",
+        "puzzle3Intro": "Now, it seems like it wasn't enough information for the final, difficult challenge. But trust me, this, combined with everything you have learned today, is more than enough to successfully solve my task. Be careful, this exercise will be different from any other one you have encountered so far. Let's begin!",
+        "puzzle3Done": "Of course! This is it! The purpose of this task was not to follow the traditional route, but to adapt to suddenly changed success requirements to complete the exercise. Reversed order of the answers seems like a small change, but it still makes you try out new approaches and forces out-of-the-box thinking. And you have done all that! Really outstanding performance! Well done. Thank you for participating and good luck!",
+        "completion": "Great job today! The training has been completed!",
+        "default": "Look around carefully – the clue is near me."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "First Things First",
+      "instructions": "Choose TWO correct answers.",
+      "question": "Which actions showcase the application of the skill of adaptability the best?",
+      "options": {
+        "a": "Revising your approach after receiving new information, while keeping the original objective.",
+        "b": "Changing priorities frequently to respond quickly, even if the overall goal becomes unclear.",
+        "c": "Adjusting plans when conditions shift, without losing sight of the intended outcome.",
+        "d": "Waiting for stable conditions before taking any action."
+      },
+      "hint": "Adaptability is about adjusting your approach to ensure the achievement of a clearly defined goal.",
+      "feedback": {
+        "wrong": "That's not quite right. Adaptability is about adjusting your approach while keeping the goal clear.",
+        "correct": "You are correct! Those are the best examples of adaptability in action."
+      },
+      "answerOverlay": "The correct answers are:\n• Revising your approach after receiving new information, while keeping the original objective.\n• Adjusting plans when conditions shift, without losing sight of the intended outcome."
+    },
+    "fillGap": {
+      "title": "Advanced Adaptability Training",
+      "instructions": "Complete the sentences with the missing words to create logical sentences related to the skill of adaptability.",
+      "sentenceParts": [
+        "An adaptable person knows that sometimes the best choice is to ",
+        " action until the situation is clearer.\nResponding to every change without reflection can lead to ",
+        " decisions.\nEffective adaptation requires anticipating the ",
+        " of changing one part of a plan and analysing its impact on others.\nWhen information is incomplete, progress often comes from learning through ",
+        " rather than waiting for certainty.\nStrong adaptability combines timely action with careful ",
+        " instead of impulse."
+      ],
+      "options": [
+        "delay",
+        "consequences",
+        "judgment",
+        "experimentation",
+        "unstable"
+      ],
+      "correctOrder": [
+        "delay",
+        "unstable",
+        "consequences",
+        "experimentation",
+        "judgment"
+      ],
+      "feedback": {
+        "wrong": "Some words are not in the right place. Try again!",
+        "correct": "You are fully correct! Great understanding of adaptability concepts."
+      },
+      "answerOverlay": "The correct order is:\n[1] delay\n[2] unstable\n[3] consequences\n[4] experimentation\n[5] judgment",
+      "resetButton": "Reset",
+      "checkButton": "Submit"
+    },
+    "sequenceOrder": {
+      "title": "Adaptability – The Final Challenge",
+      "instructions": "Sequence the following steps of the process of adapting to change in the correct order. Be careful – this exercise is different from what you've encountered so far!",
+      "hint": "\"If progress feels stuck and all falls apart, begin at the finish, not at the start.\"",
+      "items": [
+        "Apply the adjustment.",
+        "Identify what no longer works.",
+        "Receive new information.",
+        "Review the outcome.",
+        "Decide what needs to change.",
+        "Check how it affects the current plan."
+      ],
+      "correctOrder": [
+        "Review the outcome.",
+        "Apply the adjustment.",
+        "Decide what needs to change.",
+        "Identify what no longer works.",
+        "Check how it affects the current plan.",
+        "Receive new information."
+      ],
+      "feedback": {
+        "wrong": "That's not the right order. Think about the clue you found on the sticky note…",
+        "correct": "Great job! You adapted to the reversed order challenge perfectly!"
+      },
+      "answerOverlay": "The correct order (REVERSED) is:\n1. Review the outcome.\n2. Apply the adjustment.\n3. Decide what needs to change.\n4. Identify what no longer works.\n5. Check how it affects the current plan.\n6. Receive new information."
+    },
+    "answerOverlayTitle": "Answer Revealed",
+    "answerOverlayContinue": "Continue"
+  },
+  "hints": {
+    "intro": "Look for Anastasia on this floor.",
+    "talkToAnastasia": "Click on Anastasia to begin.",
+    "findPoster": "Look at the walls – find a framed poster with useful information.",
+    "readPoster": "Read the poster you found.",
+    "talkToAnastasia2": "Talk to Anastasia again.",
+    "talkToAmina": "Move to the next floor and click on Amina.",
+    "findTabletIcon": "Look at the tablet screen – find the file titled 'adaptability_LVL2'.",
+    "readTextFile": "Read the text file on the tablet.",
+    "talkToAmina2": "Talk to Amina again.",
+    "clickTablet": "Click on the tablet to see the exercise.",
+    "talkToWei": "Move to the next floor and click on Wei.",
+    "findStickyNote": "Look carefully near Wei – there's a sticky note hidden behind him.",
+    "readStickyNote": "Read the sticky note you found.",
+    "talkToWei2": "Talk to Wei again to begin the final challenge.",
+    "puzzle2FillGap": "Fill each blank with one of the words from the word bank below the sentence.",
+    "completion": "The doors are open! Click on them to exit.",
+    "default": "Look around for clues."
+  },
+  "systemDialogues": {
+    "selfTalk": "An onboarding process on the staircase… That's new. It's not what I'm familiar with, but also the entire company is very dynamic and unorthodox. Who knows, maybe that's the right approach in these modern times? Let's see what it's all about.",
+    "wrongObject": "Interesting notice, but not what you need right now. Someone's left a motivational quote here though: 'Change is the only constant.' Keep looking!",
+    "foundPoster": "Yes, this is what we've been looking for. Read the educational content.",
+    "posterRead": "Well done. You now have the essential understanding of the skill of Adaptability. Let's talk to Anastasia and answer her question.",
+    "wrongTabletIcon": "It's so easy to confuse these icons. It's not the one we're looking for. Let's try again.",
+    "foundTabletIcon": "YES! You found it! Let's proceed now.",
+    "textFileRead": "Great, you've absorbed the advanced concepts. Talk to Amina when you're ready.",
+    "wrongStickyNote": "That's someone's grocery list — eggs, milk, and... adaptability? Just kidding. The sticky note you need is somewhere else.",
+    "foundStickyNote": "You've taken in Wei's note. Head back and let Wei know you're ready to continue.",
+    "moveToFloor2": "Let's head up to the next floor.",
+    "moveToFloor3": "Time to head up to the top floor."
+  },
+  "items": {
+    "poster": {
+      "inventoryTitle": "The Basics of Adaptability",
+      "popupTitle": "The Basics of Adaptability",
+      "popupContent": [
+        "Adaptability is the ability to adjust your approach when circumstances change. In the entrepreneurial environment, change is constant – priorities shift, information updates, and plans evolve.",
+        "Being adaptable does not mean acting without direction. It means staying flexible while keeping your goal in mind."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Adaptability – Level 2",
+      "popupTitle": "Adaptability – Level 2",
+      "popupContent": [
+        "Adaptability involves deciding when to adjust and when to stay consistent. Not every change requires immediate action, and effective adaptation depends on evaluating which signals matter and which can wait.",
+        "Strong adaptability balances speed with judgment. Acting too quickly can lead to unstable decisions, while acting too slowly can limit progress. Adaptable professionals consider consequences of each action and understand that changing one element often affects others.",
+        "In entrepreneurial environments, adaptability means moving forward despite incomplete information by testing assumptions, observing results, and refining actions over time."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Sticky Note",
+      "popupTitle": "Sticky Note",
+      "popupContent": [
+        "\"If progress feels stuck and all falls apart,\nBegin at the finish, not at the start.\""
+      ]
+    }
+  },
+  "completion": {
+    "title": "Congratulations!",
+    "message": "You have successfully finished the onboarding course focused on the development of the skill of Adaptability. You have solved all the challenges, even the ones with missing information, and requiring unorthodox approaches. You have really proven your deep understanding of what it means to adapt!",
+    "buttonText": "Exit the Staircase"
+  },
+  "ui": {
+    "fullscreenToggle": "Toggle Fullscreen",
+    "backToEscapeRooms": "Back to Escape Rooms",
+    "continueButton": "Continue",
+    "gapPlaceholder": "___",
+    "selectTwo": "Select 2 answers",
+    "skipButton": "Skip",
+    "startQuizButton": "Start Quiz",
+    "answerButton": "Answer"
+  },
+  "floorTransition": {
+    "toFloor2": "You climb the stairs to the next floor. Amina is waiting for you on the landing ahead.",
+    "toFloor3": "You climb the stairs to the top floor. Wei is standing near the doors at the top."
+  },
+  "learning": {
+    "modeLabel": "Learning Mode",
+    "puzzlesWord": "puzzles",
+    "scoreLabel": "Your Score:",
+    "continueLearning": "Continue Learning"
+  },
+  "skipConfirm": {
+    "title": "Skip Puzzle?",
+    "question": "Are you sure you want to skip this puzzle?",
+    "warning": "You will earn 0 points for this puzzle.",
+    "cancel": "Cancel",
+    "confirm": "Skip Puzzle"
+  }
+}

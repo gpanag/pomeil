@@ -1,0 +1,213 @@
+{
+  "loading": "Ładowanie elastyczności...",
+  "intro": {
+    "title": "Elastyczność",
+    "paragraphs": [
+      "Jesteś nowym pracownikiem szybko rosnącego i rozwijającego się start-upu. Pierwszego dnia masz zacząć od procesu wdrożenia (onboardingu).",
+      "Zaskakująco zostajesz poproszony/a o pójście na klatkę schodową, ponieważ to tam ma się odbyć Twoje spotkanie. Lekko zaskoczony/a, kierujesz się ku drzwiom klatki, niepewny/a, czego się tam spodziewać…",
+      "Aby odblokować umiejętność elastyczności, musisz pomyślnie przejść przez nietypowy proces wdrożenia przygotowany dla Ciebie przez firmę."
+    ],
+    "buttonText": "Wejdź na klatkę schodową"
+  },
+  "characters": {
+    "anastasia": {
+      "name": "Anastasia",
+      "dialogues": {
+        "greet": "Dzień dobry. Czekaliśmy na Ciebie. Cieszymy się, że dołączyłeś/aś do naszego zespołu — i obiecujemy, że to środowisko nigdy nie pozwoli Ci się nudzić ani szukać nowych wyzwań, bo będą się pojawiać codziennie.\n\nZachęcamy, byś patrzył/a na to jako na coś dobrego, jako na ciągłe okazje do rozwoju. Ale jeśli istnieje jedna kluczowa umiejętność, której potrzebujesz, by tu się rozwijać, to jest nią Elastyczność. I cały ten onboarding właśnie tego dotyczy.\n\nZaczynajmy więc. Wkrótce zadam Ci pytanie, ale zanim to zrobię, rozejrzyj się, zwłaszcza po ścianach, by znaleźć przydatne informacje, które pomogą Ci w zadaniu.",
+        "puzzle1Intro": "Widzę, że jesteś też bardzo spostrzegawczy/a — to naprawdę dobrze rokuje! Przejdźmy teraz do tego pytania.",
+        "puzzle1Done": "Bardzo dobrze! Udowodniłeś/aś, że rozumiesz, czym jest elastyczność. Teraz wejdźmy poziom wyżej, dobrze? Idź na następne piętro i porozmawiaj z Aminą, ona przejmie pałeczkę. Powodzenia!",
+        "default": "Rozejrzyj się po ścianach w poszukiwaniu przydatnych informacji."
+      }
+    },
+    "amina": {
+      "name": "Amina",
+      "dialogues": {
+        "greet": "Cześć, mam na imię Amina. Podsłuchałam fragment Twojej rozmowy z Anastasią i naprawdę dobrze sobie poradziłeś/aś. Większość ludzi nie chwyta tak szybko podstaw elastyczności. Masz to we krwi!\n\nNo dobrze, ja również przygotowałam dla Ciebie wyzwanie. Ale… muszę Cię prosić, abyś pomógł/pomogła mi je znaleźć. Na ekranie głównym mojego tabletu zobaczysz różne ikony, skróty i aplikacje. I w tym całym chaosie musimy znaleźć plik tekstowy z ikoną notatnika, zatytułowany „adaptability_LVL2”. Zaczynajmy od razu!",
+        "readFile": "Skoro już go znaleźliśmy, przeczytaj proszę zawartość pliku.",
+        "puzzle2Intro": "Tak, dokładnie tę informację chciałam Ci przekazać. Jesteś gotowy/a, by spróbować rozwiązać moje wyzwanie! Jestem pewna, że dasz sobie świetnie radę. Spójrz znów na tablet, zadanie powinno być już załadowane.",
+        "puzzle2Done": "Czekaj, już skończyłeś/aś? Idzie Ci jeszcze lepiej, niż się spodziewałam.\n\nDobrze, w takim razie jestem całkowicie pewna, że jesteś gotowy/a na ostatnie wyzwanie naszego szkolenia. Możesz przejść na następne piętro.",
+        "default": "Sprawdź mój tablet w poszukiwaniu zadania."
+      }
+    },
+    "wei": {
+      "name": "Wei",
+      "dialogues": {
+        "greet": "Jesteś nowym pracownikiem, prawda? Wow, ukończyłeś/aś dwa poprzednie wyzwania w rekordowym czasie, wiesz?\n\nTeraz jestem bardzo ciekawy, jak poradzisz sobie z moim zadaniem. Ale po kolei — zacznijmy od odrobiny wiedzy dla Ciebie.\n\nŻeby nie było zbyt łatwo, powiem Ci tylko, że jest to gdzieś w pobliżu mnie. Czy znajdziesz to na podstawie tak niepełnej informacji? Zobaczymy.",
+        "puzzle3Intro": "No więc, wygląda na to, że tej informacji nie wystarczyło na ostatnie, trudne wyzwanie. Ale uwierz mi, ta wiedza, w połączeniu ze wszystkim, czego nauczyłeś/aś się dziś, to więcej niż wystarczająco, by pomyślnie rozwiązać moje zadanie. Ostrożnie, to ćwiczenie będzie inne niż wszystko, co dotąd spotkałeś/aś. Zaczynajmy!",
+        "puzzle3Done": "Oczywiście! Otóż to! Celem tego zadania nie było podążanie tradycyjną drogą, lecz dostosowanie się do nagle zmienionych wymogów sukcesu, by ukończyć ćwiczenie. Odwrócona kolejność odpowiedzi wydaje się drobną zmianą, ale i tak zmusza do wypróbowania nowych podejść i wymusza myślenie poza schematem. A Ty zrobiłeś/aś to wszystko! Naprawdę wybitne osiągnięcie! Brawo. Dziękuję za udział i powodzenia!",
+        "completion": "Świetna robota dziś! Szkolenie zostało ukończone!",
+        "default": "Rozejrzyj się uważnie — wskazówka jest w pobliżu mnie."
+      }
+    }
+  },
+  "puzzles": {
+    "multiChoice": {
+      "title": "Najpierw rzeczy najważniejsze",
+      "instructions": "Wybierz DWIE poprawne odpowiedzi.",
+      "question": "Które działania najlepiej pokazują zastosowanie umiejętności elastyczności?",
+      "options": {
+        "a": "Zmiana podejścia po otrzymaniu nowych informacji, przy zachowaniu pierwotnego celu.",
+        "b": "Częsta zmiana priorytetów dla szybkiego reagowania, nawet jeśli ogólny cel staje się niejasny.",
+        "c": "Dostosowywanie planów, gdy warunki się zmieniają, bez tracenia z oczu zamierzonego rezultatu.",
+        "d": "Czekanie na stabilne warunki, zanim podejmie się jakiekolwiek działania."
+      },
+      "hint": "Elastyczność polega na dostosowywaniu podejścia, by zapewnić osiągnięcie jasno określonego celu.",
+      "feedback": {
+        "wrong": "Nie do końca. Elastyczność polega na zmianie podejścia przy zachowaniu jasnego celu.",
+        "correct": "Zgadza się! To są najlepsze przykłady elastyczności w działaniu."
+      },
+      "answerOverlay": "Poprawne odpowiedzi to:\n• Zmiana podejścia po otrzymaniu nowych informacji, przy zachowaniu pierwotnego celu.\n• Dostosowywanie planów, gdy warunki się zmieniają, bez tracenia z oczu zamierzonego rezultatu."
+    },
+    "fillGap": {
+      "title": "Zaawansowany trening elastyczności",
+      "instructions": "Uzupełnij zdania brakującymi słowami, aby utworzyć logiczne zdania związane z umiejętnością elastyczności.",
+      "sentenceParts": [
+        "Osoba elastyczna wie, że czasami najlepszym wyborem jest ",
+        " działanie, dopóki sytuacja nie stanie się jaśniejsza.\nReagowanie na każdą zmianę bez refleksji może prowadzić do ",
+        " decyzji.\nSkuteczna adaptacja wymaga przewidywania ",
+        " zmiany jednej części planu i analizy jej wpływu na pozostałe.\nGdy informacje są niekompletne, postęp często rodzi się z uczenia się przez ",
+        " zamiast czekania na pewność.\nSilna elastyczność łączy działanie w odpowiednim czasie z ostrożnym ",
+        " zamiast impulsu."
+      ],
+      "options": [
+        "opóźnić",
+        "konsekwencji",
+        "osądem",
+        "eksperymentowanie",
+        "niestabilnych"
+      ],
+      "correctOrder": [
+        "opóźnić",
+        "niestabilnych",
+        "konsekwencji",
+        "eksperymentowanie",
+        "osądem"
+      ],
+      "feedback": {
+        "wrong": "Niektóre słowa nie są w odpowiednim miejscu. Spróbuj ponownie!",
+        "correct": "W pełni poprawnie! Świetne zrozumienie pojęć związanych z elastycznością."
+      },
+      "answerOverlay": "Poprawna kolejność to:\n[1] opóźnić\n[2] niestabilnych\n[3] konsekwencji\n[4] eksperymentowanie\n[5] osądem",
+      "resetButton": "Zresetuj",
+      "checkButton": "Wyślij"
+    },
+    "sequenceOrder": {
+      "title": "Elastyczność – Ostatnie wyzwanie",
+      "instructions": "Ułóż następujące kroki procesu adaptacji do zmiany w prawidłowej kolejności. Uwaga — to ćwiczenie jest inne niż dotychczasowe!",
+      "hint": "„Gdy postęp utyka i wszystko się sypie, zacznij od mety, a nie od startu.”",
+      "items": [
+        "Zastosuj korektę.",
+        "Określ, co już nie działa.",
+        "Otrzymaj nowe informacje.",
+        "Przeanalizuj wynik.",
+        "Zdecyduj, co należy zmienić.",
+        "Sprawdź, jak wpływa to na obecny plan."
+      ],
+      "correctOrder": [
+        "Przeanalizuj wynik.",
+        "Zastosuj korektę.",
+        "Zdecyduj, co należy zmienić.",
+        "Określ, co już nie działa.",
+        "Sprawdź, jak wpływa to na obecny plan.",
+        "Otrzymaj nowe informacje."
+      ],
+      "feedback": {
+        "wrong": "To nie jest właściwa kolejność. Pomyśl o wskazówce z karteczki, którą znalazłeś/aś…",
+        "correct": "Świetna robota! Idealnie poradziłeś/aś sobie z wyzwaniem odwróconej kolejności!"
+      },
+      "answerOverlay": "Poprawna kolejność (ODWRÓCONA) to:\n1. Przeanalizuj wynik.\n2. Zastosuj korektę.\n3. Zdecyduj, co należy zmienić.\n4. Określ, co już nie działa.\n5. Sprawdź, jak wpływa to na obecny plan.\n6. Otrzymaj nowe informacje."
+    },
+    "answerOverlayTitle": "Odpowiedź ujawniona",
+    "answerOverlayContinue": "Dalej"
+  },
+  "hints": {
+    "intro": "Poszukaj Anastasii na tym piętrze.",
+    "talkToAnastasia": "Kliknij Anastasię, aby rozpocząć.",
+    "findPoster": "Spójrz na ściany — znajdź oprawiony plakat z przydatnymi informacjami.",
+    "readPoster": "Przeczytaj znaleziony plakat.",
+    "talkToAnastasia2": "Porozmawiaj jeszcze raz z Anastasią.",
+    "talkToAmina": "Przejdź na następne piętro i kliknij Aminę.",
+    "findTabletIcon": "Spójrz na ekran tabletu — znajdź plik o nazwie „adaptability_LVL2”.",
+    "readTextFile": "Przeczytaj plik tekstowy na tablecie.",
+    "talkToAmina2": "Porozmawiaj jeszcze raz z Aminą.",
+    "clickTablet": "Kliknij tablet, aby zobaczyć zadanie.",
+    "talkToWei": "Przejdź na następne piętro i kliknij Weia.",
+    "findStickyNote": "Przyjrzyj się uważnie w pobliżu Weia — za nim jest ukryta karteczka samoprzylepna.",
+    "readStickyNote": "Przeczytaj znalezioną karteczkę.",
+    "talkToWei2": "Porozmawiaj ponownie z Weiem, aby rozpocząć ostatnie wyzwanie.",
+    "puzzle2FillGap": "Uzupełnij każdą lukę jednym ze słów z listy pod zdaniem.",
+    "completion": "Drzwi są otwarte! Kliknij je, aby wyjść.",
+    "default": "Rozejrzyj się w poszukiwaniu wskazówek."
+  },
+  "systemDialogues": {
+    "selfTalk": "Onboarding na klatce schodowej… Coś nowego. Nie tak to sobie wyobrażałem/am, ale cała firma jest bardzo dynamiczna i nieszablonowa. Kto wie, może to właściwe podejście w nowoczesnych czasach? Zobaczmy, o co chodzi.",
+    "wrongObject": "Ciekawe ogłoszenie, ale to nie to, czego potrzebujesz. Ktoś jednak zostawił tu motywujący cytat: „Zmiana to jedyna stała.” Szukaj dalej!",
+    "foundPoster": "Tak, tego właśnie szukaliśmy. Przeczytaj treść edukacyjną.",
+    "posterRead": "Brawo. Masz teraz podstawowe rozumienie umiejętności Elastyczności. Porozmawiajmy z Anastasią i odpowiedzmy na jej pytanie.",
+    "wrongTabletIcon": "Tak łatwo pomylić te ikony. To nie ta, której szukamy. Spróbuj jeszcze raz.",
+    "foundTabletIcon": "TAK! Znalazłeś/aś! Przejdźmy dalej.",
+    "textFileRead": "Świetnie, przyswoiłeś/aś zaawansowane koncepcje. Porozmawiaj z Aminą, gdy będziesz gotowy/a.",
+    "wrongStickyNote": "To czyjaś lista zakupów — jajka, mleko i… elastyczność? Żartuję. Karteczka, której potrzebujesz, jest gdzie indziej.",
+    "foundStickyNote": "Przyjąłeś/aś notatkę Weia. Wróć i daj Weiowi znać, że jesteś gotowy/a, by kontynuować.",
+    "moveToFloor2": "Wejdźmy na następne piętro.",
+    "moveToFloor3": "Czas wejść na najwyższe piętro."
+  },
+  "items": {
+    "poster": {
+      "inventoryTitle": "Podstawy elastyczności",
+      "popupTitle": "Podstawy elastyczności",
+      "popupContent": [
+        "Elastyczność to umiejętność dostosowania podejścia, gdy zmieniają się okoliczności. W środowisku przedsiębiorczym zmiana jest stała — priorytety się zmieniają, informacje się aktualizują, a plany ewoluują.",
+        "Bycie elastycznym nie oznacza działania bez kierunku. Oznacza zachowanie elastyczności przy jednoczesnym pamiętaniu o swoim celu."
+      ]
+    },
+    "textFile": {
+      "inventoryTitle": "Elastyczność – Poziom 2",
+      "popupTitle": "Elastyczność – Poziom 2",
+      "popupContent": [
+        "Elastyczność polega na decydowaniu, kiedy się dostosować, a kiedy pozostać konsekwentnym. Nie każda zmiana wymaga natychmiastowego działania, a skuteczna adaptacja zależy od oceniania, które sygnały mają znaczenie, a które mogą poczekać.",
+        "Silna elastyczność równoważy szybkość z osądem. Działanie zbyt szybko może prowadzić do niestabilnych decyzji, podczas gdy działanie zbyt wolno może ograniczać postęp. Elastyczni profesjonaliści rozważają konsekwencje każdego działania i rozumieją, że zmiana jednego elementu często wpływa na inne.",
+        "W środowiskach przedsiębiorczych elastyczność oznacza posuwanie się naprzód mimo niekompletnych informacji poprzez testowanie założeń, obserwowanie wyników i z czasem doskonalenie działań."
+      ]
+    },
+    "stickyNote": {
+      "inventoryTitle": "Karteczka samoprzylepna",
+      "popupTitle": "Karteczka samoprzylepna",
+      "popupContent": [
+        "„Gdy postęp utyka i wszystko się sypie,\nzacznij od mety, a nie od startu.”"
+      ]
+    }
+  },
+  "completion": {
+    "title": "Gratulacje!",
+    "message": "Z powodzeniem ukończyłeś/aś kurs onboardingu skupiony na rozwoju umiejętności Elastyczności. Rozwiązałeś/aś wszystkie wyzwania, nawet te z brakującymi informacjami i wymagające nieszablonowych podejść. Naprawdę udowodniłeś/aś głębokie zrozumienie tego, co to znaczy być elastycznym!",
+    "buttonText": "Opuść klatkę schodową"
+  },
+  "ui": {
+    "fullscreenToggle": "Przełącz tryb pełnoekranowy",
+    "backToEscapeRooms": "Powrót do escape roomów",
+    "continueButton": "Dalej",
+    "gapPlaceholder": "___",
+    "selectTwo": "Wybierz 2 odpowiedzi",
+    "skipButton": "Pomiń",
+    "startQuizButton": "Rozpocznij quiz",
+    "answerButton": "Odpowiedź"
+  },
+  "floorTransition": {
+    "toFloor2": "Wchodzisz po schodach na następne piętro. Amina czeka na Ciebie na podeście.",
+    "toFloor3": "Wchodzisz po schodach na najwyższe piętro. Wei stoi przy drzwiach na samej górze."
+  },
+  "learning": {
+    "modeLabel": "Tryb nauki",
+    "puzzlesWord": "zagadki",
+    "scoreLabel": "Twój wynik:",
+    "continueLearning": "Kontynuuj naukę"
+  },
+  "skipConfirm": {
+    "title": "Pominąć zagadkę?",
+    "question": "Czy na pewno chcesz pominąć tę zagadkę?",
+    "warning": "Otrzymasz 0 punktów za tę zagadkę.",
+    "cancel": "Anuluj",
+    "confirm": "Pomiń zagadkę"
+  }
+}
