@@ -175,7 +175,8 @@
   "completion": {
     "title": "Opplæring fullført!",
     "message": "Gratulerer! Du har vellykket demonstrert utmerkede ferdigheter i kulturell bevissthet og kommunikasjon.",
-    "buttonText": "Tilbake til hovedmenyen"
+    "buttonText": "Tilbake til hovedmenyen",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "quizComplete": {
     "title": "Riktig!",
@@ -193,13 +194,15 @@
   },
   "ui": {
     "toggleFullscreen": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Veksle fullskjerm",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

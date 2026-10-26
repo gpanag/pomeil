@@ -176,18 +176,21 @@
   "completion": {
     "title": "Koolitus lõpetatud!",
     "message": "Õnnitlused! Sa lõpetasid Strateegilise mõtlemise mooduli.",
-    "buttonText": "Tagasi peamenüüsse"
+    "buttonText": "Tagasi peamenüüsse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenTitle": "Lülita täisekraan",
-    "backToEscapeRoomsTitle": "Tagasi põgenemistubadesse",
+    "backToLearningTitle": "Tagasi õppimise juurde",
     "startQuizButton": "Alusta viktoriini",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "skipButton": "Jäta vahele",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

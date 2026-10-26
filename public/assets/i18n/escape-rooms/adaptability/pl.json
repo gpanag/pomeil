@@ -171,6 +171,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Karteczka samoprzylepna",
       "inventoryTitle": "Karteczka samoprzylepna",
       "popupTitle": "Karteczka samoprzylepna",
       "popupContent": [
@@ -181,17 +182,20 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Z powodzeniem ukończyłeś/aś kurs onboardingu skupiony na rozwoju umiejętności Elastyczności. Rozwiązałeś/aś wszystkie wyzwania, nawet te z brakującymi informacjami i wymagające nieszablonowych podejść. Naprawdę udowodniłeś/aś głębokie zrozumienie tego, co to znaczy być elastycznym!",
-    "buttonText": "Opuść klatkę schodową"
+    "buttonText": "Opuść klatkę schodową",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "selectTwo": "Wybierz 2 odpowiedzi",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "floorTransition": {
     "toFloor2": "Wchodzisz po schodach na następne piętro. Amina czeka na Ciebie na podeście.",

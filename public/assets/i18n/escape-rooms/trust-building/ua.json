@@ -192,6 +192,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Стікер",
       "inventoryTitle": "Стікер",
       "popupTitle": "Стікер",
       "popupContent": [
@@ -203,16 +204,19 @@
   "completion": {
     "title": "Вітаємо!",
     "message": "Ти довів, що ти не лише співчутлива, емпатична та надійна людина, але й хороший Тімлід, який може довіряти власним членам команди. Ти успішно оволодів навичкою Побудови довіри!",
-    "buttonText": "Вийти з кімнати"
+    "buttonText": "Вийти з кімнати",
+    "revealedNote": "Тут довелося показати відповідь, тож варто переглянути цю частину в модулі."
   },
   "ui": {
     "fullscreenToggle": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат",
+    "backToLearning": "Назад до навчання",
     "continueButton": "Далі",
     "gapPlaceholder": "___",
     "skipButton": "Пропустити",
     "startQuizButton": "Почати вікторину",
-    "answerButton": "Відповідь"
+    "answerButton": "Відповідь",
+    "backToRoom": "Повернутися до кімнати",
+    "clickToExamine": "Натисніть, щоб розглянути"
   },
   "learning": {
     "modeLabel": "Режим навчання",

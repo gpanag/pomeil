@@ -350,6 +350,7 @@
     "comments": "Vasta tõelistele klientide suhtlustele ja kustuta rämpspost.",
     "stickyNote": "Serveril on parooliga kleepekiri. See on turvarisk!",
     "miniPuzzles": "Püsi tähelepanelik turvaohtudele - USB-seadmed, hüpikaknad, värskendused ja WiFi-võrgud.",
+    "miniUsb": "Kontrolli kirjutuslaua sahtlit.",
     "allComplete": "Kõik on tehtud! Koolitus on lõpetatud!",
     "completion": "Koolitus on lõpetatud!",
     "default": "Vaata ringi IT-osakonnas asjade järele, mis vajavad tähelepanu."
@@ -397,17 +398,21 @@
       "title": "IT-turvateatis",
       "domainLine": "Meie ettevõtte domeen on",
       "malwareWarning": "Süsteemis on tuvastatud pahavara. Sinu failid ja andmed võivad olla ohus.",
-      "domainNotice": "Meie ettevõtte domeen on <strong>&#64;yourcompany.com</strong>. Iga teine domeen, mis väidab end olevat meie ettevõttest, on potentsiaalselt pettus."
+      "domainNotice": "Meie ettevõtte domeen on <strong>&#64;yourcompany.com</strong>. Iga teine domeen, mis väidab end olevat meie ettevõttest, on potentsiaalselt pettus.",
+      "reminder": "Meeldetuletus: kontrolli alati saatja aadressi ja vii kursor lingi kohale, enne kui sellele klõpsad. Teata kahtlastest kirjadest kohe IT-osakonnale.",
+      "malwareTitle": "Süsteem on nakatunud!",
+      "fromLabel": "Saatja:"
     }
   },
   "completion": {
     "title": "Õnnitleme!",
     "message": "Oled edukalt lõpetanud kõik digioskuste ülesanded! Parandasid serveri, auditeerisid paroolid, tuvastasid õngitsuse e-kirjad, juhtisid sotsiaalmeediat professionaalselt ja tegelesid mitmete küberohtudega. Oled nüüd paremini varustatud, et navigeerida digitaalses töökohas turvaliselt ja tõhusalt!",
-    "buttonText": "Välju toast"
+    "buttonText": "Välju toast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "callIT": "Helista IT-le abi saamiseks",
@@ -415,7 +420,9 @@
     "archive": "Arhiveeri",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

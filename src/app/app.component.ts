@@ -1,4 +1,4 @@
-import { Component, Inject, OnDestroy, OnInit, HostListener } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit, HostListener, ChangeDetectionStrategy } from '@angular/core';
 import { Subject, takeUntil, filter } from 'rxjs';
 import { ChildrenOutletContexts, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { flip } from './animations';
@@ -22,12 +22,11 @@ const LANG_TO_HTML_TAG: { [key: string]: string } = {
 };
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  // animations: [
-  //   flip
-  // ]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class AppComponent implements OnInit {
   title = 'pomeil';
@@ -122,9 +121,11 @@ export class AppComponent implements OnInit {
 
 
 @Component({
-  selector: "image-dialog",
-  templateUrl: "./image-dialog.html",
-  styleUrls: ["./image-dialog.scss"]
+    selector: "image-dialog",
+    templateUrl: "./image-dialog.html",
+    styleUrls: ["./image-dialog.scss"],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ImageDialog implements OnInit, OnDestroy {
 

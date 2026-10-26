@@ -193,18 +193,21 @@
   "completion": {
     "title": "Навичка завершена: Лідерство",
     "message": "Цінності зрозумілі. Рішення оцінені. Етична поведінка продемонстрована.\nТи готовий/готова перейти до наступної навички.",
-    "buttonText": "Вийти з HR-офісу"
+    "buttonText": "Вийти з HR-офісу",
+    "revealedNote": "Тут довелося показати відповідь, тож варто переглянути цю частину в модулі."
   },
   "ui": {
     "fullscreenToggle": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат",
+    "backToLearning": "Назад до навчання",
     "continueButton": "Далі",
     "trueButton": "Правда",
     "falseButton": "Хибно",
     "gapPlaceholder": "____",
     "skipButton": "Пропустити",
     "startQuizButton": "Почати вікторину",
-    "answerButton": "Відповідь"
+    "answerButton": "Відповідь",
+    "backToRoom": "Повернутися до кімнати",
+    "clickToExamine": "Натисніть, щоб розглянути"
   },
   "learning": {
     "modeLabel": "Режим навчання",

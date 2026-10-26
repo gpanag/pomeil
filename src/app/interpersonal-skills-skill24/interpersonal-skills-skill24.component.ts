@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 enum GameState {
   Intro,
   SelfTalk,
@@ -60,12 +61,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-interpersonal-skills-skill24',
-  templateUrl: './interpersonal-skills-skill24.component.html',
-  styleUrl: './interpersonal-skills-skill24.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
-  animations: [fadeInOut]
+    selector: 'app-interpersonal-skills-skill24',
+    templateUrl: './interpersonal-skills-skill24.component.html',
+    styleUrl: './interpersonal-skills-skill24.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class InterpersonalSkillsSkill24Component extends EscapeRoomBaseComponent {
 

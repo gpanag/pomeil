@@ -747,11 +747,13 @@
   "completion": {
     "title": "Vahetus Lõpetatud!",
     "message": "Oled lõpetanud oma vahetuse Klienditeeninduse osakonnas.\n\nKäsitlesid kliendi kaebuse kõnet, uuendasid klientide registrit ja lõid kasuliku klientide tagasiside küsitluse. Hästi tehtud!",
-    "buttonText": "Välju Klienditeeninduse osakonnast"
+    "buttonText": "Välju Klienditeeninduse osakonnast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
+    "sortAllBeforeSave": "Enne salvestamist tuleb kõik kirjed sorteerida.",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "startButton": "Alusta",
     "trueButton": "Õige",
@@ -760,7 +762,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

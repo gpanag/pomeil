@@ -220,7 +220,8 @@
       "npcResponse": "Det gir mening. Jeg foreslår det til ledelsen. Takk.",
       "afterCallThought1": "Jeg svarte på en konstruktiv og vennlig måte, samtidig som jeg beskyttet prosjektets omfang.",
       "afterCallThought2": "Det er alltid utfordrende når folk vil legge til mer ting i et prosjekt. Det kan være fristende å si ja. Men å ikke beskytte omfanget vil ofte resultere i mye arbeid, og for lite tid og ressurser til å fullføre det.",
-      "continueButton": "Fortsett"
+      "continueButton": "Fortsett",
+      "phoneTitle": "I telefonen…"
     },
     "calendar": {
       "deadlineThought": "Fristen… er om to uker?!\n\nDen fristen må være for første fase av prosjektet. Det er ingen sjanse for at hele prosjektet kan ferdigstilles på to uker.\n\nJeg må sørge for at alle vet hva de skal gjøre!",
@@ -255,17 +256,21 @@
   "completion": {
     "title": "Prosjektledelse fullført",
     "message": "Gratulerer, du har fullført fluktrommet om prosjektledelse!\n\nI rommet måtte du overta som prosjektleder for et allerede pågående prosjekt. På papiret virket alt å gå bra. Men snart oppdaget du flere pågående problemer. Prosjektets mål var uklart, interessentene hadde motstridende behov, det var risiko for omfangsutglidning og mye tidspress.\n\nHeldigvis tok du utfordringene på strak arm. Du bestemte deg for et spesifikt, relevant og målbart mål, oppnåelig innen en bestemt tidsramme. Du valgte en retning for prosjektet, og balanserte interessentenes behov. Da noen ba deg utvide omfanget, motsto du og beskyttet omfanget på en konstruktiv måte. Til slutt tok du grep ved å prioritere realistisk og kommunisere tydelig med teamet ditt.\n\nGodt jobbet!",
-    "buttonText": "Forlat kontoret"
+    "buttonText": "Forlat kontoret",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "puzzlesCompleted": "oppgaver",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
     "answerButton": "Svar",
-    "exitDoorTitle": "Dør"
+    "exitDoorTitle": "Dør",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke",
+    "skipPuzzle": "Hopp over denne oppgaven"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

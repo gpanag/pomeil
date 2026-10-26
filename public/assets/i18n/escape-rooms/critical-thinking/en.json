@@ -96,7 +96,8 @@
         "label": "Terms & Conditions",
         "thought": "\"Terms & Conditions apply. For full details, please contact our sales team.\" - The T&C aren't included in the email. A transparent company would provide the full terms upfront, not hide them behind a phone call."
       }
-    }
+    },
+    "todayOnlyLine": "*Offer valid TODAY ONLY"
   },
   "reviews": {
     "siteName": "BusinessReview.com",
@@ -319,11 +320,12 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully completed the Critical Thinking escape room! You demonstrated the ability to question claims, gather evidence from multiple sources, identify manipulation tactics, and make an informed decision. These are essential critical thinking skills in any professional environment.",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "nextReview": "Next Review",
     "previousReview": "Previous Review",
@@ -334,7 +336,9 @@
     "sortEvidence": "Sort Evidence",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

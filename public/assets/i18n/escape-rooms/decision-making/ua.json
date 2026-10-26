@@ -287,7 +287,8 @@
       }
     ],
     "wellDone": "Молодець!",
-    "buttonText": "Вийти з кімнати"
+    "buttonText": "Вийти з кімнати",
+    "revealedNote": "Тут довелося показати відповідь, тож варто переглянути цю частину в модулі."
   },
   "hints": {
     "outsideElevator": "Натисни кнопку виклику ліфта, щоб викликати ліфт.",
@@ -304,12 +305,14 @@
   },
   "ui": {
     "fullscreenToggle": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат",
+    "backToLearning": "Назад до навчання",
     "continueButton": "Далі",
     "gapPlaceholder": "___",
     "skipButton": "Пропустити",
     "startQuizButton": "Почати вікторину",
-    "answerButton": "Відповідь"
+    "answerButton": "Відповідь",
+    "backToRoom": "Повернутися до кімнати",
+    "clickToExamine": "Натисніть, щоб розглянути"
   },
   "learning": {
     "modeLabel": "Режим навчання",

@@ -220,7 +220,8 @@
       "npcResponse": "That makes sense. I'll suggest it to management. Thank you.",
       "afterCallThought1": "I replied in a constructive and appreciative way, while still protecting the project's scope.",
       "afterCallThought2": "It's always challenging when people want to add more things to a project. It can be tempting to say yes. But not protecting the scope will often result in a lot of work, and too little time and resources to complete it.",
-      "continueButton": "Continue"
+      "continueButton": "Continue",
+      "phoneTitle": "On the phone…"
     },
     "calendar": {
       "deadlineThought": "The deadline… is in two weeks?!\n\nThat deadline must be for the first phase of the project. There is no way the whole project can be finished in two weeks.\n\nI better make sure everyone knows what to do!",
@@ -255,17 +256,21 @@
   "completion": {
     "title": "Project Management Complete",
     "message": "Congratulations, you have completed the Project Management escape room!\n\nIn the room, you had to take over as project manager of an already ongoing project. On paper, everything seemed to be going well. But soon, you uncovered several ongoing issues. The project's objective was unclear, the stakeholders had conflicting needs, there was a risk of a scope creep and there was a lot of time pressure.\n\nFortunately, you took the challenges on headfirst. You decided on a specific, relevant and measurable objective, achievable within a certain timeframe. You chose a direction for the project, balancing stakeholders' needs. When someone asked you to expand the scope, you resisted and protected the scope in a constructive way. Finally, you took action by prioritizing realistically and communicating clearly with your team.\n\nWell done!",
-    "buttonText": "Leave the Office"
+    "buttonText": "Leave the Office",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "puzzlesCompleted": "puzzles",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
     "answerButton": "Answer",
-    "exitDoorTitle": "Door"
+    "exitDoorTitle": "Door",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine",
+    "skipPuzzle": "Skip this puzzle"
   },
   "learning": {
     "modeLabel": "Learning Mode",

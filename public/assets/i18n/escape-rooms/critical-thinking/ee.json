@@ -96,7 +96,8 @@
         "label": "Tingimused ja eeskirjad",
         "thought": "\"Kehtivad tingimused ja eeskirjad. Täielike üksikasjade saamiseks võtke ühendust meie müügimeeskonnaga.\" - Tingimused pole emaili kaasatud. Läbipaistev ettevõte annaks täielikud tingimused ette, mitte ei peidaks neid telefonikõne taha."
       }
-    }
+    },
+    "todayOnlyLine": "*Pakkumine kehtib AINULT TÄNA"
   },
   "reviews": {
     "siteName": "BusinessReview.com",
@@ -319,11 +320,12 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Oled edukalt lõpetanud Kriitilise mõtlemise põgenemistoa! Näitasid suutlikkust kahelda väidetes, koguda tõendeid mitmest allikast, tuvastada manipuleerimistaktikaid ja teha teadlikke otsuseid. Need on olulised kriitilise mõtlemise oskused igas professionaalses keskkonnas.",
-    "buttonText": "Välju toast"
+    "buttonText": "Välju toast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "nextReview": "Järgmine arvustus",
     "previousReview": "Eelmine arvustus",
@@ -334,7 +336,9 @@
     "sortEvidence": "Sorteeri tõendid",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

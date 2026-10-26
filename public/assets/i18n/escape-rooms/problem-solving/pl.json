@@ -175,17 +175,22 @@
   "completion": {
     "title": "Rozwiązywanie problemów ukończone",
     "message": "Gratulacje, ukończyłeś/aś pokój rozwiązywania problemów!\n\nŁatwo było założyć, że problem ze znikającymi rzeczami był spowodowany bałaganem. I naturalne było przejście od razu do rozwiązania — sprzątania i organizowania pokoju.\n\nAle szybko odkryłeś/aś, że to niczego nie rozwiązało. Główny problem musiał być czymś innym.\n\nDlatego cofnąłeś/aś się i zbadałeś/aś alternatywne wyjaśnienia. Zbierając wskazówki i dowody, mogłeś/aś zidentyfikować główny problem: błędne etykietowanie pudełek.\n\nPokój reprezentuje kluczowy aspekt rozwiązywania problemów: jasne zdefiniowanie problemu przed działaniem. Może to zaoszczędzić wiele zmarnowanego czasu i energii.\n\nDobra robota!",
-    "buttonText": "Wyjdź z Magazynu"
+    "buttonText": "Wyjdź z Magazynu",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
+    "puzzlesCompleted": "zagadki",
+    "backToLearningTitle": "Powrót do nauki",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "skipPuzzle": "Pomiń tę zagadkę",
     "hintButton": "Wskazówka",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "systemDialogues": {
     "cleanBoxMoved": "Trafiło na półkę.",

@@ -15,7 +15,7 @@
     "MORE_NEWS": "Rohkem uudiseid",
     "DOWNLOAD": "Laadi alla",
     "MORE": "rohkem",
-    "PLAY": "Play"
+    "PLAY": "Mängi"
   },
   "NAVIGATION": {
     "HOME": "Avaleht",
@@ -24,6 +24,7 @@
     "OUTPUTS": "Tulemused",
     "RESOURCES": "Ressursid",
     "NEWS": "Uudised",
+    "NEWSLETTERS": "Uudiskirjad",
     "ESCAPE_ROOMS": "Põgenemistoad",
     "ARTICLES": "Artiklid",
     "LEAFLETS": "Voldikud",
@@ -38,14 +39,19 @@
     "PROGRAMME": "Programm",
     "REFERENCE": "Viitenumber",
     "DURATION": "Kestus",
-    "FUNDER": "Rahastaja"
+    "FUNDER": "Rahastaja",
+    "GUIDE": "Juhend"
   },
   "OTHER": {
     "OBJECTIVES": "Eesmärgid",
-    "WORKPACKAGES": "Tööpaketid"
+    "WORKPACKAGES": "Tööpaketid",
+    "GALLERY": "Galerii"
   },
   "WORKPACKAGES": {
-    "MAP": "The Pomeil Competence Map"
+    "MAP": "The Pomeil Competence Map",
+    "FILES": "Failid",
+    "TRANSLATIONS": "Tõlked",
+    "ENGLISH_ONLY": "Ainult inglise keeles"
   },
   "LEARNING_PAGE": {
     "INTRO": {
@@ -77,7 +83,9 @@
       "GUIDEBOOK_TITLE": "Koolitaja Juhend",
       "GUIDEBOOK_DESC": "Laadige alla POMEIL Koolitaja Juhend.",
       "DOWNLOAD_PDF": "Laadi PDF",
-      "PLAYER_NAME_REQUIRED": "Palun sisesta oma nimi õppimise alustamiseks."
+      "PLAYER_NAME_REQUIRED": "Palun sisesta oma nimi õppimise alustamiseks.",
+      "DIAGRAM_START": "ALGUS",
+      "DIAGRAM_GROWTH": "ARENG"
     },
     "DASHBOARD": {
       "TITLE": "Õppimise Ülevaade",
@@ -94,7 +102,8 @@
       "SCORE": "Tulemus",
       "NO_GAMES_PLAYED": "Mänge pole veel mängitud. Alustage oma õppimisrännak.",
       "PROGRESS_SAVED": "Edenemine salvestatud pilve",
-      "SAVE_PROGRESS": "Logi sisse edenemise salvestamiseks"
+      "PROGRESS_SAVED_LOCAL": "Edenemine salvestatakse ainult selles brauseris",
+      "REQUIRED": "(Kohustuslik)"
     },
     "FLOW": {
       "TITLE": "Õppimise Voog",
@@ -119,7 +128,10 @@
       "PASSED": "Läbitud",
       "NEEDS_REVIEW": "Vajab Ülevaadet",
       "START_OVER": "Alusta Uuesti",
-      "READ_FLIPBOOK": "Loe moodulit"
+      "READ_FLIPBOOK": "Loe moodulit",
+      "MODULE_GATE_HINT": "Sinu tulemus on alla 80%. Laadi alla või loe selle oskuse moodul, enne kui jätkad järgmisega.",
+      "MODULE_ACKNOWLEDGED": "Moodul avatud",
+      "REQUIRED_BADGE": "Kohustuslik"
     },
     "MODULES": {
       "TITLE": "Õppemoodulid",
@@ -136,7 +148,9 @@
       "BACK_TO_ESCAPE_ROOMS": "Tagasi Põgenemistubadesse",
       "LEARNING_MODE": "Õppimisrežiim",
       "PUZZLES": "ülesanded",
-      "SCORE": "Tulemus"
+      "SCORE": "Tulemus",
+      "SKILL": "Oskus",
+      "PUZZLE": "Mõistatus"
     },
     "YOUR_MODULES": {
       "TITLE": "Sinu moodulid",
@@ -229,11 +243,11 @@
     "PASSWORDS_MISMATCH": "Paroolid ei ühti",
     "ACCOUNT": "Konto",
     "HELLO": "Tere",
-    "CONTINUE_ANYWAY": "Jätka niikuinii",
-    "NOT_LOGGED_IN_TITLE": "Sa pole sisse logitud",
-    "NOT_LOGGED_IN_BODY": "Saad mängu mängida, kuid pane tähele:",
-    "NOT_LOGGED_IN_BULLET_PROGRESS": "Sinu edenemist ei salvestata.",
-    "NOT_LOGGED_IN_BULLET_SCORES": "Sinu tulemused ei ilmu töölaual ega Sinu moodulites.",
+    "GUEST_TITLE": "Mängid ilma kontota",
+    "GUEST_BODY": "Saad mängida ja õppida ka ilma kontota.",
+    "GUEST_SAVED_HERE": "Sinu valitud oskused ja tulemused salvestatakse ainult selles brauseris, selles seadmes.",
+    "GUEST_SIGN_IN_BENEFIT": "Kui soovid need oma kontole salvestada ja jätkata mis tahes seadmes, logi kõigepealt sisse.",
+    "CONTINUE_AS_GUEST": "Jätka ilma kontota",
     "REGISTRATION_CHECK_EMAIL_TITLE": "Kontrollige oma e-posti",
     "REGISTRATION_CHECK_EMAIL_BODY": "Saatsime kinnituslingi aadressile:",
     "REGISTRATION_CHECK_EMAIL_HINT": "Konto aktiveerimiseks klõpsake e-kirjas oleval lingil. Kui te seda ei näe, kontrollige rämpsposti kausta.",
@@ -245,7 +259,8 @@
     "RESET_PASSWORD_TITLE": "Määra uus parool",
     "RESET_PASSWORD_BODY": "Valige oma kontole uus parool.",
     "RESET_PASSWORD_SUBMIT": "Uuenda parooli",
-    "INVALID_RESET_LINK": "See lähtestamise link on kehtetu või aegunud. Palun küsige uus."
+    "INVALID_RESET_LINK": "See lähtestamise link on kehtetu või aegunud. Palun küsige uus.",
+    "MIN_PASSWORD_HINT": "Vähemalt 6 tähemärki"
   },
   "HOME": {
     "COVER_FUNDED_BY": "Rahastab Euroopa Liit",
@@ -272,11 +287,17 @@
     "TILE_OUTPUTS_DETAIL": "Praeguseks avaldatud projekti väljundid.",
     "TILE_ARTICLES_DETAIL": "Ülevaateartiklid kogu võrgustikust.",
     "TILE_RESOURCES_DETAIL": "Tööriistad ja viited õppejõududele ja õppijatele.",
+    "TILE_NEWSLETTERS_DETAIL": "Projekti uudised, number numbri haaval.",
     "TILE_LEAFLETS_DETAIL": "Prinditavad kokkuvõtted, mida oma kogukonnaga jagada.",
     "TILE_PARTNERSHIP_DETAIL": "Kuus POMEILi taga olevat organisatsiooni neljas riigis.",
     "NEWS_EYEBROW": "Viimased uudised",
     "NETWORK_EYEBROW": "Meie võrgustik",
-    "NETWORK_LEAD": "Kuus organisatsiooni Norras, Kreekas, Poolas ja Eestis."
+    "NETWORK_LEAD": "Kuus organisatsiooni Norras, Kreekas, Poolas ja Eestis.",
+    "COVER_CTA_LEARNING": "Alusta õppimist",
+    "TILE_LEARNING": "Õppimine",
+    "TILE_LEARNING_DETAIL": "Juhendatud teekond: vali oskused, mängi, vaata tulemusi ja õpi mooduleid.",
+    "TILE_ROOMS": "Põgenemistoad",
+    "TILE_ROOMS_DETAIL": "30 digitaalset põgenemistuba, üks iga oskuse kohta — mängi neist ükskõik millist kohe."
   },
   "NEW": {
     "GALLERY": "Galerii",
@@ -287,5 +308,92 @@
     "EMPTY_LEAD": "Ressursid on kujunemas.",
     "EMPTY_DETAIL": "Koondame võrgustiku õppejõududele ja õppijatele tööriistu, viiteid ja lugemisnimekirju. Kontrolli hiljem või jälgi uudiseid värskenduste saamiseks.",
     "FOLLOW_NEWS": "Jälgi uudiseid"
+  },
+  "SKILLS": {
+    "cultural-awareness": "Kultuuriteadlikkus",
+    "empathy": "Empaatia",
+    "strategic-thinking": "Strateegiline mõtlemine",
+    "open-mindedness": "Avatud mõtlemine",
+    "financial": "Finantskirjaoskus ja finantsjuhtimine",
+    "stress-management": "Stressijuhtimine",
+    "trust-building": "Usalduse loomine",
+    "active-listening": "Aktiivne kuulamine",
+    "adaptability": "Kohanemisvõime",
+    "flexibility": "Paindlikkus",
+    "interpersonal-skills": "Suhtlemisoskused",
+    "language-skills": "Keeleoskused",
+    "market-awareness": "Turuteadlikkus",
+    "legal-compliance": "Seadusandlike nõuete järgimine",
+    "self-reliance": "Iseseisvus",
+    "teamwork": "Meeskonnatöö",
+    "resilience": "Vastupidavus",
+    "motivating-others": "Teiste motiveerimine ja inspireerimine",
+    "tolerance": "Tolerantsus",
+    "leadership": "Juhtimine",
+    "decision-making": "Otsuste tegemine",
+    "crm": "Kliendisuhete juhtimine",
+    "business-planning": "Äriplaneerimine",
+    "critical-thinking": "Kriitiline mõtlemine",
+    "digital-skills": "Digioskused",
+    "negotiation-skills": "Läbirääkimisoskused",
+    "networking-skills": "Kontaktivõrgustiku loomine",
+    "risk-management": "Riskijuhtimine",
+    "problem-solving": "Probleemide lahendamine",
+    "project-management": "Projektijuhtimine"
+  },
+  "GUIDE": {
+    "TITLE": "Juhend",
+    "PLATFORM_TITLE": "Kuidas õppeteekond toimib",
+    "ROOM_TITLE": "Kuidas põgenemistuba mängida",
+    "ROOM_STEP_1": "Loe sissejuhatuskaardil olev lühike lugu läbi ja klõpsa „Alusta“.",
+    "ROOM_STEP_2": "Uuri ruumi: klõpsa huvitavatel esemetel ja räägi tegelastega – nemad ütlevad, mida otsida.",
+    "ROOM_STEP_3": "Vestluse jätkamiseks klõpsa dialoogikastil.",
+    "ROOM_STEP_4": "Jäid hätta? Vajuta helendavat lambipirni nuppu (üleval vasakul), et saada vihje. Mõne aja pärast annab mäng ka ise märku.",
+    "ROOM_STEP_5": "Igal mõistatusel on 3 katset; pärast kolmandat valet vastust näidatakse õiget vastust. Mõistatuse võib ka vahele jätta.",
+    "ROOM_STEP_6": "Õppeteekonnal läheb iga mõistatus tulemuse arvesse: 80% või rohkem on läbitud; alla selle tuleb enne edasiliikumist moodulit õppida.",
+    "ROOM_STEP_7": "Soovitus: mängi sülearvutis või lauaarvutis täisekraanil (nupp üleval paremal), et kogemus oleks parim.",
+    "ROTATE_HINT": "Parima kogemuse saamiseks keera telefon horisontaalasendisse või kasuta suuremat ekraani."
+  },
+  "LEAFLETS": {
+    "PAGE": "Lehekülg",
+    "PREVIOUS_PAGE": "Eelmine lehekülg",
+    "NEXT_PAGE": "Järgmine lehekülg",
+    "SELECT_PROMPT": "Vali voldik, mida vaadata"
+  },
+  "ESCAPE_ROOM": {
+    "SCORE_OUTSTANDING": "Suurepärane tulemus! Oled selle oskuse omandanud.",
+    "SCORE_GREAT": "Tubli töö! Sul on sellest oskusest hea arusaam.",
+    "SCORE_GOOD": "Tubli katse! Tasub mooduli materjal üle vaadata, et teadmisi kinnistada.",
+    "SCORE_STUDY": "Läbisid toa, kuid soovitame selle oskuse mooduli PDF-i läbi töötada.",
+    "SCORE_REVEALED": "Mõne vastuse pidi ette näitama — need osad tasub moodulis üle vaadata.",
+    "YOU": "Sina",
+    "YOU_SUFFIX": "(sina)",
+    "YOU_INLINE": "sina",
+    "SHOW_SPOTS": "Näita, millele saab klõpsata",
+    "HIDE_SPOTS": "Peida klõpsatavad kohad",
+    "EXIT_TITLE": "Kas lahkuda toast?",
+    "EXIT_BODY": "Kas oled kindel, et soovid lahkuda? Sinu edenemine läheb kaotsi.",
+    "EXIT_CANCEL": "Tühista",
+    "EXIT_CONFIRM": "Lahku",
+    "FULLSCREEN_TIP": "Vihje: parima kogemuse saamiseks kasuta täisekraani nuppu (paremas ülanurgas)."
+  },
+  "FLIPBOOK": {
+    "CLOSE": "Sulge",
+    "PREVIOUS_PAGE": "Eelmine lehekülg",
+    "NEXT_PAGE": "Järgmine lehekülg",
+    "MODULE": "Moodul",
+    "DRAFT": "MUSTAND",
+    "DRAFT_HINT": "See õppekava on mustand, mis ootab partnerite ülevaatust.",
+    "BACK_TO_LEARNING": "Tagasi õppimise juurde"
+  },
+  "EYEBROW": {
+    "REFLECTION": "Refleksioon",
+    "REFLECTION_SUBMITTED": "Refleksioon esitatud",
+    "LEARNING_VOYAGE": "Õpiteekond",
+    "VOYAGE_COMPLETE": "Teekond läbitud",
+    "YOUR_PROGRESS": "Sinu edusammud",
+    "LIBRARY": "Raamatukogu",
+    "WHOLE_CURRICULUM": "Kogu õppekava",
+    "FEATURED": "Esiletõstetud"
   }
 }

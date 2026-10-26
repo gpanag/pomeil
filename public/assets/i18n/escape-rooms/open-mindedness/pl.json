@@ -191,7 +191,8 @@
   "completion": {
     "title": "Szkolenie zakończone!",
     "message": "Gratulacje! Z powodzeniem wykazałeś/aś doskonałe umiejętności otwartości umysłu i komunikacji.",
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "dialogueActions": {
     "continue": "Dalej",
@@ -200,17 +201,19 @@
   },
   "buttons": {
     "toggleFullscreen": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów"
+    "backToLearning": "Powrót do nauki"
   },
   "ui": {
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
     "answerButton": "Odpowiedź",
-    "finishTrainingButton": "Zakończ szkolenie"
+    "finishTrainingButton": "Zakończ szkolenie",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

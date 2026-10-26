@@ -193,18 +193,21 @@
   "completion": {
     "title": "Umiejętność ukończona: Przywództwo",
     "message": "Wartości zrozumiane. Decyzje ocenione. Etyczne zachowanie zademonstrowane.\nJesteś gotowy/a, aby przejść do następnej umiejętności.",
-    "buttonText": "Wyjdź z biura HR"
+    "buttonText": "Wyjdź z biura HR",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "____",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -39,17 +39,43 @@
       "title": "Dokumentklassifisering",
       "instructions": "Dra hvert dokument til riktig kategori.",
       "leftItems": [
-        {"id": "doc1", "text": "Klientkontrakt"},
-        {"id": "doc2", "text": "Intern policy-retningslinje"},
-        {"id": "doc3", "text": "Personlige notater"},
-        {"id": "doc4", "text": "Konfidensiell ansattmappe"}
+        {
+          "id": "doc1",
+          "text": "Klientkontrakt"
+        },
+        {
+          "id": "doc2",
+          "text": "Intern policy-retningslinje"
+        },
+        {
+          "id": "doc3",
+          "text": "Personlige notater"
+        },
+        {
+          "id": "doc4",
+          "text": "Konfidensiell ansattmappe"
+        }
       ],
       "rightItems": [
-        {"id": "cat1", "text": "Konfidensielt"},
-        {"id": "cat2", "text": "Intern bruk"},
-        {"id": "cat3", "text": "Offentlig / ikke-sensitivt"}
+        {
+          "id": "cat1",
+          "text": "Konfidensielt"
+        },
+        {
+          "id": "cat2",
+          "text": "Intern bruk"
+        },
+        {
+          "id": "cat3",
+          "text": "Offentlig / ikke-sensitivt"
+        }
       ],
-      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "correctPairs": {
+        "doc1": "cat1",
+        "doc2": "cat2",
+        "doc3": "cat3",
+        "doc4": "cat1"
+      },
       "feedback": {
         "wrong": "Ikke helt riktig. Tenk på hvem som skal ha tilgang til hvert dokument.",
         "correct": "Ikke all informasjon skal behandles likt."
@@ -103,7 +129,10 @@
     },
     "answerOverlayTitle": "Svaret avslørt",
     "answerOverlayContinue": "Fortsett",
-    "fillGap": {"checkButton": "Send inn", "resetButton": "Tilbakestill"}
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    }
   },
   "hints": {
     "intro": "Klikk på Sarah ved hovedpulten for å begynne.",
@@ -145,17 +174,23 @@
         "Denne e-posten er flagget av etterlevelses-overvåkingssystemet."
       ]
     },
-    "checklist": {"inventoryTitle": "Etterlevelses-sjekkliste"},
-    "flaggedEmail": {"inventoryTitle": "Flagget e-post"}
+    "checklist": {
+      "inventoryTitle": "Etterlevelses-sjekkliste"
+    },
+    "flaggedEmail": {
+      "inventoryTitle": "Flagget e-post"
+    }
   },
   "completion": {
     "title": "Ferdighet fullført: Etterlevelse",
     "message": "Du viste: Risikobevissthet, Etisk dømmekraft, Håndtering av informasjon, Prosedyremessig ansvar.\n\nEtterlevelse beskytter mennesker, organisasjoner og tillit.",
-    "buttonText": "Forlat Juridisk avdeling"
+    "buttonText": "Forlat Juridisk avdeling",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
+    "checkButton": "Sjekk",
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
@@ -163,7 +198,9 @@
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
     "answerButton": "Svar",
-    "resetButton": "Tilbakestill"
+    "resetButton": "Tilbakestill",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

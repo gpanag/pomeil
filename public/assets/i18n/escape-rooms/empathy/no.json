@@ -100,30 +100,66 @@
         {
           "text": "En kollega gir veldig korte svar, unngår øyekontakt, og fikler stadig med hendene.",
           "options": [
-            {"text": "Rolig + reflekterende", "correct": false},
-            {"text": "Engstelig + usikker", "correct": true},
-            {"text": "Glad + energisk", "correct": false},
-            {"text": "Motivert + fokusert", "correct": false}
+            {
+              "text": "Rolig + reflekterende",
+              "correct": false
+            },
+            {
+              "text": "Engstelig + usikker",
+              "correct": true
+            },
+            {
+              "text": "Glad + energisk",
+              "correct": false
+            },
+            {
+              "text": "Motivert + fokusert",
+              "correct": false
+            }
           ],
           "hint": "Å fikle og unngå øyekontakt reflekterer vanligvis indre spenning eller bekymring."
         },
         {
           "text": "I en teamdiskusjon snakker en kollega saktere enn vanlig, svarer med en myk stemme, og holder skuldrene senket.",
           "options": [
-            {"text": "Trist + lav energi", "correct": true},
-            {"text": "Selvsikker + avslappet", "correct": false},
-            {"text": "Irritert + utålmodig", "correct": false},
-            {"text": "Distrahert + leken", "correct": false}
+            {
+              "text": "Trist + lav energi",
+              "correct": true
+            },
+            {
+              "text": "Selvsikker + avslappet",
+              "correct": false
+            },
+            {
+              "text": "Irritert + utålmodig",
+              "correct": false
+            },
+            {
+              "text": "Distrahert + leken",
+              "correct": false
+            }
           ],
           "hint": "Senkede skuldre og myk stemme indikerer vanligvis senket emosjonell energi snarere enn selvtillit eller irritasjon."
         },
         {
           "text": "En medarbeider snakker veldig fort, avbryter ofte, og gestene er raske og overdrevne.",
           "options": [
-            {"text": "Nervøs spenning + overstimulering", "correct": true},
-            {"text": "Rolig + fredelig", "correct": false},
-            {"text": "Forvirret + sliten", "correct": false},
-            {"text": "Nøytral + likegyldig", "correct": false}
+            {
+              "text": "Nervøs spenning + overstimulering",
+              "correct": true
+            },
+            {
+              "text": "Rolig + fredelig",
+              "correct": false
+            },
+            {
+              "text": "Forvirret + sliten",
+              "correct": false
+            },
+            {
+              "text": "Nøytral + likegyldig",
+              "correct": false
+            }
           ],
           "hint": "Når noen snakker for fort eller gestikulerer mye, reflekterer det ofte forhøyet aktivering — ikke ro eller likegyldighet."
         }
@@ -209,16 +245,19 @@
   "completion": {
     "title": "Opplæring fullført!",
     "message": "Du har vellykket fullført empati-ferdighetsmodulen.",
-    "buttonText": "Tilbake til hovedmenyen"
+    "buttonText": "Tilbake til hovedmenyen",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "gapPlaceholder": "____",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

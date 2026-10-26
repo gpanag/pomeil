@@ -243,11 +243,12 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Z powodzeniem zademonstrowałeś sztukę negocjacji! Od nieprzygotowanego pierwszego spotkania do strategicznych, dobrze przygotowanych drugich negocjacji nauczyłeś się, jak ważne jest przygotowanie, znajomość minimum, strategiczne wykorzystanie ciszy, aktywne słuchanie i znajdowanie rozwiązań win-win.",
-    "buttonText": "Wyjdź z pokoju"
+    "buttonText": "Wyjdź z pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "chooseReply": "Wybierz odpowiedź:",
     "optionA": "Opcja A",
@@ -261,7 +262,9 @@
     "itemsFound": "elementów ukończono",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

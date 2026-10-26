@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from './translate.service';
 
 @Component({
-  selector: 'app-translate',
-  templateUrl: './translate.component.html',
-  styleUrl: './translate.component.scss'
+    selector: 'app-translate',
+    templateUrl: './translate.component.html',
+    styleUrl: './translate.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class TranslateComponent {
   constructor(public translateService: TranslateService) { }

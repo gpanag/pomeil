@@ -11,7 +11,7 @@
   },
   "buttons": {
     "toggleFullscreen": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continue": "Jätka",
     "startPuzzle": "Alusta ülesannet",
     "finishTraining": "Lõpeta koolitus",
@@ -240,16 +240,19 @@
     "title": "Koolitus lõpetatud!",
     "message": "Õnnitlused! Sa lõpetasid edukalt Finantskirjaoskuse ja juhtimise oskuse koolituse.",
     "submessage": "Sa muutud teadlikumaks ja finantsvastutavamaks ettevõtjaks!",
-    "buttonText": "Tagasi peamenüüsse"
+    "buttonText": "Tagasi peamenüüsse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

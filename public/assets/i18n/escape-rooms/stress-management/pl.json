@@ -231,7 +231,8 @@
       "Udało Ci się szybko nauczyć nowych umiejętności odporności na stres i zastosować je w realnych sytuacjach, prawdopodobnie nawet wcześniej, niż się spodziewałeś – a wszystko to przy okazji ratując firmę.",
       "Z powodzeniem zdobyłeś umiejętność <strong>Zarządzania stresem</strong>."
     ],
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "answerOverlay": {
     "title": "Poprawna odpowiedź",
@@ -240,13 +241,15 @@
   "ui": {
     "continueButton": "Dalej",
     "fullscreenTitle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRoomsTitle": "Powrót do escape roomów",
+    "backToLearningTitle": "Powrót do nauki",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

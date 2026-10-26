@@ -26,3 +26,21 @@
     margin-top: 32px;
     margin-bottom: 32px;
 }
+/* Phones: `flex: 1 1 0%` on the cards (formerly fxFlex) lets the six cards share one row, and with 32px padding on a
+   content-box element the row was far wider than the screen — long partner
+   names ran off the right edge, and because the row widened the document the
+   toolbar stretched with it and took the menu/account/language buttons
+   off-screen too. One card per row below 600px. */
+@media screen and (max-width: 600px) {
+  .front-partner-card {
+    padding: 12px !important;
+    box-sizing: border-box;
+    flex: 1 1 100% !important;
+    max-width: 100%;
+  }
+}
+
+.front-partner-title {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

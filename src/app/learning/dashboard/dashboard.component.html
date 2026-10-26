@@ -1,5 +1,5 @@
 <div class="dashboard-container">
-  <h1>{{"LEARNING_PAGE.DASHBOARD.TITLE" | translate}}</h1>
+  <h1 [attr.data-eyebrow]="'EYEBROW.YOUR_PROGRESS' | translate">{{"LEARNING_PAGE.DASHBOARD.TITLE" | translate}}</h1>
 
   <!-- Overview Stats -->
   <div class="overview-stats">
@@ -24,56 +24,61 @@
   <!-- Room Cards Grid -->
   <h2>{{"LEARNING_PAGE.DASHBOARD.YOUR_SKILLS" | translate}}</h2>
   <div class="rooms-grid">
-    <mat-card *ngFor="let skill of skills" class="room-card" [class.completed]="isCompleted(skill.id)" [class.not-played]="!isCompleted(skill.id)">
-      <img mat-card-image [src]="skill.image" [alt]="skill.title">
-
-      <mat-card-content>
-        <h3>{{ skill.title }}</h3>
-
-        <!-- Completed state -->
-        <ng-container *ngIf="isCompleted(skill.id)">
-          <div class="score-row">
-            <div class="score-circle small" [class.high-score]="!isModuleRequired(skill.id)" [class.low-score]="isModuleRequired(skill.id)">
-              {{ getRoomScore(skill.id)!.overallScore }}%
+    @for (skill of skills; track skill) {
+      <mat-card class="room-card" [class.completed]="isCompleted(skill.id)" [class.not-played]="!isCompleted(skill.id)">
+        <img mat-card-image [src]="skill.image" [alt]="skillTitle(skill)">
+        <mat-card-content>
+          <h3>{{ skillTitle(skill) }}</h3>
+          <!-- Completed state -->
+          @if (isCompleted(skill.id)) {
+            <div class="score-row">
+              <div class="score-circle small" [class.high-score]="!isModuleRequired(skill.id)" [class.low-score]="isModuleRequired(skill.id)">
+                {{ getRoomScore(skill.id)!.overallScore }}%
+              </div>
+              <div class="score-info">
+                @if (!isModuleRequired(skill.id)) {
+                  <span class="pass-text">{{"LEARNING_PAGE.DASHBOARD.GREAT_JOB" | translate}}</span>
+                }
+                @if (isModuleRequired(skill.id)) {
+                  <span class="fail-text">{{"LEARNING_PAGE.DASHBOARD.MODULE_RECOMMENDED" | translate}}</span>
+                }
+                <span class="completed-date">{{ getRoomScore(skill.id)!.completedAt | date : 'mediumDate' : undefined : dateLocale }}</span>
+              </div>
             </div>
-            <div class="score-info">
-              <span *ngIf="!isModuleRequired(skill.id)" class="pass-text">{{"LEARNING_PAGE.DASHBOARD.GREAT_JOB" | translate}}</span>
-              <span *ngIf="isModuleRequired(skill.id)" class="fail-text">{{"LEARNING_PAGE.DASHBOARD.MODULE_RECOMMENDED" | translate}}</span>
-              <span class="completed-date">{{ getRoomScore(skill.id)!.completedAt | date:'mediumDate' }}</span>
+            <div class="puzzle-scores">
+              @for (ps of getRoomScore(skill.id)!.puzzleScores; track ps; let i = $index) {
+                <div class="puzzle-score-row">
+                  <span class="puzzle-label">{{"LEARNING_PAGE.COMMON.PUZZLE" | translate}} {{ i + 1 }}</span>
+                  <mat-progress-bar mode="determinate" [value]="getPuzzleScoreValue(ps)" [color]="getPuzzleScoreValue(ps) >= 80 ? 'primary' : 'warn'"></mat-progress-bar>
+                  <span class="puzzle-pct">{{ getPuzzleScoreValue(ps) }}%</span>
+                </div>
+              }
             </div>
-          </div>
-
-          <div class="puzzle-scores">
-            <div *ngFor="let ps of getRoomScore(skill.id)!.puzzleScores; let i = index" class="puzzle-score-row">
-              <span class="puzzle-label">Puzzle {{ i + 1 }}</span>
-              <mat-progress-bar mode="determinate" [value]="getPuzzleScoreValue(ps)" [color]="getPuzzleScoreValue(ps) >= 80 ? 'primary' : 'warn'"></mat-progress-bar>
-              <span class="puzzle-pct">{{ getPuzzleScoreValue(ps) }}%</span>
+            <div class="card-actions">
+              <a mat-stroked-button [href]="modulePdfUrls[skill.id]" target="_blank" download class="download-btn">
+                <mat-icon>download</mat-icon>
+                {{"LEARNING_PAGE.DASHBOARD.DOWNLOAD_MODULE" | translate}}
+                @if (isModuleRequired(skill.id)) {
+                  <span class="required-badge">{{ "LEARNING_PAGE.DASHBOARD.REQUIRED" | translate }}</span>
+                }
+              </a>
+              <button mat-stroked-button (click)="playGame(skill.id)" class="replay-btn">
+                <mat-icon>replay</mat-icon>
+                {{"LEARNING_PAGE.DASHBOARD.REPLAY" | translate}}
+              </button>
             </div>
-          </div>
-
-          <div class="card-actions">
-            <a mat-stroked-button [href]="modulePdfUrls[skill.id]" target="_blank" download class="download-btn">
-              <mat-icon>download</mat-icon>
-              {{"LEARNING_PAGE.DASHBOARD.DOWNLOAD_MODULE" | translate}}
-              <span *ngIf="isModuleRequired(skill.id)" class="required-badge">(Required)</span>
-            </a>
-            <button mat-stroked-button (click)="playGame(skill.id)" class="replay-btn">
-              <mat-icon>replay</mat-icon>
-              {{"LEARNING_PAGE.DASHBOARD.REPLAY" | translate}}
+          }
+          <!-- Not played state -->
+          @if (!isCompleted(skill.id)) {
+            <p class="not-played-text">{{"LEARNING_PAGE.DASHBOARD.NOT_YET_PLAYED" | translate}}</p>
+            <button mat-raised-button color="primary" (click)="playGame(skill.id)">
+              <mat-icon>videogame_asset</mat-icon>
+              {{"LEARNING_PAGE.DASHBOARD.PLAY_GAME" | translate}}
             </button>
-          </div>
-        </ng-container>
-
-        <!-- Not played state -->
-        <ng-container *ngIf="!isCompleted(skill.id)">
-          <p class="not-played-text">{{"LEARNING_PAGE.DASHBOARD.NOT_YET_PLAYED" | translate}}</p>
-          <button mat-raised-button color="primary" (click)="playGame(skill.id)">
-            <mat-icon>videogame_asset</mat-icon>
-            {{"LEARNING_PAGE.DASHBOARD.PLAY_GAME" | translate}}
-          </button>
-        </ng-container>
-      </mat-card-content>
-    </mat-card>
+          }
+        </mat-card-content>
+      </mat-card>
+    }
   </div>
 
   <!-- Quick Actions -->
@@ -86,9 +91,11 @@
       <mat-icon>menu_book</mat-icon>
       {{"LEARNING_PAGE.INTRO.BROWSE_MODULES" | translate}}
     </a>
-    <a *ngIf="hasCompletedAllSelected" mat-stroked-button routerLink="/learning/questionnaire">
-      <mat-icon>quiz</mat-icon>
-      {{"LEARNING_PAGE.FLOW.GO_TO_QUESTIONNAIRE" | translate}}
-    </a>
+    @if (hasCompletedAllSelected) {
+      <a mat-stroked-button routerLink="/learning/questionnaire">
+        <mat-icon>quiz</mat-icon>
+        {{"LEARNING_PAGE.FLOW.GO_TO_QUESTIONNAIRE" | translate}}
+      </a>
+    }
   </div>
 </div>

@@ -257,17 +257,20 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Lõpetasid edukalt äriplaneerimise põgenemistoa! Mõistad nüüd ärimudeli lõuendi võtmekomponente: Kliendisegmendid, Väärtuspakkumine, Kanalid, Tulu allikad ja Kulustruktuur.",
-    "buttonText": "Välju ruumist"
+    "buttonText": "Välju ruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "puzzlesCompleted": "ülesanded",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
     "answerButton": "Vastus",
-    "backToDocuments": "Tagasi dokumentide juurde"
+    "backToDocuments": "Tagasi dokumentide juurde",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

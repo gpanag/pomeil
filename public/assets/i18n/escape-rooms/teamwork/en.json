@@ -181,18 +181,21 @@
   "completion": {
     "title": "Congratulations!",
     "message": "Your teamwork skills are glowing. Congratulations on your achievement. You are now ready to be part of a strong team, understanding how the teamwork process truly works. But there are still many more skills to explore — so feel free to continue and discover what comes next.",
-    "buttonText": "Exit the Co-Working Space"
+    "buttonText": "Exit the Co-Working Space",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

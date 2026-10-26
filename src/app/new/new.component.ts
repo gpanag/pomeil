@@ -1,31 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
 import { ImageDialog } from '../app.component';
 import { TranslateService } from '../translate/translate.service';
-import localeEn from '@angular/common/locales/en';
-import localeEe from '@angular/common/locales/ee';
-import localeGr from '@angular/common/locales/el';
-import localeNo from '@angular/common/locales/no';
-import localePl from '@angular/common/locales/pl';
-import localeUa from '@angular/common/locales/ru-UA';
-import { registerLocaleData } from '@angular/common';
-
-
-registerLocaleData(localeEn, 'en');
-registerLocaleData(localeEe, 'ee');
-registerLocaleData(localeGr, 'gr');
-registerLocaleData(localeNo, 'no');
-registerLocaleData(localePl, 'pl');
-registerLocaleData(localeUa, 'ua');
+import { dateLocale } from '../shared/app-locales';
+import { localizedField } from '../shared/localized-field';
 
 @Component({
-  selector: 'app-new',
-  templateUrl: './new.component.html',
-  styleUrl: './new.component.scss'
+    selector: 'app-new',
+    templateUrl: './new.component.html',
+    styleUrl: './new.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class NewComponent {
+  /** DatePipe locale for the current UI language (ee→et, gr→el, ua→uk). */
+  get dateLocale(): string { return dateLocale(this.lang); }
+  /** Per-language title with English fallback (older items have title_xx = null). */
+  itemTitle(item: any): string { return localizedField(item, 'title', this.lang); }
   id: string = '';
   newItem: any;
   lang: string = 'en';

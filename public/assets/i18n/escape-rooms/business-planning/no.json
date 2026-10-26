@@ -257,17 +257,20 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har fullført fluktrommet for forretningsplanlegging med suksess! Du forstår nå nøkkelkomponentene i en forretningsmodell-canvas: Kundesegmenter, Verdiforslag, Kanaler, Inntektsstrømmer og Kostnadsstruktur.",
-    "buttonText": "Forlat rommet"
+    "buttonText": "Forlat rommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "puzzlesCompleted": "oppgaver",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
     "answerButton": "Svar",
-    "backToDocuments": "Tilbake til dokumenter"
+    "backToDocuments": "Tilbake til dokumenter",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

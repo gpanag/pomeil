@@ -161,18 +161,21 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You've completed the Market Awareness skill! You know your customer, you watch your competitors, and you analyze the situation before acting. You are ready to conquer the market!",
-    "buttonText": "Exit the Marketing Office"
+    "buttonText": "Exit the Marketing Office",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

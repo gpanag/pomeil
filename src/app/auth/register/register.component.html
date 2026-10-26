@@ -4,64 +4,77 @@
     <h2>{{ (submittedEmail ? 'AUTH.REGISTRATION_CHECK_EMAIL_TITLE' : 'AUTH.REGISTER') | translate }}</h2>
   </div>
 
-  <mat-card-content *ngIf="!submittedEmail">
-    <div *ngIf="error" class="error-message">{{ error }}</div>
+  @if (!submittedEmail) {
+    <mat-card-content>
+      @if (error) {
+        <div class="error-message">{{ error }}</div>
+      }
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'AUTH.EMAIL' | translate }}</mat-label>
+        <input matInput [(ngModel)]="email" type="email" (keydown.enter)="register()" autocomplete="email">
+        <mat-icon matPrefix>email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'AUTH.USERNAME' | translate }} ({{ 'AUTH.OPTIONAL' | translate }})</mat-label>
+        <input matInput [(ngModel)]="name" (keydown.enter)="register()" autocomplete="username">
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'AUTH.PASSWORD' | translate }}</mat-label>
+        <input matInput [(ngModel)]="password" [type]="hidePassword ? 'password' : 'text'" (keydown.enter)="register()" autocomplete="new-password">
+        <mat-icon matPrefix>vpn_key</mat-icon>
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'AUTH.CONFIRM_PASSWORD' | translate }}</mat-label>
+        <input matInput [(ngModel)]="confirmPassword" [type]="hidePassword ? 'password' : 'text'" (keydown.enter)="register()" autocomplete="new-password">
+        <mat-icon matPrefix>vpn_key</mat-icon>
+      </mat-form-field>
+      @if (password && confirmPassword && !passwordsMatch) {
+        <div class="error-message">
+          {{ 'AUTH.PASSWORDS_MISMATCH' | translate }}
+        </div>
+      }
+    </mat-card-content>
+  }
 
-    <mat-form-field appearance="outline">
-      <mat-label>{{ 'AUTH.EMAIL' | translate }}</mat-label>
-      <input matInput [(ngModel)]="email" type="email" (keydown.enter)="register()" autocomplete="email">
-      <mat-icon matPrefix>email</mat-icon>
-    </mat-form-field>
+  @if (submittedEmail) {
+    <mat-card-content class="check-email-view">
+      <p>{{ 'AUTH.REGISTRATION_CHECK_EMAIL_BODY' | translate }}</p>
+      <p><strong>{{ submittedEmail }}</strong></p>
+      <p class="muted">{{ 'AUTH.REGISTRATION_CHECK_EMAIL_HINT' | translate }}</p>
+    </mat-card-content>
+  }
 
-    <mat-form-field appearance="outline">
-      <mat-label>{{ 'AUTH.USERNAME' | translate }} ({{ 'AUTH.OPTIONAL' | translate }})</mat-label>
-      <input matInput [(ngModel)]="name" (keydown.enter)="register()" autocomplete="username">
-      <mat-icon matPrefix>person</mat-icon>
-    </mat-form-field>
-
-    <mat-form-field appearance="outline">
-      <mat-label>{{ 'AUTH.PASSWORD' | translate }}</mat-label>
-      <input matInput [(ngModel)]="password" [type]="hidePassword ? 'password' : 'text'" (keydown.enter)="register()" autocomplete="new-password">
-      <mat-icon matPrefix>vpn_key</mat-icon>
-      <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
-        <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+  @if (!submittedEmail) {
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="register()" [disabled]="loading || !formValid">
+        @if (!loading) {
+          <mat-icon>person_add</mat-icon>
+        }
+        @if (loading) {
+          <mat-spinner diameter="20"></mat-spinner>
+        }
+        {{ 'AUTH.REGISTER_BUTTON' | translate }}
       </button>
-    </mat-form-field>
+    </mat-card-actions>
+  }
 
-    <mat-form-field appearance="outline">
-      <mat-label>{{ 'AUTH.CONFIRM_PASSWORD' | translate }}</mat-label>
-      <input matInput [(ngModel)]="confirmPassword" [type]="hidePassword ? 'password' : 'text'" (keydown.enter)="register()" autocomplete="new-password">
-      <mat-icon matPrefix>vpn_key</mat-icon>
-    </mat-form-field>
+  @if (submittedEmail) {
+    <mat-card-actions>
+      <button mat-raised-button color="primary" routerLink="/login">
+        <mat-icon>login</mat-icon>
+        {{ 'AUTH.LOGIN_BUTTON' | translate }}
+      </button>
+    </mat-card-actions>
+  }
 
-    <div *ngIf="password && confirmPassword && !passwordsMatch" class="error-message">
-      {{ 'AUTH.PASSWORDS_MISMATCH' | translate }}
+  @if (!submittedEmail) {
+    <div class="auth-links">
+      <span>{{ 'AUTH.HAVE_ACCOUNT' | translate }} </span>
+      <a routerLink="/login">{{ 'AUTH.LOGIN' | translate }}</a>
     </div>
-  </mat-card-content>
-
-  <mat-card-content *ngIf="submittedEmail" class="check-email-view">
-    <p>{{ 'AUTH.REGISTRATION_CHECK_EMAIL_BODY' | translate }}</p>
-    <p><strong>{{ submittedEmail }}</strong></p>
-    <p class="muted">{{ 'AUTH.REGISTRATION_CHECK_EMAIL_HINT' | translate }}</p>
-  </mat-card-content>
-
-  <mat-card-actions *ngIf="!submittedEmail">
-    <button mat-raised-button color="primary" (click)="register()" [disabled]="loading || !formValid">
-      <mat-icon *ngIf="!loading">person_add</mat-icon>
-      <mat-spinner *ngIf="loading" diameter="20"></mat-spinner>
-      {{ 'AUTH.REGISTER_BUTTON' | translate }}
-    </button>
-  </mat-card-actions>
-
-  <mat-card-actions *ngIf="submittedEmail">
-    <button mat-raised-button color="primary" routerLink="/login">
-      <mat-icon>login</mat-icon>
-      {{ 'AUTH.LOGIN_BUTTON' | translate }}
-    </button>
-  </mat-card-actions>
-
-  <div class="auth-links" *ngIf="!submittedEmail">
-    <span>{{ 'AUTH.HAVE_ACCOUNT' | translate }} </span>
-    <a routerLink="/login">{{ 'AUTH.LOGIN' | translate }}</a>
-  </div>
+  }
 </mat-card>

@@ -72,3 +72,21 @@
   margin-top: 16px;
   margin-bottom: 32px;
 }
+/* Inline image blocks inside the article body (Strapi blocks `image` nodes). */
+.article-inline-image {
+  margin: 1.5rem 0;
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    cursor: zoom-in;
+  }
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.75;
+  }
+}

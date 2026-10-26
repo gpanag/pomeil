@@ -39,17 +39,43 @@
       "title": "Dokumentide klassifitseerimine",
       "instructions": "Lohista iga dokument õigesse kategooriasse.",
       "leftItems": [
-        {"id": "doc1", "text": "Klientleping"},
-        {"id": "doc2", "text": "Sisemine poliitika juhend"},
-        {"id": "doc3", "text": "Isiklikud märkmed"},
-        {"id": "doc4", "text": "Konfidentsiaalne töötaja toimik"}
+        {
+          "id": "doc1",
+          "text": "Klientleping"
+        },
+        {
+          "id": "doc2",
+          "text": "Sisemine poliitika juhend"
+        },
+        {
+          "id": "doc3",
+          "text": "Isiklikud märkmed"
+        },
+        {
+          "id": "doc4",
+          "text": "Konfidentsiaalne töötaja toimik"
+        }
       ],
       "rightItems": [
-        {"id": "cat1", "text": "Konfidentsiaalne"},
-        {"id": "cat2", "text": "Sisekasutus"},
-        {"id": "cat3", "text": "Avalik / mitte-tundlik"}
+        {
+          "id": "cat1",
+          "text": "Konfidentsiaalne"
+        },
+        {
+          "id": "cat2",
+          "text": "Sisekasutus"
+        },
+        {
+          "id": "cat3",
+          "text": "Avalik / mitte-tundlik"
+        }
       ],
-      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "correctPairs": {
+        "doc1": "cat1",
+        "doc2": "cat2",
+        "doc3": "cat3",
+        "doc4": "cat1"
+      },
       "feedback": {
         "wrong": "Pole päris õige. Mõtle, kellel peaks olema juurdepääs igale dokumendile.",
         "correct": "Mitte kõiki teavevormiseid ei tohi kohelda samamoodi."
@@ -103,7 +129,10 @@
     },
     "answerOverlayTitle": "Vastus avalikustatud",
     "answerOverlayContinue": "Jätka",
-    "fillGap": {"checkButton": "Esita", "resetButton": "Lähtesta"}
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    }
   },
   "hints": {
     "intro": "Klõpsa Sarah'l peamise laua juures, et alustada.",
@@ -145,17 +174,23 @@
         "See e-kiri on märgistatud vastavuse jälgimissüsteemi poolt."
       ]
     },
-    "checklist": {"inventoryTitle": "Vastavuse kontrollnimekiri"},
-    "flaggedEmail": {"inventoryTitle": "Märgistatud e-kiri"}
+    "checklist": {
+      "inventoryTitle": "Vastavuse kontrollnimekiri"
+    },
+    "flaggedEmail": {
+      "inventoryTitle": "Märgistatud e-kiri"
+    }
   },
   "completion": {
     "title": "Oskus lõpetatud: Õiguslik vastavus",
     "message": "Sa näitasid: Riskiteadlikkust, Eetilist hinnangut, Teabe käsitlust, Menetluslikku vastutust.\n\nVastavus kaitseb inimesi, organisatsioone ja usaldust.",
-    "buttonText": "Lahku Õigusosakonnast"
+    "buttonText": "Lahku Õigusosakonnast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
+    "checkButton": "Kontrolli",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
@@ -163,7 +198,9 @@
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
     "answerButton": "Vastus",
-    "resetButton": "Lähtesta"
+    "resetButton": "Lähtesta",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

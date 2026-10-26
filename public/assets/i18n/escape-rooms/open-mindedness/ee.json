@@ -191,7 +191,8 @@
   "completion": {
     "title": "Koolitus lõpetatud!",
     "message": "Õnnitlused! Sa demonstreerisid edukalt suurepärast avatud meelt ja suhtlemisoskusi.",
-    "buttonText": "Tagasi peamenüüsse"
+    "buttonText": "Tagasi peamenüüsse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "dialogueActions": {
     "continue": "Jätka",
@@ -200,17 +201,19 @@
   },
   "buttons": {
     "toggleFullscreen": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse"
+    "backToLearning": "Tagasi õppimise juurde"
   },
   "ui": {
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
     "answerButton": "Vastus",
-    "finishTrainingButton": "Lõpeta koolitus"
+    "finishTrainingButton": "Lõpeta koolitus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

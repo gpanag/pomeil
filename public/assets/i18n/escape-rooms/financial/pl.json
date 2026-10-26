@@ -11,7 +11,7 @@
   },
   "buttons": {
     "toggleFullscreen": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continue": "Dalej",
     "startPuzzle": "Rozpocznij zagadkę",
     "finishTraining": "Zakończ szkolenie",
@@ -240,16 +240,19 @@
     "title": "Szkolenie zakończone!",
     "message": "Gratulacje! Pomyślnie ukończyłeś/aś szkolenie umiejętności Edukacja finansowa i zarządzanie.",
     "submessage": "Stajesz się bardziej świadomym i odpowiedzialnym finansowo przedsiębiorcą!",
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

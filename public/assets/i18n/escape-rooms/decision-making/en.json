@@ -287,7 +287,8 @@
       }
     ],
     "wellDone": "Well done!",
-    "buttonText": "Exit Room"
+    "buttonText": "Exit Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "hints": {
     "outsideElevator": "Click on the elevator call button to call the elevator.",
@@ -304,12 +305,14 @@
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

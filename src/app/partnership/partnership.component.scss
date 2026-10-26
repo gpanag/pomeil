@@ -191,3 +191,25 @@
     min-width: 200px;
   }
 }
+/* Phones: the 32px grid padding left the cards wider than the space they had,
+   and long organisation names (the Estonian and Ukrainian foundations) were
+   clipped rather than wrapped. */
+@media screen and (max-width: 600px) {
+  .grid-list {
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .item-card,
+  .example-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.item-card mat-card-title,
+.item-card .tbf-title,
+.tbf-content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

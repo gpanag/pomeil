@@ -176,18 +176,21 @@
   "completion": {
     "title": "Szkolenie zakończone!",
     "message": "Gratulacje! Ukończyłeś/aś moduł myślenia strategicznego.",
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenTitle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRoomsTitle": "Powrót do escape roomów",
+    "backToLearningTitle": "Powrót do nauki",
     "startQuizButton": "Rozpocznij quiz",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "skipButton": "Pomiń",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,6 +11,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // --- Interfaces and Enums ---
 enum GameState {
   Introduction,
@@ -64,12 +65,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-open-mindness-skill-skill26',
-  templateUrl: './open-mindness-skill-skill26.component.html',
-  styleUrl: './open-mindness-skill-skill26.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-open-mindness-skill-skill26',
+    templateUrl: './open-mindness-skill-skill26.component.html',
+    styleUrl: './open-mindness-skill-skill26.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class OpenMindnessSkillSkill26Component extends EscapeRoomBaseComponent {
 

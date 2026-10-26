@@ -15,7 +15,7 @@
     "MORE_NEWS": "Flere nyheter",
     "DOWNLOAD": "Last ned",
     "MORE": "mer",
-    "PLAY": "Play"
+    "PLAY": "Spill"
   },
   "NAVIGATION": {
     "HOME": "Hjem",
@@ -24,6 +24,7 @@
     "OUTPUTS": "Resultater",
     "RESOURCES": "Ressurser",
     "NEWS": "Nyheter",
+    "NEWSLETTERS": "Nyhetsbrev",
     "ESCAPE_ROOMS": "Fluktrom",
     "ARTICLES": "Artikler",
     "LEAFLETS": "Brosjyrer",
@@ -38,14 +39,19 @@
     "PROGRAMME": "Program",
     "REFERENCE": "Referansenr.",
     "DURATION": "Varighet",
-    "FUNDER": "Finansiør"
+    "FUNDER": "Finansiør",
+    "GUIDE": "Veiledning"
   },
   "OTHER": {
     "OBJECTIVES": "Mål",
-    "WORKPACKAGES": "Arbeidspakker"
+    "WORKPACKAGES": "Arbeidspakker",
+    "GALLERY": "Galleri"
   },
   "WORKPACKAGES": {
-    "MAP": "The Pomeil Competence Map"
+    "MAP": "The Pomeil Competence Map",
+    "FILES": "Filer",
+    "TRANSLATIONS": "Oversettelser",
+    "ENGLISH_ONLY": "Kun på engelsk"
   },
   "LEARNING_PAGE": {
     "INTRO": {
@@ -77,7 +83,9 @@
       "GUIDEBOOK_TITLE": "Trenerveiledning",
       "GUIDEBOOK_DESC": "Last ned POMEIL Trenerveiledning.",
       "DOWNLOAD_PDF": "Last Ned PDF",
-      "PLAYER_NAME_REQUIRED": "Vennligst skriv inn navnet ditt for å begynne å lære."
+      "PLAYER_NAME_REQUIRED": "Vennligst skriv inn navnet ditt for å begynne å lære.",
+      "DIAGRAM_START": "START",
+      "DIAGRAM_GROWTH": "VEKST"
     },
     "DASHBOARD": {
       "TITLE": "Læringsoversikt",
@@ -94,7 +102,8 @@
       "SCORE": "Poengsum",
       "NO_GAMES_PLAYED": "Ingen spill spilt ennå. Start læringsreisen din.",
       "PROGRESS_SAVED": "Fremdrift lagret i skyen",
-      "SAVE_PROGRESS": "Logg inn for å lagre fremdrift"
+      "PROGRESS_SAVED_LOCAL": "Fremdriften lagres bare i denne nettleseren",
+      "REQUIRED": "(Påkrevd)"
     },
     "FLOW": {
       "TITLE": "Læringsflyt",
@@ -119,7 +128,10 @@
       "PASSED": "Bestått",
       "NEEDS_REVIEW": "Trenger Gjennomgang",
       "START_OVER": "Start På Nytt",
-      "READ_FLIPBOOK": "Les modulen"
+      "READ_FLIPBOOK": "Les modulen",
+      "MODULE_GATE_HINT": "Poengsummen din er under 80 %. Last ned eller les modulen for denne ferdigheten før du går videre til neste.",
+      "MODULE_ACKNOWLEDGED": "Modul åpnet",
+      "REQUIRED_BADGE": "Påkrevd"
     },
     "MODULES": {
       "TITLE": "Læringsmoduler",
@@ -136,7 +148,9 @@
       "BACK_TO_ESCAPE_ROOMS": "Tilbake til Fluktrom",
       "LEARNING_MODE": "Læringsmodus",
       "PUZZLES": "oppgaver",
-      "SCORE": "Poengsum"
+      "SCORE": "Poengsum",
+      "SKILL": "Ferdighet",
+      "PUZZLE": "Oppgave"
     },
     "YOUR_MODULES": {
       "TITLE": "Dine moduler",
@@ -229,11 +243,11 @@
     "PASSWORDS_MISMATCH": "Passordene stemmer ikke",
     "ACCOUNT": "Konto",
     "HELLO": "Hei",
-    "CONTINUE_ANYWAY": "Fortsett likevel",
-    "NOT_LOGGED_IN_TITLE": "Du er ikke innlogget",
-    "NOT_LOGGED_IN_BODY": "Du kan spille spillet, men merk at:",
-    "NOT_LOGGED_IN_BULLET_PROGRESS": "Fremgangen din vil ikke bli lagret.",
-    "NOT_LOGGED_IN_BULLET_SCORES": "Poengsummene dine vil ikke vises på dashbordet eller i Dine moduler.",
+    "GUEST_TITLE": "Du spiller uten konto",
+    "GUEST_BODY": "Du kan spille og lære uten konto.",
+    "GUEST_SAVED_HERE": "Ferdighetene du har valgt og poengsummene dine lagres bare i denne nettleseren, på denne enheten.",
+    "GUEST_SIGN_IN_BENEFIT": "Logg inn først hvis du vil lagre dem på kontoen din og kunne fortsette på hvilken som helst enhet.",
+    "CONTINUE_AS_GUEST": "Fortsett uten konto",
     "REGISTRATION_CHECK_EMAIL_TITLE": "Sjekk e-posten din",
     "REGISTRATION_CHECK_EMAIL_BODY": "Vi sendte en bekreftelseslenke til:",
     "REGISTRATION_CHECK_EMAIL_HINT": "Klikk på lenken i e-posten for å aktivere kontoen din. Hvis du ikke ser den, sjekk søppelpostmappen.",
@@ -245,7 +259,8 @@
     "RESET_PASSWORD_TITLE": "Sett et nytt passord",
     "RESET_PASSWORD_BODY": "Velg et nytt passord for kontoen din.",
     "RESET_PASSWORD_SUBMIT": "Oppdater passord",
-    "INVALID_RESET_LINK": "Denne tilbakestillingslenken er ugyldig eller har utløpt. Vennligst be om en ny."
+    "INVALID_RESET_LINK": "Denne tilbakestillingslenken er ugyldig eller har utløpt. Vennligst be om en ny.",
+    "MIN_PASSWORD_HINT": "Minst 6 tegn"
   },
   "HOME": {
     "COVER_FUNDED_BY": "Finansiert av Den europeiske union",
@@ -272,11 +287,17 @@
     "TILE_OUTPUTS_DETAIL": "Prosjektresultater publisert så langt.",
     "TILE_ARTICLES_DETAIL": "Innsiktsartikler fra hele nettverket.",
     "TILE_RESOURCES_DETAIL": "Verktøy og referanser for lærere og elever.",
+    "TILE_NEWSLETTERS_DETAIL": "Prosjektoppdateringer, utgave for utgave.",
     "TILE_LEAFLETS_DETAIL": "Utskrivbare sammendrag du kan dele med din lokalsamfunn.",
     "TILE_PARTNERSHIP_DETAIL": "De seks organisasjonene bak POMEIL, i fire land.",
     "NEWS_EYEBROW": "Siste nytt",
     "NETWORK_EYEBROW": "Vårt nettverk",
-    "NETWORK_LEAD": "Seks organisasjoner i Norge, Hellas, Polen og Estland."
+    "NETWORK_LEAD": "Seks organisasjoner i Norge, Hellas, Polen og Estland.",
+    "COVER_CTA_LEARNING": "Start læringen",
+    "TILE_LEARNING": "Læring",
+    "TILE_LEARNING_DETAIL": "Den veiledede reisen: velg ferdigheter, spill, se resultatene dine og les modulene.",
+    "TILE_ROOMS": "Fluktrom",
+    "TILE_ROOMS_DETAIL": "30 digitale fluktrom, ett per ferdighet — spill hvilket som helst med én gang."
   },
   "NEW": {
     "GALLERY": "Galleri",
@@ -287,5 +308,92 @@
     "EMPTY_LEAD": "Ressurser tar form.",
     "EMPTY_DETAIL": "Vi setter sammen verktøy, referanser og leselister for lærere og elever på tvers av nettverket. Sjekk tilbake senere eller følg våre nyheter for oppdateringer.",
     "FOLLOW_NEWS": "Følg nyhetene"
+  },
+  "SKILLS": {
+    "cultural-awareness": "Kulturell bevissthet",
+    "empathy": "Empati",
+    "strategic-thinking": "Strategisk tenkning",
+    "open-mindedness": "Åpenhet i tankegangen",
+    "financial": "Finansiell kompetanse og forvaltning",
+    "stress-management": "Stresshåndtering",
+    "trust-building": "Tillitsbygging",
+    "active-listening": "Aktiv lytting",
+    "adaptability": "Tilpasningsdyktighet",
+    "flexibility": "Fleksibilitet",
+    "interpersonal-skills": "Mellommenneskelige ferdigheter",
+    "language-skills": "Språkferdigheter",
+    "market-awareness": "Markedsbevissthet",
+    "legal-compliance": "Etterlevelse",
+    "self-reliance": "Selvstendighet",
+    "teamwork": "Teamarbeid",
+    "resilience": "Robusthet",
+    "motivating-others": "Motivere og inspirere andre",
+    "tolerance": "Toleranse",
+    "leadership": "Lederskap",
+    "decision-making": "Beslutningstaking",
+    "crm": "Kunderelasjonshåndtering",
+    "business-planning": "Forretningsplanlegging",
+    "critical-thinking": "Kritisk tenkning",
+    "digital-skills": "Digitale ferdigheter",
+    "negotiation-skills": "Forhandlingsferdigheter",
+    "networking-skills": "Nettverksferdigheter",
+    "risk-management": "Risikostyring",
+    "problem-solving": "Problemløsning",
+    "project-management": "Prosjektledelse"
+  },
+  "GUIDE": {
+    "TITLE": "Veiledning",
+    "PLATFORM_TITLE": "Slik fungerer læringsløpet",
+    "ROOM_TITLE": "Slik spiller du et escape room",
+    "ROOM_STEP_1": "Les den korte historien på introkortet, og klikk på «Start».",
+    "ROOM_STEP_2": "Utforsk rommet: klikk på gjenstander som ser interessante ut, og snakk med karakterene – de forteller deg hva du skal lete etter.",
+    "ROOM_STEP_3": "Klikk på dialogboksen for å fortsette samtalen.",
+    "ROOM_STEP_4": "Står du fast? Trykk på den lysende lyspæreknappen (øverst til venstre) for et hint. Etter en stund minner spillet deg også om det.",
+    "ROOM_STEP_5": "Hver oppgave gir 3 forsøk; etter det tredje feilsvaret vises riktig svar. Du kan også hoppe over en oppgave.",
+    "ROOM_STEP_6": "I læringsløpet teller hver oppgave med i poengsummen din: 80 % eller mer er bestått; under det bør du studere modulen før du går videre.",
+    "ROOM_STEP_7": "Tips: spill på en bærbar eller stasjonær PC i fullskjerm (knappen øverst til høyre) for best opplevelse.",
+    "ROTATE_HINT": "For best opplevelse, snu telefonen til liggende format eller bruk en større skjerm."
+  },
+  "LEAFLETS": {
+    "PAGE": "Side",
+    "PREVIOUS_PAGE": "Forrige side",
+    "NEXT_PAGE": "Neste side",
+    "SELECT_PROMPT": "Velg en brosjyre for å se den"
+  },
+  "ESCAPE_ROOM": {
+    "SCORE_OUTSTANDING": "Fremragende innsats! Du har mestret denne ferdigheten.",
+    "SCORE_GREAT": "Godt jobbet! Du har god forståelse av denne ferdigheten.",
+    "SCORE_GOOD": "Bra forsøk! Se gjennom modulmaterialet for å styrke kunnskapen din.",
+    "SCORE_STUDY": "Du fullførte rommet, men vi anbefaler at du leser modulens PDF for denne ferdigheten.",
+    "SCORE_REVEALED": "Noen svar måtte vises — de delene er verdt å lese om igjen i modulen.",
+    "YOU": "Du",
+    "YOU_SUFFIX": "(deg)",
+    "YOU_INLINE": "du",
+    "SHOW_SPOTS": "Vis hva jeg kan klikke på",
+    "HIDE_SPOTS": "Skjul de klikkbare punktene",
+    "EXIT_TITLE": "Forlate rommet?",
+    "EXIT_BODY": "Er du sikker på at du vil forlate rommet? Fremgangen din går tapt.",
+    "EXIT_CANCEL": "Avbryt",
+    "EXIT_CONFIRM": "Forlat",
+    "FULLSCREEN_TIP": "Tips: bruk fullskjermknappen (øverst til høyre) for best opplevelse."
+  },
+  "FLIPBOOK": {
+    "CLOSE": "Lukk",
+    "PREVIOUS_PAGE": "Forrige side",
+    "NEXT_PAGE": "Neste side",
+    "MODULE": "Modul",
+    "DRAFT": "UTKAST",
+    "DRAFT_HINT": "Denne læreplanen er et utkast som venter på gjennomgang fra partnerne.",
+    "BACK_TO_LEARNING": "Tilbake til læring"
+  },
+  "EYEBROW": {
+    "REFLECTION": "Refleksjon",
+    "REFLECTION_SUBMITTED": "Refleksjon sendt inn",
+    "LEARNING_VOYAGE": "Læringsreise",
+    "VOYAGE_COMPLETE": "Reisen er fullført",
+    "YOUR_PROGRESS": "Din fremgang",
+    "LIBRARY": "Bibliotek",
+    "WHOLE_CURRICULUM": "Hele læreplanen",
+    "FEATURED": "Utvalgt"
   }
 }

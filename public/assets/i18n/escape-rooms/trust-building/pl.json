@@ -192,6 +192,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Karteczka",
       "inventoryTitle": "Karteczka",
       "popupTitle": "Karteczka",
       "popupContent": [
@@ -203,16 +204,19 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Udowodniłeś, że jesteś nie tylko współczującą, empatyczną i godną zaufania osobą, ale także dobrym Liderem Zespołu, który potrafi ufać własnym członkom zespołu. Pomyślnie zdobyłeś umiejętność Budowania Zaufania!",
-    "buttonText": "Wyjdź z pokoju"
+    "buttonText": "Wyjdź z pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

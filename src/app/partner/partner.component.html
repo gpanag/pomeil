@@ -1,59 +1,71 @@
 <div class="exhibitor-parent">
-    <div class="exhibitor">
-        <div class="exhibitor-logo">
-            <img
-                [src]="partner?.logo ? partner?.logo.url : 'assets/logos/no_image.jpg'">
+  <div class="exhibitor">
+    <div class="exhibitor-logo">
+      <img
+        [src]="partner?.logo ? $safeNavigationMigration(partner?.logo.url) : 'assets/logos/no_image.jpg'">
+      </div>
+      <div class="exhibitor-content-parent">
+        <h5 class="exhibitor-title">{{partner?.name}}</h5>
+
+
+
+
+
+        <div class="two-column-parent">
+          <div class="first-column">
+            <p>email</p>
+          </div>
+          <div class="second-column">
+            <p><a [href]="'mailto:' + $safeNavigationMigration(partner?.email)">{{ partner?.email
+            }}</a></p>
+          </div>
         </div>
-        <div class="exhibitor-content-parent">
-            <h5 class="exhibitor-title">{{partner?.name}}</h5>
 
-
-
-       
-
-            <div class="two-column-parent">
-                <div class="first-column">
-                    <p>email</p>
-                </div>
-                <div class="second-column">
-                    <p><a [href]="'mailto:' + partner?.email">{{ partner?.email
-                            }}</a></p>
-                </div>
-            </div>
-
-            <div class="two-column-parent">
-                <div class="first-column">
-                    <p>website</p>
-                </div>
-                <div class="second-column">
-                    <p><a [href]="partner?.website" target="_blank">{{
-                            partner?.website }}</a></p>
-                </div>
-            </div>
-
-    
-
-
-
+        <div class="two-column-parent">
+          <div class="first-column">
+            <p>website</p>
+          </div>
+          <div class="second-column">
+            <p><a [href]="$safeNavigationMigration(partner?.website)" target="_blank">{{
+            partner?.website }}</a></p>
+          </div>
         </div>
+
+
+
+
+
+      </div>
 
 
     </div>
     <div class="participant-content">
-  
 
 
-        <div class="participant-content-description-parent">
-            <h3>description</h3>
-            <div *ngIf="lang === 'en'" class="participant-content-description" [innerHTML]="partner?.description"></div>
-            <div *ngIf="lang === 'ee'" class="participant-content-description" [innerHTML]="partner?.description_ee"></div>
-            <div *ngIf="lang === 'gr'" class="participant-content-description" [innerHTML]="partner?.description_gr"></div>
-            <div *ngIf="lang === 'no'" class="participant-content-description" [innerHTML]="partner?.description_no"></div>
-            <div *ngIf="lang === 'pl'" class="participant-content-description" [innerHTML]="partner?.description_pl"></div>
-            <div *ngIf="lang === 'ua'" class="participant-content-description" [innerHTML]="partner?.description_ua"></div>
-        </div>
+
+      <div class="participant-content-description-parent">
+        <h3>description</h3>
+        @if (lang === 'en') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description)"></div>
+        }
+        @if (lang === 'ee') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description_ee)"></div>
+        }
+        @if (lang === 'gr') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description_gr)"></div>
+        }
+        @if (lang === 'no') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description_no)"></div>
+        }
+        @if (lang === 'pl') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description_pl)"></div>
+        }
+        @if (lang === 'ua') {
+          <div class="participant-content-description" [innerHTML]="$safeNavigationMigration(partner?.description_ua)"></div>
+        }
+      </div>
 
     </div>
-</div>
+  </div>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>

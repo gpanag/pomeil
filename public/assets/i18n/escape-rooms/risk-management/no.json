@@ -139,20 +139,22 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har identifisert alle farer på arbeidsplassen og fullført en grundig risikovurdering. Du har vist sterke ferdigheter i risikostyring — evnen til å oppdage farer og vurdere dem systematisk er avgjørende på enhver arbeidsplass!",
-    "buttonText": "Forlat rommet"
+    "buttonText": "Forlat rommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "hints": {
     "intro": "Se nøye rundt i rommet. Klikk på objekter som ser farlige ut eller virker malplasserte.",
     "identifying": "Det er fortsatt risikoer å finne. Se etter elektriske farer, problemer med kjemikalielagring, strukturelle farer og hygieneproblemer.",
     "assessment": "Vurder sannsynligheten og konsekvensen av hver risiko. Tenk på hvor ofte dette kan skje og hvor alvorlige konsekvensene ville være.",
     "review": "Se gjennom vurderingsresultatene dine og klikk «Avslutt risikovurdering» når du er klar.",
-    "allRisksFound": "Du har funnet alle risikoene. Klikk på tavlen for å starte risikovurderingen.",
+    "allRisksFound": "Du har funnet alle risikoene. Klikk på tavlen på venstre vegg for å starte risikovurderingen.",
+    "whiteboardZoom": "Klikk på vurderingstabellen på tavlen for å begynne.",
     "completion": "Opplæringen er fullført!",
     "default": "Se rundt i rommet etter potensielle farer."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "risksFound": "Risikoer funnet",
     "of": "av",
@@ -161,7 +163,10 @@
     "riskIdentified": "Risiko identifisert!",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "whiteboardLabel": "Risikovurdering",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "puzzles": {
     "answerOverlayTitle": "Svaret avslørt",

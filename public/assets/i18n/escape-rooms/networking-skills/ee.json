@@ -206,11 +206,12 @@
   "completion": {
     "title": "Palju õnne!",
     "message": "Oled edukalt lõpetanud Võrgustikuoskuste põgenemistoa! Oled õppinud ja harjutanud nelja peamist võrgustikuoskust: Alusta (vestluste alustamine), Ehita (sidemete süvendamine), Säilita (ühenduses püsimine) ja Võimenda (oma võrgustiku targalt kasutamine). Need oskused teenivad sind hästi sinu professionaalsel teekonnal!",
-    "buttonText": "Välju toast"
+    "buttonText": "Välju toast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "sendButton": "Saada",
     "nextContact": "Järgmine kontakt",
@@ -218,7 +219,9 @@
     "optionB": "B",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

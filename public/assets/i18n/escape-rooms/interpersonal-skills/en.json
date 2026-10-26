@@ -157,18 +157,21 @@
   "completion": {
     "title": "Congratulations!",
     "message": "Congratulations, you've completed everything and leveled up your Interpersonal Skills. Let's move on to the next skill.",
-    "buttonText": "Exit the Reception Area"
+    "buttonText": "Exit the Reception Area",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

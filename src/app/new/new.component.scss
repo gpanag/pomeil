@@ -442,8 +442,8 @@
     gap: 12px !important;
     background-color: var(--pomeil-teal-deep) !important;
     color: var(--pomeil-cream) !important;
-    --mdc-protected-button-container-color: var(--pomeil-teal-deep);
-    --mdc-protected-button-label-text-color: var(--pomeil-cream);
+    --mat-button-protected-container-color: var(--pomeil-teal-deep);
+    --mat-button-protected-label-text-color: var(--pomeil-cream);
     box-shadow: 0 8px 22px -8px rgba(0, 63, 71, 0.45) !important;
 
     /* Cream colour for the label + icon. Critically: do NOT touch the

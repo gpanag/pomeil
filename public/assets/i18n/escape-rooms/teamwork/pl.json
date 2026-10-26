@@ -181,18 +181,21 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Twoje umiejętności pracy zespołowej promienieją. Gratulacje za osiągnięcie. Jesteś teraz gotowy, aby być częścią silnego zespołu, rozumiejąc, jak naprawdę działa proces pracy zespołowej. Ale jest jeszcze wiele umiejętności do odkrycia — więc śmiało kontynuuj i odkryj, co dalej.",
-    "buttonText": "Wyjdź z Przestrzeni Coworkingowej"
+    "buttonText": "Wyjdź z Przestrzeni Coworkingowej",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

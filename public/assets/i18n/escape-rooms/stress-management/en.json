@@ -231,7 +231,8 @@
       "You have managed to quickly learn new stress-resilience related skills and apply them in real-life situations, probably even sooner than you imagined – all that while saving the company in the process.",
       "You have successfully acquired the skill of <strong>Stress Management</strong>."
     ],
-    "buttonText": "Back to Main Menu"
+    "buttonText": "Back to Main Menu",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "answerOverlay": {
     "title": "Correct Answer",
@@ -240,13 +241,15 @@
   "ui": {
     "continueButton": "Continue",
     "fullscreenTitle": "Toggle Fullscreen",
-    "backToEscapeRoomsTitle": "Back to Escape Rooms",
+    "backToLearningTitle": "Back to learning",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

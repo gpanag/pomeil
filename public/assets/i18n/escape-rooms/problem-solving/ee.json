@@ -175,17 +175,22 @@
   "completion": {
     "title": "Probleemilahendus lõpetatud",
     "message": "Õnnitlused, sa lõpetasid probleemilahenduse ruumi!\n\nOli lihtne eeldada, et asjade kadumise probleemi põhjustas segadus. Ja oli loomulik hüpata otse lahendusele — ruumi koristada ja korrastada.\n\nKuid sa avastasid peagi, et see ei lahendanud midagi. Põhiprobleem pidi olema midagi muud.\n\nSeetõttu astusid sammu tagasi ja uurisid alternatiivseid selgitusi. Vihjeid ja tõendeid kogudes suutsid identifitseerida põhiprobleemi: kastide vale sildistamise.\n\nRuum esindab probleemilahenduse üht olulist aspekti: probleemi selget defineerimist enne tegutsemist. See võib säästa palju raisatud aega ja energiat.\n\nTubli!",
-    "buttonText": "Lahku laoruumist"
+    "buttonText": "Lahku laoruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
+    "puzzlesCompleted": "ülesanded",
+    "backToLearningTitle": "Tagasi õppimise juurde",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "skipPuzzle": "Jäta see ülesanne vahele",
     "hintButton": "Vihje",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "systemDialogues": {
     "cleanBoxMoved": "Riiulile.",

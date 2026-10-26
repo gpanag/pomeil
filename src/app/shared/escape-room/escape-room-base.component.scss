@@ -19,7 +19,15 @@
 }
 
 .game-container {
-  height: 100%;
+  /* Largest box of the scene's own aspect ratio that fits the stage (the
+     stage is the viewport under the toolbar; fullscreen sets the toolbar
+     height to 0). Until 2026-09-24 a max-width:1472px rule set width:100%
+     while max-height capped the height, so on laptop-sized windows the scene
+     was stretched sideways — by 42% at 1366×657 and 48% at 1280×600 — in all
+     30 rooms (Lessons Learned report, EE: "images stretched"). */
+  width: min(100%, calc((100vh - var(--app-toolbar-height, 72px)) * var(--room-aspect-ratio, 1680 / 1024)));
+  width: min(100%, calc((100dvh - var(--app-toolbar-height, 72px)) * var(--room-aspect-ratio, 1680 / 1024)));
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   aspect-ratio: var(--room-aspect-ratio, 1680 / 1024);
@@ -28,12 +36,43 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 1472px) {
+/* Phones held sideways (≤500px tall): keep the previous full-width scene. At
+   its true proportions the scene would be ~520×320 there, too small for the
+   two-column puzzle cards and the fixed-size room buttons; a slightly
+   stretched but usable scene is the lesser evil on these screens. */
+@media screen and (max-height: 500px) {
   .game-container {
     width: 100%;
-    height: auto;
+    height: 100%;
+    aspect-ratio: auto;
   }
 }
+
+/* Short / narrow viewports (laptops, tablets, phones): give the overlays
+   their padding back to the card so more of it fits before it has to scroll. */
+@media screen and (max-height: 820px), screen and (max-width: 720px) {
+  .overlay, .quiz-overlay-container { padding: 1.25rem; }
+}
+@media screen and (max-width: 480px) {
+  .overlay, .quiz-overlay-container { padding: 0.5rem; }
+}
+/* Portrait phones: <app-room-help-button> pins a "turn your phone" notice to
+   the bottom of the screen and publishes its height as --rotate-hint-space.
+   The intro overlay is the only full-screen one (puzzle overlays live inside
+   the scene), and the notice sat on top of its start button, so no tap could
+   reach it (Lessons Learned report, 2026-09-24). Keep the card above it. */
+@media (orientation: portrait) and (max-width: 600px) {
+  .overlay:has(> .intro-popup-card) {
+    padding-bottom: max(0.5rem, var(--rotate-hint-space, 0px));
+  }
+}
+/* Keep the sticky footer to the button alone where space is scarce: portrait
+   phones already get the rotate notice, and on landscape phones the card is
+   under 200px tall. */
+@media (orientation: portrait) and (max-width: 600px), (max-height: 500px) {
+  .overlay .quiz-card.intro-popup-card mat-card-actions::after { display: none; }  /* beats the later base rule */
+}
+
 
 .scene-background {
   position: absolute;
@@ -290,6 +329,18 @@
     font-weight: 700;
     color: #88ffaa;
 
+    /* Consultation feedback 2026-09-21 (NO): the bare percentage under the
+       puzzle count was read as a progress indicator. */
+    .score-panel-value-label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #99aaff;
+      margin-bottom: 2px;
+    }
+
     &.no-score {
       font-size: 0.85rem;
       color: rgba(255, 255, 255, 0.5);
@@ -345,7 +396,9 @@
   z-index: 10;
 
   &::after {
-    content: 'Click to examine';
+    /* Localized: the base component sets --zoom-hotspot-label from the room's
+       `ui.clickToExamine` text (consultation feedback 2026-09-21). */
+    content: var(--zoom-hotspot-label, 'Click to examine');
     position: absolute;
     bottom: -28px;
     left: 50%;
@@ -398,6 +451,12 @@
   box-sizing: border-box;
   z-index: 60;
   background-color: rgba(0, 0, 0, 0.6);
+  /* Tall cards must never spill past the viewport: the page and the game
+     container are overflow:hidden while a room is mounted, so anything that
+     leaves this box is unreachable (partner feedback 2026-08-31: Financial's
+     fill-the-gap Submit and Stress Management's intro Start button were
+     clipped on 768px laptops). */
+  overflow: hidden;
 
   &.center {
     align-items: center;
@@ -415,6 +474,8 @@
   box-sizing: border-box;
   z-index: 60;
   pointer-events: none;
+
+  overflow: hidden;
 
   &.top-left      { justify-content: flex-start; align-items: flex-start; }
   &.top-center    { justify-content: flex-start; align-items: center;   }
@@ -537,6 +598,14 @@
   max-width: 500px; text-align: center;
   padding: 1rem;
   pointer-events: auto;
+  /* Cap every puzzle / intro / reading card to its overlay and scroll inside
+     it (see .overlay note). Percent max-height resolves against the flex
+     container's definite height, so this works in .overlay and
+     .quiz-overlay-container alike. */
+  max-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
 
   .question { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0; }
   .feedback-wrong { color: #e74c3c; font-style: italic; }
@@ -558,14 +627,34 @@
      popup only (per MMC Mavis 2026-05-09: it was leaking into puzzle
      overlays before because the selector was on every .quiz-card). */
   &.intro-popup-card mat-card-actions::after {
-    content: 'Tip: Use the fullscreen button (top-right corner) for the best experience.';
+    /* Localized text from ESCAPE_ROOM.FULLSCREEN_TIP, set by the base class;
+       the literal is only the pre-load fallback. */
+    content: var(--intro-fullscreen-tip, 'Tip: use the fullscreen button (top-right corner) for the best experience.');
     display: block;
-    width: 100%;
+    flex-basis: 100%;       /* own line under the button, not a squeezed column beside it */
     text-align: center;
     font-size: 0.8rem;
     opacity: 0.6;
     margin-top: 8px;
     font-style: italic;
+  }
+
+  /* The start button stays on screen however long the intro text is: on a
+     phone the card scrolls, and pilots reported the button "not fully
+     visible" / rooms that could not be entered (Lessons Learned report,
+     2026-09-24, NO). */
+  &.intro-popup-card mat-card-actions {
+    flex-wrap: wrap;
+    position: sticky;
+    bottom: -1rem;          /* cover the card's own bottom padding */
+    margin: 0 -1rem -1rem;
+    padding: 0.75rem 1rem 1rem;
+    background: inherit;
+    z-index: 1;
+    flex-shrink: 0;         /* the card is a height-capped flex column; don't let it squash the footer */
+    /* Soft edge over the text scrolling beneath, so a clipped intro doesn't
+       read as finished. */
+    box-shadow: 0 -10px 12px -10px rgba(0, 0, 0, 0.3);
   }
 
   /* Intro popup "Start Game" / "Enter the X" button must not wrap to two
@@ -865,3 +954,8 @@
     }
   }
 }
+
+/* The "show what I can click" outlines live in src/styles.scss, NOT here:
+   Angular's emulated encapsulation rewrites `body.x .hotspot` into
+   `body.x[_ngcontent-%COMP%] .hotspot[_ngcontent-%COMP%]`, and <body> has no
+   content attribute, so a component stylesheet can never key off a body class. */

@@ -170,18 +170,21 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Gratulerer! Du har låst opp kraften i selvstendighet. Denne ferdigheten er essensiell ikke bare i forretninger, men også i dagliglivet. Prøv lykken med de neste modulene. Takk for at du deltok. Du kan komme tilbake når som helst hvis du vil friske opp kunnskapen din — vi er her for å støtte læringen din.!",
-    "buttonText": "Forlat taket"
+    "buttonText": "Forlat taket",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
     "gapPlaceholder": "___",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

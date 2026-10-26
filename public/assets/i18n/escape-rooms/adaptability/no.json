@@ -171,6 +171,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Post-it-lapp",
       "inventoryTitle": "Post-it-lapp",
       "popupTitle": "Post-it-lapp",
       "popupContent": [
@@ -181,17 +182,20 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har fullført onboarding-kurset som fokuserer på utviklingen av ferdigheten Tilpasningsdyktighet. Du har løst alle utfordringene, selv de med manglende informasjon, og de som krevde uortodokse tilnærminger. Du har virkelig vist din dype forståelse av hva det betyr å tilpasse seg!",
-    "buttonText": "Forlat trappeoppgangen"
+    "buttonText": "Forlat trappeoppgangen",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "gapPlaceholder": "___",
     "selectTwo": "Velg 2 svar",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "floorTransition": {
     "toFloor2": "Du går opp trappene til neste etasje. Amina venter på deg på avsatsen foran.",

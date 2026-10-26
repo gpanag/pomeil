@@ -176,18 +176,21 @@
   "completion": {
     "title": "Training Complete!",
     "message": "Congratulations! You completed the Strategic Thinking module.",
-    "buttonText": "Back to Main Menu"
+    "buttonText": "Back to Main Menu",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenTitle": "Toggle Fullscreen",
-    "backToEscapeRoomsTitle": "Back to Escape Rooms",
+    "backToLearningTitle": "Back to learning",
     "startQuizButton": "Start Quiz",
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "skipButton": "Skip",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

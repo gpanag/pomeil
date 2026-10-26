@@ -243,11 +243,12 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully demonstrated the art of negotiation! From an unprepared first meeting to a strategic, well-prepared second negotiation, you've learned the importance of preparation, knowing your bottom line, using silence strategically, active listening, and finding win-win solutions.",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "chooseReply": "Choose your reply:",
     "optionA": "Option A",
@@ -261,7 +262,9 @@
     "itemsFound": "items completed",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

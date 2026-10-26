@@ -139,20 +139,22 @@
   "completion": {
     "title": "Õnnitlused!",
     "message": "Sa tuvastasid edukalt kõik töökoha ohud ja viisid läbi põhjaliku riskihindamise. Näitasid tugevat riskijuhtimise oskust — võime ohte märgata ja neid süstemaatiliselt hinnata on igal töökohal hädavajalik!",
-    "buttonText": "Välju ruumist"
+    "buttonText": "Välju ruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "hints": {
     "intro": "Vaata ruumis hoolikalt ringi. Klõpsa objektidel, mis tunduvad ohtlikud või kohatud.",
     "identifying": "Riskid on veel leidmata. Otsi elektrilisi ohte, kemikaalide hoiustamise probleeme, struktuurilisi ohte ja hügieeniprobleeme.",
     "assessment": "Hinda iga riski tõenäosust ja mõju. Mõtle, kui sageli see võib juhtuda ja kui rasked oleksid tagajärjed.",
     "review": "Vaata oma hindamise tulemused üle ja klõpsa „Lõpeta riskihindamine“, kui oled valmis.",
-    "allRisksFound": "Oled leidnud kõik riskid. Klõpsa tahvlil, et alustada riskihindamist.",
+    "allRisksFound": "Oled leidnud kõik riskid. Klõpsa vasakul seinal oleval tahvlil, et alustada riskihindamist.",
+    "whiteboardZoom": "Klõpsa tahvlil oleval hindamistabelil, et alustada.",
     "completion": "Koolitus on lõpetatud!",
     "default": "Vaata ruumis ringi võimalike ohtude osas."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "risksFound": "Leitud riskid",
     "of": "/",
@@ -161,7 +163,10 @@
     "riskIdentified": "Risk tuvastatud!",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "whiteboardLabel": "Riskihindamine",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "puzzles": {
     "answerOverlayTitle": "Vastus avalikustatud",

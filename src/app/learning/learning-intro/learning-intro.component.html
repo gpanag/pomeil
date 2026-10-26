@@ -1,7 +1,7 @@
 <div class="learning-intro-container">
   <div class="hero-section hero-asymmetric">
     <div class="hero-content">
-      <span class="md-eyebrow">POMEIL · Learning</span>
+      <span class="md-eyebrow">POMEIL · {{ "NAVIGATION.LEARNING" | translate }}</span>
       <mat-icon class="hero-icon">school</mat-icon>
       <h1>{{"LEARNING_PAGE.INTRO.HERO_TITLE" | translate}}</h1>
       <p class="subtitle">
@@ -9,8 +9,8 @@
       </p>
     </div>
     <!-- Decorative illustration: route between two waypoints (origin → destination),
-         hand-drawn dashed path with a sprouting plant at the destination.
-         Stays a background visual at <960px (hero-asymmetric falls back to single column). -->
+    hand-drawn dashed path with a sprouting plant at the destination.
+    Stays a background visual at <960px (hero-asymmetric falls back to single column). -->
     <div class="hero-illustration" aria-hidden="true">
       <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -43,11 +43,11 @@
         <circle cx="60" cy="232" r="14" fill="none" stroke="#b3593a" stroke-opacity="0.45" stroke-width="1"/>
         <!-- Dashed journey path -->
         <path d="M60 232 Q 110 80 200 120 T 280 92"
-              fill="none"
-              stroke="url(#pomeil-route-grad)"
-              stroke-width="2"
-              stroke-dasharray="3 7"
-              stroke-linecap="round"/>
+          fill="none"
+          stroke="url(#pomeil-route-grad)"
+          stroke-width="2"
+          stroke-dasharray="3 7"
+          stroke-linecap="round"/>
         <!-- Destination marker (teal) with growing plant -->
         <g transform="translate(280 92)">
           <circle r="32" fill="url(#pomeil-dest-glow)"/>
@@ -62,8 +62,8 @@
         </g>
         <!-- Tiny waypoint pip mid-route -->
         <circle cx="170" cy="130" r="3" fill="#003f47" opacity="0.55"/>
-        <text x="60" y="270" font-family="Inter, sans-serif" font-size="9" fill="#b3593a" letter-spacing="0.18em" font-weight="600">START</text>
-        <text x="246" y="138" font-family="Inter, sans-serif" font-size="9" fill="#006874" letter-spacing="0.18em" font-weight="600">GROWTH</text>
+        <text x="60" y="270" font-family="Inter, sans-serif" font-size="9" fill="#b3593a" letter-spacing="0.18em" font-weight="600">{{ "LEARNING_PAGE.INTRO.DIAGRAM_START" | translate }}</text>
+        <text x="246" y="138" font-family="Inter, sans-serif" font-size="9" fill="#006874" letter-spacing="0.18em" font-weight="600">{{ "LEARNING_PAGE.INTRO.DIAGRAM_GROWTH" | translate }}</text>
       </svg>
     </div>
   </div>
@@ -72,18 +72,20 @@
   <div class="player-name-section" [class.invalid]="!isPlayerNameValid">
     <label for="playerName">{{"LEARNING_PAGE.INTRO.PLAYER_NAME_LABEL" | translate}} <span class="required">*</span></label>
     <input id="playerName" type="text" required
-           [(ngModel)]="playerName" (blur)="savePlayerName()" (input)="savePlayerName()"
-           [placeholder]="'LEARNING_PAGE.INTRO.PLAYER_NAME_PLACEHOLDER' | translate" maxlength="30">
-    <small *ngIf="!isPlayerNameValid" class="hint-text">{{"LEARNING_PAGE.INTRO.PLAYER_NAME_REQUIRED" | translate}}</small>
+      [(ngModel)]="playerName" (blur)="savePlayerName()" (input)="savePlayerName()"
+      [placeholder]="'LEARNING_PAGE.INTRO.PLAYER_NAME_PLACEHOLDER' | translate" maxlength="30">
+    @if (!isPlayerNameValid) {
+      <small class="hint-text">{{"LEARNING_PAGE.INTRO.PLAYER_NAME_REQUIRED" | translate}}</small>
+    }
   </div>
 
   <!-- Single Start Learning action — disabled until name is provided -->
   <div class="actions">
     <button mat-raised-button color="primary"
-            type="button"
-            [disabled]="!isPlayerNameValid"
-            (click)="startLearning()"
-            class="start-button hero-start-button">
+      type="button"
+      [disabled]="!isPlayerNameValid"
+      (click)="startLearning()"
+      class="start-button hero-start-button">
       <mat-icon>play_arrow</mat-icon>
       {{"LEARNING_PAGE.INTRO.START_LEARNING" | translate}}
     </button>
@@ -105,15 +107,17 @@
     </mat-card>
 
     <!-- Track Your Progress / Dashboard — only after at least one room has been played -->
-    <mat-card class="clickable-card" routerLink="/learning/dashboard" *ngIf="hasPlayedAnyRoom">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>assessment</mat-icon>
-        <mat-card-title>{{"LEARNING_PAGE.INTRO.CARD_TRACK_TITLE" | translate}}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{"LEARNING_PAGE.INTRO.CARD_TRACK_DESC" | translate}}</p>
-      </mat-card-content>
-    </mat-card>
+    @if (hasPlayedAnyRoom) {
+      <mat-card class="clickable-card" routerLink="/learning/dashboard">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>assessment</mat-icon>
+          <mat-card-title>{{"LEARNING_PAGE.INTRO.CARD_TRACK_TITLE" | translate}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{"LEARNING_PAGE.INTRO.CARD_TRACK_DESC" | translate}}</p>
+        </mat-card-content>
+      </mat-card>
+    }
 
     <mat-card class="clickable-card" routerLink="/learning/modules">
       <mat-card-header>
@@ -126,15 +130,17 @@
     </mat-card>
 
     <!-- Evaluation Questionnaire (MOOC platform) — only when all selected skills have been played -->
-    <mat-card class="clickable-card" routerLink="/learning/questionnaire" *ngIf="hasCompletedAllSelected">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>quiz</mat-icon>
-        <mat-card-title>{{"LEARNING_PAGE.INTRO.CARD_QUESTIONNAIRE_TITLE" | translate}}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{"LEARNING_PAGE.INTRO.CARD_QUESTIONNAIRE_DESC" | translate}}</p>
-      </mat-card-content>
-    </mat-card>
+    @if (hasCompletedAllSelected) {
+      <mat-card class="clickable-card" routerLink="/learning/questionnaire">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>quiz</mat-icon>
+          <mat-card-title>{{"LEARNING_PAGE.INTRO.CARD_QUESTIONNAIRE_TITLE" | translate}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{"LEARNING_PAGE.INTRO.CARD_QUESTIONNAIRE_DESC" | translate}}</p>
+        </mat-card-content>
+      </mat-card>
+    }
   </div>
 
   <div class="how-it-works">

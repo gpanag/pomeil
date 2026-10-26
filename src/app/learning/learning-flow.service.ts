@@ -12,6 +12,7 @@ const INITIAL_STATE: LearningFlowState = {
   currentSkillIndex: 0,
   questionnaireCompleted: false,
   questionnaireAnswers: {},
+  moduleAcknowledged: {},
 };
 
 @Injectable({ providedIn: 'root' })
@@ -69,6 +70,11 @@ export class LearningFlowService {
     return this.state.questionnaireCompleted;
   }
 
+  /** True once the learner has opened (downloaded / read online) the module for this room. */
+  isModuleAcknowledged(roomId: string): boolean {
+    return !!this.state.moduleAcknowledged?.[roomId];
+  }
+
   // --- State mutators ---
 
   setSelectedSkills(skills: string[]): void {
@@ -77,6 +83,15 @@ export class LearningFlowService {
     this.state.roomScores = {};
     this.state.questionnaireCompleted = false;
     this.state.questionnaireAnswers = {};
+    this.state.moduleAcknowledged = {};
+    this.persist();
+  }
+
+  /** Record that the learner opened this room's module (download link or flipbook). */
+  markModuleAcknowledged(roomId: string): void {
+    if (!this.state.moduleAcknowledged) this.state.moduleAcknowledged = {};
+    if (this.state.moduleAcknowledged[roomId]) return;
+    this.state.moduleAcknowledged[roomId] = new Date().toISOString();
     this.persist();
   }
 
@@ -104,7 +119,7 @@ export class LearningFlowService {
   }
 
   resetFlow(): void {
-    this.state = { ...INITIAL_STATE, selectedSkills: [], roomScores: {}, questionnaireAnswers: {} };
+    this.state = { ...INITIAL_STATE, selectedSkills: [], roomScores: {}, questionnaireAnswers: {}, moduleAcknowledged: {} };
     this.persist();
   }
 
@@ -130,7 +145,7 @@ export class LearningFlowService {
         return { ...INITIAL_STATE, ...parsed };
       }
     } catch { /* corrupt data */ }
-    return { ...INITIAL_STATE, selectedSkills: [], roomScores: {}, questionnaireAnswers: {} };
+    return { ...INITIAL_STATE, selectedSkills: [], roomScores: {}, questionnaireAnswers: {}, moduleAcknowledged: {} };
   }
 
   // --- Strapi sync ---

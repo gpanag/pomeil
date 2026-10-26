@@ -81,9 +81,18 @@
       "title": "Forvandle motløshet til motivasjon",
       "instructions": "Dra hver setning for å gjøre den om til en motiverende melding.",
       "pairs": [
-        {"left": "Jeg har ikke nok erfaring.", "right": "Erfaring kan tilegnes gjennom læring og praksis."},
-        {"left": "Bakgrunnen min er for annerledes.", "right": "Ulike bakgrunner gir verdifulle perspektiver."},
-        {"left": "Jeg har feilet før.", "right": "Tidligere feil hjelper oss å vokse og forbedre oss."}
+        {
+          "left": "Jeg har ikke nok erfaring.",
+          "right": "Erfaring kan tilegnes gjennom læring og praksis."
+        },
+        {
+          "left": "Bakgrunnen min er for annerledes.",
+          "right": "Ulike bakgrunner gir verdifulle perspektiver."
+        },
+        {
+          "left": "Jeg har feilet før.",
+          "right": "Tidligere feil hjelper oss å vokse og forbedre oss."
+        }
       ],
       "feedback": {
         "wrong": "Det er ikke riktig sammenkobling. Tenk på hvordan du kan omformulere hver påstand positivt.",
@@ -93,7 +102,10 @@
     },
     "answerOverlayTitle": "Svaret avslørt",
     "answerOverlayContinue": "Fortsett",
-    "fillGap": {"checkButton": "Send inn", "resetButton": "Tilbakestill"},
+    "fillGap": {
+      "checkButton": "Send inn",
+      "resetButton": "Tilbakestill"
+    },
     "discouragingTitle": "Motløst",
     "motivatingTitle": "Motiverende"
   },
@@ -129,44 +141,81 @@
         "Hull i ansettelseshistorikken"
       ]
     },
-    "candidateFolder": {"inventoryTitle": "Kandidatens mappe"}
+    "candidateFolder": {
+      "inventoryTitle": "Kandidatens mappe"
+    }
   },
   "strengths": {
     "title": "Utfordring i å gjenkjenne styrker",
     "instructions": "Velg 2 elementer å fremheve positivt.",
     "options": [
-      {"id": "language", "text": "Språkferdigheter", "correct": true},
-      {"id": "volunteering", "text": "Frivillighetserfaring", "correct": true},
-      {"id": "gaps", "text": "Hull i ansettelse", "correct": false},
-      {"id": "references", "text": "Manglende referanser", "correct": false}
+      {
+        "id": "language",
+        "text": "Språkferdigheter",
+        "correct": true
+      },
+      {
+        "id": "volunteering",
+        "text": "Frivillighetserfaring",
+        "correct": true
+      },
+      {
+        "id": "gaps",
+        "text": "Hull i ansettelse",
+        "correct": false
+      },
+      {
+        "id": "references",
+        "text": "Manglende referanser",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motivasjon vokser når folk ser sin verdi.",
       "wrong": "Disse elementene hjelper kanskje ikke med å bygge selvtillit. Fokuser på ekte styrker."
-    }
+    },
+    "answerOverlay": "Styrkene som skal fremheves er språkferdighetene og frivillighetserfaringen — begge viser hva kandidaten bringer med seg, ikke hva som mangler."
   },
   "bodyLanguage": {
     "title": "Lese motivasjonssignaler",
     "instructions": "Klikk på elementene som viser at Kandidaten føler seg usikker.",
     "options": [
-      {"id": "clenched", "text": "Knyttede hender på dokumentene", "correct": true},
-      {"id": "relaxed", "text": "Avslappet holdning", "correct": false},
-      {"id": "eyeContact", "text": "Unngår øyekontakt", "correct": true},
-      {"id": "smile", "text": "Selvsikkert smil", "correct": false}
+      {
+        "id": "clenched",
+        "text": "Knyttede hender på dokumentene",
+        "correct": true
+      },
+      {
+        "id": "relaxed",
+        "text": "Avslappet holdning",
+        "correct": false
+      },
+      {
+        "id": "eyeContact",
+        "text": "Unngår øyekontakt",
+        "correct": true
+      },
+      {
+        "id": "smile",
+        "text": "Selvsikkert smil",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motivasjon starter med å legge merke til hvordan andre føler — selv når de ikke sier det.",
       "wrong": "Se nøyere på Kandidatens kroppsspråk."
-    }
+    },
+    "answerOverlay": "Tegnene på usikkerhet er de knyttede hendene på dokumentene og den unngåtte øyekontakten."
   },
   "completion": {
     "title": "Ferdighet fullført: Inspirere og motivere andre",
     "message": "Du viste:\n\nEmosjonell bevissthet\nPositiv kommunikasjon\nStyrking gjennom anerkjennelse\nEtisk motivasjon\n\nInspirasjon er lederskap i handling.",
-    "buttonText": "Forlat venteområdet"
+    "buttonText": "Forlat venteområdet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
@@ -175,7 +224,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

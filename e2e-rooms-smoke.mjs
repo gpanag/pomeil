@@ -22,7 +22,11 @@ const KNOWN_404S = ['zoom_laptop.png', 'box_under_desk_open.png'];
   const page = await ctx.newPage();
 
   await page.goto('http://127.0.0.1:4200');
-  await page.evaluate(() => localStorage.setItem('pomeil_player_name', 'TestPlayer'));
+  await page.evaluate(() => {
+    localStorage.setItem('pomeil_player_name', 'TestPlayer');
+    // Skip the guest (not signed in) dialog, which otherwise sits over Start.
+    sessionStorage.setItem('pomeil_login_warning_dismissed', 'true');
+  });
 
   let pass = 0, fail = 0;
   const failures = [];

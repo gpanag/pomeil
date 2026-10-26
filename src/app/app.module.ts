@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { provideHttpClient, withInterceptors, withXhr } from '@angular/common/http';
 import { authInterceptor } from './auth/auth.interceptor';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -21,11 +21,9 @@ import { OutputsComponent } from './outputs/outputs.component';
 import { ReferencesComponent } from './references/references.component';
 import { PartnerComponent } from './partner/partner.component';
 import { ResourcesComponent } from './resources/resources.component';
-import { SafeHtmlPipe } from '../pipehtml';
 import { NewsComponent } from './news/news.component';
 import { NewComponent } from './new/new.component';
 import { NewsFrontComponent } from './news-front/news-front.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
 import { FrontPartnersComponent } from './front-partners/front-partners.component';
 import { SocialsMenuComponent } from './socials-menu/socials-menu.component';
@@ -33,15 +31,8 @@ import { TranslateService } from './translate/translate.service';
 import { TranslateComponent } from './translate/translate.component';
 import { NewslettersComponent } from './newsletters/newsletters.component';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { NewslettersFrontComponent } from './newsletters-front/newsletters-front.component';
 import { TranslatePipe } from './translate/translate.pipe';
-import { registerLocaleData } from '@angular/common';
-import localeEn from '@angular/common/locales/en';
-import localeEe from '@angular/common/locales/ee';
-import localeGr from '@angular/common/locales/el';
-import localeNo from '@angular/common/locales/no';
-import localePl from '@angular/common/locales/pl';
-import localeUa from '@angular/common/locales/ru-UA';
+import { registerAppLocales } from './shared/app-locales';
 import { EscapeRoomComponent } from './escape-room/escape-room.component';
 import { FormsModule } from '@angular/forms';
 import { EscapeRoomsComponent } from './escape-rooms/escape-rooms.component';
@@ -86,6 +77,10 @@ import { DashboardComponent } from './learning/dashboard/dashboard.component';
 import { LearningLayoutComponent } from './learning/learning-layout/learning-layout.component';
 import { FlipbookComponent } from './learning/flipbook/flipbook.component';
 
+// CLDR data for the six UI languages (ee→et, gr→el, ua→uk). Must run before any
+// DatePipe evaluates; a top-level call here executes as soon as AppModule is loaded.
+registerAppLocales();
+
 export function setupTranslateFactory(
   service: TranslateService): Function {
   let userLang = navigator.language;
@@ -94,13 +89,6 @@ export function setupTranslateFactory(
   // if (userLang === 'el-GR') {
   //   langValue = 'gr';
   // }
-
-  registerLocaleData(localeEn, 'en');
-  registerLocaleData(localeEe, 'ee');
-  registerLocaleData(localeGr, 'gr');
-  registerLocaleData(localeNo, 'no');
-  registerLocaleData(localePl, 'pl');
-  registerLocaleData(localeUa, 'ua');
 
   return () => service.use(langValue);
 }
@@ -116,7 +104,6 @@ export function setupTranslateFactory(
     ReferencesComponent,
     PartnerComponent,
     ResourcesComponent,
-    SafeHtmlPipe,
     NewsComponent,
     NewComponent,
     NewsFrontComponent,
@@ -125,7 +112,6 @@ export function setupTranslateFactory(
     SocialsMenuComponent,
     NewslettersComponent,
     ImageDialog,
-    NewslettersFrontComponent,
 
     EscapeRoomsComponent,
     ArticlesComponent,
@@ -156,7 +142,6 @@ export function setupTranslateFactory(
     BrowserAnimationsModule,
     FormsModule,
     MaterialsModule,
-    FlexLayoutModule,
     TranslatePipe,
     EscapeRoomComponent,
     EmpathySkill22Component,
@@ -190,7 +175,7 @@ export function setupTranslateFactory(
     ProjectManagementModule14Component,
   ],
   providers: [
-    provideHttpClient(withInterceptors([authInterceptor])),
+    provideHttpClient(withXhr(), withInterceptors([authInterceptor])),
     // provideAnimations(),
     provideAnimationsAsync()
   ],

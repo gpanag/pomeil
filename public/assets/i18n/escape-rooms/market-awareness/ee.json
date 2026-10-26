@@ -161,18 +161,21 @@
   "completion": {
     "title": "Õnnitlused!",
     "message": "Lõpetasid Turuteadlikkuse oskuse! Sa tunned oma klienti, jälgid konkurente ja analüüsid olukorda enne tegutsemist. Oled valmis turgu vallutama!",
-    "buttonText": "Lahku Turundusosakonnast"
+    "buttonText": "Lahku Turundusosakonnast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

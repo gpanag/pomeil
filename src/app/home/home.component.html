@@ -1,25 +1,25 @@
 <!-- ────────────────────────────────────────────────────────────────────
-     POMEIL — HOMEPAGE
-     Every text element is either:
-       • verbatim from src/assets/i18n/en.json (and per-language siblings),
-       • verbatim from Strapi /api/about, /api/objectives, /api/partners,
-       • a real count derived from data (6 partners, 4 countries,
-         6 languages, 6 objectives), or
-       • a light paraphrase of a section name / NAVIGATION key whose
-         meaning is preserved (e.g. "Project objectives" ↔ Objectives,
-         "Latest dispatches" ↔ News & announcements). No invented facts,
-         no fabricated quotes.
-     Learning surfaces are intentionally not promoted — that experience
-     is still in development.
-     ──────────────────────────────────────────────────────────────── -->
+POMEIL — HOMEPAGE
+Every text element is either:
+• verbatim from src/assets/i18n/en.json (and per-language siblings),
+• verbatim from Strapi /api/about, /api/objectives, /api/partners,
+• a real count derived from data (6 partners, 4 countries,
+6 languages, 6 objectives), or
+• a light paraphrase of a section name / NAVIGATION key whose
+meaning is preserved (e.g. "Project objectives" ↔ Objectives,
+"Latest dispatches" ↔ News & announcements). No invented facts,
+no fabricated quotes.
+Learning surfaces are intentionally not promoted — that experience
+is still in development.
+──────────────────────────────────────────────────────────────── -->
 
 <article class="home-cover">
   <div class="home-cover-bg home-cover-bg-a"
-       [class.is-active]="activeSlot === 'A'"
-       [style.--my-image]="imageA"></div>
+    [class.is-active]="activeSlot === 'A'"
+  [style.--my-image]="imageA"></div>
   <div class="home-cover-bg home-cover-bg-b"
-       [class.is-active]="activeSlot === 'B'"
-       [style.--my-image]="imageB"></div>
+    [class.is-active]="activeSlot === 'B'"
+  [style.--my-image]="imageB"></div>
   <div class="home-cover-vignette"></div>
   <div class="home-cover-grain"></div>
 
@@ -41,13 +41,13 @@
 
     <div class="cover-actions">
       <a mat-raised-button color="primary"
-         routerLink="/about"
-         class="cover-cta pomeil-pill-inverse">
-        <mat-icon>arrow_forward</mat-icon>
-        <span>{{ 'HOME.COVER_CTA_PROJECT' | translate }}</span>
+        routerLink="/learning"
+        class="cover-cta pomeil-pill-inverse">
+        <mat-icon>school</mat-icon>
+        <span>{{ 'HOME.COVER_CTA_LEARNING' | translate }}</span>
       </a>
-      <a routerLink="/outputs" class="cover-secondary-link">
-        {{ 'HOME.COVER_CTA_OUTPUTS' | translate }}
+      <a routerLink="/about" class="cover-secondary-link">
+        {{ 'HOME.COVER_CTA_PROJECT' | translate }}
         <mat-icon>north_east</mat-icon>
       </a>
     </div>
@@ -60,12 +60,63 @@
   </footer>
 </article>
 
+<!-- ─── LEARNING ───────────────────────────────────────────────────
+The learning journey is the reason the platform exists, so it sits
+directly under the cover, ahead of the project information (user,
+2026-09-22: "the learning in the first page should be more
+prominent"). All copy reuses LEARNING_PAGE.INTRO.* keys, which are
+already translated in all six languages.
+
+NOTE: this section links /learning ONLY. Never link /escape-rooms —
+that gallery is test-only and a room opened from it records nothing.
+──────────────────────────────────────────────────────────────── -->
+<section class="home-section home-learning-section">
+  <div class="home-section-inner">
+    <div class="learning-band">
+      <div class="learning-band-text">
+        <span class="md-eyebrow">{{ 'NAVIGATION.LEARNING' | translate }}</span>
+        <h2 class="learning-band-title">{{ 'LEARNING_PAGE.INTRO.HERO_TITLE' | translate }}</h2>
+        <p class="learning-band-lead">{{ 'LEARNING_PAGE.INTRO.HERO_SUBTITLE' | translate }}</p>
+
+        <ol class="learning-band-steps">
+          <li>
+            <span class="step-num">1</span>
+            <span class="step-body">
+              <strong>{{ 'LEARNING_PAGE.INTRO.STEP_SELECT' | translate }}</strong>
+              <span>{{ 'LEARNING_PAGE.INTRO.STEP_SELECT_DESC' | translate }}</span>
+            </span>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <span class="step-body">
+              <strong>{{ 'LEARNING_PAGE.INTRO.STEP_PLAY' | translate }}</strong>
+              <span>{{ 'LEARNING_PAGE.INTRO.STEP_PLAY_DESC' | translate }}</span>
+            </span>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <span class="step-body">
+              <strong>{{ 'LEARNING_PAGE.INTRO.STEP_REVIEW' | translate }}</strong>
+              <span>{{ 'LEARNING_PAGE.INTRO.STEP_REVIEW_DESC' | translate }}</span>
+            </span>
+          </li>
+        </ol>
+
+        <a mat-raised-button color="primary" routerLink="/learning" class="learning-band-cta pomeil-pill-inverse">
+          <mat-icon>school</mat-icon>
+          <span>{{ 'LEARNING_PAGE.INTRO.START_LEARNING' | translate }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ─── ABOUT ──────────────────────────────────────────────────────
-     Eyebrow: light paraphrase of NAVIGATION.ABOUT.
-     Title: NAVIGATION.ABOUT verbatim.
-     Body: Strapi /api/about content_blocks rendered verbatim (drop-cap
-     comes from v2 .has-dropcap on the first <p>).
-     ──────────────────────────────────────────────────────────── -->
+Eyebrow: light paraphrase of NAVIGATION.ABOUT.
+Title: NAVIGATION.ABOUT verbatim.
+Body: Strapi /api/about content_blocks rendered verbatim (drop-cap
+comes from v2 .has-dropcap on the first <p>).
+──────────────────────────────────────────────────────────── -->
 <section id="about" class="home-section home-about-section">
   <div class="home-section-inner home-about-inner">
     <header class="home-section-head">
@@ -74,21 +125,23 @@
     </header>
 
     <article class="article-body editorial-prose has-dropcap home-about-prose">
-      <p *ngFor="let par of aboutBlocks()"
-         [class.is-heading]="par.type === 'heading'">
-        <ng-container *ngFor="let text of par.children">
-          <span [class.text-italic]="text.italic"
-                [class.text-bold]="text.bold">{{ text.text }}</span>
-        </ng-container>
-      </p>
+      @for (par of aboutBlocks(); track par) {
+        <p
+          [class.is-heading]="par.type === 'heading'">
+          @for (text of par.children; track text) {
+            <span class="cf-root" [class.text-italic]="text.italic"
+            [class.text-bold]="text.bold">{{ text.text }}</span>
+          }
+        </p>
+      }
     </article>
   </div>
 </section>
 
 <!-- ─── PULL-QUOTE BAND ─────────────────────────────────────────────
-     Verbatim slice of the i18n WELCOME string — that line IS the
-     project's tagline. The cite is generic, no fabricated source.
-     ──────────────────────────────────────────────────────────── -->
+Verbatim slice of the i18n WELCOME string — that line IS the
+project's tagline. The cite is generic, no fabricated source.
+──────────────────────────────────────────────────────────── -->
 <section class="home-section home-pullquote-section">
   <div class="home-section-inner">
     <blockquote class="cover-pullquote">
@@ -99,15 +152,15 @@
 </section>
 
 <!-- ─── BY THE NUMBERS ──────────────────────────────────────────────
-     Real counts only:
-       06 partners → /api/partners returns 6 records
-       04 countries → Norway, Greece, Poland, Estonia (from partner TLDs)
-       06 languages → en, ee, gr, no, pl, ua loaded by TranslateService
-       06 objectives → /api/objectives returns 6 records (O1..O6)
-     Stat-detail prose is a brief description of what the figure
-     represents, no claims beyond what's already on the partner /
-     objectives pages.
-     ──────────────────────────────────────────────────────────── -->
+Real counts only:
+06 partners → /api/partners returns 6 records
+04 countries → Norway, Greece, Poland, Estonia (from partner TLDs)
+06 languages → en, ee, gr, no, pl, ua loaded by TranslateService
+06 objectives → /api/objectives returns 6 records (O1..O6)
+Stat-detail prose is a brief description of what the figure
+represents, no claims beyond what's already on the partner /
+objectives pages.
+──────────────────────────────────────────────────────────── -->
 <section class="home-section home-stats-section">
   <div class="home-section-inner">
     <header class="home-section-head home-section-head--centered">
@@ -152,40 +205,45 @@
 </section>
 
 <!-- ─── OBJECTIVES (verbatim Strapi /api/objectives) ─────────────── -->
-<section class="home-section home-objectives-section" *ngIf="objectives.length">
-  <div class="home-section-inner">
-    <header class="home-section-head">
-      <span class="md-eyebrow">{{ 'HOME.OBJECTIVES_EYEBROW' | translate }}</span>
-      <h2 class="home-section-title">{{ 'OTHER.OBJECTIVES' | translate }}</h2>
-    </header>
-
-    <ol class="objectives-list">
-      <li *ngFor="let obj of objectives; let i = index" class="objective-item">
-        <mat-card appearance="raised" class="objective-card">
-          <mat-card-content>
-            <span class="objective-num">{{ (i + 1) | number:'2.0-0' }}</span>
-            <div class="objective-body">
-              <p *ngFor="let par of objectiveContent(obj)"
-                 [class.is-heading]="par.type === 'heading'">
-                <ng-container *ngFor="let text of par.children">
-                  <span [class.text-italic]="text.italic"
+@if (objectives.length) {
+  <section class="home-section home-objectives-section">
+    <div class="home-section-inner">
+      <header class="home-section-head">
+        <span class="md-eyebrow">{{ 'HOME.OBJECTIVES_EYEBROW' | translate }}</span>
+        <h2 class="home-section-title">{{ 'OTHER.OBJECTIVES' | translate }}</h2>
+      </header>
+      <ol class="objectives-list">
+        @for (obj of objectives; track obj; let i = $index) {
+          <li class="objective-item">
+            <mat-card appearance="raised" class="objective-card">
+              <mat-card-content>
+                <span class="objective-num">{{ (i + 1) | number:'2.0-0' }}</span>
+                <div class="objective-body">
+                  @for (par of objectiveContent(obj); track par) {
+                    <p
+                      [class.is-heading]="par.type === 'heading'">
+                      @for (text of par.children; track text) {
+                        <span class="cf-root" [class.text-italic]="text.italic"
                         [class.text-bold]="text.bold">{{ text.text }}</span>
-                </ng-container>
-              </p>
-            </div>
-          </mat-card-content>
-        </mat-card>
-      </li>
-    </ol>
-  </div>
-</section>
+                      }
+                    </p>
+                  }
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </li>
+        }
+      </ol>
+    </div>
+  </section>
+}
 
 <!-- ─── EXPLORE TILES ──────────────────────────────────────────────
-     Tile titles are NAVIGATION keys verbatim. Tile descriptions are
-     short paraphrases of what each linked section contains — informed
-     by the actual content of those routes (e.g. /partnership shows the
-     six partner orgs, /leaflets shows printable PDFs).
-     ──────────────────────────────────────────────────────────── -->
+Tile titles are NAVIGATION keys verbatim. Tile descriptions are
+short paraphrases of what each linked section contains — informed
+by the actual content of those routes (e.g. /partnership shows the
+six partner orgs, /leaflets shows printable PDFs).
+──────────────────────────────────────────────────────────── -->
 <section class="home-section home-explore-section">
   <div class="home-section-inner">
     <header class="home-section-head">
@@ -194,10 +252,23 @@
     </header>
 
     <div class="explore-grid">
-      <a routerLink="/about" class="explore-tile">
+      <a routerLink="/learning" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
             <span class="tile-num">01</span>
+            <div class="tile-body">
+              <h3 class="tile-title">{{ 'HOME.TILE_LEARNING' | translate }}</h3>
+              <p class="tile-detail">{{ 'HOME.TILE_LEARNING_DETAIL' | translate }}</p>
+            </div>
+            <mat-icon class="tile-arrow">north_east</mat-icon>
+          </mat-card-content>
+        </mat-card>
+      </a>
+
+      <a routerLink="/about" class="explore-tile">
+        <mat-card appearance="outlined" class="explore-card">
+          <mat-card-content>
+            <span class="tile-num">02</span>
             <div class="tile-body">
               <h3 class="tile-title">{{ 'NAVIGATION.ABOUT' | translate }}</h3>
               <p class="tile-detail">{{ 'HOME.TILE_ABOUT_DETAIL' | translate }}</p>
@@ -210,7 +281,7 @@
       <a routerLink="/outputs" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
-            <span class="tile-num">02</span>
+            <span class="tile-num">03</span>
             <div class="tile-body">
               <h3 class="tile-title">{{ 'NAVIGATION.OUTPUTS' | translate }}</h3>
               <p class="tile-detail">{{ 'HOME.TILE_OUTPUTS_DETAIL' | translate }}</p>
@@ -223,7 +294,7 @@
       <a routerLink="/articles" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
-            <span class="tile-num">03</span>
+            <span class="tile-num">04</span>
             <div class="tile-body">
               <h3 class="tile-title">{{ 'NAVIGATION.ARTICLES' | translate }}</h3>
               <p class="tile-detail">{{ 'HOME.TILE_ARTICLES_DETAIL' | translate }}</p>
@@ -233,13 +304,13 @@
         </mat-card>
       </a>
 
-      <a routerLink="/resources" class="explore-tile">
+      <a routerLink="/newsletters" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
-            <span class="tile-num">04</span>
+            <span class="tile-num">05</span>
             <div class="tile-body">
-              <h3 class="tile-title">{{ 'NAVIGATION.RESOURCES' | translate }}</h3>
-              <p class="tile-detail">{{ 'HOME.TILE_RESOURCES_DETAIL' | translate }}</p>
+              <h3 class="tile-title">{{ 'NAVIGATION.NEWSLETTERS' | translate }}</h3>
+              <p class="tile-detail">{{ 'HOME.TILE_NEWSLETTERS_DETAIL' | translate }}</p>
             </div>
             <mat-icon class="tile-arrow">north_east</mat-icon>
           </mat-card-content>
@@ -249,7 +320,7 @@
       <a routerLink="/leaflets" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
-            <span class="tile-num">05</span>
+            <span class="tile-num">06</span>
             <div class="tile-body">
               <h3 class="tile-title">{{ 'NAVIGATION.LEAFLETS' | translate }}</h3>
               <p class="tile-detail">{{ 'HOME.TILE_LEAFLETS_DETAIL' | translate }}</p>
@@ -262,7 +333,7 @@
       <a routerLink="/partnership" class="explore-tile">
         <mat-card appearance="outlined" class="explore-card">
           <mat-card-content>
-            <span class="tile-num">06</span>
+            <span class="tile-num">07</span>
             <div class="tile-body">
               <h3 class="tile-title">{{ 'NAVIGATION.PARTNERSHIP' | translate }}</h3>
               <p class="tile-detail">{{ 'HOME.TILE_PARTNERSHIP_DETAIL' | translate }}</p>
@@ -276,7 +347,7 @@
 </section>
 
 <!-- ─── NEWS ───────────────────────────────────────────────────── -->
-<section class="home-section home-news-section">
+<section class="home-section home-news-section" [style.--featured-label]="'&quot;' + ('EYEBROW.FEATURED' | translate) + '&quot;'">
   <div class="home-section-inner">
     <header class="home-section-head news-head-row">
       <div class="news-head-titles">

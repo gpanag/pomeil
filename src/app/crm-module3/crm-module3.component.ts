@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,6 +14,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 enum GameState {
   Intro,
   Explore,
@@ -90,16 +91,16 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-crm-module3',
-  templateUrl: './crm-module3.component.html',
-  styleUrl: './crm-module3.component.scss',
-  standalone: true,
-  imports: [
-    CommonModule, MatCardModule, MatButtonModule, MatIconModule,
-    RouterModule, MatDialogModule, DragDropModule,
-    MatProgressBarModule, MatTooltipModule
-  ],
-  animations: [fadeInOut]
+    selector: 'app-crm-module3',
+    templateUrl: './crm-module3.component.html',
+    styleUrl: './crm-module3.component.scss',
+    imports: [RoomHelpButtonComponent,
+        CommonModule, MatCardModule, MatButtonModule, MatIconModule,
+        RouterModule, MatDialogModule, DragDropModule,
+        MatProgressBarModule, MatTooltipModule
+    ],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class CrmModule3Component extends EscapeRoomBaseComponent {
 
@@ -603,8 +604,6 @@ export class CrmModule3Component extends EscapeRoomBaseComponent {
   }
 
   nextGuidelinePage(): void {
-    const guidelines = this.t('puzzles.customerRegistry.privacyGuidelines');
-    // guidelines is fetched as array text — count based on index
     this.privacyGuidelineStep++;
     if (this.privacyGuidelineStep >= 5) {
       this.showPrivacyGuidelines = false;
@@ -699,7 +698,7 @@ export class CrmModule3Component extends EscapeRoomBaseComponent {
 
   saveRegistryEdits(): void {
     if (this.unsortedColumn.length > 0) {
-      this.registryFeedback = 'You must sort all items before saving.';
+      this.registryFeedback = this.t('ui.sortAllBeforeSave');
       return;
     }
 

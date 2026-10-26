@@ -220,7 +220,8 @@
       "npcResponse": "See on mõistlik. Soovitan seda juhtkonnale. Aitäh.",
       "afterCallThought1": "Vastasin konstruktiivselt ja tunnustaval moel, kaitstes samal ajal projekti ulatust.",
       "afterCallThought2": "Alati on keeruline, kui inimesed tahavad projektile rohkem asju lisada. Võib olla kiusatuslik öelda jah. Aga ulatuse mittekaitsmine viib sageli palju tööni ning liiga vähese aja ja ressurssideni selle lõpetamiseks.",
-      "continueButton": "Jätka"
+      "continueButton": "Jätka",
+      "phoneTitle": "Telefonikõne…"
     },
     "calendar": {
       "deadlineThought": "Tähtaeg… on kahe nädala pärast?!\n\nSee tähtaeg peab olema projekti esimese etapi jaoks. Pole võimalik, et kogu projekt saaks kahe nädalaga valmis.\n\nPean veenduma, et kõik teaksid, mida teha!",
@@ -255,17 +256,21 @@
   "completion": {
     "title": "Projektijuhtimine lõpetatud",
     "message": "Õnnitleme, oled läbinud projektijuhtimise põgenemistoa!\n\nToas pidid sa võtma üle projektijuhi rolli juba käimasolevas projektis. Paberil tundus kõik hästi minevat. Kuid peagi avastasid sa mitmeid jooksvaid probleeme. Projekti eesmärk oli ebaselge, sidusrühmadel olid vastuolulised vajadused, oli risk ulatuse laienemiseks ja palju ajalist survet.\n\nÕnneks võtsid sa väljakutsed otse vastu. Otsustasid konkreetse, asjakohase ja mõõdetava eesmärgi, mis on saavutatav teatud aja jooksul. Valisid projektile suuna, tasakaalustades sidusrühmade vajadusi. Kui keegi palus sul ulatust laiendada, vastu seisid ja kaitsesid ulatust konstruktiivselt. Lõpuks tegutsesid, seades realistlikke prioriteete ja suheldes oma meeskonnaga selgelt.\n\nTubli töö!",
-    "buttonText": "Lahku kabinetist"
+    "buttonText": "Lahku kabinetist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "puzzlesCompleted": "ülesanded",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
     "answerButton": "Vastus",
-    "exitDoorTitle": "Uks"
+    "exitDoorTitle": "Uks",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks",
+    "skipPuzzle": "Jäta see ülesanne vahele"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

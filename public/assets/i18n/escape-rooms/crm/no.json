@@ -747,11 +747,13 @@
   "completion": {
     "title": "Skift Fullført!",
     "message": "Du har fullført ditt skift i Kundeserviceavdelingen.\n\nDu håndterte en kundeklage-samtale, oppdaterte kunderegisteret og opprettet en nyttig kundeundersøkelse. Godt jobbet!",
-    "buttonText": "Forlat Kundeserviceavdelingen"
+    "buttonText": "Forlat Kundeserviceavdelingen",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
+    "sortAllBeforeSave": "Du må sortere alle oppføringene før du lagrer.",
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "startButton": "Start",
     "trueButton": "Sant",
@@ -760,7 +762,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

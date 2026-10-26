@@ -22,6 +22,10 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 100%;
+  /* Nothing in this project sets a global box-sizing, so width:100% plus the
+     horizontal padding below pushed the hero past the viewport — on a phone
+     that clipped the subtitle mid-word and cut the "Start learning" button. */
+  box-sizing: border-box;
   min-height: var(--cover-min-h);
   padding: 28px clamp(20px, 4vw, 56px) 40px;
   margin: 0;
@@ -526,7 +530,7 @@
   gap: 14px;
 }
 .stat-card {
-  --mdc-filled-card-container-color: var(--sys-surface-container-low-app);
+  --mat-filled-card-container-color: var(--sys-surface-container-low-app);
   background: var(--sys-surface-container-low-app) !important;
   border-radius: var(--md-shape-lg) !important;
   position: relative;
@@ -679,8 +683,8 @@
 }
 .explore-card.mat-mdc-card {
   height: 100%;
-  --mdc-outlined-card-container-color: var(--sys-surface-container-low-app);
-  --mdc-outlined-card-outline-color: rgba(0, 63, 71, 0.10);
+  --mat-card-outlined-container-color: var(--sys-surface-container-low-app);
+  --mat-card-outlined-outline-color: rgba(0, 63, 71, 0.10);
   background: var(--sys-surface-container-low-app) !important;
   border: 1px solid rgba(0, 63, 71, 0.10) !important;
   transition:
@@ -887,7 +891,7 @@
     position: relative;
   }
   .home-news-section ::ng-deep .grid-list > .item-card:first-child .list-thumb-container::before {
-    content: "Featured";
+    content: var(--featured-label, "Featured");  /* EYEBROW.FEATURED, set on .home-news-section */
     position: absolute;
     top: 14px;
     left: 14px;
@@ -1146,3 +1150,117 @@
 
 /* The cover bottom strip is now scroll-mark-only; right-align it */
 .home-cover-meta--bottom { justify-content: flex-end; }
+
+/* ╔═════════════════════════════════════════════════════════════════╗
+   ║  LEARNING BAND                                                  ║
+   ║  Sits directly under the cover so the learning journey — the    ║
+   ║  point of the platform — is the first thing after the hero,     ║
+   ║  ahead of the project information (user, 2026-09-22).           ║
+   ╚═════════════════════════════════════════════════════════════════╝ */
+.home-learning-section {
+  background:
+    linear-gradient(135deg, var(--pomeil-teal-deep) 0%, var(--pomeil-teal) 70%, #00424a 100%);
+  color: var(--pomeil-cream);
+  padding-top: clamp(48px, 7vw, 96px);
+  padding-bottom: clamp(48px, 7vw, 96px);
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.learning-band-text {
+  max-width: 780px;
+
+  .md-eyebrow {
+    color: var(--pomeil-warm-tint);
+    opacity: 0.95;
+  }
+}
+
+.learning-band-title {
+  font-family: var(--font-display) !important;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0.4rem 0 0.9rem;
+  color: var(--pomeil-cream);
+}
+
+.learning-band-lead {
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.55;
+  margin: 0 0 2rem;
+  color: rgba(250, 246, 238, 0.92);
+}
+
+.learning-band-steps {
+  list-style: none;
+  margin: 0 0 2.2rem;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--pomeil-teal-deep);
+    background: var(--pomeil-cream);
+  }
+
+  .step-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    strong { font-weight: 650; }
+    span { color: rgba(250, 246, 238, 0.82); line-height: 1.45; }
+  }
+}
+
+.learning-band-cta.mat-mdc-raised-button {
+  border-radius: 999px !important;
+  height: 54px !important;
+  padding: 0 32px !important;
+  font-family: var(--font-body) !important;
+  font-weight: 650 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.02em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  /* Colours come from the .pomeil-pill-inverse helper in styles.scss, which
+     sets the MDC custom properties. Setting `color` here does nothing —
+     Material reads --mat-button-protected-label-text-color for the label, so
+     the label stayed white on the cream button. */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28) !important;
+  transition: transform var(--md-duration-short3) var(--md-easing-emphasized-decelerate) !important;
+
+  &:hover { transform: translateY(-2px); }
+}
+
+/* Three steps side by side once there is room for them. */
+@media (min-width: 900px) {
+  .learning-band-text { max-width: 980px; }
+  .learning-band-steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+}
+
+@media (max-width: 700px) {
+  .learning-band-cta.mat-mdc-raised-button {
+    width: 100%;
+    justify-content: center !important;
+  }
+}

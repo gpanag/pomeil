@@ -96,7 +96,8 @@
         "label": "Warunki i Regulamin",
         "thought": "\"Obowiązują Warunki i Regulamin. Aby uzyskać pełne szczegóły, prosimy o kontakt z naszym zespołem sprzedaży.\" - Warunki nie są dołączone do emaila. Przejrzysta firma podałaby pełne warunki z góry, a nie ukrywała je za rozmową telefoniczną."
       }
-    }
+    },
+    "todayOnlyLine": "*Oferta ważna TYLKO DZIŚ"
   },
   "reviews": {
     "siteName": "BusinessReview.com",
@@ -319,11 +320,12 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Pomyślnie ukończyłeś/aś escape room Krytyczne Myślenie! Wykazałeś/aś zdolność do kwestionowania twierdzeń, zbierania dowodów z wielu źródeł, identyfikowania taktyk manipulacyjnych i podejmowania świadomych decyzji. Są to niezbędne umiejętności krytycznego myślenia w każdym środowisku zawodowym.",
-    "buttonText": "Wyjdź z Pokoju"
+    "buttonText": "Wyjdź z Pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "nextReview": "Następna Recenzja",
     "previousReview": "Poprzednia Recenzja",
@@ -334,7 +336,9 @@
     "sortEvidence": "Sortuj Dowody",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

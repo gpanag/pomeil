@@ -4,7 +4,7 @@ import { TranslateService } from './translate.service';
 
 describe('TranslatePipe', () => {
   it('create an instance', () => {
-    const service: TranslateService = TestBed.get(TranslateService);
+    const service: TranslateService = TestBed.inject(TranslateService);
     const pipe = new TranslatePipe(service);
     expect(pipe).toBeTruthy();
   });

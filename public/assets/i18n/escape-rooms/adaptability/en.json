@@ -171,6 +171,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Sticky note",
       "inventoryTitle": "Sticky Note",
       "popupTitle": "Sticky Note",
       "popupContent": [
@@ -181,17 +182,20 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully finished the onboarding course focused on the development of the skill of Adaptability. You have solved all the challenges, even the ones with missing information, and requiring unorthodox approaches. You have really proven your deep understanding of what it means to adapt!",
-    "buttonText": "Exit the Staircase"
+    "buttonText": "Exit the Staircase",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "selectTwo": "Select 2 answers",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "floorTransition": {
     "toFloor2": "You climb the stairs to the next floor. Amina is waiting for you on the landing ahead.",

@@ -1,13 +1,15 @@
 <div>
   <div style="display: flex; flex-direction: row; align-items: center;">
-    <ng-container *ngIf="auth.user$ | async as user; else loginButton">
+    @if (auth.user$ | async; as user) {
       <button mat-icon-button [matMenuTriggerFor]="accountMenu">
         <mat-icon>account_circle</mat-icon>
       </button>
       <mat-menu #accountMenu="matMenu">
         <div class="menu-header" mat-menu-item disabled>
           <small>{{ user.email }}</small>
-          <span *ngIf="user.username" class="greeting-text">{{ 'AUTH.HELLO' | translate }}, {{ user.username }}!</span>
+          @if (user.username) {
+            <span class="greeting-text">{{ 'AUTH.HELLO' | translate }}, {{ user.username }}!</span>
+          }
         </div>
         <mat-divider></mat-divider>
         <button mat-menu-item routerLink="/account/profile">
@@ -24,12 +26,11 @@
           <span>{{ 'AUTH.LOGOUT' | translate }}</span>
         </button>
       </mat-menu>
-    </ng-container>
-
-    <ng-template #loginButton>
+    } @else {
       <button mat-icon-button routerLink="/login">
         <mat-icon>person_outline</mat-icon>
       </button>
-    </ng-template>
+    }
+
   </div>
 </div>

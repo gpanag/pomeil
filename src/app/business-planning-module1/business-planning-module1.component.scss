@@ -297,7 +297,9 @@
 /* --- Canvas Grid --- */
 .canvas-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* minmax(0,…): plain 1fr cannot shrink below the longest word, and the
+     Estonian block names pushed the card into sideways scrolling on phones. */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(3, auto);
   gap: 4px;
   margin: 16px 0;
@@ -315,6 +317,8 @@
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 0.8em;
+    overflow-wrap: anywhere;
+    hyphens: auto;
 
     &.highlight {
       background: rgba(0, 104, 116, 0.15);

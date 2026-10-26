@@ -1,8 +1,9 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { MatStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
 import { LearningFlowService } from '../learning-flow.service';
 import { RoomScore } from '../../shared/escape-room/escape-room-scoring.interfaces';
+import { TranslateService } from '../../translate/translate.service';
 
 interface SkillOption {
   id: string;
@@ -13,44 +14,46 @@ interface SkillOption {
 }
 
 @Component({
-  selector: 'app-learning-flow',
-  templateUrl: './learning-flow.component.html',
-  styleUrls: ['./learning-flow.component.scss'],
+    selector: 'app-learning-flow',
+    templateUrl: './learning-flow.component.html',
+    styleUrls: ['./learning-flow.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class LearningFlowComponent implements OnInit, AfterViewInit {
   @ViewChild('stepper') stepper!: MatStepper;
 
   skills: SkillOption[] = [
-    { id: 'cultural-awareness', name: 'cultural-awareness', title: 'Cultural Awareness', image: 'assets/images/escape_room_raw_empty_final_people_zoomed_good_2.png', selected: false },
-    { id: 'empathy', name: 'empathy', title: 'Empathy', image: 'assets/images/empathy/meditation_room.png', selected: false },
-    { id: 'strategic-thinking', name: 'strategic-thinking', title: 'Strategic Thinking', image: 'assets/images/strategic/base_room.png', selected: false },
-    { id: 'open-mindedness', name: 'open-mindedness', title: 'Open-Mindedness', image: 'assets/images/open_mindedness/cafeteria_base.png', selected: false },
-    { id: 'financial', name: 'financial', title: 'Financial Literacy', image: 'assets/images/financial/accountant_office_base.png', selected: false },
-    { id: 'stress-management', name: 'stress-management', title: 'Stress Management', image: 'assets/images/stress_management/panic_room.png', selected: false },
-    { id: 'trust-building', name: 'trust-building', title: 'Trust Building', image: 'assets/images/trust_building/hr_office.png', selected: false },
-    { id: 'active-listening', name: 'active-listening', title: 'Active Listening', image: 'assets/images/active_listening/rooftop_default.png', selected: false },
-    { id: 'adaptability', name: 'adaptability', title: 'Adaptability', image: 'assets/images/adaptability/floor1.png', selected: false },
-    { id: 'flexibility', name: 'flexibility', title: 'Flexibility', image: 'assets/images/flexibility/rnd_room_default.png', selected: false },
-    { id: 'interpersonal-skills', name: 'interpersonal-skills', title: 'Interpersonal Skills', image: 'assets/images/interpersonal_skills/reception_default.png', selected: false },
-    { id: 'language-skills', name: 'language-skills', title: 'Language Skills', image: 'assets/images/language_skills/waiting_room_default.png', selected: false },
-    { id: 'resilience', name: 'resilience', title: 'Resilience', image: 'assets/images/resilience/archive_room_default.png', selected: false },
-    { id: 'self-reliance', name: 'self-reliance', title: 'Self-Reliance', image: 'assets/images/self_reliance/rooftop_default.png', selected: false },
-    { id: 'teamwork', name: 'teamwork', title: 'Teamwork', image: 'assets/images/teamwork/coworking_room_default.png', selected: false },
-    { id: 'tolerance', name: 'tolerance', title: 'Tolerance', image: 'assets/images/tolerance/coworking_office_default.png', selected: false },
-    { id: 'crm', name: 'crm', title: 'Customer Relationship Management', image: 'assets/images/crm/customer_service_dept_default.png', selected: false },
-    { id: 'decision-making', name: 'decision-making', title: 'Decision-making', image: 'assets/images/decision_making/outside_elevator.png', selected: false },
-    { id: 'leadership', name: 'leadership', title: 'Leadership', image: 'assets/images/leadership/hr_waiting_room_default.png', selected: false },
-    { id: 'legal-compliance', name: 'legal-compliance', title: 'Legal Compliance', image: 'assets/images/legal_compliance/legal_dept_default.png', selected: false },
-    { id: 'market-awareness', name: 'market-awareness', title: 'Market Awareness', image: 'assets/images/market_awareness/marketing_office_default.png', selected: false },
-    { id: 'motivating-others', name: 'motivating-others', title: 'Motivating & Inspiring Others', image: 'assets/images/motivating_others/waiting_area_default.png', selected: false },
-    { id: 'business-planning', name: 'business-planning', title: 'Business Planning', image: 'assets/images/business_planning/conference_room.png', selected: false },
-    { id: 'critical-thinking', name: 'critical-thinking', title: 'Critical Thinking', image: 'assets/images/critical_thinking/waiting_room_default.png', selected: false },
-    { id: 'digital-skills', name: 'digital-skills', title: 'Digital Skills', image: 'assets/images/digital_skills/it_department.png', selected: false },
-    { id: 'negotiation-skills', name: 'negotiation-skills', title: 'Negotiation Skills', image: 'assets/images/negotiation_skills/interview_room_default.png', selected: false },
-    { id: 'networking-skills', name: 'networking-skills', title: 'Networking Skills', image: 'assets/images/networking_skills/waiting_room_default.png', selected: false },
-    { id: 'risk-management', name: 'risk-management', title: 'Risk Management', image: 'assets/images/risk_management/janitor_closet.png', selected: false },
-    { id: 'problem-solving', name: 'problem-solving', title: 'Problem Solving', image: 'assets/images/problem_solving/storage_room.png', selected: false },
-    { id: 'project-management', name: 'project-management', title: 'Project Management', image: 'assets/images/project_management/office_room.png', selected: false },
+    { id: 'cultural-awareness', name: 'cultural-awareness', title: 'Cultural Awareness', image: 'assets/thumbs/cultural-awareness.webp', selected: false },
+    { id: 'empathy', name: 'empathy', title: 'Empathy', image: 'assets/thumbs/empathy.webp', selected: false },
+    { id: 'strategic-thinking', name: 'strategic-thinking', title: 'Strategic Thinking', image: 'assets/thumbs/strategic-thinking.webp', selected: false },
+    { id: 'open-mindedness', name: 'open-mindedness', title: 'Open-Mindedness', image: 'assets/thumbs/open-mindedness.webp', selected: false },
+    { id: 'financial', name: 'financial', title: 'Financial Literacy', image: 'assets/thumbs/financial.webp', selected: false },
+    { id: 'stress-management', name: 'stress-management', title: 'Stress Management', image: 'assets/thumbs/stress-management.webp', selected: false },
+    { id: 'trust-building', name: 'trust-building', title: 'Trust Building', image: 'assets/thumbs/trust-building.webp', selected: false },
+    { id: 'active-listening', name: 'active-listening', title: 'Active Listening', image: 'assets/thumbs/active-listening.webp', selected: false },
+    { id: 'adaptability', name: 'adaptability', title: 'Adaptability', image: 'assets/thumbs/adaptability.webp', selected: false },
+    { id: 'flexibility', name: 'flexibility', title: 'Flexibility', image: 'assets/thumbs/flexibility.webp', selected: false },
+    { id: 'interpersonal-skills', name: 'interpersonal-skills', title: 'Interpersonal Skills', image: 'assets/thumbs/interpersonal-skills.webp', selected: false },
+    { id: 'language-skills', name: 'language-skills', title: 'Language Skills', image: 'assets/thumbs/language-skills.webp', selected: false },
+    { id: 'resilience', name: 'resilience', title: 'Resilience', image: 'assets/thumbs/resilience.webp', selected: false },
+    { id: 'self-reliance', name: 'self-reliance', title: 'Self-Reliance', image: 'assets/thumbs/self-reliance.webp', selected: false },
+    { id: 'teamwork', name: 'teamwork', title: 'Teamwork', image: 'assets/thumbs/teamwork.webp', selected: false },
+    { id: 'tolerance', name: 'tolerance', title: 'Tolerance', image: 'assets/thumbs/tolerance.webp', selected: false },
+    { id: 'crm', name: 'crm', title: 'Customer Relationship Management', image: 'assets/thumbs/crm.webp', selected: false },
+    { id: 'decision-making', name: 'decision-making', title: 'Decision-making', image: 'assets/thumbs/decision-making.webp', selected: false },
+    { id: 'leadership', name: 'leadership', title: 'Leadership', image: 'assets/thumbs/leadership.webp', selected: false },
+    { id: 'legal-compliance', name: 'legal-compliance', title: 'Legal Compliance', image: 'assets/thumbs/legal-compliance.webp', selected: false },
+    { id: 'market-awareness', name: 'market-awareness', title: 'Market Awareness', image: 'assets/thumbs/market-awareness.webp', selected: false },
+    { id: 'motivating-others', name: 'motivating-others', title: 'Motivating & Inspiring Others', image: 'assets/thumbs/motivating-others.webp', selected: false },
+    { id: 'business-planning', name: 'business-planning', title: 'Business Planning', image: 'assets/thumbs/business-planning.webp', selected: false },
+    { id: 'critical-thinking', name: 'critical-thinking', title: 'Critical Thinking', image: 'assets/thumbs/critical-thinking.webp', selected: false },
+    { id: 'digital-skills', name: 'digital-skills', title: 'Digital Skills', image: 'assets/thumbs/digital-skills.webp', selected: false },
+    { id: 'negotiation-skills', name: 'negotiation-skills', title: 'Negotiation Skills', image: 'assets/thumbs/negotiation-skills.webp', selected: false },
+    { id: 'networking-skills', name: 'networking-skills', title: 'Networking Skills', image: 'assets/thumbs/networking-skills.webp', selected: false },
+    { id: 'risk-management', name: 'risk-management', title: 'Risk Management', image: 'assets/thumbs/risk-management.webp', selected: false },
+    { id: 'problem-solving', name: 'problem-solving', title: 'Problem Solving', image: 'assets/thumbs/problem-solving.webp', selected: false },
+    { id: 'project-management', name: 'project-management', title: 'Project Management', image: 'assets/thumbs/project-management.webp', selected: false },
   ];
 
   selectedSkillIds: string[] = [];
@@ -101,6 +104,7 @@ export class LearningFlowComponent implements OnInit, AfterViewInit {
   constructor(
     private learningService: LearningFlowService,
     private router: Router,
+    private translate: TranslateService,
   ) {}
 
   ngOnInit(): void {
@@ -137,8 +141,10 @@ export class LearningFlowComponent implements OnInit, AfterViewInit {
   }
 
   getSkillTitle(skillId: string): string {
-    return this.skills.find(s => s.id === skillId)?.title ?? skillId;
+    const fallback = this.skills.find(s => s.id === skillId)?.title || skillId;
+    return this.translate.instant('SKILLS.' + skillId) ?? fallback;
   }
+
 
   getSkillImage(skillId: string): string {
     return this.skills.find(s => s.id === skillId)?.image ?? '';
@@ -163,6 +169,24 @@ export class LearningFlowComponent implements OnInit, AfterViewInit {
     return !!score && score.overallScore < 80;
   }
 
+  isModuleAcknowledged(skillId: string): boolean {
+    return this.learningService.isModuleAcknowledged(skillId);
+  }
+
+  /** Download / "read online" links call this so a required module counts as opened. */
+  onModuleOpened(skillId: string): void {
+    this.learningService.markModuleAcknowledged(skillId);
+  }
+
+  /** A skill step is done when the room was played AND, if the score was
+   *  below the pass mark, the module has been opened (partner feedback
+   *  2026-08-31: "you must first download or read the module before
+   *  proceeding to the next module"). */
+  canContinue(skillId: string): boolean {
+    return this.isSkillCompleted(skillId) &&
+      (!this.isModuleRequired(skillId) || this.isModuleAcknowledged(skillId));
+  }
+
   playGame(skillId: string): void {
     this.router.navigate(['/escape-rooms/' + skillId], { queryParams: { mode: 'learning' } });
   }
@@ -172,7 +196,7 @@ export class LearningFlowComponent implements OnInit, AfterViewInit {
   }
 
   get allSkillsCompleted(): boolean {
-    return this.selectedSkillIds.every(id => this.isSkillCompleted(id));
+    return this.selectedSkillIds.every(id => this.canContinue(id));
   }
 
   get summaryScores(): { skillId: string; title: string; score: number; passed: boolean }[] {
@@ -216,10 +240,10 @@ export class LearningFlowComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    // Go to the first incomplete skill step (step index 1+)
+    // Go to the first skill step that is not fully done (played + module gate)
     let targetStep = 1;
     for (let i = 0; i < this.selectedSkillIds.length; i++) {
-      if (!this.isSkillCompleted(this.selectedSkillIds[i])) {
+      if (!this.canContinue(this.selectedSkillIds[i])) {
         targetStep = i + 1;
         break;
       }

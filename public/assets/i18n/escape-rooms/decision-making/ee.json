@@ -287,7 +287,8 @@
       }
     ],
     "wellDone": "Tubli!",
-    "buttonText": "Välju toast"
+    "buttonText": "Välju toast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "hints": {
     "outsideElevator": "Klõpsa lifti kutsumisnupul, et lifti kutsuda.",
@@ -304,12 +305,14 @@
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

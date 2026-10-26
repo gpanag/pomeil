@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { EscapeRoomTextService } from '../../shared/escape-room/escape-room-text.service';
@@ -7,9 +7,11 @@ import { AuthService } from '../../auth/auth.service';
 import { LoginWarningDialogComponent } from '../../escape-rooms/login-warning-dialog.component';
 
 @Component({
-  selector: 'app-learning-intro',
-  templateUrl: './learning-intro.component.html',
-  styleUrls: ['./learning-intro.component.scss'],
+    selector: 'app-learning-intro',
+    templateUrl: './learning-intro.component.html',
+    styleUrls: ['./learning-intro.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class LearningIntroComponent implements OnInit {
   playerName: string = '';
@@ -24,8 +26,9 @@ export class LearningIntroComponent implements OnInit {
 
   /**
    * Begins the learning flow. Anonymous first-time visitors get the same
-   * "your progress won't be saved" prompt shown when entering an escape
-   * room (with Register / Log in / Continue Anyway options); logged-in
+   * "playing without an account" prompt shown when entering an escape
+   * room (progress stays in this browser only; Register / Log in / Continue
+   * without an account); logged-in
    * users — or anyone who already acknowledged it this session — go straight
    * through. The session flag is shared with the room-level warning so the
    * user is never prompted twice.

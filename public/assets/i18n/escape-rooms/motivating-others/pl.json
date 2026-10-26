@@ -81,9 +81,18 @@
       "title": "Zamiana zniechęcenia w motywację",
       "instructions": "Przeciągnij każde zdanie, by przekształcić je w motywujące przesłanie.",
       "pairs": [
-        {"left": "Nie mam wystarczającego doświadczenia.", "right": "Doświadczenie zdobywa się poprzez naukę i praktykę."},
-        {"left": "Moje pochodzenie jest zbyt inne.", "right": "Różne pochodzenia wnoszą cenne perspektywy."},
-        {"left": "Już wcześniej zawiodłem/zawiodłam.", "right": "Przeszłe niepowodzenia pomagają nam rosnąć i się doskonalić."}
+        {
+          "left": "Nie mam wystarczającego doświadczenia.",
+          "right": "Doświadczenie zdobywa się poprzez naukę i praktykę."
+        },
+        {
+          "left": "Moje pochodzenie jest zbyt inne.",
+          "right": "Różne pochodzenia wnoszą cenne perspektywy."
+        },
+        {
+          "left": "Już wcześniej zawiodłem/zawiodłam.",
+          "right": "Przeszłe niepowodzenia pomagają nam rosnąć i się doskonalić."
+        }
       ],
       "feedback": {
         "wrong": "To nie ta para. Pomyśl, jak pozytywnie przeformułować każde stwierdzenie.",
@@ -93,7 +102,10 @@
     },
     "answerOverlayTitle": "Odpowiedź ujawniona",
     "answerOverlayContinue": "Dalej",
-    "fillGap": {"checkButton": "Wyślij", "resetButton": "Zresetuj"},
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    },
     "discouragingTitle": "Zniechęcające",
     "motivatingTitle": "Motywujące"
   },
@@ -129,44 +141,81 @@
         "Luki w historii zatrudnienia"
       ]
     },
-    "candidateFolder": {"inventoryTitle": "Teczka Kandydata"}
+    "candidateFolder": {
+      "inventoryTitle": "Teczka Kandydata"
+    }
   },
   "strengths": {
     "title": "Wyzwanie Rozpoznawania Mocnych Stron",
     "instructions": "Wybierz 2 elementy, by je pozytywnie podkreślić.",
     "options": [
-      {"id": "language", "text": "Umiejętności językowe", "correct": true},
-      {"id": "volunteering", "text": "Doświadczenie wolontariackie", "correct": true},
-      {"id": "gaps", "text": "Luki w zatrudnieniu", "correct": false},
-      {"id": "references", "text": "Brakujące referencje", "correct": false}
+      {
+        "id": "language",
+        "text": "Umiejętności językowe",
+        "correct": true
+      },
+      {
+        "id": "volunteering",
+        "text": "Doświadczenie wolontariackie",
+        "correct": true
+      },
+      {
+        "id": "gaps",
+        "text": "Luki w zatrudnieniu",
+        "correct": false
+      },
+      {
+        "id": "references",
+        "text": "Brakujące referencje",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motywacja rośnie, gdy ludzie widzą swoją wartość.",
       "wrong": "Te elementy mogą nie pomóc zbudować pewności siebie. Skup się na prawdziwych mocnych stronach."
-    }
+    },
+    "answerOverlay": "Mocne strony, które warto podkreślić, to umiejętności językowe i doświadczenie wolontariackie — oba pokazują, co kandydat wnosi, a nie czego mu brakuje."
   },
   "bodyLanguage": {
     "title": "Czytanie sygnałów motywacji",
     "instructions": "Kliknij elementy pokazujące, że Kandydat czuje niepewność.",
     "options": [
-      {"id": "clenched", "text": "Zaciśnięte dłonie na dokumentach", "correct": true},
-      {"id": "relaxed", "text": "Rozluźniona postawa", "correct": false},
-      {"id": "eyeContact", "text": "Unikanie kontaktu wzrokowego", "correct": true},
-      {"id": "smile", "text": "Pewny uśmiech", "correct": false}
+      {
+        "id": "clenched",
+        "text": "Zaciśnięte dłonie na dokumentach",
+        "correct": true
+      },
+      {
+        "id": "relaxed",
+        "text": "Rozluźniona postawa",
+        "correct": false
+      },
+      {
+        "id": "eyeContact",
+        "text": "Unikanie kontaktu wzrokowego",
+        "correct": true
+      },
+      {
+        "id": "smile",
+        "text": "Pewny uśmiech",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motywacja zaczyna się od zauważania, jak czują się inni — nawet gdy tego nie mówią.",
       "wrong": "Spójrz uważniej na mowę ciała Kandydata."
-    }
+    },
+    "answerOverlay": "Oznaki niepewności to zaciśnięte dłonie na dokumentach i unikanie kontaktu wzrokowego."
   },
   "completion": {
     "title": "Umiejętność ukończona: Inspirowanie i motywowanie innych",
     "message": "Pokazałeś/aś:\n\nŚwiadomość emocjonalną\nPozytywną komunikację\nWzmacnianie poprzez uznanie\nEtyczną motywację\n\nInspiracja to przywództwo w działaniu.",
-    "buttonText": "Wyjdź z poczekalni"
+    "buttonText": "Wyjdź z poczekalni",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
@@ -175,7 +224,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

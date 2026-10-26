@@ -193,18 +193,21 @@
   "completion": {
     "title": "Skill Completed: Leadership",
     "message": "Values understood. Decisions evaluated. Ethical behavior demonstrated.\nYou are ready to move to the next skill.",
-    "buttonText": "Exit the HR Office"
+    "buttonText": "Exit the HR Office",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "____",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

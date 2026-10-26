@@ -192,6 +192,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Märkmepaber",
       "inventoryTitle": "Märkmepaber",
       "popupTitle": "Märkmepaber",
       "popupContent": [
@@ -203,16 +204,19 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Sa oled tõestanud, et oled mitte ainult kaastundlik, empaatiline ja usaldusväärne inimene, vaid ka hea meeskonnajuht, kes suudab oma meeskonnaliikmeid usaldada. Sa oled edukalt omandanud Usalduse loomise oskuse!",
-    "buttonText": "Välju ruumist"
+    "buttonText": "Välju ruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

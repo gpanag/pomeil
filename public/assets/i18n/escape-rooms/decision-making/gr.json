@@ -287,7 +287,8 @@
       }
     ],
     "wellDone": "Μπράβο!",
-    "buttonText": "Έξοδος από το Δωμάτιο"
+    "buttonText": "Έξοδος από το Δωμάτιο",
+    "revealedNote": "Σε αυτό χρειάστηκε να εμφανιστεί η απάντηση, οπότε αξίζει να ξαναδείτε αυτό το μέρος στην ενότητα."
   },
   "hints": {
     "outsideElevator": "Κάνε κλικ στο κουμπί κλήσης ασανσέρ για να καλέσεις το ασανσέρ.",
@@ -304,12 +305,14 @@
   },
   "ui": {
     "fullscreenToggle": "Εναλλαγή πλήρους οθόνης",
-    "backToEscapeRooms": "Πίσω στα Δωμάτια Απόδρασης",
+    "backToLearning": "Επιστροφή στη μάθηση",
     "continueButton": "Συνέχεια",
     "gapPlaceholder": "___",
     "skipButton": "Παράλειψη",
     "startQuizButton": "Έναρξη Κουίζ",
-    "answerButton": "Απάντηση"
+    "answerButton": "Απάντηση",
+    "backToRoom": "Επιστροφή στο δωμάτιο",
+    "clickToExamine": "Κάντε κλικ για εξέταση"
   },
   "learning": {
     "modeLabel": "Λειτουργία Μάθησης",

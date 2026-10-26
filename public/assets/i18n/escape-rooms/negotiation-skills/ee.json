@@ -243,11 +243,12 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Oled edukalt näidanud läbirääkimise kunsti! Ettevalmistamatust esimesest kohtumisest strateegilise, hästi ettevalmistatud teise läbirääkimiseni oled õppinud ettevalmistuse, oma alampiiri tundmise, vaikuse strateegilise kasutamise, aktiivse kuulamise ja win-win-lahenduste leidmise tähtsust.",
-    "buttonText": "Välju ruumist"
+    "buttonText": "Välju ruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "chooseReply": "Vali oma vastus:",
     "optionA": "Variant A",
@@ -261,7 +262,9 @@
     "itemsFound": "elementi lõpetatud",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

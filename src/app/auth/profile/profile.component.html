@@ -5,8 +5,12 @@
   </div>
 
   <mat-card-content>
-    <div *ngIf="error" class="error-message">{{ error }}</div>
-    <div *ngIf="success" class="success-message">{{ success | translate }}</div>
+    @if (error) {
+      <div class="error-message">{{ error }}</div>
+    }
+    @if (success) {
+      <div class="success-message">{{ success | translate }}</div>
+    }
 
     <mat-form-field appearance="outline">
       <mat-label>{{ 'AUTH.EMAIL' | translate }}</mat-label>
@@ -23,8 +27,12 @@
 
   <mat-card-actions>
     <button mat-raised-button color="primary" (click)="save()" [disabled]="loading">
-      <mat-icon *ngIf="!loading">save</mat-icon>
-      <mat-spinner *ngIf="loading" diameter="20"></mat-spinner>
+      @if (!loading) {
+        <mat-icon>save</mat-icon>
+      }
+      @if (loading) {
+        <mat-spinner diameter="20"></mat-spinner>
+      }
       {{ 'AUTH.SAVE' | translate }}
     </button>
 

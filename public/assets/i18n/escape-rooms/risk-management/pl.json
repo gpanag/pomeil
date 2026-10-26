@@ -139,20 +139,22 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Pomyślnie zidentyfikowałeś/aś wszystkie zagrożenia w miejscu pracy i przeprowadziłeś/aś dokładną ocenę ryzyka. Pokazałeś/aś silne umiejętności zarządzania ryzykiem — zdolność dostrzegania zagrożeń i ich systematycznej oceny jest kluczowa w każdym miejscu pracy!",
-    "buttonText": "Wyjdź z pomieszczenia"
+    "buttonText": "Wyjdź z pomieszczenia",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "hints": {
     "intro": "Rozejrzyj się uważnie. Klikaj na obiekty, które wyglądają niebezpiecznie lub nie na swoim miejscu.",
     "identifying": "Wciąż są zagrożenia do znalezienia. Szukaj zagrożeń elektrycznych, problemów z przechowywaniem chemikaliów, zagrożeń strukturalnych i problemów higienicznych.",
     "assessment": "Oceń prawdopodobieństwo i wpływ każdego zagrożenia. Pomyśl, jak często to mogłoby się zdarzyć i jak złe byłyby konsekwencje.",
     "review": "Przejrzyj wyniki oceny i kliknij „Zakończ ocenę ryzyka”, gdy będziesz gotowy/a.",
-    "allRisksFound": "Znalazłeś/aś wszystkie zagrożenia. Kliknij tablicę, aby rozpocząć ocenę ryzyka.",
+    "allRisksFound": "Znalazłeś/aś wszystkie zagrożenia. Kliknij tablicę na lewej ścianie, aby rozpocząć ocenę ryzyka.",
+    "whiteboardZoom": "Kliknij tabelę oceny na tablicy, aby rozpocząć.",
     "completion": "Szkolenie zakończone!",
     "default": "Rozejrzyj się po pomieszczeniu w poszukiwaniu potencjalnych zagrożeń."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "risksFound": "Znalezione zagrożenia",
     "of": "z",
@@ -161,7 +163,10 @@
     "riskIdentified": "Zagrożenie zidentyfikowane!",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "whiteboardLabel": "Ocena ryzyka",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "puzzles": {
     "answerOverlayTitle": "Odpowiedź ujawniona",

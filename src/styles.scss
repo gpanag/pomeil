@@ -7,7 +7,8 @@
 
 // @import "../node_modules/angular-calendar/css/angular-calendar.css";
 
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 
 /* Fonts (Fira Sans, Caveat, Spectral, Comic Neue, …) are self-hosted via
    public/assets/fonts/fonts.css (loaded from index.html) — no Google CDN. */
@@ -153,15 +154,29 @@ $dark-theme: mat.define-theme((color: (theme-type: dark,
             ),
         ));
 
+// Material 18's mat.core() emitted the .mat-typography hierarchy (body text 1rem/1.5rem, h1–h6);
+// its v19+ replacements do not, so include it explicitly (Angular 18 → 22 upgrade, 2026-10-26).
+@include mat.typography-hierarchy($light-theme);
+
 :root {
     // Worked as expected
     // @include mat.all-component-themes($light-theme);
 
     // No backgrounds on menu, select, datepicker, etc
-    @include mat.core-theme($light-theme);
+    @include mat.elevation-classes();
+    @include mat.app-background();
 
     @include mat.system-level-colors($light-theme);
     @include mat.system-level-typography($light-theme);
+    // Material 19+ names these --mat-sys-*; the app's styles use the --sys-* names Material 18 emitted.
+    // Material 22 also derives the on-*-container colours from lighter tones; keep the 18 values.
+    @include mat.system-level-colors($light-theme, $prefix: sys, $overrides: (
+        on-error-container: #410002,
+        on-primary-container: #001f24,
+        on-secondary-container: #051f23,
+        on-tertiary-container: #0e1b37,
+    ));
+    @include mat.system-level-typography($light-theme, $prefix: sys);
 
     @include mat.button-theme($light-theme);
     @include mat.card-theme($light-theme);
@@ -179,10 +194,13 @@ $dark-theme: mat.define-theme((color: (theme-type: dark,
     //   @include mat.core-theme($dark-theme);
     //   @include mat.button-theme($dark-theme);
     //   @include mat.all-component-themes($dark-theme);
-    @include mat.core-theme($dark-theme);
+    @include mat.elevation-classes();
+    @include mat.app-background();
 
     @include mat.system-level-colors($dark-theme);
     @include mat.system-level-typography($dark-theme);
+    @include mat.system-level-colors($dark-theme, $prefix: sys, $overrides: (surface-container-highest: #363a3a));
+    @include mat.system-level-typography($dark-theme, $prefix: sys);
 
     @include mat.button-theme($dark-theme);
     @include mat.card-theme($dark-theme);
@@ -201,10 +219,10 @@ $dark-theme: mat.define-theme((color: (theme-type: dark,
     --mat-stepper-header-selected-state-icon-foreground-color: var(--sys-on-primary);
     --mat-stepper-header-edit-state-icon-foreground-color: var(--sys-on-primary);
     --mat-icon-color: var(--sys-primary);
-    --mdc-checkbox-selected-icon-color: var(--sys-primary);
-    --mdc-checkbox-selected-hover-icon-color: var(--sys-primary);
-    --mdc-checkbox-selected-focus-icon-color: var(--sys-primary);
-    --mdc-checkbox-selected-pressed-icon-color: var(--sys-primary);
+    --mat-checkbox-selected-icon-color: var(--sys-primary);
+    --mat-checkbox-selected-hover-icon-color: var(--sys-primary);
+    --mat-checkbox-selected-focus-icon-color: var(--sys-primary);
+    --mat-checkbox-selected-pressed-icon-color: var(--sys-primary);
 }
 
 // Fix raised / flat / FAB / icon primary buttons — M3 theme generation
@@ -213,19 +231,19 @@ $dark-theme: mat.define-theme((color: (theme-type: dark,
 // as teal-filled pills site-wide.
 .mat-mdc-raised-button.mat-primary,
 .mat-mdc-raised-button[color="primary"] {
-  --mdc-protected-button-container-color: #006874;
-  --mdc-protected-button-label-text-color: #ffffff;
-  --mat-protected-button-state-layer-color: #ffffff;
-  --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.20);
+  --mat-button-protected-container-color: #006874;
+  --mat-button-protected-label-text-color: #ffffff;
+  --mat-button-protected-state-layer-color: #ffffff;
+  --mat-button-protected-ripple-color: rgba(255, 255, 255, 0.20);
   background-color: #006874 !important;
   color: #ffffff !important;
 }
 .mat-mdc-unelevated-button.mat-primary:not(.menu-button),
 .mat-mdc-unelevated-button[color="primary"]:not(.menu-button) {
-  --mdc-filled-button-container-color: #006874;
-  --mdc-filled-button-label-text-color: #ffffff;
-  --mat-filled-button-state-layer-color: #ffffff;
-  --mat-filled-button-ripple-color: rgba(255, 255, 255, 0.20);
+  --mat-button-filled-container-color: #006874;
+  --mat-button-filled-label-text-color: #ffffff;
+  --mat-button-filled-state-layer-color: #ffffff;
+  --mat-button-filled-ripple-color: rgba(255, 255, 255, 0.20);
   background-color: #006874 !important;
   color: #ffffff !important;
 }
@@ -244,10 +262,10 @@ $dark-theme: mat.define-theme((color: (theme-type: dark,
    is on the anchor and not always reflected in the host class chain. */
 a.mat-mdc-raised-button[color="primary"],
 a.mat-mdc-unelevated-button[color="primary"] {
-  --mdc-protected-button-container-color: #006874;
-  --mdc-protected-button-label-text-color: #ffffff;
-  --mdc-filled-button-container-color: #006874;
-  --mdc-filled-button-label-text-color: #ffffff;
+  --mat-button-protected-container-color: #006874;
+  --mat-button-protected-label-text-color: #ffffff;
+  --mat-button-filled-container-color: #006874;
+  --mat-button-filled-label-text-color: #ffffff;
   background-color: #006874 !important;
   color: #ffffff !important;
 }
@@ -285,12 +303,12 @@ button.mat-mdc-raised-button.mat-primary.pomeil-pill-inverse,
 .mat-mdc-unelevated-button.pomeil-pill-inverse,
 .pomeil-pill-inverse,
 .full-curriculum-actions a.mat-mdc-raised-button {
-  --mdc-protected-button-container-color: var(--pomeil-cream);
-  --mdc-protected-button-label-text-color: var(--pomeil-teal-deep);
-  --mat-protected-button-state-layer-color: var(--pomeil-teal-deep);
-  --mat-protected-button-ripple-color: rgba(0, 63, 71, 0.16);
-  --mdc-filled-button-container-color: var(--pomeil-cream);
-  --mdc-filled-button-label-text-color: var(--pomeil-teal-deep);
+  --mat-button-protected-container-color: var(--pomeil-cream);
+  --mat-button-protected-label-text-color: var(--pomeil-teal-deep);
+  --mat-button-protected-state-layer-color: var(--pomeil-teal-deep);
+  --mat-button-protected-ripple-color: rgba(0, 63, 71, 0.16);
+  --mat-button-filled-container-color: var(--pomeil-cream);
+  --mat-button-filled-label-text-color: var(--pomeil-teal-deep);
   background-color: var(--pomeil-cream) !important;
   color: var(--pomeil-teal-deep) !important;
   border: 1px solid rgba(250, 246, 238, 0.40) !important;
@@ -662,10 +680,10 @@ app-escape-room,
 /* --- Styling for the Game's SnackBar --- */
 /* This targets the panel class we assigned in the .ts file */
 .game-snackbar {
-  --mdc-snackbar-container-color: #4a2c2a;
-  --mdc-snackbar-supporting-text-color: #f5eeda;
-  --mdc-snackbar-supporting-text-font: 'Spectral', serif;
-  --mdc-snackbar-supporting-text-size: 1.1rem;
+  --mat-snack-bar-container-color: #4a2c2a;
+  --mat-snack-bar-supporting-text-color: #f5eeda;
+  --mat-snack-bar-supporting-text-font: 'Spectral', serif;
+  --mat-snack-bar-supporting-text-size: 1.1rem;
   border-radius: 3px !important;
   border: 1px solid #f5eeda;
 
@@ -831,6 +849,9 @@ app-escape-room,
 }
 /* Escape room fullscreen: hide toolbar for full immersion */
 body.escape-room-fullscreen {
+  /* No toolbar in fullscreen — the room's scene sizing reads this. */
+  --app-toolbar-height: 0px;
+
   mat-toolbar,
   .mat-toolbar,
   #bottom-toolbar {
@@ -1070,7 +1091,10 @@ h1, h2, h3, h4, h5, h6,
   color: var(--pomeil-ink-muted);
 }
 
-/* Body, labels — Inter */
+/* Body, labels — Inter.
+   `span:not([class])` never matched spans rendered by *ngIf/*ngFor, because Angular ≤18 gave those
+   the class `ng-star-inserted`. @if/@for add no class, so since the Angular 22 upgrade (2026-10-26)
+   such spans carry `class="cf-root"` to keep the fonts they had. */
 body, p, li, label, span:not([class]), div, button, a, input, textarea,
 .mat-mdc-card-content, .mat-mdc-card-subtitle, .mat-mdc-button {
   font-family: var(--font-body) !important;
@@ -1188,11 +1212,11 @@ mat-toolbar .menu-whole {
 mat-toolbar .menu-button.mat-mdc-unelevated-button,
 mat-toolbar .menu-button.mat-mdc-button-base {
   /* MDC token overrides */
-  --mdc-filled-button-container-color: transparent;
-  --mdc-filled-button-label-text-color: var(--pomeil-ink-muted);
-  --mdc-filled-button-disabled-container-color: transparent;
-  --mdc-filled-button-disabled-label-text-color: var(--pomeil-ink-muted);
-  --mat-filled-button-state-layer-color: var(--pomeil-teal);
+  --mat-button-filled-container-color: transparent;
+  --mat-button-filled-label-text-color: var(--pomeil-ink-muted);
+  --mat-button-filled-disabled-container-color: transparent;
+  --mat-button-filled-disabled-label-text-color: var(--pomeil-ink-muted);
+  --mat-button-filled-state-layer-color: var(--pomeil-teal);
   /* Re-style */
   background: transparent !important;
   color: var(--pomeil-ink-muted) !important;
@@ -1292,7 +1316,7 @@ mat-toolbar > div[routerLink="/"] span {
    ------------------------------------------------------------------- */
 
 .mat-mdc-card:not(.narrative-dialog) {
-  --mdc-elevated-card-container-color: var(--sys-surface-container-low-app);
+  --mat-card-elevated-container-color: var(--sys-surface-container-low-app);
   background: var(--sys-surface-container-low-app) !important;
   border: 1px solid rgba(0, 63, 71, 0.05);
   border-radius: var(--md-shape-md) !important;
@@ -2032,17 +2056,17 @@ textarea.textarea-input,
    23. EDITORIAL PROGRESS BAR — slimmer track, brand fill, paper bg
    ------------------------------------------------------------------- */
 .mat-mdc-progress-bar {
-  --mdc-linear-progress-track-color: rgba(0, 63, 71, 0.10) !important;
-  --mdc-linear-progress-track-height: 6px !important;
-  --mdc-linear-progress-active-indicator-height: 6px !important;
+  --mat-progress-bar-track-color: rgba(0, 63, 71, 0.10) !important;
+  --mat-progress-bar-track-height: 6px !important;
+  --mat-progress-bar-active-indicator-height: 6px !important;
   border-radius: 999px;
   overflow: hidden;
 }
 .mat-mdc-progress-bar.mat-primary {
-  --mdc-linear-progress-active-indicator-color: var(--pomeil-teal) !important;
+  --mat-progress-bar-active-indicator-color: var(--pomeil-teal) !important;
 }
 .mat-mdc-progress-bar.mat-warn {
-  --mdc-linear-progress-active-indicator-color: var(--pomeil-warm) !important;
+  --mat-progress-bar-active-indicator-color: var(--pomeil-warm) !important;
 }
 
 /* -------------------------------------------------------------------
@@ -2188,21 +2212,21 @@ a.editorial-back-link,
        Used across the questionnaire, auth forms, and contact forms.
    ------------------------------------------------------------------- */
 .mat-mdc-form-field {
-  --mdc-outlined-text-field-container-shape: var(--md-shape-sm);
-  --mdc-outlined-text-field-outline-color:           rgba(0, 63, 71, 0.18);
-  --mdc-outlined-text-field-hover-outline-color:     rgba(0, 63, 71, 0.42);
-  --mdc-outlined-text-field-focus-outline-color:     var(--pomeil-teal);
-  --mdc-outlined-text-field-disabled-outline-color:  rgba(0, 63, 71, 0.10);
-  --mdc-outlined-text-field-error-outline-color:       var(--state-attention-deep);
-  --mdc-outlined-text-field-error-hover-outline-color: var(--state-attention-deep);
-  --mdc-outlined-text-field-error-focus-outline-color: var(--state-attention-deep);
-  --mdc-outlined-text-field-label-text-color:        var(--pomeil-ink-muted);
-  --mdc-outlined-text-field-hover-label-text-color:  var(--pomeil-teal-deep);
-  --mdc-outlined-text-field-focus-label-text-color:  var(--pomeil-teal);
-  --mdc-outlined-text-field-input-text-color:        var(--pomeil-ink);
-  --mdc-outlined-text-field-input-text-placeholder-color: rgba(74, 85, 89, 0.50);
-  --mdc-outlined-text-field-error-label-text-color:        var(--state-attention-deep);
-  --mdc-outlined-text-field-error-focus-label-text-color:  var(--state-attention-deep);
+  --mat-form-field-outlined-container-shape: var(--md-shape-sm);
+  --mat-form-field-outlined-outline-color:           rgba(0, 63, 71, 0.18);
+  --mat-form-field-outlined-hover-outline-color:     rgba(0, 63, 71, 0.42);
+  --mat-form-field-outlined-focus-outline-color:     var(--pomeil-teal);
+  --mat-form-field-outlined-disabled-outline-color:  rgba(0, 63, 71, 0.10);
+  --mat-form-field-outlined-error-outline-color:       var(--state-attention-deep);
+  --mat-form-field-outlined-error-hover-outline-color: var(--state-attention-deep);
+  --mat-form-field-outlined-error-focus-outline-color: var(--state-attention-deep);
+  --mat-form-field-outlined-label-text-color:        var(--pomeil-ink-muted);
+  --mat-form-field-outlined-hover-label-text-color:  var(--pomeil-teal-deep);
+  --mat-form-field-outlined-focus-label-text-color:  var(--pomeil-teal);
+  --mat-form-field-outlined-input-text-color:        var(--pomeil-ink);
+  --mat-form-field-outlined-input-text-placeholder-color: rgba(74, 85, 89, 0.50);
+  --mat-form-field-outlined-error-label-text-color:        var(--state-attention-deep);
+  --mat-form-field-outlined-error-focus-label-text-color:  var(--state-attention-deep);
   --mat-form-field-container-text-font:    var(--font-body);
   --mat-form-field-subscript-text-font:    var(--font-body);
   --mat-form-field-container-text-size:    0.95rem;
@@ -2293,20 +2317,20 @@ textarea.editorial-textarea {
        comfortable on touch surfaces (mobile questionnaire).
    ------------------------------------------------------------------- */
 .mat-mdc-checkbox {
-  --mdc-checkbox-selected-checkmark-color:        var(--pomeil-cream);
-  --mdc-checkbox-selected-icon-color:             var(--pomeil-teal);
-  --mdc-checkbox-selected-hover-icon-color:       var(--pomeil-teal-deep);
-  --mdc-checkbox-selected-focus-icon-color:       var(--pomeil-teal-deep);
-  --mdc-checkbox-selected-pressed-icon-color:     var(--pomeil-teal-deep);
-  --mdc-checkbox-selected-hover-state-layer-color:    var(--pomeil-teal);
-  --mdc-checkbox-selected-focus-state-layer-color:    var(--pomeil-teal);
-  --mdc-checkbox-selected-pressed-state-layer-color:  var(--pomeil-teal);
-  --mdc-checkbox-unselected-icon-color:           rgba(0, 63, 71, 0.32);
-  --mdc-checkbox-unselected-hover-icon-color:     var(--pomeil-teal);
-  --mdc-checkbox-unselected-focus-icon-color:     var(--pomeil-teal);
-  --mdc-checkbox-unselected-hover-state-layer-color:  var(--pomeil-teal);
-  --mdc-checkbox-unselected-focus-state-layer-color:  var(--pomeil-teal);
-  --mdc-checkbox-state-layer-size: 36px;
+  --mat-checkbox-selected-checkmark-color:        var(--pomeil-cream);
+  --mat-checkbox-selected-icon-color:             var(--pomeil-teal);
+  --mat-checkbox-selected-hover-icon-color:       var(--pomeil-teal-deep);
+  --mat-checkbox-selected-focus-icon-color:       var(--pomeil-teal-deep);
+  --mat-checkbox-selected-pressed-icon-color:     var(--pomeil-teal-deep);
+  --mat-checkbox-selected-hover-state-layer-color:    var(--pomeil-teal);
+  --mat-checkbox-selected-focus-state-layer-color:    var(--pomeil-teal);
+  --mat-checkbox-selected-pressed-state-layer-color:  var(--pomeil-teal);
+  --mat-checkbox-unselected-icon-color:           rgba(0, 63, 71, 0.32);
+  --mat-checkbox-unselected-hover-icon-color:     var(--pomeil-teal);
+  --mat-checkbox-unselected-focus-icon-color:     var(--pomeil-teal);
+  --mat-checkbox-unselected-hover-state-layer-color:  var(--pomeil-teal);
+  --mat-checkbox-unselected-focus-state-layer-color:  var(--pomeil-teal);
+  --mat-checkbox-state-layer-size: 36px;
 }
 .mat-mdc-checkbox .mdc-form-field,
 .mat-mdc-checkbox .mdc-label {
@@ -2321,18 +2345,18 @@ textarea.editorial-textarea {
 .checkbox-card .mat-mdc-checkbox { width: 100%; }
 
 .mat-mdc-radio-button {
-  --mdc-radio-selected-icon-color:        var(--pomeil-teal);
-  --mdc-radio-selected-hover-icon-color:  var(--pomeil-teal-deep);
-  --mdc-radio-selected-focus-icon-color:  var(--pomeil-teal-deep);
-  --mdc-radio-selected-pressed-icon-color: var(--pomeil-teal-deep);
-  --mdc-radio-selected-hover-state-layer-color:    var(--pomeil-teal);
-  --mdc-radio-selected-focus-state-layer-color:    var(--pomeil-teal);
-  --mdc-radio-selected-pressed-state-layer-color:  var(--pomeil-teal);
-  --mdc-radio-unselected-icon-color:      rgba(0, 63, 71, 0.40);
-  --mdc-radio-unselected-hover-icon-color: var(--pomeil-teal);
-  --mdc-radio-unselected-focus-icon-color: var(--pomeil-teal);
-  --mdc-radio-unselected-hover-state-layer-color:  var(--pomeil-teal);
-  --mdc-radio-state-layer-size: 36px;
+  --mat-radio-selected-icon-color:        var(--pomeil-teal);
+  --mat-radio-selected-hover-icon-color:  var(--pomeil-teal-deep);
+  --mat-radio-selected-focus-icon-color:  var(--pomeil-teal-deep);
+  --mat-radio-selected-pressed-icon-color: var(--pomeil-teal-deep);
+  --mat-radio-selected-hover-state-layer-color:    var(--pomeil-teal);
+  --mat-radio-selected-focus-state-layer-color:    var(--pomeil-teal);
+  --mat-radio-selected-pressed-state-layer-color:  var(--pomeil-teal);
+  --mat-radio-unselected-icon-color:      rgba(0, 63, 71, 0.40);
+  --mat-radio-unselected-hover-icon-color: var(--pomeil-teal);
+  --mat-radio-unselected-focus-icon-color: var(--pomeil-teal);
+  --mat-radio-unselected-hover-state-layer-color:  var(--pomeil-teal);
+  --mat-radio-state-layer-size: 36px;
 }
 .mat-mdc-radio-button .mdc-form-field,
 .mat-mdc-radio-button .mdc-label {
@@ -2365,17 +2389,17 @@ textarea.editorial-textarea {
 }
 
 .mat-mdc-slide-toggle {
-  --mdc-switch-selected-track-color:           var(--pomeil-teal);
-  --mdc-switch-selected-hover-track-color:     var(--pomeil-teal-deep);
-  --mdc-switch-selected-focus-track-color:     var(--pomeil-teal-deep);
-  --mdc-switch-selected-pressed-track-color:   var(--pomeil-teal-deep);
-  --mdc-switch-selected-handle-color:          var(--pomeil-cream);
-  --mdc-switch-selected-hover-handle-color:    #ffffff;
-  --mdc-switch-selected-focus-handle-color:    #ffffff;
-  --mdc-switch-selected-pressed-handle-color:  #ffffff;
-  --mdc-switch-unselected-track-color:         rgba(0, 63, 71, 0.18);
-  --mdc-switch-unselected-handle-color:        var(--pomeil-cream);
-  --mdc-switch-handle-shape: 999px;
+  --mat-slide-toggle-selected-track-color:           var(--pomeil-teal);
+  --mat-slide-toggle-selected-hover-track-color:     var(--pomeil-teal-deep);
+  --mat-slide-toggle-selected-focus-track-color:     var(--pomeil-teal-deep);
+  --mat-slide-toggle-selected-pressed-track-color:   var(--pomeil-teal-deep);
+  --mat-slide-toggle-selected-handle-color:          var(--pomeil-cream);
+  --mat-slide-toggle-selected-hover-handle-color:    #ffffff;
+  --mat-slide-toggle-selected-focus-handle-color:    #ffffff;
+  --mat-slide-toggle-selected-pressed-handle-color:  #ffffff;
+  --mat-slide-toggle-unselected-track-color:         rgba(0, 63, 71, 0.18);
+  --mat-slide-toggle-unselected-handle-color:        var(--pomeil-cream);
+  --mat-slide-toggle-handle-shape: 999px;
 }
 
 /* -------------------------------------------------------------------
@@ -2448,10 +2472,10 @@ textarea.editorial-textarea {
 }
 
 .mat-mdc-dialog-container {
-  --mdc-dialog-container-color: var(--pomeil-cream);
-  --mdc-dialog-container-shape: var(--md-shape-lg);
-  --mdc-dialog-subhead-color:  var(--pomeil-teal-deep);
-  --mdc-dialog-supporting-text-color: var(--pomeil-ink);
+  --mat-dialog-container-color: var(--pomeil-cream);
+  --mat-dialog-container-shape: var(--md-shape-lg);
+  --mat-dialog-subhead-color:  var(--pomeil-teal-deep);
+  --mat-dialog-supporting-text-color: var(--pomeil-ink);
 }
 .mat-mdc-dialog-container .mat-mdc-dialog-surface {
   background: var(--pomeil-cream) !important;
@@ -2523,13 +2547,13 @@ textarea.editorial-textarea {
    32. EDITORIAL MAT-TOOLTIP — paper card, ink type, tiny display italic
    ------------------------------------------------------------------- */
 .mat-mdc-tooltip {
-  --mdc-plain-tooltip-container-color: var(--pomeil-teal-deep);
-  --mdc-plain-tooltip-supporting-text-color: var(--pomeil-cream);
-  --mdc-plain-tooltip-supporting-text-font: var(--font-body);
-  --mdc-plain-tooltip-supporting-text-size: 0.72rem;
-  --mdc-plain-tooltip-supporting-text-weight: 500;
-  --mdc-plain-tooltip-supporting-text-tracking: 0.06em;
-  --mdc-plain-tooltip-container-shape: var(--md-shape-sm);
+  --mat-tooltip-container-color: var(--pomeil-teal-deep);
+  --mat-tooltip-supporting-text-color: var(--pomeil-cream);
+  --mat-tooltip-supporting-text-font: var(--font-body);
+  --mat-tooltip-supporting-text-size: 0.72rem;
+  --mat-tooltip-supporting-text-weight: 500;
+  --mat-tooltip-supporting-text-tracking: 0.06em;
+  --mat-tooltip-container-shape: var(--md-shape-sm);
 }
 .mat-mdc-tooltip .mdc-tooltip__surface {
   padding: 6px 12px !important;
@@ -2543,10 +2567,10 @@ textarea.editorial-textarea {
        Used by the questionnaire ("saved locally"), and elsewhere.
    ------------------------------------------------------------------- */
 .mat-mdc-snack-bar-container {
-  --mdc-snackbar-container-color: var(--pomeil-cream);
-  --mdc-snackbar-supporting-text-color: var(--pomeil-ink);
-  --mdc-snackbar-supporting-text-font: var(--font-body);
-  --mdc-snackbar-supporting-text-size: 0.9rem;
+  --mat-snack-bar-container-color: var(--pomeil-cream);
+  --mat-snack-bar-supporting-text-color: var(--pomeil-ink);
+  --mat-snack-bar-supporting-text-font: var(--font-body);
+  --mat-snack-bar-supporting-text-size: 0.9rem;
 }
 .mat-mdc-snack-bar-container .mdc-snackbar__surface {
   background: var(--pomeil-cream) !important;
@@ -2574,7 +2598,7 @@ textarea.editorial-textarea {
   letter-spacing: 0.01em;
 }
 .mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action {
-  --mdc-text-button-label-text-color: var(--pomeil-warm);
+  --mat-button-text-label-text-color: var(--pomeil-warm);
   font-family: var(--font-body) !important;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -2883,7 +2907,7 @@ textarea.editorial-textarea {
 mat-toolbar .mat-mdc-icon-button,
 .mat-mdc-icon-button.is-editorial {
   --mat-icon-button-state-layer-color: var(--pomeil-teal);
-  --mdc-icon-button-icon-color:        var(--pomeil-teal);
+  --mat-icon-button-icon-color:        var(--pomeil-teal);
   color: var(--pomeil-teal) !important;
   border-radius: 50%;
   transition:
@@ -2998,18 +3022,18 @@ mat-toolbar .mat-mdc-icon-button:hover .mat-icon {
        the absence of tabs today.)
    ------------------------------------------------------------------- */
 .mat-mdc-tab-header {
-  --mat-tab-header-label-text-font: var(--font-body);
-  --mat-tab-header-label-text-tracking: 0.06em;
-  --mat-tab-header-label-text-weight: 500;
-  --mat-tab-header-active-label-text-color:        var(--pomeil-teal-deep);
-  --mat-tab-header-inactive-label-text-color:      var(--pomeil-ink-muted);
-  --mat-tab-header-active-hover-label-text-color:  var(--pomeil-teal);
-  --mat-tab-header-active-focus-label-text-color:  var(--pomeil-teal);
-  --mat-tab-header-active-ripple-color:    var(--pomeil-teal);
-  --mat-tab-header-inactive-ripple-color:  var(--pomeil-teal);
-  --mdc-tab-indicator-active-indicator-color: var(--pomeil-teal);
-  --mdc-tab-indicator-active-indicator-height: 3px;
-  --mdc-tab-indicator-active-indicator-shape: 999px;
+  --mat-tab-label-text-font: var(--font-body);
+  --mat-tab-label-text-tracking: 0.06em;
+  --mat-tab-label-text-weight: 500;
+  --mat-tab-active-label-text-color:        var(--pomeil-teal-deep);
+  --mat-tab-inactive-label-text-color:      var(--pomeil-ink-muted);
+  --mat-tab-active-hover-label-text-color:  var(--pomeil-teal);
+  --mat-tab-active-focus-label-text-color:  var(--pomeil-teal);
+  --mat-tab-active-ripple-color:    var(--pomeil-teal);
+  --mat-tab-inactive-ripple-color:  var(--pomeil-teal);
+  --mat-tab-active-indicator-color: var(--pomeil-teal);
+  --mat-tab-active-indicator-height: 3px;
+  --mat-tab-active-indicator-shape: 999px;
   border-bottom: 1px dashed rgba(0, 104, 116, 0.18) !important;
 }
 .mat-mdc-tab .mdc-tab__text-label {
@@ -3665,8 +3689,8 @@ mat-toolbar .mat-mdc-icon-button:hover .mat-icon {
   letter-spacing: 0.03em !important;
   background-color: var(--pomeil-teal-deep) !important;
   color: var(--pomeil-cream) !important;
-  --mdc-protected-button-container-color: var(--pomeil-teal-deep);
-  --mdc-protected-button-label-text-color: var(--pomeil-cream);
+  --mat-button-protected-container-color: var(--pomeil-teal-deep);
+  --mat-button-protected-label-text-color: var(--pomeil-cream);
 }
 
 /* -------------------------------------------------------------------
@@ -3724,8 +3748,8 @@ html[lang="el"] .mat-mdc-tab .mdc-tab__text-label {
      under it must be transparent or we get a thin cream halo around
      the dialog. */
   .mat-mdc-dialog-container {
-    --mdc-dialog-container-color: transparent;
-    --mdc-dialog-container-elevation: 0;
+    --mat-dialog-container-color: transparent;
+    --mat-dialog-container-elevation: 0;
     background: transparent;
     box-shadow:
       0 30px 80px rgba(0, 0, 0, 0.55),
@@ -3763,3 +3787,157 @@ html[lang="el"] .mat-mdc-tab .mdc-tab__text-label {
 }
 
 /* ============= /POMEIL DESIGN SYSTEM v2 ============================ */
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Phone layout for the CMS list pages (consultations report 2026-09-21).
+
+   news / newsletters / articles / partnership / front-partners all use the same
+   markup: a `.grid-list` (flex row, wrap) whose cards carry `flex: 1 1 0%` — static
+   styles since @angular/flex-layout was removed (2026-10-26; they were its `fxLayout="row wrap"`
+   and bare `fxFlex`). With `flex: 1 1 0%`, on a narrow screen the cards shrink to
+   their min-content width instead of wrapping, and card titles and dates were
+   clipped off the right edge. Worse, the row widened the document, and since the
+   toolbars are `width: 100%` they stretched with it — which is how the menu,
+   account and language buttons ended up off-screen on every phone.
+
+   One card per row below 700px, and long unbroken words (Estonian and Ukrainian
+   organisation names) wrap rather than overflow.
+   ═══════════════════════════════════════════════════════════════════════════ */
+/* Flex items default to `min-width: auto`, which stops them shrinking below
+   their intrinsic width. `.list-content` is a flex row and `.grid-list` inside
+   it is a CSS grid whose `repeat(auto-fit, minmax(184px, 1fr))` resolves to one
+   track per card when the width is indefinite — about 976px for six partners.
+   The grid therefore never collapsed its columns on a narrow screen: it kept
+   its full width, overflowed the page, and dragged the toolbars wide with it. */
+.list-content > * {
+  min-width: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .grid-list {
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  /* The per-page rules below use `.page-parent .grid-list`, which outranks a
+     bare `.grid-list`; match their specificity so phones actually get 12px. */
+  .page-parent .grid-list,
+  .news-parent .grid-list {
+    padding: 12px !important;
+  }
+
+  /* `.example-card { min-width: 400px }` (news, articles and this stylesheet)
+     is wider than a phone, so every news and article card hung past the right
+     edge — dates and titles cut off — and widened the document with it. */
+  .example-card {
+    min-width: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .example-card .mat-mdc-card-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Same content-box trap (see the unconditional box-sizing rule below). */
+  .page-parent .paginator-parent,
+  .news-parent .paginator-parent {
+    padding: 16px 8px 40px;
+  }
+
+  .more-news-parent a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .grid-list > .item-card,
+  .grid-list > .front-partner-card {
+    flex: 1 1 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .item-card mat-card-title,
+  .item-card mat-card-subtitle,
+  .item-card .mat-mdc-card-title,
+  .item-card .mat-mdc-card-subtitle {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Touch targets. Plain text links ("Register", "Forgot password?", "More news")
+   rendered 17-32px tall, below the 44px minimum for a comfortable tap.
+   ─────────────────────────────────────────────────────────────────────────── */
+/* `.paginator-parent` is width:auto with 32px side padding and nothing sets a
+   global box-sizing, so the paginator row rendered 64px wider than its
+   container — off the right edge on phones and tablets alike. */
+.page-parent .paginator-parent,
+.news-parent .paginator-parent {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .auth-card a,
+  .auth-links a,
+  .news-all-link,
+  .cover-secondary-link,
+  .resources-empty-link,
+  .more-news-parent a,
+  a.hero-back {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .mat-mdc-paginator .mat-mdc-select-trigger,
+  .mat-mdc-paginator mat-select {
+    min-height: 44px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   "Show me what I can click" — consultations report 2026-09-21.
+
+   Greece: "the process for collecting clues and advancing through the
+   activities was not always intuitive, especially for first-time users …
+   suggestions included visual indicators (such as arrows or prompts)".
+   Estonia asked for the same under "further support for users engaging with
+   interactive learning activities".
+
+   Toggled by the button in <app-room-help-button>, which puts
+   .pomeil-show-hotspots on <body>. Deliberately STATIC and teal — the yellow
+   `pulse` animation above belongs to the hint button, and an ambient pulsing
+   highlight was removed in 2026-05-11 precisely because players mistook it
+   for the hint system acting on its own. .zoom-hotspot already carries its
+   own permanent border and caption, so it is left alone.
+   ───────────────────────────────────────────────────────────────────────── */
+body.pomeil-show-hotspots .hotspot,
+body.pomeil-show-hotspots .character-hotspot {
+  /* Draw the outline inside the spot, so it marks exactly the clickable area
+     and switching it on doesn't grow every spot by 2px a side. */
+  box-sizing: border-box;
+  border: 2px dashed rgba(77, 208, 225, 0.85);
+  background-color: rgba(77, 208, 225, 0.12);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Intro card: hide the help / "show what I can click" buttons until the player
+   starts. They are z-index 200 so they stay usable over puzzle cards inside
+   the scene, which put them on top of the intro card's text on phones, where
+   the card is as wide as the screen (Lessons Learned report, 2026-09-24).
+   Global because the buttons belong to <app-room-help-button> and the card to
+   the room — a component stylesheet cannot reach across the two.
+   ───────────────────────────────────────────────────────────────────────── */
+/* Same for every card a room opens over the scene (puzzles, notes, item
+   popups): with the scene at its true proportions a 700px card reaches the
+   top-right corner on laptop-sized windows, and these two buttons then sat on
+   the card's title and its "Skip" button. Both only act on the scene, which
+   the card's overlay covers anyway. */
+.cinematic-container:has(.intro-popup-card, .overlay mat-card, .quiz-overlay-container mat-card) :is(.room-help-button, .room-spots-button) {
+  visibility: hidden;
+}

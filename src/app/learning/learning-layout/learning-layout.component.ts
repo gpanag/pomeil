@@ -1,11 +1,13 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
+import { MatDialog } from '@angular/material/dialog';
 import { AuthService } from '../../auth/auth.service';
 import { LearningFlowService } from '../learning-flow.service';
+import { LearningGuideDialogComponent } from '../learning-guide-dialog/learning-guide-dialog.component';
 
 interface NavItem {
   label: string;
@@ -17,9 +19,11 @@ interface NavItem {
 }
 
 @Component({
-  selector: 'app-learning-layout',
-  templateUrl: './learning-layout.component.html',
-  styleUrls: ['./learning-layout.component.scss']
+    selector: 'app-learning-layout',
+    templateUrl: './learning-layout.component.html',
+    styleUrls: ['./learning-layout.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class LearningLayoutComponent implements OnInit, OnDestroy {
   @ViewChild('sidenav') sidenav!: MatSidenav;
@@ -30,6 +34,10 @@ export class LearningLayoutComponent implements OnInit, OnDestroy {
   private allNavItems: NavItem[] = [
     { label: 'NAVIGATION.LEARNING_OVERVIEW', icon: 'school', route: '/learning', exact: true },
     { label: 'NAVIGATION.LEARNING_FLOW', icon: 'play_circle', route: '/learning/flow', exact: false },
+    // NOTE: do not add an entry for /escape-rooms here. That page is a
+    // test-only gallery — rooms opened from it record no score, skip the
+    // module gate and advance nothing. Learners reach rooms only through
+    // Learning Flow, which opens them with ?mode=learning.
     { label: 'NAVIGATION.DASHBOARD', icon: 'dashboard', route: '/learning/dashboard', exact: false,
       visibleWhen: () => this.hasPlayedAnyRoom },
     { label: 'NAVIGATION.YOUR_MODULES', icon: 'auto_stories', route: '/learning/your-modules', exact: false,
@@ -44,7 +52,7 @@ export class LearningLayoutComponent implements OnInit, OnDestroy {
     return this.allNavItems.filter(item => !item.visibleWhen || item.visibleWhen());
   }
 
-  totalSkills = 28;
+  totalSkills = 30;
 
   get completedCount(): number {
     const scores = this.learningService.getAllRoomScores();
@@ -71,8 +79,20 @@ export class LearningLayoutComponent implements OnInit, OnDestroy {
     private breakpointObserver: BreakpointObserver,
     private router: Router,
     public auth: AuthService,
-    private learningService: LearningFlowService
+    private learningService: LearningFlowService,
+    private dialog: MatDialog
   ) {}
+
+  /** "Guide" button in the sidenav — how the journey works + how to play a room. */
+  openGuide(): void {
+    this.dialog.open(LearningGuideDialogComponent, {
+      width: '640px',
+      maxWidth: '95vw',
+      maxHeight: '90vh',
+      autoFocus: false,
+      data: { section: 'all' },
+    });
+  }
 
   ngOnInit(): void {
     this.breakpointObserver

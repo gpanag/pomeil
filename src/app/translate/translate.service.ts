@@ -60,4 +60,16 @@ export class TranslateService {
     return this.lang;
   }
 
+  /** Resolve a dot-path key against the loaded language data.
+   *  Returns `undefined` (not the key) when the leaf is missing or not a
+   *  string, so callers can supply their own fallback. */
+  instant(key: string): string | undefined {
+    let current: any = this.data;
+    for (const part of key.split('.')) {
+      if (current == null || typeof current !== 'object') return undefined;
+      current = current[part];
+    }
+    return typeof current === 'string' ? current : undefined;
+  }
+
 }

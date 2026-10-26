@@ -225,18 +225,21 @@
   "completion": {
     "title": "Resilience Complete!",
     "message": "Congratulations! You've demonstrated resilience by staying calm, adapting, and recovering during a stressful work situation. Remember: resilience isn't about never falling — it's about getting back up, one step at a time.",
-    "buttonText": "Back to Escape Rooms"
+    "buttonText": "Back to learning",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "gapPlaceholder": "______",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

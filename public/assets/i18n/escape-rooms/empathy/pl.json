@@ -100,30 +100,66 @@
         {
           "text": "Współpracownik daje bardzo krótkie odpowiedzi, unika kontaktu wzrokowego i ciągle bawi się rękami.",
           "options": [
-            {"text": "Spokojny + refleksyjny", "correct": false},
-            {"text": "Niespokojny + niepewny", "correct": true},
-            {"text": "Radosny + energiczny", "correct": false},
-            {"text": "Zmotywowany + skupiony", "correct": false}
+            {
+              "text": "Spokojny + refleksyjny",
+              "correct": false
+            },
+            {
+              "text": "Niespokojny + niepewny",
+              "correct": true
+            },
+            {
+              "text": "Radosny + energiczny",
+              "correct": false
+            },
+            {
+              "text": "Zmotywowany + skupiony",
+              "correct": false
+            }
           ],
           "hint": "Bawienie się rękami i unikanie kontaktu wzrokowego zwykle odzwierciedla wewnętrzne napięcie lub zmartwienie."
         },
         {
           "text": "W dyskusji zespołowej kolega mówi wolniej niż zwykle, odpowiada cichym głosem i trzyma ramiona opuszczone.",
           "options": [
-            {"text": "Smutny + niska energia", "correct": true},
-            {"text": "Pewny siebie + zrelaksowany", "correct": false},
-            {"text": "Zirytowany + niecierpliwy", "correct": false},
-            {"text": "Rozproszony + figlarny", "correct": false}
+            {
+              "text": "Smutny + niska energia",
+              "correct": true
+            },
+            {
+              "text": "Pewny siebie + zrelaksowany",
+              "correct": false
+            },
+            {
+              "text": "Zirytowany + niecierpliwy",
+              "correct": false
+            },
+            {
+              "text": "Rozproszony + figlarny",
+              "correct": false
+            }
           ],
           "hint": "Opuszczone ramiona i cichy głos zwykle wskazują na obniżoną energię emocjonalną, nie pewność siebie czy irytację."
         },
         {
           "text": "Współpracownik mówi bardzo szybko, często przerywa, a jego gesty są szybkie i przesadzone.",
           "options": [
-            {"text": "Nerwowe podekscytowanie + nadmierna stymulacja", "correct": true},
-            {"text": "Spokojny + spokojny", "correct": false},
-            {"text": "Zdezorientowany + zmęczony", "correct": false},
-            {"text": "Neutralny + obojętny", "correct": false}
+            {
+              "text": "Nerwowe podekscytowanie + nadmierna stymulacja",
+              "correct": true
+            },
+            {
+              "text": "Spokojny + spokojny",
+              "correct": false
+            },
+            {
+              "text": "Zdezorientowany + zmęczony",
+              "correct": false
+            },
+            {
+              "text": "Neutralny + obojętny",
+              "correct": false
+            }
           ],
           "hint": "Gdy ktoś mówi zbyt szybko lub przesadnie gestykuluje, często odzwierciedla to wzmożoną aktywację — nie spokój czy obojętność."
         }
@@ -209,16 +245,19 @@
   "completion": {
     "title": "Szkolenie zakończone!",
     "message": "Pomyślnie ukończyłeś/aś moduł umiejętności Empatii.",
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "____",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -171,6 +171,7 @@
       ]
     },
     "stickyNote": {
+      "altText": "Kleepleheke",
       "inventoryTitle": "Kleepleheke",
       "popupTitle": "Kleepleheke",
       "popupContent": [
@@ -181,17 +182,20 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Oled edukalt lõpetanud onboarding-kursuse, mis keskendub Kohanemisvõime oskuse arendamisele. Sa lahendasid kõik väljakutsed, isegi need, kus oli puudulik info, ning need, mis nõudsid ebatraditsioonilist lähenemist. Sa oled tõesti tõestanud oma sügavat arusaamist sellest, mida tähendab kohaneda!",
-    "buttonText": "Lahku trepikojast"
+    "buttonText": "Lahku trepikojast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "selectTwo": "Vali 2 vastust",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "floorTransition": {
     "toFloor2": "Lähed mööda treppi järgmisele korrusele. Amina ootab sind ees mademe peal.",

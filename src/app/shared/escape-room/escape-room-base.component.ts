@@ -1,5 +1,5 @@
-import { Directive, ElementRef, Inject, OnInit, OnDestroy, NgZone, ChangeDetectorRef, inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Directive, ElementRef, Inject, OnInit, OnDestroy, NgZone, ChangeDetectorRef, inject, DOCUMENT } from '@angular/core';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
@@ -335,7 +335,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
       this.doorSound.load();
     }
 
-    // Warn anonymous users that progress won't be saved (once per session, opt-in via Continue)
+    // Tell anonymous users their progress stays in this browser only (once per session, opt-in via Continue)
     this.maybeShowLoginWarning();
 
     // Watch for inactivity so we can nudge a stuck player toward the hint button
@@ -346,8 +346,12 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
 
   private maybeShowLoginWarning(): void {
     if (this.authService.isLoggedIn()) return;
-    // Only show once per session — Continue Anyway sets the flag
-    if (sessionStorage.getItem('pomeil_login_warning_dismissed') === 'true') return;
+    // Only show once per session — Continue Anyway sets the flag.
+    // Storage access can throw (site data blocked); never let that abort
+    // ngOnInit, which would leave the room on the preload overlay forever.
+    try {
+      if (sessionStorage.getItem('pomeil_login_warning_dismissed') === 'true') return;
+    } catch { /* storage unavailable — just show the warning */ }
     setTimeout(() => {
       const ref = this.dialog.open(LoginWarningDialogComponent, {
         width: '520px',
@@ -356,7 +360,7 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
       });
       ref.afterClosed().subscribe(result => {
         if (result === 'continue') {
-          sessionStorage.setItem('pomeil_login_warning_dismissed', 'true');
+          try { sessionStorage.setItem('pomeil_login_warning_dismissed', 'true'); } catch { /* ignore */ }
         }
         // navigate-away or undefined: dialog already closed; if user used login/register
         // links those navigate via routerLink and unmount this component.
@@ -401,9 +405,30 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     if (this.textSub) this.textSub.unsubscribe();
     this.textSub = this.textService.loadTexts(this.config.roomId).subscribe(data => {
       this.texts = data;
+      this.applyZoomHotspotLabel();
       // Re-render templates that depend on this.texts via t(...) lookups.
       try { this.cdr.detectChanges(); } catch { /* host already torn down */ }
     });
+  }
+
+  /** `.zoom-hotspot::after` renders its "click to examine" caption from CSS, so
+   *  the text cannot come from a template binding. Feed it the room's localized
+   *  string as a custom property instead (consultation feedback 2026-09-21:
+   *  English fragments left in the interface). */
+  private applyZoomHotspotLabel(): void {
+    const label = this.t('ui.clickToExamine');
+    if (label && label !== 'ui.clickToExamine') {
+      this.document.documentElement.style.setProperty(
+        '--zoom-hotspot-label', `"${label.replace(/"/g, '\\"')}"`);
+    }
+    // Same mechanism for the fullscreen tip under the intro card's button,
+    // which was an English `content:` literal in every language until the
+    // Lessons Learned report round (2026-09-24).
+    const tip = this.appText('ESCAPE_ROOM.FULLSCREEN_TIP', '');
+    if (tip) {
+      this.document.documentElement.style.setProperty(
+        '--intro-fullscreen-tip', `"${tip.replace(/"/g, '\\"')}"`);
+    }
   }
 
   /** Override in subclass for additional init logic */
@@ -417,11 +442,19 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     return this.textService.getText(this.texts, path);
   }
 
+  /** App-level translation with an English fallback, for strings that are the
+   *  same in every room and therefore live in `assets/i18n/{lang}.json` rather
+   *  than in the 180 per-room files. */
+  protected appText(key: string, fallback: string): string {
+    return this.translateService.instant(key) ?? fallback;
+  }
+
   /** Speaker label used when the dialogue is from/about the player.
    *  Renders as "PlayerName (you)" so it's unambiguous which lines belong to the player. */
   get playerSpeaker(): string {
     const name = this.textService.getPlayerName();
-    return name ? `${name} (you)` : 'You (you)';
+    const suffix = this.appText('ESCAPE_ROOM.YOU_SUFFIX', '(you)');
+    return name ? `${name} ${suffix}` : this.appText('ESCAPE_ROOM.YOU', 'You');
   }
 
   // --- Sound ---
@@ -501,7 +534,20 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   }
 
   // --- Dialogue / Typewriter ---
+  /** True between a revealed answer and the next line spoken about it. */
+  private pendingRevealNote = false;
+
   showDialogue(dialogue: Dialogue): void {
+    // A puzzle that ended with the answer being revealed: append the note to the
+    // first line that follows, so the praise is not unconditional. `t()` returns
+    // the dot-path when a room's file predates the key, so check for that.
+    if (this.pendingRevealNote) {
+      this.pendingRevealNote = false;
+      const note = this.t('completion.revealedNote');
+      if (note && note !== 'completion.revealedNote' && dialogue?.text && !dialogue.text.includes(note)) {
+        dialogue = { ...dialogue, text: `${dialogue.text} ${note}` };
+      }
+    }
     // A dialogue opening means the player is no longer hovering a character
     // (they clicked one, or it auto-triggered). Clear any visible hover
     // overlay so a character's close-up can't stay stuck over the scene while
@@ -510,8 +556,12 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     this.clearCharacterHover();
     this.fadeOutAllSounds();
     this.activeDialogue = dialogue;
+    this.dialogueOpenedAt = Date.now();
     this.startTypewriter();
   }
+
+  /** Timestamp of the last showDialogue() — see skipTyping(). */
+  private dialogueOpenedAt = 0;
 
   startTypewriter(): void {
     if (!this.activeDialogue) return;
@@ -539,6 +589,15 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
 
   skipTyping(): void {
     if (!this.activeDialogue || !this.isTyping) return;
+    // In most room templates the Continue button sits INSIDE the
+    // .dialogue-panel that carries (click)="skipTyping()". One click on
+    // Continue therefore runs dismissDialogue() (which may chain the next
+    // line via showDialogue()) and then bubbles up here against the line
+    // that was just opened, completing it instantly — so a slightly fast
+    // second click swallowed whole dialogue beats and the game "stopped"
+    // until the character was clicked again (partner feedback 2026-08-31).
+    // Ignore any skip that arrives in the same click as the open.
+    if (Date.now() - this.dialogueOpenedAt < 250) return;
     clearInterval(this.dialogueInterval);
     this.displayedDialogueText = this.activeDialogue.text;
     this.isTyping = false;
@@ -616,7 +675,10 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
         if (this.isLearningMode) {
           this.router.navigate(['/learning/flow']);
         } else {
-          this.router.navigate(['/escape-rooms']);
+          // NEVER send anyone to /escape-rooms: that gallery is test-only and a
+          // room opened from it records nothing. Leaving a room always returns
+          // to the learning journey.
+          this.router.navigate(['/learning']);
         }
       }
     });
@@ -813,6 +875,10 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
   protected recordPuzzleScore(puzzleId: string, wrongAttempts: number, wasRevealed: boolean): void {
     const score = calculatePuzzleScore(wrongAttempts, wasRevealed);
     this.puzzleScores.push({ puzzleId, wrongAttempts, wasRevealed, score });
+    // The rooms congratulate the player with the same line whether they solved
+    // the puzzle or had the answer revealed (consultation feedback 2026-09-21,
+    // NO). Flag it so the next line acknowledges what actually happened.
+    if (wasRevealed) this.pendingRevealNote = true;
   }
 
   protected finalizeAndReportScore(): void {
@@ -841,14 +907,33 @@ export abstract class EscapeRoomBaseComponent implements OnInit, OnDestroy {
     return calculateOverallRoomScore(this.puzzleScores);
   }
 
-  /** Score-based feedback message for completion overlay */
+  /** Score-based feedback message for completion overlay.
+   *  Localized app-side (the same four sentences in every room) and extended
+   *  with a note when answers had to be revealed — consultation feedback 2026-09-21
+   *  (NO): "characters respond positively regardless of the result". */
   get scoreMessage(): string {
     const score = this.learningOverallScore;
     if (this.puzzleScores.length === 0) return '';
-    if (score >= 90) return 'Outstanding performance! You have mastered this skill.';
-    if (score >= 80) return 'Great job! You have a strong understanding of this skill.';
-    if (score >= 60) return 'Good effort! Consider reviewing the module material to strengthen your knowledge.';
-    return 'You completed the room, but we recommend studying the module PDF for this skill.';
+    let message: string;
+    if (score >= 90) {
+      message = this.appText('ESCAPE_ROOM.SCORE_OUTSTANDING',
+        'Outstanding performance! You have mastered this skill.');
+    } else if (score >= 80) {
+      message = this.appText('ESCAPE_ROOM.SCORE_GREAT',
+        'Great job! You have a strong understanding of this skill.');
+    } else if (score >= 60) {
+      message = this.appText('ESCAPE_ROOM.SCORE_GOOD',
+        'Good effort! Consider reviewing the module material to strengthen your knowledge.');
+    } else {
+      message = this.appText('ESCAPE_ROOM.SCORE_STUDY',
+        'You completed the room, but we recommend studying the module PDF for this skill.');
+    }
+
+    if (this.puzzleScores.some(p => p.wasRevealed)) {
+      message += ' ' + this.appText('ESCAPE_ROOM.SCORE_REVEALED',
+        'Some answers had to be revealed — those parts are worth a second look in the module.');
+    }
+    return message;
   }
 
   returnToLearningFlow(): void {

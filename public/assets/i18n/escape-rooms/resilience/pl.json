@@ -225,18 +225,21 @@
   "completion": {
     "title": "Odporność ukończona!",
     "message": "Gratulacje! Wykazałeś/aś się odpornością, zachowując spokój, dostosowując się i regenerując w stresującej sytuacji zawodowej. Pamiętaj: odporność to nie nigdy nie upaść — to wstawanie, krok po kroku.",
-    "buttonText": "Powrót do escape roomów"
+    "buttonText": "Powrót do nauki",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "gapPlaceholder": "______",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

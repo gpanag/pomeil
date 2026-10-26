@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,6 +11,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // --- Interfaces and Enums ---
 enum GameState {
   Introduction,
@@ -76,12 +77,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-financial-skill10-b',
-  templateUrl: './financial-skill10-b.component.html',
-  styleUrl: './financial-skill10-b.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-financial-skill10-b',
+    templateUrl: './financial-skill10-b.component.html',
+    styleUrl: './financial-skill10-b.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class FinancialSkill10BComponent extends EscapeRoomBaseComponent {
 
@@ -158,7 +159,13 @@ export class FinancialSkill10BComponent extends EscapeRoomBaseComponent {
     ];
   }
   fillGapAnswers: string[] = [];
-  correctFillGapAnswers: string[] = ['track', 'emergencies', 'transactions'];
+  get correctFillGapAnswers(): string[] {
+    return [
+      this.t('puzzles.fillGap.correct.0'),
+      this.t('puzzles.fillGap.correct.1'),
+      this.t('puzzles.fillGap.correct.2'),
+    ];
+  }
   fillGapFeedback: string = '';
   fillGapWrongAttempts: number = 0;
   puzzle2TotalWrong: number = 0;
@@ -175,7 +182,7 @@ export class FinancialSkill10BComponent extends EscapeRoomBaseComponent {
           this.t('puzzles.pattern.scenarios.0.options.2'),
           this.t('puzzles.pattern.scenarios.0.options.3'),
         ],
-        correct: 'Poor cash flow management',
+        correct: this.t('puzzles.pattern.scenarios.0.correct'),
         hint: this.t('puzzles.pattern.scenarios.0.hint'),
       },
       {
@@ -186,7 +193,7 @@ export class FinancialSkill10BComponent extends EscapeRoomBaseComponent {
           this.t('puzzles.pattern.scenarios.1.options.2'),
           this.t('puzzles.pattern.scenarios.1.options.3'),
         ],
-        correct: 'Fixed expenses',
+        correct: this.t('puzzles.pattern.scenarios.1.correct'),
         hint: this.t('puzzles.pattern.scenarios.1.hint'),
       },
       {
@@ -197,7 +204,7 @@ export class FinancialSkill10BComponent extends EscapeRoomBaseComponent {
           this.t('puzzles.pattern.scenarios.2.options.2'),
           this.t('puzzles.pattern.scenarios.2.options.3'),
         ],
-        correct: 'Loss',
+        correct: this.t('puzzles.pattern.scenarios.2.correct'),
         hint: this.t('puzzles.pattern.scenarios.2.hint'),
       }
     ];

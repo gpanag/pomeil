@@ -139,20 +139,22 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully identified all workplace hazards and completed a thorough risk assessment. You've demonstrated strong risk management skills - the ability to spot dangers and evaluate them systematically is crucial in any workplace!",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "hints": {
     "intro": "Look around the room carefully. Click on objects that look dangerous or out of place.",
     "identifying": "There are still risks to find. Look for electrical hazards, chemical storage issues, structural dangers, and hygiene problems.",
     "assessment": "Rate each risk's likelihood and impact. Think about how often this could happen and how bad the consequences would be.",
     "review": "Review your assessment results and click 'End Risk Assessment' when ready.",
-    "allRisksFound": "You've found all the risks. Click the whiteboard to start the risk assessment.",
+    "allRisksFound": "You've found all the risks. Click the whiteboard on the left wall to start the risk assessment.",
+    "whiteboardZoom": "Click the assessment table on the whiteboard to begin.",
     "completion": "The training has been completed!",
     "default": "Look around the room for potential hazards."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "risksFound": "Risks Found",
     "of": "of",
@@ -161,7 +163,10 @@
     "riskIdentified": "Risk identified!",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "whiteboardLabel": "Risk assessment",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "puzzles": {
     "answerOverlayTitle": "Answer Revealed",

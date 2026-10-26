@@ -18,6 +18,10 @@ export interface LearningFlowState {
   currentSkillIndex: number;
   questionnaireCompleted: boolean;
   questionnaireAnswers: { [questionId: string]: string };
+  /** roomId → ISO timestamp of when the learner opened (downloaded or read
+   *  online) that skill's module. Used to gate progression when the room
+   *  score is below the pass threshold (partner feedback 2026-08-31). */
+  moduleAcknowledged?: { [roomId: string]: string };
 }
 
 export function calculatePuzzleScore(wrongAttempts: number, wasRevealed: boolean): number {

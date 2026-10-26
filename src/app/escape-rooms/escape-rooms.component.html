@@ -1,22 +1,26 @@
 <div class="page-parent mat-app-background">
-    <div class="title">
-        <h5 class="title">{{"NAVIGATION.ESCAPE_ROOMS" | translate}}</h5>
-    </div>
+  <div class="title">
+    <h5 class="title">{{"NAVIGATION.ESCAPE_ROOMS" | translate}}</h5>
+  </div>
 
-    <div class="grid-list" *ngIf="rooms.length > 0" [@listAnimation]="suffleCards">
-        <div *ngFor="let room of rooms" class="item-card">
-            <mat-card class="mat-elevation-z4 room-card" (click)="openRoom(room.name)">
-                <img mat-card-image [src]="room.image" [alt]="room.title" class="card-image">
-                <mat-card-header>
-                    <mat-card-title class="room-title">
-                        {{room?.title}}
-                    </mat-card-title>
-                </mat-card-header>
-                <mat-card-actions>
-                    <button mat-button color="primary">{{"TOOLS.PLAY" | translate}}</button>
-                </mat-card-actions>
-            </mat-card>
+  @if (rooms.length > 0) {
+    <div class="grid-list" [@listAnimation]="suffleCards">
+      @for (room of rooms; track room) {
+        <div class="item-card">
+          <mat-card class="mat-elevation-z4 room-card" (click)="openRoom(room.name)">
+            <img mat-card-image [src]="room.image" [alt]="skillTitle(room.name, room.title)" class="card-image">
+            <mat-card-header>
+              <mat-card-title class="room-title">
+                {{ skillTitle(room.name, room.title) }}
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+              <button mat-button color="primary">{{"TOOLS.PLAY" | translate}}</button>
+            </mat-card-actions>
+          </mat-card>
         </div>
+      }
     </div>
+  }
 </div>
 <app-footer></app-footer>

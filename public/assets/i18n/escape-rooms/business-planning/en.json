@@ -257,17 +257,20 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully completed the Business Planning escape room! You now understand the key components of a Business Model Canvas: Customer Segments, Value Proposition, Channels, Revenue Streams, and Cost Structure.",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "puzzlesCompleted": "puzzles",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
     "answerButton": "Answer",
-    "backToDocuments": "Back to documents"
+    "backToDocuments": "Back to documents",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

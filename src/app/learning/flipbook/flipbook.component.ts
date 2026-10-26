@@ -7,19 +7,22 @@ import {
   OnInit,
   inject,
 } from '@angular/core';
+import { LearningFlowService } from '../learning-flow.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Subject, takeUntil, catchError, of } from 'rxjs';
 import { Flipbook, FlipbookPage, Spread, FlipbookBlock } from './flipbook.interfaces';
+import { TranslateService } from '../../translate/translate.service';
 
 type Direction = 'forward' | 'back' | 'none';
 
 @Component({
-  selector: 'app-flipbook',
-  templateUrl: './flipbook.component.html',
-  styleUrls: ['./flipbook.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-flipbook',
+    templateUrl: './flipbook.component.html',
+    styleUrls: ['./flipbook.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class FlipbookComponent implements OnInit, OnDestroy {
   private route = inject(ActivatedRoute);
@@ -27,6 +30,8 @@ export class FlipbookComponent implements OnInit, OnDestroy {
   private http = inject(HttpClient);
   private cdr = inject(ChangeDetectorRef);
   private breakpoints = inject(BreakpointObserver);
+  private learningService = inject(LearningFlowService);
+  private translate = inject(TranslateService);
 
   flipbook: Flipbook | null = null;
   loading = true;
@@ -51,6 +56,12 @@ export class FlipbookComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
 
   ngOnInit(): void {
+    // This view is OnPush and the translate pipe is impure: without an explicit
+    // re-check, labels rendered before the language file arrives stay as raw
+    // keys (seen live on a direct /flipbook/... load, 2026-09-21).
+    this.translate.langData$.pipe(takeUntil(this.destroy$)).subscribe(() => this.cdr.markForCheck());
+    this.translate.lang$.pipe(takeUntil(this.destroy$)).subscribe(() => this.cdr.markForCheck());
+
     this.breakpoints
       .observe([Breakpoints.Handset, Breakpoints.TabletPortrait])
       .pipe(takeUntil(this.destroy$))
@@ -60,6 +71,9 @@ export class FlipbookComponent implements OnInit, OnDestroy {
       });
 
     const skillId = this.route.snapshot.paramMap.get('skillId');
+    // Reading the module online counts as "module opened" for the learning-flow
+    // gate (score < 80% → must open the module before the next skill).
+    if (skillId) this.learningService.markModuleAcknowledged(skillId);
     if (!skillId) {
       this.error = 'No skill specified';
       this.loading = false;

@@ -231,7 +231,8 @@
       "Du har klart å lære nye stress-resiliensferdigheter raskt og bruke dem i virkelige situasjoner, sannsynligvis enda tidligere enn du forestilte deg – alt mens du reddet selskapet i prosessen.",
       "Du har med suksess tilegnet deg ferdigheten <strong>Stresshåndtering</strong>."
     ],
-    "buttonText": "Tilbake til hovedmeny"
+    "buttonText": "Tilbake til hovedmeny",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "answerOverlay": {
     "title": "Riktig svar",
@@ -240,13 +241,15 @@
   "ui": {
     "continueButton": "Fortsett",
     "fullscreenTitle": "Veksle fullskjerm",
-    "backToEscapeRoomsTitle": "Tilbake til fluktrom",
+    "backToLearningTitle": "Tilbake til læring",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

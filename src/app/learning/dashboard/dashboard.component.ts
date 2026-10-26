@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { LearningFlowService } from '../learning-flow.service';
 import { RoomScore } from '../../shared/escape-room/escape-room-scoring.interfaces';
+import { TranslateService } from '../../translate/translate.service';
+import { dateLocale } from '../../shared/app-locales';
 
 interface SkillInfo {
   id: string;
@@ -10,11 +12,15 @@ interface SkillInfo {
 }
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss'],
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class DashboardComponent implements OnInit {
+  /** DatePipe locale for the current UI language (ee→et, gr→el, ua→uk). */
+  get dateLocale(): string { return dateLocale(this.translate.getLang()); }
 
   skills: SkillInfo[] = [
     { id: 'cultural-awareness', title: 'Cultural Awareness', image: 'assets/thumbs/cultural-awareness.webp' },
@@ -83,6 +89,14 @@ export class DashboardComponent implements OnInit {
   };
 
   roomScores: { [roomId: string]: RoomScore } = {};
+
+  private translate = inject(TranslateService);
+
+  /** Localised skill name from app i18n `SKILLS.<id>`; falls back to the
+   *  English title in `skills` (partner feedback 2026-08-31). */
+  skillTitle(skill: SkillInfo): string {
+    return this.translate.instant('SKILLS.' + skill.id) ?? skill.title;
+  }
 
   constructor(
     private learningService: LearningFlowService,

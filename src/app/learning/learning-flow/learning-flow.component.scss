@@ -20,7 +20,7 @@
   }
 
   > h1::before {
-    content: "Learning Voyage";
+    content: attr(data-eyebrow);  /* EYEBROW.* — was an English literal */
     display: block;
     font-family: var(--font-body);
     font-style: normal;
@@ -355,6 +355,29 @@
 
 .step-actions { margin-top: 1.5rem; }
 
+/* Module gate (score < 80%): explain why Continue is disabled, and confirm
+   once the module has been opened. Colours from the M3 tokens only. */
+.gate-hint, .gate-ok {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  max-width: 560px;
+  margin: 0 0 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--md-shape-md, 12px);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  mat-icon { flex: 0 0 auto; font-size: 20px; width: 20px; height: 20px; margin-top: 1px; }
+}
+.gate-hint {
+  background: var(--state-attention-tint, var(--sys-error-container));
+  color: var(--state-attention-deep, var(--sys-on-error-container));
+}
+.gate-ok {
+  background: var(--sys-primary-container);
+  color: var(--sys-on-primary-container);
+}
+
 /* ----- Questionnaire step ----- */
 .questionnaire-step {
   padding: 8px 0;
@@ -438,7 +461,7 @@
     letter-spacing: -0.02em;
   }
   h2::before {
-    content: "Voyage Complete";
+    content: attr(data-eyebrow);  /* EYEBROW.* — was an English literal */
     display: block;
     font-family: var(--font-body);
     font-style: normal;

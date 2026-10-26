@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // --- Game State ---
 enum GameState {
   Intro,
@@ -100,12 +101,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-risk-management-module15',
-  templateUrl: './risk-management-module15.component.html',
-  styleUrl: './risk-management-module15.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, MatTooltipModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-risk-management-module15',
+    templateUrl: './risk-management-module15.component.html',
+    styleUrl: './risk-management-module15.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, MatTooltipModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class RiskManagementModule15Component extends EscapeRoomBaseComponent {
 
@@ -152,14 +153,19 @@ export class RiskManagementModule15Component extends EscapeRoomBaseComponent {
     taped_cable:         { x: 28, y: 82, width: 26, height: 10 },
     door_sign:           { x: 40, y: 32, width: 10, height: 14 },
     chair:               { x: 20, y: 58, width: 18, height: 36 },
-    // Whiteboard (only visible after all risks found)
-    whiteboard:          { x: 30, y: 20, width: 40, height: 50 },
+    // Whiteboard (only visible after all risks found). janitor_closet.png has no
+    // whiteboard, so the template draws one (div.whiteboard-prop) at this rect on
+    // the bare concrete wall above the glove rail; the same rect drives the zoom-in.
+    whiteboard:          { x: 9,  y: 7,  width: 13, height: 17 },   // clear of the hint button (top-left chrome) and the window frame at x≈22%
     // Exit door
     exitDoor: { x: 43, y: 23, width: 12, height: 40 },
   };
 
-  // Zoom-view hotspot for whiteboard
-  public whiteboardZoomHotspot = { x: 15, y: 15, width: 70, height: 70 };
+  // Zoom-view hotspot for whiteboard — outlines the assessment table drawn in
+  // zoom_whiteboard.png (title + grid at roughly x 35-62%, y 18-72%). It is a
+  // visible dashed target now, so it must hug the table rather than the old
+  // 15-85% box that ran past the board's right edge onto the wall.
+  public whiteboardZoomHotspot = { x: 33, y: 15, width: 32, height: 59 };
 
   // --- Phase 3: Risk Assessment ---
   public assessments: RiskAssessmentEntry[] = [];
@@ -239,7 +245,11 @@ export class RiskManagementModule15Component extends EscapeRoomBaseComponent {
     } else if (this.currentState === GameState.IdentifyRisks) {
       return this.t('hints.identifying') + ` (${this.foundRisks.size}/${RISK_IDS.length} ${this.t('ui.risksFound').toLowerCase()})`;
     } else if (this.currentState === GameState.AllRisksFound) {
-      return this.t('hints.allRisksFound');
+      // Main view: point at the (CSS-drawn) whiteboard on the left wall.
+      // Zoomed view: point at the assessment table on the board.
+      return this.currentView === 'whiteboard'
+        ? this.t('hints.whiteboardZoom')
+        : this.t('hints.allRisksFound');
     } else if (this.currentState === GameState.RiskAssessment) {
       return this.t('hints.assessment');
     } else if (this.currentState === GameState.ReviewAssessment) {

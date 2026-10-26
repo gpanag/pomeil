@@ -1,9 +1,9 @@
 <!-- ────────────────────────────────────────────────────────────────────
-     About — editorial v2 treatment.
-     Hero (eyebrow + Fraunces title) → project facts strip → drop-cap
-     prose → numbered objectives grid. All content comes from Strapi
-     via ApiService and from the i18n keys already used elsewhere.
-     ──────────────────────────────────────────────────────────────── -->
+About — editorial v2 treatment.
+Hero (eyebrow + Fraunces title) → project facts strip → drop-cap
+prose → numbered objectives grid. All content comes from Strapi
+via ApiService and from the i18n keys already used elsewhere.
+──────────────────────────────────────────────────────────────── -->
 <article class="about-page">
 
   <header class="about-hero">
@@ -16,9 +16,9 @@
   </header>
 
   <!--
-    Project facts strip — programme, reference number, start year and
-    funder, surfaced as small editorial badges. These reuse the same
-    i18n keys the home cover uses, so any update propagates.
+  Project facts strip — programme, reference number, start year and
+  funder, surfaced as small editorial badges. These reuse the same
+  i18n keys the home cover uses, so any update propagates.
   -->
   <section class="about-facts">
     <div class="about-facts-grid">
@@ -41,44 +41,58 @@
     </div>
   </section>
 
-  <section class="about-prose-section" *ngIf="contentBlocks().length">
-    <div class="about-prose">
-      <p *ngFor="let par of contentBlocks(); let i = index"
-         [class.is-heading]="isHeading(par)"
-         [class.is-body-lede]="isBodyLede(par, i)">
-        <ng-container *ngFor="let text of par.children">
-          <span [class.text-italic]="text.italic"
-                [class.text-bold]="text.bold">{{ text.text }}</span>
-        </ng-container>
-        <li *ngIf="par.children?.[0]?.children">
-          {{ par.children[0].children[0].text }}
-        </li>
-      </p>
-    </div>
-  </section>
-
-  <hr class="ornament-rule" *ngIf="objectives?.length" />
-
-  <section class="about-objectives" *ngIf="objectives?.length">
-    <header class="about-objectives-head">
-      <span class="md-eyebrow">{{ 'HOME.OBJECTIVES_EYEBROW' | translate }}</span>
-      <h2 class="about-objectives-title">{{ 'OTHER.OBJECTIVES' | translate }}</h2>
-    </header>
-    <div class="objectives-grid">
-      <article class="objective-card" *ngFor="let obj of objectives; let idx = index">
-        <span class="objective-ordinal" aria-hidden="true">{{ ordinalLabel(idx) }}</span>
-        <div class="objective-content">
-          <p *ngFor="let par of objectiveContent(obj)"
-             [class.is-heading]="isHeading(par)">
-            <ng-container *ngFor="let text of par.children">
-              <span [class.text-italic]="text.italic"
-                    [class.text-bold]="text.bold">{{ text.text }}</span>
-            </ng-container>
+  @if (contentBlocks().length) {
+    <section class="about-prose-section">
+      <div class="about-prose">
+        @for (par of contentBlocks(); track par; let i = $index) {
+          <p
+            [class.is-heading]="isHeading(par)"
+            [class.is-body-lede]="isBodyLede(par, i)">
+            @for (text of par.children; track text) {
+              <span class="cf-root" [class.text-italic]="text.italic"
+              [class.text-bold]="text.bold">{{ text.text }}</span>
+            }
+            @if (par.children?.[0]?.children) {
+              <li>
+                {{ par.children[0].children[0].text }}
+              </li>
+            }
           </p>
-        </div>
-      </article>
-    </div>
-  </section>
+        }
+      </div>
+    </section>
+  }
+
+  @if (objectives?.length) {
+    <hr class="ornament-rule" />
+  }
+
+  @if (objectives?.length) {
+    <section class="about-objectives">
+      <header class="about-objectives-head">
+        <span class="md-eyebrow">{{ 'HOME.OBJECTIVES_EYEBROW' | translate }}</span>
+        <h2 class="about-objectives-title">{{ 'OTHER.OBJECTIVES' | translate }}</h2>
+      </header>
+      <div class="objectives-grid">
+        @for (obj of objectives; track obj; let idx = $index) {
+          <article class="objective-card">
+            <span class="objective-ordinal" aria-hidden="true">{{ ordinalLabel(idx) }}</span>
+            <div class="objective-content">
+              @for (par of objectiveContent(obj); track par) {
+                <p
+                  [class.is-heading]="isHeading(par)">
+                  @for (text of par.children; track text) {
+                    <span class="cf-root" [class.text-italic]="text.italic"
+                    [class.text-bold]="text.bold">{{ text.text }}</span>
+                  }
+                </p>
+              }
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+  }
 
 </article>
 

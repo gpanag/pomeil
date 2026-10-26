@@ -176,18 +176,21 @@
   "completion": {
     "title": "Навчання завершено!",
     "message": "Вітаємо! Ти завершив/завершила модуль Стратегічного мислення.",
-    "buttonText": "Назад до головного меню"
+    "buttonText": "Назад до головного меню",
+    "revealedNote": "Тут довелося показати відповідь, тож варто переглянути цю частину в модулі."
   },
   "ui": {
     "fullscreenTitle": "Перемкнути повноекранний режим",
-    "backToEscapeRoomsTitle": "Назад до квест-кімнат",
+    "backToLearningTitle": "Назад до навчання",
     "startQuizButton": "Почати вікторину",
     "continueButton": "Далі",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат",
+    "backToLearning": "Назад до навчання",
     "skipButton": "Пропустити",
-    "answerButton": "Відповідь"
+    "answerButton": "Відповідь",
+    "backToRoom": "Повернутися до кімнати",
+    "clickToExamine": "Натисніть, щоб розглянути"
   },
   "learning": {
     "modeLabel": "Режим навчання",

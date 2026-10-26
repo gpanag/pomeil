@@ -350,6 +350,7 @@
     "comments": "Odpowiadaj na autentyczne interakcje klientów i usuwaj spam.",
     "stickyNote": "Na serwerze jest karteczka z hasłem. To zagrożenie bezpieczeństwa!",
     "miniPuzzles": "Bądź czujny na zagrożenia bezpieczeństwa - urządzenia USB, wyskakujące okienka, aktualizacje i sieci WiFi.",
+    "miniUsb": "Sprawdź szufladę biurka.",
     "allComplete": "Wszystko gotowe! Szkolenie zostało ukończone!",
     "completion": "Szkolenie zostało ukończone!",
     "default": "Rozejrzyj się po dziale IT w poszukiwaniu rzeczy wymagających uwagi."
@@ -397,17 +398,21 @@
       "title": "Powiadomienie Bezpieczeństwa IT",
       "domainLine": "Naszą domeną firmową jest",
       "malwareWarning": "Wykryto malware w tym systemie. Twoje pliki i dane mogą być zagrożone.",
-      "domainNotice": "Naszą domeną firmową jest <strong>&#64;yourcompany.com</strong>. Jakakolwiek inna domena podająca się za naszą firmę jest potencjalnie oszukańcza."
+      "domainNotice": "Naszą domeną firmową jest <strong>&#64;yourcompany.com</strong>. Jakakolwiek inna domena podająca się za naszą firmę jest potencjalnie oszukańcza.",
+      "reminder": "Przypomnienie: Zawsze sprawdzaj adresy nadawców i najedź kursorem na linki przed kliknięciem. Podejrzane wiadomości natychmiast zgłaszaj do działu IT.",
+      "malwareTitle": "System zainfekowany!",
+      "fromLabel": "Od:"
     }
   },
   "completion": {
     "title": "Gratulacje!",
     "message": "Pomyślnie ukończyłeś wszystkie zadania umiejętności cyfrowych! Naprawiłeś serwer, przeprowadziłeś audyt haseł, zidentyfikowałeś maile phishingowe, profesjonalnie zarządzałeś mediami społecznościowymi i poradziłeś sobie z wieloma cyberzagrożeniami. Jesteś teraz lepiej wyposażony, aby bezpiecznie i skutecznie poruszać się po cyfrowym miejscu pracy!",
-    "buttonText": "Wyjdź z Pokoju"
+    "buttonText": "Wyjdź z Pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "callIT": "Zadzwoń do IT po pomoc",
@@ -415,7 +420,9 @@
     "archive": "Archiwizuj",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -191,7 +191,8 @@
   "completion": {
     "title": "Opplæring fullført!",
     "message": "Gratulerer! Du har vellykket demonstrert utmerket åpenhet og kommunikasjonsferdigheter.",
-    "buttonText": "Tilbake til hovedmenyen"
+    "buttonText": "Tilbake til hovedmenyen",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "dialogueActions": {
     "continue": "Fortsett",
@@ -200,17 +201,19 @@
   },
   "buttons": {
     "toggleFullscreen": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom"
+    "backToLearning": "Tilbake til læring"
   },
   "ui": {
     "continueButton": "Fortsett",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
     "answerButton": "Svar",
-    "finishTrainingButton": "Fullfør opplæring"
+    "finishTrainingButton": "Fullfør opplæring",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

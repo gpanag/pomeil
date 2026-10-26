@@ -2,3 +2,9 @@
     margin-left: 32px;
     margin-right: 32px;
 }
+
+// Material 20+ gives mat-icon `min-height: fit-content`, which grows the SVG icons to 28px (the inline
+// svg's baseline gap) and makes the toolbar/footer strip 4px taller. Keep the 24px box Material 18 had.
+.socials .mat-icon {
+    min-height: 0;
+}

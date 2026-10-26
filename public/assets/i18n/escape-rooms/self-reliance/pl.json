@@ -170,18 +170,21 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Gratulacje! Odblokowałeś/aś moc samodzielności. Ta umiejętność jest niezbędna nie tylko w biznesie, ale i w codziennym życiu. Spróbuj swoich sił w kolejnych modułach. Dziękujemy za udział. Możesz wrócić w dowolnej chwili, jeśli chcesz odświeżyć swoją wiedzę — jesteśmy tu, aby wspierać Twoją naukę.!",
-    "buttonText": "Opuść dach"
+    "buttonText": "Opuść dach",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

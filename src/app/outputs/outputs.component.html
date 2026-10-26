@@ -1,309 +1,441 @@
 <div class="mat-app-background">
 
 
-    <div class="workpackages-parallax"></div>
+  <div class="workpackages-parallax"></div>
 
-    <div class="page-parent">
-        <div class="title">
-            <h5 class="title">{{"NAVIGATION.OUTPUTS" | translate}}</h5>
-        </div>
-        <div style="margin-top: 64px;" class="title">
-            <h5 class="title">{{"OTHER.WORKPACKAGES" | translate}}</h5>
-        </div>
-        <mat-card class="content-cards" *ngFor="let workpackage of workpackages">
-            <mat-card-title style="padding: 16px;">{{
-                lang === 'ee' ? workpackage.title_ee :
-                lang === 'gr' ? workpackage.title_gr :
-                lang === 'no' ? workpackage.title_no :
-                lang === 'pl' ? workpackage.title_pl :
-                lang === 'ua' ? workpackage.title_ua : workpackage.title
-                }}</mat-card-title>
-            <mat-card-content>
-                <div *ngIf="lang === 'en'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div class="image-parent" *ngIf="workpackage.image_en">
-                        <h6>{{'WORKPACKAGES.MAP' | translate}}</h6>
-                        <div class="image" *ngFor="let image of workpackage.image_en">
-                            <img [src]="image.url" (click)="openImageDialog(images, image.id)" />
-                        </div>
-                    </div>
-
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div *ngIf="lang === 'ee'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content_ee"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div *ngIf="lang === 'gr'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content_gr"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="lang === 'no'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content_no"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="lang === 'pl'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content_pl"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="lang === 'ua'">
-                    <div class="blocks" *ngFor="let par of workpackage?.content_ua"
-                        [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
-                        <ng-container *ngFor="let node of par.children">
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) === '/'"
-                                [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <a *ngIf="node.type === 'link' && node.url && node.url.charAt(0) !== '/'"
-                                [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
-                            <span *ngIf="node.type !== 'link'"
-                                [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
-                        </ng-container>
-                        <li *ngIf="par.children[0].children && par.children[0].type !== 'link'">
-                            {{par.children[0].children[0].text}}
-                        </li>
-                    </div>
-
-                    <div *ngIf="workpackage?.files_en" class="files">
-                        <h6>Files</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.files_en" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div *ngIf="workpackage?.translations" class="files">
-                        <h6>Translations</h6>
-                        <div>
-                            <div *ngFor="let item of workpackage?.translations" class="file-item">
-                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
-                                <div style="margin-right: 8px;">{{item.name}}</div>
-                                <div class="spacer"></div>
-                                <div>
-                                    <a mat-icon-button [href]="item.url"
-                                        target="_blank"><mat-icon>download</mat-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </mat-card-content>
-        </mat-card>
+  <div class="page-parent">
+    <div class="title">
+      <h5 class="title">{{"NAVIGATION.OUTPUTS" | translate}}</h5>
     </div>
-</div>
+    <div style="margin-top: 64px;" class="title">
+      <h5 class="title">{{"OTHER.WORKPACKAGES" | translate}}</h5>
+    </div>
+    @for (workpackage of workpackages; track workpackage) {
+      <mat-card class="content-cards">
+        <mat-card-title style="padding: 16px;">{{ wpTitle(workpackage) }}</mat-card-title>
+        <mat-card-content>
+          @if (lang === 'en') {
+            <div>
+              @for (par of workpackage?.content; track par) {
+                <div class="blocks"
+                  [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                  @for (node of par.children; track node) {
+                    @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                      <a
+                      [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                    }
+                    @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                      <a
+                      [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                    }
+                    @if (node.type !== 'link') {
+                      <span class="cf-root"
+                      [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                    }
+                  }
+                  @if (par.children[0].children && par.children[0].type !== 'link') {
+                    <li>
+                      {{par.children[0].children[0].text}}
+                    </li>
+                  }
+                </div>
+              }
+              @if (workpackage.image_en?.length) {
+                <div class="image-parent">
+                  <h6>{{'WORKPACKAGES.MAP' | translate}}</h6>
+                  @for (image of workpackage.image_en; track image) {
+                    <div class="image">
+                      <img [src]="image.url" (click)="openImageDialog(images, image.id)" />
+                    </div>
+                  }
+                </div>
+              }
+              @if (workpackage?.files_en?.length) {
+                <div class="files">
+                  <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                  <div>
+                    @for (item of workpackage?.files_en; track item) {
+                      <div class="file-item">
+                        <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                        <div style="margin-right: 8px;">{{item.name}}
+                          @if (isEnglishOnly(item)) {
+                            <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                          }
+                        </div>
+                        <div class="spacer"></div>
+                        <div>
+                          <a mat-icon-button [href]="item.url"
+                            target="_blank"><mat-icon>download</mat-icon></a>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </div>
+                }
+                @if (workpackage?.translations?.length) {
+                  <div class="files">
+                    <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                    <div>
+                      @for (item of workpackage?.translations; track item) {
+                        <div class="file-item">
+                          <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                          <div style="margin-right: 8px;">{{item.name}}</div>
+                          <div class="spacer"></div>
+                          <div>
+                            <a mat-icon-button [href]="item.url"
+                              target="_blank"><mat-icon>download</mat-icon></a>
+                            </div>
+                          </div>
+                        }
+                      </div>
+                    </div>
+                  }
+                </div>
+              }
+              @if (lang === 'ee') {
+                <div>
+                  @for (par of workpackage?.content_ee; track par) {
+                    <div class="blocks"
+                      [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                      @for (node of par.children; track node) {
+                        @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                          <a
+                          [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                        }
+                        @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                          <a
+                          [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                        }
+                        @if (node.type !== 'link') {
+                          <span class="cf-root"
+                          [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                        }
+                      }
+                      @if (par.children[0].children && par.children[0].type !== 'link') {
+                        <li>
+                          {{par.children[0].children[0].text}}
+                        </li>
+                      }
+                    </div>
+                  }
+                  @if (workpackage?.files_en?.length) {
+                    <div class="files">
+                      <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                      <div>
+                        @for (item of workpackage?.files_en; track item) {
+                          <div class="file-item">
+                            <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                            <div style="margin-right: 8px;">{{item.name}}
+                              @if (isEnglishOnly(item)) {
+                                <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                              }
+                            </div>
+                            <div class="spacer"></div>
+                            <div>
+                              <a mat-icon-button [href]="item.url"
+                                target="_blank"><mat-icon>download</mat-icon></a>
+                              </div>
+                            </div>
+                          }
+                        </div>
+                      </div>
+                    }
+                    @if (workpackage?.translations?.length) {
+                      <div class="files">
+                        <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                        <div>
+                          @for (item of workpackage?.translations; track item) {
+                            <div class="file-item">
+                              <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                              <div style="margin-right: 8px;">{{item.name}}</div>
+                              <div class="spacer"></div>
+                              <div>
+                                <a mat-icon-button [href]="item.url"
+                                  target="_blank"><mat-icon>download</mat-icon></a>
+                                </div>
+                              </div>
+                            }
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  }
+                  @if (lang === 'gr') {
+                    <div>
+                      @for (par of workpackage?.content_gr; track par) {
+                        <div class="blocks"
+                          [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                          @for (node of par.children; track node) {
+                            @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                              <a
+                              [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                            }
+                            @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                              <a
+                              [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                            }
+                            @if (node.type !== 'link') {
+                              <span class="cf-root"
+                              [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                            }
+                          }
+                          @if (par.children[0].children && par.children[0].type !== 'link') {
+                            <li>
+                              {{par.children[0].children[0].text}}
+                            </li>
+                          }
+                        </div>
+                      }
+                      @if (workpackage?.files_en?.length) {
+                        <div class="files">
+                          <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                          <div>
+                            @for (item of workpackage?.files_en; track item) {
+                              <div class="file-item">
+                                <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                <div style="margin-right: 8px;">{{item.name}}
+                                  @if (isEnglishOnly(item)) {
+                                    <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                                  }
+                                </div>
+                                <div class="spacer"></div>
+                                <div>
+                                  <a mat-icon-button [href]="item.url"
+                                    target="_blank"><mat-icon>download</mat-icon></a>
+                                  </div>
+                                </div>
+                              }
+                            </div>
+                          </div>
+                        }
+                        @if (workpackage?.translations?.length) {
+                          <div class="files">
+                            <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                            <div>
+                              @for (item of workpackage?.translations; track item) {
+                                <div class="file-item">
+                                  <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                  <div style="margin-right: 8px;">{{item.name}}</div>
+                                  <div class="spacer"></div>
+                                  <div>
+                                    <a mat-icon-button [href]="item.url"
+                                      target="_blank"><mat-icon>download</mat-icon></a>
+                                    </div>
+                                  </div>
+                                }
+                              </div>
+                            </div>
+                          }
+                        </div>
+                      }
+                      @if (lang === 'no') {
+                        <div>
+                          @for (par of workpackage?.content_no; track par) {
+                            <div class="blocks"
+                              [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                              @for (node of par.children; track node) {
+                                @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                                  <a
+                                  [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                                }
+                                @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                                  <a
+                                  [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                                }
+                                @if (node.type !== 'link') {
+                                  <span class="cf-root"
+                                  [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                                }
+                              }
+                              @if (par.children[0].children && par.children[0].type !== 'link') {
+                                <li>
+                                  {{par.children[0].children[0].text}}
+                                </li>
+                              }
+                            </div>
+                          }
+                          @if (workpackage?.files_en?.length) {
+                            <div class="files">
+                              <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                              <div>
+                                @for (item of workpackage?.files_en; track item) {
+                                  <div class="file-item">
+                                    <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                    <div style="margin-right: 8px;">{{item.name}}
+                                      @if (isEnglishOnly(item)) {
+                                        <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                                      }
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div>
+                                      <a mat-icon-button [href]="item.url"
+                                        target="_blank"><mat-icon>download</mat-icon></a>
+                                      </div>
+                                    </div>
+                                  }
+                                </div>
+                              </div>
+                            }
+                            @if (workpackage?.translations?.length) {
+                              <div class="files">
+                                <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                                <div>
+                                  @for (item of workpackage?.translations; track item) {
+                                    <div class="file-item">
+                                      <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                      <div style="margin-right: 8px;">{{item.name}}</div>
+                                      <div class="spacer"></div>
+                                      <div>
+                                        <a mat-icon-button [href]="item.url"
+                                          target="_blank"><mat-icon>download</mat-icon></a>
+                                        </div>
+                                      </div>
+                                    }
+                                  </div>
+                                </div>
+                              }
+                            </div>
+                          }
+                          @if (lang === 'pl') {
+                            <div>
+                              @for (par of workpackage?.content_pl; track par) {
+                                <div class="blocks"
+                                  [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                                  @for (node of par.children; track node) {
+                                    @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                                      <a
+                                      [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                                    }
+                                    @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                                      <a
+                                      [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                                    }
+                                    @if (node.type !== 'link') {
+                                      <span class="cf-root"
+                                      [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                                    }
+                                  }
+                                  @if (par.children[0].children && par.children[0].type !== 'link') {
+                                    <li>
+                                      {{par.children[0].children[0].text}}
+                                    </li>
+                                  }
+                                </div>
+                              }
+                              @if (workpackage?.files_en?.length) {
+                                <div class="files">
+                                  <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                                  <div>
+                                    @for (item of workpackage?.files_en; track item) {
+                                      <div class="file-item">
+                                        <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                        <div style="margin-right: 8px;">{{item.name}}
+                                          @if (isEnglishOnly(item)) {
+                                            <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                                          }
+                                        </div>
+                                        <div class="spacer"></div>
+                                        <div>
+                                          <a mat-icon-button [href]="item.url"
+                                            target="_blank"><mat-icon>download</mat-icon></a>
+                                          </div>
+                                        </div>
+                                      }
+                                    </div>
+                                  </div>
+                                }
+                                @if (workpackage?.translations?.length) {
+                                  <div class="files">
+                                    <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                                    <div>
+                                      @for (item of workpackage?.translations; track item) {
+                                        <div class="file-item">
+                                          <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                          <div style="margin-right: 8px;">{{item.name}}</div>
+                                          <div class="spacer"></div>
+                                          <div>
+                                            <a mat-icon-button [href]="item.url"
+                                              target="_blank"><mat-icon>download</mat-icon></a>
+                                            </div>
+                                          </div>
+                                        }
+                                      </div>
+                                    </div>
+                                  }
+                                </div>
+                              }
+                              @if (lang === 'ua') {
+                                <div>
+                                  @for (par of workpackage?.content_ua; track par) {
+                                    <div class="blocks"
+                                      [ngClass]="par.type === 'heading' ? 'inside-text-headers' : ''">
+                                      @for (node of par.children; track node) {
+                                        @if (node.type === 'link' && node.url && node.url.charAt(0) === '/') {
+                                          <a
+                                          [routerLink]="node.url" class="wp-inline-link">{{node.children[0].text}}</a>
+                                        }
+                                        @if (node.type === 'link' && node.url && node.url.charAt(0) !== '/') {
+                                          <a
+                                          [href]="node.url" target="_blank" rel="noopener" class="wp-inline-link">{{node.children[0].text}}</a>
+                                        }
+                                        @if (node.type !== 'link') {
+                                          <span class="cf-root"
+                                          [ngClass]="{'text-italic' : node.italic, 'text-bold' : node.bold}">{{node.text}}</span>
+                                        }
+                                      }
+                                      @if (par.children[0].children && par.children[0].type !== 'link') {
+                                        <li>
+                                          {{par.children[0].children[0].text}}
+                                        </li>
+                                      }
+                                    </div>
+                                  }
+                                  @if (workpackage?.files_en?.length) {
+                                    <div class="files">
+                                      <h6>{{ 'WORKPACKAGES.FILES' | translate }}</h6>
+                                      <div>
+                                        @for (item of workpackage?.files_en; track item) {
+                                          <div class="file-item">
+                                            <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                            <div style="margin-right: 8px;">{{item.name}}
+                                              @if (isEnglishOnly(item)) {
+                                                <span class="file-lang-tag">{{ 'WORKPACKAGES.ENGLISH_ONLY' | translate }}</span>
+                                              }
+                                            </div>
+                                            <div class="spacer"></div>
+                                            <div>
+                                              <a mat-icon-button [href]="item.url"
+                                                target="_blank"><mat-icon>download</mat-icon></a>
+                                              </div>
+                                            </div>
+                                          }
+                                        </div>
+                                      </div>
+                                    }
+                                    @if (workpackage?.translations?.length) {
+                                      <div class="files">
+                                        <h6>{{ 'WORKPACKAGES.TRANSLATIONS' | translate }}</h6>
+                                        <div>
+                                          @for (item of workpackage?.translations; track item) {
+                                            <div class="file-item">
+                                              <div style="margin-right: 8px;"><mat-icon>picture_as_pdf</mat-icon></div>
+                                              <div style="margin-right: 8px;">{{item.name}}</div>
+                                              <div class="spacer"></div>
+                                              <div>
+                                                <a mat-icon-button [href]="item.url"
+                                                  target="_blank"><mat-icon>download</mat-icon></a>
+                                                </div>
+                                              </div>
+                                            }
+                                          </div>
+                                        </div>
+                                      }
+                                    </div>
+                                  }
+                                </mat-card-content>
+                              </mat-card>
+                            }
+                          </div>
+                        </div>
 
-<app-footer></app-footer>
+                        <app-footer></app-footer>

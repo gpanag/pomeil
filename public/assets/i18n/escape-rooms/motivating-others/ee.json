@@ -81,9 +81,18 @@
       "title": "Heitumuse muutmine motivatsiooniks",
       "instructions": "Lohista iga lause, et muuta see motiveerivaks sõnumiks.",
       "pairs": [
-        {"left": "Mul pole piisavalt kogemust.", "right": "Kogemus omandatakse õppimise ja praktika kaudu."},
-        {"left": "Mu taust on liiga erinev.", "right": "Erinevad taustad toovad väärtuslikke vaatenurki."},
-        {"left": "Olen varem läbi kukkunud.", "right": "Varasemad ebaõnnestumised aitavad meil kasvada ja paraneda."}
+        {
+          "left": "Mul pole piisavalt kogemust.",
+          "right": "Kogemus omandatakse õppimise ja praktika kaudu."
+        },
+        {
+          "left": "Mu taust on liiga erinev.",
+          "right": "Erinevad taustad toovad väärtuslikke vaatenurki."
+        },
+        {
+          "left": "Olen varem läbi kukkunud.",
+          "right": "Varasemad ebaõnnestumised aitavad meil kasvada ja paraneda."
+        }
       ],
       "feedback": {
         "wrong": "See pole õige paar. Mõtle, kuidas iga väidet positiivselt ümber sõnastada.",
@@ -93,7 +102,10 @@
     },
     "answerOverlayTitle": "Vastus avalikustatud",
     "answerOverlayContinue": "Jätka",
-    "fillGap": {"checkButton": "Esita", "resetButton": "Lähtesta"},
+    "fillGap": {
+      "checkButton": "Esita",
+      "resetButton": "Lähtesta"
+    },
     "discouragingTitle": "Heidutav",
     "motivatingTitle": "Motiveeriv"
   },
@@ -129,44 +141,81 @@
         "Lüngad tööajaloos"
       ]
     },
-    "candidateFolder": {"inventoryTitle": "Kandidaadi kaust"}
+    "candidateFolder": {
+      "inventoryTitle": "Kandidaadi kaust"
+    }
   },
   "strengths": {
     "title": "Tugevuste tuvastamise väljakutse",
     "instructions": "Vali 2 elementi, mida positiivselt esile tõsta.",
     "options": [
-      {"id": "language", "text": "Keeleoskused", "correct": true},
-      {"id": "volunteering", "text": "Vabatahtliku töö kogemus", "correct": true},
-      {"id": "gaps", "text": "Tööelu lüngad", "correct": false},
-      {"id": "references", "text": "Puuduvad soovitused", "correct": false}
+      {
+        "id": "language",
+        "text": "Keeleoskused",
+        "correct": true
+      },
+      {
+        "id": "volunteering",
+        "text": "Vabatahtliku töö kogemus",
+        "correct": true
+      },
+      {
+        "id": "gaps",
+        "text": "Tööelu lüngad",
+        "correct": false
+      },
+      {
+        "id": "references",
+        "text": "Puuduvad soovitused",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motivatsioon kasvab, kui inimesed näevad oma väärtust.",
       "wrong": "Need elemendid ei pruugi enesekindlust üles ehitada. Keskendu tõelistele tugevustele."
-    }
+    },
+    "answerOverlay": "Esile tuleks tõsta keeleoskus ja vabatahtliku töö kogemus — mõlemad näitavad, mida kandidaat pakub, mitte seda, mis puudu on."
   },
   "bodyLanguage": {
     "title": "Motivatsioonisignaalide lugemine",
     "instructions": "Klõpsa elementidel, mis näitavad, et kandidaat tunneb end ebakindlalt.",
     "options": [
-      {"id": "clenched", "text": "Pingul käed dokumentidel", "correct": true},
-      {"id": "relaxed", "text": "Lõdvestunud kehahoiak", "correct": false},
-      {"id": "eyeContact", "text": "Silmside vältimine", "correct": true},
-      {"id": "smile", "text": "Enesekindel naeratus", "correct": false}
+      {
+        "id": "clenched",
+        "text": "Pingul käed dokumentidel",
+        "correct": true
+      },
+      {
+        "id": "relaxed",
+        "text": "Lõdvestunud kehahoiak",
+        "correct": false
+      },
+      {
+        "id": "eyeContact",
+        "text": "Silmside vältimine",
+        "correct": true
+      },
+      {
+        "id": "smile",
+        "text": "Enesekindel naeratus",
+        "correct": false
+      }
     ],
     "feedback": {
       "correct": "Motivatsioon algab teiste tunnete märkamisest — isegi siis, kui nad seda ei ütle.",
       "wrong": "Vaata kandidaadi kehakeelt hoolikamalt."
-    }
+    },
+    "answerOverlay": "Ebakindluse märgid on pingul käed dokumentidel ja silmside vältimine."
   },
   "completion": {
     "title": "Oskus lõpetatud: Teiste inspireerimine ja motiveerimine",
     "message": "Sa näitasid:\n\nEmotsionaalset teadlikkust\nPositiivset suhtlemist\nVõimestamist tunnustamise kaudu\nEetilist motiveerimist\n\nInspiratsioon on juhtimine tegevuses.",
-    "buttonText": "Lahku ootealast"
+    "buttonText": "Lahku ootealast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
@@ -175,7 +224,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

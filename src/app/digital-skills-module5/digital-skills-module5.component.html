@@ -1,536 +1,608 @@
 <div class="cinematic-container">
 
-  <div *ngIf="isPreloading" class="preload-overlay">
-    <div class="loading-content">
-      <div class="loading-text">{{ t('loading') }}</div>
+  @if (isPreloading) {
+    <div class="preload-overlay">
+      <div class="loading-content">
+        <div class="loading-text">{{ t('loading') }}</div>
+      </div>
     </div>
-  </div>
+  }
 
   <!-- Introduction Popup Overlay -->
-  <div *ngIf="isIntroPopupVisible" class="overlay center">
-    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
-      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
-      <mat-card-content class="intro-text">
-        <p>{{ t('intro.paragraphs.0') }}</p>
-        <p>{{ t('intro.paragraphs.1') }}</p>
-        <p>{{ t('intro.paragraphs.2') }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+  @if (isIntroPopupVisible) {
+    <div class="overlay center">
+      <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+        <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+        <mat-card-content class="intro-text">
+          <p>{{ t('intro.paragraphs.0') }}</p>
+          <p>{{ t('intro.paragraphs.1') }}</p>
+          <p>{{ t('intro.paragraphs.2') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  }
 
   <div class="game-container">
 
     <div class="scene-background"
-         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
-         [ngStyle]="zoomStyle"
-         [class.blurred]="(isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible || isMalwareInfected">
+      [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+      [ngStyle]="zoomStyle"
+      [class.blurred]="(isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible || isMalwareInfected">
     </div>
 
+    <!-- "How to play" guide (partner feedback 2026-08-31) — sits left of the fullscreen button -->
+    <app-room-help-button></app-room-help-button>
     <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
       <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
     </button>
 
-    <div *ngIf="isLearningMode" class="learning-score-panel">
-      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
-      <div class="score-panel-progress">
-        <mat-icon>emoji_events</mat-icon>
-        <span>{{ completedPuzzleCount }} / 4 puzzles</span>
+    @if (isLearningMode) {
+      <div class="learning-score-panel">
+        <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+        <div class="score-panel-progress">
+          <mat-icon>emoji_events</mat-icon>
+          <span>{{ completedPuzzleCount }} / 4 {{ t('learning.puzzlesWord') }}</span>
+        </div>
+        <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+          <span class="score-panel-value-label">{{ t('learning.scoreLabel') }}</span>
+          {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+        </div>
       </div>
-      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
-        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
-      </div>
-    </div>
+    }
 
-    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
-      <mat-icon>arrow_back</mat-icon>
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToLearning')">
+      <mat-icon>logout</mat-icon>
     </button>
 
-    <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !isMalwareInfected">
-      <mat-icon>lightbulb</mat-icon>
-    </button>
+    @if (!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !isMalwareInfected) {
+      <button mat-fab class="hint-button" (click)="requestHint()">
+        <mat-icon>lightbulb</mat-icon>
+      </button>
+    }
     <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
     <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
 
-    <button *ngIf="currentView !== 'main' && !activeDialogue && !isQuizActive" mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
-      <mat-icon>arrow_back</mat-icon>
-    </button>
+    @if (currentView !== 'main' && !activeDialogue && !isQuizActive) {
+      <button mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()"
+        [title]="t('ui.backToRoom')"
+        [attr.aria-label]="t('ui.backToRoom')">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  HOTSPOT LAYER                      -->
     <!-- ═══════════════════════════════════ -->
-    <div class="hotspot-layer"
-         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || isMalwareInfected"
-         *ngIf="!isIntroPopupVisible && !isQuizActive && !isMalwareInfected">
-
-      <!-- ── Main view hotspots ── -->
-      <ng-container *ngIf="currentView === 'main'">
-
-        <!-- Cables / Server area -->
-        <div *ngIf="currentState === GameState.FixCables"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.cables.x" [style.top.%]="hotspots.main.cables.y"
-             [style.width.%]="hotspots.main.cables.width" [style.height.%]="hotspots.main.cables.height"
-             (click)="onHotspotClick('cables')"></div>
-
-        <!-- Server (after cables fixed) -->
-        <div *ngIf="currentState === GameState.ServerBoot"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.server.x" [style.top.%]="hotspots.main.server.y"
-             [style.width.%]="hotspots.main.server.width" [style.height.%]="hotspots.main.server.height"
-             (click)="onHotspotClick('server')"></div>
-
-        <!-- Monitor -->
-        <div *ngIf="currentState === GameState.OpenMonitor"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.monitor.x" [style.top.%]="hotspots.main.monitor.y"
-             [style.width.%]="hotspots.main.monitor.width" [style.height.%]="hotspots.main.monitor.height"
-             (click)="onHotspotClick('monitor')"></div>
-
-        <!-- Phone -->
-        <div *ngIf="currentState === GameState.OpenPhone"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.phone.x" [style.top.%]="hotspots.main.phone.y"
-             [style.width.%]="hotspots.main.phone.width" [style.height.%]="hotspots.main.phone.height"
-             (click)="onHotspotClick('phone')"></div>
-
-        <!-- Sticky Note on server -->
-        <div *ngIf="currentState === GameState.StickyNote"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.stickyNote.x" [style.top.%]="hotspots.main.stickyNote.y"
-             [style.width.%]="hotspots.main.stickyNote.width" [style.height.%]="hotspots.main.stickyNote.height"
-             (click)="onHotspotClick('stickyNote')"></div>
-
-        <!-- Drawer (USB mini puzzle + red herring) -->
-        <div *ngIf="currentState === GameState.MiniUSB"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.drawer.x" [style.top.%]="hotspots.main.drawer.y"
-             [style.width.%]="hotspots.main.drawer.width" [style.height.%]="hotspots.main.drawer.height"
-             (click)="onHotspotClick('drawer')"></div>
-
-        <!-- Red herrings (always available when no active quest, before completion) -->
-        <ng-container *ngIf="currentState !== GameState.Intro && currentState < GameState.Completion">
-          <!-- Bag -->
-          <div class="hotspot red-herring"
-               [style.left.%]="hotspots.main.bag.x" [style.top.%]="hotspots.main.bag.y"
-               [style.width.%]="hotspots.main.bag.width" [style.height.%]="hotspots.main.bag.height"
-               (click)="onHotspotClick('bag')"></div>
-
-          <!-- Posters -->
-          <div class="hotspot red-herring"
-               [style.left.%]="hotspots.main.posters.x" [style.top.%]="hotspots.main.posters.y"
-               [style.width.%]="hotspots.main.posters.width" [style.height.%]="hotspots.main.posters.height"
-               (click)="onHotspotClick('posters')"></div>
-        </ng-container>
-
-        <!-- Exit Door -->
-        <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
+    @if (!isIntroPopupVisible && !isQuizActive && !isMalwareInfected) {
+      <div class="hotspot-layer"
+        [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || isMalwareInfected"
+        >
+        <!-- ── Main view hotspots ── -->
+        @if (currentView === 'main') {
+          <!-- Cables / Server area -->
+          @if (currentState === GameState.FixCables) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.cables.x" [style.top.%]="hotspots.main.cables.y"
+              [style.width.%]="hotspots.main.cables.width" [style.height.%]="hotspots.main.cables.height"
+            (click)="onHotspotClick('cables')"></div>
+          }
+          <!-- Server (after cables fixed) -->
+          @if (currentState === GameState.ServerBoot) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.server.x" [style.top.%]="hotspots.main.server.y"
+              [style.width.%]="hotspots.main.server.width" [style.height.%]="hotspots.main.server.height"
+            (click)="onHotspotClick('server')"></div>
+          }
+          <!-- Monitor -->
+          @if (currentState === GameState.OpenMonitor) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.monitor.x" [style.top.%]="hotspots.main.monitor.y"
+              [style.width.%]="hotspots.main.monitor.width" [style.height.%]="hotspots.main.monitor.height"
+            (click)="onHotspotClick('monitor')"></div>
+          }
+          <!-- Phone -->
+          @if (currentState === GameState.OpenPhone) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.phone.x" [style.top.%]="hotspots.main.phone.y"
+              [style.width.%]="hotspots.main.phone.width" [style.height.%]="hotspots.main.phone.height"
+            (click)="onHotspotClick('phone')"></div>
+          }
+          <!-- Sticky Note on server -->
+          @if (currentState === GameState.StickyNote) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.stickyNote.x" [style.top.%]="hotspots.main.stickyNote.y"
+              [style.width.%]="hotspots.main.stickyNote.width" [style.height.%]="hotspots.main.stickyNote.height"
+            (click)="onHotspotClick('stickyNote')"></div>
+          }
+          <!-- Drawer (USB mini puzzle + red herring) -->
+          @if (currentState === GameState.MiniUSB) {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.drawer.x" [style.top.%]="hotspots.main.drawer.y"
+              [style.width.%]="hotspots.main.drawer.width" [style.height.%]="hotspots.main.drawer.height"
+            (click)="onHotspotClick('drawer')"></div>
+          }
+          <!-- Red herrings (always available when no active quest, before completion) -->
+          @if (currentState !== GameState.Intro && currentState < GameState.Completion) {
+            <!-- Bag -->
+            <div class="hotspot red-herring"
+              [style.left.%]="hotspots.main.bag.x" [style.top.%]="hotspots.main.bag.y"
+              [style.width.%]="hotspots.main.bag.width" [style.height.%]="hotspots.main.bag.height"
+            (click)="onHotspotClick('bag')"></div>
+            <!-- Posters -->
+            <div class="hotspot red-herring"
+              [style.left.%]="hotspots.main.posters.x" [style.top.%]="hotspots.main.posters.y"
+              [style.width.%]="hotspots.main.posters.width" [style.height.%]="hotspots.main.posters.height"
+            (click)="onHotspotClick('posters')"></div>
+          }
+          <!-- Exit Door -->
+          @if ((currentState === GameState.Completion || isDoorOpen) && currentView === 'main') {
+            <div class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+              [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+            (click)="onHotspotClick('exitDoor')"></div>
+          }
+        }
+        <!-- Zoomed view content hotspots -->
+        @if (currentView === 'cables' && currentState === GameState.FixCables && cableSubState === 'broken') {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.cables_zoom.content.x" [style.top.%]="hotspots.cables_zoom.content.y"
+            [style.width.%]="hotspots.cables_zoom.content.width" [style.height.%]="hotspots.cables_zoom.content.height"
+          (click)="onHotspotClick('cablesContent')"></div>
+        }
+        @if (currentView === 'server' && currentState === GameState.ServerBoot) {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.server_zoom.content.x" [style.top.%]="hotspots.server_zoom.content.y"
+            [style.width.%]="hotspots.server_zoom.content.width" [style.height.%]="hotspots.server_zoom.content.height"
+          (click)="onHotspotClick('serverContent')"></div>
+        }
+        @if (currentView === 'monitor' && currentState === GameState.OpenMonitor) {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.monitor_zoom.content.x" [style.top.%]="hotspots.monitor_zoom.content.y"
+            [style.width.%]="hotspots.monitor_zoom.content.width" [style.height.%]="hotspots.monitor_zoom.content.height"
+          (click)="onHotspotClick('monitorContent')"></div>
+        }
+        @if (currentView === 'phone' && currentState === GameState.OpenPhone) {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.phone_zoom.content.x" [style.top.%]="hotspots.phone_zoom.content.y"
+            [style.width.%]="hotspots.phone_zoom.content.width" [style.height.%]="hotspots.phone_zoom.content.height"
+          (click)="onHotspotClick('phoneContent')"></div>
+        }
+        @if (currentView === 'drawer') {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.drawer_zoom.content.x" [style.top.%]="hotspots.drawer_zoom.content.y"
+            [style.width.%]="hotspots.drawer_zoom.content.width" [style.height.%]="hotspots.drawer_zoom.content.height"
+          (click)="onHotspotClick('drawerContent')"></div>
+        }
+        @if (currentView === 'bag') {
+          <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.bag_zoom.content.x" [style.top.%]="hotspots.bag_zoom.content.y"
+            [style.width.%]="hotspots.bag_zoom.content.width" [style.height.%]="hotspots.bag_zoom.content.height"
+          (click)="onHotspotClick('bagContent')"></div>
+        }
+        <!-- ── Cables zoomed view ── -->
+        @if (currentView === 'cables' && currentState === GameState.FixCables) {
+          <!-- Broken cables (click to remove) -->
+          @if (cableSubState === 'broken') {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.cables_zoom.brokenCables.x" [style.top.%]="hotspots.cables_zoom.brokenCables.y"
+              [style.width.%]="hotspots.cables_zoom.brokenCables.width" [style.height.%]="hotspots.cables_zoom.brokenCables.height"
+            (click)="onHotspotClick('brokenCables')"></div>
+          }
+          <!-- New cables on floor (click to grab & unwrap) -->
+          @if (cableSubState === 'removed') {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="55" [style.top.%]="75"
+              [style.width.%]="25" [style.height.%]="20"
+            (click)="onHotspotClick('newCables')"></div>
+          }
+          <!-- Connect point (click to plug in) -->
+          @if (cableSubState === 'unwrapped') {
+            <div
+              class="hotspot"
+              [class.show-hint-pulse]="showHints"
+              [style.left.%]="hotspots.cables_zoom.brokenCables.x" [style.top.%]="hotspots.cables_zoom.brokenCables.y"
+              [style.width.%]="hotspots.cables_zoom.brokenCables.width" [style.height.%]="hotspots.cables_zoom.brokenCables.height"
+            (click)="onHotspotClick('connectCables')"></div>
+          }
+        }
+        <!-- ── Poster zoomed view ── -->
+        @if (currentView === 'posters') {
           <div class="hotspot"
-               [class.show-hint-pulse]="showHints"
-               [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
-               [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
-               (click)="onHotspotClick('exitDoor')"></div>
-        </ng-container>
-
-      </ng-container>
-
-      <!-- Zoomed view content hotspots -->
-      <ng-container *ngIf="currentView === 'cables' && currentState === GameState.FixCables && cableSubState === 'broken'">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.cables_zoom.content.x" [style.top.%]="hotspots.cables_zoom.content.y"
-             [style.width.%]="hotspots.cables_zoom.content.width" [style.height.%]="hotspots.cables_zoom.content.height"
-             (click)="onHotspotClick('cablesContent')"></div>
-      </ng-container>
-      <ng-container *ngIf="currentView === 'server' && currentState === GameState.ServerBoot">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.server_zoom.content.x" [style.top.%]="hotspots.server_zoom.content.y"
-             [style.width.%]="hotspots.server_zoom.content.width" [style.height.%]="hotspots.server_zoom.content.height"
-             (click)="onHotspotClick('serverContent')"></div>
-      </ng-container>
-      <ng-container *ngIf="currentView === 'monitor' && currentState === GameState.OpenMonitor">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.monitor_zoom.content.x" [style.top.%]="hotspots.monitor_zoom.content.y"
-             [style.width.%]="hotspots.monitor_zoom.content.width" [style.height.%]="hotspots.monitor_zoom.content.height"
-             (click)="onHotspotClick('monitorContent')"></div>
-      </ng-container>
-      <ng-container *ngIf="currentView === 'phone' && currentState === GameState.OpenPhone">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.phone_zoom.content.x" [style.top.%]="hotspots.phone_zoom.content.y"
-             [style.width.%]="hotspots.phone_zoom.content.width" [style.height.%]="hotspots.phone_zoom.content.height"
-             (click)="onHotspotClick('phoneContent')"></div>
-      </ng-container>
-      <ng-container *ngIf="currentView === 'drawer'">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.drawer_zoom.content.x" [style.top.%]="hotspots.drawer_zoom.content.y"
-             [style.width.%]="hotspots.drawer_zoom.content.width" [style.height.%]="hotspots.drawer_zoom.content.height"
-             (click)="onHotspotClick('drawerContent')"></div>
-      </ng-container>
-      <ng-container *ngIf="currentView === 'bag'">
-        <div class="zoom-hotspot" [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.bag_zoom.content.x" [style.top.%]="hotspots.bag_zoom.content.y"
-             [style.width.%]="hotspots.bag_zoom.content.width" [style.height.%]="hotspots.bag_zoom.content.height"
-             (click)="onHotspotClick('bagContent')"></div>
-      </ng-container>
-
-      <!-- ── Cables zoomed view ── -->
-      <ng-container *ngIf="currentView === 'cables' && currentState === GameState.FixCables">
-        <!-- Broken cables (click to remove) -->
-        <div *ngIf="cableSubState === 'broken'"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.cables_zoom.brokenCables.x" [style.top.%]="hotspots.cables_zoom.brokenCables.y"
-             [style.width.%]="hotspots.cables_zoom.brokenCables.width" [style.height.%]="hotspots.cables_zoom.brokenCables.height"
-             (click)="onHotspotClick('brokenCables')"></div>
-
-        <!-- New cables on floor (click to grab & unwrap) -->
-        <div *ngIf="cableSubState === 'removed'"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="55" [style.top.%]="75"
-             [style.width.%]="25" [style.height.%]="20"
-             (click)="onHotspotClick('newCables')"></div>
-
-        <!-- Connect point (click to plug in) -->
-        <div *ngIf="cableSubState === 'unwrapped'"
-             class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.cables_zoom.brokenCables.x" [style.top.%]="hotspots.cables_zoom.brokenCables.y"
-             [style.width.%]="hotspots.cables_zoom.brokenCables.width" [style.height.%]="hotspots.cables_zoom.brokenCables.height"
-             (click)="onHotspotClick('connectCables')"></div>
-      </ng-container>
-
-      <!-- ── Poster zoomed view ── -->
-      <ng-container *ngIf="currentView === 'posters'">
-        <div class="hotspot"
-             [style.left.%]="hotspots.posters_zoom.padlock.x" [style.top.%]="hotspots.posters_zoom.padlock.y"
-             [style.width.%]="hotspots.posters_zoom.padlock.width" [style.height.%]="hotspots.posters_zoom.padlock.height"
-             (click)="onHotspotClick('padlock')"></div>
-        <div class="hotspot"
-             [style.left.%]="hotspots.posters_zoom.cat.x" [style.top.%]="hotspots.posters_zoom.cat.y"
-             [style.width.%]="hotspots.posters_zoom.cat.width" [style.height.%]="hotspots.posters_zoom.cat.height"
-             (click)="onHotspotClick('cat')"></div>
-        <div class="hotspot"
-             [style.left.%]="hotspots.posters_zoom.handshake.x" [style.top.%]="hotspots.posters_zoom.handshake.y"
-             [style.width.%]="hotspots.posters_zoom.handshake.width" [style.height.%]="hotspots.posters_zoom.handshake.height"
-             (click)="onHotspotClick('handshake')"></div>
-      </ng-container>
-
-    </div>
+            [style.left.%]="hotspots.posters_zoom.padlock.x" [style.top.%]="hotspots.posters_zoom.padlock.y"
+            [style.width.%]="hotspots.posters_zoom.padlock.width" [style.height.%]="hotspots.posters_zoom.padlock.height"
+          (click)="onHotspotClick('padlock')"></div>
+          <div class="hotspot"
+            [style.left.%]="hotspots.posters_zoom.cat.x" [style.top.%]="hotspots.posters_zoom.cat.y"
+            [style.width.%]="hotspots.posters_zoom.cat.width" [style.height.%]="hotspots.posters_zoom.cat.height"
+          (click)="onHotspotClick('cat')"></div>
+          <div class="hotspot"
+            [style.left.%]="hotspots.posters_zoom.handshake.x" [style.top.%]="hotspots.posters_zoom.handshake.y"
+            [style.width.%]="hotspots.posters_zoom.handshake.width" [style.height.%]="hotspots.posters_zoom.handshake.height"
+          (click)="onHotspotClick('handshake')"></div>
+        }
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  PUZZLE 1: Password Audit           -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.PasswordAudit && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPasswordAudit.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.passwordAudit.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.passwordAudit.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="progress-label">{{ t('puzzles.passwordAudit.progressLabel') }} {{ passwordIndex + 1 }} / {{ passwordCount }}</div>
-          <div class="password-display">
-            <code class="password-value">{{ currentPasswordValue }}</code>
-          </div>
-          <div class="password-actions">
-            <button mat-raised-button color="primary" (click)="classifyPassword('strong')">
-              <mat-icon>shield</mat-icon> {{ t('puzzles.passwordAudit.buttonStrong') }}
-            </button>
-            <button mat-raised-button color="warn" (click)="classifyPassword('weak')">
-              <mat-icon>warning</mat-icon> {{ t('puzzles.passwordAudit.buttonWeak') }}
-            </button>
-          </div>
-          <div *ngIf="passwordFeedback" class="feedback-message" [class.feedback-correct]="passwordFeedbackCorrect" [class.feedback-wrong]="!passwordFeedbackCorrect">
-            {{ passwordFeedback }}
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.PasswordAudit && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPasswordAudit.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.passwordAudit.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.passwordAudit.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="progress-label">{{ t('puzzles.passwordAudit.progressLabel') }} {{ passwordIndex + 1 }} / {{ passwordCount }}</div>
+            <div class="password-display">
+              <code class="password-value">{{ currentPasswordValue }}</code>
+            </div>
+            <div class="password-actions">
+              <button mat-raised-button color="primary" (click)="classifyPassword('strong')">
+                <mat-icon>shield</mat-icon> {{ t('puzzles.passwordAudit.buttonStrong') }}
+              </button>
+              <button mat-raised-button color="warn" (click)="classifyPassword('weak')">
+                <mat-icon>warning</mat-icon> {{ t('puzzles.passwordAudit.buttonWeak') }}
+              </button>
+            </div>
+            @if (passwordFeedback) {
+              <div class="feedback-message" [class.feedback-correct]="passwordFeedbackCorrect" [class.feedback-wrong]="!passwordFeedbackCorrect">
+                {{ passwordFeedback }}
+              </div>
+            }
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Security Notice (pre-phishing)     -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.ReadSecurityNotice && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" @fadeInOut>
-        <mat-card-title>{{ t('items.itNotice.title') }}</mat-card-title>
-        <mat-card-content class="intro-text">
-          <p>Reminder: Always verify sender addresses and hover over links before clicking. Report suspicious emails to IT immediately.</p>
-          <p [innerHTML]="t('items.itNotice.domainNotice')"></p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="archiveSecurityNotice()">
-            <mat-icon>archive</mat-icon> {{ t('ui.archive') }}
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.ReadSecurityNotice && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" @fadeInOut>
+          <mat-card-title>{{ t('items.itNotice.title') }}</mat-card-title>
+          <mat-card-content class="intro-text">
+            <p>{{ t('items.itNotice.reminder') }}</p>
+            <p [innerHTML]="t('items.itNotice.domainNotice')"></p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="archiveSecurityNotice()">
+              <mat-icon>archive</mat-icon> {{ t('ui.archive') }}
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  PUZZLE 2: Phishing Inbox           -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.PhishingInbox && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card email-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPhishing.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.phishing.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.phishing.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="progress-label">{{ t('puzzles.phishing.progressLabel') }} {{ emailIndex + 1 }} / {{ emailCount }}</div>
-          <div class="email-preview">
-            <div class="email-header">
-              <div class="email-subject"><mat-icon>email</mat-icon> {{ currentEmailSubject }}</div>
-              <div class="email-sender">
-                From: <span class="sender-address" (mouseenter)="showEmailDetails = true" (mouseleave)="showEmailDetails = false">{{ currentEmailSender }}</span>
-                <span *ngIf="showEmailDetails" class="sender-tooltip">{{ currentEmailSenderReal }}</span>
+    @if (currentState === GameState.PhishingInbox && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card email-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPhishing.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.phishing.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.phishing.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="progress-label">{{ t('puzzles.phishing.progressLabel') }} {{ emailIndex + 1 }} / {{ emailCount }}</div>
+            <div class="email-preview">
+              <div class="email-header">
+                <div class="email-subject"><mat-icon>email</mat-icon> {{ currentEmailSubject }}</div>
+                <div class="email-sender">
+                  {{ t('items.itNotice.fromLabel') }} <span class="sender-address" (mouseenter)="showEmailDetails = true" (mouseleave)="showEmailDetails = false">{{ currentEmailSender }}</span>
+                  @if (showEmailDetails) {
+                    <span class="sender-tooltip">{{ currentEmailSenderReal }}</span>
+                  }
+                </div>
+              </div>
+              <div class="email-body">
+                <p>{{ currentEmailPreview }}</p>
+                @if (currentEmailLinkText) {
+                  <div class="email-link">
+                    <a class="fake-link" (mouseenter)="showEmailDetails = true" (mouseleave)="showEmailDetails = false">{{ currentEmailLinkText }}</a>
+                    @if (showEmailDetails && currentEmailLinkReal) {
+                      <span class="link-tooltip">{{ t('puzzles.phishing.hoverLink') }}{{ currentEmailLinkReal }}</span>
+                    }
+                  </div>
+                }
               </div>
             </div>
-            <div class="email-body">
-              <p>{{ currentEmailPreview }}</p>
-              <div *ngIf="currentEmailLinkText" class="email-link">
-                <a class="fake-link" (mouseenter)="showEmailDetails = true" (mouseleave)="showEmailDetails = false">{{ currentEmailLinkText }}</a>
-                <span *ngIf="showEmailDetails && currentEmailLinkReal" class="link-tooltip">{{ t('puzzles.phishing.hoverLink') }}{{ currentEmailLinkReal }}</span>
-              </div>
+            <div class="email-actions">
+              <button mat-raised-button color="warn" (click)="classifyEmail('phishing')">
+                <mat-icon>report</mat-icon> {{ t('puzzles.phishing.buttonPhishing') }}
+              </button>
+              <button mat-raised-button color="primary" (click)="classifyEmail('legitimate')">
+                <mat-icon>check_circle</mat-icon> {{ t('puzzles.phishing.buttonLegitimate') }}
+              </button>
             </div>
-          </div>
-          <div class="email-actions">
-            <button mat-raised-button color="warn" (click)="classifyEmail('phishing')">
-              <mat-icon>report</mat-icon> {{ t('puzzles.phishing.buttonPhishing') }}
-            </button>
-            <button mat-raised-button color="primary" (click)="classifyEmail('legitimate')">
-              <mat-icon>check_circle</mat-icon> {{ t('puzzles.phishing.buttonLegitimate') }}
-            </button>
-          </div>
-          <div *ngIf="emailFeedback" class="feedback-message" [class.feedback-correct]="emailFeedbackCorrect" [class.feedback-wrong]="!emailFeedbackCorrect">
-            {{ emailFeedback }}
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+            @if (emailFeedback) {
+              <div class="feedback-message" [class.feedback-correct]="emailFeedbackCorrect" [class.feedback-wrong]="!emailFeedbackCorrect">
+                {{ emailFeedback }}
+              </div>
+            }
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  PUZZLE 3: Social Media Post        -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.SocialPost && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipSocialPost.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.socialPost.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.socialPost.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="progress-label">{{ t('puzzles.socialPost.stepLabel') }} {{ socialPostStep + 1 }} / 3: {{ socialPostSubStepLabel }}</div>
-          <p class="sub-instruction">{{ socialPostSubStepInstruction }}</p>
-          <div class="options-vertical">
-            <button mat-stroked-button *ngFor="let opt of socialPostOptions; trackBy: trackById"
-                    (click)="submitSocialPostOption(opt)">
-              {{ opt.text }}
-            </button>
-          </div>
-          <div *ngIf="socialPostFeedback" class="feedback-message" [class.feedback-correct]="socialPostFeedbackCorrect" [class.feedback-wrong]="!socialPostFeedbackCorrect">
-            {{ socialPostFeedback }}
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.SocialPost && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipSocialPost.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.socialPost.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.socialPost.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="progress-label">{{ t('puzzles.socialPost.stepLabel') }} {{ socialPostStep + 1 }} / 3: {{ socialPostSubStepLabel }}</div>
+            <p class="sub-instruction">{{ socialPostSubStepInstruction }}</p>
+            <div class="options-vertical">
+              @for (opt of socialPostOptions; track trackById($index, opt)) {
+                <button mat-stroked-button
+                  (click)="submitSocialPostOption(opt)">
+                  {{ opt.text }}
+                </button>
+              }
+            </div>
+            @if (socialPostFeedback) {
+              <div class="feedback-message" [class.feedback-correct]="socialPostFeedbackCorrect" [class.feedback-wrong]="!socialPostFeedbackCorrect">
+                {{ socialPostFeedback }}
+              </div>
+            }
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  PUZZLE 4: Comment Moderation       -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.Comments && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipComments.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.comments.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.comments.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="progress-label">{{ t('puzzles.comments.progressLabel') }} {{ commentIndex + 1 }} / {{ commentCount }}</div>
-          <div class="comment-display">
-            <div class="comment-author">{{ currentCommentAuthor }}</div>
-            <div class="comment-text">{{ currentCommentText }}</div>
-          </div>
-          <div class="comment-actions">
-            <button mat-raised-button color="primary" (click)="moderateComment('reply')">
-              <mat-icon>reply</mat-icon> {{ t('puzzles.comments.buttonReply') }}
-            </button>
-            <button mat-raised-button color="warn" (click)="moderateComment('delete')">
-              <mat-icon>delete</mat-icon> {{ t('puzzles.comments.buttonDelete') }}
-            </button>
-          </div>
-          <div *ngIf="commentFeedback" class="feedback-message" [class.feedback-correct]="commentFeedbackCorrect" [class.feedback-wrong]="!commentFeedbackCorrect">
-            {{ commentFeedback }}
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.Comments && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipComments.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.comments.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.comments.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="progress-label">{{ t('puzzles.comments.progressLabel') }} {{ commentIndex + 1 }} / {{ commentCount }}</div>
+            <div class="comment-display">
+              <div class="comment-author">{{ currentCommentAuthor }}</div>
+              <div class="comment-text">{{ currentCommentText }}</div>
+            </div>
+            <div class="comment-actions">
+              <button mat-raised-button color="primary" (click)="moderateComment('reply')">
+                <mat-icon>reply</mat-icon> {{ t('puzzles.comments.buttonReply') }}
+              </button>
+              <button mat-raised-button color="warn" (click)="moderateComment('delete')">
+                <mat-icon>delete</mat-icon> {{ t('puzzles.comments.buttonDelete') }}
+              </button>
+            </div>
+            @if (commentFeedback) {
+              <div class="feedback-message" [class.feedback-correct]="commentFeedbackCorrect" [class.feedback-wrong]="!commentFeedbackCorrect">
+                {{ commentFeedback }}
+              </div>
+            }
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Mini Puzzle: Sticky Note           -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.StickyNote && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.stickyNote.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.stickyNote.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.stickyNote.question') }}</p>
-          <div class="options-vertical">
-            <button mat-raised-button color="primary" (click)="handleStickyNote('yes')">{{ t('puzzles.stickyNote.options.yes') }}</button>
-            <button mat-raised-button (click)="handleStickyNote('no')">{{ t('puzzles.stickyNote.options.no') }}</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.StickyNote && stickyNoteOpened && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.stickyNote.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.stickyNote.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.stickyNote.question') }}</p>
+            <div class="options-vertical">
+              <button mat-raised-button color="primary" (click)="handleStickyNote('yes')">{{ t('puzzles.stickyNote.options.yes') }}</button>
+              <button mat-raised-button (click)="handleStickyNote('no')">{{ t('puzzles.stickyNote.options.no') }}</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Mini Puzzle: USB                   -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.MiniUSB && !activeDialogue && !isMalwareInfected && currentView === 'drawer'" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.usb.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.usb.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.usb.question') }}</p>
-          <div class="options-vertical">
-            <button mat-raised-button color="warn" (click)="handleUSB('plugin')">{{ t('puzzles.usb.options.plugin') }}</button>
-            <button mat-raised-button color="primary" (click)="handleUSB('leave')">{{ t('puzzles.usb.options.leave') }}</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.MiniUSB && !activeDialogue && !isMalwareInfected && currentView === 'drawer') {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.usb.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.usb.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.usb.question') }}</p>
+            <div class="options-vertical">
+              <button mat-raised-button color="warn" (click)="handleUSB('plugin')">{{ t('puzzles.usb.options.plugin') }}</button>
+              <button mat-raised-button color="primary" (click)="handleUSB('leave')">{{ t('puzzles.usb.options.leave') }}</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Mini Puzzle: Ad Popup              -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.MiniAd && !activeDialogue && !isMalwareInfected" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.ad.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.ad.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.ad.question') }}</p>
-          <div class="options-vertical">
-            <button mat-raised-button color="warn" (click)="handleAd('click')">{{ t('puzzles.ad.options.click') }}</button>
-            <button mat-raised-button color="primary" (click)="handleAd('close')">{{ t('puzzles.ad.options.close') }}</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.MiniAd && !activeDialogue && !isMalwareInfected) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.ad.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.ad.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.ad.question') }}</p>
+            <div class="options-vertical">
+              <button mat-raised-button color="warn" (click)="handleAd('click')">{{ t('puzzles.ad.options.click') }}</button>
+              <button mat-raised-button color="primary" (click)="handleAd('close')">{{ t('puzzles.ad.options.close') }}</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Mini Puzzle: System Update         -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.MiniUpdate && !activeDialogue && !isMalwareInfected" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.systemUpdate.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.systemUpdate.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.systemUpdate.question') }}</p>
-          <div class="options-vertical">
-            <button mat-raised-button color="primary" (click)="handleSystemUpdate('install')">{{ t('puzzles.systemUpdate.options.install') }}</button>
-            <button mat-raised-button color="warn" (click)="handleSystemUpdate('postpone')">{{ t('puzzles.systemUpdate.options.postpone') }}</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.MiniUpdate && !activeDialogue && !isMalwareInfected) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.systemUpdate.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.systemUpdate.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.systemUpdate.question') }}</p>
+            <div class="options-vertical">
+              <button mat-raised-button color="primary" (click)="handleSystemUpdate('install')">{{ t('puzzles.systemUpdate.options.install') }}</button>
+              <button mat-raised-button color="warn" (click)="handleSystemUpdate('postpone')">{{ t('puzzles.systemUpdate.options.postpone') }}</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Mini Puzzle: WiFi                  -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="currentState === GameState.MiniWifi && !activeDialogue && !isMalwareInfected" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.wifi.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.wifi.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.wifi.question') }}</p>
-          <div class="options-vertical">
-            <button mat-raised-button color="warn" (click)="handleWifi('free')">{{ t('puzzles.wifi.options.free') }}</button>
-            <button mat-raised-button color="primary" (click)="handleWifi('company')">{{ t('puzzles.wifi.options.company') }}</button>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.MiniWifi && !activeDialogue && !isMalwareInfected) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.wifi.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.wifi.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.wifi.question') }}</p>
+            <div class="options-vertical">
+              <button mat-raised-button color="warn" (click)="handleWifi('free')">{{ t('puzzles.wifi.options.free') }}</button>
+              <button mat-raised-button color="primary" (click)="handleWifi('company')">{{ t('puzzles.wifi.options.company') }}</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Malware Infection Overlay          -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="isMalwareInfected && !activeDialogue" class="overlay center malware-overlay">
-      <mat-card class="quiz-card malware-card" @fadeInOut>
-        <mat-card-title><mat-icon class="malware-icon">bug_report</mat-icon> System Infected!</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('items.itNotice.malwareWarning') }}</p>
-          <p>{{ t('ui.itRecovery') }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="warn" (click)="callITForHelp()">
-            <mat-icon>phone</mat-icon> {{ t('ui.callIT') }}
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (isMalwareInfected && !activeDialogue) {
+      <div class="overlay center malware-overlay">
+        <mat-card class="quiz-card malware-card" @fadeInOut>
+          <mat-card-title><mat-icon class="malware-icon">bug_report</mat-icon> {{ t('items.itNotice.malwareTitle') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('items.itNotice.malwareWarning') }}</p>
+            <p>{{ t('ui.itRecovery') }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="callITForHelp()">
+              <mat-icon>phone</mat-icon> {{ t('ui.callIT') }}
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Game Complete Overlay              -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('completion.message') }}</p>
-          <div *ngIf="puzzleScores.length > 0" class="score-summary">
-            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
-            <p class="score-feedback">{{ scoreMessage }}</p>
-          </div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
-          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (isGameCompleteOverlayVisible) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('completion.message') }}</p>
+            @if (puzzleScores.length > 0) {
+              <div class="score-summary">
+                <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+                <p class="score-feedback">{{ scoreMessage }}</p>
+              </div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            @if (isLearningMode) {
+              <button mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+            }
+            @if (!isLearningMode) {
+              <button mat-raised-button color="primary" routerLink="/learning">{{ t('completion.buttonText') }}</button>
+            }
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Answer Reveal Overlay              -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="showAnswerOverlay" class="overlay center">
-      <mat-card class="quiz-card wide-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
-        <mat-card-content>
-          <p class="answer-text">{{ answerOverlayText }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showAnswerOverlay) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+          <mat-card-content>
+            <p class="answer-text">{{ answerOverlayText }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Dialogue Panel                     -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
-      <div class="dialogue-content">
-        <div class="dialogue-text">{{ displayedDialogueText }}</div>
+    @if (activeDialogue) {
+      <div class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+        <div class="dialogue-content">
+          <div class="dialogue-text">{{ displayedDialogueText }}</div>
+        </div>
+        @if (!isTyping) {
+          <div class="dialogue-actions">
+            <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+          </div>
+        }
       </div>
-      <div class="dialogue-actions" *ngIf="!isTyping">
-        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
-      </div>
-    </div>
+    }
 
     <!-- ═══════════════════════════════════ -->
     <!--  Skip Puzzle Confirm                -->
     <!-- ═══════════════════════════════════ -->
-    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
-      <mat-card class="skip-confirm-card" @fadeInOut>
-        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('skipConfirm.question') }}</p>
-          <p class="warning">{{ t('skipConfirm.warning') }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
-          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showSkipConfirm) {
+      <div class="skip-confirm-overlay">
+        <mat-card class="skip-confirm-card" @fadeInOut>
+          <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('skipConfirm.question') }}</p>
+            <p class="warning">{{ t('skipConfirm.warning') }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+            <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
   </div>
 </div>

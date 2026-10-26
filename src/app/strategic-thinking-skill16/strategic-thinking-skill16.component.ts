@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { MatCardModule } from '@angular/material/card';
@@ -16,6 +16,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 interface MatchingRow { id: '1' | '2' | '3' | '4'; text: string; }
 
 enum GameState {
@@ -81,22 +82,22 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule,
-    MatCardModule,
-    MatButtonModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatDialogModule,
-  ],
-  selector: 'app-strategic-thinking-skill16',
-  templateUrl: './strategic-thinking-skill16.component.html',
-  styleUrl: './strategic-thinking-skill16.component.scss',
-  animations: [fadeInOut],
+    imports: [RoomHelpButtonComponent,
+        CommonModule,
+        FormsModule,
+        RouterModule,
+        MatCardModule,
+        MatButtonModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatDialogModule,
+    ],
+    selector: 'app-strategic-thinking-skill16',
+    templateUrl: './strategic-thinking-skill16.component.html',
+    styleUrl: './strategic-thinking-skill16.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class StrategicThinkingSkill16Component extends EscapeRoomBaseComponent {
   public GameState = GameState;

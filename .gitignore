@@ -91,6 +91,7 @@ image-audit/
 
 # Working screenshots and scratch captures
 /e2e-screenshots/
+/e2e-feedback-31-08-2026-shots/
 /*.png
 /*.jpg
 /*.jpeg

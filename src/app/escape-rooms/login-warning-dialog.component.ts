@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
 import { MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -7,26 +7,25 @@ import { Router, RouterModule } from '@angular/router';
 import { TranslatePipe } from '../translate/translate.pipe';
 
 @Component({
-  standalone: true,
-  selector: 'app-login-warning-dialog',
-  imports: [CommonModule, MatDialogModule, MatButtonModule, MatIconModule, RouterModule, TranslatePipe],
-  template: `
+    selector: 'app-login-warning-dialog',
+    imports: [MatDialogModule, MatButtonModule, MatIconModule, RouterModule, TranslatePipe],
+    template: `
     <div class="warning-dialog">
       <h2 mat-dialog-title>
-        <mat-icon class="warn-icon" color="warn">warning</mat-icon>
-        {{ "AUTH.NOT_LOGGED_IN_TITLE" | translate }}
+        <mat-icon class="guest-icon">info</mat-icon>
+        {{ "AUTH.GUEST_TITLE" | translate }}
       </h2>
       <mat-dialog-content>
-        <p>{{ "AUTH.NOT_LOGGED_IN_BODY" | translate }}</p>
+        <p>{{ "AUTH.GUEST_BODY" | translate }}</p>
         <ul>
-          <li>{{ "AUTH.NOT_LOGGED_IN_BULLET_PROGRESS" | translate }}</li>
-          <li>{{ "AUTH.NOT_LOGGED_IN_BULLET_SCORES" | translate }}</li>
+          <li>{{ "AUTH.GUEST_SAVED_HERE" | translate }}</li>
+          <li>{{ "AUTH.GUEST_SIGN_IN_BENEFIT" | translate }}</li>
         </ul>
       </mat-dialog-content>
       <mat-dialog-actions align="end">
         <button mat-stroked-button (click)="continueAnyway()">
           <mat-icon>play_arrow</mat-icon>
-          {{ "AUTH.CONTINUE_ANYWAY" | translate }}
+          {{ "AUTH.CONTINUE_AS_GUEST" | translate }}
         </button>
         <a mat-stroked-button color="primary" routerLink="/register" (click)="dismiss()">
           <mat-icon>person_add</mat-icon>
@@ -39,10 +38,13 @@ import { TranslatePipe } from '../translate/translate.pipe';
       </mat-dialog-actions>
     </div>
   `,
-  styles: [`
-    .warning-dialog { min-width: 320px; max-width: 520px; }
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styles: [`
+    /* No min-width: the dialog is opened at 520px capped to 95vw, and a 320px
+       floor overflowed that cap on 320px phones. */
+    .warning-dialog { max-width: 520px; }
     h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.5rem; }
-    .warn-icon { color: #ef6c00; }
+    .guest-icon { color: var(--sys-primary); flex-shrink: 0; }
     ul { margin: 0.5rem 0; padding-left: 1.4rem; color: rgba(0,0,0,0.75); }
     li { margin-bottom: 0.3rem; line-height: 1.4; }
     mat-dialog-actions { gap: 0.5rem; flex-wrap: wrap; }

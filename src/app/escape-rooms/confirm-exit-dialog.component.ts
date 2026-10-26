@@ -1,20 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { TranslatePipe } from '../translate/translate.pipe';
 
 @Component({
-  selector: 'app-confirm-exit-dialog',
-  standalone: true,
-  imports: [MatDialogModule, MatButtonModule],
-  template: `
-    <h2 mat-dialog-title>Leave Escape Room?</h2>
+    selector: 'app-confirm-exit-dialog',
+    imports: [MatDialogModule, MatButtonModule, TranslatePipe],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    template: `
+    <h2 mat-dialog-title>{{ 'ESCAPE_ROOM.EXIT_TITLE' | translate }}</h2>
     <mat-dialog-content>
-      <p>Are you sure you want to leave? Your progress will be lost.</p>
+      <p>{{ 'ESCAPE_ROOM.EXIT_BODY' | translate }}</p>
     </mat-dialog-content>
     <mat-dialog-actions align="end">
-      <button mat-button [mat-dialog-close]="false">Cancel</button>
-      <button mat-raised-button color="warn" [mat-dialog-close]="true">Leave</button>
+      <button mat-button [mat-dialog-close]="false">{{ 'ESCAPE_ROOM.EXIT_CANCEL' | translate }}</button>
+      <button mat-raised-button color="warn" [mat-dialog-close]="true">{{ 'ESCAPE_ROOM.EXIT_CONFIRM' | translate }}</button>
     </mat-dialog-actions>
-  `,
+  `
 })
 export class ConfirmExitDialogComponent {}

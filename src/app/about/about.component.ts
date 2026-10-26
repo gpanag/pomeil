@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ApiService } from '../api.service';
 import { TranslateService } from '../translate/translate.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class AboutComponent {
   about: any;

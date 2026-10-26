@@ -181,18 +181,21 @@
   "completion": {
     "title": "Õnnitlused!",
     "message": "Sinu meeskonnatöö oskused säravad. Õnnitlused saavutuse puhul. Oled nüüd valmis olema tugeva meeskonna osa, mõistes, kuidas meeskonnatöö protsess tegelikult toimib. Kuid uurida on veel palju oskusi — niisiis tunne end vabalt jätkata ja avastada, mis edasi tuleb.",
-    "buttonText": "Välju Coworking-ruumist"
+    "buttonText": "Välju Coworking-ruumist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

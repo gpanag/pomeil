@@ -176,18 +176,21 @@
   "completion": {
     "title": "Η εκπαίδευση ολοκληρώθηκε!",
     "message": "Συγχαρητήρια! Ολοκλήρωσες το άρθρωμα Στρατηγικής Σκέψης.",
-    "buttonText": "Πίσω στο κεντρικό μενού"
+    "buttonText": "Πίσω στο κεντρικό μενού",
+    "revealedNote": "Σε αυτό χρειάστηκε να εμφανιστεί η απάντηση, οπότε αξίζει να ξαναδείτε αυτό το μέρος στην ενότητα."
   },
   "ui": {
     "fullscreenTitle": "Εναλλαγή πλήρους οθόνης",
-    "backToEscapeRoomsTitle": "Πίσω στα δωμάτια απόδρασης",
+    "backToLearningTitle": "Επιστροφή στη μάθηση",
     "startQuizButton": "Έναρξη κουίζ",
     "continueButton": "Συνέχεια",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Εναλλαγή πλήρους οθόνης",
-    "backToEscapeRooms": "Πίσω στα δωμάτια απόδρασης",
+    "backToLearning": "Επιστροφή στη μάθηση",
     "skipButton": "Παράλειψη",
-    "answerButton": "Απάντηση"
+    "answerButton": "Απάντηση",
+    "backToRoom": "Επιστροφή στο δωμάτιο",
+    "clickToExamine": "Κάντε κλικ για εξέταση"
   },
   "learning": {
     "modeLabel": "Λειτουργία Μάθησης",

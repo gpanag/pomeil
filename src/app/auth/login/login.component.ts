@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+    selector: 'app-login',
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class LoginComponent {
   identifier = '';
@@ -30,7 +32,10 @@ export class LoginComponent {
     this.error = '';
     this.auth.login(this.identifier, this.password).subscribe({
       next: () => {
-        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+        // Default to the learning area: logging in exists to sync learning
+        // progress, and partners reported not finding the games after login
+        // when dropped on the marketing homepage (feedback 2026-08-31).
+        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/learning';
         this.router.navigateByUrl(returnUrl);
       },
       error: (err) => {

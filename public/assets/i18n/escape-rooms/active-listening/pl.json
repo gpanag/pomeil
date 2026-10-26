@@ -190,17 +190,20 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Udało ci się pomyślnie ukończyć szkolenie z aktywnego słuchania przygotowane dla ciebie przez Zainabu i Mateo. Pokazałeś nie tylko zdolność szybkiego uczenia się, ale także prawidłowego stosowania zdobytej wiedzy. Pomyślnie opanowałeś umiejętność Aktywnego słuchania!",
-    "buttonText": "Wyjdź z dachu"
+    "buttonText": "Wyjdź z dachu",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "selectTwo": "Wybierz 2 odpowiedzi",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

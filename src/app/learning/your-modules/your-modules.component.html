@@ -2,44 +2,48 @@
   <h1>{{ "LEARNING_PAGE.YOUR_MODULES.TITLE" | translate }}</h1>
   <p class="subtitle">{{ "LEARNING_PAGE.YOUR_MODULES.SUBTITLE" | translate }}</p>
 
-  <ng-container *ngIf="yourModules.length > 0; else empty">
+  @if (yourModules.length > 0) {
     <div class="modules-grid">
-      <mat-card *ngFor="let mod of yourModules" class="module-card" [class.unplayed]="!mod.played">
-        <img mat-card-image [src]="mod.image" [alt]="mod.title">
-        <mat-card-header>
-          <mat-card-title>{{ mod.title }}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p class="desc">{{ mod.description }}</p>
-          <div class="score-row" *ngIf="mod.played">
-            <mat-icon>emoji_events</mat-icon>
-            <span class="score-label">{{ "LEARNING_PAGE.YOUR_MODULES.SCORE" | translate }}:</span>
-            <strong [class]="scoreClass(mod.score)">{{ mod.score }}%</strong>
-          </div>
-          <div class="score-row" *ngIf="!mod.played">
-            <mat-icon>schedule</mat-icon>
-            <span class="not-played">{{ "LEARNING_PAGE.YOUR_MODULES.NOT_PLAYED" | translate }}</span>
-          </div>
-        </mat-card-content>
-        <mat-card-actions class="actions-row">
-          <a mat-raised-button color="primary" [routerLink]="['/flipbook', mod.id]">
-            <mat-icon>auto_stories</mat-icon>
-            {{ "LEARNING_PAGE.MODULES.READ_FLIPBOOK" | translate }}
-          </a>
-          <a mat-stroked-button [href]="pdfUrlFor(mod)" target="_blank" download>
-            <mat-icon>download</mat-icon>
-            {{ "LEARNING_PAGE.YOUR_MODULES.DOWNLOAD_PDF" | translate }}
-          </a>
-          <a mat-stroked-button [routerLink]="'/escape-rooms/' + mod.id" [queryParams]="{ mode: 'learning' }">
-            <mat-icon>{{ mod.played ? 'replay' : 'play_arrow' }}</mat-icon>
-            {{ (mod.played ? "LEARNING_PAGE.YOUR_MODULES.REPLAY" : "LEARNING_PAGE.YOUR_MODULES.PLAY") | translate }}
-          </a>
-        </mat-card-actions>
-      </mat-card>
+      @for (mod of yourModules; track mod) {
+        <mat-card class="module-card" [class.unplayed]="!mod.played">
+          <img mat-card-image [src]="mod.image" [alt]="skillTitle(mod)">
+          <mat-card-header>
+            <mat-card-title>{{ skillTitle(mod) }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="desc">{{ skillDescription(mod) }}</p>
+            @if (mod.played) {
+              <div class="score-row">
+                <mat-icon>emoji_events</mat-icon>
+                <span class="score-label">{{ "LEARNING_PAGE.YOUR_MODULES.SCORE" | translate }}:</span>
+                <strong [class]="scoreClass(mod.score)">{{ mod.score }}%</strong>
+              </div>
+            }
+            @if (!mod.played) {
+              <div class="score-row">
+                <mat-icon>schedule</mat-icon>
+                <span class="not-played">{{ "LEARNING_PAGE.YOUR_MODULES.NOT_PLAYED" | translate }}</span>
+              </div>
+            }
+          </mat-card-content>
+          <mat-card-actions class="actions-row">
+            <a mat-raised-button color="primary" [routerLink]="['/flipbook', mod.id]">
+              <mat-icon>auto_stories</mat-icon>
+              {{ "LEARNING_PAGE.MODULES.READ_FLIPBOOK" | translate }}
+            </a>
+            <a mat-stroked-button [href]="pdfUrlFor(mod)" target="_blank" download>
+              <mat-icon>download</mat-icon>
+              {{ "LEARNING_PAGE.YOUR_MODULES.DOWNLOAD_PDF" | translate }}
+            </a>
+            <a mat-stroked-button [routerLink]="'/escape-rooms/' + mod.id" [queryParams]="{ mode: 'learning' }">
+              <mat-icon>{{ mod.played ? 'replay' : 'play_arrow' }}</mat-icon>
+              {{ (mod.played ? "LEARNING_PAGE.YOUR_MODULES.REPLAY" : "LEARNING_PAGE.YOUR_MODULES.PLAY") | translate }}
+            </a>
+          </mat-card-actions>
+        </mat-card>
+      }
     </div>
-  </ng-container>
-
-  <ng-template #empty>
+  } @else {
     <div class="empty-state">
       <mat-icon class="empty-icon">menu_book</mat-icon>
       <h3>{{ "LEARNING_PAGE.YOUR_MODULES.EMPTY_TITLE" | translate }}</h3>
@@ -49,7 +53,8 @@
         {{ "LEARNING_PAGE.YOUR_MODULES.EMPTY_ACTION" | translate }}
       </a>
     </div>
-  </ng-template>
+  }
+
 
   <div class="back-link">
     <a mat-stroked-button routerLink="/learning">

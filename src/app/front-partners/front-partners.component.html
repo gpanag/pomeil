@@ -1,36 +1,38 @@
 <div class="page-parent mat-app-background">
-    <div class="list">
-        <div class="title">
-            <h5 class="title">{{"NAVIGATION.PARTNERSHIP" | translate}}</h5>
-        </div>
+  <div class="list">
+    <div class="title">
+      <h5 class="title">{{"NAVIGATION.PARTNERSHIP" | translate}}</h5>
+    </div>
 
-        <div class="front-partners-parent">
-            <div class="list-content">
-                <div class="grid-list" *ngIf="partners.length > 0  && listGrid === false" fxLayout="row wrap"
-                    fxLayoutGap="16px grid" fxFlex="auto" [@listAnimation]="suffleCards">
-
-                    <div fxFlex *ngFor="let partner of partners" class="front-partner-card">
-                        <div>
-                            <div>
-                                <div class="front-patern-image"
+    <div class="front-partners-parent">
+      <div class="list-content">
+        <!-- Card grid: these static styles are what @angular/flex-layout used to write inline
+        (row wrap, 16px grid gap, flexible cards); the library was removed 2026-10-26. -->
+        @if (partners.length > 0  && listGrid === false) {
+          <div class="grid-list"
+            style="flex-flow: row wrap; box-sizing: border-box; display: flex; flex: 1 1 auto; margin: 0 -16px -16px 0;" [@listAnimation]="suffleCards">
+            @for (partner of partners; track partner) {
+              <div style="flex: 1 1 0%; box-sizing: border-box; padding: 0 16px 16px 0;" class="front-partner-card">
+                <div>
+                  <div>
+                    <div class="front-patern-image"
                                     [style.background-image]=" partner?.logo ? 'url(' + partner?.logo.url +')' :
                                 ( darkTheme ? 'url(assets/logos/no_image.jpg)' : 'url(assets/logos/no_image.jpg)')"
-                                    (click)="openPartner(partner.documentId)"></div>
-                                <div class="front-partner-title is-link"
-                                    (click)="openPartner(partner.documentId)">
-                                    <span>
-                                        {{partner?.name}}
-                                    </span>
-                                </div>
-
-                             
-                            </div>
-                        
-                        </div>
+                    (click)="openPartner(partner.documentId)"></div>
+                    <div class="front-partner-title is-link"
+                      (click)="openPartner(partner.documentId)">
+                      <span>
+                        {{partner?.name}}
+                      </span>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
+              </div>
+            }
+          </div>
+        }
+      </div>
     </div>
+
+  </div>
 </div>

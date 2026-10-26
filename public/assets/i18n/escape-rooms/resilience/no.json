@@ -225,18 +225,21 @@
   "completion": {
     "title": "Robusthet fullført!",
     "message": "Gratulerer! Du har vist robusthet ved å holde deg rolig, tilpasse deg og hente deg inn under en stressende arbeidssituasjon. Husk: robusthet handler ikke om aldri å falle — det handler om å reise seg igjen, ett skritt om gangen.",
-    "buttonText": "Tilbake til fluktrom"
+    "buttonText": "Tilbake til fluktrom",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "gapPlaceholder": "______",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

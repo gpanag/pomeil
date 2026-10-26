@@ -170,18 +170,21 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Õnnitleme! Sa oled vabastanud iseseisvuse jõu. See oskus on hädavajalik mitte ainult äris, vaid ka igapäevaelus. Proovi õnne järgmiste moodulitega. Aitäh osalemast. Saad alati tagasi tulla, kui soovid teadmisi värskendada — me oleme siin, et sinu õppimist toetada.!",
-    "buttonText": "Lahku katuselt"
+    "buttonText": "Lahku katuselt",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

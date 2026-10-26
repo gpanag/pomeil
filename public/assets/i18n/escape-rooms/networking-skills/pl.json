@@ -206,11 +206,12 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Pomyślnie ukończyłeś escape room Umiejętności networkingu! Nauczyłeś się i przećwiczyłeś cztery kluczowe umiejętności networkingu: Inicjowanie (rozpoczynanie rozmów), Budowanie (pogłębianie relacji), Utrzymywanie (pozostawanie w kontakcie) oraz Wykorzystywanie (mądre korzystanie z sieci). Te umiejętności posłużą Ci dobrze w Twojej zawodowej drodze!",
-    "buttonText": "Wyjdź z pokoju"
+    "buttonText": "Wyjdź z pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "sendButton": "Wyślij",
     "nextContact": "Następny kontakt",
@@ -218,7 +219,9 @@
     "optionB": "B",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

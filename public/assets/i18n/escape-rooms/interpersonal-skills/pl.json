@@ -125,7 +125,7 @@
   },
   "systemDialogues": {
     "selfTalk": "Wchodzisz do strefy recepcji firmy. To nowoczesna przestrzeń z wygodnymi siedzeniami, stolikiem kawowym z czasopismami i regałem wzdłuż ściany. Zauważasz Carlosa, lidera zespołu, stojącego przy tablicy korkowej za biurkiem recepcji, witającego ludzi i obserwującego interakcje.",
-    "clickVendingMachine": "Just snacks for visitors here. The magazine Carlos mentioned is probably on the coffee table.",
+    "clickVendingMachine": "Tu są tylko przekąski dla gości. Czasopismo, o którym wspominał Carlos, jest pewnie na stoliku kawowym.",
     "foundMagazine": "Znalazłeś/aś! To biznesowe czasopismo otwarte na konkretnej stronie.",
     "magazineRead": "Świetne znalezisko! Wróć do Carlosa.",
     "clickBookshelfWrong": "Głównie broszury, książki i stare czasopisma dla gości. Spójrz bliżej tam, gdzie ludzie siedzą i czekają.",
@@ -157,18 +157,21 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Gratulacje, ukończyłeś/aś wszystko i podniosłeś/aś poziom swoich Umiejętności Interpersonalnych. Przejdźmy do następnej umiejętności.",
-    "buttonText": "Wyjdź z strefy Recepcji"
+    "buttonText": "Wyjdź z strefy Recepcji",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -350,6 +350,7 @@
     "comments": "Reply to genuine customer interactions and delete spam.",
     "stickyNote": "There's a sticky note with a password on the server. That's a security risk!",
     "miniPuzzles": "Stay alert for security threats - USB devices, popups, updates, and WiFi networks.",
+    "miniUsb": "Check the desk drawer.",
     "allComplete": "Everything is done! The training has been completed!",
     "completion": "The training has been completed!",
     "default": "Look around the IT department for things that need attention."
@@ -397,17 +398,21 @@
       "title": "IT Security Notice",
       "domainLine": "Our company domain is",
       "malwareWarning": "Malware has been detected on this system. Your files and data may be at risk.",
-      "domainNotice": "Our company domain is <strong>&#64;yourcompany.com</strong>. Any other domain claiming to be from our company is potentially fraudulent."
+      "domainNotice": "Our company domain is <strong>&#64;yourcompany.com</strong>. Any other domain claiming to be from our company is potentially fraudulent.",
+      "reminder": "Reminder: Always verify sender addresses and hover over links before clicking. Report suspicious emails to IT immediately.",
+      "malwareTitle": "System Infected!",
+      "fromLabel": "From:"
     }
   },
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully completed all digital skills tasks! You fixed the server, audited passwords, identified phishing emails, managed social media professionally, and handled multiple cyber threats. You are now better equipped to navigate the digital workplace safely and effectively!",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "callIT": "Call IT for Help",
@@ -415,7 +420,9 @@
     "archive": "Archive",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

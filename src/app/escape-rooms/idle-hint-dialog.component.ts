@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
 import { MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,10 +12,9 @@ import { TranslatePipe } from '../translate/translate.pipe';
  * it lives in the shared base. Dismissed with a single "Got it".
  */
 @Component({
-  standalone: true,
-  selector: 'app-idle-hint-dialog',
-  imports: [CommonModule, MatDialogModule, MatButtonModule, MatIconModule, TranslatePipe],
-  template: `
+    selector: 'app-idle-hint-dialog',
+    imports: [MatDialogModule, MatButtonModule, MatIconModule, TranslatePipe],
+    template: `
     <div class="idle-hint-dialog">
       <h2 mat-dialog-title>
         <mat-icon class="hint-icon">lightbulb</mat-icon>
@@ -32,7 +31,8 @@ import { TranslatePipe } from '../translate/translate.pipe';
       </mat-dialog-actions>
     </div>
   `,
-  styles: [`
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styles: [`
     .idle-hint-dialog { min-width: 300px; max-width: 460px; }
     h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.5rem; }
     .hint-icon { color: #f6b40a; }

@@ -2,215 +2,288 @@
 
   <!-- Top bar -->
   <div class="flipbook-topbar">
-    <button mat-icon-button (click)="exit()" aria-label="Close flipbook" matTooltip="Close (Esc)">
+    <button mat-icon-button (click)="exit()" [attr.aria-label]="'FLIPBOOK.CLOSE' | translate" [matTooltip]="'FLIPBOOK.CLOSE' | translate">
       <mat-icon>close</mat-icon>
     </button>
-    <div class="flipbook-meta" *ngIf="flipbook">
-      <span class="meta-module" *ngIf="flipbook.moduleNumber">Module {{ flipbook.moduleNumber }}</span>
-      <span class="meta-title">{{ flipbook.title }}</span>
-      <span *ngIf="flipbook.draft" class="draft-pill" matTooltip="This curriculum is a draft pending partner review">DRAFT</span>
-    </div>
-    <div class="flipbook-counter" *ngIf="flipbook">
-      <ng-container *ngIf="!isMobile && currentSpread">
-        <ng-container *ngIf="currentSpread.leftPageNumber && currentSpread.rightPageNumber">
-          {{ currentSpread.leftPageNumber }}–{{ currentSpread.rightPageNumber }} / {{ totalPages }}
-        </ng-container>
-        <ng-container *ngIf="!currentSpread.leftPageNumber && currentSpread.rightPageNumber">
-          {{ currentSpread.rightPageNumber }} / {{ totalPages }}
-        </ng-container>
-        <ng-container *ngIf="currentSpread.leftPageNumber && !currentSpread.rightPageNumber">
-          {{ currentSpread.leftPageNumber }} / {{ totalPages }}
-        </ng-container>
-      </ng-container>
-      <ng-container *ngIf="isMobile">
-        {{ pageIndex + 1 }} / {{ totalPages }}
-      </ng-container>
-    </div>
+    @if (flipbook) {
+      <div class="flipbook-meta">
+        @if (flipbook.moduleNumber) {
+          <span class="meta-module">{{ 'FLIPBOOK.MODULE' | translate }} {{ flipbook.moduleNumber }}</span>
+        }
+        <span class="meta-title">{{ flipbook.title }}</span>
+        @if (flipbook.draft) {
+          <span class="draft-pill" [matTooltip]="'FLIPBOOK.DRAFT_HINT' | translate">{{ 'FLIPBOOK.DRAFT' | translate }}</span>
+        }
+      </div>
+    }
+    @if (flipbook) {
+      <div class="flipbook-counter">
+        @if (!isMobile && currentSpread) {
+          @if (currentSpread.leftPageNumber && currentSpread.rightPageNumber) {
+            {{ currentSpread.leftPageNumber }}–{{ currentSpread.rightPageNumber }} / {{ totalPages }}
+          }
+          @if (!currentSpread.leftPageNumber && currentSpread.rightPageNumber) {
+            {{ currentSpread.rightPageNumber }} / {{ totalPages }}
+          }
+          @if (currentSpread.leftPageNumber && !currentSpread.rightPageNumber) {
+            {{ currentSpread.leftPageNumber }} / {{ totalPages }}
+          }
+        }
+        @if (isMobile) {
+          {{ pageIndex + 1 }} / {{ totalPages }}
+        }
+      </div>
+    }
   </div>
 
   <!-- Loading / error -->
-  <div *ngIf="loading" class="flipbook-status">
-    <mat-spinner diameter="40"></mat-spinner>
-  </div>
-  <div *ngIf="!loading && error" class="flipbook-status">
-    <mat-icon>info</mat-icon>
-    <p>{{ error }}</p>
-    <button mat-stroked-button (click)="exit()">Back to learning</button>
-  </div>
+  @if (loading) {
+    <div class="flipbook-status">
+      <mat-spinner diameter="40"></mat-spinner>
+    </div>
+  }
+  @if (!loading && error) {
+    <div class="flipbook-status">
+      <mat-icon>info</mat-icon>
+      <p>{{ error }}</p>
+      <button mat-stroked-button (click)="exit()">{{ 'FLIPBOOK.BACK_TO_LEARNING' | translate }}</button>
+    </div>
+  }
 
   <!-- Book stage -->
-  <div *ngIf="flipbook && !error" class="flipbook-stage" [class.is-mobile]="isMobile">
-
-    <button mat-fab class="nav-arrow nav-prev" (click)="prev()" [disabled]="atStart" aria-label="Previous page">
-      <mat-icon>chevron_left</mat-icon>
-    </button>
-
-    <button mat-fab class="nav-arrow nav-next" (click)="next()" [disabled]="atEnd" aria-label="Next page">
-      <mat-icon>chevron_right</mat-icon>
-    </button>
-
-    <!-- Desktop: two-page spread -->
-    <div *ngIf="!isMobile" class="book-frame">
-      <div class="book"
-           *ngFor="let k of [animKey]; trackBy: trackByValue"
-           [class.dir-forward]="direction === 'forward'"
-           [class.dir-back]="direction === 'back'">
-        <ng-container *ngIf="currentSpread as spread">
-          <div class="page page-left" [class.blank]="!spread.left">
-            <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: spread.left, side: 'left', pageIdx: pageIndexFor(spread, 'left'), pageNumber: spread.leftPageNumber }"></ng-container>
-          </div>
-          <div class="spine"></div>
-          <div class="page page-right" [class.blank]="!spread.right">
-            <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: spread.right, side: 'right', pageIdx: pageIndexFor(spread, 'right'), pageNumber: spread.rightPageNumber }"></ng-container>
-          </div>
-        </ng-container>
-      </div>
-    </div>
-
-    <!-- Mobile: single page -->
-    <div *ngIf="isMobile" class="book-frame mobile">
-      <div class="book"
-           *ngFor="let k of [animKey]; trackBy: trackByValue"
-           [class.dir-forward]="direction === 'forward'"
-           [class.dir-back]="direction === 'back'">
-        <div class="page page-single">
-          <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: currentPage, side: 'right', pageIdx: pageIndex, pageNumber: pageIndex + 1 }"></ng-container>
+  @if (flipbook && !error) {
+    <div class="flipbook-stage" [class.is-mobile]="isMobile">
+      <button mat-fab class="nav-arrow nav-prev" (click)="prev()" [disabled]="atStart" [attr.aria-label]="'FLIPBOOK.PREVIOUS_PAGE' | translate" [matTooltip]="'FLIPBOOK.PREVIOUS_PAGE' | translate">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <button mat-fab class="nav-arrow nav-next" (click)="next()" [disabled]="atEnd" [attr.aria-label]="'FLIPBOOK.NEXT_PAGE' | translate" [matTooltip]="'FLIPBOOK.NEXT_PAGE' | translate">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+      <!-- Desktop: two-page spread -->
+      @if (!isMobile) {
+        <div class="book-frame">
+          @for (k of [animKey]; track trackByValue($index, k)) {
+            <div class="book"
+              [class.dir-forward]="direction === 'forward'"
+              [class.dir-back]="direction === 'back'">
+              @if (currentSpread; as spread) {
+                <div class="page page-left" [class.blank]="!spread.left">
+                  <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: spread.left, side: 'left', pageIdx: pageIndexFor(spread, 'left'), pageNumber: spread.leftPageNumber }"></ng-container>
+                </div>
+                <div class="spine"></div>
+                <div class="page page-right" [class.blank]="!spread.right">
+                  <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: spread.right, side: 'right', pageIdx: pageIndexFor(spread, 'right'), pageNumber: spread.rightPageNumber }"></ng-container>
+                </div>
+              }
+            </div>
+          }
         </div>
-      </div>
+      }
+      <!-- Mobile: single page -->
+      @if (isMobile) {
+        <div class="book-frame mobile">
+          @for (k of [animKey]; track trackByValue($index, k)) {
+            <div class="book"
+              [class.dir-forward]="direction === 'forward'"
+              [class.dir-back]="direction === 'back'">
+              <div class="page page-single">
+                <ng-container *ngTemplateOutlet="pageTpl; context: { $implicit: currentPage, side: 'right', pageIdx: pageIndex, pageNumber: pageIndex + 1 }"></ng-container>
+              </div>
+            </div>
+          }
+        </div>
+      }
     </div>
-
-  </div>
+  }
 
   <!-- Bottom progress bar -->
-  <div class="flipbook-progress" *ngIf="flipbook && !error">
-    <div class="progress-track">
-      <div class="progress-fill"
+  @if (flipbook && !error) {
+    <div class="flipbook-progress">
+      <div class="progress-track">
+        <div class="progress-fill"
            [style.width.%]="(isMobile
               ? (totalPages > 1 ? (pageIndex / (totalPages - 1)) * 100 : 100)
               : (totalSpreads > 1 ? (spreadIndex / (totalSpreads - 1)) * 100 : 100))"></div>
     </div>
   </div>
+}
 </div>
 
 
 <!-- Page template ------------------------------------------------- -->
 <ng-template #pageTpl let-page let-side="side" let-pageIdx="pageIdx" let-pageNumber="pageNumber">
-  <ng-container *ngIf="!page">
+  @if (!page) {
+
     <!-- Blank facing page (e.g., behind the cover) -->
     <div class="blank-page-content"></div>
-  </ng-container>
+  
+}
 
   <!-- Cover -->
-  <ng-container *ngIf="asCover(page) as cover">
+  @if (asCover(page); as cover) {
+
     <div class="cover-page" [style.background-image]="cover.image ? 'url(' + cover.image + ')' : ''">
       <div class="cover-overlay">
-        <div class="cover-module-label" *ngIf="cover.moduleLabel">{{ cover.moduleLabel }}</div>
+        @if (cover.moduleLabel) {
+<div class="cover-module-label">{{ cover.moduleLabel }}</div>
+}
         <h1 class="cover-title">{{ cover.title }}</h1>
-        <div class="cover-subtitle" *ngIf="cover.subtitle">{{ cover.subtitle }}</div>
+        @if (cover.subtitle) {
+<div class="cover-subtitle">{{ cover.subtitle }}</div>
+}
       </div>
     </div>
-  </ng-container>
+  
+}
 
   <!-- Content page -->
-  <ng-container *ngIf="asContent(page) as content">
+  @if (asContent(page); as content) {
+
     <div class="content-page">
       <header class="page-header">
         <h2>{{ content.title }}</h2>
       </header>
       <div class="page-body">
-        <ng-container *ngFor="let block of content.blocks; let bi = index">
+        @for (block of content.blocks; track block; let bi = $index) {
+
           <!-- Cast block to any once so per-kind property access doesn't fight the union narrowing in strict templates. -->
-          <ng-container *ngIf="$any(block) as b">
-            <ng-container [ngSwitch]="b.kind">
-              <p *ngSwitchCase="'paragraph'" class="block-paragraph">{{ b.text }}</p>
+          @if ($any(block); as b) {
 
-              <h3 *ngSwitchCase="'heading'" class="block-heading">{{ b.text }}</h3>
+            
+@switch (b.kind) {
+              @case ('paragraph') {
+<p class="block-paragraph">{{ b.text }}</p>
+}
 
-              <ul *ngSwitchCase="'list'" class="block-list">
-                <li *ngFor="let item of b.items">{{ item }}</li>
+              @case ('heading') {
+<h3 class="block-heading">{{ b.text }}</h3>
+}
+
+              @case ('list') {
+<ul class="block-list">
+                @for (item of b.items; track item) {
+<li>{{ item }}</li>
+}
               </ul>
+}
 
-              <ol *ngSwitchCase="'numberedList'" class="block-list numbered">
-                <li *ngFor="let item of b.items">{{ item }}</li>
+              @case ('numberedList') {
+<ol class="block-list numbered">
+                @for (item of b.items; track item) {
+<li>{{ item }}</li>
+}
               </ol>
+}
 
-              <div *ngSwitchCase="'callout'" class="block-callout" [attr.data-tone]="b.tone || 'info'">
+              @case ('callout') {
+<div class="block-callout" [attr.data-tone]="b.tone || 'info'">
                 <div class="callout-icon"><mat-icon>
                   {{ b.tone === 'warning' ? 'lightbulb' : (b.tone === 'success' ? 'check_circle' : 'info') }}
                 </mat-icon></div>
                 <div class="callout-body">
-                  <div class="callout-title" *ngIf="b.title">{{ b.title }}</div>
+                  @if (b.title) {
+<div class="callout-title">{{ b.title }}</div>
+}
                   <div class="callout-text">{{ b.text }}</div>
                 </div>
               </div>
+}
 
-              <div *ngSwitchCase="'definition'" class="block-definition">
+              @case ('definition') {
+<div class="block-definition">
                 <div class="def-term">{{ b.term }}</div>
                 <div class="def-meaning">{{ b.definition }}</div>
               </div>
+}
 
-              <table *ngSwitchCase="'tableSimple'" class="block-table">
+              @case ('tableSimple') {
+<table class="block-table">
                 <thead>
                   <tr>
-                    <th *ngFor="let h of b.headers">{{ h }}</th>
+                    @for (h of b.headers; track h) {
+<th>{{ h }}</th>
+}
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let row of b.rows; let ri = index">
-                    <td *ngFor="let cell of row; let ci = index">
-                      <ng-container *ngIf="ci === 0">{{ cell }}</ng-container>
-                      <input *ngIf="ci > 0"
+                  @for (row of b.rows; track row; let ri = $index) {
+<tr>
+                    @for (cell of row; track cell; let ci = $index) {
+<td>
+                      @if (ci === 0) {
+{{ cell }}
+}
+                      @if (ci > 0) {
+<input
                              class="table-input"
-                             type="text"
-                             [value]="exerciseAnswer(pageIdx, ri)"
-                             (input)="setExerciseAnswer(pageIdx, ri, $any($event.target).value)"
-                             placeholder="Type your answer…">
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <blockquote *ngSwitchCase="'quote'" class="block-quote">
-                <p>{{ b.text }}</p>
-                <cite *ngIf="b.attribution">— {{ b.attribution }}</cite>
-              </blockquote>
-
-              <ul *ngSwitchCase="'checklist'" class="block-checklist">
-                <li *ngFor="let item of b.items; let ii = index" (click)="toggleChecked(pageIdx, ii)">
-                  <span class="check-box" [class.checked]="isChecked(pageIdx, ii)">
-                    <mat-icon *ngIf="isChecked(pageIdx, ii)">check</mat-icon>
-                  </span>
-                  <span class="check-label">{{ item }}</span>
-                </li>
-              </ul>
-            </ng-container>
-          </ng-container>
-        </ng-container>
+                                type="text"
+                                [value]="exerciseAnswer(pageIdx, ri)"
+                                (input)="setExerciseAnswer(pageIdx, ri, $any($event.target).value)"
+                                placeholder="Type your answer…">
+                            }
+                          </td>
+                        }
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              }
+              @case ('quote') {
+                <blockquote class="block-quote">
+                  <p>{{ b.text }}</p>
+                  @if (b.attribution) {
+                    <cite>— {{ b.attribution }}</cite>
+                  }
+                </blockquote>
+              }
+              @case ('checklist') {
+                <ul class="block-checklist">
+                  @for (item of b.items; track item; let ii = $index) {
+                    <li (click)="toggleChecked(pageIdx, ii)">
+                      <span class="check-box" [class.checked]="isChecked(pageIdx, ii)">
+                        @if (isChecked(pageIdx, ii)) {
+                          <mat-icon>check</mat-icon>
+                        }
+                      </span>
+                      <span class="check-label">{{ item }}</span>
+                    </li>
+                  }
+                </ul>
+              }
+            }
+          }
+        }
       </div>
       <footer class="page-footer">
         <span class="page-num">{{ pageNumber }}</span>
       </footer>
     </div>
-  </ng-container>
+  }
 
   <!-- Back cover -->
-  <ng-container *ngIf="asBackCover(page) as back">
+  @if (asBackCover(page); as back) {
     <div class="back-cover-page">
       <div class="back-cover-mark">
         <mat-icon>menu_book</mat-icon>
       </div>
       <h2>{{ back.title }}</h2>
-      <div class="back-subtitle" *ngIf="back.subtitle">{{ back.subtitle }}</div>
+      @if (back.subtitle) {
+        <div class="back-subtitle">{{ back.subtitle }}</div>
+      }
       <div class="back-actions">
-        <button *ngIf="back.ctaPrimary" mat-raised-button color="primary"
-                (click)="navigatePrimary(back.ctaPrimary)">
-          {{ back.ctaPrimary.label }}
-        </button>
-        <a *ngIf="back.ctaSecondary?.href" mat-stroked-button
-           [href]="back.ctaSecondary?.href" target="_blank" download>
-          {{ back.ctaSecondary?.label }}
-        </a>
+        @if (back.ctaPrimary) {
+          <button mat-raised-button color="primary"
+            (click)="navigatePrimary(back.ctaPrimary)">
+            {{ back.ctaPrimary.label }}
+          </button>
+        }
+        @if (back.ctaSecondary?.href) {
+          <a mat-stroked-button
+            [href]="$safeNavigationMigration(back.ctaSecondary?.href)" target="_blank" download>
+            {{ back.ctaSecondary?.label }}
+          </a>
+        }
       </div>
     </div>
-  </ng-container>
+  }
 </ng-template>

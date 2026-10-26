@@ -206,11 +206,12 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have successfully completed the Networking Skills escape room! You've learned and practiced the four key networking skills: Initiate (starting conversations), Build (deepening connections), Maintain (staying in touch), and Leverage (using your network wisely). These skills will serve you well in your professional journey!",
-    "buttonText": "Exit the Room"
+    "buttonText": "Exit the Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "sendButton": "Send",
     "nextContact": "Next Contact",
@@ -218,7 +219,9 @@
     "optionB": "B",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

@@ -40,6 +40,18 @@
     box-sizing: border-box;
 }
 
+/* Sits inside the name block, so on phones it wraps under the name instead of widening the row */
+.file-lang-tag {
+    display: inline-block;
+    margin: 2px 0;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    background: var(--sys-primary-container);
+    color: var(--sys-on-primary-container);
+}
+
 .image-parent {
     text-align: center;
     margin-top: 32px;

@@ -382,3 +382,149 @@
   right: 8px;
   z-index: 5;
 }
+
+/* --- CSS-drawn whiteboard prop (AllRisksFound) --------------------------------
+   janitor_closet.png contains no whiteboard, yet the flow asks the player to
+   "click the whiteboard" (partner report, 2026-08). Regenerating the scene art is
+   out of scope, so the board is drawn here on the bare upper-left wall and is
+   itself the click target. Its rect is hotspots.whiteboard in the .ts (also used
+   by the zoom-in animation). The label is i18n text (ui.whiteboardLabel), never
+   baked into an image. Own keyframes animate box-shadow only — the base
+   @keyframes pulse animates `transform`, which would wipe the perspective. */
+.whiteboard-prop {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* white surface + faint grid hinting at the assessment table */
+  background-color: #f3f4f1;
+  background-image:
+    repeating-linear-gradient(0deg,  transparent 0 13.5%, rgba(50, 60, 70, 0.16) 13.5% 14.5%),
+    repeating-linear-gradient(90deg, transparent 0 19%,   rgba(50, 60, 70, 0.16) 19% 20%);
+  background-size: 62% 58%;
+  background-repeat: no-repeat;
+  background-position: 72% 38%;
+  /* thin light-grey aluminium frame */
+  border: 3px solid #c8ccd2;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 6px 2px rgba(255, 250, 205, 0.25);
+  /* mounted on the receding left wall */
+  transform: perspective(900px) rotateY(26deg);
+  transform-origin: left center;
+  animation:
+    whiteboard-appear 0.6s ease-out,
+    whiteboard-glow 3.2s ease-in-out 0.6s infinite;
+
+  /* inner frame line */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    pointer-events: none;
+  }
+
+  /* hand-written marker label (plain i18n text) */
+  .whiteboard-label {
+    position: relative;               /* paints above the grid */
+    max-width: 86%;
+    margin-bottom: 8%;                /* sit in the area above the tray */
+    overflow: hidden;
+    text-align: center;
+    /* Caveat is self-hosted (Latin/Latin-ext/Cyrillic); Greek falls through the stack */
+    font-family: 'Caveat', 'Comic Neue', cursive, sans-serif;
+    font-weight: 700;
+    font-size: clamp(9px, 1.35vw, 22px);
+    line-height: 1.05;
+    color: #1f2a44;                   /* blue marker */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    overflow-wrap: break-word;
+    user-select: none;
+    pointer-events: none;
+    transform: rotate(-2deg);
+  }
+
+  /* marker tray along the bottom edge, with one marker resting in it */
+  .whiteboard-tray {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -7%;
+    height: 7%;
+    background: linear-gradient(#dfe2e6, #9ba1a9);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 30%;
+      top: 15%;
+      width: 22%;
+      height: 55%;
+      border-radius: 2px;
+      background: #2b4c8c;
+    }
+  }
+
+  /* stronger pulse while the hint is showing */
+  &.show-hint-pulse {
+    animation: whiteboard-hint-pulse 1.5s infinite;
+  }
+}
+
+@keyframes whiteboard-appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* low-intensity ambient glow so the player notices the board */
+@keyframes whiteboard-glow {
+  0%, 100% { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 6px 2px rgba(255, 250, 205, 0.25); }
+  50%      { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 18px 7px rgba(255, 250, 205, 0.55); }
+}
+
+@keyframes whiteboard-hint-pulse {
+  0%   { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 0 0 rgba(255, 255, 100, 0.85); }
+  70%  { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 12px 22px rgba(255, 255, 100, 0); }
+  100% { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 0 0 0 rgba(255, 255, 100, 0); }
+}
+
+/* --- Zoomed whiteboard view: visible start target ---------------------------
+   Outlines the assessment table drawn in zoom_whiteboard.png. Not .zoom-hotspot
+   (its ::after "Click to examine" label is hard-coded English). */
+.whiteboard-table-hotspot {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  border: 2px dashed rgba(255, 250, 205, 0.75);
+  border-radius: 6px;
+  background-color: rgba(255, 250, 205, 0.06);
+  animation: whiteboard-table-glow 3.2s ease-in-out infinite;
+
+  &.show-hint-pulse { animation: pulse 1.5s infinite; }
+}
+
+@keyframes whiteboard-table-glow {
+  0%, 100% { box-shadow: 0 0 6px 2px rgba(255, 250, 205, 0.2); }
+  50%      { box-shadow: 0 0 16px 6px rgba(255, 250, 205, 0.45); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whiteboard-prop,
+  .whiteboard-table-hotspot {
+    animation: none;
+  }
+  /* static highlight instead of a pulse when the hint fires */
+  .whiteboard-prop.show-hint-pulse,
+  .whiteboard-table-hotspot.show-hint-pulse {
+    animation: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 100, 0.85), 0 0 18px 8px rgba(255, 255, 100, 0.45);
+  }
+}

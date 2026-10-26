@@ -175,17 +175,22 @@
   "completion": {
     "title": "Problem Solving Complete",
     "message": "Congratulations, you have completed the problem-solving room!\n\nIt was easy to assume that the issue with items going missing was caused by the mess. And it was natural to jump straight to a solution — cleaning and organizing the room.\n\nBut you soon discovered that this did not solve anything. The core issue had to be something else.\n\nYou therefore took a step back and explored alternative explanations. By gathering clues and evidence, you were able to identify the core issue: mislabelling of boxes.\n\nThe room represents a crucial aspect of problem-solving: clearly defining the problem before acting. Doing so can save you a lot of wasted time and energy.\n\nWell done!",
-    "buttonText": "Exit the Storage Room"
+    "buttonText": "Exit the Storage Room",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
+    "puzzlesCompleted": "puzzles",
+    "backToLearningTitle": "Back to learning",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "skipPuzzle": "Skip this puzzle",
     "hintButton": "Hint",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "systemDialogues": {
     "cleanBoxMoved": "Moved onto the shelf.",

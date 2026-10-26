@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { LearningFlowService } from '../learning-flow.service';
 import { TranslateService } from '../../translate/translate.service';
@@ -22,9 +22,11 @@ interface FormSection {
 }
 
 @Component({
-  selector: 'app-questionnaire',
-  templateUrl: './questionnaire.component.html',
-  styleUrls: ['./questionnaire.component.scss'],
+    selector: 'app-questionnaire',
+    templateUrl: './questionnaire.component.html',
+    styleUrls: ['./questionnaire.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class QuestionnaireComponent implements OnInit {
 

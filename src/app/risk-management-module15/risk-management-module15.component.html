@@ -1,343 +1,408 @@
 <div class="cinematic-container">
 
-  <div *ngIf="isPreloading" class="preload-overlay">
-    <div class="loading-content">
-      <div class="loading-text">{{ t('loading') }}</div>
+  @if (isPreloading) {
+    <div class="preload-overlay">
+      <div class="loading-content">
+        <div class="loading-text">{{ t('loading') }}</div>
+      </div>
     </div>
-  </div>
+  }
 
   <!-- Introduction Popup Overlay -->
-  <div *ngIf="isIntroPopupVisible" class="overlay center">
-    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
-      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
-      <mat-card-content class="intro-text">
-        <p>{{ t('intro.paragraphs.0') }}</p>
-        <p>{{ t('intro.paragraphs.1') }}</p>
-        <p>{{ t('intro.paragraphs.2') }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+  @if (isIntroPopupVisible) {
+    <div class="overlay center">
+      <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+        <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+        <mat-card-content class="intro-text">
+          <p>{{ t('intro.paragraphs.0') }}</p>
+          <p>{{ t('intro.paragraphs.1') }}</p>
+          <p>{{ t('intro.paragraphs.2') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  }
 
   <div class="game-container">
 
     <div class="scene-background"
-         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
-         [ngStyle]="zoomStyle"
-         [class.blurred]="activeThought || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
+      [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+      [ngStyle]="zoomStyle"
+      [class.blurred]="activeThought || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
     </div>
 
+    <!-- "How to play" guide (partner feedback 2026-08-31) — sits left of the fullscreen button -->
+    <app-room-help-button></app-room-help-button>
     <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
       <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
     </button>
 
     <!-- Learning Mode Score Panel -->
-    <div *ngIf="isLearningMode" class="learning-score-panel">
-      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
-      <div class="score-panel-progress">
-        <mat-icon>emoji_events</mat-icon>
-        <span>{{ completedPuzzleCount }} / 2 puzzles</span>
+    @if (isLearningMode) {
+      <div class="learning-score-panel">
+        <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+        <div class="score-panel-progress">
+          <mat-icon>emoji_events</mat-icon>
+          <span>{{ completedPuzzleCount }} / 2 {{ t('learning.puzzlesWord') }}</span>
+        </div>
+        <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+          <span class="score-panel-value-label">{{ t('learning.scoreLabel') }}</span>
+          {{ completedPuzzleCount > 0 ? runningScore + '%' : '---' }}
+        </div>
       </div>
-      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
-        {{ completedPuzzleCount > 0 ? runningScore + '%' : '---' }}
-      </div>
-    </div>
+    }
 
-    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
-      <mat-icon>arrow_back</mat-icon>
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToLearning')">
+      <mat-icon>logout</mat-icon>
     </button>
 
-    <button mat-fab class="hint-button" (click)="requestHint()"
-            *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !activeThought">
-      <mat-icon>lightbulb</mat-icon>
-    </button>
+    @if (!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating && !activeThought) {
+      <button mat-fab class="hint-button" (click)="requestHint()"
+        >
+        <mat-icon>lightbulb</mat-icon>
+      </button>
+    }
     <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
     <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
 
-    <button *ngIf="currentView !== 'main' && !activeDialogue && !activeThought && currentState !== GameState.RiskAssessment && currentState !== GameState.ReviewAssessment"
-            mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
-      <mat-icon>arrow_back</mat-icon>
-    </button>
+    @if (currentView !== 'main' && !activeDialogue && !activeThought && currentState !== GameState.RiskAssessment && currentState !== GameState.ReviewAssessment) {
+      <button
+        mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()"
+        [title]="t('ui.backToRoom')"
+        [attr.aria-label]="t('ui.backToRoom')">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    }
 
     <!-- Risk Counter (Phase 2) -->
-    <div *ngIf="currentState === GameState.IdentifyRisks && currentView === 'main' && !activeDialogue && !activeThought"
-         class="risk-counter">
-      <mat-icon>search</mat-icon>
-      <span>{{ t('ui.risksFound') }}: {{ foundRisks.size }} {{ t('ui.of') }} 11</span>
-    </div>
+    @if (currentState === GameState.IdentifyRisks && currentView === 'main' && !activeDialogue && !activeThought) {
+      <div
+        class="risk-counter">
+        <mat-icon>search</mat-icon>
+        <span>{{ t('ui.risksFound') }}: {{ foundRisks.size }} {{ t('ui.of') }} 11</span>
+      </div>
+    }
 
     <!-- Hotspot Layer -->
-    <div class="hotspot-layer"
-         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || activeThought"
-         *ngIf="!isQuizActive && !isIntroPopupVisible && !activeThought">
-
-      <!-- Risk Hotspots (Phase 2: IdentifyRisks) -->
-      <ng-container *ngIf="currentState === GameState.IdentifyRisks && currentView === 'main' && !isAnimating">
-        <div *ngFor="let entry of riskHotspotEntries; trackBy: trackById"
-             class="hotspot"
-             [class.found-risk]="entry.found"
-             [class.show-hint-pulse]="showHints && !entry.found"
-             [style.left.%]="entry.hotspot.x" [style.top.%]="entry.hotspot.y"
-             [style.width.%]="entry.hotspot.width" [style.height.%]="entry.hotspot.height"
-             (click)="onHotspotClick(entry.id)">
-          <mat-icon *ngIf="entry.found" class="found-check">check_circle</mat-icon>
-        </div>
-
-        <!-- Red Herring Hotspots -->
-        <div *ngFor="let entry of redHerringHotspotEntries; trackBy: trackById"
-             class="hotspot red-herring-hotspot"
-             [class.dismissed]="entry.dismissed"
-             [style.left.%]="entry.hotspot.x" [style.top.%]="entry.hotspot.y"
-             [style.width.%]="entry.hotspot.width" [style.height.%]="entry.hotspot.height"
-             (click)="onHotspotClick(entry.id)">
-        </div>
-      </ng-container>
-
-      <!-- Whiteboard hotspot (after all risks found) -->
-      <ng-container *ngIf="currentState === GameState.AllRisksFound && currentView === 'main'">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots['whiteboard'].x" [style.top.%]="hotspots['whiteboard'].y"
-             [style.width.%]="hotspots['whiteboard'].width" [style.height.%]="hotspots['whiteboard'].height"
-             (click)="onHotspotClick('whiteboard')"></div>
-      </ng-container>
-
-      <!-- Exit Door (when game complete) -->
-      <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots['exitDoor'].x" [style.top.%]="hotspots['exitDoor'].y"
-             [style.width.%]="hotspots['exitDoor'].width" [style.height.%]="hotspots['exitDoor'].height"
-             (click)="onHotspotClick('exitDoor')"></div>
-      </ng-container>
-
-      <!-- Zoomed view: Whiteboard content hotspot (starts assessment) -->
-      <ng-container *ngIf="currentView === 'whiteboard' && currentState === GameState.AllRisksFound">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="whiteboardZoomHotspot.x" [style.top.%]="whiteboardZoomHotspot.y"
-             [style.width.%]="whiteboardZoomHotspot.width" [style.height.%]="whiteboardZoomHotspot.height"
-             (click)="onHotspotClick('whiteboardContent')"></div>
-      </ng-container>
-    </div>
+    @if (!isQuizActive && !isIntroPopupVisible && !activeThought) {
+      <div class="hotspot-layer"
+        [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating || activeThought"
+        >
+        <!-- Risk Hotspots (Phase 2: IdentifyRisks) -->
+        @if (currentState === GameState.IdentifyRisks && currentView === 'main' && !isAnimating) {
+          @for (entry of riskHotspotEntries; track trackById($index, entry)) {
+            <div
+              class="hotspot"
+              [class.found-risk]="entry.found"
+              [class.show-hint-pulse]="showHints && !entry.found"
+              [style.left.%]="entry.hotspot.x" [style.top.%]="entry.hotspot.y"
+              [style.width.%]="entry.hotspot.width" [style.height.%]="entry.hotspot.height"
+              (click)="onHotspotClick(entry.id)">
+              @if (entry.found) {
+                <mat-icon class="found-check">check_circle</mat-icon>
+              }
+            </div>
+          }
+          <!-- Red Herring Hotspots -->
+          @for (entry of redHerringHotspotEntries; track trackById($index, entry)) {
+            <div
+              class="hotspot red-herring-hotspot"
+              [class.dismissed]="entry.dismissed"
+              [style.left.%]="entry.hotspot.x" [style.top.%]="entry.hotspot.y"
+              [style.width.%]="entry.hotspot.width" [style.height.%]="entry.hotspot.height"
+              (click)="onHotspotClick(entry.id)">
+            </div>
+          }
+        }
+        <!-- Whiteboard (after all risks found). The scene art has no whiteboard, so a
+        CSS-drawn board is mounted on the bare upper-left wall and is itself the
+        click target. Rect: hotspots.whiteboard. Label is i18n text. -->
+        @if (currentState === GameState.AllRisksFound && currentView === 'main') {
+          <div class="whiteboard-prop"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots['whiteboard'].x" [style.top.%]="hotspots['whiteboard'].y"
+            [style.width.%]="hotspots['whiteboard'].width" [style.height.%]="hotspots['whiteboard'].height"
+            (click)="onHotspotClick('whiteboard')">
+            <span class="whiteboard-label">{{ t('ui.whiteboardLabel') }}</span>
+            <span class="whiteboard-tray" aria-hidden="true"></span>
+          </div>
+        }
+        <!-- Exit Door (when game complete) -->
+        @if ((currentState === GameState.Completion || isDoorOpen) && currentView === 'main') {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots['exitDoor'].x" [style.top.%]="hotspots['exitDoor'].y"
+            [style.width.%]="hotspots['exitDoor'].width" [style.height.%]="hotspots['exitDoor'].height"
+          (click)="onHotspotClick('exitDoor')"></div>
+        }
+        <!-- Zoomed view: assessment table on the whiteboard (starts assessment).
+        Visibly outlined; not .zoom-hotspot because its ::after label is English-only. -->
+        @if (currentView === 'whiteboard' && currentState === GameState.AllRisksFound) {
+          <div class="whiteboard-table-hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="whiteboardZoomHotspot.x" [style.top.%]="whiteboardZoomHotspot.y"
+            [style.width.%]="whiteboardZoomHotspot.width" [style.height.%]="whiteboardZoomHotspot.height"
+          (click)="onHotspotClick('whiteboardContent')"></div>
+        }
+      </div>
+    }
 
     <!-- Thought Bubble (Risk/Red Herring feedback) -->
-    <div *ngIf="activeThought" class="overlay center" @fadeInOut>
-      <mat-card class="thought-card" [class.risk-thought]="activeThought.isRisk" [class.safe-thought]="!activeThought.isRisk">
-        <mat-card-content>
-          <div class="thought-header">
-            <mat-icon *ngIf="activeThought.isRisk" class="thought-icon risk">warning</mat-icon>
-            <mat-icon *ngIf="!activeThought.isRisk" class="thought-icon safe">check_circle</mat-icon>
-            <span class="thought-label">{{ activeThought.isRisk ? t('ui.riskIdentified') : t('ui.notARisk') }}</span>
-          </div>
-          <p class="thought-text">{{ activeThought.text }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="dismissThought()">{{ t('ui.continueButton') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (activeThought) {
+      <div class="overlay center" @fadeInOut>
+        <mat-card class="thought-card" [class.risk-thought]="activeThought.isRisk" [class.safe-thought]="!activeThought.isRisk">
+          <mat-card-content>
+            <div class="thought-header">
+              @if (activeThought.isRisk) {
+                <mat-icon class="thought-icon risk">warning</mat-icon>
+              }
+              @if (!activeThought.isRisk) {
+                <mat-icon class="thought-icon safe">check_circle</mat-icon>
+              }
+              <span class="thought-label">{{ activeThought.isRisk ? t('ui.riskIdentified') : t('ui.notARisk') }}</span>
+            </div>
+            <p class="thought-text">{{ activeThought.text }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="dismissThought()">{{ t('ui.continueButton') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Risk Assessment UI (Phase 3) -->
-    <div *ngIf="currentState === GameState.RiskAssessment && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card assessment-card" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipAssessment.bind(this))">{{ t('ui.skipButton') }}</button>
-
-        <mat-card-title>{{ t('riskAssessment.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('riskAssessment.instructions') }}</mat-card-subtitle>
-
-        <!-- Risk navigation dots -->
-        <div class="risk-nav-dots">
-          <button *ngFor="let a of assessments; let i = index; trackBy: trackByIndex"
-                  mat-mini-fab
-                  [class.active]="i === currentAssessmentIndex"
-                  [class.completed]="a.likelihood > 0 && a.impact > 0"
-                  (click)="goToRisk(i)">
-            {{ i + 1 }}
-          </button>
-        </div>
-
-        <mat-card-content>
-          <!-- Current risk info -->
-          <div class="risk-info">
-            <mat-icon class="risk-info-icon">{{ t('risks.' + currentRiskId + '.icon') }}</mat-icon>
-            <h3>{{ t('risks.' + currentRiskId + '.name') }}</h3>
-            <p class="risk-description">{{ t('risks.' + currentRiskId + '.description') }}</p>
-          </div>
-
-          <!-- Likelihood selector -->
-          <div class="assessment-row">
-            <label [matTooltip]="t('riskAssessment.likelihoodTooltip')">
-              {{ t('riskAssessment.likelihoodLabel') }}
-              <mat-icon class="info-icon">info_outline</mat-icon>
-            </label>
-            <div class="scale-buttons">
-              <button *ngFor="let val of scaleValues; trackBy: trackByIndex"
-                      mat-raised-button
-                      [class.selected]="currentAssessment.likelihood === val"
-                      (click)="setLikelihood(val)">
-                {{ val }}
+    @if (currentState === GameState.RiskAssessment && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card assessment-card" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipAssessment.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('riskAssessment.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('riskAssessment.instructions') }}</mat-card-subtitle>
+          <!-- Risk navigation dots -->
+          <div class="risk-nav-dots">
+            @for (a of assessments; track $index; let i = $index) {
+              <button
+                mat-mini-fab
+                [class.active]="i === currentAssessmentIndex"
+                [class.completed]="a.likelihood > 0 && a.impact > 0"
+                (click)="goToRisk(i)">
+                {{ i + 1 }}
               </button>
-            </div>
+            }
           </div>
-
-          <!-- Impact selector -->
-          <div class="assessment-row">
-            <label [matTooltip]="t('riskAssessment.impactTooltip')">
-              {{ t('riskAssessment.impactLabel') }}
-              <mat-icon class="info-icon">info_outline</mat-icon>
-            </label>
-            <div class="scale-buttons">
-              <button *ngFor="let val of scaleValues; trackBy: trackByIndex"
-                      mat-raised-button
-                      [class.selected]="currentAssessment.impact === val"
-                      (click)="setImpact(val)">
-                {{ val }}
+          <mat-card-content>
+            <!-- Current risk info -->
+            <div class="risk-info">
+              <mat-icon class="risk-info-icon">{{ t('risks.' + currentRiskId + '.icon') }}</mat-icon>
+              <h3>{{ t('risks.' + currentRiskId + '.name') }}</h3>
+              <p class="risk-description">{{ t('risks.' + currentRiskId + '.description') }}</p>
+            </div>
+            <!-- Likelihood selector -->
+            <div class="assessment-row">
+              <label [matTooltip]="t('riskAssessment.likelihoodTooltip')">
+                {{ t('riskAssessment.likelihoodLabel') }}
+                <mat-icon class="info-icon">info_outline</mat-icon>
+              </label>
+              <div class="scale-buttons">
+                @for (val of scaleValues; track $index) {
+                  <button
+                    mat-raised-button
+                    [class.selected]="currentAssessment.likelihood === val"
+                    (click)="setLikelihood(val)">
+                    {{ val }}
+                  </button>
+                }
+              </div>
+            </div>
+            <!-- Impact selector -->
+            <div class="assessment-row">
+              <label [matTooltip]="t('riskAssessment.impactTooltip')">
+                {{ t('riskAssessment.impactLabel') }}
+                <mat-icon class="info-icon">info_outline</mat-icon>
+              </label>
+              <div class="scale-buttons">
+                @for (val of scaleValues; track $index) {
+                  <button
+                    mat-raised-button
+                    [class.selected]="currentAssessment.impact === val"
+                    (click)="setImpact(val)">
+                    {{ val }}
+                  </button>
+                }
+              </div>
+            </div>
+            <!-- Risk Score display -->
+            @if (currentAssessment.likelihood > 0 && currentAssessment.impact > 0) {
+              <div class="risk-score-display"
+                [matTooltip]="t('riskAssessment.riskScoreTooltip')">
+                <span class="risk-score-label">{{ t('riskAssessment.riskScoreLabel') }}:</span>
+                <span class="risk-score-value" [ngClass]="getRiskScoreColor(currentRiskScore)">{{ currentRiskScore }}</span>
+              </div>
+            }
+          </mat-card-content>
+          <mat-card-actions class="assessment-actions">
+            <button mat-button [disabled]="currentAssessmentIndex === 0" (click)="prevRisk()">
+              <mat-icon>chevron_left</mat-icon> {{ t('riskAssessment.prevRisk') }}
+            </button>
+            @if (currentAssessmentIndex < assessments.length - 1) {
+              <button
+                mat-raised-button color="primary" [disabled]="!canGoNext" (click)="nextRisk()">
+                {{ t('riskAssessment.nextRisk') }} <mat-icon>chevron_right</mat-icon>
               </button>
-            </div>
-          </div>
-
-          <!-- Risk Score display -->
-          <div class="risk-score-display" *ngIf="currentAssessment.likelihood > 0 && currentAssessment.impact > 0"
-               [matTooltip]="t('riskAssessment.riskScoreTooltip')">
-            <span class="risk-score-label">{{ t('riskAssessment.riskScoreLabel') }}:</span>
-            <span class="risk-score-value" [ngClass]="getRiskScoreColor(currentRiskScore)">{{ currentRiskScore }}</span>
-          </div>
-        </mat-card-content>
-
-        <mat-card-actions class="assessment-actions">
-          <button mat-button [disabled]="currentAssessmentIndex === 0" (click)="prevRisk()">
-            <mat-icon>chevron_left</mat-icon> {{ t('riskAssessment.prevRisk') }}
-          </button>
-
-          <button *ngIf="currentAssessmentIndex < assessments.length - 1"
-                  mat-raised-button color="primary" [disabled]="!canGoNext" (click)="nextRisk()">
-            {{ t('riskAssessment.nextRisk') }} <mat-icon>chevron_right</mat-icon>
-          </button>
-
-          <button *ngIf="currentAssessmentIndex === assessments.length - 1"
-                  mat-raised-button color="primary" [disabled]="!canSubmitAssessment" (click)="submitAssessment()">
-            {{ t('riskAssessment.submitButton') }}
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+            }
+            @if (currentAssessmentIndex === assessments.length - 1) {
+              <button
+                mat-raised-button color="primary" [disabled]="!canSubmitAssessment" (click)="submitAssessment()">
+                {{ t('riskAssessment.submitButton') }}
+              </button>
+            }
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Review Screen (Phase 4) -->
-    <div *ngIf="currentState === GameState.ReviewAssessment && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card review-card" @fadeInOut>
-        <mat-card-title>{{ t('review.title') }}</mat-card-title>
-
-        <mat-card-content class="review-content">
-          <p class="general-feedback">{{ generalFeedback }}</p>
-
-          <!-- Correctly assessed -->
-          <div *ngIf="correctCount > 0" class="review-section correct-section">
-            <h4>
-              <mat-icon>check_circle</mat-icon>
-              {{ t('review.correctSection') }} ({{ correctCount }})
-            </h4>
-            <div *ngFor="let entry of correctReviewEntries; trackBy: trackByRiskId" class="review-entry correct">
-              <div class="review-risk-name">
-                <mat-icon>{{ t('risks.' + entry.riskId + '.icon') }}</mat-icon>
-                {{ t('risks.' + entry.riskId + '.name') }}
+    @if (currentState === GameState.ReviewAssessment && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card review-card" @fadeInOut>
+          <mat-card-title>{{ t('review.title') }}</mat-card-title>
+          <mat-card-content class="review-content">
+            <p class="general-feedback">{{ generalFeedback }}</p>
+            <!-- Correctly assessed -->
+            @if (correctCount > 0) {
+              <div class="review-section correct-section">
+                <h4>
+                  <mat-icon>check_circle</mat-icon>
+                  {{ t('review.correctSection') }} ({{ correctCount }})
+                </h4>
+                @for (entry of correctReviewEntries; track trackByRiskId($index, entry)) {
+                  <div class="review-entry correct">
+                    <div class="review-risk-name">
+                      <mat-icon>{{ t('risks.' + entry.riskId + '.icon') }}</mat-icon>
+                      {{ t('risks.' + entry.riskId + '.name') }}
+                    </div>
+                    <div class="review-scores">
+                      <span>L: {{ entry.likelihood }}</span>
+                      <span>I: {{ entry.impact }}</span>
+                      <span class="review-risk-score" [ngClass]="getRiskScoreColor(entry.riskScore)">= {{ entry.riskScore }}</span>
+                    </div>
+                  </div>
+                }
               </div>
-              <div class="review-scores">
-                <span>L: {{ entry.likelihood }}</span>
-                <span>I: {{ entry.impact }}</span>
-                <span class="review-risk-score" [ngClass]="getRiskScoreColor(entry.riskScore)">= {{ entry.riskScore }}</span>
+            }
+            <!-- Incorrectly assessed -->
+            @if (incorrectCount > 0) {
+              <div class="review-section incorrect-section">
+                <h4>
+                  <mat-icon>error_outline</mat-icon>
+                  {{ t('review.incorrectSection') }} ({{ incorrectCount }})
+                </h4>
+                @for (entry of incorrectReviewEntries; track trackByRiskId($index, entry)) {
+                  <div class="review-entry incorrect">
+                    <div class="review-risk-name">
+                      <mat-icon>{{ t('risks.' + entry.riskId + '.icon') }}</mat-icon>
+                      {{ t('risks.' + entry.riskId + '.name') }}
+                    </div>
+                    <div class="review-scores">
+                      <span>L: {{ entry.likelihood }}</span>
+                      <span>I: {{ entry.impact }}</span>
+                      <span class="review-risk-score" [ngClass]="getRiskScoreColor(entry.riskScore)">= {{ entry.riskScore }}</span>
+                    </div>
+                    <div class="review-feedback">
+                      @if (entry.likelihoodFeedback) {
+                        <span class="feedback-item">{{ entry.likelihoodFeedback }}</span>
+                      }
+                      @if (entry.impactFeedback) {
+                        <span class="feedback-item">{{ entry.impactFeedback }}</span>
+                      }
+                    </div>
+                  </div>
+                }
               </div>
-            </div>
-          </div>
-
-          <!-- Incorrectly assessed -->
-          <div *ngIf="incorrectCount > 0" class="review-section incorrect-section">
-            <h4>
-              <mat-icon>error_outline</mat-icon>
-              {{ t('review.incorrectSection') }} ({{ incorrectCount }})
-            </h4>
-            <div *ngFor="let entry of incorrectReviewEntries; trackBy: trackByRiskId" class="review-entry incorrect">
-              <div class="review-risk-name">
-                <mat-icon>{{ t('risks.' + entry.riskId + '.icon') }}</mat-icon>
-                {{ t('risks.' + entry.riskId + '.name') }}
-              </div>
-              <div class="review-scores">
-                <span>L: {{ entry.likelihood }}</span>
-                <span>I: {{ entry.impact }}</span>
-                <span class="review-risk-score" [ngClass]="getRiskScoreColor(entry.riskScore)">= {{ entry.riskScore }}</span>
-              </div>
-              <div class="review-feedback">
-                <span *ngIf="entry.likelihoodFeedback" class="feedback-item">{{ entry.likelihoodFeedback }}</span>
-                <span *ngIf="entry.impactFeedback" class="feedback-item">{{ entry.impactFeedback }}</span>
-              </div>
-            </div>
-          </div>
-        </mat-card-content>
-
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="endAssessment()">{{ t('review.endButton') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="endAssessment()">{{ t('review.endButton') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Game Complete Overlay -->
-    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('completion.message') }}</p>
-          <div *ngIf="puzzleScores.length > 0" class="score-summary">
-            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
-            <p class="score-feedback">{{ scoreMessage }}</p>
-          </div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
-          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (isGameCompleteOverlayVisible) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('completion.message') }}</p>
+            @if (puzzleScores.length > 0) {
+              <div class="score-summary">
+                <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+                <p class="score-feedback">{{ scoreMessage }}</p>
+              </div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            @if (isLearningMode) {
+              <button mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+            }
+            @if (!isLearningMode) {
+              <button mat-raised-button color="primary" routerLink="/learning">{{ t('completion.buttonText') }}</button>
+            }
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Answer Reveal Overlay -->
-    <div *ngIf="showAnswerOverlay" class="overlay center">
-      <mat-card class="quiz-card wide-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
-        <mat-card-content>
-          <p class="answer-text">{{ answerOverlayText }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showAnswerOverlay) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+          <mat-card-content>
+            <p class="answer-text">{{ answerOverlayText }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Dialogue Panel -->
-    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
-      <div class="dialogue-content">
-        <div *ngIf="activeDialogue.character" class="character-name">{{ activeDialogue.character }}</div>
-        <div class="dialogue-text">{{ displayedDialogueText }}</div>
+    @if (activeDialogue) {
+      <div class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+        <div class="dialogue-content">
+          @if (activeDialogue.character) {
+            <div class="character-name">{{ activeDialogue.character }}</div>
+          }
+          <div class="dialogue-text">{{ displayedDialogueText }}</div>
+        </div>
+        @if (!isTyping) {
+          <div class="dialogue-actions">
+            <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+          </div>
+        }
       </div>
-      <div class="dialogue-actions" *ngIf="!isTyping">
-        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
-      </div>
-    </div>
+    }
 
     <!-- Skip Puzzle Confirm -->
-    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
-      <mat-card class="skip-confirm-card" @fadeInOut>
-        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('skipConfirm.question') }}</p>
-          <p class="warning">{{ t('skipConfirm.warning') }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
-          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showSkipConfirm) {
+      <div class="skip-confirm-overlay">
+        <mat-card class="skip-confirm-card" @fadeInOut>
+          <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('skipConfirm.question') }}</p>
+            <p class="warning">{{ t('skipConfirm.warning') }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+            <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
   </div>
 </div>

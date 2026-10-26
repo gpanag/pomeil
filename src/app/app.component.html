@@ -1,18 +1,20 @@
 <div class="mat-typography mat-app-background main-app">
 
   <!--
-    Floating language picker for escape rooms. Lives outside the toolbars
-    on purpose: the body.escape-room-fullscreen rule hides every toolbar
-    for immersion, but players still need to switch language inside a
-    room. This element is shown only when (a) the active route is an
-    individual room and (b) the player is in fullscreen — see the
-    .er-floating-lang rule in styles.scss. In windowed mode the regular
-    toolbar picker handles language switching, so we'd otherwise be
-    rendering a duplicate.
+  Floating language picker for escape rooms. Lives outside the toolbars
+  on purpose: the body.escape-room-fullscreen rule hides every toolbar
+  for immersion, but players still need to switch language inside a
+  room. This element is shown only when (a) the active route is an
+  individual room and (b) the player is in fullscreen — see the
+  .er-floating-lang rule in styles.scss. In windowed mode the regular
+  toolbar picker handles language switching, so we'd otherwise be
+  rendering a duplicate.
   -->
-  <div *ngIf="isInEscapeRoom" class="er-floating-lang">
-    <app-translate></app-translate>
-  </div>
+  @if (isInEscapeRoom) {
+    <div class="er-floating-lang">
+      <app-translate></app-translate>
+    </div>
+  }
 
   <mat-toolbar>
 
@@ -23,107 +25,7 @@
       </a>
 
     </div>
-    <div routerLink="/" style="cursor: pointer;">
-      <span>
-        POMEIL
-      </span>
-    </div>
-    <div class="spacer"></div>
-    <app-socials-menu></app-socials-menu>
-    <!-- <div class="contact" matTooltip="Contact Us">
-      <a mat-icon-button href="mailto:pomeil.eu@gmail.com">
-        <mat-icon>mail</mat-icon>
-    </a>
-    </div> -->
-    <div class="menu-whole" *ngIf="innerWidth > 1400? true :false">
-      <button class="menu-button" mat-flat-button routerLink="home"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-        <mat-icon>home</mat-icon>{{"NAVIGATION.HOME" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="learning"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>school</mat-icon>{{"NAVIGATION.LEARNING" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="about"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>info</mat-icon>{{"NAVIGATION.ABOUT" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="partnership"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>handshake</mat-icon>{{"NAVIGATION.PARTNERSHIP" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="outputs"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="resources"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>library_books</mat-icon>{{"NAVIGATION.RESOURCES" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="articles"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>article</mat-icon>{{"NAVIGATION.ARTICLES" | translate}}
-      </button>
-      <button class="menu-button" mat-flat-button routerLink="leaflets"
-        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
-      </button>
-    </div>
-    <button mat-icon-button [matMenuTriggerFor]="menuParent" *ngIf="innerWidth <= 1400? true :false">
-      <mat-icon>menu</mat-icon>
-      <mat-menu #menuParent="matMenu">
-        <button class="menu-button" mat-menu-item routerLink="home"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}"
-          #home="routerLinkActive">
-          <mat-icon>home</mat-icon>{{"NAVIGATION.HOME" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="learning"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-          <mat-icon>school</mat-icon>{{"NAVIGATION.LEARNING" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="about"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}"
-          #biblio="routerLinkActive">
-          <mat-icon>info</mat-icon>{{"NAVIGATION.ABOUT" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="partnership"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>handshake</mat-icon>{{"NAVIGATION.PARTNERSHIP" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="outputs"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="resources"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>library_books</mat-icon>{{"NAVIGATION.RESOURCES" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="articles"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>article</mat-icon>{{"NAVIGATION.ARTICLES" | translate}}
-        </button>
-        <button class="menu-button" mat-menu-item routerLink="leaflets"
-          [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
-        </button>
-      </mat-menu>
-    </button>
-
-    <app-account-menu></app-account-menu>
-    <app-translate></app-translate>
-
-  </mat-toolbar>
-
-  <mat-toolbar id="bottom-toolbar" class="bottom-toolbar hide">
-
-    <div class="logo">
-
-      <a routerLink="/">
-        <img [src]="'assets/logos/Project_Logo.png'" width="auto" />
-      </a>
-
-    </div>
-    <div routerLink="/" style="cursor: pointer;">
+    <div class="brand-wordmark" routerLink="/" style="cursor: pointer;">
       <span>
         POMEIL
       </span>
@@ -133,9 +35,10 @@
     <!-- <div class="contact" matTooltip="Contact Us">
     <a mat-icon-button href="mailto:pomeil.eu@gmail.com">
       <mat-icon>mail</mat-icon>
-  </a>
+    </a>
   </div> -->
-    <div class="menu-whole" *ngIf="innerWidth > 1400? true :false">
+  @if (innerWidth > 1400? true :false) {
+    <div class="menu-whole">
       <button class="menu-button" mat-flat-button routerLink="home"
         [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon>home</mat-icon>{{"NAVIGATION.HOME" | translate}}
@@ -156,9 +59,9 @@
         [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
         <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
       </button>
-      <button class="menu-button" mat-flat-button routerLink="resources"
+      <button class="menu-button" mat-flat-button routerLink="newsletters"
         [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
-        <mat-icon>library_books</mat-icon>{{"NAVIGATION.RESOURCES" | translate}}
+        <mat-icon>mail</mat-icon>{{"NAVIGATION.NEWSLETTERS" | translate}}
       </button>
       <button class="menu-button" mat-flat-button routerLink="articles"
         [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
@@ -169,7 +72,9 @@
         <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
       </button>
     </div>
-    <button mat-icon-button [matMenuTriggerFor]="menuParent" *ngIf="innerWidth <= 1400? true :false">
+  }
+  @if (innerWidth <= 1400? true :false) {
+    <button mat-icon-button [matMenuTriggerFor]="menuParent">
       <mat-icon>menu</mat-icon>
       <mat-menu #menuParent="matMenu">
         <button class="menu-button" mat-menu-item routerLink="home"
@@ -194,9 +99,9 @@
           [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
         </button>
-        <button class="menu-button" mat-menu-item routerLink="resources"
+        <button class="menu-button" mat-menu-item routerLink="newsletters"
           [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon>library_books</mat-icon>{{"NAVIGATION.RESOURCES" | translate}}
+          <mat-icon>mail</mat-icon>{{"NAVIGATION.NEWSLETTERS" | translate}}
         </button>
         <button class="menu-button" mat-menu-item routerLink="articles"
           [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
@@ -206,21 +111,164 @@
           [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
         </button>
+        <!--
+        Social links live in the toolbar on wide viewports, but below 700px the
+        toolbar has no room for them and they used to push the menu, account and
+        language buttons off the right edge of the screen. On small screens they
+        move in here instead, so nothing is lost and the navigation stays reachable.
+        -->
+        <div class="menu-socials">
+          <a mat-icon-button href="mailto:pomeil.eu@gmail.com" aria-label="Email">
+            <mat-icon>mail</mat-icon>
+          </a>
+          <a mat-icon-button href="https://www.facebook.com/PomeilProject/" target="_blank"
+            rel="noopener" aria-label="Facebook">
+            <mat-icon svgIcon="facebook"></mat-icon>
+          </a>
+          <a mat-icon-button href="https://www.linkedin.com/company/pomeil/" target="_blank"
+            rel="noopener" aria-label="LinkedIn">
+            <mat-icon svgIcon="linkedin"></mat-icon>
+          </a>
+        </div>
       </mat-menu>
     </button>
+  }
 
-    <app-account-menu></app-account-menu>
-    <app-translate></app-translate>
+  <app-account-menu></app-account-menu>
+  <app-translate></app-translate>
+
+</mat-toolbar>
+
+<mat-toolbar id="bottom-toolbar" class="bottom-toolbar hide">
+
+  <div class="logo">
+
+    <a routerLink="/">
+      <img [src]="'assets/logos/Project_Logo.png'" width="auto" />
+    </a>
+
+  </div>
+  <div class="brand-wordmark" routerLink="/" style="cursor: pointer;">
+    <span>
+      POMEIL
+    </span>
+  </div>
+  <div class="spacer"></div>
+  <app-socials-menu></app-socials-menu>
+  <!-- <div class="contact" matTooltip="Contact Us">
+  <a mat-icon-button href="mailto:pomeil.eu@gmail.com">
+    <mat-icon>mail</mat-icon>
+  </a>
+</div> -->
+@if (innerWidth > 1400? true :false) {
+  <div class="menu-whole">
+    <button class="menu-button" mat-flat-button routerLink="home"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+      <mat-icon>home</mat-icon>{{"NAVIGATION.HOME" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="learning"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>school</mat-icon>{{"NAVIGATION.LEARNING" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="about"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>info</mat-icon>{{"NAVIGATION.ABOUT" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="partnership"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>handshake</mat-icon>{{"NAVIGATION.PARTNERSHIP" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="outputs"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="newsletters"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>mail</mat-icon>{{"NAVIGATION.NEWSLETTERS" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="articles"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>article</mat-icon>{{"NAVIGATION.ARTICLES" | translate}}
+    </button>
+    <button class="menu-button" mat-flat-button routerLink="leaflets"
+      [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+      <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
+    </button>
+  </div>
+}
+@if (innerWidth <= 1400? true :false) {
+  <button mat-icon-button [matMenuTriggerFor]="menuParent">
+    <mat-icon>menu</mat-icon>
+    <mat-menu #menuParent="matMenu">
+      <button class="menu-button" mat-menu-item routerLink="home"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}"
+        #home="routerLinkActive">
+        <mat-icon>home</mat-icon>{{"NAVIGATION.HOME" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="learning"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']">
+        <mat-icon>school</mat-icon>{{"NAVIGATION.LEARNING" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="about"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}"
+        #biblio="routerLinkActive">
+        <mat-icon>info</mat-icon>{{"NAVIGATION.ABOUT" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="partnership"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>handshake</mat-icon>{{"NAVIGATION.PARTNERSHIP" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="outputs"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>inventory_2</mat-icon>{{"NAVIGATION.OUTPUTS" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="newsletters"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>mail</mat-icon>{{"NAVIGATION.NEWSLETTERS" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="articles"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>article</mat-icon>{{"NAVIGATION.ARTICLES" | translate}}
+      </button>
+      <button class="menu-button" mat-menu-item routerLink="leaflets"
+        [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>description</mat-icon>{{"NAVIGATION.LEAFLETS" | translate}}
+      </button>
+      <!--
+      Social links live in the toolbar on wide viewports, but below 700px the
+      toolbar has no room for them and they used to push the menu, account and
+      language buttons off the right edge of the screen. On small screens they
+      move in here instead, so nothing is lost and the navigation stays reachable.
+      -->
+      <div class="menu-socials">
+        <a mat-icon-button href="mailto:pomeil.eu@gmail.com" aria-label="Email">
+          <mat-icon>mail</mat-icon>
+        </a>
+        <a mat-icon-button href="https://www.facebook.com/PomeilProject/" target="_blank"
+          rel="noopener" aria-label="Facebook">
+          <mat-icon svgIcon="facebook"></mat-icon>
+        </a>
+        <a mat-icon-button href="https://www.linkedin.com/company/pomeil/" target="_blank"
+          rel="noopener" aria-label="LinkedIn">
+          <mat-icon svgIcon="linkedin"></mat-icon>
+        </a>
+      </div>
+    </mat-menu>
+  </button>
+}
+
+<app-account-menu></app-account-menu>
+<app-translate></app-translate>
 
 
-  </mat-toolbar>
-  <!-- <div>
-      <router-outlet #outlet="outlet"></router-outlet>
-    </div> -->
+</mat-toolbar>
+<!-- <div>
+<router-outlet #outlet="outlet"></router-outlet>
+</div> -->
 
-  <section class="router-parent" [@routeAnimations]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </section>
+<section class="router-parent" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</section>
 
 
 </div>

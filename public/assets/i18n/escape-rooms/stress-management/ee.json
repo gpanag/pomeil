@@ -231,7 +231,8 @@
       "Sul on õnnestunud kiiresti omandada uusi stressikindluse oskusi ja rakendada neid päriselu olukordades, ilmselt isegi varem kui kujutlesid – kõik seda tehes päästsid samal ajal ettevõtte.",
       "Oled edukalt omandanud <strong>Stressi juhtimise</strong> oskuse."
     ],
-    "buttonText": "Tagasi peamenüüsse"
+    "buttonText": "Tagasi peamenüüsse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "answerOverlay": {
     "title": "Õige vastus",
@@ -240,13 +241,15 @@
   "ui": {
     "continueButton": "Jätka",
     "fullscreenTitle": "Lülita täisekraan",
-    "backToEscapeRoomsTitle": "Tagasi põgenemistubadesse",
+    "backToLearningTitle": "Tagasi õppimise juurde",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

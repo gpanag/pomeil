@@ -220,7 +220,8 @@
       "npcResponse": "To ma sens. Zaproponuję to kierownictwu. Dziękuję.",
       "afterCallThought1": "Odpowiedziałem/am w konstruktywny i wyrozumiały sposób, jednocześnie chroniąc zakres projektu.",
       "afterCallThought2": "Zawsze jest trudno, kiedy ludzie chcą dodać więcej rzeczy do projektu. Może być kuszące, by się zgodzić. Ale brak ochrony zakresu często skutkuje mnóstwem pracy oraz zbyt małą ilością czasu i zasobów, by ją wykonać.",
-      "continueButton": "Dalej"
+      "continueButton": "Dalej",
+      "phoneTitle": "Rozmowa telefoniczna…"
     },
     "calendar": {
       "deadlineThought": "Termin… jest za dwa tygodnie?!\n\nTen termin musi dotyczyć pierwszej fazy projektu. Nie ma mowy, żeby cały projekt można było zakończyć w dwa tygodnie.\n\nLepiej upewnię się, że wszyscy wiedzą, co robić!",
@@ -255,17 +256,21 @@
   "completion": {
     "title": "Zarządzanie projektami ukończone",
     "message": "Gratulacje, ukończyłeś/aś escape room poświęcony zarządzaniu projektami!\n\nW pokoju musiałeś/aś przejąć rolę kierownika trwającego już projektu. Na papierze wszystko wydawało się iść dobrze. Ale wkrótce odkryłeś/aś kilka istniejących problemów. Cel projektu był niejasny, interesariusze mieli sprzeczne potrzeby, istniało ryzyko rozrostu zakresu i była duża presja czasu.\n\nNa szczęście stawiłeś/aś czoła wyzwaniom. Zdecydowałeś/aś się na konkretny, istotny i mierzalny cel, możliwy do osiągnięcia w określonym czasie. Wybrałeś/aś kierunek dla projektu, równoważąc potrzeby interesariuszy. Gdy ktoś poprosił o rozszerzenie zakresu, oparłeś/aś się temu i ochroniłeś/aś zakres w konstruktywny sposób. Wreszcie podjąłeś/aś działanie, ustalając realistyczne priorytety i jasno komunikując się ze swoim zespołem.\n\nDobra robota!",
-    "buttonText": "Wyjdź z biura"
+    "buttonText": "Wyjdź z biura",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "puzzlesCompleted": "zagadki",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
     "answerButton": "Odpowiedź",
-    "exitDoorTitle": "Drzwi"
+    "exitDoorTitle": "Drzwi",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć",
+    "skipPuzzle": "Pomiń tę zagadkę"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 enum GameState {
   Intro,
   TalkToAnastasia,
@@ -73,12 +74,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-adaptability-skill20',
-  templateUrl: './adaptability-skill20.component.html',
-  styleUrl: './adaptability-skill20.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
-  animations: [fadeInOut]
+    selector: 'app-adaptability-skill20',
+    templateUrl: './adaptability-skill20.component.html',
+    styleUrl: './adaptability-skill20.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class AdaptabilitySkill20Component extends EscapeRoomBaseComponent {
 
@@ -685,7 +686,13 @@ export class AdaptabilitySkill20Component extends EscapeRoomBaseComponent {
   }
 
   submitGap(): void {
-    const correct = ['delay', 'unstable', 'consequences', 'experimentation', 'judgment'];
+    const correct = [
+      this.t('puzzles.fillGap.correctOrder.0'),
+      this.t('puzzles.fillGap.correctOrder.1'),
+      this.t('puzzles.fillGap.correctOrder.2'),
+      this.t('puzzles.fillGap.correctOrder.3'),
+      this.t('puzzles.fillGap.correctOrder.4')
+    ];
     if (JSON.stringify(this.userGapAnswers) === JSON.stringify(correct)) {
       this.playSound('success-chime.wav');
       this.puzzleFeedback = '';

@@ -191,7 +191,8 @@
   "completion": {
     "title": "Навчання завершено!",
     "message": "Вітаємо! Ти успішно продемонстрував/ла відмінні навички відкритості розуму та комунікації.",
-    "buttonText": "Назад до головного меню"
+    "buttonText": "Назад до головного меню",
+    "revealedNote": "Тут довелося показати відповідь, тож варто переглянути цю частину в модулі."
   },
   "dialogueActions": {
     "continue": "Далі",
@@ -200,17 +201,19 @@
   },
   "buttons": {
     "toggleFullscreen": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат"
+    "backToLearning": "Назад до навчання"
   },
   "ui": {
     "continueButton": "Далі",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Перемкнути повноекранний режим",
-    "backToEscapeRooms": "Назад до квест-кімнат",
+    "backToLearning": "Назад до навчання",
     "skipButton": "Пропустити",
     "startQuizButton": "Почати вікторину",
     "answerButton": "Відповідь",
-    "finishTrainingButton": "Завершити навчання"
+    "finishTrainingButton": "Завершити навчання",
+    "backToRoom": "Повернутися до кімнати",
+    "clickToExamine": "Натисніть, щоб розглянути"
   },
   "learning": {
     "modeLabel": "Режим навчання",

@@ -39,17 +39,43 @@
       "title": "Klasyfikacja Dokumentów",
       "instructions": "Przeciągnij każdy dokument do właściwej kategorii.",
       "leftItems": [
-        {"id": "doc1", "text": "Umowa z klientem"},
-        {"id": "doc2", "text": "Wewnętrzna wytyczna polityki"},
-        {"id": "doc3", "text": "Notatki osobiste"},
-        {"id": "doc4", "text": "Poufna teczka pracownika"}
+        {
+          "id": "doc1",
+          "text": "Umowa z klientem"
+        },
+        {
+          "id": "doc2",
+          "text": "Wewnętrzna wytyczna polityki"
+        },
+        {
+          "id": "doc3",
+          "text": "Notatki osobiste"
+        },
+        {
+          "id": "doc4",
+          "text": "Poufna teczka pracownika"
+        }
       ],
       "rightItems": [
-        {"id": "cat1", "text": "Poufne"},
-        {"id": "cat2", "text": "Użytek wewnętrzny"},
-        {"id": "cat3", "text": "Publiczne / nie-wrażliwe"}
+        {
+          "id": "cat1",
+          "text": "Poufne"
+        },
+        {
+          "id": "cat2",
+          "text": "Użytek wewnętrzny"
+        },
+        {
+          "id": "cat3",
+          "text": "Publiczne / nie-wrażliwe"
+        }
       ],
-      "correctPairs": {"doc1": "cat1", "doc2": "cat2", "doc3": "cat3", "doc4": "cat1"},
+      "correctPairs": {
+        "doc1": "cat1",
+        "doc2": "cat2",
+        "doc3": "cat3",
+        "doc4": "cat1"
+      },
       "feedback": {
         "wrong": "Nie do końca. Pomyśl, kto powinien mieć dostęp do każdego dokumentu.",
         "correct": "Nie wszystkie informacje powinny być traktowane tak samo."
@@ -103,7 +129,10 @@
     },
     "answerOverlayTitle": "Odpowiedź ujawniona",
     "answerOverlayContinue": "Dalej",
-    "fillGap": {"checkButton": "Wyślij", "resetButton": "Zresetuj"}
+    "fillGap": {
+      "checkButton": "Wyślij",
+      "resetButton": "Zresetuj"
+    }
   },
   "hints": {
     "intro": "Kliknij Sarah przy głównym biurku, by zacząć.",
@@ -145,17 +174,23 @@
         "Ten e-mail został oznaczony przez system monitorowania zgodności."
       ]
     },
-    "checklist": {"inventoryTitle": "Lista kontrolna zgodności"},
-    "flaggedEmail": {"inventoryTitle": "Oznaczony e-mail"}
+    "checklist": {
+      "inventoryTitle": "Lista kontrolna zgodności"
+    },
+    "flaggedEmail": {
+      "inventoryTitle": "Oznaczony e-mail"
+    }
   },
   "completion": {
     "title": "Umiejętność ukończona: Zgodność prawna",
     "message": "Pokazałeś/aś: Świadomość ryzyka, Etyczny osąd, Postępowanie z informacjami, Odpowiedzialność proceduralną.\n\nZgodność chroni ludzi, organizacje i zaufanie.",
-    "buttonText": "Wyjdź z Działu Prawnego"
+    "buttonText": "Wyjdź z Działu Prawnego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
+    "checkButton": "Sprawdź",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
@@ -163,7 +198,9 @@
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
     "answerButton": "Odpowiedź",
-    "resetButton": "Zresetuj"
+    "resetButton": "Zresetuj",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

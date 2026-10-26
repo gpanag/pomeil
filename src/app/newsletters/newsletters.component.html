@@ -1,80 +1,94 @@
 <div class="news-parent mat-app-background">
-    <div class="list">
-        <div class="title">
-            <h5 class="title">Newsletters</h5>
-            <p class="project-no">{{"REFERENCE_NO" | translate}}</p>
-        </div>
-
-        <div class="results-parent">
-            <div class="list-content">
-                <div class="grid-list" *ngIf="news.length > 0  && listGrid === false" fxLayout="row wrap"
-                    fxLayoutGap="16px grid" fxFlex="auto" [@listAnimation]="suffleCards">
-
-                    <div fxFlex *ngFor="let newItem of news" class="item-card">
-                        <mat-card class="mat-elevation-z4 example-card">
-                            <mat-card-header style="max-width: 100%">
-
-                                <mat-card-title class="item-title is-link" style="font-size: 16px;"
-                                    >
-                                    <span>
-                                        {{newItem?.title}}
-                                    </span>
-                                </mat-card-title>
-
-                          
-                            <mat-card-subtitle >{{newItem?.publishedAt | date
-                                }}</mat-card-subtitle>
-
-                            </mat-card-header>
-                            <div class="list-thumb-container" *ngIf="newItem.image">
-                                <div class="list-thumb" mat-card-image *ngIf="lang==='en'"
-                                (click)="openImageDialog(images, newItem?.image?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image.url + ')'" loading="lazy">
-                            </div>
-                            <div class="list-thumb" mat-card-image *ngIf="lang==='ee'"
-                                (click)="openImageDialog(images, newItem?.image_ee?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image_ee.url + ')'" loading="lazy">
-                            </div>
-                            <div class="list-thumb" mat-card-image *ngIf="lang==='gr'"
-                                (click)="openImageDialog(images, newItem?.image_gr?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image_gr.url + ')'" loading="lazy">
-                            </div>
-                            <div class="list-thumb" mat-card-image *ngIf="lang==='no'"
-                                (click)="openImageDialog(images, newItem?.image_no?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image_no.url + ')'" loading="lazy">
-                            </div>
-                            <div class="list-thumb" mat-card-image *ngIf="lang==='pl'"
-                                (click)="openImageDialog(images, newItem?.image_pl?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image_pl.url + ')'" loading="lazy">
-                            </div>
-                            <div class="list-thumb" mat-card-image *ngIf="lang==='ua'"
-                                (click)="openImageDialog(images, newItem?.image_ua?.id)"
-                                [style.backgroundImage]="'url(' + newItem.image_ua.url + ')'" loading="lazy">
-                            </div>
-                                <!-- <div class="list-thumb-no-image" mat-card-image
-                                    *ngIf="!newItem.image" (click)="openNew(newItem)"
-                                    [style.backgroundImage]="'url(assets/images/no_image.jpg)'" loading="lazy">
-                                </div> -->
-                            </div>
-                            <!-- <mat-card-content> -->
-                                <!-- <div class="news-front-content"
-                                    [innerHTML]="lang === 'en'? newItem?.attributes.content_en : newItem?.attributes.content_el  | safeHtml">
-                                </div> -->
-                            <!-- </mat-card-content> -->
-                            <!-- <mat-card-actions>
-                                <button mat-button (click)="openNew(newItem)">more</button>
-                                <div class="spacer"></div>
-                            </mat-card-actions>-->
-                        </mat-card> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="paginator-parent">
-            <mat-paginator class="paginator" [length]="newsCount" [pageSize]="pageSize" [pageIndex]="pageIndex"
-                [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page" (page)="onPaginateChange($event)">
-            </mat-paginator>
-        </div>
+  <div class="list">
+    <div class="title">
+      <h5 class="title">{{"NAVIGATION.NEWSLETTERS" | translate}}</h5>
+      <p class="project-no">{{"REFERENCE_NO" | translate}}</p>
     </div>
+
+    <div class="results-parent">
+      <div class="list-content">
+        <!-- Card grid: these static styles are what @angular/flex-layout used to write inline
+        (row wrap, 16px grid gap, flexible cards); the library was removed 2026-10-26. -->
+        @if (news.length > 0  && listGrid === false) {
+          <div class="grid-list"
+            style="flex-flow: row wrap; box-sizing: border-box; display: flex; flex: 1 1 auto; margin: 0 -16px -16px 0;" [@listAnimation]="suffleCards">
+            @for (newItem of news; track newItem) {
+              <div style="flex: 1 1 0%; box-sizing: border-box; padding: 0 16px 16px 0;" class="item-card">
+                <mat-card class="mat-elevation-z4 example-card">
+                  <mat-card-header style="max-width: 100%">
+                    <mat-card-title class="item-title is-link" style="font-size: 16px;"
+                      >
+                      <span>
+                        {{ itemTitle(newItem) }}
+                      </span>
+                    </mat-card-title>
+                    <mat-card-subtitle >{{ $safeNavigationMigration(newItem?.publishedAt) | date : undefined : undefined : dateLocale }}</mat-card-subtitle>
+                  </mat-card-header>
+                  @if (newItem.image) {
+                    <div class="list-thumb-container">
+                      @if (lang==='en') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      @if (lang==='ee') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image_ee?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image_ee.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      @if (lang==='gr') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image_gr?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image_gr.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      @if (lang==='no') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image_no?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image_no.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      @if (lang==='pl') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image_pl?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image_pl.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      @if (lang==='ua') {
+                        <div class="list-thumb" mat-card-image
+                          (click)="openImageDialog(images, $safeNavigationMigration(newItem?.image_ua?.id))"
+                          [style.backgroundImage]="'url(' + newItem.image_ua.url + ')'" loading="lazy">
+                        </div>
+                      }
+                      <!-- <div class="list-thumb-no-image" mat-card-image
+                      *ngIf="!newItem.image" (click)="openNew(newItem)"
+                      [style.backgroundImage]="'url(assets/images/no_image.jpg)'" loading="lazy">
+                    </div> -->
+                  </div>
+                }
+                <!-- <mat-card-content> -->
+                <!-- <div class="news-front-content"
+                [innerHTML]="lang === 'en'? newItem?.attributes.content_en : newItem?.attributes.content_el  | safeHtml">
+              </div> -->
+            <!-- </mat-card-content> -->
+            <!-- <mat-card-actions>
+            <button mat-button (click)="openNew(newItem)">more</button>
+            <div class="spacer"></div>
+          </mat-card-actions>-->
+        </mat-card>
+      </div>
+    }
+  </div>
+}
+</div>
+</div>
+<div class="paginator-parent">
+  <mat-paginator class="paginator" [length]="newsCount" [pageSize]="pageSize" [pageIndex]="pageIndex"
+    [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page" (page)="onPaginateChange($event)">
+  </mat-paginator>
+</div>
+</div>
 </div>
 <app-footer></app-footer>

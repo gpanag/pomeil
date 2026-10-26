@@ -5,7 +5,9 @@
   </div>
 
   <mat-card-content>
-    <div *ngIf="error" class="error-message">{{ error }}</div>
+    @if (error) {
+      <div class="error-message">{{ error }}</div>
+    }
 
     <mat-form-field appearance="outline">
       <mat-label>{{ 'AUTH.IDENTIFIER' | translate }}</mat-label>
@@ -25,8 +27,12 @@
 
   <mat-card-actions>
     <button mat-raised-button color="primary" (click)="login()" [disabled]="loading || !identifier || !password">
-      <mat-icon *ngIf="!loading">login</mat-icon>
-      <mat-spinner *ngIf="loading" diameter="20"></mat-spinner>
+      @if (!loading) {
+        <mat-icon>login</mat-icon>
+      }
+      @if (loading) {
+        <mat-spinner diameter="20"></mat-spinner>
+      }
       {{ 'AUTH.LOGIN_BUTTON' | translate }}
     </button>
   </mat-card-actions>
@@ -34,7 +40,7 @@
   <div class="auth-links">
     <a routerLink="/forgot-password">{{ 'AUTH.FORGOT_PASSWORD' | translate }}</a>
     <br>
-    <span>{{ 'AUTH.NO_ACCOUNT' | translate }} </span>
-    <a routerLink="/register">{{ 'AUTH.REGISTER' | translate }}</a>
-  </div>
-</mat-card>
+      <span>{{ 'AUTH.NO_ACCOUNT' | translate }} </span>
+      <a routerLink="/register">{{ 'AUTH.REGISTER' | translate }}</a>
+    </div>
+  </mat-card>

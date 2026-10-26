@@ -24,6 +24,7 @@
     "OUTPUTS": "Outputs",
     "RESOURCES": "Resources",
     "NEWS": "News & announcements",
+    "NEWSLETTERS": "Newsletters",
     "ESCAPE_ROOMS": "Escape Rooms",
     "ARTICLES": "Articles",
     "LEAFLETS": "Leaflets",
@@ -38,14 +39,19 @@
     "PROGRAMME": "Programme",
     "REFERENCE": "Reference No.",
     "DURATION": "Duration",
-    "FUNDER": "Funder"
+    "FUNDER": "Funder",
+    "GUIDE": "Guide"
   },
   "OTHER": {
     "OBJECTIVES": "Objectives",
-    "WORKPACKAGES": "Work packages"
+    "WORKPACKAGES": "Work packages",
+    "GALLERY": "Gallery"
   },
   "WORKPACKAGES": {
-    "MAP": "The Pomeil Competence Map"
+    "MAP": "The Pomeil Competence Map",
+    "FILES": "Files",
+    "TRANSLATIONS": "Translations",
+    "ENGLISH_ONLY": "English only"
   },
   "LEARNING_PAGE": {
     "INTRO": {
@@ -77,7 +83,9 @@
       "BROWSE_MODULES": "Browse Modules",
       "GUIDEBOOK_TITLE": "Trainer Guidebook",
       "GUIDEBOOK_DESC": "Download the POMEIL Trainer Guidebook for a comprehensive overview of all skills, methodology, and training guidance.",
-      "DOWNLOAD_PDF": "Download PDF"
+      "DOWNLOAD_PDF": "Download PDF",
+      "DIAGRAM_START": "START",
+      "DIAGRAM_GROWTH": "GROWTH"
     },
     "DASHBOARD": {
       "TITLE": "Learning Dashboard",
@@ -94,7 +102,8 @@
       "SCORE": "Score",
       "NO_GAMES_PLAYED": "No games played yet. Start your learning journey to see your progress here.",
       "PROGRESS_SAVED": "Progress saved to cloud",
-      "SAVE_PROGRESS": "Sign in to save progress"
+      "PROGRESS_SAVED_LOCAL": "Progress is saved in this browser only",
+      "REQUIRED": "(Required)"
     },
     "FLOW": {
       "TITLE": "Learning Flow",
@@ -119,7 +128,10 @@
       "PASSED": "Passed",
       "NEEDS_REVIEW": "Needs Review",
       "START_OVER": "Start Over",
-      "READ_FLIPBOOK": "Read the module"
+      "READ_FLIPBOOK": "Read the module",
+      "MODULE_GATE_HINT": "Your score is below 80%. Download or read the module for this skill before continuing to the next one.",
+      "MODULE_ACKNOWLEDGED": "Module opened",
+      "REQUIRED_BADGE": "Required"
     },
     "MODULES": {
       "TITLE": "Learning Modules",
@@ -148,7 +160,9 @@
       "BACK_TO_ESCAPE_ROOMS": "Back to Escape Rooms",
       "LEARNING_MODE": "Learning Mode",
       "PUZZLES": "puzzles",
-      "SCORE": "Score"
+      "SCORE": "Score",
+      "SKILL": "Skill",
+      "PUZZLE": "Puzzle"
     },
     "QUESTIONNAIRE": {
       "TITLE": "Evaluation Questionnaire for the MOOC Platform",
@@ -203,11 +217,11 @@
     "LOGIN": "Login",
     "LOGOUT": "Logout",
     "REGISTER": "Register",
-    "CONTINUE_ANYWAY": "Continue anyway",
-    "NOT_LOGGED_IN_TITLE": "You are not logged in",
-    "NOT_LOGGED_IN_BODY": "You can play the escape room, but please note:",
-    "NOT_LOGGED_IN_BULLET_PROGRESS": "Your progress will not be saved.",
-    "NOT_LOGGED_IN_BULLET_SCORES": "Your scores won't appear on your dashboard or in Your Modules.",
+    "GUEST_TITLE": "Playing without an account",
+    "GUEST_BODY": "You can play and learn without an account.",
+    "GUEST_SAVED_HERE": "Your chosen skills and scores are saved only in this browser, on this device.",
+    "GUEST_SIGN_IN_BENEFIT": "Sign in first if you want them saved to your account, so you can continue on any device.",
+    "CONTINUE_AS_GUEST": "Continue without an account",
     "FORGOT_PASSWORD": "Forgot Password?",
     "CHANGE_PASSWORD": "Change Password",
     "PROFILE": "Profile",
@@ -245,7 +259,8 @@
     "RESET_PASSWORD_TITLE": "Set a new password",
     "RESET_PASSWORD_BODY": "Choose a new password for your account.",
     "RESET_PASSWORD_SUBMIT": "Update password",
-    "INVALID_RESET_LINK": "This reset link is invalid or has expired. Please request a new one."
+    "INVALID_RESET_LINK": "This reset link is invalid or has expired. Please request a new one.",
+    "MIN_PASSWORD_HINT": "Minimum 6 characters"
   },
   "HOME": {
     "COVER_FUNDED_BY": "Funded by the European Union",
@@ -272,11 +287,17 @@
     "TILE_OUTPUTS_DETAIL": "Project deliverables released so far.",
     "TILE_ARTICLES_DETAIL": "Insight pieces from across the network.",
     "TILE_RESOURCES_DETAIL": "Tools and references for educators and learners.",
+    "TILE_NEWSLETTERS_DETAIL": "Project updates, issue by issue.",
     "TILE_LEAFLETS_DETAIL": "Printable summaries you can share with your community.",
     "TILE_PARTNERSHIP_DETAIL": "The six organisations behind POMEIL, across four countries.",
     "NEWS_EYEBROW": "Latest dispatches",
     "NETWORK_EYEBROW": "Our network",
-    "NETWORK_LEAD": "Six organisations across Norway, Greece, Poland and Estonia."
+    "NETWORK_LEAD": "Six organisations across Norway, Greece, Poland and Estonia.",
+    "COVER_CTA_LEARNING": "Start learning",
+    "TILE_LEARNING": "Learning",
+    "TILE_LEARNING_DETAIL": "The guided journey: choose your skills, play, review your scores and study the modules.",
+    "TILE_ROOMS": "Escape Rooms",
+    "TILE_ROOMS_DETAIL": "30 digital escape rooms, one per skill — play any of them straight away."
   },
   "NEW": {
     "GALLERY": "Gallery",
@@ -287,5 +308,124 @@
     "EMPTY_LEAD": "Resources are taking shape.",
     "EMPTY_DETAIL": "We're curating tools, references and reading lists for educators and learners across the network. Check back later, or follow the news for updates.",
     "FOLLOW_NEWS": "Follow the news"
+  },
+  "SKILLS": {
+    "cultural-awareness": "Cultural Awareness",
+    "empathy": "Empathy",
+    "strategic-thinking": "Strategic Thinking",
+    "open-mindedness": "Open-Mindedness",
+    "financial": "Financial Literacy",
+    "stress-management": "Stress Management",
+    "trust-building": "Trust Building",
+    "active-listening": "Active Listening",
+    "adaptability": "Adaptability",
+    "flexibility": "Flexibility",
+    "interpersonal-skills": "Interpersonal Skills",
+    "language-skills": "Language Skills",
+    "market-awareness": "Market Awareness",
+    "legal-compliance": "Legal Compliance",
+    "self-reliance": "Self-Reliance",
+    "teamwork": "Teamwork",
+    "resilience": "Resilience",
+    "motivating-others": "Motivating & Inspiring Others",
+    "tolerance": "Tolerance",
+    "leadership": "Leadership",
+    "decision-making": "Decision-Making",
+    "crm": "Customer Relationship Management",
+    "business-planning": "Business Planning",
+    "critical-thinking": "Critical Thinking",
+    "digital-skills": "Digital Skills",
+    "negotiation-skills": "Negotiation Skills",
+    "networking-skills": "Networking Skills",
+    "risk-management": "Risk Management",
+    "problem-solving": "Problem Solving",
+    "project-management": "Project Management"
+  },
+  "GUIDE": {
+    "TITLE": "Guide",
+    "PLATFORM_TITLE": "How the learning journey works",
+    "ROOM_TITLE": "How to play an escape room",
+    "ROOM_STEP_1": "Read the short story on the intro card, then click Start.",
+    "ROOM_STEP_2": "Explore the scene: click objects that look interesting and talk to the characters — they tell you what to look for.",
+    "ROOM_STEP_3": "Click the dialogue box to continue a conversation.",
+    "ROOM_STEP_4": "Stuck? Press the glowing lightbulb button (top-left) for a hint. After a while the game also nudges you.",
+    "ROOM_STEP_5": "Puzzles allow 3 attempts; after the third wrong attempt the answer is shown. You can also skip a puzzle.",
+    "ROOM_STEP_6": "In the learning flow every puzzle counts towards your score: 80% or more passes; below that, study the module before moving on.",
+    "ROOM_STEP_7": "Tip: play on a laptop or desktop in fullscreen (the button in the top-right corner) for the best experience.",
+    "ROTATE_HINT": "For the best experience, turn your phone to landscape or use a larger screen."
+  },
+  "LEAFLETS": {
+    "PAGE": "Page",
+    "PREVIOUS_PAGE": "Previous page",
+    "NEXT_PAGE": "Next page",
+    "SELECT_PROMPT": "Select a leaflet to view"
+  },
+  "ESCAPE_ROOM": {
+    "SCORE_OUTSTANDING": "Outstanding performance! You have mastered this skill.",
+    "SCORE_GREAT": "Great job! You have a strong understanding of this skill.",
+    "SCORE_GOOD": "Good effort! Consider reviewing the module material to strengthen your knowledge.",
+    "SCORE_STUDY": "You completed the room, but we recommend studying the module PDF for this skill.",
+    "SCORE_REVEALED": "Some answers had to be revealed — those parts are worth a second look in the module.",
+    "YOU": "You",
+    "YOU_SUFFIX": "(you)",
+    "YOU_INLINE": "you",
+    "SHOW_SPOTS": "Show what I can click",
+    "HIDE_SPOTS": "Hide the clickable spots",
+    "EXIT_TITLE": "Leave the room?",
+    "EXIT_BODY": "Are you sure you want to leave? Your progress will be lost.",
+    "EXIT_CANCEL": "Cancel",
+    "EXIT_CONFIRM": "Leave",
+    "FULLSCREEN_TIP": "Tip: use the fullscreen button (top-right corner) for the best experience."
+  },
+  "FLIPBOOK": {
+    "CLOSE": "Close",
+    "PREVIOUS_PAGE": "Previous page",
+    "NEXT_PAGE": "Next page",
+    "MODULE": "Module",
+    "DRAFT": "DRAFT",
+    "DRAFT_HINT": "This curriculum is a draft pending partner review.",
+    "BACK_TO_LEARNING": "Back to learning"
+  },
+  "SKILL_DESC": {
+    "cultural-awareness": "Understanding and respecting cultural differences in the workplace, including communication styles, customs, and social norms across cultures.",
+    "empathy": "Developing the ability to recognize and understand the emotions and perspectives of others, and responding with compassion in professional settings.",
+    "strategic-thinking": "Learning to analyze situations, consider long-term impacts, and make decisions that align with organizational goals and team collaboration.",
+    "open-mindedness": "Cultivating openness to new ideas, diverse perspectives, and constructive feedback while maintaining critical thinking abilities.",
+    "financial": "Understanding basic financial concepts including budgeting, cash flow management, invoicing, and financial planning for personal and professional growth.",
+    "stress-management": "Techniques for recognizing, managing, and reducing stress in the workplace, including mindfulness, boundary-setting, and resilience building.",
+    "trust-building": "Building trust within teams through transparency, empathy, active listening, and consistent leadership behavior.",
+    "active-listening": "Being fully present in conversations, understanding verbal and non-verbal cues, and responding thoughtfully to build stronger communication.",
+    "adaptability": "Adjusting your approach when circumstances change while maintaining focus on goals, balancing speed with judgment.",
+    "flexibility": "Responding quickly to change, managing stress, and finding new solutions under pressure in dynamic R&D environments.",
+    "interpersonal-skills": "Communication, teamwork, emotional intelligence, and problem-solving abilities essential for effective workplace interactions.",
+    "language-skills": "Developing receptive and productive language abilities for effective communication in international professional environments.",
+    "resilience": "Building the capacity to recover from setbacks, adapt to challenges, and maintain effectiveness under pressure.",
+    "self-reliance": "Developing independence, initiative, and confidence to solve problems and make decisions autonomously.",
+    "teamwork": "Working effectively with others, collaborating across roles, and contributing to shared goals in diverse team environments.",
+    "tolerance": "Understanding and accepting diversity, practicing inclusion, and managing differences constructively in the workplace.",
+    "crm": "Managing customer interactions, handling complaints, maintaining records, and building long-term customer relationships.",
+    "decision-making": "Systematic approaches to identifying alternatives, evaluating outcomes, and selecting the best course of action under uncertainty.",
+    "leadership": "Developing leadership qualities including empathy, accountability, communication, and decision-making in team management.",
+    "legal-compliance": "Understanding legal requirements, data protection, confidentiality, and ethical responsibilities in business operations.",
+    "market-awareness": "Understanding target audiences, competitor analysis, market trends, and developing unique selling propositions.",
+    "motivating-others": "Recognizing strengths, providing encouragement, and inspiring confidence in others through empathetic leadership.",
+    "business-planning": "Developing business models, identifying customer segments, revenue streams, and creating actionable business plans.",
+    "critical-thinking": "Analyzing information objectively, evaluating evidence, and making reasoned judgments to solve problems effectively.",
+    "digital-skills": "Navigating digital tools, cybersecurity awareness, online communication, and responsible use of technology in the workplace.",
+    "negotiation-skills": "Preparing for negotiations, building rapport, finding win-win solutions, and maintaining professional relationships.",
+    "networking-skills": "Initiating professional connections, building trust, maintaining relationships, and leveraging networks for opportunities.",
+    "risk-management": "Identifying, assessing, and mitigating risks in the workplace, including safety hazards and operational risks.",
+    "problem-solving": "Defining problems accurately before acting — avoiding jumping to solutions, exploring alternative causes, and identifying root issues.",
+    "project-management": "Setting clear objectives, balancing stakeholder needs, protecting project scope, and communicating realistic priorities to deliver on time."
+  },
+  "EYEBROW": {
+    "REFLECTION": "Reflection",
+    "REFLECTION_SUBMITTED": "Reflection submitted",
+    "LEARNING_VOYAGE": "Learning voyage",
+    "VOYAGE_COMPLETE": "Voyage complete",
+    "YOUR_PROGRESS": "Your progress",
+    "LIBRARY": "Library",
+    "WHOLE_CURRICULUM": "Whole curriculum",
+    "FEATURED": "Featured"
   }
 }

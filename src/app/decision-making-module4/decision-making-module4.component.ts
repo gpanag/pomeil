@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 /**
  * Decision-Making Escape Room (Module 4).
  *
@@ -103,12 +104,12 @@ const ALTERNATIVE_KEYS = [
 const CRITERIA_KEYS = ['risk', 'timeCost', 'resourceUse', 'control'] as const;
 
 @Component({
-  selector: 'app-decision-making-module4',
-  templateUrl: './decision-making-module4.component.html',
-  styleUrl: './decision-making-module4.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, MatTooltipModule],
-  animations: [fadeInOut]
+    selector: 'app-decision-making-module4',
+    templateUrl: './decision-making-module4.component.html',
+    styleUrl: './decision-making-module4.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, MatTooltipModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class DecisionMakingModule4Component extends EscapeRoomBaseComponent {
 

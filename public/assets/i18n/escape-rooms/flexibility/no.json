@@ -134,6 +134,7 @@
   },
   "items": {
     "stickyNote": {
+      "altText": "Klistrelapp",
       "inventoryTitle": "Fleksibel Tankegang – Nøkkelegenskaper",
       "popupTitle": "Fleksibel Tankegang – Nøkkelegenskaper",
       "popupContent": [
@@ -156,18 +157,21 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har fullført Fleksibilitet-ferdigheten! Du holdt deg rolig, tilpasset deg og handlet proaktivt. Det er essensen av fleksibilitet i FoU. Du er klar for neste utfordring!",
-    "buttonText": "Forlat FoU-rommet"
+    "buttonText": "Forlat FoU-rommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
     "gapPlaceholder": "___",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

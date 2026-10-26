@@ -221,18 +221,21 @@
   "completion": {
     "title": "Sallivus lõpetatud!",
     "message": "Lõpetasid edukalt sallivuse põgenemistoa. Näitasid kannatlikkust, mõistmist ja võimet lugupidavalt lahkarvamustest läbi pääseda.",
-    "buttonText": "Tagasi põgenemistubadesse"
+    "buttonText": "Tagasi põgenemistubadesse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "continueButton": "Jätka",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "fullscreenToggle": "Lülita täisekraan",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "______",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 enum GameState {
   Intro,
   TalkToCandidate1,
@@ -61,12 +62,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-motivating-others',
-  templateUrl: './motivating-others.component.html',
-  styleUrl: './motivating-others.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
-  animations: [fadeInOut]
+    selector: 'app-motivating-others',
+    templateUrl: './motivating-others.component.html',
+    styleUrl: './motivating-others.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule, DragDropModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class MotivatingOthersComponent extends EscapeRoomBaseComponent {
 
@@ -124,6 +125,8 @@ export class MotivatingOthersComponent extends EscapeRoomBaseComponent {
   // --- Puzzle 2: Sequence Ordering ---
   userSequence: string[] = [];
   puzzle2WrongAttempts: number = 0;
+  strengthsWrongAttempts: number = 0;
+  bodyLanguageWrongAttempts: number = 0;
   puzzle2TotalWrong: number = 0;
   puzzle2WasRevealed: boolean = false;
 
@@ -484,10 +487,28 @@ export class MotivatingOthersComponent extends EscapeRoomBaseComponent {
         this.showDialogue({ character: this.playerSpeaker, text: this.t('strengths.feedback.correct'), id: 'system_strengthsCorrect' });
       }, ESCAPE_ROOM_TIMING.completionTransitionDelay);
     } else {
+      // Consultation feedback 2026-09-21 (NO): a wrong answer used to wipe the
+      // selection, so the task restarted from scratch, and there was no reveal
+      // after three attempts like everywhere else on the platform.
       this.playSound('error-buzz.mp3');
       this.isPuzzleWrong = true;
+      this.strengthsWrongAttempts++;
       this.strengthFeedback = this.t('strengths.feedback.wrong');
-      this.selectedStrengths = [];
+
+      if (this.strengthsWrongAttempts >= 3) {
+        this.selectedStrengths = [...correctIds];
+        this.answerOverlayText = this.t('strengths.answerOverlay');
+        this.answerOverlayCallback = () => {
+          this.strengthsWrongAttempts = 0;
+          this.strengthsResolved = true;
+          setTimeout(() => {
+            this.currentState = GameState.StrengthsComplete;
+            this.updateBackground();
+            this.showDialogue({ character: this.playerSpeaker, text: this.t('strengths.feedback.correct'), id: 'system_strengthsCorrect' });
+          }, ESCAPE_ROOM_TIMING.completionTransitionDelay);
+        };
+        this.showAnswerOverlay = true;
+      }
       setTimeout(() => this.isPuzzleWrong = false, ESCAPE_ROOM_TIMING.shakeTimeout);
     }
   }
@@ -624,10 +645,27 @@ export class MotivatingOthersComponent extends EscapeRoomBaseComponent {
         this.showDialogue({ character: this.playerSpeaker, text: this.t('bodyLanguage.feedback.correct'), id: 'system_bodyLanguageCorrect' });
       }, ESCAPE_ROOM_TIMING.completionTransitionDelay);
     } else {
+      // See submitStrengths(): keep the player's picks and reveal after three
+      // attempts instead of silently resetting the task.
       this.playSound('error-buzz.mp3');
       this.isPuzzleWrong = true;
+      this.bodyLanguageWrongAttempts++;
       this.bodyLanguageFeedback = this.t('bodyLanguage.feedback.wrong');
-      this.selectedBodyLanguage = [];
+
+      if (this.bodyLanguageWrongAttempts >= 3) {
+        this.selectedBodyLanguage = [...correctIds];
+        this.answerOverlayText = this.t('bodyLanguage.answerOverlay');
+        this.answerOverlayCallback = () => {
+          this.bodyLanguageWrongAttempts = 0;
+          this.bodyLanguageResolved = true;
+          setTimeout(() => {
+            this.currentState = GameState.CandidateThankYou;
+            this.updateBackground();
+            this.showDialogue({ character: this.playerSpeaker, text: this.t('bodyLanguage.feedback.correct'), id: 'system_bodyLanguageCorrect' });
+          }, ESCAPE_ROOM_TIMING.completionTransitionDelay);
+        };
+        this.showAnswerOverlay = true;
+      }
       setTimeout(() => this.isPuzzleWrong = false, ESCAPE_ROOM_TIMING.shakeTimeout);
     }
   }

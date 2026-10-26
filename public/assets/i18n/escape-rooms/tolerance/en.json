@@ -221,18 +221,21 @@
   "completion": {
     "title": "Tolerance Complete!",
     "message": "You have successfully completed the Tolerance escape room. You demonstrated patience, understanding, and the ability to work through disagreements respectfully.",
-    "buttonText": "Back to Escape Rooms"
+    "buttonText": "Back to learning",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "continueButton": "Continue",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "fullscreenToggle": "Toggle fullscreen",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "______",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

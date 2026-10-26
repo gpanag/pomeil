@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from '../../translate/translate.service';
 
 interface SkillModule {
@@ -17,11 +17,25 @@ interface SkillModule {
 const TRANSLATED_PDF_LANGS = new Set<string>(['pl']);
 
 @Component({
-  selector: 'app-modules-library',
-  templateUrl: './modules-library.component.html',
-  styleUrls: ['./modules-library.component.scss'],
+    selector: 'app-modules-library',
+    templateUrl: './modules-library.component.html',
+    styleUrls: ['./modules-library.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ModulesLibraryComponent {
+
+  /** Localised skill name from app i18n `SKILLS.<id>`; falls back to the
+   *  English title in `modules` (partner feedback 2026-08-31). */
+  skillTitle(mod: SkillModule): string {
+    return this.translate.instant('SKILLS.' + mod.id) ?? mod.title;
+  }
+
+  /** Localized module description, falling back to the English text declared
+      below while a language still has no translation (PL delivered 2026-09-21). */
+  skillDescription(mod: SkillModule): string {
+    return this.translate.instant('SKILL_DESC.' + mod.id) ?? mod.description;
+  }
 
   /** Full curriculum document (all modules combined). Featured at top. */
   fullCurriculumPdfUrl = 'assets/modules/POMEIL_Curriculum_Full.pdf';

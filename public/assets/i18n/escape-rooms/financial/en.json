@@ -11,7 +11,7 @@
   },
   "buttons": {
     "toggleFullscreen": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continue": "Continue",
     "startPuzzle": "Start Puzzle",
     "finishTraining": "Finish Training",
@@ -240,16 +240,19 @@
     "title": "Training Complete!",
     "message": "Congratulations! You have successfully completed the Financial Literacy & Management skill training.",
     "submessage": "You're becoming a more informed and financially responsible entrepreneur!",
-    "buttonText": "Back to Main Menu"
+    "buttonText": "Back to Main Menu",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

@@ -190,17 +190,20 @@
   "completion": {
     "title": "Õnnitleme!",
     "message": "Sul õnnestus edukalt lõpetada Zainabu ja Mateo poolt sulle ette valmistatud aktiivse kuulamise koolitus. Sa oled näidanud mitte ainult oma võimet kiiresti õppida, vaid ka omandatud teadmisi õigesti rakendada. Sa oled edukalt omandanud Aktiivse kuulamise oskuse!",
-    "buttonText": "Välju katuselt"
+    "buttonText": "Välju katuselt",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "___",
     "selectTwo": "Vali 2 vastust",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

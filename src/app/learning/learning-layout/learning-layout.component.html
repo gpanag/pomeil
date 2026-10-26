@@ -16,53 +16,66 @@
     <mat-divider></mat-divider>
 
     <mat-nav-list class="sidenav-nav-list">
-      <a mat-list-item
-         *ngFor="let item of navItems"
-         [routerLink]="item.route"
-         routerLinkActive="active-link"
-         [routerLinkActiveOptions]="{ exact: item.exact }"
-         class="nav-item">
-        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
-        <span matListItemTitle>{{ item.label | translate }}</span>
-      </a>
+      @for (item of navItems; track item) {
+        <a mat-list-item
+          [routerLink]="item.route"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: item.exact }"
+          class="nav-item">
+          <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          <span matListItemTitle>{{ item.label | translate }}</span>
+        </a>
+      }
+      <button mat-list-item class="nav-item guide-item" type="button" (click)="openGuide()">
+        <mat-icon matListItemIcon>help_outline</mat-icon>
+        <span matListItemTitle>{{ "NAVIGATION.GUIDE" | translate }}</span>
+      </button>
     </mat-nav-list>
 
-    <div class="sync-status" *ngIf="auth.user$ | async as user">
-      <mat-divider></mat-divider>
-      <div class="sync-user">
-        <mat-icon class="sync-icon">cloud_done</mat-icon>
-        <div class="sync-details">
-          <span class="sync-name">{{ user.username || user.email }}</span>
-          <span class="sync-label">{{ 'LEARNING_PAGE.DASHBOARD.PROGRESS_SAVED' | translate }}</span>
-          <div class="sync-progress" *ngIf="completedCount > 0">
-            <mat-icon class="tiny-icon">emoji_events</mat-icon>
-            <span>{{ completedCount }} / {{ totalSkills }} {{ 'LEARNING_PAGE.DASHBOARD.ROOMS_COMPLETED' | translate }}</span>
+    @if (auth.user$ | async; as user) {
+      <div class="sync-status">
+        <mat-divider></mat-divider>
+        <div class="sync-user">
+          <mat-icon class="sync-icon">cloud_done</mat-icon>
+          <div class="sync-details">
+            <span class="sync-name">{{ user.username || user.email }}</span>
+            <span class="sync-label">{{ 'LEARNING_PAGE.DASHBOARD.PROGRESS_SAVED' | translate }}</span>
+            @if (completedCount > 0) {
+              <div class="sync-progress">
+                <mat-icon class="tiny-icon">emoji_events</mat-icon>
+                <span>{{ completedCount }} / {{ totalSkills }} {{ 'LEARNING_PAGE.DASHBOARD.ROOMS_COMPLETED' | translate }}</span>
+              </div>
+            }
           </div>
         </div>
       </div>
-    </div>
+    }
 
-    <div class="sync-status not-logged-in" *ngIf="!(auth.user$ | async)">
-      <mat-divider></mat-divider>
-      <a class="sync-login" routerLink="/login" [queryParams]="{returnUrl: '/learning/flow'}">
-        <mat-icon>cloud_off</mat-icon>
-        <div class="sync-details">
-          <span class="sync-name">{{ 'AUTH.LOGIN' | translate }}</span>
-          <span class="sync-label">{{ 'LEARNING_PAGE.DASHBOARD.SAVE_PROGRESS' | translate }}</span>
-        </div>
-      </a>
-    </div>
+    @if (!(auth.user$ | async)) {
+      <div class="sync-status not-logged-in">
+        <mat-divider></mat-divider>
+        <a class="sync-login" routerLink="/login" [queryParams]="{returnUrl: '/learning/flow'}">
+          <mat-icon>cloud_off</mat-icon>
+          <div class="sync-details">
+            <span class="sync-name">{{ 'AUTH.LOGIN' | translate }}</span>
+            <span class="sync-label">{{ 'LEARNING_PAGE.DASHBOARD.PROGRESS_SAVED_LOCAL' | translate }}</span>
+          </div>
+        </a>
+      </div>
+    }
 
   </mat-sidenav>
 
   <mat-sidenav-content class="learning-content">
 
-    <div class="mobile-header" *ngIf="isMobile">
-      <button mat-icon-button (click)="toggleSidenav()" aria-label="Toggle navigation">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span class="mobile-title">{{"NAVIGATION.LEARNING" | translate}}</span>
-    </div>
+    @if (isMobile) {
+      <div class="mobile-header">
+        <button mat-icon-button (click)="toggleSidenav()" aria-label="Toggle navigation">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="mobile-title">{{"NAVIGATION.LEARNING" | translate}}</span>
+      </div>
+    }
 
     <div class="content-area">
       <router-outlet></router-outlet>

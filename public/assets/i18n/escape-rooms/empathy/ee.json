@@ -100,30 +100,66 @@
         {
           "text": "Kolleeg annab väga lühikesi vastuseid, väldib silmsidet ja näperdab pidevalt kätega.",
           "options": [
-            {"text": "Rahulik + reflektiivne", "correct": false},
-            {"text": "Ärev + ebakindel", "correct": true},
-            {"text": "Rõõmus + energiline", "correct": false},
-            {"text": "Motiveeritud + keskendunud", "correct": false}
+            {
+              "text": "Rahulik + reflektiivne",
+              "correct": false
+            },
+            {
+              "text": "Ärev + ebakindel",
+              "correct": true
+            },
+            {
+              "text": "Rõõmus + energiline",
+              "correct": false
+            },
+            {
+              "text": "Motiveeritud + keskendunud",
+              "correct": false
+            }
           ],
           "hint": "Kätega näperdamine ja silmside vältimine peegeldavad tavaliselt sisemist pinget või muret."
         },
         {
           "text": "Meeskonna arutelus räägib kolleeg aeglasemalt kui tavaliselt, vastab pehme häälega ja hoiab õlgu allapoole.",
           "options": [
-            {"text": "Kurb + madal energia", "correct": true},
-            {"text": "Enesekindel + lõdvestunud", "correct": false},
-            {"text": "Ärritunud + kannatamatu", "correct": false},
-            {"text": "Hajameelne + mänguline", "correct": false}
+            {
+              "text": "Kurb + madal energia",
+              "correct": true
+            },
+            {
+              "text": "Enesekindel + lõdvestunud",
+              "correct": false
+            },
+            {
+              "text": "Ärritunud + kannatamatu",
+              "correct": false
+            },
+            {
+              "text": "Hajameelne + mänguline",
+              "correct": false
+            }
           ],
           "hint": "Allapoole lastud õlad ja pehme hääl näitavad tavaliselt langenud emotsionaalset energiat, mitte enesekindlust ega ärritust."
         },
         {
           "text": "Töökaaslane räägib väga kiiresti, segab sageli vahele ja tema žestid on kiired ja liialdatud.",
           "options": [
-            {"text": "Närviline põnevus + ülestimulatsioon", "correct": true},
-            {"text": "Rahulik + rahulik", "correct": false},
-            {"text": "Segaduses + väsinud", "correct": false},
-            {"text": "Neutraalne + ükskõikne", "correct": false}
+            {
+              "text": "Närviline põnevus + ülestimulatsioon",
+              "correct": true
+            },
+            {
+              "text": "Rahulik + rahulik",
+              "correct": false
+            },
+            {
+              "text": "Segaduses + väsinud",
+              "correct": false
+            },
+            {
+              "text": "Neutraalne + ükskõikne",
+              "correct": false
+            }
           ],
           "hint": "Kui keegi räägib liiga kiiresti või žestikuleerib liialt, peegeldab see sageli kõrgenenud aktivatsiooni — mitte rahu ega ükskõiksust."
         }
@@ -209,16 +245,19 @@
   "completion": {
     "title": "Koolitus lõpetatud!",
     "message": "Sa lõpetasid edukalt Empaatia oskuse mooduli.",
-    "buttonText": "Tagasi peamenüüsse"
+    "buttonText": "Tagasi peamenüüsse",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "gapPlaceholder": "____",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

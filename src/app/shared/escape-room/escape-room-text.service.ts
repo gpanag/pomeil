@@ -54,8 +54,12 @@ export class EscapeRoomTextService {
     if (typeof current !== 'string') return dotPath;
 
     // Replace (username) / <username> / X (username) with stored player name.
-    // Fall back to "you" when no name is set, so the placeholder never renders literally.
-    const playerName = this.getPlayerName() || 'you';
+    // Fall back to the localized "you" when no name is set, so the placeholder
+    // never renders literally — and never renders in English inside a
+    // translated sentence (consultation feedback 2026-09-21).
+    const playerName = this.getPlayerName()
+      || this.translateService.instant('ESCAPE_ROOM.YOU_INLINE')
+      || 'you';
     current = current
       .replace(/X \(username\)/g, playerName)
       .replace(/\(username\)/gi, playerName)

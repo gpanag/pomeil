@@ -184,11 +184,13 @@
   "completion": {
     "title": "Skill Completed: Legal Compliance",
     "message": "You demonstrated: Risk awareness, Ethical judgment, Information handling, Procedural responsibility.\n\nCompliance protects people, organizations, and trust.",
-    "buttonText": "Exit the Legal Department"
+    "buttonText": "Exit the Legal Department",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
+    "checkButton": "Check",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
@@ -196,7 +198,9 @@
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
     "answerButton": "Answer",
-    "resetButton": "Reset"
+    "resetButton": "Reset",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

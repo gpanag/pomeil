@@ -170,18 +170,21 @@
   "completion": {
     "title": "Congratulations!",
     "message": "Congratulations! You have unlocked the power of self-reliance. This skill is essential not only in business, but in everyday life as well. Try your luck with the next modules. Thank you for participating. You can return anytime if you want to refresh your knowledge — we are here to support your learning.!",
-    "buttonText": "Exit the Rooftop"
+    "buttonText": "Exit the Rooftop",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

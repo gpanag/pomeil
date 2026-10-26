@@ -134,6 +134,7 @@
   },
   "items": {
     "stickyNote": {
+      "altText": "Märkmepaber",
       "inventoryTitle": "Paindlik mõtteviis – Võtmeomadused",
       "popupTitle": "Paindlik mõtteviis – Võtmeomadused",
       "popupContent": [
@@ -156,18 +157,21 @@
   "completion": {
     "title": "Õnnitlused!",
     "message": "Sa lõpetasid Paindlikkuse oskuse! Sa jäid rahulikuks, kohanesid ja tegutsesid ennetavalt. See on T&A paindlikkuse olemus. Oled valmis järgmiseks väljakutseks!",
-    "buttonText": "Lahku T&A-toast"
+    "buttonText": "Lahku T&A-toast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

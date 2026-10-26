@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,6 +11,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { EscapeRoomConfig, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // --- Game State ---
 // No linear state machine: puzzles can be done in any order.
 // We track completion of each puzzle and overall progress.
@@ -74,12 +75,12 @@ interface CostItem {
 }
 
 @Component({
-  selector: 'app-business-planning-module1',
-  templateUrl: './business-planning-module1.component.html',
-  styleUrl: './business-planning-module1.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-business-planning-module1',
+    templateUrl: './business-planning-module1.component.html',
+    styleUrl: './business-planning-module1.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class BusinessPlanningModule1Component extends EscapeRoomBaseComponent {
 

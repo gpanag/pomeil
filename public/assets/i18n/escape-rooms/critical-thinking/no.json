@@ -96,7 +96,8 @@
         "label": "Vilkår og Betingelser",
         "thought": "\"Vilkår og betingelser gjelder. For fullstendige detaljer, vennligst kontakt salgsteamet vårt.\" - Vilkårene er ikke inkludert i e-posten. Et transparent selskap ville gitt fullstendige vilkår på forhånd, ikke skjult dem bak en telefonsamtale."
       }
-    }
+    },
+    "todayOnlyLine": "*Tilbudet gjelder KUN I DAG"
   },
   "reviews": {
     "siteName": "BusinessReview.com",
@@ -319,11 +320,12 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har vellykket fullført Kritisk Tenkning-fluktrommet! Du demonstrerte evnen til å stille spørsmål ved påstander, samle bevis fra flere kilder, identifisere manipulasjonstaktikker og ta informerte beslutninger. Dette er essensielle evner i kritisk tenkning i ethvert profesjonelt miljø.",
-    "buttonText": "Forlat Rommet"
+    "buttonText": "Forlat Rommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "nextReview": "Neste Anmeldelse",
     "previousReview": "Forrige Anmeldelse",
@@ -334,7 +336,9 @@
     "sortEvidence": "Sorter Bevis",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

@@ -24,14 +24,47 @@
       <div class="preview-content">
         <h3>{{ selectedLeaflet.title }}</h3>
 
-        <div class="image-wrapper" [@previewAnimation]="selectedLeaflet.title + '-' + lang">
-           <img [src]="leafletImageUrl(selectedLeaflet)" [alt]="selectedLeaflet.title">
+        <div class="image-wrapper" [@previewAnimation]="selectedLeaflet.title + '-' + lang + '-' + currentPageIndex">
+           <img [src]="previewPageUrl"
+                [alt]="selectedLeaflet.title + ' — ' + ('LEAFLETS.PAGE' | translate) + ' ' + (currentPageIndex + 1)">
         </div>
+
+        <!-- Pager — only for leaflets with more than one side (from #4 on). -->
+        @if (previewPages.length > 1) {
+          <div class="page-pager">
+            <button mat-icon-button class="page-prev"
+                    (click)="previousPage()"
+                    [disabled]="currentPageIndex === 0"
+                    [title]="'LEAFLETS.PREVIOUS_PAGE' | translate"
+                    [attr.aria-label]="'LEAFLETS.PREVIOUS_PAGE' | translate">
+              <mat-icon>chevron_left</mat-icon>
+            </button>
+
+            <div class="page-dots">
+              @for (page of previewPages; track $index) {
+                <button class="page-dot"
+                        [class.active]="$index === currentPageIndex"
+                        (click)="currentPageIndex = $index"
+                        [title]="('LEAFLETS.PAGE' | translate) + ' ' + ($index + 1)"
+                        [attr.aria-label]="('LEAFLETS.PAGE' | translate) + ' ' + ($index + 1)"
+                        [attr.aria-current]="$index === currentPageIndex"></button>
+              }
+            </div>
+
+            <button mat-icon-button class="page-next"
+                    (click)="nextPage()"
+                    [disabled]="currentPageIndex >= previewPages.length - 1"
+                    [title]="'LEAFLETS.NEXT_PAGE' | translate"
+                    [attr.aria-label]="'LEAFLETS.NEXT_PAGE' | translate">
+              <mat-icon>chevron_right</mat-icon>
+            </button>
+          </div>
+        }
 
       </div>
     } @else {
       <div class="empty-state">
-        <p>Select a leaflet to view</p>
+        <p>{{ "LEAFLETS.SELECT_PROMPT" | translate }}</p>
       </div>
     }
   </div>

@@ -1,310 +1,370 @@
 <div class="cinematic-container">
 
-  <div *ngIf="isPreloading" class="preload-overlay">
-    <div class="loading-content">
-      <div class="loading-text">{{ t('loading') }}</div>
+  @if (isPreloading) {
+    <div class="preload-overlay">
+      <div class="loading-content">
+        <div class="loading-text">{{ t('loading') }}</div>
+      </div>
     </div>
-  </div>
+  }
 
-  <div *ngIf="isIntroPopupVisible" class="overlay center">
-    <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
-      <mat-card-title>{{ t('intro.title') }}</mat-card-title>
-      <mat-card-content class="intro-text">
-        <p>{{ t('intro.paragraphs.0') }}</p>
-        <p>{{ t('intro.paragraphs.1') }}</p>
-        <p>{{ t('intro.paragraphs.2') }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+  @if (isIntroPopupVisible) {
+    <div class="overlay center">
+      <mat-card class="quiz-card wide-card intro-popup-card" @fadeInOut>
+        <mat-card-title>{{ t('intro.title') }}</mat-card-title>
+        <mat-card-content class="intro-text">
+          <p>{{ t('intro.paragraphs.0') }}</p>
+          <p>{{ t('intro.paragraphs.1') }}</p>
+          <p>{{ t('intro.paragraphs.2') }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="closeIntroPopup()">{{ t('intro.buttonText') }}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  }
 
   <div class="game-container">
 
     <div class="scene-background"
-         [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
-         [ngStyle]="zoomStyle"
-         [class.blurred]="isDocumentVisible || isEmailVisible || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
+      [style.backgroundImage]="'url(' + currentBackgroundUrl + ')'"
+      [ngStyle]="zoomStyle"
+      [class.blurred]="isDocumentVisible || isEmailVisible || (isQuizActive && !activeDialogue) || isGameCompleteOverlayVisible || isIntroPopupVisible">
     </div>
 
+    <!-- "How to play" guide (partner feedback 2026-08-31) — sits left of the fullscreen button -->
+    <app-room-help-button></app-room-help-button>
     <button mat-icon-button class="fullscreen-button" (click)="toggleFullscreen()" [title]="t('ui.fullscreenToggle')">
-        <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
+      <mat-icon>{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</mat-icon>
     </button>
 
-    <div *ngIf="isLearningMode" class="learning-score-panel">
-      <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
-      <div class="score-panel-progress">
-        <mat-icon>emoji_events</mat-icon>
-        <span>{{ completedPuzzleCount }} / 3 {{ t('learning.puzzlesWord') }}</span>
+    @if (isLearningMode) {
+      <div class="learning-score-panel">
+        <div class="score-panel-label">{{ t('learning.modeLabel') }}</div>
+        <div class="score-panel-progress">
+          <mat-icon>emoji_events</mat-icon>
+          <span>{{ completedPuzzleCount }} / 3 {{ t('learning.puzzlesWord') }}</span>
+        </div>
+        <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
+          <span class="score-panel-value-label">{{ t('learning.scoreLabel') }}</span>
+          {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
+        </div>
       </div>
-      <div class="score-panel-value" [class.no-score]="completedPuzzleCount === 0">
-        {{ completedPuzzleCount > 0 ? runningScore + '%' : '—' }}
-      </div>
-    </div>
+    }
 
-    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToEscapeRooms')">
-      <mat-icon>arrow_back</mat-icon>
+    <button mat-icon-button class="escape-rooms-back-button" (click)="confirmExit()" [title]="t('ui.backToLearning')">
+      <mat-icon>logout</mat-icon>
     </button>
 
-    <button mat-fab class="hint-button" (click)="requestHint()" *ngIf="!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating">
-      <mat-icon>lightbulb</mat-icon>
-    </button>
+    @if (!activeDialogue && !isIntroPopupVisible && currentState < GameState.Completion && !isAnimating) {
+      <button mat-fab class="hint-button" (click)="requestHint()">
+        <mat-icon>lightbulb</mat-icon>
+      </button>
+    }
     <!-- Inline hint bubble: short italic snippet of the current hint, shows by the hint button for a few seconds -->
     <div class="hint-bubble" [class.show]="isHintBubbleVisible && !activeDialogue && !isQuizActive">{{ hintBubbleText }}</div>
 
-    <button *ngIf="currentView !== 'main' && !activeDialogue" mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()">
-      <mat-icon>arrow_back</mat-icon>
-    </button>
+    @if (currentView !== 'main' && !activeDialogue) {
+      <button mat-fab color="primary" class="back-button" [disabled]="isAnimating" (click)="goBack()"
+        [title]="t('ui.backToRoom')"
+        [attr.aria-label]="t('ui.backToRoom')">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    }
 
     <!-- Hotspot Layer -->
-    <div class="hotspot-layer"
-         [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating"
-         *ngIf="!isDocumentVisible && !isEmailVisible && !isIntroPopupVisible">
-
-      <ng-container *ngIf="currentView === 'main'">
+    @if (!isDocumentVisible && !isEmailVisible && !isIntroPopupVisible) {
+      <div class="hotspot-layer"
+        [class.disable-clicks]="activeDialogue || isIntroPopupVisible || isAnimating"
+        >
+        @if (currentView === 'main') {
           <div class="character-hotspot"
-               [class.show-hint-pulse]="showHints && (currentState === GameState.TalkToSarah1 || currentState === GameState.TalkToSarah2 || currentState === GameState.Puzzle1Complete || currentState === GameState.TalkToSarah3)"
-               [style.left.%]="hotspots.main.sarah.x" [style.top.%]="hotspots.main.sarah.y"
-               [style.width.%]="hotspots.main.sarah.width" [style.height.%]="hotspots.main.sarah.height"
-               (click)="onHotspotClick('sarah')"
-               (mouseenter)="onCharacterHover('sarah')"
-               (mouseleave)="onCharacterLeave()"></div>
-
+            [class.show-hint-pulse]="showHints && (currentState === GameState.TalkToSarah1 || currentState === GameState.TalkToSarah2 || currentState === GameState.Puzzle1Complete || currentState === GameState.TalkToSarah3)"
+            [style.left.%]="hotspots.main.sarah.x" [style.top.%]="hotspots.main.sarah.y"
+            [style.width.%]="hotspots.main.sarah.width" [style.height.%]="hotspots.main.sarah.height"
+            (click)="onHotspotClick('sarah')"
+            (mouseenter)="onCharacterHover('sarah')"
+          (mouseleave)="onCharacterLeave()"></div>
           <div class="character-hotspot"
-               [style.left.%]="hotspots.main.david.x" [style.top.%]="hotspots.main.david.y"
-               [style.width.%]="hotspots.main.david.width" [style.height.%]="hotspots.main.david.height"
-               (click)="onHotspotClick('david')"
-               (mouseenter)="onCharacterHover('david')"
-               (mouseleave)="onCharacterLeave()"></div>
-      </ng-container>
-
-      <!-- Desk hotspot (wrong spot first) -->
-      <ng-container *ngIf="currentState === GameState.FindDocument && currentView === 'main'">
-        <div class="hotspot"
-             [style.left.%]="hotspots.main.desk.x" [style.top.%]="hotspots.main.desk.y"
-             [style.width.%]="hotspots.main.desk.width" [style.height.%]="hotspots.main.desk.height"
-             (click)="onHotspotClick('desk')"></div>
-      </ng-container>
-
-      <!-- Cabinet hotspot -->
-      <ng-container *ngIf="currentState === GameState.FindDocument && currentView === 'main'">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.cabinet.x" [style.top.%]="hotspots.main.cabinet.y"
-             [style.width.%]="hotspots.main.cabinet.width" [style.height.%]="hotspots.main.cabinet.height"
-             (click)="onHotspotClick('cabinet')"></div>
-      </ng-container>
-
-      <!-- Scales hotspot (wrong spot) -->
-      <ng-container *ngIf="currentState === GameState.FindEmail && currentView === 'main'">
-        <div class="hotspot"
-             [style.left.%]="hotspots.main.scales.x" [style.top.%]="hotspots.main.scales.y"
-             [style.width.%]="hotspots.main.scales.width" [style.height.%]="hotspots.main.scales.height"
-             (click)="onHotspotClick('scales')"></div>
-      </ng-container>
-
-      <!-- Bookshelf hotspot -->
-      <ng-container *ngIf="currentState === GameState.FindEmail && currentView === 'main'">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.bookshelf.x" [style.top.%]="hotspots.main.bookshelf.y"
-             [style.width.%]="hotspots.main.bookshelf.width" [style.height.%]="hotspots.main.bookshelf.height"
-             (click)="onHotspotClick('bookshelf')"></div>
-      </ng-container>
-
-      <!-- Document hotspot in cabinet zoomed view -->
-      <ng-container *ngIf="currentView === 'cabinet' && currentState === GameState.FindDocument && !hasFoundDocument">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.cabinet_zoom.document.x" [style.top.%]="hotspots.cabinet_zoom.document.y"
-             [style.width.%]="hotspots.cabinet_zoom.document.width" [style.height.%]="hotspots.cabinet_zoom.document.height"
-             (click)="onHotspotClick('document')"></div>
-      </ng-container>
-
-      <!-- Email hotspot in bookshelf zoomed view -->
-      <ng-container *ngIf="currentView === 'bookshelf' && currentState === GameState.FindEmail && !hasFoundEmail">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.bookshelf_zoom.email.x" [style.top.%]="hotspots.bookshelf_zoom.email.y"
-             [style.width.%]="hotspots.bookshelf_zoom.email.width" [style.height.%]="hotspots.bookshelf_zoom.email.height"
-             (click)="onHotspotClick('email')"></div>
-      </ng-container>
-
-      <!-- Exit Door -->
-      <ng-container *ngIf="(currentState === GameState.Completion || isDoorOpen) && currentView === 'main'">
-        <div class="hotspot"
-             [class.show-hint-pulse]="showHints"
-             [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
-             [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
-             (click)="onHotspotClick('exitDoor')"></div>
-      </ng-container>
-    </div>
+            [style.left.%]="hotspots.main.david.x" [style.top.%]="hotspots.main.david.y"
+            [style.width.%]="hotspots.main.david.width" [style.height.%]="hotspots.main.david.height"
+            (click)="onHotspotClick('david')"
+            (mouseenter)="onCharacterHover('david')"
+          (mouseleave)="onCharacterLeave()"></div>
+        }
+        <!-- Desk hotspot (wrong spot first) -->
+        @if (currentState === GameState.FindDocument && currentView === 'main') {
+          <div class="hotspot"
+            [style.left.%]="hotspots.main.desk.x" [style.top.%]="hotspots.main.desk.y"
+            [style.width.%]="hotspots.main.desk.width" [style.height.%]="hotspots.main.desk.height"
+          (click)="onHotspotClick('desk')"></div>
+        }
+        <!-- Cabinet hotspot -->
+        @if (currentState === GameState.FindDocument && currentView === 'main') {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.main.cabinet.x" [style.top.%]="hotspots.main.cabinet.y"
+            [style.width.%]="hotspots.main.cabinet.width" [style.height.%]="hotspots.main.cabinet.height"
+          (click)="onHotspotClick('cabinet')"></div>
+        }
+        <!-- Scales hotspot (wrong spot) -->
+        @if (currentState === GameState.FindEmail && currentView === 'main') {
+          <div class="hotspot"
+            [style.left.%]="hotspots.main.scales.x" [style.top.%]="hotspots.main.scales.y"
+            [style.width.%]="hotspots.main.scales.width" [style.height.%]="hotspots.main.scales.height"
+          (click)="onHotspotClick('scales')"></div>
+        }
+        <!-- Bookshelf hotspot -->
+        @if (currentState === GameState.FindEmail && currentView === 'main') {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.main.bookshelf.x" [style.top.%]="hotspots.main.bookshelf.y"
+            [style.width.%]="hotspots.main.bookshelf.width" [style.height.%]="hotspots.main.bookshelf.height"
+          (click)="onHotspotClick('bookshelf')"></div>
+        }
+        <!-- Document hotspot in cabinet zoomed view -->
+        @if (currentView === 'cabinet' && currentState === GameState.FindDocument && !hasFoundDocument) {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.cabinet_zoom.document.x" [style.top.%]="hotspots.cabinet_zoom.document.y"
+            [style.width.%]="hotspots.cabinet_zoom.document.width" [style.height.%]="hotspots.cabinet_zoom.document.height"
+          (click)="onHotspotClick('document')"></div>
+        }
+        <!-- Email hotspot in bookshelf zoomed view -->
+        @if (currentView === 'bookshelf' && currentState === GameState.FindEmail && !hasFoundEmail) {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.bookshelf_zoom.email.x" [style.top.%]="hotspots.bookshelf_zoom.email.y"
+            [style.width.%]="hotspots.bookshelf_zoom.email.width" [style.height.%]="hotspots.bookshelf_zoom.email.height"
+          (click)="onHotspotClick('email')"></div>
+        }
+        <!-- Exit Door -->
+        @if ((currentState === GameState.Completion || isDoorOpen) && currentView === 'main') {
+          <div class="hotspot"
+            [class.show-hint-pulse]="showHints"
+            [style.left.%]="hotspots.main.exitDoor.x" [style.top.%]="hotspots.main.exitDoor.y"
+            [style.width.%]="hotspots.main.exitDoor.width" [style.height.%]="hotspots.main.exitDoor.height"
+          (click)="onHotspotClick('exitDoor')"></div>
+        }
+      </div>
+    }
 
     <!-- Document Popup -->
-    <div *ngIf="isDocumentVisible" class="overlay center" (click)="closeDocument()">
-      <div class="item-popup-base" @fadeInOut>
-        <img [src]="imagePaths.document" alt="Compliance Checklist">
-        <div class="text-content">
-          <h3>{{ t('items.document.popupTitle') }}</h3>
-          <p *ngFor="let item of [0,1,2]; trackBy: trackByIndex">{{ t('items.document.popupContent.' + item) }}</p>
+    @if (isDocumentVisible) {
+      <div class="overlay center" (click)="closeDocument()">
+        <div class="item-popup-base" @fadeInOut>
+          <img [src]="imagePaths.document" alt="Compliance Checklist">
+          <div class="text-content">
+            <h3>{{ t('items.document.popupTitle') }}</h3>
+            @for (item of [0,1,2]; track $index) {
+              <p>{{ t('items.document.popupContent.' + item) }}</p>
+            }
+          </div>
         </div>
       </div>
-    </div>
+    }
 
     <!-- Email Popup -->
-    <div *ngIf="isEmailVisible" class="overlay center" (click)="closeEmail()">
-      <div class="item-popup-base" @fadeInOut>
-        <img [src]="imagePaths.email" alt="Flagged Email">
-        <div class="text-content">
-          <h3>{{ t('items.email.popupTitle') }}</h3>
-          <p *ngFor="let item of [0,1,2,3]; trackBy: trackByIndex">{{ t('items.email.popupContent.' + item) }}</p>
+    @if (isEmailVisible) {
+      <div class="overlay center" (click)="closeEmail()">
+        <div class="item-popup-base" @fadeInOut>
+          <img [src]="imagePaths.email" alt="Flagged Email">
+          <div class="text-content">
+            <h3>{{ t('items.email.popupTitle') }}</h3>
+            @for (item of [0,1,2,3]; track $index) {
+              <p>{{ t('items.email.popupContent.' + item) }}</p>
+            }
+          </div>
         </div>
       </div>
-    </div>
+    }
 
     <!-- Puzzle 1: Matching (Document Classification) -->
-    <div *ngIf="currentState === GameState.Puzzle1_Matching && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle1.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.matching.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.matching.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="matching-container">
-            <div class="matching-column">
-              <div *ngFor="let item of matchingLeftItems; trackBy: trackById"
-                   class="matching-item left"
-                   [class.selected]="selectedMatchLeft === item.id"
-                   [class.paired]="matchingPairs[item.id]"
-                   (click)="selectMatchLeft(item.id)">
-                <strong class="match-label">{{ item.id }}.</strong> {{ item.text }}
-                <span *ngIf="matchingPairs[item.id]" class="pair-indicator">→ {{ getCategoryText(matchingPairs[item.id]) }}</span>
+    @if (currentState === GameState.Puzzle1_Matching && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle1.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.matching.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.matching.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="matching-container">
+              <div class="matching-column">
+                @for (item of matchingLeftItems; track trackById($index, item)) {
+                  <div
+                    class="matching-item left"
+                    [class.selected]="selectedMatchLeft === item.id"
+                    [class.paired]="matchingPairs[item.id]"
+                    (click)="selectMatchLeft(item.id)">
+                    <strong class="match-label">{{ item.id }}.</strong> {{ item.text }}
+                    @if (matchingPairs[item.id]) {
+                      <span class="pair-indicator">→ {{ getCategoryText(matchingPairs[item.id]) }}</span>
+                    }
+                  </div>
+                }
+              </div>
+              <div class="matching-column">
+                @for (item of matchingRightItems; track trackById($index, item)) {
+                  <div
+                    class="matching-item right"
+                    (click)="selectMatchRight(item.id)">
+                    {{ item.text }}
+                  </div>
+                }
               </div>
             </div>
-            <div class="matching-column">
-              <div *ngFor="let item of matchingRightItems; trackBy: trackById"
-                   class="matching-item right"
-                   (click)="selectMatchRight(item.id)">
-                {{ item.text }}
-              </div>
-            </div>
-          </div>
-          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button (click)="matchingPairs = {}; selectedMatchLeft = null;">{{ t('ui.resetButton') }}</button>
-          <button mat-raised-button color="primary" (click)="submitMatching()">Check</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+            @if (puzzleFeedback) {
+              <div class="feedback-wrong">{{ puzzleFeedback }}</div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="matchingPairs = {}; selectedMatchLeft = null;">{{ t('ui.resetButton') }}</button>
+            <button mat-raised-button color="primary" (click)="submitMatching()">{{ t('ui.checkButton') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Puzzle 2: Sequence Ordering -->
-    <div *ngIf="currentState === GameState.Puzzle2_SequenceOrder && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle2.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.sequenceOrder.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.sequenceOrder.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <div class="sequence-list" cdkDropList (cdkDropListDropped)="onDrop($event)">
-            <div class="sequence-item" *ngFor="let item of userSequence; let i = index; trackBy: trackByIndex" cdkDrag>
-              <span class="seq-number">{{ i + 1 }}.</span>
-              <span>{{ item }}</span>
-              <mat-icon cdkDragHandle>drag_handle</mat-icon>
+    @if (currentState === GameState.Puzzle2_SequenceOrder && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle2.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.sequenceOrder.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.sequenceOrder.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <div class="sequence-list" cdkDropList (cdkDropListDropped)="onDrop($event)">
+              @for (item of userSequence; track $index; let i = $index) {
+                <div class="sequence-item" cdkDrag>
+                  <span class="seq-number">{{ i + 1 }}.</span>
+                  <span>{{ item }}</span>
+                  <mat-icon cdkDragHandle>drag_handle</mat-icon>
+                </div>
+              }
             </div>
-          </div>
-          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="submitSequence()">{{ t('puzzles.sequenceOrder.checkButton') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+            @if (puzzleFeedback) {
+              <div class="feedback-wrong">{{ puzzleFeedback }}</div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="submitSequence()">{{ t('puzzles.sequenceOrder.checkButton') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Puzzle 3: Single Choice (Red Flag Detection) -->
-    <div *ngIf="currentState === GameState.Puzzle3_SingleChoice && !activeDialogue" class="overlay center">
-      <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
-        <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle3.bind(this))">{{ t('ui.skipButton') }}</button>
-        <mat-card-title>{{ t('puzzles.singleChoice.title') }}</mat-card-title>
-        <mat-card-subtitle>{{ t('puzzles.singleChoice.instructions') }}</mat-card-subtitle>
-        <mat-card-content>
-          <p class="question">{{ t('puzzles.singleChoice.question') }}</p>
-          <div class="options-vertical">
-            <button mat-stroked-button *ngFor="let opt of puzzle3Options; trackBy: trackById"
-                    (click)="submitPuzzle3(opt)">
-              {{ opt.text }}
-            </button>
-          </div>
-          <div *ngIf="puzzleFeedback" class="feedback-wrong">{{ puzzleFeedback }}</div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    @if (currentState === GameState.Puzzle3_SingleChoice && !activeDialogue) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" [class.shake-animation]="isPuzzleWrong" @fadeInOut>
+          <button mat-button class="skip-puzzle-btn" (click)="requestSkipPuzzle(skipPuzzle3.bind(this))">{{ t('ui.skipButton') }}</button>
+          <mat-card-title>{{ t('puzzles.singleChoice.title') }}</mat-card-title>
+          <mat-card-subtitle>{{ t('puzzles.singleChoice.instructions') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p class="question">{{ t('puzzles.singleChoice.question') }}</p>
+            <div class="options-vertical">
+              @for (opt of puzzle3Options; track trackById($index, opt)) {
+                <button mat-stroked-button
+                  (click)="submitPuzzle3(opt)">
+                  {{ opt.text }}
+                </button>
+              }
+            </div>
+            @if (puzzleFeedback) {
+              <div class="feedback-wrong">{{ puzzleFeedback }}</div>
+            }
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
 
     <!-- Game Complete Overlay -->
-    <div *ngIf="isGameCompleteOverlayVisible" class="overlay center">
-      <mat-card class="quiz-card" @fadeInOut>
-        <mat-card-title>{{ t('completion.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('completion.message') }}</p>
-          <div *ngIf="puzzleScores.length > 0" class="score-summary">
-            <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
-            <p class="score-feedback">{{ scoreMessage }}</p>
-          </div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button *ngIf="isLearningMode" mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
-          <button *ngIf="!isLearningMode" mat-raised-button color="primary" routerLink="/escape-rooms">{{ t('completion.buttonText') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (isGameCompleteOverlayVisible) {
+      <div class="overlay center">
+        <mat-card class="quiz-card" @fadeInOut>
+          <mat-card-title>{{ t('completion.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('completion.message') }}</p>
+            @if (puzzleScores.length > 0) {
+              <div class="score-summary">
+                <p class="score-label">{{ t('learning.scoreLabel') }} <strong>{{ learningOverallScore }}%</strong></p>
+                <p class="score-feedback">{{ scoreMessage }}</p>
+              </div>
+            }
+          </mat-card-content>
+          <mat-card-actions>
+            @if (isLearningMode) {
+              <button mat-raised-button color="primary" (click)="returnToLearningFlow()">{{ t('learning.continueLearning') }}</button>
+            }
+            @if (!isLearningMode) {
+              <button mat-raised-button color="primary" routerLink="/learning">{{ t('completion.buttonText') }}</button>
+            }
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Answer Reveal Overlay -->
-    <div *ngIf="showAnswerOverlay" class="overlay center">
-      <mat-card class="quiz-card wide-card" @fadeInOut>
-        <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
-        <mat-card-content>
-          <p class="answer-text">{{ answerOverlayText }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showAnswerOverlay) {
+      <div class="overlay center">
+        <mat-card class="quiz-card wide-card" @fadeInOut>
+          <mat-card-title>{{ t('puzzles.answerOverlayTitle') }}</mat-card-title>
+          <mat-card-content>
+            <p class="answer-text">{{ answerOverlayText }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="closeAnswerOverlay()">{{ t('puzzles.answerOverlayContinue') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
     <!-- Dialogue Panel -->
-    <div *ngIf="activeDialogue" class="dialogue-panel" @fadeInOut (click)="skipTyping()">
-      <div class="dialogue-content">
+    @if (activeDialogue) {
+      <div class="dialogue-panel" @fadeInOut (click)="skipTyping()">
+        <div class="dialogue-content">
           <div class="character-name">{{ activeDialogue.character }}</div>
           <div class="dialogue-text">{{ displayedDialogueText }}</div>
+        </div>
+        @if (!isTyping) {
+          <div class="dialogue-actions">
+            <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
+          </div>
+        }
       </div>
-      <div class="dialogue-actions" *ngIf="!isTyping">
-        <button mat-raised-button (click)="handleDialogueDismiss()">{{ t('ui.continueButton') }}</button>
-      </div>
-    </div>
+    }
 
     <!-- Inventory Bar -->
-    <div class="inventory-bar" *ngIf="(hasFoundDocument || hasFoundEmail) && !isQuizActive && !isGameCompleteOverlayVisible && !showAnswerOverlay">
-      <button mat-icon-button *ngIf="hasFoundDocument" (click)="toggleDocument()" [title]="t('items.checklist.inventoryTitle')">
-        <mat-icon>description</mat-icon>
-      </button>
-      <button mat-icon-button *ngIf="hasFoundEmail" (click)="toggleEmail()" [title]="t('items.flaggedEmail.inventoryTitle')">
-        <mat-icon>email</mat-icon>
-      </button>
-    </div>
+    @if ((hasFoundDocument || hasFoundEmail) && !isQuizActive && !isGameCompleteOverlayVisible && !showAnswerOverlay) {
+      <div class="inventory-bar">
+        @if (hasFoundDocument) {
+          <button mat-icon-button (click)="toggleDocument()" [title]="t('items.checklist.inventoryTitle')">
+            <mat-icon>description</mat-icon>
+          </button>
+        }
+        @if (hasFoundEmail) {
+          <button mat-icon-button (click)="toggleEmail()" [title]="t('items.flaggedEmail.inventoryTitle')">
+            <mat-icon>email</mat-icon>
+          </button>
+        }
+      </div>
+    }
 
     <!-- Skip Puzzle Confirm -->
-    <div *ngIf="showSkipConfirm" class="skip-confirm-overlay">
-      <mat-card class="skip-confirm-card" @fadeInOut>
-        <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ t('skipConfirm.question') }}</p>
-          <p class="warning">{{ t('skipConfirm.warning') }}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
-          <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @if (showSkipConfirm) {
+      <div class="skip-confirm-overlay">
+        <mat-card class="skip-confirm-card" @fadeInOut>
+          <mat-card-title>{{ t('skipConfirm.title') }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ t('skipConfirm.question') }}</p>
+            <p class="warning">{{ t('skipConfirm.warning') }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button (click)="cancelSkipPuzzle()">{{ t('skipConfirm.cancel') }}</button>
+            <button mat-raised-button color="warn" (click)="confirmSkipPuzzle()">{{ t('skipConfirm.confirm') }}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
 
   </div>
 </div>

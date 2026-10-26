@@ -19,7 +19,7 @@
   }
 
   > h1::before {
-    content: "Your Progress";
+    content: attr(data-eyebrow);  /* EYEBROW.* — was an English literal */
     display: block;
     font-family: var(--font-body);
     font-style: normal;

@@ -161,18 +161,21 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Ukończyłeś/aś umiejętność Świadomość rynku! Znasz swojego klienta, obserwujesz konkurencję i analizujesz sytuację przed działaniem. Jesteś gotowy/a podbić rynek!",
-    "buttonText": "Wyjdź z Biura Marketingu"
+    "buttonText": "Wyjdź z Biura Marketingu",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

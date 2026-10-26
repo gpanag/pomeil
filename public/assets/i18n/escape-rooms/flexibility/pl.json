@@ -134,6 +134,7 @@
   },
   "items": {
     "stickyNote": {
+      "altText": "Karteczka",
       "inventoryTitle": "Elastyczne Myślenie – Kluczowe Cechy",
       "popupTitle": "Elastyczne Myślenie – Kluczowe Cechy",
       "popupContent": [
@@ -156,18 +157,21 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Ukończyłeś/aś umiejętność Elastyczności! Zachowałeś/aś spokój, dostosowałeś/aś się i działałeś/aś proaktywnie. To esencja elastyczności w B+R. Jesteś gotowy/a na następne wyzwanie!",
-    "buttonText": "Wyjdź z pomieszczenia B+R"
+    "buttonText": "Wyjdź z pomieszczenia B+R",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "___",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

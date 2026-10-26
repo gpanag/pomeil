@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,6 +11,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { EscapeRoomConfig, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // ── Game States ──
 enum GameState {
   Intro,
@@ -64,12 +65,12 @@ const roomConfig: EscapeRoomConfig = {
 };
 
 @Component({
-  selector: 'app-digital-skills-module5',
-  templateUrl: './digital-skills-module5.component.html',
-  styleUrl: './digital-skills-module5.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-digital-skills-module5',
+    templateUrl: './digital-skills-module5.component.html',
+    styleUrl: './digital-skills-module5.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
 
@@ -246,6 +247,11 @@ export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
 
   // ── Mini puzzle states ──
   miniPuzzlePhase: 'usb' | 'ad' | 'update' | 'wifi' | null = null;
+  /** StickyNote beat: false = note still to be found in the room (hotspot
+   *  visible), true = the player read it and the shred/keep card is shown.
+   *  Set on dismissal of system_stickyNoteFound. The component is created
+   *  fresh per visit (no in-room restart path), so no reset is needed. */
+  stickyNoteOpened: boolean = false;
   isMalwareInfected: boolean = false;
   miniPuzzleFeedback: string = '';
   miniPuzzleFeedbackCorrect: boolean = false;
@@ -265,8 +271,12 @@ export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
       this.currentState === GameState.PhishingInbox ||
       this.currentState === GameState.SocialPost ||
       this.currentState === GameState.Comments ||
-      this.currentState === GameState.StickyNote ||
-      this.currentState === GameState.MiniUSB ||
+      // Two-beat mini puzzles: the hotspot layer is gated on !isQuizActive, so
+      // these must NOT count as a quiz until the player has found the object —
+      // otherwise the sticky-note / drawer hotspots never render (soft-lock
+      // "after the bag", partner report 2026-08).
+      (this.currentState === GameState.StickyNote && this.stickyNoteOpened) ||
+      (this.currentState === GameState.MiniUSB && this.currentView === 'drawer') ||
       this.currentState === GameState.MiniAd ||
       this.currentState === GameState.MiniUpdate ||
       this.currentState === GameState.MiniWifi;
@@ -326,7 +336,9 @@ export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
       case GameState.SocialPostDone:
       case GameState.Comments:        return this.t('hints.comments');
       case GameState.StickyNote:      return this.t('hints.stickyNote');
-      case GameState.MiniUSB:
+      case GameState.MiniUSB:         return this.currentView === 'drawer'
+                                        ? this.t('hints.miniPuzzles')
+                                        : this.t('hints.miniUsb');
       case GameState.MiniAd:
       case GameState.MiniUpdate:
       case GameState.MiniWifi:        return this.t('hints.miniPuzzles');
@@ -413,6 +425,14 @@ export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
           this.currentView = 'drawer';
           this.updateBackground();
           this.resetZoom(true);
+          // MiniUSB: once in the drawer view isQuizActive is true (hotspot layer
+          // hidden, so the drawerContent zoom hotspot never renders) — open the
+          // USB beat here. Shown synchronously so the USB card (which needs
+          // !activeDialogue) cannot flash before the dialogue.
+          if (this.currentState === GameState.MiniUSB) {
+            this.playSound('paper-rustle.wav');
+            this.showDialogue({ character: this.playerSpeaker, text: this.t('systemDialogues.usbFound'), id: 'system_usbFound' });
+          }
         }, 2.5);
         return;
       }
@@ -624,7 +644,9 @@ export class DigitalSkillsModule5Component extends EscapeRoomBaseComponent {
 
     // Sticky note found → show puzzle
     else if (id === 'system_stickyNoteFound') {
-      // Puzzle overlay will appear from currentState being StickyNote
+      // Flips isQuizActive on (hotspot layer hides, room blurs) and satisfies
+      // the sticky-note card's *ngIf.
+      this.stickyNoteOpened = true;
     }
 
     // Sticky note result

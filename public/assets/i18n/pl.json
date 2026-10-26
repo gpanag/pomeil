@@ -15,7 +15,7 @@
     "MORE_NEWS": "więcej aktualności",
     "DOWNLOAD": "Pobierz",
     "MORE": "more",
-    "PLAY": "Play"
+    "PLAY": "Zagraj"
   },
   "NAVIGATION": {
     "HOME": "Strona główna",
@@ -24,6 +24,7 @@
     "OUTPUTS": "Rezultaty",
     "RESOURCES": "Zasoby",
     "NEWS": "Aktualności",
+    "NEWSLETTERS": "Newslettery",
     "ESCAPE_ROOMS": "Escape Roomy",
     "ARTICLES": "Artykuły",
     "LEAFLETS": "Ulotki",
@@ -38,14 +39,19 @@
     "PROGRAMME": "Program",
     "REFERENCE": "Numer projektu",
     "DURATION": "Czas trwania",
-    "FUNDER": "Sponsor"
+    "FUNDER": "Sponsor",
+    "GUIDE": "Przewodnik"
   },
   "OTHER": {
     "OBJECTIVES": "Cele",
-    "WORKPACKAGES": "Work packages"
+    "WORKPACKAGES": "Work packages",
+    "GALLERY": "Galeria"
   },
   "WORKPACKAGES": {
-    "MAP": "The Pomeil Competence Map"
+    "MAP": "The Pomeil Competence Map",
+    "FILES": "Pliki",
+    "TRANSLATIONS": "Tłumaczenia",
+    "ENGLISH_ONLY": "Tylko w języku angielskim"
   },
   "LEARNING_PAGE": {
     "INTRO": {
@@ -77,7 +83,9 @@
       "GUIDEBOOK_TITLE": "Podręcznik Trenera",
       "GUIDEBOOK_DESC": "Pobierz Podręcznik Trenera POMEIL.",
       "DOWNLOAD_PDF": "Pobierz PDF",
-      "PLAYER_NAME_REQUIRED": "Proszę wprowadzić swoje imię, aby rozpocząć naukę."
+      "PLAYER_NAME_REQUIRED": "Proszę wprowadzić swoje imię, aby rozpocząć naukę.",
+      "DIAGRAM_START": "START",
+      "DIAGRAM_GROWTH": "ROZWÓJ"
     },
     "DASHBOARD": {
       "TITLE": "Panel Nauki",
@@ -94,7 +102,8 @@
       "SCORE": "Wynik",
       "NO_GAMES_PLAYED": "Brak rozegranych gier. Rozpocznij swoją podróż edukacyjną.",
       "PROGRESS_SAVED": "Postęp zapisany w chmurze",
-      "SAVE_PROGRESS": "Zaloguj się aby zapisać postęp"
+      "PROGRESS_SAVED_LOCAL": "Postęp jest zapisywany tylko w tej przeglądarce",
+      "REQUIRED": "(Wymagane)"
     },
     "FLOW": {
       "TITLE": "Przebieg Nauki",
@@ -119,7 +128,10 @@
       "PASSED": "Zaliczone",
       "NEEDS_REVIEW": "Wymaga Przeglądu",
       "START_OVER": "Zacznij Od Nowa",
-      "READ_FLIPBOOK": "Przeczytaj moduł"
+      "READ_FLIPBOOK": "Przeczytaj moduł",
+      "MODULE_GATE_HINT": "Twój wynik jest poniżej 80%. Pobierz lub przeczytaj moduł dla tej umiejętności, zanim przejdziesz do następnej.",
+      "MODULE_ACKNOWLEDGED": "Moduł otwarty",
+      "REQUIRED_BADGE": "Wymagane"
     },
     "MODULES": {
       "TITLE": "Moduły Edukacyjne",
@@ -136,7 +148,9 @@
       "BACK_TO_ESCAPE_ROOMS": "Powrót do Escape Roomów",
       "LEARNING_MODE": "Tryb Nauki",
       "PUZZLES": "zagadki",
-      "SCORE": "Wynik"
+      "SCORE": "Wynik",
+      "SKILL": "Umiejętność",
+      "PUZZLE": "Zagadka"
     },
     "YOUR_MODULES": {
       "TITLE": "Twoje moduły",
@@ -229,11 +243,11 @@
     "PASSWORDS_MISMATCH": "Hasła nie pasują",
     "ACCOUNT": "Konto",
     "HELLO": "Cześć",
-    "CONTINUE_ANYWAY": "Kontynuuj mimo to",
-    "NOT_LOGGED_IN_TITLE": "Nie jesteś zalogowany",
-    "NOT_LOGGED_IN_BODY": "Możesz zagrać w grę, ale pamiętaj:",
-    "NOT_LOGGED_IN_BULLET_PROGRESS": "Twój postęp nie zostanie zapisany.",
-    "NOT_LOGGED_IN_BULLET_SCORES": "Twoje wyniki nie pojawią się na pulpicie ani w Twoich modułach.",
+    "GUEST_TITLE": "Grasz bez konta",
+    "GUEST_BODY": "Możesz grać i uczyć się bez konta.",
+    "GUEST_SAVED_HERE": "Wybrane umiejętności i Twoje wyniki są zapisywane tylko w tej przeglądarce, na tym urządzeniu.",
+    "GUEST_SIGN_IN_BENEFIT": "Jeśli chcesz zapisać je na swoim koncie i kontynuować na dowolnym urządzeniu, najpierw się zaloguj.",
+    "CONTINUE_AS_GUEST": "Kontynuuj bez konta",
     "REGISTRATION_CHECK_EMAIL_TITLE": "Sprawdź swoją skrzynkę e-mail",
     "REGISTRATION_CHECK_EMAIL_BODY": "Wysłaliśmy link potwierdzający na adres:",
     "REGISTRATION_CHECK_EMAIL_HINT": "Kliknij link w e-mailu, aby aktywować swoje konto. Jeśli go nie widzisz, sprawdź folder spam.",
@@ -245,7 +259,8 @@
     "RESET_PASSWORD_TITLE": "Ustaw nowe hasło",
     "RESET_PASSWORD_BODY": "Wybierz nowe hasło dla swojego konta.",
     "RESET_PASSWORD_SUBMIT": "Zaktualizuj hasło",
-    "INVALID_RESET_LINK": "Ten link resetujący jest nieprawidłowy lub wygasł. Poproś o nowy."
+    "INVALID_RESET_LINK": "Ten link resetujący jest nieprawidłowy lub wygasł. Poproś o nowy.",
+    "MIN_PASSWORD_HINT": "Minimum 6 znaków"
   },
   "HOME": {
     "COVER_FUNDED_BY": "Finansowane przez Unię Europejską",
@@ -272,11 +287,17 @@
     "TILE_OUTPUTS_DETAIL": "Dotychczas opublikowane rezultaty projektu.",
     "TILE_ARTICLES_DETAIL": "Artykuły analityczne z całej sieci.",
     "TILE_RESOURCES_DETAIL": "Narzędzia i odniesienia dla edukatorów i uczących się.",
+    "TILE_NEWSLETTERS_DETAIL": "Aktualności projektu, numer po numerze.",
     "TILE_LEAFLETS_DETAIL": "Drukowalne streszczenia do podzielenia się ze społecznością.",
     "TILE_PARTNERSHIP_DETAIL": "Sześć organizacji stojących za POMEIL, w czterech krajach.",
     "NEWS_EYEBROW": "Najnowsze wiadomości",
     "NETWORK_EYEBROW": "Nasza sieć",
-    "NETWORK_LEAD": "Sześć organizacji w Norwegii, Grecji, Polsce i Estonii."
+    "NETWORK_LEAD": "Sześć organizacji w Norwegii, Grecji, Polsce i Estonii.",
+    "COVER_CTA_LEARNING": "Rozpocznij naukę",
+    "TILE_LEARNING": "Nauka",
+    "TILE_LEARNING_DETAIL": "Prowadzona ścieżka: wybierz umiejętności, zagraj, sprawdź wyniki i przestudiuj moduły.",
+    "TILE_ROOMS": "Pokoje zagadek",
+    "TILE_ROOMS_DETAIL": "30 cyfrowych pokoi zagadek, po jednym na umiejętność — zagraj w dowolny od razu."
   },
   "NEW": {
     "GALLERY": "Galeria",
@@ -287,5 +308,124 @@
     "EMPTY_LEAD": "Zasoby się kształtują.",
     "EMPTY_DETAIL": "Tworzymy narzędzia, odniesienia i listy lektur dla edukatorów i uczących się z całej sieci. Sprawdź później lub śledź nasze wiadomości dla aktualizacji.",
     "FOLLOW_NEWS": "Śledź wiadomości"
+  },
+  "SKILLS": {
+    "cultural-awareness": "Świadomość kulturowa",
+    "empathy": "Empatia",
+    "strategic-thinking": "Myślenie strategiczne",
+    "open-mindedness": "Otwartość umysłu",
+    "financial": "Wiedza finansowa i zarządzanie finansami",
+    "stress-management": "Zarządzanie stresem",
+    "trust-building": "Budowanie zaufania",
+    "active-listening": "Aktywne słuchanie",
+    "adaptability": "Zdolność adaptacji",
+    "flexibility": "Elastyczność",
+    "interpersonal-skills": "Umiejętności interpersonalne",
+    "language-skills": "Umiejętności językowe",
+    "market-awareness": "Świadomość rynku",
+    "legal-compliance": "Zgodność z przepisami prawa",
+    "self-reliance": "Samodzielność",
+    "teamwork": "Praca zespołowa",
+    "resilience": "Odporność psychiczna",
+    "motivating-others": "Motywowanie i inspirowanie innych",
+    "tolerance": "Tolerancja",
+    "leadership": "Przywództwo",
+    "decision-making": "Podejmowanie decyzji",
+    "crm": "Zarządzanie relacjami z klientami",
+    "business-planning": "Planowanie biznesowe",
+    "critical-thinking": "Myślenie krytyczne",
+    "digital-skills": "Umiejętności cyfrowe",
+    "negotiation-skills": "Umiejętności negocjacyjne",
+    "networking-skills": "Networking",
+    "risk-management": "Zarządzanie ryzykiem",
+    "problem-solving": "Rozwiązywanie problemów",
+    "project-management": "Zarządzanie projektami"
+  },
+  "GUIDE": {
+    "TITLE": "Przewodnik",
+    "PLATFORM_TITLE": "Jak działa ścieżka nauki",
+    "ROOM_TITLE": "Jak grać w pokój zagadek",
+    "ROOM_STEP_1": "Przeczytaj krótką historię na karcie wprowadzającej i kliknij „Start”.",
+    "ROOM_STEP_2": "Eksploruj pomieszczenie: klikaj przedmioty, które wyglądają interesująco, i rozmawiaj z postaciami – podpowiedzą Ci, czego szukać.",
+    "ROOM_STEP_3": "Kliknij okno dialogu, aby kontynuować rozmowę.",
+    "ROOM_STEP_4": "Utknąłeś/aś? Naciśnij świecący przycisk z żarówką (w lewym górnym rogu), aby otrzymać podpowiedź. Po chwili gra sama Ci o tym przypomni.",
+    "ROOM_STEP_5": "Każda zagadka ma 3 próby; po trzeciej błędnej odpowiedzi wyświetlana jest poprawna. Zagadkę można też pominąć.",
+    "ROOM_STEP_6": "Na ścieżce nauki każda zagadka liczy się do wyniku: 80% lub więcej oznacza zaliczenie; poniżej tego progu przestudiuj moduł, zanim przejdziesz dalej.",
+    "ROOM_STEP_7": "Wskazówka: graj na laptopie lub komputerze stacjonarnym w trybie pełnoekranowym (przycisk w prawym górnym rogu), aby uzyskać najlepsze wrażenia.",
+    "ROTATE_HINT": "Aby uzyskać najlepsze wrażenia, obróć telefon poziomo lub użyj większego ekranu."
+  },
+  "LEAFLETS": {
+    "PAGE": "Strona",
+    "PREVIOUS_PAGE": "Poprzednia strona",
+    "NEXT_PAGE": "Następna strona",
+    "SELECT_PROMPT": "Wybierz ulotkę do wyświetlenia"
+  },
+  "ESCAPE_ROOM": {
+    "SCORE_OUTSTANDING": "Znakomity wynik! Masz tę umiejętność opanowaną.",
+    "SCORE_GREAT": "Dobra robota! Masz solidne zrozumienie tej umiejętności.",
+    "SCORE_GOOD": "Niezły wynik! Warto przejrzeć materiały modułu, aby utrwalić wiedzę.",
+    "SCORE_STUDY": "Pokój został ukończony, ale zalecamy zapoznanie się z modułem PDF dla tej umiejętności.",
+    "SCORE_REVEALED": "Część odpowiedzi trzeba było pokazać — warto wrócić do tych fragmentów w module.",
+    "YOU": "Ty",
+    "YOU_SUFFIX": "(ty)",
+    "YOU_INLINE": "ty",
+    "SHOW_SPOTS": "Pokaż, w co mogę kliknąć",
+    "HIDE_SPOTS": "Ukryj klikalne miejsca",
+    "EXIT_TITLE": "Opuścić pokój?",
+    "EXIT_BODY": "Czy na pewno chcesz wyjść? Twój postęp zostanie utracony.",
+    "EXIT_CANCEL": "Anuluj",
+    "EXIT_CONFIRM": "Wyjdź",
+    "FULLSCREEN_TIP": "Wskazówka: aby uzyskać najlepsze wrażenia, użyj przycisku pełnego ekranu (prawy górny róg)."
+  },
+  "FLIPBOOK": {
+    "CLOSE": "Zamknij",
+    "PREVIOUS_PAGE": "Poprzednia strona",
+    "NEXT_PAGE": "Następna strona",
+    "MODULE": "Moduł",
+    "DRAFT": "WERSJA ROBOCZA",
+    "DRAFT_HINT": "Ten program jest wersją roboczą oczekującą na przegląd partnerów.",
+    "BACK_TO_LEARNING": "Powrót do nauki"
+  },
+  "SKILL_DESC": {
+    "cultural-awareness": "Rozumienie i szacunek dla różnic kulturowych w miejscu pracy, w tym stylów komunikacji, obyczajów oraz norm społecznych obowiązujących w różnych kulturach.",
+    "empathy": "Rozwijanie umiejętności rozpoznawania i rozumienia emocji oraz perspektyw innych osób oraz reagowania z życzliwością w środowiskach zawodowych.",
+    "strategic-thinking": "Nauka analizowania sytuacji, rozważania długoterminowych skutków oraz podejmowania decyzji zgodnych z celami organizacji i współpracą zespołową.",
+    "open-mindedness": "Kultywowanie otwartości na nowe pomysły, różnorodne perspektywy i konstruktywną informację zwrotną przy jednoczesnym zachowaniu umiejętności krytycznego myślenia.",
+    "financial": "Zrozumienie podstawowych pojęć finansowych, w tym budżetowania, zarządzania przepływami pieniężnymi, fakturowania oraz planowania finansowego na potrzeby rozwoju osobistego i zawodowego.",
+    "stress-management": "Techniki rozpoznawania, radzenia sobie ze stresem i jego redukcji w miejscu pracy, w tym praktykowanie uważności, wyznaczanie granic i budowanie odporności psychicznej.",
+    "trust-building": "Budowanie zaufania w zespołach poprzez przejrzystość, empatię, aktywne słuchanie i spójne zachowania przywódcze.",
+    "active-listening": "Pełna obecność w rozmowach, rozumienie sygnałów werbalnych i niewerbalnych oraz przemyślane reagowanie w celu budowania silniejszej komunikacji.",
+    "adaptability": "Dostosowywanie podejścia w miarę zmiany okoliczności przy jednoczesnym skupieniu się na celach oraz równoważeniu szybkości działania z rozsądną oceną sytuacji.",
+    "flexibility": "Szybkie reagowanie na zmiany, radzenie sobie ze stresem oraz znajdowanie nowych rozwiązań pod presją w dynamicznych środowiskach badawczo-rozwojowych.",
+    "interpersonal-skills": "Umiejętności komunikacyjne, praca zespołowa, inteligencja emocjonalna oraz zdolność rozwiązywania problemów niezbędne do skutecznych interakcji w miejscu pracy.",
+    "language-skills": "Rozwijanie umiejętności rozumienia i wyrażania się w języku obcym w celu skutecznej komunikacji w międzynarodowych środowiskach zawodowych.",
+    "resilience": "Budowanie zdolności do podnoszenia się po niepowodzeniach, dostosowywania się do wyzwań oraz utrzymywania skuteczności pod presją.",
+    "self-reliance": "Rozwijanie niezależności, inicjatywy i pewności siebie w celu samodzielnego rozwiązywania problemów i podejmowania decyzji.",
+    "teamwork": "Skuteczna współpraca z innymi, współdziałanie między różnymi rolami oraz przyczynianie się do osiągania wspólnych celów w zróżnicowanych zespołach.",
+    "tolerance": "Rozumienie i akceptacja różnorodności, praktykowanie inkluzywności oraz konstruktywne radzenie sobie z różnicami w miejscu pracy.",
+    "crm": "Zarządzanie interakcjami z klientami, rozpatrywanie skarg, prowadzenie dokumentacji oraz budowanie długoterminowych relacji z klientami.",
+    "decision-making": "Systematyczne podejście do identyfikowania alternatyw, oceny wyników oraz wyboru najlepszego sposobu postępowania w warunkach niepewności.",
+    "leadership": "Rozwijanie cech przywódczych, w tym empatii, odpowiedzialności, komunikacji oraz podejmowania decyzji w zarządzaniu zespołem.",
+    "legal-compliance": "Zrozumienie wymogów prawnych, ochrony danych, poufności oraz obowiązków etycznych w działalności biznesowej.",
+    "market-awareness": "Zrozumienie grup docelowych, analiza konkurencji, trendy rynkowe oraz opracowywanie unikalnych propozycji sprzedaży.",
+    "motivating-others": "Rozpoznawanie mocnych stron, udzielanie wsparcia oraz budowanie pewności siebie u innych poprzez przywództwo oparte na empatii.",
+    "business-planning": "Opracowywanie modeli biznesowych, identyfikowanie segmentów klientów, źródeł przychodów oraz tworzenie praktycznych biznesplanów.",
+    "critical-thinking": "Obiektywna analiza informacji, ocena dowodów oraz formułowanie uzasadnionych osądów w celu skutecznego rozwiązywania problemów.",
+    "digital-skills": "Korzystanie z narzędzi cyfrowych, świadomość w zakresie cyberbezpieczeństwa, komunikacja online oraz odpowiedzialne wykorzystanie technologii w miejscu pracy.",
+    "negotiation-skills": "Przygotowywanie się do negocjacji, budowanie relacji, znajdowanie rozwiązań korzystnych dla wszystkich stron oraz utrzymywanie profesjonalnych relacji.",
+    "networking-skills": "Nawiązywanie kontaktów zawodowych, budowanie zaufania, utrzymywanie relacji oraz wykorzystywanie sieci kontaktów w celu pozyskiwania nowych możliwości.",
+    "risk-management": "Identyfikowanie, ocena i ograniczanie ryzyka w miejscu pracy, w tym zagrożeń dla bezpieczeństwa i ryzyka operacyjnego.",
+    "problem-solving": "Dokładne definiowanie problemów przed podjęciem działań - unikanie pochopnych rozwiązań, badanie alternatywnych przyczyn oraz identyfikowanie przyczyn źródłowych.",
+    "project-management": "Wyznaczanie jasnych celów, równoważenie potrzeb interesariuszy, ochrona zakresu projektu oraz komunikowanie realistycznych priorytetów w celu terminowej realizacji zadań."
+  },
+  "EYEBROW": {
+    "REFLECTION": "Refleksja",
+    "REFLECTION_SUBMITTED": "Refleksja przesłana",
+    "LEARNING_VOYAGE": "Podróż edukacyjna",
+    "VOYAGE_COMPLETE": "Podróż ukończona",
+    "YOUR_PROGRESS": "Twoje postępy",
+    "LIBRARY": "Biblioteka",
+    "WHOLE_CURRICULUM": "Cały program",
+    "FEATURED": "Wyróżnione"
   }
 }

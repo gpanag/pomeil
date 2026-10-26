@@ -149,16 +149,19 @@
   "completion": {
     "title": "Gratulerer!",
     "message": "Gratulerer, du har fullført alt og nådd et nytt nivå i Språkferdigheter.",
-    "buttonText": "Forlat venterommet"
+    "buttonText": "Forlat venterommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "gapPlaceholder": "___",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

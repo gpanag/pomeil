@@ -193,18 +193,21 @@
   "completion": {
     "title": "Ferdighet fullført: Lederskap",
     "message": "Verdier forstått. Beslutninger evaluert. Etisk atferd vist.\nDu er klar til å gå videre til neste ferdighet.",
-    "buttonText": "Forlat HR-kontoret"
+    "buttonText": "Forlat HR-kontoret",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "trueButton": "Sant",
     "falseButton": "Usant",
     "gapPlaceholder": "____",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

@@ -257,17 +257,20 @@
   "completion": {
     "title": "Gratulacje!",
     "message": "Pomyślnie ukończyłeś escape room Planowania Biznesowego! Teraz rozumiesz kluczowe elementy Modelu Biznesowego: Segmenty klientów, Propozycja wartości, Kanały, Źródła przychodów i Struktura kosztów.",
-    "buttonText": "Wyjdź z pokoju"
+    "buttonText": "Wyjdź z pokoju",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "puzzlesCompleted": "zagadki",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
     "answerButton": "Odpowiedź",
-    "backToDocuments": "Powrót do dokumentów"
+    "backToDocuments": "Powrót do dokumentów",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

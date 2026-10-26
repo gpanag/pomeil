@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LearningFlowService } from '../learning-flow.service';
 import { TranslateService } from '../../translate/translate.service';
 
@@ -19,9 +19,11 @@ interface PlayedModule extends SkillModule {
 }
 
 @Component({
-  selector: 'app-your-modules',
-  templateUrl: './your-modules.component.html',
-  styleUrls: ['./your-modules.component.scss'],
+    selector: 'app-your-modules',
+    templateUrl: './your-modules.component.html',
+    styleUrls: ['./your-modules.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class YourModulesComponent implements OnInit {
 
@@ -125,6 +127,17 @@ export class YourModulesComponent implements OnInit {
   private translate = inject(TranslateService);
 
   constructor(private learningService: LearningFlowService) {}
+
+  /** Localised skill name from app i18n `SKILLS.<id>`; falls back to the
+   *  English title in the catalog (partner feedback 2026-08-31). */
+  skillTitle(mod: { id: string; title: string }): string {
+    return this.translate.instant('SKILLS.' + mod.id) ?? mod.title;
+  }
+
+  /** Localized module description, English fallback — see modules-library. */
+  skillDescription(mod: { id: string; description: string }): string {
+    return this.translate.instant('SKILL_DESC.' + mod.id) ?? mod.description;
+  }
 
   /** Use the Polish translation when the active language is pl; English otherwise. */
   pdfUrlFor(mod: { id: string; pdfUrl: string }): string {

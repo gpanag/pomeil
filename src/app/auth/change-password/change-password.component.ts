@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'app-change-password',
-  templateUrl: './change-password.component.html',
-  styleUrl: './change-password.component.scss'
+    selector: 'app-change-password',
+    templateUrl: './change-password.component.html',
+    styleUrl: './change-password.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ChangePasswordComponent {
   currentPassword = '';

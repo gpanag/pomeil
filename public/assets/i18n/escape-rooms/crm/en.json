@@ -747,11 +747,13 @@
   "completion": {
     "title": "Shift Complete!",
     "message": "You've completed your shift in the Customer Service Department.\n\nYou handled a customer complaint call, updated the customer registry and created a useful customer feedback survey. Well done!",
-    "buttonText": "Exit the Customer Service Department"
+    "buttonText": "Exit the Customer Service Department",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
+    "sortAllBeforeSave": "You must sort all items before saving.",
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "startButton": "Start",
     "trueButton": "True",
@@ -760,7 +762,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

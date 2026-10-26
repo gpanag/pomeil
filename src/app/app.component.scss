@@ -328,3 +328,56 @@ footer {
     }
   }
 }
+/* ─────────────────────────────────────────────────────────────────────────
+   Phone toolbar (consultations report, GR: "improvement of the navigation in
+   the RWD learning environment").
+
+   Both toolbars lay out as a single non-wrapping flex row: logo, wordmark,
+   spacer, social links, nav, account, language. Below roughly 700px the fixed
+   items no longer fit, and because `body` has `overflow-x: hidden` the
+   overflow was silently CLIPPED rather than scrollable — at 375px the menu
+   (x 384-424), account (424-464) and language (506-546) buttons sat entirely
+   off-screen, leaving a phone with no navigation, no account access and no
+   way to change language. The social links are the widest non-essential item,
+   so on small screens they move into the hamburger menu (.menu-socials) and
+   the row gets its padding back.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* The socials row only exists inside the menu on small screens. */
+.menu-socials {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  mat-toolbar {
+    padding-left: 8px;
+    padding-right: 4px;
+  }
+
+  /* Hide the toolbar copy; the hamburger menu carries them instead. */
+  mat-toolbar app-socials-menu {
+    display: none;
+  }
+
+  .menu-socials {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 8px 8px;
+    border-top: 1px solid var(--sys-outline-variant, rgba(0, 0, 0, 0.12));
+    margin-top: 4px;
+  }
+
+  /* Keep the three controls tight so they all fit on a 320px screen. */
+  app-account-menu,
+  app-translate {
+    margin: 0;
+  }
+}
+
+/* Very narrow phones: the logo image alone carries the brand. */
+@media screen and (max-width: 400px) {
+  mat-toolbar .brand-wordmark {
+    display: none;
+  }
+}

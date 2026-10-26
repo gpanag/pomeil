@@ -191,7 +191,8 @@
   "completion": {
     "title": "Η Εκπαίδευση Ολοκληρώθηκε!",
     "message": "Συγχαρητήρια! Έχεις δείξει με επιτυχία εξαιρετικό ανοιχτό πνεύμα και δεξιότητες επικοινωνίας.",
-    "buttonText": "Πίσω στο Κύριο Μενού"
+    "buttonText": "Πίσω στο Κύριο Μενού",
+    "revealedNote": "Σε αυτό χρειάστηκε να εμφανιστεί η απάντηση, οπότε αξίζει να ξαναδείτε αυτό το μέρος στην ενότητα."
   },
   "dialogueActions": {
     "continue": "Συνέχεια",
@@ -200,17 +201,19 @@
   },
   "buttons": {
     "toggleFullscreen": "Εναλλαγή πλήρους οθόνης",
-    "backToEscapeRooms": "Πίσω στα Δωμάτια Απόδρασης"
+    "backToLearning": "Επιστροφή στη μάθηση"
   },
   "ui": {
     "continueButton": "Συνέχεια",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Εναλλαγή πλήρους οθόνης",
-    "backToEscapeRooms": "Πίσω στα Δωμάτια Απόδρασης",
+    "backToLearning": "Επιστροφή στη μάθηση",
     "skipButton": "Παράλειψη",
     "startQuizButton": "Έναρξη Κουίζ",
     "answerButton": "Απάντηση",
-    "finishTrainingButton": "Ολοκλήρωση Εκπαίδευσης"
+    "finishTrainingButton": "Ολοκλήρωση Εκπαίδευσης",
+    "backToRoom": "Επιστροφή στο δωμάτιο",
+    "clickToExamine": "Κάντε κλικ για εξέταση"
   },
   "learning": {
     "modeLabel": "Λειτουργία Μάθησης",

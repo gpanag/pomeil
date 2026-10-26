@@ -193,18 +193,21 @@
   "completion": {
     "title": "Oskus lõpetatud: Juhtimine",
     "message": "Väärtused mõistetud. Otsused hinnatud. Eetiline käitumine näidatud.\nOled valmis liikuma järgmisele oskusele.",
-    "buttonText": "Lahku HR-kontorist"
+    "buttonText": "Lahku HR-kontorist",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "____",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

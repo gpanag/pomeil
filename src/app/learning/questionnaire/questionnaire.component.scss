@@ -18,7 +18,7 @@
     margin: 0 0 0.4rem !important;
   }
   > h1::before {
-    content: "Reflection";
+    content: attr(data-eyebrow);  /* EYEBROW.* — was an English literal */
     display: block;
     font-family: var(--font-body);
     font-style: normal;
@@ -324,7 +324,7 @@
     font-variation-settings: "opsz" 96, "SOFT" 40;
   }
   h2::before {
-    content: "Reflection Submitted";
+    content: attr(data-eyebrow);  /* EYEBROW.* — was an English literal */
     display: block;
     font-family: var(--font-body);
     font-style: normal;

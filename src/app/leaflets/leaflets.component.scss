@@ -119,6 +119,49 @@
           z-index: 1;
         }
       }
+
+      /* Page navigation — shown only for two-sided leaflets (#4 onwards) */
+      .page-pager {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 14px;
+        flex: none;
+
+        .mat-mdc-icon-button {
+          color: var(--pomeil-teal-deep);
+
+          &:disabled {
+            color: var(--pomeil-ink-muted);
+            opacity: 0.45;
+          }
+        }
+
+        .page-dots {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .page-dot {
+          width: 9px;
+          height: 9px;
+          padding: 0;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 63, 71, 0.35);
+          background: transparent;
+          cursor: pointer;
+          transition: background-color var(--md-duration-short3) var(--md-easing-standard),
+                      border-color var(--md-duration-short3) var(--md-easing-standard);
+
+          &:hover { border-color: var(--pomeil-teal-deep); }
+
+          &.active {
+            background: var(--pomeil-warm);
+            border-color: var(--pomeil-warm);
+          }
+        }
+      }
     }
 
     .empty-state {

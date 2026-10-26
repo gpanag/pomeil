@@ -30,8 +30,7 @@
       "dialogues": {
         "folderFound": "To wygląda na solidny plan. Powinniśmy sprawdzić, czy naprawdę używaliśmy tych kroków po kolei, czy świadomie wybraliśmy tylko niektóre z nich, ale każdy z nich jest kluczowy. Zobaczmy, co możemy z tym zrobić.",
         "toleranceExplained": "Tolerancja w życiu oznacza akceptowanie tego, że ludzie mają różne przekonania, nawyki i sposoby postrzegania świata. Polega na zachowaniu cierpliwości, otwartości i szacunku, nawet gdy ktoś myśli inaczej niż Ty.",
-        "toleranceDetails": "Tolerancja nie jest nawykiem, jej osiągnięcie wymaga czasu, edukacji i praktyki, oto kilka najczęstszych sposobów i sytuacji, w których nasza zdolność do tolerancji może się poprawić:\n\n1. Tolerancja w życiu — Aby rozwijać tolerancję w codziennym życiu, zacznij od zauważania swoich reakcji, gdy ktoś zachowuje się lub myśli inaczej niż Ty. Ćwicz pauzowanie przed osądzaniem i wybieraj ciekawość zamiast krytyki. Słuchaj historii ludzi i staraj się zrozumieć, co ukształtowało ich poglądy.\n\n2. Tolerancja w środowisku pracy — Aby budować tolerancję w pracy, skup się na otwartej komunikacji oraz spokojnym, pełnym szacunku słuchaniu. Ludzie pochodzą z różnych kultur i mają różne style pracy, więc proś o wyjaśnienia, zamiast zakładać, i daj współpracownikom przestrzeń do wyrażania swoich pomysłów.\n\n3. Tolerancja w domu lub rodzinie — Tolerancja w domu zaczyna się od zrozumienia, że każdy członek rodziny ma swoje własne emocje, nawyki i sposoby myślenia. Ćwicz mówienie życzliwie podczas nieporozumień i poświęć czas na wyjaśnienie swoich uczuć bez obwiniania. Ustal wspólne zasady komunikacji — takie jak pełne wysłuchanie przed odpowiedzią."
-,
+        "toleranceDetails": "Tolerancja nie jest nawykiem, jej osiągnięcie wymaga czasu, edukacji i praktyki, oto kilka najczęstszych sposobów i sytuacji, w których nasza zdolność do tolerancji może się poprawić:\n\n1. Tolerancja w życiu — Aby rozwijać tolerancję w codziennym życiu, zacznij od zauważania swoich reakcji, gdy ktoś zachowuje się lub myśli inaczej niż Ty. Ćwicz pauzowanie przed osądzaniem i wybieraj ciekawość zamiast krytyki. Słuchaj historii ludzi i staraj się zrozumieć, co ukształtowało ich poglądy.\n\n2. Tolerancja w środowisku pracy — Aby budować tolerancję w pracy, skup się na otwartej komunikacji oraz spokojnym, pełnym szacunku słuchaniu. Ludzie pochodzą z różnych kultur i mają różne style pracy, więc proś o wyjaśnienia, zamiast zakładać, i daj współpracownikom przestrzeń do wyrażania swoich pomysłów.\n\n3. Tolerancja w domu lub rodzinie — Tolerancja w domu zaczyna się od zrozumienia, że każdy członek rodziny ma swoje własne emocje, nawyki i sposoby myślenia. Ćwicz mówienie życzliwie podczas nieporozumień i poświęć czas na wyjaśnienie swoich uczuć bez obwiniania. Ustal wspólne zasady komunikacji — takie jak pełne wysłuchanie przed odpowiedzią.",
         "toleranceSummary": "Tolerancja rośnie, gdy uczymy się rozumieć i szanować różnice w każdej części naszego życia — w domu, w pracy i w otaczającym nas świecie. Rozwija się przez spokojne słuchanie, otwartą komunikację i gotowość do dostosowania naszej perspektywy, gdy jest to potrzebne. Gdy konsekwentnie praktykujemy tolerancję, nasze relacje stają się silniejsze, konflikty łatwiejsze do rozwiązania, a nasze otoczenie bezpieczniejsze i bardziej wspierające dla wszystkich.",
         "letsQuiz": "To było wiele cennych informacji. Były jasne i całkiem zrozumiałe. Wiesz, jaki jest najlepszy sposób, by się uczyć? Praktyka! Więc zróbmy to!",
         "default": "Przeglądam te kroki tolerancji. Porozmawiaj z Amelią, aby kontynuować."
@@ -222,18 +221,21 @@
   "completion": {
     "title": "Tolerancja ukończona!",
     "message": "Pomyślnie ukończyłeś escape room Tolerancja. Wykazałeś się cierpliwością, zrozumieniem i umiejętnością rozwiązywania nieporozumień z szacunkiem.",
-    "buttonText": "Powrót do escape roomów"
+    "buttonText": "Powrót do nauki",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "ui": {
     "continueButton": "Dalej",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
     "trueButton": "Prawda",
     "falseButton": "Fałsz",
     "gapPlaceholder": "______",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

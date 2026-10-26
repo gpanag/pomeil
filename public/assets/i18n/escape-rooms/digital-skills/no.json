@@ -350,6 +350,7 @@
     "comments": "Svar på ekte kundeinteraksjoner og slett spam.",
     "stickyNote": "Det er en post-it-lapp med passord på serveren. Det er en sikkerhetsrisiko!",
     "miniPuzzles": "Vær årvåken for sikkerhetstrusler - USB-enheter, popups, oppdateringer og WiFi-nettverk.",
+    "miniUsb": "Sjekk skrivebordsskuffen.",
     "allComplete": "Alt er ferdig! Opplæringen er fullført!",
     "completion": "Opplæringen er fullført!",
     "default": "Se rundt i IT-avdelingen etter ting som trenger oppmerksomhet."
@@ -397,17 +398,21 @@
       "title": "IT-sikkerhetsvarsel",
       "domainLine": "Vårt selskapsdomene er",
       "malwareWarning": "Skadevare har blitt oppdaget på dette systemet. Filene og dataene dine kan være i fare.",
-      "domainNotice": "Vårt selskapsdomene er <strong>&#64;yourcompany.com</strong>. Ethvert annet domene som hevder å være fra vårt selskap er potensielt svindel."
+      "domainNotice": "Vårt selskapsdomene er <strong>&#64;yourcompany.com</strong>. Ethvert annet domene som hevder å være fra vårt selskap er potensielt svindel.",
+      "reminder": "Påminnelse: Kontroller alltid avsenderadressen og hold musepekeren over lenker før du klikker. Meld fra om mistenkelige e-poster til IT umiddelbart.",
+      "malwareTitle": "Systemet er infisert!",
+      "fromLabel": "Fra:"
     }
   },
   "completion": {
     "title": "Gratulerer!",
     "message": "Du har vellykket fullført alle digitale ferdighetsoppgaver! Du fikset serveren, reviderte passord, identifiserte phishing-e-poster, administrerte sosiale medier profesjonelt og håndterte flere cybertrusler. Du er nå bedre rustet til å navigere det digitale arbeidsplassen trygt og effektivt!",
-    "buttonText": "Forlat rommet"
+    "buttonText": "Forlat rommet",
+    "revealedNote": "Der måtte svaret vises, så det er verdt å gå gjennom denne delen i modulen."
   },
   "ui": {
     "fullscreenToggle": "Veksle fullskjerm",
-    "backToEscapeRooms": "Tilbake til fluktrom",
+    "backToLearning": "Tilbake til læring",
     "continueButton": "Fortsett",
     "gapPlaceholder": "___",
     "callIT": "Ring IT for hjelp",
@@ -415,7 +420,9 @@
     "archive": "Arkiver",
     "skipButton": "Hopp over",
     "startQuizButton": "Start quiz",
-    "answerButton": "Svar"
+    "answerButton": "Svar",
+    "backToRoom": "Tilbake til rommet",
+    "clickToExamine": "Klikk for å undersøke"
   },
   "learning": {
     "modeLabel": "Læringsmodus",

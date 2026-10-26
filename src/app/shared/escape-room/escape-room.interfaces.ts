@@ -35,8 +35,10 @@ export const ESCAPE_ROOM_TIMING = {
   zoomInDuration: 2000,
   /** Delay after zoom-out before view state resets */
   zoomOutDelay: 300,
-  /** How long hint-pulse indicators stay visible after dialogue dismissed */
-  hintVisibleDuration: 3000,
+  /** How long hint-pulse indicators stay visible after dialogue dismissed.
+   *  6s (was 3s): the pulse used to be gone before the player finished
+   *  reading the hint dialogue it accompanies. */
+  hintVisibleDuration: 6000,
   /** How long the inline hint-text bubble (the idle prominence nudge) stays on
    *  screen each time it pops, before it fades out. */
   hintBubbleDuration: 6000,
@@ -46,12 +48,12 @@ export const ESCAPE_ROOM_TIMING = {
   /** Idle time (no click/tap/key-press within the room — moving the mouse
    *  alone does NOT count) before the hint button escalates from its ambient
    *  pulse to a stronger attention animation, nudging a stuck player. */
-  idleHintDelay: 15000,
+  idleHintDelay: 40000,   // was 15s — "hint button too quick" (partner feedback 2026-08-31)
   /** Longer idle time (no click/tap/key-press within the room) before a one-time
    *  popup appears explicitly telling a stuck player about the hint button. Fires
    *  after the button-pulse escalation above, only while the game is waiting on
    *  the player, and re-arms once the player interacts again. */
-  idleHintPopupDelay: 30000,
+  idleHintPopupDelay: 75000,   // was 30s — keeps the same ~35s gap after the button escalation
   /** How often the idle watcher polls for inactivity (ms). */
   idleHintPollInterval: 500,
   /** Default shake duration for wrong puzzle answers */

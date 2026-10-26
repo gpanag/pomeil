@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
 import { TranslateService } from '../translate/translate.service';
@@ -13,9 +13,11 @@ const LEGACY_PARTNER_ALIASES: { [legacyId: string]: string } = {
 };
 
 @Component({
-  selector: 'app-partner',
-  templateUrl: './partner.component.html',
-  styleUrl: './partner.component.scss'
+    selector: 'app-partner',
+    templateUrl: './partner.component.html',
+    styleUrl: './partner.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class PartnerComponent {
   id: string = '';

@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, Inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,6 +11,7 @@ import { EscapeRoomTextService } from '../shared/escape-room/escape-room-text.se
 import { fadeInOut } from '../shared/escape-room/escape-room.animations';
 import { Dialogue, EscapeRoomConfig, CharacterImageMap, ESCAPE_ROOM_TIMING } from '../shared/escape-room/escape-room.interfaces';
 
+import { RoomHelpButtonComponent } from '../shared/escape-room/room-help-button/room-help-button.component';
 // ── Game Phases & States ────────────────────────────────────────────
 enum GameState {
   Intro,
@@ -149,12 +150,12 @@ const ALL_RESEARCH_NOTE_IDS = [
 // Total: 3 PRO + 14 CON = 17 notes
 
 @Component({
-  selector: 'app-critical-thinking-module2',
-  templateUrl: './critical-thinking-module2.component.html',
-  styleUrl: './critical-thinking-module2.component.scss',
-  standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
-  animations: [fadeInOut]
+    selector: 'app-critical-thinking-module2',
+    templateUrl: './critical-thinking-module2.component.html',
+    styleUrl: './critical-thinking-module2.component.scss',
+    imports: [RoomHelpButtonComponent, CommonModule, MatCardModule, MatButtonModule, MatIconModule, RouterModule, MatDialogModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    animations: [fadeInOut]
 })
 export class CriticalThinkingModule2Component extends EscapeRoomBaseComponent {
 

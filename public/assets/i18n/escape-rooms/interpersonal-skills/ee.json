@@ -125,7 +125,7 @@
   },
   "systemDialogues": {
     "selfTalk": "Sa siseneda ettevõtte vastuvõtualasse. See on moodne ruum mugavate istmete, ajakirjadega kohvilaua ja seinaäärse raamaturiiuliga. Sa märkad Carlost, meeskonnajuhti, seismas korkitahvli juures vastuvõtuleti taga, tervitamas inimesi ja jälgimas suhtlusi.",
-    "clickVendingMachine": "Just snacks for visitors here. The magazine Carlos mentioned is probably on the coffee table.",
+    "clickVendingMachine": "Siin on ainult suupisted külastajatele. Ajakiri, millest Carlos rääkis, on tõenäoliselt kohvilaual.",
     "foundMagazine": "Sa leidsid selle! See on äriajakiri konkreetsel leheküljel avatuna.",
     "magazineRead": "Suurepärane leid! Mine Carlose juurde tagasi.",
     "clickBookshelfWrong": "Enamasti brošüürid, raamatud ja vanad ajakirjad külastajatele. Vaata lähemalt sinna, kus inimesed istuvad ja ootavad.",
@@ -157,18 +157,21 @@
   "completion": {
     "title": "Õnnitlused!",
     "message": "Õnnitlused, sa oled kõik lõpetanud ja tõstnud oma inimestevaheliste oskuste taset. Liigume edasi järgmise oskuse juurde.",
-    "buttonText": "Lahku vastuvõtualast"
+    "buttonText": "Lahku vastuvõtualast",
+    "revealedNote": "Selle juures tuli vastus ette näidata, seega tasub see osa moodulis üle vaadata."
   },
   "ui": {
     "fullscreenToggle": "Lülita täisekraan",
-    "backToEscapeRooms": "Tagasi põgenemistubadesse",
+    "backToLearning": "Tagasi õppimise juurde",
     "continueButton": "Jätka",
     "trueButton": "Õige",
     "falseButton": "Vale",
     "gapPlaceholder": "___",
     "skipButton": "Jäta vahele",
     "startQuizButton": "Alusta viktoriini",
-    "answerButton": "Vastus"
+    "answerButton": "Vastus",
+    "backToRoom": "Tagasi ruumi",
+    "clickToExamine": "Klõpsa uurimiseks"
   },
   "learning": {
     "modeLabel": "Õppimisrežiim",

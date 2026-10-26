@@ -190,17 +190,20 @@
   "completion": {
     "title": "Congratulations!",
     "message": "You have managed to successfully accomplish the active listening training prepared for you by Zainabu and Mateo. You have showcased not only your ability to learn quickly, but also to correctly apply the acquired knowledge. You have successfully mastered the skill of Active Listening!",
-    "buttonText": "Exit the Rooftop"
+    "buttonText": "Exit the Rooftop",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "gapPlaceholder": "___",
     "selectTwo": "Select 2 answers",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",

@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-socials-menu',
-  templateUrl: './socials-menu.component.html',
-  styleUrl: './socials-menu.component.scss'
+    selector: 'app-socials-menu',
+    templateUrl: './socials-menu.component.html',
+    styleUrl: './socials-menu.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class SocialsMenuComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {

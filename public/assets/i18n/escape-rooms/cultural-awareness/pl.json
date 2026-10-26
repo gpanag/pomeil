@@ -175,7 +175,8 @@
   "completion": {
     "title": "Szkolenie zakończone!",
     "message": "Gratulacje! Z powodzeniem wykazałeś/aś doskonałe umiejętności świadomości kulturowej i komunikacji.",
-    "buttonText": "Powrót do menu głównego"
+    "buttonText": "Powrót do menu głównego",
+    "revealedNote": "Tutaj trzeba było pokazać odpowiedź, więc warto przejrzeć tę część w module."
   },
   "quizComplete": {
     "title": "Poprawnie!",
@@ -193,13 +194,15 @@
   },
   "ui": {
     "toggleFullscreen": "Przełącz tryb pełnoekranowy",
-    "backToEscapeRooms": "Powrót do escape roomów",
+    "backToLearning": "Powrót do nauki",
     "continueButton": "Dalej",
     "gapPlaceholder": "___",
     "fullscreenToggle": "Przełącz tryb pełnoekranowy",
     "skipButton": "Pomiń",
     "startQuizButton": "Rozpocznij quiz",
-    "answerButton": "Odpowiedź"
+    "answerButton": "Odpowiedź",
+    "backToRoom": "Powrót do pokoju",
+    "clickToExamine": "Kliknij, aby obejrzeć"
   },
   "learning": {
     "modeLabel": "Tryb nauki",

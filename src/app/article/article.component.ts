@@ -1,32 +1,22 @@
-import { Component } from '@angular/core';
-import localeEn from '@angular/common/locales/en';
-import localeEe from '@angular/common/locales/ee';
-import localeGr from '@angular/common/locales/el';
-import localeNo from '@angular/common/locales/no';
-import localePl from '@angular/common/locales/pl';
-import localeUa from '@angular/common/locales/ru-UA';
-import { registerLocaleData } from '@angular/common';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
 import { ImageDialog } from '../app.component';
 import { TranslateService } from '../translate/translate.service';
-
-
-registerLocaleData(localeEn, 'en');
-registerLocaleData(localeEe, 'ee');
-registerLocaleData(localeGr, 'gr');
-registerLocaleData(localeNo, 'no');
-registerLocaleData(localePl, 'pl');
-registerLocaleData(localeUa, 'ua');
+import { dateLocale } from '../shared/app-locales';
 
 
 @Component({
-  selector: 'app-article',
-  templateUrl: './article.component.html',
-  styleUrl: './article.component.scss'
+    selector: 'app-article',
+    templateUrl: './article.component.html',
+    styleUrl: './article.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ArticleComponent {
+  /** DatePipe locale for the current UI language (ee→et, gr→el, ua→uk). */
+  get dateLocale(): string { return dateLocale(this.lang); }
 
  id: number = -1;
   newItem: any;

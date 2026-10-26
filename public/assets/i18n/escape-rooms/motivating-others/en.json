@@ -173,7 +173,8 @@
     "feedback": {
       "correct": "Motivation grows when people see their value.",
       "wrong": "Those elements might not help build confidence. Focus on genuine strengths."
-    }
+    },
+    "answerOverlay": "The strengths to highlight are the language skills and the volunteering experience — both show what the candidate brings, rather than what is missing."
   },
   "bodyLanguage": {
     "title": "Reading motivation signals",
@@ -203,16 +204,18 @@
     "feedback": {
       "correct": "Motivation starts with noticing how others feel — even when they don't say it.",
       "wrong": "Look more carefully at the candidate's body language."
-    }
+    },
+    "answerOverlay": "The signals of insecurity are the clenched hands on the documents and the avoided eye contact."
   },
   "completion": {
     "title": "Skill Completed: Inspiring and Motivating Others",
     "message": "You demonstrated:\n\nEmotional awareness\nPositive communication\nEmpowerment through recognition\nEthical motivation\n\nInspiration is leadership in action.",
-    "buttonText": "Exit the Waiting Area"
+    "buttonText": "Exit the Waiting Area",
+    "revealedNote": "That one needed the answer shown, so it is worth going over this part in the module."
   },
   "ui": {
     "fullscreenToggle": "Toggle Fullscreen",
-    "backToEscapeRooms": "Back to Escape Rooms",
+    "backToLearning": "Back to learning",
     "continueButton": "Continue",
     "trueButton": "True",
     "falseButton": "False",
@@ -221,7 +224,9 @@
     "gapPlaceholder": "___",
     "skipButton": "Skip",
     "startQuizButton": "Start Quiz",
-    "answerButton": "Answer"
+    "answerButton": "Answer",
+    "backToRoom": "Back to the room",
+    "clickToExamine": "Click to examine"
   },
   "learning": {
     "modeLabel": "Learning Mode",
