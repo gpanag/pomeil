@@ -68,6 +68,10 @@ export class NewslettersComponent {
   get dateLocale(): string { return dateLocale(this.lang); }
   /** Per-language title with English fallback (older items have title_xx = null). */
   itemTitle(item: any): string { return localizedField(item, 'title', this.lang); }
+  /** Cover in the current language, falling back to English; null when neither exists. */
+  cover(item: any): any { return (this.lang === 'en' ? null : item?.['image_' + this.lang]) || item?.image || null; }
+  /** The covers the image dialog pages through: one per listed newsletter, in list order. */
+  collectImages() { this.images = this.news.map((n: any) => this.cover(n)).filter((c: any) => c); }
   listGrid: boolean = false;
   suffleCards = true;
   id: number = -1;
@@ -96,123 +100,12 @@ export class NewslettersComponent {
 
       this.news = data.data;
       this.newsCount = data.meta?.pagination?.total ?? this.news.length;
-      // console.log(this.news)
-      for (let index = 0; index < this.news.length; index++) {
-        const element = this.news[index];
-  
-        switch (this.lang) {
-          case 'en':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image) {
-                this.images.push(element.image);
-              }
-            }
-            break;
-          case 'ee':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image_ee) {
-                this.images.push(element.image_ee);
-              }
-            }
-            break;
-          case 'gr':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image_gr) {
-                this.images.push(element.image_gr);
-              }
-            }
-            break;
-          case 'no':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image_no) {
-                this.images.push(element.image_no);
-              }
-            }
-            break;
-          case 'pl':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image_pl) {
-                this.images.push(element.image_pl);
-              }
-            }
-            break;
-          case 'ua':
-            for (let index = 0; index < this.news.length; index++) {
-              const element = this.news[index];
-              if (element.image_ua) {
-                this.images.push(element.image_ua);
-              }
-            }
-            break;
-          default:
-            break;
-        }
-    
-          // console.log(this.images)
-        // }
-      }
+      this.collectImages();
     });
 
     this.translateService.lang$.subscribe(data => {
       this.lang = data;
-      this.images = [];
-      switch (this.lang) {
-        case 'en':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image) {
-              this.images.push(element.image);
-            }
-          }
-          break;
-        case 'ee':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image_ee) {
-              this.images.push(element.image_ee);
-            }
-          }
-          break;
-        case 'gr':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image_gr) {
-              this.images.push(element.image_gr);
-            }
-          }
-          break;
-        case 'no':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image_no) {
-              this.images.push(element.image_no);
-            }
-          }
-          break;
-        case 'pl':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image_pl) {
-              this.images.push(element.image_pl);
-            }
-          }
-          break;
-        case 'ua':
-          for (let index = 0; index < this.news.length; index++) {
-            const element = this.news[index];
-            if (element.image_ua) {
-              this.images.push(element.image_ua);
-            }
-          }
-          break;
-        default:
-          break;
-      }
+      this.collectImages();
     });
 
   }
@@ -240,6 +133,7 @@ export class NewslettersComponent {
     this.apiService.getNewslettersFull(this.pageIndex + 1, this.pageSize).subscribe((data: any) => {
       this.news = data.data;
       this.newsCount = data.meta?.pagination?.total ?? this.news.length;
+      this.collectImages();
     });
   }
 }

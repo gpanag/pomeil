@@ -111,7 +111,7 @@ export class ArticlesComponent {
 
   openNew(item: any) {
 
-    this.router.navigate(['/articles/' + item.id]);
+    this.router.navigate(['/articles/' + (item.documentId || item.id)]);
 
 
   }

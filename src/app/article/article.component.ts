@@ -6,6 +6,13 @@ import { ImageDialog } from '../app.component';
 import { TranslateService } from '../translate/translate.service';
 import { dateLocale } from '../shared/app-locales';
 
+// Article links use the stable `documentId`: Strapi v5 gives an entry a new numeric id every time it
+// is re-published (same as partners, see partner.component.ts). Legacy numeric "/articles/N" URLs
+// still resolve by id; this table pins the ones whose id has since moved.
+// Article #2 (escape rooms) was id 5 until the 2026-10-27 translations re-published it as id 10.
+const LEGACY_ARTICLE_ALIASES: { [legacyId: string]: string } = {
+  '5': 'irc84b0q39zinyp3uuqm59v1', // POMEIL Escape Rooms Aim to Make It Easier for Migrants…
+};
 
 @Component({
     selector: 'app-article',
@@ -42,15 +49,16 @@ news: any;
 
       this.apiService.getArticlesFull().subscribe((data: any) => {
         this.news = data.data;
-        for (let index = 0; index < this.news.length; index++) {
-          const element = this.news[index];
-          if ((element.id + 0) === (Number(this.id))) {
-            this.newItem = element;
-            this.images = [];
-            if (this.newItem.image) this.images.push(this.newItem.image);
-            if (this.newItem.more_images) {
-              for (const img of this.newItem.more_images) this.images.push(img);
-            }
+        const param = String(this.id);
+        const docId = LEGACY_ARTICLE_ALIASES[param] || param;
+        const element = this.news.find((a: any) => String(a.documentId) === docId)
+          || this.news.find((a: any) => String(a.id) === param);
+        if (element) {
+          this.newItem = element;
+          this.images = [];
+          if (this.newItem.image) this.images.push(this.newItem.image);
+          if (this.newItem.more_images) {
+            for (const img of this.newItem.more_images) this.images.push(img);
           }
         }
       });
@@ -76,7 +84,7 @@ news: any;
 
   /** Effective language for displaying article content: falls back to EN
       when the article has no body for the currently-selected language.
-      Article #2 is EN-only in Strapi, so PL/GR/etc. would otherwise render
+      Article #2 has no Estonian body yet, so EE would otherwise render
       blank. */
   effectiveLang(): string {
     const item = this.newItem;
