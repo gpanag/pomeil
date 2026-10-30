@@ -37,7 +37,7 @@
       <mat-icon>mail</mat-icon>
     </a>
   </div> -->
-  @if (innerWidth > 1400? true :false) {
+  @if (desktopMenu) {
     <div class="menu-whole">
       <button class="menu-button" mat-flat-button routerLink="home"
         [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
@@ -73,7 +73,7 @@
       </button>
     </div>
   }
-  @if (innerWidth <= 1400? true :false) {
+  @if (!desktopMenu) {
     <button mat-icon-button [matMenuTriggerFor]="menuParent">
       <mat-icon>menu</mat-icon>
       <mat-menu #menuParent="matMenu">
@@ -160,7 +160,7 @@
     <mat-icon>mail</mat-icon>
   </a>
 </div> -->
-@if (innerWidth > 1400? true :false) {
+@if (desktopMenu) {
   <div class="menu-whole">
     <button class="menu-button" mat-flat-button routerLink="home"
       [routerLinkActive]="isDarkTheme? ['is-active-dark'] : ['is-active']" [routerLinkActiveOptions]="{exact: true}">
@@ -196,7 +196,7 @@
     </button>
   </div>
 }
-@if (innerWidth <= 1400? true :false) {
+@if (!desktopMenu) {
   <button mat-icon-button [matMenuTriggerFor]="menuParent">
     <mat-icon>menu</mat-icon>
     <mat-menu #menuParent="matMenu">

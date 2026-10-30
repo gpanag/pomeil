@@ -31,6 +31,13 @@ const LANG_TO_HTML_TAG: { [key: string]: string } = {
 export class AppComponent implements OnInit {
   title = 'pomeil';
   innerWidth = window.innerWidth;
+  /** The full menu row is shown only when the whole toolbar fits. With it, the toolbar needs
+   *  1448–1591 CSS px depending on the language (EN 1456, GR 1530, UA 1591; measured 2026-10-30).
+   *  At the old 1400 breakpoint the account and language buttons were pushed off the right edge
+   *  between 1401 px and ~1600 px — 1440 px laptops included. 1640 leaves room for a classic
+   *  15–17 px scrollbar; narrower windows get the hamburger menu. */
+  static readonly DESKTOP_MENU_MIN_WIDTH = 1640;
+  get desktopMenu(): boolean { return this.innerWidth >= AppComponent.DESKTOP_MENU_MIN_WIDTH; }
   firstTimeHide = true;
   hideLogo: boolean = true;
   isDarkTheme: boolean = false;
